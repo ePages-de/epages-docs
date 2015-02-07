@@ -8,6 +8,7 @@ description: >
   jump right in!
 baseurl: ""
 url: "http://apidocs.mycompany.com"
+raml_root: "_raml/example/simple.raml"
 
 # Build settings
 markdown: kramdown
