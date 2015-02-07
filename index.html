@@ -1,23 +1,34 @@
 ---
 layout: default
 ---
+<div id="landingpage">
+  <div id="landingpage-banner">
+    <div id="landingpage-banner-headline">{{ site.title }}</div>
+    <div id="landingpage-banner-text">{{ site.description }}</div>
+  </div>
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+  <div id="content">
+    <div id="pageoverview" class="container">
+      {% assign category_chunks = site.data['sitemap'] | chunked_array: 3 %}
+      {% for category_chunk in category_chunks %}
+        <div class="row">
+        {% for category in category_chunk %}
+          <div class="col-sm-4">
+            <ul class="pageoverview-category">
+              <li class="pageoverview-headline">{{ category.title }}</li>
+              {% for page in site.pages %}
+                {% if page.title != null and page.category == category.key %}
+                  <li class="pageoverview-entry">
+                    <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                    {% if page.hot %}<span class="label label-danger">HOT</span>{% endif %}
+                  </li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          </div>
+        {% endfor %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
 </div>

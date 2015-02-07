@@ -1,0 +1,30 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+$assets-base: {{ "/assets" | prepend: site.baseurl }};
+
+@import "_bootstrap";
+@import "_landingpage";
+@import "_footer";
+@import "_syntax-highlighting";
+@import "_sitemap";
+@import "_resourcelist";
+
+nav {
+    margin-bottom: 0 !important;
+}
+
+#content {
+  background-color: white;
+  padding: 25px 0;
+
+    @media screen and (max-width: $screen-sm-max) {
+    padding: 0;
+  }
+}
+
+body {
+  background-color: #333333;
+}

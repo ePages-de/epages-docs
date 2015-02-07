@@ -1,14 +1,30 @@
 ---
 layout: default
 ---
-<div class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
-
-  <article class="post-content">
-    {{ content }}
-  </article>
-
+<div id="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 hidden-xs">
+        <ul id="sitemap">
+        {% for category in site.data['sitemap'] %}
+          <li class="sitemap-headline">{{ category.title }}</li>
+          {% for page in site.pages %}
+            {% if page.title != null and page.category == category.key %}
+              <li class="sitemap-entry">
+                <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                {% if page.hot %}<span class="label label-danger">HOT</span>{% endif %}
+              </li>
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+        </ul>
+      </div>
+      <div class="col-sm-9">
+        <article>
+          <h1>{{ page.title }}</h1>
+          {{ content }}
+        </article>
+      </div>
+    </div>
+  </div>
 </div>

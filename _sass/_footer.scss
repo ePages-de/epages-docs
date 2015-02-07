@@ -1,0 +1,39 @@
+footer {
+  padding: 20px 0;
+  font-size: 18px;
+
+  a {
+    color: #666666;
+
+    &:hover {
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  @media screen and (max-width: $screen-sm-max) {
+    font-size: 12px;
+  }
+}
+
+.footer-column {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-column-headline {
+  margin: 5px 0;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.footer-column-entry {
+  margin: 5px 0;
+}
+
+#footer-legal {
+  padding: 20px 0;
+  text-align: center;
+  color: #666666;
+}
