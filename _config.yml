@@ -15,4 +15,5 @@ markdown: kramdown
 exclude:
   - Gemfile
   - Gemfile.lock
+  - LICENSE.txt
   - README.md
