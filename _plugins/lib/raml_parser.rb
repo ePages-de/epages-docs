@@ -2,43 +2,12 @@
 ## Copyright 2015 Christian Hoffmeister <mail@choffmeister.de>
 ##
 class RamlParser
-  require 'yaml'
-
   def initialize(unknown_handling = 'error')
     @error_handling = unknown_handling
-
-    Psych.add_domain_type 'include', 'include' do |_, value|
-      case value
-        when /^https?:\/\//
-          # TODO implement remote loading of included files
-          ''
-        else
-          case value
-            when /\.raml$/
-              read_yaml(value)
-            when /\.ya?ml$/
-              read_yaml(value)
-            else
-              File.read(value)
-          end
-      end
-    end
   end
 
   def parse_file(path)
-    create_root(read_yaml(path))
-  end
-
-  private
-
-  def read_yaml(path)
-    # change working directory so that !includes work properly
-    pwd_old = Dir.pwd
-    Dir.chdir(File.dirname(path))
-    raw = File.read(File.basename(path))
-    node = YAML.load(raw)
-    Dir.chdir(pwd_old)
-    node
+    create_root(YamlHelper.read_yaml(path))
   end
 
   def create_root(node)
