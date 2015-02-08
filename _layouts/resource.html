@@ -4,7 +4,7 @@ layout: page
 
 <div>
   <pre>{{ page.raml_resource.method | upcase }} {{ page.raml_resource.uri }}</pre>
-  <p>{{ page.raml_resource.description | markdown }}</p>
+  <p>{{ page.raml_resource.description }}</p>
 </div>
 
 {% if page.raml_resource.uri_parameters != empty %}
@@ -95,13 +95,29 @@ layout: page
 </div>
 {% endif %}
 
-<h2>API Console</h2>
-<div id="apiconsole">
-  <h3>Request</h3>
-  <pre id="apiconsole-request"></pre>
-  <h3>Response</h3>
-  <pre id="apiconsole-response"></pre>
-  <button id="apiconsole-send" class="btn">Send</button>
+<div>
+  <h2>
+    API console
+    <button class="btn btn-xs btn-default" type="button" data-toggle="collapse" data-target="#apiconsole" aria-expanded="false" aria-controls="apiconsole">
+      show/hide
+    </button>
+  </h2>
+  <div class="collapse" id="apiconsole">
+    <pre id="apiconsole-request"></pre>
+    <pre id="apiconsole-response"></pre>
+    <button id="apiconsole-send" class="btn btn-default">Send</button>
+  </div>
+  <script type="text/javascript" src="{{ '/assets/javascript/apiconsole.js' | prepend: site.baseurl }}" async></script>
 </div>
 
-<script type="text/javascript" src="{{ '/assets/javascript/apiconsole.js' | prepend: site.baseurl }}" async></script>
+<div>
+  <h2>
+    RAW raml data
+    <button class="btn btn-xs btn-default" type="button" data-toggle="collapse" data-target="#ramlraw" aria-expanded="false" aria-controls="ramlraw">
+      show/hide
+    </button>
+  </h2>
+  <div class="collapse" id="ramlraw">
+    <pre>{{ page.raml_resource | jsonify_pretty }}</pre>
+  </div>
+</div>
