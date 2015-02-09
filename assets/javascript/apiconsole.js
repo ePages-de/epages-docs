@@ -1,7 +1,21 @@
 (function ($) {
     'use strict';
 
-    function parseUri(href) {
+    var afterChange = function (node, callback) {
+        $(node).on('change keydown', function () {
+            var $input = $(this);
+            window.setTimeout(function () {
+                callback($input.val());
+            }, 0);
+        });
+        callback($(node).val());
+    };
+
+    var escapeHtml = function (html) {
+        return html.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    };
+
+    var parseUri = function (href) {
         var match = href.match(/^(https?\:)\/\/(([^:\/?#]*)(?:\:([0-9]+))?)((\/[^?#]*)(\?[^#]*|))(#.*|)$/);
         return match && {
             protocol: match[1],
@@ -13,7 +27,7 @@
             hash: match[8],
             pathnameAndSearch: match[5]
         }
-    }
+    };
 
     var renderFullUri = function (raml, uriParameters, queryParameters) {
         var uri = raml.uri;
@@ -34,7 +48,7 @@
         }
 
         return uri;
-    }
+    };
 
     var convertRamlToRawRequest = function (raml, uriParameters, queryParameters) {
         var method = ramlResource.method.toUpperCase();
@@ -44,8 +58,8 @@
         var txt = method + ' ' + pathnameAndSearch + ' HTTP/1.1\n' +
             'Host: ' + host;
 
-        return txt.replace(/</g, '&lt;').replace(/>/g, '&gt;');
-    }
+        return escapeHtml(txt);
+    };
 
     var convertXhrToRawResponse = function (xhr) {
         if (xhr.status > 0) {
@@ -53,13 +67,13 @@
                 xhr.getAllResponseHeaders() + '\n' +
                 xhr.responseText;
 
-            return txt.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+            return escapeHtml(txt);
         } else {
             return 'Could not connect to server';
         }
-    }
+    };
 
-    function apiConsole (ramlResource, $request, $response, $form) {
+    var ApiConsole = function (ramlResource, $request, $response, $form) {
         var $request = $($request);
         var $response = $($response);
         var $form = $($form);
@@ -67,24 +81,16 @@
         var queryParameters = {};
 
         ramlResource.uri_parameters.forEach(function (p) {
-            uriParameters[p.name] = '';
-            $form.find('#parameter-uri-' + p.name).on('change keydown', function () {
-                var $input = $(this);
-                window.setTimeout(function () {
-                    uriParameters[p.name] = $input.val();
-                    $request.html(convertRamlToRawRequest(ramlResource, uriParameters, queryParameters));
-                }, 0);
+            afterChange($form.find('#parameter-uri-' + p.name), function (val) {
+                uriParameters[p.name] = val;
+                $request.html(convertRamlToRawRequest(ramlResource, uriParameters, queryParameters));
             });
         });
 
         ramlResource.query_parameters.forEach(function (p) {
-            queryParameters[p.name] = '';
-            $form.find('#parameter-query-' + p.name).on('change keydown', function () {
-                var $input = $(this);
-                window.setTimeout(function () {
-                    queryParameters[p.name] = $input.val();
-                    $request.html(convertRamlToRawRequest(ramlResource, uriParameters, queryParameters));
-                }, 0);
+            afterChange($form.find('#parameter-query-' + p.name), function (val) {
+                queryParameters[p.name] = val;
+                $request.html(convertRamlToRawRequest(ramlResource, uriParameters, queryParameters));
             });
         });
 
@@ -102,7 +108,7 @@
                 $response.html(convertXhrToRawResponse(xhr));
             });
         });
-    }
+    };
 
-    window.apiConsole = apiConsole;
+    window.ApiConsole = ApiConsole;
 })(jQuery);

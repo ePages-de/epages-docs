@@ -124,7 +124,7 @@ layout: page
   <script type="text/javascript" src="{{ '/assets/javascript/apiconsole.js' | prepend: site.baseurl }}"></script>
   <script type="text/javascript">
     var ramlResource = {{ page.raml_resource | jsonify }}
-    apiConsole(ramlResource, '#apiconsole-request', '#apiconsole-response', '#apiconsole-form');
+    ApiConsole(ramlResource, '#apiconsole-request', '#apiconsole-response', '#apiconsole-form');
   </script>
 </div>
 
