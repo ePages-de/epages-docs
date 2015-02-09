@@ -19,19 +19,19 @@ layout: page
     </tr>
     </thead>
     <tbody>
-    {% for qp in page.raml_resource.uri_parameters %}
+    {% for p in page.raml_resource.uri_parameters %}
     <tr>
-      <td><code>{{ qp.name }}</code></td>
-      <td><strong>{{ qp.type }}</strong></td>
+      <td><code>{{ p.name }}</code></td>
+      <td><strong>{{ p.type }}</strong></td>
       <td>
-        {% if qp.description %}<div>Description: {{ qp.description }}</div>{% endif %}
-        {% if qp.required %}<div>Required: <code>{{ qp.required }}</code></div>{% endif %}
-        {% if qp.example %}<div>Example: <code>{{ qp.example }}</code></div>{% endif %}
-        {% if qp.default %}<div>Default: <code>{{ qp.default }}</code></div>{% endif %}
-        {% if qp.minimum %}<div>Minimum: {{ qp.minimum }}</div>{% endif %}
-        {% if qp.maximum %}<div>Maximum: {{ qp.maximum }}</div>{% endif %}
-        {% if qp.repeat %}<div>Repeat: <code>{{ qp.repeat }}</code></div>{% endif %}
-        {% if qp.enum %}<div>Enum: <code>{{ qp.enum }}</code></div>{% endif %}
+        {% if p.description %}<div>Description: {{ p.description }}</div>{% endif %}
+        {% if p.required %}<div>Required: <code>{{ p.required }}</code></div>{% endif %}
+        {% if p.example %}<div>Example: <code>{{ p.example }}</code></div>{% endif %}
+        {% if p.default %}<div>Default: <code>{{ p.default }}</code></div>{% endif %}
+        {% if p.minimum %}<div>Minimum: {{ p.minimum }}</div>{% endif %}
+        {% if p.maximum %}<div>Maximum: {{ p.maximum }}</div>{% endif %}
+        {% if p.repeat %}<div>Repeat: <code>{{ p.repeat }}</code></div>{% endif %}
+        {% if p.enum %}<div>Enum: <code>{{ p.enum }}</code></div>{% endif %}
       </td>
     </tr>
     {% endfor %}
@@ -52,19 +52,19 @@ layout: page
     </tr>
     </thead>
     <tbody>
-    {% for qp in page.raml_resource.query_parameters %}
+    {% for p in page.raml_resource.query_parameters %}
     <tr>
-      <td><code>{{ qp.name }}</code></td>
-      <td><strong>{{ qp.type }}</strong></td>
+      <td><code>{{ p.name }}</code></td>
+      <td><strong>{{ p.type }}</strong></td>
       <td>
-        {% if qp.description %}<div>Description: {{ qp.description }}</div>{% endif %}
-        {% if qp.required %}<div>Required: <code>{{ qp.required }}</code></div>{% endif %}
-        {% if qp.example %}<div>Example: <code>{{ qp.example }}</code></div>{% endif %}
-        {% if qp.default %}<div>Default: <code>{{ qp.default }}</code></div>{% endif %}
-        {% if qp.minimum %}<div>Minimum: {{ qp.minimum }}</div>{% endif %}
-        {% if qp.maximum %}<div>Maximum: {{ qp.maximum }}</div>{% endif %}
-        {% if qp.repeat %}<div>Repeat: <code>{{ qp.repeat }}</code></div>{% endif %}
-        {% if qp.enum %}<div>Enum: <code>{{ qp.enum }}</code></div>{% endif %}
+        {% if p.description %}<div>Description: {{ p.description }}</div>{% endif %}
+        {% if p.required %}<div>Required: <code>{{ p.required }}</code></div>{% endif %}
+        {% if p.example %}<div>Example: <code>{{ p.example }}</code></div>{% endif %}
+        {% if p.default %}<div>Default: <code>{{ p.default }}</code></div>{% endif %}
+        {% if p.minimum %}<div>Minimum: {{ p.minimum }}</div>{% endif %}
+        {% if p.maximum %}<div>Maximum: {{ p.maximum }}</div>{% endif %}
+        {% if p.repeat %}<div>Repeat: <code>{{ p.repeat }}</code></div>{% endif %}
+        {% if p.enum %}<div>Enum: <code>{{ p.enum }}</code></div>{% endif %}
       </td>
     </tr>
     {% endfor %}
@@ -102,12 +102,30 @@ layout: page
       show/hide
     </button>
   </h2>
-  <div class="collapse" id="apiconsole">
-    <pre id="apiconsole-request"></pre>
-    <pre id="apiconsole-response"></pre>
-    <button id="apiconsole-send" class="btn btn-default">Send</button>
+  <div class="collapse in" id="apiconsole">
+    <form id="apiconsole-form">
+      {% for p in page.raml_resource.uri_parameters %}
+        <div class="form-group">
+          <label for="parameter-uri-{{ p.name }}">{{ p.name }}</label>
+          <input type="text" class="form-control" id="parameter-uri-{{ p.name }}"/>
+        </div>
+      {% endfor %}
+      {% for p in page.raml_resource.query_parameters %}
+        <div class="form-group">
+          <label for="parameter-query-{{ p.name }}">{{ p.name }}</label>
+          <input type="text" class="form-control" id="parameter-query-{{ p.name }}"/>
+        </div>
+      {% endfor %}
+      <input type="submit" value="Send" class="btn btn-default btn-block"/>
+    </form>
+    <p><pre id="apiconsole-request"></pre></p>
+    <p><pre id="apiconsole-response"></pre></p>
   </div>
-  <script type="text/javascript" src="{{ '/assets/javascript/apiconsole.js' | prepend: site.baseurl }}" async></script>
+  <script type="text/javascript" src="{{ '/assets/javascript/apiconsole.js' | prepend: site.baseurl }}"></script>
+  <script type="text/javascript">
+    var ramlResource = {{ page.raml_resource | jsonify }}
+    apiConsole(ramlResource, '#apiconsole-request', '#apiconsole-response', '#apiconsole-form');
+  </script>
 </div>
 
 <div>
