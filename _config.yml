@@ -6,8 +6,8 @@ description: >
   and documentation to help you start working with Developer Program
   as quickly as possible, as well as support if you get stuck. Let's
   jump right in!
-baseurl: ""
-url: "http://apidocs.mycompany.com"
+baseurl: "/jekyll-apidocs"
+url: "https://choffmeister.github.io"
 raml_root: "_raml/example/simple.raml"
 
 # Build settings
