@@ -1,14 +1,12 @@
 # Site settings
-title: My Company Documentation
-email: apidocs@mycompany.com
+title: ePages Documentation
+email: documentation@epages.com
 description: >
-  Welcome to the Developer Program. You'll find comprehensive guides
-  and documentation to help you start working with Developer Program
-  as quickly as possible, as well as support if you get stuck. Let's
-  jump right in!
-baseurl: "/jekyll-apidocs"
-url: "https://choffmeister.github.io"
-raml_root: "_raml/example/simple.raml"
+  This is the primary source of trust for ePages beloved third
+  party developers.
+baseurl: "/epages-docs"
+url: "http://epages-de.github.io"
+raml_root: _raml/epagesj/api.raml
 
 # Build settings
 markdown: kramdown

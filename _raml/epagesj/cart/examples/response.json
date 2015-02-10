@@ -1,0 +1,99 @@
+{
+    "cartId": "cartId",
+    "billingAddress": {
+        "company": null,
+        "salutation": null,
+        "firstName": "John",
+        "lastName": "Doe",
+        "street": "Pilatuspool 2",
+        "streetDetails": null,
+        "zipCode": "20355",
+        "city": "Hamburg",
+        "state": null,
+        "country": "DE", /* ISO 3166-1 Alpha-2 code */
+        "title": null,
+        "vatId": null,
+        "birthday": "1971-07-21",
+        "emailAddress" : "test@test.com"
+    },
+    "shippingAddress": {
+        "company": null,
+        "salutation": null,
+        "firstName": "John",
+        "lastName": "Doe",
+        "street": "Pilatuspool 2",
+        "streetDetails": null,
+        "zipCode": "20355",
+        "city": "Hamburg",
+        "state": null,
+        "country": "DE", /* ISO 3166-1 Alpha-2 code */
+        "title": null,
+        "vatId": null,
+        "birthday": null,
+        "emailAddress":"john.doe@epages.com"
+    },
+    "lineItemContainer": {
+        "grandTotal": { /* Total price including product prices, shipping and tax. */
+            "amount": 29.95,
+            "taxType": "GROSS",
+            "currency": "EUR",
+            "formatted": "22.95 €"
+        },
+        "totalBeforeTax": { /* Total price including product prices, shipping and no tax. */
+            "amount": 19..29,
+            "taxType": "NET",
+            "currency": "EUR",
+            "formatted": "19.29 €"
+        },
+        "totalTax": { /* Total tax amount */
+            "amount": 4.78,
+            "taxType": "NONE",
+            "currency": "EUR",
+            "formatted": "4.78 €"
+        },
+        "lineItemsSubTotal": { /* Sum of lineItemPrice on all lineItems. */
+            "amount": 0,
+            "taxType": "GROSS",
+            "currency": "EUR",
+            "formatted": "22.95 €"
+        },
+        "productLineItems": [
+            {
+                "lineItemId": "6E70E5E9-808D-4C51-8F3F-375B406FA5BC",
+                "sku": "product_alias",
+                "name": "product_name",
+                "productId": "512CDD42-1398-B66F-688D-0A0A350611B7",
+                "quantity": {
+                    "amount": 1,
+                    "unit": null
+                },
+                "lineItemPrice": {
+                    "amount": 22.95,
+                    "taxType": "GROSS",
+                    "currency": "EUR",
+                    "formatted": "22.95 €"
+                },
+                "singleItemPrice": {
+                    "amount": 22.95,
+                    "taxType": "GROSS",
+                    "currency": "EUR",
+                    "formatted": "22.95 €"
+                },
+                "images": [
+                    {
+                        "classifier": "Thumbnail", /* typical size: 50x33px */
+                        "url": "https://link.to/tumbnail-image.png" /* image URL */
+                    }
+                ],
+                "links": [
+                    {
+                        "rel": "product",
+                        "href": "http://host/rs/shops/ShopName/products/512CDD42-1398-B66F-688D-0A0A350611B7"
+                    }
+                ]
+            }
+        ]
+    },
+    "minCartValue": null,
+    "checkoutUrl": null
+}

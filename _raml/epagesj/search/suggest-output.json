@@ -1,0 +1,42 @@
+{
+    "products": [
+        {
+            "name": "Jack Wolfskin Blizzard Jacket",
+            "type": "product",
+            "image": "/WebRoot/TestStore/Shops/DemoShop/Products/ho_40407/ho_40407_black_xs.jpg",
+            "filter": 16268,
+            "alias": "ho_4040701006",
+            "path": "Products/ho_40407/SubProducts/ho_4040701006",
+            "preselectedAttributes": "{\"Colour\":\"Black\"}"
+        },
+        {
+            "name": "Berghaus Paclite Jacket - Women",
+            "type": "product",
+            "image": "/WebRoot/TestStore/Shops/DemoShop/Products/be_40402/be_40402_red_xs.jpg",
+            "filter": 16249,
+            "alias": "be_4040203038",
+            "path": "Products/be_40402/SubProducts/be_4040203038",
+            "preselectedAttributes": "{\"Colour\":\"Extreme red\"}"
+        }
+    ],
+    "manufacturers": [
+        {
+            "matches": 2,
+            "name": "Jack Wolfskin",
+            "filter": {
+                "fieldName": "FacetValue_Manufacturer",
+                "attributeValue": "Jack Wolfskin"
+            }
+        }
+    ],
+    "categories": [
+        {
+            "matches": 2,
+            "name": "Jackets",
+            "filter": {
+                "fieldName": "FacetValue_CategoryID",
+                "attributeValue": "16354"
+            }
+        }
+    ]
+}

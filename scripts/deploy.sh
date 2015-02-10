@@ -1,6 +1,6 @@
 #!/bin/bash
 
-REMOTE="git@github.com:choffmeister/jekyll-apidocs.git"
+REMOTE="git@github.com:epages-de/epages-docs.git"
 
 # change to project directory
 DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )

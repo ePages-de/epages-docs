@@ -1,4 +1,4 @@
-# jekyll-apidocs
+# epages-docs
 
 ## Usage
 

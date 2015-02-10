@@ -1,0 +1,26 @@
+get:
+  description: Performs search suggestions
+  is: [lang, query]
+  queryParameters:
+  responses: 
+    200:
+      description: Request successful.
+      body:
+        application/json:
+          example: !include suggest-output.json
+        application/xml: !!null
+/jsonp:
+  get:
+   description: search suggestions as JSON with Padding
+   is: [lang, query]
+   queryParameters:
+     callback:
+      description: name of the callback method
+      example: callback
+      required : false
+   responses: 
+    200:
+      description: Request successful.
+      body:
+        application/javascript; charset=UTF-8:
+          example: !include suggest-jsonp-output.json

@@ -1,0 +1,28 @@
+- locale:
+    queryParameters:
+      locale:
+        description: Locale to use (e.g. en_US, ISO 639-1 for language code and ISO 3166-1 for country code)
+        example: en_US
+        required : false
+- currency:
+    queryParameters:
+      currency:
+        description: The ISO 4217 currency code.
+        example: EUR
+- paged:
+    queryParameters:
+      page:
+        description: The current page.
+        type: integer
+        minimum: 1
+        default: 1
+      resultsPerPage:
+        description: The maximum number of items per page.
+        type: integer
+        minimum: 10
+        default: 10
+- direction:
+    queryParameters:
+      direction:
+        description: Sorting Direction
+        enum: [asc, desc]

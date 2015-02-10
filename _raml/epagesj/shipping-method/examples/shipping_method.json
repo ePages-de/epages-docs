@@ -1,0 +1,6 @@
+{
+    "shippingMethodId": "532BBA27-C69F-25CD-1146-AC13320B3780",
+    "name": "Standard delivery",
+    "description": "Descriptive text of delivery costs and conditions. Can contain HTML",
+    "logo": "https://url/to/shippingmethod-logo.png" /* full path to the logo image if a logo exists and is enabled, otherwise null. Uses the https protocol if possible. */
+}

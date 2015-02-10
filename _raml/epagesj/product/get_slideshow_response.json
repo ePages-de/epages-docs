@@ -1,0 +1,39 @@
+{
+    "items": /* an ordered list of images that make up a slideshow. */
+    [
+        {
+            "sizes": /* Images exist in different sizes, but
+                        not all sizes are always present for each image. */
+            [
+                {
+                    "classifier": "Thumbnail", /* typical size: 50x33px */
+                    "url": "https://link.to/tumbnail-image.png" /* image URL */
+                },
+                {
+                    "classifier": "Small", /* typical size: 100x100px */
+                    "url": "https://link.to/small-image.png" /* image URL */
+                },
+                {
+                    "classifier": "HotDeal", /* typical size: 150x150px) */
+                    "url": "https://link.to/hotdeal-image.png" /* image URL */
+                },
+                {
+                    "classifier": "MediumSmall", /* typical size: 200x200px */
+                    "url": "https://link.to/medium-small-image.png" /* image URL */
+                },
+                {
+                    "classifier": "Medium", /* typical size: 500x500px */
+                    "url": "https://link.to/medium-image.png" /* image URL */
+                },
+                {
+                    "classifier": "MediumLarge", /* typical size: 1000x1000px */
+                    "url": "https://link.to/medium-large-image.png" /* image URL */
+                },
+                {
+                    "classifier": "Large", /* shop dependent size */
+                    "url": "https://link.to/large-image.png" /* image URL */
+                }
+            ]
+        } /* more images */
+    ]
+}

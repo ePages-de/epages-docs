@@ -1,8 +1,14 @@
-- key: intro
+- key: introduction
   title: Introduction
 
-- key: misc
-  title: Miscellaneous
+- key: gettingstarted
+  title: Getting Started
+
+- key: apps
+  title: Apps
+
+- key: themes
+  title: Themes
 
 - key: api
-  title: API Reference
+  title: API reference

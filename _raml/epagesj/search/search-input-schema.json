@@ -1,0 +1,88 @@
+{
+  "$schema":"http://json-schema.org/schema",
+  "type":"object",
+  "description":"Search params",
+  "properties":{
+    "attributeFilters":{
+      "type":"object",
+      "properties":{
+        "attributeRange":{
+          "type":"object",
+          "properties":{
+            "min":{
+              "type":"string"
+            },
+            "max":{
+              "type":"string"
+            }
+          },
+          "attributeValue":{
+            "type":"string"
+          },
+          "fieldName":{
+            "type":"string"
+          },
+          "numeric":{
+            "type":"boolean"
+          }
+        }
+      }
+    },
+    "currency":{
+      "type":"string",
+      "description":"The price calculation is based on the currency."
+    },
+    "currentPage":{
+      "type":"integer",
+      "description":"The current page of the search-results page."
+    },
+    "facetMode":{
+      "type":{
+        "enum":[
+          "NO_FACETS",
+          "STANDARD_FACETS",
+          "ALL_FACETS"
+        ]
+      },
+      "default":"NO_FACETS",
+      "description":"Specifies whether the response includes no facets, only standard facets or standard and custom facets."
+    },
+    "lang":{
+      "type":"string",
+      "description":"A two-digit code used for the localisation of the search-results."
+    },
+    "query":{
+      "type":"string",
+      "description":"If the search-query is empty or null, a wildcard search is executed which returns all products of a shop."
+    },
+    "resultsPerPage":{
+      "type":"string",
+      "description":"The number of search-results which are displayed on a single page."
+    },
+    "sortBy":{
+      "type":{
+        "enum":[
+          "NAME_ASC",
+          "NAME_DESC",
+          "ALIAS_ASC",
+          "ALIAS_DESC",
+          "RELEVANCE",
+          "POSITION",
+          "PRICE_ASC",
+          "PRICE_DESC",
+          "CUSTOMER_RATING"
+        ]
+      },
+      "description":"Determines the sorting of the search-results."
+    },
+    "taxArea":{
+      "type":"string",
+      "description":"If the alias of the tax-area is not set, the price-calculation is based on net-prices."
+    }
+  },
+  "required":[
+    "currency",
+    "lang",
+    "resultsPerPage"
+  ]
+}

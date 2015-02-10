@@ -1,0 +1,33 @@
+#%RAML 0.8
+---
+title: ePages Public REST API
+baseUri: http://restapi-sandbox.epages.de:8088/rs
+version: v1
+
+securedBy: [oauth_1_0]
+
+securitySchemes:
+    - oauth_1_0:
+        description:
+            OAuth 1.0 is now available with RamlConsole.
+        type: OAuth 1.0
+        settings:
+          requestTokenUri: /rs/oauth1/request_token
+          authorizationUri: /rs/oauth1/authorize
+          tokenCredentialsUri: /rs/oauth1/access_token
+traits: !include traits.raml
+/shops/{shopId}:
+  uriParameters:
+    shopId:
+      description: The current shop
+      example: DemoShop
+  /products: !include product/product.raml
+  /categories: !include category/category.raml
+  /carts: !include cart/cart.raml
+  /legal: !include legal/legal.raml
+  /locales: !include locale/locale.raml
+  /public-info: !include public-info/public-info.raml
+  /currencies: !include currency/currency.raml
+  /search: !include search/search.raml
+  /shipping-methods: !include shipping-method/shipping-method.raml
+  /start-page: !include start-page/start-page.raml

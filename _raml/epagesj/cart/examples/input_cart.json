@@ -1,0 +1,11 @@
+{
+  "currency": "EUR",
+  "taxType": "GROSS",
+  "locale": "de_DE",
+  "lineItems": [
+    {
+      "productId": "prodGUID",
+      "quantity": 1
+    }
+  ]
+}

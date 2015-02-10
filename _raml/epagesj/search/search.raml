@@ -1,0 +1,16 @@
+post:
+  description: Performs a search on the index (this POST call is idempotent).<br>
+               Uses an idempotent POST call as suggested in the RESTful Web Services Cookbook.
+               [Recipe 8.3:How to handle queries with large input]
+  body: 
+    application/json:
+      schema: !include search-input-schema.json
+      example: !include search-input.json
+  responses: 
+    200:
+      description: Request successful.
+      body:
+        application/json:
+          example: !include search-output.json
+        application/xml: 
+          example: !include search-output.xml

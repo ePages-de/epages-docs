@@ -1,0 +1,47 @@
+{
+  "results":2,
+  "start":0,
+  "resultsPerPage":10,
+  "items":[
+    {
+      "name":"Jack Wolfskin Blizzard Jacke",
+      "type":"product",
+      "image":"/WebRoot/Store/Shops/DemoShop/Products/ho_40407/ho_40407_black_xs.jpg",
+      "filter":17736,
+      "alias":"ho_4040701006",
+      "path":"Products/ho_40407/SubProducts/ho_4040701006",
+      "preselectedAttributes":{
+      }
+
+    },
+    {
+      "name":"Jack Wolfskin Blizzard Jacke",
+      "type":"product",
+      "image":"/WebRoot/Store/Shops/DemoShop/Products/ho_40407/ho_40407_croft_xs.jpg",
+      "filter":17730,
+      "alias":"ho_4040705005",
+      "path":"Products/ho_40407/SubProducts/ho_4040705005",
+      "preselectedAttributes":{
+        "Farbe":"Croft"
+      }
+    }
+  ],
+  "query":"ja",
+  "fallbackQuery":"",
+  "facets":[
+    {
+      "attributeName":"Manufacturer",
+      "attributeType":"Standard",
+      "values":[
+        {
+          "matches":2,
+          "name":"Jack Wolfskin",
+          "filter":{
+            "fieldName":"Manufacturer",
+            "attributeValue":"Jack Wolfskin"
+          }
+        }
+      ]
+    }
+  ]
+}

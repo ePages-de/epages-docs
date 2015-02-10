@@ -1,0 +1,43 @@
+#%RAML 0.8
+  displayName: Resource for public shop information
+  get:
+    description: The public shop information resource, like name, slogan and logo
+    is: [ locale ]
+    responses:
+      404:
+        description: Shop not found
+      200:
+        body:
+          application/json:
+            example: |
+              {
+                "name" : "Milestones",
+                "slogan" : "gut_geruestet_für_Ihre_Ziele",
+                "logo" : {
+                    "url": "http://epagesj-vm02/WebRoot/Store/Shops/DemoShop/Logo.gif",
+                    "classifier" : "Small"
+                }
+              }
+
+  post:
+    description: Resource for public shop complete information
+    body:
+           application/vnd.epages.complete.v1+json:
+             example: |
+              {
+                 names  : {
+                   "de" : "Milestones",
+                   "en" : "Milestones"
+                 },
+                 slogans : {
+                   "de" : "gut_geruestet_für_Ihre_Ziele",
+                   "en" : "Good to meet your goals"
+                 },
+                 "logo" : {
+                    "url": "http://epagesj-vm02/WebRoot/Store/Shops/DemoShop/Logo.gif",
+                    "classifier" : "Small"
+                }
+              }
+    responses:
+      200:
+        description: Accepted

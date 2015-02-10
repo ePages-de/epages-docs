@@ -1,0 +1,118 @@
+#%RAML 0.8
+  displayName: Resource for legal pages
+  get:
+    description: The localized shop legal summary information resource
+    is: [ locale ]
+    responses:
+      200:
+        body:
+          application/json:
+            example: |
+              {
+                "contactInformation": {
+                    "name": "Contact information",
+                },
+                "privacyPolicy": {
+                    "name": "Privacy policy",
+                },
+                "rightsOfWithdrawal": {
+                    "name": "Terms and Conditions",
+                },
+                "termsAndConditions": {
+                    "name": "Right of withdrawal",
+                },
+                "links":
+                    [
+                        {
+                            "rel": "contact",
+                            "href": "http://<hostname>/rs/shops/DemoEp6/legal/contact-information"
+                        },
+                        {
+                            "rel": "privacy",
+                            "href": "http://<hostname>/rs/shops/DemoEp6/legal/privacy-policy"
+                        },
+                        {
+                            "rel": "tac",
+                            "href": "http://<hostname>/rs/shops/DemoEp6/legal/terms-and-conditions"
+                        },
+                        {
+                            "rel": "withdrawal",
+                            "href": "http://<hostname>/rs/shops/DemoEp6/legal/rights-of-withdrawal"
+                        }
+                    ],
+              }
+  /contact-information:
+    displayName: the shop contact information.
+    get:
+      description: the shop contact information
+      is: [ locale ]
+      responses:
+        200:
+          body:
+            application/json:
+              example: |
+                {
+                  "name": "Contact information",
+                  "title": null,
+                  "navigationCaption": "Contact information",
+                  "shortDescription": "You adapt this text via the preview or data sheet view under the &quot;Content/Categories&quot; menu item of your Administration.",
+                  "description": "<p>Account number: ...<p/>",
+                  "company": "",
+                  "contactPerson": "John Doe",
+                  "contactPersonJobTitle": null,
+                  "address": "Pilatuspool 2<br />20355 Hamburg<br />Germany",
+                  "phone": null,
+                  "fax": null,
+                  "email": "john.doe@epages.com"
+                }
+  /privacy-policy:
+      displayName: the shop privacy policy
+      get:
+        description: the shop privacy policy
+        is: [ locale ]
+        responses:
+          200:
+            body:
+              application/json:
+                example: |
+                    {
+                        "name": "Privacy policy",
+                        "title": null,
+                        "navigationCaption": "Privacy policy",
+                        "shortDescription": null,
+                        "description": "You adapt this text via the preview or data sheet view under the &quot;Content/Categories&quot;..."
+                    }
+  /terms-and-conditions:
+    displayName: the shop terms and conditions
+    get:
+      description: the shop terms and conditions
+      is: [ locale ]
+      responses:
+        200:
+          body:
+            application/json:
+              example: |
+                  {
+                      "name": "Terms and Conditions",
+                      "title": null,
+                      "navigationCaption": "Terms and Conditions",
+                      "shortDescription": null,
+                      "description": "You adapt this text via the preview or data sheet view under the &quot;Content/Categories&quot; menu item of your Administration."
+                  }
+  /rights-of-withdrawal:
+      displayName: the rights of withdrawal (customer information) of a shop
+      get:
+        description: the rights of withdrawal (customer information) of a shop
+        is: [ locale ]
+        responses:
+          200:
+            body:
+              application/json:
+                example: |
+                    {
+                        "name": "Right of withdrawal",
+                        "title": null,
+                        "navigationCaption": "Right of withdrawal",
+                        "shortDescription": null,
+                        "description": "You adapt this text via the preview or data sheet view under the &quot;Content/Categories&quot; menu item of your Administration.<br /><br /> Indicate to customers their right of withdrawal."
+                    }

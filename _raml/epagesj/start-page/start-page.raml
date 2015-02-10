@@ -1,0 +1,14 @@
+#%RAML 0.8
+displayName: Start page resource
+/products:
+  displayName: Start page products
+  description: Get all products that are assigned to the start page.
+  get:
+    description: Get a list of all start page products
+    is: [ locale, currency, paged ]
+    queryParameters:
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include ../product/get_products_response.json

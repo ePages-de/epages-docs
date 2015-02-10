@@ -1,0 +1,32 @@
+{
+    "variationAttributes":[
+        {
+            "name": "col",          /* language-independent name */
+            "displayName": "Color", /* localized display name */
+            "values": [
+                {
+                    "value": "#800",        /* language-independent value */
+                    "displayValue": "red"   /* localized display value */
+                } /* more values */
+            ]
+        } /* more variation attributes, for example "size" */
+    ],
+   "items":[
+       { /* a list of items matching the attribute filters. */
+           "attributeSelection" : [
+               { /* a list of attribute selections used in this item */
+                   "name" : "col", /* language-independent name */
+                   "value" : "red"   /* language-independent value */
+               }
+           ],
+           "link": { /* a link to the variation detail page */
+               "rel":"variation",
+               "href":".../products/var1GUID"
+           }
+       } /* more items */
+   ],
+   "results":2,
+   "resultsPerPage":10,
+   "page":1,
+   "links": []
+}

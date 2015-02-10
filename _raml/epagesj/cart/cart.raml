@@ -1,0 +1,109 @@
+#%RAML 0.8
+displayName: Resource for operating on carts
+post:
+  description: Creates a cart for the specified shop
+  body:
+    application/json:
+      example: !include examples/input_cart.json
+  responses:
+    201:
+      body:
+        application/json:
+          example: !include examples/response.json
+
+/{cartId}:
+  get:
+    description: Fetches a specified cart from the specified shop
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include examples/response.json
+
+  /line-items:
+    post:
+      description: Creates an item in the specified cart.
+      body:
+        application/json:
+          example: |
+            {
+              "productId": "prodGUID",
+              "quantity": 1
+            }
+      responses:
+        201:
+          body:
+            application/json:
+              example: !include examples/response.json
+
+    /{lineItemId}:
+      put:
+        description: Modifies a specified line item in the cart.
+        body:
+          application/json:
+            example: |
+              {
+                  "quantity": 3
+              }
+        responses:
+          200:
+            body:
+              application/json:
+                example: !include examples/response.json
+      delete:
+        description: Deletes a specified line item from the cart.
+        responses:
+          200:
+            body:
+              application/json:
+                example: !include examples/response.json
+
+  /billing-address:
+    put:
+      description: Updates a billing address for a specified cart
+      body:
+        application/json:
+          example: !include examples/input_address.json
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/response.json
+        400:
+          body:
+            application/json:
+    delete:
+      description: Deletes a billing address for a specified cart
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/response.json
+        400:
+          body:
+            application/json:
+
+  /shipping-address:
+    put:
+      description: Updates a shipping address for a specified cart
+      body:
+        application/json:
+          example: !include examples/input_address.json
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/response.json
+        400:
+          body:
+            application/json:
+    delete:
+      description: Deletes a shipping address for a specified cart
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/response.json
+        400:
+          body:
+            application/json:

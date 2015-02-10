@@ -1,0 +1,98 @@
+#%RAML 0.8
+displayName: Products Resource
+description: |
+          Operations on the products of a shop.<br/>
+          In case of errors for certain products or unknown product ids,
+          the product collections will **not** return errors, but skip the products in question.
+get:
+  description: Get a list of products
+  is: [ locale, currency, paged, direction ]
+  queryParameters:
+    sort:
+      description: Sort Attribute
+      enum: [name, price]
+      default: name
+      example: name
+      required : false
+    q:
+      description: Query string used to filter products
+      example: jack
+      required : false
+    categoryId:
+      description: Filter products by categoryId
+      required : false
+    id:
+      description: The product id. The query parameter is repeatable up to 12 times.
+        For example "?id=productId1&id=productId2&id=productId3".<br/>
+        The response will return the product data in the same order as the ids.
+        Invisible, deleted or unknown products are removed from the list.<br/>
+
+        This parameter can only be used together with locale and currency query parameters.</br>
+        Other query parameters, such as sort, categoryId, page etc, are not supported.
+      required: false
+      repeat: true
+  responses:
+    200:
+      body:
+        application/json:
+          example: !include get_products_response.json
+/{productId}:
+  displayName: Single product information
+  uriParameters:
+    productId:
+      description: The current product
+      example: 52F221E0-36F6-DC4E-384A-AC1504050C04
+  get:
+    description: Retrieve information for a single product. For product variations, a link
+      to the variation selection resource (rel="variations") is added.
+    is: [ locale, currency ]
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include get_product_response.json
+  /variations:
+    displayName: Product variations
+    get:
+      is: [ locale, paged ]
+      description: Retrieve links to product variations in a paged item list.<br/>
+        "name" and "value" to find a matching variation for the user's selection.
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include get_variations_response.json
+  /slideshow:
+    displayName: Product slideshow
+    get:
+      description: Retrieve links to slideshow images of a product.
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include get_slideshow_response.json
+  /custom-attributes:
+    displayName: User-defined product attributes
+    get:
+      is: [ locale ]
+      description: Retrieve values of user-defined product attributes
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include get_custom_attributes_response.json
+  /lowest-price:
+    displayName: Lowest price of variation products
+    get:
+      is: [ locale, currency ]
+      description: Gets the lowest price of all variations of a product that
+        can currently be purchased.
+        Returns 404 Not Found if the product does not have any variation
+        with an independent price, for example if all variations share the
+        same price.
+        Also depends on the shop setting to display "from" prices.
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include get_lowest_price_response.json

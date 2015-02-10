@@ -1,0 +1,14 @@
+{
+  "shopGUID": "50589501-89A6-02BC-D76C-AC15800C847C",
+  /*
+   * Set a weighting for the popularity attributes.
+   * The value can range from 0 to 10.
+   * 0 deactivates an attribute.
+   */
+  "averageClickCount": 4,
+  "averageNumberOfSales": 10,
+  "bayesianRating": 8,
+  "hasStock": 10,
+  "isNew": 5,
+  "isPromotionalProduct": 5
+}

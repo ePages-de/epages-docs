@@ -1,0 +1,54 @@
+#%RAML 0.8
+  displayName: Category Resource
+  get:
+    description: |
+        Returns the root categories of the shop. This usually is the default root category "Categories",
+        but can also include additional root categories, if supported by the shop.
+    is: [ locale ]
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include get_root_categories_response.json
+      400:
+        body:
+          application/json:
+            example: |
+              {
+                "message": "Locale [fr] not available. Available locales: [en_GB, de_DE], Request: GET /rs/shops/DemoShop/categories",
+                "status": "BAD_REQUEST"
+              }
+      404:
+        body:
+          application/json:
+            example: |
+              {
+                "message": "shop UNKNOWN_SHOP_NAME was not found, Request: GET /rs/shops/UNKNOWN_SHOP_NAME/categories",
+                "status": "NOT_FOUND"
+              }
+  /{categoryId}:
+      displayName: the category identified by the provided category id
+      get:
+        description: the category identified by the provided category id
+        is: [ locale ]
+        responses:
+          200:
+            body:
+              application/json:
+                example: !include get_category_response.json
+          400:
+            body:
+              application/json:
+                example: |
+                  {
+                    "message": "Locale [fr] not available. Available locales: [en_GB, de_DE], Request: GET /rs/shops/DemoShop/categories/53228097-D31D-2015-D9C0-AC13320B6354",
+                    "status": "BAD_REQUEST"
+                  }
+          404:
+            body:
+              application/json:
+                example: |
+                  {
+                    "message": "shop UNKNOWN_SHOP_NAME was not found, Request: GET /rs/shops/UNKNOWN_SHOP_NAME/categories/53228097-D31D-2015-D9C0-AC13320B6354",
+                    "status": "NOT_FOUND"
+                  }
