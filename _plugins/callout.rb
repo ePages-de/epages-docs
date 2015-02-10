@@ -12,12 +12,11 @@ module Jekyll
     end
 
     def render(context)
-      content = super.to_s.strip
-      if @title != ''
-        "<div class=\"alert alert-#{@mode}\" role=\"alert\"><strong>#{@title}</strong> #{content}</div>"
-      else
-        "<div class=\"alert alert-#{@mode}\" role=\"alert\">#{content}</div>"
-      end
+      site = context.registers[:site]
+      converter = site.getConverterImpl(Jekyll::Converters::Markdown)
+      content = "**#{@title}** #{super.to_s.strip}"
+
+      "<div class=\"alert alert-#{@mode}\" role=\"alert\">#{converter.convert(content)}</div>"
     end
   end
 end
