@@ -4,7 +4,9 @@ layout: page
 
 <div>
   <pre>{{ page.raml_resource.method | upcase }} {{ page.raml_resource.uri }}</pre>
-  <p>{{ page.raml_resource.description }}</p>
+  {% if page.raml_resource.description != null %}
+    <p>{{ page.raml_resource.description | markdownify }}</p>
+  {% endif %}
 </div>
 
 {% if page.raml_resource.uri_parameters != empty %}
