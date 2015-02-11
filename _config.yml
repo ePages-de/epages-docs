@@ -8,6 +8,7 @@ description: >
   jump right in!
 baseurl: "/jekyll-apidocs"
 url: "https://choffmeister.github.io"
+github_url: "https://github.com/choffmeister/jekyll-apidocs"
 raml_root: "_raml/example/simple.raml"
 
 # Build settings
