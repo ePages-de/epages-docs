@@ -6,6 +6,7 @@ description: >
   party developers.
 baseurl: "/epages-docs"
 url: "http://epages-de.github.io"
+github_url: "https://github.com/epages-de/epages-docs"
 raml_root: _raml/epagesj/api.raml
 
 # Build settings

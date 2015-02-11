@@ -11,6 +11,7 @@ $assets-base: {{ "/assets" | prepend: site.baseurl }};
 @import "_syntax-highlighting";
 @import "_sitemap";
 @import "_resourcelist";
+@import "_github-fork-ribbon";
 
 nav {
     margin-bottom: 0 !important;
