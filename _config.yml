@@ -15,4 +15,9 @@ exclude:
   - Gemfile.lock
   - LICENSE.txt
   - README.md
-  - scripts
+
+# Deployment settings
+deployment:
+  type: git
+  repo: git@github.com:epages-de/epages-docs.git
+  branch: gh-pages

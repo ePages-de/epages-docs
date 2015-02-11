@@ -15,6 +15,9 @@ $ jekyll server --watch
 
 # build distribution version
 $ jekyll build
+
+# publish
+$ jekyll deploy
 ~~~
 
 ## Bootstrap your machine

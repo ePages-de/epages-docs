@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/choffmeister/jekyll_deploy.git
+  revision: 4cb557241f6d147f83d25d8193703281e49a00d5
+  branch: master
+  specs:
+    jekyll_deploy (0.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -67,4 +74,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  jekyll
+  jekyll (>= 2.5.0)
+  jekyll_deploy!
