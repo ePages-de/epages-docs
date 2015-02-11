@@ -13,6 +13,9 @@ $ jekyll server --watch
 
 # build distribution version
 $ jekyll build
+
+# publish
+$ jekyll deploy
 ~~~
 
 [ruby]: https://www.ruby-lang.org/
