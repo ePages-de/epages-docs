@@ -1,5 +1,9 @@
 # epages-docs
 
+## Preview
+
+See a preview of the documentation [here][epagesdocs].
+
 ## Usage
 
 Make sure you have installed [Ruby][ruby] and [Bundler][bundler].
@@ -15,5 +19,6 @@ $ jekyll server --watch
 $ jekyll build
 ~~~
 
+[epagesdocs]: http://epages-de.github.io/epages-docs/
 [ruby]: https://www.ruby-lang.org/
 [bundler]: http://bundler.io/
