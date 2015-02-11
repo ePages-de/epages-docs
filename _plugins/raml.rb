@@ -1,3 +1,5 @@
+require 'raml_parser'
+
 module Jekyll
   class ApiResourcePage < Page
     def initialize(site, base, dir, raml, raml_resouce)
@@ -22,7 +24,7 @@ module Jekyll
 
   class ApiResourcePageGenerator < Generator
     def generate(site)
-      parser = RamlParser.new('ignore')
+      parser = RamlParser::Parser.new('ignore')
       path = File.join(site.source, site.config['raml_root'])
       raml = parser.parse_file(path)
 
@@ -49,7 +51,7 @@ module Jekyll
   class RamlPageGenerator < Generator
     def generate(site)
       path = File.join(site.source, site.config['raml_root'])
-      raml_raw = YamlHelper.dump_yaml(YamlHelper.read_yaml(path))
+      raml_raw = RamlParser::YamlHelper.dump_yaml(RamlParser::YamlHelper.read_yaml(path))
 
       site.pages << RamlPage.new(site, site.source, 'resources', raml_raw)
     end

@@ -5,6 +5,13 @@ GIT
   specs:
     jekyll_deploy (0.0.0)
 
+GIT
+  remote: https://github.com/choffmeister/raml_parser.git
+  revision: 270b16081397d55b0e4015a209e0ab28c9219f10
+  branch: master
+  specs:
+    raml_parser (0.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -76,3 +83,4 @@ PLATFORMS
 DEPENDENCIES
   jekyll (>= 2.5.0)
   jekyll_deploy!
+  raml_parser!
