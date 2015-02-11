@@ -1,13 +1,13 @@
 GIT
   remote: https://github.com/choffmeister/jekyll_deploy.git
-  revision: 4cb557241f6d147f83d25d8193703281e49a00d5
+  revision: aa5d0814a0e68c92c729b00c9a88c920ab4be6fe
   branch: master
   specs:
     jekyll_deploy (0.0.0)
 
 GIT
   remote: https://github.com/choffmeister/raml_parser.git
-  revision: 270b16081397d55b0e4015a209e0ab28c9219f10
+  revision: a5842b21179dc95abbaeb12b9b25a7ba9c741e46
   branch: master
   specs:
     raml_parser (0.0.0)
