@@ -6,8 +6,8 @@ GIT
     jekyll_deploy (0.0.0)
 
 GIT
-  remote: https://github.com/choffmeister/raml_parser.git
-  revision: a5842b21179dc95abbaeb12b9b25a7ba9c741e46
+  remote: https://github.com/epages-de/raml_parser.git
+  revision: 3d639bdb23b8d03cb118eb1653f2555dc6f0237e
   branch: master
   specs:
     raml_parser (0.0.0)
