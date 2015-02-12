@@ -6,7 +6,7 @@ description: >
   party developers.
 baseurl: "/epages-docs"
 url: "http://epages-de.github.io"
-github_url: "https://github.com/epages-de/epages-docs"
+github_url: "https://github.com/ePages-de/epages-docs"
 raml_root: _raml/epagesj/api.raml
 
 # Build settings
@@ -20,5 +20,5 @@ exclude:
 # Deployment settings
 deployment:
   type: git
-  repo: git@github.com:epages-de/epages-docs.git
+  repo: git@github.com:ePages-de/epages-docs.git
   branch: gh-pages
