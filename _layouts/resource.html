@@ -78,22 +78,19 @@ layout: page
 {% if page.raml_method['responses'] != empty %}
 <div>
   <h2>Responses</h2>
-  <table class="table">
-    <thead>
-    <tr>
-      <th>HTTP Code</th>
-      <th></th>
-    </tr>
-    </thead>
-    <tbody>
-    {% for res in page.raml_method['responses'] %}
-    <tr>
-      <td><code>{{ res[1]['status_code'] }}</code></td>
-      <td>{{ res[1]['description'] }}</td>
-    </tr>
+  {% for res in page.raml_method['responses'] %}
+    <h2>HTTP {{ res[1]['status_code'] }} {{ res[1]['display_name'] }}</h2>
+    {% if res[1]['description'] != null %}
+      <p>{{ res[1]['description'] | markdownify }}</p>
+    {% endif %}
+
+    {% for body in res[1]['bodies'] %}
+      <p>Media type <code>{{ body[1]['media_type'] }}</code></p>
+      {% if body[1]['example'] %}
+        <pre>{{ body[1]['example'] }}</pre>
+      {% endif %}
     {% endfor %}
-    </tbody>
-  </table>
+  {% endfor %}
 </div>
 {% endif %}
 
