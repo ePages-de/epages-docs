@@ -2,9 +2,8 @@ require 'raml_parser'
 
 module Jekyll
   class ApiResourcePage < Page
-    def initialize(site, base, dir, raml, raml_resouce)
-      short_uri = raml_resouce.uri[raml.base_uri.length..-1]
-      slugified = Jekyll::Utils::slugify("#{raml_resouce.method}-#{short_uri}")
+    def initialize(site, base, dir, raml, raml_resource, raml_method)
+      slugified = Jekyll::Utils::slugify("#{raml_method.method}-#{raml_resource.relative_uri}")
 
       @site = site
       @base = base
@@ -14,23 +13,27 @@ module Jekyll
       self.process(@name)
       self.read_yaml(File.join(base, '_layouts'), 'resource.html')
 
-      self.data['title'] = raml_resouce.display_name
+      self.data['title'] = raml_resource.display_name
       self.data['category'] = 'raml'
 
-      self.data['raml'] = raml
-      self.data['raml_resource'] = raml_resouce
+      self.data['raml'] = raml.to_hash
+      self.data['raml_resource'] = raml_resource.to_hash
+      self.data['raml_method'] = raml_method.to_hash
     end
   end
 
   class ApiResourcePageGenerator < Generator
     def generate(site)
-      parser = RamlParser::Parser.new('ignore')
+      parser = RamlParser::Parser.new({ :not_yet_supported => :ignore })
       path = File.join(site.source, site.config['raml_root'])
       raml = parser.parse_file(path)
 
-      site.pages += raml.resources.map { |res|
-        ApiResourcePage.new(site, site.source, 'resources', raml, res)
+      pages = raml.resources.map { |res|
+        res.methods.map { |_,meth|
+          ApiResourcePage.new(site, site.source, 'resources', raml, res, meth)
+        }
       }
+      site.pages += pages.flatten
     end
   end
 

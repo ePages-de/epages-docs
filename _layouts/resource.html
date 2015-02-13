@@ -3,13 +3,13 @@ layout: page
 ---
 
 <div>
-  <pre>{{ page.raml_resource.method | upcase }} {{ page.raml_resource.uri }}</pre>
-  {% if page.raml_resource.description != null %}
-    <p>{{ page.raml_resource.description | markdownify }}</p>
+  <pre>{{ page.raml_method['method'] }} {{ page.raml_resource['relative_uri'] }}</pre>
+  {% if page.raml_resource['description'] != null %}
+    <p>{{ page.raml_resource['description'] | markdownify }}</p>
   {% endif %}
 </div>
 
-{% if page.raml_resource.uri_parameters != empty %}
+{% if page.raml_resource['uri_parameters'] != empty %}
 <div>
  <h2>URI parameters</h2>
   <table class="table">
@@ -21,19 +21,19 @@ layout: page
     </tr>
     </thead>
     <tbody>
-    {% for p in page.raml_resource.uri_parameters %}
+    {% for p in page.raml_resource['uri_parameters']  %}
     <tr>
-      <td><code>{{ p.name }}</code></td>
-      <td><strong>{{ p.type }}</strong></td>
+      <td><code>{{ p[1]['name'] }}</code></td>
+      <td><strong>{{ p[1]['type'] }}</strong></td>
       <td>
-        {% if p.description %}<div>Description: {{ p.description }}</div>{% endif %}
-        {% if p.required %}<div>Required: <code>{{ p.required }}</code></div>{% endif %}
-        {% if p.example %}<div>Example: <code>{{ p.example }}</code></div>{% endif %}
-        {% if p.default %}<div>Default: <code>{{ p.default }}</code></div>{% endif %}
-        {% if p.minimum %}<div>Minimum: {{ p.minimum }}</div>{% endif %}
-        {% if p.maximum %}<div>Maximum: {{ p.maximum }}</div>{% endif %}
-        {% if p.repeat %}<div>Repeat: <code>{{ p.repeat }}</code></div>{% endif %}
-        {% if p.enum %}<div>Enum: <code>{{ p.enum }}</code></div>{% endif %}
+        {% if p[1]['description'] %}<div>Description: {{ p[1]['description'] }}</div>{% endif %}
+        {% if p[1]['required'] %}<div>Required: <code>{{ p[1]['required'] }}</code></div>{% endif %}
+        {% if p[1]['example'] %}<div>Example: <code>{{ p[1]['example'] }}</code></div>{% endif %}
+        {% if p[1]['default'] %}<div>Default: <code>{{ p[1]['default'] }}</code></div>{% endif %}
+        {% if p[1]['minimum'] %}<div>Minimum: {{ p[1]['minimum'] }}</div>{% endif %}
+        {% if p[1]['maximum'] %}<div>Maximum: {{ p[1]['maximum'] }}</div>{% endif %}
+        {% if p[1]['repeat'] %}<div>Repeat: <code>{{ p[1]['repeat'] | join:',' }}</code></div>{% endif %}
+        {% if p[1]['enum'] %}<div>Enum: <code>{{ p[1]['enum'] }}</code></div>{% endif %}
       </td>
     </tr>
     {% endfor %}
@@ -42,7 +42,7 @@ layout: page
 </div>
 {% endif %}
 
-{% if page.raml_resource.query_parameters != empty %}
+{% if page.raml_method['query_parameters'] != empty %}
 <div>
   <h2>Query parameters</h2>
   <table class="table">
@@ -54,19 +54,19 @@ layout: page
     </tr>
     </thead>
     <tbody>
-    {% for p in page.raml_resource.query_parameters %}
+    {% for p in page.raml_method['query_parameters'] %}
     <tr>
-      <td><code>{{ p.name }}</code></td>
-      <td><strong>{{ p.type }}</strong></td>
+      <td><code>{{ p[1]['name'] }}</code></td>
+      <td><strong>{{ p[1]['type'] }}</strong></td>
       <td>
-        {% if p.description %}<div>Description: {{ p.description }}</div>{% endif %}
-        {% if p.required %}<div>Required: <code>{{ p.required }}</code></div>{% endif %}
-        {% if p.example %}<div>Example: <code>{{ p.example }}</code></div>{% endif %}
-        {% if p.default %}<div>Default: <code>{{ p.default }}</code></div>{% endif %}
-        {% if p.minimum %}<div>Minimum: {{ p.minimum }}</div>{% endif %}
-        {% if p.maximum %}<div>Maximum: {{ p.maximum }}</div>{% endif %}
-        {% if p.repeat %}<div>Repeat: <code>{{ p.repeat }}</code></div>{% endif %}
-        {% if p.enum %}<div>Enum: <code>{{ p.enum }}</code></div>{% endif %}
+        {% if p[1]['description'] %}<div>Description: {{ p[1]['description'] }}</div>{% endif %}
+        {% if p[1]['required'] %}<div>Required: <code>{{ p[1]['required'] }}</code></div>{% endif %}
+        {% if p[1]['example'] %}<div>Example: <code>{{ p[1]['example'] }}</code></div>{% endif %}
+        {% if p[1]['default'] %}<div>Default: <code>{{ p[1]['default'] }}</code></div>{% endif %}
+        {% if p[1]['minimum'] %}<div>Minimum: {{ p[1]['minimum'] }}</div>{% endif %}
+        {% if p[1]['maximum'] %}<div>Maximum: {{ p[1]['maximum'] }}</div>{% endif %}
+        {% if p[1]['repeat'] %}<div>Repeat: <code>{{ p[1]['repeat'] }}</code></div>{% endif %}
+        {% if p[1]['enum'] %}<div>Enum: <code>{{ p[1]['enum'] | join:',' }}</code></div>{% endif %}
       </td>
     </tr>
     {% endfor %}
@@ -75,7 +75,7 @@ layout: page
 </div>
 {% endif %}
 
-{% if page.raml_resource.responses != empty %}
+{% if page.raml_method['responses'] != empty %}
 <div>
   <h2>Responses</h2>
   <table class="table">
@@ -86,10 +86,10 @@ layout: page
     </tr>
     </thead>
     <tbody>
-    {% for res in page.raml_resource.responses %}
+    {% for res in page.raml_method['responses'] %}
     <tr>
-      <td><code>{{ res.status_code }}</code></td>
-      <td>{{ res.description }}</td>
+      <td><code>{{ res[1]['status_code'] }}</code></td>
+      <td>{{ res[1]['description'] }}</td>
     </tr>
     {% endfor %}
     </tbody>
@@ -106,16 +106,16 @@ layout: page
   </h2>
   <div class="collapse in" id="apiconsole">
     <form id="apiconsole-form">
-      {% for p in page.raml_resource.uri_parameters %}
+      {% for p in page.raml_resource['uri_parameters'] %}
         <div class="form-group">
-          <label for="parameter-uri-{{ p.name }}">{{ p.name }}</label>
-          <input type="text" class="form-control" id="parameter-uri-{{ p.name }}"/>
+          <label for="parameter-uri-{{ p[1]['name'] }}">{{ p[1]['name'] }}</label>
+          <input type="text" class="form-control" id="parameter-uri-{{ p[1]['name'] }}" value="{{ p[1]['example'] }}"/>
         </div>
       {% endfor %}
-      {% for p in page.raml_resource.query_parameters %}
+      {% for p in page.raml_method['query_parameters'] %}
         <div class="form-group">
-          <label for="parameter-query-{{ p.name }}">{{ p.name }}</label>
-          <input type="text" class="form-control" id="parameter-query-{{ p.name }}"/>
+          <label for="parameter-query-{{ p[1]['name'] }}">{{ p[1]['name'] }}</label>
+          <input type="text" class="form-control" id="parameter-query-{{ p[1]['name'] }}" value="{{ p[1]['example'] }}"/>
         </div>
       {% endfor %}
       <input type="submit" value="Send" class="btn btn-default btn-block"/>
@@ -126,7 +126,8 @@ layout: page
   <script type="text/javascript" src="{{ '/assets/javascript/apiconsole.js' | prepend: site.baseurl }}"></script>
   <script type="text/javascript">
     var ramlResource = {{ page.raml_resource | jsonify }}
-    ApiConsole(ramlResource, '#apiconsole-request', '#apiconsole-response', '#apiconsole-form');
+    var ramlMethod = {{ page.raml_method | jsonify }}
+    ApiConsole(ramlResource, ramlMethod, '#apiconsole-request', '#apiconsole-response', '#apiconsole-form');
   </script>
 </div>
 
@@ -139,5 +140,6 @@ layout: page
   </h2>
   <div class="collapse" id="ramlraw">
     <pre>{{ page.raml_resource | jsonify_pretty }}</pre>
+    <pre>{{ page.raml_method | jsonify_pretty }}</pre>
   </div>
 </div>

@@ -12,7 +12,9 @@
     };
 
     var escapeHtml = function (html) {
-        return html.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        return html.replace(/[\u00A0-\u9999<>\&]/gim, function(i) {
+          return '&#'+i.charCodeAt(0)+';';
+        });
     };
 
     var parseUri = function (href) {
@@ -29,8 +31,8 @@
         }
     };
 
-    var renderFullUri = function (raml, uriParameters, queryParameters) {
-        var uri = raml.uri;
+    var renderFullUri = function (ramlResponse, ramlMethod, uriParameters, queryParameters) {
+        var uri = ramlResponse.absolute_uri;
         var firstQuery = true;
 
         for (var k in uriParameters) {
@@ -50,9 +52,9 @@
         return uri;
     };
 
-    var convertRamlToRawRequest = function (raml, uriParameters, queryParameters) {
-        var method = ramlResource.method.toUpperCase();
-        var uri_full = renderFullUri(raml, uriParameters, queryParameters);
+    var convertRamlToRawRequest = function (ramlResponse, ramlMethod, uriParameters, queryParameters) {
+        var method = ramlMethod.method;
+        var uri_full = renderFullUri(ramlResponse, ramlMethod, uriParameters, queryParameters);
         var pathnameAndSearch = parseUri(uri_full).pathnameAndSearch;
         var host = parseUri(uri_full).host;
         var txt = method + ' ' + pathnameAndSearch + ' HTTP/1.1\n' +
@@ -73,35 +75,35 @@
         }
     };
 
-    var ApiConsole = function (ramlResource, $request, $response, $form) {
+    var ApiConsole = function (ramlResource, ramlMethod, $request, $response, $form) {
         var $request = $($request);
         var $response = $($response);
         var $form = $($form);
         var uriParameters = {};
         var queryParameters = {};
 
-        ramlResource.uri_parameters.forEach(function (p) {
+        $.each(ramlResource.uri_parameters, function (name, p) {
             afterChange($form.find('#parameter-uri-' + p.name), function (val) {
                 uriParameters[p.name] = val;
-                $request.html(convertRamlToRawRequest(ramlResource, uriParameters, queryParameters));
+                $request.html(convertRamlToRawRequest(ramlResource, ramlMethod, uriParameters, queryParameters));
             });
         });
 
-        ramlResource.query_parameters.forEach(function (p) {
+        $.each(ramlMethod.query_parameters, function (name, p) {
             afterChange($form.find('#parameter-query-' + p.name), function (val) {
                 queryParameters[p.name] = val;
-                $request.html(convertRamlToRawRequest(ramlResource, uriParameters, queryParameters));
+                $request.html(convertRamlToRawRequest(ramlResource, ramlMethod, uriParameters, queryParameters));
             });
         });
 
-        $request.html(convertRamlToRawRequest(ramlResource, uriParameters, queryParameters));
+        $request.html(convertRamlToRawRequest(ramlResource, ramlMethod, uriParameters, queryParameters));
         $form.on('submit', function (event) {
             event.preventDefault();
 
             $response.html('Loading...');
             $.ajax({
-                type: ramlResource.method.toUpperCase(),
-                url: renderFullUri(ramlResource, uriParameters, queryParameters)
+                type: ramlMethod.method,
+                url: renderFullUri(ramlResource, ramlMethod, uriParameters, queryParameters)
             }).done(function (data, textStatus, xhr) {
                 $response.html(convertXhrToRawResponse(xhr));
             }).fail(function (xhr, textStatus, err) {

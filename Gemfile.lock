@@ -7,10 +7,10 @@ GIT
 
 GIT
   remote: https://github.com/ePages-de/raml_parser.git
-  revision: 3d639bdb23b8d03cb118eb1653f2555dc6f0237e
+  revision: 02a87647c992482bc2d029486398f13ead3c1bb7
   branch: master
   specs:
-    raml_parser (0.0.0)
+    raml_parser (0.0.1)
 
 GEM
   remote: https://rubygems.org/
