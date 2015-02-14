@@ -64,7 +64,7 @@ module Jekyll
     ACCESSOR_MAP = {
       RamlParser::Model::Root => %w(title base_uri version resources),
       RamlParser::Model::Resource => %w(absolute_uri relative_uri display_name description uri_parameters methods),
-      RamlParser::Model::Method => %w(method display_name description query_parameters responses),
+      RamlParser::Model::Method => %w(method display_name description query_parameters responses bodies),
       RamlParser::Model::Response => %w(status_code display_name description bodies),
       RamlParser::Model::Body => %w(media_type example schema),
       RamlParser::Model::NamedParameter => %w(name type display_name description required default example min_length max_length minimum maximum repeat enum pattern),
