@@ -1,5 +1,6 @@
 #%RAML 0.8
   displayName: Category Resource
+  is: [ base ]
   get:
     description: |
         Returns the root categories of the shop. This usually is the default root category "Categories",
@@ -28,6 +29,7 @@
               }
   /{categoryId}:
       displayName: the category identified by the provided category id
+      is: [ base ]
       get:
         description: the category identified by the provided category id
         is: [ locale ]

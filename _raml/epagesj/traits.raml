@@ -26,3 +26,23 @@
       direction:
         description: Sorting Direction
         enum: [asc, desc]
+- base:
+    responses:
+      404:
+        description: The requested resource could not be found.
+        body:
+          application/json:
+            example: |
+              {
+                "status_code": 404,
+                "message": "Not found"
+              }
+      500:
+        description: There was an internal server error.
+        body:
+          application/json:
+            example: |
+              {
+                "status_code": 500,
+                "message": "Internal server error"
+              }

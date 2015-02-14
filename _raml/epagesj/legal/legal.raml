@@ -1,5 +1,6 @@
 #%RAML 0.8
   displayName: Resource for legal pages
+  is: [ base ]
   get:
     description: The localized shop legal summary information resource
     is: [ locale ]
@@ -43,6 +44,7 @@
               }
   /contact-information:
     displayName: the shop contact information.
+    is: [ base ]
     get:
       description: the shop contact information
       is: [ locale ]
@@ -67,6 +69,7 @@
                 }
   /privacy-policy:
       displayName: the shop privacy policy
+      is: [ base ]
       get:
         description: the shop privacy policy
         is: [ locale ]
@@ -84,6 +87,7 @@
                     }
   /terms-and-conditions:
     displayName: the shop terms and conditions
+    is: [ base ]
     get:
       description: the shop terms and conditions
       is: [ locale ]
@@ -101,6 +105,7 @@
                   }
   /rights-of-withdrawal:
       displayName: the rights of withdrawal (customer information) of a shop
+      is: [ base ]
       get:
         description: the rights of withdrawal (customer information) of a shop
         is: [ locale ]

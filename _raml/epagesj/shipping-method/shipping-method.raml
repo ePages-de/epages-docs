@@ -1,5 +1,6 @@
 #%RAML 0.8
 displayName:
+is: [ base ]
 get:
   description: Returns all shipping-methods of a shop
   is: [ locale ]
@@ -13,6 +14,7 @@ get:
     shippingMethodId:
       description: The shipping-method id
       example: 52F221E0-36F6-DC4E-384A-AC1504050C04
+  is: [ base ]
   get:
     description: Returns a shipping-method of a shop
     is: [ locale ]

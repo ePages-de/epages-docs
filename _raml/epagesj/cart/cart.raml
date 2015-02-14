@@ -1,5 +1,6 @@
 #%RAML 0.8
 displayName: Resource for operating on carts
+is: [ base ]
 post:
   description: Creates a cart for the specified shop
   body:
@@ -12,6 +13,7 @@ post:
           example: !include examples/response.json
 
 /{cartId}:
+  is: [ base ]
   get:
     description: Fetches a specified cart from the specified shop
     responses:
@@ -21,6 +23,7 @@ post:
             example: !include examples/response.json
 
   /line-items:
+    is: [ base ]
     post:
       description: Creates an item in the specified cart.
       body:
@@ -37,6 +40,7 @@ post:
               example: !include examples/response.json
 
     /{lineItemId}:
+      is: [ base ]
       put:
         description: Modifies a specified line item in the cart.
         body:
@@ -59,6 +63,7 @@ post:
                 example: !include examples/response.json
 
   /billing-address:
+    is: [ base ]
     put:
       description: Updates a billing address for a specified cart
       body:
@@ -84,6 +89,7 @@ post:
             application/json:
 
   /shipping-address:
+    is: [ base ]
     put:
       description: Updates a shipping address for a specified cart
       body:

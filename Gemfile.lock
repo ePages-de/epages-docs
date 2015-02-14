@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: https://github.com/ePages-de/raml_parser.git
-  revision: 1fac8c41cee5ce253606c3ee30acaf9738e89ca7
+  revision: 526cd14d098ef84d1a14b64c1e8d3e17dc202a3a
   branch: develop
   specs:
     raml_parser (0.0.2.pre)
