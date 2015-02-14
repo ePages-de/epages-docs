@@ -6,6 +6,7 @@ layout: page
   <ul class="nav nav-tabs" role="tablist">
     <li role="presentation" class="active"><a href="#specification" aria-controls="specification" role="tab" data-toggle="tab">Specification</a></li>
     <li role="presentation"><a href="#apiconsole" aria-controls="apiconsole" role="tab" data-toggle="tab">API console</a></li>
+    <li role="presentation"><a href="#rawdata" aria-controls="rawdata" role="tab" data-toggle="tab">RAW data</a></li>
   </ul>
 
   <div class="tab-content">
@@ -15,6 +16,9 @@ layout: page
 
       {% if page.raml_resource.description != null %}
         <p>{{ page.raml_resource.description | markdownify }}</p>
+      {% endif %}
+      {% if page.raml_method.description != null %}
+        <p>{{ page.raml_method.description | markdownify }}</p>
       {% endif %}
 
       {% if page.raml_resource.uri_parameters. != empty %}
@@ -145,6 +149,13 @@ layout: page
 
       <h2>Response</h2>
       <pre id="apiconsole-response">(Click Send...)</pre>
+    </div>
+
+    <div role="tabpanel" class="tab-pane" id="rawdata">
+      <h2>Resource</h2>
+      <pre>{{ page.raml_resource | jsonify_pretty }}</pre>
+      <h2>Method</h2>
+      <pre>{{ page.raml_method | jsonify_pretty }}</pre>
     </div>
   </div>
 </div>
