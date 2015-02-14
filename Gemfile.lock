@@ -7,10 +7,10 @@ GIT
 
 GIT
   remote: https://github.com/ePages-de/raml_parser.git
-  revision: 02a87647c992482bc2d029486398f13ead3c1bb7
-  branch: master
+  revision: 21b12f8ab58ee90bf279ebe6211946021b2b2742
+  branch: develop
   specs:
-    raml_parser (0.0.1)
+    raml_parser (0.0.2.pre)
 
 GEM
   remote: https://rubygems.org/
@@ -70,7 +70,7 @@ GEM
       ffi (>= 0.5.0)
     redcarpet (3.2.2)
     safe_yaml (1.0.4)
-    sass (3.4.11)
+    sass (3.4.12)
     timers (4.0.1)
       hitimes
     toml (0.1.2)

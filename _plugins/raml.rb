@@ -16,9 +16,9 @@ module Jekyll
       self.data['title'] = raml_resource.display_name
       self.data['category'] = 'raml'
 
-      self.data['raml'] = raml.to_hash
-      self.data['raml_resource'] = raml_resource.to_hash
-      self.data['raml_method'] = raml_method.to_hash
+      self.data['raml'] = RamlLiquidifyer.new(raml)
+      self.data['raml_resource'] = RamlLiquidifyer.new(raml_resource)
+      self.data['raml_method'] = RamlLiquidifyer.new(raml_method)
     end
   end
 
@@ -57,6 +57,45 @@ module Jekyll
       raml_raw = RamlParser::YamlHelper.dump_yaml(RamlParser::YamlHelper.read_yaml(path))
 
       site.pages << RamlPage.new(site, site.source, 'resources', raml_raw)
+    end
+  end
+
+  class RamlLiquidifyer
+    ACCESSOR_MAP = {
+      RamlParser::Model::Root => %w(title base_uri version resources),
+      RamlParser::Model::Resource => %w(absolute_uri relative_uri display_name description uri_parameters methods),
+      RamlParser::Model::Method => %w(method display_name description query_parameters responses),
+      RamlParser::Model::Response => %w(status_code display_name description bodies),
+      RamlParser::Model::Body => %w(media_type example schema),
+      RamlParser::Model::NamedParameter => %w(name type display_name description required default example min_length max_length minimum maximum repeat enum pattern),
+    }
+
+    def initialize(obj)
+      @obj = obj
+    end
+
+    def convert(node)
+      if node == nil
+        node
+      elsif node == true or node == false
+        node
+      elsif node.is_a? String
+        node
+      elsif node.is_a? Integer
+        node
+      elsif node.is_a? Float
+        node
+      elsif node.is_a? Array
+        node.map { |item| convert(item) }
+      elsif node.is_a? Hash
+        Hash[node.map { |key,value| [key, convert(value)] }]
+      else
+        Hash[ACCESSOR_MAP[node.class].map { |name| [name, convert(node.send(name))] }]
+      end
+    end
+
+    def to_liquid
+      convert(@obj)
     end
   end
 end
