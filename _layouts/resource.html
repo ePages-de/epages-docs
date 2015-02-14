@@ -2,147 +2,156 @@
 layout: page
 ---
 
-<div>
-  <pre>{{ page.raml_method.method }} {{ page.raml_resource.relative_uri }}</pre>
-  {% if page.raml_resource.description != null %}
-    <p>{{ page.raml_resource.description | markdownify }}</p>
-  {% endif %}
-</div>
+<div role="tabpanel">
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#specification" aria-controls="specification" role="tab" data-toggle="tab">Specification</a></li>
+    <li role="presentation"><a href="#apiconsole" aria-controls="apiconsole" role="tab" data-toggle="tab">API console</a></li>
+  </ul>
 
-{% if page.raml_resource.uri_parameters. != empty %}
-<div>
- <h2>URI parameters</h2>
-  <table class="table">
-    <thead>
-    <tr>
-      <th>Name</th>
-      <th>Type</th>
-      <th></th>
-    </tr>
-    </thead>
-    <tbody>
-    {% for p_tmp in page.raml_resource.uri_parameters %}
-      {% assign p = p_tmp[1] %}
-      <tr>
-        <td><code>{{ p.name. }}</code></td>
-        <td><strong>{{ p.type. }}</strong></td>
-        <td>
-          {% if p.description %}<div>Description: {{ p.description }}</div>{% endif %}
-          {% if p.required %}<div>Required: <code>{{ p.required }}</code></div>{% endif %}
-          {% if p.example %}<div>Example: <code>{{ p.example }}</code></div>{% endif %}
-          {% if p.default %}<div>Default: <code>{{ p.default }}</code></div>{% endif %}
-          {% if p.minimum %}<div>Minimum: {{ p.minimum }}</div>{% endif %}
-          {% if p.maximum %}<div>Maximum: {{ p.maximum }}</div>{% endif %}
-          {% if p.repeat %}<div>Repeat: <code>{{ p.repeat | join:',' }}</code></div>{% endif %}
-          {% if p.enum %}<div>Enum: <code>{{ p.enum }}</code></div>{% endif %}
-        </td>
-      </tr>
-    {% endfor %}
-    </tbody>
-  </table>
-</div>
-{% endif %}
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="specification">
+      <h2>Basic information</h2>
+      <pre>{{ page.raml_method.method }} {{ page.raml_resource.relative_uri }}</pre>
 
-{% if page.raml_method.query_parameters != empty %}
-<div>
-  <h2>Query parameters</h2>
-  <table class="table">
-    <thead>
-    <tr>
-      <th>Name</th>
-      <th>Type</th>
-      <th></th>
-    </tr>
-    </thead>
-    <tbody>
-    {% for p_tmp in page.raml_method.query_parameters %}
-      {% assign p = p_tmp[1] %}
-      <tr>
-        <td><code>{{ p.name. }}</code></td>
-        <td><strong>{{ p.type. }}</strong></td>
-        <td>
-          {% if p.description %}<div>Description: {{ p.description }}</div>{% endif %}
-          {% if p.required %}<div>Required: <code>{{ p.required }}</code></div>{% endif %}
-          {% if p.example %}<div>Example: <code>{{ p.example }}</code></div>{% endif %}
-          {% if p.default %}<div>Default: <code>{{ p.default }}</code></div>{% endif %}
-          {% if p.minimum %}<div>Minimum: {{ p.minimum }}</div>{% endif %}
-          {% if p.maximum %}<div>Maximum: {{ p.maximum }}</div>{% endif %}
-          {% if p.repeat %}<div>Repeat: <code>{{ p.repeat | join:',' }}</code></div>{% endif %}
-          {% if p.enum %}<div>Enum: <code>{{ p.enum }}</code></div>{% endif %}
-        </td>
-      </tr>
-    {% endfor %}
-    </tbody>
-  </table>
-</div>
-{% endif %}
-
-{% if page.raml_method.responses != empty %}
-<div>
-  <h2>Responses</h2>
-  {% for res_tmp in page.raml_method.responses %}
-    {% assign res = res_tmp[1] %}
-    <h2>HTTP {{ res.status_code }} {{ res.display_name }}</h2>
-    {% if res.description != null %}
-      <p>{{ res.description | markdownify }}</p>
-    {% endif %}
-
-    {% for body_tmp in res.bodies %}
-      {% assign body = body_tmp[1] %}
-      <p>Media type <code>{{ body.media_type }}</code></p>
-      {% if body.example %}
-        <pre>{{ body.example }}</pre>
+      {% if page.raml_resource.description != null %}
+        <p>{{ page.raml_resource.description | markdownify }}</p>
       {% endif %}
-    {% endfor %}
-  {% endfor %}
-</div>
-{% endif %}
 
-<div>
-  <h2>
-    API console
-    <button class="btn btn-xs btn-default" type="button" data-toggle="collapse" data-target="#apiconsole" aria-expanded="false" aria-controls="apiconsole">
-      show/hide
-    </button>
-  </h2>
-  <div class="collapse in" id="apiconsole">
-    <form id="apiconsole-form">
-      {% for p_tmp in page.raml_resource.uri_parameters %}
-        {% assign p = p_tmp[1] %}
+      {% if page.raml_resource.uri_parameters. != empty %}
+        <h2>URI parameters</h2>
+        <table class="table table-bordered">
+          <thead>
+          <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th></th>
+          </tr>
+          </thead>
+          <tbody>
+          {% for p_tmp in page.raml_resource.uri_parameters %}
+            {% assign p = p_tmp[1] %}
+            <tr>
+              <td><code>{{ p.name. }}</code></td>
+              <td><strong>{{ p.type. }}</strong></td>
+              <td>
+                {% if p.description %}<div>Description: {{ p.description }}</div>{% endif %}
+                {% if p.required %}<div>Required: <code>{{ p.required }}</code></div>{% endif %}
+                {% if p.example %}<div>Example: <code>{{ p.example }}</code></div>{% endif %}
+                {% if p.default %}<div>Default: <code>{{ p.default }}</code></div>{% endif %}
+                {% if p.minimum %}<div>Minimum: {{ p.minimum }}</div>{% endif %}
+                {% if p.maximum %}<div>Maximum: {{ p.maximum }}</div>{% endif %}
+                {% if p.repeat %}<div>Repeat: <code>{{ p.repeat | join:',' }}</code></div>{% endif %}
+                {% if p.enum %}<div>Enum: <code>{{ p.enum }}</code></div>{% endif %}
+              </td>
+            </tr>
+          {% endfor %}
+          </tbody>
+        </table>
+      {% endif %}
+
+      {% if page.raml_method.query_parameters != empty %}
+        <h2>Query parameters</h2>
+        <table class="table table-bordered">
+          <thead>
+          <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th></th>
+          </tr>
+          </thead>
+          <tbody>
+          {% for p_tmp in page.raml_method.query_parameters %}
+            {% assign p = p_tmp[1] %}
+            <tr>
+              <td><code>{{ p.name. }}</code></td>
+              <td><strong>{{ p.type. }}</strong></td>
+              <td>
+                {% if p.description %}<div>Description: {{ p.description }}</div>{% endif %}
+                {% if p.required %}<div>Required: <code>{{ p.required }}</code></div>{% endif %}
+                {% if p.example %}<div>Example: <code>{{ p.example }}</code></div>{% endif %}
+                {% if p.default %}<div>Default: <code>{{ p.default }}</code></div>{% endif %}
+                {% if p.minimum %}<div>Minimum: {{ p.minimum }}</div>{% endif %}
+                {% if p.maximum %}<div>Maximum: {{ p.maximum }}</div>{% endif %}
+                {% if p.repeat %}<div>Repeat: <code>{{ p.repeat | join:',' }}</code></div>{% endif %}
+                {% if p.enum %}<div>Enum: <code>{{ p.enum }}</code></div>{% endif %}
+              </td>
+            </tr>
+          {% endfor %}
+          </tbody>
+        </table>
+      {% endif %}
+
+      {% if page.raml_method.bodies != empty %}
+        <h2>Request bodies</h2>
+        {% for body_tmp in page.raml_method.bodies %}
+          {% assign body = body_tmp[1] %}
+          <p>Media type <code>{{ body.media_type }}</code></p>
+          {% if body.example %}
+            <pre class="pre-scrollable">{{ body.example }}</pre>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+
+      {% if page.raml_method.responses != empty %}
+        <h2>Responses</h2>
+        {% for res_tmp in page.raml_method.responses %}
+          {% assign res = res_tmp[1] %}
+          <h3>HTTP {{ res.status_code }} {{ res.display_name }}</h3>
+          {% if res.description != null %}
+            <p>{{ res.description | markdownify }}</p>
+          {% endif %}
+
+          {% for body_tmp in res.bodies %}
+            {% assign body = body_tmp[1] %}
+            <p>Media type <code>{{ body.media_type }}</code></p>
+            {% if body.example %}
+              <pre class="pre-scrollable">{{ body.example }}</pre>
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+      {% endif %}
+    </div>
+
+    <div role="tabpanel" class="tab-pane" id="apiconsole">
+      <h2>Parameters</h2>
+      <form id="apiconsole-form" class="form">
+        {% for p_tmp in page.raml_resource.uri_parameters %}
+          {% assign p = p_tmp[1] %}
+          <div class="form-group">
+            <label class="control-label" for="parameter-uri-{{ p.name }}">{{ p.name }}</label>
+            <input class="form-control" type="text" id="parameter-uri-{{ p.name }}" value="{{ p.example }}"/>
+            {% if p.description %}
+              <span class="help-block">{{ p.description | markdownify | strip_html | truncatewords: 10 }}</span>
+            {% endif %}
+          </div>
+        {% endfor %}
+        {% for p_tmp in page.raml_method.query_parameters %}
+          {% assign p = p_tmp[1] %}
+          <div class="form-group">
+            <label class="control-label" for="parameter-query-{{ p.name }}">{{ p.name }}</label>
+            <input type="text" class="form-control" id="parameter-query-{{ p.name }}" value="{{ p.example }}"/>
+            {% if p.description %}
+              <span class="help-block">{{ p.description | markdownify | strip_html | truncatewords: 75 }}</span>
+            {% endif %}
+          </div>
+        {% endfor %}
         <div class="form-group">
-          <label for="parameter-uri-{{ p.name }}">{{ p.name }}</label>
-          <input type="text" class="form-control" id="parameter-uri-{{ p.name }}" value="{{ p.example }}"/>
+          <button type="submit" class="btn btn-default">Send</button>
         </div>
-      {% endfor %}
-      {% for p_tmp in page.raml_method.query_parameters %}
-        {% assign p = p_tmp[1] %}
-        <div class="form-group">
-          <label for="parameter-query-{{ p.name }}">{{ p.name }}</label>
-          <input type="text" class="form-control" id="parameter-query-{{ p.name }}" value="{{ p.example }}"/>
-        </div>
-      {% endfor %}
-      <input type="submit" value="Send" class="btn btn-default btn-block"/>
-    </form>
-    <p><pre id="apiconsole-request"></pre></p>
-    <p><pre id="apiconsole-response"></pre></p>
+      </form>
+
+      <h2>Request</h2>
+      <pre id="apiconsole-request"></pre>
+
+      <h2>Response</h2>
+      <pre id="apiconsole-response">(Click Send...)</pre>
+    </div>
   </div>
-  <script type="text/javascript" src="{{ '/assets/javascript/apiconsole.js' | prepend: site.baseurl }}"></script>
-  <script type="text/javascript">
-    var ramlResource = {{ page.raml_resource | jsonify }}
-    var ramlMethod = {{ page.raml_method | jsonify }}
-    ApiConsole(ramlResource, ramlMethod, '#apiconsole-request', '#apiconsole-response', '#apiconsole-form');
-  </script>
 </div>
 
-<div>
-  <h2>
-    RAW raml data
-    <button class="btn btn-xs btn-default" type="button" data-toggle="collapse" data-target="#ramlraw" aria-expanded="false" aria-controls="ramlraw">
-      show/hide
-    </button>
-  </h2>
-  <div class="collapse" id="ramlraw">
-    <pre>{{ page.raml_resource | jsonify_pretty }}</pre>
-    <pre>{{ page.raml_method | jsonify_pretty }}</pre>
-  </div>
-</div>
+<script type="text/javascript" src="{{ '/assets/javascript/apiconsole.js' | prepend: site.baseurl }}"></script>
+<script type="text/javascript">
+  var ramlResource = {{ page.raml_resource | jsonify }}
+  var ramlMethod = {{ page.raml_method | jsonify }}
+  ApiConsole(ramlResource, ramlMethod, '#apiconsole-request', '#apiconsole-response', '#apiconsole-form');
+</script>

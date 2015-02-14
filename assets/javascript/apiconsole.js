@@ -100,7 +100,7 @@
         $form.on('submit', function (event) {
             event.preventDefault();
 
-            $response.html('Loading...');
+            $response.html('(Loading...)');
             $.ajax({
                 type: ramlMethod.method,
                 url: renderFullUri(ramlResource, ramlMethod, uriParameters, queryParameters)
