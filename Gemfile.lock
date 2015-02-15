@@ -7,14 +7,21 @@ GIT
 
 GIT
   remote: https://github.com/ePages-de/raml_parser.git
-  revision: 0f3b8f28d5c22619ddd0cbe92f1b692431ac37ff
+  revision: e6933a3009dcc7036fa441d13906021d5594ae0c
   branch: develop
   specs:
-    raml_parser (0.0.2.pre)
+    raml_parser (0.1.pre)
+      activesupport (>= 4.0.0)
 
 GEM
   remote: https://rubygems.org/
   specs:
+    activesupport (4.2.0)
+      i18n (~> 0.7)
+      json (~> 1.7, >= 1.7.7)
+      minitest (~> 5.1)
+      thread_safe (~> 0.3, >= 0.3.4)
+      tzinfo (~> 1.1)
     blankslate (2.1.2.4)
     celluloid (0.16.0)
       timers (~> 4.0.0)
@@ -29,6 +36,7 @@ GEM
     fast-stemmer (1.0.2)
     ffi (1.9.6)
     hitimes (1.2.2)
+    i18n (0.7.0)
     jekyll (2.5.3)
       classifier-reborn (~> 2.0)
       colorator (~> 0.1)
@@ -52,6 +60,7 @@ GEM
       sass (~> 3.2)
     jekyll-watch (1.2.1)
       listen (~> 2.7)
+    json (1.8.2)
     kramdown (1.5.0)
     liquid (2.6.2)
     listen (2.8.5)
@@ -59,6 +68,7 @@ GEM
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
     mercenary (0.3.5)
+    minitest (5.5.1)
     parslet (1.5.0)
       blankslate (~> 2.0)
     posix-spawn (0.3.9)
@@ -71,10 +81,13 @@ GEM
     redcarpet (3.2.2)
     safe_yaml (1.0.4)
     sass (3.4.12)
+    thread_safe (0.3.4)
     timers (4.0.1)
       hitimes
     toml (0.1.2)
       parslet (~> 1.5.0)
+    tzinfo (1.2.2)
+      thread_safe (~> 0.1)
     yajl-ruby (1.2.1)
 
 PLATFORMS

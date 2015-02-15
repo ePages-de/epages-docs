@@ -24,9 +24,9 @@ module Jekyll
 
   class ApiResourcePageGenerator < Generator
     def generate(site)
-      parser = RamlParser::Parser.new({ :not_yet_supported => :ignore })
       path = File.join(site.source, site.config['raml_root'])
-      raml = parser.parse_file(path)
+      parser = RamlParser::Parser.new(path, { :not_yet_supported => :ignore })
+      raml = parser.root
 
       pages = raml.resources.map { |res|
         res.methods.map { |_,meth|
@@ -62,12 +62,14 @@ module Jekyll
 
   class RamlLiquidifyer
     ACCESSOR_MAP = {
-      RamlParser::Model::Root => %w(title base_uri version resources),
-      RamlParser::Model::Resource => %w(absolute_uri relative_uri display_name description uri_parameters methods),
-      RamlParser::Model::Method => %w(method display_name description query_parameters responses bodies),
-      RamlParser::Model::Response => %w(status_code display_name description bodies),
-      RamlParser::Model::Body => %w(media_type example schema),
+      RamlParser::Model::Root => %w(title base_uri version media_type security_schemes secured_by resources documentation),
+      RamlParser::Model::Resource => %w(absolute_uri relative_uri display_name description uri_parameters methods type is secured_by),
+      RamlParser::Model::Method => %w(method display_name description query_parameters responses bodies headers is secured_by),
+      RamlParser::Model::Response => %w(status_code display_name description bodies headers),
+      RamlParser::Model::Body => %w(media_type example schema form_parameters),
       RamlParser::Model::NamedParameter => %w(name type display_name description required default example min_length max_length minimum maximum repeat enum pattern),
+      RamlParser::Model::Documentation => %w(title content),
+      RamlParser::Model::SecurityScheme => %w(name type description described_by settings)
     }
 
     def initialize(obj)
