@@ -25,8 +25,10 @@ module Jekyll
   class ApiResourcePageGenerator < Generator
     def generate(site)
       path = File.join(site.source, site.config['raml_root'])
-      parser = RamlParser::Parser.new(path, { :not_yet_supported => :ignore })
-      raml = parser.root
+      result = RamlParser::Parser.parse_file_with_marks(path)
+      raml = result[:root]
+      not_used = result[:marks].select { |_,m| m != :used }
+      not_used.each { |p,m| puts "#{m} #{p}" }
 
       pages = raml.resources.map { |res|
         res.methods.map { |_,meth|
