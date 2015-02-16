@@ -23,27 +23,18 @@ Once this is done, your app will be available in your test shop in the field **M
 
 # Test. Test. Test.
 
-[block:parameters]
-{
-  "data": {
-    "0-0": "Delete an app.",
-    "0-1": "Removes the keys of the app in the **Private app** environment. Testing not mandatory.",
-    "1-0": "Uninstall an app.",
-    "1-1": "Ensures, that your app is capable of being uninstalled completely. Testing mandatory.",
-    "h-0": "What?",
-    "h-1": "What for?"
-  },
-  "cols": 2,
-  "rows": 2
-}
-[/block]
-Delete an app:
+| What?             | What for?                                                                              |
+|-------------------|----------------------------------------------------------------------------------------|
+| Delete an app.    | Removes the keys of the app in the **Private app** environment. Testing not mandatory. |
+| Uninstall an app. | Ensures, that your app is capable of being uninstalled completely. Testing mandatory.  |
+
+## Delete an app:
 
 In the field **Private apps** click the button **Delete**.
 If the process has been successful, the app has been removed from **Private apps**.
 
+## Uninstall an app:
 
-Uninstall an app:
 1. In the field **My apps**, click the app.
 2. In the new window, click the button **Uninstall**.
 3. A dialogue appears that you're about to uninstall your app.
@@ -53,4 +44,5 @@ If the process worked just fine, the field **My apps** is empty.
 Your app is still available in the field **Private apps**.
 
 # Ready, steady, go!
+
 [Submit your app](doc:submit-an-app).

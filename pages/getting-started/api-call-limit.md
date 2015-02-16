@@ -12,10 +12,7 @@ category: gettingstarted
 {% endcallout %}
 
 API call limit means that the rate at which requests to the API are called are limited and defined by ePages.
-The API call limit is applied to
-xxx
-xxx
-
+The API call limit is applied to... `TODO`
 
 Depending on the ePages shop type, an API auth token can limited to 100 API calls or 400 API calls per day, respectively. Once, the limit is exceeded, the call will return HTTP status XYZ and a message telling you that you've been limited.
 

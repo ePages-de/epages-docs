@@ -28,3 +28,22 @@ nav {
 body {
   background-color: #333333;
 }
+
+article {
+  h1 {
+    @extend h2;
+  }
+
+  h2 {
+    @extend h3;
+  }
+
+  h3 {
+    @extend h4;
+  }
+
+  table {
+    @extend .table;
+    @extend .table-bordered;
+  }
+}

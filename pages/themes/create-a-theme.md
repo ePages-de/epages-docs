@@ -4,17 +4,17 @@ title: Create a theme
 category: themes
 ---
 
-## 1. Copy the `default` theme located in:
+# 1. Copy the `default` theme located in:
 
 {% highlight text %}
 public/src/themes/
 {% endhighlight %}
 
-## 2. Add a stylesheet:
+# 2. Add a stylesheet:
 
 There are two ways to add styles to your theme.
 
-### Option 1
+## Option 1
 
 Create a file named `style.less` written in [Less][1] and put it into the `stylesheets` folder of your theme:
 
@@ -24,7 +24,7 @@ my-new-theme/
     style.less
 {% endhighlight %}
 
-### Option 2
+## Option 2
 
 Open your theme's `theme.json` and add all your stylesheet `.css` files like this:
 
@@ -37,7 +37,7 @@ Open your theme's `theme.json` and add all your stylesheet `.css` files like thi
 }
 {% endhighlight %}
 
-## 3. Set shop to use your new theme:
+# 3. Set shop to use your new theme:
 
 To make the AlaCarte shop use your new theme open `shops/AlaCarte.json`. Change the `theme` attribute to your theme's folder name:
 
@@ -47,7 +47,7 @@ To make the AlaCarte shop use your new theme open `shops/AlaCarte.json`. Change 
 }
 {% endhighlight %}
 
-## 4. Restart the epages-ui server
+# 4. Restart the epages-ui server
 
 If your server is running already, just type `rs` on the commando line. Second option: just restart the whole project with entering `grunt`.
 
