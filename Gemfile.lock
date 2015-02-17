@@ -5,6 +5,14 @@ GIT
   specs:
     jekyll_deploy (0.0.0)
 
+GIT
+  remote: https://github.com/ePages-de/raml_parser.git
+  revision: db789587f13457f245730e76888872371a385f44
+  branch: develop
+  specs:
+    raml_parser (0.2.1)
+      activesupport (>= 4.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -67,8 +75,6 @@ GEM
     pygments.rb (0.6.2)
       posix-spawn (~> 0.3.6)
       yajl-ruby (~> 1.2.0)
-    raml_parser (0.2.1)
-      activesupport (>= 4.0.0)
     rb-fsevent (0.9.4)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
@@ -90,4 +96,4 @@ PLATFORMS
 DEPENDENCIES
   jekyll (>= 2.5.0)
   jekyll_deploy!
-  raml_parser
+  raml_parser!
