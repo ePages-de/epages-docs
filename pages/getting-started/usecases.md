@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Use cases
-category: introduction
+category: gettingstarted
 ---
 
 # Shipping
