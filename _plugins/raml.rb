@@ -64,9 +64,9 @@ module Jekyll
 
   class RamlLiquidifyer
     ACCESSOR_MAP = {
-      RamlParser::Model::Root => %w(title base_uri version media_type security_schemes secured_by resources documentation),
-      RamlParser::Model::Resource => %w(absolute_uri relative_uri display_name description uri_parameters methods type is secured_by),
-      RamlParser::Model::Method => %w(method display_name description query_parameters responses bodies headers is secured_by),
+      RamlParser::Model::Root => %w(title base_uri version media_type schemas security_schemes base_uri_parameters resource_types traits secured_by documentation resources),
+      RamlParser::Model::Resource => %w(absolute_uri relative_uri display_name description base_uri_parameters uri_parameters methods type is secured_by),
+      RamlParser::Model::Method => %w(method description query_parameters responses bodies headers is secured_by),
       RamlParser::Model::Response => %w(status_code display_name description bodies headers),
       RamlParser::Model::Body => %w(media_type example schema form_parameters),
       RamlParser::Model::NamedParameter => %w(name type display_name description required default example min_length max_length minimum maximum repeat enum pattern),

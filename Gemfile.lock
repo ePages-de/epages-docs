@@ -67,7 +67,7 @@ GEM
     pygments.rb (0.6.2)
       posix-spawn (~> 0.3.6)
       yajl-ruby (~> 1.2.0)
-    raml_parser (0.2)
+    raml_parser (0.2.1)
       activesupport (>= 4.0.0)
     rb-fsevent (0.9.4)
     rb-inotify (0.9.5)
