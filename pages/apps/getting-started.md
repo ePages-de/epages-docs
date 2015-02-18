@@ -29,7 +29,9 @@ Add a shop tab to a Facebook page from where users can browse products directly 
 
 You are well on the road to creating your app. Before you can start coding off you'll need to sign up for the ePages Developer Program. Gain access to all the resources you need to create your app successfully.
 
-![Image](https://www.filepicker.io/api/file/CuP4suO0RH6H4BkKT9GI)
+{% image https://www.filepicker.io/api/file/CuP4suO0RH6H4BkKT9GI %}
+This is how the registration screen looks like.
+{% endimage %}
 
 # Sign up for free.
 

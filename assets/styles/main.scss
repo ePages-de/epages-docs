@@ -47,3 +47,24 @@ article {
     @extend .table-bordered;
   }
 }
+
+.imagebox {
+  border: 1px solid silver;
+  border-radius: $border-radius-base;
+  padding: 10px;
+
+  margin: 0 0 ($line-height-computed / 2);
+  text-align: center;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: $border-radius-small;
+  }
+
+  label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+}
