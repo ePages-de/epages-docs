@@ -36,3 +36,7 @@ RateLimit-Limit: 6000
 RateLimit-Remaining: 5896
 Rate-Limit-Reset: to be defined
 {% endhighlight %}
+
+{% link page:api-resources-products#adsadasdas %}
+
+{% link page:api-resources-products#adsadasdas Mein Text %}
