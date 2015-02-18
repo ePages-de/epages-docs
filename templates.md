@@ -5,6 +5,7 @@ title: Templates
 ---
 
 My templates:
+[Create an App](page:apps-getting-started#create-an-app)
 
 [Create an App](/epages-docs/pages/apps/create-an-app.html)
 ![Text falls Bild nicht geladen](/epages-docs/assets/images/epages-logo.png)
@@ -37,6 +38,5 @@ RateLimit-Remaining: 5896
 Rate-Limit-Reset: to be defined
 {% endhighlight %}
 
-{% link page:api-resources-products#adsadasdas %}
-
-{% link page:api-resources-products#adsadasdas Mein Text %}
+[Product resources](page:api-resources-products)
+[Product resources with link to Headline](page:api-resources-products#headline)
