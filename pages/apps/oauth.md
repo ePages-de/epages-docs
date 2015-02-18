@@ -1,6 +1,6 @@
 ---
 layout: page
-key: oauth
+key: apps-oauth
 title: OAuth
 ---
 
