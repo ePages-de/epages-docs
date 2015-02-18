@@ -1,29 +1,55 @@
-- key: gettingstarted
-  title: Getting Started
+- key: themes
+  title: Themes
   entries:
-    - page: basics
-    - link:
-        title: Analytics Reporting
-        url: '/epages-docs/pages/getting-started/usecases.html#analytics--reporting'
-    - page: api-intro
-    - page: api-resources
+    - page: themes-getting-started
+    - page: themes-structure
+    - page: themes-access
+    - page: themes-create
+    - page: themes-templates
 
 - key: apps
   title: Apps
   entries:
-    - page: usecases
-    - page: themes-create
-    - page: themes
+    - page: apps-getting-started
+    - link:
+        title: Use cases
+        url: '/epages-docs/pages/apps/getting-started.html#use-cases'
+    - link:
+        title: Registration
+        url: '/epages-docs/pages/apps/getting-started.html#registration'
+    - link:
+        title: Create an app
+        url: '/epages-docs/pages/apps/getting-started.html#create-an-app'
+    - link:
+        title: Submit an app
+        url: '/epages-docs/pages/apps/getting-started.html#submit-an-app'
+    - page: apps-oauth
 
-- key: themes
-  title: Themes
+- key: api-rest
+  title: REST API
   entries:
+    - page: api-getting-started
+    - link:
+        title: Introduction
+        url: '/epages-docs/pages/rest-api/getting-started.html#introduction'
+    - link:
+        title: Authentication
+        url: '/epages-docs/pages/rest-api/getting-started.html#authentication'
+    - link:
+        title: Making a request
+        url: '/epages-docs/pages/rest-api/getting-started.html#making-a-request'
+    - link:
+        title: JSON
+        url: '/epages-docs/pages/rest-api/getting-started.html#json'
+    - link:
+        title: Error handling
+        url: '/epages-docs/pages/rest-api/getting-started.html#error-handling'
+    - link:
+        title: Call limits
+        url: '/epages-docs/pages/rest-api/getting-started.html#call-limits'
     - page: api-call-limits
-    - page: oauth
-    - page: registration
+    - page: api-resources
 
-- key: api
-  title: API reference
+- key: api-soap
+  title: SOAP API
   entries:
-    - page: apps-create
-    - page: apps-submit
