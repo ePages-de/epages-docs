@@ -8,6 +8,10 @@ module Jekyll
       require 'json'
       JSON.pretty_generate(input)
     end
+
+    def start_with(input, start)
+      input.start_with? start
+    end
   end
 end
 
