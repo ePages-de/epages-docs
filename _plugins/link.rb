@@ -21,7 +21,6 @@ module Jekyll
               anchor = if not @anchor.nil? and @anchor.strip then '#' + @anchor.strip else '' end
               title = if not @title.nil? and @title.strip != '' then @title.strip else page.data['title'] end
 
-              p "<a href=\"#{url}#{anchor}\">#{title}</a>"
               "<a href=\"#{url}#{anchor}\">#{title}</a>"
             else
               raise "Could not find page with key '#{@key}'"
