@@ -1,7 +1,7 @@
 ---
 layout: page
+key: themes-create
 title: Create a theme
-category: themes
 ---
 
 # 1. Copy the `default` theme located in:

@@ -1,11 +1,29 @@
 - key: gettingstarted
   title: Getting Started
+  entries:
+    - page: basics
+    - link:
+        title: Analytics Reporting
+        url: '/epages-docs/pages/getting-started/usecases.html#analytics--reporting'
+    - page: api-intro
+    - page: api-resources
 
 - key: apps
   title: Apps
+  entries:
+    - page: usecases
+    - page: themes-create
+    - page: themes
 
 - key: themes
   title: Themes
+  entries:
+    - page: api-call-limits
+    - page: oauth
+    - page: registration
 
 - key: api
   title: API reference
+  entries:
+    - page: apps-create
+    - page: apps-submit

@@ -1,7 +1,7 @@
 ---
 layout: page
+key: apps-create
 title: Create an app
-category: apps
 ---
 
 # What kind of apps do we support?

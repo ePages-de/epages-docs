@@ -1,7 +1,7 @@
 ---
 layout: page
+key: registration
 title: Registration
-category: gettingstarted
 ---
 
 You are well on the road to creating your app. Before you can start coding off you'll need to sign up for the ePages Developer Program. Gain access to all the resources you need to create your app successfully.

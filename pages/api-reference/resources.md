@@ -1,7 +1,7 @@
 ---
 layout: page
+key: api-resources
 title: Resources
-category: api
 hot: true
 ---
 

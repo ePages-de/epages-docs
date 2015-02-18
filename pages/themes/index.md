@@ -1,7 +1,7 @@
 ---
 layout: page
+key: themes
 title: Themes in a nutshell
-category: themes
 ---
 
 The `default` theme should work as a base for your own theme and contains all required files.

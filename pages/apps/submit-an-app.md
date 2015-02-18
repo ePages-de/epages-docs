@@ -1,7 +1,7 @@
 ---
 layout: page
+key: apps-submit
 title: Submit an app
-category: apps
 ---
 
 Yay! You're done with developing your awesome app and you're excited to make it available to our App store? Testing is done and everything works fine? Congrats! We are just as much excited as you are!

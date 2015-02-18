@@ -1,7 +1,7 @@
 ---
 layout: page
+key: api-intro
 title: Introduction
-category: api
 ---
 
 Developing the ePages API is an ongoing process. Please let us know if you're missing a resource that you want to be listed here.

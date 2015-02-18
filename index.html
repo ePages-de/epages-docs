@@ -20,11 +20,19 @@ layout: default
           <div class="col-sm-4">
             <ul class="pageoverview-category">
               <li class="pageoverview-headline">{{ category.title }}</li>
-              {% for page in site.pages %}
-                {% if page.title != null and page.category == category.key %}
+              {% for entry in category.entries %}
+                {% if entry.page %}
+                  {% for page in site.pages %}
+                    {% if entry.page == page.key %}
+                      <li class="pageoverview-entry">
+                        <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                        {% if page.hot %}<span class="label label-danger">HOT</span>{% endif %}
+                      </li>
+                    {% endif %}
+                  {% endfor %}
+                {% elsif entry.link %}
                   <li class="pageoverview-entry">
-                    <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-                    {% if page.hot %}<span class="label label-danger">HOT</span>{% endif %}
+                    <a href="{{ entry.link.url }}">{{ entry.link.title }}</a>
                   </li>
                 {% endif %}
               {% endfor %}

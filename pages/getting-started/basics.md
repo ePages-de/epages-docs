@@ -1,7 +1,7 @@
 ---
 layout: page
+key: basics
 title: Basics
-category: gettingstarted
 ---
 
 # The Developer Program

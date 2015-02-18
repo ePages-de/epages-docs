@@ -1,7 +1,7 @@
 ---
 layout: page
+key: oauth
 title: OAuth
-category: gettingstarted
 ---
 
 {% callout danger maybe OAuth 2.0? %}

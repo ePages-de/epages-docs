@@ -1,7 +1,7 @@
 ---
 layout: page
+key: usecases
 title: Use cases
-category: gettingstarted
 ---
 
 # Shipping

@@ -1,7 +1,7 @@
 ---
 layout: page
+key: api-call-limits
 title: API call limit
-category: gettingstarted
 ---
 
 {% callout danger Pending %}
