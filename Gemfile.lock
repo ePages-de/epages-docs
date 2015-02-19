@@ -1,13 +1,24 @@
 GIT
   remote: https://github.com/choffmeister/jekyll_deploy.git
-  revision: aa5d0814a0e68c92c729b00c9a88c920ab4be6fe
+  revision: 2a5cbeb1ddd33220a14fece95c844c8801ce0da7
   branch: master
   specs:
-    jekyll_deploy (0.0.0)
+    jekyll_deploy (0.0.1)
+      jekyll (>= 2.5.0)
+
+GIT
+  remote: https://github.com/choffmeister/jekyll_search.git
+  revision: 212b44432576b1ab812ab102d32041bb013d3663
+  branch: develop
+  specs:
+    jekyll_search (0.0.1)
+      elasticsearch (~> 1.0.6)
+      jekyll (>= 2.5.0)
+      loofah (~> 2.0.1)
 
 GIT
   remote: https://github.com/ePages-de/raml_parser.git
-  revision: db789587f13457f245730e76888872371a385f44
+  revision: 02820a9ac5395018fa0cca68e615ea82f65988e4
   branch: develop
   specs:
     raml_parser (0.2.1)
@@ -30,9 +41,19 @@ GEM
     coffee-script (2.3.0)
       coffee-script-source
       execjs
-    coffee-script-source (1.9.0)
+    coffee-script-source (1.9.1)
     colorator (0.1)
+    elasticsearch (1.0.6)
+      elasticsearch-api (= 1.0.6)
+      elasticsearch-transport (= 1.0.6)
+    elasticsearch-api (1.0.6)
+      multi_json
+    elasticsearch-transport (1.0.6)
+      faraday
+      multi_json
     execjs (2.3.0)
+    faraday (0.9.1)
+      multipart-post (>= 1.2, < 3)
     fast-stemmer (1.0.2)
     ffi (1.9.6)
     hitimes (1.2.2)
@@ -72,11 +93,13 @@ GEM
     mercenary (0.3.5)
     mini_portile (0.6.2)
     minitest (5.5.1)
+    multi_json (1.10.1)
+    multipart-post (2.0.0)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
     parslet (1.5.0)
       blankslate (~> 2.0)
-    posix-spawn (0.3.9)
+    posix-spawn (0.3.10)
     pygments.rb (0.6.2)
       posix-spawn (~> 0.3.6)
       yajl-ruby (~> 1.2.0)
@@ -101,5 +124,6 @@ PLATFORMS
 DEPENDENCIES
   jekyll (>= 2.5.0)
   jekyll_deploy!
+  jekyll_search!
   loofah (>= 2.0.0)
   raml_parser!
