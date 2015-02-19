@@ -4,6 +4,26 @@ key: apps-getting-started
 title: Getting started
 ---
 
+# Introduction
+
+The ePages API provides developers the interface to create awesome apps or single shop connections. It is designed to give developers a convenient way to access data contained within ePages stores. With a standard interface to store data, it is very simple to create third party applications that can communicate with our merchant's stores.
+
+Our highest claim is to ensure you're having a good time developing your app. That's why we're trying to make the API understandable for both developers and humans.
+
+Let's make things less complicated: It's very easy to build and test applications, since the API is based on RESTful principles. The API uses the following standard HTTP verbs to make use of the required store data:
+
+  * `GET` (request)
+  * `POST` (create)
+  * `PUT` (modify)
+  * `DELETE` (delete)
+
+Anything else? The API supports the JSON standard, which basically is the universal connector for data on the internet, and makes developers lives way easier, when using our RESTful API.
+Requests to the API can only be made using HTTPS to grant access to authorised users only.
+
+**Any questions?**
+
+Find answers to the common questions in our FAQ section. More complicated topic? We get you in touch with our support. Just send us your request and we will get back to you.
+
 # Use cases
 
 ## Accounting
@@ -24,10 +44,9 @@ Integrate orders and print labels with one click.
 ## Social commerce
 Add a shop tab to a Facebook page from where users can browse products directly on Facebook.
 
-
 # Registration
 
-You are well on the road to creating your app. Before you can start coding off you'll need to sign up for the ePages Developer Program. Gain access to all the resources you need to create your app successfully.
+Before you can start coding off you'll need to sign up for the ePages Developer Program. Gain access to all the resources you need to create your app successfully.
 
 {% image https://www.filepicker.io/api/file/CuP4suO0RH6H4BkKT9GI %}
 This is how the registration screen looks like.
@@ -47,75 +66,129 @@ Done! You're all set! It's that simple!
 
 # Here we go!
 
-Get straight down to the nitty-gritty and [create your app](doc:create-an-app).
+Get straight down to the nitty-gritty and [create your app](page:apps-getting-started#create-an-app).
 
+# Authentication
 
-# Create an app
+Placeholder
 
-## What kind of apps do we support?
-In a first approach, we only support external apps. We call them "connectors". Connectors are not integrated into the merchant's backoffice, but interact with a shop via the REST API to use the shop's data.
+# OAuth
 
-## Set-up
-1. Within your test shop backoffice, choose the tab **Apps**.
-2. Choose the field **Private Apps** and click the button **Create app**.
-3. Fill out the entry field **App name**. This field is mandatory.
-4. Click the button **Save**. The API data **Consumer key**, **Consumer secret**, **Access token** and **Access secret** will be generated automatically.
+{% callout danger maybe OAuth 2.0? %}
+  maybe OAuth 2.0?
+{% endcallout %}
 
-Once this is done, you can start coding off. Brilliant: you are free to use any kind of code language.
-But when developing your app, please consider our [API call limit](doc:api-call-limit).
+# OAuth authentication. Why?
+Your app cannot access the REST API resources without authenticating first. All API calls are authenticated according to the OAuth 1.0 protocol.
 
-## Your app is ready for takeoff?
+All developers have to register their application before getting started. A registered OAuth 1.0 application is assigned the following:
 
-Let's go for the [authorisation](doc:oauth).
-Once this is done, your app will be available in your test shop in the field **My apps**.
-
-## Test. Test. Test.
-
-| What?             | What for?                                                                              |
-|-------------------|----------------------------------------------------------------------------------------|
-| Delete an app.    | Removes the keys of the app in the **Private app** environment. Testing not mandatory. |
-| Uninstall an app. | Ensures, that your app is capable of being uninstalled completely. Testing mandatory.  |
-
-## Delete an app:
-
-In the field **Private apps** click the button **Delete**.
-If the process has been successful, the app has been removed from **Private apps**.
-
-## Uninstall an app:
-
-1. In the field **My apps**, click the app.
-2. In the new window, click the button **Uninstall**.
-3. A dialogue appears that you're about to uninstall your app.
-4. Click the button **Uninstall**.
-
-If the process worked just fine, the field **My apps** is empty.
-Your app is still available in the field **Private apps**.
-
-## Ready, steady, go!
-
-[Submit your app](doc:submit-an-app).
-
-# Submit an app
-
-Yay! You're done with developing your awesome app and you're excited to make it available to our App store? Testing is done and everything works fine? Congrats! We are just as much excited as you are!
-
-Let's go submitting your app.
-
-1. Within your test shop, click the tab **Private apps**.
-2. Click the button **Submit app**.
-3. Fill out the submission form.
-
-This is what we need to thoroughly test the functionality of your app.
-
-| What?              | What for?                                                                                                                                          |
+| Name               | Description                                                                                                                                        |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
 | Consumer key       | Identifier string generated by API for use in OAuth 1.0.                                                                                           |
 | Consumer secret    | Unique token generated for use in OAuth 1.0 as an element of creating a signature. The consumer secret should not be shared.                       |
 | OAuth token        | Token generated by the server upon signed request. Can be either `request_token` or `access_token` depending on which step in the flow you are on. |
-| OAuth token secret |                                                                                                                                                    |
+| OAuth token secret | Secret generally sent with the response for a certain token. Used for exchange, signature generation, or refreshing the `access_token`.            |
 
-# You have reached the home stretch!
+Fancy more detailed information? Here you go: [OAuth 1.0 protocol](https://tools.ietf.org/html/rfc5849).
 
-Click the button **Submit app now**.
+# Authorisation
 
-Makes us jump for joy! Your app is on its way! We will be testing your app and come back to you as soon as our review has been completed. Give us XXX days time.
+1. Within your test shop backoffice, again choose the tab **Apps**.
+2. Choose the field **Private Apps** and click the button **Create app**.
+3. Click the button **Test authorisation**. You will be requested to enter the **Application callback URL** and **Application notification URL**.
+4. Click the button **Test authorisation** again. You will be forwarded to an external page to complete the authorisation process.
+5. Once the test authorisation has been finished successfully, you will be fowarded to
+
+{% callout danger Authorisation to be described %}
+  development in progress
+{% endcallout %}
+
+# Making a request
+
+{% callout danger This is a red callout %}
+Following content to be discussed with Oli/Alessandro.
+{% endcallout %}
+
+All URLs start with https://xyz.com/api/. If we change he API in backward-incompatible ways, we'll add a version marker and maintain stable support for the old URLs.
+
+# JSON
+
+placeholder
+
+# Error handling
+
+The API uses HTTP response codes to indicate success or failure of a request. That means, the 2xx range indicates success, the 4xx range indicates validation errors or problems with the provided parameters (e.g. missing required parameters) and the 5xx range indicates errors on our side.
+These are the typical responses that can occur:
+
+* 200 OK - standard response for a successful HTTP request.
+* 201 Created - request has been fulfilled and resulted in a new resource being created.
+
+A typical HTTP 2xx response could look like this:
+
+{% highlight json %}
+{
+    "name": "Contact information",
+    "title": null,
+    "navigationCaption": "Contact information",
+    "shortDescription": "You adapt this text via the preview or data sheet view under the &quot;Content/Categories&quot; menu item of your Administration.",
+    "description": "<p>Account number: ...<p/>",
+    "company": "",
+    "contactPerson": "John Doe",
+    "contactPersonJobTitle": null,
+    "address": "Pilatuspool 2<br />20355 Hamburg<br />Germany",
+    "phone": null,
+    "fax": null,
+    "email": "john.doe@epages.com"
+}
+{% endhighlight %}
+
+* 400 Bad Request - server cannot or will not process the request due to something that is perceived to be a client error
+* 404 Not Found - requested resource could not be found but may be available in future
+
+A typical HTTP 4xx response could look like this:
+
+{% highlight json %}
+{
+  "message": "Bad Request",
+  "status": 400
+}
+{% endhighlight %}
+
+* 500 Internal Server Error -
+* 503 Service Unavailable -
+
+A typical HTTP 5xx response could look like this:
+
+{% highlight json %}
+{
+  "message": "Internal Server Error",
+  "status": 500
+}
+{% endhighlight %}
+
+# Call limits
+
+
+API call limit means that the rate at which requests to the API are called are limited and defined by ePages.
+
+The calls are limited to 6000 API calls per auth token per hour. Once, the limit is exceeded, the call will return HTTP status XYZ and a message telling you that you've been limited.
+
+The rate limit usage is returned in the response headers from each request, e.g.
+
+{% highlight text %}
+HTTP 1.1 200 OK
+RateLimit-Limit: 6000
+RateLimit-Remaining: 5896
+Rate-Limit-Reset: to be defined
+{% endhighlight %}
+
+RateLimit-Limit: number of calls you are allowed per day
+
+RateLimit-Remaining: number of calls you can make before hitting the limit
+
+RateLimit-Reset: next time the limit will be updated.
+
+
+
+Developing the ePages API is an ongoing process. Please let us know if you're missing a resource that you want to be listed here.

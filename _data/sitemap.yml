@@ -18,38 +18,33 @@
         title: Registration
         url: '/epages-docs/pages/apps/getting-started.html#registration'
     - link:
+        title: Authentication
+        url: '/epages-docs/pages/apps/getting-started.html#authentication'
+    - link:
+        title: OAuth
+        url: '/epages-docs/pages/apps/getting-started.html#oauth'
+    - link:
+        title: Making a request
+        url: '/epages-docs/pages/apps/getting-started.html#making-a-request'
+    - link:
+        title: JSON
+        url: '/epages-docs/pages/apps/getting-started.html#json'
+    - link:
+        title: Error handling
+        url: '/epages-docs/pages/apps/getting-started.html#error-handling'
+    - link:
+        title: Call limits
+        url: '/epages-docs/pages/apps/getting-started.html#call-limits'
+    - page: apps-develop-app
+    - link:
         title: Create an app
-        url: '/epages-docs/pages/apps/getting-started.html#create-an-app'
+        url: '/epages-docs/pages/apps/developing-an-app.html#create-an-app'
     - link:
         title: Submit an app
-        url: '/epages-docs/pages/apps/getting-started.html#submit-an-app'
+        url: '/epages-docs/pages/apps/developing-an-app.html#submit-an-app'
     - page: apps-oauth
 
 - key: api-rest
-  title: REST API
+  title: API reference
   entries:
-    - page: api-getting-started
-    - link:
-        title: Introduction
-        url: '/epages-docs/pages/rest-api/getting-started.html#introduction'
-    - link:
-        title: Authentication
-        url: '/epages-docs/pages/rest-api/getting-started.html#authentication'
-    - link:
-        title: Making a request
-        url: '/epages-docs/pages/rest-api/getting-started.html#making-a-request'
-    - link:
-        title: JSON
-        url: '/epages-docs/pages/rest-api/getting-started.html#json'
-    - link:
-        title: Error handling
-        url: '/epages-docs/pages/rest-api/getting-started.html#error-handling'
-    - link:
-        title: Call limits
-        url: '/epages-docs/pages/rest-api/getting-started.html#call-limits'
-    - page: api-call-limits
     - page: api-resources
-
-- key: api-soap
-  title: SOAP API
-  entries:
