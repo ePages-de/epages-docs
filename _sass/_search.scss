@@ -1,0 +1,19 @@
+#search-box {
+  font-size: 20px;
+}
+
+#search-results {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.search-result {
+  padding: 0;
+  margin: 10px 0;
+}
+
+.search-highlight em {
+  font-weight: bold;
+  background-color: yellow;
+}

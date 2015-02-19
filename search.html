@@ -1,0 +1,17 @@
+---
+layout: blank
+---
+<div id="search">
+  <form id="search-form" autocomplete="off">
+    <div class="form-group">
+      <label for="search-box">Search</label>
+      <input id="search-box" type="text" placeholder="Enter your search here" class="form-control"/>
+    </div>
+  </form>
+  <ul id="search-results"></ul>
+</div>
+
+<script type="text/javascript" src="{{ '/assets/javascript/searchform.js' | prepend: site.baseurl }}"></script>
+<script type="text/javascript">
+  SearchForm('{{ '/search.json' | prepend: site.baseurl }}', '#search-form', '#search-box', '#search-results');
+</script>
