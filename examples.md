@@ -47,9 +47,9 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 [A link to an external page](http://jekyllrb.com/)
 
-[A link to an internal page](page:api-getting-started)
+[A link to an internal page](page:apps-getting-started)
 
-[A link to a headline of an internal page](page:api-getting-started#the-api-documentation)
+[A link to a headline of an internal page](page:apps-getting-started#customer-relationship)
 
 
 
