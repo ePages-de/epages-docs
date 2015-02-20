@@ -9,11 +9,11 @@ This reference lists every resource currently available in the ePages API. The w
 
 # Categories
 
-* [Cart resources](page:api-resources-carts)
-* [Product resources](page:api-resources-products)
-* [Category resources](page:api-resources-categories)
-* [Shipping method resources](page:api-resources-shipping-methods)
-* [Legal resources](page:api-resources-legal)
+* [Carts](page:api-resources-carts)
+* [Categories](page:api-resources-categories)
+* [Legal](page:api-resources-legal)
+* [Products](page:api-resources-products)
+* [Shipping method](page:api-resources-shipping-methods)
 
 # All resources
 

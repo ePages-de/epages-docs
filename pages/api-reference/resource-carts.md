@@ -1,7 +1,7 @@
 ---
 layout: page
 key: api-resources-carts
-title: Cart resources
+title: Carts
 ---
 
 <ul id="resource-list">

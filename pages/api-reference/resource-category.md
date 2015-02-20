@@ -1,7 +1,7 @@
 ---
 layout: page
 key: api-resources-categories
-title: Category resources
+title: Categories
 ---
 
 <ul id="resource-list">

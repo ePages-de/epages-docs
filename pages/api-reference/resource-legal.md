@@ -1,7 +1,7 @@
 ---
 layout: page
 key: api-resources-legal
-title: Legal resources
+title: Legal
 ---
 
 <ul id="resource-list">
