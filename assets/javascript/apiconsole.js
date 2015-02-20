@@ -2,11 +2,9 @@
     'use strict';
 
     var afterChange = function (node, callback) {
-        $(node).on('change keydown', function () {
+        $(node).on('change keyup', function () {
             var $input = $(this);
-            window.setTimeout(function () {
-                callback($input.val());
-            }, 0);
+            callback($input.val());
         });
         callback($(node).val());
     };

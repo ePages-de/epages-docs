@@ -40,6 +40,12 @@
             if (busy == true) return;
             busy = true;
 
+            window.setTimeout(function () {
+                if (busy == false) return;
+                $searchResults.children().remove();
+                $searchResults.append('<li class="no-search-result"><div>Searching for "' + query + '"...</div></li>');
+            }, 250);
+
             $.ajax({
                 type: 'POST',
                 url: searchUrl,
@@ -59,10 +65,13 @@
                         $searchResults.append('<li class="search-result"><div>' + link_html + '</div><div>' + highlight_html + '</div></li>');
                     });
                 } else {
-                    $searchResults.append('<li class="no-search-result"><div>No results.</div></li>');
+                    $searchResults.append('<li class="no-search-result"><div>No results for "' + query + '".</div></li>');
                 }
             }).fail(function (xhr, textStatus, err) {
                 busy = false;
+                $searchResults.children().remove();
+                $searchResults.append('<li class="no-search-result"><div>An unknown error.</div></li>');
+                console.log(xhr, err);
             });
         };
 
