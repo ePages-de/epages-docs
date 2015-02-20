@@ -1,4 +1,5 @@
 ---
+key: faq
 layout: blank
 title: Frequently asked questions
 ---

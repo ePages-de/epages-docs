@@ -12,23 +12,17 @@
   entries:
     - page: apps-getting-started
     - link:
-        title: Use cases
-        url: '/epages-docs/pages/apps/getting-started.html#use-cases'
+        title: JSON
+        url: '/epages-docs/pages/apps/getting-started.html#json'
     - link:
         title: Registration
         url: '/epages-docs/pages/apps/getting-started.html#registration'
     - link:
-        title: Authentication
-        url: '/epages-docs/pages/apps/getting-started.html#authentication'
-    - link:
         title: OAuth
         url: '/epages-docs/pages/apps/getting-started.html#oauth'
     - link:
-        title: Making a request
-        url: '/epages-docs/pages/apps/getting-started.html#making-a-request'
-    - link:
-        title: JSON
-        url: '/epages-docs/pages/apps/getting-started.html#json'
+        title: Making an API call
+        url: '/epages-docs/pages/apps/getting-started.html#making-an-API-call'
     - link:
         title: Error handling
         url: '/epages-docs/pages/apps/getting-started.html#error-handling'
