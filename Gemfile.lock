@@ -1,22 +1,4 @@
 GIT
-  remote: https://github.com/choffmeister/jekyll_deploy.git
-  revision: 2a5cbeb1ddd33220a14fece95c844c8801ce0da7
-  branch: master
-  specs:
-    jekyll_deploy (0.0.1)
-      jekyll (>= 2.5.0)
-
-GIT
-  remote: https://github.com/choffmeister/jekyll_search.git
-  revision: 212b44432576b1ab812ab102d32041bb013d3663
-  branch: develop
-  specs:
-    jekyll_search (0.0.1)
-      elasticsearch (~> 1.0.6)
-      jekyll (>= 2.5.0)
-      loofah (~> 2.0.1)
-
-GIT
   remote: https://github.com/ePages-de/raml_parser.git
   revision: 02820a9ac5395018fa0cca68e615ea82f65988e4
   branch: develop
@@ -81,6 +63,12 @@ GEM
       sass (~> 3.2)
     jekyll-watch (1.2.1)
       listen (~> 2.7)
+    jekyll_deploy (0.0.1)
+      jekyll (>= 2.5.0)
+    jekyll_search (0.0.1)
+      elasticsearch (~> 1.0.6)
+      jekyll (>= 2.5.0)
+      loofah (~> 2.0.1)
     json (1.8.2)
     kramdown (1.5.0)
     liquid (2.6.2)
@@ -123,7 +111,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (>= 2.5.0)
-  jekyll_deploy!
-  jekyll_search!
+  jekyll_deploy
+  jekyll_search
   loofah (>= 2.0.0)
   raml_parser!

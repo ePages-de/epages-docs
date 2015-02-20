@@ -22,3 +22,20 @@ deployment:
   type: git
   repo: git@github.com:ePages-de/epages-docs.git
   branch: gh-pages
+
+# Search index settings
+search:
+  host: localhost:9200
+  index:
+    mappings:
+      page:
+        properties:
+          url:
+            type: string
+            analyzer: keyword
+          title:
+            type: string
+            analyzer: english
+          content:
+            type: string
+            analyzer: english

@@ -50,6 +50,7 @@ module Jekyll
       self.read_yaml(File.join(base, '_layouts'), 'api.raml')
 
       self.data['raml_raw'] = raml_raw
+      self.data['searchable'] = false
     end
   end
 
