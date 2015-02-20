@@ -128,28 +128,26 @@ A typical HTTP 5xx response could look like this:
 }
 {% endhighlight %}
 
-# Call limits
+# API call limit
 
+Requests to the API are limited and defined by ePages.
+Once the limit is exceeded, the request will return HTTP status `429 - Too many requests` and a message telling you that you've been limited.
 
-API call limit means that the rate at which requests to the API are called are limited and defined by ePages.
-
-The calls are limited to 6000 API calls per auth token per hour. Once, the limit is exceeded, the call will return HTTP status XYZ and a message telling you that you've been limited.
-
-The rate limit usage is returned in the response headers from each request, e.g.
+The rate limit is returned in the response headers from each request, e.g.
 
 {% highlight text %}
-HTTP 1.1 200 OK
-RateLimit-Limit: 6000
-RateLimit-Remaining: 5896
-Rate-Limit-Reset: to be defined
+x-ratelimit-limit: 6000
+x-ratelimit-remaining: 5999
+x-ratelimit-reset: 2015-02-20T13:14:34.611Z
 {% endhighlight %}
 
-RateLimit-Limit: number of calls you are allowed per day
+x-ratelimit-limit: number of calls you are allowed per per auth token per hour
 
-RateLimit-Remaining: number of calls you can make before hitting the limit
+x-ratelimit-remaining: number of calls you can make before hitting the limit
 
-RateLimit-Reset: next time the limit will be updated.
+x-ratelimit-reset: next time the limit will be updated.
 
+# Here we go!
 
 **Any questions?**
 

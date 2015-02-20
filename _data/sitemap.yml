@@ -37,8 +37,8 @@
     - title: Error handling
       link: page:apps-getting-started#error-handling
 
-    - title: Call limits
-      link: page:apps-getting-started#call-limits
+    - title: API call limit
+      link: page:apps-getting-started#api-call-limit
 
     - title: Create an app
       link: page:apps-develop-app#create-an-app
