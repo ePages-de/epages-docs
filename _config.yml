@@ -41,3 +41,14 @@ search:
             content:
               type: string
               analyzer: english
+        section:
+          properties:
+            url:
+              type: string
+              analyzer: keyword
+            title:
+              type: string
+              analyzer: english
+            content:
+              type: string
+              analyzer: english
