@@ -16,6 +16,7 @@ exclude:
   - Gemfile.lock
   - LICENSE.txt
   - README.md
+  - Vagrantfile
 
 # Deployment settings
 deployment:

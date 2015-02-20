@@ -36,8 +36,15 @@ TODO
 
 TODO
 
+## Run complete environment in Vagrant
+
+Make sure you have install [Vagrant][vagrant] and [VirtualBox][virtualbox]. Now run `vagrant up`, take a coffee and afterwards visit [http://localhost:8080/epages-docs/](http://localhost:8080/epages-docs/) in your web browser.
+
 [epagesdocs]: http://epages-de.github.io/epages-docs/
 [ruby]: https://www.ruby-lang.org/
 [bundler]: http://bundler.io/
 
 [bootstrap-macosx]: https://github.com/thoughtbot/laptop
+
+[vagrant]: https://www.vagrantup.com/
+[virtualbox]: https://www.virtualbox.org/
