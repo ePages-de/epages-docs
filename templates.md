@@ -2,6 +2,7 @@
 layout: page
 key: _templates
 title: Templates
+searchable: false
 ---
 
 My templates:
