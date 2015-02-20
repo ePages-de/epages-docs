@@ -7,8 +7,11 @@
         var createQueryData = function (query) {
             return {
                 query: {
-                    match_phrase: {
-                        content: query
+                    match_phrase_prefix: {
+                        content: {
+                            query: query,
+                            slop: 10
+                        }
                     }
                 },
                 highlight: {
