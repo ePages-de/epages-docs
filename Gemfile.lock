@@ -65,7 +65,7 @@ GEM
       listen (~> 2.7)
     jekyll_deploy (0.0.1)
       jekyll (>= 2.5.0)
-    jekyll_search (0.0.1)
+    jekyll_search (0.0.2)
       elasticsearch (~> 1.0.6)
       jekyll (>= 2.5.0)
       loofah (~> 2.0.1)

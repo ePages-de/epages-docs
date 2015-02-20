@@ -27,15 +27,17 @@ deployment:
 search:
   host: localhost:9200
   index:
-    mappings:
-      page:
-        properties:
-          url:
-            type: string
-            analyzer: keyword
-          title:
-            type: string
-            analyzer: english
-          content:
-            type: string
-            analyzer: english
+    name: epages-docs
+    settings:
+      mappings:
+        page:
+          properties:
+            url:
+              type: string
+              analyzer: keyword
+            title:
+              type: string
+              analyzer: english
+            content:
+              type: string
+              analyzer: english
