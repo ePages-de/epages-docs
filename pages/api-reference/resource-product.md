@@ -1,7 +1,7 @@
 ---
 layout: page
 key: api-resources-products
-title: Product resources
+title: Product
 ---
 
 <ul id="resource-list">
