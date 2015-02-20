@@ -3,6 +3,7 @@ layout: page
 key: _use-cases
 title: Use cases
 searchable: false
+---
 
 # Use cases
 
