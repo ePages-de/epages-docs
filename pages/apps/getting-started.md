@@ -157,4 +157,4 @@ Find answers to the common questions in our [FAQ section](page:faq). More compli
 
 # Here we go!
 
-Done! You're all set! It's that simple! Get straight down to the nitty-gritty and [create your app](page:apps-getting-started#create-an-app).
+Done! You're all set! It's that simple! Get straight down to the nitty-gritty and [create your app](page:apps-develop-app#create-an-app).

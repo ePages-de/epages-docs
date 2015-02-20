@@ -6,9 +6,9 @@ searchable: false
 ---
 
 My templates:
-[Create an App](page:apps-getting-started#create-an-app)
+[Create an App](page:apps-develop-app#create-an-app)
 
-[Create an App](/epages-docs/pages/apps/create-an-app.html)
+[Create an App](/epages-docs/pages/apps/develop-an-app.html)
 ![Text falls Bild nicht geladen](/epages-docs/assets/images/epages-logo.png)
 
 - link:
