@@ -4,8 +4,15 @@ task :test do
   class UnresolvedReferencesLinkCheck < HTML::Proofer::Checkable
     attr_reader :href
 
-    def unresolved_page?
-      return @href.match /^page\:/
+    def unresolved_reference?
+      if @href =~ /([a-z\-]+):([a-z\-]+)(#([a-z\-]+))?/
+        case $1
+          when 'mailto'
+            false
+          else
+            return 'true'
+        end
+      end
     end
   end
 
@@ -14,8 +21,8 @@ task :test do
       @html.css('a').each do |l|
         link = UnresolvedReferencesLinkCheck.new l, self
 
-        if link.unresolved_page?
-          return add_issue("There is an unresolvable link to #{link.href}")
+        if link.unresolved_reference?
+          return add_issue("There is an unresolvable reference to #{link.href}")
         end
       end
     end
