@@ -16,11 +16,11 @@ In a first approach, we only support external apps. We call them "connectors". C
 4. Click the button **Save**. The API data **Consumer key**, **Consumer secret**, **Access token** and **Access secret** will be generated automatically.
 
 Once this is done, you can start coding off. Brilliant: you are free to use any kind of code language.
-But when developing your app, please consider our [API call limit](doc:api-call-limit).
+But when developing your app, please consider our [API call limit](page:apps-getting-started.html#call-limits).
 
 ## Your app is ready for takeoff?
 
-Let's go for the [authorisation](doc:oauth).
+Let's go for the [authorisation](page:apps-oauth).
 Once this is done, your app will be available in your test shop in the field **My apps**.
 
 ## Test. Test. Test.
@@ -47,7 +47,7 @@ Your app is still available in the field **Private apps**.
 
 ## Ready, steady, go!
 
-[Submit your app](doc:submit-an-app).
+[Submit your app](page:apps-develop-app#submit-an-app).
 
 # Submit an app
 

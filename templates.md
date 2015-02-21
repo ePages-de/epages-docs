@@ -6,14 +6,14 @@ searchable: false
 ---
 
 My templates:
-[Create an App](page:apps-getting-started#create-an-app)
+[Create an App](page:apps-develop-app#create-an-app)
 
-[Create an App](/epages-docs/pages/apps/create-an-app.html)
-![Text falls Bild nicht geladen](/epages-docs/assets/images/epages-logo.png)
+{% image epages-logo.png %}
+This is an image with at most 100% width
+{% endimage %}
 
-- link:
-        title: Analytics Reporting
-        url: '/epages-docs/pages/getting-started/usecases.html#analytics--reporting'
+- title: Analytics Reporting
+  url: page:usecases.html#analytics--reporting
 
 Callout - Info
 
@@ -40,4 +40,3 @@ Rate-Limit-Reset: to be defined
 {% endhighlight %}
 
 [Product resources](page:api-resources-products)
-[Product resources with link to Headline](page:api-resources-products#headline)

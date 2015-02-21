@@ -7,3 +7,5 @@ group :jekyll_plugins do
   gem 'jekyll_deploy'
   gem 'jekyll_search'
 end
+
+gem 'html-proofer'

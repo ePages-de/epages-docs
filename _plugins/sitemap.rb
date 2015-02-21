@@ -41,19 +41,12 @@ module Jekyll
     def render(context)
       @ref = lookup(context, @data)
 
-      url = Sitemap.resolve(context.registers[:site], @ref['link'])
-      render_link(url, @ref['title'])
+      title = @ref['title'] || 'UNKNOWN TITLE'
+      url = Sitemap.resolve(context.registers[:site], @ref['link']) || @ref['link']
+      "<a href=\"#{url}\">#{title}</a>"
     end
 
     private
-
-    def render_link(url, title)
-      if url != nil
-        "<a href=\"#{url}\">#{title}</a>"
-      else
-        "<a href=\"/this-link-leads-to-nowhere.html\">UNRESOLVED LINK</a>"
-      end
-    end
 
     def lookup(context, name)
       name.split(".").each do |value|

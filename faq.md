@@ -13,7 +13,7 @@ Need support with the app development? Contact us! We will do our best to help y
 
 ## How do I get my API key? ##
 
-To get access to our REST API, you need to [sign in](doc:registration) to our developer program. As soon as you're done with that, you will receive two emails: one will contain the credentials for your ePages shop, the other will contain your client token and client secret to access the REST API.
+To get access to our REST API, you need to [sign in](page:apps-getting-started#registration) to our developer program. As soon as you're done with that, you will receive two emails: one will contain the credentials for your ePages shop, the other will contain your client token and client secret to access the REST API.
 
 ## What kind of apps can I submit? ##
 
@@ -22,11 +22,11 @@ Nevertheless, the preferred app types for this first phase of the developer prog
 
 ## How does the approval process work? ##
 
-When you're done with coding and been through with testing your app successfully, you can login to our test shop and [submit your app](doc:submit-an-app). Fill out the form and that's it! We will carefully test your app and also review the information you provide us for the app store. Give us some time for the review process. It can take up to XXX days. When we're done, we will contact you whether your app has been approved or not. If your app has been approved, we will provide it in the ePages app store during the next XXX days/hours. If your app has been rejected, we will give you detailed feedback why. As soon as the required changes are done, you can submit your app again.
+When you're done with coding and been through with testing your app successfully, you can login to our test shop and [submit your app](page:apps-develop-app#submit-an-app). Fill out the form and that's it! We will carefully test your app and also review the information you provide us for the app store. Give us some time for the review process. It can take up to XXX days. When we're done, we will contact you whether your app has been approved or not. If your app has been approved, we will provide it in the ePages app store during the next XXX days/hours. If your app has been rejected, we will give you detailed feedback why. As soon as the required changes are done, you can submit your app again.
 
 ## What is the API call limit? ##
 
-Depending on the ePages shop type, either 100 calls per day or 400 calls per day are accepted. Find more detailed information in the [API call limit](doc:api-call-limit) section.
+Depending on the ePages shop type, either 100 calls per day or 400 calls per day are accepted. Find more detailed information in the [API call limit](page:apps-getting-started.html#call-limits) section.
 
 ## Is the API call limit per store or per app? ##
 

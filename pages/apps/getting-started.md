@@ -66,7 +66,7 @@ Done! You're all set! It's that simple!
 
 # Here we go!
 
-Get straight down to the nitty-gritty and [create your app](page:apps-getting-started#create-an-app).
+Get straight down to the nitty-gritty and [create your app](page:apps-develop-app#create-an-app).
 
 # Authentication
 
