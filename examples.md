@@ -49,7 +49,7 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 [A link to an internal page](page:apps-getting-started)
 
-[A link to a headline of an internal page](page:apps-getting-started#customer-relationship)
+[A link to a headline of an internal page](page:apps-getting-started#sign-up-for-free)
 
 
 

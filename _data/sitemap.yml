@@ -32,7 +32,7 @@
       link: page:apps-getting-started#oauth
 
     - title: Making a request
-      link: page:apps-getting-started#making-a-request
+      link: page:apps-getting-started#making-an-api-call
 
     - title: Error handling
       link: page:apps-getting-started#error-handling
