@@ -7,20 +7,7 @@ layout: blank
     {% for category in site.data['sitemap'] %}
       <li class="sitemap-headline">{{ category.title }}</li>
       {% for entry in category.entries %}
-        {% if entry.page %}
-          {% for page in site.pages %}
-            {% if entry.page == page.key %}
-              <li class="sitemap-entry">
-                <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-                {% if page.hot %}<span class="label label-danger">HOT</span>{% endif %}
-              </li>
-            {% endif %}
-          {% endfor %}
-        {% elsif entry.link %}
-          <li class="sitemap-entry">
-            <a href="{{ entry.link.url }}">{{ entry.link.title }}</a>
-          </li>
-        {% endif %}
+        <li class="sitemap-entry">{% sitemap_link entry %}</li>
       {% endfor %}
     {% endfor %}
     </ul>
