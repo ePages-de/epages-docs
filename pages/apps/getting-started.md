@@ -74,24 +74,24 @@ Example of OAuth keys
 Following content to be discussed with Oli/Alessandro.
 {% endcallout %}
 
-Requests to the API can only be made using HTTPS to grant access to authorised users only.
-All URLs start with https://xyz.com/api/. If we change the API in backward-incompatible ways, we'll add a version marker and maintain stable support for the old URLs.
+Requests to the API can only be made using HTTPS to enable secure, confident and unaltered data transmission and to grant access to authorised users only.
+All URLs start with /rs/. If we change the API in backward-incompatible ways, we'll add a version marker and maintain stable support for the old URLs.
 
 # Error handling
 
 The API uses HTTP response codes to indicate success or failure of a request. That means, the 2xx range indicates success, the 4xx range indicates validation errors or problems with the provided parameters whereas the 5xx range indicates errors on our side.
 
 {% callout info Sometimes ... HTML responses... %}
-Generally, you can expect a JSON response, when making an API request. Due to internal technial issues, however, in the 4xx and 5xx range HTML responses can occur, see [the example for the 4xx response](page:apps-getting-started#a-typical-http-4xx-response-could-look-like-this).
+Generally, you can expect a JSON response, when making an API request. Due to internal technial reasons, however, in the 4xx and 5xx range HTML responses can occur, see [the example for the 4xx response](page:apps-getting-started#a-typical-http-4xx-response-could-look-like-this).
 {% endcallout %}
 
 ## A typical HTTP 2xx response could look like this:
 
-**Status**
+### Status
 
 200 OK
 
-**Headers**
+### Headers
 
 {% highlight text %}
 Content-Length: 45
@@ -99,12 +99,9 @@ Content-Type: application/json
 Date: Mon, 23 Feb 2015 10:51:33 GMT
 Server: Jetty(9.2.7.v20150116)
 X-epages-Media-Type: application/vnd.epages.v1+json
-X-RateLimit-Limit: 6000
-X-RateLimit-Remaining: 5999
-X-RateLimit-Reset: 2015-02-23T10:51:33.524Z
 {% endhighlight %}
 
-**Body**
+### Body
 
 {% highlight json %}
 {
@@ -132,23 +129,20 @@ The server successfully processed the request, but is not returning any content.
 
 ## A typical HTTP 4xx response could look like this:
 
-**Status**
+### Status
 
 400 Bad Request
 
-**Headers**
+### Headers
 
 {% highlight text %}
 Content-Length: 45
 Content-Type: text/html; charset0ISO-8859-1
 Date: Mon, 23 Feb 2015 11:18:38 GMT
 Server: Jetty(9.2.7.v20150116)
-X-RateLimit-Limit: 6000
-X-RateLimit-Remaining: 5999
-X-RateLimit-Reset: 2015-02-23T11:18:38.130Z
 {% endhighlight %}
 
-**Body**
+### Body
 
 {% highlight html %}
 <head>
@@ -168,11 +162,11 @@ X-RateLimit-Reset: 2015-02-23T11:18:38.130Z
 
 ### 400: Bad Request
 
-The server cannot or will not process the request due to something that is perceived to be a client error, e.g. a number is requested, but text is expected.
+The server cannot or will not process the request due to something that is perceived to be a client error, e.g. a non-number is sent to the server, but a number was expected.
 
 ### 403: Forbidden
 
-The request was valid, but the server is refusing to respond to it, e.g. the request is not signed with OAuth or an incorrect signature is used.
+The request was valid, but the server is refusing to respond to it, e.g. the request is not signed with OAuth, an incorrect signature is used or the client is refused because it is lacking permissions.
 
 ### 404: Not Found
 
@@ -180,11 +174,13 @@ The requested resource could not be found, but may be available in future, e.g. 
 
 ### 405: Method Not Allowed
 
-A request was made of a resource using a request method not supported by that resource, e.g. using a `POST` on a form that requires a `GET`.
+A request was made of a resource using a request method not supported by that resource, e.g. using a `POST` on a resource that requires a `GET`.
 
 ### 406: Not Acceptable
 
-The requested resource is only capable of generating content not acceptable according to the accept headers sent in the request, e.g. Accept: application/vnd.epages.v1+json.
+The content negotiation between client and server failed. As ePages uses the Accept header to specify the API version, it requires the client to send exactly this header for the respective version of the REST API. So for the currently existing version v1, this is `Accept: application/vnd.epages.v1+json`.
+
+The server response for the content-type is always `application/json` unless stated otherwise.
 
 ### 429: Too Many Requests
 
@@ -192,11 +188,11 @@ Too many requests have been sent to the API in a given amount of time, e.g. the 
 
 ## A typical HTTP 5xx response could look like this:
 
-**Status**
+### Status
 
 500 Internal Server Error
 
-**Headers**
+### Headers
 
 {% highlight text %}
 Content-Length: 45
@@ -205,7 +201,7 @@ Date: Mon, 23 Feb 2015 11:18:38 GMT
 Server: Jetty(9.2.7.v20150116)
 {% endhighlight %}
 
-**Body**
+### Body
 
 {% highlight json %}
 {
@@ -222,7 +218,7 @@ A generic error message that is given, when an unexpected condition was encounte
 
 ### 502: Bad Gateway
 
-The server was acting as a gateway or proxy and received an invalid response from the upstream server, e.g. ePages services not available.
+The server was acting as a gateway or proxy and received an invalid response from the upstream server, e.g. internal ePages services not available. Generally, this is only a temporary state.
 
 ### 503: Service Unavailable
 
