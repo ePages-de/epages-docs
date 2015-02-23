@@ -28,9 +28,6 @@
     - title: Registration
       link: page:apps-getting-started#registration
 
-    - title: OAuth
-      link: page:apps-getting-started#oauth
-
     - title: Making a request
       link: page:apps-getting-started#making-an-api-call
 
@@ -45,9 +42,6 @@
 
     - title: Submit an app
       link: page:apps-develop-app#submit-an-app
-
-    - title: OAuth
-      link: page:apps-oauth
 
 - key: api-rest
   title: API reference
