@@ -2,6 +2,7 @@
 layout: page
 key: _examples
 title: Examples
+searchable: false
 ---
 
 # Headline layer 1
