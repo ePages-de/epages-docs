@@ -52,7 +52,7 @@ For your application's own security: DO NOT share your consumer secret with anyo
 
 The credentials you'll receive might look like this:
 
-{% image example_consumer_key_secret.png 50% %}
+{% image example-consumer-key-secret.png 50% %}
 Example of OAuth keys
 {% endimage %}
 
