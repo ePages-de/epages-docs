@@ -30,19 +30,15 @@ body {
   background-color: #333333;
 }
 
-article {
+.page-header {
+  margin-top: 0;
+
   h1 {
-    @extend h2;
+    font-size: $font-size-h1 * 1.1;
   }
+}
 
-  h2 {
-    @extend h3;
-  }
-
-  h3 {
-    @extend h4;
-  }
-
+article {
   table {
     @extend .table;
     @extend .table-bordered;
