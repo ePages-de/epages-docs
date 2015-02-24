@@ -78,7 +78,12 @@ This is an image with an enforced width of 50%
 This is an image with an enforced width of 50%
 {% endimage %}
 
-
+{% highlight json %}
+{
+  "message": "Bad Request",
+  "status": 400
+}
+{% endhighlight %}
 
 {% highlight scala %}
 // some syntax highlighted Scala code
