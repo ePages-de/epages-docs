@@ -1,9 +1,12 @@
 ---
 layout: page
-key: _use-cases
-title: Use cases
-searchable: false
+key: apps-overview
+title: Overview
 ---
+
+# Introduction
+
+The ePages API provides developers the interface to create awesome apps or single shop connections. It is designed to give developers a convenient way to access data contained within ePages stores. With a standard interface to store data, it is very simple to create third party applications that can communicate with our merchant's stores.
 
 # Use cases
 
@@ -24,3 +27,7 @@ Integrate orders and print labels with one click.
 
 ## Social commerce
 Add a shop tab to a Facebook page from where users can browse products directly on Facebook.
+
+# Support
+
+Any questions? Find answers to the common questions in our [FAQ section](page:faq). More complicated topic? We get you in touch with our support. Just send us your request and we will get back to you.

@@ -55,9 +55,9 @@ Links
 
 [A link to an external page](http://jekyllrb.com/)
 
-[A link to an internal page](page:apps-getting-started)
+[A link to an internal page](page:apps-using-the-api)
 
-[A link to a headline of an internal page](page:apps-getting-started#sign-up-for-free)
+[A link to a headline of an internal page](page:apps-using-the-api#sign-up-for-free)
 
 
 Table

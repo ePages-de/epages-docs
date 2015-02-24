@@ -19,23 +19,20 @@
 - key: apps
   title: Apps
   entries:
-    - title: Getting Started
-      link: page:apps-getting-started
+    - title: Overview
+      link: page:apps-overview
 
-    - title: JSON
-      link: page:apps-getting-started#json
-
-    - title: Registration
-      link: page:apps-getting-started#registration
-
-    - title: Making a request
-      link: page:apps-getting-started#making-an-api-call
+    - title: Using the API
+      link: page:apps-using-the-api
 
     - title: Error handling
-      link: page:apps-getting-started#error-handling
+      link: page:apps-using-the-api#error-handling
 
-    - title: Call limits
-      link: page:apps-getting-started#call-limits
+    - title: API call limit
+      link: page:apps-using-the-api#api-call-limit
+
+    - title: Developing an app
+      link: page:apps-develop-app
 
     - title: Create an app
       link: page:apps-develop-app#create-an-app
