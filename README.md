@@ -16,7 +16,7 @@ $ jekyll server --watch
 # build distribution version
 $ jekyll build
 
-# check for death links and other bad stuff
+# check for death links and other bad stuff (this is executed by Jenkins on pull requests)
 $ rake test
 
 # publish
