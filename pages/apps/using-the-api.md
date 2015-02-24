@@ -1,10 +1,8 @@
 ---
 layout: page
-key: apps-getting-started
-title: Getting started
+key: apps-using-the-api
+title: Using the API
 ---
-
-The ePages API provides developers the interface to create awesome apps or single shop connections. It is designed to give developers a convenient way to access data contained within ePages stores. With a standard interface to store data, it is very simple to create third party applications that can communicate with our merchant's stores.
 
 # RESTful principle
 
@@ -12,14 +10,33 @@ Our highest claim is to ensure you're having a good time developing your app. Th
 
 Let's make things less complicated: It's very easy to build and test applications, since the API is based on RESTful principles. The API uses the following standard HTTP verbs to make use of the required store data:
 
-  * `GET` (request)
-  * `POST` (create)
-  * `PUT` (modify)
-  * `DELETE` (delete)
+  * `GET` requests resources
+  * `POST` creates resources
+  * `PUT` modifys resources
+  * `DELETE` deletes resources
 
-# JSON
+# Schema
 
-The API supports the JSON standard, which basically is the universal connector for data on the internet, and makes developers lives way easier, when using our RESTful API.
+All API access is over HTTPS. All data is sent and received as JSON.
+
+{% highlight text %}
+https://rs/Shops/DemoShop/legal/privacy-policy
+
+HTTP 1.1 200 OK
+Content-Length: application/json
+Date: Tue, 24 Feb 2015 11:30:16 GMT
+Server: Jetty(9.2.7.v20150116)
+X-ePages-Media-Type: application/vnd.epages.v1+json
+X-RateLimit-Limit: 6000
+X-RateLimit-Remaining: 5999
+X-RateLimit-Reset: 2015-02-24T11:30:16.481Z
+{% endhighlight %}
+
+All timestamps are returned in ISO 8601 format:
+
+{% highlight text %}
+YYYY-MM-DDTHH:MM:SS.Z
+{% endhighlight %}
 
 # Registration
 
@@ -82,7 +99,7 @@ All URLs start with /rs/. If we change the API in backward-incompatible ways, we
 The API uses HTTP response codes to indicate success or failure of a request. That means, the 2xx range indicates success, the 4xx range indicates validation errors or problems with the provided parameters whereas the 5xx range indicates errors on our side.
 
 {% callout info Sometimes ... HTML responses... %}
-Generally, you can expect a JSON response, when making an API request. Due to internal technial reasons, however, in the 4xx and 5xx range HTML responses can occur, see [the example for the 4xx response](page:apps-getting-started#a-typical-http-4xx-response-could-look-like-this).
+Generally, you can expect a JSON response, when making an API request. Due to internal technial reasons, however, in the 4xx and 5xx range HTML responses can occur, see [the example for the 4xx response](page:apps-using-the-api#a-typical-http-4xx-response-could-look-like-this).
 {% endcallout %}
 
 ## A typical HTTP 2xx response could look like this:
@@ -184,7 +201,7 @@ The server response for the content-type is always `application/json` unless sta
 
 ### 429: Too Many Requests
 
-Too many requests have been sent to the API in a given amount of time, e.g. the API call limit has been exceeded, see also [API call limit](page:apps-getting-started#api-call-limit).
+Too many requests have been sent to the API in a given amount of time, e.g. the API call limit has been exceeded, see also [API call limit](page:apps-using-the-api#api-call-limit).
 
 ## A typical HTTP 5xx response could look like this:
 
@@ -245,10 +262,13 @@ RateLimit-Remaining: number of calls you can make before hitting the limit
 
 RateLimit-Reset: next time the limit will be updated.
 
+# Current version
 
-**Any questions?**
+By default, all requests receive the **v1** version of the API. We encourage you to explicitly request this version via the `Accept` header.
 
-Find answers to the common questions in our [FAQ section](page:faq). More complicated topic? We get you in touch with our support. Just send us your request and we will get back to you.
+{% highlight text %}
+Accept: application/vnd.epages.v1+json
+{% endhighlight %}
 
 # Here we go!
 

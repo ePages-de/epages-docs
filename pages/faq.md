@@ -11,7 +11,7 @@ Need support with the app development? Contact us! We will do our best to help y
 
 # How do I get my API key?
 
-To get access to our REST API, you need to [sign in](page:apps-getting-started#registration) to our developer program. As soon as you're done with that, you will receive two emails: one will contain the credentials for your ePages shop, the other will contain your client token and client secret to access the REST API.
+To get access to our REST API, you need to [sign in](page:apps-using-the-api#registration) to our developer program. As soon as you're done with that, you will receive two emails: one will contain the credentials for your ePages shop, the other will contain your client token and client secret to access the REST API.
 
 # What kind of apps can I submit?
 
@@ -24,7 +24,7 @@ When you're done with coding and been through with testing your app successfully
 
 # What is the API call limit?
 
-Depending on the ePages shop type, either 100 calls per day or 400 calls per day are accepted. Find more detailed information in the [API call limit](page:apps-getting-started.html#call-limits) section.
+Depending on the ePages shop type, either 100 calls per day or 400 calls per day are accepted. Find more detailed information in the [API call limit](page:apps-using-the-api#api-call-limit) section.
 
 # Is the API call limit per store or per app?
 
