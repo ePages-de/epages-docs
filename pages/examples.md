@@ -5,19 +5,20 @@ title: Examples
 searchable: false
 ---
 
+Headlines
+
+
 # Headline layer 1
-
-
 
 ## Headline layer 2
 
-
-
 ### Headline layer 3
 
-
-
 #### Headline layer 4
+
+
+Text
+
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -26,6 +27,8 @@ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
+
+Enumerations (bulleted list)
 
 
 * Item 1
@@ -36,6 +39,8 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     * Item 3c
 
 
+Enumerations (consecutive numbering)
+
 
 1. Item 1
 2. Item 2
@@ -45,6 +50,8 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     3. Item 3c
 
 
+Links
+
 
 [A link to an external page](http://jekyllrb.com/)
 
@@ -53,6 +60,8 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 [A link to a headline of an internal page](page:apps-getting-started#sign-up-for-free)
 
 
+Table
+
 
 | This is       | a table       |
 |---------------|---------------|
@@ -60,6 +69,8 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 | Value 2a      | Value 3b      |
 | Value 3a      | Value 3b      |
 
+
+Images
 
 
 {% image landingpage-banner.jpg %}
@@ -79,6 +90,15 @@ This is an image with an enforced width of 50%
 {% endimage %}
 
 
+Highlights
+
+
+{% highlight json %}
+{
+  "message": "Bad Request",
+  "status": 400
+}
+{% endhighlight %}
 
 {% highlight scala %}
 // some syntax highlighted Scala code
@@ -99,6 +119,8 @@ module MyModule
 end
 {% endhighlight %}
 
+
+Callouts
 
 
 {% callout danger This is a red callout %}
