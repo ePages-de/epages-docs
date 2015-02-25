@@ -52,8 +52,7 @@ All URLs start with /rs/. If we change the API in backward-incompatible ways, we
 The API uses HTTP response codes to indicate success or failure of a request. That means, the 2xx range indicates success, the 4xx range indicates validation errors or problems with the provided parameters whereas the 5xx range indicates errors on our side.
 
 {% callout info Sometimes ... HTML responses... %}
-Generally, you can expect a JSON response, when making an API request. Due to internal technial reasons, however, in the 4xx and 5xx range HTML responses can occur, see [the 4xx example response](page:apps-using-the-api#xx-example-response-1
-).
+Generally, you can expect a JSON response, when making an API request. Due to internal technial reasons, however, in the 4xx and 5xx range HTML responses can occur, see [the 4xx example response](page:apps-using-the-api#xx-example-response-1).
 {% endcallout %}
 
 ## Responses in the 2xx range
@@ -174,7 +173,6 @@ Once the limit is exceeded, the request will be rejected. HTTP status `429 - Too
 The rate limit usage is returned in the response headers from each request, e.g.
 
 {% highlight text %}
-HTTP 1.1 200 OK
 X-RateLimit-Limit: 6000
 X-RateLimit-Remaining: 5999
 X-Rate-Limit-Reset: 2015-02-20T13:14:34.611Z
