@@ -12,9 +12,11 @@ raml_root: _raml/api.raml
 # Build settings
 markdown: ExtendedMarkdown
 exclude:
+  - Dockerfile
   - Gemfile
   - Gemfile.lock
   - LICENSE.txt
+  - Rakefile
   - README.md
   - Vagrantfile
 
