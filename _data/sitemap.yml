@@ -25,7 +25,7 @@
     - title: Using the API
       link: page:apps-using-the-api
 
-    - title: Error handling
+    - title: Response codes
       link: page:apps-using-the-api#response-codes
 
     - title: API call limit

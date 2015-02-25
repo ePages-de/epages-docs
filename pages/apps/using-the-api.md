@@ -38,53 +38,6 @@ All timestamps are returned in ISO 8601 format:
 YYYY-MM-DDTHH:MM:SS.Z
 {% endhighlight %}
 
-# Registration
-
-Before you can start coding off you'll need to sign up for the ePages Developer Program. Gain access to all the resources you need to create your app successfully.
-
-{% image https://www.filepicker.io/api/file/CuP4suO0RH6H4BkKT9GI %}
-This is how the registration screen looks like.
-{% endimage %}
-
-## Sign up for free.
-
-1. Enter your name and email address in the required fields.
-2. Agree to the terms and conditions.
-3. Check your mailbox for the login details from your registration and create a test shop.
-
-{% callout info Helpful stuff! %}
-  If you're eager for more information on how to set up your demo shop, check out our [Online Help](https://www.online-help-center.com/) for merchants.
-{% endcallout %}
-
-# OAuth
-
-Your app cannot access the REST API resources without authenticating first. In order to access to the ePages data, your application must be authenticated.
-All API calls are authenticated according to the OAuth 2.0 protocol. Fancy more detailed information? Here you go: [OAuth 2.0 protocol](https://tools.ietf.org/html/rfc6749).
-
-Once you have signed up for the developer program and you have created your app successfully, you will be assigned a unique **Consumer key** and **Consumer secret**. Remember these credentials as you will have to integrate them into the configuration files or the actual code of your application.
-
-{% callout danger Important! %}
-For your application's own security: DO NOT share your consumer secret with anyone!
-{% endcallout %}
-
-The credentials you'll receive might look like this:
-
-{% image example-consumer-key-secret.png 50% %}
-Example of OAuth keys
-{% endimage %}
-
-# Authorisation
-
-1. Within your test shop backoffice, again choose the tab **Apps**.
-2. Choose the field **Private Apps** and click the button **Create app**.
-3. Click the button **Test authorisation**. You will be requested to enter the **Application callback URL** and **Application notification URL**.
-4. Click the button **Test authorisation** again. You will be forwarded to an external page to complete the authorisation process.
-5. Once the test authorisation has been finished successfully, you will be fowarded to
-
-{% callout danger Authorisation to be described %}
-  development in progress
-{% endcallout %}
-
 # Making an API call
 
 {% callout danger This is a red callout %}
@@ -99,8 +52,7 @@ All URLs start with /rs/. If we change the API in backward-incompatible ways, we
 The API uses HTTP response codes to indicate success or failure of a request. That means, the 2xx range indicates success, the 4xx range indicates validation errors or problems with the provided parameters whereas the 5xx range indicates errors on our side.
 
 {% callout info Sometimes ... HTML responses... %}
-Generally, you can expect a JSON response, when making an API request. Due to internal technial reasons, however, in the 4xx and 5xx range HTML responses can occur, see [the 4xx example response](page:apps-using-the-api#xx-example-response-1
-).
+Generally, you can expect a JSON response, when making an API request. Due to internal technial reasons, however, in the 4xx and 5xx range HTML responses can occur, see [the 4xx example response](page:apps-using-the-api#xx-example-response-1).
 {% endcallout %}
 
 ## Responses in the 2xx range
@@ -215,24 +167,22 @@ Server: Jetty(9.2.7.v20150116)
 
 # API call limit
 
-API call limit means that the rate at which requests to the API are called are limited and defined by ePages.
-
-The calls are limited to 6000 API calls per auth token per hour. Once, the limit is exceeded, the call will return HTTP status XYZ and a message telling you that you've been limited.
+Requests to the API are limited to 6000 calls per hour. The limit applies to all available resources.
+Once the limit is exceeded, the request will be rejected. HTTP status `429 - Too many requests` will be returned and a message telling you that you've been limited, see also [Response codes](page:apps-using-the-api#response-codes).
 
 The rate limit usage is returned in the response headers from each request, e.g.
 
 {% highlight text %}
-HTTP 1.1 200 OK
-RateLimit-Limit: 6000
-RateLimit-Remaining: 5896
-Rate-Limit-Reset: to be defined
+X-RateLimit-Limit: 6000
+X-RateLimit-Remaining: 5999
+X-Rate-Limit-Reset: 2015-02-20T13:14:34.611Z
 {% endhighlight %}
 
-RateLimit-Limit: number of calls you are allowed per day
+X-RateLimit-Limit: number of calls you are allowed per hour
 
-RateLimit-Remaining: number of calls you can make before hitting the limit
+X-RateLimit-Remaining: number of calls you can make before hitting the limit
 
-RateLimit-Reset: next time the limit will be updated.
+X-RateLimit-Reset: next time the quota will be reset.
 
 # Current version
 
