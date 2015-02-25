@@ -67,7 +67,7 @@ But when developing your app, please consider our [API call limit](page:apps-usi
 
 ## Your app is ready for takeoff?
 
-Let's go for the [authorisation](page:authentication).
+Let's go for the [authorisation](page:apps-develop-app#authorisation).
 Once this is done, your app will be available in your test shop in the field **My apps**.
 
 ## Test. Test. Test.
