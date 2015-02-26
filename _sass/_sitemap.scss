@@ -8,7 +8,11 @@
 
 .sitemap-headline {
   text-transform: uppercase;
-  margin: 20px 0 5px 0;
+  margin: 40px 0 10px;
+  color: $gray;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 1.6rem;
 }
 
 .sitemap-entry {
