@@ -12,31 +12,62 @@ Let's make things less complicated: It's very easy to build and test application
 
   * `GET` requests resources
   * `POST` creates resources
-  * `PUT` modifys resources
+  * `PUT` modifies resources
   * `DELETE` deletes resources
 
 # Schema
 
-All API access is over HTTPS. All data is sent and received as JSON.
+  * API communication is secured using HTTPS
+  * Every shop has its own REST end-point
+  * All data is sent and received using JSON
+  * All timestamps are returned in ISO 8601 format (`YYYY-MM-DDTHH:MM:SS.Z`)
 
-{% highlight text %}
-https://rs/Shops/DemoShop/legal/privacy-policy
+# Registration
 
-HTTP 1.1 200 OK
-Content-Length: application/json
-Date: Tue, 24 Feb 2015 11:30:16 GMT
-Server: Jetty(9.2.7.v20150116)
-X-ePages-Media-Type: application/vnd.epages.v1+json
-X-RateLimit-Limit: 6000
-X-RateLimit-Remaining: 5999
-X-RateLimit-Reset: 2015-02-24T11:30:16.481Z
-{% endhighlight %}
+Before you can start coding off you'll need to sign up for the ePages Developer Program. Gain access to all the resources you need to create your app successfully.
 
-All timestamps are returned in ISO 8601 format:
+{% image https://www.filepicker.io/api/file/CuP4suO0RH6H4BkKT9GI %}
+This is how the registration screen looks like.
+{% endimage %}
 
-{% highlight text %}
-YYYY-MM-DDTHH:MM:SS.Z
-{% endhighlight %}
+## Sign up for free.
+
+1. Enter your name and email address in the required fields.
+2. Agree to the terms and conditions.
+3. Check your mailbox for the login details from your registration and create a test shop.
+
+{% callout info Helpful stuff! %}
+  If you're eager for more information on how to set up your demo shop, check out our [Online Help](https://www.online-help-center.com/) for merchants.
+{% endcallout %}
+
+# OAuth
+
+Your app cannot access the REST API resources without authentication. In order to get access to a shop, your application must be authorized by a merchant first. You will get your own test shop while developing your app.
+All API calls are authenticated according to the OAuth 2.0 protocol. Fancy more detailed information? Here you go: [OAuth 2.0 protocol](https://tools.ietf.org/html/rfc6749).
+
+Once you have signed up for the developer program and you have created your app successfully, you will be assigned a unique **Consumer key** and **Consumer secret**. Remember these credentials as you will have to integrate them into the configuration files or the actual code of your application.
+
+{% callout danger Important! %}
+For your application's own security: DO NOT share your consumer secret with anyone!
+{% endcallout %}
+
+The credentials you'll receive might look like this:
+
+{% image example-consumer-key-secret.png 50% %}
+Example of OAuth keys
+{% endimage %}
+
+# Authorisation
+
+1. Within your test shop backoffice, again choose the tab **Apps**.
+2. Choose the field **Private Apps** and click the button **Create app**.
+3. Click the button **Test authorisation**. You will be requested to enter the **Application callback URL** and **Application notification URL**.
+4. Click the button **Test authorisation** again. You will be forwarded to an external page to complete the authorisation process.
+5. Once the test authorisation has been finished successfully, you will be fowarded to
+
+{% callout danger Authorisation to be described %}
+  development in progress
+{% endcallout %}
 
 # Making an API call
 
@@ -63,24 +94,17 @@ Generally, you can expect a JSON response, when making an API request. Due to in
 | 201       | Created           | The request has been fulfilled and resulted in a new resource being created, e.g a cart.
 | 204       | No&nbsp;Content   | The server successfully processed the request, but is not returning any content. Typically used as a response to a successful delete request.
 
+
 ## 2xx example response
 
-### Status
-
-200 OK
-
-### Headers
-
 {% highlight text %}
+HTTP/1.1 200 OK
 Content-Length: 45
 Content-Type: application/json
 Date: Mon, 23 Feb 2015 10:51:33 GMT
 Server: Jetty(9.2.7.v20150116)
 X-epages-Media-Type: application/vnd.epages.v1+json
 {% endhighlight %}
-
-### Body
-
 {% highlight json %}
 {
     "default": "en_GB",
