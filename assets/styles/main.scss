@@ -4,6 +4,7 @@
 @charset "utf-8";
 
 $assets-base: {{ "/assets" | prepend: site.baseurl }};
+$font-family-base: 'Meta-Light', Helvetica, Trebuchet MS, Arial;
 
 @import "_bootstrap";
 @import "_landingpage";
