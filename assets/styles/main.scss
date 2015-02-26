@@ -4,7 +4,20 @@
 @charset "utf-8";
 
 $assets-base: {{ "/assets" | prepend: site.baseurl }};
+$font-family-base: 'Meta-Light', Helvetica, Trebuchet MS, Arial;
 
+/* Spacer */
+$spacerL-height: 110px;
+$spacerM-height: 60px;
+$spacerS-height: 20px;
+
+/* Colors */
+$petrol: #1b5c7e;
+$gray: #999;
+
+$text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+
+@import "_fonts";
 @import "_bootstrap";
 @import "_landingpage";
 @import "_footer";
@@ -12,22 +25,51 @@ $assets-base: {{ "/assets" | prepend: site.baseurl }};
 @import "_sitemap";
 @import "_resourcelist";
 @import "_search";
+@import "_icomoon";
+
+.logo {
+  display: inline-block;
+  width: 120px;
+  height: 30px;
+  background: transparent url("#{$assets-base}/images/epages-logo-white.png") center center no-repeat;
+  background-size: contain;
+  text-indent: -9999px;
+  overflow: hidden;
+}
 
 nav {
-    margin-bottom: 0 !important;
+  margin-bottom: 0 !important;
+
+  .navbar-nav .pull-right {
+    margin: 0 6px;
+    font-size: 18px;
+    padding: 15px 20px;
+  }
 }
+
+
 
 #content {
   background-color: white;
   padding: 25px 0;
+  line-height: 1.7em;
 
-    @media screen and (max-width: $screen-sm-max) {
+  @media screen and (max-width: $screen-sm-max) {
     padding: 0;
   }
 }
 
 body {
   background-color: #333333;
+  font: 160% $font-family-base;
+}
+
+a {
+  color: $petrol;
+}
+
+p {
+  margin: 0 0 20px;
 }
 
 .page-header {
@@ -35,10 +77,16 @@ body {
 
   h1 {
     font-size: $font-size-h1 * 1.1;
+    font-style: italic;
+    font-weight: 400;
   }
 }
 
 article {
+  h1, h2, h3, h4, h5, h6 {
+    font-style: italic;
+  }
+
   table {
     @extend .table;
     @extend .table-bordered;
@@ -64,4 +112,19 @@ article {
     margin-top: 10px;
     margin-bottom: 0;
   }
+}
+
+.spacer110 {
+  height: $spacerL-height;
+  clear: both;
+}
+
+.spacer60 {
+  height: $spacerM-height;
+  clear: both;
+}
+
+.spacer20 {
+  height: $spacerS-height;
+  clear: both;
 }
