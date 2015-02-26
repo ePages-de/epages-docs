@@ -8,14 +8,14 @@ $font-family-base: 'Meta-Light', Helvetica, Trebuchet MS, Arial;
 
 /* Spacer */
 $spacerL-height: 110px;
-$spacerM-height: 60px; 
-$spacerS-height: 20px; 
+$spacerM-height: 60px;
+$spacerS-height: 20px;
 
 /* Colors */
-$petrol: #1B5C7E;
+$petrol: #1b5c7e;
 $gray: #999;
 
-$text-shadow: 0 1px 1px rgba(0,0,0,0.8);
+$text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
 
 @import "_fonts";
 @import "_bootstrap";
@@ -27,24 +27,24 @@ $text-shadow: 0 1px 1px rgba(0,0,0,0.8);
 @import "_search";
 @import "_icomoon";
 
-  .logo {
-	  display: inline-block;
-	  width: 120px;
-	  height: 30px;
-	  background: transparent url("/epages-docs/assets/images/epages-logo-white.png") center center no-repeat;
-	  background-size: contain;
-	  text-indent: -9999px;
-	  overflow: hidden;
-  }
-  
+.logo {
+  display: inline-block;
+  width: 120px;
+  height: 30px;
+  background: transparent url("#{$assets-base}/images/epages-logo-white.png") center center no-repeat;
+  background-size: contain;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
 nav {
-    margin-bottom: 0 !important;
-    
-    .navbar-nav .pull-right {
-	    margin: 0 6px;
-		font-size: 18px;
-		padding: 15px 20px;
-    }
+  margin-bottom: 0 !important;
+
+  .navbar-nav .pull-right {
+    margin: 0 6px;
+    font-size: 18px;
+    padding: 15px 20px;
+  }
 }
 
 
@@ -54,23 +54,24 @@ nav {
   padding: 25px 0;
   line-height: 1.7em;
 
-    @media screen and (max-width: $screen-sm-max) {
+  @media screen and (max-width: $screen-sm-max) {
     padding: 0;
   }
 }
 
 body {
   background-color: #333333;
-   font: 160% $font-family-base;
+  font: 160% $font-family-base;
 }
 
-a {color: $petrol;}
+a {
+  color: $petrol;
+}
 
 p {
-	margin: 0 0 20px;
-
+  margin: 0 0 20px;
 }
-  
+
 article {
   h1 {
     @extend h2;
@@ -83,20 +84,17 @@ article {
     @extend h3;
     font-style: italic;
     margin-top: 40px;
-
   }
 
   h3 {
     @extend h4;
     font-style: italic;
   }
-  
 
   table {
     @extend .table;
     @extend .table-bordered;
   }
-  
 }
 
 .imagebox {
@@ -121,13 +119,16 @@ article {
 }
 
 .spacer110 {
-	height: $spacerL-height; clear: both;
+  height: $spacerL-height;
+  clear: both;
 }
 
 .spacer60 {
-	height: $spacerM-height; clear: both;
+  height: $spacerM-height;
+  clear: both;
 }
 
 .spacer20 {
-	height: $spacerS-height; clear: both;
+  height: $spacerS-height;
+  clear: both;
 }

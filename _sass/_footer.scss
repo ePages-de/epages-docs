@@ -3,10 +3,10 @@ footer {
   font-weight: 100;
   line-height: 3.1rem;
   color: #fff;
-  
+
   ul {
-	  list-style: none;
-	  }
+    list-style: none;
+    }
 
   a {
     color: #666666;
@@ -23,42 +23,41 @@ footer {
 }
 
 .locations {
-	padding: 1.25rem 1.875rem 0rem 1.875rem;
-	text-transform: uppercase;
-	
-	.locationBorder {
-		border-top: 1px solid white;
-	}
-	
-	ul {
-		display: inline-block;
-		padding: 0;
-	}
-	
-	li {
-		float: left;
-		padding: 0 25px;
-	}	
+  padding: 1.25rem 1.875rem 0rem 1.875rem;
+  text-transform: uppercase;
+
+  .locationBorder {
+    border-top: 1px solid white;
+  }
+
+  ul {
+    display: inline-block;
+    padding: 0;
+  }
+
+  li {
+    float: left;
+    padding: 0 25px;
+  }
 }
 
 .social {
-	padding: 1.25rem 1.875rem 0rem 1.875rem;
-	
-	ul {
-		display: inline-block;
-		padding: 0;
-	}
-	
-	li {
-		float: left;
-		padding: 0 25px;
-	}
-	
+  padding: 1.25rem 1.875rem 0rem 1.875rem;
+
+  ul {
+    display: inline-block;
+    padding: 0;
+  }
+
+  li {
+    float: left;
+    padding: 0 25px;
+  }
+
   [class^="icon-"], [class*=" icon-"] {
     font-size: 40px;
   }
 }
-
 
 .footer-column {
   margin: 0;
@@ -85,5 +84,3 @@ footer {
   text-align: center;
   color: #666666;
 }
-
-
