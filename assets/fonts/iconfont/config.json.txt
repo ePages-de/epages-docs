@@ -1,0 +1,50 @@
+{
+  "name": "epages",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "0638e2d1616ca9d446bb1fa6a6cb3399",
+      "css": "menu",
+      "code": 59392,
+      "src": "custom_icons",
+      "selected": true,
+      "search": [
+        "menu"
+      ]
+    },
+    {
+      "uid": "b0048a9665c0aa736cad7bca322dd1eb",
+      "css": "marketing",
+      "code": 59393,
+      "src": "custom_icons",
+      "selected": true,
+      "search": [
+        "marketing"
+      ]
+    },
+    {
+      "uid": "3c11a3ad5dbf0d27e625e2b4c8337312",
+      "css": "house",
+      "code": 59394,
+      "src": "custom_icons",
+      "selected": true,
+      "search": [
+        "house"
+      ]
+    },
+    {
+      "uid": "190cf57eb173786fd6083077f65cc82c",
+      "css": "fruit",
+      "code": 59395,
+      "src": "custom_icons",
+      "selected": true,
+      "search": [
+        "fruit"
+      ]
+    }
+  ]
+}
