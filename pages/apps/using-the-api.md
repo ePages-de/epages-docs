@@ -17,66 +17,28 @@ Let's make things less complicated: It's very easy to build and test application
 
 # Schema
 
-  * API communication is secured using HTTPS
-  * Every shop has its own REST end-point
-  * All data is sent and received using JSON
+  * Requests to the API can only be made using HTTPS to enable secure, confident and unaltered data transmission and to grant access to authorised users only.
+  * All URLs start with /rs/.
+  * Every shop has its own REST end-point.
+  * All data is sent and received using JSON.
   * All timestamps are returned in ISO 8601 format (`YYYY-MM-DDTHH:MM:SS.Z`)
 
-# Registration
+# Authentication
 
-Before you can start coding off you'll need to sign up for the ePages Developer Program. Gain access to all the resources you need to create your app successfully.
+Before you can start coding off you'll need to sign up for the ePages Developer Program and create a test shop. To use the ePages API you will need an application registration.
 
-{% image https://www.filepicker.io/api/file/CuP4suO0RH6H4BkKT9GI %}
-This is how the registration screen looks like.
-{% endimage %}
-
-## Sign up for free.
-
-1. Enter your name and email address in the required fields.
-2. Agree to the terms and conditions.
-3. Check your mailbox for the login details from your registration and create a test shop.
+1. Sign up as a developer.
+    * Enter your name and email address in the required fields.
+    * Agree to the terms and conditions.
+    * Check your mailbox for the login details from your registration and create a test shop.
+2. Log in to your test shop.
+3. Register your app.
 
 {% callout info Helpful stuff! %}
   If you're eager for more information on how to set up your demo shop, check out our [Online Help](https://www.online-help-center.com/) for merchants.
 {% endcallout %}
 
-# OAuth
-
-Your app cannot access the REST API resources without authentication. In order to get access to a shop, your application must be authorized by a merchant first. You will get your own test shop while developing your app.
-All API calls are authenticated according to the OAuth 2.0 protocol. Fancy more detailed information? Here you go: [OAuth 2.0 protocol](https://tools.ietf.org/html/rfc6749).
-
-Once you have signed up for the developer program and you have created your app successfully, you will be assigned a unique **Consumer key** and **Consumer secret**. Remember these credentials as you will have to integrate them into the configuration files or the actual code of your application.
-
-{% callout danger Important! %}
-For your application's own security: DO NOT share your consumer secret with anyone!
-{% endcallout %}
-
-The credentials you'll receive might look like this:
-
-{% image example-consumer-key-secret.png 50% %}
-Example of OAuth keys
-{% endimage %}
-
-# Authorisation
-
-1. Within your test shop backoffice, again choose the tab **Apps**.
-2. Choose the field **Private Apps** and click the button **Create app**.
-3. Click the button **Test authorisation**. You will be requested to enter the **Application callback URL** and **Application notification URL**.
-4. Click the button **Test authorisation** again. You will be forwarded to an external page to complete the authorisation process.
-5. Once the test authorisation has been finished successfully, you will be fowarded to
-
-{% callout danger Authorisation to be described %}
-  development in progress
-{% endcallout %}
-
-# Making an API call
-
-{% callout danger This is a red callout %}
-Following content to be discussed with Oli/Alessandro.
-{% endcallout %}
-
-Requests to the API can only be made using HTTPS to enable secure, confident and unaltered data transmission and to grant access to authorised users only.
-All URLs start with /rs/. If we change the API in backward-incompatible ways, we'll add a version marker and maintain stable support for the old URLs.
+Done! You're all set! Get straight down to the nitty-gritty and [create your app](page:apps-develop-app#create-an-app).
 
 # Response codes
 
@@ -128,21 +90,13 @@ X-epages-Media-Type: application/vnd.epages.v1+json
 
 ## 4xx example response
 
-### Status
-
-400 Bad Request
-
-### Headers
-
 {% highlight text %}
+HTTP/1.1 400 Bad Request
 Content-Length: 45
 Content-Type: text/html; charset0ISO-8859-1
 Date: Mon, 23 Feb 2015 11:18:38 GMT
 Server: Jetty(9.2.7.v20150116)
 {% endhighlight %}
-
-### Body
-
 {% highlight html %}
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"/>
@@ -167,21 +121,13 @@ Server: Jetty(9.2.7.v20150116)
 
 ## 5xx example response
 
-### Status
-
-500 Internal Server Error
-
-### Headers
-
 {% highlight text %}
+HTTP/1.1 500 Internal Server Error
 Content-Length: 45
 Content-Type: text/html; charset0ISO-8859-1
 Date: Mon, 23 Feb 2015 11:18:38 GMT
 Server: Jetty(9.2.7.v20150116)
 {% endhighlight %}
-
-### Body
-
 {% highlight json %}
 {
     "message": "Internal Server Error, Request: GET /rs/shops/DemoShop/locales",
@@ -215,7 +161,3 @@ By default, all requests receive the **v1** version of the API. We encourage you
 {% highlight text %}
 Accept: application/vnd.epages.v1+json
 {% endhighlight %}
-
-# Here we go!
-
-Done! You're all set! It's that simple! Get straight down to the nitty-gritty and [create your app](page:apps-develop-app#create-an-app).
