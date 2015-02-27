@@ -2,7 +2,7 @@
 
 ## Preview
 
-See a preview of the documentation [here][epagesdocs].
+See a preview of the documentation [here][epagesdocs]. This documentation is build automatically by Jenkins when pushed to `master` branch.
 
 ## Usage
 
