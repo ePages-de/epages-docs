@@ -8,25 +8,22 @@ title: Overview
 
 The ePages API provides developers the interface to create awesome apps or single shop connections. It is designed to give developers a convenient way to access data contained within ePages stores. With a standard interface to store data, it is very simple to create third party applications that can communicate with our merchant's stores.
 
-# Use cases
+# Registration
 
-## Accounting
-Synchronise sales data automatically.
+Before you can start coding off you'll need to sign up for the ePages Developer Program and create a test shop. To use the ePages API you will need an application registration.
 
-## Analytics & reporting
-Monitor relevant visitor numbers, analyse typical navigation paths, control online marketing in real time.
+1. Sign up as a developer.
+    * Enter your name and email address in the required fields.
+    * Agree to the terms and conditions.
+    * Check your mailbox for the login details from your registration and create a test shop.
+2. Log in to your test shop.
+3. Register your app.
 
-## Customer relationship
-Add CRM features like customer info, order info and note taking to email inbox. Customer info and order info displayed directly next to customer's email.
+{% callout info Helpful stuff! %}
+  If you're eager for more information on how to set up your demo shop, check out our [Online Help](https://www.online-help-center.com/) for merchants.
+{% endcallout %}
 
-## Inventory control
-Manage inventory and orders through multiple third-party vendors, drop-shippers and fulfilment centres. Reduce backorders and increase sales by automatically keeping stock statuses up to date.
-
-## Shipping
-Integrate orders and print labels with one click.
-
-## Social commerce
-Add a shop tab to a Facebook page from where users can browse products directly on Facebook.
+Done! You're all set! Explore [how to use our API](page:apps-using-the-api) or get straight down to the nitty-gritty and [create your app](page:apps-develop-app#create-an-app).
 
 # Support
 

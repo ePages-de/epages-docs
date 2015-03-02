@@ -7,13 +7,14 @@ title: Developing an app
 # Create an app
 
 ## What kind of apps do we support?
-In a first approach, we only support external apps. We call them "connectors". Connectors are not integrated into the merchant's backoffice, but interact with a shop via the REST API to use the shop's data.
+In a first approach, we only support external apps. These apps connect via the REST API to the shop to exchange data and let the merchant work with these data within an external service.
 
 ## Set-up
-1. Within your test shop backoffice, choose the tab **Apps**.
-2. Choose the field **Private Apps** and click the button **Create app**.
+1. Within your test shop backoffice, click the tab **Apps**.
+2. In the drop down menu, choose **Developer Apps**.
+3. In the **Developer Apps** view, click the button **Add**.
 3. Fill out the entry field **App name**. This field is mandatory.
-4. Click the button **Save**. You will be assigned a unique **Consumer key** and **Consumer secret**. Remember these credentials as you will have to integrate them into the configuration files or the actual code of your application.
+4. Click the button **Save**. You will be assigned a unique **Consumer key** and **Consumer secret**. Remember these credentials as you will have to integrate them into the configuration files or the actual code of your application. **Application callback URL** and **Application notification URL** will also be generated.
 
 {% callout danger Important! %}
 For your application's own security: DO NOT share your consumer secret with anyone!

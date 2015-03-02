@@ -4,6 +4,10 @@ key: apps-using-the-api
 title: Using the API
 ---
 
+# Application registration
+
+Not yet registered for the ePages Developer Program? [Go for it!](page:apps-overview#registration).
+
 # RESTful principle
 
 Our highest claim is to ensure you're having a good time developing your app. That's why we're trying to make the API understandable for both developers and humans.
@@ -23,23 +27,6 @@ Let's make things less complicated: It's very easy to build and test application
   * All data is sent and received using JSON.
   * All timestamps are returned in ISO 8601 format (`YYYY-MM-DDTHH:MM:SS.Z`)
 
-# Authentication
-
-Before you can start coding off you'll need to sign up for the ePages Developer Program and create a test shop. To use the ePages API you will need an application registration.
-
-1. Sign up as a developer.
-    * Enter your name and email address in the required fields.
-    * Agree to the terms and conditions.
-    * Check your mailbox for the login details from your registration and create a test shop.
-2. Log in to your test shop.
-3. Register your app.
-
-{% callout info Helpful stuff! %}
-  If you're eager for more information on how to set up your demo shop, check out our [Online Help](https://www.online-help-center.com/) for merchants.
-{% endcallout %}
-
-Done! You're all set! Get straight down to the nitty-gritty and [create your app](page:apps-develop-app#create-an-app).
-
 # Response codes
 
 The API uses HTTP response codes to indicate success or failure of a request. That means, the 2xx range indicates success, the 4xx range indicates validation errors or problems with the provided parameters whereas the 5xx range indicates errors on our side.
@@ -55,7 +42,6 @@ Generally, you can expect a JSON response, when making an API request. Due to in
 | 200       | OK                | This is the standard response for a successful HTTP request.
 | 201       | Created           | The request has been fulfilled and resulted in a new resource being created, e.g a cart.
 | 204       | No&nbsp;Content   | The server successfully processed the request, but is not returning any content. Typically used as a response to a successful delete request.
-
 
 ## 2xx example response
 
@@ -161,3 +147,7 @@ By default, all requests receive the **v1** version of the API. We encourage you
 {% highlight text %}
 Accept: application/vnd.epages.v1+json
 {% endhighlight %}
+
+# Good to go!
+
+[Develop your app](page:apps-develop-app).
