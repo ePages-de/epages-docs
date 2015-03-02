@@ -73,12 +73,16 @@ p {
 }
 
 .page-header {
-  margin-top: 0;
+  margin-top: 40px;
 
   h1 {
-    font-size: $font-size-h1 * 1.1;
+    font-size: $font-size-h1 * 1.5;
     font-style: italic;
     font-weight: 400;
+  }
+  
+  @media screen and (max-width: $screen-xs-max) {
+    margin-top: 0;
   }
 }
 
