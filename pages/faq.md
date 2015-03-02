@@ -11,7 +11,7 @@ Need support with the app development? Contact us! We will do our best to help y
 
 # How do I get my API key?
 
-To get access to our REST API, you need to [sign in](page:apps-develop-app#registration) to our developer program. As soon as you're done with that, you will receive two emails: one will contain the credentials for your ePages shop, the other will contain your client token and client secret to access the REST API.
+To get access to our REST API, you need to [sign in](page:apps-using-the-api#authentication) to our developer program. As soon as you're done with that, you will receive two emails: one will contain the credentials for your ePages shop, the other will contain your client token and client secret to access the REST API.
 
 # What kind of apps can I submit?
 
