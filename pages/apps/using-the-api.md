@@ -147,3 +147,7 @@ By default, all requests receive the **v1** version of the API. We encourage you
 {% highlight text %}
 Accept: application/vnd.epages.v1+json
 {% endhighlight %}
+
+# Good to go!
+
+[Develop your app](page:apps-develop-app).
