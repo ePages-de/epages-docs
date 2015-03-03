@@ -4,6 +4,7 @@
   padding: 0;
 
   border-right: 1px solid lightgray;
+  
 }
 
 .sitemap-headline {
@@ -18,3 +19,7 @@
 .sitemap-entry {
   margin: 5px 0;
 }
+
+a {
+	  color: $petrol;
+	}
