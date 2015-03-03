@@ -27,15 +27,10 @@ $text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
 @import "_search";
 @import "_icomoon";
 
-.logo {
-  display: inline-block;
-  width: 120px;
-  height: 30px;
-  background: transparent url("#{$assets-base}/images/epages-logo-white.png") center center no-repeat;
-  background-size: contain;
-  text-indent: -9999px;
-  overflow: hidden;
+html, body {
+	  overflow-x: hidden;
 }
+
 
 nav {
   margin-bottom: 0 !important;
@@ -116,6 +111,10 @@ article {
     margin-top: 10px;
     margin-bottom: 0;
   }
+}
+
+.glyphicon {
+	top: 0;
 }
 
 .spacer110 {
