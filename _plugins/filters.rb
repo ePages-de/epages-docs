@@ -12,6 +12,14 @@ module Jekyll
     def start_with(input, start)
       input.start_with? start
     end
+
+    def regex_extract(input, pattern)
+      if input =~ Regexp.new(pattern)
+        $1
+      else
+        nil
+      end
+    end
   end
 end
 

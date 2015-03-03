@@ -32,7 +32,7 @@ module Jekyll
 
       pages = raml.resources.map { |res|
         res.methods.map { |_,meth|
-          ApiResourcePage.new(site, site.source, 'resources', raml, res, meth)
+          ApiResourcePage.new(site, site.source, 'pages/apps/api-reference', raml, res, meth)
         }
       }
       site.pages += pages.flatten
@@ -59,7 +59,7 @@ module Jekyll
       path = File.join(site.source, site.config['raml_root'])
       raml_raw = RamlParser::YamlHelper.dump_yaml(RamlParser::YamlHelper.read_yaml(path))
 
-      site.pages << RamlPage.new(site, site.source, 'resources', raml_raw)
+      site.pages << RamlPage.new(site, site.source, 'pages/apps/api-reference', raml_raw)
     end
   end
 

@@ -55,6 +55,13 @@ module Jekyll
       context
     end
   end
+
+  module SitemapFilters
+    def sitemap(name, data)
+      data['sitemap-' + name]
+    end
+  end
 end
 
 Liquid::Template.register_tag('sitemap_link', Jekyll::SitemapLinkTag)
+Liquid::Template.register_filter(Jekyll::SitemapFilters)

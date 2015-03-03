@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page-nositemap
 key: _examples
 title: Examples
 searchable: false
