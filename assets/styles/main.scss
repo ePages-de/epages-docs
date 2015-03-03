@@ -58,8 +58,9 @@ a {
 
 body {
   background-color: #444444;
-  font: 160% $font-family-base;
+  font: 180% $font-family-base;
   -webkit-font-smoothing: antialiased;
+  padding-top: 50px; 
 }
 
 p {
@@ -84,26 +85,47 @@ article {
   h1, h2, h3, h4, h5, h6 {
     font-style: italic;
   }
+  
+  h2 {
+	  margin-top: 40px;
+  }
 
   table {
     @extend .table;
     @extend .table-bordered;
+    
+    thead { 
+	   background-color: #f2f2f2;
+    }
   }
   
   a {
 	  color: $petrol;
 	  text-decoration: underline;
 	}
+	
+	li {
+		ul {
+			li {
+				list-style-type: none; 
+				margin-left: -25px;
+				
+				&:before {
+					content: url("#{$assets-base}/images/list2.png") no-repeat;
+					margin-right: 10px;
+				}
+			}
+		}
+	}
 }
 
 b, strong {
-	font-family: 'Meta';
 	font-weight: 900;
 }
 
 .imagebox {
   border: 1px solid silver;
-  border-radius: $border-radius-base;
+  border-radius: 0;
   padding: 10px;
 
   margin: 0 0 ($line-height-computed / 2);
