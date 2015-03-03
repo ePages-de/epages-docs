@@ -11,12 +11,11 @@ Need support with the app development? Contact us! We will do our best to help y
 
 # How do I get my API key?
 
-To get access to our REST API, you need to [sign in](page:apps-overview#registration) to our developer program. As soon as you're done with that, you will receive two emails: one will contain the credentials for your ePages shop, the other will contain your client token and client secret to access the REST API.
+To get access to our REST API, you need to [sign in](page:apps-overview#registration) to our developer program. As soon as you're done with that, you will receive two emails: one will contain the credentials for your ePages shop, the other will contain your Consumer key and Consumer secret to access the REST API.
 
 # What kind of apps can I submit?
 
 Technically, the first version of the ePages developer program supports apps, that we call "connectors". These are external apps and also run externally, i.e. these apps do not integrate within the ePages software but connect to the ePages system via the REST API. From the eCommerce perspective, almost every kind of app that fulfils the technical requirements and that is an enrichment for our merchants can be submitted. We will then carefully review the app.
-Nevertheless, the preferred app types for this first phase of the developer program are shipping, accounting, point of sale (POS) apps as well as marketplace and enterprise resource planning (ERP) apps.
 
 # How does the approval process work?
 
@@ -24,7 +23,7 @@ When you're done with coding and been through with testing your app successfully
 
 # What is the API call limit?
 
-Depending on the ePages shop type, either 100 calls per day or 400 calls per day are accepted. Find more detailed information in the [API call limit](page:apps-using-the-api#api-call-limit) section.
+Requests to the API are limited to 6000 calls per hour. The limit applies to all available resources. Find more detailed information in the [API call limit](page:apps-using-the-api#api-call-limit) section.
 
 # Is the API call limit per store or per app?
 
