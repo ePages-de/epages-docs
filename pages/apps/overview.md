@@ -20,7 +20,7 @@ Before you can start coding off you'll need to sign up for the ePages Developer 
 3. Register your app.
 
 {% callout info Helpful stuff! %}
-  If you're eager for more information on how to set up your demo shop, check out our [Online Help](https://www.online-help-center.com/) for merchants.
+  If you're eager for more information on how to set up your test shop, check out our [Online Help](https://www.online-help-center.com/) for merchants.
 {% endcallout %}
 
 Done! You're all set! Explore [how to use our API](page:apps-using-the-api) or get straight down to the nitty-gritty and [create your app](page:apps-develop-app#create-an-app).
