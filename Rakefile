@@ -28,7 +28,6 @@ task :test do
     end
   end
 
-  sh "rm -rf ./_site"
-  sh "bundle exec jekyll build -d ./_site/epages-docs"
+  sh "bundle exec jekyll build"
   HTML::Proofer.new("./_site", :disable_external => true).run
 end

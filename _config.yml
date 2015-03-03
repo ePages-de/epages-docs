@@ -4,8 +4,7 @@ email: documentation@epages.com
 description: >
   This is the primary source of trust for ePages beloved third
   party developers.
-baseurl: "/epages-docs"
-url: "http://epages-de.github.io"
+baseurl: ""
 github_url: "https://github.com/ePages-de/epages-docs"
 raml_root: _raml/api.raml
 
