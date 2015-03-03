@@ -34,7 +34,7 @@ html, body {
 
 nav {
   margin-bottom: 0 !important;
-  
+
   .navbar-nav .pull-right {
   margin: 0 6px;
   font-size: 18px;
@@ -43,14 +43,14 @@ nav {
 }
 
 a {
-	color: $petrol;
+  color: $petrol;
 }
 
 #content {
   background-color: white;
   padding: 25px 0;
   line-height: 1.7em;
-  
+
   @media screen and (max-width: $screen-sm-max) {
     padding: 0;
   }
@@ -60,7 +60,7 @@ body {
   background-color: #444444;
   font: 180% $font-family-base;
   -webkit-font-smoothing: antialiased;
-  padding-top: 50px; 
+  padding-top: 50px;
 }
 
 p {
@@ -69,13 +69,13 @@ p {
 
 .page-header {
   margin-top: 40px;
-  
+
   h1 {
     font-size: $font-size-h1 * 1.5;
     font-style: italic;
     font-weight: 400;
   }
-  
+
   @media screen and (max-width: $screen-xs-max) {
     margin-top: 0;
   }
@@ -85,31 +85,31 @@ article {
   h1, h2, h3, h4, h5, h6 {
     font-style: italic;
   }
-  
+
   h2 {
-	  margin-top: 40px;
+    margin-top: 40px;
   }
 
   table {
     @extend .table;
     @extend .table-bordered;
-  
-    thead { 
+
+    thead {
       background-color: #f2f2f2;
     }
   }
-  
+
   a {
     color: $petrol;
     text-decoration: underline;
   }
-	
+
   li {
     ul {
       li {
-        list-style-type: none; 
+        list-style-type: none;
         margin-left: -25px;
-        
+
         &:before {
         content: url("#{$assets-base}/images/list2.png") no-repeat;
         margin-right: 10px;
