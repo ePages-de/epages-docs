@@ -2,7 +2,7 @@ require 'loofah'
 
 class Sitemap
   def self.resolve(site, ref)
-    if ref.strip =~ /([a-z\-]+):([a-z\-]+)(#(.+))?/
+    if ref.strip =~ /([a-z0-9\-]+):([a-z0-9\-]+)(#(.+))?/
       type = $1
       key = $2
       anchor = $4
