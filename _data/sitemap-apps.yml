@@ -1,4 +1,4 @@
-- key: apps
+- key: apps-general
   title: Getting started
   entries:
     - title: Overview
@@ -13,7 +13,7 @@
     - title: API call limit
       link: page:apps-using-the-api#api-call-limit
 
-- key: apps
+- key: apps-develop
   title: Developing an app
   entries:
     - title: Create an app
