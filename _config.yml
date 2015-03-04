@@ -9,7 +9,7 @@ github_url: "https://github.com/ePages-de/epages-docs"
 raml_root: _raml/api.raml
 
 # Build settings
-markdown: ExtendedMarkdown
+markdown: kramdown
 exclude:
   - Dockerfile
   - Gemfile
