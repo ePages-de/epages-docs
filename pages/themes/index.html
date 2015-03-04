@@ -8,7 +8,7 @@ layout: default
   </div>
   <div id="content">
     <div id="pageoverview" class="container">
-      {% assign sitemap = 'themes' | sitemap: site.data | chunked_array: 1 %}
+      {% assign sitemap = 'themes' | sitemap | chunked_array: 1 %}
       {% for category_chunk in sitemap %}
         <div class="row">
           <div class="col-sm-4"></div>
