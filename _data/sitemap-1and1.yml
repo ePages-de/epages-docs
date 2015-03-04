@@ -1,0 +1,14 @@
+- key: 1and1-general
+  title: Getting started
+  entries:
+    - title: Overview
+      link: page:1and1-overview
+
+    - title: Using the API
+      link: page:1and1-using-the-api
+
+- key: 1and1-api-rest
+  title: API reference
+  entries:
+    - title: Resources
+      link: page:1and1-api-resources
