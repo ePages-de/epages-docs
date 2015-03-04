@@ -12,7 +12,7 @@ class Jekyll::Converters::Markdown::ExtendedMarkdown
 
     parse_special_links = Loofah::Scrubber.new do |node|
       if node.name == 'a'
-        if node['href'].strip =~ /([a-z\-]+):([a-z\-]+)(#(.+))?/
+        if node['href'].strip =~ /([a-z0-9\-]+):([a-z0-9\-]+)(#(.+))?/
           resolved = ::Sitemap.resolve(site, node['href'])
           node['href'] = resolved unless resolved.nil?
         end
