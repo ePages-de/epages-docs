@@ -51,6 +51,7 @@ line-height: 28px;
   line-height: 24px;
   margin: 1.5rem 0;
   padding: 0.6rem 5%;
+  margin-left: -4px;
   
   &:hover, &:active, &:focus {
     background-color: darken( $green, 5%);
@@ -63,13 +64,30 @@ line-height: 28px;
   #landingpage-banner-search {
     width: 60%;
   }
-    .btn-search {
-      padding: 0.6rem 4rem;
-    }
+  
+  #search-form {
+    width: 75%;
   }
+}
   
 @media screen and (max-width: $screen-sm-max) {
   #landingpage-banner-search {
     width: 100%;
   }
+  
+  #search-form, .btn-search {
+    width: 100%;
+    display: block;
+  }
+  
+  .btn-search {
+    margin: 0;
+  }
+  
+  .form-group {
+    padding: 0;
+  }
+  
 }
+
+
