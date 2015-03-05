@@ -13,6 +13,12 @@
     - title: API call limit
       link: page:apps-using-the-api#api-call-limit
 
+- key: oauth
+  title: Authentication
+  entries:
+    - title: OAuth 2.0
+      link: page:apps-oauth
+
 - key: apps-develop
   title: Developing an app
   entries:
