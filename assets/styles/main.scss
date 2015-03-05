@@ -103,6 +103,10 @@ article {
   a {
     color: $petrol;
     text-decoration: underline;
+    
+    &:hover {
+      color: darken($petrol, 20)
+    }
   }
 
   li {
@@ -147,6 +151,10 @@ b, strong {
 
 .glyphicon {
   top: 0;
+}
+
+.alert {
+  margin: 40px 0;
 }
 
 .spacer110 {

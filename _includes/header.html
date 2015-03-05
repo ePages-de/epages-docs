@@ -39,7 +39,8 @@
     </div>
   </div>
   
-  <script type="text/javascript" src="/assets/javascript/searchform.js"></script>
-  <script type="text/javascript">
-    SearchForm('/search.json', '#search-form', '#search-box', '#search-results');
-  </script>
+<script type="text/javascript" src="{{ '/assets/javascript/searchform.js' | prepend: site.baseurl }}"></script>
+<script type="text/javascript">
+  SearchForm('{{ '/search.json' | prepend: site.baseurl }}', '#search-form', '#search-box', '#search-results');
+</script>
+
