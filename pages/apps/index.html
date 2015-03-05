@@ -1,11 +1,7 @@
 ---
 layout: default
 ---
-<div id="landingpage">
-  <div id="landingpage-banner">
-    <div id="landingpage-banner-headline">{{ site.data['landingpage'].header.title }}</div>
-    <div id="landingpage-banner-text">{{ site.data['landingpage'].header.text }}</div>
-  </div>
+
   <div id="content">
     <div id="pageoverview" class="container">
       {% assign sitemap = 'apps' | sitemap: site.data | chunked_array: 2 %}
