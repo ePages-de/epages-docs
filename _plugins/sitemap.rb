@@ -37,8 +37,7 @@ class Sitemap
   private
 
   def self.site
-    # FIXME this is a really hacky solution
-    Jekyll.sites.first
+    Jekyll.sites.last
   end
 end
 
