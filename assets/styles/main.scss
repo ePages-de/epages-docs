@@ -26,6 +26,7 @@ $text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
 @import "_sitemap";
 @import "_resourcelist";
 @import "_search";
+@import "_thankyou";
 @import "_icomoon";
 
 html, body {
@@ -62,7 +63,7 @@ body {
   font: 180% $font-family-base;
   -webkit-font-smoothing: antialiased;
   padding-top: 50px;
-}
+  position: relative;}
 
 p {
   margin: 0 0 20px;
