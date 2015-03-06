@@ -8,6 +8,14 @@ title: Overview
 
 The ePages API provides developers the interface to create awesome apps or single shop connections. It is designed to give developers a convenient way to access data contained within ePages stores. With a standard interface to store data, it is very simple to create third party applications that can communicate with our merchant's stores.
 
+# Your benefits
+
+Not every application has the same business model – therefore we offer a flexible revenue share plan that meets individual requirements with the possibility to gain up to 70% of the revenue that the application generates via the App Store.
+
+After your application has been submitted to us, our partner management will get in contact with you to determine the final application partnership agreement.
+
+More details? If you have any questions related to the partner agreement, please contact our partner manager dummy-email@epages.com. To give you a fast and accurate answer, we kindly ask you to be as precise as possible, indicating your business model and defining the use case of your application.
+
 # Registration
 
 Before you can start coding off you'll need to sign up for the ePages Developer Program and create a test shop. To use the ePages API you will need an application registration.
