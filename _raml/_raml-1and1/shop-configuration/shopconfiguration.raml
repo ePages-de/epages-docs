@@ -1,0 +1,226 @@
+#%RAML 0.8
+  displayName: Shops
+  description: |
+          LoremIpsum
+  is:
+  post:
+    description: Creates a new shop with the given basic data.
+    is:
+    responses:
+      200:
+        description: OK
+        body:
+          application/json: !include post_shop_response.json
+      503:
+        description: Service Unavailable
+  /{shopId}:
+      displayName: ShopId
+      is:
+      get:
+        description: Returns information of the shop with the given ID.
+        is:
+        responses:
+          200:
+            description: OK
+            body:
+              application/json:
+          404:
+            description: Not Found
+          503:
+            description: Service Unavailable
+      post:
+        description:
+        is:
+        responses:
+          200:
+            description: OK
+            body:
+              application/json: !include post_shopid_response.json
+          404:
+            description: Not Found
+          503:
+            description: Service Unavailable
+      put:
+        description: Modifies an existing shop with the given ID.
+        is:
+        responses:
+          200:
+            description: OK
+            body:
+              application/json: !include put_shopid_response.json
+          404:
+            description: Not Found
+          409:
+            description: Conflict
+          503:
+            description: Service Unavailable
+      delete:
+        description: Deletes the shop with the given ID.
+        is:
+        responses:
+          200:
+            description: OK
+            body:
+              application/json:
+          404:
+            description: Not Found
+          503:
+            description: Service Unavailable
+  /{shopId}/locks:
+      dislayName: ShopId/locks
+      is:
+      get:
+        description: Returns information on the lock state of the shop with the given ID.
+        is:
+        responses:
+          200:
+            description: OK
+            body:
+              application/json:
+          404:
+            description: Not Found
+          503:
+            description: Service Unavailable
+/{shopId}/locks/login:
+      dislayName: ShopId/locks/login
+      is:
+      post:
+        description:
+        is:
+        responses:
+          200:
+            description: OK
+            body:
+              application/json:
+          404:
+            description: Not Found
+          503:
+            description: Service Unavailable
+        delete:
+          is:
+        responses:
+          200:
+            description: OK
+            body:
+              application/json:
+          404:
+            description: Not Found
+          409:
+            description: Conflict
+          503:
+            description: Service Unavailable
+/{shopId}/locks/usage:
+      dislayName: ShopId/locks/usage
+      is:
+      post:
+        description:
+        is:
+        responses:
+          200:
+            description: OK
+            body:
+              application/json:
+          404:
+            description: Not Found
+          503:
+            description: Service Unavailable
+        delete:
+          is:
+        responses:
+          200:
+            description: OK
+            body:
+              application/json:
+          404:
+            description: Not Found
+          503:
+            description: Service Unavailable
+/{shopId}/tokens:
+      dislayName: ShopId/tokens
+      is:
+      get:
+        description:
+        is:
+        responses:
+          200:
+            description: OK
+            body:
+              application/json:
+          404:
+            description: Not Found
+          503:
+            description: Service Unavailable
+      post:
+        description:
+        is:
+        responses:
+          200:
+            description: OK
+            body:
+              application/json:
+          404:
+            description: Not Found
+          503:
+            description: Service Unavailable
+/{shopId}/tokens/token:
+      dislayName: ShopId/tokens/token
+      is:
+      delete:
+          is:
+        responses:
+          200:
+            description: OK
+            body:
+              application/json:
+          404:
+            description: Not Found
+          503:
+            description: Service Unavailable
+/{shopId}/sslCertificateExists:
+      dislayName: ShopId/sslCertificateExists
+      is:
+      post:
+        description:
+        is:
+        responses:
+          200:
+            description: OK
+            body:
+              application/json:
+          404:
+            description: Not Found
+          406:
+            description: Not Acceptable
+          503:
+            description: Service Unavailable
+      put:
+        description:
+        is:
+        responses:
+          200:
+            description: OK
+            body:
+              application/json:
+          404:
+            description: Not Found
+          406:
+            description: Not Acceptable
+          503:
+            description: Service Unavailable
+      delete:
+        description:
+        is:
+        responses:
+          200:
+            description: OK
+            body:
+              application/json:
+          404:
+            description: Not Found
+          503:
+            description: Service Unavailable
+
+
+
+
+
