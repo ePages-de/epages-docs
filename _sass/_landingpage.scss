@@ -1,7 +1,7 @@
 #landingpage-banner {
   background-image: url('#{$assets-base}/images/landingpage-banner.jpg');
   background-position: center top;
-  background-size: 100% auto;
+  background-size: cover;
 
   @media print {
     display: none;
@@ -38,6 +38,7 @@
   @media screen and (max-width: $screen-sm-max) {
     padding: 20px;
     font-size: 14px;
+    max-width: 100%;
   }
 }
 

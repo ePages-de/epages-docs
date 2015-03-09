@@ -1,30 +1,25 @@
 ---
-layout: default
+layout: landingpage
 ---
-<div id="landingpage">
-  <div id="landingpage-banner">
-    <div id="landingpage-banner-headline">{{ site.data['landingpage'].header.title }}</div>
-    <div id="landingpage-banner-text">{{ site.data['landingpage'].header.text }}</div>
-  </div>
-  <div id="content">
-    <div id="pageoverview" class="container">
-      {% assign sitemap = 'themes' | sitemap | chunked_array: 1 %}
-      {% for category_chunk in sitemap %}
-        <div class="row">
-          <div class="col-sm-4"></div>
-          {% for category in category_chunk %}
-            <div class="col-sm-4">
-              <ul class="pageoverview-category">
-                <li class="pageoverview-headline">{{ category.title }}</li>
-                {% for entry in category.entries %}
-                  <li class="pageoverview-entry">{% sitemap_link entry %}</li>
-                {% endfor %}
-              </ul>
-            </div>
-          {% endfor %}
-          <div class="col-sm-4"></div>
-        </div>
-      {% endfor %}
-    </div>
+
+<div id="content">
+  <div id="pageoverview" class="container">
+    {% assign sitemap = 'themes' | sitemap | chunked_array: 1 %}
+    {% for category_chunk in sitemap %}
+      <div class="row">
+        <div class="col-sm-4"></div>
+        {% for category in category_chunk %}
+          <div class="col-sm-4">
+            <ul class="pageoverview-category">
+              <li class="pageoverview-headline">{{ category.title }}</li>
+              {% for entry in category.entries %}
+                <li class="pageoverview-entry">{% sitemap_link entry %}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endfor %}
+        <div class="col-sm-4"></div>
+      </div>
+    {% endfor %}
   </div>
 </div>
