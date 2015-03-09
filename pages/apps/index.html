@@ -1,26 +1,23 @@
 ---
-layout: default
+layout: landingpage
 ---
 
-  <div id="content">
-    <div id="pageoverview" class="container">
-      {% assign sitemap = 'apps' | sitemap: site.data | chunked_array: 2 %}
-      {% for category_chunk in sitemap %}
-        <div class="row">
-          <div class="col-sm-3"></div>
-          {% for category in category_chunk %}
-            <div class="col-sm-3">
-              <ul class="pageoverview-category">
-                <li class="pageoverview-headline">{{ category.title }}</li>
-                {% for entry in category.entries %}
-                  <li class="pageoverview-entry">{% sitemap_link entry %}</li>
-                {% endfor %}
-              </ul>
-            </div>
-          {% endfor %}
-          <div class="col-sm-3"></div>
-        </div>
-      {% endfor %}
-    </div>
+<div id="content">
+  <div id="pageoverview" class="container">
+    {% assign sitemap = 'apps' | sitemap: site.data | chunked_array: 4 %}
+    {% for category_chunk in sitemap %}
+      <div class="row">
+        {% for category in category_chunk %}
+          <div class="col-sm-3">
+            <ul class="pageoverview-category">
+              <li class="pageoverview-headline">{{ category.title }}</li>
+              {% for entry in category.entries %}
+                <li class="pageoverview-entry">{% sitemap_link entry %}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endfor %}
+      </div>
+    {% endfor %}
   </div>
 </div>
