@@ -12,6 +12,7 @@ $spacerM-height: 60px;
 $spacerS-height: 20px;
 
 /* Colors */
+$green: #20908d;
 $petrol: #1b5c7e;
 $gray: #999;
 
@@ -25,12 +26,12 @@ $text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
 @import "_sitemap";
 @import "_resourcelist";
 @import "_search";
+@import "_thankyou";
 @import "_icomoon";
 
 html, body {
   overflow-x: hidden;
 }
-
 
 nav {
   margin-bottom: 0 !important;
@@ -61,10 +62,10 @@ body {
   font: 180% $font-family-base;
   -webkit-font-smoothing: antialiased;
   padding-top: 50px;
-}
+  position: relative;}
 
 p {
-  margin: 0 0 20px;
+  margin: 0 0 40px;
 }
 
 .page-header {
@@ -102,6 +103,10 @@ article {
   a {
     color: $petrol;
     text-decoration: underline;
+
+    &:hover {
+      color: darken($petrol, 20)
+    }
   }
 
   li {
@@ -146,6 +151,10 @@ b, strong {
 
 .glyphicon {
   top: 0;
+}
+
+.alert {
+  margin: 40px 0;
 }
 
 .spacer110 {
