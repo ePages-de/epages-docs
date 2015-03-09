@@ -1,14 +1,14 @@
 ---
 layout: landingpage
 ---
-
 <div id="content">
   <div id="pageoverview" class="container">
-    {% assign sitemap = 'apps' | sitemap | chunked_array: 4 %}
+    {% assign sitemap = '1and1' | sitemap | chunked_array: 1 %}
     {% for category_chunk in sitemap %}
       <div class="row">
+        <div class="col-sm-4"></div>
         {% for category in category_chunk %}
-          <div class="col-sm-3">
+          <div class="col-sm-4">
             <ul class="pageoverview-category">
               <li class="pageoverview-headline">{{ category.title }}</li>
               {% for entry in category.entries %}
@@ -17,6 +17,7 @@ layout: landingpage
             </ul>
           </div>
         {% endfor %}
+        <div class="col-sm-4"></div>
       </div>
     {% endfor %}
   </div>

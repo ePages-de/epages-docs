@@ -18,9 +18,6 @@ $ jekyll build
 
 # check for death links and other bad stuff
 $ rake test
-
-# publish
-$ jekyll deploy
 ~~~
 
 ## Bootstrap your machine

@@ -4,7 +4,7 @@ layout: blank-with-searchbar
 <div class="row">
   <div class="col-sm-3 hidden-xs">
     <ul id="sitemap">
-    {% assign sitemap = page.url | regex_extract: '^/pages/([^/]+)/' | sitemap: site.data %}
+    {% assign sitemap = page.url | regex_extract: '^/pages/([^/]+)/' | sitemap %}
     {% for category in sitemap %}
       <li class="sitemap-headline">{{ category.title }}</li>
       {% for entry in category.entries %}

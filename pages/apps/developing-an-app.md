@@ -7,7 +7,7 @@ title: Developing an app
 # Create an app
 
 ## What kind of apps do we support?
-In a first approach, we only support external apps. These apps connect via the REST API to the shop to exchange data and let the merchant work with these data within an external service.
+In a first approach, we support apps that connect via the REST API to the shop to exchange data and let the merchant work with these data within an external service.
 
 ## Set-up
 
@@ -15,7 +15,7 @@ In a first approach, we only support external apps. These apps connect via the R
 2. In the drop down menu, choose the field **Developer Apps**.
 3. In the **Developer Apps** view, click the button **Add**.
 3. Fill out the entry field **App name**. This field is mandatory.
-4. Click the button **Save**. You will be assigned a unique **Consumer key** and **Consumer secret**. Remember these credentials as you will have to integrate them into the configuration files or the actual code of your application. We also automatically authorise your own account and generate an **Application callback URL**, **Application notification URL** and **Access token**.
+4. Click the button **Save**. You will be assigned a unique **Consumer key**, **Consumer secret** and **Access token**. Remember these credentials as you will have to integrate them into the configuration files or the actual code of your application.
 
 {% callout danger Important! %}
 For your application's own security: DO NOT share your **Consumer secret** with anyone!
