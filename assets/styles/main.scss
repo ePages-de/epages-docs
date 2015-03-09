@@ -63,7 +63,7 @@ body {
   -webkit-font-smoothing: antialiased;
   padding-top: 50px;
   position: relative;}
-    
+
 p {
   margin: 0 0 40px;
 }
@@ -103,7 +103,7 @@ article {
   a {
     color: $petrol;
     text-decoration: underline;
-    
+
     &:hover {
       color: darken($petrol, 20)
     }
