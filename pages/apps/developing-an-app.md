@@ -6,19 +6,22 @@ title: Developing an app
 
 # Create an app
 
-## What kind of apps do we support?
-In a first approach, we support apps that connect via the REST API to the shop to exchange data and let the merchant work with these data within an external service.
+## Get your credentials
 
-## Set-up
+1. Within the backoffice of your test shop, click the tab **Apps**.
+    {% image click-apps.png %}{% endimage %}
 
-1. Within your test shop backoffice, click the tab **Apps**.
 2. In the drop down menu, choose the field **Developer Apps**.
+    {% image choose-developer-apps.png %}{% endimage %}
+
 3. In the **Developer Apps** view, click the button **Add**.
-3. Fill out the entry field **App name**. This field is mandatory.
-4. Click the button **Save**. You will be assigned a unique **Consumer key**, **Consumer secret** and **Access token**. Remember these credentials as you will have to integrate them into the configuration files or the actual code of your application.
+4. Fill out the entry field **App name**. This field is mandatory.
+    {% image fillout-app-name.png %}{% endimage %}
+
+5. Click the button **Save**. You will be assigned a unique **client id**, **client secret** and **access token**. Remember these credentials as you will have to integrate them into the configuration files or the actual code of your application.
 
 {% callout danger Important! %}
-For your application's own security: DO NOT share your **Consumer secret** with anyone!
+DO NOT share your **client secret** with anyone!
 {% endcallout %}
 
 The credentials you'll receive might look like this:
@@ -54,4 +57,4 @@ This is what we need to thoroughly test the functionality of your app.
 
 Click the button **Submit app now**.
 
-Makes us jump for joy! Your app is on its way! We will be testing your app and come back to you as soon as our review has been completed. Give us XXX days time.
+Makes us jump for joy! Your app is on its way! We will be testing your app and come back to you as soon as our review has been completed. Give us a couple of days time.
