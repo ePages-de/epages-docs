@@ -4,7 +4,7 @@ layout: landingpage
 
 <div id="content">
   <div id="pageoverview" class="container">
-    {% assign sitemap = 'apps' | sitemap: site.data | chunked_array: 4 %}
+    {% assign sitemap = 'apps' | sitemap | chunked_array: 4 %}
     {% for category_chunk in sitemap %}
       <div class="row">
         {% for category in category_chunk %}

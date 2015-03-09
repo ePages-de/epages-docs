@@ -121,7 +121,7 @@ task :test do
     attr_reader :href
 
     def unresolved_reference?
-      if @href =~ /([a-z\-]+):([a-z\-]+)(#([a-z\-]+))?/
+      if @href =~ /([a-z0-9\-]+):([a-z0-9\-]+)(#(.+))?/
         case $1
           when 'mailto'
             false
