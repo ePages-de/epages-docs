@@ -148,4 +148,6 @@ task :test do
   HTML::Proofer.new("./_site", :disable_external => true).run
 end
 
-
+task :default do
+  sh "bundle exec jekyll serve --watch"
+end
