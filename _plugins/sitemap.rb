@@ -42,6 +42,34 @@ class Sitemap
 end
 
 module Jekyll
+  class HeadlineAnchorOffsetConverter < Converter
+    priority :lowest
+
+    def matches(ext)
+      ext =~ /^\.(html|md)$/i
+    end
+
+    def output_ext(ext)
+      ".html"
+    end
+
+    def convert(content)
+      parse_special_links = Loofah::Scrubber.new do |node|
+        if node.name =~ /h(1|2|3|4|5|6)/
+          if node['id']
+            id = node['id']
+            node.remove_attribute('id')
+            anchor = node.add_previous_sibling("<div id=\"#{id}\" class=\"headline-anchor\"></div>").first
+          end
+        end
+      end
+
+      Loofah.fragment(content).
+        scrub!(parse_special_links).
+        to_s
+    end
+  end
+
   class LinkConverter < Converter
     priority :lowest
 
