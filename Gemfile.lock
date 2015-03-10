@@ -67,7 +67,7 @@ GEM
       sass (~> 3.2)
     jekyll-watch (1.2.1)
       listen (~> 2.7)
-    jekyll_search (0.0.4)
+    jekyll_search (0.0.5)
       elasticsearch (~> 1.0.6)
       jekyll (>= 2.5.0)
       loofah (~> 2.0.1)
@@ -125,7 +125,7 @@ PLATFORMS
 DEPENDENCIES
   html-proofer (~> 2.0.6)
   jekyll (~> 2.5.3)
-  jekyll_search (~> 0.0.4)
+  jekyll_search (~> 0.0.5)
   loofah (~> 2.0.1)
   raml_parser (~> 0.2.2)
   therubyracer (~> 0.12.1)
