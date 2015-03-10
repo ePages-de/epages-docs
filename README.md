@@ -11,10 +11,7 @@ See a preview of the documentation [here][epagesdocs]. This documentation is bui
 $ bundle install
 
 # run a local server with auto rebuilding
-$ jekyll server --watch
-
-# build distribution version
-$ jekyll build
+$ rake
 
 # check for death links and other bad stuff
 $ rake test
