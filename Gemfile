@@ -6,5 +6,5 @@ gem 'html-proofer', '~> 2.0.6'
 gem 'raml_parser', '~> 0.2.2'
 
 group :jekyll_plugins do
-  gem 'jekyll_search', '~> 0.0.4'
+  gem 'jekyll_search', '~> 0.0.5'
 end
