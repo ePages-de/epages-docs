@@ -59,7 +59,7 @@ module Jekyll
           if node['id']
             id = node['id']
             node.remove_attribute('id')
-            anchor = node.add_previous_sibling("<div id=\"#{id}\" class=\"headline-anchor\"></div>").first
+            anchor = node.children.first.add_previous_sibling("<div id=\"#{id}\" class=\"headline-anchor\"></div>").first
           end
         end
       end
