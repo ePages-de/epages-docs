@@ -82,6 +82,12 @@ p {
   }
 }
 
+.headline-anchor {
+  position: relative;
+  top: -60px;
+  visibility: hidden;
+}
+
 article {
   h1, h2, h3, h4, h5, h6 {
     font-style: italic;
