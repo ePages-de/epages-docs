@@ -49,10 +49,6 @@ body {
 nav {
   margin-bottom: 0 !important;
   
-  .navbar-default{
-    height: 83px;
-  }
-  
   .navbar-brand { 
     width: 164px;
     height: 8.2rem;
@@ -94,6 +90,11 @@ nav {
   }
 }
 
+.navbar-default{
+  height: 83px;
+  background-color: #fff;
+}
+  
 .navbar {
   min-height: 44px !important;
 }
@@ -109,7 +110,7 @@ nav {
 }
 
 p {
-  margin: 0 0 40px;
+  margin: 0 0 20px;
 }
 
 .page-header {
