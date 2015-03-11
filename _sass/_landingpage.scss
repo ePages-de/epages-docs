@@ -3,6 +3,10 @@
   background-position: center top;
   background-size: cover;
 
+  @media screen and (max-width: $screen-sm-max) {
+    padding: 20px 0;
+  }
+  
   @media print {
     display: none;
   }
@@ -37,7 +41,7 @@
 
   @media screen and (max-width: $screen-sm-max) {
     padding: 20px;
-    font-size: 14px;
+    font-size: 1.6rem;
     max-width: 100%;
   }
 }
