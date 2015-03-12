@@ -8,7 +8,7 @@ title: Developing an app
 
 Once you have your test shop in place, you have to create an app to get the `clientID` and `clientSecret` values.
 The `clientID` is the unique identifier for your app. You will have to use it for all requests to the API.
-The `clientSecret` is just shared between your app and ePages. You have to pass the `clientSecret` once during the [authorisation process](page:apps-oauth#authorisation process). Your app uses this value to verify the signature.
+The `clientSecret` is just shared between your app and ePages. You have to pass the `clientSecret` once during the [authorisation process](page:apps-oauth#authorisation-process). Your app uses this value to verify the signature.
 
 ## Get your credentials
 
