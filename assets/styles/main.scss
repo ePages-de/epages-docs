@@ -51,8 +51,10 @@ nav {
 
   .navbar-brand {
     width: 164px;
-    height: 8.2rem;
-    padding: 1.4em 0px 1em;
+    height: 39px;
+    padding: 0;
+    margin: 0;
+    margin-top: 24px;
     background: transparent url('#{$assets-base}/images/epages-logo.png') center center no-repeat;
     background-size: contain;
 
