@@ -1,20 +1,13 @@
 ---
-layout: landingpage
 ---
-<div id="content">
-  <div id="pageoverview" class="container">
-    <div class="row">
-      <ul id="search-results"></ul>
-    </div>
-    <div class="row">
-      <div class="col-sm-2"></div>
-        <div class="col-sm-4">
-          <a href="{{ "/pages/apps/index.html" | prepend: site.baseurl }}">Apps</a>
-        </div>
-        <div class="col-sm-4">
-          <a href="{{ "/pages/themes/index.html" | prepend: site.baseurl }}">Themes</a>
-        </div>
-      <div class="col-sm-2"></div>
-    </div>
-  </div>
-</div>
+<html>
+  <head>
+    <title>{{ site.title }}</title>
+    <META http-equiv="refresh" content="3;URL={{ '/pages/apps/index.html' | prepend: site.baseurl }}">
+  </head>
+  <body bgcolor="#ffffff">
+    <center>
+      This page will not be visible in production. You get redirected in 3 seconds.
+    </center>
+  </body>
+</html>
