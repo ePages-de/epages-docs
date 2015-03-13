@@ -53,26 +53,17 @@ body {
 
 nav {
   .navbar-brand {
-    width: 164px;
-    height: 39px;
-    padding: 0;
-    margin-left: 0 !important;
-    margin-top: 26px;
-    background: transparent url('#{$assets-base}/images/epages-logo.png') center center no-repeat;
     background-size: contain;
 
     @media screen and (max-width: $screen-xs-max) {
-      display: inline-block;
-      width: 44px;
-      height: 44px;
-      background: transparent url('#{$assets-base}/images/logo-mobile.png');
+      padding: 0;
       margin: 0;
     }
   }
 
   .navbar-nav {
     li > a {
-      padding: 31px 20px;
+      padding: 31px 15px;
 
       @media screen and (max-width: $screen-sm-max) {
         padding: 31px 10px;
@@ -85,6 +76,10 @@ nav {
       font-size: 18px;
       padding: 15px 20px;
     }
+  }
+
+  .navbar-header {
+    height: 43px;
   }
 
   a {
@@ -115,6 +110,21 @@ nav {
 
 .navbar {
   min-height: 44px !important;
+}
+
+#brand-logo {
+  width: 164px;
+  height: 39px;
+  background: transparent url('#{$assets-base}/images/epages-logo.png') center center no-repeat;
+  background-size: contain;
+  margin-top: 11px;
+
+  @media screen and (max-width: $screen-xs-max) {
+    width: 44px;
+    height: 44px;
+    background: transparent url('#{$assets-base}/images/logo-mobile.png');
+    margin-top: 0;
+  }
 }
 
 #content {
