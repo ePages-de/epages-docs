@@ -145,7 +145,7 @@ task :test do
   end
 
   sh "bundle exec jekyll build"
-  HTML::Proofer.new("./_site", :disable_external => true).run
+  HTML::Proofer.new("./_site", :disable_external => true, :href_ignore => ["#"]).run
 end
 
 task :index do

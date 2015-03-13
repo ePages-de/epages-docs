@@ -40,7 +40,7 @@ body {
   -webkit-font-smoothing: antialiased;
   padding-top: 83px;
   position: relative;
-  
+
   @media screen and (max-width: $screen-xs-max) {
     padding-top: 44px;
   }
@@ -48,14 +48,14 @@ body {
 
 nav {
   margin-bottom: 0 !important;
-  
-  .navbar-brand { 
+
+  .navbar-brand {
     width: 164px;
     height: 8.2rem;
     padding: 1.4em 0px 1em;
     background: transparent url('#{$assets-base}/images/epages-logo.png') center center no-repeat;
     background-size: contain;
-    
+
     @media screen and (max-width: $screen-xs-max) {
       display: inline-block;
       width: 44px;
@@ -64,23 +64,23 @@ nav {
       margin: 0;
     }
   }
-    
+
   .navbar-nav {
     li > a {
       padding: 31px 20px;
     }
-    
+
     .pull-right {
       margin: 0 6px;
       font-size: 18px;
       padding: 15px 20px;
     }
   }
-  
+
   a {
     line-height: 3.1rem;
   }
-  
+
   .navbar-toggle {
     margin: 0;
     border-radius: 0;
@@ -93,16 +93,16 @@ nav {
 .navbar-default{
   height: 83px;
   background-color: #fff;
-  
+
   @media screen and (max-width: $screen-xs-max) {
     height: 44px;
   }
-  
+
   .navbar-collapse{
     background-color: #fff;
   }
 }
-  
+
 .navbar {
   min-height: 44px !important;
 }
@@ -111,7 +111,7 @@ nav {
   background-color: white;
   padding: 25px 0;
   line-height: 1.7em;
-  
+
   @media screen and (max-width: $screen-xs-max) {
     padding: 0;
   }
@@ -139,7 +139,7 @@ article {
   h1, h2, h3, h4, h5, h6 {
     font-style: italic;
   }
-  
+
   h1 {
     margin-top: 60px;
   }
@@ -235,7 +235,7 @@ b, strong {
     background-color: darken($bgFooter, 20);
     border-radius: $border-radius-small;
   }
-  
+
   span {
     text-align: center;
     display: block;
