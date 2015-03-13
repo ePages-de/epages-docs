@@ -1,5 +1,5 @@
 ---
-layout: page-nositemap
+layout: blank
 title: Search
 searchable: false
 ---
@@ -7,7 +7,7 @@ searchable: false
   <form method="get" autocomplete="off">
     <div class="form-group">
       <label for="search-box">Search</label>
-      <input data-bind="value: query, valueUpdate: ['input', 'keyup']" name="q" id="search-box" type="text" class="form-control"/>
+      <input data-bind="value: query, valueUpdate: ['input', 'keyup']" name="q" id="search-box" type="text" placeholder="Enter your search here" class="form-control"/>
     </div>
   </form>
 
