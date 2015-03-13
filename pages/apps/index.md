@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page-landingpage
 key: apps-overview
 title: Overview
 ---
