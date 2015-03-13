@@ -3,6 +3,16 @@
   background-position: center top;
   background-size: cover;
 
+  &.landingpage-banner-small {
+    background-image: none;
+    padding: 1.5rem 0;
+    background-color: #ddd;
+  }
+
+  @media screen and (max-width: $screen-sm-max) {
+    padding: 20px 0;
+  }
+
   @media print {
     display: none;
   }
@@ -14,7 +24,7 @@
   font-size: 52px;
   text-shadow: $text-shadow;
   margin: 0 auto;
-  padding: 40px;
+  padding-top: 40px;
   font-family: $font-family-base;
   font-style: italic;
   font-weight: 100;
@@ -37,7 +47,7 @@
 
   @media screen and (max-width: $screen-sm-max) {
     padding: 20px;
-    font-size: 14px;
+    font-size: 1.6rem;
     max-width: 100%;
   }
 }

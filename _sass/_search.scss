@@ -4,19 +4,24 @@
   padding: 4rem;
   padding-top: 2rem;
 
+  @media screen and (min-width: $screen-lg-min) {
+    width: 45%;
+  }
+
   @media screen and (max-width: $screen-md-max) {
     width: 70%;
   }
 
   @media screen and (max-width: $screen-sm-max) {
-    width: 100%;
+    width: 90%;
   }
 }
 
 #search-box {
   font-size: 18px;
-  padding: 18px 10px;
+  padding: 18px 10px 18px 40px;
   line-height: 28px;
+  background: #fff url("/assets/images/search.png") left center no-repeat;
 }
 
 #search-results {
