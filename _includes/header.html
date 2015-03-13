@@ -10,9 +10,13 @@
         <span class="icon-bar"></span>
       </button>
       {% if chapter %}
-        <a class="navbar-brand" href="{{ '/index.html' | prepend: chapter | prepend: '/' | prepend: site.baseurl }}"></a>
+        <a class="navbar-brand" href="{{ '/index.html' | prepend: chapter | prepend: '/' | prepend: site.baseurl }}">
+          <div id="brand-logo"></div>
+        </a>
       {% else %}
-        <a class="navbar-brand" href="http://www.epages.com/"></a>
+        <a class="navbar-brand" href="http://www.epages.com/">
+          <div id="brand-logo"></div>
+        </a>
       {% endif %}
     </div>
     {% if chapter == '1and1' %}
