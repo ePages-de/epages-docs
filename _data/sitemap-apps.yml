@@ -4,29 +4,35 @@
     - title: Overview
       link: page:apps-overview
 
-    - title: Using the API
-      link: page:apps-using-the-api
+    - title: Request headers
+      link: page:apps-request-headers
 
-    - title: Response codes
-      link: page:apps-using-the-api#response-codes
+    - title: Response headers
+      link: page:apps-response-headers
+
+    - title: Media type
+      link: page:apps-media-type
 
     - title: API call limit
-      link: page:apps-using-the-api#api-call-limit
+      link: page:apps-api-call-limit
 
-- key: oauth
-  title: Authentication
-  entries:
-    - title: OAuth 2.0
-      link: page:apps-oauth
+    - title: Response codes
+      link: page:apps-response-codes
 
 - key: apps-develop
   title: Developing an app
   entries:
+    - title: Introduction
+      link: page:apps-introduction
+
     - title: Create an app
-      link: page:apps-develop-app#create-an-app
+      link: page:apps-create
+
+    - title: Install an app
+      link: page:apps-install
 
     - title: Submit an app
-      link: page:apps-develop-app#submit-an-app
+      link: page:apps-submit
 
 - key: api-rest
   title: API reference

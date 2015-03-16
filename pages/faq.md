@@ -19,11 +19,11 @@ Technically, the first version of the ePages developer program supports apps, th
 
 # How does the approval process work?
 
-When you're done with coding and been through with testing your app successfully, you can login to our test shop and [submit your app](page:apps-develop-app#submit-an-app). Fill out the form and that's it! We will carefully test your app and also review the information you provide us for the app store. Give us some time for the review process. It can take up to XXX days. When we're done, we will contact you whether your app has been approved or not. If your app has been approved, we will provide it in the ePages app store during the next XXX days/hours. If your app has been rejected, we will give you detailed feedback why. As soon as the required changes are done, you can submit your app again.
+When you're done with coding and been through with testing your app successfully, you can login to our test shop and [submit your app](page:apps-submit). Fill out the form and that's it! We will carefully test your app and also review the information you provide us for the app store. Give us some time for the review process. It can take up to XXX days. When we're done, we will contact you whether your app has been approved or not. If your app has been approved, we will provide it in the ePages app store during the next XXX days/hours. If your app has been rejected, we will give you detailed feedback why. As soon as the required changes are done, you can submit your app again.
 
 # What is the API call limit?
 
-Requests to the API are limited to 6000 calls per hour. The limit applies to all available resources. Find more detailed information in the [API call limit](page:apps-using-the-api#api-call-limit) section.
+Requests to the API are limited to 6000 calls per hour. The limit applies to all available resources. Find more detailed information in the [API call limit](page:apps-api-call-limit) section.
 
 # Is the API call limit per store or per app?
 
