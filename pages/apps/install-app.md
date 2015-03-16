@@ -1,14 +1,14 @@
 ---
 layout: page
-key: apps-oauth
-title: OAuth 2.0
+key: apps-install
+title: Install an app
 ---
 
 Your app cannot access ePages data without getting authorisation from the merchant first. In this section we will help you through this authorisation process.
 
 # Credentials
 
-You already retrieved a `clientId` and a `clientSecret` that are known to both ePages and your application. If not, visit [get your credentials](page:apps-develop-app#get-your-credentials). Your app uses these credentials for identification during the authorisation process.
+You already retrieved a `clientId` and a `clientSecret` that are known to both ePages and your application. If not, visit [get your credentials](page:apps-create#get-your-credentials). Your app uses these credentials for identification during the authorisation process.
 
 # Terminology
 
@@ -65,9 +65,9 @@ To request an `accessToken` make a HTTPS `POST` request to the API in JSON forma
 
 | Field              | Description                                                                                             |
 |--------------------|---------------------------------------------------------------------------------------------------------|
-| `code`      | The code provided in the `redirectUrl` ([see above](page:apps-oauth#confirm-the-installation)).     |
-| `clientId`   | The client key for the app (see the [get your credentials](page:apps-develop-app#get-your-credentials) section).|
-| `clientSecret`    | The shared client secret for the app (see the [get your credentials](page:apps-develop-app#get-your-credentials) section). |
+| `code`      | The code provided in the `redirectUrl` ([see above](page:apps-install#confirm-the-installation)).     |
+| `clientId`   | The client key for the app (see the [get your credentials](page:apps-create#get-your-credentials) section).|
+| `clientSecret`    | The shared client secret for the app (see the [get your credentials](page:apps-create#get-your-credentials) section). |
 
 Example:
 
@@ -110,7 +110,7 @@ With this `accessToken` you make authenticated requests to the shop's data. Stor
 
 ## 6. Redirect the merchant
 
-Once the authorisation process is complete, the app has to send the merchant back to the `redirectUrl` the app received [before](page:apps-oauth#receive-authorisation-code).
+Once the authorisation process is complete, the app has to send the merchant back to the `redirectUrl` the app received [before](page:apps-install#receive-authorisation-code).
 
 ## Use access token to access API
 
