@@ -20,6 +20,8 @@ class Sitemap
             Jekyll.logger.warn 'Unknown reference:', "Could not find page with key '#{key}'"
             nil
           end
+        when 'mailto'
+          nil
         else
           Jekyll.logger.error 'Unknown reference type:' "Unknown link type '#{type}'"
           nil
