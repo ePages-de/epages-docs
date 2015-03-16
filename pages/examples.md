@@ -62,9 +62,9 @@ Links
 
 [A link to an external page](http://jekyllrb.com/)
 
-[A link to an internal page](page:apps-using-the-api)
+[A link to an internal page](page:apps-create)
 
-[A link to a headline of an internal page](page:apps-develop-app#create-an-app)
+[A link to a headline of an internal page](page:apps-create#get-your-credentials)
 
 
 Table

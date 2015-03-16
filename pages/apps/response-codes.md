@@ -1,39 +1,16 @@
 ---
 layout: page
-key: apps-using-the-api
-title: Using the API
+key: apps-response-codes
+title: Response codes
 ---
-
-Not yet registered for the ePages Developer Program? [Go for it!](page:apps-overview#registration).
-
-# RESTful principle
-
-Our highest claim is to ensure you're having a good time developing your app. That's why we're trying to make the API understandable for both developers and humans.
-
-Let's make things less complicated: It's very easy to build and test applications, since the API is based on RESTful principles. The API uses the following standard HTTP verbs to make use of the required store data:
-
-  * `GET` requests resources
-  * `POST` creates resources
-  * `PUT` modifies resources
-  * `DELETE` deletes resources
-
-# Schema
-
-  * Requests to the API can only be made using HTTPS to enable secure, confident and unaltered data transmission and to grant access to authorised users only.
-  * All URLs start with /rs/.
-  * Every shop has its own REST end-point.
-  * All data is sent and received using JSON.
-  * All timestamps are returned in ISO 8601 format (`YYYY-MM-DDTHH:MM:SS.Z`)
-
-# Response codes
 
 The API uses HTTP response codes to indicate success or failure of a request. That means, the 2xx range indicates success, the 4xx range indicates validation errors or problems with the provided parameters whereas the 5xx range indicates errors on our side.
 
 {% callout info Sometimes ... HTML responses... %}
-Generally, you can expect a JSON response, when making an API call. Due to internal technical reasons, however, in the 4xx and 5xx range HTML responses can occur, see [the 4xx example response](page:apps-using-the-api#xx-example-response-1).
+Generally, you can expect a JSON response, when making an API call. Due to internal technical reasons, however, in the 4xx and 5xx range HTML responses can occur, see [the 4xx example response](page:apps-response-codes#example-response-1).
 {% endcallout %}
 
-## Responses in the 2xx range
+# Responses in the 2xx range
 
 | Code      | Text      | Description    |
 |---------------|---------------| -------|
@@ -41,7 +18,7 @@ Generally, you can expect a JSON response, when making an API call. Due to inter
 | 201       | Created           | The request has been fulfilled and resulted in a new resource being created, e.g a cart.
 | 204       | No&nbsp;Content   | The server successfully processed the request, but is not returning any content. Typically used as a response to a successful delete request.
 
-## 2xx example response
+## Example response
 
 {% highlight text %}
 HTTP/1.1 200 OK
@@ -61,7 +38,7 @@ X-epages-Media-Type: application/vnd.epages.v1+json
 }
 {% endhighlight %}
 
-## Responses in the 4xx range
+# Responses in the 4xx range
 
 | Code      | Text      | Description    |
 |---------------|---------------| -------|
@@ -70,9 +47,9 @@ X-epages-Media-Type: application/vnd.epages.v1+json
 | 404      | Not&nbsp;Found     | The requested resource could not be found, but may be available in future, e.g. a product has been requested, that is not available.
 | 405      | Method&nbsp;Not&nbsp;Allowed | A request was made of a resource using a request method not supported by that resource, e.g. using a `POST` on a resource that requires a `GET`.
 | 406      | Not&nbsp;Acceptable| The content negotiation between client and server failed. As ePages uses the Accept header to specify the API version, it requires the client to send exactly this header for the respective version of the REST API. So for the currently existing version v1, this is `Accept: application/vnd.epages.v1+json`. The server response for the content-type is always `application/json` unless stated otherwise.
-| 429      | Too Many Requests  | Too many requests have been sent to the API in a given amount of time and the API call limit has been exceeded, see also [API call limit](page:apps-using-the-api#api-call-limit).
+| 429      | Too Many Requests  | Too many requests have been sent to the API in a given amount of time and the API call limit has been exceeded, see also [API call limit](page:apps-api-call-limit).
 
-## 4xx example response
+## Example response
 
 {% highlight text %}
 HTTP/1.1 400 Bad Request
@@ -95,7 +72,7 @@ Server: Jetty(9.2.7.v20150116)
 </html>
 {% endhighlight %}
 
-## Responses in the 5xx range
+# Responses in the 5xx range
 
 | Code      | Text      | Description    |
 |---------------|---------------| -------|
@@ -103,7 +80,7 @@ Server: Jetty(9.2.7.v20150116)
 | 502       | Bad&nbsp;Gateway | The server was acting as a gateway or proxy and received an invalid response from the upstream server, e.g. internal ePages services not available. Generally, this is only a temporary state.
 | 503       | Service&nbsp;Unavailable | The server is currently unavailable, e.g. the REST API is unavailable. Generally, this is only a temporary state.
 
-## 5xx example response
+## Example response
 
 {% highlight text %}
 HTTP/1.1 500 Internal Server Error
@@ -119,25 +96,6 @@ Server: Jetty(9.2.7.v20150116)
 }
 {% endhighlight %}
 
-# API call limit
-
-Requests to the API are limited to 6000 calls per hour. The limit applies to all available resources.
-Once the limit is exceeded, the request will be rejected. HTTP status `429 - Too many requests` will be returned and a message telling you that you've been limited, see also [Response codes](page:apps-using-the-api#response-codes).
-
-The rate limit usage is returned in the response headers from each request, e.g.
-
-{% highlight text %}
-X-RateLimit-Limit: 6000
-X-RateLimit-Remaining: 5999
-X-Rate-Limit-Reset: 2015-02-20T13:14:34.611Z
-{% endhighlight %}
-
-X-RateLimit-Limit: number of calls you are allowed per hour
-
-X-RateLimit-Remaining: number of calls you can make before hitting the limit
-
-X-RateLimit-Reset: next time the quota will be reset.
-
 # Current version
 
 By default, all requests receive the **v1** version of the API. We encourage you to explicitly request this version via the `Accept` header.
@@ -148,4 +106,4 @@ Accept: application/vnd.epages.v1+json
 
 # Good to go!
 
-[Develop your app](page:apps-develop-app).
+[Develop your app](page:apps-create).
