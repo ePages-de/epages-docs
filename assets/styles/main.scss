@@ -138,6 +138,16 @@ p {
 article {
   h1, h2, h3, h4, h5, h6 {
     font-style: italic;
+
+    .headline-anchor {
+      position: relative;
+      top: -100px;
+      visibility: hidden;
+
+      @media screen and (max-width: $screen-xs-max) {
+        top: -60px;
+      }
+    }
   }
 
   h1 {
