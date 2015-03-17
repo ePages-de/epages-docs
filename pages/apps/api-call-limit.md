@@ -7,7 +7,7 @@ title: API call limit
 Requests to the API are limited to 6000 calls per hour. The limit applies to all available resources.
 Once the limit is exceeded, the request will be rejected. HTTP status `429 - Too many requests` will be returned and a message telling you that you've been limited, see also [Response codes](page:apps-response-codes).
 
-The rate limit usage is returned in the response headers from each request, e.g.
+The rate limit usage is returned in the [response headers](page:apps-response-headers) from each request, e.g.
 
 {% highlight text %}
 X-RateLimit-Limit: 6000

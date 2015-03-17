@@ -34,5 +34,9 @@ The credentials you'll receive might look like this:
 
 **AccessToken**: azFE9jsp00mz4VoqZAnoFgKYTBi20soI
 
+{% callout info Test. Test. Test. %}
+You can use these credentials now for testing purposes to access the API from your development environment.
+{% endcallout %}
+
 Once this is done, you can start coding off. You are free to use any kind of code language.
 But when developing your app, please consider our [API call limit](page:apps-api-call-limit).

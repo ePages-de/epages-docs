@@ -14,7 +14,7 @@ In a first approach, we support 3rd party applications that connect via the REST
 
 # Registration
 
-Before you can start coding off you'll need to sign up for the ePages Developer Program and create a test shop. To use the ePages API you will need an application registration.
+Before you can start coding off, you'll need to sign up for the ePages Developer Program and create a test shop. To use the ePages API you will need an application registration.
 
 1. Sign up for the Developer Program.
     * Enter your name and email address in the required fields.

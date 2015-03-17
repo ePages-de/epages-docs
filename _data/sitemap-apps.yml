@@ -19,6 +19,9 @@
     - title: Response codes
       link: page:apps-response-codes
 
+    - title: Versions
+      link: page:apps-version
+
 - key: apps-develop
   title: Developing an app
   entries:
