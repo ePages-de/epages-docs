@@ -6,8 +6,8 @@ title: Response codes
 
 The API uses HTTP response codes to indicate success or failure of a request. That means, the 2xx range indicates success, the 4xx range indicates validation errors or problems with the provided parameters whereas the 5xx range indicates errors on our side.
 
-{% callout info Sometimes ... HTML responses... %}
-Generally, you can expect a JSON response, when making an API call. Due to internal technical reasons, however, in the 4xx and 5xx range HTML responses can occur, see [the 4xx example response](page:apps-response-codes#example-response-1).
+{% callout info Exceptions confirm the rule... %}
+Generally, you can expect a JSON response, when making an API call. However, due to internal technical reasons, in the 4xx and 5xx range HTML responses can occur, see [the 4xx example response](page:apps-response-codes#example-response-1).
 {% endcallout %}
 
 # Responses in the 2xx range
@@ -47,7 +47,7 @@ X-epages-Media-Type: application/vnd.epages.v1+json
 | 404      | Not&nbsp;Found     | The requested resource could not be found, but may be available in future, e.g. a product has been requested, that is not available.
 | 405      | Method&nbsp;Not&nbsp;Allowed | A request was made of a resource using a request method not supported by that resource, e.g. using a `POST` on a resource that requires a `GET`.
 | 406      | Not&nbsp;Acceptable| The content negotiation between client and server failed. As ePages uses the Accept header to specify the API version, it requires the client to send exactly this header for the respective version of the REST API. So for the currently existing version v1, this is `Accept: application/vnd.epages.v1+json`. The server response for the content-type is always `application/json` unless stated otherwise.
-| 429      | Too Many Requests  | Too many requests have been sent to the API in a given amount of time and the API call limit has been exceeded, see also [API call limit](page:apps-api-call-limit).
+| 429      | Too Many Requests  | Too many requests have been sent to the API in a given amount of time. The API call limit has been exceeded, see also [API call limit](page:apps-api-call-limit).
 
 ## Example response
 
@@ -95,15 +95,3 @@ Server: Jetty(9.2.7.v20150116)
     "status": "500"
 }
 {% endhighlight %}
-
-# Current version
-
-By default, all requests receive the **v1** version of the API. We encourage you to explicitly request this version via the `Accept` header.
-
-{% highlight text %}
-Accept: application/vnd.epages.v1+json
-{% endhighlight %}
-
-# Good to go!
-
-[Develop your app](page:apps-create).
