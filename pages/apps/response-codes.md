@@ -4,7 +4,7 @@ key: apps-response-codes
 title: Response codes
 ---
 
-The API uses HTTP response codes to indicate success or failure of a request. That means, the 2xx range indicates success, the 4xx range indicates validation errors or problems with the provided parameters whereas the 5xx range indicates errors on our side.
+The API uses HTTP response codes to indicate success or failure of a request. That means, the 2xx range indicates success; the 4xx range indicates validation errors or problems with the provided parameters, whereas the 5xx range indicates errors on our side.
 
 {% callout info Exceptions confirm the rule... %}
 Generally, you can expect a JSON response, when making an API call. However, due to internal technical reasons, in the 4xx and 5xx range HTML responses can occur, see [the 4xx example response](page:apps-response-codes#example-response-1).

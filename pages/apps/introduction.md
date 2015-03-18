@@ -4,24 +4,9 @@ key: apps-introduction
 title: Introduction
 ---
 
-# RESTful principle
+# RESTful API
 
-Our highest claim is to ensure you're having a good time developing your app. That's why we're trying to make the API understandable for both developers and humans.
-
-It's very easy to build and test applications, since the API is based on RESTful principles. The API uses the following standard HTTP verbs to make use of the required store data:
-
-  * `GET` requests resources
-  * `POST` creates resources
-  * `PUT` modifies resources
-  * `DELETE` deletes resources
-
-# Schema
-
-  * Requests to the API can only be made using HTTPS to enable secure, confident and unaltered data transmission and to grant access to authorised users only.
-  * All URLs start with /rs/.
-  * Every shop has its own REST end-point.
-  * All data is sent and received using JSON.
-  * All timestamps are returned in ISO 8601 format (`YYYY-MM-DDTHH:MM:SS.Z`)
+It's very easy to build and test applications with our API, since it is based on RESTful principles. The API uses the standard HTTP request types `GET`, `POST`, `PUT` and `DELETE`.
 
 # Your benefits
 
@@ -31,4 +16,4 @@ More details? If you have further questions related to the partner conditions, f
 
 # Support
 
-Any questions? Find answers to the common questions in our [FAQ section](page:faq). More complicated topic? We get you in touch with our support. Just send your request to [developer.support@epages.com](mailto:developer.support@epages.com) and we will get back to you.
+Any questions? Find answers to the common questions in our [FAQs](page:faq). More complicated topic? We get you in touch with our support. Just send your request to [developer.support@epages.com](mailto:developer.support@epages.com) and we will get back to you.
