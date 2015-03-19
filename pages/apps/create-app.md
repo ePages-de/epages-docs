@@ -15,7 +15,7 @@ Once you have your test shop in place, you can create an app. You automatically 
 
 # Get your credentials
 
-1. Within the backoffice of your test shop, click the tab **Apps**.
+1. Within the administration area of your test shop, click the tab **Apps**.
     {% image click-apps.png %}{% endimage %}
 
 2. In the drop down menu, choose the field **Developer Apps**.
