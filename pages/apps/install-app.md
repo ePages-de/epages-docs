@@ -8,7 +8,7 @@ Your app cannot access ePages data without getting authorisation from the mercha
 
 # Credentials
 
-You retrieved a **Client ID** and a **Client Secret** that are known to both ePages and your application. Visit [get your credentials](page:apps-create#get-your-credentials) for further information. Your app uses these credentials for identification during the authorisation process.
+You retrieved a **Client ID** and a **Client Secret** that are known to both ePages and your application. Visit the [get your credentials](page:apps-create#get-your-credentials) page for further information on this subject. Your app uses these credentials for identification during the authorisation process.
 
 # Terminology
 
@@ -28,7 +28,7 @@ OAuth 2.0 process
 
 ## 1. Ask for permission
 
-The merchant decided to install your app. Great! He will then be asked whether he wants to grant the permissions that your app is requesting. While submitting the app, you have to define a **scope** for that. ePages displays the user consent form to the merchant as follows:
+The merchant decided to install your app. Great! They will then be asked, whether they want to grant your app the permissions that it is requesting. While submitting the app, you have to define a **scope**, which outlines the permissions and access needed by your app. ePages displays the user consent form to the merchant as follows:
 
 {% image asking-for-permission.png %}
 Consent page
@@ -128,4 +128,4 @@ The substitution would be made as given in this example table:
 
 # Fancy more information?
 
-All API calls are authenticated according to the OAuth 2.0 protocol. Here you go for more details: [OAuth 2.0 protocol](https://tools.ietf.org/html/rfc6749).
+All API calls are authenticated according to the OAuth 2.0 protocol. Read here for further details: [OAuth 2.0 protocol](https://tools.ietf.org/html/rfc6749).
