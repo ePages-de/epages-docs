@@ -1,8 +1,8 @@
 - key: 1and1-general
   title: Getting started
   entries:
-    - title: Overview
-      link: page:1and1-overview
+    - title: Introduction
+      link: page:1and1-intro
 
     - title: Using the API
       link: page:1and1-using-the-api
