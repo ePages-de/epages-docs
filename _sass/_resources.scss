@@ -1,0 +1,20 @@
+.http-method {
+  @extend .label;
+  @extend .label-default;
+}
+
+.http-method-get {
+  background-color: #5f97cf;
+}
+
+.http-method-post {
+  background-color: #35a855;
+}
+
+.http-method-put {
+  background-color: #d2c329;
+}
+
+.http-method-delete {
+  background-color: #da4848;
+}
