@@ -15,8 +15,6 @@ Generally, you can expect a JSON response, when making an API call. However, due
 | Code      | Text      | Description    |
 |---------------|---------------| -------|
 | 200       | OK                | This is the standard response for a successful HTTP request.
-| 201       | Created           | The request has been fulfilled and resulted in a new resource being created, e.g a cart.
-| 204       | No&nbsp;Content   | The server successfully processed the request, but is not returning any content. Typically used as a response to a successful delete request.
 
 ## Example response
 
@@ -42,56 +40,38 @@ X-epages-Media-Type: application/vnd.epages.v1+json
 
 | Code      | Text      | Description    |
 |---------------|---------------| -------|
-| 400       | Bad&nbsp;Request  | The server cannot or will not process the request due to something that is perceived to be a client error, e.g. a non-number is sent to the server, but a number was expected.
-| 403       | Forbidden         | The request was valid, but the server is refusing to respond to it, e.g. the request is not signed with OAuth, an incorrect signature is used or the client is refused because it is lacking permissions.
-| 404      | Not&nbsp;Found     | The requested resource could not be found, but may be available in future, e.g. a product has been requested, that is not available.
-| 405      | Method&nbsp;Not&nbsp;Allowed | A request was made of a resource using a request method not supported by that resource, e.g. using a `POST` on a resource that requires a `GET`.
-| 406      | Not&nbsp;Acceptable| The content negotiation between client and server failed. As ePages uses the Accept header to specify the API version, it requires the client to send exactly this header for the respective version of the REST API. So for the currently existing version v1, this is `Accept: application/vnd.epages.v1+json`. The server response for the content-type is always `application/json` unless stated otherwise.
-| 429      | Too Many Requests  | Too many requests have been sent to the API in a given amount of time. The API call limit has been exceeded.
+| 404      | Not&nbsp;Found     | The requested shop could not be found, but may be available in future, e.g. a shopID has been requested, that is not available.
+| 406      | Not&nbsp;Acceptable| Not all required parameters have been transferred or incorrect parameters have been transferred.
+| 409      | Conflict  | The request could not be completed due to a conflict with the current state of the resource, e.g. no need to change the shop with the given shopID or the shop has a strict lock.
 
 ## Example response
 
 {% highlight text %}
-HTTP/1.1 400 Bad Request
+HTTP/1.1 404 Not Found
 Content-Length: 45
 Content-Type: text/html; charset0ISO-8859-1
 Date: Mon, 23 Feb 2015 11:18:38 GMT
 Server: Jetty(9.2.7.v20150116)
 {% endhighlight %}
 {% highlight html %}
-<head>
-<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"/>
-<title>Error 400 </title>
-</head>
-<body>
-<h2>HTTP ERROR: 400</h2>
-<p>Problem accessing /rs/shops/DemoShop/legal/rights-of-withdrawal. Reason:
-<pre>    Bad Request</pre></p>
-<hr /><i><small>Powered by Jetty://</small></i>
-</body>
-</html>
+to be defined by Consulting
 {% endhighlight %}
 
 # Responses in the 5xx range
 
 | Code      | Text      | Description    |
 |---------------|---------------| -------|
-| 500       | Internal&nbsp;Server&nbsp;Error | A generic error message that is given, when an unexpected condition was encountered and a no more specific message is suitable.
-| 502       | Bad&nbsp;Gateway | The server was acting as a gateway or proxy and received an invalid response from the upstream server, e.g. internal ePages services not available. Generally, this is only a temporary state.
-| 503       | Service&nbsp;Unavailable | The server is currently unavailable, e.g. the REST API is unavailable. Generally, this is only a temporary state.
+| 503       | Service&nbsp;Unavailable | An exception error occurred, e.g. the server is unavailable. Generally, this is only a temporary state.
 
 ## Example response
 
 {% highlight text %}
-HTTP/1.1 500 Internal Server Error
+HTTP/1.1 503 Service Unavailable
 Content-Length: 45
 Content-Type: text/html; charset0ISO-8859-1
 Date: Mon, 23 Feb 2015 11:18:38 GMT
 Server: Jetty(9.2.7.v20150116)
 {% endhighlight %}
 {% highlight json %}
-{
-    "message": "Internal Server Error, Request: GET /rs/shops/DemoShop/locales",
-    "status": "500"
-}
+to be defined by Consulting
 {% endhighlight %}

@@ -4,8 +4,21 @@
     - title: Introduction
       link: page:1and1-intro
 
-    - title: Using the API
-      link: page:1and1-using-the-api
+    - title: Url schema
+      link: page:1and1-using-the-api#url-schema
+
+    - title: Authentication
+      link: page:1and1-using-the-api#authentication
+
+    - title: Communication
+      link: page:1and1-using-the-api#communication
+
+    - title: Response codes
+      link: page:1and1-response-codes
+
+    - title: Versioning
+      link: page:1and1-using-the-api#versioning
+
 
 - key: 1and1-api-rest
   title: API reference
