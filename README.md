@@ -37,7 +37,7 @@ TODO
 
 Make sure you have install [Vagrant][vagrant] and [VirtualBox][virtualbox]. Now run `vagrant up`, take a coffee and afterwards visit [http://localhost:8080/](http://localhost:8080/) in your web browser.
 
-[epagesdocs]: http://epages-de.github.io/epages-docs/
+[epagesdocs]: http://developer.epages.com/
 [ruby]: https://www.ruby-lang.org/
 [bundler]: http://bundler.io/
 
