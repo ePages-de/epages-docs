@@ -42,3 +42,18 @@
   entries:
     - title: Resources
       link: page:api-resources
+
+- key: more
+  title: More
+  entries:
+    - title: Data types
+      link: page:apps-data-types
+
+    - title: Glossary
+      link: page:glossary
+
+    - title: FAQs
+      link: page:faq
+
+
+
