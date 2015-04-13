@@ -1,0 +1,46 @@
+---
+layout: page
+---
+
+Get <a href="{{ page.url | regex_replace: '\-console.html$', '.html' | prepend: site.baseurl }}">back</a> to the resource description.
+
+<h2>Parameters</h2>
+
+<form id="apiconsole-form" class="form">
+  {% for p_tmp in page.raml_resource.uri_parameters %}
+    {% assign p = p_tmp[1] %}
+    <div class="form-group">
+      <label class="control-label" for="parameter-uri-{{ p.name }}">{{ p.name }}</label>
+      <input class="form-control" type="text" id="parameter-uri-{{ p.name }}" value="{{ p.example }}"/>
+      {% if p.description %}
+        <span class="help-block">{{ p.description | markdownify | strip_html | truncatewords: 10 }}</span>
+      {% endif %}
+    </div>
+  {% endfor %}
+  {% for p_tmp in page.raml_method.query_parameters %}
+    {% assign p = p_tmp[1] %}
+    <div class="form-group">
+      <label class="control-label" for="parameter-query-{{ p.name }}">{{ p.name }}</label>
+      <input type="text" class="form-control" id="parameter-query-{{ p.name }}" value="{{ p.example }}"/>
+      {% if p.description %}
+        <span class="help-block">{{ p.description | markdownify | strip_html | truncatewords: 75 }}</span>
+      {% endif %}
+    </div>
+  {% endfor %}
+  <div class="form-group">
+    <button type="submit" class="btn btn-default">Send</button>
+  </div>
+</form>
+
+<h2>Request</h2>
+<pre id="apiconsole-request"></pre>
+
+<h2>Response</h2>
+<pre id="apiconsole-response">(Click Send...)</pre>
+
+<script type="text/javascript" src="{{ '/assets/javascript/apiconsole.js' | prepend: site.baseurl }}"></script>
+<script type="text/javascript">
+  var ramlResource = {{ page.raml_resource | jsonify }}
+  var ramlMethod = {{ page.raml_method | jsonify }}
+  ApiConsole(ramlResource, ramlMethod, '#apiconsole-request', '#apiconsole-response', '#apiconsole-form');
+</script>

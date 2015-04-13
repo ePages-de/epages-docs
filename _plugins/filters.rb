@@ -20,6 +20,10 @@ module Jekyll
         nil
       end
     end
+
+    def regex_replace(input, pattern, substitution)
+      input.gsub(Regexp.new(pattern), substitution)
+    end
   end
 end
 
