@@ -1,20 +1,31 @@
 .http-method {
   @extend .label;
   @extend .label-default;
+
+  display: inline-block;
+  width: 75px;
 }
 
 .http-method-get {
-  background-color: #5f97cf;
+  $color: #5f97cf;
+  background-color: $color;
+  border: 1px solid darken($color, 10%);
 }
 
 .http-method-post {
-  background-color: #35a855;
+  $color: #35a855;
+  background-color: $color;
+  border: 1px solid darken($color, 10%);
 }
 
 .http-method-put {
-  background-color: #d2c329;
+  $color: #d2c329;
+  background-color: $color;
+  border: 1px solid darken($color, 10%);
 }
 
 .http-method-delete {
-  background-color: #da4848;
+  $color: #da4848;
+  background-color: $color;
+  border: 1px solid darken($color, 10%);
 }
