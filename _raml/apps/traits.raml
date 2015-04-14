@@ -1,13 +1,13 @@
 - locale:
     queryParameters:
       locale:
-        description: Locale to use (e.g. en_US, ISO 639-1 for language code and ISO 3166-1 for country code)
+        description: Represents the language code according to ISO 639-1 and the country code according to ISO 3166-1.
         example: en_US
         required : false
 - currency:
     queryParameters:
       currency:
-        description: The ISO 4217 currency code.
+        description: Represents the currency code according to ISO 4217.
         example: EUR
 - paged:
     queryParameters:
@@ -26,23 +26,3 @@
       direction:
         description: Sorting Direction
         enum: [asc, desc]
-- base:
-    responses:
-      404:
-        description: The requested resource could not be found.
-        body:
-          application/json:
-            example: |
-              {
-                "status_code": 404,
-                "message": "Not found"
-              }
-      500:
-        description: There was an internal server error.
-        body:
-          application/json:
-            example: |
-              {
-                "status_code": 500,
-                "message": "Internal server error"
-              }

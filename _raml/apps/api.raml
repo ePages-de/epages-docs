@@ -1,7 +1,7 @@
 #%RAML 0.8
 ---
 title: ePages Public REST API
-baseUri: http://restapi-sandbox.epages.de:8088/rs
+baseUri: /rs
 version: v1
 
 securedBy: [oauth_1_0]
@@ -31,3 +31,4 @@ traits: !include traits.raml
   /search: !include search/search.raml
   /shipping-methods: !include shipping-method/shipping-method.raml
   /start-page: !include start-page/start-page.raml
+  /token: !include appstore/token.raml

@@ -17,7 +17,6 @@
     "parent": {
         "rel": "parent",
         "title": "Categories",
-        "type": "application/json",
         "href": "http://<aHostname>/rs/shops/DemoShop/categories/53228097-D31D-2015-D9C0-AC13320B6354"
     },
     "subCategories": []

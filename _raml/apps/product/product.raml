@@ -4,7 +4,6 @@ description: |
           Operations on the products of a shop.<br/>
           In case of errors for certain products or unknown product ids,
           the product collections will **not** return errors, but skip the products in question.
-is: [ base ]
 get:
   description: Get a list of products
   is: [ locale, currency, paged, direction ]
@@ -43,7 +42,6 @@ get:
     productId:
       description: The current product
       example: 52F221E0-36F6-DC4E-384A-AC1504050C04
-  is: [ base ]
   get:
     description: Retrieve information for a single product. For product variations, a link
       to the variation selection resource (rel="variations") is added.
@@ -55,7 +53,6 @@ get:
             example: !include get_product_response.json
   /variations:
     displayName: Product variations
-    is: [ base ]
     get:
       is: [ locale, paged ]
       description: Retrieve links to product variations in a paged item list.<br/>
@@ -67,7 +64,6 @@ get:
               example: !include get_variations_response.json
   /slideshow:
     displayName: Product slideshow
-    is: [ base ]
     get:
       description: Retrieve links to slideshow images of a product.
       responses:
@@ -77,7 +73,6 @@ get:
               example: !include get_slideshow_response.json
   /custom-attributes:
     displayName: User-defined product attributes
-    is: [ base ]
     get:
       is: [ locale ]
       description: Retrieve values of user-defined product attributes
@@ -88,7 +83,6 @@ get:
               example: !include get_custom_attributes_response.json
   /lowest-price:
     displayName: Lowest price of variation products
-    is: [ base ]
     get:
       is: [ locale, currency ]
       description: Gets the lowest price of all variations of a product that
