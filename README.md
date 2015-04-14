@@ -15,6 +15,12 @@ $ rake
 
 # check for death links and other bad stuff
 $ rake test
+
+# build the page
+$ rake build
+
+# update the RAML files from epagesj
+$ rake ramlup
 ~~~
 
 ## Bootstrap your machine
