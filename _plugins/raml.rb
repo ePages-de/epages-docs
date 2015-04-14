@@ -2,7 +2,7 @@ require 'raml_parser'
 
 module Jekyll
   class ApiResourcePage < Page
-    def initialize(site, base, dir, raml, raml_resource, raml_method)
+    def initialize(site, base, dir, key_prefix, raml, raml_resource, raml_method)
       slugified = Jekyll::Utils::slugify("#{raml_method.method}-#{raml_resource.relative_uri}")
 
       @site = site
@@ -13,6 +13,7 @@ module Jekyll
       self.process(@name)
       self.read_yaml(File.join(base, '_layouts'), 'resource.html')
 
+      self.data['key'] = key_prefix + slugified + '-information'
       self.data['title'] = raml_resource.display_name
       self.data['category'] = 'raml'
 
@@ -23,7 +24,7 @@ module Jekyll
   end
 
   class ApiResourceConsolePage < Page
-    def initialize(site, base, dir, raml, raml_resource, raml_method)
+    def initialize(site, base, dir, key_prefix, raml, raml_resource, raml_method)
       slugified = Jekyll::Utils::slugify("#{raml_method.method}-#{raml_resource.relative_uri}")
 
       @site = site
@@ -34,6 +35,7 @@ module Jekyll
       self.process(@name)
       self.read_yaml(File.join(base, '_layouts'), 'resource-console.html')
 
+      self.data['key'] = key_prefix + slugified + '-console'
       self.data['title'] = raml_resource.display_name
       self.data['category'] = 'raml-console'
 
@@ -45,25 +47,27 @@ module Jekyll
 
   class ApiResourcePageGenerator < Generator
     def generate(site)
-      path = File.join(site.source, site.config['raml_root'])
-      result = RamlParser::Parser.parse_file_with_marks(path)
-      raml = result[:root]
-      not_used = result[:marks].select { |_,m| m != :used }
-      not_used.each { |p,m| puts "#{m} #{p}" }
+      site.config['raml'].each do |raml_config|
+        path = File.join(site.source, raml_config['root_file'])
+        result = RamlParser::Parser.parse_file_with_marks(path)
+        raml = result[:root]
+        not_used = result[:marks].select { |_,m| m != :used }
+        not_used.each { |p,m| puts "#{m} #{p}" }
 
-      pages = raml.resources.map { |res|
-        res.methods.map { |_,meth|
-          p1 = ApiResourcePage.new(site, site.source, 'pages/apps/api-reference', raml, res, meth)
-          p2 = ApiResourceConsolePage.new(site, site.source, 'pages/apps/api-reference', raml, res, meth)
-          [p1, p2]
+        pages = raml.resources.map { |res|
+          res.methods.map { |_,meth|
+            p1 = ApiResourcePage.new(site, site.source, raml_config['url_prefix'], raml_config['key_prefix'], raml, res, meth)
+            p2 = ApiResourceConsolePage.new(site, site.source, raml_config['url_prefix'], raml_config['key_prefix'], raml, res, meth)
+            [p1, p2]
+          }
         }
-      }
-      site.pages += pages.flatten
+        site.pages += pages.flatten
+      end
     end
   end
 
   class RamlPage < Page
-    def initialize(site, base, dir, raml_raw)
+    def initialize(site, base, dir, key_prefix, raml_raw)
       @site = site
       @base = base
       @dir = dir
@@ -72,17 +76,20 @@ module Jekyll
       self.process(@name)
       self.read_yaml(File.join(base, '_layouts'), 'api.raml')
 
-      self.data['raml_raw'] = raml_raw
+      self.data['key'] = key_prefix + '-raml-file'
       self.data['searchable'] = false
+      self.data['raml_raw'] = raml_raw
     end
   end
 
   class RamlPageGenerator < Generator
     def generate(site)
-      path = File.join(site.source, site.config['raml_root'])
-      raml_raw = RamlParser::YamlHelper.dump_yaml(RamlParser::YamlHelper.read_yaml(path))
+      site.config['raml'].each do |raml_config|
+        path = File.join(site.source, raml_config['root_file'])
+        raml_raw = RamlParser::YamlHelper.dump_yaml(RamlParser::YamlHelper.read_yaml(path))
 
-      site.pages << RamlPage.new(site, site.source, 'pages/apps/api-reference', raml_raw)
+        site.pages << RamlPage.new(site, site.source, raml_config['url_prefix'], raml_config['key_prefix'], raml_raw)
+      end
     end
   end
 
