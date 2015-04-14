@@ -1,0 +1,369 @@
+displayName: Ordering a shop
+description: |
+  A shop is only to be established, when the customer accesses the shop for the first time,
+  but not during the ordering process. Important for accounting is to know the time a shop has been ordered.
+  To report the system that a shop has been ordered, a `POST` request is required.
+  ePages already creates the shop reference which reserves the shopID. A shop may not yet be created,
+  but the shop reference has to be marked as **created**.
+post:
+  description: Creates a new shop reference.
+  body:
+    application/json: |
+      {
+        "shopID": "TestShop",
+        "shopType": "eCom10",
+        "country": "1und1DE"
+      }
+  queryParameters:
+    country:
+      description: |
+        Identifies the provider and thereby the business unit.
+        (There is one set of shop types pr provider/business unit.)
+      type: string
+      required : true
+    shopID:
+      description: |
+        The unique identifier of a shop within a business unit.
+        Note: This parameter is visible to everybody.
+        This is why it should not represent the original 1&1 provisioning parameter.
+      type: string
+      required : true
+    shopType:
+      description: The shop type alias.
+      type: string
+      required : true
+  responses:
+    200:
+      description: OK
+      body:
+        application/json:
+          example: !include post_shop_response.json
+    503:
+      description: Service Unavailable
+/{shopId}:
+  displayName: Creating a shop
+  description: Completely create a shop that has already been created partly when ordering a shop.
+  uriParameters:
+    shopId:
+      description: The unique identifier of the shop.
+      type: string
+  get:
+    description: |
+      Returns all relevant information of a shop with a given ID.
+      Among others also the status of a shop is returned.
+      The returned information can be adapted with a respective filter.
+    queryParameters:
+      internalTestShop:
+        description: |
+          The parameter is `true` if the shop is an internal test shop.
+          Internal test shops do not appear in the shop count.
+        type: boolean
+        required : false
+      domainName:
+        description: The domain for the storefront of the shop.
+        type: string
+        required: false
+      sslCertificateExists:
+        description: |
+          The parameter is `true` if an SSL certificate is installed for the shop domain.
+          In the checkout process within the storefront the shop domain remains in the url.
+          Otherwise, it will be switched to the main domain of the business unit.
+      merchantEMail:
+        description: The email address of the customer to be set in the administration area.
+        type: string
+        required: false
+      shopID:
+        description: |
+          The unique identifier of a shop within a business unit.
+          Note: This parameter is visible to everybody.
+          This is why it should not represent the original 1&1 provisioning parameter.
+        type: string
+        required : true
+      shopType:
+        description: The shop type alias.
+        type: string
+        required : false
+    responses:
+      200:
+        description: OK
+        body:
+          application/json:
+            example: !include get_shopid_response.json
+      404:
+        description: Not Found
+      503:
+        description: Service Unavailable
+  post:
+    description: Creates a shop.
+    responses:
+      200:
+        description: OK
+        body:
+          application/json:
+            example: !include post_shopid_response.json
+      404:
+        description: Not Found
+      503:
+        description: Service Unavailable
+  put:
+    description: |
+      Modifies the properties of an existing shop with a given ID. By this means, a shop can be
+      e.g. upgraded or downgraded via the parameter `shopType`. If an optional parameter is transferred,
+      the respective value will be taken over, otherwise the respective property remains unchanged.
+    body:
+      application/json: |
+      example: |
+        {
+          "domainName": "testshop.eu"
+        }
+    queryParameters:
+      internalTestShop:
+        description: |
+          The parameter is `true` if the shop is an internal test shop.
+          Internal test shops do not appear in the shop count.
+        type: boolean
+        required : false
+      domainName:
+        description: The domain for the storefront of the shop.
+        type: string
+        required: false
+      sslCertificateExists:
+        description: |
+          The parameter is `true` if an SSL certificate is installed for the shop domain.
+          In the checkout process within the storefront the shop domain remains in the url.
+          Otherwise, it will be switched to the main domain of the business unit.
+      merchantEMail:
+        description: The email address of the customer to be set in the administration area.
+        type: string
+        required: false
+      shopType:
+        description: The shop type alias.
+        type: string
+        required : false
+    responses:
+      200:
+        description: OK
+        body:
+          application/json:
+            example: !include put_delete_shopid_response.json
+      404:
+        description: Not Found
+      409:
+        description: Conflict
+      503:
+        description: Service Unavailable
+  delete:
+    description: |
+      Deletes a shop with a given ID if a customer cancels the contract. In fact, the shop will only be closed
+      (Storefront and administration area) and marked with **to be deleted**. After a defined time range
+      (standard: 30 days, configurable) the shop will really be deleted via a scheduler.
+      Having done this, the shop data can only be restored from a backup.
+    responses:
+      200:
+        description: OK
+        body:
+          application/json:
+            example: !include put_delete_shopid_response.json
+      404:
+        description: Not Found
+      503:
+        description: Service Unavailable
+  /locks:
+    displayName: Locking/unlocking the shop administration
+    description: The administration area can be locked or unlocked.
+    get:
+      description: Returns all information on the lock state of a shop with a given ID.
+      responses:
+        200:
+          description: OK
+          body:
+            application/json:
+              example: !include get_shopid_locks_response.json
+        404:
+          description: Not Found
+        503:
+          description: Service Unavailable
+    /login:
+      displayName: Locking/unlocking the shop administration
+      description: Locks/unlocks the administration area if a shop. The storefront will not be affected.
+      post:
+        description: Locks the administration area of a shop.
+        responses:
+          200:
+            description: OK
+            body:
+              application/json:
+                example: !include post_delete_shopid_locks_login_response.json
+          404:
+            description: Not Found
+          503:
+            description: Service Unavailable
+      delete:
+        description: Unlocks the administration area of a shop.
+        responses:
+          200:
+            description: OK
+            body:
+              application/json:
+                example: !include post_delete_shopid_locks_login_response.json
+          404:
+            description: Not Found
+          409:
+            description: Conflict
+          503:
+            description: Service Unavailable
+    /usage:
+      displayName: Locking/unlocking the complete shop
+      description: |
+        Locks/unlocks the complete shop i.e. administration area and storefront.
+        If a shop is unlocked via `unlockUsage`, the storefront will be restored with the settings
+        (storefront open/closed) previously chosen by the customer.
+      post:
+        description: Locks a shop.
+        responses:
+          200:
+            description: OK
+            body:
+              application/json:
+                example: !include post_delete_shopid_locks_usage_response.json
+          404:
+            description: Not Found
+          503:
+            description: Service Unavailable
+      delete:
+        description: Unlocks a shop.
+        responses:
+          200:
+            description: OK
+            body:
+              application/json:
+                example: !include post_delete_shopid_locks_usage_response.json
+          404:
+            description: Not Found
+          503:
+            description: Service Unavailable
+  /tokens:
+    displayName: Administrating tokens
+    description: Adminstrates the tokens of a shop.
+    get:
+      description: Lists all tokens for a shop.
+      responses:
+        200:
+          description: OK
+          body:
+            application/json:
+              example: !include get_shopid_tokens_response.json
+        404:
+          description: Not Found
+        503:
+          description: Service Unavailable
+    post:
+      description: Creates a token for a shop.
+      body:
+        application/json: |
+          {
+            "tokenContext": "DIY",
+            "clientApplication": "DIYApp"
+          }
+      queryParameters:
+        tokenContext:
+          description: |
+            The context of the token. (The roles that can be used, e.g. with token1 only newsletters can be created.
+            Note: there's no such role model yet in place as requested by 1&1. Proposal: initially there's just one role "DIY",
+            which contains the required scope for the DIY integration on the REST API.)
+          type: string
+          required : true
+        clientApplication:
+          description: Identifies the client application that should access the REST API.
+          type: string
+          required: true
+      responses:
+        200:
+          description: OK
+          body:
+            application/json:
+              example: !include post_shopid_tokens_response.json
+        404:
+          description: Not Found
+        503:
+          description: Service Unavailable
+    /token:
+      displayName: Administrating tokens
+      description:
+      delete:
+        description: |
+            Deletes the token for a shop. If the token has been deleted successfully,
+            HTTP status 204 No Content will be returned without a body.
+        queryParameters:
+          token:
+            description: The token for the shop.
+            type: string
+            required : true
+        responses:
+            200:
+              description: OK
+              body:
+                application/json:
+                  example:
+            404:
+              description: Not Found
+            503:
+              description: Service Unavailable
+  /sslCertificateExists:
+    displayName: Administrating SSL certificates
+    description: Administrates the SSL certificate for shops.
+    post:
+      description: Creates the SSL certificate for a shop.
+      queryParameters:
+          crt:
+            description: The certificate of the domain.
+            type: string
+            required : true
+          key:
+            description: The key file of the certificate.
+            type: string
+            required : true
+          ca:
+            description: The intermediate certificate.
+            type: string
+            required : true
+      responses:
+        200:
+          description: OK
+          body:
+            application/json:
+              example:
+        404:
+          description: Not Found
+        406:
+          description: Not Acceptable
+        503:
+          description: Service Unavailable
+    put:
+      description: |
+        Changes the SSL certificate for a shop.
+        Parameters and response values are equivalent to those of the `POST` request.
+      responses:
+        200:
+          description: OK
+          body:
+            application/json:
+              example:
+        404:
+          description: Not Found
+        406:
+          description: Not Acceptable
+        503:
+          description: Service Unavailable
+    delete:
+      description: Deletes the SSL certificate. No special transfer parameters required.
+      responses:
+        200:
+          description: OK
+          body:
+            application/json:
+              example:
+        404:
+          description: Not Found
+        503:
+          description: Service Unavailable
