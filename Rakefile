@@ -152,6 +152,10 @@ task :index do
   sh "bundle exec jekyll index"
 end
 
+task :build do
+  sh "bundle exec jekyll build"
+end
+
 task :default do
   sh "bundle exec jekyll serve --watch"
 end
