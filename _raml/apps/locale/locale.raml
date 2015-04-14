@@ -1,8 +1,7 @@
 #%RAML 0.8
-  displayName: Resource for locale support
-  is: [ base ]
+  displayName: The locale information of the shop
   get:
-    description: The shop locale information resource
+    description: Returns the shop's locale information, i.e. the language identifier and the region identifier.
     responses:
       404:
         description: Shop not found

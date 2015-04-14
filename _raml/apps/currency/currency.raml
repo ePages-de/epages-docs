@@ -1,11 +1,10 @@
 #%RAML 0.8
-  displayName: Resource for currency support
-  is: [ base ]
+  displayName: Currency information of the shop
   get:
-    description: The shop currency information resource
+    description: Returns the currency information of a shop.
     responses:
       404:
-        description: Shop not found
+        description: Not Found
       200:
         body:
           application/json:

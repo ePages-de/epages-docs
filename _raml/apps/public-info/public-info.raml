@@ -1,11 +1,11 @@
 #%RAML 0.8
-  displayName: Resource for public shop information
+  displayName: Public information of the shop
   get:
-    description: The public shop information resource, like name, slogan and logo
+    description: Returns the public information of a shop, like name, slogan and logo.
     is: [ locale ]
     responses:
       404:
-        description: Shop not found
+        description: Not Found
       200:
         body:
           application/json:
@@ -20,7 +20,7 @@
               }
 
   post:
-    description: Resource for public shop complete information
+    description: Creates the complete public information of the shop.
     body:
            application/vnd.epages.complete.v1+json:
              example: |
@@ -40,4 +40,4 @@
               }
     responses:
       200:
-        description: Accepted
+        description: OK

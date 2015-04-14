@@ -8,18 +8,22 @@
              * A unique global identifier of the product (GUID)
              */
             "productId": "53267540-0365-3234-9513-AC13320BAC89",
+
             /**
              * Name of the product
              */
             "name": "Camping AZ CV270 valve gas canister",
+
             /*
              * Product short description text, usually used in list context.
              */
             "shortDescription": null,
+
             /**
              * Product full description
              */
             "description": "The butane/propane mix is better for cold temperatures than only butane. With the Camping AZ connector system. 230 g gas. 11 cm diameter; 380 g.",
+
             /*
              * A list of images
              */
@@ -41,6 +45,7 @@
                     "classifier": "HotDeal"
                 }
             ],
+
             /**
              * Pricing related information
              */
@@ -103,15 +108,18 @@
                     "formatted": "3.95 €"
                 }
             },
+
             /*
              * If true the product can be added to the shopping cart.
              * A master product cannot be purchased
              */
             "forSale": true,
+
             /**
              * if true the product is a special offer.
              */
             "specialOffer": false,
+
             /*
              * Delivery weight is related to the value of the 'quantity' field above
              */
@@ -119,15 +127,18 @@
                 "amount": 250,
                 "unit": "g"
             },
+
             /*
              * Identifier for displaying an availability icon. Possible values:
              * OnStock, WarnStock, OutStock
              */
             "availability": "OnStock",
+
             /*
              * A custom text providing stock level / delivery period information
              */
             "availabilityText": "Ships within 2-3 days.",
+
             /*
              * Available shipping methods.
              * Links to the available Shipping Method resources otherwise.
@@ -139,20 +150,24 @@
                     "rel": "related"
                 }
             ],
+
             /**
             * Comma-separated list of energy labels applied to this product.
             * Can be one or two values. If two values are returned the first
             * value is the best energy label, and the second is the worst.
             */
             "energyLabelsString": "A++,C",
+
             /**
             * Image or PDF file containing the label image supplied by the manufacturer.
             */
             "energyLabelSourceFile" : "http://hostname/path/to/image.png",
+
             /**
             * Image or PDF file containing datasheet with technical information.
             */
             "productDataSheet": "http://hostname/path/to/datasheet.png",
+
             "links": [
                 /*
                  * A link to the product's resource.

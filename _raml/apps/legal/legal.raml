@@ -1,8 +1,7 @@
 #%RAML 0.8
-  displayName: Resource for legal pages
-  is: [ base ]
+  displayName: Summary of legal information
   get:
-    description: The localized shop legal summary information resource
+    description: Lists hyperlinks of legal information for a shop.
     is: [ locale ]
     responses:
       200:
@@ -43,10 +42,9 @@
                     ],
               }
   /contact-information:
-    displayName: the shop contact information.
-    is: [ base ]
+    displayName: Contact information of the shop
     get:
-      description: the shop contact information
+      description: Returns the contact information of a shop.
       is: [ locale ]
       responses:
         200:
@@ -60,18 +58,17 @@
                   "shortDescription": "You adapt this text via the preview or data sheet view under the &quot;Content/Categories&quot; menu item of your Administration.",
                   "description": "<p>Account number: ...<p/>",
                   "company": "",
-                  "contactPerson": "John Doe",
+                  "contactPerson": "John Smith",
                   "contactPersonJobTitle": null,
-                  "address": "Pilatuspool 2<br />20355 Hamburg<br />Germany",
+                  "address": "Any Street 1<br />12345 Any City<br />Any State",
                   "phone": null,
                   "fax": null,
-                  "email": "john.doe@epages.com"
+                  "email": "john.smith@epages.com"
                 }
   /privacy-policy:
-      displayName: the shop privacy policy
-      is: [ base ]
+      displayName: Privacy policy of the shop
       get:
-        description: the shop privacy policy
+        description: Returns the privacy policy of a shop.
         is: [ locale ]
         responses:
           200:
@@ -86,10 +83,9 @@
                         "description": "You adapt this text via the preview or data sheet view under the &quot;Content/Categories&quot;..."
                     }
   /terms-and-conditions:
-    displayName: the shop terms and conditions
-    is: [ base ]
+    displayName: Terms and conditions of the shop
     get:
-      description: the shop terms and conditions
+      description: Returns the terms and conditions of a shop.
       is: [ locale ]
       responses:
         200:
@@ -104,10 +100,9 @@
                       "description": "You adapt this text via the preview or data sheet view under the &quot;Content/Categories&quot; menu item of your Administration."
                   }
   /rights-of-withdrawal:
-      displayName: the rights of withdrawal (customer information) of a shop
-      is: [ base ]
+      displayName: Rights of withdrawal of the shop
       get:
-        description: the rights of withdrawal (customer information) of a shop
+        description: Returns the customer rights of withdrawal of a shop.
         is: [ locale ]
         responses:
           200:
