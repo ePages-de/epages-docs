@@ -24,7 +24,7 @@ Before you can start coding away, you'll need to sign up for the ePages Develope
 3. Get your [**Client ID** and **Client Secret**](page:apps-create#get-your-credentials).
 
 {% callout info Note: %}
-The account for your test shop will be active for 365 days. After this period has been expired, the shop account can be prolonged for free.
+The account for your test shop will be active for 365 days. After this period has expired, the shop account can be prolonged for free.
 
 If you're eager for more information on how to set up your test shop, check out our [Online Help](https://www.online-help-center.com/) for merchants.
 {% endcallout %}
