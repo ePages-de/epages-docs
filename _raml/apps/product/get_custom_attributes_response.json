@@ -2,10 +2,14 @@
     "items" : [
         {
             "key" : "material", /* non-localized key */
+
             "displayKey" : "outer material", /* localized attribute name */
+
             "singleValue" : true, /* if this is true, the "values" array will contain exactly 1 element.
                                      If false, "values" can have 0..n elements. */
-            "type" : "string", /* data type, one of: string|number|bool|url|datetime|date|time" */
+
+            "type" : "string", /* data type, one of: string|number|bool|url|datetime|date|time" */,
+
             "values" : [
                 {
                     /* there is one such object for each value. See also "singleValue". */
@@ -14,6 +18,7 @@
                           different interpretations depending on "type" and "singleValue":
                           - singleValue=false : non-localized value identifier; this value is never null
                           - singleValue=true : this value may be null
+
                           - type=number : raw integer value, for example: "1234.56"
                           - type=bool : boolean value, either "true" or "false"
                           - type=string : string value, same as "displayValue", may depend on the query
