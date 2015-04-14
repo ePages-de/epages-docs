@@ -148,6 +148,70 @@ task :test do
   HTML::Proofer.new("./_site", :disable_external => true, :href_ignore => ["#"]).run
 end
 
+task :ramlup do
+  require 'net/http'
+  require 'rexml/document'
+  require 'zip'
+  require 'fileutils'
+
+  def download(url)
+    response = Net::HTTP.get_response(URI.parse(url))
+    if response.code == '200'
+      response.body
+    else
+      raise
+    end
+  end
+
+  def get_latest_raml_version
+    url = 'http://ep-artifacts:8081/artifactory/epages-release-local/com/epages/epagesj/maven-metadata.xml'
+    metadata = REXML::Document.new(download(url))
+    metadata.elements['metadata'].elements['versioning'].elements['latest'].text
+  end
+
+  def get_raml_archive(version)
+    url = "http://ep-artifacts:8081/artifactory/epages-release-local/com/epages/epagesj/#{version}/epagesj-#{version}-raml.zip"
+    download(url)
+  end
+
+  def delete_directory_content(dir)
+    Dir.foreach(dir) do |e|
+      unless %w(. ..).include? e
+        fullname = dir + File::Separator + e
+        if FileTest::directory?(fullname)
+          delete_directory_content(fullname)
+          Dir.delete(fullname)
+        else
+          File.delete(fullname)
+        end
+      end
+    end
+  end
+
+  def unpack_zip_archive(zip, source, target)
+    while (entry = zip.get_next_entry)
+      if entry.name =~ Regexp.new("^#{source}(.+)$")
+        if entry.name.end_with? '/'
+          Dir.mkdir(target + $1)
+          zip.read
+        else
+          File.write(target + $1, zip.read)
+        end
+      end
+    end
+  end
+
+  target = '_raml/apps/'
+  latest_version = get_latest_raml_version
+  puts "Latest RAML archive version is #{latest_version}"
+  puts "Downloading archive"
+  raml_archive = get_raml_archive(latest_version)
+  puts "Clearing directory #{target}"
+  delete_directory_content(target)
+  puts "Unpacking RAML files"
+  Zip::InputStream.open(StringIO.new(raml_archive)) { |zip| unpack_zip_archive(zip, 'raml/', target) }
+end
+
 task :index do
   sh "bundle exec jekyll index"
 end

@@ -1,0 +1,25 @@
+/:
+  post:
+    description: Retrieves the OAuth2 token for the client
+    body:
+      application/x-www-form-urlencoded:
+        formParameters:
+          client_id:
+            description: OAuth2 client_id
+            required: true
+            #type: file
+          client_secret:
+            description: OAuth2 client_secret
+            required: true
+          code:
+            description: OAuth2 authorization code
+            required: true
+    responses:
+      200:
+        description: the OAuth2 access token.
+        body:
+          application/vnd.epages.v1+json:
+            example: |
+              {
+                  "access_token" : "ABCDEF0124"
+              }
