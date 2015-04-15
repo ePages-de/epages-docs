@@ -1,7 +1,7 @@
 ---
 layout: page
 key: themes-create
-title: How to create & switch themes for now
+title: Create or switch a theme
 ---
 
 # 1. Copy the `default` theme located in:
@@ -24,11 +24,11 @@ my-new-theme/
     style.less
 {% endhighlight %}
 
-This file will automatically be used in your theme without having to do anything.
+This file will then be automatically used in your theme.
 
 ## Option 2
 
-Open your theme's `theme.json` and add a `stylesheets` key which holds an array of all your `.css` files like this:
+Open your theme's `theme.json` and add a `stylesheets` key, which includes an array of all your `.css` files like this:
 
 {% highlight json %}
 {
@@ -40,17 +40,17 @@ Open your theme's `theme.json` and add a `stylesheets` key which holds an array 
 {% endhighlight %}
 
 # 3. Use available template variables
-You have access to several template variables to read out ecommerce specific shop data like its name and products that it's selling. The variables depend on the template you're adding so not every variable is available everywhere. The followin listing gives you an idea where you can use what: 
+You have access to several template variables to access ecommerce specific shop data like e.g. name or products. The variables depend on the template you're adding, i.e. not every variable is available everywhere. The following list gives an idea of where to use what:
 
-## within all templates
+## All templates
 
 * `shop`:
     * `shopName`: Name of the shop
     * `slogan`: Slogan of the shop
     * `_self`: reference to the shop URL
-    * `categories`: Array of all categories the shop has to offer
+    * `categories`: Array of all shop categories
 
-## exclusive in `index.dust`
+## Exclusively in `index.dust`
 
 * `startpage`
     * `products`: Products assigned to the shop's start page
@@ -62,7 +62,7 @@ You have access to several template variables to read out ecommerce specific sho
             * `alt`: Alternative text
 
 
-## exclusive in `category.dust`
+## Exclusively in `category.dust`
 
 * `category`:
     * `name`: Name of the category
@@ -74,28 +74,28 @@ You have access to several template variables to read out ecommerce specific sho
             * `src`: Image of the product
             * `alt`: Alternative text
     * `subCategories`: Sub categories belonging to this category
-        * `name`: Name of the sub category
-        * `href`: Link to the sub categories page
+        * `name`: Name of the subcategory
+        * `href`: Link to the subcategory page
 
-## exclusively in `product.dust`
+## Exclusively in `product.dust`
 
 * `product`
     * `name`: Name of the product
     * `image`
         * `src`: Image of the product
-        * `alt`: Alternative text 
+        * `alt`: Alternative text
     * `price`: Formatted product price
     * `shortDescription`: The product's short description
 
 # 4. Define regions to be editable by the merchant (optional)
 
-If you'd like to reserve space the merchant can use to add custom page elements you can define it like the following
+If you'd like to provide extra space, the merchant can use to add custom page element, proceed as follows:
 
 {% highlight text %}
 {@region name="upper-startpage-region"/}
 {% endhighlight %}
 
-This helper may be embedded in any html element that can host content. You can skip this if want your theme to exactly look like you intended it to be.
+This helper may be embedded in any html element that can host content. You can skip this step, if you want your theme to be changed.
 
 # 5. Set shop to use your new theme:
 
@@ -112,10 +112,10 @@ Insert the folowing line after `data.brix.pageType = 'index';`:
 data.brix.theme = '<your_theme_name>'
 {% endhighlight %}
 
-This overwrites all stored data and tells the ui-layer to use your theme for this page type.
+This overwrites all stored data and makes the ui-layer use your theme for this page type.
 
 # 6. Restart the epages-ui server
 
-If your server is running already, just type `rs` on the command line. Second option: just restart the whole project with entering `grunt`.
+If your server is running already, just type `rs` in the command line or restart the complete project with entering `grunt`.
 
 [1]: http://lesscss.org/ "Less CSS"

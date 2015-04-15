@@ -4,11 +4,11 @@ key: themes-structure
 title: Theme structure
 ---
 
-The `default` theme should work as a base for your own theme and contains all required files.
+The `default` theme should be used as basis for your own theme and contains all required files.
 
-To get an impression on how an actual theme is structured, please read the sections below. For creating & switching themes for now, refer to the [create a theme](page:themes-create) documentation.
+To get an impression on how a theme is structured, please read the below sections. For creating or switching a theme, read further [here](page:themes-create).
 
-# File structure & naming conventions
+# File structure and naming conventions
 
 {% highlight text %}
 my-new-theme/
@@ -40,7 +40,7 @@ Every theme has to provide its own stylesheet, which can be written in plain CSS
 
 All templates are written in [Dust.js][1].
 
-# Best practices & recommended resources
+# Best practices and recommended resources
 
 * [Dust.js tutorial][1]
 * [Less CSS pre-processor][2]
