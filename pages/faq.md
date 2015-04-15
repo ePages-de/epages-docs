@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page-nositemap
 key: faq
 title: Frequently asked questions
 ---
