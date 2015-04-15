@@ -22,12 +22,14 @@ Once you have your test shop in place, you can create an app. You automatically 
     {% image choose-developer-apps.png %}{% endimage %}
 
 3. In the **Developer Apps** view, click the button **Add**.
+    {% image add-button.png %}{% endimage %}
+
 4. Fill out the entry field **App name**. This field is mandatory.
     {% image fillout-app-name.png %}{% endimage %}
 
 5. Click the button **Save**.
 6. You will be assigned a **Client ID**, **Client Secret** and **Access Token**.
-  {% image test-shop-credentials.png %}{% endimage %}
+    {% image test-shop-credentials.png %}{% endimage %}
 
 {% callout danger Important! %}
 Store your **Client Secret** securely!
