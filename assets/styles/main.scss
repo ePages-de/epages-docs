@@ -5,6 +5,7 @@
 
 $assets-base: {{ "/assets" | prepend: site.baseurl }};
 $font-family-base: 'Meta', Helvetica, Trebuchet MS, Arial;
+$fa-font-path: $assets-base + '/fonts/font-awesome';
 
 /* Spacer */
 $spacerL-height: 110px;
@@ -31,6 +32,7 @@ $text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
 @import "_icomoon";
 @import "_ribbon";
 @import "_resources";
+@import "font-awesome/_font-awesome";
 
 html, body {
   overflow-x: hidden;
