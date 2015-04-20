@@ -1,10 +1,11 @@
 #%RAML 0.8
-displayName: Start page resource
+displayName: Start page
+description: Products assigned to the start page of a shop.
 /products:
-  displayName: Start page products
-  description: Get all products that are assigned to the start page.
+  displayName: Products
+  description: Retrieve all products assigned to the start page.
   get:
-    description: Get a list of all start page products
+    description: Returns a list of all products on the start page.
     is: [ locale, currency, paged ]
     queryParameters:
     responses:

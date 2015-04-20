@@ -1,7 +1,8 @@
 #%RAML 0.8
-displayName:
+displayName: Shipping methods
+description: Operations on the shipping methods of a shop.
 get:
-  description: Returns all shipping-methods of a shop
+  description: Returns the shipping methods of a shop.
   is: [ locale ]
   responses:
     200:
@@ -11,7 +12,7 @@ get:
 /{shippingMethodId}:
   uriParameters:
     shippingMethodId:
-      description: The shipping-method id
+      description: The unique identifier for the shipping method.
       example: 52F221E0-36F6-DC4E-384A-AC1504050C04
   get:
     description: Returns a shipping-method of a shop
