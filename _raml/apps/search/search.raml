@@ -1,17 +1,18 @@
 #%RAML 0.8
 /product-suggest:
-  displayName:
+  displayName: Product suggestions
+  description: Retrieve suggestions for a product search query.
   get:
-    description: Returns suggestions for a given product search query.
+    description: Returns suggestions for a product search query.
     is: [ locale ]
     queryParameters:
       query:
         description: |
-          A Non-blank search query. (Example: A query string for the product 'Jack Wolfskin Blizzard Jacket' could be Jac').
+          Specify a non-blank search query. (Example: A query string for the product 'Jack Wolfskin Blizzard Jacket' could be Jac').
         example: Jac
         required : true
       limit:
-        description: Maximum number of entries to be returned
+        description: Specify the amount of entries to be returned.
         type: integer
         example: 10
         default: 10
