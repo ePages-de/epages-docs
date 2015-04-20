@@ -1,8 +1,9 @@
 #%RAML 0.8
-  displayName: Category Resource
+  displayName: Categories
+  description: The product categories of a shop.
   get:
     description: |
-        Returns the root categories of the shop. This usually is the default root category "Categories",
+        Returns the product categories of the shop. This usually is the default root category "Categories",
         but can also include additional root categories, if supported by the shop.
     is: [ locale ]
     responses:
@@ -27,9 +28,10 @@
                 "status": "NOT_FOUND"
               }
   /{categoryId}:
-      displayName: the category identified by the provided category id
+      displayName: Category ID
+      description: The unique identifier of the category.
       get:
-        description: the category identified by the provided category id
+        description: Returns the category identified by the provided category ID.
         is: [ locale ]
         responses:
           200:

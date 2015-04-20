@@ -1,30 +1,31 @@
 #%RAML 0.8
-displayName: Products Resource
+displayName: Products
 description: |
-          Operations on the products of a shop.<br/>
-          In case of errors for certain products or unknown product ids,
+          A collection of products of a shop.
+          Note: In case of errors for certain products or unknown product ids,
           the product collections will **not** return errors, but skip the products in question.
 get:
-  description: Get a list of products
+  description: Get a list of products.
   is: [ locale, currency, paged, direction ]
   queryParameters:
     sort:
-      description: Sort Attribute
+      description: Sort products by attribute.
       enum: [name, price]
       default: name
       example: name
       required : false
     q:
-      description: Query string used to filter products
+      description: Filter products by query string.
       example: jack
       required : false
     categoryId:
-      description: Filter products by categoryId
+      description: Filter products by categoryId.
       required : false
     id:
-      description: The product id. The query parameter is repeatable up to 12 times.
-        For example "?id=productId1&id=productId2&id=productId3".<br/>
-        The response will return the product data in the same order as the ids.
+      description: The ID of the product.<br/>
+
+        The query parameter is repeatable up to 12 times, e.g. "?id=productId1&id=productId2&id=productId3".<br/>
+        The response will return the product data in the same order as the IDs.
         Invisible, deleted or unknown products are removed from the list.<br/>
 
         This parameter can only be used together with locale and currency query parameters.</br>
@@ -37,13 +38,14 @@ get:
         application/json:
           example: !include get_products_response.json
 /{productId}:
-  displayName: Single product information
+  displayName: Product ID
+  description: Retrieve a specific product using its ID.
   uriParameters:
     productId:
-      description: The current product
+      description: The unique identifier of the product.
       example: 52F221E0-36F6-DC4E-384A-AC1504050C04
   get:
-    description: Retrieve information for a single product. For product variations, a link
+    description: Returns information for a single product. For product variations, a link
       to the variation selection resource (rel="variations") is added.
     is: [ locale, currency ]
     responses:
@@ -53,10 +55,11 @@ get:
             example: !include get_product_response.json
   /variations:
     displayName: Product variations
+    description: Retrieve product variations.
     get:
       is: [ locale, paged ]
-      description: Retrieve links to product variations in a paged item list.<br/>
-        "name" and "value" to find a matching variation for the user's selection.
+      description: Returns links to product variations in a paged item list.<br/>
+        "name" and "value" are used to find a matching variation for the user's selection.
       responses:
         200:
           body:
@@ -64,8 +67,9 @@ get:
               example: !include get_variations_response.json
   /slideshow:
     displayName: Product slideshow
+    description: Retrieve a product slideshow.
     get:
-      description: Retrieve links to slideshow images of a product.
+      description: Returns links to slideshow images of a product.
       responses:
         200:
           body:
@@ -73,22 +77,24 @@ get:
               example: !include get_slideshow_response.json
   /custom-attributes:
     displayName: User-defined product attributes
+    description: Retrieve user-defined product attributes.
     get:
       is: [ locale ]
-      description: Retrieve values of user-defined product attributes
+      description: Returns values of user-defined product attributes.
       responses:
         200:
           body:
             application/json:
               example: !include get_custom_attributes_response.json
   /lowest-price:
-    displayName: Lowest price of variation products
+    displayName: Lowest price of products variations
+    description: Retrieve the lowest-price of product variations.
     get:
       is: [ locale, currency ]
-      description: Gets the lowest price of all variations of a product that
-        can currently be purchased.
+      description: Returns the lowest price of all variations of a product that
+        can currently be purchased.<br>
         Returns 404 Not Found if the product does not have any variation
-        with an independent price, for example if all variations share the
+        with an independent price, e.g. if all variations share the
         same price.
         Also depends on the shop setting to display "from" prices.
       responses:
