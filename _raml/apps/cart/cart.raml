@@ -1,7 +1,8 @@
 #%RAML 0.8
-displayName: Resource for operating on carts
+displayName: Carts
+description: Operations on the carts of a shop.
 post:
-  description: Creates a cart for the specified shop
+  description: Creates a cart for a shop.
   body:
     application/json:
       example: !include examples/input_cart.json
@@ -12,8 +13,10 @@ post:
           example: !include examples/response.json
 
 /{cartId}:
+  displayName: Cart ID
+  description: Retrieve a specific cart using its ID.
   get:
-    description: Fetches a specified cart from the specified shop
+    description: Returns a specified cart from a shop.
     responses:
       200:
         body:
@@ -22,7 +25,7 @@ post:
 
   /line-items:
     post:
-      description: Creates an item in the specified cart.
+      description: Creates an item in a cart.
       body:
         application/json:
           example: |
@@ -38,7 +41,7 @@ post:
 
     /{lineItemId}:
       put:
-        description: Modifies a specified line item in the cart.
+        description: Modifies a specified line item in a cart.
         body:
           application/json:
             example: |
@@ -51,7 +54,7 @@ post:
               application/json:
                 example: !include examples/response.json
       delete:
-        description: Deletes a specified line item from the cart.
+        description: Deletes a specified line item from a cart.
         responses:
           200:
             body:
@@ -60,7 +63,7 @@ post:
 
   /billing-address:
     put:
-      description: Updates a billing address for a specified cart
+      description: Modifies the billing address for a cart.
       body:
         application/json:
           example: !include examples/input_address.json
@@ -73,7 +76,7 @@ post:
           body:
             application/json:
     delete:
-      description: Deletes a billing address for a specified cart
+      description: Deletes the billing address for a cart.
       responses:
         200:
           body:
@@ -85,7 +88,7 @@ post:
 
   /shipping-address:
     put:
-      description: Updates a shipping address for a specified cart
+      description: Modifies the shipping address for a cart.
       body:
         application/json:
           example: !include examples/input_address.json
@@ -98,7 +101,7 @@ post:
           body:
             application/json:
     delete:
-      description: Deletes a shipping address for a specified cart
+      description: Deletes the shipping address for a cart.
       responses:
         200:
           body:
