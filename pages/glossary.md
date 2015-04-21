@@ -1,5 +1,5 @@
 ---
-layout: page-nositemap
+layout: page
 key: glossary
 title: Glossary
 ---
