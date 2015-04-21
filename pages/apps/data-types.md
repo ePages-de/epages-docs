@@ -4,30 +4,106 @@ key: apps-data-types
 title: Data types
 ---
 
-# Integer
+In the following the JSON supported data types are listed.
 
-An integer number with a maximum value of 2,147,483,647 (inclusive).
+# Number
+
+An integer or floating point.
+
+| Type      | Description    |
+|---------------|---------------|
+| Integer   | Digits 1-9, 0 and positive or negative |
+| Floating point | Digit string of any length with a radix point, e.g. 15289.1104|
+
+## Example
+
+{% highlight text %}
+{"page": 1}
+{% endhighlight %}
 
 # String
 
-A string of text comprising of a set of characters that can also contain spaces and numbers.
+A sequence of characters.
 
-# Null
+## Example
 
-A null value. In JSON this is represented as the native null type.
-
-# Boolean
-
-A boolean value: true or false. In JSON this is represented using the native boolean type.
-
-# Date
-
-An RFC 2822 date. All dates output by the ePages API are in GMT (+0000) time
+{% highlight text %}
+{"shopId": "CreamyIceShop"}
+{% endhighlight %}
 
 # Enumeration
 
-An enumeration of string values.
+Consists a set of named values.
+
+## Example
+
+{% highlight text %}
+{"enum": ["oldest", "newest"]}
+{% endhighlight %}
+
+# Boolean
+
+True or false values.
+
+## Example
+
+{% highlight text %}
+{"layout": "page", "title": "use case", "searchable": true}
+{% endhighlight %}
 
 # Array
 
-A simple list of values.
+An ordered collection of values. These are enclosed square brackets, i.e. an array begins with [ and ends with ]. The values are separated by comma. An array indexing can be started at 0 or 1. Arrays should be used when the key names are sequential integers.
+
+## Example
+
+Array with multiple objects:
+
+{% highlight text %}
+{
+  "products": [
+  { "jacket":"Blizzard" , "colour":"blue" },
+  { "jacket":"Paclite" , "colour":"red"},
+  { "jacket":"Revolution" , "colour":"white"}
+  ]
+}
+{% endhighlight %}
+
+# Object
+
+An unordered set of name/value pairs. Objects are enclosed in curly braces, i.e. they start with { and end with }. Each name is followed by a colon and the name/value pairs are separated by comma. The keys must be strings and should be different from each other. Objects should be used when the key names are arbitrary strings.
+
+## Example
+
+{% highlight text %}
+{
+  "id":"589623iuz781",
+  "language":"de_DE"
+  "currency":"EU"
+}
+{% endhighlight %}
+
+# Date
+
+An RFC 2822 date. All dates are output in GMT (+0000) time.
+
+## Example
+
+{% highlight text %}
+{
+  "Fri, 17 Apr 2015 16:56:19 GMT"
+}
+{% endhighlight %}
+
+# null
+
+An empty value.
+
+## Example
+
+{% highlight text %}
+{
+    "date": null,
+    "price": null
+}
+{% endhighlight %}
