@@ -8,11 +8,11 @@
     queryParameters:
       query:
         description: |
-          Specify a non-blank search query. (Example: A query string for the product 'Jack Wolfskin Blizzard Jacket' could be Jac').
+          Specifies a non-blank search query. (Example: A query string for the product 'Jack Wolfskin Blizzard Jacket' could be Jac').
         example: Jac
         required : true
       limit:
-        description: Specify the amount of entries to be returned.
+        description: Specifies the amount of entries to be returned.
         type: integer
         example: 10
         default: 10
@@ -26,4 +26,4 @@
             example: !include get_suggestions.json
       400:
         description: Bad Request <br/>
-          if the maxEntries parameter is out of range or query is left blank
+          If the maxEntries parameter is out of range or the query is left blank.
