@@ -24,6 +24,8 @@ post:
             example: !include examples/response.json
 
   /line-items:
+    displayName: Line items
+    description: The line items within a cart.
     post:
       description: Creates an item in a cart.
       body:
@@ -40,6 +42,8 @@ post:
               example: !include examples/response.json
 
     /{lineItemId}:
+      displayName: Line item ID
+      description: The unique identifier of the line item.
       put:
         description: Modifies a specified line item in a cart.
         body:
@@ -62,6 +66,8 @@ post:
                 example: !include examples/response.json
 
   /billing-address:
+    displayName: Billing address
+    description: The billing address a cart requires.
     put:
       description: Modifies the billing address for a cart.
       body:
@@ -87,6 +93,8 @@ post:
             application/json:
 
   /shipping-address:
+    displayName: Shipping address
+    description: The shipping address a cart requires.
     put:
       description: Modifies the shipping address for a cart.
       body:
