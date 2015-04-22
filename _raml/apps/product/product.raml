@@ -2,10 +2,10 @@
 displayName: Products
 description: |
           A collection of products of a shop.
-          Note: In case of errors for certain products or unknown product ids,
+          Note: In case of errors for certain products or unknown product IDs,
           the product collections will **not** return errors, but skip the products in question.
 get:
-  description: Get a list of products.
+  description: Returns a list of products.
   is: [ locale, currency, paged, direction ]
   queryParameters:
     sort:
@@ -19,7 +19,7 @@ get:
       example: jack
       required : false
     categoryId:
-      description: Filter products by categoryId.
+      description: Filter products by category ID.
       required : false
     id:
       description: The ID of the product.<br/>
@@ -28,7 +28,7 @@ get:
         The response will return the product data in the same order as the IDs.
         Invisible, deleted or unknown products are removed from the list.<br/>
 
-        This parameter can only be used together with locale and currency query parameters.</br>
+        This parameter can only be used together with the locale and currency query parameters.
         Other query parameters, such as sort, categoryId, page etc, are not supported.
       required: false
       repeat: true
@@ -46,7 +46,7 @@ get:
       example: 52F221E0-36F6-DC4E-384A-AC1504050C04
   get:
     description: Returns information for a single product. For product variations, a link
-      to the variation selection resource (rel="variations") is added.
+      to the respective product variations resource (rel="variations") is added.
     is: [ locale, currency ]
     responses:
       200:
@@ -87,8 +87,8 @@ get:
             application/json:
               example: !include get_custom_attributes_response.json
   /lowest-price:
-    displayName: Lowest price of products variations
-    description: Retrieve the lowest-price of product variations.
+    displayName: Lowest price of product variations
+    description: Retrieve the lowest price of product variations.
     get:
       is: [ locale, currency ]
       description: Returns the lowest price of all variations of a product that

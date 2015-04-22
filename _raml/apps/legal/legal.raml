@@ -1,7 +1,8 @@
 #%RAML 0.8
-  displayName: Summary of legal information
+  displayName: Legal information
+  description: Summary of legal information for a shop.
   get:
-    description: Lists hyperlinks of legal information for a shop.
+    description: Returns hyperlinks of legal information for a shop.
     is: [ locale ]
     responses:
       200:
@@ -42,7 +43,8 @@
                     ],
               }
   /contact-information:
-    displayName: Contact information of the shop
+    displayName: Contact information
+    description: Retrieve the contact information of a shop.
     get:
       description: Returns the contact information of a shop.
       is: [ locale ]
@@ -66,7 +68,8 @@
                   "email": "john.smith@epages.com"
                 }
   /privacy-policy:
-      displayName: Privacy policy of the shop
+      displayName: Privacy policy
+      description: Retrieve the privacy policy of a shop.
       get:
         description: Returns the privacy policy of a shop.
         is: [ locale ]
@@ -83,7 +86,8 @@
                         "description": "You adapt this text via the preview or data sheet view under the &quot;Content/Categories&quot;..."
                     }
   /terms-and-conditions:
-    displayName: Terms and conditions of the shop
+    displayName: Terms and conditions
+    description: Retrieve the terms and conditions of a shop.
     get:
       description: Returns the terms and conditions of a shop.
       is: [ locale ]
@@ -100,7 +104,8 @@
                       "description": "You adapt this text via the preview or data sheet view under the &quot;Content/Categories&quot; menu item of your Administration."
                   }
   /rights-of-withdrawal:
-      displayName: Rights of withdrawal of the shop
+      displayName: Rights of withdrawal
+      description: Retrieve the rights of withdrawal of a shop.
       get:
         description: Returns the customer rights of withdrawal of a shop.
         is: [ locale ]

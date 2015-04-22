@@ -12,17 +12,17 @@
 - paged:
     queryParameters:
       page:
-        description: The current page.
+        description: Represents the current page.
         type: integer
         minimum: 1
         default: 1
       resultsPerPage:
-        description: The maximum number of items per page.
+        description: Specifies the maximum number of results per page.
         type: integer
         minimum: 10
         default: 10
 - direction:
     queryParameters:
       direction:
-        description: Sorting Direction
+        description: Specifies the sorting direction, which can be either ascending or descending.
         enum: [asc, desc]
