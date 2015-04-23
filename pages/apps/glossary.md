@@ -1,6 +1,6 @@
 ---
 layout: page-nositemap
-key: glossary
+key: apps-glossary
 title: Glossary
 ---
 

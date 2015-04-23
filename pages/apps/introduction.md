@@ -16,4 +16,4 @@ Have questions? If you would like further details related to the partner conditi
 
 # Support
 
-Find answers to the common questions in our [FAQs](page:faq). If you have a topic which is not listed or you need more technical details, we will put you in touch with our support team. Just send your request to [developer.support@epages.com](mailto:developer.support@epages.com) and we will get back to you.
+Find answers to the common questions in our [FAQs](page:apps-faq). If you have a topic which is not listed or you need more technical details, we will put you in touch with our support team. Just send your request to [developer.support@epages.com](mailto:developer.support@epages.com) and we will get back to you.

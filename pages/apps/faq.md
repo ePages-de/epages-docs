@@ -1,6 +1,6 @@
 ---
 layout: page-nositemap
-key: faq
+key: apps-faq
 title: Frequently asked questions
 ---
 
