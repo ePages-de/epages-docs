@@ -1,3 +1,4 @@
+{% assign chapter = page.url | regex_extract: '^/pages/([^/]+)/' %}
 <span id="beta">BETA</span>
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
@@ -8,18 +9,39 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="{{ "/pages/apps/index.html" | prepend: site.baseurl }}"></a>
+      {% if chapter %}
+        <a class="navbar-brand" href="{{ '/index.html' | prepend: chapter | prepend: '/pages/' | prepend: site.baseurl }}"></a>
+      {% else %}
+        <a class="navbar-brand" href="http://www.epages.com/"></a>
+      {% endif %}
     </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li><a href="{{ "/pages/apps/index.html" | prepend: site.baseurl }}">API Documentation</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="{{ site.github_url }}">Join us on GitHub</a></li>
-        <li><a href="{{ "/pages/blog.html" | prepend: site.baseurl }}">Developer Blog</a></li>
-        <li><a href="{{ "/pages/apps/faq.html" | prepend: site.baseurl }}">FAQs</a></li>
-        <li><a href="{{ "/pages/apps/submit-app.html" | prepend: site.baseurl }}">Submit app</a></li>
-      </ul>
-    </div>
+    {% if chapter == '1and1' %}
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
+      </div>
+    {% elsif chapter == 'apps' %}
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="{{ "/pages/apps/index.html" | prepend: site.baseurl }}">API Documentation</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="{{ site.github_url }}">Join us on GitHub</a></li>
+          <li><a href="{{ "/pages/blog.html" | prepend: site.baseurl }}">Developer Blog</a></li>
+          <li><a href="{{ "/pages/apps/faq.html" | prepend: site.baseurl }}">FAQs</a></li>
+          <li><a href="{{ "/pages/apps/submit-app.html" | prepend: site.baseurl }}">Submit app</a></li>
+        </ul>
+      </div>
+    {% elsif chapter == 'themes' %}
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
+      </div>
+    {% else %}
+    {% endif %}
   </div>
 </nav>
