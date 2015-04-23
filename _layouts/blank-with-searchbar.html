@@ -1,10 +1,12 @@
 ---
 layout: default
 ---
+
+{% assign chapter = page.url | regex_extract: '^/pages/([^/]+)/' %}
 <div id="landingpage">
   <div id="landingpage-banner" class="landingpage-banner-small">
     <div id="landingpage-banner-search" style="padding: 1rem;">
-      <form method="get" action="{{ '/search.html' | prepend: site.baseurl }}" autocomplete="off">
+      <form method="get" action="{{ '/search.html' | prepend: chapter | prepend: '/pages/' | prepend: site.baseurl }}" autocomplete="off">
         <div class="row">
           <div class="col-sm-9">
             <input id="search-box" type="text" name="q" placeholder="Enter your search here" class="form-control"/>
