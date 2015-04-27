@@ -3,11 +3,13 @@
 <html>
   <head>
     <title>{{ site.title }}</title>
-    <META http-equiv="refresh" content="3;URL={{ '/pages/apps/index.html' | prepend: site.baseurl }}">
   </head>
   <body bgcolor="#ffffff">
     <center>
-      This page will not be visible in production. You get redirected in 3 seconds.
+      <div><a href="{{ '/pages/1and1/index.html' | prepend: site.baseurl }}">1and1</a></div>
+      <div><a href="{{ '/pages/apps/index.html' | prepend: site.baseurl }}">Apps</a></div>
+      <div><a href="{{ '/pages/soap/index.html' | prepend: site.baseurl }}">SOAP</a></div>
+      <div><a href="{{ '/pages/themes/index.html' | prepend: site.baseurl }}">Themes</a></div>
     </center>
   </body>
 </html>
