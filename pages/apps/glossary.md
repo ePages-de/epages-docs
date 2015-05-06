@@ -64,7 +64,7 @@ With OAuth being an open standard for authorisation, the OAuth 2.0 is the next e
 The fundamental concept in any RESTful API. An access point for functionality of a REST web service. Through resources, all functions and features of the API can be accessed. Only a few standard methods are defined for a resource, as `GET`, `POST`, `PUT` and `DELETE`.
 
 ## REST (Representational State Transfer)
-A software architecture style consisting of guidelines and best pratices for creating scalable web services. It is a coordinated set of constraints applied to the design of components in a distributed hypermedia system that can lead to a more performant and maintainable software architecture.
+A software architecture style consisting of guidelines and best practices for creating scalable web services. It is a coordinated set of constraints applied to the design of components in a distributed hypermedia system that can lead to a more performant and maintainable software architecture.
 
 # U
 
