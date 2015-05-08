@@ -12,7 +12,7 @@ It's very easy to build and test applications with our API, since it is based on
 
 In order to meet individual requirements, we offer a flexible revenue share plan with the possibility to gain up to 70% of the total revenue generated through the App Store, depending on the use case of your application and business model. After your application has been submitted to us, our partner management will get back to you for a final partner and revenue agreement.
 
-Have questions? If you would like further details related to the partner conditions, feel free to contact us at [developer.support@epages.com](mailto:developer.support@epages.com). Please provide us with a short specification of your business model and define precisely the use cases of your app.
+Have questions? If you would like further details related to the partner conditions, feel free to contact us at [apps@epages.com](mailto:apps@epages.com). Please provide us with a short specification of your business model and define precisely the use cases of your app.
 
 # Support
 
