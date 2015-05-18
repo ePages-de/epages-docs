@@ -3,6 +3,8 @@ layout: blank
 title: Search
 searchable: false
 ---
+{% assign chapter = page.url | regex_extract: '^/([^/]+)/' %}
+
 <div id="search">
   <form method="get" autocomplete="off">
     <div class="form-group">
@@ -34,5 +36,5 @@ searchable: false
 <script type="text/javascript">
   var searchUrl = '{{ '/search.json' | prepend: site.baseurl }}';
   var query = getParameter('q', '').replace('+', ' ');
-  ko.applyBindings(new SearchViewModel(searchUrl, query), document.getElementById('search'));
+  ko.applyBindings(new SearchViewModel(searchUrl, query, '{{ chapter }}'), document.getElementById('search'));
 </script>
