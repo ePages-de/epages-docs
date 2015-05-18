@@ -1,3 +1,15 @@
+- key: blog-categories
+  title: Categories
+  entries:
+    - title: Tech Stories
+      link: page:blog-category-tech-stories
+
+    - title: Jobs
+      link: page:blog-category-jobs
+
+    - title: Conferences
+      link: page:blog-category-conferences
+
 - key: blog-links
   title: Links
   entries:
