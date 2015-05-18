@@ -1,0 +1,21 @@
+---
+layout: blank-with-searchbar
+key: blog-index
+title: Blog
+searchable: false
+---
+
+<ul class="post-list">
+  {% for post in site.posts %}
+    <li class="post-item">
+      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <h2>
+        {{ post.title }}
+      </h2>
+      <p>
+        {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">Continue reading...</a>
+      </p>
+    </li>
+  {% endfor %}
+</ul>
