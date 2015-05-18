@@ -1,5 +1,6 @@
 ---
-layout: page-landingpage
+layout: page
+landingpage: true
 key: soap-overview
 title: Overview
 ---
