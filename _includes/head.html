@@ -1,3 +1,4 @@
+{% assign chapter = page.url | regex_extract: '^/([^/]+)/' %}
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,7 +22,7 @@
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-37161369-23', 'auto');
+    ga('create', '{{ site.google_analytics[chapter].id | default: site.google_analytics.default.id }}', 'auto');
     ga('set', 'anonymizeIp', true);
     ga('send', 'pageview');
   </script>

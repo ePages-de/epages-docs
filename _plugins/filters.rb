@@ -13,6 +13,11 @@ module Jekyll
       input.start_with? start
     end
 
+    def default(input, default_value = "".freeze)
+      is_blank = input.respond_to?(:empty?) ? input.empty? : !input
+      is_blank ? default_value : input
+    end
+
     def regex_match(input, pattern)
       input =~ Regexp.new(pattern)
     end
