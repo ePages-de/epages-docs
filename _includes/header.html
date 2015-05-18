@@ -1,5 +1,6 @@
 {% assign chapter = page.url | regex_extract: '^/([^/]+)/' %}
-<span id="beta">BETA</span>
+<span id="ribbon-beta">BETA</span>
+<a id="ribbon-github" href="{{ site.github_url }}">Fork us on GitHub</a>
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
@@ -35,10 +36,8 @@
         <ul class="nav navbar-nav">
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="{{ site.github_url }}">Join us on GitHub</a></li>
           <li><a href="{{ "/blog/index.html" | prepend: site.baseurl }}">Developer Blog</a></li>
-          <li><a href="{{ "/apps/faq.html" | prepend: site.baseurl }}">FAQs</a></li>
-          <li><a href="{{ "/apps/submit-app.html" | prepend: site.baseurl }}">Submit app</a></li>
+          <li><a href="{{ "/apps/faq.html" | prepend: site.baseurl }}">FAQ</a></li>
         </ul>
       </div>
     {% elsif chapter == 'themes' %}
