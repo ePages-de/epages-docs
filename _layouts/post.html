@@ -14,7 +14,7 @@ layout: page
 <div>
   <h3>Tags</h3>
   {% for tag in page.tags %}
-    <span class="label label-default">{{ tag }}</span>
+    <a href="{{ '.html' | prepend: tag | prepend: '/blog/tags/' | prepend: site.baseurl }}" class="label label-default">{{ tag }}</a>
   {% endfor %}
 </div>
 <div>
