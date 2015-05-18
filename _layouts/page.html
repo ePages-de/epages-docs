@@ -1,26 +1,76 @@
 ---
-layout: blank-with-searchbar
+layout: default
 ---
 
 {% assign chapter = page.url | regex_extract: '^/([^/]+)/' %}
 {% assign sitemap = chapter | sitemap %}
-<div class="row">
-  <div class="col-sm-3 hidden-xs">
-    <ul id="sitemap">
-    {% for category in sitemap %}
-      <li class="sitemap-headline">{{ category.title }}</li>
-      {% for entry in category.entries %}
-        <li class="sitemap-entry">{% sitemap_link entry %}</li>
-      {% endfor %}
-    {% endfor %}
-    </ul>
-  </div>
-  <div class="col-sm-9">
-    <div class="page-header">
-      <h1>{{ page.title }}</h1>
+
+{% unless page.hide_searchbar %}
+  {% if page.landingpage %}
+    <div id="landingpage">
+      <div id="landingpage-banner">
+        <div id="landingpage-banner-headline">{{ site.data['landingpage'].header.title }}</div>
+        <div id="landingpage-banner-text">{{ site.data['landingpage'].header.text }}</div>
+        <div id="landingpage-banner-search">
+          <form method="get" action="{{ '/search.html' | prepend: chapter | prepend: '/' | prepend: site.baseurl }}" autocomplete="off">
+            <div class="row">
+              <div class="col-sm-9">
+                <input id="search-box" type="text" name="q" placeholder="Enter your search here" class="form-control"/>
+              </div>
+              <div class="col-sm-3">
+                <button type="submit" class="btn btn-block btn-search">Search</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
-    <article>
-      {{ content }}
-    </article>
+  {% else %}
+    <div id="landingpage">
+      <div id="landingpage-banner" class="landingpage-banner-small">
+        <div id="landingpage-banner-search" style="padding: 1rem;">
+          <form method="get" action="{{ '/search.html' | prepend: chapter | prepend: '/' | prepend: site.baseurl }}" autocomplete="off">
+            <div class="row">
+              <div class="col-sm-9">
+                <input id="search-box" type="text" name="q" placeholder="Enter your search here" class="form-control"/>
+              </div>
+              <div class="col-sm-3">
+                <button type="submit" class="btn btn-block btn-search">Search</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+{% endunless %}
+<div id="content">
+  <div class="container">
+    <div class="row">
+      {% unless page.hide_sitemap %}
+        <div class="col-sm-3 hidden-xs">
+          <ul id="sitemap">
+          {% for category in sitemap %}
+            <li class="sitemap-headline">{{ category.title }}</li>
+            {% for entry in category.entries %}
+              <li class="sitemap-entry">{% sitemap_link entry %}</li>
+            {% endfor %}
+          {% endfor %}
+          </ul>
+        </div>
+        <div class="col-sm-9">
+      {% endunless %}
+      {% if page.title %}
+        <div class="page-header">
+          <h1>{{ page.title }}</h1>
+        </div>
+      {% endif %}
+      <article>
+        {{ content }}
+      </article>
+      {% unless page.hide_sitemap %}
+        </div>
+      {% endunless %}
+    </div>
   </div>
 </div>

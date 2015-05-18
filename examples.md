@@ -1,5 +1,7 @@
 ---
-layout: page-nositemap
+layout: page
+hide_searchbar: true
+hide_sitemap: true
 key: _examples
 title: Examples
 searchable: false
