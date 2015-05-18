@@ -112,10 +112,25 @@ nav {
   min-height: 44px !important;
 }
 
-#brand-logo {
-  width: 164px;
+#brand-logo-documentation {
+  width: 348px;
   height: 39px;
-  background: transparent url('#{$assets-base}/images/epages-logo.png') center center no-repeat;
+  background: transparent url('#{$assets-base}/images/epages-logo-documentation.png') center center no-repeat;
+  background-size: contain;
+  margin-top: 11px;
+
+  @media screen and (max-width: $screen-xs-max) {
+    width: 44px;
+    height: 44px;
+    background: transparent url('#{$assets-base}/images/logo-mobile.png');
+    margin-top: 0;
+  }
+}
+
+#brand-logo-devblog {
+  width: 272px;
+  height: 39px;
+  background: transparent url('#{$assets-base}/images/epages-logo-devblog.png') center center no-repeat;
   background-size: contain;
   margin-top: 11px;
 

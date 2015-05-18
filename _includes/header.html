@@ -11,7 +11,11 @@
       </button>
       {% if chapter %}
         <a class="navbar-brand" href="{{ '/index.html' | prepend: chapter | prepend: '/' | prepend: site.baseurl }}">
-          <div id="brand-logo"></div>
+          {% if chapter == 'blog' %}
+            <div id="brand-logo-devblog"></div>
+          {% else %}
+            <div id="brand-logo-documentation"></div>
+          {% endif %}
         </a>
       {% else %}
         <a class="navbar-brand" href="http://www.epages.com/">
@@ -29,7 +33,6 @@
     {% elsif chapter == 'apps' %}
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-          <li><a href="{{ "/apps/index.html" | prepend: site.baseurl }}">API Documentation</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="{{ site.github_url }}">Join us on GitHub</a></li>
