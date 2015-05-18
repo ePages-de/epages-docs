@@ -44,7 +44,7 @@ JSON example:
           {
                 "reason": "AUTH_MISSING",
                 "message": "authentication missing, data incomplete",
-                "guid": 51E3D0CC-13E4-2674-CA05-A9FE9BFA6030"
+                "guid": "51E3D0CC-13E4-2674-CA05-A9FE9BFA6030"
           }
       ]
 }

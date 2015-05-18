@@ -15,20 +15,16 @@ Once you have your test shop in place, you can create an app. You automatically 
 
 # Get your credentials
 
-1. Within the administration area of your test shop, click the tab **Apps & Themes**.
+1. Within the administration area of your test shop, click the tab **Apps & Themes**. In the drop down menu, choose the field **Developer apps**.
     {% image click-apps.png %}{% endimage %}
 
-2. In the drop down menu, choose the field **Developer Apps**.
-    {% image choose-developer-apps.png %}{% endimage %}
-
-3. In the **Developer Apps** view, click the button **Add**.
+2. In the **Developer apps** view, click the button **Add**.
     {% image add-button.png %}{% endimage %}
 
-4. Fill out the entry field **App name**. This field is mandatory.
+3. Fill out the entry field **App name**. This field is mandatory. Then click the button **Generate API access data**.
     {% image fillout-app-name.png %}{% endimage %}
 
-5. Click the button **Save**.
-6. You will be assigned a **Client ID**, **Client Secret** and **Access Token**.
+4. You will be assigned a **Client ID**, **Client Secret** and **Access token**.
     {% image test-shop-credentials.png %}{% endimage %}
 
 {% callout danger Important! %}

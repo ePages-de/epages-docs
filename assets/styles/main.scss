@@ -72,6 +72,11 @@ nav {
   .navbar-nav {
     li > a {
       padding: 31px 20px;
+
+      @media screen and (max-width: $screen-sm-max) {
+        padding: 31px 10px;
+        font-size: 15px;
+      }
     }
 
     .pull-right {
