@@ -1,14 +1,27 @@
 (function (ko) {
   'use strict';
 
-  var _searchPayload = function (query) {
+  var _searchPayload = function (query, chapter) {
     return {
       query: {
-        match_phrase_prefix: {
-          content: {
-            query: query,
-            slop: 10
-          }
+        bool: {
+          must: [
+            {
+              match_phrase_prefix: {
+                content: {
+                  query: query,
+                  slop: 10
+                }
+              }
+            },
+            {
+              match_phrase_prefix: {
+                url: {
+                  query: '/' + chapter
+                }
+              }
+            }
+          ]
         }
       },
       highlight: {
@@ -19,7 +32,7 @@
     };
   };
 
-  var _searchRequest = function (searchUrl, query, callback) {
+  var _searchRequest = function (searchUrl, query, chapter, callback) {
     if (!query) {
       callback(null, {
         hits: {
@@ -46,16 +59,16 @@
     xhr.open('POST', searchUrl, true);
     xhr.setRequestHeader('Accept', 'application/json');
     xhr.setRequestHeader('Content-Type', 'application/json');
-    xhr.send(JSON.stringify(_searchPayload(query)));
+    xhr.send(JSON.stringify(_searchPayload(query, chapter)));
   };
 
-  var SearchViewModel = function (searchUrl, query) {
+  var SearchViewModel = function (searchUrl, query, chapter) {
     this.query = ko.observable(query || '');
     this.results = ko.observableArray([]);
     this.error = ko.observable(null);
 
     this.search = function (query) {
-      _searchRequest(searchUrl, query, function (err, res) {
+      _searchRequest(searchUrl, query, chapter, function (err, res) {
         if (!err) {
           this.results(res.hits.hits);
           this.error(null)

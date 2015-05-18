@@ -1,3 +1,6 @@
+require 'liquid'
+require 'uri'
+
 module Jekyll
   module CustomFilters
     def chunked_array(array, chunk_size)
@@ -11,6 +14,21 @@ module Jekyll
 
     def start_with(input, start)
       input.start_with? start
+    end
+
+    def default(input, default_value = "".freeze)
+      is_blank = input.respond_to?(:empty?) ? input.empty? : !input
+      is_blank ? default_value : input
+    end
+
+    def contains(input, value)
+      input.include? value
+    end
+
+    # Percent encoding for URI conforming to RFC 3986.
+    # Ref: http://tools.ietf.org/html/rfc3986#page-12
+    def url_encode(url)
+      return URI.escape(url, Regexp.new("[^#{URI::PATTERN::UNRESERVED}]"))
     end
 
     def regex_match(input, pattern)
