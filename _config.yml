@@ -6,6 +6,12 @@ description: >
   party developers.
 baseurl: ""
 github_url: "https://github.com/ePages-de/epages-docs"
+google_analytics:
+  default:
+    id: UA-37161369-23
+  blog:
+    id: UA-37161369-24
+
 permalink: /blog/:year/:month/:day/:title.html
 raml:
   - key_prefix: "apps-api-"
