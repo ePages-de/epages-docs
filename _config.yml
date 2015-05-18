@@ -8,10 +8,10 @@ baseurl: ""
 github_url: "https://github.com/ePages-de/epages-docs"
 raml:
   - key_prefix: "apps-api-"
-    url_prefix: "pages/apps/api-reference/"
+    url_prefix: "apps/api-reference/"
     root_file: _raml/apps/api.raml
   - key_prefix: "1and1-api-"
-    url_prefix: "pages/1and1/api-reference/"
+    url_prefix: "1and1/api-reference/"
     root_file: _raml/1and1/api.raml
 
 # Build settings
