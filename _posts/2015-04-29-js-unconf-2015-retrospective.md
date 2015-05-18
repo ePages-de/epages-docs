@@ -3,8 +3,8 @@ layout: post
 title: "JS Unconf 2015 Retrospective"
 date: "2015-04-29 12:00:00"
 icon: comments
-tags: misc
-categories: weekend javascript information overkill
+tags: weekend javascript information overkill jobs
+categories: conferences
 authors: ["Paolo Priotto"]
 ---
 

@@ -18,6 +18,10 @@ module Jekyll
       is_blank ? default_value : input
     end
 
+    def contains(input, value)
+      input.include? value
+    end
+
     def regex_match(input, pattern)
       input =~ Regexp.new(pattern)
     end

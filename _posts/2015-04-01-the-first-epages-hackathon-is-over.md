@@ -3,8 +3,7 @@ layout: post
 title: "The first ePages hackathon is over"
 date: "2015-04-01 12:00:00"
 icon: cog
-tags: some1 some2
-categories: misc1 misc2
+tags: hackathon
 authors: ["Birgit Bader", "Anja Bärike"]
 ---
 
