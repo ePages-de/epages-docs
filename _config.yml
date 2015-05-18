@@ -6,6 +6,7 @@ description: >
   party developers.
 baseurl: ""
 github_url: "https://github.com/ePages-de/epages-docs"
+permalink: /blog/:year/:month/:day/:title.html
 raml:
   - key_prefix: "apps-api-"
     url_prefix: "apps/api-reference/"
