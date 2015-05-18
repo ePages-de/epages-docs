@@ -5,7 +5,7 @@ title: Resources
 hot: true
 ---
 
-This reference lists every resource currently available in the API. The whole definition in [RAML](http://raml.org/) format can be downloaded [here]({{ '/pages/1and1/api-reference/api.raml' | prepend: site.baseurl }}).
+This reference lists every resource currently available in the API. The whole definition in [RAML](http://raml.org/) format can be downloaded [here]({{ '/1and1/api-reference/api.raml' | prepend: site.baseurl }}).
 
 * [Shop configuration](page:1and1-api-resources-shop-configuration)
 

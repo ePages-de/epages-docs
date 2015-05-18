@@ -1,4 +1,4 @@
-{% assign chapter = page.url | regex_extract: '^/pages/([^/]+)/' %}
+{% assign chapter = page.url | regex_extract: '^/([^/]+)/' %}
 <span id="beta">BETA</span>
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
@@ -10,7 +10,7 @@
         <span class="icon-bar"></span>
       </button>
       {% if chapter %}
-        <a class="navbar-brand" href="{{ '/index.html' | prepend: chapter | prepend: '/pages/' | prepend: site.baseurl }}"></a>
+        <a class="navbar-brand" href="{{ '/index.html' | prepend: chapter | prepend: '/' | prepend: site.baseurl }}"></a>
       {% else %}
         <a class="navbar-brand" href="http://www.epages.com/"></a>
       {% endif %}
@@ -25,13 +25,13 @@
     {% elsif chapter == 'apps' %}
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-          <li><a href="{{ "/pages/apps/index.html" | prepend: site.baseurl }}">API Documentation</a></li>
+          <li><a href="{{ "/apps/index.html" | prepend: site.baseurl }}">API Documentation</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="{{ site.github_url }}">Join us on GitHub</a></li>
-          <li><a href="{{ "/pages/blog.html" | prepend: site.baseurl }}">Developer Blog</a></li>
-          <li><a href="{{ "/pages/apps/faq.html" | prepend: site.baseurl }}">FAQs</a></li>
-          <li><a href="{{ "/pages/apps/submit-app.html" | prepend: site.baseurl }}">Submit app</a></li>
+          <li><a href="{{ "/blog.html" | prepend: site.baseurl }}">Developer Blog</a></li>
+          <li><a href="{{ "/apps/faq.html" | prepend: site.baseurl }}">FAQs</a></li>
+          <li><a href="{{ "/apps/submit-app.html" | prepend: site.baseurl }}">Submit app</a></li>
         </ul>
       </div>
     {% elsif chapter == 'themes' %}
