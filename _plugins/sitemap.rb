@@ -27,7 +27,6 @@ class Sitemap
           nil
       end
     else
-      Jekyll.logger.error 'Unknown reference format:' "Do not understand reference '#{ref}'"
       nil
     end
   end

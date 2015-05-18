@@ -2,13 +2,13 @@
 layout: post
 title: "The first ePages hackathon is over"
 date: "2015-04-01 12:00:00"
-categories: misc
+icon: cog
+tags: some1 some2
+categories: misc1 misc2
 authors: ["Birgit Bader", "Anja Bärike"]
 ---
 
-## 2 days - 50 ePagees - 8 teams
-
-On March 24 and 25, 2015 all signs in the ePages Jena office pointed to exploratory programming.
+2 days - 50 ePagees - 8 teams. On March 24 and 25, 2015 all signs in the ePages Jena office pointed to exploratory programming.
 
 The rules were simple:
 
