@@ -2,14 +2,13 @@
 layout: post
 title: "JS Unconf 2015 Retrospective"
 date: "2015-04-29 12:00:00"
+icon: comments
+tags: misc
 categories: weekend javascript information overkill
 authors: ["Paolo Priotto"]
 ---
 
-## A whole weekend full of JavaScript!
-
-<i class="fa fa-comments fa-5x pull-left fa-border"></i>
-Last weekend I had the chance of attending the `JS Unconf` in Hamburg to gather the latest information on JavaScript. Here is a summary of what it was all about:
+A whole weekend full of JavaScript! Last weekend I had the chance of attending the `JS Unconf` in Hamburg to gather the latest information on JavaScript. Here is a summary of what it was all about:
 
 It started with the `Pre JS Unconf code retreat` on Friday, an intense workshop to improve one's coding skills. In code katas based on "Conway's Game of Life" and using ECMAScript 6, we were challenged to find elegant coding solutions for a predefined scope. Pair programming with changing partners and varying constraints was the perfect environment to get inspired and develop new ideas. Each coding session followed a small retrospective to sum up the results. **The journey is the reward** pretty much sums up this inspiring and fruitful day. Coding without delivering anything. Cool!
 
