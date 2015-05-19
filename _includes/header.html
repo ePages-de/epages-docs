@@ -24,27 +24,13 @@
         </a>
       {% endif %}
     </div>
-    {% if chapter == '1and1' %}
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-        </ul>
-      </div>
-    {% elsif chapter == 'apps' %}
+    {% if chapter == 'apps' %}
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="{{ "/blog/index.html" | prepend: site.baseurl }}">Developer Blog</a></li>
           <li><a href="{{ "/apps/faq.html" | prepend: site.baseurl }}">FAQ</a></li>
-        </ul>
-      </div>
-    {% elsif chapter == 'themes' %}
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
         </ul>
       </div>
     {% else %}
