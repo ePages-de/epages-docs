@@ -1,0 +1,41 @@
+- key: soap-general
+  title: Getting started
+  entries:
+    - title: Overview
+      link: page:soap-overview
+
+    - title: API call limit
+      link: page:soap-api-call-limit
+
+    - title: Error handling
+      link: page:soap-error-handling
+
+    - title: Versions
+      link: page:soap-version
+
+- key: api-integration
+  title: Integration
+  entries:
+    - title: Introduction
+      link: page:soap-introduction
+
+    - title: Authentication
+      link: page:soap-authentication
+
+- key: api-soap
+  title: API Reference
+  entries:
+    - title: Resources
+      link: page:soap-api
+
+- key: soap-more
+  title: More
+  entries:
+    - title: Data types
+      link: page:soap-data-types
+
+    - title: Glossary
+      link: page:soap-glossary
+
+    - title: FAQs
+      link: page:soap-faq
