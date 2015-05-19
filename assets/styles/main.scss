@@ -43,6 +43,7 @@ body {
   background-color: $bgFooter;
   font: 180% $font-family-base;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   padding-top: 83px;
   position: relative;
 
