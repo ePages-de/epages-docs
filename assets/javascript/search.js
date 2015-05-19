@@ -6,11 +6,25 @@
       query: {
         filtered: {
           query: {
-            match_phrase_prefix: {
-              content: {
-                query: query,
-                slop: 10
-              }
+            bool: {
+              should: [
+                {
+                  match_phrase_prefix: {
+                    title: {
+                      query: query,
+                      slop: 10
+                    }
+                  }
+                },
+                {
+                  match_phrase_prefix: {
+                    content: {
+                      query: query,
+                      slop: 10
+                    }
+                  }
+                }
+              ]
             }
           },
           filter: {
