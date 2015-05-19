@@ -35,9 +35,19 @@
   margin: 10px 0;
 }
 
-.search-highlight em {
-  font-weight: bold;
-  background-color: yellow;
+.search-highlight {
+  &:before {
+    content: "…";
+  }
+
+  &:after {
+    content: "…";
+  }
+
+  em {
+    font-weight: bold;
+    background-color: yellow;
+  }
 }
 
 .form-control {
