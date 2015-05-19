@@ -17,7 +17,13 @@
 }
 
 .post-title {
+  a {
+    text-decoration: none;
 
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .post-meta {
