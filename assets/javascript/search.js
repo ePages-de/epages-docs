@@ -4,24 +4,20 @@
   var _searchPayload = function (query, chapter) {
     return {
       query: {
-        bool: {
-          must: [
-            {
-              match_phrase_prefix: {
-                content: {
-                  query: query,
-                  slop: 10
-                }
-              }
-            },
-            {
-              match_phrase_prefix: {
-                url: {
-                  query: '/' + chapter
-                }
+        filtered: {
+          query: {
+            match_phrase_prefix: {
+              content: {
+                query: query,
+                slop: 10
               }
             }
-          ]
+          },
+          filter: {
+            regexp: {
+              url : '/' + chapter + '/.*'
+            }
+          }
         }
       },
       highlight: {
