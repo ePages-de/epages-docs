@@ -1,9 +1,6 @@
 @import "_math";
 
-#ribbon-beta {
-  $width: 115;
-  $height: 36;
-
+@mixin ribbon($width, $height) {
   position: fixed;
   z-index: 9999;
 
@@ -12,8 +9,6 @@
   right: ((1 - sin(45deg)) * $width + sqrt(0.5 * $height * $height)) * -1px;
 
   padding: 5px 0;
-  background-color: rgba(208,0,18,1.0);
-  color: white;
   text-align: center;
 
   -moz-transform-origin: 0% 0%;
@@ -31,37 +26,24 @@
   @media screen and (max-width: $screen-xs-max) {
     display: none;
   }
+};
+
+#ribbon-beta {
+  @include ribbon(100, 36);
+
+  background-color: rgba(208,0,18,1.0);
+
+  color: white;
+  font-size: 90%;
+  letter-spacing: -1px;
 }
 
 #ribbon-github {
-  $width: 200;
-  $height: 36;
+  @include ribbon(175, 36);
 
-  position: fixed;
-  z-index: 9999;
-
-  width: $width * 1px;
-  top: (sqrt(0.5 * $height * $height)) * -1px;
-  right: ((1 - sin(45deg)) * $width + sqrt(0.5 * $height * $height)) * -1px;
-
-  padding: 5px 0;
   background-color: #aaaaaa;
+
   color: white;
-  text-align: center;
-
-  -moz-transform-origin: 0% 0%;
-  -ms-transform-origin: 0% 0%;
-  -o-transform-origin: 0% 0%;
-  -webkit-transform-origin: 0% 0%;
-  transform-origin: 0% 0%;
-
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-
-  @media screen and (max-width: $screen-xs-max) {
-    display: none;
-  }
+  font-size: 90%;
+  letter-spacing: -1px;
 }
