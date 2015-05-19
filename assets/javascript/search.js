@@ -80,6 +80,10 @@
     this.search = function (query) {
       _searchRequest(searchUrl, query, chapter, function (err, res) {
         if (!err) {
+          var hits = res.hits.hits.map(function (hit) {
+            hit.highlight = hit.highlight || {};
+            hit.highlight.content = hit.highlight.content || [hit._source.content.substr(0, 100)];
+          });
           this.results(res.hits.hits);
           this.error(null)
         } else {
