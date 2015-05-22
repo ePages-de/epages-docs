@@ -8,15 +8,6 @@ footer {
     list-style: none;
   }
 
-  a {
-    color: #666666;
-
-    &:hover {
-      color: white;
-      text-decoration: none;
-    }
-  }
-
   @media screen and (max-width: $screen-sm-max) {
     font-size: 12px;
   }
@@ -150,11 +141,33 @@ footer {
   margin: 5px 0;
 }
 
+#footer-info {
+  margin-top: 35px;
+
+  a {
+    color: white;
+
+    &:hover {
+      color: #20908d;
+      text-decoration: none;
+    }
+  }
+}
+
 #footer-legal {
   margin-top: 35px;
   padding: 20px 0;
   text-align: center;
   color: #666666;
+
+  a {
+    color: #666666;
+
+    &:hover {
+      color: white;
+      text-decoration: none;
+    }
+  }
 }
 
 @media screen and (max-width: $screen-sm-max) and (min-width: $screen-sm-min){
