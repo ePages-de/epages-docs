@@ -8,6 +8,14 @@ footer {
     list-style: none;
   }
 
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
   @media screen and (max-width: $screen-sm-max) {
     font-size: 12px;
   }
