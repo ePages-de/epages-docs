@@ -86,7 +86,7 @@ Images
 This is an image with at most 100% width
 {% endimage %}
 
-{% image epages-logo.png %}
+{% image search.png %}
 This is an image with at most 100% width
 {% endimage %}
 
@@ -94,7 +94,7 @@ This is an image with at most 100% width
 This is an image with an enforced width of 50%
 {% endimage %}
 
-{% image epages-logo.png 50% %}
+{% image search.png 50% %}
 This is an image with an enforced width of 50%
 {% endimage %}
 
