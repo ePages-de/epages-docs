@@ -50,13 +50,15 @@
         return uri;
     };
 
-    var convertRamlToRawRequest = function (ramlResponse, ramlMethod, uriParameters, queryParameters) {
+    var convertRamlToRawRequest = function (ramlResponse, ramlMethod, uriParameters, queryParameters, requestBody) {
         var method = ramlMethod.method;
         var uri_full = renderFullUri(ramlResponse, ramlMethod, uriParameters, queryParameters);
         var pathnameAndSearch = parseUri(uri_full).pathnameAndSearch;
         var host = parseUri(uri_full).host;
         var txt = method + ' ' + pathnameAndSearch + ' HTTP/1.1\n' +
-            'Host: ' + host;
+            'Host: ' + host + '\n' +
+            'Content-Type: application/json' +
+            (requestBody ? '\n\n' + requestBody : '');
 
         return escapeHtml(txt);
     };
@@ -79,29 +81,43 @@
         var $form = $($form);
         var uriParameters = {};
         var queryParameters = {};
+        var requestBody = '';
+
+        var rerenderRequest = function () {
+          $request.html(convertRamlToRawRequest(ramlResource, ramlMethod, uriParameters, queryParameters, requestBody));
+        };
 
         $.each(ramlResource.uri_parameters, function (name, p) {
             afterChange($form.find('#parameter-uri-' + p.name), function (val) {
                 uriParameters[p.name] = val;
-                $request.html(convertRamlToRawRequest(ramlResource, ramlMethod, uriParameters, queryParameters));
+                rerenderRequest();
             });
         });
 
         $.each(ramlMethod.query_parameters, function (name, p) {
             afterChange($form.find('#parameter-query-' + p.name), function (val) {
                 queryParameters[p.name] = val;
-                $request.html(convertRamlToRawRequest(ramlResource, ramlMethod, uriParameters, queryParameters));
+                rerenderRequest();
             });
         });
 
-        $request.html(convertRamlToRawRequest(ramlResource, ramlMethod, uriParameters, queryParameters));
+        afterChange($form.find('#request-body'), function (val) {
+          requestBody = val;
+          rerenderRequest();
+        });
+
+        rerenderRequest();
         $form.on('submit', function (event) {
             event.preventDefault();
 
             $response.html('(Loading...)');
             $.ajax({
                 type: ramlMethod.method,
-                url: renderFullUri(ramlResource, ramlMethod, uriParameters, queryParameters)
+                url: renderFullUri(ramlResource, ramlMethod, uriParameters, queryParameters),
+                data: requestBody,
+                headers: {
+                  'Content-Type': 'application/json'
+                }
             }).done(function (data, textStatus, xhr) {
                 $response.html(convertXhrToRawResponse(xhr));
             }).fail(function (xhr, textStatus, err) {
