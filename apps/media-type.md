@@ -8,11 +8,11 @@ The ePages API supports requests and responses in JSON only. Requests have to be
 
 # Request content type
 
-When making a call that contains a body, the content type to be sent has to be specified in the `Content-Type` header. To send a JSON body the header would be: `Content-Type: application/json`.
+When making a request that contains a body, the content type to be sent has to be specified in the `Content-Type` header. To send a JSON body the header would be: `Content-Type: application/json`.
 
 # Response content type
 
-You can specify the content you would like to receive in an `Accept` header, e.g. `Accept: application/json`.
+You can specify the content you would like to receive in an `Accept` header, e.g. `Accept: application/vnd.epages.v1+json`.
 
 # Request structure
 
@@ -33,14 +33,9 @@ Responses have a similar structure as requests. If a request returns a single ob
 {% highlight json %}
 {
     "productId": "54DBCA3D-8206-F601-3A43-AC13320B0202",
+    "productIdAvailable": true,
     "name": "Berghaus Paclite Jacket - Men",
-    "shortDescription": "Weatherproof. Small pack size. Ultra light.",
-    "description": "Weatherproof and compact. Ultra light. Outer material: 100% Ripstop nylon.",
     "images": [
-        {
-            "url": "http://epagesj-vm02/WebRoot/Store/Shops/DemoShop/Products/be_404/be_404_blue_h.jpg",
-            "classifier": "HotDeal"
-        },
         {
             "url": "http://epagesj-vm02/WebRoot/Store/Shops/DemoShop/Products/be_404/be_404_blue.jpg",
             "classifier": "Large"
@@ -62,12 +57,7 @@ Responses have a similar structure as requests. If a request returns a single ob
             "currency": "EUR"
         },
         "depositPrice": null,
-        "ecoParticipationPrice": null,
-        "priceWithDeposits": {
-            "taxType": "GROSS",
-            "formatted": "199.95 €",
-            "amount": 199.95,
-            "currency": "EUR"
-        },
+        "ecoParticipationPrice": null
+    }
 }
 {% endhighlight %}
