@@ -17,7 +17,7 @@
 
     var parseUri = function (href) {
         var match = href.match(/^(https?\:)\/\/(([^:\/?#]*)(?:\:([0-9]+))?)((\/[^?#]*)(\?[^#]*|))(#.*|)$/);
-        return match && {
+        return match ? {
             protocol: match[1],
             host: match[2],
             hostname: match[3],
@@ -26,7 +26,7 @@
             search: match[7],
             hash: match[8],
             pathnameAndSearch: match[5]
-        }
+        } : null;
     };
 
     var renderFullUri = function (ramlResponse, ramlMethod, uriParameters, queryParameters) {
