@@ -12,7 +12,7 @@ authors: ["Anja Bärike", "Birgit Bader"]
 The rules were simple:
 
 <ul class="fa-ul">
-  <li><i class="fa-li fa fa-thumb-tack"></i>Work on a solution for something that bothers in daily work, is time consuming, annoys us on the software or surrounding environment or even would make our work life easier.</li>
+  <li><i class="fa-li fa fa-thumb-tack"></i>Work on a solution for something that bothers in daily work, is time consuming or even would make our work life easier.</li>
   <li><i class="fa-li fa fa-thumb-tack"></i>Achievable in two days.</li>
   <li><i class="fa-li fa fa-thumb-tack"></i>Developed in cross-functional teams.</li>
 </ul>
