@@ -217,7 +217,7 @@ task :index do
 end
 
 task :build do
-  sh "bundle exec jekyll build"
+  sh "bundle exec jekyll build -t"
 end
 
 task :default do
