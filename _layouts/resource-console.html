@@ -27,6 +27,12 @@ Get <a href="{{ page.url | regex_replace: '\-console.html$', '.html' | prepend: 
       {% endif %}
     </div>
   {% endfor %}
+  {% if page.raml_method.method == 'POST' or page.raml_method.method == 'PUT' %}
+    <div class="form-group">
+      <label class="control-label" for="request-body">{{ Body }}</label>
+      <textarea class="form-control" id="request-body" rows="8" style="font-family: monospace;">{{ page.raml_method.bodies['application/json'].example }}</textarea>
+    </div>
+  {% endif %}
   <div class="form-group">
     <button type="submit" class="btn btn-default">Send</button>
   </div>

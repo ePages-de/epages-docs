@@ -31,23 +31,39 @@ Generally speaking you need only to make sure you have installed [Ruby][ruby] an
 
 You can use this [shell script][bootstrap-macosx] to turn your OS X laptop into an awesome web development machine.
 
-### Windows
-
-TODO
-
 ### Linux
+
+You can use this [shell script][bootstrap-linux] to turn your laptop into an awesome web development machine.
+
+### Windows
 
 TODO
 
 ## Run complete environment in Vagrant
 
-Make sure you have install [Vagrant][vagrant] and [VirtualBox][virtualbox]. Now run `vagrant up`, take a coffee and afterwards visit [http://localhost:8080/](http://localhost:8080/) in your web browser.
+Make sure you have installed [Vagrant][vagrant] and [VirtualBox][virtualbox]. Now run `vagrant up`, take a coffee and afterwards visit [http://localhost:8080/](http://localhost:8080/) in your web browser.
+
+## License
+
+This project comprises different licenses: The editorial content in the folders
+
+* `apps/`,
+* `blog/`,
+* `soap/`,
+* `themes/` and
+* `assets/images/`
+
+is licensed under [CC-BY-4.0][license-cc-by-40]. The logos in the folder `assets/logos/` may not be shared or adapted. The different fonts in the `assets/fonts/` folder are licensed under their own respective licenses. All other content is licensed under [MIT][license-mit].
 
 [epagesdocs]: http://developer.epages.com/
 [ruby]: https://www.ruby-lang.org/
 [bundler]: http://bundler.io/
 
 [bootstrap-macosx]: https://github.com/thoughtbot/laptop
+[bootstrap-linux]: https://github.com/thoughtbot/laptop/blob/3897ad81ee241cbff4501e779c8cde50de79e142/linux
 
 [vagrant]: https://www.vagrantup.com/
 [virtualbox]: https://www.virtualbox.org/
+
+[license-cc-by-40]: http://creativecommons.org/licenses/by/4.0/
+[license-mit]: http://opensource.org/licenses/MIT

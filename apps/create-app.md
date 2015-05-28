@@ -4,14 +4,13 @@ key: apps-create
 title: Create an app
 ---
 
-Once you have your test shop in place, you can create an app. You automatically receive a **Client ID**, **Client Secret** and **Access Token** when you create an app in your test shop.
+Once you have your test shop in place, you can create an app. You automatically receive a **Client ID**, **Client Secret** and **Access token** when you create an app in your test shop.
 
 | Value              | Description                                                                                             |
 |--------------------|---------------------------------------------------------------------------------------------------------|
 | **Client&nbsp;ID**      | The unique identifier for your app. |
 | **Client&nbsp;Secret**   | Used in combination with the **Client ID** for getting an **Access Token** during the [authorisation process](page:apps-install#authorisation-process).|
-| **Access&nbsp;Token** | The token granted from your test shop to the newly created app. You can use this token for accessing the API. [Read here for further details.](page:apps-install) |
-
+| **Access&nbsp;token** | The token granted from your test shop to the newly created app. You can use this token for accessing the API. [Read here for further details.](page:apps-install) |
 
 # Get your credentials
 
@@ -28,10 +27,10 @@ Once you have your test shop in place, you can create an app. You automatically 
     {% image test-shop-credentials.png %}{% endimage %}
 
 {% callout danger Important! %}
-Store your **Client Secret** securely!
+Store your **Client Secret** and **Access token** securely!
 {% endcallout %}
 
-You may want to integrate the **Client ID** and **Client Secret** into your application for the authorisation process.  Also, you are given the **Access Token** upfront without having to pass the authorisation process. This **Access Token** is granted by your test shop, so that you can start accessing the ePages API immediately.
+You may want to integrate the **Client ID** and **Client Secret** into your application for the authorisation process.  Also, you are given the **Access token** upfront without having to pass the authorisation process. This **Access token** is granted by your test shop, so that you can start accessing the ePages API immediately.
 
 # Happy coding
 

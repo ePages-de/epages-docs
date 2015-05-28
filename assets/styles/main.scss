@@ -17,6 +17,7 @@ $green: #20908d;
 $petrol: #1b5c7e;
 $gray: #999;
 $bgFooter: #444;
+$input-color: #333333;
 
 $text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
 
@@ -116,14 +117,14 @@ nav {
 #brand-logo-documentation {
   width: 348px;
   height: 39px;
-  background: transparent url('#{$assets-base}/images/epages-logo-documentation.png') center center no-repeat;
+  background: transparent url('#{$assets-base}/logos/epages-logo-documentation.png') center center no-repeat;
   background-size: contain;
   margin-top: 11px;
 
   @media screen and (max-width: $screen-xs-max) {
     width: 44px;
     height: 44px;
-    background: transparent url('#{$assets-base}/images/logo-mobile.png');
+    background: transparent url('#{$assets-base}/logos/epages-logo-mobile.png');
     margin-top: 0;
   }
 }
@@ -131,14 +132,14 @@ nav {
 #brand-logo-devblog {
   width: 272px;
   height: 39px;
-  background: transparent url('#{$assets-base}/images/epages-logo-devblog.png') center center no-repeat;
+  background: transparent url('#{$assets-base}/logos/epages-logo-devblog.png') center center no-repeat;
   background-size: contain;
   margin-top: 11px;
 
   @media screen and (max-width: $screen-xs-max) {
     width: 44px;
     height: 44px;
-    background: transparent url('#{$assets-base}/images/logo-mobile.png');
+    background: transparent url('#{$assets-base}/logos/epages-logo-mobile.png');
     margin-top: 0;
   }
 }
