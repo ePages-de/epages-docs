@@ -13,8 +13,5 @@
 - key: blog-links
   title: Links
   entries:
-    - title: API Documentation
-      link: https://developer.epages.com/apps/
-
     - title: epages.com
       link: http://www.epages.com/
