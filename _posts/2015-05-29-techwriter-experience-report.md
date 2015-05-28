@@ -1,14 +1,14 @@
 ---
 layout: post
 title: "RESTful API documentation @ePages. RAML rocks! A TechWriter experience report."
-date: "2015-05-29 12:00:00"
+date: "2015-05-28 13:35:00"
 icon: compass
 tags: RESTful API documentation RAML RamlParser
 categories: tech-stories
 authors: ["Birgit Bader"]
 ---
 
-I was a real newbie in the field of software development, with a career background as a Technical Writer mainly in mechanical/electrical engineering and consumer goods businesses. I took this fresh challenge and find myself now right in the middle of an exciting path to a state-of-the-art RESTful API documentation. Interested in my story how ePages faces this? Read on!
+I was a real newbie in the field of software development, with a career background as a Technical Writer mainly in mechanical/electrical engineering and consumer goods businesses. I took this fresh challenge and find myself now right in the middle of an exciting path to a state-of-the-art RESTful API documentation. Interested in my story how ePages tackled this? Read on!
 
 Developing a REST API based on JSON to simply connect third party applications to the ePages software, this REST API also needed proper documentation. To realise this, I needed to work closely together with the developers and find a way to connect with their favourite working environment. And there was no way around [GitHub](https://github.com/). It was all about **Fetch**ing, **Pull**ing, **Commit**ting and making **Pull Requests** to familiarise myself with the GitHub workflow. To do so, [Source Tree](https://www.atlassian.com/software/sourcetree/overview) and [Sublime Text](http://www.sublimetext.com/) became part of my daily working environment.
 
@@ -19,6 +19,6 @@ One of the main requirements for our API documentation was to automatically impo
 Meanwhile, I made myself familiar with RAML (RESTful API Modeling Language), which is a useful tool to describe RESTful APIs in a structured and simple way.
 RAML allows to define simple patterns that help reduce repetitions in an API. Resources and methods can be displayed easily and filled with custom details. It also allows to include markdown-formatted descriptions or entire markdown documentation sections.
 
-I’ve never come across all this in my previous TechWriter life, but noticed very soon that our inhouse documentation tool compared with simply editing markdown and raml files enriches my knowledge and makes my work way more easy.
+I’ve never come across all this in my previous TechWriter life, but noticed very soon that our inhouse documentation tool compared with simply editing markdown and raml files enriches my knowledge and makes my work far easier.
 
 It really is a challenge to cope with so much new stuff, but I can totally recommend this way of working to every TechWriter.
