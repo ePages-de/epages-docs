@@ -9,6 +9,9 @@
 
   <link rel="stylesheet" href="{{ "/assets/styles/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  {% if chapter == 'blog' %}
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/blog/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+  {% endif %}
 
   <script type="text/javascript" src="{{ "/assets/javascript/jquery.js" | prepend: site.baseurl }}"></script>
   <script type="text/javascript" src="{{ "/assets/javascript/knockout.js" | prepend: site.baseurl }}"></script>

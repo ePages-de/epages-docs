@@ -4,7 +4,7 @@ email: documentation@epages.com
 description: >
   This is the primary source of trust for ePages beloved third
   party developers.
-authority: "https://developer.epages.com"
+url: "https://developer.epages.com"
 baseurl: ""
 github_url: "https://github.com/ePages-de/epages-docs"
 google_analytics:

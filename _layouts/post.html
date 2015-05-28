@@ -29,7 +29,7 @@ layout: page
   <a href="https://twitter.com/intent/tweet?screen_name=epagesdevs" target="_blank">@epagesdevs</a>.
 </div>
 <div>
-  {% assign full_url = page.url | prepend: site.baseurl | prepend: site.authority %}
+  {% assign full_url = page.url | prepend: site.baseurl | prepend: site.url %}
   <h3>Share</h3>
   <a href="https://twitter.com/intent/tweet?url={{ full_url | url_encode }}&via=epagesdevs&tw_p=tweetbutton" target="_blank">Twitter</a>
   <a href="https://www.facebook.com/sharer/sharer.php?u={{ full_url | url_encode }}" target="_blank">Facebook</a>
