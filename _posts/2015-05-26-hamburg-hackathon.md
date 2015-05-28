@@ -22,7 +22,7 @@ We established a real data exchange
 
 * between the "Runanas" app and the Sony API to our backend
 * from the app to our backend
-* from the app to the Sony SmartWatch 3.  
+* from the app to the Sony SmartWatch 3.
 {% image blog-geekettes-present-runanas-app.jpg %}{% endimage %}
 
 When the presentations started, we had 2.5 minutes to present our results to the audience. We were very excited! To achieve our goal, it was all about producing a good mood in the audience, presenting the API that we've used and doing a short demo.

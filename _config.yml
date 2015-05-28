@@ -29,6 +29,7 @@ exclude:
   - Rakefile
   - README.md
   - Vagrantfile
+  - vendor
 
 # Search index settings
 search:
