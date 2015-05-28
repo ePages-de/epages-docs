@@ -1,4 +1,5 @@
 require 'raml_parser'
+require 'raml_parser/snippet_generator'
 
 module Jekyll
   class ApiResourcePage < Page
@@ -20,6 +21,26 @@ module Jekyll
       self.data['raml'] = RamlLiquidifyer.new(raml)
       self.data['raml_resource'] = RamlLiquidifyer.new(raml_resource)
       self.data['raml_method'] = RamlLiquidifyer.new(raml_method)
+
+      snippet_generator = RamlParser::SnippetGenerator.new(raml)
+      self.data['raml_snippets'] = [
+        {
+          'title' => 'CURL',
+          'snippet' => begin
+            snippet_generator.curl(raml_resource, raml_method.method.downcase)
+          rescue
+            ''
+          end
+        },
+        {
+          'title' => 'JavaScript',
+          'snippet' => begin
+            snippet_generator.javascript_vanilla(raml_resource, raml_method.method.downcase)
+          rescue
+            ''
+          end
+        }
+      ]
     end
   end
 
