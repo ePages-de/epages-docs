@@ -111,3 +111,17 @@ Click <a href="{{ page.url | regex_replace: '\.html$', '-console.html' | prepend
     {% endfor %}
   {% endfor %}
 {% endif %}
+
+<h2>Code examples</h2>
+<div role="tabpanel">
+  <ul class="nav nav-tabs" role="tablist">
+    {% for snippet in page.raml_snippets %}
+      <li role="presentation" {% if forloop.first %}class="active"{% endif %}><a href="#{{ snippet['title'] | slugify }}" aria-controls="{{ snippet['title'] | slugify }}" role="tab" data-toggle="tab">{{ snippet['title'] }}</a></li>
+    {% endfor %}
+  </ul>
+  <div class="tab-content">
+    {% for snippet in page.raml_snippets %}
+      <div role="tabpanel" class="tab-pane {% if forloop.first %}active{% endif %}" id="{{ snippet['title'] | slugify }}"><p><pre>{{ snippet['snippet'] }}</pre></p></div>
+    {% endfor %}
+  </div>
+</div>
