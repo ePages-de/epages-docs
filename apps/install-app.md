@@ -45,7 +45,8 @@ ePages makes a `GET` request to the **Application Callback URL** provided by the
 Example:
 
 {% highlight text %}
-GET https://exampleapp.com/callback?code={code}&shopId={shopId}&returnUrl={returnUrl}&accessTokenUrl={accessTokenUrl}&baseResourceUrl={baseResourceUrl} HTTP/1.1
+GET /callback?code={code}&shopId={shopId}&returnUrl={returnUrl}&accessTokenUrl={accessTokenUrl}&baseResourceUrl={baseResourceUrl} HTTP/1.1
+Host: tastytoppings.com
 {% endhighlight %}
 
 Substitutions would be made as given in this example table:
@@ -77,7 +78,8 @@ To request an `accessToken`, make a HTTPS `POST` request to the API including th
 Example:
 
 {% highlight text %}
-POST /https://creamyiceshop.com/rs/shops/CreamyIceShop/token HTTP/1.1
+POST /rs/shops/CreamyIceShop/token HTTP/1.1
+Host: creamyiceshop.com
 Content-Type: application/x-www-form-urlencoded
 
 code=f32ddSbuff2IGAYvtiwYQiyHyuLJWbey&client_id=value&client_secret=value
@@ -113,9 +115,10 @@ Now that your application has received an `accessToken`, it can make authenticat
 Example:
 
 {% highlight text %}
-GET /https://creamyiceshop.com/rs/shops/CreamyIceShop/{resource} HTTP/1.1
-"Accept": "application/vnd.epages.v1+json"
-"Authorization": "Bearer {accessToken}"
+GET /rs/shops/CreamyIceShop/{resource} HTTP/1.1
+Host: creamyiceshop.com
+Accept: application/vnd.epages.v1+json
+Authorization: "Bearer {accessToken}
 {% endhighlight %}
 
 The substitution would be made as given in this example table:
