@@ -22,4 +22,4 @@ The next two days focused on awesome talks, of course all related to JavaScript.
 
 <i class="fa fa-pencil"></i> Functional reactive programming with [Bacon.js](https://baconjs.github.io/)
 
-The breaks between the presentations allowed plenty of time for questions and discussion as well as networking, even with international participants. 
+The breaks between the presentations allowed plenty of time for questions and discussion as well as networking, even with international participants.

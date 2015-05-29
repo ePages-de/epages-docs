@@ -1,3 +1,4 @@
+# encoding: utf-8
 require 'html/proofer'
 
 class String
@@ -113,7 +114,7 @@ task :test do
     end
   end
 
-  Linter.new('.', '**/*.{html,scss,js,yml}', ['./.', './_site/', './_sass/bootstrap/']).run
+  Linter.new('.', '**/*.{html,scss,js,yml,md}', ['./.', './_site/', './_sass/bootstrap/', './vendor/']).run
 end
 
 task :test do
