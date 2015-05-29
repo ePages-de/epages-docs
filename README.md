@@ -1,19 +1,19 @@
 # epages-docs
 
-## Preview
-
-See a preview of the documentation [here][epagesdocs]. This documentation is build automatically by Jenkins when pushed to `master` branch.
+[![build](https://img.shields.io/travis/ePages-de/epages-docs/develop.svg)](https://travis-ci.org/ePages-de/epages-docs)
+[![license](https://img.shields.io/badge/license-CC%20BY%204.0-lightgrey.svg)][license-cc-by-40]
+[![license](https://img.shields.io/badge/license-MIT-lightgrey.svg)][license-mit]
 
 ## Usage
 
 ~~~ bash
 # install dependencies
-$ bundle install
+$ bundle
 
 # run a local server with auto rebuilding
 $ rake
 
-# check for death links and other bad stuff
+# check for dead links and other bad stuff
 $ rake test
 
 # build the page
