@@ -1,52 +1,14 @@
 {
     "items" : [
         {
-            "key" : "material", /* non-localized key */
-
-            "displayKey" : "outer material", /* localized attribute name */
-
-            "singleValue" : true, /* if this is true, the "values" array will contain exactly 1 element.
-                                     If false, "values" can have 0..n elements. */
-
-            "type" : "string", /* data type, one of: string|number|bool|url|datetime|date|time" */,
-
+            "key" : "material",
+            "displayKey" : "outer material",
+            "singleValue" : true,
+            "type" : "string",
             "values" : [
                 {
-                    /* there is one such object for each value. See also "singleValue". */
                     "value" : "leather",
-                       /* non-localized or non-formatted value. This field can have
-                          different interpretations depending on "type" and "singleValue":
-                          - singleValue=false : non-localized value identifier; this value is never null
-                          - singleValue=true : this value may be null
-
-                          - type=number : raw integer value, for example: "1234.56"
-                          - type=bool : boolean value, either "true" or "false"
-                          - type=string : string value, same as "displayValue", may depend on the query
-                                          parameter "locale"
-                          - type=datetime : date and time, referring to the time zone of the shop.
-                                            For example "2014-07-17T16:02:00+02:00"
-                          - type=date : date value, for example "2014-07-17"
-                          - type=time : time value, for example "18:02:00" referring to the time zone of
-                                        the shop on the current date
-                          - type=url : URL, Unicode characters in the domain name will be
-                                       IDN encoded, for example "http://www.xn--mller-kva.de/index.html"
-                        */
                     "displayValue" : "wild leather"
-                       /* localized and formatted representation of the value, depends on
-                          the "type" value and may depend on the query parameter "locale".
-                          This value is never null, but may be an empty string.
-                          - type=number : integer value with locale-dependent formatting, for example
-                                          "1.234,56"
-                          - type=bool : boolean value, either "true" or "false", not locale-dependent!
-                          - type=string : string value in the language specified by locale
-                          - type=datetime : Date and time in the time zone of the shop with locale-dependent
-                                            formatting, for example: "Donnerstag, 17. Juli 2014 18:02:00"
-                          - type=date : date value with locale-dependent formatting, for example "17.07.2014"
-                          - type=time : time value with locale-dependent formatting, for example "18:02:00"
-                                        referring to the time zone of the shop on the current date
-                          - type=url : URL, domain name may contain Unicode characters, for example
-                                       "http://müller.de/index.html"
-                        */
                 }
             ]
         }
