@@ -1,39 +1,38 @@
 {
-    "items": /* an ordered list of images that make up a slideshow. */
+    "items":
     [
         {
-            "sizes": /* Images exist in different sizes, but
-                        not all sizes are always present for each image. */
+            "sizes":
             [
                 {
-                    "classifier": "Thumbnail", /* typical size: 50x33px */
-                    "url": "https://link.to/tumbnail-image.png" /* image URL */
+                    "classifier": "Thumbnail",
+                    "url": "https://link.to/tumbnail-image.png"
                 },
                 {
-                    "classifier": "Small", /* typical size: 100x100px */
-                    "url": "https://link.to/small-image.png" /* image URL */
+                    "classifier": "Small",
+                    "url": "https://link.to/small-image.png"
                 },
                 {
-                    "classifier": "HotDeal", /* typical size: 150x150px) */
-                    "url": "https://link.to/hotdeal-image.png" /* image URL */
+                    "classifier": "HotDeal",
+                    "url": "https://link.to/hotdeal-image.png"
                 },
                 {
-                    "classifier": "MediumSmall", /* typical size: 200x200px */
-                    "url": "https://link.to/medium-small-image.png" /* image URL */
+                    "classifier": "MediumSmall",
+                    "url": "https://link.to/medium-small-image.png"
                 },
                 {
-                    "classifier": "Medium", /* typical size: 500x500px */
-                    "url": "https://link.to/medium-image.png" /* image URL */
+                    "classifier": "Medium",
+                    "url": "https://link.to/medium-image.png"
                 },
                 {
-                    "classifier": "MediumLarge", /* typical size: 1000x1000px */
-                    "url": "https://link.to/medium-large-image.png" /* image URL */
+                    "classifier": "MediumLarge",
+                    "url": "https://link.to/medium-large-image.png"
                 },
                 {
-                    "classifier": "Large", /* shop dependent size */
-                    "url": "https://link.to/large-image.png" /* image URL */
+                    "classifier": "Large",
+                    "url": "https://link.to/large-image.png"
                 }
             ]
-        } /* more images */
+        }
     ]
 }

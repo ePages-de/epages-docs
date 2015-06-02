@@ -1,20 +1,20 @@
 {
-    "priceInfo": { /* Price of the cheapest variation */
+    "priceInfo": {
         "price": {
-            "amount": 3.95, /* price amount */
-            "taxType": "GROSS", /* indicates if the amount includes tax (GROSS) or not (NET) */
-            "currency": "EUR", /* currency code */
-            "formatted": "from 3.95 €" /* localized and formatted value, including a shop-specific prefix, like "from" */
+            "amount": 3.95,
+            "taxType": "GROSS",
+            "currency": "EUR",
+            "formatted": "from 3.95 €"
         },
-        "quantity": { /* quantity of product that this price refers to */
+        "quantity": {
             "amount": 1,
             "unit": "piece(s)"
         }
     },
     "links": [
-        {   /* A link to the resource of the cheapest variation. */
+        {
             "rel": "product",
-            "href": "http://hostname/rs/shops/shopId/products/productId",
+            "href": "http://hostname/rs/shops/shopId/products/productId"
         }
     ]
 }

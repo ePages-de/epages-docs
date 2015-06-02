@@ -10,7 +10,7 @@
         "zipCode": "20355",
         "city": "Hamburg",
         "state": null,
-        "country": "DE", /* ISO 3166-1 Alpha-2 code */
+        "country": "DE",
         "title": null,
         "vatId": null,
         "birthday": "1971-07-21",
@@ -26,32 +26,32 @@
         "zipCode": "20355",
         "city": "Hamburg",
         "state": null,
-        "country": "DE", /* ISO 3166-1 Alpha-2 code */
+        "country": "DE",
         "title": null,
         "vatId": null,
         "birthday": null,
         "emailAddress":"john.doe@epages.com"
     },
     "lineItemContainer": {
-        "grandTotal": { /* Total price including product prices, shipping and tax. */
+        "grandTotal": {
             "amount": 29.95,
             "taxType": "GROSS",
             "currency": "EUR",
             "formatted": "22.95 €"
         },
-        "totalBeforeTax": { /* Total price including product prices, shipping and no tax. */
-            "amount": 19..29,
+        "totalBeforeTax": {
+            "amount": 19.29,
             "taxType": "NET",
             "currency": "EUR",
             "formatted": "19.29 €"
         },
-        "totalTax": { /* Total tax amount */
+        "totalTax": {
             "amount": 4.78,
             "taxType": "NONE",
             "currency": "EUR",
             "formatted": "4.78 €"
         },
-        "lineItemsSubTotal": { /* Sum of lineItemPrice on all lineItems. */
+        "lineItemsSubTotal": {
             "amount": 0,
             "taxType": "GROSS",
             "currency": "EUR",
@@ -81,8 +81,8 @@
                 },
                 "images": [
                     {
-                        "classifier": "Thumbnail", /* typical size: 50x33px */
-                        "url": "https://link.to/tumbnail-image.png" /* image URL */
+                        "classifier": "Thumbnail",
+                        "url": "https://link.to/tumbnail-image.png"
                     }
                 ],
                 "links": [
