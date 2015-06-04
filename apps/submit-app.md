@@ -6,7 +6,7 @@ title: Submit an app
 
 # Your app is ready for takeoff?
 
-Yay! You're done with developing your awesome app and you're excited to make it available to our App Store? Congrats! We are just as much excited as you are!
+Yay! You're done with developing your awesome app and you're excited to make it available to our Apps & Themes Store? Congrats! We are just as much excited as you are!
 
 ## Let's go submitting your app
 
@@ -37,7 +37,7 @@ Tick the respective check box(es) to set up the scope for your app. This indicat
 
 English app details are mandatory. If a merchant switches his shop to a language, your app does not support, the fallback language is English. If you decide to offer your app in multiple languages, tick the respective check boxes. You will then also have to fill out all mandatory fields for the additional language(s).
 
-Payment: describe the pricing for using your service.
+Requirements: describe the requirements for using your service, e.g. pricing.
 
 {% highlight text %}
 Example: Subscription model: $19.99 per month.
@@ -74,7 +74,7 @@ With this app, all orders are automatically synchronised with your system
 and all shipping labels are ready-for-printing with ease.
 {% endhighlight %}
 
-Search terms: Provide keywords that describe your app. Use a comma to separate the keywords.
+Search terms: provide keywords that describe your app. Use a comma to separate the keywords.
 
 Application callback URL: make sure that this URL is SSL and public. After the merchant has confirmed the installation of your app in his store, it redirects the merchant to your application. The required query parameters will be automatically transferred.
 
@@ -86,7 +86,7 @@ Video ID: provide the ID for a video.
 Example:
 
 YouTube
-https://www.youtube.com/watch?v=**ID**
+https://www.youtube.com/watch?v={Id}
 {% endhighlight %}
 
 We will need logos and at least one screenshot to display your app in the App Store.
@@ -95,9 +95,9 @@ App detail page: use 64x64px, GIF, JPEG, PNG.
 
 App store: use 260x160px, GIF, JPEG, PNG.
 
-Screenshots: use 800x600px - max. 1920x1080px, GIF, JPEG, PNG.
+Screenshots: use 800x600px - 1920x1080px, GIF, JPEG, PNG.
 
-Before submitting your app, please agree to our terms and conditions. Review all the information that you provide to us and also make sure that the **Application Callback URL** and **Open app URL** are correct.
+Before submitting your app, please make sure you have read and understood our app submission guidelines. Review all the information that you provide to us and also make sure that the **Application Callback URL** and **Open app URL** are correct.
 
 # You have reached the home stretch!
 
