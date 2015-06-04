@@ -10,6 +10,9 @@
     - title: Conferences
       link: page:blog-category-conferences
 
+    - title: Events
+      link: page:blog-category-events
+
 - key: blog-links
   title: Links
   entries:
