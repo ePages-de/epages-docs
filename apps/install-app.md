@@ -6,8 +6,8 @@ title: Install an app
 
 Your app cannot access ePages data without getting authorisation from the merchant first. In this section we will help you through this authorisation process.
 
-{% callout info PRO TIP %}
-This process describes a perfect scenario. During app development, ensure you consider common pitfalls, e.g. call limit exceeded, network failure, communication errors etc.
+{% callout info PRO TIP: %}
+This process describes a perfect scenario. Make sure you gracefully handle failures, call limits, communication errors etc.
 {% endcallout %}
 
 # Credentials
@@ -45,7 +45,7 @@ The merchant agrees and submits the consent form by clicking the button **Instal
 ePages makes a `GET` request to the **Application Callback URL** provided by the app developer. The required query parameters, see table below, will be automatically passed by ePages.
 
 {% callout warning SSL required! %}
-All requests must be https.
+All API access is over HTTPS.
 {% endcallout %}
 
 Example:
@@ -57,11 +57,11 @@ Host: crazytoppingapp.com
 
 Substitutions would be made as given in this example table:
 
-| Query parameter           | Description   | Example                  |
-|--------------------|--------------------------------|----------------|
-| {`code`}      | Authentication code that is required for the app installation process to obtain the `access_token`.     | f32ddSbuff2IGAYvtiwYQiyHyuLJWbey |
-| {`api_url`}      | The part of all API endpoint URLs, that uniquely identifies the merchant. The `api_url` differs for every merchant and has to be stored in the app.  | https://creamyiceshop.com/rs/shops/CreamyIceShop |
-| {`return_url`}    | The URL that redirects the merchant to the administration area. | https://creamyiceshop.com/epages/CreamyIceShop.admin/?ObjectID=17811&ViewAction=MBO-ViewAppDetails&appID=54f46f318732110bd85f41c7 |
+| Query&nbsp;parameter           | Description                    | Example        |
+|--------------------------------|--------------------------------|----------------|
+| {`code`}      | Authorisation code that is required for the app installation process to obtain the `access_token`.     | f32ddSbuff2IGAYvtiwYQiyHyuLJWbey |
+| {`api_url`}      | The base API URL, that uniquely identifies the merchant. The `api_url` differs for every merchant and has to be stored in the app.  | https://creamyiceshop.com/rs/shops/CreamyIceShop |
+| {`return_url`}    | The URL which the merchant should be redirected to after the app installation. | https://creamyiceshop.com/epages/CreamyIceShop.admin/?ObjectID=17811&ViewAction=MBO-ViewAppDetails&appID=54f46f318732110bd85f41c7 |
 
 Your app can use the `code` in combination with your **Client ID** and **Client Secret** for obtaining an `access_token`. This code is temporary and will be obsolete after app installation. To obtain the `access_token`, attach the string `token` to the `api_url`, e.g. https://creamyiceshop.com/rs/shops/CreamyIceShop/token.
 
@@ -69,17 +69,17 @@ Your app can use the `code` in combination with your **Client ID** and **Client 
 
 If your app requires a registration process, this optional step can be included before obtaining the `access_token`. During this, the app would display the registration or login form to the merchant.
 
-## 5. Send request for access token
+## 5. Exchange authorisation code for access token
 
-To request an `access_token`, make a `POST` request to the API including the following parameters:
+To get an `access_token`, make a `POST` request to the `/token` endpoint with the following parameters:
 
 | Field              | Description                                                                                             |
 |--------------------|------------------------------|
 | `code`      | The code provided in the **Application Callback URL** ([see above](page:apps-install#receive-authorisation-code)).     |
-| `clientId`   | The client key for the app (see the [get your credentials](page:apps-create#get-your-credentials) section).|
-| `clientSecret`    | The shared client secret for the app (see the [get your credentials](page:apps-create#get-your-credentials) section). |
+| `client_id`   | The client key for the app (see the [get your credentials](page:apps-create#get-your-credentials) section).|
+| `client_secret`    | The shared client secret for the app (see the [get your credentials](page:apps-create#get-your-credentials) section). |
 
-{% callout warning Consider the Content-Type! %}
+{% callout warning Mind the Content-Type! %}
 The `POST` request has to be x-www-form-urlencoded!
 {% endcallout %}
 
@@ -90,7 +90,7 @@ POST /rs/shops/CreamyIceShop/token HTTP/1.1
 Host: creamyiceshop.com
 Content-Type: application/x-www-form-urlencoded
 
-code=f32ddSbuff2IGAYvtiwYQiyHyuLJWbey&client_id=value&client_secret=value
+code=f32ddSbuff2IGAYvtiwYQiyHyuLJWbey&client_id=E43D610F-7E6C-46D0-99E3-5D301E4AFE0D&client_secret=dJAQ4vEFGsPHAgoU8QTb1evJeGSQxDsU
 {% endhighlight %}
 
 In a successful response, a JSON object is returned with an `access_token` that can be sent to the ePages API, similar to the following:
@@ -112,17 +112,17 @@ This is a permanent `access_token` that can be used to access the shop's data as
 With this `access_token` you make authenticated requests to the shop's data. Store the `access_token` securely against the `api_url`. Do not share the `access_token` with anyone!
 {% endcallout %}
 
-{% callout info PRO TIP %}
-Take a look at the below table for an example how to manage the data of different merchants.
-{% endcallout %}
+The following table is an example on how to manage the data of different merchants.
 
-Example:
-
-| Shop           | `api_url`   | `access_token`                  |
+|`api_url`           | Shop                           | `access_token` |
 |--------------------|--------------------------------|----------------|
-| CreamyIceShop   | https://creamyiceshop.com/rs/shops/CreamyIceShop | dff6d20e |
-| QuarkyAustrian  | https://quarkyaustrian.com/rs/shops/QuarkyAustrian | 136fe60f |
-| TastyFlummery   | https://tastyflummery.com/rs/shops/TastyFlummery | 93d621cc |
+| https://creamyiceshop.com/rs/shops/CreamyIceShop   | CreamyIceShop | dff6d20e |
+| https://quarkyaustrian.com/rs/shops/QuarkyAustrian | QuarkyAustrian | 136fe60f |
+| https://tastyflummery.com/rs/shops/TastyFlummery   | TastyFlummery  | 93d621cc |
+
+{% callout warning Note: %}
+Unlike the `api_url`, the derived **Shop** does **not** uniquely identify a merchant.
+{% endcallout %}
 
 ## 6. Redirect the merchant
 
