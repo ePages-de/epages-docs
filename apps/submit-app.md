@@ -103,4 +103,8 @@ Before submitting your app, please make sure you have read and understood our ap
 
 Click the button **Submit app now**.
 
-Makes us jump for joy! Your app is on its way! We will evaluate and test your app and come back to you as soon as our review has been completed. Give us a couple of days time. Questions? Please contact [apps@epages.com](mailto:apps@epages.com).
+Makes us jump for joy! Your app is on its way! We will evaluate and test your app and come back to you as soon as our review has been completed.
+Give us a couple of days time.
+Questions? Please contact [apps@epages.com](mailto:apps@epages.com).
+
+[markdown]: http://daringfireball.net/projects/markdown/syntax "Markdown Syntax"
