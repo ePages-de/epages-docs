@@ -6,7 +6,7 @@ title: Submit an app
 
 # Your app is ready for takeoff?
 
-Yay! You're done with developing your awesome app and you're excited to make it available to our Apps & Themes Store? Congrats! We are just as excited as you are!
+Yay! You're done with developing your awesome app and you're excited to publish it on our Apps & Themes Store? Congrats! We are just as excited as you are!
 
 ## Let's go submit your app
 
@@ -52,7 +52,7 @@ Example: Subscription model: $19.99 per month.
 
 Developer or company name: provide the name of the individual(s) or company which developed the app.
 
-Features: provide three key features of your app, which will be shown as an list.
+Features: provide three key features of your app, which will be shown as a list.
 Each item is limited to 140 characters.
 
 {% highlight text %}
@@ -94,7 +94,7 @@ The required query parameters will be added automatically.
 Open app URL: the target link of "Open app" on the app detail page after a successful installation.
 Provide a link to your most important interface or dashboard.
 
-Video ID: provide the ID for a video hosted on one of our supported providers.
+Video ID: provide the ID for a video hosted on one of our supported platforms.
 
 {% highlight text %}
 Example:
@@ -114,11 +114,11 @@ Screenshots: use 800x600px - 1920x1080px, GIF, JPEG, PNG.
 Before submitting your app, please make sure you have read and understood our app submission guidelines.
 Review all the information that you provide to us and also make sure that the **Application Callback URL** and **Open app URL** are correct.
 
-# You have reached the home stretch!
+# You are on the home stretch!
 
 Click the button **Submit app now**.
 
-Makes us jump for joy! Your app is on its way! We will evaluate and test your app and come back to you as soon as our review has been completed.
+Your app is on its way! Yay! We will evaluate and test your app and come back to you as soon as our review has been completed.
 Give us a couple of days time.
 Questions? Please contact [apps@epages.com](mailto:apps@epages.com).
 
