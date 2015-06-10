@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "ePages turns agile"
+title: "When a company turns agile"
 date: "2015-06-10 07:28:00"
 icon: refresh
 tags: agile scrum company
