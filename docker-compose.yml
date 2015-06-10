@@ -1,0 +1,9 @@
+nginx:
+  image: docker.epages.com/epages/docs-nginx:master
+  links:
+    - "elasticsearch:elasticsearch"
+  ports:
+    - "8080:80"
+
+elasticsearch:
+  image: docker.epages.com/epages/docs-elasticsearch:master

@@ -1,8 +1,6 @@
 # epages-docs
 
-[![build](https://img.shields.io/travis/ePages-de/epages-docs/develop.svg)](https://travis-ci.org/ePages-de/epages-docs)
-[![license](https://img.shields.io/badge/license-CC%20BY%204.0-lightgrey.svg)][license-cc-by-40]
-[![license](https://img.shields.io/badge/license-MIT-lightgrey.svg)][license-mit]
+[![Circle CI](https://circleci.com/gh/ePages-de/epages-docs/tree/master.svg?style=svg)](https://circleci.com/gh/ePages-de/epages-docs/tree/master)
 
 ## Usage
 
@@ -38,10 +36,6 @@ You can use this [shell script][bootstrap-linux] to turn your laptop into an awe
 ### Windows
 
 TODO
-
-## Run complete environment in Vagrant
-
-Make sure you have installed [Vagrant][vagrant] and [VirtualBox][virtualbox]. Now run `vagrant up`, take a coffee and afterwards visit [http://localhost:8080/](http://localhost:8080/) in your web browser.
 
 ## License
 
