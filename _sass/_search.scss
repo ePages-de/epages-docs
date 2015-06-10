@@ -62,10 +62,12 @@
   font-size: 1.8rem;
   min-height: 16px;
   line-height: 24px;
+  text-decoration: none;
 
   &:hover, &:active, &:focus {
     background-color: darken( $green, 5%);
     border: 1px solid darken( $green, 5%);
     color: #fff;
+    text-decoration: none;
   }
 }
