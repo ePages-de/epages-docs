@@ -18,10 +18,9 @@
 
 .post-title {
   a {
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
+    &>span {
+      font-size: 2rem;
+      padding: 5px;
     }
   }
 }
@@ -30,4 +29,13 @@
   color: gray;
   font-size: 90%;
   margin: 0.5em 0;
+}
+
+.post-share {
+  .socialmedia a {
+    &>span {
+      font-size: 2rem;
+      padding: 5px;
+    }
+  }
 }

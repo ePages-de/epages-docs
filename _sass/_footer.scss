@@ -65,67 +65,10 @@ footer {
   padding: 1.25rem 1.875rem 0rem 1.875rem;
   text-align: center;
 
-  ul {
-    display: inline-block;
-    padding: 0;
-  }
-
-  li {
-    float: left;
-    margin: 0rem 0.625rem 0rem 0.625rem;
-  }
-
-  [class^="icon-"], [class*=" icon-"] {
-    font-size: 3rem;;
-    color: #fff;
-    padding: 1.0625rem;
-  }
-
-  .icon-linkedin {
-    background-color: #0e76a8;
-
-    &:hover {
-      background-color: #0c6590;
-    }
-  }
-
-  .icon-youtube {
-    background-color: #e52d27;
-
-    &:hover {
-      background-color: #d8201a;
-    }
-  }
-
-  .icon-googleplus {
-    background-color: #df4a32;
-
-    &:hover {
-      background-color: #d63a21;
-    }
-  }
-
-  .icon-twitter {
-    background-color: #00ACF0;
-
-    &:hover {
-      background-color: #0099d4;
-    }
-  }
-
-  .icon-facebook {
-    background-color: #3b5998;
-
-    &:hover {
-      background-color: #344e86;
-    }
-  }
-
-  .icon-xing {
-    background-color: #126567;
-
-    &:hover {
-      background-color: #0e5051;
+  a {
+    &>span {
+      font-size: 3rem;
+      padding: 10px;
     }
   }
 }
@@ -178,16 +121,11 @@ footer {
   }
 }
 
-@media screen and (max-width: $screen-sm-max) and (min-width: $screen-sm-min){
+@media screen and (max-width: $screen-sm-max) and (min-width: $screen-sm-min) {
   .locations li {
     padding: 1.25rem 0.625rem 0rem 0.625rem;
     line-height: 0;
     font-size: 1.8rem;
-  }
-
-  .social li {
-    margin: 0px 4px 0px 4px;
-    margin: 0rem 0.25rem 0rem 0.25rem;
   }
 
   .footer-column-entry, #footer-legal {
@@ -195,8 +133,7 @@ footer {
   }
 }
 
-@media(max-width: $screen-xs-max){
-
+@media(max-width: $screen-xs-max) {
   .logo .row > div {
     margin: 0;
   }
@@ -208,90 +145,10 @@ footer {
   .social {
     margin: 20px auto;
     padding: 0;
-
-    li {
-    margin: 0px 4px;
-    margin: 0rem 0.15rem;
-
-    a {
-      display: block;
-      width: 40px;
-      width: 4rem;
-      height: 40px;
-      height: 4rem;
-      overflow: hidden;
-    }
-  }
-
-  .linkedin {
-    span {
-      font-size: 16px;
-      font-size: 1.6rem;
-      line-height: 18px;
-      line-height: 1.8rem;
-      height: 4rem;
-      display: block;
-      padding: 17px 0px 0px 0px;
-      padding: 1.0625rem 0 0 0;
-    }
-  }
-  .youtube {
-    span {
-      font-size: 1.9rem;
-      line-height: 1.9rem;
-      height: 4rem;
-      display: block;
-      padding: 16px 0px 0px 0px;
-      padding: 1rem 0rem 0rem 0rem;
-    }
-  }
-
-  .googleplus {
-  span {
-      font-size: 1.9rem;
-      line-height: 1.9rem;
-      height: 4rem;
-      display: block;
-      padding: 16px 0px 0px 0px;
-      padding: 1rem 0rem 0rem 0rem;
-    }
-  }
-
-  .twitter {
-    span {
-      font-size: 2.2rem;
-      line-height: 1.9rem;
-      height: 4rem;
-      display: block;
-      padding: 11px 0px 0px 0px;
-      padding: 0.6875rem 0rem 0rem 0rem;
-    }
-  }
-
-  .facebook {
-  span {
-      font-size: 2rem;
-      line-height: 1.9rem;
-      height: 4rem;
-      display: block;
-      padding: 15px 0px 0px 0px;
-      padding: 0.9375rem 0rem 0rem 0rem;
-    }
-  }
-
-  .xing {
-    span {
-      font-size: 2rem;
-      line-height: 1.9rem;
-      height: 4rem;
-      display: block;
-      padding: 0.875rem 0rem 0rem 0rem;
-      }
-    }
   }
 
   #footer-legal {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     margin: 0;
   }
 }
