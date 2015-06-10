@@ -130,6 +130,23 @@ p {
     margin-top: 0;
   }
 
+  .btn-ghost {
+    @extend .btn-default;
+
+    margin-top: 6px;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    padding: 0.75rem 1.25rem 0.5rem 1.25rem;
+    background-color: transparent;
+    border: 3px solid rgba(0,91,119,0.5);
+    color: rgba(0,91,119,0.5);
+
+    text-decoration: none;
+    &:hover, &:active, &:focus {
+      text-decoration: none;
+    }
+  }
+
   @media screen and (max-width: $screen-xs-max) {
     margin-top: 1rem;
   }
@@ -266,13 +283,4 @@ b, strong {
 .spacer20 {
   height: $spacerS-height;
   clear: both;
-}
-
-.btn-ghost {
-  @extend .btn-default;
-
-  text-decoration: none;
-  &:hover, &:active, &:focus {
-    text-decoration: none;
-  }
 }
