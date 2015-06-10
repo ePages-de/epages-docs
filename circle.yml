@@ -1,0 +1,32 @@
+machine:
+  ruby:
+    version: 2.0.0
+  services:
+    - docker
+  environment:
+    DOCKER_IMAGE_ELASTICSEARCH: docker.epages.com/epages/docs-elasticsearch
+    DOCKER_IMAGE_NGINX: docker.epages.com/epages/docs-nginx
+
+test:
+  override:
+    - bundle exec rake test
+
+deployment:
+  dockerimages:
+    branch:
+      - master
+      - develop
+    commands:
+      - docker run --name elasticsearch -p 9200:9200 -d choffmeister/elasticsearch-prefilled:latest
+      - sleep 10
+      - bundle exec rake index
+      - sleep 10
+      - docker stop elasticsearch
+
+      - docker login -u "$DOCKER_LOGIN_USERNAME" -p "$DOCKER_LOGIN_PASSWORD" -e "$DOCKER_LOGIN_EMAIL" docker.epages.com
+      - docker commit elasticsearch "$DOCKER_IMAGE_ELASTICSEARCH:${CIRCLE_BRANCH//\//-}"
+      - docker push "$DOCKER_IMAGE_ELASTICSEARCH:${CIRCLE_BRANCH//\//-}"
+
+      - bundle exec rake build
+      - docker build -t "$DOCKER_IMAGE_NGINX:${CIRCLE_BRANCH//\//-}" .
+      - docker push "$DOCKER_IMAGE_NGINX:${CIRCLE_BRANCH//\//-}"
