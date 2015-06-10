@@ -1,8 +1,12 @@
 ---
 layout: page
+title_hidden: true
 ---
 
-Get <a href="{{ page.url | regex_replace: '\-console.html$', '.html' | prepend: site.baseurl }}">back</a> to the resource description.
+<div class="page-header">
+  <a class="btn btn-search pull-right" href="{{ page.url | regex_replace: '\-console.html$', '.html' | prepend: site.baseurl }}">Documentation</a>
+  <h1>{{ page.title }}</h1>
+</div>
 
 <h2>Parameters</h2>
 
@@ -29,7 +33,7 @@ Get <a href="{{ page.url | regex_replace: '\-console.html$', '.html' | prepend: 
   {% endfor %}
   {% if page.raml_method.method == 'POST' or page.raml_method.method == 'PUT' %}
     <div class="form-group">
-      <label class="control-label" for="request-body">{{ Body }}</label>
+      <label class="control-label" for="request-body">Body</label>
       <textarea class="form-control" id="request-body" rows="8" style="font-family: monospace;">{{ page.raml_method.bodies['application/json'].example }}</textarea>
     </div>
   {% endif %}
