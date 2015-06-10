@@ -267,3 +267,12 @@ b, strong {
   height: $spacerS-height;
   clear: both;
 }
+
+.btn-ghost {
+  @extend .btn-default;
+
+  text-decoration: none;
+  &:hover, &:active, &:focus {
+    text-decoration: none;
+  }
+}
