@@ -23,13 +23,14 @@ raml:
 markdown: kramdown
 exclude:
   - circle.yml
+  - docker-compose.yml
   - Dockerfile
   - Gemfile
   - Gemfile.lock
-  - LICENSE.txt
+  - LICENSE-CC-BY-40.txt
+  - LICENSE-MIT.txt
   - Rakefile
   - README.md
-  - Vagrantfile
   - vendor
 
 # Search index settings
