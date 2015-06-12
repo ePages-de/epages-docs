@@ -4,7 +4,8 @@ key: apps-install
 title: Install an app
 ---
 
-Your app cannot access ePages data without getting authorisation from the merchant first. In this section we will help you through this authorisation process.
+Your app cannot access ePages data without getting authorisation from the merchant first.
+In this section we will help you through this authorisation process.
 
 {% callout info PRO TIP: %}
 This process describes a perfect scenario. Make sure you gracefully handle failures, call limits, communication errors etc.
@@ -12,7 +13,9 @@ This process describes a perfect scenario. Make sure you gracefully handle failu
 
 # Credentials
 
-You retrieved a **Client ID** and a **Client Secret** that are known to both ePages and your application. Visit the [get your credentials](page:apps-create#get-your-credentials) page for further information on this subject. Your app uses these credentials for identification during the authorisation process.
+You retrieved a **Client ID** and a **Client Secret** that are known to both ePages and your application.
+Visit the [get your credentials](page:apps-create#get-your-credentials) page for further information on this subject.
+Your app uses these credentials for identification during the authorisation process.
 
 # Terminology
 
@@ -31,18 +34,24 @@ Before jumping into the authorisation process, let's look at some terms that wil
 
 ## 1. Ask for permission
 
-The merchant decided to install your app. Great! They will then be asked, whether they want to grant your app the permissions that it is requesting. While submitting the app, you have to define a **scope**, which outlines the permissions and access needed by your app. ePages displays the user consent form to the merchant as follows:
+The merchant decided to install your app.
+Great!
+They will then be asked, whether they want to grant your app the permissions that it is requesting.
+While submitting the app, you have to define a **scope**, which outlines the permissions and access needed by your app.
+ePages displays the user consent form to the merchant as follows:
 
 {% image asking-for-permission.png %}
 {% endimage %}
 
 ## 2. Confirm the installation
 
-The merchant agrees and submits the consent form by clicking the button **Install** on the consent page. The merchant will be redirected to the app's **Application Callback URL**.
+The merchant agrees and submits the consent form by clicking the button **Install** on the consent page.
+The merchant will be redirected to the app's **Application Callback URL**.
 
 ## 3. Receive authorisation code
 
-ePages makes a `GET` request to the **Application Callback URL** provided by the app developer. The required query parameters, see table below, will be automatically passed by ePages.
+ePages makes a `GET` request to the **Application Callback URL** provided by the app developer.
+The required query parameters, see table below, will be automatically passed by ePages.
 
 {% callout warning SSL required! %}
 All API access is over HTTPS.
@@ -51,7 +60,7 @@ All API access is over HTTPS.
 Example:
 
 {% highlight text %}
-GET /callback?code={code}&return_url={return_url}&api_url={api_url} HTTP/1.1
+GET /callback?code={code}&return_url={return_url}&api_url={api_url}&access_token_url={access_token_url} HTTP/1.1
 Host: crazytoppingapp.com
 {% endhighlight %}
 
@@ -62,12 +71,14 @@ Substitutions would be made as given in this example table:
 | {`code`}      | Authorisation code that is required for the app installation process to obtain the `access_token`.     | f32ddSbuff2IGAYvtiwYQiyHyuLJWbey |
 | {`api_url`}      | The base API URL, that uniquely identifies the merchant. The `api_url` differs for every merchant and has to be stored in the app.  | https://creamyiceshop.com/rs/shops/CreamyIceShop |
 | {`return_url`}    | The URL which the merchant should be redirected to after the app installation. | https://creamyiceshop.com/epages/CreamyIceShop.admin/?ObjectID=17811&ViewAction=MBO-ViewAppDetails&appID=54f46f318732110bd85f41c7 |
+| {`access_token_url`} | The URL to obtain the `access_token`. | https://creamyiceshop.com/rs/shops/CreamyIceShop/token. |
 
-Your app can use the `code` in combination with your **Client ID** and **Client Secret** for obtaining an `access_token`. This code is temporary and will be obsolete after app installation. To obtain the `access_token`, attach the string `token` to the `api_url`, e.g. https://creamyiceshop.com/rs/shops/CreamyIceShop/token.
+Your app can use the `code` in combination with your **Client ID** and **Client Secret** for obtaining an `access_token`. This code is temporary and will be obsolete after app installation.
 
 ## 4. Registration (optional)
 
-If your app requires a registration process, this optional step can be included before obtaining the `access_token`. During this, the app would display the registration or login form to the merchant.
+If your app requires a registration process, this optional step can be included before obtaining the `access_token`.
+During this, the app would display the registration or login form to the merchant.
 
 ## 5. Exchange authorisation code for access token
 
@@ -109,7 +120,8 @@ X-epages-Media-Type: application/vnd.epages.v1+json
 This is a permanent `access_token` that can be used to access the shop's data as long as the app is installed in the merchant's shop. This `access_token` allows your application to act on behalf of the merchant on this specific shop.
 
 {% callout danger Top secret! %}
-With this `access_token` you make authenticated requests to the shop's data. Store the `access_token` securely against the `api_url`. Do not share the `access_token` with anyone!
+With this `access_token` you make authenticated requests to the shop's data. Store the `access_token` securely against the `api_url`.
+Do not share the `access_token` with anyone!
 {% endcallout %}
 
 The following table is an example on how to manage the data of different merchants.
@@ -128,7 +140,8 @@ Unlike the `api_url`, the derived **Shop** does **not** uniquely identify a merc
 
 Once the authorisation process is complete, your app has to send the merchant back to the `return_url` the app received [before](page:apps-install#receive-authorisation-code).
 
-In case of a successful app installation, the merchant will be able to open the app in the Apps & Themes Store. If an error occurred during installation, the **Install** button instead of the **Open app** button will be shown.
+In case of a successful app installation, the merchant will be able to open the app in the Apps & Themes Store.
+If an error occurred during installation, the **Install** button instead of the **Open app** button will be shown.
 
 {% image app-install-success.png %}
 {% endimage %}
@@ -153,4 +166,5 @@ Authorization: "Bearer 4HZ9hriF6J3GOnd10JbFzdVehycOvAZf
 
 # Fancy more information?
 
-All API calls are authenticated according to the OAuth 2.0 protocol. Read here for further details: [OAuth 2.0 protocol](https://tools.ietf.org/html/rfc6749).
+All API calls are authenticated according to the OAuth 2.0 protocol.
+Read here for further details: [OAuth 2.0 protocol](https://tools.ietf.org/html/rfc6749).
