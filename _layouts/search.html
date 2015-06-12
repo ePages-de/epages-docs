@@ -35,6 +35,6 @@ searchable: false
 
 <script type="text/javascript">
   var searchUrl = '{{ '/search.json' | prepend: site.baseurl }}';
-  var query = getParameter('q', '').replace('+', ' ');
+  var query = decodeURIComponent(getParameter('q', '').replace(/\+/g, ' '));
   ko.applyBindings(new SearchViewModel(searchUrl, query, '{{ chapter }}'), document.getElementById('search'));
 </script>
