@@ -82,7 +82,7 @@ During this, the app would display the registration or login form to the merchan
 
 ## 5. Exchange authorisation code for access token
 
-To get an `access_token`, make a `POST` request to the `/token` endpoint with the following parameters:
+To get an `access_token`, make a `POST` request to the token endpoint provided by the `access_token` query parameter on the **Application Callback URL** with the following parameters:
 
 | Field              | Description                                                                                             |
 |--------------------|------------------------------|
