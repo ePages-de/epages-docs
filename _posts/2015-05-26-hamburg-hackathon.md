@@ -3,8 +3,8 @@ layout: post
 title: "Transform creative visions into reality @Geekettes Hamburg Hackathon"
 date: "2015-05-28 10:30:00"
 icon: cog
-tags: Hackathon
-categories: hackathon tech-stories
+tags: hackathon
+categories: tech-stories
 authors: ["Andreas Grohmann"]
 ---
 
