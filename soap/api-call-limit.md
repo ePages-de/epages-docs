@@ -4,5 +4,7 @@ key: soap-api-call-limit
 title: API call limit
 ---
 
-Requests to the API are limited to 6000 calls per day. The limit applies to the resources *categories*, *customers*, *orders* and *products*. Calls to all other resources are unlimited. Once the limit is exceeded, the request will be rejected.
+The API call limit is closely tied to the shop type. The enterprise customer decides on the frequency that the API can be called and sets this in the business administration respectively.
+The limit can be applied to the resources *categories*, *customers*, *orders* and *products*.
 
+To maintain optimum performance and ensure that the ePages SOAP API is available to all ePages customers, ePages balances the transaction loads by...
