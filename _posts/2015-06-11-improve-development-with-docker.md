@@ -10,7 +10,7 @@ authors: ["Christian Hoffmeister"]
 
 At the moment [Docker][docker] is one of the hottest topics for devops as well as for developers.
 In a nutshell, one can describe Docker as [Linux containers][lxc] with some extra convenience.
-Docker can be classified somewhere in between fully fledged virtual machines and a simple filesystem virtualisation with chroot.
+Docker can be classified somewhere in between fully fledged virtual machines and a simple file system virtualisation with chroot.
 Since it is not yet clear, if Docker will find it's way into our production deployment, this post only concentrates on how our development workflow benefits from Docker.
 
 # The challenge
