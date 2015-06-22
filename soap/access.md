@@ -57,5 +57,5 @@ Both user names and passwords have to be concatenated with the special character
 To being able to interact with the ePages shops, the respective web services will be enabled and WSDL file and version will be provided by ePages.
 
 {% callout info Web services are subject to change. %}
-It is recommended to use the latest web service version available on the repository. Older versions will be supported further, but may not be displayed.
+It is recommended to use the latest web service version available on the repository. Older versions may not be displayed, but will be supported further.
 {% endcallout %}
