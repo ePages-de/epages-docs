@@ -7,8 +7,9 @@ title: Introduction
 # Easy-to-consume SOAP API
 
 The ePages SOAP API is easy to consume.
-Each web service has its unique identity. Its address is defined by a URI and is often called an endpoint.
-For our web service description we use WDSL (Web Services Definition Language) and the web service itself can be listed and discovered in a UDDI (Universal Description Discovery and Integration) registry.
+Each web service has its unique identity.
+Its address is defined by a URI and is often called an endpoint.
+For our web service description we use WSDL (Web Services Definition Language) and the web service itself can be listed and discovered in a UDDI (Universal Description Discovery and Integration) registry.
 
 # Data exchange
 
@@ -33,7 +34,8 @@ Our web services are invoked via HTTP and provide the standard methods to manage
 | update()      | Updates one or more existing items in a shop.|
 | delete()      | Deletes one or more items from a shop.       |
 
-Some complex web services however, have additional methods.
+Some complex web services however, have additional or different methods.
+Read further in the [web service directory](page:soap-directory) or directly check the [resources](page:soap-api).
 
 # Support
 

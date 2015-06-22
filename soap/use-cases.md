@@ -4,7 +4,10 @@ key: soap-use-cases
 title: Use cases
 ---
 
-Most enterprise customers have unique requirements when it comes to integrating software and systems. ePages offers some use cases and examples to help you get started building an API integration tailored to your needs. We hope this gives you a good starting point for your integration with ePages web services. Refer to our [web service directory](page:soap-directory) for on overview of the available web services.
+Most enterprise customers have unique requirements when it comes to integrating software and systems.
+ePages offers some use cases and examples to help you get started building an API integration tailored to your needs.
+We hope this gives you a good starting point for your integration with ePages web services.
+Refer to our [web service directory](page:soap-directory) for on overview of the available web services.
 
 # Affiliate Management
 
@@ -22,13 +25,13 @@ Integrate with: **CustomerService**, **CustomerGroupService**, **OrderDocumentSe
 
 Build a web service integration that manages master data or other enterprise-wide capabilities and handles fulfillment, inventory, licensing or post-transaction support.
 
-Integrate with: **CataloguService**, **CustomerService**, **CustomerGroupService**, **OrderDocumentService**, **OrderService**, **ProductService**, **ProductTypeService**
+Integrate with: **CatalogueService**, **CustomerService**, **CustomerGroupService**, **OrderDocumentService**, **OrderService**, **ProductService**, **ProductTypeService**
 
 # Payments
 
 Build a web service integration that enables ePages merchants to send and receive electronic transactions online.
 
-Integrate with: **CustomerService**, **OrderService**
+Integrate with: **CustomerService**, **OrderService**, **PaymentMethodService**
 
 # Reporting, Analytics and Testing
 
@@ -40,7 +43,7 @@ Integrate with: **CustomerService**, **OrderService**
 
 Build a web service integration that integrates your orders and allows you to print shipping labels.
 
-Integrate with: **OrderDocumentService**, **OrderService**
+Integrate with: **OrderDocumentService**, **OrderService**, **ShippingMethodService**
 
 # Social Media
 
@@ -56,6 +59,7 @@ Integrate with: **CustomerService**
 
 # User Management
 
-Build a web service integration that manages online shop users. Enable ePages merchants to push new and updated user registration information to the user management.
+Build a web service integration that manages online shop users.
+Enable ePages merchants to push new and updated user registration information to the user management.
 
 Integrate with: **UserService**
