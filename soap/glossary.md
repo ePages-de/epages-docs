@@ -44,4 +44,4 @@ A WSDL file is an XML document that describes a set of SOAP messages (service) a
 ## XSD (XML Schema Definition)
 Specifies how to formally describe the elements in an XML document.
 It can be used by developers to express a set of rules to which an XML document must conform in order to be considered "valid" according to that scheme.
-In comparison to WSDL, XSD describes the data structure a method can handle. 
+In comparison to WSDL, XSD describes the data structure a method can handle.
