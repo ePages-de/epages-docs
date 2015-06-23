@@ -20,12 +20,12 @@ We will not accept demo, trial or test versions.
 * Save your time and effort and don't duplicate an app that is already available in the Apps & Themes Store.
 We may reject it.
 * Concentrate on a reasonable and useful app.
-Apps that provide trick or mock a functionality will be rejected.
+Apps that do not function as expected, which trick the user or are in any form misleading will be rejected.
 
 # Metadata
 
-* We are keen on complete and meaningful text and descriptions in apps.
-We will not accept apps that contain placeholder text.
+* We are attentive to complete and meaningful descriptions and text in all apps.
+We will not accept apps that contain placeholder text or incomplete information.
 * Relevance rules.
 Only provide us with apps that include names, descriptions, screenshots etc. that are relevant to the app content and functionality.
 Apps that do not comply with this will be rejected.
@@ -46,9 +46,10 @@ We will not accept apps that require our customers to share e.g. their email add
 # Other
 
 * Our customers are our greatest asset and we respect them.
-We will not accept apps that are defamatory, insulting or mean.
+We will not accept apps that are defamatory, insulting or rude.
 * Apps must comply with all legal requirements in any country where they are made available to our customers.
 It is in the responsibility of the app developer to understand and conform to the respective local laws and regulations.
+Please send us an email to [apps@epages.com](mailto:apps@epages.com) if you have any inquiries.
 * Make sure that all requests are made using OAuth 2.0 authentication.
 * All apps must use an SSL certificate.
 * We will not accept apps that have competitor integrations or references.
