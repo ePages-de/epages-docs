@@ -111,7 +111,7 @@ App store: use 260x160px, GIF, JPEG, PNG.
 
 Screenshots: use 800x600px - 1920x1080px, GIF, JPEG, PNG.
 
-Before submitting your app, please make sure you have read and understood our app submission guidelines.
+Before submitting your app, please make sure you have read and understood our [submission guidelines](page:apps-submit-guide).
 Review all the information that you provide to us and also make sure that the **Application Callback URL** and **Open app URL** are correct.
 
 # You are on the home stretch!
