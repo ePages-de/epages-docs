@@ -37,6 +37,9 @@
     - title: Submit an app
       link: page:apps-submit
 
+    - title: Submission guidelines
+      link: page:apps-submit-guide
+
 - key: api-rest
   title: API reference
   entries:
