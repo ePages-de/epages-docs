@@ -222,5 +222,5 @@ task :build do
 end
 
 task :default do
-  sh "bundle exec jekyll serve --watch"
+  sh "bundle exec jekyll serve --host 0.0.0.0 --watch"
 end
