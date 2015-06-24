@@ -20,14 +20,14 @@ Nevertheless some teams still share their build infrastructure, thus lacking ind
 
 Jenkins makes it very easy to introduce new functionality by installing one of the [many available plugins](https://wiki.jenkins-ci.org/display/JENKINS/Plugins).
 Unfortunately not every plugin turns out to work as expected or in the worst case can potentially bring down the whole Jenkins instance.
-The idea to evaluate unknown plugins by installing them into your production CI infrastructure bears problems, since they often leave unwanted traces behind, even after uninstallation.
+To evaluate unknown plugins by installing them into your production CI infrastructure bears problems, since they often leave unwanted traces behind, even after uninstallation.
 Even making changes to a job configuration without adding any new plugins can lead to broken build jobs, negatively affecting the productivity of whole teams.
 
 ## The solution
 
 We were looking for ways to make it safe and easy to improve our build infrastructure.
-Using version control like [GitHub](https://github.com/) for all of our source code it was natural to treat our infrastructure the same way and be able to roll back to a previous version without any hassle.
-Versioning whole images of Jenkins virtual servers didn't sound like the best idea and plugins like [JobConfigHistory](https://wiki.jenkins-ci.org/display/JENKINS/JobConfigHistory+Plugin) didn't go far enough.
+Using version control like [GitHub](https://github.com/) for all of our source code, it was natural to treat our infrastructure the same way and be able to roll back to a previous version without any hassle.
+Versioning whole images of Jenkins virtual servers didn't seem feasible and plugins like [JobConfigHistory](https://wiki.jenkins-ci.org/display/JENKINS/JobConfigHistory+Plugin) didn't go far enough.
 
 ## Server provisioning using Ansible and Vagrant
 
@@ -35,7 +35,7 @@ We started by automating the installation of Jenkins, including all required plu
 The idea is to set up a Jenkins server from scratch by running just a single command, while still being able to use the same facilities to update the installation, e.g. with new plugins, using the same technology.
 To achieve this, we decided to use [Ansible](http://www.ansible.com/home), mainly due to existing know-how.
 
-Once the basic installation of Jenkins and it's prerequisites is done, the interesting part begins: installing and configuring plugins.
+Once the basic installation of Jenkins and its prerequisites is done, the interesting part begins: installing and configuring plugins.
 The installation of additional plugins is done by utilising the [Jenkins Command Line Interpreter (CLI)](https://wiki.jenkins-ci.org/display/JENKINS/Jenkins+CLI).
 This allows us to provide plugin names and explicit versions to be installed.
 The tricky part is getting the global configuration of Jenkins right.
@@ -70,13 +70,13 @@ All other job metadata is either not really important, like symbolic links to th
 Being able to run lots of build jobs in parallel is key to receiving fast feedback from our CI infrastructure.
 With modern desktops and laptops there is enough idle CPU and RAM resources available in our offices most of the time, which we want to use for this purpose by running [Jenkins slave](https://wiki.jenkins-ci.org/display/JENKINS/Step+by+step+guide+to+set+up+master+and+slave+machines).
 In order not to interfere with the operating system and tools installation on each developer's machine, we create virtual images (or maybe even [Docker](https://www.docker.com/) containers in the future) containing all the components needed for a Jenkins slave to execute build jobs.
-Using the [Jenkins Swarm Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Swarm+Plugin) each slave registers itself at it's central master, which delegates build job execution to idle slave nodes.
+Using the [Jenkins Swarm Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Swarm+Plugin) each slave registers itself at its central master, which delegates build job execution to idle slave nodes.
 Each build job is configured to carry one or more `label`s, which control that they get only executed on slaves which can support these kind of jobs.
 This way we can separate e.g. [Selenium](http://www.seleniumhq.org/) integration tests from unit tests.
 
 # Outlook
 
 We want to offer each team an easy way to setup and manage their own dedicated CI infrastructure and tweak it to their specific needs.
-By spreading the load of executing build jobs to each developer's machine we can further shorten the time a team needs to wait for the [GitHub pull request builder plugin](https://wiki.jenkins-ci.org/display/JENKINS/GitHub+pull+request+builder+plugin) to check if a pull request is safe to merge into the main development line, thus preventing stale pull requests and later merge hell.
+By spreading the load of executing build jobs to various developer's machine we can further shorten the time a team needs to wait for the [GitHub pull request builder plugin](https://wiki.jenkins-ci.org/display/JENKINS/GitHub+pull+request+builder+plugin) to check if a pull request is safe to merge into the main development line, thus preventing stale pull requests and merge hell later.
 We could also offload more slaves to e.g. [Amazon EC2](https://aws.amazon.com/ec2/), if we really need the compute power.
 The process of moving our custom Jenkins installations and job configurations to this new CI infrastructure has just started and we are eager to learn how this will turn out in the future.
