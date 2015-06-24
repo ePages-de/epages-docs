@@ -54,7 +54,7 @@ If you want to create a new job based on an existing one, you should do this in 
 Here a very nice plugin comes to help: the [Job DSL Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Job+DSL+Plugin) allows the creation of jobs from simplified DSL ([Domain Specific Language](http://martinfowler.com/books/dsl.html)) descriptions, which are much nicer to read and write than the XML configuration files.
 All you need to create your jobs is a single so-called _seed_ job, which (in our case) pulls the job definitions as Groovy DSL scripts from Git to generate the desired jobs.
 
-The seed job can be run whenever there are changes in the DSL scripts for the jobs, and updates the configuration of changed jobs accordingly.
+The _seed_ job can be run whenever there are changes in the DSL scripts for the jobs, and updates the configuration of changed jobs accordingly.
 Existing build metadata, like next build number files, is not touched by such an update.
 
 ## Handling of job metadata
@@ -68,10 +68,10 @@ All other job metadata is either not really important, like symbolic links to th
 ## Running Jenkins slaves on developer machines
 
 Being able to run lots of build jobs in parallel is key to receiving fast feedback from our CI infrastructure.
-With modern desktops and laptops there is enough idle CPU and RAM resources available in our offices most of the time, which we want to use for this purpose by running [Jenkins slave](https://wiki.jenkins-ci.org/display/JENKINS/Step+by+step+guide+to+set+up+master+and+slave+machines).
+With modern desktops and laptops there is enough idle CPU and RAM resources available in our offices most of the time, which we want to use for this purpose by running [Jenkins slaves](https://wiki.jenkins-ci.org/display/JENKINS/Step+by+step+guide+to+set+up+master+and+slave+machines).
 In order not to interfere with the operating system and tools installation on each developer's machine, we create virtual images (or maybe even [Docker](https://www.docker.com/) containers in the future) containing all the components needed for a Jenkins slave to execute build jobs.
 Using the [Jenkins Swarm Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Swarm+Plugin) each slave registers itself at its central master, which delegates build job execution to idle slave nodes.
-Each build job is configured to carry one or more `label`s, which control that they get only executed on slaves which can support these kind of jobs.
+Each build job is configured to carry one or more _labels_, which control that they get only executed on slaves which can support these kind of jobs.
 This way we can separate e.g. [Selenium](http://www.seleniumhq.org/) integration tests from unit tests.
 
 # Outlook
