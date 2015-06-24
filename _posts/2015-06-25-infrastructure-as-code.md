@@ -27,7 +27,7 @@ Even making changes to a job configuration without adding any new plugins can le
 
 We were looking for ways to make it safe and easy to improve our build infrastructure.
 Using version control like [GitHub](https://github.com/) for all of our source code, it was natural to treat our infrastructure the same way and be able to roll back to a previous version without any hassle.
-Versioning whole images of Jenkins virtual servers didn't seem feasible and plugins like [JobConfigHistory](https://wiki.jenkins-ci.org/display/JENKINS/JobConfigHistory+Plugin) didn't go far enough.
+Versioning whole images of Jenkins virtual servers didn't seem feasible and plugins like [JobConfigHistory](https://wiki.jenkins-ci.org/display/JENKINS/JobConfigHistory+Plugin) did not cover managing plugin versions as well.
 
 ## Server provisioning using Ansible and Vagrant
 
@@ -44,11 +44,11 @@ The pragmatic solution we chose was to create the `config.xml` locally (but temp
 With the toolset described so far, the basic setup can be easily recreated any time.
 And since this is so easy now, we usually test our setup scripts by installing them to local [Vagrant](https://www.vagrantup.com/) machines.
 Especially for the global Jenkins configuration this is an essential step, which is even easier and faster due to Ansible's smart way of tracking installation state.
-Just reapply the Ansible playbook, and changes in configuration are active - and you are sure they are based on your version-managed infrastructure code!
+Just rerun the Ansible playbook and changes in the configuration are automatically applied; then you can be sure, that they are based on your version-managed infrastructure code!
 
 ## Job provisioning using Job DSL
 
-Usually, Jenkins jobs are created manually using the web UI, and are stored in XML configuration files.
+Usually, Jenkins jobs are created manually using the web UI and are stored in XML configuration files.
 These files are quite verbose, and are not nice to edit directly.
 If you want to create a new job based on an existing one, you should do this in an automated fashion.
 Here a very nice plugin comes to help: the [Job DSL Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Job+DSL+Plugin) allows the creation of jobs from simplified DSL ([Domain Specific Language](http://martinfowler.com/books/dsl.html)) descriptions, which are much nicer to read and write than the XML configuration files.
