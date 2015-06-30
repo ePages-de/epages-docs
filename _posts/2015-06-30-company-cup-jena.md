@@ -34,11 +34,11 @@ We did our best...
 
 {% image blog-company-cup-6.jpg %}{% endimage %}
 
-... but unfortunately the other teams, too.
+... but unfortunately the other teams had too.
 
 {% image blog-company-cup-7.jpg %}{% endimage %}
 
-Our team showed a lot of commitment, passion, team spirit and fun in thrilling matches and also was not frightened of full physical involvement. At the end, we won a cup, we don’t want to win again next time - the "red lantern" challenge cup for the last place:
+Our team showed a lot of commitment, passion, team spirit and fun in thrilling matches and also was not frightened of full physical involvement. In the end we won a cup, a cup that we don’t want to win again next time - the "red lantern" challenge cup for the last place:
 
 {% image blog-company-cup-8.jpg %}{% endimage %}
 
