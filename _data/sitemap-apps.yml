@@ -40,6 +40,12 @@
     - title: Submission guidelines
       link: page:apps-submit-guide
 
+- key: apps-tutorial
+  title: Tutorials
+  entries:
+    - title: How to develop an ePages app
+      link: page:tutorial-create-app
+
 - key: api-rest
   title: API reference
   entries:
