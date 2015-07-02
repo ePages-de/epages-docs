@@ -7,12 +7,12 @@ title: Submission guidelines
 We're excited that you want to create an app for ePages!
 Before you start creating it, it's important that you understand our guidelines.
 Our app submission guidelines will help you steer clear of difficulties as you develop your app and provide a structure for you to submit an app that suits our needs.
-The objective of your app should be meaningful and help our customers achieve their goals. Have fun coding!
+The objective of your app should be meaningful and help our customers achieve their goals: being a successful online merchant. Have fun coding!
 
 # Functionality
 
 * Make sure your app performs as described and advertised.
-Apps that crash or have bugs will be rejected.
+Apps that crash or have obvious bugs will be rejected.
 * Be transparent with your app documentation and features.
 Apps that include undocumented or hidden features will be rejected.
 * We love to receive the final and production ready version of your app.
@@ -41,7 +41,7 @@ Apps that perform contrary to this will be rejected.
 * We set a high value on security.
 We will reject apps that transmit viruses as well as files, code or programs that disrupt, damage or spy on our customer's data.
 * Protect customer data.
-We will not accept apps that require our customers to share e.g. their email address or date of birth in order to function.
+We will not accept apps that require our customers to share e.g. their email address or date of birth if not necessary for the app's functionality.
 
 # Other
 
