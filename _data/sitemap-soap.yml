@@ -4,6 +4,9 @@
     - title: Overview
       link: page:soap-overview
 
+    - title: Access
+      link: page:soap-access
+
     - title: API call limit
       link: page:soap-api-call-limit
 
@@ -13,19 +16,24 @@
     - title: Versions
       link: page:soap-version
 
-- key: api-integration
-  title: Integration
+- key: api-implementation
+  title: Implementation
   entries:
     - title: Introduction
       link: page:soap-introduction
 
-    - title: Authentication
+    - title: Use cases
+      link: page:soap-use-cases
+
+    - title: Connect an app
       link: page:soap-authentication
 
 - key: api-soap
   title: API Reference
   entries:
-    - title: Resources
+    - title: Web service directory
+      link: page:soap-directory
+    - title: Web services
       link: page:soap-api
 
 - key: soap-more
