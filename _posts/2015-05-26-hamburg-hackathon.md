@@ -5,13 +5,13 @@ date: "2015-05-28 10:30:00"
 icon: cog
 tags: hackathon
 categories: tech-stories
-authors: ["Andreas Grohmann"]
+authors: ["Andreas"]
 ---
 
 Lie-in on the long weekend?! No way! Last weekend I was attending the 2nd Hamburg Hackathon organised by Hamburg Geekettes and App Camps. It was all about awesome - and not to forget - pitching (!) ideas, creativity, motivated people and fantastic final presentations in a great atmosphere and cool setting. Curious for more?
 
 The event started with API presentations of well-known companies such as XING, Twitter, Braintree/PayPal, SoundCloud or Sony. Even though it was on short notice, I was given a time slot to also present the ePages REST API.
-{% image blog-geekettes-present-API.png %}{% endimage %}
+{% image blog-geekettes-present-api.png %}{% endimage %}
 
 When it came to pitching our ideas, I pulled out mine: build a simple ePages Android app using the Ionic framework and AngularJS. But as there were so many pitches, there weren't enough supporters for mine. Could be worse! I was ready to hack! I joined the "Runanas" pitch, that matched my interest and I thought would be much fun developing. The goal was to build an app that uses the Sony LifeLog API to find a matching jogging partner.
 {% image blog-geekettes-runanas-app.png %}{% endimage %}

@@ -5,7 +5,7 @@ date: "2015-04-29 12:00:00"
 icon: comments
 tags: javascript information jobs
 categories: conferences
-authors: ["Paolo Priotto"]
+authors: ["Paolo"]
 ---
 
 **A whole weekend full of JavaScript!** Last weekend I had the chance of attending the `JS Unconf` in Hamburg to gather the latest information on JavaScript. Here is a summary of what it was all about:

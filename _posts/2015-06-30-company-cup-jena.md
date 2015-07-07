@@ -5,7 +5,7 @@ date: "2015-06-30 08:00:00"
 icon: users
 tags: team event
 categories: events
-authors: ["Björn Roddeck"]
+authors: ["Björn"]
 ---
 On Friday the 19th of June 2015, the first “Jenaer Unternehmenscup” (Jena Company Cup) took place.
 It was a one-day football tournament for organisations and companies in and around Jena.

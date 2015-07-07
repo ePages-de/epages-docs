@@ -5,7 +5,7 @@ date: "2015-04-02 12:00:00"
 icon: code
 tags: misc
 categories: tech-stories conferences
-authors: ["Birgit Bader"]
+authors: ["Birgit"]
 ---
 
 **Come and meet us in real life @ code.talks, Hamburg!** We are Java Track Sponsor for one of the largest developer conferences in Europe. Sign up for `code.talks` on September 29 and 30, 2015 to meet with ePages developers and designers. This will be a great chance to network, exchange experience and discuss best practices.
