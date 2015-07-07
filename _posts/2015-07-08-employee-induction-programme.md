@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to welcome new employees"
+title: "How ePages gives new developers a good start"
 date: "2015-07-08 06:02:32"
 icon: sign-in
 tags: induction employee welcome introduction onboarding
@@ -8,7 +8,7 @@ categories: jobs
 authors: ["Birgit Bader"]
 ---
 
-Most likely, everyone already has made their experience with being oriented to a new organisation.
+Most likely, everyone reading this already has made their experience with being oriented to a new organisation.
 Some might tell stories about the best first workday they ever had, others might have just repressed the thoughts about a scaring introductory day.
 The first week of July, a bunch of new developers started at ePages.
 What did we do to give them a good start and make their first days a success?
@@ -34,7 +34,7 @@ Here at ePages we call them "buddies".
 
 # 3. First work day: Meet with new employees right away
 
-When having arrived at the office, HR welcomes the new employees, a round of introductions follows and the further course of the day will be explained.
+When having arrived at the office, our human resources coordinator welcomes the new employees, a round of introductions follows and the further course of the day will be explained.
 
 {% image blog-employee-induction-CTO.jpg %}{% endimage %}
 
@@ -86,11 +86,12 @@ Now it's team time: Setting up the workplace, configuring the laptop, collecting
 
 # And what's next?
 
-It's most probably information overkill.
 The first day is over and the new colleagues have lot's of new information in their luggage.
-The agenda for the following days contains some more interesting topics and valuable tipps for a good start at ePages.
+The agenda for the following days contains some more interesting topics and valuable tips for a good start at ePages.
+Here is what our typical agenda looks like:
 
 {% image blog-employee-induction-agenda.png %}{% endimage %}
 
-Certainly, it takes plenty of time and coaching to get new employees up to speed.
-But it will lay the groundwork to get them familiar with the team and ensures, they feel like valued members of the company.
+Certainly, it takes plenty of time and coaching to get new employees fully familiar with the company and all work processes.
+With our induction programme we are laying the groundwork to make this process as quickly as possible.
+We want to ensure that our new colleagues feel integrated into the team right from the start.
