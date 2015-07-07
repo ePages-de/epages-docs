@@ -59,54 +59,77 @@ task :test do
       files = find_files
       errors = []
       files.each do |file|
-        lines = read_file_lines(file)
-        errors += check_line_endings(file, lines)
-        errors += check_trailing_whitespaces(file, lines)
-        errors += check_indentation(file, lines)
+        errors += check_line_endings(file)
+        errors += check_trailing_whitespaces(file)
+        errors += check_indentation(file)
+        errors += check_filename(file)
       end
 
       errors.each do |error|
-        puts "#{error.file}:#{error.line.line_num} #{error.message}".red
+        if error.line
+          puts "#{error.file}:#{error.line.line_num} #{error.message}".red
+        else
+          puts "#{error.file} #{error.message}".red
+        end
       end
       abort if errors.length > 0
     end
 
-    def check_line_endings(file, lines)
+    def check_line_endings(file)
       errors = []
-      lines.each do |line|
-        if line.raw.end_with? "\r\n"
-          errors << LinterError.new(file, line, 'Found windows line ending (CRLF)')
-        end
+      if ['.html', '.scss', '.js', '.yml', '.md'].include? File.extname(file)
+        lines = read_file_lines(file)
+        lines.each do |line|
+          if line.raw.end_with? "\r\n"
+            errors << LinterError.new(file, line, 'Found windows line ending (CRLF)')
+          end
 
-        if line.raw.end_with? "\r"
-          errors << LinterError.new(file, line, 'Found old Macintosh line ending (LF)')
+          if line.raw.end_with? "\r"
+            errors << LinterError.new(file, line, 'Found old Macintosh line ending (LF)')
+          end
         end
       end
       errors
     end
 
-    def check_trailing_whitespaces(file, lines)
+    def check_trailing_whitespaces(file)
       errors = []
-      lines.each do |line|
-        if line.content =~ /\s+$/
-          errors << LinterError.new(file, line, 'Found trailing whitespaces')
+      if ['.html', '.scss', '.js', '.yml', '.md'].include? File.extname(file)
+        lines = read_file_lines(file)
+        lines.each do |line|
+          if line.content =~ /\s+$/
+            errors << LinterError.new(file, line, 'Found trailing whitespaces')
+          end
         end
       end
       errors
     end
 
-    def check_indentation(file, lines)
+    def check_indentation(file)
       errors = []
-      lines.each do |line|
-        if line.content =~ /^\s*\t+\s*/
-          errors << LinterError.new(file, line, 'Contains tabs in indentation')
+      if ['.html', '.scss', '.js', '.yml', '.md', '.rb'].include? File.extname(file)
+        lines = read_file_lines(file)
+        lines.each do |line|
+          if line.content =~ /^\s*\t+\s*/
+            errors << LinterError.new(file, line, 'Contains tabs in indentation')
+          end
         end
+      end
+      errors
+    end
+
+    def check_filename(file)
+      errors = []
+      unless file =~ /^[a-z0-9\-\_\.\/]+$/
+        errors << LinterError.new(file, nil, 'Filenames must only contain lower case letters, numbers, dashes, underscores or points')
       end
       errors
     end
 
     def find_files
-      Dir.glob(File.join(@dir, @glob)).select { |file| not @ignore.any? { |ign| file.start_with? ign } }
+      Dir.glob(File.join(@dir, @glob))
+        .select { |file| not @ignore.any? { |ign| file.start_with? ign } }
+        .select { |file| File.file?(file) }
     end
 
     def read_file_lines(file)
@@ -114,7 +137,7 @@ task :test do
     end
   end
 
-  Linter.new('.', '**/*.{html,scss,js,yml,md}', ['./.', './_site/', './_sass/bootstrap/', './vendor/']).run
+  Linter.new('.', '*/**/*.*', ['./.git', './.sass_cache', './_site/', './_sass/bootstrap/', './_sass/font-awesome/', './assets/fonts', './vendor/', './README.md']).run
 end
 
 task :test do
