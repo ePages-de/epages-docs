@@ -1,7 +1,7 @@
 ---
 layout: page
 key: soap-api
-title: Resources
+title: Web services
 ---
 
 [Link to the ePages SOAP web services.](https://bintray.com/artifact/download/epages/maven/de.epages.soapclient-documentation/1.4.16/de.epages.soapclient-documentation-1.4.16.zip)
