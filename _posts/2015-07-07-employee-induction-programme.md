@@ -5,7 +5,7 @@ date: "2015-07-07 07:32:32"
 icon: sign-in
 tags: induction employee welcome introduction onboarding
 categories: jobs
-authors: ["Birgit Bader"]
+authors: ["Birgit"]
 ---
 
 Most likely, everyone reading this has already had the experience of starting at a new company.
@@ -36,7 +36,7 @@ Here at ePages we call them "buddies".
 
 When having arrived at the office, our human resources coordinator welcomes the new employees, a round of introductions follows and the further course of the day will be explained.
 
-{% image blog-employee-induction-CTO.jpg %}{% endimage %}
+{% image blog-employee-induction-cto.jpg %}{% endimage %}
 
 Our CTO gives a brief introduction including:
 

@@ -5,7 +5,7 @@ date: "2015-06-11 10:51:25"
 icon: ship
 tags: docker
 categories: tech-stories
-authors: ["Christian Hoffmeister"]
+authors: ["Christian"]
 ---
 
 At the moment [Docker][docker] is one of the hottest topics for devops as well as for developers.

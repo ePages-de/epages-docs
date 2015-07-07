@@ -5,7 +5,7 @@ date: "2015-05-28 13:35:00"
 icon: compass
 tags: RESTful API documentation RAML RamlParser
 categories: tech-stories
-authors: ["Birgit Bader"]
+authors: ["Birgit"]
 ---
 
 I was a real newbie in the field of software development, with a career background as a Technical Writer mainly in mechanical/electrical engineering and consumer goods businesses. I took this fresh challenge and find myself now right in the middle of an exciting path to a state-of-the-art RESTful API documentation. Interested in my story how ePages tackled this? Read on!
