@@ -33,9 +33,10 @@ layout: page
 
 <div class="post-share">
   {% assign full_url = page.url | prepend: site.baseurl | prepend: site.url %}
+  {% assign title = page.title %}
   <h3>Share</h3>
   <ul class="socialmedia">
-    <li><a href="https://twitter.com/intent/tweet?url={{ full_url | url_encode }}&via=epagesdevs&tw_p=tweetbutton" target="_blank" title="Share via Twitter"><span class="icon-twitter"></span></a></li>
+    <li><a href="https://twitter.com/intent/tweet?text={{ title | url_encode }}&url={{ full_url | url_encode }}&via=epagesdevs&tw_p=tweetbutton" target="_blank" title="Share via Twitter"><span class="icon-twitter"></span></a></li>
     <li><a href="https://www.facebook.com/sharer/sharer.php?u={{ full_url | url_encode }}" target="_blank"><span class="icon-facebook" title="Share via Facebook"></span></a></li>
     <li><a href="https://plus.google.com/share?url={{ full_url | url_encode }}" target="_blank"><span class="icon-googleplus" title="Share via Google+"></span></a></li>
   </ul>
