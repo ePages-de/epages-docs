@@ -4,6 +4,17 @@ key: apps-glossary
 title: Glossary
 ---
 
+<div class="btn-group" role="group">
+    <button type="button" class="btn btn-default"><a href="#a">A</a></button>
+    <button type="button" class="btn btn-default"><a href="#c">C</a></button>
+    <button type="button" class="btn btn-default"><a href="#h">H</a></button>
+    <button type="button" class="btn btn-default"><a href="#j">J</a></button>
+    <button type="button" class="btn btn-default"><a href="#m">M</a></button>
+    <button type="button" class="btn btn-default"><a href="#o">O</a></button>
+    <button type="button" class="btn btn-default"><a href="#r">R</a></button>
+    <button type="button" class="btn btn-default"><a href="#u">U</a></button>
+</div>
+
 # A
 
 ## Access Token
