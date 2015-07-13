@@ -7,8 +7,9 @@ title: Error handling
 API calls return error data that your client application can use to identify and resolve errors.
 If an error occurs during the invocation of an API call, the API provides the following types of error handling:
 
-# API data or process error (epages:TError)
-If errors occures on the server in the SOAP API during processing data if may produces errors of type TError defined in ePagesTypes.xsd
+# API data or process error (epages:`TError`)
+
+If an error occurs on the SOAP API server during data processing it may be of the type `TError` as defined in ePagesTypes.xsd
 {% highlight xml %}
 <xs:complexType name="TError">
   <xs:annotation>
@@ -23,9 +24,9 @@ If errors occures on the server in the SOAP API during processing data if may pr
   </xs:all>
 </xs:complexType>
 {% endhighlight %}
-the error can related to the whole rersponse, but if you process a list of date it could related to a part of it like in this example which tries to create invoice, packing slip and credit not of a non existing order:
+The error can be related to the whole response, but if you process a list of data it could be related to a part of it. Refer to the following example that tries to create invoice, packing slip and credit of a non existing order:
 {% highlight xml %}
-<soap:Envelope ...">
+<soap:Envelope>
   <soap:Body>
     <createResponse>
       <OrderDocuments soapenc:arrayType="namesp347:TCreate_Return[3]" xsi:type="soapenc:Array">
@@ -59,11 +60,12 @@ the error can related to the whole rersponse, but if you process a list of date 
 </soap:Envelope>
 {% endhighlight %}
 
-# missing soap service or similar fault in soap protocol (soap:fault)
-If the request can not handle by the epages service because some error in the soap protokol before, then it occures a soap error with an HTTP 500 error status code and a content like:
+# Missing SOAP service or similar fault in SOAP protocol (`soap:fault`)
+
+If the request cannot be handled by the ePages service due to some error in the previous SOAP protocol, a SOAP error occurs with an HTTP 500 status code and a content such as:
 {% highlight xml %}
 <?xml version="1.0" encoding="UTF-8"?>
-<soap:Envelope ...">
+<soap:Envelope>
   <soap:Body>
     <soap:Fault>
       <faultcode>soap:Server</faultcode>
@@ -79,10 +81,9 @@ If the request can not handle by the epages service because some error in the so
   </soap:Body>
 </soap:Envelope>
 {% endhighlight %}
-some more detail could be found in epages log files related to the Hashcode and the error GUID
 
-# wrong authentication (http:error)
-By missing or wrong authentication it occures a HTTP error only before passing to the epages service. It responses a statuscode 401 only without any content
+Find more details in the ePages log files related to the hash code and the error GUID.
 
+# Incorrect authentication (`http:error`)
 
-
+If an authentication is missing or incorrect, an HTTP error occurs with an HTTP 401 status code only without content. The error occurs even before the request will be passed to the ePages service.
