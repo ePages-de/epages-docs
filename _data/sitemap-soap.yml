@@ -16,7 +16,7 @@
     - title: Versions
       link: page:soap-version
 
-- key: api-implementation
+- key: soap-implementation
   title: Implementation
   entries:
     - title: Introduction
@@ -27,6 +27,12 @@
 
     - title: Connect an app
       link: page:soap-authentication
+
+- key: soap-tutorials
+  title: Tutorials
+  entries:
+    - title: How to use a web service
+      link: page:tutorial-use-webservice
 
 - key: api-soap
   title: API Reference
