@@ -2,7 +2,14 @@
 layout: page
 key: apps-glossary
 title: Glossary
+categories: ['a','c','h','j','m','o','r','u']
 ---
+
+<div class="btn-group" role="group">
+ {% for letter in page.categories %}
+   <button type="button" class="btn btn-default"><a href="#{{ letter }}">{{ letter | upcase }}</a></button>
+ {% endfor %}
+</div>
 
 # A
 
