@@ -8,7 +8,7 @@ categories: tech-stories
 authors: ["Carsten", "Karsten"]
 ---
 
-If we talk about [pipelining]((https://en.wikipedia.org/wiki/Pipeline_(software)) at ePages, we understand it as an automatic workflow.
+If we talk about [pipelining](https://en.wikipedia.org/wiki/Pipeline_(software)) at ePages, we understand it as an automatic workflow.
 We are integrating many steps using different tools to reach a specific goal: creating a simple way to provide a highly specialised system.
 
 This system can be used for development purposes, external or even live deployment.
