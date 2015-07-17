@@ -3,7 +3,7 @@ layout: post
 title: "Creating systems with pipelining"
 date: "2015-09-xx"
 icon: wrench
-tags: pipelines, virtual mashines, development systems
+tags: ["pipelines", "virtual machines", "development systems"]
 categories: tech-stories
 authors: ["Carsten", "Karsten"]
 ---
