@@ -4,7 +4,7 @@ title: "Creating systems with pipelining"
 date: "2015-09-xx"
 icon: wrench
 tags: pipelines, virtual mashines, development systems
-categories: Application Management
+categories: tech-stories
 authors: ["Carsten", "Karsten"]
 ---
 
