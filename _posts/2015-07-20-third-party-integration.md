@@ -16,7 +16,7 @@ Read further, why it is not the easiest thing to integrate third-parties and how
 
 {% image blog-third-party-overview.png %}{% endimage %}
 
-Example: A customer buys something. They could choose e.g. PayPal as payment method and DHL as delivery method.
+Example: If a customer buys a product in an ePages online shop, they could choose e.g. PayPal as payment method and DHL as delivery method.
 The customer could also obtain an insurance with Trusted Shops.
 (Read further [here](http://www.epages.com/en/partner/technology-partner/) to get an overview of our technology partners.)
 A checkout alone can easily have three third-party dependencies.
@@ -32,26 +32,26 @@ At the same time, also existing companies expand their service portfolio in orde
 These circumstances keep us busy not only in integrating periodically new services but also in maintaining the existing integrations.
 
 If companies expand abroad, as it is the case at ePages, it might be required to include additional services, to being attractive for the merchants in that specific country.
-We integrated USPS and FedEx, since it would not make any sense to enter the US market without an integration of the most important US shipping agents.
+We integrated e.g. USPS and FedEx, since it would not make any sense to enter the US market without an integration of these common US shipping agents.
 
 # Third-party libraries vs Third-party web services
 
 Today's software is mostly based on third-party components, as there are already proven solutions in place that can be easily reused.
 Furthermore, these project are supported by great communities that continuously develop the software and often are absolute experts in this respective field.
 
-However, with regards to third-party components we have to distinguish between third-party library and third-party web service.
+However, with regards to third-party components we have to distinguish between third-party libraries and third-party web services.
 Third-party libraries are integrated directly into the code base and remain unchanged until consciously a new library version will be included.
 
 Working with third-party web services is more complex.
-Even if a third-party web service, other than a third-party library, is not directly expands the code base, one must never forget:
-By integrating a third-party service, this service will be part of the own software.
+Even if a third-party web service, other than a third-party library, does not directly expand the code base, one must never forget:
+By integrating a third-party service, this service will be part of your software.
 The software will be expanded by functionality that is dependent on the availability of the third-party web service and acts as expected.
 This fact puts special demands on the developers.
 
 # The challenge
 
-Mostly one knows only the endpoint of the third-party API and only a more or less useful documentation is available.
-The problem is, that not only the web service itself, but also both, the endpoint and the documentation, can change every time.
+Mostly one knows only the endpoint of the third-party web service and only a more or less useful documentation is available.
+The problem is, that not only the API itself, but also both, the endpoint and the documentation, can change every time.
 You will only notice the change, if something does not work anymore.
 Sometimes an SDK exists for the API that should facilitate working with it.
 But sometimes the SDK does not support the latest API version or the required programming language is not available.
@@ -62,7 +62,8 @@ The result is that integration problems cannot be fixed by our developers in Bar
 # The approach
 
 Ideally, we are in direct contact with the developers of the respective third-party to clarify any questions or concerns.
-Unfortunately, that is not always the case and we have to find it out by ourselves with the trial-and-error method or reverse engineering.
+Unfortunately, that is not always the case.
+In this case we have to find out by ourselves how the web service works using the trial-and-error method or reverse engineering.
 
 When working with a SOAP API, the WSDL-file that describes the service, provides many helpful information.
 Using a tool such as SoapUI, such a file can be analysed easily.
@@ -76,10 +77,14 @@ To test our integrations we are writing Unit tests as well as integration and Se
 By carrying out these test we are alerted to these problems already at an early stage.
 
 Some companies even operate special test platforms with a separate endpoint.
-What sounds like a very depeloper-friendly offer, has a major disadvantage: doing the tests on one system and using a different system for production.
+What sounds like a very developer-friendly offer, has a major disadvantage: doing the tests on one system and using a different system for production.
 Ideally, the test system should act exactly as the live-system, but that is not always the case.
 This is especially annoying if after the rollout customers report problems that did not arise on the test platform.
 
 # The conclusion
 
-All in all one can say that third-party integrations are challenging for developers. But using suitable tools and a high test coverage can definitely help to master these challenges. Go for it!
+All in all one can say that third-party integrations are challenging for developers.
+But using suitable tools and a high test coverage can definitely help to master these challenges.
+Go for it!
+
+A special thanks to our technology partners for informing us just in time if they plan to make changes.
