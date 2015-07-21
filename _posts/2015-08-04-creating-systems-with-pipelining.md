@@ -26,6 +26,7 @@ The basic idea is simple. First thing we need is a system.
 
 # The system
 
+A virtualized hardware environment is the base for the system and managed by our vmware ESXi/vCenter Servers.
 This is fairly simple, due to the [vSphere Cloud Plugin](https://wiki.jenkins-ci.org/display/JENKINS/vSphere+Cloud+Plugin) for Jenkins, it is easy to construct a job building a basic virtual machine from a template.
 These templates are predefined with a set of CPU, RAM, disc space as well as an iPXE kickstart iso file that is specifically OS mounted.
 If it's needed, you can create and run an additional job changing the values of the machine before the install starts.
@@ -45,7 +46,7 @@ For example for networks without DHCP you can hard code a static IP for an insta
 The loaded ISO files are preseed values for the specified OS that include all information the installation process process needs to install the OS.
 At the moment Centos 6/7 and Debian 7/8 are supported from our side.
 After the installation, we have a first simple not very specialised system that could now be used.
-Now some magic Jenkins jobs do the trick and specialize the system.
+Now some magic Jenkins jobs do the trick and specialise the system.
 
 # Specialisation
 
@@ -60,5 +61,5 @@ The full process lasts about 10 to 15 minutes but depends on the specific config
 
 {% image blog-pipeline-Jenkins.png %} {% endimage %}
 
-In the Future we'd like to use the existing build pipelines to create distributed systems with our and other software.
+In the future we'd like to use the existing build pipelines to create distributed systems with our and other software.
 
