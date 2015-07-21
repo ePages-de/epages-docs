@@ -26,8 +26,7 @@ The basic idea is simple. First thing we need is a system.
 
 # The system
 
-A virtualized hardware environment is the base for the system and managed by our vmware ESXi/vCenter Servers.
-This is fairly simple, due to the [vSphere Cloud Plugin](https://wiki.jenkins-ci.org/display/JENKINS/vSphere+Cloud+Plugin) for Jenkins, it is easy to construct a job building a basic virtual machine from a template.
+This is fairly simple, due to the [vSphere Cloud Plugin](https://wiki.jenkins-ci.org/display/JENKINS/vSphere+Cloud+Plugin) for Jenkins, it is easy to construct a job, building a basic virtual machine from a template.
 These templates are predefined with a set of CPU, RAM, disc space as well as an iPXE kickstart iso file that is specifically OS mounted.
 If it's needed, you can create and run an additional job changing the values of the machine before the install starts.
 Managing the network environment is a little bit more challenging.
