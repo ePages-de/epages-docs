@@ -33,7 +33,7 @@ Managing the network environment is a little bit more challenging.
 In the simplest case a development system should be created, so the system needs an IP with internet access and an R/DNS entry.
 Here we killed two birds with one stone.
 By using i-doit we provide at first the information about the new system to our documentation system via REST API and in the second step calculate the next free ip in our network.
-Now we have the system documented and we have all information we need to create a [DHCP](https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol) and [DNS](https://en.wikipedia.org/wiki/Domain_Name_System) entry.
+The system is documented and we have all information we need to create a [DHCP](https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol) and [DNS](https://en.wikipedia.org/wiki/Domain_Name_System) entry.
 Using the API of i-doit the DHCP and DNS configuration files were generated, tested and deployed to our DHCP and DNS Servers.
 
 # Installation process
@@ -45,13 +45,13 @@ For example for networks without DHCP you can hard code a static IP for an insta
 The loaded ISO files are preseed values for the specified OS that include all information the installation process process needs to install the OS.
 At the moment Centos 6/7 and Debian 7/8 are supported from our side.
 After the installation, we have a first simple not very specialised system that could now be used.
-Now some magic Jenkins jobs do the trick and specialise the system.
+Some magic Jenkins jobs do the trick and specialise the system now.
 
 # Specialisation
 
-Now you can explore your creativity.
+Here you can explore your creativity.
 Many jobs are available: from [security related configurations](https://www.linode.com/docs/security/securing-your-server) over installing of different software to installing our full ePages to a system with a specific version or project specific configurations.
-In our situation it depends on the use case. For example internal development systems have other security related configurations then external systems, or test and live systems can have project specific configurations depending on what our customers need.
+In our situation it depends on the use case. For example internal development systems have other security related configurations than external systems, or test and live systems can have project specific configurations depending on what our customers need.
 
 # The pipeline
 
