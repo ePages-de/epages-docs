@@ -60,7 +60,7 @@ we are retrieving the relevant information from the website
 and compare it with the expected test data.
 
 If you would like to understand how Selenium WebDriver is working
-internally you can read a description of its architecture 
+internally you can read a description of its architecture
 [here][selenium-architecture].
 
 # Basic concepts of the ESF
@@ -74,7 +74,7 @@ The ESF is a Java project built upon Selenium WebDriver
 and the test framework [TestNG]. It uses [Gradle] as build tool and
 supports starting tests from within an IDE (e.g. Eclipse) and from
 the command-line. Browser start and test report generation is
-controlled with the help of TestNG configuration methods and event listeners. 
+controlled with the help of TestNG configuration methods and event listeners.
 
 The actual test suite consists of test scripts and Page Objects.
 Page Objects are abstractions of individual web pages. They provide
