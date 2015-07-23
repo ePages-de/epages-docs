@@ -44,28 +44,6 @@ module Jekyll
     end
   end
 
-  class ApiResourceConsolePage < Page
-    def initialize(site, base, dir, key_prefix, raml, raml_resource, raml_method)
-      slugified = Jekyll::Utils::slugify("#{raml_method.method}-#{raml_resource.relative_uri}")
-
-      @site = site
-      @base = base
-      @dir = dir
-      @name = slugified + '-console.html'
-
-      self.process(@name)
-      self.read_yaml(File.join(base, '_layouts'), 'resource-console.html')
-
-      self.data['key'] = key_prefix + slugified + '-console'
-      self.data['title'] = raml_resource.display_name
-      self.data['category'] = 'raml-console'
-
-      self.data['raml'] = RamlLiquidifyer.new(raml)
-      self.data['raml_resource'] = RamlLiquidifyer.new(raml_resource)
-      self.data['raml_method'] = RamlLiquidifyer.new(raml_method)
-    end
-  end
-
   class ApiResourcePageGenerator < Generator
     def generate(site)
       site.config['raml'].each do |raml_config|
@@ -77,9 +55,7 @@ module Jekyll
 
         pages = raml.resources.map { |res|
           res.methods.map { |_,meth|
-            p1 = ApiResourcePage.new(site, site.source, raml_config['url_prefix'], raml_config['key_prefix'], raml, res, meth)
-            p2 = ApiResourceConsolePage.new(site, site.source, raml_config['url_prefix'], raml_config['key_prefix'], raml, res, meth)
-            [p1, p2]
+            ApiResourcePage.new(site, site.source, raml_config['url_prefix'], raml_config['key_prefix'], raml, res, meth)
           }
         }
         site.pages += pages.flatten

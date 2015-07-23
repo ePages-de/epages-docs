@@ -14,7 +14,7 @@ Developing a REST API based on JSON to simply connect third party applications t
 
 We wanted to publish the API documentation online - no sooner said than done: one of our developers was very committed to support this project. He built a Jekyll-based static html generation tool, to create documentation from Markdown files.
 
-One of the main requirements for our API documentation was to automatically import RAML files into the documentation tool, to easily bridge development and documentation and to avoid double work. To achieve this, he developed a Ruby-based open source library, the [raml_parser](https://github.com/ePages-de/raml_parser). The raml_parser reads RAML files and returns the respective information. On top of that, he came up with a Jekyll plugin using the raml_parser to generate an API console that now enriches our documentation.
+One of the main requirements for our API documentation was to automatically import RAML files into the documentation tool, to easily bridge development and documentation and to avoid double work. To achieve this, he developed a Ruby-based open source library, the [raml_parser](https://github.com/ePages-de/raml_parser). The raml_parser reads RAML files and returns the respective information.
 
 Meanwhile, I made myself familiar with RAML (RESTful API Modeling Language), which is a useful tool to describe RESTful APIs in a structured and simple way.
 RAML allows to define simple patterns that help reduce repetitions in an API. Resources and methods can be displayed easily and filled with custom details. It also allows to include markdown-formatted descriptions or entire markdown documentation sections.
