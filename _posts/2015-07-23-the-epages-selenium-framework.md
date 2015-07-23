@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The ePages Selenium Framework"
-date: "2015-07-21 17:06:00"
+date: "2015-07-23 09:24:08"
 icon: linux
 tags: ["selenium", "test", "continuous delivery"]
 categories: tech-stories
@@ -142,4 +142,3 @@ before Application Management roles out a new ePages version to our customers.
 [Continuous Delivery Pipeline]: http://martinfowler.com/bliki/DeploymentPipeline.html
 [selenium-architecture]: http://www.aosabook.org/en/selenium.html
 [spec]: https://w3c.github.io/webdriver/webdriver-spec.html
-
