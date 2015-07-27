@@ -22,6 +22,9 @@
                 "termsAndConditions": {
                     "name": "Right of withdrawal",
                 },
+                "shippingInformation": {
+                   "name": "Shipping terms"
+                },
                 "links":
                     [
                         {
@@ -39,6 +42,10 @@
                         {
                             "rel": "withdrawal",
                             "href": "http://<hostname>/rs/shops/DemoEp6/legal/rights-of-withdrawal"
+                        },
+                        {
+                            "rel": "shipping",
+                            "href": "http://<hostname>/rs/shops/DemoEp6/legal/shipping-information"
                         }
                     ],
               }
@@ -120,4 +127,23 @@
                         "navigationCaption": "Right of withdrawal",
                         "shortDescription": null,
                         "description": "You adapt this text via the preview or data sheet view under the &quot;Content/Categories&quot; menu item of your Administration.<br /><br /> Indicate to customers their right of withdrawal."
+                    }
+
+  /shipping-information:
+      displayName: Shipping information
+      description: Retrieve the shipping terms and information of a shop.
+      get:
+        description: Returns detailed information about possible shipping types and the costs incurred. Also display the costs for shipment abroad.
+        is: [ locale ]
+        responses:
+          200:
+            body:
+              application/json:
+                example: |
+                    {
+                        "name": "Shipping terms",
+                        "title": "Shipping terms - Timo",
+                        "navigationCaption": "Delivery",
+                        "shortDescription": "Possible shipping types and the costs incurred",
+                        "description": "<p>On this page, provide your customers with detailed information about possible shipping types and the costs incurred. Also display the costs for shipment abroad.<p/><p>Specify which countries you ship to.</p>"
                     }
