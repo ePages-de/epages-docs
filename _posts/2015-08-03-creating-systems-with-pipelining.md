@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Creating systems with pipelining"
-date: "2015-08-04"
+date: "2015-08-03"
 icon: wrench
 tags: ["pipelines", "virtual machines", "development systems"]
 categories: tech-stories
