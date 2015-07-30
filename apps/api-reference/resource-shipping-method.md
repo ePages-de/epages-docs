@@ -1,7 +1,7 @@
 ---
 layout: page
 key: api-resources-shipping-methods
-title: Shipping methods
+title: ShippingMethods
 ---
 
 <ul id="resource-list">
