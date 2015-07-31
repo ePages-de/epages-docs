@@ -14,7 +14,7 @@ So it was really a little relief to receive a very warm welcome on our first day
 
 Our first days were packed with different information sessions and trainings. Many departments introduced themselves and gave some insight about their work. This really helped to understand the company. One of the highlights was certainly the Scrum Training given by Anja. The session was a nice refresher regarding the principles of scrum and how they are implemented at ePages. Anja also gave us some interesting information about the transformation of ePages from a waterfall-oriented company to an agile one.
 
-{% blog-one-month-as-an-epagee-scrum.jpg %}{% endimage %}
+{% image blog-one-month-as-an-epagee-scrum.jpg %}{% endimage %}
 
 Another session we really enjoyed was the introduction of the ePages product held by André. He gave us an overview about the features of the product and also highlighted the strength and weaknesses. This was very helpful but the most interesting part of his session was when André talked about his experience from the ePages academy. The [ePages academy](|http://www.ePages.com/academy/en/) is series of events for our merchants that is about coaching and networking. So André could tell us what our merchants are doing with our product and could show some example shops. This was very valuable information .
 
