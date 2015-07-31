@@ -10,7 +10,7 @@ authors: ["Mathias", "Mats"]
 
 Starting a new job is always an adventure. You made a careful decision for a new job and now the first day is approaching. This day is especially exciting because it will give you the first impression if the decision for this particular position was the right one.
 
-So it was really a little relief to receive a very warm welcome on our first day. Dirk Jovy (VP Operations) and Harm Behrens (CTO) said hello from the management side and introduced ePages. Leana from HR made sure that all the organisational stuff was taken care of and Keun-Man - our system administrator - provided us with the hardware. So we were basically ready to start.
+So it was really a little relief to receive a very warm welcome on our first day. Dirk (VP Operations) and Harm (CTO) said hello from the management side and introduced ePages. Leana from HR made sure that all the organisational stuff was taken care of and Keun-Man - our system administrator - provided us with the hardware. So we were basically ready to start.
 
 Every new ePagee is assigned to a buddy - usually an experienced employee who should give the new guy a helping hand during the first weeks. Our buddies introduced us to everybody. It turned out that ePages is a very diverse company. The team is very international and has a good mix of age groups. You find people from Spain, Italy, Belarus, Brasil, people that are on their first job and also more experienced ones - and even parents ;-).
 
