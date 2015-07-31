@@ -18,7 +18,7 @@ Our first days were packed with different information sessions and trainings. Ma
 
 {% image blog-one-month-as-an-epagee-scrum.jpg %}{% endimage %}
 
-Another session we really enjoyed was the introduction of the ePages product held by André. He gave us an overview about the features of the product and also highlighted the strength and weaknesses. This was very helpful but the most interesting part of his session was when André talked about his experience from the ePages academy. The [ePages academy](|http://www.ePages.com/academy/en/) is series of events for our merchants that is about coaching and networking. So André could tell us what our merchants are doing with our product and could show some example shops. This was very valuable information .
+Another session we really enjoyed was the introduction of the ePages product held by André. He gave us an overview about the features of the product and also highlighted the strengths and challenges. This was very helpful but the most interesting part of his session was when André talked about his experience from the ePages academy. The [ePages academy](|http://www.ePages.com/academy/en/) is series of events for our merchants that is about coaching and networking. So André could tell us what our merchants are doing with our product and could show some example shops. This was very valuable information .
 
 Besides the training and introduction sessions there was not much room for being productive. So it was really time to join our teams full-time.
 
