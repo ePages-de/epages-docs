@@ -58,7 +58,7 @@ In our situation it depends on the use case. For example internal development sy
 Here is a simplified picture of the whole pipeline.
 The full process lasts about 10 to 15 minutes but depends on the specific configuration you choose.
 
-{% image blog-pipeline-Jenkins.png %} {% endimage %}
+{% image blog-pipeline-jenkins.png %} {% endimage %}
 
 In the future we'd like to use the existing build pipelines to create distributed systems with our and other software.
 
