@@ -22,6 +22,6 @@ Another session we really enjoyed was the introduction of the ePages product hel
 
 Besides the training and introduction sessions there was not much room for being productive. So it was really time to join our teams full-time.
 
-Not surprisingly the first couple of weeks working with the team were packed with new information. The first meetings we attended where filled with topics, technologies and internal terms we haven't heard of. But the colleagues where very helpful and friendly, answering all our questions patiently. After a month at ePages there are still questions raising, but it feels like a deeper understanding of all the topics has started to grow and keeps increasing every day.
+Not surprisingly the first couple of weeks working with the team were packed with new information. The first meetings we attended were filled with topics, technologies and internal terms we haven't heard of. But the colleagues were very helpful and friendly, answering all our questions patiently. After a month at ePages there are still questions raising, but it feels like a deeper understanding of all the topics has started to grow and keeps increasing every day.
 
 Code-reviews and pair-programming are tools that are frequently used at ePages. It showed that this is extremely helpful especially for new team members - it helped us a lot to understand the product and the way we code at ePages.
