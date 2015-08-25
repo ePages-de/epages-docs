@@ -61,7 +61,7 @@ We will create the mentioned `callback.php` file, which will be called when a us
 The first thing we will do is set the client credentials you got from the developer app detail page.
 
     <?php
-    
+
     $client_id     = '0BE38CFF-F3B6-4D68-8F16-1CE270C028BC';
     $client_secret = 'DkRUi6uo6KzglHmwOhFkVYNhcumCTOlP';
 
@@ -124,7 +124,7 @@ After a successful request, we receive a JSON-encoded response and return the ex
             'client_id' => $client_id,
             'client_secret' => $client_secret
         ));
-        
+
         // curl options
         $curl_options = array(
             CURLOPT_URL => $url,
@@ -133,7 +133,7 @@ After a successful request, we receive a JSON-encoded response and return the ex
             CURLOPT_POSTFIELDS => $post_content,
             CURLOPT_RETURNTRANSFER => TRUE
         );
-        
+
         // curl request
         $curl = curl_init();
         curl_setopt_array($curl, $curl_options);
