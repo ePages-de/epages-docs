@@ -31,6 +31,10 @@ Go to the **Developer App** section in our **Apps & Themes** Store and [create a
 
 After choosing a name to your liking, you need to set the callback URL to your publicly available PHP script (e.g. `https://myapp.com/callback.php`), which we will implement later.
 
+{% callout info Note: %}
+We allow HTTP callback URLs for developer apps, but you need to provide an HTTPS URL once you want to submit the app to the App Store.
+{% endcallout %}
+
 Once you are done with that, the detail page will show your **client credentials**.
 
 {% image developer-app-details.png %}{% endimage %}
