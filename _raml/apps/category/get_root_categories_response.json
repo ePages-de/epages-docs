@@ -15,19 +15,16 @@
             {
                 "rel": "child",
                 "title": "Promotional products",
-                "type": "application/json",
                 "href": "http://localhost:8088/rs/shops/DemoShop/categories/532280A1-E02E-CE98-1E39-AC13320B637E"
             },
             {
                 "rel": "child",
                 "title": "Jackets",
-                "type": "application/json",
                 "href": "http://localhost:8088/rs/shops/DemoShop/categories/532280A1-838F-F1E5-A79D-AC13320B63C5"
             },
             {
                 "rel": "child",
                 "title": "Shoes",
-                "type": "application/json",
                 "href": "http://localhost:8088/rs/shops/DemoShop/categories/532280A1-B88F-8066-341E-AC13320B6350"
             }
         ]

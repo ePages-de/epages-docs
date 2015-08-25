@@ -1,0 +1,11 @@
+#%RAML 0.8
+displayName: Product Portals
+description: Returns the Products Feed File.
+get:
+  description: Returns the Products Feed File.
+  is: [ locale ]
+  responses:
+    200:
+      body:
+        application/json:
+          example: !include examples/product_portal_response.json

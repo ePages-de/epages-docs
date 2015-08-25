@@ -85,6 +85,7 @@
                     "rel": "related"
                 }
             ],
+            "sfUrl": "http://hostname/epages/shopId.sf/?ObjectPath=/Shops/shopId/Products/be_40401",
             "links": [
                 {
                     "rel": "self",
