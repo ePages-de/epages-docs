@@ -21,7 +21,7 @@ In order to get this code working, you need to setup your development environmen
 
 ### Sign up for an ePages Test Shop
 
-Simply go on [our website](epages-demo-signup) and sign up for a free account.
+Simply go on [our website][epages-demo-signup] and sign up for a free account.
 
 ### Create a Developer App
 
@@ -193,4 +193,4 @@ An overview of our available resources are listed in the [API reference](page:ap
 You can find the code in our [GitHub repository][github-demo-app-php].
 
 [github-demo-app-php]: https://github.com/pshingala/epphp
-[epages-demo-signup]: http://www.epages.com/de/produkte/demo-shop/
+[epages-demo-signup]: http://www.google.com
