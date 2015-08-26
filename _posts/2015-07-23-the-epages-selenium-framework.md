@@ -132,7 +132,7 @@ Our test suite consists of more than one hundred test scripts.
 They cover our most important features and there is a basic test
 for almost all payment and shipping integrations. Additionally
 the Consulting team is running their own test suite for provider specific features,
-before Application Management roles out a new ePages version to our customers.
+before Application Management rolls out a new ePages version to our customers.
 
 
 [Selenium]: http://www.seleniumhq.org/
