@@ -2,7 +2,14 @@
 layout: page
 key: soap-glossary
 title: Glossary
+categories: ['s','u','w','x']
 ---
+
+<div class="btn-group" role="group">
+ {% for letter in page.categories %}
+   <button type="button" class="btn btn-default"><a href="#{{ letter }}">{{ letter | upcase }}</a></button>
+ {% endfor %}
+</div>
 
 # S
 
