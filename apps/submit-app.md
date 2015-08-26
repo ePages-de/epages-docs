@@ -6,7 +6,9 @@ title: Submit an app
 
 # Your app is ready for takeoff?
 
-Yay! You're done with developing your awesome app and you're excited to publish it on our Apps & Themes Store? Congrats! We are just as excited as you are!
+Yay! You're done with developing your awesome app and you're excited to publish it on our App & Theme Store?
+Congrats!
+We are just as excited as you are!
 
 ## Let's go submit your app
 
@@ -21,7 +23,7 @@ In the drop down menu, choose the field **Developer apps** and click on your app
 ## Walk through the submission form
 
 The submission form validates for the **Client ID** and **Client Secret**.
-However, we'll ask you to provide us with additional information and graphics to get accepted into the App Store.
+However, we'll ask you to provide us with additional information and graphics to get accepted into the App & Theme Store.
 Asterisks ( * ) indicate a required field.
 
 ### About you
