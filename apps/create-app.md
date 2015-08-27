@@ -26,14 +26,14 @@ In the drop down menu, choose the field **Developer apps**.
 3. Fill out the input field **App name**.
 Specify the **Application Callback URL**.
 Make sure the URL is https and publicly accessible.
-Both input fields are mandatory.
-Click the button **Generate access data**.
+Note: HTTP Application Callback URLs can be used for developer apps, but you need to provide an HTTPS URL once you want to submit the app to the App & Theme Store.
+Once the input fields are filled out, click the button **Generate access data**.
     {% image fillout-app-name.png %}{% endimage %}
 
 4. You will be assigned a **Client ID** and a **Client Secret**.
     {% image test-shop-credentials.png %}{% endimage %}
 Happy coding! Once this is done, you can start coding away.
-You are free to use any kind of code language.
+You are free to use any kind of programming language.
 But when developing your app, please consider our [API call limit](page:apps-api-call-limit).
 
 5. Once you have developed your app, click the button **Test authorisation**.
