@@ -39,6 +39,14 @@ module Jekyll
           rescue
             ''
           end
+        },
+        {
+          'title' => 'Ruby',
+          'snippet' => begin
+            snippet_generator.ruby(raml_resource, raml_method.method.downcase)
+          rescue
+            ''
+          end
         }
       ]
     end
