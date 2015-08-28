@@ -53,7 +53,9 @@ True or false values.
 
 # Array
 
-An ordered collection of values. These are enclosed square brackets, i.e. an array begins with [ and ends with ]. The values are separated by comma. An array indexing can be started at 0 or 1. Arrays should be used when the key names are sequential integers.
+An ordered collection of values. These are enclosed square brackets, i.e. an array begins with [ and ends with ].
+The values are separated by comma.
+An array indexing can be started at 0 or 1. Arrays should be used when the key names are sequential integers.
 
 ## Example
 
@@ -71,7 +73,10 @@ Array with multiple objects:
 
 # Object
 
-An unordered set of name/value pairs. Objects are enclosed in curly braces, i.e. they start with { and end with }. Each name is followed by a colon and the name/value pairs are separated by comma. The keys must be strings and should be different from each other. Objects should be used when the key names are arbitrary strings.
+An unordered set of name/value pairs. Objects are enclosed in curly braces, i.e. they start with { and end with }.
+Each name is followed by a colon and the name/value pairs are separated by comma.
+The keys must be strings and should be different from each other.
+Objects should be used when the key names are arbitrary strings.
 
 ## Example
 

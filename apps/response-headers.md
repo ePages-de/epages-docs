@@ -4,7 +4,8 @@ key: apps-response-headers
 title: Response headers
 ---
 
-A successfully sent request (see [Request headers](page:apps-request-headers)), is followed by an HTTP response. The below table contains the response headers sent by the server.
+A successfully sent request (see [Request headers](page:apps-request-headers)), is followed by an HTTP response.
+The below table contains the response headers sent by the server.
 
 | Header      | Value      | Description    | Example   |
 |---------------|---------------| -------|----------|

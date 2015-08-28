@@ -39,6 +39,7 @@
   entries:
     - title: Web service directory
       link: page:soap-directory
+
     - title: Web services
       link: page:soap-api
 
