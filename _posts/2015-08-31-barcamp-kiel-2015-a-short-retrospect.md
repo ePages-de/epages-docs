@@ -8,16 +8,16 @@ categories: conferences
 authors: ["David"]
 ---
 
-Last weekend, more than 80 developers, designers, bloggers and shop owners participated in the [6. BarCamp in Kiel][barcampkiel], Germany. They look lectures and discussed several topics. This year, the focus was laid on technology, media and education. I've represented ePages there. Here's my short review on the topics.
+Last weekend, more than 80 developers, designers, bloggers and shop owners participated in the [6. BarCamp in Kiel][barcampkiel], Germany. They all joined different lectures and discussed several topics. This year, the focus was laid on technology, media and education. I've represented ePages there. Here's my short review on the topics.
 
 # What is a BarCamp?
 
-The BarCamp is an international conference with only user-generated lectures and speeches. Every person interested can join for free and take part in interesting discussions. The main topics are technology and media but most of the BarCamps focus on special subjects like medicine or social science.
+The BarCamp is an international conference with only user-generated lectures and speeches and no set agenda in advance. Every person interested can join for free and take part in interesting discussions. The main topics are technology and media but most of the BarCamps focus on special subjects like medicine or social science.
 If you're interested in participating in a BarCamp, search [online][wherearethecamps] and feel free to join.
 
 # LECTURE: Clean code and testing
 
-One of the most interesting topics for developers is the challenge to write complex code without loosing the focus on a clean and structured architecture. Additionally, this code should be tested and work properly after changing some lines. Several tools help to ensure this.
+One of the most interesting topics for developers is the challenge to write complex code without looing the focus on a clean and structured architecture. Additionally, this code should be tested and work properly after changing some lines. Several tools help to ensure this.
 
 But how tidy should be source code without loosing focus in a fast-weight development? And which tools can help to optimise code and test it regularly?
 
