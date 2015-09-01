@@ -40,6 +40,9 @@
     - title: Submission guidelines
       link: page:apps-submit-guide
 
+    - title: Tutorial (PHP)
+      link: page:apps-tutorial-php
+
 - key: api-rest
   title: API reference
   entries:
@@ -55,8 +58,11 @@
     - title: Products
       link: page:api-resources-products
 
-    - title: Shipping method
+    - title: ShippingMethods
       link: page:api-resources-shipping-methods
+
+    - title: All resources
+      link: page:api-resources-all
 
 - key: more
   title: More

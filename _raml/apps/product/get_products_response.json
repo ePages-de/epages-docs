@@ -90,6 +90,7 @@
             "energyLabelsString": "A++,C",
             "energyLabelSourceFile" : "http://hostname/path/to/image.png",
             "productDataSheet": "http://hostname/path/to/datasheet.png",
+            "sfUrl": "http://hostname/epages/shopId.sf/?ObjectPath=/Shops/shopId/Products/be_40401",
             "links": [
                 {
                     "rel": "self",

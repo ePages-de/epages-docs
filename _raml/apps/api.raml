@@ -1,21 +1,33 @@
 #%RAML 0.8
 ---
 title: ePages Public REST API
-baseUri: https://developer.epages.com/api
+baseUri: /rs
 version: v1
 
-securedBy: [oauth_1_0]
+securedBy: [OAuth_2.0_Token,oauth_1_0]
 
 securitySchemes:
+    - OAuth_2.0_Token:
+        type: x-custom
+        description: OAuth 2.0 token authentication
+        describedBy:
+          headers:
+            Authorization:
+              type: string
+              required: true
+              example: "Bearer "
+              pattern: ^Bearer .+
     - oauth_1_0:
         description:
-            OAuth 1.0 is now available with RamlConsole.
+            OAuth 1.0 authentification.
         type: OAuth 1.0
         settings:
           requestTokenUri: /rs/oauth1/request_token
           authorizationUri: /rs/oauth1/authorize
           tokenCredentialsUri: /rs/oauth1/access_token
+
 traits: !include traits.raml
+
 /shops/{shopId}:
   uriParameters:
     shopId:
@@ -32,3 +44,5 @@ traits: !include traits.raml
   /shipping-methods: !include shipping-method/shipping-method.raml
   /start-page: !include start-page/start-page.raml
   /token: !include appstore/token.raml
+  /orders: !include orders/orders.raml
+  /product-portals/general/products: !include productportals/productportals.raml

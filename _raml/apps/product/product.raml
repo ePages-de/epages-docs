@@ -16,7 +16,6 @@ get:
       required : false
     q:
       description: Filter products by query string.
-      example: jack
       required : false
     categoryId:
       description: Filter products by category ID.
@@ -60,6 +59,7 @@ get:
       is: [ locale, paged ]
       description: Returns links to product variations in a paged item list.<br/>
         "name" and "value" are used to find a matching variation for the user's selection.
+        Please note that the default resultsPerPage is 100 and max resultsPerPage is 1000 for this resource.
       responses:
         200:
           body:
@@ -102,3 +102,14 @@ get:
           body:
             application/json:
               example: !include get_lowest_price_response.json
+  /categories:
+    displayName: Categories of a product
+    description: Retrieve all categories of a product.
+    get:
+      is: [ locale ]
+      description: Returns list of links i.e. self, product and categories for a product.
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include get_product_categories_response.json
