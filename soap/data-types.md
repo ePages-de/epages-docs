@@ -70,16 +70,13 @@ The dateTime data type is used to specify a date and time.
 <StartDate>2015-05-06T09:00:00</StartDate>
 {% endhighlight %}
 
-# ePages specific types
-
-ePages brings own data types in .WSDL files (webservice definition languages) and with the related .XSD files.
-All the types starts wit a capital T following by the type name. Here are described some examples of it
-
 # TAttribute
 
-The TAttribute data type is used to specify name-value pair of a base type, it can used in array to have a list of name-value pairs
+ePages-specific data type.
+The TAttribute data type is used to specify a name-value pair of a base type.
+It can be used in an array to receive a list of name-value pairs.
 
-##Example
+## Example
 
 {% highlight xml %}
 <Attribute xsi:type="TAttribute">
@@ -91,9 +88,11 @@ The TAttribute data type is used to specify name-value pair of a base type, it c
 
 # TProductPrice
 
-The TProductPrice data type is a very specific ePages type to handle different kind of prices related to products. It holds an amount for each related currency and tax model.
+ePages-specific data type.
+The TProductPrice data type handles different prices related to products.
+It holds an amount for each related currency and tax model.
 
-##Example
+## Example
 
 {% highlight xml %}
 <ProductPrice xsi:type="TProductPrice">
@@ -105,11 +104,13 @@ The TProductPrice data type is a very specific ePages type to handle different k
 
 # TLocalizedValue
 
-The LocalizedValue data type is used to specify a value for different languages. The base type of the values can be one of the general types above and the type "file"
+ePages-specific data type.
+The LocalizedValue data type specifies a value for different languages.
+The base type of the values can be one of the general types mentioned above and the type "file".
 
 ## Examples
 
-the default base type does not need to specify with the <Type>String</Type>
+The default base type does not need to be specified by the <Type>String</Type>.
 
 {% highlight xml %}
 <Description soapenc:arrayType="TLocalizedValue[2]" xsi:type="soapenc:Array">
@@ -124,7 +125,7 @@ the default base type does not need to specify with the <Type>String</Type>
 </Description>
 {% endhighlight %}
 
-boolean example
+### Boolean example
 
 {% highlight xml %}
 <IsAvailableForLanguage soapenc:arrayType="TLocalizedValue[2]" xsi:type="soapenc:Array">
@@ -141,7 +142,7 @@ boolean example
 </IsAvailableForLanguage>
 {% endhighlight %}
 
-file example
+### File example
 
 {% highlight xml %}
 <Picture soapenc:arrayType="TLocalizedValue[2]" xsi:type="soapenc:Array">
@@ -149,26 +150,21 @@ file example
         <LanguageCode>de</LanguageCode>
         <Type>File</Type>
         <Value>pic_de.png</Value>
-        <FileContent>iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAIAAAACUFjqAAAABmJLR0QA/wD/AP+gvaeTAAAA
-CXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH0QofESYx2JhwGwAAAFZJREFUeNqlj8ENwDAI
-A6HqGDCWp2QQ2AP2oI9IbaQm/dRPn9EJ7m7a56DPPDgiIoKIzGyBM9Pdx+4ueXabWVUBEJHR
-nLNJVbfuqspMAEOxwO9r/vX3BTEnKRXtqqslAAAAAElFTkSuQmCC</FileContent>
+        <FileContent>BeispielInhalt</FileContent>
     </LocalizedValue>
     <LocalizedValue>
-        <LanguageCode>fr</LanguageCode>
+        <LanguageCode>en</LanguageCode>
         <Type>File</Type>
-        <Value>pic_fr.png</Value>
-        <FileContent>iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAIAAAACUFjqAAAABmJLR0QA/wD/AP+gvaeTAAAA
-A6HqGDCWp2QQ2AP2oI9IbaQm/dRPn9EJ7m7a56DPPDgiIoKIzGyBM9Pdx+4ueXabWVUBEJHR
-CXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH0QofESYx2JhwGwAAAFZJREFUeNqlj8ENwDAI
-nLNJVbfuqspMAEOxwO9r/vX3BTEnKRXtqqslAAAAAElFTkSuQmCC</FileContent>
+        <Value>pic_en.png</Value>
+        <FileContent>exampleContent</FileContent>
     </LocalizedValue>
 </Description>
 {% endhighlight %}
 
-# ListOf<TEpagesType>
+# ListOf
 
-The ListOfType data type is based on different ePages Types i.e. TLocalizedValue, TAttribute and similar and holds a list of items of this specific base type
+ePages-specific data type.
+The ListOfType data type is based on different ePages-specific data types e.g. TLocalizedValue, TAttribute or similar and holds a list of items of this specific base type.
 
 ## Example
 
@@ -191,9 +187,10 @@ The ListOfType data type is based on different ePages Types i.e. TLocalizedValue
 
 # TError
 
-The TError data type specify message and code responded by occuring an error.
+ePages-specific data type.
+The TError data type specifies a message and code and responds with an error.
 
-## Examples
+## Example
 
 {% highlight xml %}
 <Error type="TError">
@@ -201,5 +198,3 @@ The TError data type specify message and code responded by occuring an error.
     <Code>CUSTOMER_NOT_EXISTS</Code>
 </Error>
 {% endhighlight %}
-
-
