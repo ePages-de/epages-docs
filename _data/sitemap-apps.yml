@@ -46,6 +46,9 @@
 - key: api-rest
   title: API reference
   entries:
+    - title: All resources
+      link: page:api-resources-all
+
     - title: Carts
       link: page:api-resources-carts
 
@@ -55,14 +58,14 @@
     - title: Legal
       link: page:api-resources-legal
 
+    - title: Miscellaneous
+      link: page:api-resources-miscellaneous
+
     - title: Products
       link: page:api-resources-products
 
     - title: ShippingMethods
       link: page:api-resources-shipping-methods
-
-    - title: All resources
-      link: page:api-resources-all
 
 - key: more
   title: More
