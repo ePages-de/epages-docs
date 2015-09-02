@@ -1,5 +1,5 @@
 {% assign chapter = page.url | regex_extract: '^/([^/]+)/' %}
-{% unless chapter == 'blog' %}
+{% unless chapter == 'blog' or chapter == 'soap' %}
   <span id="ribbon-beta">BETA</span>
 {% endunless %}
 <a id="ribbon-github" href="{{ site.github_url }}">Fork us on GitHub</a>
