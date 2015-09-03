@@ -211,13 +211,13 @@ Read further [here](page:soap-api) to access the SOAP web services.
 
 | Web service   |  URN  |  Availability           |
 |---------------|---------------|-------------------------|
-| **ShopConfigService7** | urn://epages.de/WebService/ShopConfigService/2014/03 | 6.16.3&nbsp;or&nbsp;higher |
+| **ShopConfigService8** | urn://epages.de/WebService/ShopConfigService/2015/07 | 6.17.329&nbsp;or&nbsp;higher |
 
 *This is a provider web service.*
 
 * `create`: Creates a new shop with a given shop type and imports default data.
 * `delete`: Deletes a shop from the store database.
-* `deleteShopref`: Deletes a shop reference from the site database.
+* `deleteShopRef`: Deletes a shop reference from the site database.
 * `exists`: Returns true if the shop alias exists for the provider.
 * `getAllInfo`: Returns information on all existing shops from the site database.
 * `getInfo`: Returns information on an existing shop from the site database.
@@ -245,7 +245,7 @@ Read further [here](page:soap-api) to access the SOAP web services.
 
 | Web service   |  URN  |  Availability           |
 |---------------|---------------|-------------------------|
-| **SimpleProvisioningService2** | urn://epages.de/WebService/SimpleProvisioningService/2013/05 | 6.16.3&nbsp;or&nbsp;higher |
+| **SimpleProvisioningService4** | urn://epages.de/WebService/SimpleProvisioningService/2015/07 | 6.17.29&nbsp;or&nbsp;higher |
 
 *This is a provider web service.*
 

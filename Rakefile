@@ -236,6 +236,116 @@ task :ramlup do
   Zip::InputStream.open(StringIO.new(raml_archive)) { |zip| unpack_zip_archive(zip, 'raml/', target) }
 end
 
+task :resource do
+  SITEMAP_FILE = '_data/sitemap-apps.yml'
+  MISC_FILE    = '_raml/apps/miscellaneous.raml'
+  RESOURCE_DIR = 'apps/api-reference/'
+  require 'yaml'
+  require 'fileutils'
+  require 'active_support/inflector'
+
+  def new_resource(resources)
+    resources.each do |res|
+      update_sitemap(res)
+      create_resource(res)
+    end
+  end
+
+  def new_miscellaneous(new_misc)
+    old_misc = File.exist?(MISC_FILE) ? File.readlines(MISC_FILE).map { |r| r.gsub("\n","") } : []
+    misc = (old_misc + new_misc).uniq.sort
+    File.open(MISC_FILE, 'w').puts(misc.join("\n"))
+    miscellaneous_template(misc.join(' '))
+    p "Miscellaneous resources updated with: #{new_misc.join(', ')}."
+  end
+
+  def update_sitemap(new_resource)
+    sitemap = YAML.load_file(SITEMAP_FILE)
+    node = { 'title' => new_resource.capitalize.pluralize, 'link' => "page:api-resources-#{new_resource.pluralize}" }
+    content = add_node_to_sitemap(sitemap, node)
+    File.open(SITEMAP_FILE, 'w') { |document| document.write content }
+    p "Sitemap-apps updated with #{new_resource} entry."
+  end
+
+  def create_resource(resource)
+    raise "The route #{RESOURCE_DIR} not exists" unless File.dirname(RESOURCE_DIR)
+    resource_template(resource)
+    p "Created new layout for #{resource}"
+  end
+
+  def add_node_to_sitemap(sitemap, node)
+    sitemap.map do |section|
+      if section.has_value?("api-rest")
+        break if section["entries"].any?{ |e| e['title'] == node['title'] }
+        section["entries"] << node
+        section["entries"] = section["entries"].sort_by(&:first)
+      end
+    end
+    yaml_formatter(sitemap)
+  end
+
+  def yaml_formatter(file)
+    #format the interspace between entries
+    content = file.to_yaml
+    content.gsub("---\n", "")
+           .gsub(/- title:.*/){ |s| '  ' + s }
+           .gsub(/link:.*/)   { |s| '  ' + s + "\n" }
+  end
+
+  def resource_template(resource)
+    template = """---
+layout: page
+key: api-resources-#{resource.pluralize}
+title: #{resource.capitalize.pluralize}
+---
+<ul id=\"resource-list\">
+  {% for page in site.pages %}
+    {% assign match = page.key | regex_match: '^apps-api-([a-z]+)-shops-shopid-#{resource.pluralize}(.*)-information$' %}
+    {% if match %}
+      <li class=\"resource-entry\">
+        <span class=\"http-method http-method-{{ page.raml_method.method | downcase }}\">{{ page.raml_method.method }}</span>
+        <a href=\"{{ page.url | prepend: site.baseurl }}\">{{ page.raml_resource.relative_uri }}</a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>"""
+
+    file_name = RESOURCE_DIR + "resource-" + resource + ".md"
+    File.new(file_name, 'w').puts(template)
+  end
+
+  def miscellaneous_template(miscellaneous)
+    template = """---
+layout: page
+key: api-resources-miscellaneous
+title: Miscellaneous
+---
+<ul id=\"resource-list\">
+  {% for page in site.pages %}
+  {% assign misc = \"#{miscellaneous}\" | split: ' ' %}
+    {% for category in misc %}
+      {% if page.raml_resource.relative_uri contains category %}
+        <li class=\"resource-entry\">
+          <span class=\"http-method http-method-{{ page.raml_method.method | downcase }}\">{{ page.raml_method.method }}</span>
+          <a href=\"{{ page.url | prepend: site.baseurl }}\">{{ page.raml_resource.relative_uri }}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+</ul>"""
+
+    file_name = RESOURCE_DIR + "resource-miscellaneous.md"
+    File.new(file_name, 'w').puts(template)
+  end
+
+  if !ENV['new'] && !ENV['misc']
+    raise ArgumentError, "No parameters"
+  end
+
+  new_resource(ENV['new'].split(",")) if ENV['new']
+  new_miscellaneous(ENV['misc'].split(",")) if ENV['misc']
+end
+
 task :index do
   sh "bundle exec jekyll index"
 end
