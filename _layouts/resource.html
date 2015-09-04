@@ -21,7 +21,7 @@ layout: page
     <tr>
       <th>Name</th>
       <th>Type</th>
-      <th></th>
+      <th>Description</th>
     </tr>
     </thead>
     <tbody>
@@ -31,7 +31,7 @@ layout: page
         <td><code>{{ p.name. }}</code></td>
         <td><strong>{{ p.type. }}</strong></td>
         <td>
-          {% if p.description %}<div>Description: {{ p.description | markdownify }}</div>{% endif %}
+          {% if p.description %}<div>{{ p.description | markdownify }}</div>{% endif %}
           <div>Required: <code>{{ p.required }}</code></div>
           {% if p.example %}<div>Example: <code>{{ p.example }}</code></div>{% endif %}
           {% if p.default %}<div>Default: <code>{{ p.default }}</code></div>{% endif %}
@@ -53,7 +53,7 @@ layout: page
     <tr>
       <th>Name</th>
       <th>Type</th>
-      <th></th>
+      <th>Description</th>
     </tr>
     </thead>
     <tbody>
@@ -63,7 +63,7 @@ layout: page
         <td><code>{{ p.name. }}</code></td>
         <td><strong>{{ p.type. }}</strong></td>
         <td>
-          {% if p.description %}<div>Description: {{ p.description | markdownify }}</div>{% endif %}
+          {% if p.description %}<div>{{ p.description | markdownify }}</div>{% endif %}
           <div>Required: <code>{{ p.required }}</code></div>
           {% if p.example %}<div>Example: <code>{{ p.example }}</code></div>{% endif %}
           {% if p.default %}<div>Default: <code>{{ p.default }}</code></div>{% endif %}
@@ -106,12 +106,11 @@ layout: page
       {% endif %}
       {% if body.schema != null %}
         <h2>Response Attributes</h2>
-        <table class="table table-bordered">
-          <thead>
+        <table class="table table-bordered table-striped">
+          <thead style="background-color: white;">
             <tr>
               <th>Name</th>
-              <th>Type</th>
-              <th></th>
+              <th>Description</th>
             </tr>
           </thead>
           <tbody>
@@ -121,14 +120,8 @@ layout: page
             {% assign p = properties[key] %}
             <tr>
               <td><code>{{ key }}</code></td>
-              <td><strong>{{ p.type }}</strong></td>
               <td>
-                {% if p.description %}<div>Description: {{ p.description | markdownify }}</div>{% endif %}
-                <div>Required: <code>{{ p.required }}</code></div>
-                {% if p.example %}<div>Example: <code>{{ p.example }}</code></div>{% endif %}
-                {% if p.default %}<div>Default: <code>{{ p.default }}</code></div>{% endif %}
-                {% if p.minimum %}<div>Minimum: {{ p.minimum }}</div>{% endif %}
-                {% if p.maximum %}<div>Maximum: {{ p.maximum }}</div>{% endif %}
+                {% if p.description %}<div>{{ p.description | markdownify }}</div>{% endif %}
               </td>
             </tr>
           {% endfor %}
