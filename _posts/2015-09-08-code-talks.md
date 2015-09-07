@@ -8,14 +8,14 @@ categories: tech-stories conferences api
 authors: ["Birgit"]
 ---
 
-Have you signed up for `code.talks` ?
+Have you signed up for the [`code.talks`](https://www.codetalks.de/) 2015 in Hamburg?
 Would you like to learn more about the challenges of documenting REST APIs?
 We will be happy to see you on our talk then.
 Interested in some key points?
 Here you go:
 
 * RAML vs Spring REST Docs
-* Generating the docs
+* Documentation workflow
 * Minimising the effort
 * Keeping the docs up-to-date
 * Tools we do not recommend
