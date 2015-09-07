@@ -105,7 +105,7 @@ It holds an amount for each related currency and tax model.
 # TLocalizedValue
 
 ePages-specific data type.
-The LocalizedValue data type specifies a value for different languages.
+The TLocalizedValue data type specifies a value for different languages.
 The base type of the values can be one of the general types mentioned above and the type "file".
 
 ## Examples
