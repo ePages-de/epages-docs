@@ -28,6 +28,9 @@
     - title: Introduction
       link: page:apps-introduction
 
+    - title: Use cases
+      link: page:apps-use-cases
+
     - title: Create an app
       link: page:apps-create
 
@@ -42,6 +45,9 @@
 
     - title: Tutorial (PHP)
       link: page:apps-tutorial-php
+
+    - title: CMS plugin
+      link: page:apps-cms-plugin
 
 - key: api-rest
   title: API reference
