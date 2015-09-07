@@ -30,20 +30,26 @@ Note: HTTP Application Callback URLs can be used for developer apps, but you nee
 Once the input fields are filled out, click the button **Generate access data**.
     {% image fillout-app-name.png %}{% endimage %}
 
-4. You will be assigned a **Client ID** and a **Client Secret**.
+4. You will be assigned a **Client ID**, a **Client Secret** as well as an **Access Token**.
+The **Access token** is granted by your test shop, so that you can start accessing the ePages API immediately.
     {% image test-shop-credentials.png %}{% endimage %}
-Happy coding! Once this is done, you can start coding away.
-You are free to use any kind of programming language.
-But when developing your app, please consider our [API call limit](page:apps-api-call-limit).
-
-5. Once you have developed your app, click the button **Test authorisation**.
-    {% image test-authorisation.png %}{% endimage %}
-
-6. After successful authorisation, you will be assigned an **Access token**.
-      {% image access-token.png %}{% endimage %}
-Integrate the **Access token** into your application and test your app.
-Make sure that your app can access the API.
 
 {% callout danger Important! %}
 Store your **Client Secret** and **Access token** securely!
 {% endcallout %}
+
+# Happy coding!
+
+Once this is done, you can start coding away.
+You are free to use any kind of coding language.
+But when developing your app, please consider our [API call limit](page:apps-api-call-limit).
+
+# Test the authorisation process
+
+Once you have developed your app, click the button **Test authorisation**.
+Your app will be checked for proper implementation of the [OAuth 2.0 flow](page:apps-install#authorisation-process).
+{% image test-authorisation.png %}{% endimage %}
+
+After successful authorisation, you will be assigned a new **Access token**.
+If the authorisation process failed, the **Access token** will be removed.
+To create a new token, simply create a new developer app.
