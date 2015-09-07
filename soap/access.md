@@ -4,7 +4,7 @@ key: soap-access
 title: Access to the web services
 ---
 
-Basis authentication is used in order to access the web services.
+Basic authentication is used in order to access the web services.
 The following credentials are required to use the web services and will be provided by ePages:
 
 * user name and password for the web service
