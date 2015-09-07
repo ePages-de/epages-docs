@@ -7,7 +7,7 @@ title: Introduction
 # Easy-to-consume SOAP API
 
 The ePages SOAP API is easy to consume.
-Each web service has its unique identity.
+Each web service has a unique identity.
 Its address is defined by a URI and is often called an endpoint.
 For our web service description we use WSDL (Web Services Definition Language) and the web service itself can be listed and discovered in a UDDI (Universal Description Discovery and Integration) registry.
 

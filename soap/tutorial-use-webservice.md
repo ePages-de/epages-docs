@@ -8,7 +8,7 @@ title: How to use a web service
 
 ## 1.1 Existing development environment
 
-In order to being able using a web service, make sure to an appropriate development environment in place such as Java, .NET or Perl.
+In order to be able to use a web service, make sure to have an appropriate development environment in place such as Java, .NET or Perl.
 
 ## 1.2 Installed ePages DemoShop
 
@@ -17,7 +17,7 @@ For your test environment you should have access to a freshly installed ePages D
 * shop URL: `http://{HOSTNAME}/epages/DemoShop.sf`
 * admin URL: `http://{HOSTNAME}/epages/DemoShop.admin` (user: admin, password: admin)
 
-If you'd like to install the DemoShop on your (virtual) machine, please follow this [installation guide](http://helpcenter.epages.com/Doc/ver_6_17_26/epages/Manual/en/ePages_Installation_Guide_for_Linux.html#Basic_ePages_Installation).
+Install the DemoShop on your (virtual) machine by following this [installation guide](http://helpcenter.epages.com/Doc/ver_6_17_26/epages/Manual/en/ePages_Installation_Guide_for_Linux.html#Basic_ePages_Installation).
 
 {% callout info Pro tip: %}
 Simply install ePages via this YUM repository patch:
@@ -112,5 +112,5 @@ Configure the **Capture Filter** (1) as "tcp port http" and the **Filter** (2) a
 
 {% image soap-wireshark.png %}{% endimage %}
 
-The Wireshark UI allows you to browse easily through requests and responses and to take a look at structured xml content.
+The Wireshark UI allows you to easily browse through requests and responses and to take a look at structured xml content.
 Read further [here](http://geekswithblogs.net/EltonStoneman/archive/2009/01/29/debugging-soap-messages-with-wireshark.aspx) on how to capture soap xml content with Wireshark or check this [video](https://www.youtube.com/watch?v=qAF8FMxFwoQ&feature=youtu.be) on Wireshark tracing web services.
