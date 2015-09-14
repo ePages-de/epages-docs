@@ -11,13 +11,6 @@ layout: page
   {{ content }}
 </div>
 
-<div class="post-tags">
-  <h3>Tags</h3>
-  {% for tag in page.tags %}
-    <a href="{{ '.html' | prepend: tag | prepend: '/blog/tags/' | prepend: site.baseurl }}" class="label label-default">{{ tag }}</a>
-  {% endfor %}
-</div>
-
 <div class="post-categories">
   <h3>Categories</h3>
   {% for category in page.categories %}

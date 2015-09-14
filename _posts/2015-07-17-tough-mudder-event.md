@@ -3,7 +3,6 @@ layout: post
 title: "ePagees face the Tough Mudder challenge"
 date: "2015-07-17 08:14:03"
 icon: users
-tags: team event
 categories: events
 authors: ["Ludger"]
 ---

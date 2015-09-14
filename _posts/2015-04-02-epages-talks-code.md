@@ -3,7 +3,6 @@ layout: post
 title: "ePages talks code"
 date: "2015-04-02 12:00:00"
 icon: code
-tags: misc
 categories: tech-stories conferences
 authors: ["Birgit"]
 ---
