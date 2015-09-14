@@ -3,7 +3,6 @@ layout: post
 title: "Creating systems with pipelining"
 date: "2015-08-03"
 icon: wrench
-tags: ["pipelines", "virtual machines", "development systems"]
 categories: tech-stories
 authors: ["Carsten", "Karsten"]
 ---
@@ -61,4 +60,3 @@ The full process lasts about 10 to 15 minutes but depends on the specific config
 {% image blog-pipeline-jenkins.png %} {% endimage %}
 
 In the future we'd like to use the existing build pipelines to create distributed systems with our and other software.
-

@@ -3,7 +3,6 @@ layout: post
 title: "ePages participates in Jena Company Cup"
 date: "2015-06-30 08:00:00"
 icon: users
-tags: team event
 categories: events
 authors: ["Björn"]
 ---

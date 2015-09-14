@@ -3,7 +3,6 @@ layout: post
 title: "ePages scrum team goes offsite"
 date: "2015-06-04 10:49:00"
 icon: users
-tags: team event offsite
 categories: events
 authors: ["Fouad-Steffen"]
 ---

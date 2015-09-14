@@ -3,8 +3,7 @@ layout: post
 title: "Challenges of integrating third-parties"
 date: "2015-07-20 14:26:17"
 icon: cloud
-tags: integration third-party API webservice
-categories: tech-stories
+categories: tech-stories api
 authors: ["Ulf B."]
 ---
 
