@@ -41,15 +41,24 @@ Store your **Client Secret** and **Access token** securely!
 # Happy coding!
 
 Once this is done, you can start coding away.
-You are free to use any kind of coding language.
 But when developing your app, please consider our [API call limit](page:apps-api-call-limit).
 
 # Test the authorisation process
 
-Once you have developed your app, click the button **Test authorisation**.
+Once you have implemented the authorisation flow in your app, you can trigger it by clicking the button **Test authorisation**.
+Make sure that the **Applicaton Callback URL** for your app is correct.
 Your app will be checked for proper implementation of the [OAuth 2.0 flow](page:apps-install#authorisation-process).
 {% image test-authorisation.png %}{% endimage %}
 
-After successful authorisation, you will be assigned a new **Access token**.
-If the authorisation process failed, the **Access token** will be removed.
-To create a new token, simply create a new developer app.
+{% callout info Note %}
+Triggering the test authorisation flow removes the existing **Access token** first.
+{% endcallout %}
+
+## Successful authorisation
+
+If your authorisation has been successful, you will be assigned a new **Access token**.
+
+## Unsuccessful authorisation
+
+If the authorisation process failed, you will end up without having an **Access token**.
+To create a new token without having passed a successful authorisation flow, simply create a new developer app.
