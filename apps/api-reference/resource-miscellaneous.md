@@ -5,7 +5,7 @@ title: Miscellaneous
 ---
 <ul id="resource-list">
   {% for page in site.pages %}
-  {% assign misc = "" | split: ' ' %}
+  {% assign misc = "currencies locales public-info search start-page token" | split: ' ' %}
     {% for category in misc %}
       {% if page.raml_resource.relative_uri contains category %}
         <li class="resource-entry">
