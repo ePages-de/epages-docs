@@ -4,7 +4,7 @@ key: api-resources-legal
 title: Legal
 ---
 
-Legal holds the shop's key information on contact information, privacy policy, terms and conditions, rights and withdrawal and shipping information.  
+Legal holds the shop's key information on contact information, privacy policy, terms and conditions, rights and withdrawal and shipping information.
 
 {% image legal-overview.png %}{% endimage %}
 
