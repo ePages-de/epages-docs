@@ -3,7 +3,6 @@ layout: post
 title: "JS Unconf 2015 Retrospective"
 date: "2015-04-29 12:00:00"
 icon: comments
-tags: javascript information jobs
 categories: conferences
 authors: ["Paolo"]
 ---

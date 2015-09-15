@@ -3,8 +3,7 @@ layout: post
 title: "RESTful API documentation @ePages. RAML rocks! A TechWriter experience report."
 date: "2015-05-28 13:35:00"
 icon: compass
-tags: RESTful API documentation RAML RamlParser
-categories: tech-stories
+categories: tech-stories api
 authors: ["Birgit"]
 ---
 
