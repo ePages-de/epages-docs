@@ -9,7 +9,7 @@ authors: ["Pujit"]
 
 ##Introduction
 
-Recommender systems in e-commerce can be seen as a sales personal.  Like a good sales personal in a store helps increasing sales and building loyalty customer base, recommender system handles sales three ways: browser into buyers, cross-sell and loyalty.
+A recommender system in e-commerce domain can be seen as equivalent of sales personal. Like a good sales personal in a store helps increasing sales and building loyalty customer base, recommender system handles sales three ways: browser into buyers, cross-sell and loyalty.
 
 * **Browsers into buyers:** Visitors to a Web site often look over the site without ever purchasing anything. Recommender systems can help customers find products they wish to purchase.
 
@@ -17,7 +17,7 @@ Recommender systems in e-commerce can be seen as a sales personal.  Like a good 
 
 * **Loyalty:** In a world where a site’s competitors are only a click or two away, gaining customer loyalty is an essential business strategy. [4,5] Recommender systems improve loyalty by creating a value-added relationship between the site and the customer. Sites invest in learning about their users, use recommender systems to operationalize that learning, and present custom interfaces that match customer needs. Customers repay these sites by returning to the ones that best match their needs. [3]
 
-Hence, it is not surprising that Recommender Systems are essential part of e-commerce solutions in this era.  At present day, many recommender algorithms exist which can be employed into recommender systems built for e-commerce.  In this blog-post we will have high level overview of the classification of such recommender algorithms.
+Hence, it is not surprising that Recommender Systems are essential part of e-commerce solutions in this era. At present day, many recommender algorithms exist which can be employed into recommender systems built for e-commerce. In this blog-post we will have high level overview of the classification of such recommender algorithms.
 
 
 ##Algorithms
@@ -48,7 +48,7 @@ The Bayesian network model[7] formulates a probabilistic model for collaborative
 
 
 ##Conclusion
-There are no rules when it comes to choose algorithms while designing recommender system.  It has been observed that multiple techniques and algorithms are used togather to achieve high quality results from the recommender system depending on given problem space.  For an example User-based Collaborative Filtering and Item-based Collaborative Filtering techniques are often used togather.  Also data-mining techniques, dimensionality-reduction algorithm and link analysis are used for meeting specific needs of such system.
+There are no rules when it comes to choose algorithms while designing recommender system. It has been observed that multiple techniques and algorithms are used togather to achieve high quality results from the recommender system depending on given problem space. For an example User-based Collaborative Filtering and Item-based Collaborative Filtering techniques are often used togather in e-commerce systems. Also data-mining techniques, dimensionality-reduction algorithm and link analysis are used for meeting specific needs of such system.
 
 
 ##References
