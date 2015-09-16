@@ -4,6 +4,10 @@ key: api-resources-legal
 title: Legal
 ---
 
+Legal holds the shop's key information on contact information, privacy policy, terms and conditions, right and withdrawal and shipping information.
+
+{% image legal-overview.png %}{% endimage %}
+
 <ul id="resource-list">
   {% for page in site.pages %}
     {% assign match = page.key | regex_match: '^apps-api-([a-z]+)-shops-shopid-legal(.*)-information$' %}

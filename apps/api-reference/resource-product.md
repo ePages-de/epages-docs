@@ -4,6 +4,12 @@ key: api-resources-products
 title: Products
 ---
 
+A product is an individual item for sale that belongs to the inventory of a shop.
+This item can be added to the shopping basket and then sold using the checkout.
+Specific items can also be assigned to a category.
+
+{% image products-overview.png %}{% endimage %}
+
 <ul id="resource-list">
   {% for page in site.pages %}
     {% assign match = page.key | regex_match: '^apps-api-([a-z]+)-shops-shopid-products(.*)-information$' %}
