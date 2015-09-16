@@ -1,6 +1,11 @@
-#Introduction of Recommender Algorithms for E-Commerce
-***
-
+---
+layout: post
+title: "Introduction of Recommender Algorithms for E-Commerce"
+date: "2015-09-16"
+icon: Light-bulb
+categories: tech-stories
+authors: ["Pujit"]
+---
 
 ##Introduction
 
