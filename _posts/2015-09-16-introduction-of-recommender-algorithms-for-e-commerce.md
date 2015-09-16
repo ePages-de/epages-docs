@@ -26,7 +26,7 @@ Recommender Algorithms are mainly classified into two categories as described be
 
 1. ###Content based recommendation systems
 > Content-based recommendation systems recommend an item to a user based upon a description of the item and a profile of the user’s interests. While a user profile may be entered by the user, it is commonly learned from feedback and/or the interaction of the user on items. A variety of learning algorithms have been adapted to learning user profiles. [1]
-> 
+>
 > Algorithms: Relevance feedback, genetic algorithms, neural networks, and the Bayesian classifier are among the learning techniques for learning a user profile. The vector space representation and latent semantic indexing can both be used by these learning methods to represent documents.
 >
 > **Pros:** It does not rely on other user's feedback. Provides purely feature based recommendations. It Does not suffer from cold start.
