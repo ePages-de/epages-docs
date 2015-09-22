@@ -1,8 +1,16 @@
 - key: blog-categories
   title: Categories
   entries:
+<<<<<<< HEAD
     - title: API
       link: page:blog-category-api
+=======
+    - title: Tech Stories
+      link: page:blog-category-tech-stories
+
+    - title: Scrum
+      link: page:blog-category-scrum
+>>>>>>> 9b1d26b702e3396210bdee00d426bd0e6a7e3bd3
 
     - title: Conferences
       link: page:blog-category-conferences
@@ -10,6 +18,7 @@
     - title: Events
       link: page:blog-category-events
 
+<<<<<<< HEAD
     - title: Hackathon
       link: page:blog-category-hackathon
 
@@ -19,6 +28,11 @@
     - title: Tech Stories
       link: page:blog-category-tech-stories
 
+=======
+    - title: Jobs
+      link: page:blog-category-jobs
+
+>>>>>>> 9b1d26b702e3396210bdee00d426bd0e6a7e3bd3
 - key: blog-links
   title: Links
   entries:
