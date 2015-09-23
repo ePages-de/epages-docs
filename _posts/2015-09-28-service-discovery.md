@@ -50,7 +50,7 @@ With this naming schema defined, the actual routing is done by [HAProxy](http://
 With this in place, HAProxy routes any incoming request to the most appropriate instance of the service given by the first path element of the request. the determination of the most appropriate instance of the service can be decided by the various load balancing features of HAProxy.
 
 ##Dynamic Service Registration
-So far, service discovery works fine, but how do the services register with the Consul agent on the hosts on which they are started? To solve this, we introduce another component, [Registrator](http://gliderlabs.com/registrator/latest/) . This is a so-called service registry bridge for Docker. What is actually does is nicely summarized on their website:
+So far, service discovery works fine, but how do the services register with the Consul agent on the hosts on which they are started? To solve this, we introduce another component, [Registrator](http://gliderlabs.com/registrator/latest/). This is a so-called service registry bridge for Docker. What is actually does is nicely summarized on their website:
 
 >Registrator automatically registers and deregisters services for any Docker container by inspecting containers as they come online. Registrator supports pluggable service registries, which currently includes Consul, etcd and SkyDNS 2.
 
