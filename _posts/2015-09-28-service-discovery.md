@@ -28,7 +28,7 @@ We chose [Consul](https://consul.io/) as our service registry implementation. Co
 >Every node that provides services to Consul runs a *Consul agent*.  Running an agent is not required for discovering other services or getting/setting key/value data. The agent is responsible for health checking the services on the node as well as the node itself.
 >The agents talk to one or more *Consul servers*. The Consul servers are where data is stored and replicated. The servers themselves elect a leader.
 >[...]
->Components of your infrastructure that need to discover other services or nodes can query any of the Consul servers 
+>Components of your infrastructure that need to discover other services or nodes can query any of the Consul servers
 >or any of the Consul agents. The agents forward queries to the servers automatically.
 
 For more details, see the full [introduction](https://www.consul.io/intro/index.html)  and the [in-depth architecture overview](https://www.consul.io/docs/internals/architecture.html) on the Consul web site.
