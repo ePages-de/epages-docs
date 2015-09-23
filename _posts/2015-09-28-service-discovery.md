@@ -41,7 +41,7 @@ In our setup, the health checking is also done by Consul. The servers check the 
 ##Lookup / Routing
 The third major building block is a component, which is able to look up or route requests to an appropriate service instance, given an identifier for the target service. With this identifier, the clients should either receive an actual service instance address to connect to, or have its requests routed transparently to the service instance.
 
-We decided for the routing solution, to keep the logic and also library dependencies out of the services. As the identifier, we use the first path element of any request URI, which means that a request to http://insert.hostname.here/myservice/recource1 will be routed to an appropriate service instance of the myservice service.
+We decided for the routing solution, to keep the logic and also library dependencies out of the services. As the identifier, we use the first path element of any request URI, which means that a request to ´´´http://insert.hostname.here/myservice/recource1´´´ will be routed to an appropriate service instance of the ´´´myservice´´´ service.
 
 With this naming schema defined, the actual routing is done by [HAProxy](http://www.haproxy.org/), a reliable, high performance TCP/HTTP load balancer. It is configured by a process called consul-template, which queries the information about available service instances from Consul and applies it to a provided template, in this case a template HAProxy configuration file, and (gracefully) restarts HAProxy afterwards.
 
