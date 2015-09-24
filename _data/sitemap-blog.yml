@@ -1,6 +1,9 @@
 - key: blog-categories
   title: Categories
   entries:
+    - title: Agile
+      link: page:blog-category-agile
+
     - title: API
       link: page:blog-category-api
 
