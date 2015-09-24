@@ -7,7 +7,7 @@ categories: tech-stories
 authors: ["Dirk Jablonski"]
 ---
 
-As epages is heading for a new, microservice-based architecture, new challenges arise. In this kind of architecture, there are a lot of services, which are usually deployed redundantly for high availability. But from a client perspective, all these service instances should be transparent. The client should not need to care about multiple instances of a service, their different locations on the network or if they are operational, down for maintenance or in a failure state. A client should only need to deal with a single address of the service.
+As ePages is heading for a new, microservice-based architecture, new challenges arise. In this kind of architecture, there are a lot of services, which are usually deployed redundantly for high availability. But from a client perspective, all these service instances should be transparent. The client should not need to care about multiple instances of a service, their different locations on the network or if they are operational, down for maintenance or in a failure state. A client should only need to deal with a single address of the service.
 
 The solution to this challenge is *Service Discovery*. It is the means by which any service is able to find other services without the need to know about the actual location or other details. In our solution, Service Discovery means that you only need to know a generic URI to communicate with other REST-based services (or even some infrastructure components like message brokers).
 
@@ -51,7 +51,7 @@ With this naming schema defined, the actual routing is done by [HAProxy](http://
 
 {% image blog-consul-template-haproxy.png %}{% endimage %}
 
-With this in place, HAProxy routes any incoming request to the most appropriate instance of the service given by the first path element of the request. The determination of the most appropriate instance of the service can be decided by the various load balancing features of HAProxy.
+Now that we have this logic in place, HAProxy routes any incoming request to the most appropriate instance of the service given by the first path element of the request. The determination of the most appropriate instance of the service can be decided by the various load balancing features of HAProxy.
 
 ## Dynamic Service Registration
 
@@ -60,3 +60,8 @@ So far, service discovery works fine, but how do the services register with the 
 >Registrator automatically registers and deregisters services for any Docker container by inspecting containers as they come online. Registrator supports pluggable service registries, which currently includes Consul, etcd and SkyDNS 2.
 
 Running Registrator as an additional Docker container on each host, it automatically registers new containers with the local Consul agent, and therefore makes them publicly available. Customisations, like providing the service name to be used, health check details or add-on data (tags) for a given instance can be provided in the usual Docker way by passing environment variables to the docker run command.
+
+## Conclusion
+
+The Service Discovery solution described in this post provides all the features we need so far.
+There are other, similar solutions out there, but with our choice, we are also able to cover other aspects of the microservice architecture with the same technology, which is a big plus for this solution.
