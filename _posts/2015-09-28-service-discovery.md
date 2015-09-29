@@ -4,7 +4,7 @@ title: "Service discovery with Consul, Registrator & HAProxy"
 date: "2015-09-28 08:30:00"
 icon: search-plus
 categories: tech-stories
-authors: ["Dirk Jablonski"]
+authors: ["Dirk"]
 ---
 
 As ePages heads towards a new microservice-based architecture, new challenges arise. In this kind of architecture, there are a lot of services, which are usually deployed redundantly for high availability. But from a client perspective, all these service instances should be transparent. The client should not need to care about multiple instances of a service, their different locations on the network or if they are operational, down for maintenance or in a failure state. A client should only need to deal with a single address of the service.
@@ -55,7 +55,7 @@ Now that we have this logic in place, HAProxy routes any incoming request to the
 
 ## Dynamic Service Registration
 
-So far, service discovery works fine, but how do the services register with the Consul agent on the hosts on which they are started? To solve this, we introduce another component, [Registrator](http://gliderlabs.com/registrator/latest/). This is a so-called service registry bridge for Docker. What it actually does is nicely summarized on their website:
+So far, service discovery works fine, but how do the services register with the Consul agent on the hosts on which they are started? To solve this, we introduce another component, [Registrator](http://gliderlabs.com/registrator/latest/). This is a so-called service registry bridge for Docker. What it actually does is nicely summarised on their website:
 
 >Registrator automatically registers and deregisters services for any Docker container by inspecting containers as they come online. Registrator supports pluggable service registries, which currently includes Consul, etcd and SkyDNS 2.
 

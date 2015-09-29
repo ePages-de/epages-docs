@@ -211,7 +211,7 @@ Read further [here](page:soap-api) to access the SOAP web services.
 
 | Web service   |  URN  |  Availability           |
 |---------------|---------------|-------------------------|
-| **ShopConfigService8** | urn://epages.de/WebService/ShopConfigService/2015/07 | 6.17.329&nbsp;or&nbsp;higher |
+| **ShopConfigService8** | urn://epages.de/WebService/ShopConfigService/2015/07 | 6.17.29&nbsp;or&nbsp;higher |
 
 *This is a provider web service.*
 
