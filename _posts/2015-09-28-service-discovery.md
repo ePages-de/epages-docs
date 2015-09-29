@@ -55,7 +55,7 @@ Now that we have this logic in place, HAProxy routes any incoming request to the
 
 ## Dynamic Service Registration
 
-So far, service discovery works fine, but how do the services register with the Consul agent on the hosts on which they are started? To solve this, we introduce another component, [Registrator](http://gliderlabs.com/registrator/latest/). This is a so-called service registry bridge for Docker. What it actually does is nicely summarized on their website:
+So far, service discovery works fine, but how do the services register with the Consul agent on the hosts on which they are started? To solve this, we introduce another component, [Registrator](http://gliderlabs.com/registrator/latest/). This is a so-called service registry bridge for Docker. What it actually does is nicely summarised on their website:
 
 >Registrator automatically registers and deregisters services for any Docker container by inspecting containers as they come online. Registrator supports pluggable service registries, which currently includes Consul, etcd and SkyDNS 2.
 
