@@ -1,0 +1,34 @@
+{
+  "cartId": "55FFAE6B-3BB2-A3F7-A11C-D5809AB36A58",
+  "billingAddress": null,
+  "shippingAddress": null,
+  "lineItemContainer": {
+    "grandTotal": {
+      "taxType": "GROSS",
+      "formatted": "0,00 €",
+      "amount": 0,
+      "currency": "EUR"
+    },
+    "totalBeforeTax": {
+      "taxType": "NET",
+      "formatted": "0,00 €",
+      "amount": 0,
+      "currency": "EUR"
+    },
+    "totalTax": {
+      "taxType": "NONE",
+      "formatted": "0,00 €",
+      "amount": 0,
+      "currency": "EUR"
+    },
+    "lineItemsSubTotal": {
+      "taxType": "GROSS",
+      "formatted": "0,00 €",
+      "amount": 0,
+      "currency": "EUR"
+    },
+    "productLineItems": []
+  },
+  "minCartValue": null,
+  "checkoutUrl": "http://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/3/Baskets/46072&ChangeAction=PickupBasket&PickupToken=6247825235"
+}

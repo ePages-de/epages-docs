@@ -9,7 +9,7 @@ authors: ["Declan Moran"]
 
 
 There's a confusing plethora of ways to install and setup [Ruby][Ruby] and [Rails][Rails]. And many competing tools exist that claim to make the process easier.
-So how is one to choose the best tools for the job and get up and running with Ruby and/on Rails development as cleanly and painlessly as possible? The information below applies 
+So how is one to choose the best tools for the job and get up and running with Ruby and/on Rails development as cleanly and painlessly as possible? The information below applies
 specifically to setting up ruby/rails on a linux development machine, but much of it should be applicable to other systems like Windows and MacOsX too.
 
 # The alternatives
@@ -30,23 +30,24 @@ programs or operating system components on your machine, which may break if you 
 This is theoretically the ideal solution and one would expect a single tool (or set of tools) to be standard. However there's a surprisigly large and diverse collection to choose from.
 For a detailed list see [here][ruby websiste]. Basically however the main contenders are:
 
-- [Rvm][Rvm] 
+- [Rvm][Rvm]
 
-An all-in-one tool for both installing a particular version of ruby and making one of those installed **active**. It's one of the original tools and is (over)loaded with many features (eg. managing gemsets). Using it can be quite complicated 
-and error prone. If you have no compelling reason to use it they you probably should use one of the more modern and streamlined tools available nowadays (eg chruby ..see below), that are more aligned 
-with the [unix philosophy][unix-well] of 
+An all-in-one tool for both installing a particular version of ruby and making one of those installed **active**. It's one of the original tools and is (over)loaded with many features (eg. managing gemsets).
+Using it can be quite complicated
+and error prone. If you have no compelling reason to use it they you probably should use one of the more modern and streamlined tools available nowadays (eg chruby ..see below), that are more aligned
+with the [unix philosophy][unix-well] of
 
 > *Make each program do one just thing, and do it well.*
 
 - [rbenv][rbenv] + [ruby-build]
 
-Many ruby developers adopted rbenv in lieu of Rvm when in came out, as a means of switching the currently active ruby version. Its leaner and cleaner. The complementary plugin *ruby-build* can be used to instal a 
+Many ruby developers adopted rbenv in lieu of Rvm when in came out, as a means of switching the currently active ruby version. Its leaner and cleaner. The complementary plugin *ruby-build* can be used to instal a
 particular version of ruby. However it still has some drawbacks such as its use of [shims] and the need to call `rehash` each time gems or ruby versions are (un)installed. This is a lot better than Rvm but things could be even
 simpler and cleaner. That's where chruby comes in.
 
 - [chruby][chruby] + [ruby-install][ruby-install]
 
-The simplest and most lighweight ruby version manager of the bunch is chruby (weighing in at just 90 lines of code), for activating a particular ruby version. 
+The simplest and most lighweight ruby version manager of the bunch is chruby (weighing in at just 90 lines of code), for activating a particular ruby version.
 Its designed to work with ruby-install when one wants to install a new ruby version.
 However I dont recommend ruby-install (or any other ruby tool for that matter) for installing ruby if you want to do rails development - read on.
 
@@ -62,12 +63,12 @@ Install [*node.js*][nodejs] as its needed by the server at runtime.
 Install *libxml2-devel* and *libxslt-devel* (needed for nokogiri..see below).
 The best way to install these is via your system package manager (yast, apt, yum etc)
 
-*Note:* Modify the file paths below appropriately, and create the dir where you want to install first as a *normal user* (otherwise they will automatically get created belonging to root, and youll need root 
+*Note:* Modify the file paths below appropriately, and create the dir where you want to install first as a *normal user* (otherwise they will automatically get created belonging to root, and youll need root
 privileges to work properly them)
 
 **Build Ruby itself from source:** You can install ruby fine with a tool like Rvm or ruby-install. However subsequently installing rails (as a gem) requires access to source files like ruby.h
-If you install these via your OS (package manager) then you risk a version mismatch which may cause errors during the build (or worse, at runtime). So you need these header files anyways and the best 
-way to get them is to download the source code for ruby. 
+If you install these via your OS (package manager) then you risk a version mismatch which may cause errors during the build (or worse, at runtime). So you need these header files anyways and the best
+way to get them is to download the source code for ruby.
 
 *Note the use of **prefix**  below to ensure the installations are written to local dirs (and not globally). This isolates your ruby version nicely,
 protecting any other apps that depend on the global version, and yours from any changes made to the global one.*
@@ -80,9 +81,9 @@ protecting any other apps that depend on the global version, and yours from any 
 
     > sudo make install
 
-    
+
 **Install chruby:**
-    
+
     cd /home/declan/tmp/
     wget -O chruby-0.3.9.tar.gz https://github.com/postmodern/chruby/archive/v0.3.9.tar.gz
     tar -xzvf chruby-0.3.9.tar.gz
@@ -92,12 +93,12 @@ protecting any other apps that depend on the global version, and yours from any 
 *Note:* Don't call setup.ch since it adds a "chruby.sh" file to /etc/profile.d/ which causes share/chruby/auto.sh to get run each system boot - dont want this.
 
 
-**Edit chruby.sh** 
+**Edit chruby.sh**
 
 To tell it about our custom ruby version.
 
     RUBIES+=("/home/declan/dev/web_framework/rails/ruby/2.2.3/")
-    
+
 
 To activate your custom environment call:
 
@@ -105,24 +106,24 @@ To activate your custom environment call:
     chruby 2.2.3 	# activate version 2.2.3
 
     ruby --version 	# outputs "2.2.3"
-    
-You can of course add this to a startup script like *.bashrc* to save you having to enter it manually.    
+
+You can of course add this to a startup script like *.bashrc* to save you having to enter it manually.
 
 Should you for some reason need to you can at any stage switch back to the global (system) ruby:
 
     chruby system
     ruby --version      # outputs "2.1.3"
-    
-    
+
+
 **Install Rails**
 
-One should now be able to install rails as a gem. However doing so also installs a package called *nokogiri* which apparently has a bug (see eg [here][nokogiri_bug], and breaks the rails install. 
+One should now be able to install rails as a gem. However doing so also installs a package called *nokogiri* which apparently has a bug (see eg [here][nokogiri_bug], and breaks the rails install.
 The bug is related to the custom versions of files (libxml2, libxslt) nokogiri uses.
 To workaround the problem install nokogiri first explicitly telling it to use the system versions:
 
     gem install nokogiri -- --use-system-libraries
 
-    gem install rails  
+    gem install rails
     rails --version      # outputs "4.2.4" - great!
 
 You can now happily work away on your rails app using your favourite text editor and the command line.
@@ -130,15 +131,15 @@ However it would be nice to be able to debug etc using a full fledged IDE. The b
 [IDEA][IDEA] or [RubyMine][RubyMine] (a streamlined down version of IDEA specifically for Ruby development).
 *Note:* [NetBeans][NetBeans] no longer supports Ruby/Rails
 
-**Setup up Intellij**   
+**Setup up Intellij**
 
 Make sure:
 
 - The ruby plugin is installed in Intelli (Menu: File->Settings->Plugins)
 - The gem "ruby-debug-ide" is installed  (`gem install ruby-debug-ide`)
 - The "Gemfile" for any project you want to debug with IDE does not contain "byebug". Otherwise the IDE will give obscure error messages and fail, when you try to debug.
-- You start the IDE in custom (chruby) environemnt. 
-- You configure rails sdk in IDE project settings - see the screenshot below. 
+- You start the IDE in custom (chruby) environemnt.
+- You configure rails sdk in IDE project settings - see the screenshot below.
 
 {% image declan-intellij-rails.png %} {% endimage %}
 
@@ -154,7 +155,7 @@ When you create your project with `rails new` a useful .gitignore file gets auto
 
     .idea/workspace.xml
     .idea/tasks.xml
-    
+
 See [here][intellij-git] for more details
 
 

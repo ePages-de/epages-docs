@@ -10,7 +10,7 @@ post:
     201:
       body:
         application/json:
-          example: !include examples/response.json
+          example: !include examples/carts_response.json
 
 /{cartId}:
   displayName: Cart ID
@@ -21,7 +21,7 @@ post:
       200:
         body:
           application/json:
-            example: !include examples/response.json
+            example: !include examples/carts_response.json
 
   /line-items:
     displayName: Line items
@@ -39,7 +39,7 @@ post:
         201:
           body:
             application/json:
-              example: !include examples/response.json
+              example: !include examples/carts_response.json
 
     /{lineItemId}:
       displayName: Line item ID
@@ -56,14 +56,14 @@ post:
           200:
             body:
               application/json:
-                example: !include examples/response.json
+                example: !include examples/carts_response.json
       delete:
         description: Deletes a specified line item from a cart.
         responses:
           200:
             body:
               application/json:
-                example: !include examples/response.json
+                example: !include examples/delete_carts_response.json
 
   /billing-address:
     displayName: Billing address
@@ -77,20 +77,18 @@ post:
         200:
           body:
             application/json:
-              example: !include examples/response.json
+              example: !include examples/carts_response.json
         400:
           body:
             application/json:
+              example: !include examples/put_carts_billing_response400.json
     delete:
       description: Deletes the billing address for a cart.
       responses:
         200:
           body:
             application/json:
-              example: !include examples/response.json
-        400:
-          body:
-            application/json:
+              example: !include examples/delete_carts_billing_response.json
 
   /shipping-address:
     displayName: Shipping address
@@ -104,17 +102,15 @@ post:
         200:
           body:
             application/json:
-              example: !include examples/response.json
+              example: !include examples/put_carts_shipping_response.json
         400:
           body:
             application/json:
+              example: !include examples/put_carts_shipping_response400.json
     delete:
       description: Deletes the shipping address for a cart.
       responses:
         200:
           body:
             application/json:
-              example: !include examples/response.json
-        400:
-          body:
-            application/json:
+              example: !include examples/delete_carts_shipping_response.json
