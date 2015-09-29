@@ -111,7 +111,7 @@ You can of course add this to a startup script like *.bashrc* to save you having
 Should you for some reason need to you can at any stage switch back to the global (system) ruby:
 
     chruby system
-    ruby --version     # outputs "2.1.3"
+    ruby --version      # outputs "2.1.3"
     
     
 **Install Rails**
