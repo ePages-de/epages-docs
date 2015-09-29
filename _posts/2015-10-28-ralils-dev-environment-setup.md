@@ -99,6 +99,7 @@ To tell it about our custom ruby version.
 
     RUBIES+=("/home/declan/dev/web_framework/rails/ruby/2.2.3/")
 
+You can enter whatever (installed) ruby versions you want here and use chruby to switch between them later. The global *system* ruby is included implicitly (see below).
 
 To activate your custom environment call:
 
