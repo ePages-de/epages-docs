@@ -130,7 +130,7 @@ To workaround the problem install nokogiri first explicitly telling it to use th
     rails --version      # outputs "4.2.4" - great!
 
 You can now happily work away on your rails app using your favourite text editor and the command line.
-However it would be nice to also be able to benefit from full fledged IDE eg. for visual debugging. The best choice here is Intellij
+However it would be nice to also be able to benefit from a full fledged IDE eg. for visual debugging. The best choice here is Intellij
 [IDEA][IDEA] or [RubyMine][RubyMine] (a streamlined down version of IDEA specifically for Ruby development).
 *Note:* [NetBeans][NetBeans] no longer supports Ruby/Rails
 
