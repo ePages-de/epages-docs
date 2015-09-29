@@ -123,7 +123,7 @@ To workaround the problem install nokogiri first explicitly telling it to use th
     gem install nokogiri -- --use-system-libraries
 
     gem install rails  
-    rails --version    # outputs "4.2.4" - great!
+    rails --version      # outputs "4.2.4" - great!
 
 You can now happily work away on your rails app using your favourite text editor and the command line.
 However it would be nice to be able to debug etc using a full fledged IDE. The best choice is Intellij
