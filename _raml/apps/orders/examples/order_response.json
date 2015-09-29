@@ -1,0 +1,151 @@
+{
+    "orderId":"0987-GUID-1234",
+    "orderNumber":"1001",
+    "comment":"Test Comment",
+    "archivedDate":"",
+    "cancelledDate":"",
+    "closedDate":"",
+    "dispatchedDate":"2015-06-23T11:58:25.242Z",
+    "paidDate":"2015-06-23T11:58:25.242Z",
+    "returnedDate":"2015-06-23T11:58:25.242Z",
+    "viewedDate":"2015-06-23T11:58:25.242Z",
+    "pendingDate":"2015-06-23T11:58:25.242Z",
+    "shippedDate":"2015-06-23T11:58:25.242Z",
+    "invoicedDate":"2015-06-23T11:58:25.242Z",
+    "billingAddress":{
+        "company":"MyCompany",
+        "salutation":"Mr",
+        "firstName":"Pino",
+        "lastName":"Ginolast",
+        "street":"a street 22",
+        "streetDetails":null,
+        "zipCode":"22222",
+        "city":"Hamburg",
+        "state":"Lappland",
+        "country":"Germany",
+        "title":"CEO",
+        "vatId":null,
+        "birthday":null,
+        "emailAddress":"email@address.com"
+    },
+    "shippingAddress":{
+        "company":"MyCompany for shipping",
+        "salutation":"Mr",
+        "firstName":"Shipping",
+        "lastName":"Pinolast",
+        "street":"a street 23",
+        "streetDetails":null,
+        "zipCode":"22222",
+        "city":"Hamburg",
+        "state":"Lappland",
+        "country":"Germany",
+        "title":null,
+        "vatId":null,
+        "birthday":null,
+        "emailAddress":"email_shipping@address.com"
+    },
+  "lineItemContainer": {
+    "grandTotal": {
+      "taxType": "GROSS",
+      "formatted": "96.90 €",
+      "amount": 96.9,
+      "currency": "EUR"
+    },
+    "totalBeforeTax": {
+      "taxType": "NET",
+      "formatted": "81.43 €",
+      "amount": 81.43,
+      "currency": "EUR"
+    },
+    "totalTax": {
+      "taxType": "NONE",
+      "formatted": "15.47 €",
+      "amount": 15.47,
+      "currency": "EUR"
+    },
+    "lineItemsSubTotal": {
+      "taxType": "GROSS",
+      "formatted": "89.90 €",
+      "amount": 89.9,
+      "currency": "EUR"
+    },
+    "productLineItems": [
+      {
+        "lineItemId": "56025DA7-4DD1-10ED-6B14-AC153207AB55",
+        "sku": "lt_0401107001",
+        "name": "Leatherman Pocket Survival Tool",
+        "productId": "56025D97-9DD6-3D11-F34B-AC153207ABB1",
+        "quantity": {
+          "amount": 1,
+          "unit": "piece(s)"
+        },
+        "lineItemPrice": {
+          "taxType": "GROSS",
+          "formatted": "72.95 €",
+          "amount": 72.95,
+          "currency": "EUR"
+        },
+        "singleItemPrice": {
+          "taxType": "GROSS",
+          "formatted": "72.95 €",
+          "amount": 72.95,
+          "currency": "EUR"
+        },
+        "images": [
+          {
+            "url": "http://vm-ubiallas.intern.epages.de/WebRoot/Store/Shops/DemoShop/Products/lt_0401107001/lt_0401107001_1_xs.jpg",
+            "classifier": "Thumbnail"
+          }
+        ],
+        "links": [
+          {
+            "rel": "product",
+            "href": "http://vm-ubiallas.intern.epages.de/epages/DemoShop.rest/api/products/56025D97-9DD6-3D11-F34B-AC153207ABB1"
+          }
+        ]
+      },
+      {
+        "lineItemId": "56025DA7-B1E9-08BE-D125-AC153207ABF8",
+        "sku": "hm_0100401001",
+        "name": "Mag Lite Mini",
+        "productId": "56025D96-7380-3D98-EB3B-AC153207AB37",
+        "quantity": {
+          "amount": 1,
+          "unit": "piece(s)"
+        },
+        "lineItemPrice": {
+          "taxType": "GROSS",
+          "formatted": "16.95 €",
+          "amount": 16.95,
+          "currency": "EUR"
+        },
+        "singleItemPrice": {
+          "taxType": "GROSS",
+          "formatted": "16.95 €",
+          "amount": 16.95,
+          "currency": "EUR"
+        },
+        "images": [
+          {
+            "url": "http://vm-ubiallas.intern.epages.de/WebRoot/Store/Shops/DemoShop/Products/hm_0100401001/hm_0100401001_xs.jpg",
+            "classifier": "Thumbnail"
+          }
+        ],
+        "links": [
+          {
+            "rel": "product",
+            "href": "http://vm-ubiallas.intern.epages.de/epages/DemoShop.rest/api/products/56025D96-7380-3D98-EB3B-AC153207AB37"
+          }
+        ]
+      }
+    ],
+    "shippingPrice": {
+      "taxType": "GROSS",
+      "formatted": "7.00 €",
+      "amount": 7,
+      "currency": "EUR"
+    }
+  },
+    "links":[
+    ]
+}

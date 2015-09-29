@@ -10,23 +10,12 @@
       200:
         body:
           application/json:
-            example: !include get_root_categories_response.json
+            example: !include examples/get_categories_response.json
       400:
         body:
           application/json:
-            example: |
-              {
-                "message": "Locale [fr] not available. Available locales: [en_GB, de_DE], Request: GET /rs/shops/DemoShop/categories",
-                "status": "BAD_REQUEST"
-              }
-      404:
-        body:
-          application/json:
-            example: |
-              {
-                "message": "shop UNKNOWN_SHOP_NAME was not found, Request: GET /rs/shops/UNKNOWN_SHOP_NAME/categories",
-                "status": "NOT_FOUND"
-              }
+            example: !include examples/get_categories_response400.json
+
   /{categoryId}:
       displayName: Category ID
       description: The unique identifier of the category.
@@ -37,20 +26,19 @@
           200:
             body:
               application/json:
-                example: !include get_category_response.json
+                example: !include examples/get_categories_categoryid_response.json
           400:
             body:
               application/json:
-                example: |
-                  {
-                    "message": "Locale [fr] not available. Available locales: [en_GB, de_DE], Request: GET /rs/shops/DemoShop/categories/53228097-D31D-2015-D9C0-AC13320B6354",
-                    "status": "BAD_REQUEST"
-                  }
-          404:
+                example: !include examples/get_categories_categoryid_response400.json
+      put:
+        description: Updates the order
+        is: [ locale ]
+        body:
+          application/json:
+            example: !include examples/put_category_example.json
+        responses:
+          200:
             body:
               application/json:
-                example: |
-                  {
-                    "message": "shop UNKNOWN_SHOP_NAME was not found, Request: GET /rs/shops/UNKNOWN_SHOP_NAME/categories/53228097-D31D-2015-D9C0-AC13320B6354",
-                    "status": "NOT_FOUND"
-                  }
+                example: !include examples/get_categories_categoryid_response.json
