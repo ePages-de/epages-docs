@@ -21,7 +21,7 @@ layout: page
     <tr>
       <th>Name</th>
       <th>Type</th>
-      <th></th>
+      <th>Description</th>
     </tr>
     </thead>
     <tbody>
@@ -31,7 +31,7 @@ layout: page
         <td><code>{{ p.name. }}</code></td>
         <td><strong>{{ p.type. }}</strong></td>
         <td>
-          {% if p.description %}<div>Description: {{ p.description | markdownify }}</div>{% endif %}
+          {% if p.description %}<div>{{ p.description | markdownify }}</div>{% endif %}
           <div>Required: <code>{{ p.required }}</code></div>
           {% if p.example %}<div>Example: <code>{{ p.example }}</code></div>{% endif %}
           {% if p.default %}<div>Default: <code>{{ p.default }}</code></div>{% endif %}
@@ -53,7 +53,7 @@ layout: page
     <tr>
       <th>Name</th>
       <th>Type</th>
-      <th></th>
+      <th>Description</th>
     </tr>
     </thead>
     <tbody>
@@ -63,7 +63,7 @@ layout: page
         <td><code>{{ p.name. }}</code></td>
         <td><strong>{{ p.type. }}</strong></td>
         <td>
-          {% if p.description %}<div>Description: {{ p.description | markdownify }}</div>{% endif %}
+          {% if p.description %}<div>{{ p.description | markdownify }}</div>{% endif %}
           <div>Required: <code>{{ p.required }}</code></div>
           {% if p.example %}<div>Example: <code>{{ p.example }}</code></div>{% endif %}
           {% if p.default %}<div>Default: <code>{{ p.default }}</code></div>{% endif %}
@@ -103,6 +103,30 @@ layout: page
       <p>Media type <code>{{ body.media_type }}</code></p>
       {% if body.example %}
         <pre class="pre-scrollable">{{ body.example }}</pre>
+      {% endif %}
+      {% if body.schema != null %}
+        <h2>Response Attributes</h2>
+        <table class="table table-bordered table-striped">
+          <thead style="background-color: white;">
+            <tr>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+          {% assign keys = body.schema | json_keys: 'properties' %}
+          {% assign properties = body.schema | json_field: 'properties' %}
+          {% for key in keys %}
+            {% assign p = properties[key] %}
+            <tr>
+              <td><code>{{ key }}</code></td>
+              <td>
+                {% if p.description %}<div>{{ p.description | markdownify }}</div>{% endif %}
+              </td>
+            </tr>
+          {% endfor %}
+          </tbody>
+        </table>
       {% endif %}
     {% endfor %}
   {% endfor %}
