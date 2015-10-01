@@ -68,9 +68,10 @@ privileges to work properly with them)
 
 ## Build Ruby itself from source:
 
-You can install ruby fine with a tool like Rvm or ruby-install. However subsequently installing rails (as a gem) requires access to source files like ruby.h
-If you install these via your OS (package manager) then you risk a version mismatch which may cause errors during the build (or worse, at runtime). So you need these header files anyways and the best
-way to get them is to download the source code for ruby.
+You can install ruby fine with a tool like ruby-install. However subsequently installing rails (as a gem) requires (at least on my system) access to source files like ruby.h.
+This is surprising but maybe it will change in future. In the meantime time however, there are two options: make the files available globally or locally.
+If you install these (globally) via your OS (package manager) then you risk a version mismatch which may cause errors during the build (or worse, at runtime). The better alternative
+is to (locally) download the source code for ruby.
 
 *Note the use of **prefix**  below to ensure that the files to be installed are written to local dirs (and not globally). This isolates your ruby version nicely,
 protecting any other apps that depend on the global version, and yours from any changes made to the global one.*
