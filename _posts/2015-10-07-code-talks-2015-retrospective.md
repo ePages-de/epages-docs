@@ -28,7 +28,6 @@ The amount of relevant input from these talks was so intense that I had to switc
 Choosing the very entertaining talk about creating PDFs using JavaScript for [printing out websites](https://www.codetalks.de/2015/programm/internet-ausdrucken-mit-javascript) was a welcome alternative and recharged my batteries to focus on [e-commerce topics](https://www.codetalks.de/2015/programm/demystify-the-commercetools-platform-how-to-build-a-global-e-commerce-api-platform) in the afternoon.
 
 On Wednesday I started the conference with [Microservices](https://www.codetalks.de/2015/programm/microservices-und-die-jagd-nach-mehr-konversion) and [e-commerce](https://www.codetalks.de/2015/programm/spryker-e-commerce-framework-als-alternative-zu-traditioneller-shop-software) talks.
-
 Again it proved to be a good choice to regain some energy by joining a more entertaining talk covering [elephants and squirrels](https://www.codetalks.de/2015/programm/liebling-ich-habe-das-framework-geschrumpft) before diving back into [e-commerce](https://www.codetalks.de/2015/programm/der-kunde-im-fokus-personalisierte-aussteuerung-von-inhalten-als-erfolgsfaktor-im-e-commerce) and [Docker](https://www.codetalks.de/2015/programm/docker-why-we-shouldn-t-use-it) again.
 The biggest pleasant surprise for me that day was the talk about [monkey testing with genetic algorithms](https://www.codetalks.de/2015/programm/wenn-affen-testen-das-ende-der-bananensoftware), though.
 
