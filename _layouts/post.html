@@ -14,7 +14,7 @@ layout: page
 <div class="post-categories">
   <h3>Categories</h3>
   {% for category in page.categories %}
-    <a href="{{ '.html' | prepend: category | prepend: '/blog/categories/' | prepend: site.baseurl }}" class="label label-default">{{ category }}</a>
+    <a href="{{ '/index.html' | prepend: category | prepend: '/blog/categories/' | prepend: site.baseurl }}" class="label label-default">{{ category }}</a>
   {% endfor %}
 </div>
 
