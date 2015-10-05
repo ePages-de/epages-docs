@@ -1,0 +1,19 @@
+{% if paginator == null %}
+  {% assign paginator = page.paginator %}
+{% endif %}
+{% if paginator.total_pages > 1 %}
+  <div class="col-sm-9 col-sm-offset-3">
+    <ul class="pager">
+      {% if paginator.page > 1 %}
+      <li class="previous"><a href="{% if paginator.previous_page %}{{ paginator.previous_page_path }}{% endif %}">
+        <span aria-hidden="true">&lt;</span> Newer</a>
+      </li>
+      {% endif %}
+      {% if paginator.page < paginator.total_pages %}
+      <li class="next"><a href="{% if paginator.next_page %}{{ paginator.next_page_path }}{% endif %}">
+        Older <span aria-hidden="true">&gt;</span></a>
+      </li>
+      {% endif %}
+    </ul>
+  </div>
+{% endif %}
