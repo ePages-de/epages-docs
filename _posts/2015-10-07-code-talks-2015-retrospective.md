@@ -22,14 +22,15 @@ At next day's breakfast you could clearly tell who had a tough night, but judgin
 
 ## The talks
 
-I started the conference attending talks highly related to my current assignment at ePages:
-[Microservices](https://www.codetalks.de/2015/programm/radical-agility-with-autonomous-teams-and-microservices-in-the-cloud), [Docker containers](https://www.codetalks.de/2015/programm/patterns-in-a-containerized-world), [Consul](https://www.codetalks.de/2015/programm/die-cloud-im-griff-mit-consul), [Mesos & Marathon](https://www.codetalks.de/2015/programm/scalable-micro-services-with-apache-mesos-and-marathon) are technologies my team evaluates to create a new architecture for our product.
+I started the conference attending talks highly related to my current project at ePages:
+[Microservices](https://www.codetalks.de/2015/programm/radical-agility-with-autonomous-teams-and-microservices-in-the-cloud), [Docker containers](https://www.codetalks.de/2015/programm/patterns-in-a-containerized-world), [Consul](https://www.codetalks.de/2015/programm/die-cloud-im-griff-mit-consul), [Mesos & Marathon](https://www.codetalks.de/2015/programm/scalable-micro-services-with-apache-mesos-and-marathon) are technologies my team evaluates during our daily work.
 The amount of relevant input from these talks was so intense that I had to switch to other topics in the afternoon.
 Choosing the very entertaining talk about creating PDFs using JavaScript for [printing out websites](https://www.codetalks.de/2015/programm/internet-ausdrucken-mit-javascript) was a welcome alternative and recharged my batteries to focus on [e-commerce topics](https://www.codetalks.de/2015/programm/demystify-the-commercetools-platform-how-to-build-a-global-e-commerce-api-platform) in the afternoon.
 
 On Wednesday I started the conference with [Microservices](https://www.codetalks.de/2015/programm/microservices-und-die-jagd-nach-mehr-konversion) and [e-commerce](https://www.codetalks.de/2015/programm/spryker-e-commerce-framework-als-alternative-zu-traditioneller-shop-software) talks.
 Again it proved to be a good choice to regain some energy by joining a more entertaining talk covering [elephants and squirrels](https://www.codetalks.de/2015/programm/liebling-ich-habe-das-framework-geschrumpft) before diving back into [e-commerce](https://www.codetalks.de/2015/programm/der-kunde-im-fokus-personalisierte-aussteuerung-von-inhalten-als-erfolgsfaktor-im-e-commerce) and [Docker](https://www.codetalks.de/2015/programm/docker-why-we-shouldn-t-use-it) again.
-The biggest pleasant surprise for me that day was the talk about [monkey testing with genetic algorithms](https://www.codetalks.de/2015/programm/wenn-affen-testen-das-ende-der-bananensoftware), though.
+The biggest pleasant surprise for me that day was the talk about [monkey testing with genetic algorithms](https://www.codetalks.de/2015/programm/wenn-affen-testen-das-ende-der-bananensoftware), though:
+finally the speaker managed to explain to me how mutation and crossover can be modeled in Software while still maintaining an entertaining talk and showing the applicability to tedious testing chores.
 
 Of course ePages also contributed a presentation to this year's `code.talks` - [Oliver](https://www.codetalks.de/2015/speaker/oliver-trosien) gave an interesting overview about documenting and testing REST APIs in a microservice world - [Documented and Tested Microservices For Fun And Profit](https://github.com/ePages-de/codetalks2015).
 The talk provided a good overview of types of REST APIs, introduced HAL and [Spring Data REST](http://projects.spring.io/spring-data-rest/) as a framework to implement a HAL-based REST API.
