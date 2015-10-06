@@ -108,12 +108,12 @@ getInfoReturn[0].getManufacturer();
 
 Create one or more products.
 First create an object of the type TCreate_Input with your new data.
-The values for TaxClass and alias are required.
+The values for TaxClass and alias are required and the TaxClass should exist already.
 
 {% highlight java %}
 TCreate_Input createInput = new TCreate_Input();
 craeteInput.setAlias("fancyAlias");
-createInput.setTAxClass("/TaxMatrixGermany/normal");
+createInput.setTaxClass("/TaxMatrixGermany/normal");
 {% endhighlight %}
 
 Create the array for the actual call.
