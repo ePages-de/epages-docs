@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Scrum Basics Series - Part 1: What is Scrum?"
-date: "2015-10-06 08:23:00"
+date: "2015-10-13 08:23:00"
 icon: university
 categories: agile
 authors: ["Anja B."]
@@ -33,7 +33,7 @@ That doesn’t mean everyone should know everything, it only means everyone is w
 # Advantages
 
 The big advantage of those teams in comparison to assigning single persons to specific parts of the product development is, that you always have all the abilities needed in one room.
-In waterfall you often have the problem that the person who did the backend development is already in the next project when the designers realise that they need some more data from the backend.
+In [waterfall](https://en.wikipedia.org/wiki/Waterfall_model) you often have the problem that the person who did the backend development is already in the next project when the designers realise that they need some more data from the backend.
 In Scrum that won’t happen.
 Another advantage is that you always have several eyes on one problem.
 Solutions can be found faster if you have more experience in the room and people who get stuck at some point always have someone to ask right next to them.
@@ -78,6 +78,9 @@ It also shows if one person is working on too many tickets at the same time or i
 At ePages we only have one team that is using a paper board:
 
 {% image blog-scrum1-scrumboard-paper.jpg %}{% endimage %}
+
+Having a visual board present in the room at all times has more advantages for them.
+The quick and easy way of adding tasks to stories (more about that in part Scrum Basics - Part 4: Estimating) outbalance the higher administrative effort that occurs because one has to maintain the tickets on the physical board as well as in Jira.
 
 The other teams are using Jira Boards.
 
