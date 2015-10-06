@@ -17,12 +17,12 @@ Due to the huge amount of different talks there was almost always at least one i
 Between the talks there was time for meeting and networking with other visitors to exchange impressions and ideas.
 All the time there was more than enough excellent food and drinks provided; not only water, coffee and tea, but of course also [1337 mate](http://www.1337mate.com/) ;-)
 
-Those not already too exhausted by the intense first day had the chance to spend their energy during a exclusive party in the evening/night, also with vouchers for free drinks.
+Those not already too exhausted by the intense first day had the chance to spend their energy during an exclusive party in the evening/night, also with vouchers for free drinks.
 At next day's breakfast you could clearly tell who had a tough night, but judging from the full conference rooms only a few visitors slept in.
 
 ## The talks
 
-I (Jens) started the conference attending talks highly related to my current assignment at ePages:
+I started the conference attending talks highly related to my current assignment at ePages:
 [Microservices](https://www.codetalks.de/2015/programm/radical-agility-with-autonomous-teams-and-microservices-in-the-cloud), [Docker containers](https://www.codetalks.de/2015/programm/patterns-in-a-containerized-world), [Consul](https://www.codetalks.de/2015/programm/die-cloud-im-griff-mit-consul), [Mesos & Marathon](https://www.codetalks.de/2015/programm/scalable-micro-services-with-apache-mesos-and-marathon) are technologies my team evaluates to create a new architecture for our product.
 The amount of relevant input from these talks was so intense that I had to switch to other topics in the afternoon.
 Choosing the very entertaining talk about creating PDFs using JavaScript for [printing out websites](https://www.codetalks.de/2015/programm/internet-ausdrucken-mit-javascript) was a welcome alternative and recharged my batteries to focus on [e-commerce topics](https://www.codetalks.de/2015/programm/demystify-the-commercetools-platform-how-to-build-a-global-e-commerce-api-platform) in the afternoon.
@@ -31,7 +31,10 @@ On Wednesday I started the conference with [Microservices](https://www.codetalks
 Again it proved to be a good choice to regain some energy by joining a more entertaining talk covering [elephants and squirrels](https://www.codetalks.de/2015/programm/liebling-ich-habe-das-framework-geschrumpft) before diving back into [e-commerce](https://www.codetalks.de/2015/programm/der-kunde-im-fokus-personalisierte-aussteuerung-von-inhalten-als-erfolgsfaktor-im-e-commerce) and [Docker](https://www.codetalks.de/2015/programm/docker-why-we-shouldn-t-use-it) again.
 The biggest pleasant surprise for me that day was the talk about [monkey testing with genetic algorithms](https://www.codetalks.de/2015/programm/wenn-affen-testen-das-ende-der-bananensoftware), though.
 
-Of course ePages also contributed a presentation to this year's `code.talks` - Oliver gave an interesting overview about documenting and testing REST APIs in a microservice world - [Documented and Tested Microservices For Fun And Profit](https://github.com/ePages-de/codetalks2015). The talk provided a good overview of types of REST APIs, introduced HAL and [Spring Data REST](http://projects.spring.io/spring-data-rest/) as a framework to implement a HAL-based REST API. Oliver also did some live coding showing how to use [Spring REST Docs](http://projects.spring.io/spring-restdocs/) to document REST APIs. This showed an elegant way to include the API documentation into the integration tests of a project and thus keep the API up-to-date.
+Of course ePages also contributed a presentation to this year's `code.talks` - [Oliver](https://www.codetalks.de/2015/speaker/oliver-trosien) gave an interesting overview about documenting and testing REST APIs in a microservice world - [Documented and Tested Microservices For Fun And Profit](https://github.com/ePages-de/codetalks2015).
+The talk provided a good overview of types of REST APIs, introduced HAL and [Spring Data REST](http://projects.spring.io/spring-data-rest/) as a framework to implement a HAL-based REST API.
+Oliver also did some live coding showing how to use [Spring REST Docs](http://projects.spring.io/spring-restdocs/) to document REST APIs.
+This showed an elegant way to include the API documentation into the integration tests of a project and thus keep the API up-to-date.
 
 I really enjoyed the diversity of talks, which allowed me to switch focus based on my cognitive capacity.
 Of course different talks had different levels of complexity and quality, but my general impression was that most speakers knew their topic pretty well and were also able to deliver their talk in an interesting fashion.
