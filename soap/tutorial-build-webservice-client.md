@@ -4,11 +4,11 @@ key: tutorial-build-simple-webservice-client
 title: How to build a simple web service client
 ---
 
-# 1. How to integrate web services in your own project.
+# 1. How to integrate web services in your own project
 
-Go to the epages-soapclient repository at https://bintray.com/epages/maven/epages-soapclient/ and integrate it with your build automation tool or manually.
+Go to the [epages-soapclient repository](https://bintray.com/epages/maven/epages-soapclient/) and integrate it with your build automation tool or manually.
 
-## 1.1 Integrate it with your build automation tool.
+## 1.1 Integration with build automation tool
 
 Include bintray to your maven repository resolution.
 For gradle this might look like this:
@@ -26,17 +26,18 @@ dependencies {
     compile ‘de.epages:soapclient-provider:${soapProviderVersion}’
 {% endhighlight %}
 
-## 1.2 Integrate it into your IDE.
+## 1.2 Integration into an Integrated Development Environment (IDE)
 
-Run your specified task to get the dependencies into your favorite IDE (e.g.: eclipse).
+Run your specified task to get the dependencies into your favourite IDE (e.g.: [eclipse](https://eclipse.org/downloads/)).
 
 {% highlight bash %}
 ./gradlew eclipse
 {% endhighlight %}
 
-The other possibility is to download the jars from the bintray repository and add it manually. Open your favorite IDE (e.g.: eclipse) and right click on your project >> properties >> Java Build Path >>
-Libaries.
-Add the dependencies with Add External JARs to your java build path.
+You can also download the jars from the bintray repository and add it manually.
+Open your IDE (here: eclipse) and right-click on your project >> properties >> Java Build Path >>
+Libraries.
+Add the dependencies with **Add External JARs** to your java build path.
 
 ## 1.3 Import the classes into your project
 
@@ -49,7 +50,7 @@ import de.epages.ws.product{version}.ProductServiceClient;
 
 # 2. The actual usage
 
-## 2.1 The Authentication.
+## 2.1 The Authentication
 
 Create an implementation of the interface WebServiceConfiguration with methods for your web service URL, your username and password.
 Give this object to the web service client implementation you want to use or create your own one with the provided interfaces.
@@ -60,7 +61,7 @@ PageCacheServiceClientImpl pageCacheService = new PageCacheServiceClientImpl (so
 
 ## 2.2 Example: The PageCacheService
 
-Use the PageCacheService to delete all cached pages of the shop
+Use the PageCacheService to delete all cached pages of the shop.
 
 {% highlight java %}
 pageCacheServiceClient.clear();
@@ -68,7 +69,8 @@ pageCacheServiceClient.clear();
 
 ## 2.3 Example: The ProductService
 
-## Product existence
+## 2.3.1 Product existence
+
 Check if one or more products exists.
 Create an array with strings of aliases you want to check.
 
@@ -77,7 +79,7 @@ String[] productAliases = new String[1];
 productAliases[0] = “fancyAlias”;
 {% endhighlight %}
 
-It’s always possible to check more than one value with one soap call.
+It’s always possible to check more than one value with one SOAP call.
 Create the instance of the service and perform the actual call:
 
 {% highlight java %}
@@ -85,11 +87,11 @@ ProductServiceClientImpl productService = new ProductServiceClientImpl(soapShopC
 TExists_Return[] existsReturn productService.exists(productAliases);
 {% endhighlight %}
 
-This kind of service will return an array with information if the call was successful or failed, if the product exists or not etc.
+This kind of service will return an array with information, e.g. call was successful or failed, product exists or not, etc.
 
-## Product data
+## 2.3.2 Product data
 
-Get the data of one or more products with the same array as before.
+Get the data of one or more product(s) with the same array as before.
 
 {% highlight java %}
 ProductServiceClientImpl productService = new ProductServiceClientImpl(soapShopConfig);
@@ -97,17 +99,17 @@ TGetInfo_Return[] getInfoReturn = productService.getInfo(productAliases);
 TExists_Return[] existsReturn productService.exists(productAliases);
 {% endhighlight %}
 
-It will return an array of objects form the type TGetInfo_Return.
+It will return an array of objects form the type `TGetInfo_Return`.
 You could reach the data of the product with the setter and getter methods of this object.
 
 {% highlight java %}
 getInfoReturn[0].getManufacturer();
 {% endhighlight %}
 
-## Product creation
+## 2.3.3 Product creation
 
 Create one or more products.
-First create an object of the type TCreate_Input with your new data.
+First create an object of the type `TCreate_Input` with your new data.
 The values for TaxClass and alias are required and the TaxClass should exist already.
 
 {% highlight java %}
@@ -130,5 +132,5 @@ TCreate_Return[] createReturn = productService.create(createInputs);
 {% endhighlight %}
 
 {% callout info Pro tip: %}
-Tipp. See also the unit/integration tests of the project for more practical examples.
+See also the unit/integration tests of the project for more practical examples.
 {% endcallout %}
