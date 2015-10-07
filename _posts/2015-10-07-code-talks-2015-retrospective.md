@@ -9,6 +9,7 @@ authors: ["Jens"]
 
 For the fifth time about 1,500 developers gathered for the yearly `code.talks` conference in Hamburg:
 on September 29 and 30, a dozen ePagees went to the Cinemaxx Hamburg Dammtor to enjoy two days fully packed with [lots of talks](https://www.codetalks.de/2015/programm) from 13 different tracks.
+
 Each track focussed on a specific theme like E-Commerce, IT Management, Startups, New Technology, Big Data, Mobile, DevOps, Scaling, Infrastructure, UX/Frontend, PHP, JavaScript and Java - the latter also being sponsored by ePages.
 Talks from these tracks where held in parallel at eight movie theater rooms.
 Each talk was 45 minutes long, with a small break afterwards plus a longer break for lunch.
@@ -36,7 +37,7 @@ finally the speaker managed to explain to me how mutation and crossover can be m
 Of course ePages also contributed a presentation to this year's `code.talks` - [Oliver](https://www.codetalks.de/2015/speaker/oliver-trosien) gave an interesting overview about documenting and testing REST APIs in a microservice world - [Documented and Tested Microservices For Fun And Profit](https://github.com/ePages-de/codetalks2015).
 The talk provided a good overview of types of REST APIs, introduced HAL and [Spring Data REST](http://projects.spring.io/spring-data-rest/) as a framework to implement a HAL-based REST API.
 Oliver also did some live coding showing how to use [Spring REST Docs](http://projects.spring.io/spring-restdocs/) to document REST APIs.
-This showed an elegant way to include the API documentation into the integration tests of a project and thus keep the API up-to-date.
+This showed an elegant way to include the API documentation into the integration tests of a project and thus keeping the API up-to-date.
 
 I really enjoyed the diversity of talks, which allowed me to switch focus based on my cognitive capacity.
 Of course different talks had different levels of complexity and quality, but my general impression was that most speakers knew their topic pretty well and were also able to deliver their talk in an interesting fashion.
