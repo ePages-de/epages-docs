@@ -32,18 +32,18 @@ That doesn’t mean everyone should know everything, it only means everyone is w
 
 # Advantages
 
-The big advantage of those teams in comparison to assigning single persons to specific parts of the product development is, that you always have all the abilities needed in one room.
-In [waterfall](https://en.wikipedia.org/wiki/Waterfall_model) you often have the problem that the person who did the backend development is already in the next project when the designers realise that they need some more data from the backend.
+The big advantage of those teams in comparison to assigning a single person to specific parts of the product development is that you always have all the abilities needed in one room.
+In [waterfall](https://en.wikipedia.org/wiki/Waterfall_model) you often have the problem that the person who did the backend development is already working on the next project when the designers realise that they need some more data from the backend.
 In Scrum that won’t happen.
 Another advantage is that you always have several eyes on one problem.
 Solutions can be found faster if you have more experience in the room and people who get stuck at some point always have someone to ask right next to them.
-And don’t forget the much faster feedback cycle with the testers when they are right inside the team!
+And let's not forget the much faster feedback cycle with the testers when they are right inside the team!
 No ticket is really done until it has been tested.
 
 # How is Scrum made for developing complex products or systems?
 
 Complex problems are usually better solved if more minds are involved.
-An idea can be good but it will only become really great if you open it up to your team partners and get as many information and experiences involved as possible.
+An idea can be good but it will only become really great if you open it up to your team partners and get as much information and experience involved as possible.
 If you have to do the same thing every day again (like on an assembly line), Scrum would be too much overhead, you could use Kanban instead.
 But if you have to solve new challenges every day and are working on complex products, Scrum is your best choice.
 
