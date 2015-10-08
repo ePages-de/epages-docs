@@ -1,0 +1,14 @@
+{
+  "name": "Contact information",
+  "title": null,
+  "navigationCaption": "Contact information",
+  "shortDescription": "You adapt this text via the preview or data sheet view under the &quot;Content/Categories&quot; menu item of your Administration.",
+  "description": "<p>Account number: ...<p/>",
+  "company": "",
+  "contactPerson": "John Smith",
+  "contactPersonJobTitle": null,
+  "address": "Any Street 1<br />12345 Any City<br />Any State",
+  "phone": null,
+  "fax": null,
+  "email": "john.smith@epages.com"
+}

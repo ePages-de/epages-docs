@@ -1,0 +1,44 @@
+#%RAML 0.8
+  displayName: Categories
+  description: A collection of product categories of a shop.
+  get:
+    description: |
+        Returns the product categories of the shop. This usually is the default root category "Categories",
+        but can also include additional root categories, if supported by the shop.
+    is: [ locale ]
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include examples/get_categories_response.json
+      400:
+        body:
+          application/json:
+            example: !include examples/get_categories_response400.json
+
+  /{categoryId}:
+      displayName: Category ID
+      description: The unique identifier of the category.
+      get:
+        description: Returns the category identified by the provided category ID.
+        is: [ locale ]
+        responses:
+          200:
+            body:
+              application/json:
+                example: !include examples/get_categories_categoryid_response.json
+          400:
+            body:
+              application/json:
+                example: !include examples/get_categories_categoryid_response400.json
+      put:
+        description: Updates the order
+        is: [ locale ]
+        body:
+          application/json:
+            example: !include examples/put_category_example.json
+        responses:
+          200:
+            body:
+              application/json:
+                example: !include examples/get_categories_categoryid_response.json
