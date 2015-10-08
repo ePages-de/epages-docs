@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "Legal Contact Information Schema",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "The name that appears on the contact information page, e.g. Contact Us."
+    },
+    "title": {
+      "description": "The name of the contact information page, that appears on the browser tab."
+    },
+    "navigationCaption": {
+      "description": "The name of the contact information page that appears in the navigation bar."
+    },
+    "shortDescription": {
+      "description": "Additional short information that can be given to e.g. better explain what's on the contact information page."
+    },
+    "description": {
+      "description": "Additional information that can be added to the contact information page, e.g. tax identification number or bank account."
+    },
+    "company": {
+      "description": "The name of the shop."
+    },
+    "contactPerson": {
+      "description": "The contact person for the shop, usually the shop owner."
+    },
+    "contactPersonJobTitle": {
+      "description": "The job title of the contact person."
+    },
+    "address": {
+      "description": "The postal address of the shop."
+    },
+    "phone": {
+      "description": "The phone number of the shop."
+    },
+    "email": {
+      "description": "The email address of the shop."
+    }
+  }
+}

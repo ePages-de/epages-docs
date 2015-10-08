@@ -1,11 +1,11 @@
 #%RAML 0.8
-displayName: Product Portals
-description: Returns the Products Feed File.
+displayName: Product Export
+description: Exports a collection of all products of a shop in a CSV file.
 get:
-  description: Returns the Products Feed File.
+  description: Returns a CSV file with all products of the shop.
   is: [ locale ]
   responses:
     200:
       body:
-        application/json:
-          example: !include examples/product_portal_response.json
+        text/csv:
+          example: !include examples/product_portal_response.csv
