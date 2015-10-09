@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "Get Carts CartID Schema",
+  "type": "object",
+  "properties": {
+    "cartID": {
+      "description": "Uniquely identifies a cart."
+    },
+    "billingAddress": {
+      "description": "The billing address for a cart."
+    },
+    "shippingAddress": {
+      "description": "The shipping address for a cart."
+    },
+    "lineItemContainer": {
+      "description": "Contains the line items of a cart."
+    },
+    "minCartValue": {
+      "description": "The minimum order value of a shop."
+    },
+    "checkoutURL": {
+      "description": "The link to the checkout of the merchant's shop."
+    }
+  }
+}

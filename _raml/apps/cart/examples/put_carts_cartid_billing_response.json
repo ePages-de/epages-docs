@@ -1,0 +1,69 @@
+{
+  "cartId": "55FFAE6B-3BB2-A3F7-A11C-D5809AB36A58",
+  "billingAddress": null,
+  "shippingAddress": null,
+  "lineItemContainer": {
+    "grandTotal": {
+      "taxType": "GROSS",
+      "formatted": "20,05 €",
+      "amount": 20.05,
+      "currency": "EUR"
+    },
+    "totalBeforeTax": {
+      "taxType": "NET",
+      "formatted": "16,85 €",
+      "amount": 16.85,
+      "currency": "EUR"
+    },
+    "totalTax": {
+      "taxType": "NONE",
+      "formatted": "3,20 €",
+      "amount": 3.2,
+      "currency": "EUR"
+    },
+    "lineItemsSubTotal": {
+      "taxType": "GROSS",
+      "formatted": "12,99 €",
+      "amount": 12.99,
+      "currency": "EUR"
+    },
+    "productLineItems": [
+      {
+        "lineItemId": "55FFAE6C-ACFF-3896-C312-D5809AB36A9B",
+        "sku": "Acc-001",
+        "name": "Adapter 6,3mm auf 3,5mm",
+        "productId": "54E72E1F-746A-8B6E-8E41-0A0C05E64669",
+        "quantity": {
+          "amount": 1,
+          "unit": "Stück"
+        },
+        "lineItemPrice": {
+          "taxType": "GROSS",
+          "formatted": "12,99 €",
+          "amount": 12.99,
+          "currency": "EUR"
+        },
+        "singleItemPrice": {
+          "taxType": "GROSS",
+          "formatted": "12,99 €",
+          "amount": 12.99,
+          "currency": "EUR"
+        },
+        "images": [
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/acc6_xs.jpg",
+            "classifier": "Thumbnail"
+          }
+        ],
+        "links": [
+          {
+            "rel": "product",
+            "href": "http://pm.epages.com:8088/rs/shops/apidocu/products/54E72E1F-746A-8B6E-8E41-0A0C05E64669"
+          }
+        ]
+      }
+    ]
+  },
+  "minCartValue": null,
+  "checkoutUrl": "http://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/3/Baskets/46072&ChangeAction=PickupBasket&PickupToken=6247825235"
+}
