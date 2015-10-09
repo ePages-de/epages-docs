@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "Get Legal Schema",
+  "type": "object",
+  "properties": {
+    "contactInformation": {
+      "description": "The shop's contact information."
+    },
+    "privacyPolicy": {
+      "description": "The shop's privacy policy."
+    },
+    "rightsOfWithdrawal": {
+      "description": "The shop's rights of withdrawal."
+    },
+    "termsAndConditions": {
+      "description": "The shop's terms and conditions."
+    },
+    "shippingInformation": {
+      "description": "The shop's shipping conditions."
+    },
+    "links": {
+      "description": "The links to the shop's [contact information](get-shops-shopid-legal-contact-information.html), [privacy policy](get-shops-shopid-legal-privacy-policy.html), [rights of withdrawal](get-shops-shopid-legal-rights-of-withdrawal.html), [terms and conditions](get-shops-shopid-legal-terms-and-conditions.html) and [shipping conditions](get-shops-shopid-legal-shipping-information.html)."
+    }
+  }
+}

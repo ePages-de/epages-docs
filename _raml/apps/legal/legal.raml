@@ -1,149 +1,129 @@
 #%RAML 0.8
-  displayName: Legal information
-  description: Summary of legal information for a shop.
+displayName: Legal information
+description: Summary of legal information for a shop.
+get:
+  description: Returns hyperlinks of legal information for a shop.
+  is: [ locale ]
+  responses:
+    200:
+      body:
+        application/json:
+          example: !include examples/get_legal_response.json
+          schema: !include schema/get_legal.schema.json
+/contact-information:
+  displayName: Contact information
+  description: The contact information of a shop.
   get:
-    description: Returns hyperlinks of legal information for a shop.
+    description: Returns the contact information of a shop.
     is: [ locale ]
     responses:
       200:
         body:
           application/json:
-            example: |
-              {
-                "contactInformation": {
-                    "name": "Contact information",
-                },
-                "privacyPolicy": {
-                    "name": "Privacy policy",
-                },
-                "rightsOfWithdrawal": {
-                    "name": "Terms and Conditions",
-                },
-                "termsAndConditions": {
-                    "name": "Right of withdrawal",
-                },
-                "shippingInformation": {
-                   "name": "Shipping terms"
-                },
-                "links":
-                    [
-                        {
-                            "rel": "contact",
-                            "href": "http://<hostname>/rs/shops/DemoEp6/legal/contact-information"
-                        },
-                        {
-                            "rel": "privacy",
-                            "href": "http://<hostname>/rs/shops/DemoEp6/legal/privacy-policy"
-                        },
-                        {
-                            "rel": "tac",
-                            "href": "http://<hostname>/rs/shops/DemoEp6/legal/terms-and-conditions"
-                        },
-                        {
-                            "rel": "withdrawal",
-                            "href": "http://<hostname>/rs/shops/DemoEp6/legal/rights-of-withdrawal"
-                        },
-                        {
-                            "rel": "shipping",
-                            "href": "http://<hostname>/rs/shops/DemoEp6/legal/shipping-information"
-                        }
-                    ],
-              }
-  /contact-information:
-    displayName: Contact information
-    description: Retrieve the contact information of a shop.
-    get:
-      description: Returns the contact information of a shop.
-      is: [ locale ]
-      responses:
-        200:
-          body:
-            application/json:
-              example: |
-                {
-                  "name": "Contact information",
-                  "title": null,
-                  "navigationCaption": "Contact information",
-                  "shortDescription": "You adapt this text via the preview or data sheet view under the &quot;Content/Categories&quot; menu item of your Administration.",
-                  "description": "<p>Account number: ...<p/>",
-                  "company": "",
-                  "contactPerson": "John Smith",
-                  "contactPersonJobTitle": null,
-                  "address": "Any Street 1<br />12345 Any City<br />Any State",
-                  "phone": null,
-                  "fax": null,
-                  "email": "john.smith@epages.com"
-                }
-  /privacy-policy:
-      displayName: Privacy policy
-      description: Retrieve the privacy policy of a shop.
-      get:
-        description: Returns the privacy policy of a shop.
-        is: [ locale ]
-        responses:
-          200:
-            body:
-              application/json:
-                example: |
-                    {
-                        "name": "Privacy policy",
-                        "title": null,
-                        "navigationCaption": "Privacy policy",
-                        "shortDescription": null,
-                        "description": "You adapt this text via the preview or data sheet view under the &quot;Content/Categories&quot;..."
-                    }
-  /terms-and-conditions:
-    displayName: Terms and conditions
-    description: Retrieve the terms and conditions of a shop.
-    get:
-      description: Returns the terms and conditions of a shop.
-      is: [ locale ]
-      responses:
-        200:
-          body:
-            application/json:
-              example: |
-                  {
-                      "name": "Terms and Conditions",
-                      "title": null,
-                      "navigationCaption": "Terms and Conditions",
-                      "shortDescription": null,
-                      "description": "You adapt this text via the preview or data sheet view under the &quot;Content/Categories&quot; menu item of your Administration."
-                  }
-  /rights-of-withdrawal:
-      displayName: Rights of withdrawal
-      description: Retrieve the rights of withdrawal of a shop.
-      get:
-        description: Returns the customer rights of withdrawal of a shop.
-        is: [ locale ]
-        responses:
-          200:
-            body:
-              application/json:
-                example: |
-                    {
-                        "name": "Right of withdrawal",
-                        "title": null,
-                        "navigationCaption": "Right of withdrawal",
-                        "shortDescription": null,
-                        "description": "You adapt this text via the preview or data sheet view under the &quot;Content/Categories&quot; menu item of your Administration.<br /><br /> Indicate to customers their right of withdrawal."
-                    }
+            example: !include examples/get_legal_contact_response.json
+            schema: !include schema/get_legal_contact.schema.json
+  put:
+    description: Modifies the contact information of a shop.
+    is: [ localeMandatory ]
+    body:
+      application/json:
+        example: !include examples/put_legal_contact_response.json
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include examples/put_legal_contact_response.json
 
-  /shipping-information:
-      displayName: Shipping information
-      description: Retrieve the shipping terms and information of a shop.
-      get:
-        description: Returns detailed information about possible shipping types and the costs incurred. Also display the costs for shipment abroad.
-        is: [ locale ]
-        responses:
-          200:
-            body:
-              application/json:
-                example: |
-                    {
-                        "name": "Shipping terms",
-                        "title": "Shipping terms - Timo",
-                        "navigationCaption": "Delivery",
-                        "shortDescription": "Possible shipping types and the costs incurred",
-                        "description": "<p>On this page, provide your customers with detailed information about possible shipping types and the costs incurred. Also display the costs for shipment abroad.<p/><p>Specify which countries you ship to.</p>"
-                    }
+/privacy-policy:
+    displayName: Privacy policy
+    description: Retrieve the privacy policy of a shop.
+    get:
+      description: Returns the privacy policy of a shop.
+      is: [ locale ]
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/get_legal_privacy_response.json
+
+    put:
+      description: Modifies the privacy policy of a shop.
+      is: [ localeMandatory ]
+      body:
+        application/json:
+          example: !include examples/put_legal_privacy_response.json
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/put_legal_privacy_response.json
+
+/terms-and-conditions:
+  displayName: Terms and conditions
+  description: The terms and conditions of a shop.
+  get:
+    description: Returns the terms and conditions of a shop.
+    is: [ locale ]
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include examples/get_legal_terms_response.json
+  put:
+    description: Modifies the terms and conditions of a shop.
+    is: [ localeMandatory ]
+    body:
+      application/json:
+        example: !include examples/put_legal_terms_response.json
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include examples/put_legal_terms_response.json
+
+/rights-of-withdrawal:
+    displayName: Rights of withdrawal
+    description: Retrieve the rights of withdrawal of a shop.
+    get:
+      description: Returns the customer rights of withdrawal of a shop.
+      is: [ locale ]
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/get_legal_rights_response.json
+    put:
+      description: Modifies the customer rights of withdrawal of a shop.
+      is: [ localeMandatory ]
+      body:
+        application/json:
+          example: !include examples/put_legal_rights_response.json
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/put_legal_rights_response.json
+
+/shipping-information:
+    displayName: Shipping information
+    description: Retrieve the shipping terms and information of a shop.
+    get:
+      description: Returns detailed information about possible shipping types and the costs incurred. Also displays the costs for shipment abroad.
+      is: [ locale ]
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/get_legal_shipping_response.json
+
+    put:
+      description: Modifies the shipping information of a shop.
+      is: [ localeMandatory ]
+      body:
+        application/json:
+          example: !include examples/put_legal_shipping_response.json
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/put_legal_shipping_response.json
