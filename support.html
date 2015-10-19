@@ -1,0 +1,48 @@
+---
+layout: default
+permalink: /support/
+---
+<div id="landingpage-banner">
+  <div id="landingpage-banner-headline">ePages Developer Support</div>
+  <div id="landingpage-banner-text">To send us a message, please fill out all fields marked with * and click "Send".</div>
+</div>
+
+<section id="contact-form">
+  <div class="row">
+    <div class="container">
+      <form class="col-md-12" action="//formspree.io/developer.support@epages.com" method="post">
+        <div class="row">
+          <div class="form-group col-md-12">
+            <input type="text" class="form-control" required="required" name="_subject" placeholder="Subject*">
+          </div>
+          <div class="form-group col-md-6">
+            <input type="text" class="form-control" required="required" name="firstname" placeholder="First name*">
+          </div>
+          <div class="form-group col-md-6">
+            <input type="text" class="form-control" required="required" name="lastname" placeholder="Last name*">
+          </div>
+          <div class="form-group col-md-6">
+            <input type="email" class="form-control" required="required" name="email" placeholder="Your E-Mail*">
+          </div>
+          <div class="form-group col-md-6">
+            <input type="text" class="form-control" required="required" name="phone" placeholder="Phone*">
+          </div>
+          <div class="form-group col-md-12">
+            <input type="text" class="form-control" name="domain" placeholder="Domain">
+          </div>
+          <div class="form-group col-md-12">
+            <textarea class="form-control" required="required" name="message" placeholder="Your message*"></textarea>
+          </div>
+          <input type="text" name="_gotcha" style="display:none" />
+          <input type="hidden" name="_next" value="/support/thankyou/" />
+          <div class="col-md-12">
+            <button type="submit" class="btn btn-primary btn-block">Send</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+
