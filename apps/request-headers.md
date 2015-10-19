@@ -11,4 +11,4 @@ The following table contains the required request headers that allow you to pass
 |---------------|---------------| -------|----------|
 | Accept      | String | The media&nbsp;type acceptable for the response. | `application/vnd.epages.v1+json`   |
 | Authorization      | String | The credentials for accessing the API. | `Bearer 4HZ9hriF6J3GOnd10JbFzdVehycOvAZf`|
-| Content-Type      | String | The media&nbsp;type of the body of the request. | `application/json`   |
+| Content-Type      | String | The media&nbsp;type of the body of the request. Required for `put` and `post` requests. | `application/json`   |

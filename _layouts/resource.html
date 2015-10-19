@@ -38,7 +38,7 @@ layout: page
           {% if p.minimum %}<div>Minimum: {{ p.minimum }}</div>{% endif %}
           {% if p.maximum %}<div>Maximum: {{ p.maximum }}</div>{% endif %}
           {% if p.repeat %}<div>Repeat: <code>{{ p.repeat }}</code></div>{% endif %}
-          {% if p.enum != empty %}<div>Enum: <code>{{ p.enum | join:',' }}</code></div>{% endif %}
+          {% if p.enum.size > 0 %}<div>Enum: <code>{{ p.enum | join:',' }}</code></div>{% endif %}
         </td>
       </tr>
     {% endfor %}
