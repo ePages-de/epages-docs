@@ -75,6 +75,20 @@ nav {
 .navbar {
   min-height: 44px !important;
 }
+#brand-logo {
+  width: 161px;
+  height: 39px;
+  background: transparent url('#{$assets-base}/logos/epages-logo.png') center center no-repeat;
+  background-size: contain;
+  margin-top: 11px;
+
+  @media screen and (max-width: $screen-xs-max) {
+    width: 44px;
+    height: 44px;
+    background: transparent url('#{$assets-base}/logos/epages-logo-mobile.png');
+    margin-top: 0;
+  }
+}
 
 #brand-logo-documentation {
   width: 348px;
@@ -114,6 +128,35 @@ nav {
   @media screen and (max-width: $screen-xs-max) {
     padding: 25px 0;
   }
+}
+
+#contact-form {
+  padding: 3em 0;
+}
+
+section{
+  background-color: white;
+  padding: 0 2em;
+}
+.call-to-action{
+  .container{
+    margin: 5em 0;
+  }
+  span.fa, h2{
+    width: 50%;
+    color: #444;
+    text-align: center;
+  }
+  p{
+    width: 50%;
+  }
+}
+
+.soap-banner{
+  background-color: #ddd;
+  padding: 1em 0;
+  text-align: center;
+  color: #444;
 }
 
 p {
