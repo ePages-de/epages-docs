@@ -105,11 +105,11 @@ YouTube
 https://www.youtube.com/watch?v={Id}
 {% endhighlight %}
 
-We will need logos and at least one screenshot to display your app in the App Store.
+We will need logos and at least one screenshot to display your app in the App & Theme Store.
 
 App detail page: use 64x64px, GIF, JPEG, PNG.
 
-App store: use 260x160px, GIF, JPEG, PNG.
+App & Theme Store: use 260x160px, GIF, JPEG, PNG.
 
 Screenshots: use 800x600px - 1920x1080px, GIF, JPEG, PNG.
 
