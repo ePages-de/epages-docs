@@ -4,7 +4,7 @@ title: "Follow-up: Automating Jenkins"
 date: "2015-10-22 09:00:00"
 icon: wrench
 categories: tech-stories
-authors: ["Dirk Jablonski"]
+authors: ["Dirk"]
 ---
 
 Some weeks ago, we published [Infrastructure as Code: automating Jenkins](https://developer.epages.com/blog/2015/06/25/infrastructure-as-code.html).
@@ -30,18 +30,18 @@ In addition, the Docker image hinted us to the solution of the configuration pro
 With these scripts, which utilise the internal API of Jenkins itself and also the plugins, we were able to kick out the precreated `config.xml`.
 As an example, here is a code snippet that creates an account:
 
-```groovy
-    import jenkins.model.*
-    import hudson.security.*
+{% highlight groovy %}
+import jenkins.model.*
+import hudson.security.*
 
-    def instance = Jenkins.getInstance()
+def instance = Jenkins.getInstance()
 
-    def hudsonRealm = instance.getSecurityRealm()
+def hudsonRealm = instance.getSecurityRealm()
 
-    def user = hudsonRealm.createAccount("admin", "password")
-    user.setFullName("Admin")
-    user.save()
-```
+def user = hudsonRealm.createAccount("admin", "password")
+user.setFullName("Admin")
+user.save()
+{% endhighlight %}
 
 As you can easily imagine, these scripts add tremendous flexibility to the way of configuring Jenkins, especially when combining the possibilities of Groovy with the dynamic generation of
 these scripts through templates from Ansible.
