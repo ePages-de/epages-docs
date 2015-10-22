@@ -128,8 +128,8 @@ task :test do
 
     def find_files
       Dir.glob(File.join(@dir, @glob))
-        .select { |file| not @ignore.any? { |ign| file.start_with? ign } }
-        .select { |file| File.file?(file) }
+          .select { |file| not @ignore.any? { |ign| file.start_with? ign } }
+          .select { |file| File.file?(file) }
     end
 
     def read_file_lines(file)
@@ -178,6 +178,10 @@ task :ramlup do
   require 'zip'
   require 'fileutils'
 
+  RAML_VERSIONS = 'http://ep-artifacts:8081/artifactory/epages-snapshot-local/com/epages/epagesj/maven-metadata.xml'
+  TARGET = '_raml/apps/'
+  TMP = 'tmp/'
+
   def download(url)
     response = Net::HTTP.get_response(URI.parse(url))
     if response.code == '200'
@@ -187,14 +191,13 @@ task :ramlup do
     end
   end
 
-  def get_latest_raml_version
-    url = 'http://ep-artifacts:8081/artifactory/epages-release-local/com/epages/epagesj/maven-metadata.xml'
-    metadata = REXML::Document.new(download(url))
+  def last_raml_version
+    metadata = REXML::Document.new(download(RAML_VERSIONS))
     metadata.elements['metadata'].elements['versioning'].elements['latest'].text
   end
 
   def get_raml_archive(version)
-    url = "http://ep-artifacts:8081/artifactory/epages-release-local/com/epages/epagesj/#{version}/epagesj-#{version}-raml.zip"
+    url = "http://ep-artifacts:8081/artifactory/epages-snapshot-local/com/epages/epagesj/#{version}/epagesj-#{version}-raml.zip"
     download(url)
   end
 
@@ -212,6 +215,13 @@ task :ramlup do
     end
   end
 
+  def copying_files(version)
+    puts "Downloading version: #{version}"
+    raml_files = get_raml_archive(version)
+    Dir.mkdir("#{TMP}/#{version}")
+    Zip::InputStream.open(StringIO.new(raml_files)) { |zip| unpack_zip_archive(zip, 'raml/', "#{TMP}/#{version}/") }
+  end
+
   def unpack_zip_archive(zip, source, target)
     while (entry = zip.get_next_entry)
       if entry.name =~ Regexp.new("^#{source}(.+)$")
@@ -225,15 +235,15 @@ task :ramlup do
     end
   end
 
-  target = '_raml/apps/'
-  latest_version = get_latest_raml_version
-  puts "Latest RAML archive version is #{latest_version}"
-  puts "Downloading archive"
-  raml_archive = get_raml_archive(latest_version)
-  puts "Clearing directory #{target}"
-  delete_directory_content(target)
-  puts "Unpacking RAML files"
-  Zip::InputStream.open(StringIO.new(raml_archive)) { |zip| unpack_zip_archive(zip, 'raml/', target) }
+  current_version = File.open("#{TMP}/doc_version.txt", &:gets)
+  last_version = last_raml_version
+  unless current_version == last_version
+    delete_directory_content(TMP)
+    copying_files(current_version)
+    copying_files(last_version)
+    File.write("#{TMP}/doc_version.txt", last_version)
+    system("opendiff #{TMP + current_version} #{TMP + last_version}")
+  end
 end
 
 task :resource do
@@ -288,8 +298,8 @@ task :resource do
     #format the interspace between entries
     content = file.to_yaml
     content.gsub("---\n", "")
-           .gsub(/- title:.*/){ |s| '  ' + s }
-           .gsub(/link:.*/)   { |s| '  ' + s + "\n" }
+        .gsub(/- title:.*/){ |s| '  ' + s }
+        .gsub(/link:.*/)   { |s| '  ' + s + "\n" }
   end
 
   def resource_template(resource)
