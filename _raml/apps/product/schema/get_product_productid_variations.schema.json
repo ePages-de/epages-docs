@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "Get Product Variations Schema",
+  "type": "object",
+  "properties": {
+    "variationAttributes": {
+      "description": "The existing variations of the product, e.g. colour."
+    },
+    "items": {
+      "description": "The available variations of the product that are set visible in the administration area of the shop."
+    },
+    "results": {
+      "description": "The number of variations in total."
+    },
+    "resultsPerPage": {
+      "description": "The number of variations returned per page."
+    },
+    "page": {
+      "description": "The page number on which the variation appears."
+    },
+    "links": {
+      "description": "The links to the product variations."
+    }
+  }
+}

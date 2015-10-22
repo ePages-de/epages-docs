@@ -4,16 +4,8 @@
   get:
     description: Returns the shop's locale information, i.e. the language identifier and the region identifier.
     responses:
-      404:
-        description: Shop not found
       200:
         body:
           application/json:
-            example: |
-              {
-              "default" : "de_DE",
-              "items":
-                    [
-                        "de_DE", "en_US"
-                    ]
-              }
+            example: !include examples/get_locale_response.json
+            schema: !include schema/get_locale.schema.json

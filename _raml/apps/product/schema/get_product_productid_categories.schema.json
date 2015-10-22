@@ -1,0 +1,10 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "Get Product Categories Schema",
+  "type": "object",
+  "properties": {
+    "links": {
+      "description": "The links to the categories the product is assigned to."
+    }
+  }
+}
