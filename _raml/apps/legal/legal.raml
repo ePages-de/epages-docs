@@ -27,7 +27,7 @@ get:
     is: [ localeMandatory ]
     body:
       application/json:
-        example: !include examples/put_legal_contact_response.json
+        example: !include examples/put_legal_contact_request.json
     responses:
       200:
         body:
@@ -45,13 +45,14 @@ get:
           body:
             application/json:
               example: !include examples/get_legal_privacy_response.json
+              schema: !include schema/get_legal_privacy.schema.json
 
     put:
       description: Modifies the privacy policy of a shop.
       is: [ localeMandatory ]
       body:
         application/json:
-          example: !include examples/put_legal_privacy_response.json
+          example: !include examples/put_legal_privacy_request.json
       responses:
         200:
           body:
@@ -69,12 +70,13 @@ get:
         body:
           application/json:
             example: !include examples/get_legal_terms_response.json
+            schema: !include schema/get_legal_terms.schema.json
   put:
     description: Modifies the terms and conditions of a shop.
     is: [ localeMandatory ]
     body:
       application/json:
-        example: !include examples/put_legal_terms_response.json
+        example: !include examples/put_legal_terms_request.json
     responses:
       200:
         body:
@@ -92,12 +94,13 @@ get:
           body:
             application/json:
               example: !include examples/get_legal_rights_response.json
+              schema: !include schema/get_legal_rights.schema.json
     put:
       description: Modifies the customer rights of withdrawal of a shop.
       is: [ localeMandatory ]
       body:
         application/json:
-          example: !include examples/put_legal_rights_response.json
+          example: !include examples/put_legal_rights_request.json
       responses:
         200:
           body:
@@ -106,22 +109,23 @@ get:
 
 /shipping-information:
     displayName: Shipping information
-    description: Retrieve the shipping terms and information of a shop.
+    description: Retrieve the shipping terms and conditions of a shop.
     get:
-      description: Returns detailed information about possible shipping types and the costs incurred. Also displays the costs for shipment abroad.
+      description: Returns detailed information on possible shipping types and the costs incurred. Also displays the costs for shipment abroad.
       is: [ locale ]
       responses:
         200:
           body:
             application/json:
               example: !include examples/get_legal_shipping_response.json
+              schema: !include schema/get_legal_shipping.schema.json
 
     put:
       description: Modifies the shipping information of a shop.
       is: [ localeMandatory ]
       body:
         application/json:
-          example: !include examples/put_legal_shipping_response.json
+          example: !include examples/put_legal_shipping_request.json
       responses:
         200:
           body:

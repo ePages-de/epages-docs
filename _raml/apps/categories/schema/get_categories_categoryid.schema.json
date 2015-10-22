@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "Get Categories Schema",
+  "type": "object",
+  "properties": {
+    "categoryId": {
+      "description": "The unique identifier of the category a product is assigned to."
+    },
+    "name": {
+      "description": "The name of the category."
+    },
+    "pageTitle": {
+      "description": "The title of this category."
+    },
+    "description": {
+      "description": "The description of the category."
+    },
+    "specialOffer": {
+      "description": "Special offers of this category. Data type: Boolean."
+    },
+    "images": {
+      "description": "The images belonging to this category."
+    },
+    "parent": {
+      "description": "The unique identification of the parent category."
+    },
+    "subCategories": {
+      "description": "The categories subordinated to this category."
+    },
+    "sfUrl": {
+      "description": "The link to the categories of the shop."
+    }
+  }
+}

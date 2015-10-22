@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "Get Product Schema",
+  "type": "object",
+  "properties": {
+    "results": {
+      "description": "The number of products in total."
+    },
+    "page": {
+      "description": "The page number on which the products appears."
+    },
+    "resultsPerPage": {
+      "description": "The number of products returned per page."
+    },
+    "items": {
+      "description": "The list of all products."
+    }
+  }
+}
