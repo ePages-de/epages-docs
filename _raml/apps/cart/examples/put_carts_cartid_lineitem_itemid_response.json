@@ -31,11 +31,11 @@
       {
         "lineItemId": "55FFAE6C-ACFF-3896-C312-D5809AB36A9B",
         "sku": "Acc-001",
-        "name": "Adapter 6,3mm auf 3,5mm",
+        "name": "Adapter 6,3mm",
         "productId": "54E72E1F-746A-8B6E-8E41-0A0C05E64669",
         "quantity": {
-          "amount": 1,
-          "unit": "Stück"
+          "amount": 3,
+          "unit": "Piece"
         },
         "lineItemPrice": {
           "taxType": "GROSS",

@@ -1,0 +1,70 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "Get Product ProductId Schema",
+  "type": "object",
+  "properties": {
+    "productId": {
+      "description": "The unique identifier of the product."
+    },
+    "name": {
+      "description": "The name of the product."
+    },
+    "shortDescription": {
+      "description": "The short description of the product."
+    },
+    "description": {
+      "description": "The description of the product."
+    },
+    "images": {
+      "description": "The image of the product."
+    },
+    "priceInfo": {
+      "description": "Price information on the product."
+    },
+    "forSale": {
+      "description": "Information on the sale status of the product."
+    },
+    "specialOffer": {
+      "description": "Indicates if the product is a special offer."
+    },
+    "deliveryWeight": {
+      "description": "The delivery weight of the product."
+    },
+    "shippingMethodsRestrictedTo": {
+      "description": "Information on possible shipping method restrictions, e.g. express delivery only."
+    },
+    "availabilityText": {
+      "description": "Additional availablility information for the product."
+    },
+    "availability": {
+      "description": "The availablility of the product, e.g. in stock."
+    },
+    "energyLabelsString": {
+      "description": "Indicates the energy label category and the maximimum limit of the energy label."
+    },
+    "energyLabelSourceFile": {
+      "description": "The source file of the energy label."
+    },
+    "productDataSheet": {
+      "description": "The product data sheet of the product. Has to be available if the product has an energy label."
+    },
+    "sfUrl": {
+      "description": "The link to the product."
+    },
+    "productNumber": {
+      "description": "The product number for the product."
+    },
+    "manufacturer": {
+      "description": "The manufacturer of the product."
+    },
+    "upc": {
+      "description": "The Universal Product Code of the product."
+    },
+    "ean": {
+      "description": "The European Article Number of the product, either EAN-8 or EAN-13."
+    },
+    "links": {
+      "description": "The references the product is linked to."
+    }
+  }
+}

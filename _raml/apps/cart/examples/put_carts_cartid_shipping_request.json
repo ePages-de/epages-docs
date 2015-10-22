@@ -1,0 +1,10 @@
+{
+  "firstName" : "Jane",
+  "lastName" : "Doe",
+  "street" : "Carnegy Street 1",
+  "zipCode" : 20355,
+  "city" : "Hamburg",
+  "country" : "DE",
+  "birthday" : "1968-10-23",
+  "emailAddress" : "janedoe@test.com"
+}

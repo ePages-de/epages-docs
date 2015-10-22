@@ -1,6 +1,0 @@
-{
-    "shippingMethodId": "532BBA27-C69F-25CD-1146-AC13320B3780",
-    "name": "Standard delivery",
-    "description": "Descriptive text of delivery costs and conditions. Can contain HTML",
-    "logo": "https://url/to/shippingmethod-logo.png"
-}

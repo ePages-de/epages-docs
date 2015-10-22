@@ -1,0 +1,14 @@
+{
+  "name": "Contact information",
+  "title": null,
+  "navigationCaption": "Contact information",
+  "shortDescription": "Contact Us",
+  "description": "<p>Account number: ...<p/>",
+  "company": "technic365",
+  "contactPerson": "John Smith",
+  "contactPersonJobTitle": null,
+  "address": "Any Street 1<br />12345 Any City<br />Any State",
+  "phone": null,
+  "fax": null,
+  "email": "john.smith@epages.com"
+}

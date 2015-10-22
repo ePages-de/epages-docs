@@ -1,4 +1,0 @@
-{
-  "message": "Update cart failed:\n\tvalidation error STRING_EMPTY on field Phone, Request: PUT /rs/shops/apidocu/carts/55FFAE6B-3BB2-A3F7-A11C-D5809AB36A58/shipping-address",
-  "status": "Bad Request"
-}

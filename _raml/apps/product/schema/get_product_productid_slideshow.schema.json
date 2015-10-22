@@ -1,0 +1,10 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "Get Product Slideshow Schema",
+  "type": "object",
+  "properties": {
+    "items": {
+      "description": "The list of products that appear in the slideshow."
+    }
+  }
+}

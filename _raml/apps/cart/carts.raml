@@ -5,7 +5,7 @@ post:
   description: Creates a cart for a shop.
   body:
     application/json:
-      example: !include examples/input_cart.json
+      example: !include examples/post_carts_request.json
   responses:
     201:
       body:
@@ -32,11 +32,7 @@ post:
       description: Creates a product line item in a cart.
       body:
         application/json:
-          example: |
-            {
-              "productId": "prodGUID",
-              "quantity": 1
-            }
+          example: !include examples/post_carts_cartid_lineitem_request.json
       responses:
         201:
           body:
@@ -51,10 +47,7 @@ post:
         description: Modifies a specified product line item in a cart.
         body:
           application/json:
-            example: |
-              {
-                  "quantity": 3
-              }
+            example: !include examples/put_carts_cartid_lineitem_itemid_request.json
         responses:
           200:
             body:
@@ -77,17 +70,13 @@ post:
       description: Modifies the billing address for a cart.
       body:
         application/json:
-          example: !include examples/input_address.json
+          example: !include examples/put_carts_cartid_billing_request.json
       responses:
         200:
           body:
             application/json:
               example: !include examples/put_carts_cartid_billing_response.json
               schema: !include schema/put_carts_cartid_billing.schema.json
-        400:
-          body:
-            application/json:
-              example: !include examples/put_carts_cartid_billing_response400.json
     delete:
       description: Deletes the billing address from a cart.
       responses:
@@ -104,17 +93,13 @@ post:
       description: Modifies the shipping address for a cart.
       body:
         application/json:
-          example: !include examples/input_address.json
+          example: !include examples/put_carts_cartid_shipping_request.json
       responses:
         200:
           body:
             application/json:
               example: !include examples/put_carts_cartid_shipping_response.json
               schema: !include schema/put_carts_cartid_shipping.schema.json
-        400:
-          body:
-            application/json:
-              example: !include examples/put_carts_cartid_shipping_response400.json
     delete:
       description: Deletes the shipping address from a cart.
       responses:

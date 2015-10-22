@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "Legal Terms and Conditions Schema",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "The name that appears on the terms and conditions page."
+    },
+    "navigationCaption": {
+      "description": "The name of the terms and conditions page that appears in the navigation bar."
+    },
+    "description": {
+      "description": "Information on the terms and conditions of the shop."
+    }
+  }
+}
