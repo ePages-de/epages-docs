@@ -49,7 +49,7 @@ these scripts through templates from Ansible.
 ## Immutability
 
 To get a truly immutable server, there are two things left: Once again, the handling of job metadata, which needs to be persisted, and the Jenkins Web UI, which still allows changing the configuration,
-although these cahnges will be overwritten with the next run of Ansible.
+although these changes will be overwritten with the next run of Ansible.
 
 The job metadata problem is easily solved using a standard Docker feature: volumes.
 We are intentionally not mounting the whole `jenkins_home` folder as a persistent volume, but only the reallly important subfolders `jobs` and `nodes`, which contain the actual metadata.
