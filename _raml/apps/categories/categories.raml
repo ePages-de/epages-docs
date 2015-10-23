@@ -11,10 +11,7 @@
         body:
           application/json:
             example: !include examples/get_categories_response.json
-      400:
-        body:
-          application/json:
-            example: !include examples/get_categories_response400.json
+            schema: !include schema/get_categories.schema.json
 
   /{categoryId}:
       displayName: Category ID
@@ -27,18 +24,16 @@
             body:
               application/json:
                 example: !include examples/get_categories_categoryid_response.json
-          400:
-            body:
-              application/json:
-                example: !include examples/get_categories_categoryid_response400.json
+                schema: !include schema/get_categories_categoryid.schema.json
       put:
-        description: Updates the order
+        description: Modifies a category.
         is: [ locale ]
         body:
           application/json:
-            example: !include examples/put_category_example.json
+            example: !include examples/put_categories_categoryid_request.json
         responses:
           200:
             body:
               application/json:
-                example: !include examples/get_categories_categoryid_response.json
+                example: !include examples/put_categories_categoryid_response.json
+                schema: !include schema/put_categories_categoryid.schema.json

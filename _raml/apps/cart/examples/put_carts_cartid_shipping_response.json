@@ -2,20 +2,14 @@
   "cartId": "55FFE909-D96C-91D6-092E-7F000101E1D0",
   "billingAddress": null,
   "shippingAddress": {
-    "company": null,
-    "salutation": null,
-    "firstName": "John",
-    "lastName": "Doe",
-    "street": "Pilatuspool 2",
-    "streetDetails": null,
-    "zipCode": "20355",
-    "city": "Hamburg",
-    "state": null,
-    "country": "DE",
-    "title": null,
-    "vatId": null,
-    "birthday": null,
-    "emailAddress": null
+    "firstName" : "Jane",
+    "lastName" : "Doe",
+    "street" : "Carnegy Street 1",
+    "zipCode" : 20355,
+    "city" : "Hamburg",
+    "country" : "DE",
+    "birthday" : "1968-10-23",
+    "emailAddress" : "janedoe@test.com"
   },
   "lineItemContainer": {
     "grandTotal": {

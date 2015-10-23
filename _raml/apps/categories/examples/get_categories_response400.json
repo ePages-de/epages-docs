@@ -1,4 +1,0 @@
-{
-  "message": "expected full locale for example en_US, Request: GET /rs/shops/apidocu/categories",
-  "status": "Bad Request"
-}

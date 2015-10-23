@@ -1,6 +1,15 @@
 {
   "cartId": "55FFAE6B-3BB2-A3F7-A11C-D5809AB36A58",
-  "billingAddress": null,
+  "billingAddress": {
+    "firstName" : "Jane",
+    "lastName" : "Doe",
+    "street" : "Pilatuspool 2",
+    "zipCode" : 20355,
+    "city" : "Hamburg",
+    "country" : "DE",
+    "birthday" : "1968-10-23",
+    "emailAddress" : "janedoe@test.com"
+  },
   "shippingAddress": null,
   "lineItemContainer": {
     "grandTotal": {
