@@ -1,33 +1,33 @@
 ---
 layout: post
 title: "#refugeehackathon"
-date: "2015-10-28 07:00:00"
+date: "2015-10-27 12:00:00"
 icon: flag
 categories: hackathon
 authors: ["Jan"]
 ---
 
 Lots of refugees arrived in Germany.
-Task like organising accomodations, food and clothing or supporting them with their onwards journey raises many challenges.
+Tasks like organising accommodation, food and clothing and supporting them with their onwards journey raises many challenges.
 Though I am not able to work day and night for the solution like some people in the crisis management group, I wanted to fly the flag to show that a significant amount of people are willing to help.
 This blog post is a report about participating in the #refugeehackathon in Berlin, Germany.
 
 # Overview of the event
 
-The [#refuggeehackathon](https://twitter.com/search?src=typd&q=%23refugeehackathon) started on Friday, 24 October 2015 with a requirements workshop.
-A couple of people visited the refugees and talked about project ideas which could be helpful for them.
+The [#refuggeehackathon](https://twitter.com/search?src=typd&q=%23refugeehackathon) started on Friday, 24th October 2015 with a requirements workshop.
+A small group of people visited the refugees and talked about project ideas which could be helpful for them.
 The official start was on Saturday morning.
-After some words of welcome, a short video about the challenging situation of refugees travelling through Europe was shown.
+After some welcoming words, a short video about the challenging situation of refugees travelling through Europe was shown.
 Next there was a motivational speech from a Somalian lady.
 She invited us not to label people as refugees but to regard them as newcomers.
-Afterwards there was a presentation of the project ideas from the workshop as well as ideas that already existed.
+Afterwards there was a presentation of project ideas from the workshop as well as outlining existing ideas.
 
 # The Volunteer Planner project
 
 The project which I selected was the [Volunteer Planner](https://volunteer-planner.org/).
 It is an online platform which enables volunteers to sign up for tasks identified
 by different aid organisations and is created by a handful of programmers, designers and project managers.
-Though the project is only three month old and thus not yet feature complete they already have 19.354 registered users and 51.286 completed volunteer work hours.
+Though the project is only three month old and thus not yet feature complete they already have 19,354 registered users and 51,286 completed volunteer work hours.
 
 {% image blog-refugeehackathon-volunteer-planner.jpg %}{% endimage %}
 
@@ -47,7 +47,7 @@ For some reasons we did not manage to finish the implementation in time so there
 
 This #refugeehackathin was a very enriching experience for me.
 I got to know interesting people and we had a lot of fun together.
-Further I learned a number of lessons about web development in general and Python/Django in particular.
+On top of that, I learned a number of lessons about web development in general and Python/Django in particular.
 
 Hopefully my journey will also result in a little bit of practical help for the newcomers.
-So many thanks to [ePages](https://twitter.com/ePages) for sponsoring some work hours and travel costs so that I could participate in the hackathon.
+So many thanks to [ePages](https://twitter.com/ePages) for sponsoring me with some work hours and travel costs so that I could participate in the hackathon.
