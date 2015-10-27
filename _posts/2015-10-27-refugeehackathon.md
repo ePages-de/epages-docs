@@ -45,9 +45,10 @@ For some reasons we did not manage to finish the implementation in time so there
 
 # Conclusion
 
-This #refugeehackathin was a very enriching experience for me.
+This #refugeehackathon was a very enriching experience for me.
 I got to know interesting people and we had a lot of fun together.
 On top of that, I learned a number of lessons about web development in general and Python/Django in particular.
 
 Hopefully my journey will also result in a little bit of practical help for the newcomers.
-So many thanks to [ePages](https://twitter.com/ePages) for sponsoring me with some work hours and travel costs so that I could participate in the hackathon.
+
+So many thanks at [@ePages](https://twitter.com/ePages) for sponsoring me with some work hours, the train tickets and hotel costs.
