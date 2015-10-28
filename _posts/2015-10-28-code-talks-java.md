@@ -1,18 +1,18 @@
 ---
 layout: post
 title: "code.talks: code & nachos"
-date: "2015-10-29 09:00:00"
+date: "2015-10-28 07:17:00"
 icon: comments
 categories: conferences
 authors: ["Erik"]
 ---
 
 Some weeks ago we attended the `code.talks` developer conference in Hamburg.
-Besides the amazing location (which was the Cinemaxx Dammtor) and the awesome catering (nachos, popcorn and Mate as much as you can endure) the conference was also (who would have guessed that) packed with lots of interesting talks and people.
+Besides the amazing location (which was the Cinemaxx Dammtor) and the awesome catering (as much nachos, popcorn and Mate as you can endure) the conference was also (who would have guessed that) packed with lots of interesting presentations and people.
 
-In the variety of talks we found things we're already doing right (according to the speakers) and other aspects we can improve on.
-There were also talks we could contribute to since we have solved their problems already.
-I'd like to cover **three** points that I realised during this conference in the following paragraphs.
+Listening to the many great presentations we found things that we're already doing right (according to the speakers) but also other aspects we can improve on.
+There were also talks that we were able to contribute to since we had already come across their problems and solved them already.
+I'd like to cover **three** main points that I got during this conference in the following paragraphs.
 One last word of advice: Not everything should be taken too seriously ;)
 
 # 1. Node is acknowledged by the Java world
@@ -25,7 +25,7 @@ But hey, let's not get hung up on naming issues, shall we?
 
 Besides advertising *jWebSockets* there was a benchmark showing that *Nashorn* (the new JavaScript engine coming with Java8) is way faster than the old *Rhino* (Java6/7) implementation.
 While leveraging Java8's `invokedynamic` it takes some additional time to warm up but afterwards outruns rhino for good.
-With *warming up* the "compiler people" refer to having the programme optimised by the machine until it runs several 10 times faster then in a cold state.
+With *warming up* the "compiler people" refer to having the programme optimised by the machine until it runs several 10 times faster than in a cold state.
 And honestly the difference was impressive.
 That being said I noticed that `V8`, Google's JavaScript engine powering *nodejs* as well as Chrome, still being **twice** as fast as the warmed up Nashorn.
 Now that's something.
@@ -39,24 +39,24 @@ Nonetheless, the talk was pretty interesting with regards to what is possible wi
 Things to keep in mind though: All used `npm` packages must be "nashorn compatible".
 Whatever this means.
 
-For reading this far you deserve a well kept secret about `npm`: It's **not** an abbreviation for the **n**ode **p**ackage **m**anager but a recursive acronymic abbreviation for "npm is not an acronym".
+For reading this far you deserve a well kept secret about `npm`: It's **not** an abbreviation for the **n**ode **p**ackage **m**anager but a recursive bacronymic abbreviation for "npm is not an acronym".
 
 However rumor has it, the package manager sends "**n**aughty **p**ush **m**essages" once installed (see [npm-expansions](https://github.com/npm/npm-expansions)).
 
 # 2. We're pretty much up-to-date
 
 In the Frontend/JavaScript track there were several talks covering various aspects.
-From the language itself ('There is no JavScript' - awesome presentation by Noam Kfir) to pretty interesting testing approaches and the life of suffering with React and ES6.
+From the language itself ('There is no JavaScript' - awesome presentation by Noam Kfir) to pretty interesting testing approaches and the life of suffering with React and ES6.
 We realised that our current testing and build pipeline which consists of `mocha`, `babel`, `karma` and `webpack` is not only considered state of the art but is just discovered by some companies.
-They shared knowledge of pitfalls they encountered and how they overcame them (or at least what they tried to do so).
+They shared knowledge of pitfalls they encountered and how they overcame them (or at least how they tried to do so).
 Their solution was basically our current build configuration.
 But since the topic is pretty tricky, there were of course some nifty tricks we've yet to adopt so we're very glad they went through all that pain and shared these valuable findings.
-Anyway it still gave us a pretty confident feeling about how we're doing things.
-In these days it seems to be the mix of Es6, Es5 and React modules together with universal JavaScript that is the most challenging thing to overcome.
+Anyway, it still gave us a pretty confident feeling about how we're doing things.
+These days it seems to be the mix of ES6, ES5 and React modules together with universal JavaScript that is the most challenging thing to overcome.
 
 # 3. Operations is your new best friend
 
-First I have to say that this talk, done by two guys from 1&1, was really inspiring and made you think of changing a thing or two in you own development workflow.
+First I have to say that this talk, done by two guys from 1&1, was really inspiring and made you think of changing a thing or two in your own development workflow.
 
 Plainly put, the whole talk was about **DevOps** and how this construct can help to smoothen relations between all kinds of different departments throughout the whole company.
 Translated to ourselves they mainly spoke of improving workflows between the RND department (the developers) and the team which takes care of managing and deploying the application (AM).
@@ -67,6 +67,6 @@ Now they can deal with it!
 So a developer should not only take care of finishing the feature assigned to him but also have in mind that there's work *after* he did his final commit.
 He (or she of course) should feel responsible for the software as a whole (and everything that is related to it).
 
-The 1&1 guys gave several tips how to improve communications and workflows and also talked about how *they* tried to establish DevOps.
+The 1&1 guys gave several tips on how to improve communications and workflows. They also talked about how *they* tried to establish DevOps.
 Bringing together developers and operations not only smoothens (and probably speeds up) the workflows but also widens the knowledge of both department's members.
 And learning new things can never be bad ;)
