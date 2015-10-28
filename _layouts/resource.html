@@ -110,6 +110,7 @@ layout: page
           <thead style="background-color: white;">
             <tr>
               <th>Name</th>
+              <th>Type</th>
               <th>Description</th>
             </tr>
           </thead>
@@ -120,6 +121,7 @@ layout: page
             {% assign p = properties[key] %}
             <tr>
               <td><code>{{ key }}</code></td>
+              <td>{% if p.type %}{{ p.type | markdownify }}{% endif %}</td>
               <td>
                 {% if p.description %}<div>{{ p.description | markdownify }}</div>{% endif %}
               </td>
