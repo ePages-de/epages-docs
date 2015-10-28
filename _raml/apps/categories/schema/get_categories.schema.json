@@ -4,31 +4,40 @@
   "type": "object",
   "properties": {
     "categoryId": {
+      "type": "string",
       "description": "The unique identifier of the category a product is assigned to."
     },
     "name": {
+      "type": "string",
       "description": "The name of the category."
     },
     "pageTitle": {
+      "type": "string",
       "description": "The title of this category."
     },
     "description": {
+      "type": "string",
       "description": "The description of the category."
     },
     "specialOffer": {
-      "description": "Special offers of this category. Data type: Boolean."
+      "type": "boolean",
+      "description": "Special offers of this category."
     },
     "images": {
+      "type": "array of [image](page:apps-data-types#image)",
       "description": "The images belonging to this category."
     },
     "parent": {
-      "description": "The unique identification of the parent category."
+      "type": "[link](page:apps-data-types#link), null",
+      "description": "The link to the parent category."
     },
     "subCategories": {
-      "description": "The categories subordinated to this category."
+      "type": "array of [link](page:apps-data-types#link)",
+      "description": "A list of links to the subcategories."
     },
     "sfUrl": {
-      "description": "The link to the categories of the shop."
+      "type": "string",
+      "description": "The link to the categories in the shop's storefront."
     }
   }
 }

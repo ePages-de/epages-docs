@@ -1,15 +1,18 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema",
-  "title": "Legal Rights of Withdrawal Schema",
+  "title": "Get Legal Rights of Withdrawal Schema",
   "type": "object",
   "properties": {
     "name": {
+      "type": "string",
       "description": "The name that appears on the rights of withdrawal page."
     },
     "navigationCaption": {
+      "type": "string",
       "description": "The name of the rights of withdrawal page that appears in the navigation bar."
     },
     "description": {
+      "type": "string",
       "description": "Information on the rights of withdrawal of the shop."
     }
   }

@@ -4,66 +4,87 @@
   "type": "object",
   "properties": {
     "productId": {
+      "type": "string",
       "description": "The unique identifier of the product."
     },
     "name": {
+      "type": "string",
       "description": "The name of the product."
     },
     "shortDescription": {
+      "type": "string",
       "description": "The short description of the product."
     },
     "description": {
-      "description": "The description of the product."
+      "type": "string",
+      "description": "The full description of the product."
     },
     "images": {
-      "description": "The image of the product."
+      "type": "array of [image](page:apps-data-types#image)",
+      "description": "The image(s) of the product."
     },
     "priceInfo": {
+      "type": "object of [priceInfo](page:apps-data-types#priceinfo)",
       "description": "Price information on the product."
     },
     "forSale": {
-      "description": "Information on the sale status of the product."
+      "type": "boolean",
+      "description": "Information on the sale status of the product. Indicates if the product can be added to the shopping basket."
     },
     "specialOffer": {
+      "type": "boolean",
       "description": "Indicates if the product is a special offer."
     },
     "deliveryWeight": {
+      "type": "[quantity](page:apps-data-types#quantity)",
       "description": "The delivery weight of the product."
     },
     "shippingMethodsRestrictedTo": {
-      "description": "Information on possible shipping method restrictions, e.g. express delivery only."
+      "type": "array of [link](page:apps-data-types#link), null",
+      "description": "Information on possible shipping method restrictions, e.g. express delivery only. Can be `null` if no restrictions exist."
     },
     "availabilityText": {
-      "description": "Additional availablility information for the product."
+      "type": "string",
+      "description": "Additional custom information on the product's stock level or the delivery period."
     },
     "availability": {
+      "type": "enum",
       "description": "The availablility of the product, e.g. in stock."
     },
     "energyLabelsString": {
-      "description": "Indicates the energy label category and the maximimum limit of the energy label."
+      "type": "string",
+      "description": "A list of energy labels applied to this product. Can be one or two values. If two values are returned, the first value is the best energy label, the second is the second-best."
     },
     "energyLabelSourceFile": {
-      "description": "The source file of the energy label."
+      "type": "string",
+      "description": "An image or PDF file containing the energy label image supplied by the manufacturer"
     },
     "productDataSheet": {
-      "description": "The product data sheet of the product. Has to be available if the product has an energy label."
+      "type": "string",
+      "description": "An image or PDF file containing a datasheet with technical information on the product. Has to be available if the product has an energy label."
     },
     "sfUrl": {
-      "description": "The link to the product."
+      "type": "string",
+      "description": "The link to storefront URL of the product."
     },
     "productNumber": {
+      "type": "string",
       "description": "The product number for the product."
     },
     "manufacturer": {
+      "type": "string",
       "description": "The manufacturer of the product."
     },
     "upc": {
+      "type": "string",
       "description": "The Universal Product Code of the product."
     },
     "ean": {
+      "type": "string",
       "description": "The European Article Number of the product, either EAN-8 or EAN-13."
     },
     "links": {
+      "type": "array of [link](page:apps-data-types#link)",
       "description": "The references the product is linked to."
     }
   }

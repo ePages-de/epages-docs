@@ -1,12 +1,14 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema",
-  "title": "Currency Schema",
+  "title": "Get Currency Schema",
   "type": "object",
   "properties": {
     "default": {
+      "type": "string",
       "description": "The default currency of the shop according to ISO 4217."
     },
     "items": {
+      "type": "array",
       "description": "The additional currencies the shops supports according to ISO 4217."
     }
   }

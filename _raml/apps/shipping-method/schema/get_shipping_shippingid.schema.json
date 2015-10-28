@@ -1,18 +1,22 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema",
-  "title": "Shipping Method Schema",
+  "title": "Get Shipping Method ShippingId Schema",
   "type": "object",
   "properties": {
     "shippingMethodId": {
+      "type": "string",
       "description": "The unique identifier of the shipping method."
     },
     "name": {
+      "type": "string",
       "description": "The name of the shipping method."
     },
     "description": {
+      "type": "string",
       "description": "The description of the shipping method."
     },
     "logo": {
+      "type": "string",
       "description": "The logo of the shipping method."
     }
   }

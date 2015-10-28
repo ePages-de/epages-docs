@@ -1,15 +1,18 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema",
-  "title": "Legal Shipping Information Schema",
+  "title": "Get Legal Shipping Information Schema",
   "type": "object",
   "properties": {
     "name": {
+      "type": "string",
       "description": "The name that appears on the shipping information page."
     },
     "navigationCaption": {
+      "type": "string",
       "description": "The name of the shipping information page that appears in the navigation bar."
     },
     "description": {
+      "type": "string",
       "description": "Information on the shipping information of the shop."
     }
   }
