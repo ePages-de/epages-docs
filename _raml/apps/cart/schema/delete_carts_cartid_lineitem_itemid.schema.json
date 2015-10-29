@@ -20,12 +20,12 @@
       "description": "Contains the line items of a cart."
     },
     "minCartValue": {
-      "type": "string, null",
+      "type": "[price](page:apps-data-types#price)",
       "description": "The minimum order value of a shop."
     },
     "checkoutURL": {
       "type": "string",
-      "description": "The link to the checkout of the merchant's shop."
+      "description": "The URL that redirects the browser to the merchant's shop in order to complete the checkout."
     }
   }
 }

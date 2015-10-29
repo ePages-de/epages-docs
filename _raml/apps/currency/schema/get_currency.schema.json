@@ -8,7 +8,7 @@
       "description": "The default currency of the shop according to ISO 4217."
     },
     "items": {
-      "type": "array",
+      "type": "array of strings",
       "description": "The additional currencies the shops supports according to ISO 4217."
     }
   }

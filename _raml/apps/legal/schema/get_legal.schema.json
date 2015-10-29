@@ -4,23 +4,23 @@
   "type": "object",
   "properties": {
     "contactInformation": {
-      "type": "string",
+      "type": "[contentPageSummary](page:apps-data-types#contentpagesummary)",
       "description": "The shop's contact information."
     },
     "privacyPolicy": {
-      "type": "string",
+      "type": "[contentPageSummary](page:apps-data-types#contentpagesummary)",
       "description": "The shop's privacy policy."
     },
     "rightsOfWithdrawal": {
-      "type": "string",
+      "type": "[contentPageSummary](page:apps-data-types#contentpagesummary)",
       "description": "The shop's rights of withdrawal."
     },
     "termsAndConditions": {
-      "type": "string",
+      "type": "[contentPageSummary](page:apps-data-types#contentpagesummary)",
       "description": "The shop's terms and conditions."
     },
     "shippingInformation": {
-      "type": "string",
+      "type": "[contentPageSummary](page:apps-data-types#contentpagesummary)",
       "description": "The shop's shipping conditions."
     },
     "links": {
