@@ -41,6 +41,20 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | formatted | string | The formatted output of the base price information, e.g. 1 l = 1.20 EUR. |
 | quantity | [quantity](page:apps-data-types#quantity) | The quantity of the product, e.g. 500 ml. |
 
+# category
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| categoryId | string | The unique identifier of the category a product is assigned to. |
+| name | string | The name of the category. |
+| pageTitle | string | The title of this category. |
+| description | string | The description of the category. |
+| specialOffer | boolean | Special offers of this category. |
+| images | array of [image](page:apps-data-types#image) | The images belonging to this category. |
+| parent | [link](page:apps-data-types#link) | The link to the parent category. |
+| subCategories | array of [link] | A list of links to the subcategories. |
+| sfUrl | string | The link to the categories in the shop’s storefront. |
+
 # contentPageSummary
 
 | Attribute | Type | Description |
