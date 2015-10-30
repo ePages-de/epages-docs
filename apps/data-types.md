@@ -45,7 +45,7 @@ This object is used for the attributes of shippingAddress and billingAddress.
 
 | Attribute | Type | Description |
 | - | :-: |  - |
-| default | string | The name of the content page. |
+| name | string | The name of the content page. |
 
 # customAttribute
 
