@@ -106,7 +106,8 @@ get:
         200:
           body:
             application/json:
-              example: !include get_lowest_price_response.json
+              example: !include examples/get_product_productid_low_price_response.json
+              schema: !include schema/get_product_productid_low_price.schema.json
   /categories:
     displayName: Categories of a product
     description: Retrieve all categories of a product.

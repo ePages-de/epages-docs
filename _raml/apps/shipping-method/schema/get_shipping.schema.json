@@ -1,19 +1,11 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema",
-  "title": "Shipping Method Schema",
+  "title": "Get Shipping Method Schema",
   "type": "object",
   "properties": {
-    "shippingMethodId": {
-      "description": "The unique identifier of the shipping method."
-    },
-    "name": {
-      "description": "The name of the shipping method."
-    },
-    "description": {
-      "description": "The description of the shipping method."
-    },
-    "logo": {
-      "description": "The logo of the shipping method as link."
+    "": {
+      "type": "array of [shippingMethod](page:apps-data-types#shippingmethod)",
+      "description": ""
     }
   }
 }
