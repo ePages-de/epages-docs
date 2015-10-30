@@ -58,6 +58,8 @@
           "amount": 199.95,
           "currency": "EUR"
         },
+        "essentialFeatures": null
+        },
         "images": [
           {
             "url": "http://gecko/WebRoot/Store/Shops/DemoShop/Products/be_40401/be_40401_blue_xs.jpg",

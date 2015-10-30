@@ -54,6 +54,11 @@ get:
           application/json:
             example: !include examples/get_product_productid_response.json
             schema: !include schema/get_product_productid.schema.json
+  delete:
+    description: Deletes a single product.
+    responses:
+      204:
+
   /variations:
     displayName: Product variations
     description: Retrieve product variations.
@@ -129,14 +134,16 @@ get:
         200:
           body:
             application/json:
-              example: !include get_product_stocklevel_response.json
+              example: !include examples/get_product_productid_stocklevel_response.json
+              schema: !include schema/get_product_productid_stocklevel.schema.json
     put:
       description: Modifies the current stock level of a product.
       body:
         application/json:
-          example: !include put_product_stocklevel_request.json
+          example: !include examples/put_product_productid_stocklevel_request.json
       responses:
         200:
           body:
             application/json:
-              example: !include get_product_stocklevel_response.json
+              example: !include examples/put_product_productid_stocklevel_response.json
+              schema: !include schema/put_product_productid_stocklevel.schema.json

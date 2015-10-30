@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "Put Product ProductId Stocklevel Schema",
+  "type": "object",
+  "properties": {
+    "stocklevel": {
+      "type": "decimal",
+      "description": "Indicates the stocklevel of a product."
+    }
+  }
+}
