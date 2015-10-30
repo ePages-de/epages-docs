@@ -1,12 +1,14 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema",
-  "title": "Locale Schema",
+  "title": "Get Locale Schema",
   "type": "object",
   "properties": {
     "default": {
+      "type": "string",
       "description": "The default language of the shop according to ISO 639-1 and ISO 3166-1."
     },
     "items": {
+      "type": "array",
       "description": "The additional languages in which the shop is available according to ISO 639-1 and ISO 3166-1."
     }
   }

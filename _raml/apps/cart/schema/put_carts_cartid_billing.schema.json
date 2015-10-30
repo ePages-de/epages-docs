@@ -1,25 +1,31 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema",
-  "title": "Get Carts CartID Schema",
+  "title": "Put Carts CartId Billing Schema",
   "type": "object",
   "properties": {
-    "cartID": {
+    "cartId": {
+      "type": "string",
       "description": "Uniquely identifies a cart."
     },
     "billingAddress": {
+      "type": "[address](page:apps-data-types#address)",
       "description": "The billing address for a cart."
     },
     "shippingAddress": {
+      "type": "[address](page:apps-data-types#address)",
       "description": "The shipping address for a cart."
     },
     "lineItemContainer": {
+      "type": "[lineItemContainer](page:apps-data-types#lineitemcontainer)",
       "description": "Contains the line items of a cart."
     },
     "minCartValue": {
+      "type": "[price](page:apps-data-types#price)",
       "description": "The minimum order value of a shop."
     },
     "checkoutURL": {
-      "description": "The link to the checkout of the merchant's shop."
+      "type": "string",
+      "description": "The URL that redirects the browser to the merchant's shop in order to complete the checkout."
     }
   }
 }
