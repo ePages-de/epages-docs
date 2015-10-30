@@ -21,7 +21,7 @@ In order to get this code working, you need to setup your development environmen
 
 ## Sign up for an ePages test shop
 
-Simply sign up [here](http://www.epages.com/en/partner/developer-program/) for a free account.
+Simply sign up [here](http://www.epages.cloud/developer/) for a free account.
 
 ## Create a developer app
 

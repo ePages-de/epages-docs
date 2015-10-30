@@ -24,7 +24,7 @@ Once submitted successfully, your app will be available to more than 140,000 onl
 
 Get started and join the ePages Developer Program:
 
-1. [Sign up](http://www.epages.com/en/partner/developer-program/) for the Developer Program.
+1. [Sign up](http://www.epages.cloud/developer/) for the Developer Program.
     * Enter your name and email address in the required fields.
     * Agree to the terms and conditions.
     * Check your mailbox for the login details from your registration and create a test shop.
