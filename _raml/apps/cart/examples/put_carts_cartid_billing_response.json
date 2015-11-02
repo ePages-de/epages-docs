@@ -58,6 +58,8 @@
           "amount": 12.99,
           "currency": "EUR"
         },
+        "essentialFeatures": null
+        },
         "images": [
           {
             "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/acc6_xs.jpg",

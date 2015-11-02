@@ -1,14 +1,13 @@
 {
   "name": "Contact information",
-  "title": null,
+  "title": "Contact information",
   "navigationCaption": "Contact information",
-  "shortDescription": "You adapt this text via the preview or data sheet view under the &quot;Content/Categories&quot; menu item of your Administration.",
-  "description": "<p>Account number: ...<p/>",
-  "company": "",
-  "contactPerson": "John Smith",
-  "contactPersonJobTitle": null,
-  "address": "Any Street 1<br />12345 Any City<br />Any State",
-  "phone": null,
-  "fax": null,
-  "email": "john.smith@epages.com"
+  "shortDescription": "<p>technic365</p>\r\n\r\n<p>Linen Hall<br />\r\n162- 168 Regent Street<br />\r\nLondon, W1B 5TF<br />\r\nGroßbritannien</p>",
+  "description": "<p>Copyright 2009</p>",
+  "company": "technic365",
+  "contactPerson": "technic365 epages",
+  "contactPersonJobTitle": "Webmaster",
+  "address": "<p>Linen Hall<br />\r\n162- 168 Regent Street<br />\r\nLondon, W1B 5TF<br />\r\nGreat Britain</p>",
+  "phone": "+44-207 292 1790",
+  "email": "epages.technic365@gmail.com"
 }
