@@ -4,7 +4,7 @@ title: "Payment Integrations"
 date: "2015-11-03 09:00:00"
 icon: money
 categories: tech-stories
-authors: ["Xavier"]
+authors: ["Xavi"]
 ---
 
 Bank transfers and credit cards aren't the only payment methods available when buying a product from an ePages shop.
@@ -17,9 +17,9 @@ The following procedure describes the process of buying a product:
 1. A customer browses an ePages shop and finds a product they want to buy.
 2. The customer adds that product to a basket and starts the check out process.
 3. After choosing payment and shipping methods, the customer is redirected to an external site where they can complete the payment.
-4. Finally, our customer is redirected back to the ePages shop, where they are informed about the status of their order.
+4. Finally, the customer is redirected back to the ePages shop, where they are informed about the status of their order.
 
-That external site mentioned above belongs to a specific payment method - the one that was chosen by the customer from those that are offered in the shop -, which needs to know what is being bought so that payment can be completed.
+That external site mentioned above belongs to a specific payment method - the one that was chosen by the customer from those that are offered in the shop. The Payment method needs to know what is being bought so that payment can be completed.
 In order to do that, we need to create connectors, which allow ePages and the payment method to communicate with each other.
 
 # Payment flow
