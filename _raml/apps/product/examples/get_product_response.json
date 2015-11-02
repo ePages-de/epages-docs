@@ -69,6 +69,7 @@
       "manufacturer": "Dr. Boom",
       "upc": null,
       "ean": null,
+      "essentialFeature": null,
       "links": [
         {
           "rel": "self",

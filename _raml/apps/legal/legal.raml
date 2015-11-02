@@ -33,6 +33,7 @@ get:
         body:
           application/json:
             example: !include examples/put_legal_contact_response.json
+            schema: !include schema/put_legal_contact.schema.json
 
 /privacy-policy:
     displayName: Privacy policy
@@ -58,6 +59,7 @@ get:
           body:
             application/json:
               example: !include examples/put_legal_privacy_response.json
+              schema: !include schema/put_legal_privacy.schema.json
 
 /terms-and-conditions:
   displayName: Terms and conditions
@@ -82,6 +84,7 @@ get:
         body:
           application/json:
             example: !include examples/put_legal_terms_response.json
+            schema: !include schema/put_legal_terms.schema.json
 
 /rights-of-withdrawal:
     displayName: Rights of withdrawal
@@ -106,6 +109,7 @@ get:
           body:
             application/json:
               example: !include examples/put_legal_rights_response.json
+              schema: !include schema/put_legal_rights.schema.json
 
 /shipping-information:
     displayName: Shipping information
@@ -131,3 +135,4 @@ get:
           body:
             application/json:
               example: !include examples/put_legal_shipping_response.json
+              schema: !include schema/put_legal_shipping.schema.json

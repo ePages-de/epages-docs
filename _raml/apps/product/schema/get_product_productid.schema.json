@@ -83,6 +83,10 @@
       "type": "string",
       "description": "The European Article Number of the product, either EAN-8 or EAN-13."
     },
+    "essentialFeature": {
+      "type": "string",
+      "description": "Indicates the essential features of the product."
+    },
     "links": {
       "type": "array of [link](page:apps-data-types#link)",
       "description": "The references the product is linked to."
