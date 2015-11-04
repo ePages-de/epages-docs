@@ -247,7 +247,9 @@ Read further [here](page:soap-api) to access the SOAP web services.
 |---------------|---------------|-------------------------|
 | **SimpleProvisioningService4** | urn://epages.de/WebService/SimpleProvisioningService/2015/07 | 6.17.29&nbsp;or&nbsp;higher |
 
-*This is a provider web service.*
+*This is a provider web service.
+Using this web service, a provider can set attributes to the shopRef, such as Promo, Bestseller, Channel, Support, Setup, Design and Consulting.
+Further attributes can be used after prior consultation with our Sales Department.*
 
 * `create`: Creates a new shop with a given shop type and imports default data.
 * `exists`: Returns true if the shop alias exists for the provider.
