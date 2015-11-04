@@ -3,93 +3,9 @@
   "title": "Get Product ProductId Schema",
   "type": "object",
   "properties": {
-    "productId": {
-      "type": "string",
-      "description": "The unique identifier of the product."
-    },
-    "name": {
-      "type": "string",
-      "description": "The name of the product."
-    },
-    "shortDescription": {
-      "type": "string",
-      "description": "The short description of the product."
-    },
-    "description": {
-      "type": "string",
-      "description": "The full description of the product."
-    },
-    "images": {
-      "type": "array of [image](page:apps-data-types#image)",
-      "description": "The image(s) of the product."
-    },
-    "priceInfo": {
-      "type": "object of [priceInfo](page:apps-data-types#priceinfo)",
-      "description": "Price information on the product."
-    },
-    "forSale": {
-      "type": "boolean",
-      "description": "Information on the sale status of the product. Indicates if the product can be added to the shopping basket."
-    },
-    "specialOffer": {
-      "type": "boolean",
-      "description": "Indicates if the product is a special offer."
-    },
-    "deliveryWeight": {
-      "type": "[quantity](page:apps-data-types#quantity)",
-      "description": "The delivery weight of the product."
-    },
-    "shippingMethodsRestrictedTo": {
-      "type": "array of [link](page:apps-data-types#link)",
-      "description": "Information on possible shipping method restrictions, e.g. express delivery only. Can be `null` if no restrictions exist."
-    },
-    "availabilityText": {
-      "type": "string",
-      "description": "Additional custom information on the product's stock level or the delivery period."
-    },
-    "availability": {
-      "type": "enum",
-      "description": "The availability of the product. Can be one of *OnStock*, *WarnStock*, *OutStock*."
-    },
-    "energyLabelsString": {
-      "type": "string",
-      "description": "A list of energy labels applied to this product. Can be one or two values. If two values are returned, the first value is the best energy label, the second is the second-best."
-    },
-    "energyLabelSourceFile": {
-      "type": "string",
-      "description": "An image or PDF file containing the energy label image supplied by the manufacturer."
-    },
-    "productDataSheet": {
-      "type": "string",
-      "description": "An image or PDF file containing a datasheet with technical information on the product. Has to be available if the product has an energy label."
-    },
-    "sfUrl": {
-      "type": "string",
-      "description": "The link to storefront URL of the product."
-    },
-    "productNumber": {
-      "type": "string",
-      "description": "The product number for the product."
-    },
-    "manufacturer": {
-      "type": "string",
-      "description": "The manufacturer of the product."
-    },
-    "upc": {
-      "type": "string",
-      "description": "The Universal Product Code of the product."
-    },
-    "ean": {
-      "type": "string",
-      "description": "The European Article Number of the product, either EAN-8 or EAN-13."
-    },
-    "essentialFeature": {
-      "type": "string",
-      "description": "Indicates the essential features of the product."
-    },
-    "links": {
-      "type": "array of [link](page:apps-data-types#link)",
-      "description": "The references the product is linked to."
+    "": {
+      "type": "object of [product](page:apps-data-types#product)",
+      "description": ""
     }
   }
 }

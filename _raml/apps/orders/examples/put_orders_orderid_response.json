@@ -1,0 +1,36 @@
+{
+  "orderId": "5639C473-4265-5299-FDE2-D5809AB36284",
+  "orderNumber": "ORD151103/1030",
+  "creationDate": "2015-11-03T12:00:12.000Z",
+  "billingAddress": {
+    "company": "Schneiderei",
+    "salutation": "Mrs",
+    "firstName": "Tanja",
+    "lastName": "Schneider",
+    "street": "Schneiderstraße 10",
+    "streetDetails": null,
+    "zipCode": "12345",
+    "city": "Berlin",
+    "state": null,
+    "country": "DE",
+    "title": null,
+    "vatId": null,
+    "birthday": null,
+    "emailAddress": "schneider@schneiderei.de"
+  },
+  "shippingAddress": {
+    "company": "Walker, Weber and Anderson",
+    "salutation": "Mrs",
+    "firstName": "Breana",
+    "lastName": "Reichert",
+    "street": "Kemmer Knoll 8",
+    "streetDetails": null,
+    "zipCode": "02589",
+    "city": "Aylahaven",
+    "state": null,
+    "country": "Portugal",
+    "title": null,
+    "vatId": null,
+    "birthday": null,
+    "emailAddress": null
+  }

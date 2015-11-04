@@ -3,29 +3,9 @@
   "title": "Post Carts CartId Schema",
   "type": "object",
   "properties": {
-    "cartId": {
-      "type":"string",
-      "description": "Uniquely identifies a cart."
-    },
-    "billingAddress": {
-      "type": "[address](page:apps-data-types#address)",
-      "description": "The billing address for a cart."
-    },
-    "shippingAddress": {
-      "type": "[address](page:apps-data-types#address)",
-      "description": "The shipping address for a cart."
-    },
-    "lineItemContainer": {
-      "type": "[lineItemContainer](page:apps-data-types#lineitemcontainer)",
-      "description": "Contains the line items of a cart."
-    },
-    "minCartValue": {
-      "type": "[price](page:apps-data-types#price)",
-      "description": "The minimum order value of a shop."
-    },
-    "checkoutURL": {
-      "type": "string",
-      "description": "The URL that redirects the browser to the merchant's shop in order to complete the checkout."
+    "": {
+      "type": "object of [cart](page:apps-data-types#cart)",
+      "description": ""
     }
   }
 }

@@ -1,0 +1,20 @@
+{
+  "orderId": "5639C473-4265-5299-FDE2-D5809AB36284",
+  "orderNumber": "ORD151103/1030",
+  "shippingAddress": {
+    "company": "Walker, Weber and Anderson",
+    "salutation": "Mrs",
+    "firstName": "Breana",
+    "lastName": "Reichert",
+    "street": "Kemmer Knoll 8",
+    "streetDetails": null,
+    "zipCode": "02589",
+    "city": "Aylahaven",
+    "state": null,
+    "country": "Portugal",
+    "title": null,
+    "vatId": null,
+    "birthday": null,
+    "emailAddress": null
+  }
+}
