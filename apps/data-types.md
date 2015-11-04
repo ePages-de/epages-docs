@@ -212,6 +212,14 @@ This object is used for the attributes of product.
 | images | array of [image](page:apps-data-types#image) | The image of the line item. |
 | links | array of [link](page:apps-data-types#link) | The links to the product line item. |
 
+# productSuggest
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| name | string | The name of the product resulting from the query. |
+| images | array of [image](page:apps-data-types#image) | The image of the product resulting from the query. |
+| link | [link](page:apps-data-types#link) | The link to the product resulting from the query. |
+
 # quantity
 
 This object is used for the attributes of deliveryWeight and quantity.
