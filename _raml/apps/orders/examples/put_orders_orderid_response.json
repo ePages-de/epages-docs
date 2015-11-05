@@ -1,22 +1,21 @@
 {
   "orderId": "5639C473-4265-5299-FDE2-D5809AB36284",
   "orderNumber": "ORD151103/1030",
-  "creationDate": "2015-11-03T12:00:12.000Z",
   "billingAddress": {
-    "company": "Schneiderei",
-    "salutation": "Mrs",
-    "firstName": "Tanja",
-    "lastName": "Schneider",
-    "street": "Schneiderstraße 10",
+    "company": "Boehm-Jacobs",
+    "salutation": null,
+    "firstName": "Walter",
+    "lastName": "Ankunding",
+    "street": "Barrows Mountain 8",
     "streetDetails": null,
-    "zipCode": "12345",
-    "city": "Berlin",
+    "zipCode": "89708-4738",
+    "city": "Lunaview",
     "state": null,
-    "country": "DE",
+    "country": "US",
     "title": null,
     "vatId": null,
-    "birthday": null,
-    "emailAddress": "schneider@schneiderei.de"
+    "birthday": "1975-11-08",
+    "emailAddress": "Ankunding@bj.com"
   },
   "shippingAddress": {
     "company": "Walker, Weber and Anderson",
@@ -33,4 +32,17 @@
     "vatId": null,
     "birthday": null,
     "emailAddress": null
+  },
+  "invoicedOn": "2015-11-04T06:43:41.000Z",
+  "shippedOn": "2015-11-05T10:13:41.000Z",
+  "pendingOn": "2015-11-04T07:20:01.000Z",
+  "archivedOn": "2015-11-20T04:12:09.000Z",
+  "dispatchedOn": "2015-11-04T09:43:41.000Z",
+  "viewedOn": "2015-11-04T06:43:41.000Z",
+  "comment": "Exclusive customer",
+  "cancelledOn": "2015-11-10T13:43:41.000Z",
+  "closedOn": "2015-11-19T20:11:41.000Z",
+  "paidOn": "2015-11-04T07:43:41.000Z",
+  "returnedOn": "2015-11-12T08:43:41.000Z",
   }
+}
