@@ -278,7 +278,16 @@ b, strong {
     margin-bottom: 0;
   }
 }
-
+.left {
+    float: left;
+    margin-right: 20px;
+    max-width: 840px;
+}
+.right {
+    float:right;
+    margin-left:20px;
+    max-width: 840px;
+}
 .alert {
   margin: 40px 0;
 }
