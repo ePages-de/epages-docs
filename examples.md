@@ -98,8 +98,15 @@ This is an image with an enforced width of 50%
 This is an image with an enforced width of 50%
 {% endimage %}
 
+{% image search.png 50% left %}
+This is an image with an enforced width of 50% floating on the left
+{% endimage %}
 
-Highlights
+{% image search.png 20% right %}
+This is an image with an enforced width of 20% floating on the right
+{% endimage %}
+
+<p style="clear: both">Highlights</p>
 
 
 {% highlight json %}
