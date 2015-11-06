@@ -1,0 +1,97 @@
+#%RAML 0.8
+displayName: Orders
+description: A completed request by a customer to purchase one or more products from a shop. An order is completed as soon as a customer completes the checkout process..
+get:
+  description: Returns a list of orders.
+  is: [ locale ]
+  queryParameters:
+    viewedOn:
+      description: Returns orders where the status Viewed is set.
+      type: boolean
+      required : false
+    pendingOn:
+      description: Returns orders where the status Pending is set.
+      type: boolean
+      required : false
+    archivedOn:
+      description: Returns orders where the status Archived is set.
+      type: boolean
+      required : false
+    cancelledOn:
+      description: Returns orders where the status Rejected is set.
+      type: boolean
+      required : false
+    closedOn:
+      description: Returns orders where the status Closed is set.
+      type: boolean
+      required : false
+    dispatchedOn:
+      description: Returns orders where the status Dispatched is set.
+      type: boolean
+      required : false
+    paidOn:
+      description: Returns orders where the status Paid is set.
+      type: boolean
+      required : false
+    returnedOn:
+      description: Returns orders where the status Returned is set.
+      type: boolean
+      required : false
+    shippedOn:
+      description: Returns orders where the status Delivered is set.
+      type: boolean
+      required : false
+    invoicedOn:
+      description: Returns orders where the status Invoiced is set.
+      type: boolean
+      required : false
+    lastUpdated:
+      description: Sort by last updated orders.
+      type: boolean
+      required : false
+    customerId:
+      description: The unique identifier of the customer.
+      type: string
+      required : false
+    productId:
+      description: The unique identifier of the product.
+      type: string
+      required : false
+    updatedFrom:
+      description: Filters updated orders from this timestamp.
+      type: string
+      required : false
+    currency:
+      description: Represents the currency code for the order according to ISO 4217.
+      type: string
+      required : false
+  responses:
+    200:
+      body:
+        application/json:
+          example: !include examples/get_orders_response.json
+          schema: !include schema/get_orders.schema.json
+/{orderId}:
+  displayName: Order ID
+  description: Retrieve a specific order using its ID.
+  get:
+    description: Returns information for a single order.
+    is: [ locale ]
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include examples/get_orders_orderid_response.json
+            schema: !include schema/get_orders_orderid.schema.json
+  put:
+    description: Modifies the order.
+    is: [ locale ]
+    body:
+      application/json:
+        example: !include examples/put_orders_orderid_request.json
+    responses:
+      200:
+        body:
+            application/json:
+                example: !include examples/put_orders_orderid_response.json
+                schema: !include schema/put_orders_orderid.schema.json

@@ -33,13 +33,13 @@ traits: !include traits.raml
     shopId:
       description: The unique identifier of the shop.
       example: DemoShop
-  /products: !include product/product.raml
-  /categories: !include categories/categories.raml
   /carts: !include cart/carts.raml
+  /categories: !include categories/categories.raml
+  /currencies: !include currency/currency.raml
   /legal: !include legal/legal.raml
   /locales: !include locale/locale.raml
-  /currencies: !include currency/currency.raml
+  /orders: !include orders/orders.raml
+  /products: !include product/product.raml
+  /products/export: !include productportals/productportals.raml
   /search: !include search/search.raml
   /shipping-methods: !include shipping-method/shipping-method.raml
-#  /orders: !include orders/orders.raml
-  /products/export: !include productportals/productportals.raml

@@ -41,6 +41,17 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | formatted | string | The formatted output of the base price information, e.g. 1 l = 1.20 EUR. |
 | quantity | [quantity](page:apps-data-types#quantity) | The quantity of the product, e.g. 500 ml. |
 
+# cart
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| cartid | string | The unique identifier of the cart. |
+| billingAddress | [address](page:apps-data-types#address) | The billing address for a cart. |
+| shippingAddress | [address](page:apps-data-types#address) | The shipping address for a cart. |
+| lineItemContainer | [lineItemContainer](page:apps-data-types#lineitemcontainer) | Contains the line items of a cart. |
+| minCartValue | [price](page:apps-data-types#price) | The minimum order value of a shop. |
+| checkoutURL | string | The URL that redirects the browser to the merchant’s shop in order to complete the checkout. |
+
 # category
 
 | Attribute | Type | Description |
@@ -90,12 +101,12 @@ This object is used for the attributes of images.
 
 | Attribute | Type | Description |
 | - | :-: |  - |
-| grandTotal | [Price](page:apps-data-types#price) | The total price including product price, shipping and tax. |
-| totalBeforeTax | [Price](page:apps-data-types#price) | The total price including product price, shipping excluding tax. |
-| totalTax | [Price](page:apps-data-types#price) | The total amount of the tax. |
-| lineItemsSubTotal | [Price](page:apps-data-types#price) | The sum of the line item price of all line items. |
+| grandTotal | [price](page:apps-data-types#price) | The total price including product price, shipping and tax. |
+| totalBeforeTax | [price](page:apps-data-types#price) | The total price including product price, shipping excluding tax. |
+| totalTax | [price](page:apps-data-types#price) | The total amount of the tax. |
+| lineItemsSubTotal | [price](page:apps-data-types#price) | The sum of the line item price of all line items. |
 | productLineItems | array of [productLineItem](page:apps-data-types#productlineitem) | A list of line items. |
-| shippingPrice | [Price](page:apps-data-types#price) | The shipping price of the line item. |
+| shippingPrice | [price](page:apps-data-types#price) | The shipping price of the line item. |
 
 # link
 
@@ -106,6 +117,37 @@ This object is used for the attributes of links.
 | rel | string | The link relation that describes how the link relates to the call. |
 | href | string | The URL of the related link that can be used for subsequent calls. |
 | title | string | The title of the item that is linked. (optional)  |
+
+# order
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| orderId | string | The unique identifier of the order. |
+| orderNumber | string | The order number. |
+| creationDate | datetime | The date/time of order placement. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z` |
+| billingAddress | [address](page:apps-data-types#address) | The billing address for the order.  |
+| shippingAddress | [address](page:apps-data-types#address) | The shipping address for the order.  |
+| invoicedOn | datetime | The date/time the order was invoiced. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
+| shippedOn | datetime | The date/time the order was shipped. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
+| pendingOn | datetime | The date/time the order was set to pending. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
+| archivedOn | datetime | The date/time the order was archived. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
+| dispatchedOn | datetime | The date/time the order was dispatched. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
+| viewedOn | datetime | The date/time the order was viewed. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
+| customerId | string | The unique identifier of the customer.  |
+| locale | string | The locale that identifies the origin of the customer.  |
+| currencyId | string | The unique identifier of the currency used for payment.  |
+| taxModel | string | The taxmodel that applies for the order, e.g. gross.  |
+| grandTotal | string | The total cost of the order.  |
+| totalBeforeTax | string | The total cost of the order before tax is applied.  |
+| comment | string | Internal notes for the order.  |
+| cancelledOn | datetime | The date/time the order was cancelled. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
+| closedOn | datetime | The date/time the order was closed. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
+| paidOn | datetime | The date/time the order was paid. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
+| returnedOn | datetime | The date/time the order was returned. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
+| lineItemContainer | [lineItemContainer](page:apps-data-types#lineitemcontainer) | Contains the line items of an order.  |
+| productLineItems | array of [productLineItem](page:apps-data-types#productlineitem) | A list of line items.  |
+| shippingPrice | [price](page:apps-data-types#price) | The shipping price for the order.  |
+| links | array of [link](page:apps-data-types#link) | The links to the products of the order. |
 
 # price
 
@@ -151,7 +193,7 @@ This object is used for the attributes of product.
 | energyLabelSourceFile | string | An image or PDF file containing the energy label image supplied by the manufacturer. |
 | productDataSheet | string | An image or PDF file containing a datasheet with technical information on the product. Has to be available if the product has an energy label. |
 | sfUrl | string | The link to storefront URL of the product. |
-| productNumber | string | The product number for the product. |
+| productNumber | string | The product number. |
 | manufacturer | string | The manufacturer of the product. |
 | upc | string | The Universal Product Code of the product. |
 | ean | string | The European Article Number of the product, either EAN-8 or EAN-13. |
@@ -169,6 +211,14 @@ This object is used for the attributes of product.
 | singleItemPrice | [price](page:apps-data-types#price) | The price for a single item. |
 | images | array of [image](page:apps-data-types#image) | The image of the line item. |
 | links | array of [link](page:apps-data-types#link) | The links to the product line item. |
+
+# productSuggest
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| name | string | The name of the product resulting from the query. |
+| images | array of [image](page:apps-data-types#image) | The image of the product resulting from the query. |
+| link | [link](page:apps-data-types#link) | The link to the product resulting from the query. |
 
 # quantity
 
