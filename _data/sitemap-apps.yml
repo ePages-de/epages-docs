@@ -67,6 +67,9 @@
     - title: Miscellaneous
       link: page:api-resources-miscellaneous
 
+    - title: Orders
+      link: page:api-resources-orders
+
     - title: Products
       link: page:api-resources-products
 

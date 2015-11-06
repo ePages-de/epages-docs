@@ -1,10 +1,10 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema",
-  "title": "Delete Carts CartID Billing Schema",
+  "title": "Get Orders OrderId Schema",
   "type": "object",
   "properties": {
     "": {
-      "type": "object of [cart](page:apps-data-types#cart)",
+      "type": "object of [order](page:apps-data-types#order)",
       "description": ""
     }
   }
