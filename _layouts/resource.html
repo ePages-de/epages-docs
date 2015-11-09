@@ -90,46 +90,46 @@ layout: page
 {% endif %}
 
 {% if page.raml_method.responses != empty %}
+  {% for res_tmp in page.raml_method.responses %}
+    {% assign schema = res_tmp[1].bodies["application/json"]["schema"] %}
+    {% if schema != null %}
+      {% assign no_table = schema | json_keys: 'properties' | first  %}
+      {% assign response = schema | json_field: 'properties' | first %}
+      <h2>Response Attributes</h2>
+      {% if no_table == "no_table" %}
+        {{ response.last | markdownify }}
+      {% else %}
+        <table class="table table-bordered table-striped">
+          <thead style="background-color: white;">
+            <tr><th>Name</th><th>Type</th><th>Description</th></tr>
+          </thead>
+          <tbody>
+            {% assign keys = schema | json_keys: 'properties' %}
+            {% assign properties = schema | json_field: 'properties' %}
+            {% for key in keys %}
+              {% assign p = properties[key] %}
+              <tr>
+                <td><code>{{ key }}</code></td>
+                <td>{% if p.type %}{{ p.type | markdownify }}{% endif %}</td>
+                <td>{% if p.description %}<div>{{ p.description | markdownify }}</div>{% endif %}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+
   <h2>Responses</h2>
   {% for res_tmp in page.raml_method.responses %}
     {% assign res = res_tmp[1] %}
     <h3>HTTP {{ res.status_code }} {{ res.display_name }}</h3>
-    {% if res.description != null %}
-      <p>{{ res.description | markdownify }}</p>
-    {% endif %}
+    {% if res.description != null %}<p>{{ res.description | markdownify }}</p>{% endif %}
 
     {% for body_tmp in res.bodies %}
       {% assign body = body_tmp[1] %}
       <p>Media type <code>{{ body.media_type }}</code></p>
-      {% if body.example %}
-        <pre class="pre-scrollable">{{ body.example | xml_escape }}</pre>
-      {% endif %}
-      {% if body.schema != null %}
-        <h2>Response Attributes</h2>
-        <table class="table table-bordered table-striped">
-          <thead style="background-color: white;">
-            <tr>
-              <th>Name</th>
-              <th>Type</th>
-              <th>Description</th>
-            </tr>
-          </thead>
-          <tbody>
-          {% assign keys = body.schema | json_keys: 'properties' %}
-          {% assign properties = body.schema | json_field: 'properties' %}
-          {% for key in keys %}
-            {% assign p = properties[key] %}
-            <tr>
-              <td><code>{{ key }}</code></td>
-              <td>{% if p.type %}{{ p.type | markdownify }}{% endif %}</td>
-              <td>
-                {% if p.description %}<div>{{ p.description | markdownify }}</div>{% endif %}
-              </td>
-            </tr>
-          {% endfor %}
-          </tbody>
-        </table>
-      {% endif %}
+      {% if body.example %}<pre class="pre-scrollable">{{ body.example | xml_escape }}</pre>{% endif %}
     {% endfor %}
   {% endfor %}
 {% endif %}

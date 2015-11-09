@@ -68,6 +68,8 @@ Links
 
 [A link to a headline of an internal page](page:apps-create#get-your-credentials)
 
+[A link to an internal api resource](page:apps-api-get-shops-shopid-products-information)
+
 
 Table
 
