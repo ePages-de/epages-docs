@@ -12,12 +12,12 @@ authors: ["Paolo"]
 In this post, I want to share things we've learned during our ongoing adoption of the new language features.
 
 ## JS @epages
-My team and I are working on an upcoming part of the ePages software that provides an easy to use drag-and-drop editor for the layout and appearance of an ePages shop. It serves the actual shop website by displaying all product and editorial data in that layout.
+My team and I are working on an upcoming part of the ePages software that provides an easy to use drag-and-drop editor for the layout and appearance of an ePages shop. It also serves the actual shop website by displaying all product and editorial data in that layout.
 
 Under the hood this means aggregating and manipulating JSON data from various REST resources, and providing a live preview of the result in the layout edit mode. Both are tasks JavaScript is really good at, so my team does **JS all the way** from the (Mongo) database through the (Node) server down to the browser.
 
 ## JavaScript modules revisited
-One of our pains as JavaScript developers has always been **the lack of a module system**. Node.js introduced the _CommonJS_ approach consisting of `module.exports` and `require('module')`, which works well on the server but not on the client. That's because in the browser, we have network latency, and thus loading a module is an asynchronous operation. When we started our project, _RequireJS_ solved this for us as elegant as it can get without introducing a compile step, using its AMD (asynchronous module definition) syntax, consisting of define(['module'], function (module) {...});.
+One of our pains as JavaScript developers has always been **the lack of a module system**. Node.js introduced the _CommonJS_ approach consisting of `module.exports` and `require('module')`, which works well on the server but not on the client. That's because in the browser, we have network latency, and thus loading a module is an asynchronous operation. When we started our project, _RequireJS_ solved this for us as elegant as it can get without introducing a compile step, using its _AMD_ (asynchronous module definition) syntax, consisting of `define(['module'], function (module) {...});`.
 
 But we're writing isomorphic JavaScript, which is a fancy way of saying: running (parts of) the exact same code on client and server alike. If you're doing this in combination with RequireJS, you can easily get a headache from looking at statements like `var require = require('requirejs');`.
 
