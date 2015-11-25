@@ -14,6 +14,13 @@ layout: page
   <p>{{ page.raml_method.description | markdownify }}</p>
 {% endif %}
 
+<h3>Authorisation</h3>
+  <p>OAuth 2.0 Token required with scopes: </p>
+  {% assign authorization = page.raml_method.secured_by | shift: 2 %}
+  {% for scope in authorization %}
+    <input type="checkbox" value="{{ scope }}" checked onclick="return false" style="margin-left: 15px"> {{ scope }}<br>
+  {% endfor %}
+
 {% if page.raml_resource.uri_parameters. != empty %}
   <h2>URI parameters</h2>
   <table class="table table-bordered">
