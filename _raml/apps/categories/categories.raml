@@ -5,6 +5,7 @@
     description: |
         Returns the product categories of the shop. This usually is the default root category "Categories",
         but can also include additional root categories, if supported by the shop.
+    securedBy: [products_read]
     is: [ locale ]
     responses:
       200:
@@ -18,6 +19,7 @@
       description: The unique identifier of the category.
       get:
         description: Returns the category identified by the provided category ID.
+        securedBy: [products_read]
         is: [ locale ]
         responses:
           200:
@@ -27,6 +29,7 @@
                 schema: !include schema/get_categories_categoryid.schema.json
       put:
         description: Modifies a category.
+        securedBy: [products_write]
         is: [ locale ]
         body:
           application/json:

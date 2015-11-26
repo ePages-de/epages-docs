@@ -3,6 +3,7 @@ displayName: Shipping methods
 description: The shipping method supposed to handle the shipment.
 get:
   description: Returns the shipping methods of a shop.
+  securedBy: [products_read]
   is: [ locale ]
   responses:
     200:
@@ -19,6 +20,7 @@ get:
       example: 52F221E0-36F6-DC4E-384A-AC1504050C04
   get:
     description: Returns the shipping methods of a shop.
+    securedBy: [products_read]
     is: [ locale ]
     responses:
       200:
