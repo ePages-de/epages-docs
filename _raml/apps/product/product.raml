@@ -6,6 +6,7 @@ description: |
           the product collections will **not** return errors, but skip the products in question.
 get:
   description: Returns a list of products.
+  securedBy: [products_read]
   is: [ locale, currency, paged, direction ]
   queryParameters:
     sort:
@@ -47,6 +48,7 @@ get:
   get:
     description: Returns information for a single product. For product variations, a link
       to the respective product variations resource (rel="variations") is added.
+    securedBy: [products_read]
     is: [ locale, currency ]
     responses:
       200:
@@ -56,6 +58,7 @@ get:
             schema: !include schema/get_product_productid.schema.json
   delete:
     description: Deletes a single product.
+    securedBy: [products_write]
     responses:
       204:
 
@@ -67,6 +70,7 @@ get:
       description: Returns links to product variations in a paged item list.<br/>
         "name" and "value" are used to find a matching variation for the user's selection.
         Note that the default resultsPerPage is 100 and max resultsPerPage is 1000 for this resource.
+      securedBy: [products_read]
       responses:
         200:
           body:
@@ -78,6 +82,7 @@ get:
     description: Retrieve a product slideshow.
     get:
       description: Returns links to slideshow images of a product.
+      securedBy: [products_read]
       responses:
         200:
           body:
@@ -90,6 +95,7 @@ get:
     get:
       is: [ locale ]
       description: Returns values of user-defined product attributes.
+      securedBy: [products_read]
       responses:
         200:
           body:
@@ -107,6 +113,7 @@ get:
         with an independent price, e.g. if all variations share the
         same price.
         Also depends on the shop setting to display "from" prices.
+      securedBy: [products_read]
       responses:
         200:
           body:
@@ -119,6 +126,7 @@ get:
     get:
       is: [ locale ]
       description: Returns a list of links, i.e. self, product and categories for a product.
+      securedBy: [products_read]
       responses:
         200:
           body:
@@ -130,6 +138,7 @@ get:
     description: Retrieve the stock level of a product.
     get:
       description: Returns the current stock level of a product.
+      securedBy: [products_read]
       responses:
         200:
           body:
@@ -138,6 +147,7 @@ get:
               schema: !include schema/get_product_productid_stocklevel.schema.json
     put:
       description: Modifies the current stock level of a product.
+      securedBy: [products_write]
       body:
         application/json:
           example: !include examples/put_product_productid_stocklevel_request.json

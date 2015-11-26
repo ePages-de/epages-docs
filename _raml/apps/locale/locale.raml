@@ -3,6 +3,7 @@
   description: Retrieve the locale information of a shop.
   get:
     description: Returns the shop's locale information, i.e. the language identifier and the region identifier.
+    securedBy: [products_read]
     responses:
       200:
         body:

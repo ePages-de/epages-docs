@@ -3,6 +3,7 @@ displayName: Orders
 description: A completed request by a customer to purchase one or more products from a shop. An order is completed as soon as a customer completes the checkout process. By default the results for orders are sorted by creationDate.
 get:
   description: Returns a list of orders.
+  securedBy: [orders_read]
   is: [ locale ]
   queryParameters:
     viewedOn:
@@ -76,6 +77,7 @@ get:
   description: Retrieve a specific order using its ID.
   get:
     description: Returns information for a single order.
+    securedBy: [orders_read]
     is: [ locale ]
     responses:
       200:
@@ -85,6 +87,7 @@ get:
             schema: !include schema/get_orders_orderid.schema.json
   put:
     description: Modifies the order.
+    securedBy: [orders_write]
     is: [ locale ]
     body:
       application/json:
