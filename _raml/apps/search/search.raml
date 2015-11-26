@@ -4,6 +4,7 @@
   description: Retrieve suggestions for a product search query.
   get:
     description: Returns suggestions for a product search query.
+    securedBy: [products_read]
     is: [ locale ]
     queryParameters:
       query:

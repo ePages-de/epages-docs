@@ -3,6 +3,7 @@ displayName: Carts
 description: Operations on the carts of a shop.
 post:
   description: Creates a cart for a shop.
+  securedBy: [products_read]
   body:
     application/json:
       example: !include examples/post_carts_request.json
@@ -18,6 +19,7 @@ post:
   description: Retrieve a specific cart using its ID.
   get:
     description: Returns a specified cart from a shop.
+    securedBy: [carts_read]
     responses:
       200:
         body:
@@ -30,6 +32,7 @@ post:
     description: The line items of a product within a cart.
     post:
       description: Creates a product line item in a cart.
+      securedBy: [carts_write]
       body:
         application/json:
           example: !include examples/post_carts_cartid_lineitem_request.json
@@ -45,6 +48,7 @@ post:
       description: The unique identifier of the product line item.
       put:
         description: Modifies a specified product line item in a cart.
+        securedBy: [carts_write]
         body:
           application/json:
             example: !include examples/put_carts_cartid_lineitem_itemid_request.json
@@ -56,6 +60,7 @@ post:
                 schema: !include schema/put_carts_cartid_lineitem_itemid.schema.json
       delete:
         description: Deletes a specified product line item from a cart.
+        securedBy: [carts_write]
         responses:
           200:
             body:
@@ -68,6 +73,7 @@ post:
     description: The billing address a cart requires.
     put:
       description: Modifies the billing address for a cart.
+      securedBy: [carts_write]
       body:
         application/json:
           example: !include examples/put_carts_cartid_billing_request.json
@@ -79,6 +85,7 @@ post:
               schema: !include schema/put_carts_cartid_billing.schema.json
     delete:
       description: Deletes the billing address from a cart.
+      securedBy: [carts_write]
       responses:
         200:
           body:
@@ -91,6 +98,7 @@ post:
     description: The shipping address a cart requires.
     put:
       description: Modifies the shipping address for a cart.
+      securedBy: [carts_write]
       body:
         application/json:
           example: !include examples/put_carts_cartid_shipping_request.json
@@ -102,6 +110,7 @@ post:
               schema: !include schema/put_carts_cartid_shipping.schema.json
     delete:
       description: Deletes the shipping address from a cart.
+      securedBy: [carts_write]
       responses:
         200:
           body:

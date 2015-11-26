@@ -3,6 +3,7 @@
   description: Retrieve the currency information of a shop.
   get:
     description: Returns the currency information of a shop.
+    securedBy: [products_read]
     responses:
       200:
         body:
