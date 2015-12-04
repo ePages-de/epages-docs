@@ -8,9 +8,8 @@ authors: ["Ángel"]
 ---
 The Codemotion conference took place in Madrid on November 28 and 29. With more than 1900 software enthusiasts, Codemotion is the biggest IT event in Spain.
 This conference was sponsored by companies such as IBM, Microsoft, Arsys, Mozilla and Google...
-Two days filled with talks from 12 different tracks, where each track focussed on a specific theme such as  Software Quality, Agile Methodologies, Clean Code, Testing, Big Data, Infrastructure,
 
-Scala, Java, Cassandra, MongoDB, Apache Drill, Selenium and Spark...
+Two days filled with talks from 12 different tracks, where each track focussed on a specific theme such as  Software Quality, Agile Methodologies, Clean Code, Testing, Big Data, Infrastructure, Scala, Java, Cassandra, MongoDB, Apache Drill, Selenium and Spark...
 Some of them have been broadcasted, giving you the chance to watch them on [Youtube](http://2015.codemotion.es/streaming.html) (unfortunately only available in Spanish).
 
 It was a good opportunity to get inspiration and I really enjoyed the variety of talks, which allowed me to get to know new technologies and discover different points of view on how to deal with tricky situations in some of the most well-known technology companies.
