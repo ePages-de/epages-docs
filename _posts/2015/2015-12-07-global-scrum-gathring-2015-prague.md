@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Global Scrum Gathering 2015 Prague"
-date: "2015-12-08 07:23:00"
+date: "2015-12-07 07:23:00"
 icon: comments
 categories: conferences agile
 authors: ["Anja B."]
@@ -93,7 +93,7 @@ Plan it in the sprint or take a certain percentage of the sprint (e.g. one day p
 
 {% image blog-gsg-4.jpg %}{% endimage %}
 
-# Pavel Dabrytski - Scrum Economics 101: Contracts, Budgets, Capitalisation
+# Pavel Dabrytski - Scrum Economics 101: Contracts, Budgets, Capitalization
 
 Pavel Dabrytski was teaching the audience all the basics about contract, budgets and capitalisation in Scrum.
 It was interesting to hear it from someone that has worked with this in practice.
