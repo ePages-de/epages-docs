@@ -15,9 +15,9 @@ The concepts to develop a software change regularly.
 Some of these changes do not make sense.
 They do not helps us in the development process and are only a refreshed concept of a dusted software idea: Give them a buzzword, talk about it, and everyone will use it.
 
-However a few of these new software design concepts are meaningful and solve current software development problems.
+However, a few of these new software design concepts are meaningful and solve current software development problems.
 One of them is the idea of microservices.
-The participants of the W-JAX 2015 conference talked about this idea in many sessions.
+The speakers of the W-JAX 2015 conference talked about this idea in many sessions.
 
 ## When do we need microservices
 
@@ -49,12 +49,12 @@ If the sliced software component cannot be serviced by one team alone, slice it 
 ## Challenges and hints
 
 Microservices will put the weight of complexity from algorithm complexity to communication complexity.
-The dependencies of each software part is now moved to the way of communication.
+The dependencies of each software part are now moved to the way of communication.
 
 A second big challenge can be the [Two-Phase Commit](http://www.enterpriseintegrationpatterns.com/ramblings/18_starbucks.html) and data consistency.
 Let's imagine we want to transfer money from one to another bank account.
 The monolith would have a controller layer which sends a request to the model layout.
-This layer will transfer the money from one to another account instantly.
+This layer will transfer the money from one bank account to another instantly.
 In a microservice world every bank account can be in another microservice.
 Microservice 1 will send the money to microservice 2 and decrease the money in its own database.
 In this moment the money is not existent: neither in microservice 1 nor in microservice 2.
