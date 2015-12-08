@@ -46,8 +46,14 @@
     - title: Tutorial (PHP)
       link: page:apps-tutorial-php
 
+- key: apps-integrate
+  title: Integrations
+  entries:
     - title: CMS plugin
       link: page:apps-cms-plugin
+
+    - title: API Ruby gem
+      link: page:apps-ruby-gem
 
 - key: api-rest
   title: API reference
