@@ -32,16 +32,16 @@ gem 'epages-rest'
 
 # Using the gem is dead easy
 
- * Create a shop endpoint:
-    {% highlight ruby %}
-    shop = Epages::REST::Shop.new(shop_name, auth_token)
-    {% endhighlight %}
+Create a shop endpoint:
+{% highlight ruby %}
+shop = Epages::REST::Shop.new(shop_name, auth_token)
+{% endhighlight %}
 
- * Just use it.
-    {% highlight ruby %}
-    products = shop.products
-    sort_products = shop.products(sort: "name", results_per_page: 5)
-    {% endhighlight %}
+Just use it.
+{% highlight ruby %}
+products = shop.products
+sort_products = shop.products(sort: "name", results_per_page: 5)
+{% endhighlight %}
 
 # Examples
 
