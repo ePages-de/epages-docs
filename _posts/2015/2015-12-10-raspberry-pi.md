@@ -213,8 +213,6 @@ $ vi /etc/init.d/rc.local
 $ vi /etc/apache2/sites-available/default
 {% endhighlight %}
 
-* Amend your own script:
-
 {% highlight text %}
 ServerAdmin webmaster@localhost
 
@@ -250,7 +248,7 @@ ServerAdmin webmaster@localhost
 * Reload Apache:
 
 {% highlight text %}
-$ vi /etc/apache2/sites-available/default$ service apache2 reload
+$ service apache2 reload
 {% endhighlight %}
 
 Now you can again call the website http://your-ip.
