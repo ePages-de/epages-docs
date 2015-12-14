@@ -8,6 +8,7 @@ title: Overview
 
 The ePages API is based on RESTful principles, allowing you to code in whatever language you prefer.
 It supports JSON media types and uses UTF-8 character encoding.
+The API uses the standard HTTP request types `GET`, `POST`, `PUT` and `DELETE`.
 
 Making use of this API, you can create awesome apps or single shop connections.
 It is designed to give developers a convenient way to access data contained within ePages shops.
