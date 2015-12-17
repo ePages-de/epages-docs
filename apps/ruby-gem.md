@@ -4,7 +4,7 @@ key: apps-ruby-gem
 title: API Ruby gem
 ---
 
-You love to create awesome apps?
+You love to create awesome Ruby apps?
 You want to create understandable and easy code?
 To support you with that, we have developed the API Ruby gem.
 It speeds up your development and saves valuable time that you could use to create even MORE awesome apps.
