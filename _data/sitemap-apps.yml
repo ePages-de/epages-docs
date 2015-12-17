@@ -46,11 +46,14 @@
 - key: apps-integrate
   title: Integrations
   entries:
-    - title: CMS plugin
-      link: page:apps-cms-plugin
+    - title: API PHP client
+      link: page:apps-php-client
 
     - title: API Ruby gem
       link: page:apps-ruby-gem
+
+    - title: CMS plugin
+      link: page:apps-cms-plugin
 
 - key: api-rest
   title: API reference
