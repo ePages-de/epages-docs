@@ -34,7 +34,7 @@ gem 'epages-rest'
 
 Create a shop endpoint:
 {% highlight ruby %}
-shop = Epages::REST::Shop.new(shop_name, auth_token)
+shop = Epages::REST::Shop.new(shop_host, shop_name, auth_token)
 {% endhighlight %}
 
 Just use it.
