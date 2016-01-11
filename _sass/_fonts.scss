@@ -1,65 +1,61 @@
+// Neue Helvetica
+
 @font-face {
-    font-family: 'Meta-Bold';
-    font-weight: bolder;
-    font-style: normal;
-    src: url('#{$assets-base}/fonts/Meta/MetaWeb-Bold.eot'),
-         url('#{$assets-base}/fonts/Meta/MetaWeb-Bold.eot#'),
-         url('#{$assets-base}/fonts/Meta/MetaWeb-Bold.woff') format('woff'),
-         url('#{$assets-base}/fonts/Meta/MetaWeb-Bold.eot'),
-         url('#{$assets-base}/fonts/Meta/MetaWeb-Bold.eot');
+  font-family: 'HelveticaNeue-Bold';
+  font-weight: bolder;
+  font-style: normal;
+  src: url('#{$assets-base}/fonts/Neue-Helvetica/HelveticaNeueLTStd-Bd.eot'),
+       url('#{$assets-base}/fonts/Neue-Helvetica/HelveticaNeueLTStd-Bd.eot#iefix') format('embedded-opentype'),
+       url('#{$assets-base}/fonts/Neue-Helvetica/HelveticaNeueLTStd-Bd.woff') format('woff'),
+       url('#{$assets-base}/fonts/Neue-Helvetica/HelveticaNeueLTStd-Bd.ttf') format('truetype'),
+       url('#{$assets-base}/fonts/Neue-Helvetica/HelveticaNeueLTStd-Bd.svg#HelveticaNeueLTStd-Bd') format('svg');
 }
 
 @font-face {
-    font-family: 'Meta-Bold';
-    font-weight: bolder;
-    font-style: italic;
-    src: url('#{$assets-base}/fonts/Meta/MetaWeb-BoldIta.eot'),
-         url('#{$assets-base}/fonts/Meta/MetaWeb-BoldIta.eot#'),
-         url('#{$assets-base}/fonts/Meta/MetaWeb-BoldIta.woff') format('woff'),
-         url('#{$assets-base}/fonts/Meta/MetaWeb-BoldIta.eot'),
-         url('#{$assets-base}/fonts/Meta/MetaWeb-BoldIta.eot');
+  font-family: 'HelveticaNeue-Light';
+  font-weight: lighter;
+  font-style: normal;
+  src: url('#{$assets-base}/fonts/Neue-Helvetica/HelveticaNeueLTStd-Lt.eot'),
+       url('#{$assets-base}/fonts/Neue-Helvetica/HelveticaNeueLTStd-Lt.eot#iefix') format('embedded-opentype'),
+       url('#{$assets-base}/fonts/Neue-Helvetica/HelveticaNeueLTStd-Lt.woff') format('woff'),
+       url('#{$assets-base}/fonts/Neue-Helvetica/HelveticaNeueLTStd-Lt.ttf') format('truetype'),
+       url('#{$assets-base}/fonts/Neue-Helvetica/HelveticaNeueLTStd-Lt.svg#HelveticaNeueLTStd-Lt') format('svg');
+}
+
+// Proxima Nova
+
+@font-face {
+  font-family: 'ProximaNova-Bold';
+  font-weight: bolder;
+  font-style: normal;
+  src: url('#{$assets-base}/fonts/Proxima-Nova/ProximaNova-BoldWeb.eot');
+  src: url('#{$assets-base}/fonts/Proxima-Nova/ProximaNova-BoldWeb.eot#iefix') format('embedded-opentype'),
+       url('#{$assets-base}/fonts/Proxima-Nova/ProximaNova-BoldWeb.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Meta-Light';
-    font-weight: lighter;
-    font-style: normal;
-    src: url('#{$assets-base}/fonts/Meta/MetaWeb-Light.eot'),
-         url('#{$assets-base}/fonts/Meta/MetaWeb-Light.eot#'),
-         url('#{$assets-base}/fonts/Meta/MetaWeb-Light.woff') format('woff'),
-         url('#{$assets-base}/fonts/Meta/MetaWeb-Light.eot'),
-         url('#{$assets-base}/fonts/Meta/MetaWeb-Light.eot');
+  font-family: 'ProximaNova-Bold';
+  font-weight: bolder;
+  font-style: italic;
+  src: url('#{$assets-base}/fonts/Proxima-Nova/ProximaNova-BoldItWeb.eot');
+  src: url('#{$assets-base}/fonts/Proxima-Nova/ProximaNova-BoldItWeb.eot#iefix') format('embedded-opentype'),
+       url('#{$assets-base}/fonts/Proxima-Nova/ProximaNova-BoldItWeb.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Meta-Light';
-    font-weight: lighter;
-    font-style: italic;
-    src: url('#{$assets-base}/fonts/Meta/MetaWeb-LightIta.eot'),
-         url('#{$assets-base}/fonts/Meta/MetaWeb-LightIta.eot#'),
-         url('#{$assets-base}/fonts/Meta/MetaWeb-LightIta.woff') format('woff'),
-         url('#{$assets-base}/fonts/Meta/MetaWeb-LightIta.eot'),
-         url('#{$assets-base}/fonts/Meta/MetaWeb-LightIta.eot');
+  font-family: 'ProximaNova';
+  font-weight: normal;
+  font-style: normal;
+  src: url('#{$assets-base}/fonts/Proxima-Nova/ProximaNova-RegularWeb.eot');
+  src: url('#{$assets-base}/fonts/Proxima-Nova/ProximaNova-RegularWeb.eot#iefix') format('embedded-opentype'),
+       url('#{$assets-base}/fonts/Proxima-Nova/ProximaNova-RegularWeb.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Meta';
-    font-weight: normal;
-    font-style: normal;
-    src: url('#{$assets-base}/fonts/Meta/MetaWeb-Normal.eot'),
-         url('#{$assets-base}/fonts/Meta/MetaWeb-Normal.eot#'),
-         url('#{$assets-base}/fonts/Meta/MetaWeb-Normal.woff') format('woff'),
-         url('#{$assets-base}/fonts/Meta/MetaWeb-Normal.eot'),
-         url('#{$assets-base}/fonts/Meta/MetaWeb-Normal.eot');
-}
-
-@font-face {
-    font-family: 'Meta';
-    font-weight: normal;
-    font-style: italic;
-    src: url('#{$assets-base}/fonts/Meta/MetaWeb-NormalIta.eot'),
-         url('#{$assets-base}/fonts/Meta/MetaWeb-NormalIta.eot#'),
-         url('#{$assets-base}/fonts/Meta/MetaWeb-NormalIta.woff') format('woff'),
-         url('#{$assets-base}/fonts/Meta/MetaWeb-NormalIta.eot'),
-         url('#{$assets-base}/fonts/Meta/MetaWeb-NormalIta.eot');
+  font-family: 'ProximaNova';
+  font-weight: normal;
+  font-style: italic;
+  src: url('#{$assets-base}/fonts/Proxima-Nova/ProximaNova-RegularItWeb.eot');
+  src: url('#{$assets-base}/fonts/Proxima-Nova/ProximaNova-RegularItWeb.eot#iefix') format('embedded-opentype'),
+       url('#{$assets-base}/fonts/Proxima-Nova/ProximaNova-RegularItWeb.woff') format('woff');
 }
