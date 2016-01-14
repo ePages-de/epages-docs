@@ -14,7 +14,7 @@ layout: page
   <p>{{ page.raml_method.description | markdownify }}</p>
 {% endif %}
 
-<h3>Authorisation</h3>
+<strong>Authorisation</strong>
   <p>OAuth 2.0 Token required with scopes: </p>
   {% assign authorization = page.raml_method.secured_by | shift: 2 %}
   {% for scope in authorization %}
@@ -86,7 +86,7 @@ layout: page
 {% endif %}
 
 {% if page.raml_method.bodies != empty %}
-  <h2>Request bodies</h2>
+  <h2>Request body</h2>
   {% for body_tmp in page.raml_method.bodies %}
     {% assign body = body_tmp[1] %}
     <p>Media type <code>{{ body.media_type }}</code></p>
@@ -127,10 +127,10 @@ layout: page
     {% endif %}
   {% endfor %}
 
-  <h2>Responses</h2>
+  <h2>Response</h2>
   {% for res_tmp in page.raml_method.responses %}
     {% assign res = res_tmp[1] %}
-    <h3>HTTP {{ res.status_code }} {{ res.display_name }}</h3>
+    <strong>HTTP {{ res.status_code }} {{ res.display_name }}</strong>
     {% if res.description != null %}<p>{{ res.description | markdownify }}</p>{% endif %}
 
     {% for body_tmp in res.bodies %}

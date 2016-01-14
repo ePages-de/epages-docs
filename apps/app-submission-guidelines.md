@@ -9,7 +9,7 @@ Before you start creating it, it's important that you understand our guidelines.
 Our app submission guidelines will help you steer clear of difficulties as you develop your app and provide a structure for you to submit an app that suits our needs.
 The objective of your app should be meaningful and help our customers achieve their goals: being a successful online merchant. Have fun coding!
 
-# Functionality
+## Functionality
 
 * Make sure your app performs as described and advertised.
 Apps that crash or have obvious bugs will be rejected.
@@ -22,7 +22,7 @@ We may reject it.
 * Concentrate on a reasonable and useful app.
 Apps that do not function as expected, which trick the user or are in any form misleading will be rejected.
 
-# Metadata
+## Metadata
 
 * We are attentive to complete and meaningful descriptions and text in all apps.
 We will not accept apps that contain placeholder text or incomplete information.
@@ -34,7 +34,7 @@ Inadequate keywords may be changed or deleted.
 * Only submit your app for review with all included URLs fully functional.
 * Make sure that your app respects privacy and does not display personal information of a real person without permission.
 
-# Privacy
+## Privacy
 
 * Make sure your app notifies and obtains user consent before collecting, transmitting or using customer or location data.
 Apps that perform contrary to this will be rejected.
@@ -43,7 +43,7 @@ We will reject apps that transmit viruses as well as files, code or programs tha
 * Protect customer data.
 We will not accept apps that require our customers to share e.g. their email address or date of birth if not necessary for the app's functionality.
 
-# Other
+## Other
 
 * Our customers are our greatest asset and we respect them.
 We will not accept apps that are defamatory, insulting or rude.

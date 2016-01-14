@@ -8,7 +8,7 @@ Would you like to create PHP apps easily?
 You'd like to use a nice framework that makes the full REST communication on its own?
 To support you with that, we made the first steps towards a basic PHP framework.
 
-# Installing the client
+## Installing the client
 
 * Check for the latest [release](https://github.com/ePages-de/epages-rest-php).
 * Download the latest version of the available **.phar** file and copy it to a folder within your PHP project, e.g. /libraries.
@@ -20,7 +20,7 @@ require_once(PathToPharFile)
 
 * Then set the variables for `$HOST`, `$SHOP`, `$AUTHTOKEN` and `$ISSSL`.
 
-# Using the client
+## Using the client
 
 Create a shop endpoint:
 
@@ -39,6 +39,6 @@ $productFilter->setResultsPerPage(100);
 $products = $productFilter->getProducts();
 {% endhighlight %}
 
-# Examples
+## Examples
 
 Check our [GitHub repository](https://github.com/ePages-de/epages-rest-php/tree/master/examples) for all examples currently available.
