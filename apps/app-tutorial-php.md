@@ -12,18 +12,18 @@ We are using PHP, but the functionality is very simple and can easily be impleme
 
 You will see how the OAuth 2.0 exchange is done to get your access token and how you can use it to make API calls.
 
-# Prerequisites
+## Prerequisites
 
 In order to get this code working, you need to setup your development environment:
 
 * PHP 5.2+
 * publicly reachable server
 
-## Sign up for an ePages test shop
+### Sign up for an ePages test shop
 
 Simply sign up [here](http://www.epages.cloud/developer/) for a free account.
 
-## Create a developer app
+### Create a developer app
 
 In order to create an app, to test it and to submit it to the App & Theme Store, you have to create a developer app.
 
@@ -49,14 +49,14 @@ After the token exchange is done, you will receive an **Access token**, which wi
 Any subsequent calls will uninstall the app and reinitiate the installation process, which will result in a new access token (and invalidation of the old access token).
 {% endcallout %}
 
-# Getting an access token
+## Getting an access token
 
 For a more general overview of the installation process and the OAuth 2.0 token exchange, we recommend you to read though the [installation process](page:apps-install) first.
 
 Now that everything is in place, we can actually start coding.
 We will create the mentioned `callback.php` file, which will be called when a user installs an app.
 
-## Setting credentials
+### Setting credentials
 
 The first thing we will do is set the **client credentials** (`client_id` and `client_secret`) you got from the developer app detail page.
 
@@ -65,7 +65,7 @@ The first thing we will do is set the **client credentials** (`client_id` and `c
     $client_id     = '0BE38CFF-F3B6-4D68-8F16-1CE270C028BC';
     $client_secret = 'DkRUi6uo6KzglHmwOhFkVYNhcumCTOlP';
 
-## Listen for callback
+### Listen for callback
 
 Next, you need to listen for a request to get the `authorization_code`, which you can exchange for an access token.
 The call, which you can trigger with the **Test authorisation** button, will look like this:
@@ -84,7 +84,7 @@ In a production environment, you would use the `api_url` as the unique identifie
 You will also use it as the base URL for REST calls.
 {% endcallout %}
 
-## Exchange authorisation code for access token
+### Exchange authorisation code for access token
 
 Now we need to exchange the **authorisation code** for the access token.
 We will create a function called `get_token()`, which will need the **client credentials**, the `access_token_url` and the `code` and will just print the `access_token` as a response.
@@ -142,7 +142,7 @@ After a successful request, we receive a JSON-encoded response and return the ex
     }
     ?>
 
-# Use the API
+## Use the API
 
 After you have successfully received the access token, you can use it to make requests to the API.
 You construct the available resource URL by taking the `api_url` and appending the resource you want to call.

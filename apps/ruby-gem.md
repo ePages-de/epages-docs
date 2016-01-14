@@ -9,7 +9,7 @@ You want to create understandable and easy code?
 To support you with that, we have developed the API Ruby gem.
 It speeds up your development and saves valuable time that you could use to create even MORE awesome apps.
 
-# Install the gem in no time
+## Install the gem in no time
 
 The Ruby gem allows to communicate with an ePages shop from the CLI or any Ruby framework.
 All you need to do is get yourself a Ruby installation and run this command:
@@ -30,7 +30,7 @@ To integrate the gem with a Ruby framework, add it to the gemfile:
 gem 'epages-rest'
 {% endhighlight %}
 
-# Using the gem is dead easy
+## Using the gem is dead easy
 
 Create a shop endpoint:
 {% highlight ruby %}
@@ -43,6 +43,6 @@ products = shop.products
 sort_products = shop.products(sort: "name", results_per_page: 5)
 {% endhighlight %}
 
-# Examples
+## Examples
 
 Check our [GitHub repository](https://github.com/ePages-de/epages-rest-ruby/tree/master/examples) for all available examples.
