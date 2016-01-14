@@ -4,7 +4,7 @@ key: apps-use-cases
 title: Use cases
 ---
 
-# Social Commerce
+## Social Commerce
 
 Build an application that show cases products on social media platforms like Facebook, integrates products on a blogging platform or on any given site with a widget.
 
@@ -14,7 +14,7 @@ Optional calls: [`POST` carts](page:apps-api-post-shops-shopid-carts-information
 
 Availability: <i class="fa fa-check"></i>
 
-# Portal Engines
+## Portal Engines
 
 Build an application that adds products to price comparison or shopping portals.
 
@@ -24,7 +24,7 @@ Optional calls: [`GET` categories](page:apps-api-get-shops-shopid-categories-inf
 
 Availability: <i class="fa fa-check"></i>
 
-# Shipping
+## Shipping
 
 Build an application that allows you to print shipping labels and to control the status of an order.
 
@@ -34,7 +34,7 @@ Optional calls: [`GET` products](page:apps-api-get-shops-shopid-products-informa
 
 Availability: <i class="fa fa-check"></i>
 
-# Accounting
+## Accounting
 
 Build an application that allows you to manage and process orders.
 
@@ -44,7 +44,7 @@ Optional calls: [`GET` products](page:apps-api-get-shops-shopid-products-informa
 
 Availability: <i class="fa fa-check"></i>
 
-# Content Optimisation and Marketing
+## Content Optimisation and Marketing
 
 Build an application that optimises or enhances the content of product or category descriptions for Search Engine Optimisation (SEO), for general marketing purposes or to add translations to all descriptive content.
 
@@ -52,7 +52,7 @@ Suggested calls: [`GET` products](page:apps-api-get-shops-shopid-products-inform
 
 Availability: <i class="fa fa-check"></i>
 
-# Legal Service
+## Legal Service
 
 Build an application that provides up-to-date legal information (imprint, terms and conditions, etc.) automatically.
 
@@ -60,7 +60,7 @@ Suggested calls: [`GET` legal](page:apps-api-get-shops-shopid-legal-information)
 
 Availability: <i class="fa fa-check"></i>
 
-# Basic Point of Sale (POS)/Marketplace
+## Basic Point of Sale (POS)/Marketplace
 
 Build an application that automatically updates the stock level of a product upon a POS/Marketplace sale.
 
@@ -70,7 +70,7 @@ Optional calls: [`GET` categories](page:apps-api-get-shops-shopid-categories-inf
 
 Availability: <i class="fa fa-check"></i>
 
-# Sales Analytics
+## Sales Analytics
 
 Build an application that allows to determine top selling products, top customers, top regions or optimise cross-selling products by evaluating orders.
 
@@ -78,7 +78,7 @@ Suggested calls: [`GET` products](page:apps-api-get-shops-shopid-products-inform
 
 Availability: <i class="fa fa-check"></i>
 
-# Advanced Point of Sale (POS)/Marketplace
+## Advanced Point of Sale (POS)/Marketplace
 
 Build an application that automatically updates the stock level of a product upon a POS/Marketplace sale and allows to create and manage customers and orders.
 
@@ -88,7 +88,7 @@ Optional calls: [`GET` categories](page:apps-api-get-shops-shopid-categories-inf
 
 Availability planned: **06/2016**
 
-# Customer Relationship Management (CRM) and Newsletters
+## Customer Relationship Management (CRM) and Newsletters
 
 Build an application that analyses and groups/targets customers by ordered products and/or newsletter preferences and generates personalised newsletters accordingly.
 
@@ -96,7 +96,7 @@ Suggested calls: `GET` customers, `PUT` customers, `POST` customers, [`GET` orde
 
 Availability planned: **06/2016**
 
-# Enterprise Management Systems (EMS)
+## Enterprise Management Systems (EMS)
 
 Build an application that manages products, customers and orders as well as handles fulfillment, accounting and customer support.
 

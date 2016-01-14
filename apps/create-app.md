@@ -14,7 +14,7 @@ After successful authorisation of your app, you will be assigned an **Access tok
 | **Client&nbsp;Secret**   | Used in combination with the **Client ID** for getting an **Access token** during the [authorisation process](page:apps-install#authorisation-process).|
 | **Access&nbsp;token** | The token granted from your test shop to the newly created app. You can use this token for accessing the API. [Read here for further details.](page:apps-install) |
 
-# Get your credentials
+## Get your credentials
 
 1. Within the administration area of your test shop, click the tab **Apps & Themes**.
 In the drop down menu, choose the field **Developer apps**.
@@ -38,12 +38,12 @@ The **Access token** is granted by your test shop, so that you can start accessi
 Store your **Client Secret** and **Access token** securely!
 {% endcallout %}
 
-# Happy coding!
+## Happy coding!
 
 Once this is done, you can start coding away.
 But when developing your app, please consider our [API call limit](page:apps-api-call-limit).
 
-# Test the authorisation process
+## Test the authorisation process
 
 Once you have implemented the authorisation flow in your app, you can trigger it by clicking the button **Test authorisation**.
 Make sure that the **Applicaton Callback URL** for your app is correct.
@@ -54,11 +54,11 @@ Your app will be checked for proper implementation of the [OAuth 2.0 flow](page:
 Triggering the test authorisation flow removes the existing **Access token** first.
 {% endcallout %}
 
-## Successful authorisation
+### Successful authorisation
 
 If your authorisation has been successful, you will be assigned a new **Access token**.
 
-## Unsuccessful authorisation
+### Unsuccessful authorisation
 
 If the authorisation process failed, you will end up without having an **Access token**.
 To create a new token without having passed a successful authorisation flow, simply create a new developer app.
