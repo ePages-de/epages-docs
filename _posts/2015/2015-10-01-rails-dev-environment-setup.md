@@ -13,9 +13,9 @@ So how is one to choose the best tools for the job and get up and running with R
 
 The information below applies specifically to setting up ruby/rails on a linux development machine, but much of it should be applicable to other systems like Windows and Mac OS X too.
 
-# The alternatives
+## The alternatives
 
-## 1. Use the version that comes with your OS (package manager).
+### 1. Use the version that comes with your OS (package manager).
 
 This is the quickest and easiest way to get up and running.
 If you're using Linux then you probably already have Ruby installed, or can easily do so via your package manager (yast, aptitude, yum etc).
@@ -23,14 +23,14 @@ However you're stuck with the version that comes with your os, which may update 
 Conversely any tampering you do with the installed version could negatively impact your systems.
 If you want full control of which version of ruby/rails your app uses (which for serious development you probably do) then this is not a viable option.
 
-##  2. Download and install from source code
+###  2. Download and install from source code
 
 This requires setting up your machine for (c) development, and is probably the most time consuming and troublesome.
 In particular Ruby likes to install itself globally by default which may interfere with other
 programs or operating system components on your machine, which may break if you modify the global (os) version.
 This however does give you full control of which ruby/rails version you use.
 
-##  3. Use specialised (Ruby) Management Tools
+###  3. Use specialised (Ruby) Management Tools
 
 This is theoretically the ideal solution and one would expect a single tool (or set of tools) to be standard.
 However there's a surprisingly large and diverse collection to choose from.
@@ -61,13 +61,13 @@ The simplest and most lightweight ruby version manager of the bunch is chruby (w
 It's designed to work with ruby-install when one wants to install a new ruby version.
 However I don't recommend ruby-install (or any other ruby tool for that matter) for installing ruby if you want to do rails development - read on.
 
-# So which (combination) should I choose?
+## So which (combination) should I choose?
 
 I recommend a combination of 2 and 3 above:
 
 **Build your ruby version from *source* (locally) and use *chruby* to activate it.**
 
-## Prerequisites:
+### Prerequisites:
 
 Install a *c compiler* with the associated development tools: *make* etc.
 Install [*node.js*][nodejs] as its needed by the server at runtime.
@@ -78,7 +78,7 @@ The best way to install these is via your system package manager (yast, apt, yum
 Modify the file paths below appropriately, and create the dir where you want to install first as a *normal user* (otherwise they will automatically get created belonging to root, and you'll need root privileges to work properly with them).
 {% endcallout %}
 
-## Build Ruby itself from source:
+### Build Ruby itself from source:
 
 You can install ruby fine with a tool like ruby-install.
 However subsequently installing rails (as a gem) requires (at least on my system) access to source files like ruby.h.
@@ -100,7 +100,7 @@ This isolates your ruby version nicely, protecting any other apps that depend on
 
     > sudo make install
 
-## Install chruby:
+### Install chruby:
 
     cd /home/declan/tmp/
     wget -O chruby-0.3.9.tar.gz https://github.com/postmodern/chruby/archive/v0.3.9.tar.gz
@@ -112,7 +112,7 @@ This isolates your ruby version nicely, protecting any other apps that depend on
 Don't call setup.ch since it adds a "chruby.sh" file to /etc/profile.d/ which causes share/chruby/auto.sh to get run each system boot - you don't want this.
 {% endcallout %}
 
-## Edit chruby.sh
+### Edit chruby.sh
 
 To tell it about our custom ruby version:
 
@@ -135,7 +135,7 @@ Should you for some reason need to, you can at any stage switch back to the glob
     chruby system
     ruby --version      # outputs "2.1.3"
 
-## Install Rails
+### Install Rails
 
 One should now be able to install rails as a gem.
 However doing so also installs a package called *nokogiri* which apparently has a [bug][nokogiri-bug], which breaks the rails install.
@@ -156,7 +156,7 @@ The best choice here is Intellij
 [NetBeans](http://wiki.netbeans.org/RubySupport) no longer supports Ruby/Rails.
 {% endcallout %}
 
-## Setup up Intellij
+### Setup up Intellij
 
 Make sure:
 
@@ -169,7 +169,7 @@ Otherwise the IDE will give obscure error messages and fail, when you try to deb
 
 {% image declan-intellij-rails.png %} {% endimage %}
 
-## .gitignore
+### .gitignore
 
 When you create your project with `rails new` a useful .gitignore file gets automatically created.
 You'll probably want to supplement it with the following however when using the IntelliJ IDE:

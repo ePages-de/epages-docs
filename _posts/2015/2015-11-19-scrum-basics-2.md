@@ -15,7 +15,7 @@ All are equal and neither the Product Owner (PO) nor the Scrum Master (SM) are s
 To function well they need to work closely together and, in an ideal world, also sit together in one room.
 They need to understand that they are ONE team, fighting for the same goal: to release the best possible product for the end-customer.
 
-# Development Team
+## Development Team
 
 {% image blog-scrum2-devteam.jpg 50% left %}{% endimage %}
 
@@ -33,7 +33,7 @@ Everyone in the team, including PO and SM, should always know the status of each
 The most important task for the Development Team, also in Scrum, is to deliver.
 Just as in Scrum they can tell themselves how much time they need to deliver something, this gives them the freedom to achieve the big goal of the Scrum Framework: to deliver quality products.
 
-# Product Owner
+## Product Owner
 
 {% image blog-scrum2-productowner.jpg 25% left %}{% endimage %}
 
@@ -58,7 +58,7 @@ The PO's superior task is to create a common product vision and to steer the pro
 They are also responsible for accepting (or not) the developed tickets from the Development Team.
 As you can see, the Product Owner is a very important and complex role in Scrum and so it’s no wonder that several training sessions exist and that one should participate in before agreeing on this job.
 
-# Scrum Master
+## Scrum Master
 
 {% image blog-scrum2-scrummaster.jpg 25% left %}{% endimage %}
 

@@ -10,7 +10,7 @@ authors: ["Anja B."]
 This November I visted the Global Scrum Gathering in Prague.
 It's been three days filled with interesting workshops, presentations and getting to know people.
 
-# Keynote: Niels Pflaeging - Organize for Complexity
+## Keynote: Niels Pflaeging - Organize for Complexity
 
 The keynote of Niels Pflaeging followed the ideas of his book "Organize for Complexity".
 The basic idea is that top down management structures were working in the industrial age with slow moving dull markets but that they die with the fast moving markets today.
@@ -38,7 +38,7 @@ Systems that got designed for non-existing X-people are destructive and we shoul
 He had a whole slide with examples, but I personally most liked his statement: **"Bonus systems are a crime against humanity."**
 If you want to see his whole presentation, you can find it [here](http://de.slideshare.net/npflaeging/organize-for-complexity-keynote-by-niels-pflaeging-at-scrum-gatering-prague-praguecz).
 
-# Ralph Miarka - From Non-Violent Communication to Potential-Focused Communication
+## Ralph Miarka - From Non-Violent Communication to Potential-Focused Communication
 
 Ralph Miarka enhanced the idea of [Non-Violent Communication](https://en.wikipedia.org/wiki/Nonviolent_Communication) with solution focused thinking.
 That means while the non-violent communication is centred on problems, you should rather focus on the future.
@@ -51,7 +51,7 @@ Potential Focused Communication:
 3. Needs
 4. Solution focused questions
 
-# Gary Bamberger - Introduction to Coaching Skills for SMs and Leaders
+## Gary Bamberger - Introduction to Coaching Skills for SMs and Leaders
 
 In this workshop Gary Bamberger gave an introduction to what coaching actually is and how you do it.
 He explained that coaches help to expand the thinking of the clients so they find own solutions for their problems.
@@ -76,7 +76,7 @@ After the theory part we went to practicing it in groups of three.
 One person presenting a problem, the second one coaching them and the third person was observing and giving feedback after the coaching session. The funniest problem in our group was definitely "My daughter wants a kitten for Christmas!"
 It was really interesting to try it and afterwards we all agreed that the hardest part is to not give solutions when you are confronted with a problem but try and get the person to find the solution themselves.
 
-# Taghi Paksima - Slowing down to speed up: agile and technical debt
+## Taghi Paksima - Slowing down to speed up: agile and technical debt
 
 Taghi Paksima was talking about technical debt, its consequences and how to tackle it.
 I liked his definition of the term:
@@ -93,7 +93,7 @@ Plan it in the sprint or take a certain percentage of the sprint (e.g. one day p
 
 {% image blog-gsg-4.jpg %}{% endimage %}
 
-# Pavel Dabrytski - Scrum Economics 101: Contracts, Budgets, Capitalization
+## Pavel Dabrytski - Scrum Economics 101: Contracts, Budgets, Capitalization
 
 Pavel Dabrytski was teaching the audience all the basics about contract, budgets and capitalisation in Scrum.
 It was interesting to hear it from someone that has worked with this in practice.

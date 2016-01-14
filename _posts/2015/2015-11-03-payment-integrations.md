@@ -10,7 +10,7 @@ authors: ["Xavi"]
 Bank transfers and credit cards aren't the only payment methods available when buying a product from an ePages shop.
 Unlike in the real world, online shopping offers a much wider range of possibilities and solutions such as [Ingenico](http://www.ingenico.com/), [Skrill](https://www.skrill.com/en/) or [Klarna](https://www.klarna.com/us), which can be used to purchase products from our shops.
 
-# General overview
+## General overview
 
 The following procedure describes the process of buying a product:
 
@@ -22,7 +22,7 @@ The following procedure describes the process of buying a product:
 That external site mentioned above belongs to a specific payment method - the one that was chosen by the customer from those that are offered in the shop. The Payment method needs to know what is being bought so that payment can be completed.
 In order to do that, we need to create connectors, which allow ePages and the payment method to communicate with each other.
 
-# Payment flow
+## Payment flow
 
 {% image blog-payment-integrations.png %}{% endimage %}
 
@@ -41,7 +41,7 @@ However, if the payment was successful, the customer will see a page that will i
 * **Callback.** The payment method will also send an asynchronous message to ePages to notify the status of the order.
 For example, if an order has already been paid and the payment has been confirmed, the callback message will contain this information and ePages will set the order to paid in the shop.
 
-# SOAP vs REST Callouts
+## SOAP vs REST Callouts
 
 Communication with payment methods is carried out either via SOAP or REST calls.
 Using one or the other affects the architecture and flow of a connector.
@@ -58,7 +58,7 @@ Finally, the communication layer sends the new structure to the payment method, 
 Responses are handled similarly. If we use SOAP for our requests, we expect SOAP responses.
 Similarly, REST requests require REST responses.
 
-# So... is that it?
+## So... is that it?
 
 Well, no, not really.
 Each payment method is implemented differently.

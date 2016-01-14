@@ -16,14 +16,14 @@ It was a good opportunity to get inspiration and I really enjoyed the variety of
 From my point of view, each talk had different levels of difficulty and quality.
 I think that most of the speakers were quite experts in the topic. I would like to highlight here some talks that I consider the most interesting.
 
-# The process for having quality software in 4 steps
+## The process for having quality software in 4 steps
 
 This talk was about how to deal with the challenge of designing software with guarantees for a quality result, and the methodology used by IBM to achieve that goal.
 That methodology is called "Design Thinking", and it takes care of user experience during the whole development process.
 It is based on four core principles: Understand, Explore, Prototype, Evaluate.
 The main goal of "Design Thinking" is to create a real and intuitive experience, understanding the users’ needs, weak points, exploring solutions, prototyping the experience and evaluating results.
 
-# Love your tests and Microservices testing
+## Love your tests and Microservices testing
 
 Some companies are migrating their huge monolithic applications towards something called service-oriented.
 One of these companies is [Tuenti](http://www.tuenti.com/), which had to face plenty of challenges to migrate its social network code in order to become a high-tech virtual mobile network operator integrating different third party services.
@@ -42,7 +42,7 @@ It is recommended to create a 70% of Unit tests, a 20% of Integration test and 1
 
 Finally, none of this is written in stone, but we want to do something. Some small steps towards professionalism.
 
-# DevOps Mashup. Microservices, ELK, Cloud and continuous delivery
+## DevOps Mashup. Microservices, ELK, Cloud and continuous delivery
 
 Nowadays, the software engineering approach called "Continuos Delivery" is becoming more and more popular, where software is produced in short cycles and launched faster.
 This approach improves the market time and reduces cost and risks while delivering updates of the real system.
