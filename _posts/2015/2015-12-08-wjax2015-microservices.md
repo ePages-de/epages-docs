@@ -9,7 +9,7 @@ authors: ["David"]
 
 With this follow-up article of the W-JAX retrospect, I'd like to concentrate on the microservices part of the conference.
 
-# Living with microservices
+## Living with microservices
 
 The concepts to develop a software change regularly.
 Some of these changes do not make sense.
@@ -19,7 +19,7 @@ However, a few of these new software design concepts are meaningful and solve cu
 One of them is the idea of microservices.
 The speakers of the W-JAX 2015 conference talked about this idea in many sessions.
 
-## When do we need microservices
+### When do we need microservices
 
 Developing software until now often had the idea of developing a [monolith](https://en.wikipedia.org/wiki/Monolithic_system).
 With a monolith we build a software in one application with one database and (mostly) one programming language.
@@ -29,7 +29,7 @@ With a few millions of lines of code developing and testing this big monolith wi
 If the developer wants to invest more time in service instead of in extending his code they should think about switching to a microservice system.
 This will also help to avoid using always the same patterns and requires a code generator to automatically create static structure.
 
-## The idea of microservices
+### The idea of microservices
 
 Basically, the idea of using microservices is to encapsulate every part of the software into a separate service.
 Every service can run on its own and use its own de-central database.
@@ -46,7 +46,7 @@ If two components have to communicate very often both should be in the same micr
 - Complete microservice should be handled by only one team.
 If the sliced software component cannot be serviced by one team alone, slice it again.
 
-## Challenges and hints
+### Challenges and hints
 
 Microservices will put the weight of complexity from algorithm complexity to communication complexity.
 The dependencies of each software part are now moved to the way of communication.
@@ -68,7 +68,7 @@ That is important to know in which component will be an error, why and when.
 For this an overall identification number of each data element would be helpful.
 Some tools like [Netflix/eureka](https://github.com/Netflix/eureka) help to monitor all microservices.
 
-## Linked sources
+### Linked sources
 
 - [The Art of Scalability](http://www.amazon.de/The-Art-Scalability-Martin-Abbott/dp/0137030428)
 - [Building Microservices](http://www.amazon.de/Building-Microservices-Sam-Newman/dp/1491950358)

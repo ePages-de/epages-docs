@@ -12,7 +12,7 @@ Most of these meetings you might have already noticed on the Scrum Framework Pic
 
 So let's jump right into Scrum Meetings:
 
-# Sprint Planning I
+## Sprint Planning I
 
 {% image blog-scrum3-planning.jpg 35% left %}{% endimage %}
 
@@ -34,7 +34,7 @@ Desired outcome:
 * Common understanding of the stories.
 * Commitment to the stories on the Sprint Backlog as well as the Sprint Goal.
 
-# Sprint Planning II
+## Sprint Planning II
 
 This meeting takes place right after Sprint Planning I (the coffee break between both is a MUST :-)).
 Participants are the Development Team and the SM.
@@ -51,7 +51,7 @@ Desired outcome:
 * Each ticket broken down into manageable tasks with less than a day effort.
 * Each team member has understood what is required from them to achieve the Sprint Goal.
 
-# Daily Standup
+## Daily Standup
 
 {% image blog-scrum3-dailytoken.jpg 35% left %}{% endimage %}
 
@@ -75,7 +75,7 @@ Desired outcome:
 * Each team member knows what the others are doing and whom they might need to support.
 * Scrum Board is up to date.
 
-# Sprint Review
+## Sprint Review
 
 At the end of each Sprint the Review will take place.
 Participants are not only the Development Team, SM and PO, but also stakeholders as well as other interested guests.
@@ -92,7 +92,7 @@ Desired outcome:
 * Common understanding of what has been achieved.
 * Everyone was able to give feedback to the team.
 
-# Retrospective
+## Retrospective
 
 {% image blog-scrum3-retrospective.jpg 40% left %}{% endimage %}
 
@@ -121,7 +121,7 @@ However, sometimes they are still seen as a leading position and therefore could
 Then it is good to do a Retrospective without them from time to time to make it easier for team members to talk openly.
 In general there should be no other guests in this meeting as some topics are only meant for the team to hear.
 
-# Backlog Refinement
+## Backlog Refinement
 
 The Backlog Refinement takes place during the Sprint, some days before the next Sprint Planning.
 Participants are the Development Team, SM, PO and sometimes Stakeholders.
@@ -138,7 +138,7 @@ Desired outcome:
 
 * Common understanding of the tickets to be estimated.
 
-# Community of Practice
+## Community of Practice
 
 The Community of Practice differs from all the above mentioned meetings.
 It’s not bound to a Sprint and includes several Scrum Teams.
@@ -147,7 +147,7 @@ In this meeting they can discuss topics from their field of expertise and e.g. s
 This is especially important if several Scrum Teams are working on one product.
 Groups with the same expertise could be e.g. backend developers, designers or testers.
 
-# Scrum of Scrums
+## Scrum of Scrums
 
 Like the Community of Practice, the Scrum of Scrums is a meeting outside the Sprint and outside the Development Team.
 It includes representatives from each Scrum Team and is set up to talk about topics that concern several Scrum Teams.

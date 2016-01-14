@@ -15,7 +15,7 @@ There were also talks that we were able to contribute to since we had already co
 I'd like to cover **three** main points that I got during this conference in the following paragraphs.
 One last word of advice: Not everything should be taken too seriously ;)
 
-# 1. Node is acknowledged by the Java world
+## 1. Node is acknowledged by the Java world
 
 The first talk (I attended) was about *JavaScript on Java Servers* and was said to cover how the new kid on the block coming around as JavaScript 5 and JavaScript 6 is going to run on a Java Server.
 Our Java gurus instantly asked the ultimate question: What is a "Java Server"?
@@ -43,7 +43,7 @@ For reading this far you deserve a well kept secret about `npm`: It's **not** an
 
 However rumor has it, the package manager sends "**n**aughty **p**ush **m**essages" once installed (see [npm-expansions](https://github.com/npm/npm-expansions)).
 
-# 2. We're pretty much up-to-date
+## 2. We're pretty much up-to-date
 
 In the Frontend/JavaScript track there were several talks covering various aspects.
 From the language itself ('There is no JavaScript' - awesome presentation by Noam Kfir) to pretty interesting testing approaches and the life of suffering with React and ES6.
@@ -54,7 +54,7 @@ But since the topic is pretty tricky, there were of course some nifty tricks we'
 Anyway, it still gave us a pretty confident feeling about how we're doing things.
 These days it seems to be the mix of ES6, ES5 and React modules together with universal JavaScript that is the most challenging thing to overcome.
 
-# 3. Operations is your new best friend
+## 3. Operations is your new best friend
 
 First I have to say that this talk, done by two guys from 1&1, was really inspiring and made you think of changing a thing or two in your own development workflow.
 

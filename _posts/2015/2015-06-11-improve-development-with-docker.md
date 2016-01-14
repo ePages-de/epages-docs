@@ -12,18 +12,18 @@ In a nutshell, one can describe Docker as [Linux containers][lxc] with some extr
 Docker can be classified somewhere in between fully fledged virtual machines and a simple file system virtualisation with chroot.
 Since it is not yet clear, if Docker will find it's way into our production deployment, this post only concentrates on how our development workflow benefits from Docker.
 
-# The challenge
+## The challenge
 
 A simplified version of our current project is the following: We are developing a [NodeJS][nodejs]-based application that uses a [Java][java]-based backend for storing data which itself uses a [MySQL][mysql] database.
 Pretty standard stuff.
 So far we deployed the backend service via continuous deployment to a central staging machine and this address was hard coded into our frontend project.
 It worked, but could still be improved: Backend changes that were not backwards compatible unnecessarily blocked our frontend developers and forced them, to adapt to these changes before continuing other work.
 
-# The solution
+## The solution
 
 To improve this, we decided to use Docker to make starting everything on our local machine easier.
 
-## Dockerising
+### Dockerising
 
 First step towards this goal: _dockerise_ our services.
 We had to provide some kind of instructions, that turns a given base image into an image that contains everything needed, to run the given service.
@@ -53,14 +53,14 @@ Such a `Dockerfile` can be run with the `docker build .` command provided by the
 The outcome is a complete binary image, that one can deploy to any machine running Docker.
 No need to worry about missing files or similar well known problems.
 
-## Image management
+### Image management
 
 One can deploy custom Docker images to the official Docker Hub for free as long as these images don't need to be private.
 Since we are still in the evaluation phase we decided to run our own Docker registry for now, where we can deploy the generated binary images while keeping them private.
 Whenever we push to our repositories, create a pull request or create a tag, our continuous integration system fetches the sources, start the Docker build and deploy the result to our Docker registry.
 As a result, we developers can just use these fully prepared images from the registry and start them on our own machines.
 
-## Orchestration
+### Orchestration
 
 The last step is to compose the individual service containers together.
 In our example, we start a container running MySQL.
@@ -97,7 +97,7 @@ A developer just needs this single YAML file and then has to run `docker-compose
 Docker will take care of downloading the images if needed, starting the containers and linking them together.
 The developer gets to see the live standard output of all three services mixed into a single stream.
 
-## Conclusion
+### Conclusion
 
 It is quite a long way to get an existing system into Docker containers.
 But the way is well worth it.

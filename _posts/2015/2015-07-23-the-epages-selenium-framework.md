@@ -12,7 +12,7 @@ the user interface of ePages. In order to make it quick and easy for
 the developers to write these tests, we have built the ePages
 Selenium Framework.
 
-# Browser automation with Selenium
+## Browser automation with Selenium
 
 [Selenium] is an open source project which provides a couple of tools
 and libraries for web browser test automation. Its [sub-projects] are
@@ -62,7 +62,7 @@ If you would like to understand how Selenium WebDriver is working
 internally you can read a description of its architecture
 [here][selenium-architecture].
 
-# Basic concepts of the ESF
+## Basic concepts of the ESF
 
 In order to make it as easy as possible for our developers to write
 automated UI tests and to avoid duplicated code from
@@ -117,7 +117,7 @@ public final class SearchTest extends TestBaseEp6 {
 }
 {% endhighlight %}
 
-# Role in the release process
+## Role in the release process
 
 The ESF plays an important role in the ePages release process.
 As we are releasing a new ePages version every two weeks, it is impossible to

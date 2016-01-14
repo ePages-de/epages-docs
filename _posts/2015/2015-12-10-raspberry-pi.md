@@ -15,7 +15,7 @@ To being able to carry out this service ourselves, we had the idea of realising 
 First, AnySMS and the Raspberry Pi should run in parallel, so that if one fails the other could still send an SMS.
 The Raspberry Pi should be able to send SMS via a web service and has to be integrated with the Icinga.
 
-# Preparing the Raspberry Pi
+## Preparing the Raspberry Pi
 
 * Write Raspbian image to SD card.
 * Connect SD card, power supply, monitor, keyboard and LAN cable to Raspberry Pi and perform basic configuration.
@@ -25,7 +25,7 @@ The Raspberry Pi should be able to send SMS via a web service and has to be inte
 * Set up SSH connection.
 * etc.
 
-# Installing the Gammu SMS Daemon
+## Installing the Gammu SMS Daemon
 
 To send SMS via Raspberry Pi, an SMS gateway has to be installed.
 Connect a UMTS stick with SIM card to the Raspberry Pi (maybe use a USB hub if there are not enough connections available) and install the Gammu SMS Daemon on the Raspberry Pi.
@@ -89,7 +89,7 @@ $ sudo /etc/init.d/gammu-smsd restart
 $ echo "MESSAGE" | sudo gammu-smsd-inject TEXT "NUMBER")
 {% endhighlight %}
 
-# Installing PlaySMS
+## Installing PlaySMS
 
 Sending an SMS should be controlled via a website.
 We use PlaySMS for this.
@@ -266,11 +266,11 @@ Settings > Manage gateway and SMSC > Gateway Gammu (Add)
 
 Now you're able to send SMS via PlaySMS or via the command line.
 
-# Installing SSL certificate
+## Installing SSL certificate
 
 Use an SSL certificate to encrypt internet data transfer.
 
-# Integrating Raspberry Pi with Icinga
+## Integrating Raspberry Pi with Icinga
 
 As you are now able send SMS via a URL, the only step remaining is integrating the Raspberry Pi with Icinga.
 For AnySMS there's already an integration, so that you can store the Bash files with the same path.
