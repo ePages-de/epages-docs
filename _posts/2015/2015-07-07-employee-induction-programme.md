@@ -14,7 +14,7 @@ Find out what we did to help them get off on the right foot and give them a posi
 
 {% image blog-employee-induction-mind-map.png %}{% endimage %}
 
-# 1. Welcome employee before employment even begins
+## 1. Welcome employee before employment even begins
 
 All new employees receive a welcome letter that includes:
 
@@ -22,7 +22,7 @@ All new employees receive a welcome letter that includes:
 * an induction programme giving some indication of what will happen during their first days at ePages
 * a personnel record that's to be completed by the employee by their first day
 
-# 2. Involve teams and organise buddies
+## 2. Involve teams and organise buddies
 
 It makes sense to involve teams and organise buddies, after all, a new developer will be part of a development team.
 We circulate the induction plan to the team to ensure they are informed about the new colleague and aware of what training they are in, why and when.
@@ -31,7 +31,7 @@ Of course, this also includes setting up the workspace and ordering IT equipment
 We further involve colleagues from other departments to volunteer as mentors for the new employees.
 Here at ePages we call them "buddies".
 
-# 3. First work day: Meet with new employees right away
+## 3. First work day: Meet with new employees right away
 
 When having arrived at the office, our human resources coordinator welcomes the new employees, a round of introductions follows and the further course of the day will be explained.
 
@@ -44,7 +44,7 @@ Our CTO gives a brief introduction including:
 * Software architecture
 * Benefits for our merchants
 
-# 4. Buddy time!
+## 4. Buddy time!
 
 Next we get the newbies into contact with their buddies and off they go exploring the office.
 This is all about settling-in and clarifying feel-good issues such as:
@@ -59,7 +59,7 @@ This is all about settling-in and clarifying feel-good issues such as:
 Buddies show the layout of the offices and the new workplace, introduce the new employees to staff of other departments and may answer any questions that the employee is not comfortable posing to the team or supervisor.
 They'll be shown their workplaces as well as important contact points.
 
-# 5. Introduction session with HR
+## 5. Introduction session with HR
 
 {% image blog-employee-induction-welcome.jpg %}{% endimage %}
 
@@ -75,15 +75,15 @@ This includes:
 * Company events and holidays
 * Applications for leave and sick leave
 
-# 6. Team lunch
+## 6. Team lunch
 
 Phew! It's definitely time for a break and a great chance to get to know the team members during the lunch.
 
-# 7. At the desk with the team
+## 7. At the desk with the team
 
 Now it's team time: Setting up the workplace, configuring the laptop, collecting office materials and receiving more "getting started" information from the team.
 
-# And what's next?
+## And what's next?
 
 The first day is over and the new colleagues have a lot of new information in their luggage.
 The agenda for the following days contains some more interesting topics and valuable tips for a great start at ePages.

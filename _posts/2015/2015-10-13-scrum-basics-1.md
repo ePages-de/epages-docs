@@ -19,7 +19,7 @@ So let’s start with a short definition:
 to develop complex products
 or systems in an iterative way.“
 
-# What does that mean in detail?
+## What does that mean in detail?
 
 In Scrum you are always working in a team.
 This team should be cross-functional.
@@ -30,7 +30,7 @@ The members of those teams should strive to get “T-shaped”.
 That means they not only have one field of expertise, but also a broad basis so they can help out in other areas in the team.
 That doesn’t mean everyone should know everything, it only means everyone is willing to do more than just their own thing.
 
-# Advantages
+## Advantages
 
 The big advantage of those teams in comparison to assigning a single person to specific parts of the product development is that you always have all the abilities needed in one room.
 In [waterfall](https://en.wikipedia.org/wiki/Waterfall_model) you often have the problem that the person who did the backend development is already working on the next project when the designers realise that they need some more data from the backend.
@@ -40,14 +40,14 @@ Solutions can be found faster if you have more experience in the room and people
 And let's not forget the much faster feedback cycle with the testers when they are right inside the team!
 No ticket is really done until it has been tested.
 
-# How is Scrum made for developing complex products or systems?
+## How is Scrum made for developing complex products or systems?
 
 Complex problems are usually better solved if more minds are involved.
 An idea can be good but it will only become really great if you open it up to your team partners and get as much information and experience involved as possible.
 If you have to do the same thing every day again (like on an assembly line), Scrum would be too much overhead, you could use Kanban instead.
 But if you have to solve new challenges every day and are working on complex products, Scrum is your best choice.
 
-# Iterations
+## Iterations
 
 The iterations differ between the teams from 1 to 6 weeks.
 Usually they are 2 weeks long.
@@ -86,7 +86,7 @@ The other teams are using Jira Boards.
 
 {% image blog-scrum1-scrumboard-jira.png %}{% endimage %}
 
-# What will be next?
+## What will be next?
 
 Scrum defines three roles, which are Product Owner, Scrum Master and the Development Team.
 Those roles will be discussed in detail in the next part of this Scrum Basics Series.

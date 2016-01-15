@@ -12,7 +12,7 @@ Tasks like organising accommodation, food and clothing and supporting them with 
 Though I am not able to work day and night for the solution like some people in the crisis management group, I wanted to fly the flag to show that a significant amount of people are willing to help.
 This blog post is a report about participating in the #refugeehackathon in Berlin, Germany.
 
-# Overview of the event
+## Overview of the event
 
 The [#refuggeehackathon](https://twitter.com/search?src=typd&q=%23refugeehackathon) started on Friday, 24th October 2015 with a requirements workshop.
 A small group of people visited the refugees and talked about project ideas which could be helpful for them.
@@ -22,7 +22,7 @@ Next there was a motivational speech from a Somalian lady.
 She invited us not to label people as refugees but to regard them as newcomers.
 Afterwards there was a presentation of project ideas from the workshop as well as outlining existing ideas.
 
-# The Volunteer Planner project
+## The Volunteer Planner project
 
 The project which I selected was the [Volunteer Planner](https://volunteer-planner.org/).
 It is an online platform which enables volunteers to sign up for tasks identified
@@ -31,7 +31,7 @@ Though the project is only three month old and thus not yet feature complete the
 
 {% image blog-refugeehackathon-volunteer-planner.jpg %}{% endimage %}
 
-# What we achieved
+## What we achieved
 
 At the beginning we collected and discussed feature ideas for the Volunteer Planner.
 We prioritised the ideas (which was shown in
@@ -43,7 +43,7 @@ We created a [wireframe model](https://gomockingbird.com/projects/fnzc6qu) for t
 Later on, it should be extended with some kind of batch templates for the support of power users.
 For some reasons we did not manage to finish the implementation in time so there is still some pending work after the hackathon.
 
-# Conclusion
+## Conclusion
 
 This #refugeehackathon was a very enriching experience for me.
 I got to know interesting people and we had a lot of fun together.

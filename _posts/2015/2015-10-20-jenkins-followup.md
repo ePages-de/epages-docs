@@ -61,7 +61,7 @@ Utilising this plugin, we create only one real admin user, which has a (unknown)
 In doing so, the only way to change the configuration of the server is to create a new version of the Docker container with Ansible.
 Furthermore, jobs can also only be created or modified by the [Job DSL Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Job+DSL+Plugin).
 
-# Outlook
+## Outlook
 
 Regarding the general setup of the Jenkins master, we are now more or less where we want to be.
 There's still room for improvement, but the main challenges that lie ahead of us are more in the area of getting our build slaves automated the way we want,

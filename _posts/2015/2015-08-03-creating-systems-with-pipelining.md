@@ -23,7 +23,7 @@ To speak with the different interfaces, programming languages like [`Perl`](http
 
 The basic idea is simple. First thing we need is a system.
 
-# The system
+## The system
 
 This is fairly simple, due to the [vSphere Cloud Plugin](https://wiki.jenkins-ci.org/display/JENKINS/vSphere+Cloud+Plugin) for Jenkins, it is easy to construct a job, building a basic virtual machine from a template.
 These templates are predefined with a set of CPU, RAM, disc space as well as an iPXE kickstart iso file that is specifically OS mounted.
@@ -35,7 +35,7 @@ By using i-doit we provide at first the information about the new system to our 
 The system is documented and we have all information we need to create a [DHCP](https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol) and [DNS](https://en.wikipedia.org/wiki/Domain_Name_System) entry.
 Using the API of i-doit the DHCP and DNS configuration files were generated, tested and deployed to our DHCP and DNS Servers.
 
-# Installation process
+## Installation process
 
 Now we can start the virtual machine with our kickstart script installing the predefined OS.
 The kickstart script uses iPXE boot, loads the configuration and installs the system.
@@ -46,13 +46,13 @@ At the moment Centos 6/7 and Debian 7/8 are supported from our side.
 After the installation, we have a first simple not very specialised system that could now be used.
 Some magic Jenkins jobs do the trick and specialise the system now.
 
-# Specialisation
+## Specialisation
 
 Here you can explore your creativity.
 Many jobs are available: from [security related configurations](https://www.linode.com/docs/security/securing-your-server) over installing of different software to installing our full ePages to a system with a specific version or project specific configurations.
 In our situation it depends on the use case. For example internal development systems have other security related configurations than external systems, or test and live systems can have project specific configurations depending on what our customers need.
 
-# The pipeline
+## The pipeline
 
 Here is a simplified picture of the whole pipeline.
 The full process lasts about 10 to 15 minutes but depends on the specific configuration you choose.

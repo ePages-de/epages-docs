@@ -11,7 +11,7 @@ As ePages heads towards a new microservice-based architecture, new challenges ar
 
 The solution to this challenge is *Service Discovery*. It is the means by which any service is able to find other services without the need to know about the actual location or other details. In our solution, Service Discovery means that you only need to know a generic URI to communicate with other REST-based services (or even some infrastructure components like message brokers).
 
-# How does it work?
+## How does it work?
 
 A service discovery solution usually consists of three core building blocks:
 
@@ -19,10 +19,10 @@ A service discovery solution usually consists of three core building blocks:
 * A *health-check* mechanism to monitor service health
 * A *lookup* or *routing* mechanism to connect to services
 
-## Service Registry
+### Service Registry
 At the heart of the service discovery infrastructure, there is a so-called service registry. This registry has the knowledge about all available services and their instances. It gains this knowledge by providing an API to register and deregister hosts or service instances, so the services have a central point to make themselves available to the public.
 
-#### Consul
+##### Consul
 
 We chose [Consul](https://consul.io/) as our service registry implementation. Consul provides the core functionality of a service registry by utilising an agent-based setup. This means, an agent, which is kind of a daemon process, runs on every machine that provides services. Here is a short abstract of Consul's introduction documentation to get to know the most important parts:
 
@@ -35,13 +35,13 @@ We chose [Consul](https://consul.io/) as our service registry implementation. Co
 
 For more details, see the full [introduction](https://www.consul.io/intro/index.html) and the [in-depth architecture overview](https://www.consul.io/docs/internals/architecture.html) on the Consul web site.
 
-## Health-Checks
+### Health-Checks
 
 The data inside the service registry only provides real value if it is up to date. Just knowing there once was a service available at a certain location is not enough. Therefore, checking the availability or health status of all service instances is crucial for service discovery.
 
 In our setup, the health checking is also done by Consul. The servers check the general availability of the agents, and therefore the hosts. In addition, you can register different types of service checks with an agent, which then performs these checks against the services registered locally in fixed intervals. Whenever such a check fails, the according service or host will be marked as unavailable, and therefore the service registry will no longer promote the faulty instance any longer.
 
-## Lookup / Routing
+### Lookup / Routing
 
 The third major building block is a component, which is able to look up or route requests to an appropriate service instance, given an identifier for the target service. With this identifier, the clients should either receive an actual service instance address to connect to, or have its requests routed transparently to the service instance.
 
@@ -53,7 +53,7 @@ With this naming schema defined, the actual routing is done by [HAProxy](http://
 
 Now that we have this logic in place, HAProxy routes any incoming request to the most appropriate instance of the service given by the first path element of the request. The determination of the most appropriate instance of the service can be decided by the various load balancing features of HAProxy.
 
-## Dynamic Service Registration
+### Dynamic Service Registration
 
 So far, service discovery works fine, but how do the services register with the Consul agent on the hosts on which they are started? To solve this, we introduce another component, [Registrator](http://gliderlabs.com/registrator/latest/). This is a so-called service registry bridge for Docker. What it actually does is nicely summarised on their website:
 
@@ -61,7 +61,7 @@ So far, service discovery works fine, but how do the services register with the 
 
 Running Registrator as an additional Docker container on each host, it automatically registers new containers with the local Consul agent, and therefore makes them publicly available. Customisations, like providing the service name to be used, health check details or add-on data (tags) for a given instance can be provided in the usual Docker way by passing environment variables to the docker run command.
 
-## Conclusion
+### Conclusion
 
 The Service Discovery solution described in this post provides all the features we need so far.
 There are other, similar solutions out there, but with our choice, we are also able to cover other aspects of the microservice architecture with the same technology, which is a big plus for this solution.

@@ -15,20 +15,20 @@ Nevertheless some teams still share their build infrastructure, thus lacking ind
 
 {% image blog-jenkins-polyglot.png %}{% endimage %}
 
-# Jenkins configuration
+## Jenkins configuration
 
 Jenkins makes it very easy to introduce new functionality by installing one of the [many available plugins](https://wiki.jenkins-ci.org/display/JENKINS/Plugins).
 Unfortunately not every plugin turns out to work as expected or in the worst case can potentially bring down the whole Jenkins instance.
 To evaluate unknown plugins by installing them into your production CI infrastructure bears problems, since they often leave unwanted traces behind, even after uninstallation.
 Even making changes to a job configuration without adding any new plugins can lead to broken build jobs, negatively affecting the productivity of whole teams.
 
-## The solution
+### The solution
 
 We were looking for ways to make it safe and easy to improve our build infrastructure.
 Using version control like [GitHub](https://github.com/) for all of our source code, it was natural to treat our infrastructure the same way and be able to roll back to a previous version without any hassle.
 Versioning whole images of Jenkins virtual servers didn't seem feasible and plugins like [JobConfigHistory](https://wiki.jenkins-ci.org/display/JENKINS/JobConfigHistory+Plugin) did not cover managing plugin versions as well.
 
-## Server provisioning using Ansible and Vagrant
+### Server provisioning using Ansible and Vagrant
 
 We started by automating the installation of Jenkins, including all required plugins.
 The idea is to set up a Jenkins server from scratch by running just a single command, while still being able to use the same facilities to update the installation, e.g. with new plugins, using the same technology.
@@ -45,7 +45,7 @@ And since this is so easy now, we usually test our setup scripts by installing t
 Especially for the global Jenkins configuration this is an essential step, which is even easier and faster due to Ansible's smart way of tracking installation state.
 Just rerun the Ansible playbook and changes in the configuration are automatically applied; then you can be sure, that they are based on your version-managed infrastructure code!
 
-## Job provisioning using Job DSL
+### Job provisioning using Job DSL
 
 Usually, Jenkins jobs are created manually using the web UI and are stored in XML configuration files.
 These files are quite verbose, and are not nice to edit directly.
@@ -56,7 +56,7 @@ All you need to create your jobs is a single so-called _seed_ job, which (in our
 The _seed_ job can be run whenever there are changes in the DSL scripts for the jobs, and updates the configuration of changed jobs accordingly.
 Existing build metadata, like next build number files, is not touched by such an update.
 
-## Handling of job metadata
+### Handling of job metadata
 
 Managing the job metadata, e.g. the `nextBuildNumber` file, the workspace and the results of the last builds, is still a tricky topic.
 As these files are created or updated by the actual build executions, they are not easily recreated.
@@ -64,7 +64,7 @@ Therefore, we stick to doing some plain old backup task to save the relevant par
 For us, these are the `nextBuildNumber` files and the `builds` directory.
 All other job metadata is either not really important, like symbolic links to the last successful build directory, or will automatically be recreated with the next build, e.g. the workspace.
 
-## Running Jenkins slaves on developer machines
+### Running Jenkins slaves on developer machines
 
 Being able to run lots of build jobs in parallel is key to receiving fast feedback from our CI infrastructure.
 With modern desktops and laptops there is enough idle CPU and RAM resources available in our offices most of the time, which we want to use for this purpose by running [Jenkins slaves](https://wiki.jenkins-ci.org/display/JENKINS/Step+by+step+guide+to+set+up+master+and+slave+machines).
@@ -73,7 +73,7 @@ Using the [Jenkins Swarm Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Swa
 Each build job is configured to carry one or more _labels_, which control that they get only executed on slaves which can support these kind of jobs.
 This way we can separate e.g. [Selenium](http://www.seleniumhq.org/) integration tests from unit tests.
 
-# Outlook
+## Outlook
 
 We want to offer each team an easy way to setup and manage their own dedicated CI infrastructure and tweak it to their specific needs.
 By spreading the load of executing build jobs to various developer's machine we can further shorten the time a team needs to wait for the [GitHub pull request builder plugin](https://wiki.jenkins-ci.org/display/JENKINS/GitHub+pull+request+builder+plugin) to check if a pull request is safe to merge into the main development line, thus preventing stale pull requests and merge hell later.

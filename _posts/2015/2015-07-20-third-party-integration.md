@@ -11,7 +11,7 @@ Third-party applications are an important part of the service that ePages offers
 As our applications are built on an internal application platform, ePages developers are highly dependent on third-party services.
 Read more to find out why it is not the easiest thing to integrate third-parties and how we tackle this.
 
-# The use case
+## The use case
 
 {% image blog-third-party-overview.png %}{% endimage %}
 
@@ -33,7 +33,7 @@ These circumstances keep us busy not only in integrating new services periodical
 If companies expand abroad, as is the case at ePages, it might be required to include additional services, to being attractive for the merchants in that specific country.
 We integrated e.g. USPS and FedEx, since it would not make any sense to enter the US market without an integration of these common US shipping agents.
 
-# Third-party libraries vs Third-party web services
+## Third-party libraries vs Third-party web services
 
 Today's software is mostly based on third-party components, as there are already proven solutions in place that can be easily reused.
 Furthermore, these projects are supported by great communities that continuously develop the software and often are absolute experts in this respective field.
@@ -47,7 +47,7 @@ By integrating a third-party service, this service will be part of your software
 The software will be expanded by functionality that is dependent on the availability of the third-party web service and acts as expected.
 This fact puts special demands on the developers.
 
-# The challenge
+## The challenge
 
 Usually the only things we know about the third-party web service is the endpoint URL and a more or less helpful documentation.
 The problem is, that not only the API itself, but also both the endpoint and the documentation, can change every time.
@@ -58,7 +58,7 @@ But sometimes the SDK does not support the latest API version or the required pr
 Often the documentation was only produced in the national language of the API developers, making it impossible to understand the content.
 The result is that integration problems cannot be fixed by our developers in Barcelona if the documentation is e.g. only available in German.
 
-# The approach
+## The approach
 
 Ideally, we are in direct contact with the developers of the respective third-party to clarify any questions or concerns.
 Unfortunately, that is not always the case.
@@ -80,7 +80,7 @@ What sounds like a very developer-friendly offer, has a major disadvantage: doin
 Ideally, the test system should act exactly as the live-system, but that is not always the case.
 This is especially annoying if after the rollout customers report problems that did not arise on the test platform.
 
-# The conclusion
+## The conclusion
 
 All in all one can say that third-party integrations are challenging for developers.
 But using suitable tools and a high test coverage can definitely help to master these challenges.
