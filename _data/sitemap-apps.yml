@@ -58,6 +58,9 @@
 - key: api-rest
   title: API reference
   entries:
+    - title: API Change Log
+      link: page:api-change-log
+
     - title: All resources
       link: page:api-resources-all
 
