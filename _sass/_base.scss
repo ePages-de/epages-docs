@@ -26,12 +26,24 @@ nav {
   }
 
   .navbar-nav {
+    margin: 0 -15px;
+
+    li {
+      @media screen and (max-width: $screen-xs-max) {
+        border-bottom: 1px solid #e7e7e7;
+      }
+    }
+
     li > a {
       padding: 31px 15px;
 
       @media screen and (max-width: $screen-sm-max) {
         padding: 31px 10px;
         font-size: 15px;
+      }
+
+      @media screen and (max-width: $screen-xs-max) {
+        padding: 15px 20px;
       }
     }
 

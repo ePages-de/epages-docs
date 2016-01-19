@@ -2,6 +2,7 @@
 layout: page
 key: api-change-log
 title: API Change Log
+version: v1
 ---
 
 This change log covers significant updates and changes to the ePages REST API.
