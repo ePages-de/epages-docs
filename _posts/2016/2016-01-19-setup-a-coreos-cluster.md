@@ -1,14 +1,25 @@
 ---
 layout: post
-title: "Setting up a CoreOS Cluster just for fun on CentOS and Windows"
+title: "Setting up a CoreOS Cluster just for fun on Windows and CentOS"
 date: "2016-01-19 07:17:17"
 icon: cogs
 categories: tech-stories
 authors: ["Andreas G."]
 ---
 
-If you want to play around with [CoreOS](https://coreos.com/using-coreos/) then this article may help you to get started.
-This article deals with setting up a 3 Cluster CoreOS installation using [Vagrant](https://www.vagrantup.com/) and [VirtualBox](https://www.virtualbox.org/) on Windows and CentOS.
+This post deals with setting up a 3-Cluster CoreOS installation using [Vagrant](https://www.vagrantup.com/) and [VirtualBox](https://www.virtualbox.org/) on Windows and CentOS.
+It is intended as a short practical introduction to using CoreOS.
+Later posts will show how to set up and connect different containers in CoreOS.
+
+## Why use CoreOS?
+
+The new architecture of ePages will almost certainly be based on CoreOS as an operating system.
+CoreOS in combination with Docker, etcd, systemd or fleet fits perfectly into the microservices approach.
+It is designed to facilitate large multiple-machine deployments and is easy to scale and manage.
+CoreOS uses Linux containers to manage services instead of package managers.
+One of the main advantages is that the code and all dependencies of a single service, is packaged within a container and can be run on different CoreOS machines (see also [Using CoreOs](https://coreos.com/using-coreos/) and [CoreOS with Docker](https://www.airpair.com/coreos/posts/coreos-with-docker)).
+
+Now let's just start with the practical stuff:
 
 ## Windows
 
@@ -289,7 +300,7 @@ $ cd .\git-projects-github\coreos-vagrant
 $ vagrant destroy
 {% endhighlight %}
 
-## Troubleshooting
+### Troubleshooting
 
 #### Install nfs (if required)
 
