@@ -2,7 +2,7 @@
 layout: page
 ---
 
-<h2>Basic information</h2>
+<h2 id="basic-information">Basic information</h2>
 
 {% if page.raml_resource.description != null %}
   <p>{{ page.raml_resource.description | markdownify }}</p>
@@ -22,7 +22,7 @@ layout: page
   {% endfor %}
 
 {% if page.raml_resource.uri_parameters. != empty %}
-  <h2>URI parameters</h2>
+  <h2 id="uri-parameters">URI parameters</h2>
   <table class="table table-bordered">
     <thead>
     <tr>
@@ -54,7 +54,7 @@ layout: page
 {% endif %}
 
 {% if page.raml_method.query_parameters != empty %}
-  <h2>Query parameters</h2>
+  <h2 id="query-parameters">Query parameters</h2>
   <table class="table table-bordered">
     <thead>
     <tr>
@@ -86,7 +86,7 @@ layout: page
 {% endif %}
 
 {% if page.raml_method.bodies != empty %}
-  <h2>Request body</h2>
+  <h2 id="request-body">Request body</h2>
   {% for body_tmp in page.raml_method.bodies %}
     {% assign body = body_tmp[1] %}
     <p>Media type <code>{{ body.media_type }}</code></p>
@@ -102,7 +102,7 @@ layout: page
     {% if schema != null %}
       {% assign no_table = schema | json_keys: 'properties' | first  %}
       {% assign response = schema | json_field: 'properties' | first %}
-      <h2>Response Attributes</h2>
+      <h2 id="response-attributes">Response Attributes</h2>
       {% if no_table == "no_table" %}
         {{ response.last | markdownify }}
       {% else %}
@@ -127,7 +127,7 @@ layout: page
     {% endif %}
   {% endfor %}
 
-  <h2>Response</h2>
+  <h2 id="response">Response</h2>
   {% for res_tmp in page.raml_method.responses %}
     {% assign res = res_tmp[1] %}
     <strong>HTTP {{ res.status_code }} {{ res.display_name }}</strong>
@@ -141,7 +141,7 @@ layout: page
   {% endfor %}
 {% endif %}
 
-<h2>Code examples</h2>
+<h2 id="code-examples">Code examples</h2>
 <div role="tabpanel">
   <ul class="nav nav-tabs" role="tablist">
     {% for snippet in page.raml_snippets %}

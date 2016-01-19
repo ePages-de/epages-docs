@@ -2,9 +2,6 @@
 {% assign fork = "apps|blog|themes|soap" | split: "|" | contains: chapter %}
 {% assign beta = "apps|themes" | split: "|" | contains: chapter %}
 {% if chapter %}
-  {% if beta %}
-    <span id="ribbon-beta">BETA</span>
-  {% endif %}
   {% if fork %}
     <a id="ribbon-github" href="{{ site.github_url }}">Fork us on GitHub</a>
   {% endif %}
