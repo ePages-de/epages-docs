@@ -5,6 +5,8 @@ title: Create an app
 ---
 
 Once you have your test shop in place, you can create an app.
+Oh, by the way, this is the API URL for your test shop: `https://sandbox.epages.com/rs/shops/{shopId}`.
+
 You automatically receive a **Client ID** and a **Client Secret** when you create an app in your test shop.
 After successful authorisation of your app, you will be assigned an **Access token**.
 

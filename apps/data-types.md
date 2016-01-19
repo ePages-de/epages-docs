@@ -4,7 +4,7 @@ key: apps-data-types
 title: Data types
 ---
 
-# address
+## address
 
 This object is used for the attributes of shippingAddress and billingAddress.
 
@@ -25,14 +25,14 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | birthday | string | The date of birth of the person associated with the address. |
 | emailAddress | string | The email address of the person associated with the address. |
 
-# attributeSelection
+## attributeSelection
 
 | Attribute | Type | Description |
 | - | :-: |  - |
 | name | string | The name of the selected product attribute, e.g. colour. |
 | value | string | The assigned value of the selected product attribute, e.g. white. |
 
-# basePrice
+## basePrice
 
 | Attribute | Type | Description |
 | - | :-: |  - |
@@ -41,7 +41,7 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | formatted | string | The formatted output of the base price information, e.g. 1 l = 1.20 EUR. |
 | quantity | [quantity](page:apps-data-types#quantity) | The quantity of the product, e.g. 500 ml. |
 
-# cart
+## cart
 
 | Attribute | Type | Description |
 | - | :-: |  - |
@@ -52,7 +52,7 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | minCartValue | [price](page:apps-data-types#price) | The minimum order value of a shop. |
 | checkoutURL | string | The URL that redirects the browser to the merchant’s shop in order to complete the checkout. |
 
-# category
+## category
 
 | Attribute | Type | Description |
 | - | :-: |  - |
@@ -66,13 +66,13 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | subCategories | array of [link] | A list of links to the subcategories. |
 | sfUrl | string | The link to the categories in the shop’s storefront. |
 
-# contentPageSummary
+## contentPageSummary
 
 | Attribute | Type | Description |
 | - | :-: |  - |
 | name | string | The name of the content page. |
 
-# customAttribute
+## customAttribute
 
 | Attribute | Type | Description |
 | - | :-: |  - |
@@ -82,7 +82,7 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | type | enum | The data type of the custom attribute. Can be *string*, *number*, *bool*, *datetime*, *time*, *url*.|
 | values | array of [variationValue](page:apps-data-types#variationvalue)| The options selected for the custom attribute. |
 
-# image
+## image
 
 This object is used for the attributes of images.
 
@@ -91,13 +91,13 @@ This object is used for the attributes of images.
 | url | string | The URL of an image. |
 | classifier | string | Specifies the image. Can be *Thumbnail*, *Small*, *HotDeal*, *MediumSmall*, *Medium*, *MediumLarge*, *Large*. |
 
-# imageSize
+## imageSize
 
 | Attribute | Type | Description |
 | - | :-: |  - |
 | sizes | array of [image](page:apps-data-types#image) | The size of the images in the slideshow. |
 
-# lineItemContainer
+## lineItemContainer
 
 | Attribute | Type | Description |
 | - | :-: |  - |
@@ -108,7 +108,7 @@ This object is used for the attributes of images.
 | productLineItems | array of [productLineItem](page:apps-data-types#productlineitem) | A list of line items. |
 | shippingPrice | [price](page:apps-data-types#price) | The shipping price of the line item. |
 
-# link
+## link
 
 This object is used for the attributes of links.
 
@@ -118,7 +118,7 @@ This object is used for the attributes of links.
 | href | string | The URL of the related link that can be used for subsequent calls. |
 | title | string | The title of the item that is linked. (optional)  |
 
-# order
+## order
 
 | Attribute | Type | Description |
 | - | :-: |  - |
@@ -149,7 +149,7 @@ This object is used for the attributes of links.
 | shippingPrice | [price](page:apps-data-types#price) | The shipping price for the order.  |
 | links | array of [link](page:apps-data-types#link) | The links to the products of the order. |
 
-# price
+## price
 
 This object is used for the attributes of basePrice, depositPrice, ecoParticipationPrice, manufacturerPrice, grandTotal, priceWithDeposits, totalBeforeTax, totalTax and lineItemsSubTotal.
 
@@ -160,7 +160,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | amount | number | The amount of the price. |
 | currency | string | The currency code of the price according to ISO 4217. |
 
-# priceInfo
+## priceInfo
 
 | Attribute | Type | Description |
 | - | :-: |  - |
@@ -172,7 +172,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | priceWithDeposits | [price](page:apps-data-types#price) | The price including all deposits, i.e. price, depositPrice and ecoParticipationPrice.|
 | basePrice | [basePrice](page:apps-data-types#baseprice) | The price information scaled to a standardised base unit, according to the German base price regulation "Preisangabenverordnung" (PAngV), e.g. 1 l = 1.20 EUR. Is `null` if no reference amount is specified for the product.|
 
-# product
+## product
 
 This object is used for the attributes of product.
 
@@ -198,7 +198,7 @@ This object is used for the attributes of product.
 | upc | string | The Universal Product Code of the product. |
 | ean | string | The European Article Number of the product, either EAN-8 or EAN-13. |
 
-# productLineItem
+## productLineItem
 
 | Attribute | Type | Description |
 | - | :-: |  - |
@@ -212,7 +212,7 @@ This object is used for the attributes of product.
 | images | array of [image](page:apps-data-types#image) | The image of the line item. |
 | links | array of [link](page:apps-data-types#link) | The links to the product line item. |
 
-# productSuggest
+## productSuggest
 
 | Attribute | Type | Description |
 | - | :-: |  - |
@@ -220,7 +220,7 @@ This object is used for the attributes of product.
 | images | array of [image](page:apps-data-types#image) | The image of the product resulting from the query. |
 | link | [link](page:apps-data-types#link) | The link to the product resulting from the query. |
 
-# quantity
+## quantity
 
 This object is used for the attributes of deliveryWeight and quantity.
 
@@ -229,7 +229,7 @@ This object is used for the attributes of deliveryWeight and quantity.
 | amount | decimal | The amount displayed as a numeric value. |
 | unit | string | The unit displayed as abbreviated SI unit, if available. Otherwise a localised name if the unit is displayed, e.g. piece(s).  |
 
-# shippingMethod
+## shippingMethod
 
 | Attribute | Type | Description |
 | - | :-: |  - |
@@ -238,14 +238,14 @@ This object is used for the attributes of deliveryWeight and quantity.
 | description | string | The description of the shipping method.|
 | logo | string | The logo of the shipping method. |
 
-# variation
+## variation
 
 | Attribute | Type | Description |
 | - | :-: |  - |
 | link | [link](page:apps-data-types#link)| The link to the product variation. |
 | attributeSelection | array of [attributeSelection](page:apps-data-types#attributeselection) | The attribute of the selected product variation. |
 
-# variationAttribute
+## variationAttribute
 
 | Attribute | Type | Description |
 | - | :-: |  - |
@@ -253,7 +253,7 @@ This object is used for the attributes of deliveryWeight and quantity.
 | displayName | string | The displayed name of the variation attribute. |
 | values | array of [variationValue](page:apps-data-types#variationvalue) | The values of the variation attribute.  |
 
-# variationValue
+## variationValue
 
 | Attribute | Type | Description |
 | - | :-: |  - |
