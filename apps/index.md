@@ -4,7 +4,7 @@ key: apps-overview
 title: Overview
 ---
 
-## Introduction
+## Introduction {#introduction}
 
 The ePages API is based on RESTful principles, allowing you to code in whatever language you prefer.
 It supports JSON media types and uses UTF-8 character encoding.
@@ -16,7 +16,7 @@ With a standard interface to store data, it is very simple to create application
 
 In a first approach, we support 3rd party applications that connect via the REST API to ePages shops, allowing them to exchange data and allowing the merchant to work with these data.
 
-## Registration
+## Registration {#registration}
 
 Put your idea into action!
 Before you can start coding away, you'll need to sign up for the ePages Developer Program and create a test shop.
