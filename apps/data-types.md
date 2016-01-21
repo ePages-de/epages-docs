@@ -229,6 +229,16 @@ This object is used for the attributes of deliveryWeight and quantity.
 | amount | decimal | The amount displayed as a numeric value. |
 | unit | string | The unit displayed as abbreviated SI unit, if available. Otherwise a localised name if the unit is displayed, e.g. piece(s).  |
 
+## sales
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| currency | string | The currency code according to ISO 4217. |
+| totalGrossRevenue | number | The total gross revenue received from completed orders.|
+| totalNetRevenue | number | The total net revenue received from completed orders.|
+| unitsSold | number | The number of sold products. |
+| totalOrders | number | The number of orders for the defined time frame. |
+
 ## shippingMethod
 
 | Attribute | Type | Description |
