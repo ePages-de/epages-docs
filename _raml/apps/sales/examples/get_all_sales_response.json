@@ -1,0 +1,26 @@
+{
+  "totalUnitsSold":280,
+  "orderUnit":"piece",
+  "salesPerCurrency":[
+    {
+      "currency":"EUR",
+      "totalRevenue":2450.00,
+      "unitsSold":255
+    },
+    {
+      "currency":"USD",
+      "totalRevenue":250.00,
+      "unitsSold":25
+    }
+  ],
+  "links":[
+    {
+      "rel":"product",
+      "href":"https://pm.epages.com/rs/shops/apidocu/products/51E7F913-5447-240E-77AE-AC14145FA477"
+    },
+    {
+      "rel":"contained-in-orders",
+      "href":"https://pm.epages.com/rs/shops/apidocu/orders?containsProductId=51E7F913-5447-240E-77AE-AC14145FA477&canceledOn=false&createdAfter=$Date1&createdBefore=$Date2"
+    }
+  ]
+}
