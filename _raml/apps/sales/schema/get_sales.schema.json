@@ -5,7 +5,7 @@
   "properties": {
     "salesPerCurrency": {
       "type": "array of [sales](page:apps-data-types#sales)",
-      "description": "The sale summary grouped by currency."
+      "description": "The sales summary grouped by currency."
     }
   }
 }
