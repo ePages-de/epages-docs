@@ -11,3 +11,4 @@ In order to keep track of these changes we recommend you to follow [@epagesdevs]
 | Date      | Description      | Available with software release  |
 |---------------|---------------| -------|----------|
 | 2016&#8209;01&#8209;19    | Added date range filters `createdBefore` and `createdAfter` to query parameters of [`GET` orders](page:apps-api-get-shops-shopid-orders-information#query-parameters).  | 6.17.37 |
+| 2016&#8209;01&#8209;21 | Added [`GET` sales](page:apps-api-get-shops-shopid-sales-information) endpoint. | 6.17.38 |

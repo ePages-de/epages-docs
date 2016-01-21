@@ -82,6 +82,9 @@
     - title: Products
       link: page:api-resources-products
 
+    - title: Sales
+      link: page:api-resources-sales
+
     - title: ShippingMethods
       link: page:api-resources-shipping-methods
 
@@ -96,3 +99,4 @@
 
     - title: FAQ
       link: page:apps-faq
+
