@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Codemotion 2015 - One ePagee was there!"
+title: "Codemotion 2015 - One epagee was there!"
 date: "2015-12-04 12:00:00"
 icon: comments
 categories: conferences

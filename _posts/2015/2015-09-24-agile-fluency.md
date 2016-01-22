@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "ePages turns agile"
+title: "epages turns agile"
 date: "2015-09-24 10:10:00"
 icon: refresh
 categories: agile
