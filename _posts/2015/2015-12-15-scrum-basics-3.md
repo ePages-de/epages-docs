@@ -152,3 +152,8 @@ Groups with the same expertise could be e.g. backend developers, designers or te
 Like the Community of Practice, the Scrum of Scrums is a meeting outside the Sprint and outside the Development Team.
 It includes representatives from each Scrum Team and is set up to talk about topics that concern several Scrum Teams.
 It should clarify cross-team problems and remove dependencies between the teams.
+
+## Related posts
+
+* [Scrum Basics Series - Part 1: What is Scrum?](https://developer.epages.com/blog/2015/10/13/scrum-basics-1.html)
+* [Scrum Basics Series - Part 2: Scrum Roles](https://developer.epages.com/blog/2015/11/19/scrum-basics-2.html)

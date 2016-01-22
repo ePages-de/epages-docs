@@ -115,3 +115,7 @@ If for example the Marketing department knows that the Scrum Team shows their de
 If managers know the two-week time frames, they can go early to the POs and ask if there's space for an additional task in the next sprint.
 Combine “protect the team”, “remove impediments”, “push for constant improvement” and “moderate meeting so they have a valuable outcome and end on time” and you can see where the value of this extra employee pushes in.
 I’ve seen Scrum Teams that were able to double or even quadruple their development speed, after they have been assigned a full-time SM.
+
+## Related post
+
+[Scrum Basics Series - Part 1: What is Scrum?](https://developer.epages.com/blog/2015/10/13/scrum-basics-1.html)

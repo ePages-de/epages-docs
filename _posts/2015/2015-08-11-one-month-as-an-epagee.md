@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "One month as an ePagee"
+title: "One month as an epagee"
 date: "2015-08-11 08:00:00"
 icon: user-plus
 categories: jobs
