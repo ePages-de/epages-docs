@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How ePages gives new developers a great start"
+title: "How epages gives new developers a great start"
 date: "2015-07-07 07:32:32"
 icon: sign-in
 categories: jobs
