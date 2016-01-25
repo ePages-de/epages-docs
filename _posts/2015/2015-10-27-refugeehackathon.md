@@ -14,7 +14,7 @@ This blog post is a report about participating in the #refugeehackathon in Berli
 
 ## Overview of the event
 
-The [#refuggeehackathon](https://twitter.com/search?src=typd&q=%23refugeehackathon) started on Friday, 24th October 2015 with a requirements workshop.
+The [#refugeehackathon](https://twitter.com/search?src=typd&q=%23refugeehackathon) started on Friday, 24th October 2015 with a requirements workshop.
 A small group of people visited the refugees and talked about project ideas which could be helpful for them.
 The official start was on Saturday morning.
 After some welcoming words, a short video about the challenging situation of refugees travelling through Europe was shown.

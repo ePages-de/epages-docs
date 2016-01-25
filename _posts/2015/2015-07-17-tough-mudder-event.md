@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "ePagees face the Tough Mudder challenge"
+title: "epagees face the Tough Mudder challenge"
 date: "2015-07-17 08:14:03"
 icon: users
 categories: events
