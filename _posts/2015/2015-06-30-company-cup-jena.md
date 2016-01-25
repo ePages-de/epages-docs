@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "ePages participates in Jena Company Cup"
+title: "epages participates in Jena Company Cup"
 date: "2015-06-30 08:00:00"
 icon: users
 categories: events

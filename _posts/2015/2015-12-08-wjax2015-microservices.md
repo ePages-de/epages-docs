@@ -74,3 +74,7 @@ Some tools like [Netflix/eureka](https://github.com/Netflix/eureka) help to moni
 - [Building Microservices](http://www.amazon.de/Building-Microservices-Sam-Newman/dp/1491950358)
 - [Domain-Driven Design: Tackling Complexity in the Heart of Software](http://www.amazon.de/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215)
 - [Implementing Domain-Driven Design](http://www.amazon.de/Implementing-Domain-Driven-Design-Vaughn-Vernon/dp/0321834577)
+
+## Related post
+
+[W-JAX 2015 Retrospect Part 1: Agile Day](https://developer.epages.com/blog/2015/11/30/wjax2015-agile-day.html)

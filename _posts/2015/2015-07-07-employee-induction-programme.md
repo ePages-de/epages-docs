@@ -3,7 +3,7 @@ layout: post
 title: "How epages gives new developers a great start"
 date: "2015-07-07 07:32:32"
 icon: sign-in
-categories: jobs
+categories: working-at-epages
 authors: ["Birgit"]
 ---
 
