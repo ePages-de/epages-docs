@@ -236,7 +236,7 @@ This object is used for the attributes of deliveryWeight and quantity.
 | currency | string | The currency code according to ISO 4217. |
 | totalGrossRevenue | number | The total gross revenue received from completed orders.|
 | totalNetRevenue | number | The total net revenue received from completed orders.|
-| unitsSold | number | The number of sold products. |
+| unitsSold | number | The number of sold product units (only available with active filter productId). |
 | totalOrders | number | The number of orders for the defined time frame. |
 
 ## shippingMethod
