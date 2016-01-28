@@ -1,6 +1,5 @@
 #%RAML 0.8
   displayName: Categories
-  description: A collection of product categories of a shop.
   get:
     description: |
         Returns the product categories of the shop. This usually is the default root category "Categories",
@@ -15,8 +14,7 @@
             schema: !include schema/get_categories.schema.json
 
   /{categoryId}:
-      displayName: Category ID
-      description: The unique identifier of the category.
+      displayName: Category
       get:
         description: Returns the category identified by the provided category ID.
         securedBy: [products_read]
@@ -28,7 +26,7 @@
                 example: !include examples/get_categories_categoryid_response.json
                 schema: !include schema/get_categories_categoryid.schema.json
       put:
-        description: Modifies a category.
+        description: Modifies a category identified by the provided category ID.
         securedBy: [products_write]
         is: [ locale ]
         body:

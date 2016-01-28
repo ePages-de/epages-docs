@@ -1,9 +1,5 @@
 #%RAML 0.8
 displayName: Products
-description: |
-          A collection of products of a shop.
-          Note: In case of errors for certain products or unknown product IDs,
-          the product collections will **not** return errors, but skip the products in question.
 get:
   description: Returns a list of products.
   securedBy: [products_read]
@@ -39,14 +35,13 @@ get:
           example: !include examples/get_product_response.json
           schema: !include schema/get_product.schema.json
 /{productId}:
-  displayName: Product ID
-  description: Retrieve a specific product using its ID.
+  displayName: Product
   uriParameters:
     productId:
       description: The unique identifier of the product.
       example: 52F221E0-36F6-DC4E-384A-AC1504050C04
   get:
-    description: Returns information for a single product. For product variations, a link
+    description: Returns information on a single product. For product variations, a link
       to the respective product variations resource (rel="variations") is added.
     securedBy: [products_read]
     is: [ locale, currency ]
@@ -64,7 +59,6 @@ get:
 
   /variations:
     displayName: Product variations
-    description: Retrieve product variations.
     get:
       is: [ locale, paged ]
       description: Returns links to product variations in a paged item list.<br/>
@@ -79,7 +73,6 @@ get:
               schema: !include schema/get_product_productid_variations.schema.json
   /slideshow:
     displayName: Product slideshow
-    description: Retrieve a product slideshow.
     get:
       description: Returns links to slideshow images of a product.
       securedBy: [products_read]
@@ -90,8 +83,7 @@ get:
               example: !include examples/get_product_productid_slideshow_response.json
               schema: !include schema/get_product_productid_slideshow.schema.json
   /custom-attributes:
-    displayName: User-defined product attributes
-    description: Retrieve user-defined product attributes.
+    displayName: Product attributes
     get:
       is: [ locale ]
       description: Returns values of user-defined product attributes.
@@ -103,8 +95,7 @@ get:
               example: !include examples/get_product_productid_custom_response.json
               schema: !include schema/get_product_productid_custom.schema.json
   /lowest-price:
-    displayName: Lowest price of product variations
-    description: Retrieve the lowest price of product variations.
+    displayName: Product's lowest price
     get:
       is: [ locale, currency ]
       description: Returns the lowest price of all variations of a product that
@@ -121,8 +112,7 @@ get:
               example: !include examples/get_product_productid_low_price_response.json
               schema: !include schema/get_product_productid_low_price.schema.json
   /categories:
-    displayName: Categories of a product
-    description: Retrieve all categories of a product.
+    displayName: Product categories
     get:
       is: [ locale ]
       description: Returns a list of links, i.e. self, product and categories for a product.
@@ -134,8 +124,7 @@ get:
               example: !include examples/get_product_productid_categories_response.json
               schema: !include schema/get_product_productid_categories.schema.json
   /stock-level:
-    displayName: Stock level
-    description: Retrieve the stock level of a product.
+    displayName: Product stock level
     get:
       description: Returns the current stock level of a product.
       securedBy: [products_read]

@@ -3,6 +3,10 @@ layout: page
 key: api-resources-sales
 title: Sales
 ---
+
+The result of a purchase request by a customer of one or more products from a shop.
+To request the sales of a shop, an order must be created and not cancelled (cancelledOn=false).
+
 <ul id="resource-list">
   {% for page in site.pages %}
     {% assign match = page.key | regex_match: '^apps-api-([a-z]+)-shops-shopid-sales(.*)-information$' %}
