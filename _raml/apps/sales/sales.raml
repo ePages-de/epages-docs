@@ -1,6 +1,5 @@
 #%RAML 0.8
 displayName: Sales
-description: The result of a purchase request by a customer of one or more products from a shop. To request the sales of a shop, an order must be created and not cancelled (cancelledOn=false).
 get:
   description: Returns the summary of sales figures for a specified product or for the shop grouped by currencies. The amounts are gross and net amounts. By default the results of the last 30 days are displayed. Open-ended queries are limited to 30 days. The maximum time frame for displaying orders is 1 year.
   securedBy: [orders_read]

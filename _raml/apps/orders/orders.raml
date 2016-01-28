@@ -1,8 +1,7 @@
 #%RAML 0.8
 displayName: Orders
-description: A request by a customer to purchase one or more products from a shop. An order is created as soon as a customer completes the checkout process. Depending on the shop settings, the order will be created before or after the payment process. By default the results for orders are sorted by creationDate.
 get:
-  description: Returns a list of orders.
+  description: Returns a list of orders. By default the results for orders are sorted by creationDate.
   securedBy: [orders_read]
   is: [ locale ]
   queryParameters:
@@ -81,10 +80,9 @@ get:
           example: !include examples/get_orders_response.json
           schema: !include schema/get_orders.schema.json
 /{orderId}:
-  displayName: Order ID
-  description: Retrieve a specific order using its ID.
+  displayName: Order
   get:
-    description: Returns information for a single order.
+    description: Returns information for a single order identified by the provided order ID.
     securedBy: [orders_read]
     is: [ locale ]
     responses:
@@ -94,7 +92,7 @@ get:
             example: !include examples/get_orders_orderid_response.json
             schema: !include schema/get_orders_orderid.schema.json
   put:
-    description: Modifies the order.
+    description: Modifies an order identified by the provided order ID.
     securedBy: [orders_write]
     is: [ locale ]
     body:
