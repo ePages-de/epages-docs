@@ -1,6 +1,5 @@
 #%RAML 0.8
 displayName: Shipping methods
-description: The shipping method supposed to handle the shipment.
 get:
   description: Returns the shipping methods of a shop.
   securedBy: [products_read]
@@ -13,7 +12,6 @@ get:
           schema: !include schema/get_shipping.schema.json
 /{shippingMethodId}:
   displayName: Shipping method ID
-  description: The unique identifier for the shipping method.
   uriParameters:
     shippingMethodId:
       description: The unique identifier for the shipping method.

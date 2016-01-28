@@ -1,6 +1,5 @@
 #%RAML 0.8
 displayName: Legal information
-description: Summary of legal information for a shop.
 get:
   description: Returns hyperlinks of legal information for a shop.
   securedBy: [legal_read]
@@ -13,7 +12,6 @@ get:
           schema: !include schema/get_legal.schema.json
 /contact-information:
   displayName: Contact information
-  description: The contact information of a shop.
   get:
     description: Returns the contact information of a shop.
     securedBy: [legal_read]
@@ -40,7 +38,6 @@ get:
 
 /privacy-policy:
     displayName: Privacy policy
-    description: Retrieve the privacy policy of a shop.
     get:
       description: Returns the privacy policy of a shop.
       securedBy: [legal_read]
@@ -68,7 +65,6 @@ get:
 
 /terms-and-conditions:
   displayName: Terms and conditions
-  description: The terms and conditions of a shop.
   get:
     description: Returns the terms and conditions of a shop.
     securedBy: [legal_read]
@@ -95,7 +91,6 @@ get:
 
 /rights-of-withdrawal:
     displayName: Rights of withdrawal
-    description: Retrieve the rights of withdrawal of a shop.
     get:
       description: Returns the customer rights of withdrawal of a shop.
       securedBy: [legal_read]
@@ -122,7 +117,6 @@ get:
 
 /shipping-information:
     displayName: Shipping information
-    description: Retrieve the shipping terms and conditions of a shop.
     get:
       description: Returns detailed information on possible shipping types and the costs incurred. Also displays the costs for shipment abroad.
       securedBy: [legal_read]

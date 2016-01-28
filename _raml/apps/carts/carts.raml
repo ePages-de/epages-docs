@@ -1,6 +1,5 @@
 #%RAML 0.8
 displayName: Carts
-description: Operations on the carts of a shop.
 post:
   description: Creates a cart for a shop.
   securedBy: [products_read]
@@ -15,10 +14,9 @@ post:
           schema: !include schema/post_carts.schema.json
 
 /{cartId}:
-  displayName: Cart ID
-  description: Retrieve a specific cart using its ID.
+  displayName: Cart
   get:
-    description: Returns a specified cart from a shop.
+    description: Returns a specific cart from a shop identified by the provided cart ID.
     securedBy: [carts_read]
     responses:
       200:
@@ -29,7 +27,6 @@ post:
 
   /line-items:
     displayName: Line items
-    description: The line items of a product within a cart.
     post:
       description: Creates a product line item in a cart.
       securedBy: [carts_write]
@@ -44,10 +41,9 @@ post:
               schema: !include schema/post_carts_cartid_lineitem.schema.json
 
     /{lineItemId}:
-      displayName: Line item ID
-      description: The unique identifier of the product line item.
+      displayName: Line item
       put:
-        description: Modifies a specified product line item in a cart.
+        description: Modifies a specific product line item in a cart.
         securedBy: [carts_write]
         body:
           application/json:
@@ -59,7 +55,7 @@ post:
                 example: !include examples/put_carts_cartid_lineitem_itemid_response.json
                 schema: !include schema/put_carts_cartid_lineitem_itemid.schema.json
       delete:
-        description: Deletes a specified product line item from a cart.
+        description: Deletes a specific product line item from a cart.
         securedBy: [carts_write]
         responses:
           200:
@@ -70,7 +66,6 @@ post:
 
   /billing-address:
     displayName: Billing address
-    description: The billing address a cart requires.
     put:
       description: Modifies the billing address for a cart.
       securedBy: [carts_write]
@@ -95,7 +90,6 @@ post:
 
   /shipping-address:
     displayName: Shipping address
-    description: The shipping address a cart requires.
     put:
       description: Modifies the shipping address for a cart.
       securedBy: [carts_write]

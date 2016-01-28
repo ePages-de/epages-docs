@@ -4,6 +4,8 @@ key: api-resources-shipping-methods
 title: ShippingMethods
 ---
 
+The shipping methods supposed to handle the shipment for a shop.
+
 <ul id="resource-list">
   {% for page in site.pages %}
     {% assign match = page.key | regex_match: '^apps-api-([a-z]+)-shops-shopid-shipping-methods(.*)-information$' %}

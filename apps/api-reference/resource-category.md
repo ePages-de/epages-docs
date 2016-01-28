@@ -4,6 +4,8 @@ key: api-resources-categories
 title: Categories
 ---
 
+A collection of product categories of a shop.
+
 <ul id="resource-list">
   {% for page in site.pages %}
     {% assign match = page.key | regex_match: '^apps-api-([a-z]+)-shops-shopid-categories(.*)-information$' %}
