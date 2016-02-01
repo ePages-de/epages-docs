@@ -56,9 +56,9 @@
 }
 
 .btn-search {
-  background-color: #2ECC71;
+  background-color: $green;
   border-radius: 0;
-  border: 1px solid #2ECC71;
+  border: 1px solid $green;
   color: #fff;
   font-size: 1.8rem;
   min-height: 16px;
@@ -67,8 +67,8 @@
   height: 36px;
 
   &:hover, &:active, &:focus {
-    background-color: darken( $green, 5%);
-    border: 1px solid darken( $green, 5%);
+    background-color: darken($green, 2);
+    border: 1px solid darken($green, 2);
     color: #fff;
     text-decoration: none;
   }
