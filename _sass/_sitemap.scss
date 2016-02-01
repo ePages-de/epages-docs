@@ -12,7 +12,7 @@
 .sitemap-headline {
   text-transform: uppercase;
   margin: 40px 0 10px;
-  color: $gray;
+  color: #2E2A2A;
   font-family: 'HelveticaNeue-Bold';
   font-size: 1.8rem;
 }
@@ -22,5 +22,10 @@
 }
 
 a {
-  color: $petrol;
+  color: $brand-red;
+  text-decoration: none;
+
+  &:hover {
+    color: darken($brand-red, 20);
+  }
 }

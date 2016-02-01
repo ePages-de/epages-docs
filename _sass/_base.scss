@@ -135,7 +135,7 @@ nav {
 #content {
   background-color: white;
   padding: 50px 0;
-  line-height: 1.7em;
+  line-height: 1.6em;
 
   @media screen and (max-width: $screen-xs-max) {
     padding: 25px 0;
@@ -172,15 +172,16 @@ section{
 }
 
 p {
-  margin: 0 0 20px;
+  margin: 0 0 12px;
 }
 
 .page-header {
-  margin-top: 40px;
+  margin: 0;
 
   h1 {
-    font-size: 56px;
-    margin-top: 0;
+    font-size: 40px;
+    line-height: 110%;
+    margin: 0;
   }
 
   .btn-ghost {
@@ -221,22 +222,38 @@ article {
   }
 
   h1 {
-    font-size: 56px;
+    font-size: 40px;
     margin-top: 60px;
   }
 
   h2 {
-    font-size: 40px;
-    font-family: 'HelveticaNeue-Light';
-    margin-top: 40px;
+    font-size: 32px;
+    font-family: 'HelveticaNeue-Bold';
+    line-height: 150%;
+    margin-top: 32px;
+    a {
+      color: #333;
+      text-decoration: none;
+      &:hover {
+        color: black;
+      }
+    }
   }
 
   h3 {
-    font-size: 32px;
+    font-size: 24px;
   }
 
   h4 {
-    font-size: 24px;
+    font-size: 18px;
+    line-height: 120%;
+    margin-top: 2em;
+  }
+
+  h5 {
+    font-size: 18px;
+    line-height: 120%;
+    margin-top: 2em;
   }
 
   table {
@@ -249,15 +266,19 @@ article {
   }
 
   a {
-    color: $petrol;
+    color: $brand-red;
     text-decoration: underline;
 
     &:hover {
-      color: darken($petrol, 20)
+      color: darken($brand-red, 20);
     }
   }
 
   li {
+    margin-bottom: 0.5em;
+    &:last-child {
+      margin-bottom: 0;
+    }
     ul {
       li {
         list-style-type: none;
@@ -284,8 +305,16 @@ b, strong {
   border: 1px solid silver;
   border-radius: 0;
   padding: 10px;
-  margin: 0 0 ($line-height-computed / 2);
+  margin: 1em auto;
   text-align: center;
+
+  &.left {
+    margin: 0.4em 1.4em 0.7em 0;
+  }
+
+  &.right {
+    margin: 0.4em 0 0.7em 1.4em;
+  }
 
   img {
     max-width: 100%;
@@ -361,4 +390,12 @@ b, strong {
 .spacer20 {
   height: $spacerS-height;
   clear: both;
+}
+
+.pager li > a, .pager li > span {
+  border-radius: 0;
+}
+
+i.fa.fa-border {
+  border: 0;
 }

@@ -29,3 +29,9 @@
   background-color: $color;
   border: 1px solid darken($color, 10%);
 }
+
+.label-default:hover, .http-method:hover {
+  background-color: #ddd;
+  border: 1px solid #ddd;
+  color: #333;
+}

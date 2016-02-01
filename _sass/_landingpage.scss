@@ -7,6 +7,7 @@
     background-image: none;
     padding: 1.5rem 0;
     background-color: #ddd;
+    background: inherit;
   }
 
   @media screen and (max-width: $screen-sm-max) {
