@@ -17,6 +17,10 @@
 }
 
 .post-title {
+  margin-bottom: 0;
+  &:first-of-type {
+    margin-top: 0;
+  }
   a {
     &>span {
       font-size: 2rem;
@@ -28,14 +32,20 @@
 .post-meta {
   color: gray;
   font-size: 90%;
-  margin: 0.5em 0;
+  margin-bottom: 1.5em;
+  margin-top: 0;
 }
 
 .post-share {
   .socialmedia a {
+    color: #fff;
     &>span {
       font-size: 2rem;
       padding: 5px;
     }
   }
+}
+
+.post-content {
+  margin-top: 3em;
 }
