@@ -7,7 +7,6 @@ categories: tech-stories selenium testing elk cdp elasticsearch logstash continu
 authors: ["Benjamin Nothdurft", "Bastian Klein"]
 ---
 
-
 We implemented a Selenium test report database with Elasticsearch, Logstash, Docker, CircleCI and Jenkins to ease the test evaluation process in our Continuous Delivery Pipeline. Today we want to share with you the background story of the project, showcase the various parts of the implemented solution and discuss the pragmatic benefits for our pipeline and our speed-up for massive regression test evaluation.
 
 Furthermore, this article should serve as an outline of the consolidated technical expertise gained throughout the engineering process of this project.
@@ -312,4 +311,3 @@ Besides the in-depth exploration of the ELK ecosystem, which goes way beyond thi
 * How to enjoy long pair-programming sessions, but also when to quickly switch back to separate desks.
 
 Overall we are very happy with the outcome of this project and hope we can spend all the freed up time on other awesome projects about which we can write more blog posts then.
-
