@@ -14,7 +14,7 @@ Furthermore, this article should serve as an outline of the consolidated technic
 
 ## Background Story
 
-Currently our [ePages Selenium Framework](https://developer.epages.com/blog/2015/07/23/the-epages-selenium-framework.html) (**ESF**) has evolved to a reputable instrument for quality assurance of the next iteration of the ePages platform. The development teams are highly deliberated in implementing corresponding automated UI tests for each feature to safeguard the functionality of every Cartridge (software module).
+Currently our [ePages Selenium Framework](https://developer.epages.com/blog/2015/07/23/the-epages-selenium-framework.html) (**ESF**) has evolved to a reputable instrument for quality assurance of the next iteration of the ePages platform. The development teams are highly deliberated in implementing corresponding automated UI tests for each feature to safeguard the functionality of every Cartridge (platform module).
 
 In our Continuous Delivery pipeline (**CDP**) we run all of these tests in various sets on every possible type of ePages environment, which is either freshly installed or patched to the latest release candidate. The evaluation of all test results from each pipeline run is a fundamentally important duty before releasing the next version of ePages.
 
