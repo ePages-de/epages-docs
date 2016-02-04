@@ -190,7 +190,6 @@ if (![tags]) {
 In the listing above you can see an excerpt of the filter part of the configuration file. The first statement adds a new field `report_url` to the JSON object. Therefore, we concatenate an environment variable with a field that was defined in the original JSON object to obtain a complete URL. The second statement creates a fingerprint needed for the Elasticsearch document ID that will be added to a metadata field. The fingerprint will be created from the fields specified by the key `source`.
 
 <!--- {% raw %} -->
-
 ```
 {%- if "elasticsearch" in LS_OUTPUT or "document" in LS_OUTPUT or "template" in LS_OUTPUT %}
 
@@ -233,7 +232,6 @@ if (![tags]) {
     }
 }
 {%- endif %}
-
 ```
 <!--- {% endraw %} -->
 
