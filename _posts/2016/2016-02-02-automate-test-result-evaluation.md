@@ -102,7 +102,7 @@ Changes in the master branch trigger a Jenkins Job to run, which pulls the lates
 
 ### Part 3: Set up Logstash with Docker and CircleCI
 
-Within our architecture we use Logstash as a log forwarder, which means as shipper and processor of our test results. It's main purpose is to read, format and dispatch the information to our Elasticsearch instance. With the Logstash configuration file, it is possible to define the input and the output of Logstash, as well as how the data has to be filtered or transformed before transferring it to Elasticsearch. The input is given by a file path, which can also contain a regular expression. As described above, we use a JSON log file that is parsed by Logstash. The filter is able to add and remove fields from the JSON object. The output declares where the formatted message should be sent to. In our case this is configurable by environment variables, which will be explained by the following paragraphs.
+Within our architecture the Logstash container runs as a comprehensive log forwarder, which means it acts as processor, shipper and indexer of the test results. Hence, it's main purpose is to read, transform and feed the test objects as documents into our Elasticsearch cluster. For this purpose the configuration file defines the input and the output of Logstash as well as how the data has to be filtered before dispatching the events to Elasticsearch. The input is given by a file path, which can also contain a regular expression. As described above, we use a JSON log file that is parsed by Logstash. The filter is able to add and remove fields from the JSON object. The output declares where the formatted message should be sent to. In our case this is configurable by environment variables, which will be explained by the following paragraphs.
 
 In the Logstash configuration, there is the possibility to use `if`-statements and environment variables. In addition to this, we decided to write our own templating engine based on the Jinja2 framework to achieve high flexibility in which variables can be feed into the rendering process. This allows us to have an environment specific configuration for each VM the Docker container is running on. To use this feature we forward some variables into our container. Our `docker-entrypoint` script renders the configuration templates and starts the Logstash agent.
 
@@ -190,7 +190,6 @@ if (![tags]) {
 In the listing above you can see an excerpt of the filter part of the configuration file. The first statement adds a new field `report_url` to the JSON object. Therefore, we concatenate an environment variable with a field that was defined in the original JSON object to obtain a complete URL. The second statement creates a fingerprint needed for the Elasticsearch document ID that will be added to a metadata field. The fingerprint will be created from the fields specified by the key `source`.
 
 <!--- {% raw %} -->
-
 ```
 {%- if "elasticsearch" in LS_OUTPUT or "document" in LS_OUTPUT or "template" in LS_OUTPUT %}
 
@@ -233,7 +232,6 @@ if (![tags]) {
     }
 }
 {%- endif %}
-
 ```
 <!--- {% endraw %} -->
 
