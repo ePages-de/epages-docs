@@ -51,6 +51,19 @@ get:
           application/json:
             example: !include examples/get_product_productid_response.json
             schema: !include schema/get_product_productid.schema.json
+  patch:
+    description: Updates information for a single product with partial data. You can either add or remove certain attributes. The related attributes are marked in the [Data Types](page:apps-data-types) with an asterisk *.
+    securedBy: [products_write]
+    is: [ locale, currency ]
+    body:
+      application/json:
+        example: !include examples/patch_product_productid_request.json
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include examples/patch_product_productid_response.json
+            schema: !include schema/patch_product_productid.schema.json
   delete:
     description: Deletes a single product.
     securedBy: [products_write]
@@ -82,8 +95,55 @@ get:
             application/json:
               example: !include examples/get_product_productid_slideshow_response.json
               schema: !include schema/get_product_productid_slideshow.schema.json
+    post:
+      description: Creates (uploads) an image for the product slideshow.
+      securedBy: [products_write]
+      body:
+        multipart/form-data:
+          formParameters:
+            file:
+              description: The image file to be uploaded. Specify the file name as part of the content header. An already existing image cannot be overwritten by a new image with the same file name. Either delete the old image and upload a new image or choose a different file name.
+              required: true
+              type: file
+      responses:
+        201:
+          body:
+            application/json:
+              example: !include examples/post_product_productid_slideshow_response.json
+              schema: !include schema/post_product_productid_slideshow.schema.json
+        413:
+          description: The file size is too large. The entire HTTP body (including multipart headers) must not exceed the defined limit.
+    /{imageName}:
+      displayName: Slideshow image
+      delete:
+        description: Deletes a single slideshow image.
+        securedBy: [products_write]
+        responses:
+          204:
+    /sequence:
+      displayName: Product slideshow sequence
+      get:
+        description: Returns the names of the slideshow images as an array.
+        securedBy: [products_read]
+        responses:
+          200:
+            body:
+              application/json:
+                example: !include examples/get_product_productid_slideshow_sequence_response.json
+                schema: !include schema/get_product_productid_slideshow_sequence_schema.json
+      put:
+        description: Updates the sequence of the slideshow images.
+        securedBy: [products_write]
+        body:
+          application/json:
+            example: !include examples/put_product_productid_slideshow_sequence_request.json
+        responses:
+          200:
+            body:
+              application/json:
+                example: !include examples/put_product_productid_slideshow_sequence_response.json
+                schema: !include schema/put_product_productid_slideshow_sequence_schema.json
   /custom-attributes:
-    displayName: Product attributes
     get:
       is: [ locale ]
       description: Returns values of user-defined product attributes.
