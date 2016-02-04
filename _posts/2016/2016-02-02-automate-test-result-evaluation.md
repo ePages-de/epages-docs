@@ -106,6 +106,7 @@ Within our architecture we use Logstash as a log forwarder, which means as shipp
 
 In the Logstash configuration, there is the possibility to use `if`-statements and environment variables. In addition to this, we decided to write our own templating engine based on the Jinja2 framework to achieve high flexibility in which variables can be feed into the rendering process. This allows us to have an environment specific configuration for each VM the Docker container is running on. To use this feature we forward some variables into our container. Our `docker-entrypoint` script renders the configuration templates and starts the Logstash agent.
 
+<!--- {% raw %} -->
 ```
 ######################################
 # Add source fields in desired order #
@@ -184,8 +185,11 @@ if (![tags]) {
     }
 }
 ```
+<!--- {% endraw %} -->
 
 In the listing above you can see an excerpt of the filter part of the configuration file. The first statement adds a new field `report_url` to the JSON object. Therefore, we concatenate an environment variable with a field that was defined in the original JSON object to obtain a complete URL. The second statement creates a fingerprint needed for the Elasticsearch document ID that will be added to a metadata field. The fingerprint will be created from the fields specified by the key `source`.
+
+<!--- {% raw %} -->
 
 ```
 {%- if "elasticsearch" in LS_OUTPUT or "document" in LS_OUTPUT or "template" in LS_OUTPUT %}
@@ -229,7 +233,10 @@ if (![tags]) {
     }
 }
 {%- endif %}
+
 ```
+<!--- {% endraw %} -->
+
 The above code snippet shows how we push the output to our Elasticsearch cluster. The first line represents how we use our own templating engine. If the `if`-statement is `false`, the part configuring the output to Elasticsearch will be omitted. If it equals `true`, we use environment variables as well as information from our metadata for connection, document path and Elasticsearch index template, which contains index settings and the mappings of document fields to the desired data types. We also have written a similar construct to generate the output to stdout, an error log file and an info log file, which later contains successfully pushed data for monitoring reasons.
 
 The CI part for our Logstash container is very similiar to that of the Elasticsearch container. The tests we run are different of course, but the process is the same.
