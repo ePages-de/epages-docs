@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Optimised collection and evaluation of Selenium UI test result data for multiple environments in the ePages Continuous Delivery pipeline"
+title: "Optimised collection and evaluation of Selenium UI test result data for multiple environments in the ePages Continuous Delivery Pipeline"
 date: "2016-02-02 10:11:12"
 icon: wrench
 categories: tech-stories selenium testing elk cdp elasticsearch logstash continuous-delivery
@@ -8,7 +8,7 @@ authors: ["Benjamin Nothdurft", "Bastian Klein"]
 ---
 
 
-We implemented a Selenium test report database with Elasticsearch, Logstash, Docker, CircleCI and Jenkins to ease the test evaluation process in our Continuous Delivery pipeline. Today we want to share with you the background story of the project, showcase the various parts of the implemented solution and discuss the pragmatic benefits for our pipeline and our speed-up for massive regression test evaluation.
+We implemented a Selenium test report database with Elasticsearch, Logstash, Docker, CircleCI and Jenkins to ease the test evaluation process in our Continuous Delivery Pipeline. Today we want to share with you the background story of the project, showcase the various parts of the implemented solution and discuss the pragmatic benefits for our pipeline and our speed-up for massive regression test evaluation.
 
 Furthermore, this article should serve as an outline of the consolidated technical expertise gained throughout the engineering process of this project.
 
@@ -16,7 +16,7 @@ Furthermore, this article should serve as an outline of the consolidated technic
 
 Currently our [ePages Selenium Framework](https://developer.epages.com/blog/2015/07/23/the-epages-selenium-framework.html) (**ESF**) has evolved to a reputable instrument for quality assurance of the next iteration of the ePages platform. The development teams are highly deliberated in implementing corresponding automated UI tests for each feature to safeguard the functionality of every Cartridge (platform module).
 
-In our Continuous Delivery pipeline (**CDP**) we run all of these tests in various sets on every possible type of ePages environment, which is either freshly installed or patched to the latest release candidate. The evaluation of all test results from each pipeline run is a fundamentally important duty before releasing the next version of ePages.
+In our Continuous Delivery Pipeline (**CDP**) we run all of these tests in various sets on every possible type of ePages environment, which is either freshly installed or patched to the latest release candidate. The evaluation of all test results from each pipeline run is a fundamentally important duty before releasing the next version of ePages.
 
 ### Motivation
 
