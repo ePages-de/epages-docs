@@ -52,7 +52,7 @@ get:
             example: !include examples/get_product_productid_response.json
             schema: !include schema/get_product_productid.schema.json
   patch:
-    description: Updates information for a single product with partial data. You can either add or remove certain attributes.<br><br>
+    description: Updates information for a single product with partial data according to [RFC 6902](https://tools.ietf.org/html/rfc6902). You can either add or remove certain attributes.<br><br>
 
           *Supported JSON-PATCH operations*<br>
           - add (sets or replaces an attribute)<br>
@@ -78,7 +78,7 @@ get:
     securedBy: [products_write]
     is: [ locale, currency ]
     body:
-      application/json:
+      application/json-patch+json:
         example: !include examples/patch_product_productid_request.json
     responses:
       200:

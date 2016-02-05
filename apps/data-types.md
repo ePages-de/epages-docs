@@ -91,10 +91,11 @@ This object is used for the attributes of images.
 | url | string | The URL of an image. |
 | classifier | string | Specifies the image. Can be *Thumbnail*, *Small*, *HotDeal*, *MediumSmall*, *Medium*, *MediumLarge*, *Large*. |
 
-## imageSize
+## imageInformation
 
 | Attribute | Type | Description |
 | - | :-: |  - |
+| name | string | The name of the slideshow image. |
 | sizes | array of [image](page:apps-data-types#image) | The size of the images in the slideshow. |
 
 ## lineItemContainer
