@@ -1,6 +1,7 @@
 {
   "items": [
     {
+      "name": "iStock_000010566997Medium.jpg",
       "sizes": [
         {
           "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F913/5447/240E/77AE/AC14/145F/A477/iStock_000010566997Medium_xs.jpg",
@@ -33,6 +34,7 @@
       ]
     },
     {
+      "name": "stock-photo-4560666-silver-stereo-headphones.jpg",
       "sizes": [
         {
           "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F913/5447/240E/77AE/AC14/145F/A477/stock-photo-4560666-silver-stereo-headphones_xs.jpg",
