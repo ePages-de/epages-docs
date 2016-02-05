@@ -10,5 +10,12 @@ In order to keep track of these changes we recommend you to follow [@epagesdevs]
 
 | Date      | Description      | Available with software release  |
 |---------------|---------------| -------|----------|
+| 2016&#8209;02&#8209;04 | Added new endpoints: | 6.17.39 |
+| |[`PATCH` product](page:apps-api-patch-shops-shopid-products-productid-information) | |
+| |[`POST` slideshow](page:apps-api-post-shops-shopid-products-productid-slideshow-information) | |
+| |[`DELETE` slideshow/{imageName}](page:apps-api-delete-shops-shopid-products-productid-slideshow-imagename-information) |  |
+| |[`GET` slideshow/sequence](page:apps-api-get-shops-shopid-products-productid-slideshow-sequence-information) |  |
+| |[`PUT` slideshow/sequence](page:apps-api-put-shops-shopid-products-productid-slideshow-sequence-information) |  |
+| | Added `productImage` attribute |  |
 | 2016&#8209;01&#8209;21 | Added [`GET` sales](page:apps-api-get-shops-shopid-sales-information) endpoint. | 6.17.38 |
 | 2016&#8209;01&#8209;19    | Added date range filters `createdBefore` and `createdAfter` to query parameters of [`GET` orders](page:apps-api-get-shops-shopid-orders-information#query-parameters).  | 6.17.37 |
