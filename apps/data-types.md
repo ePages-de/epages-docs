@@ -63,7 +63,7 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | specialOffer | boolean | Special offers of this category. |
 | images | array of [image](page:apps-data-types#image) | The images belonging to this category. |
 | parent | [link](page:apps-data-types#link) | The link to the parent category. |
-| subCategories | array of [link] | A list of links to the subcategories. |
+| subCategories | array of [link](page:apps-data-types#link) | A list of links to the subcategories. |
 | sfUrl | string | The link to the categories in the shop’s storefront. |
 
 ## contentPageSummary
@@ -152,40 +152,36 @@ This object is used for the attributes of links.
 ## price
 
 This object is used for the attributes of basePrice, depositPrice, ecoParticipationPrice, manufacturerPrice, grandTotal, priceWithDeposits, totalBeforeTax, totalTax and lineItemsSubTotal.
-The attributes marked with an asterisk * can be updated by using [`PATCH` products](page:apps-api-patch-shops-shopid-products-productid-information).
 
 | Attribute | Type | Description |
 | - | :-: |  - |
 | taxType | string | Indicates if the amount includes tax, e.g. gross. |
 | formatted | string | The amount of the price with currency unit. |
-| amount* | number | The amount of the price. |
+| amount | number | The amount of the price. |
 | currency | string | The currency code of the price according to ISO 4217. |
 
 ## priceInfo
-
-The attributes marked with an asterisk * can be updated by using [`PATCH` products](page:apps-api-patch-shops-shopid-products-productid-information).
 
 | Attribute | Type | Description |
 | - | :-: |  - |
 | quantity | [quantity](page:apps-data-types#quantity) | The quantity of the product the price refers to.|
 | price | [price](page:apps-data-types#price) | The price of the product.|
-| depositPrice* | [price](page:apps-data-types#price) | The deposit price for the product, e.g. bottle deposit.|
-| ecoParticipationPrice* | [price](page:apps-data-types#price) | The advance recycling fee for electric and electronic products which is only in some countries prescribed by law.|
-| manufacturerPrice* | [price](page:apps-data-types#price) | The sales price recommended by the manufacturer.|
+| depositPrice | [price](page:apps-data-types#price) | The deposit price for the product, e.g. bottle deposit.|
+| ecoParticipationPrice | [price](page:apps-data-types#price) | The advance recycling fee for electric and electronic products which is only in some countries prescribed by law.|
+| manufacturerPrice | [price](page:apps-data-types#price) | The sales price recommended by the manufacturer.|
 | priceWithDeposits | [price](page:apps-data-types#price) | The price including all deposits, i.e. price, depositPrice and ecoParticipationPrice.|
 | basePrice | [basePrice](page:apps-data-types#baseprice) | The price information scaled to a standardised base unit, according to the German base price regulation "Preisangabenverordnung" (PAngV), e.g. 1 l = 1.20 EUR. Is `null` if no reference amount is specified for the product.|
 
 ## product
 
 This object is used for the attributes of product.
-The attributes marked with an asterisk * can be updated by using [`PATCH` products](page:apps-api-patch-shops-shopid-products-productid-information).
 
 | Attribute | Type | Description |
 | - | :-: |  - |
 | productId | string | The unique identifier of the product. |
-| name* | string | The name of the product. |
-| shortDescription* | string | Categorises the image, e.g. Thumbnail or Medium. |
-| description* | string | Categorises the image, e.g. Thumbnail or Medium. |
+| name | string | The name of the product. |
+| shortDescription | string | Categorises the image, e.g. Thumbnail or Medium. |
+| description | string | Categorises the image, e.g. Thumbnail or Medium. |
 | priceInfo | object of [priceInfo](page:apps-data-types#priceinfo) | Price information on the product. |
 | forSale | boolean | Information on the sale status of the product. Indicates if the product can be added to the shopping basket. |
 | specialOffer | boolean | Indicates if the product is a special offer. |
@@ -193,15 +189,15 @@ The attributes marked with an asterisk * can be updated by using [`PATCH` produc
 | shippingMethodsRestrictedTo | array of [link](page:apps-data-types#link) | Information on possible shipping method restrictions, e.g. express delivery only. Can be `null` if no restrictions exist. |
 | availabilityText | string | Additional custom information on the product's stock level or the delivery period. |
 | availability | enum | The availability of the product. Can be one of *OnStock*, *WarnStock*, *OutStock*. |
-| energyLabelsString* | string | A list of energy labels applied to this product. Can be one or two values. If two values are returned, the first value is the best energy label, the second is the second-best. |
+| energyLabelsString | string | A list of energy labels applied to this product. Can be one or two values. If two values are returned, the first value is the best energy label, the second is the second-best. |
 | energyLabelSourceFile | string | An image or PDF file containing the energy label image supplied by the manufacturer. |
 | productDataSheet | string | An image or PDF file containing a datasheet with technical information on the product. Has to be available if the product has an energy label. |
 | sfUrl | string | The link to storefront URL of the product. |
-| productNumber* | string | The product number. |
-| productImage* | string | The name of the product image. |
-| manufacturer* | string | The manufacturer of the product. |
-| upc* | string | The Universal Product Code of the product. |
-| ean* | string | The European Article Number of the product, either EAN-8 or EAN-13. |
+| productNumber | string | The product number. |
+| productImage | string | The name of the product image. |
+| manufacturer | string | The manufacturer of the product. |
+| upc | string | The Universal Product Code of the product. |
+| ean | string | The European Article Number of the product, either EAN-8 or EAN-13. |
 
 ## productLineItem
 
@@ -214,7 +210,7 @@ The attributes marked with an asterisk * can be updated by using [`PATCH` produc
 | quantity | [quantity](page:apps-data-types#quantity) | The quantity of the line item. |
 | lineItemPrice | [price](page:apps-data-types#price) | The price of the line item. |
 | singleItemPrice | [price](page:apps-data-types#price) | The price for a single item. |
-| essentialFeatures* | string | The essential features of the line item. |
+| essentialFeatures | string | The essential features of the line item. |
 | images | array of [image](page:apps-data-types#image) | The image of the line item. |
 | links | array of [link](page:apps-data-types#link) | The links to the product line item. |
 

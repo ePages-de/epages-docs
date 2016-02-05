@@ -52,7 +52,29 @@ get:
             example: !include examples/get_product_productid_response.json
             schema: !include schema/get_product_productid.schema.json
   patch:
-    description: Updates information for a single product with partial data. You can either add or remove certain attributes. The related attributes are marked in the [Data Types](page:apps-data-types) with an asterisk *.
+    description: Updates information for a single product with partial data. You can either add or remove certain attributes.<br><br>
+
+          *Supported JSON-PATCH operations*<br>
+          - add (sets or replaces an attribute)<br>
+          - remove (unsets an attribute)<br><br>
+
+          *Attribute paths that allow updates via PATCH* ( **¹** supports *add* only)<br>
+                - /productNumber¹<br>
+                - /name<br>
+                - /shortDescription<br>
+                - /description<br>
+                - /energyLabelsString<br>
+                - /manufacturer<br>
+                - /upc<br>
+                - /ean<br>
+                - /essentialFeatures<br>
+                - /searchKeywords<br>
+                - /priceInfo/price/amount<br>
+                - /priceInfo/manufacturerPrice/amount<br>
+                - /priceInfo/ecoParticipationPrice/amount<br>
+                - /priceInfo/depositPrice/amount<br>
+                - /productImage¹<br><br>
+
     securedBy: [products_write]
     is: [ locale, currency ]
     body:
