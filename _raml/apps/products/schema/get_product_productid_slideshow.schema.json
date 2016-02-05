@@ -4,7 +4,7 @@
   "type": "object",
   "properties": {
     "items": {
-      "type": "array of [imageSize](page:apps-data-types#imagesize)",
+      "type": "array of [imageInformation](page:apps-data-types#imageinformation)",
       "description": "The list of products that appear in the slideshow."
     }
   }

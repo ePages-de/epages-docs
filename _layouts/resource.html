@@ -102,7 +102,7 @@ layout: page
     {% if schema != null %}
       {% assign no_table = schema | json_keys: 'properties' | first  %}
       {% assign response = schema | json_field: 'properties' | first %}
-      <h2 id="response-attributes">Response Attributes</h2>
+      <h2 id="response-attributes">Response attributes</h2>
       {% if no_table == "no_table" %}
         {{ response.last | markdownify }}
       {% else %}

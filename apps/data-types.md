@@ -63,7 +63,7 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | specialOffer | boolean | Special offers of this category. |
 | images | array of [image](page:apps-data-types#image) | The images belonging to this category. |
 | parent | [link](page:apps-data-types#link) | The link to the parent category. |
-| subCategories | array of [link] | A list of links to the subcategories. |
+| subCategories | array of [link](page:apps-data-types#link) | A list of links to the subcategories. |
 | sfUrl | string | The link to the categories in the shop’s storefront. |
 
 ## contentPageSummary
@@ -91,10 +91,11 @@ This object is used for the attributes of images.
 | url | string | The URL of an image. |
 | classifier | string | Specifies the image. Can be *Thumbnail*, *Small*, *HotDeal*, *MediumSmall*, *Medium*, *MediumLarge*, *Large*. |
 
-## imageSize
+## imageInformation
 
 | Attribute | Type | Description |
 | - | :-: |  - |
+| name | string | The name of the slideshow image. |
 | sizes | array of [image](page:apps-data-types#image) | The size of the images in the slideshow. |
 
 ## lineItemContainer
@@ -194,6 +195,7 @@ This object is used for the attributes of product.
 | productDataSheet | string | An image or PDF file containing a datasheet with technical information on the product. Has to be available if the product has an energy label. |
 | sfUrl | string | The link to storefront URL of the product. |
 | productNumber | string | The product number. |
+| productImage | string | The name of the product image. |
 | manufacturer | string | The manufacturer of the product. |
 | upc | string | The Universal Product Code of the product. |
 | ean | string | The European Article Number of the product, either EAN-8 or EAN-13. |
@@ -209,6 +211,7 @@ This object is used for the attributes of product.
 | quantity | [quantity](page:apps-data-types#quantity) | The quantity of the line item. |
 | lineItemPrice | [price](page:apps-data-types#price) | The price of the line item. |
 | singleItemPrice | [price](page:apps-data-types#price) | The price for a single item. |
+| essentialFeatures | string | The essential features of the line item. |
 | images | array of [image](page:apps-data-types#image) | The image of the line item. |
 | links | array of [link](page:apps-data-types#link) | The links to the product line item. |
 
