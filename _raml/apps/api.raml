@@ -29,10 +29,27 @@ securitySchemes:
 traits: !include traits.raml
 
 /shops/{shopId}:
+  displayName: Shop information
   uriParameters:
     shopId:
       description: The unique identifier of the shop.
       example: DemoShop
+  get:
+    description: Returns the public information of a shop, like name, slogan and logo.
+    securedBy: [products_read]
+    is: [locale]
+    responses:
+      200:
+        body:
+          application/json:
+            example: |
+              {
+              "name": "Technic365",
+              "slogan": ""<p>Make some noise>/p>",
+              "logoUrl": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/MediaGallery/logo_technic365_3.png",
+              "sfUrl": "http://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/Technic365",
+              "mboUrl": "https://pm.epages.com/epages/apidocu.admin/?ObjectPath=/Shops/Technic365"
+              }
   /carts: !include carts/carts.raml
   /categories: !include categories/categories.raml
   /currencies: !include currency/currency.raml

@@ -37,7 +37,7 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | Attribute | Type | Description |
 | - | :-: |  - |
 | refQuantity  | [quantity](page:apps-data-types#quantity) | The standardised unit for the product, e.g. 1 l. |
-| refPrice | [price](page:apps-data-types#price) | The price based upon the standardised unit. |
+| refPrice | object of [price](page:apps-data-types#price) | The price based upon the standardised unit. |
 | formatted | string | The formatted output of the base price information, e.g. 1 l = 1.20 EUR. |
 | quantity | [quantity](page:apps-data-types#quantity) | The quantity of the product, e.g. 500 ml. |
 
@@ -49,7 +49,7 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | billingAddress | [address](page:apps-data-types#address) | The billing address for a cart. |
 | shippingAddress | [address](page:apps-data-types#address) | The shipping address for a cart. |
 | lineItemContainer | [lineItemContainer](page:apps-data-types#lineitemcontainer) | Contains the line items of a cart. |
-| minCartValue | [price](page:apps-data-types#price) | The minimum order value of a shop. |
+| minCartValue | object of [price](page:apps-data-types#price) | The minimum order value of a shop. |
 | checkoutURL | string | The URL that redirects the browser to the merchant’s shop in order to complete the checkout. |
 
 ## category
@@ -102,12 +102,12 @@ This object is used for the attributes of images.
 
 | Attribute | Type | Description |
 | - | :-: |  - |
-| grandTotal | [price](page:apps-data-types#price) | The total price including product price, shipping and tax. |
-| totalBeforeTax | [price](page:apps-data-types#price) | The total price including product price, shipping excluding tax. |
-| totalTax | [price](page:apps-data-types#price) | The total amount of the tax. |
-| lineItemsSubTotal | [price](page:apps-data-types#price) | The sum of the line item price of all line items. |
+| grandTotal | object of [price](page:apps-data-types#price) | The total price including product price, shipping and tax. |
+| totalBeforeTax | object of  [price](page:apps-data-types#price) | The total price including product price, shipping excluding tax. |
+| totalTax | object of [price](page:apps-data-types#price) | The total amount of the tax. |
+| lineItemsSubTotal | object of [price](page:apps-data-types#price) | The sum of the line item price of all line items. |
 | productLineItems | array of [productLineItem](page:apps-data-types#productlineitem) | A list of line items. |
-| shippingPrice | [price](page:apps-data-types#price) | The shipping price of the line item. |
+| shippingPrice | object of [price](page:apps-data-types#price) | The shipping price of the line item. |
 
 ## link
 
@@ -140,15 +140,32 @@ This object is used for the attributes of links.
 | taxModel | string | The taxmodel that applies for the order, e.g. gross.  |
 | grandTotal | string | The total cost of the order.  |
 | totalBeforeTax | string | The total cost of the order before tax is applied.  |
-| comment | string | Internal notes for the order.  |
+| internalNote | string | Internal notes for the order done by the merchant.  |
+| customerComment | string | Notes on the order from the customer. Can also be amended by the merchant in the administration.  |
 | cancelledOn | datetime | The date/time the order was cancelled. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
 | closedOn | datetime | The date/time the order was closed. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
 | paidOn | datetime | The date/time the order was paid. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
 | returnedOn | datetime | The date/time the order was returned. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
+| shippingData | object of [shippingData](page:apps-data-types#shippingdata) | The shipping data of the order, i.e. short info on shipping method and price.|
+| paymentData | object of [paymentData](page:apps-data-types#paymentdata) | The payment data of the order, i.e. short info on payment method and price.|
 | lineItemContainer | [lineItemContainer](page:apps-data-types#lineitemcontainer) | Contains the line items of an order.  |
 | productLineItems | array of [productLineItem](page:apps-data-types#productlineitem) | A list of line items.  |
-| shippingPrice | [price](page:apps-data-types#price) | The shipping price for the order.  |
+| shippingPrice | object of [price](page:apps-data-types#price) | The shipping price for the order.  |
 | links | array of [link](page:apps-data-types#link) | The links to the products of the order. |
+
+## paymentData
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| paymentMethod | object of [paymentInfo](page:apps-data-types#paymentinfo) | Information on the payment type chosen by the customer. |
+| price | object of [price](page:apps-data-types#price) | The costs for the order. |
+
+## paymentInfo
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| id | string | The unique identifier of the payment. |
+| name | string | The name of the payment type chosen by the customer. |
 
 ## price
 
@@ -166,11 +183,11 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | Attribute | Type | Description |
 | - | :-: |  - |
 | quantity | [quantity](page:apps-data-types#quantity) | The quantity of the product the price refers to.|
-| price | [price](page:apps-data-types#price) | The price of the product.|
-| depositPrice | [price](page:apps-data-types#price) | The deposit price for the product, e.g. bottle deposit.|
-| ecoParticipationPrice | [price](page:apps-data-types#price) | The advance recycling fee for electric and electronic products which is only in some countries prescribed by law.|
-| manufacturerPrice | [price](page:apps-data-types#price) | The sales price recommended by the manufacturer.|
-| priceWithDeposits | [price](page:apps-data-types#price) | The price including all deposits, i.e. price, depositPrice and ecoParticipationPrice.|
+| price | object of [price](page:apps-data-types#price) | The price of the product.|
+| depositPrice | object of [price](page:apps-data-types#price) | The deposit price for the product, e.g. bottle deposit.|
+| ecoParticipationPrice |object of [price](page:apps-data-types#price) | The advance recycling fee for electric and electronic products which is only in some countries prescribed by law.|
+| manufacturerPrice | object of [price](page:apps-data-types#price) | The sales price recommended by the manufacturer.|
+| priceWithDeposits | object of [price](page:apps-data-types#price) | The price including all deposits, i.e. price, depositPrice and ecoParticipationPrice.|
 | basePrice | [basePrice](page:apps-data-types#baseprice) | The price information scaled to a standardised base unit, according to the German base price regulation "Preisangabenverordnung" (PAngV), e.g. 1 l = 1.20 EUR. Is `null` if no reference amount is specified for the product.|
 
 ## product
@@ -209,8 +226,8 @@ This object is used for the attributes of product.
 | name | string | The name of the line item. |
 | productId | string | The unique identifier of the product. |
 | quantity | [quantity](page:apps-data-types#quantity) | The quantity of the line item. |
-| lineItemPrice | [price](page:apps-data-types#price) | The price of the line item. |
-| singleItemPrice | [price](page:apps-data-types#price) | The price for a single item. |
+| lineItemPrice | object of [price](page:apps-data-types#price) | The price of the line item. |
+| singleItemPrice | object of  [price](page:apps-data-types#price) | The price for a single item. |
 | essentialFeatures | string | The essential features of the line item. |
 | images | array of [image](page:apps-data-types#image) | The image of the line item. |
 | links | array of [link](page:apps-data-types#link) | The links to the product line item. |
@@ -242,12 +259,26 @@ This object is used for the attributes of deliveryWeight and quantity.
 | unitsSold | number | The number of sold product units (only available with active filter productId). |
 | totalOrders | number | The number of orders for the defined time frame. |
 
+## shippingData
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| shippingMethod | object of [shippingInfo](page:apps-data-types#shippinginfo) | Information on the shipping method chosen by the customer. |
+| price | object of [price](page:apps-data-types#price) | The costs for the shipping. |
+
+## shippingInfo
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| id | string | The unique identifier of the shipping method. |
+| name | string | The name of the shipping method chosen by the customer. |
+
 ## shippingMethod
 
 | Attribute | Type | Description |
 | - | :-: |  - |
 | shippingMethodId | string | The unique identifier of the shipping method. |
-| name | string | The name of the shipping method.|
+| name | string | The name of the shipping method chosen by the customer.|
 | description | string | The description of the shipping method.|
 | logo | string | The logo of the shipping method. |
 
