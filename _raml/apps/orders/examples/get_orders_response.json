@@ -69,6 +69,10 @@
         {
           "rel": "self",
           "href": "https://pm.epages.com/rs/shops/apidocu/orders/5639C509-092F-7704-77D3-D5809AB321D8"
+        },
+        {
+          "rel": "shipping-method",
+          "href": "https://pm.epages.com/rs/shops/apidocu/shipping-methods/5171DD86-C077-0726-C448-AC14145F9026"
         }
       ]
     },
@@ -196,6 +200,10 @@
         {
           "rel": "self",
           "href": "https://pm.epages.com/rs/shops/apidocu/orders/5638C3E4-03B6-9023-DE5B-D5809AB3777D"
+        },
+        {
+          "rel": "shipping-method",
+          "href": "https://pm.epages.com/rs/shops/apidocu/shipping-methods/5171DD86-C077-0726-C448-AC14145F9026"
         }
       ]
     }

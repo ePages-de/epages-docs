@@ -157,15 +157,15 @@ This object is used for the attributes of links.
 
 | Attribute | Type | Description |
 | - | :-: |  - |
-| paymentMethod | object of [paymentInfo](page:apps-data-types#paymentinfo) | Information on the payment type chosen by the customer. |
-| price | object of [price](page:apps-data-types#price) | The costs for the order. |
+| paymentMethod | object of [paymentMethodInfo](page:apps-data-types#paymentmethodinfo) | Information on the payment type chosen by the customer. |
+| price | object of [price](page:apps-data-types#price) | The costs for the payment method. |
 
-## paymentInfo
+## paymentMethodInfo
 
 | Attribute | Type | Description |
 | - | :-: |  - |
-| id | string | The unique identifier of the payment. |
-| name | string | The name of the payment type chosen by the customer. |
+| id | string | The unique identifier of the payment method. |
+| name | string | The name of the payment method chosen by the customer. |
 
 ## price
 
@@ -263,10 +263,10 @@ This object is used for the attributes of deliveryWeight and quantity.
 
 | Attribute | Type | Description |
 | - | :-: |  - |
-| shippingMethod | object of [shippingInfo](page:apps-data-types#shippinginfo) | Information on the shipping method chosen by the customer. |
+| shippingMethod | object of [shippingMethodInfo](page:apps-data-types#shippingmethodinfo) | Information on the shipping method chosen by the customer. |
 | price | object of [price](page:apps-data-types#price) | The costs for the shipping. |
 
-## shippingInfo
+## shippingMethodInfo
 
 | Attribute | Type | Description |
 | - | :-: |  - |
