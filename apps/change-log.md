@@ -13,7 +13,7 @@ In order to keep track of these changes we recommend you to follow [@epagesdevs]
 | 2016&#8209;02&#8209;09 | Added new endpoint: | 6.17.39 |
 | |[`GET` shop information](page:apps-api-get-shops-shopid-information) | |
 | | Added new attributes `shippingData` and `paymentData` to orders. | |
-| | Replaced attribute `comment` with `customerComment` and `internaNote`. | |
+| | Replaced attribute `comment` with `customerComment` and `internalNote`. | |
 | 2016&#8209;02&#8209;04 | Added new endpoints: | 6.17.39 |
 | |[`PATCH` product](page:apps-api-patch-shops-shopid-products-productid-information) | |
 | |[`POST` slideshow](page:apps-api-post-shops-shopid-products-productid-slideshow-information) | |

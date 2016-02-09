@@ -50,8 +50,8 @@
         },
         "price": {
           "taxType": "GROSS",
-          "formatted": "7.63 €",
-          "amount": 7.63,
+          "formatted": "7.00 €",
+          "amount": 7,
           "currency": "EUR"
         }
       },
@@ -62,8 +62,8 @@
         },
         "price": {
           "taxType": "GROSS",
-          "formatted": "250.94 €",
-          "amount": 250.94,
+          "formatted": "0.00 €",
+          "amount": 0,
           "currency": "EUR"
       "links": [
         {
@@ -124,8 +124,8 @@
         },
         "price": {
           "taxType": "GROSS",
-          "formatted": "9.99 €",
-          "amount": 9.99,
+          "formatted": "0.00 €",
+          "amount": 0,
           "currency": "EUR"
       "links": [
         {
@@ -181,8 +181,8 @@
         },
         "price": {
           "taxType": "GROSS",
-          "formatted": "7.32 €",
-          "amount": 7.32,
+          "formatted": "7.00 €",
+          "amount": 7,
           "currency": "EUR"
         }
       },
@@ -193,8 +193,8 @@
         },
         "price": {
           "taxType": "GROSS",
-          "formatted": "196.05 €",
-          "amount": 196.05,
+          "formatted": "0.00 €",
+          "amount": 0,
           "currency": "EUR"
       "links": [
         {
