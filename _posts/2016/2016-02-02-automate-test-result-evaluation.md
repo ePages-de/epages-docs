@@ -310,9 +310,9 @@ Today the evaluation process is much faster: usually less than 5 minutes a day. 
 
 Besides the in-depth exploration of the ELK ecosystem, which goes way beyond this short article, we also learned a lot of useful craftsmanship skills:
 
-* How to apply TDD to Docker container with encapsulated services.
+* How to apply TDD to Docker containers with encapsulated services.
 * How to write even more infrastructure as code in the case of CI jobs.
-* How to run a CircleCI job effectively on parallel nodes if multiple ones are available.
-* How to enjoy long pair-programming sessions, but also when to quickly switch back to separate desks.
+* How to run a CircleCI job efficiently on parallel nodes if multiple ones are available.
+* How to not only enjoy intense pair programming sessions but also when to quickly switch back to code separately.
 
 Overall we are very happy with the outcome of this project and hope we can spend all the freed up time on other awesome projects about which we can write more blog posts then.
