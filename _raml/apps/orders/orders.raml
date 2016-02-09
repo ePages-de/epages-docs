@@ -3,7 +3,7 @@ displayName: Orders
 get:
   description: Returns a list of orders. By default the results for orders are sorted by creationDate.
   securedBy: [orders_read]
-  is: [ locale ]
+  is: [ locale, paged ]
   queryParameters:
     viewedOn:
       description: Returns orders where the status Viewed is set.
