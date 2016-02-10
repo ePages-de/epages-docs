@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Automated Test Evalution with ELK in the Pipeline: Background Story"
+title: "Automated test evaluation with ELK in the pipeline: Background story"
 date: "2016-02-11 10:11:12"
 icon: wrench
 categories: tech-stories
 authors: ["Benjamin N.", "Bastian K."]
 ---
 
-Today we want to share with you the first of two blog posts on a recent project concerning an optimized workflow for the monitoring and evaluation of the Selenium integration test results from multiple environments in our pipeline. This initial article should serve as brief introduction to the business context, encompass the major pain points of the established test evaluation process and constitute the essential requirements for a technical solution. Furthermore we will envision two solution approaches and discuss which option fits best our needs and therefore will be implemented.
+Today we want to share with you the first of two blog posts on a recent project concerning an optimised workflow for the monitoring and evaluation of the Selenium integration test results from multiple environments in our pipeline. This initial article should serve as brief introduction to the business context, encompass the major pain points of the established test evaluation process and constitute the essential requirements for a technical solution. Furthermore, we will envision two solution approaches and discuss which option fits best our needs and therefore will be implemented.
 
 The second post will seamlessly follow up and elaborate in-depth on the technical aspects of the implementation, but now let us start digging towards the core of the business challenge.
 
@@ -21,7 +21,7 @@ In our Continuous Delivery Pipeline (**CDP**) we run all of these tests in vario
 
 ### Motivation
 
-In the past an engineer of the release and test automation team needed to check a dozen of Jenkins Jobs – which represent the various use cases of ePages in production – to analyze the test results and create a list of failing tests in our wiki on a daily basis.
+In the past, an engineer of the release and test automation team needed to check a dozen of Jenkins Jobs – which represent the various use cases of ePages in production – to analyse the test results and create a list of failing tests in our wiki on a daily basis.
 
 This tedious and time consuming collection task was soon identified as a major pain point. Hence, we decided to fully automate the process and figure out an effective, reliable and centralised storage solution for all test reports.
 
@@ -46,7 +46,6 @@ In summary, the mentioned ease of extension of Elasticsearch in combination with
 
 ### Read on
 
-If you are interested in learning more about this project you may accompany us on the [second post](https://developer.epages.com/blog/2016/02/16/pipeline-elk-test-evaluation-2.html) which will be published the next week. This comprehensive follow-up will outline the solution architecture, split it up into individual solution parts and then focus on the technical details including the setup of Elasticsearch, Logstash, Docker, Jenkins Jobs, Docker and CircleCI.
+If you are interested in learning more about this project you may accompany us on the second post which will be published the next week. This comprehensive follow-up will outline the solution architecture, split it up into individual solution parts and then focus on the technical details including the setup of Elasticsearch, Logstash, Docker, Jenkins Jobs, Docker and CircleCI.
 
-Look forward to find out if we have choosen our options wisley!
-
+Look forward to find out if we have choosen our options wisely!
