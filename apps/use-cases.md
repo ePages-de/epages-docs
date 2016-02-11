@@ -78,11 +78,19 @@ Suggested calls: [`GET` products](page:apps-api-get-shops-shopid-products-inform
 
 Availability: <i class="fa fa-check"></i>
 
+## Image Service
+
+Build an application that provides the ability to get images for a product, upload improved images, delete old images or set the default product image as well as reorder the slideshow.
+
+Suggested calls: [`GET` products](page:apps-api-get-shops-shopid-products-information), [`PATCH` products](page:apps-api-patch-shops-shopid-products-productid-information), [`GET` products/slideshow](page:apps-api-get-shops-shopid-products-productid-slideshow-information), [`POST` products/slideshow](page:apps-api-post-shops-shopid-products-productid-slideshow-information), [`DELETE` products/slideshow](page:apps-api-delete-shops-shopid-products-productid-slideshow-imagename-information), [`GET` products/slideshow/sequence](page:apps-api-get-shops-shopid-products-productid-slideshow-sequence-information), [`PUT` products/slideshow/sequence](page:apps-api-put-shops-shopid-products-productid-slideshow-sequence-information)
+
+Availability: <i class="fa fa-check"></i>
+
 ## Advanced Point of Sale (POS)/Marketplace
 
 Build an application that automatically updates the stock level of a product upon a POS/Marketplace sale and allows to create and manage customers and orders.
 
-Suggested calls: [`GET` products](page:apps-api-get-shops-shopid-products-information), [`PUT` products/stocklevel](page:apps-api-put-shops-shopid-products-productid-stock-level-information), `PUT` products, `GET` customers, `PUT` customers, `POST` customers, [`GET` orders](page:apps-api-get-shops-shopid-orders-information), [`PUT` orders](page:apps-api-put-shops-shopid-orders-orderid-information), `POST` orders
+Suggested calls: [`GET` products](page:apps-api-get-shops-shopid-products-information), [`PUT` products/stocklevel](page:apps-api-put-shops-shopid-products-productid-stock-level-information), [`PATCH` products](page:apps-api-patch-shops-shopid-products-productid-information), `GET` customers, `PUT` customers, `POST` customers, [`GET` orders](page:apps-api-get-shops-shopid-orders-information), [`PUT` orders](page:apps-api-put-shops-shopid-orders-orderid-information), `POST` orders
 
 Optional calls: [`GET` categories](page:apps-api-get-shops-shopid-categories-information)
 
@@ -100,8 +108,8 @@ Availability planned: **06/2016**
 
 Build an application that manages products, customers and orders as well as handles fulfillment, accounting and customer support.
 
-Suggested calls: [`GET` products](page:apps-api-get-shops-shopid-products-information), `PUT` products, `POST` products, [`DELETE` products](page:apps-api-delete-shops-shopid-products-productid-information), `GET` customers, `PUT` customers, `POST` customers, [`GET` orders](page:apps-api-get-shops-shopid-orders-information), [`PUT` orders](page:apps-api-put-shops-shopid-orders-orderid-information), `POST` orders
+Suggested calls: [`GET` products](page:apps-api-get-shops-shopid-products-information), [`PATCH` products](page:apps-api-patch-shops-shopid-products-productid-information), `POST` products, [`DELETE` products](page:apps-api-delete-shops-shopid-products-productid-information), `GET` customers, `PUT` customers, `POST` customers, [`GET` orders](page:apps-api-get-shops-shopid-orders-information), [`PUT` orders](page:apps-api-put-shops-shopid-orders-orderid-information), `POST` orders
 
-Optional calls: ([`GET` categories](page:apps-api-get-shops-shopid-categories-information))
+Optional calls: [`GET` categories](page:apps-api-get-shops-shopid-categories-information)
 
 Availability planned: **06/2016**
