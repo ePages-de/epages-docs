@@ -13,7 +13,7 @@ The second post will seamlessly follow up and elaborate in-depth on the technica
 
 {% image blog-pipeline-elk-test-evaluation-report.png 30% right %} The report index of a set {% endimage %}
 
-## Background Story
+## Background story
 
 Currently our [ePages Selenium Framework](https://developer.epages.com/blog/2015/07/23/the-epages-selenium-framework.html) (**ESF**) has evolved to a reputable instrument for quality assurance of the next iteration of the ePages platform. The development teams are highly deliberated in implementing corresponding automated UI tests for each feature to safeguard the functionality of every Cartridge (platform module).
 
@@ -32,7 +32,7 @@ After careful consideration we determined that two non-functional requirements s
 * **Simplicity:** The solution needs to be easy to implement, test, configure and maintain.
 * **Expandability:** Later on, the solution needs to be able to additionally handle other kinds of logs from our pipeline machines as well as scale with the amount and frequency of data input.
 
-### Two Options
+### Two options
 
 At first glance we had two different ideas for our architectural solution approach:
 
@@ -46,6 +46,6 @@ In summary, the mentioned ease of extension of Elasticsearch in combination with
 
 ### Read on
 
-If you are interested in learning more about this project you may accompany us on the second post which will be published the next week. This comprehensive follow-up will outline the solution architecture, split it up into individual solution parts and then focus on the technical details including the setup of Elasticsearch, Logstash, Docker, Jenkins Jobs, Docker and CircleCI.
+If you are interested in learning more about this project you may accompany us on the second post which will be published the next week. This comprehensive follow-up will outline the solution architecture, split it up into individual solution parts and then focus on the technical details including the setup of Elasticsearch, Logstash, Jenkins Jobs, Docker and CircleCI.
 
 Look forward to find out if we have choosen our options wisely!
