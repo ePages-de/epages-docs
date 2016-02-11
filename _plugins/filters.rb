@@ -46,6 +46,15 @@ module Jekyll
     def regex_replace(input, pattern, substitution)
       input.gsub(Regexp.new(pattern), substitution)
     end
+
+    def to_xml_feed(input)
+      return if input.start_with?('<p>')
+      date, title = input.to_s.gsub(/<.*?>/, '').split(/\n/).delete_if(&:empty?)
+      date = DateTime.civil(*(date.split('-').map(&:to_i) + [9])).rfc822
+      content = input[input.index('<ul>').. -1].gsub(/\r?\n/, '').gsub('href="/',"href=\"#{Jekyll.configuration({})['url']}/")
+      id = title.downcase.gsub(' ', '-').gsub('.', '')
+      "<item><title>#{title}</title><link>#{Jekyll.configuration({})['url']}/apps/change-log.html</link><pubDate>#{date}</pubDate><guid isPermaLink=\"true\">#{Jekyll.configuration({})['url']}/apps/change-log.html##{id}</guid><description><![CDATA[#{content}]]></description></item>"
+    end
   end
 end
 
