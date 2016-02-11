@@ -7,21 +7,21 @@ categories: tech-stories
 authors: ["Benjamin N.", "Bastian K."]
 ---
 
-We implemented a Selenium test report database with Elasticsearch, Logstash, Docker, CircleCI and Jenkins to ease the test evaluation process in our Continuous Delivery Pipeline. Last week we have already introduced you to the [background of the project](https://developer.epages.com/blog/2016/02/11/pipeline-elk-test-evaluation-1.html) and today we want to get your hands on the actual development steps. Hence, this post showcases the various parts of the implemented solution and discusses the pragmatic benefits for our pipeline and our speed-up for massive regression test evaluation.
+We implemented a Selenium test report database with Elasticsearch, Logstash, Docker, CircleCI and Jenkins to ease the test evaluation process in our Continuous Delivery Pipeline. Last week we already introduced you to the [background of the project](https://developer.epages.com/blog/2016/02/11/pipeline-elk-test-evaluation-1.html) and today we want to get your hands on the actual development steps. Hence, this post showcases the various parts of the implemented solution and discusses the pragmatic benefits for our pipeline and our speed-up for massive regression test evaluation.
 
 Furthermore, this article should serve as an outline of the consolidated technical expertise gained throughout the engineering process of this project.
 
-## Implemented Solution
+## Implemented solution
 
-To get the big picture for splitting the Scrum epic into several stories with tasks and acceptance criteria we created a visualization, which could distinctly highlight the various parts that needed to be implemented. The first draft of the blueprint was sketched by hand and looked similar to this:
+To get the big picture for splitting the Scrum epic into several stories with tasks and acceptance criteria we created a visualisation, which could distinctly highlight the various parts that needed to be implemented. The first draft of the blueprint was sketched by hand and looked similar to this:
 
 {% image blog-pipeline-elk-test-evaluation-blueprint.png %} The blueprint of the solution architecture {% endimage %}
 
-As you can see above, several components of our infrastructure will be affected and also involved throughout the development of this project. The middle tier shows the essential interdigitation of the underlying job chain in our pipeline. Usually a CDP run involves several prepare jobs; then a huge amount of install and patch jobs are run in parallel on the various VMs of the vCenter (top tier); afterwards a fingerprint of all machines is created and finally the ESF testsuite (and others) are run onto all vCenter VMs. Sometimes the testsuite is even running against an ePages VM before, during and after patching has started (zero-down-time tests), so don't take the blueprint to literally.
+As you can see above, several components of our infrastructure will be affected and also involved throughout the development of this project. The middle tier shows the essential interdigitation of the underlying job chain in our pipeline. Usually, a CDP run involves several prepare jobs; then a huge amount of install and patch jobs are run in parallel on the various VMs of the vCenter (top tier). Afterwards a fingerprint of all machines is created and finally the ESF testsuite (and others) are run onto all vCenter VMs. Sometimes the testsuite is even running against an ePages VM before, during and after patching has started (zero-down-time tests), so don't take the blueprint to literally.
 
 After the tests have been run, the JSON logs should have been created inside every single Jenkins job. As of now the tricky implementation of this project starts. We have decided to split the implementation in 5 parts and the next sections will explain each one step-by-step.
 
-### Part 1 - Define the Test Object and Extend the Test Suite Reporter
+### Part 1 - Define the test object and extend the test suite reporter
 
 Our initial task consisted of the definition of the desired target format for the individual test objects, which would later be stored in Elasticsearch as [JSON](http://www.json.org/) documents. We determined to create a single object for each test case and represent it as a simple JSON object (without nested fields, like arrays) as this could be easier displayed by several client interfaces of Elasticsearch later on.
 
@@ -53,7 +53,7 @@ All other fields cannot be derived from our test suite itself and therefore need
 
 #### Dockerfile
 
-We decided to run the nodes of the [Elasticsearch](https://www.elastic.co/products/elasticsearch) cluster within effortlessly deployable Docker containers. To keep the entire setup at a reasonable level the reuse of the [official base image](https://hub.docker.com/_/elasticsearch/) was very helpful. In the `Dockerfile` we synced our timezone, prepared templating with [Jinja2](http://jinja.pocoo.org/docs/dev/) and installed two plugins for HTTP authorization and [administration](https://github.com/mobz/elasticsearch-head) via a web frontend that included a tabular document view and an extensive REST-console. We needed to create and use our own `docker-entrypoint` script as we wanted to map a few more Docker host directories than suggested by the official base image.
+We decided to run the nodes of the [Elasticsearch](https://www.elastic.co/products/elasticsearch) cluster within effortlessly deployable Docker containers. To keep the entire setup at a reasonable level the reuse of the [official base image](https://hub.docker.com/_/elasticsearch/) was very helpful. In the `Dockerfile` we synced our timezone, prepared templating with [Jinja2](http://jinja.pocoo.org/docs/dev/) and installed two plugins for HTTP authorisation and [administration](https://github.com/mobz/elasticsearch-head) via a web frontend that included a tabular document view and an extensive REST-console. We needed to create and use our own `docker-entrypoint` script as we wanted to map a few more Docker host directories than suggested by the official base image.
 
 #### Configuration
 
@@ -62,7 +62,7 @@ For the daily operation of the Elasticsearch cluster we implemented a verbose mo
 
 #### Testing
 
-We versioned the entire source code on [GitHub](https://github.com/). The first file we added was the configuration file for the CircleCI job. The job basically clones the repository and tries to build and run the Docker container. After these described preparation steps several tests check if the Elasticsearch service is reachable from outside of the container and is working as expected. With this setup we could securely develop the `Dockerfile` and the Elasticsearch configuration files against the previously created tests.
+We versioned the entire source code on GitHub. The first file we added was the configuration file for the CircleCI job. The job basically clones the repository and tries to build and run the Docker container. After these described preparation steps several tests check if the Elasticsearch service is reachable from outside of the container and is working as expected. With this setup we could securely develop the `Dockerfile` and the Elasticsearch configuration files against the previously created tests.
 If a pull request was reviewed and merged into the dev branch it will be tested again. If this test run is successful the Docker image will be pushed into our Docker registry and a script merges and pushes the dev code into the master branch.
 
 #### Deployment
@@ -73,11 +73,11 @@ Changes in the master branch trigger a Jenkins Job to run, which pulls the lates
 
 #### Basics
 
-Within our architecture the Logstash container runs as a comprehensive log forwarder, which means it acts as processor, shipper and indexer of the test results. Hence, it's main purpose is to read, transform and feed the test objects as documents into our Elasticsearch cluster. For this purpose the configuration file defines the input and the output of Logstash as well as how the data has to be filtered before dispatching the events to Elasticsearch. The input is given by a file path, which can also contain a regular expression. As described above, we use a JSON log file that is parsed by Logstash. The filter is able to add and remove fields from the JSON object. The output declares where the formatted message should be sent to. In our case this is configurable by environment variables, which will be explained by the following paragraphs.
+Within our architecture the Logstash container runs as a comprehensive log forwarder, which means it acts as processor, shipper and indexer of the test results. Hence, it's main purpose is to read, transform and feed the test objects as documents into our Elasticsearch cluster. For this purpose, the configuration file defines the input and the output of Logstash as well as how the data has to be filtered before dispatching the events to Elasticsearch. The input is given by a file path, which can also contain a regular expression. As described above, we use a JSON log file that is parsed by Logstash. The filter is able to add and remove fields from the JSON object. The output declares where the formatted message should be sent to. In our case this is configurable by environment variables, which will be explained in the following paragraphs.
 
 #### Configuration
 
-In the Logstash configuration, there is the possibility to use `if`-statements and environment variables. In addition to this, we decided to write our own templating engine based on the Jinja2 framework to achieve high flexibility in which variables can be feed into the rendering process. This allows us to have an environment specific configuration for each VM the Docker container is running on. To use this feature we forward some variables into our container. Our `docker-entrypoint` script renders the configuration templates and starts the Logstash agent.
+In the Logstash configuration it is possible to use `if`-statements and environment variables. In addition to this, we decided to write our own templating engine based on the Jinja2 framework to achieve high flexibility in which variables can be fed into the rendering process. This allows us to have an environment-specific configuration for each VM the Docker container is running on. To use this feature, we forward some variables into our container. Our `docker-entrypoint` script renders the configuration templates and starts the Logstash agent.
 
 {% highlight text %}{% raw %}
 ######################################
@@ -211,7 +211,7 @@ The above code snippet shows how we push the output to our Elasticsearch cluster
 
 The CI part for our Logstash container is very similiar to that of the Elasticsearch container. The tests we run are different of course, but the process is the same.
 
-### Part 4 - Integrate Docker Containers in Pipeline with Jenkins
+### Part 4 - Integrate Docker containers in pipeline with Jenkins
 
 #### Logstash
 
@@ -255,7 +255,7 @@ All shipped test objects are saved to a Logstash info log, which is archived as 
 
 For our Elasticsearch Docker cluster we configured a new Jenkins job, which ensured that always the latest stable version of our image is used. We made sure to mount several host directories so that the Elasticsearch data, config and logs are stored on the VM. By firing up multiple Elasticsearch node containers joining the same cluster we achieved load-balance and shard redundancy.
 
-### Part 5 - Use the Elasticsearch Client to Evaluate the Test Results
+### Part 5 - Use the Elasticsearch Client to evaluate the test results
 
 In the current state we use the [Elasticsearch Client](https://github.com/rdpatil4/ESClient) to monitor and analyse the test results. Here you can browse and filter the documents via dropdown menus for the index, which is our test object type (e.g. cdp-ui-tests) and the document type, which is the ePages repo id (e.g. 6.17.39). You can then narrow down the search with simple matches in the search field (e.g. only show tests with result FAILURE) or use the official [Lucence Query](http://www.lucenetutorial.com/lucene-query-syntax.html), which supports boolean operators, range matchers and more advanced features similar to a regex. It is possible to edit every single test object within the client by double-clicking a tabular row. Therefore, the `note` field can be used to add information about the error, like the cause of the error and the correspondong JIRA issue id.
 
@@ -263,8 +263,8 @@ In the current state we use the [Elasticsearch Client](https://github.com/rdpati
 
 Additionally, we also take advantage of three other ways to access our Elasticsearch cluster:
 
-* via the [Elasticsearch Head plugin](https://github.com/mobz/elasticsearch-head).
-* via curl and the [Elasticsearch DSL simple query string](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-simple-query-string-query.html).
+* via the [Elasticsearch Head plugin](https://github.com/mobz/elasticsearch-head)
+* via curl and the [Elasticsearch DSL simple query string](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-simple-query-string-query.html)
 * via URI requests in the location bar of the browser, e.g.:
 
 {% highlight text%}
@@ -276,7 +276,7 @@ Additionally, we also take advantage of three other ways to access our Elasticse
 ?pretty&size=1000&q=result:failure,skip AND epages_repo_id:*17.06.15
 {% endhighlight %}
 
-## Benefits and Conclusion
+## Benefits and conclusion
 
 Today the evaluation process is much faster: usually less than 5 minutes a day. The tremendous amount of saved time helps a lot in working on other stories.
 
@@ -288,3 +288,7 @@ Besides the in-depth exploration of the ELK ecosystem, which goes way beyond thi
 * How to not only enjoy the productivity of intense pair programming sessions but also when to quickly switch back to code along separately.
 
 Overall we are very happy with the outcome of this project and hope we can spend all the freed up time on other awesome projects about which we can write more blog posts.
+
+## Related post
+
+[Automated test evaluation with ELK in the pipeline: Background story](https://developer.epages.com/blog/2016/02/11/pipeline-elk-test-evaluation-1.html)
