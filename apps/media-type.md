@@ -4,7 +4,13 @@ key: apps-media-type
 title: Media type
 ---
 
-The ePages API supports requests and responses in JSON only.
+The basic media types the API supports are:
+
+{% highlight text %}
+application/json
+application/vnd.epages+csv
+{% endhighlight %}
+
 Requests have to be encoded using the UTF-8 character set.
 
 ## Request content type

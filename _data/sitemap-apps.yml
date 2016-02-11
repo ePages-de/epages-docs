@@ -19,7 +19,7 @@
     - title: Response codes
       link: page:apps-response-codes
 
-    - title: Versions
+    - title: API version
       link: page:apps-version
 
 - key: apps-develop
@@ -99,4 +99,3 @@
 
     - title: FAQ
       link: page:apps-faq
-
