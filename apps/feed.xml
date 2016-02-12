@@ -11,11 +11,9 @@ layout: null
     <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     <generator>Jekyll v{{ jekyll.version }}</generator>
-    <item>
-      <title>API changelog</title>
-      <pubDate>{{ site.time | date: '%D' }}</pubDate>
-      <link>{{ "/apps/change-log.html" | prepend: site.baseurl | prepend: site.url }}</link>
-      {% for pag in site.pages %}{% if pag.key == "api-change-log" %}<guid isPermaLink="false">{{ pag.version }}</guid>{% endif %}{% endfor %}
-    </item>
+    {% for pag in site.pages %}{% if pag.key == "api-change-log" %}
+    {% assign content = pag.content | split: '<hr>' %}{% for entry in content %}
+      {{ entry | to_xml_feed }}
+    {% endfor %}{% endif %}{% endfor %}
   </channel>
 </rss>
