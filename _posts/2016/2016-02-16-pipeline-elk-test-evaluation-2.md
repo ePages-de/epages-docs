@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Automated test evaluation with ELK in the pipeline: Implemented solution"
+title: "Continuous Delivery - Automate Selenium test analysis with Elasticsearch and Docker: Implementation"
 date: "2016-02-16 06:16:02"
 icon: wrench
 categories: tech-stories
