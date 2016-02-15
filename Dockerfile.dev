@@ -9,6 +9,10 @@ ENV TZ 'Europe/Berlin'
 RUN echo "${TZ}" | tee /etc/timezone \
   && dpkg-reconfigure --frontend noninteractive tzdata
 
+# Set locale for site
+ENV  LC_ALL en_US.UTF-8
+RUN  locale-gen en_US.UTF-8 && update-locale LANG=de_DE.UTF-8
+
 # Grab gosu for easy step-down from root
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
 RUN arch="$(dpkg --print-architecture)" \
@@ -44,6 +48,6 @@ COPY _docker/docker-entrypoint.sh /
 RUN chmod +x /docker-entrypoint.sh
 ENTRYPOINT ["/docker-entrypoint.sh"]
 
-EXPOSE 4000 9200
+EXPOSE 9200
 
 CMD ["rake"]
