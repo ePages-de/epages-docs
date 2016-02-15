@@ -34,7 +34,7 @@ COPY Gemfile Gemfile.lock ${EPAGES_DOCS}/
 RUN  bundle install
 
 # Copy repo to enable running without the mounted volume.
-# COPY . ${EPAGES_DOCS}
+COPY . ${EPAGES_DOCS}
 
 # Set mountpoint
 VOLUME ${EPAGES_DOCS}
@@ -43,5 +43,7 @@ VOLUME ${EPAGES_DOCS}
 COPY _docker/docker-entrypoint.sh /
 RUN chmod +x /docker-entrypoint.sh
 ENTRYPOINT ["/docker-entrypoint.sh"]
+
+EXPOSE 4000 9200
 
 CMD ["rake"]
