@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Automated test evaluation with ELK in the pipeline: Implemented solution"
+title: "Continuous Delivery: Implementation of automated Selenium test analysis with Elasticsearch and Docker"
 date: "2016-02-16 06:16:02"
-icon: wrench
+icon: cubes
 categories: tech-stories
 authors: ["Benjamin N.", "Bastian K."]
 ---
@@ -291,4 +291,4 @@ Overall we are very happy with the outcome of this project and hope we can spend
 
 ## Related post
 
-[Automated test evaluation with ELK in the pipeline: Background story](https://developer.epages.com/blog/2016/02/11/pipeline-elk-test-evaluation-1.html)
+[Continuous Delivery: Background of automated Selenium test analysis with Elasticsearch and Docker](https://developer.epages.com/blog/2016/02/11/pipeline-elk-test-evaluation-1.html)
