@@ -4,19 +4,29 @@ key: apps-media-type
 title: Media type
 ---
 
-The ePages API supports requests and responses in JSON only.
+The basic media types the API supports are:
+
+{% highlight text %}
+application/json
+application/csv
+multipart/form-data
+{% endhighlight %}
+
+## Content types
+
+### Request content type
+
 Requests have to be encoded using the UTF-8 character set.
-
-## Request content type
-
 When making a request that contains a body, the content type to be sent has to be specified in the `Content-Type` header.
-To send a JSON body the header would be: `Content-Type: application/json`.
+To send e.g. a JSON body the header would be: `Content-Type: application/json`.
 
-## Response content type
+### Response content type
 
 You can specify the content you would like to receive in an `Accept` header, e.g. `Accept: application/vnd.epages.v1+json`.
 
-## Request structure
+## Payload structure
+
+### Request structure
 
 The body of a JSON request is an object containing a set of key-value pairs.
 A simple JSON object could look like this:
@@ -29,7 +39,7 @@ A simple JSON object could look like this:
 }
 {% endhighlight %}
 
-## Response structure
+### Response structure
 
 Responses have a similar structure as requests.
 If a request returns a single object, the response will also contain a single object including the fields for that resource.

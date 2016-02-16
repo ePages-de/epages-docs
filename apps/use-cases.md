@@ -48,7 +48,7 @@ Availability: <i class="fa fa-check"></i>
 
 Build an application that optimises or enhances the content of product or category descriptions for Search Engine Optimisation (SEO), for general marketing purposes or to add translations to all descriptive content.
 
-Suggested calls: [`GET` products](page:apps-api-get-shops-shopid-products-information), [`PUT` products/stocklevel](page:apps-api-put-shops-shopid-products-productid-stock-level-information), [`GET` categories](page:apps-api-get-shops-shopid-categories-information), [`PUT` categories](page:apps-api-put-shops-shopid-categories-categoryid-information)
+Suggested calls: [`GET` products](page:apps-api-get-shops-shopid-products-information), [`PATCH` products](page:apps-api-patch-shops-shopid-products-productid-information), [`GET` categories](page:apps-api-get-shops-shopid-categories-information), [`PUT` categories](page:apps-api-put-shops-shopid-categories-categoryid-information)
 
 Availability: <i class="fa fa-check"></i>
 
@@ -64,7 +64,7 @@ Availability: <i class="fa fa-check"></i>
 
 Build an application that automatically updates the stock level of a product upon a POS/Marketplace sale.
 
-Suggested calls: [`GET` products](page:apps-api-get-shops-shopid-products-information), [`PUT` products/stocklevel](page:apps-api-put-shops-shopid-products-productid-stock-level-information)
+Suggested calls: [`GET` products](page:apps-api-get-shops-shopid-products-information), [`GET` products/stocklevel](page:apps-api-get-shops-shopid-products-productid-stock-level-information), [`PUT` products/stocklevel](page:apps-api-put-shops-shopid-products-productid-stock-level-information)
 
 Optional calls: [`GET` categories](page:apps-api-get-shops-shopid-categories-information)
 
@@ -74,7 +74,7 @@ Availability: <i class="fa fa-check"></i>
 
 Build an application that allows to determine top selling products, top customers, top regions or optimise cross-selling products by evaluating orders.
 
-Suggested calls: [`GET` products](page:apps-api-get-shops-shopid-products-information), [`GET` orders](page:apps-api-get-shops-shopid-orders-information), [`GET` categories](page:apps-api-get-shops-shopid-categories-information)
+Suggested calls: [`GET` products](page:apps-api-get-shops-shopid-products-information), [`GET` orders](page:apps-api-get-shops-shopid-orders-information), [`GET` categories](page:apps-api-get-shops-shopid-categories-information), [`GET` sales](page:apps-api-get-shops-shopid-sales-information)
 
 Availability: <i class="fa fa-check"></i>
 
