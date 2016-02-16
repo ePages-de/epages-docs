@@ -45,7 +45,7 @@ VOLUME ${EPAGES_DOCS}
 EXPOSE 4000
 
 # Copy our entrypoint script
-COPY _docker/docker-entrypoint.sh /
+COPY _docker/ruby/docker-entrypoint.sh /
 RUN chmod +x /docker-entrypoint.sh
 ENTRYPOINT ["/docker-entrypoint.sh"]
 
