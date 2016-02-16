@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Automated test evaluation with ELK in the pipeline: Background story"
+title: "Continuous Delivery: Background of automated Selenium test analysis with Elasticsearch and Docker"
 date: "2016-02-11 10:11:12"
-icon: wrench
+icon: inbox
 categories: tech-stories
 authors: ["Benjamin N.", "Bastian K."]
 ---
@@ -49,3 +49,7 @@ In summary, the mentioned ease of extension of Elasticsearch in combination with
 If you are interested in learning more about this project you may accompany us on the second post which will be published the next week. This comprehensive follow-up will outline the solution architecture, split it up into individual solution parts and then focus on the technical details including the setup of Elasticsearch, Logstash, Jenkins Jobs, Docker and CircleCI.
 
 Look forward to find out if we have choosen our options wisely!
+
+## Related post
+
+[Continuous Delivery: Implementation of automated Selenium test analysis with Elasticsearch and Docker](https://developer.epages.com/blog/2016/02/16/pipeline-elk-test-evaluation-2.html)
