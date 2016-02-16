@@ -44,13 +44,19 @@ If you don't like to bootstrap your machine you can run a [Docker][Docker] conta
 
 ~~~ bash
 # pull container and execute default task: run a local server with auto rebuilding
-docker run --rm --volume=$(pwd):/usr/src/epages-docs -p 127.0.0.1:9200:9200 epages-docs-dev
+$ docker run --rm --volume=$(pwd):/usr/src/epages-docs -p 127.0.0.1:4000:4000 epages.com/docs-dev
 
 # run bash in the container and use like local machine
-docker run --rm --volume=$(pwd):/usr/src/epages-docs -p 0.0.0.0:9200:9200 -it epages-docs-dev bash
+$ docker run --rm --volume=$(pwd):/usr/src/epages-docs -p 127.0.0.1:4000:4000 -it epages.com/docs-dev bash
+
+# run via docker machine on mac
+$ export IP=$(docker-machine ip `docker-machine active`)
+$ echo "Open in browser: $IP:4000"
+$ docker run --rm --volume=$(pwd):/usr/src/epages-docs -p $IP:4000:4000 -it epages.com/docs-dev
+
 
 # build locall
-$ docker build -t epages-docs-dev -f Dockerfile.dev .
+$ docker build -t epages.com/docs-dev -f Dockerfile.dev .
 ~~~
 
 ## License
