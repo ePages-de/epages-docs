@@ -23,6 +23,7 @@ exclude:
   - circle.yml
   - docker-compose.yml
   - Dockerfile
+  - Dockerfile.dev
   - Gemfile
   - Gemfile.lock
   - LICENSE-CC-BY-40.txt
