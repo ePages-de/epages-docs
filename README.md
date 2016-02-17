@@ -37,6 +37,27 @@ You can use this [shell script][bootstrap-linux] to turn your laptop into an awe
 
 TODO
 
+
+## Docker as dev machine
+
+If you don't like to bootstrap your machine you can run a [Docker][Docker] container for development. It can be pulled from our registry. You need to have [Docker Engine][docker-engine] installed.
+
+~~~ bash
+# pull container and execute default task: run a local server with auto rebuilding
+$ docker run --rm --volume=$(pwd):/usr/src/epages-docs -p 127.0.0.1:4000:4000 docker.epages.com/epages/docs-ruby
+
+# run bash in the container and use like local machine
+$ docker run --rm --volume=$(pwd):/usr/src/epages-docs -p 127.0.0.1:4000:4000 -it docker.epages.com/epages/docs-ruby bash
+
+# run via docker machine on mac
+$ export IP=$(docker-machine ip `docker-machine active`)
+$ echo "Open in browser: http://${IP}:4000/"
+$ docker run --rm --volume=$(pwd):/usr/src/epages-docs -p ${IP}:4000:4000 -it docker.epages.com/epages/docs-ruby
+
+# build locally
+$ docker build -t epages.com/docs-dev -f Dockerfile.ruby .
+~~~
+
 ## License
 
 This project comprises different licenses: The editorial content in the folders
@@ -58,6 +79,7 @@ is licensed under [CC-BY-4.0][license-cc-by-40]. The logos in the folder `assets
 
 [vagrant]: https://www.vagrantup.com/
 [virtualbox]: https://www.virtualbox.org/
+[docker-engine]: https://docs.docker.com/engine/installation/
 
 [license-cc-by-40]: http://creativecommons.org/licenses/by/4.0/
 [license-mit]: http://opensource.org/licenses/MIT
