@@ -45,13 +45,13 @@ test:
           mkdir -p /tmp/${CIRCLE_NGNIX}
           cp -r ~/$CIRCLE_PROJECT_REPONAME /tmp/${CIRCLE_NGNIX} && cd $_
           docker run --name elasticsearch -p 9200:9200 -d choffmeister/elasticsearch-prefilled:latest
-          mkdir -v -p ~/docker; docker save "${DOCKER_IMAGE_NGINX}:${DOCKER_IMAGE_TAG}" > ~/docker/${CIRCLE_NGNIX}.tar
+          mkdir -v -p ~/docker; docker save choffmeister/elasticsearch-prefilled:latest > ~/docker/${CIRCLE_ELASTICSEARCH}.tar
           sleep 10
           bundle exec rake index
           sleep 10
           docker stop elasticsearch
           bundle exec rake build
-          docker build -t "${DOCKER_IMAGE_NGINX}:${DOCKER_IMAGE_TAG}" -f Dockerfile.ngnix .
+          docker build -t "${DOCKER_IMAGE_NGINX}:${DOCKER_IMAGE_TAG}" -f /tmp/${CIRCLE_NGNIX}/Dockerfile.ngnix .
           mkdir -v -p ~/docker; docker save "${DOCKER_IMAGE_NGINX}:${DOCKER_IMAGE_TAG}" > ~/docker/${CIRCLE_NGNIX}.tar
           # Exit case statement if run in parallel else proceed to next case.
           $CIRCLE_PARALLEL && exit 0
@@ -60,7 +60,7 @@ test:
           printf "\n%s\n\n" "=== For Development: Test ruby container which builds _site and serves via jekyll."
           mkdir -p /tmp/${CIRCLE_RUBY}
           cp -r ~/$CIRCLE_PROJECT_REPONAME /tmp/${CIRCLE_RUBY} && cd $_
-          docker build -t "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" -f Dockerfile.ruby .
+          docker build -t "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" -f /tmp/${CIRCLE_RUBY}/Dockerfile.ruby .
           mkdir -v -p ~/docker; docker save "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" > ~/docker/${CIRCLE_RUBY}.tar
           docker run -d -p 127.0.0.1:4000:4000 -it "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" rake
           curl 127.0.0.1:4000 | grep "Blog" || exit 1
