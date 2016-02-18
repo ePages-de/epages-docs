@@ -3,7 +3,7 @@ FROM nginx:1.9.1
 ADD ./_site /epages-docs
 WORKDIR /epages-docs
 
-ADD ./_docker/nginx.conf /etc/nginx/conf.d/default.conf
+ADD ./_docker/ngnix/nginx.conf /etc/nginx/conf.d/default.conf
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 
 CMD \

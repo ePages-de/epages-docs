@@ -6,27 +6,108 @@ machine:
   environment:
     DOCKER_IMAGE_ELASTICSEARCH: docker.epages.com/epages/docs-elasticsearch
     DOCKER_IMAGE_NGINX: docker.epages.com/epages/docs-nginx
+    DOCKER_IMAGE_RUBY: docker.epages.com/epages/docs-ruby
+    DOCKER_IMAGE_TAG: ${CIRCLE_BRANCH//\//-}
+    IMG_NGNIX: image_ngnix
+    IMG_RUBY: image_ruby
+
+dependencies:
+  cache_directories:
+    - "~/docker"
+  override:
+    # Print Docker environment.
+    - docker info
+    # Load cached images, if available.
+    - if [[ -e ~/docker/${IMG_NGNIX}.tar ]]; then docker load --input ~/docker/${IMG_NGNIX}.tar; fi
+    - if [[ -e ~/docker/${IMG_RUBY}.tar ]]; then docker load --input ~/docker/${IMG_RUBY}.tar; fi
+    # Make sure circle project parallelism is set to at least 2 nodes.
+    - | 
+        if [[ "${CIRCLE_NODE_TOTAL}" -eq "1" ]]; then {
+          echo "Parallelism [${CIRCLE_NODE_TOTAL}x] needs to be 2x to fasten execution time." 
+          echo "You also need to set our circle env CIRCLE_PARALLEL [${CIRCLE_PARALLEL}] to true." 
+        }; fi
 
 test:
-  override:
+  pre:
+    # Test repo files for syntax and semantic errors.
     - bundle exec rake test
+  override:
+    - ? >
+        case $CIRCLE_NODE_INDEX in
+        0)
+          printf "\n%s\n\n" "For Production: Test ngnix container which includes static _site."
+          cp -r . /tmp/${IMG_NGNIX} && cd /tmp/${IMG_NGNIX}
+          docker run --name elasticsearch -p 9200:9200 -d choffmeister/elasticsearch-prefilled:latest
+          sleep 10
+          bundle exec rake index
+          sleep 10
+          docker stop elasticsearch
+          bundle exec rake build
+          docker build -t "${DOCKER_IMAGE_NGINX}:${DOCKER_IMAGE_TAG}" -f Dockerfile.ngnix .
+          mkdir -v -p ~/docker; docker save "${DOCKER_IMAGE_NGINX}:${DOCKER_IMAGE_TAG}" > ~/docker/${IMG_NGNIX}.tar
+          # Exit case statement if run in parallel else proceed to next case.
+          $CIRCLE_PARALLEL && exit 0
+          ;&
+        1)
+          printf "\n%s\n\n" "For Development: Test ruby container which builds _site and serves via jekyll."
+          cp -r . /tmp/${IMG_RUBY} && cd /tmp/${IMG_RUBY}
+          docker build -t "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" -f Dockerfile.ruby .
+          mkdir -v -p ~/docker; docker save "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" > ~/docker/${IMG_RUBY}.tar
+          docker run -d --volume=$(pwd):/usr/src/epages-docs -p 127.0.0.1:4000:4000 "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}"
+          curl 127.0.0.1:4000 | grep "Blog" || exit 1
+          docker kill "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}"
+          # Exit case statement if run in parallel else proceed to next case.
+          $CIRCLE_PARALLEL && exit 0
+          ;&
+        esac
+      : parallel: true
+  post:
+    - ? >
+        case $CIRCLE_NODE_INDEX in 
+        0)
+          printf "\n%s\n\n" "Archive artifacts: nginx _site dir"
+          sudo mv -v -f "/tmp/${IMG_NGNIX}" "${CIRCLE_ARTIFACTS}/"
+          # Exit case statement if run in parallel else proceed to next case.
+          $CIRCLE_PARALLEL && exit 0
+          ;&
+        1)
+          printf "\n%s\n\n" "Archive artifacts: ruby _site dir"
+          sudo mv -v -f "/tmp/${IMG_RUBY}" "${CIRCLE_ARTIFACTS}/"
+          # Exit case statement if run in parallel else proceed to next case.
+          $CIRCLE_PARALLEL && exit 0
+          ;&
+        esac
+      : parallel: true
 
 deployment:
-  dockerimages:
+  dockerimages_tag_branch:
     branch:
       - master
       - develop
     commands:
-      - docker run --name elasticsearch -p 9200:9200 -d choffmeister/elasticsearch-prefilled:latest
-      - sleep 10
-      - bundle exec rake index
-      - sleep 10
-      - docker stop elasticsearch
+      - docker login -u "${DOCKER_LOGIN_USERNAME}" -p "${DOCKER_LOGIN_PASSWORD}" -e "${DOCKER_LOGIN_EMAIL}" docker.epages.com
+      # Commit changes to elasticsearch container.
+      - docker commit elasticsearch "${DOCKER_IMAGE_ELASTICSEARCH}:${DOCKER_IMAGE_TAG}"
+      # Push all images with branch name tags to the ePages Docker registry.
+      - docker push "${DOCKER_IMAGE_ELASTICSEARCH}:${DOCKER_IMAGE_TAG}"
+      - docker push "${DOCKER_IMAGE_NGINX}:${DOCKER_IMAGE_TAG}"
+      - docker push "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}"    
+  dockerimages_tag_stable:
+    branch: master
+    commands:
+      - docker login -u "${DOCKER_LOGIN_USERNAME}" -p "${DOCKER_LOGIN_PASSWORD}" -e "${DOCKER_LOGIN_EMAIL}" docker.epages.com
+      # Tag with 'stable' and 'latest'.
+      - docker tag "${DOCKER_IMAGE_NGINX}:${DOCKER_IMAGE_TAG}" "${DOCKER_IMAGE_NGINX}:stable"
+      - docker tag "${DOCKER_IMAGE_NGINX}:${DOCKER_IMAGE_TAG}" "${DOCKER_IMAGE_NGINX}:latest"
+      - docker tag "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" "${DOCKER_IMAGE_RUBY}:stable"
+      - docker tag "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" "${DOCKER_IMAGE_RUBY}:latest"
+      # Push all images tagged with 'stable' and 'latest' to the ePages Docker registry.
+      - docker push "${DOCKER_IMAGE_NGINX}:stable"
+      - docker push "${DOCKER_IMAGE_NGINX}:latest"  
+      - docker push "${DOCKER_IMAGE_RUBY}:stable"
+      - docker push "${DOCKER_IMAGE_RUBY}:latest"
 
-      - docker login -u "$DOCKER_LOGIN_USERNAME" -p "$DOCKER_LOGIN_PASSWORD" -e "$DOCKER_LOGIN_EMAIL" docker.epages.com
-      - docker commit elasticsearch "$DOCKER_IMAGE_ELASTICSEARCH:${CIRCLE_BRANCH//\//-}"
-      - docker push "$DOCKER_IMAGE_ELASTICSEARCH:${CIRCLE_BRANCH//\//-}"
-
-      - bundle exec rake build
-      - docker build -t "$DOCKER_IMAGE_NGINX:${CIRCLE_BRANCH//\//-}" .
-      - docker push "$DOCKER_IMAGE_NGINX:${CIRCLE_BRANCH//\//-}"
+general:
+  artifacts:
+    - "${CIRCLE_ARTIFACTS}/${IMG_NGNIX}"
+    - "${CIRCLE_ARTIFACTS}/${IMG_RUBY}"
