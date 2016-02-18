@@ -24,8 +24,6 @@ dependencies:
     # Load cached images, if available.
     - if [[ -e ~/docker/${CIRCLE_NGNIX}.tar ]]; then docker load --input ~/docker/${CIRCLE_NGNIX}.tar; fi
     - if [[ -e ~/docker/${CIRCLE_RUBY}.tar ]]; then docker load --input ~/docker/${CIRCLE_RUBY}.tar; fi
-    # Install ruby dependencies
-    - bundle check --path=vendor/bundle || bundle install --path=vendor/bundle --jobs=4 --retry=3 
     # Make sure circle project parallelism is set to at least 2 nodes.
     - | 
         if [[ "${CIRCLE_NODE_TOTAL}" -eq "1" ]]; then {
@@ -42,7 +40,7 @@ test:
         case $CIRCLE_NODE_INDEX in
         0)
           printf "\n%s\n\n" "For Production: Test ngnix container which includes static _site."
-          cp -r . /tmp/${CIRCLE_NGNIX} && cd /tmp/${CIRCLE_NGNIX}
+          cp -r ~/$CIRCLE_PROJECT_REPONAME /tmp/${CIRCLE_NGNIX} && cd /tmp/${CIRCLE_NGNIX}
           docker run --name elasticsearch -p 9200:9200 -d choffmeister/elasticsearch-prefilled:latest
           sleep 10
           bundle exec rake index
@@ -56,7 +54,7 @@ test:
           ;&
         1)
           printf "\n%s\n\n" "For Development: Test ruby container which builds _site and serves via jekyll."
-          cp -r . /tmp/${CIRCLE_RUBY} && cd /tmp/${CIRCLE_RUBY}
+          cp -r ~/$CIRCLE_PROJECT_REPONAME /tmp/${CIRCLE_RUBY} && cd /tmp/${CIRCLE_RUBY}
           docker build -t "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" -f Dockerfile.ruby .
           mkdir -v -p ~/docker; docker save "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" > ~/docker/${CIRCLE_RUBY}.tar
           docker run -d --volume=$(pwd):/usr/src/epages-docs -p 127.0.0.1:4000:4000 "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}"
@@ -72,13 +70,15 @@ test:
         case $CIRCLE_NODE_INDEX in 
         0)
           printf "\n%s\n\n" "Archive artifacts: nginx _site dir"
-          sudo mv -v -f "/tmp/${CIRCLE_NGNIX}" "${CIRCLE_ARTIFACTS}/"
+          mkdir -v -p "${CIRCLE_ARTIFACTS}/${CIRCLE_NGNIX}/_site"
+          sudo cp -v -r "/tmp/${CIRCLE_NGNIX}/_site" $_
           # Exit case statement if run in parallel else proceed to next case.
           $CIRCLE_PARALLEL && exit 0
           ;&
         1)
           printf "\n%s\n\n" "Archive artifacts: ruby _site dir"
-          sudo mv -v -f "/tmp/${CIRCLE_RUBY}" "${CIRCLE_ARTIFACTS}/"
+          mkdir -v -p "${CIRCLE_ARTIFACTS}/${CIRCLE_RUBY}/_site"
+          sudo cp -v -r "/tmp/${CIRCLE_RUBY}/_site" $_
           # Exit case statement if run in parallel else proceed to next case.
           $CIRCLE_PARALLEL && exit 0
           ;&
@@ -97,7 +97,7 @@ deployment:
       # Push all images with branch name tags to the ePages Docker registry.
       - docker push "${DOCKER_IMAGE_ELASTICSEARCH}:${DOCKER_IMAGE_TAG}"
       - docker push "${DOCKER_IMAGE_NGINX}:${DOCKER_IMAGE_TAG}"
-      - docker push "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}"    
+      - docker push "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}"
   dockerimages_tag_stable:
     branch: master
     commands:
