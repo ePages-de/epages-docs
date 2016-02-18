@@ -67,7 +67,7 @@ test:
         esac
       : parallel: true
   post:
-    - printf "\n%s\n\n" "=== Archive artifacts: Collect _site dir. ==="
+    - printf "\n%s\n\n" "=== Archive artifacts and collect site dir ==="
     - mkdir -v -p "${CIRCLE_ARTIFACTS}/${CIRCLE_NGNIX}"
     - sudo cp -r ~/${CIRCLE_PROJECT_REPONAME}/_site $_
 
