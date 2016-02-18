@@ -32,10 +32,6 @@ dependencies:
         }; fi
 
 test:
-  cache_directories:
-    - "~/docker"
-  pre:
-    - mkdir -v -p ~/docker
   override:
     - ? >
         case $CIRCLE_NODE_INDEX in
