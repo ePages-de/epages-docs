@@ -19,13 +19,15 @@ machine:
 dependencies:
   cache_directories:
     - "~/docker"
-  post:
+  pre:
     # Print Docker environment.
     - docker info
     # Load cached images, if available.
     - if [[ -e ~/docker/${CIRCLE_ELASTICSEARCH}.tar ]]; then docker load --input ~/docker/${CIRCLE_ELASTICSEARCH}.tar; fi
     - if [[ -e ~/docker/${CIRCLE_NGNIX}.tar ]]; then docker load --input ~/docker/${CIRCLE_NGNIX}.tar; fi
     - if [[ -e ~/docker/${CIRCLE_RUBY}.tar ]]; then docker load --input ~/docker/${CIRCLE_RUBY}.tar; fi
+    # Create dir for cached images.
+    - mkdir -v -p ~/docker
     # Make sure circle project parallelism is set to at least 2 nodes.
     - | 
         if [[ "${CIRCLE_NODE_TOTAL}" -eq "1" ]]; then {
@@ -45,14 +47,14 @@ test:
           mkdir -p /tmp/${CIRCLE_NGNIX}
           cp -r ~/$CIRCLE_PROJECT_REPONAME /tmp/${CIRCLE_NGNIX} && cd $_
           docker run --name elasticsearch -p 9200:9200 -d choffmeister/elasticsearch-prefilled:latest
-          mkdir -v -p ~/docker; docker save choffmeister/elasticsearch-prefilled:latest > ~/docker/${CIRCLE_ELASTICSEARCH}.tar
+          docker save choffmeister/elasticsearch-prefilled:latest > ~/docker/${CIRCLE_ELASTICSEARCH}.tar
           sleep 10
           bundle exec rake index
           sleep 10
           docker stop elasticsearch
           bundle exec rake build
           docker build -t "${DOCKER_IMAGE_NGINX}:${DOCKER_IMAGE_TAG}" -f /tmp/${CIRCLE_NGNIX}/Dockerfile.ngnix .
-          mkdir -v -p ~/docker; docker save "${DOCKER_IMAGE_NGINX}:${DOCKER_IMAGE_TAG}" > ~/docker/${CIRCLE_NGNIX}.tar
+          docker save "${DOCKER_IMAGE_NGINX}:${DOCKER_IMAGE_TAG}" > ~/docker/${CIRCLE_NGNIX}.tar
           # Exit case statement if run in parallel else proceed to next case.
           $CIRCLE_PARALLEL && exit 0
           ;&
@@ -61,7 +63,7 @@ test:
           mkdir -p /tmp/${CIRCLE_RUBY}
           cp -r ~/$CIRCLE_PROJECT_REPONAME /tmp/${CIRCLE_RUBY} && cd $_
           docker build -t "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" -f /tmp/${CIRCLE_RUBY}/Dockerfile.ruby .
-          mkdir -v -p ~/docker; docker save "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" > ~/docker/${CIRCLE_RUBY}.tar
+          docker save "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" > ~/docker/${CIRCLE_RUBY}.tar
           docker run -d -p 127.0.0.1:4000:4000 -it "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" rake
           curl 127.0.0.1:4000 | grep "Blog" || exit 1
           docker stop "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}"
