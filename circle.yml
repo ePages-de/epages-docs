@@ -62,7 +62,7 @@ test:
           mkdir -v -p "${CIRCLE_ARTIFACTS}/${CIRCLE_RUBY}"
           sudo mv -f ~/${CIRCLE_PROJECT_REPONAME}/_site $_
           $CIRCLE_PARALLEL && exit 0
-          ;&
+          ;;
         esac
       : parallel: true
 
