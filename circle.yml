@@ -49,7 +49,7 @@ test:
           # docker save "${DOCKER_IMAGE_NGINX}:${DOCKER_IMAGE_TAG}" > ~/docker/${CIRCLE_NGNIX}.tar
           printf "\n%s\n\n" "=== Archive artifacts of ngnix container ==="
           mkdir -v -p "${CIRCLE_ARTIFACTS}/${CIRCLE_NGNIX}"
-          sudo mv -r ~/${CIRCLE_PROJECT_REPONAME}/_site $_
+          sudo mv -f ~/${CIRCLE_PROJECT_REPONAME}/_site $_
           # Exit case statement if run in parallel else proceed to next case.
           $CIRCLE_PARALLEL && exit 0
           ;&
