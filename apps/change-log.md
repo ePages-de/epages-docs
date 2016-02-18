@@ -10,6 +10,14 @@ In order to keep track of these changes we recommend you to follow [@epagesdevs]
 
 <hr>
 
+## 2016-02-18
+
+### Latest changes with software release 6.17.40
+
+* None.
+
+<hr>
+
 ## 2016-02-09
 
 ### Latest changes with software release 6.17.39
@@ -22,7 +30,7 @@ In order to keep track of these changes we recommend you to follow [@epagesdevs]
 * [`PUT` slideshow/sequence](https://developer.epages.com/apps/api-reference/put-shops-shopid-products-productid-slideshow-sequence.html)
 * Added `productImage` attribute
 * Added new attributes `shippingData` and `paymentData` to orders
-* Replaced attribute `comment` with `customerComment` and `internalNote`.
+* Replaced attribute `comment` with `customerComment` and `internalNote`
 
 <hr>
 
