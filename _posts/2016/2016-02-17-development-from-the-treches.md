@@ -29,7 +29,7 @@ the company organises other events such as the ePagesYou, which is the conventio
 
 ## Team
 Our team consists of 4 engineers, we are looking for a [QA](http://www.epages.com/en/career/jobs/QA_BCN-HH.php) and two more [developers](http://www.epages.com/en/career/jobs/software-developer.php). The QA, Scrum Master and Product Owner are located in Hamburg and support us in our daily basis work.
-Our team is responsible, together with another team in Hamburg, for the connectors to the e-commerce platform, such as payments, shippings and others. 
+Our team is responsible, together with another team in Hamburg, for the connectors to the e-commerce platform, such as payments, shippings and others.
 
 Also, as in the company we try to do our best to be as **Agile** as possible, we follow the **Scrum** principles, we do **pair programming**, we share our knowledge in daily code reviews, we do presentations, etc.
 
