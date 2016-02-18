@@ -4,22 +4,28 @@ machine:
   services:
     - docker
   environment:
+    # Circle run tests with parallelism.
+    CIRCLE_PARALLEL: false
+    # Circle dedicated names for cached images and test workdirs.
+    CIRCLE_NGNIX: image_ngnix
+    CIRCLE_RUBY: image_ruby
+    # Docker image and tag names.
     DOCKER_IMAGE_ELASTICSEARCH: docker.epages.com/epages/docs-elasticsearch
     DOCKER_IMAGE_NGINX: docker.epages.com/epages/docs-nginx
     DOCKER_IMAGE_RUBY: docker.epages.com/epages/docs-ruby
     DOCKER_IMAGE_TAG: ${CIRCLE_BRANCH//\//-}
-    IMG_NGNIX: image_ngnix
-    IMG_RUBY: image_ruby
 
 dependencies:
   cache_directories:
     - "~/docker"
-  override:
+  post:
     # Print Docker environment.
     - docker info
     # Load cached images, if available.
-    - if [[ -e ~/docker/${IMG_NGNIX}.tar ]]; then docker load --input ~/docker/${IMG_NGNIX}.tar; fi
-    - if [[ -e ~/docker/${IMG_RUBY}.tar ]]; then docker load --input ~/docker/${IMG_RUBY}.tar; fi
+    - if [[ -e ~/docker/${CIRCLE_NGNIX}.tar ]]; then docker load --input ~/docker/${CIRCLE_NGNIX}.tar; fi
+    - if [[ -e ~/docker/${CIRCLE_RUBY}.tar ]]; then docker load --input ~/docker/${CIRCLE_RUBY}.tar; fi
+    # Install ruby dependencies
+    - bundle check --path=vendor/bundle || bundle install --path=vendor/bundle --jobs=4 --retry=3 
     # Make sure circle project parallelism is set to at least 2 nodes.
     - | 
         if [[ "${CIRCLE_NODE_TOTAL}" -eq "1" ]]; then {
@@ -36,7 +42,7 @@ test:
         case $CIRCLE_NODE_INDEX in
         0)
           printf "\n%s\n\n" "For Production: Test ngnix container which includes static _site."
-          cp -r . /tmp/${IMG_NGNIX} && cd /tmp/${IMG_NGNIX}
+          cp -r . /tmp/${CIRCLE_NGNIX} && cd /tmp/${CIRCLE_NGNIX}
           docker run --name elasticsearch -p 9200:9200 -d choffmeister/elasticsearch-prefilled:latest
           sleep 10
           bundle exec rake index
@@ -44,15 +50,15 @@ test:
           docker stop elasticsearch
           bundle exec rake build
           docker build -t "${DOCKER_IMAGE_NGINX}:${DOCKER_IMAGE_TAG}" -f Dockerfile.ngnix .
-          mkdir -v -p ~/docker; docker save "${DOCKER_IMAGE_NGINX}:${DOCKER_IMAGE_TAG}" > ~/docker/${IMG_NGNIX}.tar
+          mkdir -v -p ~/docker; docker save "${DOCKER_IMAGE_NGINX}:${DOCKER_IMAGE_TAG}" > ~/docker/${CIRCLE_NGNIX}.tar
           # Exit case statement if run in parallel else proceed to next case.
           $CIRCLE_PARALLEL && exit 0
           ;&
         1)
           printf "\n%s\n\n" "For Development: Test ruby container which builds _site and serves via jekyll."
-          cp -r . /tmp/${IMG_RUBY} && cd /tmp/${IMG_RUBY}
+          cp -r . /tmp/${CIRCLE_RUBY} && cd /tmp/${CIRCLE_RUBY}
           docker build -t "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" -f Dockerfile.ruby .
-          mkdir -v -p ~/docker; docker save "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" > ~/docker/${IMG_RUBY}.tar
+          mkdir -v -p ~/docker; docker save "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" > ~/docker/${CIRCLE_RUBY}.tar
           docker run -d --volume=$(pwd):/usr/src/epages-docs -p 127.0.0.1:4000:4000 "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}"
           curl 127.0.0.1:4000 | grep "Blog" || exit 1
           docker kill "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}"
@@ -66,13 +72,13 @@ test:
         case $CIRCLE_NODE_INDEX in 
         0)
           printf "\n%s\n\n" "Archive artifacts: nginx _site dir"
-          sudo mv -v -f "/tmp/${IMG_NGNIX}" "${CIRCLE_ARTIFACTS}/"
+          sudo mv -v -f "/tmp/${CIRCLE_NGNIX}" "${CIRCLE_ARTIFACTS}/"
           # Exit case statement if run in parallel else proceed to next case.
           $CIRCLE_PARALLEL && exit 0
           ;&
         1)
           printf "\n%s\n\n" "Archive artifacts: ruby _site dir"
-          sudo mv -v -f "/tmp/${IMG_RUBY}" "${CIRCLE_ARTIFACTS}/"
+          sudo mv -v -f "/tmp/${CIRCLE_RUBY}" "${CIRCLE_ARTIFACTS}/"
           # Exit case statement if run in parallel else proceed to next case.
           $CIRCLE_PARALLEL && exit 0
           ;&
@@ -109,5 +115,5 @@ deployment:
 
 general:
   artifacts:
-    - "${CIRCLE_ARTIFACTS}/${IMG_NGNIX}"
-    - "${CIRCLE_ARTIFACTS}/${IMG_RUBY}"
+    - "${CIRCLE_ARTIFACTS}/${CIRCLE_NGNIX}"
+    - "${CIRCLE_ARTIFACTS}/${CIRCLE_RUBY}"
