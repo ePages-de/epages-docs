@@ -57,19 +57,20 @@ test:
         1)
           printf "\n%s\n\n" "=== For Development: Test ruby container which builds _site and serves via jekyll."
           docker build -t "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" -f Dockerfile.ruby .
-          docker save "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" > ~/docker/${CIRCLE_RUBY}.tar
           docker run -d -p 127.0.0.1:4000:4000 -it "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" rake
           # curl 127.0.0.1:4000 | grep "Blog" || exit 1
           docker stop "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}"
+          docker save "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" > ~/docker/${CIRCLE_RUBY}.tar
           # Exit case statement if run in parallel else proceed to next case.
           $CIRCLE_PARALLEL && exit 0
           ;&
         esac
       : parallel: true
   post:
-    - printf "\n%s\n\n" "=== Archive artifacts and collect site dir ==="
-    - mkdir -v -p "${CIRCLE_ARTIFACTS}/${CIRCLE_NGNIX}"
-    - sudo cp -r ~/${CIRCLE_PROJECT_REPONAME}/_site $_
+    - |
+      printf "\n%s\n\n" "=== Archive artifacts and collect site dir ==="
+      mkdir -v -p "${CIRCLE_ARTIFACTS}/${CIRCLE_NGNIX}"
+      sudo cp -r ~/${CIRCLE_PROJECT_REPONAME}/_site $_
 
 
 deployment:
