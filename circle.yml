@@ -59,7 +59,8 @@ test:
           docker build -t "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" -f Dockerfile.ruby .
           docker run -d -p 127.0.0.1:4000:4000 -it --name ${CIRCLE_RUBY} "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" rake
           # curl 127.0.0.1:4000 | grep "Blog" || exit 1
-          docker stop ${CIRCLE_RUBY}
+          docker ps -a
+          # docker stop ${CIRCLE_RUBY}
           docker save "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" > ~/docker/${CIRCLE_RUBY}.tar
           # Exit case statement if run in parallel else proceed to next case.
           $CIRCLE_PARALLEL && exit 0
