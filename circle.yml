@@ -17,8 +17,6 @@ machine:
     DOCKER_IMAGE_TAG: ${CIRCLE_BRANCH//\//-}
 
 dependencies:
-  cache_directories:
-    - "~/docker"
   pre:
     # Print Docker environment.
     - docker info
@@ -26,8 +24,6 @@ dependencies:
     - if [[ -e ~/docker/${CIRCLE_ELASTICSEARCH}.tar ]]; then docker load --input ~/docker/${CIRCLE_ELASTICSEARCH}.tar; fi
     - if [[ -e ~/docker/${CIRCLE_NGNIX}.tar ]]; then docker load --input ~/docker/${CIRCLE_NGNIX}.tar; fi
     - if [[ -e ~/docker/${CIRCLE_RUBY}.tar ]]; then docker load --input ~/docker/${CIRCLE_RUBY}.tar; fi
-    # Create dir for cached images.
-    - mkdir -v -p ~/docker
     # Make sure circle project parallelism is set to at least 2 nodes.
     - | 
         if [[ "${CIRCLE_NODE_TOTAL}" -eq "1" ]]; then {
@@ -36,6 +32,10 @@ dependencies:
         }; fi
 
 test:
+  cache_directories:
+    - "~/docker"
+  pre:
+    - mkdir -v -p ~/docker
   override:
     - ? >
         case $CIRCLE_NODE_INDEX in
@@ -60,7 +60,7 @@ test:
           docker run -d -p 127.0.0.1:4000:4000 -it --name ${CIRCLE_RUBY} "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" rake
           # curl 127.0.0.1:4000 | grep "Blog" || exit 1
           docker ps -a
-          # docker stop ${CIRCLE_RUBY}
+          docker stop ${CIRCLE_RUBY}
           docker save "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" > ~/docker/${CIRCLE_RUBY}.tar
           # Exit case statement if run in parallel else proceed to next case.
           $CIRCLE_PARALLEL && exit 0
