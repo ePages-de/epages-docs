@@ -40,39 +40,36 @@ test:
     - ? >
         case $CIRCLE_NODE_INDEX in
         0)
-          printf "\n%s\n\n" "=== For Production: Test ngnix container which includes static _site. ==="
+          printf "\n%s\n\n" "=== Test ngnix container for production - includes static _site ==="
           bundle exec rake test
           docker run --name elasticsearch -p 9200:9200 -d choffmeister/elasticsearch-prefilled:latest
-          docker save choffmeister/elasticsearch-prefilled:latest > ~/docker/${CIRCLE_ELASTICSEARCH}.tar
+          # docker save choffmeister/elasticsearch-prefilled:latest > ~/docker/${CIRCLE_ELASTICSEARCH}.tar
           sleep 10
           bundle exec rake index
           sleep 10
           docker stop elasticsearch
           bundle exec rake build
           docker build -t "${DOCKER_IMAGE_NGINX}:${DOCKER_IMAGE_TAG}" -f Dockerfile.ngnix .
-          docker save "${DOCKER_IMAGE_NGINX}:${DOCKER_IMAGE_TAG}" > ~/docker/${CIRCLE_NGNIX}.tar
+          # docker save "${DOCKER_IMAGE_NGINX}:${DOCKER_IMAGE_TAG}" > ~/docker/${CIRCLE_NGNIX}.tar
+          printf "\n%s\n\n" "=== Archive artifacts of ngnix container ==="
+          mkdir -v -p "${CIRCLE_ARTIFACTS}/${CIRCLE_NGNIX}"
+          sudo mv -r ~/${CIRCLE_PROJECT_REPONAME}/_site $_
           # Exit case statement if run in parallel else proceed to next case.
           $CIRCLE_PARALLEL && exit 0
           ;&
         1)
-          printf "\n%s\n\n" "=== For Development: Test ruby container which builds _site and serves via jekyll."
+          printf "\n%s\n\n" "=== Test ruby container for development - builds _site and runs jekyll."
           docker build -t "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" -f Dockerfile.ruby .
           docker run -d -p 127.0.0.1:4000:4000 -it --name ${CIRCLE_RUBY} "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" rake
-          # curl 127.0.0.1:4000 | grep "Blog" || exit 1
-          docker ps -a
+          sleep 50
+          curl --silent 127.0.0.1:4000 | grep  -q "blog
           docker stop ${CIRCLE_RUBY}
-          docker save "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" > ~/docker/${CIRCLE_RUBY}.tar
+          # docker save "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" > ~/docker/${CIRCLE_RUBY}.tar
           # Exit case statement if run in parallel else proceed to next case.
           $CIRCLE_PARALLEL && exit 0
           ;&
         esac
       : parallel: true
-  post:
-    - |
-      printf "\n%s\n\n" "=== Archive artifacts and collect site dir ==="
-      mkdir -v -p "${CIRCLE_ARTIFACTS}/${CIRCLE_NGNIX}"
-      sudo cp -r ~/${CIRCLE_PROJECT_REPONAME}/_site $_
-
 
 deployment:
   dockerimages_tag_branch:
