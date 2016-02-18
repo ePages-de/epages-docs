@@ -56,9 +56,11 @@ test:
         1)
           printf "\n%s\n\n" "=== Test ruby container for development (builds and runs static _site) ==="
           docker build -t "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" -f Dockerfile.ruby .
-          docker run --name develop -p 127.0.0.1:4000:4000 -it -d "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}"
+          docker run --name develop -p 127.0.0.1:4000:4000 --volume=$(pwd):/usr/src/epages-docs -it -d "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}"
           sleep 50
           curl --silent 127.0.0.1:4000 | grep  -q "blog" && printf "\n%s\n\n" "=== The ruby container run successfully ==="
+          mkdir -v -p "${CIRCLE_ARTIFACTS}/${CIRCLE_RUBY}"
+          sudo mv -f ~/${CIRCLE_PROJECT_REPONAME}/_site $_
         esac
       : parallel: true
 
@@ -93,4 +95,4 @@ deployment:
 general:
   artifacts:
     - "${CIRCLE_ARTIFACTS}/${CIRCLE_NGNIX}"
-    # "${CIRCLE_ARTIFACTS}/${CIRCLE_RUBY}"
+    - "${CIRCLE_ARTIFACTS}/${CIRCLE_RUBY}"
