@@ -36,7 +36,7 @@ test:
     - ? >
         case $CIRCLE_NODE_INDEX in
         0)
-          printf "\n%s\n\n" "=== Test ngnix container for production - includes static _site ==="
+          printf "\n%s\n\n" "=== Test ngnix container for production (runs static _site) ==="
           bundle exec rake test
           docker run --name elasticsearch -p 9200:9200 -d choffmeister/elasticsearch-prefilled:latest
           # docker save choffmeister/elasticsearch-prefilled:latest > ~/docker/${CIRCLE_ELASTICSEARCH}.tar
@@ -54,12 +54,12 @@ test:
           $CIRCLE_PARALLEL && exit 0
           ;&
         1)
-          printf "\n%s\n\n" "=== Test ruby container for development - builds _site and runs jekyll."
+          printf "\n%s\n\n" "=== Test ruby container for development (builds and runs static _site) ==="
           docker build -t "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" -f Dockerfile.ruby .
-          docker run -d -p 127.0.0.1:4000:4000 -it --name ${CIRCLE_RUBY} "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" rake
+          docker run -d -p 127.0.0.1:4000:4000 -it --name "${CIRCLE_RUBY}" "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}"
           sleep 50
-          curl --silent 127.0.0.1:4000 | grep  -q "blog"
-          docker stop ${CIRCLE_RUBY}
+          curl --silent 127.0.0.1:4000 | grep  -q "blog" && printf "\n%s\n\n" "=== The ruby container run successfully ==="
+          docker stop "${CIRCLE_RUBY}"
           # docker save "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" > ~/docker/${CIRCLE_RUBY}.tar
           # Exit case statement if run in parallel else proceed to next case.
           $CIRCLE_PARALLEL && exit 0
