@@ -36,7 +36,7 @@ test:
     - ? >
         case $CIRCLE_NODE_INDEX in
         0)
-          printf "\n%s\n\n" "=== Test ngnix container for production (runs static _site) ==="
+          printf "\n%s\n\n" "=== Production - Test ngnix container with build site on host ==="
           bundle exec rake test
           docker run --name elasticsearch -p 9200:9200 -d choffmeister/elasticsearch-prefilled:latest
           # docker save choffmeister/elasticsearch-prefilled:latest > ~/docker/${CIRCLE_ELASTICSEARCH}.tar
@@ -46,19 +46,23 @@ test:
           docker stop elasticsearch
           bundle exec rake build
           docker build -t "${DOCKER_IMAGE_NGINX}:${DOCKER_IMAGE_TAG}" -f Dockerfile.ngnix .
+          printf "\n%s\n\n" "=== SUCCESS ==="
           # docker save "${DOCKER_IMAGE_NGINX}:${DOCKER_IMAGE_TAG}" > ~/docker/${CIRCLE_NGNIX}.tar
-          printf "\n%s\n\n" "=== Archive artifacts of ngnix container ==="
+          printf "\n%s\n\n" "=== ARCHIVE site artifacts of ngnix container ==="
           mkdir -v -p "${CIRCLE_ARTIFACTS}/${CIRCLE_NGNIX}"
           sudo mv -f ~/${CIRCLE_PROJECT_REPONAME}/_site $_
           # Exit case statement if run in parallel else proceed to next case.
           $CIRCLE_PARALLEL && exit 0
           ;&
         1)
-          printf "\n%s\n\n" "=== Test ruby container for development (builds and runs static _site) ==="
+          printf "\n%s\n\n" "=== DEVELOPMENT - Test ruby container with build and serve site ==="
           docker build -t "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" -f Dockerfile.ruby .
-          docker run --name develop -p 127.0.0.1:4000:4000 --volume=$(pwd):/usr/src/epages-docs -it -d "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}"
+          docker run --name ruby -p 127.0.0.1:4000:4000 --volume=$(pwd):/usr/src/epages-docs -it -d "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}"
           sleep 50
-          curl --silent 127.0.0.1:4000 | grep  -q "blog" && printf "\n%s\n\n" "=== The ruby container run successfully ==="
+          curl --silent 127.0.0.1:4000 | grep  -q "blog" 
+          docker stop ruby
+          printf "\n%s\n\n" "=== SUCCESS ==="
+          printf "\n%s\n\n" "=== ARCHIVE site artifacts of ruby container ==="
           mkdir -v -p "${CIRCLE_ARTIFACTS}/${CIRCLE_RUBY}"
           sudo mv -f ~/${CIRCLE_PROJECT_REPONAME}/_site $_
           ;;
