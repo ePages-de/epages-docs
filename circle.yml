@@ -7,6 +7,7 @@ machine:
     # Circle run tests with parallelism.
     CIRCLE_PARALLEL: false
     # Circle dedicated names for cached images and test workdirs.
+    CIRCLE_ELASTICSEARCH: image_elasticsearch
     CIRCLE_NGNIX: image_ngnix
     CIRCLE_RUBY: image_ruby
     # Docker image and tag names.
@@ -22,6 +23,7 @@ dependencies:
     # Print Docker environment.
     - docker info
     # Load cached images, if available.
+    - if [[ -e ~/docker/${CIRCLE_ELASTICSEARCH}.tar ]]; then docker load --input ~/docker/${CIRCLE_ELASTICSEARCH}.tar; fi
     - if [[ -e ~/docker/${CIRCLE_NGNIX}.tar ]]; then docker load --input ~/docker/${CIRCLE_NGNIX}.tar; fi
     - if [[ -e ~/docker/${CIRCLE_RUBY}.tar ]]; then docker load --input ~/docker/${CIRCLE_RUBY}.tar; fi
     # Make sure circle project parallelism is set to at least 2 nodes.
@@ -39,9 +41,10 @@ test:
     - ? >
         case $CIRCLE_NODE_INDEX in
         0)
-          printf "\n%s\n\n" "For Production: Test ngnix container which includes static _site."
+          printf "\n%s\n\n" "=== For Production: Test ngnix container which includes static _site. ==="
           cp -r ~/$CIRCLE_PROJECT_REPONAME /tmp/${CIRCLE_NGNIX} && cd /tmp/${CIRCLE_NGNIX}
           docker run --name elasticsearch -p 9200:9200 -d choffmeister/elasticsearch-prefilled:latest
+          mkdir -v -p ~/docker; docker save "${DOCKER_IMAGE_NGINX}:${DOCKER_IMAGE_TAG}" > ~/docker/${CIRCLE_NGNIX}.tar
           sleep 10
           bundle exec rake index
           sleep 10
@@ -53,13 +56,13 @@ test:
           $CIRCLE_PARALLEL && exit 0
           ;&
         1)
-          printf "\n%s\n\n" "For Development: Test ruby container which builds _site and serves via jekyll."
+          printf "\n%s\n\n" "=== For Development: Test ruby container which builds _site and serves via jekyll."
           cp -r ~/$CIRCLE_PROJECT_REPONAME /tmp/${CIRCLE_RUBY} && cd /tmp/${CIRCLE_RUBY}
           docker build -t "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" -f Dockerfile.ruby .
           mkdir -v -p ~/docker; docker save "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" > ~/docker/${CIRCLE_RUBY}.tar
-          docker run -d --volume=$(pwd):/usr/src/epages-docs -p 127.0.0.1:4000:4000 "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}"
+          docker run -d -p 127.0.0.1:4000:4000 -it "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" rake
           curl 127.0.0.1:4000 | grep "Blog" || exit 1
-          docker kill "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}"
+          docker stop "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}"
           # Exit case statement if run in parallel else proceed to next case.
           $CIRCLE_PARALLEL && exit 0
           ;&
@@ -69,16 +72,16 @@ test:
     - ? >
         case $CIRCLE_NODE_INDEX in 
         0)
-          printf "\n%s\n\n" "Archive artifacts: nginx _site dir"
-          mkdir -v -p "${CIRCLE_ARTIFACTS}/${CIRCLE_NGNIX}/_site"
-          sudo cp -v -r "/tmp/${CIRCLE_NGNIX}/_site" $_
+          printf "\n%s\n\n" "=== Archive artifacts: Collect nginx _site dir. ==="
+          mkdir -v -p "${CIRCLE_ARTIFACTS}/${CIRCLE_NGNIX}"
+          sudo cp -r "/tmp/${CIRCLE_NGNIX}/_site" $_
           # Exit case statement if run in parallel else proceed to next case.
           $CIRCLE_PARALLEL && exit 0
           ;&
         1)
-          printf "\n%s\n\n" "Archive artifacts: ruby _site dir"
-          mkdir -v -p "${CIRCLE_ARTIFACTS}/${CIRCLE_RUBY}/_site"
-          sudo cp -v -r "/tmp/${CIRCLE_RUBY}/_site" $_
+          printf "\n%s\n\n" "=== Archive artifacts: Collect ruby _site dir. ==="
+          mkdir -v -p "${CIRCLE_ARTIFACTS}/${CIRCLE_RUBY}"
+          sudo cp -r "/tmp/${CIRCLE_RUBY}/_site" $_
           # Exit case statement if run in parallel else proceed to next case.
           $CIRCLE_PARALLEL && exit 0
           ;&
@@ -109,7 +112,7 @@ deployment:
       - docker tag "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" "${DOCKER_IMAGE_RUBY}:latest"
       # Push all images tagged with 'stable' and 'latest' to the ePages Docker registry.
       - docker push "${DOCKER_IMAGE_NGINX}:stable"
-      - docker push "${DOCKER_IMAGE_NGINX}:latest"  
+      - docker push "${DOCKER_IMAGE_NGINX}:latest"
       - docker push "${DOCKER_IMAGE_RUBY}:stable"
       - docker push "${DOCKER_IMAGE_RUBY}:latest"
 
