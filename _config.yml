@@ -22,7 +22,8 @@ markdown: kramdown
 exclude:
   - circle.yml
   - docker-compose.yml
-  - Dockerfile
+  - Dockerfile.ngnix
+  - Dockerfile.ruby
   - Gemfile
   - Gemfile.lock
   - LICENSE-CC-BY-40.txt
