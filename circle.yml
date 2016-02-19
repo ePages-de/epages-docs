@@ -34,7 +34,7 @@ dependencies:
     - | 
         if [[ "${CIRCLE_NODE_TOTAL}" -eq "1" ]]; then {
           echo "Parallelism [${CIRCLE_NODE_TOTAL}x] needs to be 2x to fasten execution time." 
-          echo "You also need to set our circle env CIRCLE_PARALLEL [${CIRCLE_PARALLEL}] to true." 
+          echo "You also need to set our machine env var CIRCLE_PARALLEL [${CIRCLE_PARALLEL}] to true." 
         }; fi
 
 
