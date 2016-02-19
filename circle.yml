@@ -13,12 +13,13 @@ machine:
     # Ruby container volume and bind address.
     DOCS_RUBY_VOL: /usr/src/epages-docs
     DOCS_RUBY_BIND_ADDRESS: 127.0.0.1:4000
-    # Docker registry of ePages.
+    # Docker registry and account of ePages.
     DOCKER_REGISTRY: docker.epages.com
+    DOCKER_ACCOUNT: epages
     # Docker image and tag names.
-    DOCKER_IMAGE_ELASTICSEARCH: ${DOCKER_REGISTRY}/epages/${DOCS_ELASTICSEARCH}
-    DOCKER_IMAGE_NGINX: ${DOCKER_REGISTRY}/epages/${DOCS_NGNIX}
-    DOCKER_IMAGE_RUBY: ${DOCKER_REGISTRY}/epages/${DOCS_RUBY}
+    DOCKER_IMAGE_ELASTICSEARCH: ${DOCKER_REGISTRY}/${DOCKER_ACCOUNT}/${DOCS_ELASTICSEARCH}
+    DOCKER_IMAGE_NGINX: ${DOCKER_REGISTRY}/${DOCKER_ACCOUNT/${DOCS_NGNIX}
+    DOCKER_IMAGE_RUBY: ${DOCKER_REGISTRY}/${DOCKER_ACCOUNT}/${DOCS_RUBY}
     DOCKER_IMAGE_TAG: ${CIRCLE_BRANCH//\//-}
     # Dockerfiles.
     DOCKERFILE_NGNIX: Dockerfile.ngnix
