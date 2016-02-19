@@ -27,22 +27,15 @@ machine:
     # Docker Hub images.
     DOCKER_HUB_ELASTICSEARCH: choffmeister/elasticsearch-prefilled:latest
 
-dependencies:
+
+test:
   pre:
-    # Print Docker environment.
     - docker info
-    # Load cached images, if available.
-    - if [[ -e ~/docker/${CIRCLE_ELASTICSEARCH}.tar ]]; then docker load --input ~/docker/${CIRCLE_ELASTICSEARCH}.tar; fi
-    - if [[ -e ~/docker/${CIRCLE_NGNIX}.tar ]]; then docker load --input ~/docker/${CIRCLE_NGNIX}.tar; fi
-    - if [[ -e ~/docker/${CIRCLE_RUBY}.tar ]]; then docker load --input ~/docker/${CIRCLE_RUBY}.tar; fi
-    # Make sure circle project parallelism is set to at least 2 nodes.
     - | 
         if [[ "${CIRCLE_NODE_TOTAL}" -eq "1" ]]; then {
           echo "Parallelism [${CIRCLE_NODE_TOTAL}x] needs to be 2x to fasten execution time." 
           echo "You also need to set our circle env CIRCLE_PARALLEL [${CIRCLE_PARALLEL}] to true." 
         }; fi
-
-test:
   override:
     - ? >
         case $CIRCLE_NODE_INDEX in
@@ -79,6 +72,7 @@ test:
         esac
       : parallel: true
 
+
 deployment:
   push_tag_dev_master:
     branch:
@@ -101,6 +95,7 @@ deployment:
       - docker push "${DOCKER_IMAGE_NGINX}:latest"
       - docker push "${DOCKER_IMAGE_RUBY}:stable"
       - docker push "${DOCKER_IMAGE_RUBY}:latest"
+
 
 general:
   artifacts:
