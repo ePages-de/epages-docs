@@ -86,7 +86,6 @@ deployment:
       - develop
     commands:
       - docker login -u "${DOCKER_LOGIN_USERNAME}" -p "${DOCKER_LOGIN_PASSWORD}" -e "${DOCKER_LOGIN_EMAIL}" "${DOCKER_REGISTRY}"
-      # Push all images with branch name tags to the ePages Docker registry.
       - docker push "${DOCKER_IMAGE_ELASTICSEARCH}:${DOCKER_IMAGE_TAG}"
       - docker push "${DOCKER_IMAGE_NGINX}:${DOCKER_IMAGE_TAG}"
       - docker push "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}"
@@ -94,12 +93,10 @@ deployment:
     branch: master
     commands:
       - docker login -u "${DOCKER_LOGIN_USERNAME}" -p "${DOCKER_LOGIN_PASSWORD}" -e "${DOCKER_LOGIN_EMAIL}" "${DOCKER_REGISTRY}"
-      # Tag with 'stable' and 'latest'.
       - docker tag "${DOCKER_IMAGE_NGINX}:${DOCKER_IMAGE_TAG}" "${DOCKER_IMAGE_NGINX}:stable"
       - docker tag "${DOCKER_IMAGE_NGINX}:${DOCKER_IMAGE_TAG}" "${DOCKER_IMAGE_NGINX}:latest"
       - docker tag "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" "${DOCKER_IMAGE_RUBY}:stable"
       - docker tag "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" "${DOCKER_IMAGE_RUBY}:latest"
-      # Push all images tagged with 'stable' and 'latest' to the ePages Docker registry.
       - docker push "${DOCKER_IMAGE_NGINX}:stable"
       - docker push "${DOCKER_IMAGE_NGINX}:latest"
       - docker push "${DOCKER_IMAGE_RUBY}:stable"
