@@ -5,7 +5,7 @@ machine:
     - docker
   environment:
     # CircleCI runs tests in parallel.
-    CIRCLE_PARALLEL: false
+    CIRCLE_PARALLEL: true
     # Dedicated names for each Docker image.
     DOCS_ELASTICSEARCH: docs-elasticsearch
     DOCS_NGNIX: docs-ngnix
