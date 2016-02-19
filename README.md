@@ -50,13 +50,13 @@ $ echo "Open in browser: http://127.0.0.1:4000/"
 # On Mac (with one active docker machine)
 $ echo "Open in browser: http://$(docker-machine ip `docker-machine active`):4000/"
 
-# [Pull and] run container with default rake task (eq. build `_site` and serve via jekyll)
+# [Pull and] run container with default rake tasks (eq. jekyll build `_site` and jekyll serve)
 $ docker run --rm --volume=$(pwd):/usr/src/epages-docs -p 4000:4000 -it docker.epages.com/epages/docs-ruby
 ~~~
 
 #### Additional commands
 
-The optional <TAG> can be latest (default if not defined), develop, master or stable [or user-defined if build locally]. It represents the upstream branch in its current state.
+The optional Docker image `<TAG>` can be latest (default if not defined), develop, master or stable [or user-defined if build locally]. It represents the upstream branch in its current state.
 
 ~~~ bash
 # Pull image from registry 
