@@ -56,7 +56,7 @@ $ export IP=$(docker-machine ip `docker-machine active`)
 $ echo "Open in browser: http://${IP}:4000/"
 $ docker run --rm --volume=$(pwd):/usr/src/epages-docs -p ${IP}:4000:4000 -it docker.epages.com/epages/docs-ruby
 
-# Without repo: pull and run epages-docs from upstream branch (current state).
+# Pll and run epages-docs without local repo with current state of upstream branch
 $ docker run --rm -p 127.0.0.1:4000:4000 -it docker.epages.com/epages/docs-ruby:<BRANCH_NAME>
 
 # build image locally
