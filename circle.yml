@@ -4,7 +4,7 @@ machine:
   services:
     - docker
   environment:
-    # CircleCI runs tests with parallelism.
+    # CircleCI runs tests in parallel.
     CIRCLE_PARALLEL: false
     # Dedicated names for each Docker image.
     DOCS_ELASTICSEARCH: docs-elasticsearch
