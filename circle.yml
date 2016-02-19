@@ -41,7 +41,7 @@ dependencies:
 test:
   override:
     - ? >
-        case $CIRCLE_NODE_INDEX in
+        case ${CIRCLE_NODE_INDEX} in
         0)
           printf "\n%s\n\n" "=== TEST ngnix container with build site on host ==="
           bundle exec rake test
