@@ -7,29 +7,29 @@ categories: working-at-epages
 authors: ["Roger"]
 ---
 
-If you check our [epages](http://www.epages.com) website you will see that we have an office in Barcelona, WoW! Unlike other commercial offices we have a development team, double WoW!
-In this post I am going to explain what it means to live and work in Barcelona from an epages developer perspective.
+If you check our [ePages](http://www.epages.com) website you will see that we have an office in Barcelona, wow! Unlike other commercial offices we have a development team, double wow!
+In this post I am going to explain what it means to live and work in Barcelona from an ePages developer perspective.
 
 ## Life in Barcelona
 Apart from the weather, culture, night life and such a big football team, [Barça](http://fcbarcelona.com) of course, Barcelona is much more than that. It is the capital of Catalonia, it has almost all the Gaudí heritage, astonishing beaches (like Costa Brava) and big mountains (Pyrenees) in less than 2 hours by car or train. Life is not just working ;)
 {% image trivia.jpg %}{% endimage %}
 
 ### For developers
-As everybody knows Barcelona is one of the most important European cities in software development and hosts the Mobile World Congress, which brings amazing opportunities and projects to the city. This attracts talent which enriches the existing pool of [meet ups](http://www.meetup.com/cities/es/barcelona/) or technical events, where you can participate, learn or collaborate with your thoughts or ideas.
+As everybody knows, Barcelona is one of the most important European cities in software development and hosts the Mobile World Congress, which brings amazing opportunities and projects to the city. This attracts talent which enriches the existing pool of [meet ups](http://www.meetup.com/cities/es/barcelona/) or technical events, where you can participate, learn or collaborate with your thoughts or ideas.
 
 ## The office
 {% image bcn-barbecue.jpg 70% right %}{% endimage %}
-The office is located in the heart of Barcelona, in the Diagonal avenue, where it is full of shops, restaurants and good public transport connections. This excellent location offers us many different ways to come to the office in a decent time and choose what do you want to eat every day (Galician, French, Japanese or a mix of all of them!) or take away something to the office.
+The office is located in the heart of Barcelona, in the Diagonal avenue, where it is full of shops, restaurants and good public transport connections. This excellent location offers us many different ways to come to the office in a decent time and choose what you'd like to eat every day (Galician, French, Japanese or a mix of all of them!) or take away something to the office.
 The environment in the bureau is nice, right now we are 14 people from 4 different countries and 5 speaking languages, divided in 5 departments (admin, design, development, marketing, and sales).
 Every Friday morning we have the **tea time** where we all meet to talk about our 'things' and each team is responsible for presenting their last projects.
 
 ### Events
-In regular basis we organise after hours activities like lunches, dinners or sailing days!!!
-the company organises other events such as the ePagesYou, which is the convention of the company and takes place in Hamburg, and the Hackathon, when all developers meet for 2 days to create apps for our appstore.
+On regular basis we organise after hours activities like lunches, dinners or sailing days!!!
+The company organises other events such as the ePagesYou, which is the convention of the company and takes place in Hamburg. And internal hackathons, where all developers meet for 2 days to just hack away on topics that are of benefit for the company, but not related to the daily business.
 
 ## Team
-Our team consists of 4 engineers, we are looking for a [QA](http://www.epages.com/en/career/jobs/QA_BCN-HH.php) and two more [developers](http://www.epages.com/en/career/jobs/software-developer.php). The QA, Scrum Master and Product Owner are located in Hamburg and support us in our daily basis work.
-Our team is responsible, together with another team in Hamburg, for the connectors to the e-commerce platform, such as payments, shippings and others.
+Our team currently consists of 4 engineers. But we are looking for a [QA](http://www.epages.com/en/career/jobs/QA_BCN-HH.php) and two more [developers](http://www.epages.com/en/career/jobs/software-developer.php). The QA, Scrum Master and Product Owner are located in Hamburg and support us in our daily basis work.
+Our team, together with another team in Hamburg, is responsible for the connectors to the e-commerce platform, such as payments, shippings and others.
 
 Also, as in the company we try to do our best to be as **Agile** as possible, we follow the **Scrum** principles, we do **pair programming**, we share our knowledge in daily code reviews, we do presentations, etc.
 
