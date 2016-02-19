@@ -95,5 +95,8 @@ is licensed under [CC-BY-4.0][license-cc-by-40]. The logos in the folder `assets
 [vagrant]: https://www.vagrantup.com/
 [virtualbox]: https://www.virtualbox.org/
 
+[docker]: https://www.docker.com/
+[docker-engine]: https://docs.docker.com/engine/installation/
+
 [license-cc-by-40]: http://creativecommons.org/licenses/by/4.0/
 [license-mit]: http://opensource.org/licenses/MIT
