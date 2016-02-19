@@ -28,7 +28,7 @@ machine:
     DOCKER_HUB_ELASTICSEARCH: choffmeister/elasticsearch-prefilled:latest
 
 
-test:
+dependencies:
   pre:
     - docker info
     - | 
@@ -36,6 +36,9 @@ test:
           echo "Parallelism [${CIRCLE_NODE_TOTAL}x] needs to be 2x to fasten execution time." 
           echo "You also need to set our circle env CIRCLE_PARALLEL [${CIRCLE_PARALLEL}] to true." 
         }; fi
+
+
+test:
   override:
     - ? >
         case $CIRCLE_NODE_INDEX in
