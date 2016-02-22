@@ -1,4 +1,2 @@
 User-agent: *
-Disallow: /apps/
-Disallow: /soap/
 Disallow: /themes/
