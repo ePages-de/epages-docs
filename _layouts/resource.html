@@ -93,6 +93,26 @@ layout: page
     {% if body.example %}
       <pre class="pre-scrollable">{{ body.example }}</pre>
     {% endif %}
+    {% if body.form_parameters %}
+      <table class="table table-bordered table-striped">
+        <thead style="background-color: white;">
+        <tr><th>Name</th><th>Type</th><th>Description</th></tr>
+        </thead>
+        <tbody>
+        {% for elem in body.form_parameters %}
+          {% assign param = elem[1] %}
+          <tr>
+            <td><code>{{ param.name }}</code></td>
+            <td><strong>{{ param.type }}</strong></td>
+            <td>
+              <div>{{ param.description | markdownify }}</div>
+              <div>Required: <code>{{ p.required }}</code></div>
+            </td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    {% endif %}
   {% endfor %}
 {% endif %}
 

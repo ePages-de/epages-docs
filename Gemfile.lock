@@ -34,6 +34,7 @@ GEM
       multipart-post (>= 1.2, < 3)
     fast-stemmer (1.0.2)
     ffi (1.9.6)
+    gemoji (2.1.0)
     hitimes (1.2.2)
     html-proofer (2.0.6)
       addressable (~> 2.3)
@@ -125,6 +126,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  gemoji
   html-proofer (~> 2.0.6)
   jekyll (~> 2.5.3)
   jekyll_search (~> 0.0.5)
@@ -133,3 +135,6 @@ DEPENDENCIES
   raml_parser (~> 0.2.5)
   rubyzip (~> 1.1.7)
   therubyracer (~> 0.12.1)
+
+BUNDLED WITH
+   1.11.2
