@@ -8,13 +8,13 @@ chown -R root:root ${EPAGES_DOCS}
 
 # If the first argument is rake
 # then set exec with all given args.
-if [[ "${1}" = 'rake' ]]; then
+if [[ "${1}" == "rake" ]]; then
     set "${@}"
 fi
 
 # If the first argument is test, build or index 
 # then set exec to prepend with rake.
-if [[ "${1}" =~ ^.*(test)|(build)|(index).*$ ]]; then
+if [[ "${1}" =~ ^.*(test)|(build)|(index)|(serve).*$ ]]; then
     set rake "${@}"
 fi
 
