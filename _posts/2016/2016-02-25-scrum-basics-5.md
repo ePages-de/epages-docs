@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Scrum Basics Series - Part 5: Principles and Values"
-date: "2016-02-26 07:23:00"
+date: "2016-02-25 07:23:00"
 icon: university
 categories: agile
 authors: ["Anja B."]
