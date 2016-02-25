@@ -125,15 +125,15 @@ This object is used for the attributes of links.
 | - | :-: |  - |
 | orderId | string | The unique identifier of the order. |
 | orderNumber | string | The order number. |
-| creationDate | datetime | The date/time of order placement. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z` |
+| creationDate | string | The date/time of order placement. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z` |
 | billingAddress | [address](page:apps-data-types#address) | The billing address for the order.  |
 | shippingAddress | [address](page:apps-data-types#address) | The shipping address for the order.  |
-| invoicedOn | datetime | The date/time the order was invoiced. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
-| delievereOn | datetime | The date/time the order was delivered. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
-| pendingOn | datetime | The date/time the order was set to pending. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
-| archivedOn | datetime | The date/time the order was archived. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
-| dispatchedOn | datetime | The date/time the order was dispatched. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
-| viewedOn | datetime | The date/time the order was viewed. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
+| invoicedOn | string | The date/time the order was invoiced. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
+| delievereOn | string | The date/time the order was delivered. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
+| pendingOn | string | The date/time the order was set to pending. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
+| archivedOn | string | The date/time the order was archived. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
+| dispatchedOn | string | The date/time the order was dispatched. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
+| viewedOn | string | The date/time the order was viewed. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
 | customerId | string | The unique identifier of the customer.  |
 | locale | string | The locale that identifies the origin of the customer.  |
 | currencyId | string | The unique identifier of the currency used for payment.  |
@@ -142,10 +142,10 @@ This object is used for the attributes of links.
 | totalBeforeTax | string | The total cost of the order before tax is applied.  |
 | internalNote | string | Internal notes for the order done by the merchant.  |
 | customerComment | string | Notes on the order from the customer. Can also be amended by the merchant in the administration.  |
-| rejectedOn | datetime | The date/time the order was rejected. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
-| closedOn | datetime | The date/time the order was closed. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
-| paidOn | datetime | The date/time the order was paid. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
-| returnedOn | datetime | The date/time the order was returned. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
+| rejectedOn | string | The date/time the order was rejected. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
+| closedOn | string | The date/time the order was closed. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
+| paidOn | string | The date/time the order was paid. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
+| returnedOn | string | The date/time the order was returned. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
 | shippingData | object of [shippingData](page:apps-data-types#shippingdata) | The shipping data of the order, i.e. short info on shipping method and price.|
 | paymentData | object of [paymentData](page:apps-data-types#paymentdata) | The payment data of the order, i.e. short info on payment method and price.|
 | lineItemContainer | [lineItemContainer](page:apps-data-types#lineitemcontainer) | Contains the line items of an order.  |
@@ -216,6 +216,8 @@ This object is used for the attributes of product.
 | manufacturer | string | The manufacturer of the product. |
 | upc | string | The Universal Product Code of the product. |
 | ean | string | The European Article Number of the product, either EAN-8 or EAN-13. |
+| essentialFeatures | string | The essential features of the product. |
+| searchKeywords | array of strings | The search terms for the product determined by the merchant in the administration.  |
 
 ## productLineItem
 
@@ -281,6 +283,13 @@ This object is used for the attributes of deliveryWeight and quantity.
 | name | string | The name of the shipping method chosen by the customer.|
 | description | string | The description of the shipping method.|
 | logo | string | The logo of the shipping method. |
+
+## updatedProducts
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| item | object of [product](page:apps-data-types#product) | The data of the product. |
+| lastUpdated | string | The date/time the product was last updated. Expressed according to ISO 8601. Example: `2016-02-25T08:49:31Z`|
 
 ## variation
 
