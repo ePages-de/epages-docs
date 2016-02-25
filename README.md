@@ -1,6 +1,8 @@
 # epages-docs
 
-[![Circle CI](https://circleci.com/gh/ePages-de/epages-docs/tree/master.svg?style=svg)](https://circleci.com/gh/ePages-de/epages-docs/tree/master)
+| `dev` | `master` |
+| :---: | :-------:|
+| [![Circle CI](https://circleci.com/gh/ePages-de/epages-docs/tree/master.svg?style=svg)](https://circleci.com/gh/ePages-de/epages-docs/tree/dev) | [![Circle CI](https://circleci.com/gh/ePages-de/epages-docs/tree/master.svg?style=svg)](https://circleci.com/gh/ePages-de/epages-docs/tree/master) |
 
 ## Usage
 
@@ -37,6 +39,50 @@ You can use this [shell script][bootstrap-linux] to turn your laptop into an awe
 
 TODO
 
+## Run in Docker
+
+If you don't like to bootstrap your machine you can also run a [Docker][docker] container for development by invoking a single command only. The container will be pulled from our registry. You need to have [Docker Engine][docker-engine] installed first.
+
+~~~ bash
+# On Linux
+$ echo "Open in browser: http://127.0.0.1:4000/"
+
+# On Mac (with one active docker machine)
+$ echo "Open in browser: http://$(docker-machine ip `docker-machine active`):4000/"
+
+# [Pull and] run container with default rake task (eq. build `_site` and serve via jekyll)
+$ docker run --rm --volume=$(pwd):/usr/src/epages-docs -p 4000:4000 -it docker.epages.com/epages/docs-ruby
+~~~
+
+#### Additional commands
+
+The optional <TAG> can be latest (default if not defined), develop, master or stable [or user-defined if build locally]. It represents the upstream branch in its current state.
+
+~~~ bash
+# Pull image from registry 
+$ docker pull docker.epages.com/epages/docs-ruby:<TAG>
+
+# [Pull and] run epages-docs
+$ docker run --rm -p 4000:4000 -it docker.epages.com/epages/docs-ruby:<TAG>
+
+# Build image locally
+$ docker build -t docker.epages.com/epages/docs-ruby:<TAG> -f Dockerfile.ruby .
+
+# Just build the _site dir at the mounted local repo on your host
+$ docker run --rm --volume=$(pwd):/usr/src/epages-docs -p 4000:4000 -it docker.epages.com/epages/docs-ruby:<TAG> build
+
+# Login to container pseudo-terminal, which works like a normal debian vm. 
+# Hint: cd $EPAGES_DOCS to get back to the workdir.
+$ docker run --rm --volume=$(pwd):/usr/src/epages-docs -p 4000:4000 -it docker.epages.com/epages/docs-ruby:<TAG> bash
+~~~
+
+#### Tips
+
+* By appending arguments after the image name at the listed `docker run` commands you may execute other rake tasks (e.g. `rake test`, `rake build`, `rake serve` or in short: `test`, `build`, `serve`) as well as connect (e.g. `bash`) into the pseudo-terminal inside the container and do whatever you want.
+* When running the container with a mounted host dir the `_site` dir will be created on the host with docker access rights (user ids from the inside the container). You may sanitize this with `sudo chown -R $USER:$USER _site` afterwards or just remove it as root `sudo rm _site`.
+* `docker pull/run` of containers from our registry works without login inside our DMZ. From outside you first need to run `docker login` accordingly.
+* Caution: For keeping things simple we run all commands inside the ruby container as root. In a production environment you would have to serve the jekyll site with user only privileges of course.
+
 ## License
 
 This project comprises different licenses: The editorial content in the folders
@@ -58,6 +104,9 @@ is licensed under [CC-BY-4.0][license-cc-by-40]. The logos in the folder `assets
 
 [vagrant]: https://www.vagrantup.com/
 [virtualbox]: https://www.virtualbox.org/
+
+[docker]: https://www.docker.com/
+[docker-engine]: https://docs.docker.com/engine/installation/
 
 [license-cc-by-40]: http://creativecommons.org/licenses/by/4.0/
 [license-mit]: http://opensource.org/licenses/MIT
