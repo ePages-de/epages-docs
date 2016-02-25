@@ -65,7 +65,7 @@ test:
           docker build -t "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" -f "${DOCKERFILE_RUBY}" .
           docker run --name "${DOCS_RUBY}" -p "${DOCS_RUBY_BIND_ADDRESS}:4000" --volume=$(pwd):"${DOCS_RUBY_VOL}" -it -d "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}"
           sleep 50
-          curl --silent "${DOCS_RUBY_BIND_ADDRESS}" | grep -q "blog" && print " ---> Served jekyll site is OK"
+          curl --silent "${DOCS_RUBY_BIND_ADDRESS}" | grep -q "blog" && print " ---> Jekyll serve site is OK" || { print "---> Jekyll serve site FAILED"; exit 1; }
           docker stop "${DOCS_RUBY}"
           printf "\n%s\n\n" "=== SUCCESS ==="
           printf "\n%s\n\n" "=== ARCHIVE site artifacts of ruby container ==="
