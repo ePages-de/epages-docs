@@ -129,7 +129,7 @@ This object is used for the attributes of links.
 | billingAddress | [address](page:apps-data-types#address) | The billing address for the order.  |
 | shippingAddress | [address](page:apps-data-types#address) | The shipping address for the order.  |
 | invoicedOn | datetime | The date/time the order was invoiced. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
-| shippedOn | datetime | The date/time the order was shipped. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
+| delievereOn | datetime | The date/time the order was delivered. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
 | pendingOn | datetime | The date/time the order was set to pending. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
 | archivedOn | datetime | The date/time the order was archived. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
 | dispatchedOn | datetime | The date/time the order was dispatched. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
@@ -142,7 +142,7 @@ This object is used for the attributes of links.
 | totalBeforeTax | string | The total cost of the order before tax is applied.  |
 | internalNote | string | Internal notes for the order done by the merchant.  |
 | customerComment | string | Notes on the order from the customer. Can also be amended by the merchant in the administration.  |
-| cancelledOn | datetime | The date/time the order was cancelled. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
+| rejectedOn | datetime | The date/time the order was rejected. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
 | closedOn | datetime | The date/time the order was closed. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
 | paidOn | datetime | The date/time the order was paid. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
 | returnedOn | datetime | The date/time the order was returned. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
