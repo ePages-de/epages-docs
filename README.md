@@ -56,7 +56,7 @@ $ docker run --rm --volume=$(pwd):/usr/src/epages-docs -p 4000:4000 -it docker.e
 
 #### Additional commands
 
-The optional `<TAG>` can be latest (default if not defined), develop, master or stable [or user-defined if build locally]. It represents the upstream branch in its current state.
+The optional Docker image `<TAG>` can be latest (default if not defined), develop, master or stable [or user-defined if build locally]. It represents the upstream branch in its current state.
 
 ~~~ bash
 # Pull image from registry 
