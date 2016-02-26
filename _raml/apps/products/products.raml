@@ -95,7 +95,18 @@ get:
   /variations:
     displayName: Product variations
     get:
-      is: [ locale, paged ]
+      is: [ locale ]
+      queryParameters:
+        page:
+          description: Represents the current page.
+          type: integer
+          minimum: 1
+          default: 1
+        resultsPerPage:
+          description: Specifies the maximum number of results per page.
+          type: integer
+          default: 100
+          maximum: 1000
       description: Returns links to product variations in a paged item list.<br/>
         "name" and "value" are used to find a matching variation for the user's selection.
         Note that the default resultsPerPage is 100 and max resultsPerPage is 1000 for this resource.
