@@ -10,6 +10,17 @@ In order to keep track of these changes we recommend you to follow [@epagesdevs]
 
 <hr>
 
+## 2016-02-25
+
+### Latest changes with software release 6.17.41
+
+* [`GET` products/updated/{productProperty}](https://developer.epages.com/apps/api-reference/get-shops-shopid-products-updated-productproperty.html)
+* Renamed attribute `cancelledOn` to `rejectedOn` as well as attribute `shippedOn` to `deliveredOn` within **orders** calls
+* Added attribute `customerNumber` to [`GET` orders](https://developer.epages.com/apps/api-reference/get-shops-shopid-orders.html) and [`GET` orders/{orderId}](https://developer.epages.com/apps/api-reference/get-shops-shopid-orders-orderid.html)
+
+
+<hr>
+
 ## 2016-02-18
 
 ### Latest changes with software release 6.17.40
@@ -23,7 +34,7 @@ In order to keep track of these changes we recommend you to follow [@epagesdevs]
 ### Latest changes with software release 6.17.39
 
 * [`GET` shop information](https://developer.epages.com/apps/api-reference/get-shops-shopid.html)
-* [`PATCH` product](https://developer.epages.com/apps/api-reference/patch-shops-shopid-products-productid.html)
+* [`PATCH` products](https://developer.epages.com/apps/api-reference/patch-shops-shopid-products-productid.html)
 * [`POST` slideshow](https://developer.epages.com/apps/api-reference/post-shops-shopid-products-productid-slideshow.html)
 * [`GET` slideshow/sequence](https://developer.epages.com/apps/api-reference/get-shops-shopid-products-productid-slideshow-sequence.html)
 * [`DELETE` slideshow/{imageName}](https://developer.epages.com/apps/api-reference/delete-shops-shopid-products-productid-slideshow-imagename.html)

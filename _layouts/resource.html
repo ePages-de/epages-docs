@@ -74,8 +74,8 @@ layout: page
           <div>Required: <code>{{ p.required }}</code></div>
           {% if p.example %}<div>Example: <code>{{ p.example }}</code></div>{% endif %}
           {% if p.default %}<div>Default: <code>{{ p.default }}</code></div>{% endif %}
-          {% if p.minimum %}<div>Minimum: {{ p.minimum }}</div>{% endif %}
-          {% if p.maximum %}<div>Maximum: {{ p.maximum }}</div>{% endif %}
+          {% if p.minimum %}<div>Minimum: <code>{{ p.minimum }}</code></div>{% endif %}
+          {% if p.maximum %}<div>Maximum: <code>{{ p.maximum }}</code></div>{% endif %}
           {% if p.repeat %}<div>Repeat: <code>{{ p.repeat | join:',' }}</code></div>{% endif %}
           {% if p.enum != empty %}<div>Enum: <code>{{ p.enum | join:',' }}</code></div>{% endif %}
         </td>
