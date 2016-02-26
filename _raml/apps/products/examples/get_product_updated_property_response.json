@@ -1,0 +1,98 @@
+{
+  "results": 1,
+  "page": 1,
+  "resultsPerPage": 10,
+  "items": [
+    {
+      "item": {
+        "productId": "51E7F905-2E4C-78C2-30C2-AC14145FA4E5",
+        "name": "Dr.Boom - Red Power",
+        "shortDescription": null,
+        "description": "<ul>\n\t<li>Surround Sound</li>\n\t<li>Acoustic Noise Cancelling</li>\n\t<li>Correct fit",
+        "productImage": "013-headphone-red.jpg",
+        "images": [
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F905/2E4C/78C2/30C2/AC14/145F/A4E5/013-headphone-red_h.jpg",
+            "classifier": "HotDeal"
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F905/2E4C/78C2/30C2/AC14/145F/A4E5/013-headphone-red_m.jpg",
+            "classifier": "Medium"
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F905/2E4C/78C2/30C2/AC14/145F/A4E5/013-headphone-red.jpg",
+            "classifier": "Large"
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F905/2E4C/78C2/30C2/AC14/145F/A4E5/013-headphone-red_s.jpg",
+            "classifier": "Small"
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F905/2E4C/78C2/30C2/AC14/145F/A4E5/013-headphone-red_xs.jpg",
+            "classifier": "Thumbnail"
+          }
+        ],
+        "priceInfo": {
+          "quantity": {
+            "amount": 1,
+            "unit": "piece(s)"
+          },
+          "price": {
+            "taxType": "GROSS",
+            "formatted": "65.00 €",
+            "amount": 65,
+            "currency": "EUR"
+          },
+          "depositPrice": null,
+          "ecoParticipationPrice": null,
+          "priceWithDeposits": {
+            "taxType": "GROSS",
+            "formatted": "65.00 €",
+            "amount": 65,
+            "currency": "EUR"
+          },
+          "manufacturerPrice": null,
+          "basePrice": null
+        },
+        "forSale": true,
+        "specialOffer": false,
+        "deliveryWeight": {
+          "amount": 260,
+          "unit": "g"
+        },
+        "shippingMethodsRestrictedTo": null,
+        "availabilityText": "In stock<br />can be shipped within 3-5 days",
+        "availability": "OnStock",
+        "energyLabelsString": null,
+        "energyLabelSourceFile": null,
+        "productDataSheet": null,
+        "sfUrl": "http://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/Products/HP-003",
+        "productNumber": "HP-003",
+        "manufacturer": "Bass by Dr.Boom",
+        "upc": null,
+        "ean": null,
+        "essentialFeatures": "Surround Sound\r\nAcoustic Noise Cancelling\r\nCorrect fit",
+        "searchKeywords": [
+          "Surround Sound",
+          "Acoustic Noise Cancelling",
+          "Correct fit"
+        ],
+        "links": [
+          {
+            "rel": "self",
+            "href": "https://pm.epages.com/rs/shops/apidocu/products/51E7F905-2E4C-78C2-30C2-AC14145FA4E5"
+          },
+          {
+            "rel": "custom-attributes",
+            "href": "https://pm.epages.com/rs/shops/apidocu/products/51E7F905-2E4C-78C2-30C2-AC14145FA4E5/custom-attributes"
+          },
+          {
+            "rel": "categories",
+            "href": "https://pm.epages.com/rs/shops/apidocu/products/51E7F905-2E4C-78C2-30C2-AC14145FA4E5/categories"
+          }
+        ]
+      },
+      "lastUpdated": "2016-02-25T08:49:31Z"
+    }
+  ]
+}

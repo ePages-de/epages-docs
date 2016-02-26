@@ -6,16 +6,16 @@ get:
   is: [ locale, currency, paged, direction ]
   queryParameters:
     sort:
-      description: Sort products by attribute.
+      description: Sorts products by attribute.
       enum: [name, price]
       default: name
       example: name
       required : false
     q:
-      description: Filter products by query string.
+      description: Filters products by query string.
       required : false
     categoryId:
-      description: Filter products by category ID.
+      description: Filters products by category ID.
       required : false
     id:
       description: The ID of the product.<br/>
@@ -228,3 +228,23 @@ get:
             application/json:
               example: !include examples/put_product_productid_stocklevel_response.json
               schema: !include schema/put_product_productid_stocklevel.schema.json
+/updated/{productProperty}:
+  displayName: Updated products
+  uriParameters:
+    productProperty:
+      description: The updated product property or attribute. *Attributes* refers to all *attributes* the REST API returns, except for *stocklevel*. *Stocklevel* has to be queried separately.
+      enum: [attributes, stocklevel]
+  get:
+    description: Returns all updated products together with the time of their last update.
+    is: [ locale, currency ]
+    securedBy: [products_write]
+    queryParameters:
+      changedAfter:
+        description: Filters the last changes of a product property after this timestamp (format according to ISO 8601, e.g. 2016-02-26T10:53:49). By default we return the last 7 days.
+        required: false
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include examples/get_product_updated_property_response.json
+            schema: !include schema/get_product_updated_property.schema.json
