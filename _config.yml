@@ -22,7 +22,7 @@ markdown: kramdown
 exclude:
   - circle.yml
   - docker-compose.yml
-  - Dockerfile.ngnix
+  - Dockerfile.nginx
   - Dockerfile.ruby
   - Gemfile
   - Gemfile.lock
