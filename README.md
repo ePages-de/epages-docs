@@ -47,7 +47,7 @@ If you don't like to bootstrap your machine you can also run a [Docker][docker] 
 # On Linux
 $ echo "Open in browser: http://127.0.0.1:4000/"
 
-# On Mac (with one active docker machine)
+# On Mac OS X (with one active docker machine)
 $ echo "Open in browser: http://$(docker-machine ip `docker-machine active`):4000/"
 
 # [Pull and] run container with mounting your local repo
