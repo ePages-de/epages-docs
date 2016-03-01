@@ -8,7 +8,7 @@ chown -R root:root ${EPAGES_DOCS}
 
 # If the first argument is test, build, index or serve 
 # then set exec to prepend with rake.
-if [[ "${1}" =~ ^.*(test)|(build)|(index)|(serve).*$ ]]; then
+if [[ "${1}" =~ ^.*(build)|(docker)|(emoji)|(index)|(serve)|(test).*$ ]]; then
     set rake "${@}"
 fi
 

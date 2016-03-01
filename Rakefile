@@ -383,7 +383,13 @@ task :serve do
 end
 
 task :serve_localhost do
-  sh "bundle exec jekyll serve --host 0.0.0.0 --watch"
+  sh "bundle exec jekyll serve --skip-initial-build --watch --host 0.0.0.0"
+end
+
+task :docker do
+  Rake::Task["build"].invoke
+  Rake::Task["emoji"].invoke
+  Rake::Task["serve_localhost"].invoke
 end
 
 task :default do
