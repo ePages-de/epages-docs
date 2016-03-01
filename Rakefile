@@ -382,6 +382,10 @@ task :serve do
   sh "bundle exec jekyll serve --skip-initial-build --watch"
 end
 
+task :serve_localhost do
+  sh "bundle exec jekyll serve --host 0.0.0.0 --watch"
+end
+
 task :default do
   Rake::Task["build"].invoke
   Rake::Task["emoji"].invoke
