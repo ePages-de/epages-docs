@@ -41,7 +41,7 @@ TODO
 
 ## Run in Docker
 
-If you don't like to bootstrap your machine you can also run a [Docker][docker] container for development by invoking a single command only. The container will be pulled from our registry. You need to have [Docker Engine][docker-engine] installed first. The standard command of the container is `rake` (eq. jekyll build `_site` dir and jekyll serve).
+If you don't like to bootstrap your machine you can also run a [Docker][docker] container for development by invoking a single command only. The container will be pulled from our registry. You need to have [Docker Engine][docker-engine] installed first. The standard command of the container is `rake docker` (eq. jekyll build `_site` dir, render emojis and jekyll serve on localhost).
 
 ~~~ bash
 # On Linux
@@ -68,7 +68,7 @@ $ docker run --rm -p 4000:4000 -it docker.epages.com/epages/docs-ruby:<TAG>
 # Build image locally
 $ docker build -t docker.epages.com/epages/docs-ruby:<TAG> -f Dockerfile.ruby .
 
-# Just build the _site dir at the mounted local repo on your host
+# Just build the _site dir in the mounted local repo on your host
 $ docker run --rm --volume=$(pwd):/usr/src/epages-docs -p 4000:4000 -it docker.epages.com/epages/docs-ruby:<TAG> build
 
 # Login to container pseudo-terminal, which works like a normal debian vm. 
@@ -78,7 +78,7 @@ $ docker run --rm --volume=$(pwd):/usr/src/epages-docs -p 4000:4000 -it docker.e
 
 #### Tips
 
-* By appending arguments after the image name at the listed `docker run` commands you may execute other rake tasks (e.g. `rake test`, `rake build`, `rake serve` or in short: `test`, `build`, `serve`) as well as connect (e.g. `bash`) into the pseudo-terminal inside the container and do whatever you want.
+* By appending arguments after the image name at the listed `docker run` commands you may execute other rake tasks individually (e.g. `rake test`, `rake build`, `rake emoji`, `rake serve_localhost` or in short: `test`, `build`, `emoji`, `serve_localhost`) as well as connect (e.g. `bash`) into the pseudo-terminal inside the container and do whatever you want.
 * When running the container with a mounted host dir the `_site` dir will be created on the host with docker access rights (eq. user id from inside the container). You may sanitize your host dir with `sudo chown -R $USER:$USER _site` afterwards or just remove it as root `sudo rm _site`.
 * `docker pull/run` of containers from our registry works without login inside our DMZ. From outside you first need to run `docker login` accordingly.
 * Caution: For keeping things simple we run all commands inside the ruby container as root. In a production environment you would have to serve the jekyll site with user only privileges of course.
