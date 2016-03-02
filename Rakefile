@@ -369,6 +369,6 @@ task :serve do
 end
 
 task :default do
-  Rake::Task["build"].invoke
+  Rake::Task["test"].invoke
   Rake::Task["serve"].invoke
 end
