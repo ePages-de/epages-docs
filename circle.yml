@@ -41,8 +41,7 @@ dependencies:
 test:
   override:
     - ? >
-        set -e
-        case ${CIRCLE_NODE_INDEX} in
+        set -e; case ${CIRCLE_NODE_INDEX} in
         0)
           printf "\n%s\n\n" "=== TEST nginx container with rake test, index and build site on host ==="
           bundle exec rake test
