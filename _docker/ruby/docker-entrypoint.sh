@@ -17,6 +17,8 @@ fi
 if [[ "${1}" == "rake" ]]; then
     # Make sure new gems of the mounted local repo are added.
     bundle install
+    # Check the syntax of all files.
+    bundle exec rake test
     set "${@}"
 fi
 

@@ -43,15 +43,15 @@ test:
     - ? >
         case ${CIRCLE_NODE_INDEX} in
         0)
-          printf "\n%s\n\n" "=== TEST nginx container with build site on host ==="
-          bundle exec rake test
+          printf "\n%s\n\n" "=== TEST nginx container with test, index and build site on host ==="
+          bundle exec rake test && echo " ---> The task rake test is OK" || { echo " ---> The task rake test FAILED"; exit 1; }
           docker run --name "${DOCS_ELASTICSEARCH}" -p 9200:9200 -d "${DOCKER_HUB_ELASTICSEARCH}"
           sleep 10
-          bundle exec rake index
+          bundle exec rake index && echo " ---> The task rake index is OK" || { echo " ---> The task rake index FAILED"; exit 1; }
           sleep 10
           docker stop "${DOCS_ELASTICSEARCH}"
           docker commit "${DOCS_ELASTICSEARCH}" "${DOCKER_IMAGE_ELASTICSEARCH}:${DOCKER_IMAGE_TAG}"
-          bundle exec rake build
+          bundle exec rake build && echo " ---> The task rake build is OK"  || { echo " ---> The task rake build FAILED"; exit 1; }
           docker build -t "${DOCKER_IMAGE_NGINX}:${DOCKER_IMAGE_TAG}" -f "${DOCKERFILE_NGINX}" .
           printf "\n%s\n\n" "=== SUCCESS ==="
           printf "\n%s\n\n" "=== ARCHIVE site artifacts of nginx container ==="
