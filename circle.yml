@@ -43,16 +43,16 @@ test:
     - ? >
         case ${CIRCLE_NODE_INDEX} in
         0)
-          printf "\n%s\n\n" "=== TEST nginx container with test, index and build site on host ==="
+          printf "\n%s\n\n" "=== TEST nginx container with rake test, index and build site on host ==="
           bundle exec rake test && echo " ---> The task rake test is OK" || { echo " ---> The task rake test FAILED"; exit 1; }
-          docker run --name "${DOCS_ELASTICSEARCH}" -p 9200:9200 -d "${DOCKER_HUB_ELASTICSEARCH}"
+          docker run --name "${DOCS_ELASTICSEARCH}" -p 9200:9200 -d "${DOCKER_HUB_ELASTICSEARCH}" || exit 1
           sleep 10
           bundle exec rake index && echo " ---> The task rake index is OK" || { echo " ---> The task rake index FAILED"; exit 1; }
           sleep 10
-          docker stop "${DOCS_ELASTICSEARCH}"
-          docker commit "${DOCS_ELASTICSEARCH}" "${DOCKER_IMAGE_ELASTICSEARCH}:${DOCKER_IMAGE_TAG}"
+          docker stop "${DOCS_ELASTICSEARCH}" || exit 1
+          docker commit "${DOCS_ELASTICSEARCH}" "${DOCKER_IMAGE_ELASTICSEARCH}:${DOCKER_IMAGE_TAG}" || exit 1
           bundle exec rake build && echo " ---> The task rake build is OK"  || { echo " ---> The task rake build FAILED"; exit 1; }
-          docker build -t "${DOCKER_IMAGE_NGINX}:${DOCKER_IMAGE_TAG}" -f "${DOCKERFILE_NGINX}" .
+          docker build -t "${DOCKER_IMAGE_NGINX}:${DOCKER_IMAGE_TAG}" -f "${DOCKERFILE_NGINX}" . || exit 1
           printf "\n%s\n\n" "=== SUCCESS ==="
           printf "\n%s\n\n" "=== ARCHIVE site artifacts of nginx container ==="
           mkdir -v -p "${CIRCLE_ARTIFACTS}/${DOCS_NGINX}"
@@ -62,12 +62,12 @@ test:
           ;&
         1)
           printf "\n%s\n\n" "=== TEST build ruby container ==="
-          docker build -t "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" -f "${DOCKERFILE_RUBY}" .
+          docker build -t "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" -f "${DOCKERFILE_RUBY}" . || exit 1
           printf "\n%s\n\n" "=== TEST run ruby container and CHECK availibility of site ==="
-          docker run --name "${DOCS_RUBY}" -p "${DOCS_RUBY_BIND_ADDRESS}:4000" --volume=$(pwd):"${DOCS_RUBY_VOL}" -it -d "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}"
+          docker run --name "${DOCS_RUBY}" -p "${DOCS_RUBY_BIND_ADDRESS}:4000" --volume=$(pwd):"${DOCS_RUBY_VOL}" -it -d "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" || exit 1
           sleep 50
           curl --silent "${DOCS_RUBY_BIND_ADDRESS}" | grep -q "blog" && echo " ---> Site response is OK" || { echo " ---> Site response FAILED"; exit 1; }
-          docker stop "${DOCS_RUBY}"
+          docker stop "${DOCS_RUBY}" || exit 1
           printf "\n%s\n\n" "=== SUCCESS ==="
           printf "\n%s\n\n" "=== ARCHIVE site artifacts of ruby container ==="
           mkdir -v -p "${CIRCLE_ARTIFACTS}/${DOCS_RUBY}"
