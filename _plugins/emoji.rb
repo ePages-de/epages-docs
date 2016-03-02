@@ -9,7 +9,7 @@ module Jekyll
     end
 
     def render(context)
-      @emoji ? "<img alt=\"#{$1}\" src=\"/assets/images/emoji/#{@emoji.image_filename}\" style=\"vertical-align:sub\" width=\"20\" height=\"20\"/>" : ":#{@emoji_alias}:"
+      @emoji ? "<img alt=\":#{@emoji_alias}:\" src=\"/assets/images/emoji/#{@emoji.image_filename}\" style=\"vertical-align:sub\" width=\"20\" height=\"20\"/>" : ":#{@emoji_alias}:"
     end
   end
 end
