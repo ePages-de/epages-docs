@@ -15,7 +15,10 @@ fi
 # If the first argument is rake
 # then set exec with all given args.
 if [[ "${1}" == "rake" ]]; then
-	bundle install
+    # Make sure new gems of the mounted local repo are added.
+    bundle install
+    # Test the syntax of all files.
+    bundle exec rake test
     set "${@}"
 fi
 
