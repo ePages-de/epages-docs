@@ -43,8 +43,9 @@ test:
     - ? >
         case ${CIRCLE_NODE_INDEX} in
         0)
+          set -e
           printf "\n%s\n\n" "=== TEST nginx container with rake test, index and build site on host ==="
-          bundle exec rake test && echo " ---> The task rake test is OK" || { echo " ---> The task rake test FAILED"; exit 1; }
+          bundle exec rake test
           docker run --name "${DOCS_ELASTICSEARCH}" -p 9200:9200 -d "${DOCKER_HUB_ELASTICSEARCH}" || exit 1
           sleep 10
           bundle exec rake index && echo " ---> The task rake index is OK" || { echo " ---> The task rake index FAILED"; exit 1; }
