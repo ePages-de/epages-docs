@@ -356,20 +356,6 @@ title: Miscellaneous
   new_miscellaneous(ENV['misc'].split(",")) if ENV['misc']
 end
 
-task :emoji do
-  require 'emoji'
-  Dir.glob("_site/**/*.*") do |file|
-    if File.extname(file) == '.html'
-      text = File.read(file)
-      new_content = text.gsub(/:(\w+):/) do
-        emoji = Emoji.find_by_alias($1)
-        emoji ? "<img alt=\"#{$1}\" src=\"/assets/images/emoji/#{emoji.image_filename}\" style=\"vertical-align:sub\" width=\"20\" height=\"20\"/>" : "#{$1}"
-      end
-      File.write(file, new_content)
-    end
-  end
-end
-
 task :index do
   sh "bundle exec jekyll index"
 end
@@ -379,11 +365,10 @@ task :build do
 end
 
 task :serve do
-  sh "bundle exec jekyll serve --skip-initial-build --watch"
+  sh "bundle exec jekyll serve --host 0.0.0.0 --watch"
 end
 
 task :default do
   Rake::Task["build"].invoke
-  Rake::Task["emoji"].invoke
   Rake::Task["serve"].invoke
 end
