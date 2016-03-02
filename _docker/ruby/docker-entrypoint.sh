@@ -6,9 +6,9 @@ set -e
 # Always own possibly mounted docker volumes (files on host).
 chown -R root:root ${EPAGES_DOCS}
 
-# If the first argument is test, build, index or serve 
+# If the first argument is one of the following 
 # then set exec to prepend with rake.
-if [[ "${1}" =~ ^.*(build)|(docker)|(emoji)|(index)|(serve)|(test).*$ ]]; then
+if [[ "${1}" =~ ^.*(build)|(emoji)|(index)|(serve)|(test).*$ ]]; then
     set rake "${@}"
 fi
 

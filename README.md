@@ -41,7 +41,7 @@ TODO
 
 ## Run in Docker
 
-If you don't like to bootstrap your machine you can also run a [Docker][docker] container for development by invoking a single command only. The container will be pulled from our registry. You need to have [Docker Engine][docker-engine] installed first. The standard command of the container is `rake docker` (eq. jekyll build `_site` dir, render emojis and jekyll serve on localhost).
+If you don't like to bootstrap your machine you can also run a [Docker][docker] container for development by invoking a single command only. The container will be pulled from our registry. You need to have [Docker Engine][docker-engine] installed first. The standard command of the container is the default `rake` task, which let's jekyll serve our site.
 
 ~~~ bash
 # On Linux

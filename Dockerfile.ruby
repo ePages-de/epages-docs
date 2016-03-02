@@ -50,4 +50,4 @@ RUN chmod +x /docker-entrypoint.sh
 ENTRYPOINT ["/docker-entrypoint.sh"]
 
 # Set default command
-CMD ["rake", "docker"]
+CMD ["rake"]
