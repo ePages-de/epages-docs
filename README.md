@@ -41,45 +41,45 @@ TODO
 
 ## Run in Docker
 
-If you don't like to bootstrap your machine you can also run a [Docker][docker] container for development by invoking a single command only. The container will be pulled from our registry. You need to have [Docker Engine][docker-engine] installed first. The standard command of the container is the default `rake` task, which let's jekyll serve our site.
+If you don't like to bootstrap your machine you can also run a [Docker][docker] container for development by invoking a single command only. The container will be pulled from our registry. You need to have [Docker Engine][docker-engine] installed first.
 
 ~~~ bash
 # On Linux
 $ echo "Open in browser: http://127.0.0.1:4000/"
 
-# On Mac OS X (with one active docker machine)
+# On Mac (with one active docker machine)
 $ echo "Open in browser: http://$(docker-machine ip `docker-machine active`):4000/"
 
-# [Pull and] run container with mounting your local repo
+# [Pull and] run container with default rake task (eq. build `_site` and serve via jekyll)
 $ docker run --rm --volume=$(pwd):/usr/src/epages-docs -p 4000:4000 -it docker.epages.com/epages/docs-ruby
 ~~~
 
 #### Additional commands
 
-The optional Docker image `<TAG>` can be set to `latest` (default if not defined), `develop`, `master` or `stable`, which represents the upstream branches in their current state. You may also set another tag like `local` if you build the image locally first.
+The optional <TAG> can be latest (default if not defined), develop, master or stable [or user-defined if build locally]. It represents the upstream branch in its current state.
 
 ~~~ bash
 # Pull image from registry 
 $ docker pull docker.epages.com/epages/docs-ruby:<TAG>
 
-# [Pull and] run container with contained repo state
+# [Pull and] run epages-docs
 $ docker run --rm -p 4000:4000 -it docker.epages.com/epages/docs-ruby:<TAG>
 
 # Build image locally
 $ docker build -t docker.epages.com/epages/docs-ruby:<TAG> -f Dockerfile.ruby .
 
-# Just build the _site dir in the mounted local repo on your host
+# Just build the _site dir at the mounted local repo on your host
 $ docker run --rm --volume=$(pwd):/usr/src/epages-docs -p 4000:4000 -it docker.epages.com/epages/docs-ruby:<TAG> build
 
 # Login to container pseudo-terminal, which works like a normal debian vm. 
-# Inside the container `cd $EPAGES_DOCS` always gets you back to the epages-docs workdir.
+# Hint: cd $EPAGES_DOCS to get back to the workdir.
 $ docker run --rm --volume=$(pwd):/usr/src/epages-docs -p 4000:4000 -it docker.epages.com/epages/docs-ruby:<TAG> bash
 ~~~
 
 #### Tips
 
-* By appending arguments after the image name at the listed `docker run` commands you may execute other rake tasks individually (e.g. `rake test`, `rake index`, `rake build`, `rake serve` or in short: `test`, `index`, `build`, `serve`) as well as connect (e.g. `bash`) into the pseudo-terminal inside the container and do whatever you want.
-* When running the container with a mounted host dir the `_site` dir will be created on the host with docker access rights (eq. user id from inside the container). You may sanitize your host dir with `sudo chown -R $USER:$USER _site` afterwards or just remove it as root `sudo rm _site`.
+* By appending arguments after the image name at the listed `docker run` commands you may execute other rake tasks (e.g. `rake test`, `rake build`, `rake serve` or in short: `test`, `build`, `serve`) as well as connect (e.g. `bash`) into the pseudo-terminal inside the container and do whatever you want.
+* When running the container with a mounted host dir the `_site` dir will be created on the host with docker access rights (user ids from the inside the container). You may sanitize this with `sudo chown -R $USER:$USER _site` afterwards or just remove it as root `sudo rm _site`.
 * `docker pull/run` of containers from our registry works without login inside our DMZ. From outside you first need to run `docker login` accordingly.
 * Caution: For keeping things simple we run all commands inside the ruby container as root. In a production environment you would have to serve the jekyll site with user only privileges of course.
 
