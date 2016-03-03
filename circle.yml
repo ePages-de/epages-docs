@@ -81,8 +81,8 @@ test:
 
 
 deployment:
-  branch: try
   push_tag_develop:
+    branch: try
     commands:
       - ? >
           case ${CIRCLE_NODE_INDEX} in
