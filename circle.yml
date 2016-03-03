@@ -82,7 +82,9 @@ test:
 
 deployment:
   push_tag_develop:
-    branch: pull-423
+    branches:
+    ignore:
+      - gh-pages # list of branches to ignore
     commands:
       - ? >
           case ${CIRCLE_NODE_INDEX} in
