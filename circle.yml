@@ -81,6 +81,7 @@ test:
 
 
 deployment:
+  branch: try
   push_tag_develop:
     commands:
       - ? >
