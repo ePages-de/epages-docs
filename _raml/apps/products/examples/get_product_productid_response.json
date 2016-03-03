@@ -65,7 +65,12 @@
   "manufacturer": "Bass by Dr.Boom",
   "upc": null,
   "ean": null,
-  "essentialFeature": null,
+  "essentialFeatures": "Surround Sound\nAcoustic Noise Cancelling\nCorrect fit",
+  "searchKeywords": [
+    "Surround Sound",
+    "Acoustic Noise Cancelling",
+    "Correct fit"
+  ],
   "links": [
     {
       "rel": "self",
