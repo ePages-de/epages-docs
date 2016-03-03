@@ -82,7 +82,7 @@ test:
 
 deployment:
   push_tag_develop:
-    branch: develop
+    branch: revert-418-feature/enable-parallel-tests-and-fix-exits
     commands:
       - ? >
           case ${CIRCLE_NODE_INDEX} in
@@ -100,6 +100,7 @@ deployment:
             docker push "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}"
             ;;
           esac
+        : parallel: false
   push_tag_master_stable_latest:
     branch: master
     commands:
@@ -127,6 +128,7 @@ deployment:
             docker push "${DOCKER_IMAGE_RUBY}:latest"
             ;;
           esac
+        : parallel: false
 
 
 general:
