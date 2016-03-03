@@ -220,7 +220,7 @@ get:
     displayName: Product stock level
     get:
       description: Returns the current stock level of a product.
-      securedBy: [products_read]
+      securedBy: [products_write]
       responses:
         200:
           body:
