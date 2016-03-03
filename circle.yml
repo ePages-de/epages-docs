@@ -30,6 +30,7 @@ machine:
 
 dependencies:
   pre:
+    - echo $CIRCLE_BRANCH
     - docker info
     - | 
         if [[ "${CIRCLE_NODE_TOTAL}" -eq "1" ]]; then {
@@ -82,7 +83,7 @@ test:
 
 deployment:
   push_tag_develop:
-    branch: *
+    branch: pull/424
     commands:
       - ? >
           case ${CIRCLE_NODE_INDEX} in
