@@ -82,7 +82,7 @@ test:
 
 deployment:
   push_tag_develop:
-    branch: revert-418-feature/enable-parallel-tests-and-fix-exits
+    branch: pull-423
     commands:
       - ? >
           case ${CIRCLE_NODE_INDEX} in
