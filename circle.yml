@@ -5,7 +5,7 @@ machine:
     - docker
   environment:
     # CircleCI runs tests in parallel.
-    CIRCLE_PARALLEL: false
+    CIRCLE_PARALLEL: true
     # Dedicated names for each Docker image.
     DOCS_ELASTICSEARCH: docs-elasticsearch
     DOCS_NGINX: docs-nginx
@@ -31,11 +31,11 @@ machine:
 dependencies:
   pre:
     - docker info
-    - | 
-        if [[ "${CIRCLE_NODE_TOTAL}" -eq "1" ]]; then {
+    - |
+        if [[ "${CIRCLE_NODE_TOTAL}" -eq "1" ]]; then
           echo "Parallelism [${CIRCLE_NODE_TOTAL}x] needs to be 2x to fasten execution time." 
           echo "You also need to set our machine env var CIRCLE_PARALLEL [${CIRCLE_PARALLEL}] to true." 
-        }; fi
+        fi
 
 
 test:
@@ -43,15 +43,17 @@ test:
     - ? >
         case ${CIRCLE_NODE_INDEX} in
         0)
-          printf "\n%s\n\n" "=== TEST nginx container with build site on host ==="
-          bundle exec rake test
+          set -e
+          printf "\n%s\n\n" "=== CHECK rake test, rake index and rake build site on host ==="
+          bundle exec rake test && echo -e "\n ---> rake test is OK\n" || { echo " ---> rake test FAILED"; exit 1; }
           docker run --name "${DOCS_ELASTICSEARCH}" -p 9200:9200 -d "${DOCKER_HUB_ELASTICSEARCH}"
           sleep 10
-          bundle exec rake index
+          bundle exec rake index && echo -e "\n ---> rake index is OK\n" || { echo " ---> rake index FAILED"; exit 1; }
           sleep 10
           docker stop "${DOCS_ELASTICSEARCH}"
           docker commit "${DOCS_ELASTICSEARCH}" "${DOCKER_IMAGE_ELASTICSEARCH}:${DOCKER_IMAGE_TAG}"
-          bundle exec rake build
+          bundle exec rake build && echo -e "\n ---> rake build is OK\n"  || { echo " ---> rake build FAILED"; exit 1; }
+          printf "\n%s\n\n" "=== TEST build nginx container [${DOCKER_IMAGE_NGINX}:${DOCKER_IMAGE_TAG}] ==="
           docker build -t "${DOCKER_IMAGE_NGINX}:${DOCKER_IMAGE_TAG}" -f "${DOCKERFILE_NGINX}" .
           printf "\n%s\n\n" "=== SUCCESS ==="
           printf "\n%s\n\n" "=== ARCHIVE site artifacts of nginx container ==="
@@ -61,11 +63,13 @@ test:
           $CIRCLE_PARALLEL && exit 0
           ;&
         1)
-          printf "\n%s\n\n" "=== TEST ruby container with build and serve site ==="
+          set -e
+          printf "\n%s\n\n" "=== TEST build ruby container [${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}] ==="
           docker build -t "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" -f "${DOCKERFILE_RUBY}" .
+          printf "\n%s\n\n" "=== TEST run ruby container and CHECK availibility of site ==="
           docker run --name "${DOCS_RUBY}" -p "${DOCS_RUBY_BIND_ADDRESS}:4000" --volume=$(pwd):"${DOCS_RUBY_VOL}" -it -d "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}"
           sleep 50
-          curl --silent "${DOCS_RUBY_BIND_ADDRESS}" | grep -q "blog" && print " ---> Served jekyll site is OK"
+          curl --silent "${DOCS_RUBY_BIND_ADDRESS}" | grep -q "blog" && echo -e "\n ---> site response is OK\n" || { echo " ---> site response FAILED"; exit 1; }
           docker stop "${DOCS_RUBY}"
           printf "\n%s\n\n" "=== SUCCESS ==="
           printf "\n%s\n\n" "=== ARCHIVE site artifacts of ruby container ==="
@@ -74,31 +78,40 @@ test:
           ;;
         esac
       : parallel: true
-
-
-deployment:
-  push_tag_develop:
-    branch: develop
-    commands:
-      - docker login -u "${DOCKER_LOGIN_USERNAME}" -p "${DOCKER_LOGIN_PASSWORD}" -e "${DOCKER_LOGIN_EMAIL}" "${DOCKER_REGISTRY}"
-      - docker push "${DOCKER_IMAGE_ELASTICSEARCH}:${DOCKER_IMAGE_TAG}"
-      - docker push "${DOCKER_IMAGE_NGINX}:${DOCKER_IMAGE_TAG}"
-      - docker push "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}"
-  push_tag_master_stable_latest:
-    branch: master
-    commands:
-      - docker login -u "${DOCKER_LOGIN_USERNAME}" -p "${DOCKER_LOGIN_PASSWORD}" -e "${DOCKER_LOGIN_EMAIL}" "${DOCKER_REGISTRY}"
-      - docker push "${DOCKER_IMAGE_ELASTICSEARCH}:${DOCKER_IMAGE_TAG}"
-      - docker push "${DOCKER_IMAGE_NGINX}:${DOCKER_IMAGE_TAG}"
-      - docker push "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}"
-      - docker tag "${DOCKER_IMAGE_NGINX}:${DOCKER_IMAGE_TAG}" "${DOCKER_IMAGE_NGINX}:stable"
-      - docker tag "${DOCKER_IMAGE_NGINX}:${DOCKER_IMAGE_TAG}" "${DOCKER_IMAGE_NGINX}:latest"
-      - docker tag "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" "${DOCKER_IMAGE_RUBY}:stable"
-      - docker tag "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" "${DOCKER_IMAGE_RUBY}:latest"
-      - docker push "${DOCKER_IMAGE_NGINX}:stable"
-      - docker push "${DOCKER_IMAGE_NGINX}:latest"
-      - docker push "${DOCKER_IMAGE_RUBY}:stable"
-      - docker push "${DOCKER_IMAGE_RUBY}:latest"
+  post:
+    - ? >
+        case ${CIRCLE_NODE_INDEX} in
+        0)
+          set -e
+          if [[ "${CIRCLE_BRANCH}" == "develop" ||  "${CIRCLE_BRANCH}" == "master" ]]; then
+            docker login -u "${DOCKER_LOGIN_USERNAME}" -p "${DOCKER_LOGIN_PASSWORD}" -e "${DOCKER_LOGIN_EMAIL}" "${DOCKER_REGISTRY}"
+            docker push "${DOCKER_IMAGE_ELASTICSEARCH}:${DOCKER_IMAGE_TAG}" && echo -e "\n=== DEPLOYED image [${DOCKER_IMAGE_ELASTICSEARCH}:${DOCKER_IMAGE_TAG}] ===\n"
+            docker push "${DOCKER_IMAGE_NGINX}:${DOCKER_IMAGE_TAG}" && echo -e "\n=== DEPLOYED image [${DOCKER_IMAGE_NGINX}:${DOCKER_IMAGE_TAG}] ===\n"
+          fi
+          if [[ "${CIRCLE_BRANCH}" == "master" ]]; then
+            docker tag "${DOCKER_IMAGE_NGINX}:${DOCKER_IMAGE_TAG}" "${DOCKER_IMAGE_NGINX}:stable"
+            docker tag "${DOCKER_IMAGE_NGINX}:${DOCKER_IMAGE_TAG}" "${DOCKER_IMAGE_NGINX}:latest"
+            docker push "${DOCKER_IMAGE_NGINX}:stable" && echo -e "\n=== DEPLOYED image [${DOCKER_IMAGE_NGINX}:stable] ===\n"
+            docker push "${DOCKER_IMAGE_NGINX}:latest" && echo -e "\n=== DEPLOYED image [${DOCKER_IMAGE_NGINX}:latest] ===\n"
+          fi
+          # Exit case statement if run in parallel else proceed to next case.
+          $CIRCLE_PARALLEL && exit 0
+          ;&
+        1)
+          set -e
+          if [[ "${CIRCLE_BRANCH}" == "develop" ||  "${CIRCLE_BRANCH}" == "master" ]]; then
+            docker login -u "${DOCKER_LOGIN_USERNAME}" -p "${DOCKER_LOGIN_PASSWORD}" -e "${DOCKER_LOGIN_EMAIL}" "${DOCKER_REGISTRY}"
+            docker push "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" && echo -e "\n=== DEPLOYED image [${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}] ===\n"
+          fi
+          if [[ "${CIRCLE_BRANCH}" == "master" ]]; then
+            docker tag "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" "${DOCKER_IMAGE_RUBY}:stable"
+            docker tag "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" "${DOCKER_IMAGE_RUBY}:latest"
+            docker push "${DOCKER_IMAGE_RUBY}:stable" && echo -e "\n=== DEPLOYED image [${DOCKER_IMAGE_RUBY}:stable] ===\n"
+            docker push "${DOCKER_IMAGE_RUBY}:latest" && echo -e "\n=== DEPLOYED image [${DOCKER_IMAGE_RUBY}:latest] ===\n"
+          fi
+          ;;
+        esac
+      : parallel: true
 
 
 general:
