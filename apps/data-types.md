@@ -72,6 +72,17 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | - | :-: |  - |
 | name | string | The name of the content page. |
 
+## customer
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| customerId | string | The unique identifier of the customer. |
+| customerNumber | string | The number by which the merchant tracks the customer. |
+| creationDate | string | The date/time the customer was created. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z` |
+| billingAddress | [address](page:apps-data-types#address) | The billing address of the customer. |
+| internalNote | string | Internal note for the customer done by the merchant. |
+| links | array of [link](page:apps-data-types#link) | The link to the customer and their orders. |
+
 ## customAttribute
 
 | Attribute | Type | Description |

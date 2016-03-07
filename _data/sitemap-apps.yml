@@ -70,6 +70,9 @@
     - title: Categories
       link: page:api-resources-categories
 
+    - title: Customers
+      link: page:api-resources-customers
+
     - title: Legal
       link: page:api-resources-legal
 
@@ -99,3 +102,4 @@
 
     - title: FAQ
       link: page:apps-faq
+
