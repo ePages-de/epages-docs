@@ -19,6 +19,8 @@ So let’s start with a short definition:
 to develop complex products
 or systems in an iterative way.“
 
+{% image blog/blog-scrum1-scrumboard-jira.png %}{% endimage %}
+
 ## What does that mean in detail?
 
 In Scrum you are always working in a team.
@@ -49,22 +51,23 @@ But if you have to solve new challenges every day and are working on complex pro
 
 ## Iterations
 
+{% image blog/blog-scrum1-waterfall-project-trap.jpg 45% right %}Waterfall-projects-trap{% endimage %}
+
 The iterations differ between the teams from 1 to 6 weeks.
 Usually they are 2 weeks long.
 That means you only plan in detail what will be developed for the next two weeks.
 You will then get feedback on the development and include this feedback into your next iteration.
 This way you get quick feedback and alway know if you are developing the right thing.
-You don’t need to be afraid of the “waterfall-projects-trap”, as illustrated below.
-
-{% image blog-scrum1-waterfall-project-trap.jpg %}{% endimage %}
+You don’t need to be afraid of the “waterfall-projects-trap”.
 
 All that may sound more difficult than it actually is.
-In contrary, the Scrum framework is so easy that it easily fits on one sheet of paper.
+In contrary, the Scrum framework is so simple that it easily fits on one sheet of paper.
 
-{% image blog-scrum1-scrum-framework.jpg %}{% endimage %}
-
-On this sheet you can find two important artefacts Scrum is working with.
+In the next picture you can find two important artefacts Scrum is working with.
 The Product Backlog and the Sprint Backlog.
+
+{% image blog/blog-scrum1-scrum-framework.jpg 45% left %}Scrum artefacts{% endimage %}
+
 The Product Backlog is an estimated, prioritised list of tickets (stories, bugs, tasks) that is sorted by the Product Owner according to the business value of these tickets.
 That means this list contains all the tickets that need to be done for a product to be developed.
 The Sprint Backlog is also a list of estimated, prioritised tickets, but it only contains those tickets that will be solved within the next iteration.
@@ -77,21 +80,18 @@ It also shows if one person is working on too many tickets at the same time or i
 
 At ePages we only have one team that is using a paper board:
 
-{% image blog-scrum1-scrumboard-paper.jpg %}{% endimage %}
+{% image blog/blog-scrum1-scrumboard-paper.jpg %}{% endimage %}
 
 Having a visual board present in the room at all times has more advantages for them.
-The quick and easy way of adding tasks to stories (more about that in part Scrum Basics - Part 4: Estimating) outbalance the higher administrative effort that occurs because one has to maintain the tickets on the physical board as well as in Jira.
-
-The other teams are using Jira Boards.
-
-{% image blog-scrum1-scrumboard-jira.png %}{% endimage %}
+The quick and easy way of adding tasks to stories (more about that in part [Scrum Basics - Part 4: Estimating](https://developer.epages.com/blog/2016/01/26/scrum-basics-4.html)) outbalance the higher administrative effort that occurs because one has to maintain the tickets on the physical board as well as in Jira.
+The other teams are using Jira Boards (see first picture).
 
 ## What will be next?
 
 Scrum defines three roles, which are Product Owner, Scrum Master and the Development Team.
-Those roles will be discussed in detail in the next part of this Scrum Basics Series.
+Those roles will be discussed in detail in the [next part](https://developer.epages.com/blog/2015/11/19/scrum-basics-2.html) of this Scrum Basics Series.
 
 Next to the roles Scrum brings four standard meetings: Sprint Planning, Daily Standup, Sprint Review and the Retrospective.
-We will talk about these meetings in detail in Scrum Basics Series - Part 3.
+We will talk about these meetings in detail in [Scrum Basics Series - Part 3](https://developer.epages.com/blog/2015/12/15/scrum-basics-3.html).
 
 Stay tuned.

@@ -19,11 +19,11 @@ It was raining throughout the day, so it was really slimy and muddy, that means 
 The Tough Mudder is a 16 to 18km Cross-Country Run through the wilderness with about 15 different obstacles.
 Six of these obstacles were tougher ones such as the Birth Canal, Berlin Walls ...
 
-{% image blog-tough-mudder-5.jpg %}{% endimage %}
+{% image blog/blog-tough-mudder-5.jpg %}{% endimage %}
 
 ...Hangin' Tough...
 
-{% image blog-tough-mudder-1.jpg %}{% endimage %}
+{% image blog/blog-tough-mudder-1.jpg %}{% endimage %}
 
 ...Arctic Enema (diving into 4-degree-cold water) and Kiss of Mud (tasty!).
 
@@ -31,13 +31,13 @@ Tough Mudder is not a competition or a race. It's a challenge without time measu
 The ePagees participating in this event showed great team spirit.
 The team consisted of six colleagues from four different departments.
 
-{% image blog-tough-mudder-2.jpg %}{% endimage %}
+{% image blog/blog-tough-mudder-2.jpg %}{% endimage %}
 
 Some of these colleagues had never ran that far before, especially on muddy ground - making it an even more spectacular performance!
 
-{% image blog-tough-mudder-4.jpg %}{% endimage %}
+{% image blog/blog-tough-mudder-4.jpg %}{% endimage %}
 
 Starting from the very back row we were all running fast and overtaking quite a few of the other attendees, but still supporting each other until the very last obstacle.
 It was called Electroshock therapy which we all ran through arm in arm together.
 
-{% image blog-tough-mudder-3.jpg %}{% endimage %}
+{% image blog/blog-tough-mudder-3.jpg %}{% endimage %}

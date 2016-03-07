@@ -12,7 +12,7 @@ Some might tell stories about the best first workday they have ever had, others 
 In the first week of July, a bunch of new developers started at ePages.
 Find out what we did to help them get off on the right foot and give them a positive start.
 
-{% image blog-employee-induction-mind-map.png %}{% endimage %}
+{% image blog/blog-employee-induction-mind-map.png %}{% endimage %}
 
 ## 1. Welcome employee before employment even begins
 
@@ -35,7 +35,7 @@ Here at ePages we call them "buddies".
 
 When having arrived at the office, our human resources coordinator welcomes the new employees, a round of introductions follows and the further course of the day will be explained.
 
-{% image blog-employee-induction-cto.jpg %}{% endimage %}
+{% image blog/blog-employee-induction-cto.jpg %}{% endimage %}
 
 Our CTO gives a brief introduction including:
 
@@ -61,7 +61,7 @@ They'll be shown their workplaces as well as important contact points.
 
 ## 5. Introduction session with HR
 
-{% image blog-employee-induction-welcome.jpg %}{% endimage %}
+{% image blog/blog-employee-induction-welcome.jpg %}{% endimage %}
 
 Our HR team then hands out the office keys and local transport tickets and helps to familiarise our new employees.
 This includes:
@@ -89,7 +89,7 @@ The first day is over and the new colleagues have a lot of new information in th
 The agenda for the following days contains some more interesting topics and valuable tips for a great start at ePages.
 Check out what our typical agenda looks like:
 
-{% image blog-employee-induction-agenda.png %}{% endimage %}
+{% image blog/blog-employee-induction-agenda.png %}{% endimage %}
 
 Certainly, it takes plenty of time and coaching to get new employees fully familiar with the company and all work processes.
 With our induction programme we are laying the groundwork to make this process as quick as possible.
