@@ -9,7 +9,7 @@
     },
     "sizes": {
       "type": "array of [image](page:apps-data-types#image)",
-      "descrition": "The size of the images in the slideshow."
+      "description": "The size of the images in the slideshow."
     }
   }
 }
