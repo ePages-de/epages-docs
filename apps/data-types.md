@@ -218,6 +218,7 @@ This object is used for the attributes of product.
 | ean | string | The European Article Number of the product, either EAN-8 or EAN-13. |
 | essentialFeatures | string | The essential features of the product. |
 | searchKeywords | array of strings | The search terms for the product determined by the merchant in the administration.  |
+| links | array of [link](page:apps-data-types#link) | The links to the product and product category. |
 
 ## productLineItem
 
