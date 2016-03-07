@@ -161,7 +161,7 @@ Example:
 GET /rs/shops/CreamyIceShop/products HTTP/1.1
 Host: creamyiceshop.com
 Accept: application/vnd.epages.v1+json
-Authorization: "Bearer 4HZ9hriF6J3GOnd10JbFzdVehycOvAZf
+Authorization: Bearer 4HZ9hriF6J3GOnd10JbFzdVehycOvAZf
 {% endhighlight %}
 
 ## Fancy more information?
