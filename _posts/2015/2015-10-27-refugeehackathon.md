@@ -29,7 +29,7 @@ It is an online platform which enables volunteers to sign up for tasks identifie
 by different aid organisations and is created by a handful of programmers, designers and project managers.
 Though the project is only three month old and thus not yet feature complete they already have 19,354 registered users and 51,286 completed volunteer work hours.
 
-{% image blog-refugeehackathon-volunteer-planner.jpg %}{% endimage %}
+{% image blog/blog-refugeehackathon-volunteer-planner.jpg %}{% endimage %}
 
 ## What we achieved
 

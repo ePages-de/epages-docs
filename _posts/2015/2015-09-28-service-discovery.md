@@ -49,7 +49,7 @@ We decided for the routing solution, to keep the logic and also library dependen
 
 With this naming schema defined, the actual routing is done by [HAProxy](http://www.haproxy.org/), a reliable, high performance TCP/HTTP load balancer. It is configured by a process called consul-template, which queries the information about available service instances from Consul and applies it to a provided template, in this case a template HAProxy configuration file, and (gracefully) restarts HAProxy afterwards.
 
-{% image blog-consul-template-haproxy.png %}{% endimage %}
+{% image blog/blog-consul-template-haproxy.png %}{% endimage %}
 
 Now that we have this logic in place, HAProxy routes any incoming request to the most appropriate instance of the service given by the first path element of the request. The determination of the most appropriate instance of the service can be decided by the various load balancing features of HAProxy.
 

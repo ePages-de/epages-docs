@@ -19,7 +19,7 @@ In addition, we were pretty unhappy with not being able to avoid local modificat
 
 ## Introducing Docker
 
-{% image docker-logo-h.png %}{% endimage %}
+{% image blog/blog-docker-logo-h.png %}{% endimage %}
 
 So, let's get started on our journey towards immutable Jenkins master!
 The main step to achieve this goal was our decision to build our further steps on [Docker](https://www.docker.com/).
@@ -66,4 +66,4 @@ Furthermore, jobs can also only be created or modified by the [Job DSL Plugin](h
 Regarding the general setup of the Jenkins master, we are now more or less where we want to be.
 There's still room for improvement, but the main challenges that lie ahead of us are more in the area of getting our build slaves automated the way we want,
 and running all of our build jobs in an appropriate environment.
-In the end, this is typical everyday CI maintenance, which we won't be able to get rid of completely even with full automation... ;-)
+In the end, this is typical everyday CI maintenance, which we won't be able to get rid of completely even with full automation... {% emoji wink %}
