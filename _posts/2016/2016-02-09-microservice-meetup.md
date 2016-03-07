@@ -7,7 +7,7 @@ categories: events
 authors: ["Mathias"]
 ---
 
-Full house at epages in Hamburg!
+Full house at ePages in Hamburg!
 Last Wednesday, we hosted the [Microservices Meetup Hamburg](http://www.meetup.com/de-DE/Microservices-Meetup-Hamburg/events/224965581/?a=socialmedia).
 About 30 developers accepted the invitation and came to listen to the story about our journey through the world of Service Discovery.
 
