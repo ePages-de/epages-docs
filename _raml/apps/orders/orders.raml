@@ -77,8 +77,8 @@ get:
     200:
       body:
         application/json:
-          example: !include examples/get_orders_response.json
-          schema: !include schema/get_orders.schema.json
+          example: !include examples/get_order_response.json
+          schema: !include schema/get_order.schema.json
 /{orderId}:
   displayName: Order
   get:
@@ -89,18 +89,58 @@ get:
       200:
         body:
           application/json:
-            example: !include examples/get_orders_orderid_response.json
-            schema: !include schema/get_orders_orderid.schema.json
+            example: !include examples/get_order_orderid_response.json
+            schema: !include schema/get_order_orderid.schema.json
   put:
     description: Modifies an order identified by the provided order ID.
     securedBy: [orders_write]
     is: [ locale ]
     body:
       application/json:
-        example: !include examples/put_orders_orderid_request.json
+        example: !include examples/put_order_orderid_request.json
     responses:
       200:
         body:
             application/json:
-                example: !include examples/put_orders_orderid_response.json
-                schema: !include schema/put_orders_orderid.schema.json
+                example: !include examples/put_order_orderid_response.json
+                schema: !include schema/put_order_orderid.schema.json
+  patch:
+    description: Updates information for a single order with partial data according to [RFC 6902](https://tools.ietf.org/html/rfc6902). You can either add or remove certain attributes.<br><br>
+
+        *Supported JSON-PATCH operations*<br>
+        - add (sets or replaces an attribute)<br>
+        - remove (unsets an attribute)<br><br>
+
+        *Attribute paths that allow updates via PATCH* ( **¹** supports *add* only)<br>
+              - /orderNumber¹<br>
+              - /customerComment<br>
+              - /internalNote<br>
+              - /billingAddress¹<br>
+              - /shippingAddress¹<br>
+              - /viewedOn<br>
+              - /rejectedOn<br>
+              - /inProcessOn<br>
+              - /pendingOn<br>
+              - /readyForDispatchOn<br>
+              - /partialyDispatchedOn<br>
+              - /dispatchedOn<br>
+              - /deliveredOn<br>
+              - /partialyInvoicedOn<br>
+              - /invoicedOn<br>
+              - /partialyPaidOn<br>
+              - /paidOn<br>
+              - /returnedOn<br>
+              - /closedOn<br>
+              - /archivedOn<br>
+
+    securedBy: [orders_write]
+    is: [ locale ]
+    body:
+      application/json:
+        example: !include examples/patch_order_orderid_request.json
+    responses:
+      200:
+        body:
+            application/json:
+                example: !include examples/patch_order_orderid_response.json
+                schema: !include schema/patch_order_orderid.schema.json
