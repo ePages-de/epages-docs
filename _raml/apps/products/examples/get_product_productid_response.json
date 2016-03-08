@@ -83,6 +83,11 @@
     {
       "rel": "categories",
       "href": "https://pm.epages.com/rs/shops/apidocu/products/51E7F905-2E4C-78C2-30C2-AC14145FA4E5/categories"
+    },
+    {
+      "rel": "main-category",
+      "href": "https://pm.epages.com/rs/shops/apidocu/categories/546E02D6-3469-4610-54A1-0A0C05E63C68",
+      "title": "On-Ear"
     }
   ]
 }
