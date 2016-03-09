@@ -1,0 +1,602 @@
+---
+layout: devjobs
+permalink: /devjobs/
+---
+
+<div id="page">
+  <div class="ep_nav navbar index" role="navigation">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <a href="http://www.epages.com" class="logo"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header id="header" class="container-fluid">
+    <div class="mask"></div>
+    <div class="container intro">
+      <div class="relativeScaler"></div>
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Our {code} speaks e-commerce</h1>
+          <div class="hidden-xs spacer20"></div>
+          <h3 class="hidden-xs">Join one of the leading developer teams for online shop software</h3>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div id="block0" class="container-fluid darkGray">
+    <div class="container">
+      <div class="spacer110"></div>
+      <div class="row">
+        <div class="col-md-12">
+          <h2 id="devjobs">Exciting. Challenging. Grow with us.</h2>
+          <div class="spacer20"></div>
+          <p class="center">Do you love coding? Are you keen for a new challenge? We are offering various job opportunities&nbsp;especially for experienced web developers.</p>
+        </div>
+      </div>
+      <div class="spacer20"></div>
+      <div class="spacer20"></div>
+      <div class="row">
+        {% assign jobs = site.data['devjobs'] %}
+        {% for job in jobs %}
+          <div class="col-md-4 jobDesc">
+            <h3><a target="_blank" href="{{ job.link }}">{{ job.title }}</a></h3>
+            <p class="info">{{ job.short_description }}</p>
+            <h4 class="location">{{ job.location }}</h4>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="spacer60"></div>
+      <div class="row">
+        <div class="col-md-12">
+          <h4 class="center">More web developer jobs at ePages.</h4>
+          <div class="spacer20"></div>
+          <div class="center">
+            <a href="/en/career/" class="joballen btn btn-primary green">All jobs openings</a>
+          </div>
+        </div>
+      </div>
+      <div class="spacer60"></div>
+    </div>
+  </div>
+
+  <div id="block1" class="container-fluid darkGray">
+    <div class="container">
+      <div class="spacer110"></div>
+      <div class="row">
+        <div class="col-md-12">
+          <h2 id="jointheforce">Join the Force! We are developing the next generation commerce platform</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+          <div class="spacer60"></div>
+          <h3>Shape the ePages software with us</h3>
+          <div class="spacer20"></div>
+          <p>With our online shop software a merchant receives a complete package to hit the ground running in commerce. We are constantly working on our solution to keep it up-to-date with new market developments, for example integrating new features.</p>
+          <div class="spacer60"></div>
+          <h3>Our focus: User experience and connectivity</h3>
+          <div class="spacer20"></div>
+          <div><ul>
+            <li><strong></strong>A <strong>{user-friendly storefront}</strong> to optimise the shopping experience for the end user.</li>
+            <li><strong>{Easy-to-use editor}</strong> and backend making it convenient for the merchant in daily business.</li>
+            <li>The <strong>{RESTful API}</strong> allows third parties to integrate their service with ease.</li>
+          </ul></div>
+          <div class="spacer60"></div>
+          <h3>Make the step: Join the ePages team</h3>
+          <div class="spacer20"></div>
+          <p>We are looking for more dedicated developers to join our team.&nbsp;Bring your ideas and let's shape the next generation commerce platform together.<br></p>
+        </div>
+      </div>
+      <div class="spacer110"></div>
+    </div>
+  </div>
+
+  <div id="block3" class="container-fluid lightGray">
+    <div class="mask"></div>
+    <div class="container">
+      <div class="spacer110"></div>
+      <div class="row">
+        <div class="col-md-6">
+          <h2 id="about">Our story</h2>
+          <div class="spacer20"></div>
+          <p>We develop high performing online shop software. Established for years, we are one of the market leaders worldwide. More than 140,000 businesses use our online shop solution already.</p>
+          <div class="spacer20"></div>
+          <p>We love e-commerce and we always have an eye on the latest trends on the market.</p>
+        </div>
+      </div>
+      <div class="spacer110"></div>
+      <div class="spacer60"></div>
+    </div>
+  </div>
+
+  <div id="block4" class="container-fluid lightGray">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 id="benefits">What we offer</h2>
+          <div class="spacer20"></div>
+          <p class="center">Working at ePages means being part of a growing international team, full of e-commerce experts who are passionate for web development. In the backend we are working modular with Java, JPA, MySQL, MongoDB and Solr which is decoupled from the Node.js frontend by a REST-API. We also work with GitHub, Vagrant, Jenkins, Selenium, Docker and Jira. We place great emphasis on test-driven-development and continuous integration.</p>
+          <div class="spacer20"></div>
+          <p class="center">Great perspectives for developing your career: Be involved in exciting projects and benefit of the full load of advantages ePages is offering to you.</p>
+        </div>
+      </div>
+      <div class="spacer60"></div>
+      <div id="tiles" class="row">
+        <div class="col-sm-6 col-md-3 tile first">
+          <div class="iconOuter" style="height: 184px;">
+            <div class="the-icon col-sm-3"><span class="glyphicon icon-tie"></span></div>
+            <div class="the-text col-sm-9"><h4>An interesting job in a fast growing industry</h4></div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 hidden-xs tile">
+          <div class="iconOuter darkGray" style="height: 184px;">
+            <div class="the-icon col-sm-3"><span class="glyphicon icon-network"></span></div>
+            <div class="the-text col-sm-9"><h4>Flat hierarchies and quick decision-making</h4></div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 tile second">
+          <div class="iconOuter" style="height: 184px;">
+            <div class="the-icon col-sm-3"><span class="glyphicon icon-hand"></span></div>
+            <div class="the-text col-sm-9"><h4>An excellent working atmosphere</h4></div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 hidden-xs tile">
+          <div class="iconOuter darkGray" style="height: 184px;">
+            <div class="the-icon col-sm-3"><span class="glyphicon icon-globe"></span></div>
+            <div class="the-text col-sm-9"><h4>A growing international team</h4></div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 tile third">
+          <div class="iconOuter darkGray" style="height: 184px;">
+            <div class="the-icon col-sm-3 special"><span class="glyphicon icon-jquery"></span><span class="glyphicon icon-atlassian"></span><span class="glyphicon icon-github"></span></div>
+            <div class="the-text col-sm-9"><h4>Work with popular tools</h4></div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 tile fourth">
+          <div class="iconOuter" style="height: 184px;">
+            <div class="the-icon col-sm-3"><span class="glyphicon icon-laptop"></span></div>
+            <div class="the-text col-sm-9"><h4>Choose your laptop: Mac, Linux, Windows</h4></div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 tile fifth">
+          <div class="iconOuter darkGray" style="height: 184px;">
+            <div class="the-icon col-sm-3"><span class="glyphicon icon-community"></span></div>
+            <div class="the-text col-sm-9"><h4>Scrum teams</h4></div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 hidden-xs tile">
+          <div class="iconOuter" style="height: 184px;">
+            <div class="the-icon col-sm-3"><span class="glyphicon icon-hat"></span></div>
+            <div class="the-text col-sm-9"><h4>Option for individual training</h4></div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 hidden-xs tile">
+          <div class="iconOuter" style="height: 184px;">
+            <div class="the-icon col-sm-3"><span class="glyphicon icon-gamepad"></span></div>
+            <div class="the-text col-sm-9"><h4>Regular organised team events</h4></div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 hidden-xs tile">
+          <div class="iconOuter darkGray" style="height: 184px;">
+            <div class="the-icon col-sm-3"><span class="glyphicon icon-fruit"></span></div>
+            <div class="the-text col-sm-9"><h4>Further advantages such as lunch allowance and language courses</h4></div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 hidden-xs tile">
+          <div class="iconOuter" style="height: 184px;">
+            <div class="the-icon col-sm-3"><span class="glyphicon icon-timer"></span></div>
+            <div class="the-text col-sm-9"><h4>Flexible working hours<br></h4></div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 hidden-xs tile">
+          <div class="iconOuter darkGray" style="height: 184px;">
+            <div class="the-icon col-sm-3"><span class="glyphicon icon-bus"></span></div>
+            <div class="the-text col-sm-9"><h4>Centrally located offices with excellent public transportation</h4></div>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+      <div class="spacer110"></div>
+    </div>
+  </div>
+
+  <div id="block9" class="container-fluid darkGray">
+    <div class="container">
+      <div class="spacer110"></div>
+      <div class="row hidden-xs">
+        <div class="col-xs-offset-5 col-xs-2 col-md-offset-5 col-md-2 center">
+          <img style="width: 50%" src="/assets/images/devjobs/devs-logo.png" alt="">
+        </div>
+      </div>
+      <div class="spacer20"></div>
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Explore the ePages Devs Blog</h2>
+        </div>
+      </div>
+      <div class="spacer20"></div>
+      <div class="row">
+        <div class="col-md-12 center">
+          <p>The ePages developer teams are blogging <a href="https://developer.epages.com/blog/" target="_blank" data-tracking-id="8577076f" data-tracking-group="c40bf6cc" class="trackable">here</a>&nbsp;regularly about technical issues. They also share their experiences from conferences and hackathons as well as writing about different team events. In the devs blog you will also find info about career fairs and coding events which ePages regularly attends.</p>
+          <div class="spacer20"></div>
+          <a href="https://developer.epages.com/blog/" target="_blank" class="joballen btn btn-primary green">ePages Devs Blog</a>
+        </div>
+      </div>
+      <div class="spacer110"></div>
+    </div>
+  </div>
+
+  <div id="block5" class="container-fluid lightGray">
+    <div class="container">
+      <div class="spacer110"></div>
+      <div class="row">
+        <div class="col-md-12">
+          <h2 id="teams">Our teams</h2>
+          <div class="spacer20"></div>
+        </div>
+      </div>
+      <div class="spacer60"></div>
+      <div class="row">
+        <div class="col-md-12">
+          <div id="team" class="carousel slide" data-ride="carousel" data-interval="false">
+            <ol class="carousel-indicators">
+              <li data-target="#team" data-slide-to="0" class="active"></li>
+              <li data-target="#team" data-slide-to="1"></li>
+              <li data-target="#team" data-slide-to="2"></li>
+              <li data-target="#team" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img class="img-responsive photo" src="/assets/images/devjobs/team-red.jpg" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="spacer60"></div>
+                    <h3>Team Red</h3>
+                    <div class="spacer20"></div>
+                    <p>"I think that e-commerce is the present and the future in the market. As ePages is offering online shop software, for me it's an exciting task to develop new features for it. It is great to work in a team where everyone has their own strengths. Together we solve complex tasks much faster."</p>
+                    <div class="spacer20"></div>
+                    <p class="author">Jens Fischer</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img class="img-responsive photo" src="/assets/images/devjobs/team-unity.jpg" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="spacer60"></div>
+                    <h3>Team Unity</h3>
+                    <div class="spacer20"></div>
+                    <p>"We're developing an application that is a mix between having a rock solid base architecture and using the most recently published library before it goes mainstream. If a team only relies on already established ideas, there would be no one striving for new and leading innovative ways."</p>
+                    <div class="spacer20"></div>
+                    <p class="author">Erik Müller</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img class="img-responsive photo" src="/assets/images/devjobs/team-epages6.jpg" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="spacer60"></div>
+                    <h3>ePages 6</h3>
+                    <div class="spacer20"></div>
+                    <p>"The team spirit is really outstanding. We all help each other in any way we can. For me the most exciting moment of the sprint is when, as a group, we review what the team managed to develop over the last two weeks."</p>
+                    <div class="spacer20"></div>
+                    <p class="author">Anja Baerike</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img class="img-responsive photo" src="/assets/images/devjobs/team-ocean1.jpg" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="spacer60"></div>
+                    <h3>Team Ocean</h3>
+                    <div class="spacer20"></div>
+                    <p>"ePages is a company with a very flexible and international environment. Our cross-functional team develops and maintains the 3rd party connectors from three different locations in Germany and Spain. For the "ePages You" all ePagees get together once a year which is a great opportunity to catch up with all the other colleagues in person."</p>
+                    <div class="spacer20"></div>
+                    <p class="author">Roger Domènech</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img class="img-responsive photo" src="/assets/images/devjobs/team-orange.jpg" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="spacer60"></div>
+                    <h3>Team Orange</h3>
+                    <div class="spacer20"></div>
+                    <p>"Although the company has been around for over 20 years, it has not lost its dynamic atmosphere. Always working with the latest technologies, we are able to work independently in a creative environment. Organised with SCRUM, it is great to see what we can achieve – not only as a single team, but with all colleagues together."</p>
+                    <div class="spacer20"></div>
+                    <p class="author">Heiko Ahnert</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img class="img-responsive photo" src="/assets/images/devjobs/team-am.jpg" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="spacer60"></div>
+                    <h3>Application Management</h3>
+                    <div class="spacer20"></div>
+                    <p>"For some companies, team spirit and a great working atmosphere is only a concept, but here at ePages they are definitely lived out on a daily basis. Together we make sure that the platforms, which we supervise, are on the latest status and work smoothly."</p>
+                    <div class="spacer20"></div>
+                    <p class="author">Karsten Peskova</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img class="img-responsive photo" src="/assets/images/devjobs/team-consulting1.jpg" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="spacer60"></div>
+                    <h3>Consulting</h3>
+                    <div class="spacer20"></div>
+                    <p>"At ePages you can talk to anyone without feeling the hierarchy. The flexible working time is great and allows you some freedom. Our team works between Jena, Barcelona and New York and we are always involved in several projects. Due to that, it is a job full of variety."</p>
+                    <div class="spacer20"></div>
+                    <p class="author">Alexander Weiß</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img class="img-responsive photo" src="/assets/images/devjobs/team-red.jpg" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="spacer60"></div>
+                    <h3>Team Red</h3>
+                    <div class="spacer20"></div>
+                    <p>"I think that e-commerce is the present and the future in the market. As ePages is offering online shop software, for me it's an exciting task to develop new features for it. It is great to work in a team where everyone has their own strengths. Together we solve complex tasks much faster."</p>
+                    <div class="spacer20"></div>
+                    <p class="author">Jens Fischer</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img class="img-responsive photo" src="/assets/images/devjobs/team-unity.jpg" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="spacer60"></div>
+                    <h3>Team Unity</h3>
+                    <div class="spacer20"></div>
+                    <p>"We're developing an application that is a mix between having a rock solid base architecture and using the most recently published library before it goes mainstream. If a team only relies on already established ideas, there would be no one striving for new and leading innovative ways."</p>
+                    <div class="spacer20"></div>
+                    <p class="author">Erik Müller</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img class="img-responsive photo" src="/assets/images/devjobs/team-epages6.jpg" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="spacer60"></div>
+                    <h3>Team ePages 6</h3>
+                    <div class="spacer20"></div>
+                    <p>"The team spirit is really outstanding. We all help each other in any way we can. For me the most exciting moment of the sprint is when, as a group, we review what the team managed to develop over the last two weeks."</p>
+                    <div class="spacer20"></div>
+                    <p class="author">Anja Baerike</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img class="img-responsive photo" src="/assets/images/devjobs/team-ocean2.jpg" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="spacer60"></div>
+                    <h3>Team Ocean</h3>
+                    <div class="spacer20"></div>
+                    <p>"We are working on integrating partners to make them available within our software. For me, the best part of a sprint is to get stuck in and start coding. Our team is small in size allowing us to work quickly and efficiently. It is an amazing working atmosphere with incredible co-workers."</p>
+                    <div class="spacer20"></div>
+                    <p class="author">Xavier Ãlvarez Juste</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img class="img-responsive photo" src="/assets/images/devjobs/team-orange.jpg" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="spacer60"></div>
+                    <h3>Team Orange</h3>
+                    <div class="spacer20"></div>
+                    <p>"We create updates for our software which can then be rolled out to our resellers and customers. It is encouraging to see how each project grows during a sprint and how every day we get closer to the main goal. We are all experts in different areas who work really well as a team."</p>
+                    <div class="spacer20"></div>
+                    <p class="author">Florian Ziller</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img class="img-responsive photo" src="/assets/images/devjobs/team-am.jpg" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="spacer60"></div>
+                    <h3>Application Management</h3>
+                    <div class="spacer20"></div>
+                    <p>"For some companies, team spirit and a great working atmosphere is only a concept, but here at ePages they are definitely lived out on a daily basis. Together we make sure that the platforms, which we supervise, are on the latest status and work smoothly."</p>
+                    <div class="spacer20"></div>
+                    <p class="author">Karsten Peskova</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img class="img-responsive photo" src="/assets/images/devjobs/team-consulting2.jpg" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="spacer60"></div>
+                    <h3>Consulting</h3>
+                    <div class="spacer20"></div>
+                    <p>"ePages is an international company with colleagues from all over the world. The working conditions are great and we communicate openly. Our team provides each of our customers with an ePages solution customised to their specific needs."</p>
+                    <div class="spacer20"></div>
+                    <p class="author">Christoph Bergmann</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="left carousel-control" href="#team" role="button" data-slide="prev">
+              <span class="glyphicon icon-arrowleft" aria-hidden="true"></span>
+              <span class="sr-only">»</span>
+            </a>
+            <a class="right carousel-control" href="#team" role="button" data-slide="next">
+              <span class="glyphicon icon-arrowright" aria-hidden="true"></span>
+              <span class="sr-only">«</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="spacer60"></div>
+    </div>
+  </div>
+
+  <div id="block6" class="container-fluid lightGray">
+    <div class="container">
+      <div class="spacer60"></div>
+      <div class="row">
+        <div class="col-md-12">
+          <h2 id="getintouch">Get in touch with us!</h2>
+          <div class="spacer20"></div>
+          <p class="center">Find out more about your career opportunities at ePages.</p>
+        </div>
+      </div>
+      <div class="spacer60"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-sm-offset-0 col-md-4 col-md-offset-2">
+            <div class="row contact">
+              <div class="col-md-12">
+                <div class="icon"><span class="glyphicon icon-letter"></span></div>
+                <p><a href="mailto:hr@epages.com" class="mailen">hr@epages.com</a></p>
+              </div>
+            </div>
+            <div class="row contact">
+              <div class="col-md-12">
+                <div class="icon"><span class="glyphicon icon-phone"></span></div>
+                <p>+49-40-350 188-0</p>
+              </div>
+            </div>
+            <div class="row contact">
+              <div class="col-md-12">
+                <div class="icon"><span class="glyphicon icon-twitter"></span></div>
+                <p><a href="http://www.twitter.com/epagesdevs/" class="twitter1en">@epagesdevs</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <div class="row contact">
+              <div class="col-md-12">
+                <div class="icon"><span class="glyphicon icon-partner"></span></div>
+                <p>Harm Behrens | CTO</p>
+              </div>
+            </div>
+            <div class="row contact">
+              <div class="col-md-12">
+                <div class="icon"><span class="glyphicon icon-twitter"></span></div>
+                <p><a href="http://www.twitter.com/netzfisch/" class="twitter2en">@netzfisch</a></p>
+              </div>
+            </div>
+            <div class="row contact">
+              <div class="col-md-12">
+                <div class="icon"><span class="glyphicon icon-bulb"></span></div>
+                <p><a href="https://developer.epages.com/blog/" target="_blank" class="twitter2">ePages Devs Blog</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="spacer110"></div>
+    </div>
+  </div>
+
+  <div id="block7" class="container-fluid darkGray">
+    <div class="container">
+      <div class="spacer110"></div>
+      <div class="row">
+        <div class="col-md-12">
+          <h2 id="meetus">Let's meet</h2>
+          <div class="spacer60"></div>
+          {% assign events = site.data['events'] %}
+          {% for event in events %}
+            {% assign side = forloop.index | modulo: 2 %}
+            <div class="row timeline">
+              <div class="{% if side == 0 %}col-md-offset-6{% endif %} col-md-6 event{% if side == 0 %}2{% endif %}">
+                <div class="line"></div>
+                <h3>
+                  {% if event.link %}
+                    <a class="trackable" href="{{ event.link }}" target="_blank">{{ event.title }}</a>
+                  {% else %}
+                    {{ event.title }}
+                  {% endif %}
+                  </h3>
+                <div class="spacer20"></div>
+                <p class="info">{{ event.info }}</p>
+                <p class="location">{{ event.location }}</p>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="spacer110"></div>
+    </div>
+  </div>
+
+  <div id="block8" class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <a href="http://www.epages.com/en/career/" class="joballen btn btn-primary green">All jobs openings <span class="glyphicon icon-arrowright"></span></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  window.onscroll = function() {
+    var offset = 444;
+    if (document.body.scrollTop > offset || document.documentElement.scrollTop > offset) {
+      document.getElementsByClassName("ep_nav")[0].classList.remove("index")
+    } else {
+      document.getElementsByClassName("ep_nav")[0].classList.add("index");
+    }
+  };
+</script>
