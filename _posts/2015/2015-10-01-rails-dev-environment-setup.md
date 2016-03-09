@@ -167,7 +167,7 @@ Otherwise the IDE will give obscure error messages and fail, when you try to deb
 - You start the IDE in your custom (chruby) environment.
 - You configure the rails sdk in the IDE's project settings - see the screenshot below.
 
-{% image declan-intellij-rails.png %} {% endimage %}
+{% image blog/blog-intellij-rails.png %} {% endimage %}
 
 ### .gitignore
 

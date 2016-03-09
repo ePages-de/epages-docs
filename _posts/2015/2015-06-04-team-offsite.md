@@ -12,17 +12,17 @@ Working hard and embracing the nature? How does that fit together? One of our eP
 We resided in a lovely place called "Die Burg Schöna" right in the last corner of Saxon Switzerland, Germany to come together some hours away from the office to approach a tight agenda of topics in our team.
 Surrounded by nature...
 
-{% image blog-offsite-landscape.jpg %}{% endimage %}
+{% image blog/blog-offsite-landscape.jpg %}{% endimage %}
 
 ...we had to utilise and build upon our team work on more than one occasion, in order to overcome some obstacles, steep mountains as well as find some hidden geo caches. This pulled us together as a unit even more than previously.
 
-{% image blog-offsite-work.jpg %}{% endimage %}
+{% image blog/blog-offsite-work.jpg %}{% endimage %}
 
 We pulled back the curtains and went deep into several technical topics, in order to give all team members an in-depth understanding concerning all development areas.
 
 In order to mix up the day of mind-boggling workshops, we went hiking and filled our lungs with oxygen. This gave our brains a breather for a while and allowed us to hone in on our teamwork.
 
-{% image blog-offsite-hiking.jpg %}{% endimage %}
+{% image blog/blog-offsite-hiking.jpg %}{% endimage %}
 
 We also prepared dinner together and celebrated a very healthy living with lots of salad (let's not talk about all the sweets that were consumed nor about BBQ).
 
