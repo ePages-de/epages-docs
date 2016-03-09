@@ -1,49 +1,18 @@
 ---
 ---
 
-/*
-	MISC
-*/
 $menuWidth: 250px;
-
-/*
-	COLORS
-*/
-
 $txtBody: #fff;
-
 $gray1: #262626;
 $gray2: #2e2e2e;
 $gray3: #a5a4a4;
 $red: #e84a3c;
 $green: #20a157;
-
 $txtFooter: #666;
-
-/*
-	MIXIN
-*/
-
-//@mixin font-size($font-size: 16) {
-//  $pxFontValue: ($font-size / 10);
-//  $pxLineValue: ($font-size / 10) * 1.5;
-//  font-size: $font-size * 1px;
-//  font-size: ~"${pxFontValue}em";
-//  line-height: $font-size * 1.5px;
-//  line-height: ~"${pxLineValue}em";
-//}
-
-/*
-	REDACTOR
-*/
 
 .redactor-toolbar li a.re-save {
   float: right;
 }
-
-/*
-	BASICS
-*/
 
 * {
   outline: 0;
@@ -122,10 +91,6 @@ h4 { font-family: 'ProximaNova', Arial, sans-serif; font-size: 18px; line-height
 p {
   a, a:hover, a:visited { color: #fff; text-decoration: underline; }
 }
-
-/*
-	LAYOUT
-*/
 
 #menu {
   a {
