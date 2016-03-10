@@ -144,6 +144,8 @@ get:
             application/json:
               example: !include examples/post_product_productid_slideshow_response.json
               schema: !include schema/post_product_productid_slideshow.schema.json
+        400:
+          description: Image name is taken. (To replace an image, delete the old one first and then upload the new one.)
         413:
           description: The file size is too large. The entire HTTP body (including multipart headers) must not exceed the defined limit.
     /{imageName}:
