@@ -296,6 +296,16 @@ This object is used for the attributes of deliveryWeight and quantity.
 | description | string | The description of the shipping method.|
 | logo | string | The logo of the shipping method. |
 
+## shopInformation
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| name | string | The name of the shop. |
+| slogan | string | The slogan of the shop.|
+| logoUrl | string | The URL to the logo of the shop.|
+| sfUrl | string | The URL to the storefront of the shop. |
+| mboUrl | string | The URL to the administration area of the shop. |
+
 ## updatedProducts
 
 | Attribute | Type | Description |
