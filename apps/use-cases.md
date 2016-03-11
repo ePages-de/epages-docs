@@ -88,7 +88,7 @@ Availability: <i class="fa fa-check"></i>
 
 Build an application that provides the ability to get images for a product, upload improved images, delete old images or set the default product image as well as reorder the slideshow.
 
-Suggested calls: [`GET` products](page:apps-api-get-shops-shopid-products-information), [`PATCH` products](page:apps-api-patch-shops-shopid-products-productid-information), [`GET` products/slideshow](page:apps-api-get-shops-shopid-products-productid-slideshow-information), [`POST` products/slideshow](page:apps-api-post-shops-shopid-products-productid-slideshow-information), [`DELETE` products/slideshow{imageName}](page:apps-api-delete-shops-shopid-products-productid-slideshow-imagename-information), [`GET` products/slideshow/sequence](page:apps-api-get-shops-shopid-products-productid-slideshow-sequence-information), [`PUT` products/slideshow/sequence](page:apps-api-put-shops-shopid-products-productid-slideshow-sequence-information)
+Suggested calls: [`GET` products](page:apps-api-get-shops-shopid-products-information), [`PATCH` products](page:apps-api-patch-shops-shopid-products-productid-information), [`GET` products/slideshow](page:apps-api-get-shops-shopid-products-productid-slideshow-information), [`POST` products/slideshow](page:apps-api-post-shops-shopid-products-productid-slideshow-information), [`DELETE` products/slideshow/{imageName}](page:apps-api-delete-shops-shopid-products-productid-slideshow-imagename-information), [`GET` products/slideshow/sequence](page:apps-api-get-shops-shopid-products-productid-slideshow-sequence-information), [`PUT` products/slideshow/sequence](page:apps-api-put-shops-shopid-products-productid-slideshow-sequence-information)
 
 Availability: <i class="fa fa-check"></i>
 
