@@ -36,5 +36,5 @@ Two [Design Thinking](http://hpi.de/school-of-design-thinking.html) sessions too
 
 {% image blog/mallorca_06_820.jpg %}{% endimage %}
 
-Tierra Buena (“Good Land”) was indeed very good for thinking out of the box and returning to Jena fueled by visionary understanding and even a brand new continuous delivery pipeline mascot our Wall-E out of Lego.
+Tierra Buena (“Good Land”) was indeed very good for thinking out of the box and returning to Jena fueled by visionary understanding and even a brand new continuous delivery pipeline mascot, our Wall-E out of Lego.
 
