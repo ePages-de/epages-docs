@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "A team of ePagees conquers Tierra Buena in Mallorca "
-date: "2016-03-18 06:18:03"
+title: "A team of ePagees conquers Tierra Buena in Mallorca"
+date: "2016-03-16 06:16:03"
 icon: suitcase
 categories: working-at-epages
 authors: ["Alejandra A., Benjamin N. and Heiko A."]
@@ -18,7 +18,7 @@ We also visited Sa Calobra and were delighted by the majestic mountains and the 
 
 {% image blog/blog-mallorca-2.jpg %}{% endimage %}
 
-Sharing daily life activities such as having breakfast, shopping, cooking, travelling by car and plane, playing board games and even doing sports together was definitely a very good way to become closer. Our off-site time was a **BIG** chance to gain trust into the capabilities of our team. We totally adopted this present sand lived this value amongst each other. It was a lot of fun.
+Sharing daily life activities such as having breakfast, shopping, cooking, travelling by car and plane, playing board games and even doing sports together was definitely a delightful way to become closer. Our off-site time was a **BIG** chance to gain trust into the capabilities of our team. We totally adopted this magical present. Unsurprisingly, we soon recognized that living the team spirit can be a lot of fun!
 
 {% image blog/blog-mallorca-3.jpg %}{% endimage %}
 
@@ -32,9 +32,10 @@ We also played two rounds of [Coding Dojo](http://codingdojo.org), where we focu
 
 At one day a hackathon accelerated our ingenious chains of thoughts. From the early afternoon until late into the night three pairs took the opportunity to delve into topics of their interest. One pair evaluated the Jenkins [Pipeline Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Pipeline+Plugin) and built a prototype with multiple continuous delivery stages. Others automated the handling around our translation process. The third pair developed a new concept how to deal with failing tests – of course not without a working prototype. Presenting the results to the other pairs the next morning showed how quick ideas can grow into applicable solutions.
 
-Two [Design Thinking](http://hpi.de/school-of-design-thinking.html) sessions took us beyond the counters of mind and helped us find ideas on how to return responsibilities to those teams that strongly depend on us nowadays and ideas that will help us keeping the build permanently in a releasable state.
+Two [Design Thinking](http://hpi.de/school-of-design-thinking.html) sessions took us beyond the mental barrier of longsome beaten paths. The consistent execution of this method over and over again rapidly helped us to find the wanted ideas for our current team mission. Firstly, we want to return a lot of responsibilities to those teams that strongly depend on us in these days. Secondly, we want to establish a fast and secure mechanism to permanently keep the latest build of the next ePages version in a releasable state.
 
 {% image blog/blog-mallorca-6.jpg %}{% endimage %}
 
-Tierra Buena (“Good Land”) was indeed very good for thinking out of the box and returning to Jena fueled by visionary understanding and even a brand new continuous delivery pipeline mascot, our Wall-E out of Lego.
+In retrospective, Tierra Buena (“Good Land”) was indeed a very good place for thinking out of the box, reviving the technological perspective for each team member and filling the last gaps in our built-on automation landscape. We are more than happy to tell you that not only we have returned to Jena fueled by visionary understanding but we also conjured up a brand new continuous delivery pipeline mascot, Wall-E - self-assembled in Lego of course.
 
+Overall, we can only recommend this welding together expierence for every professional team. Such intense moments can sharpen your focus and broaden your sight at once, but most importantly keep you ahead of the competition.
