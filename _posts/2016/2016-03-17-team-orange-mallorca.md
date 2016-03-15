@@ -13,7 +13,7 @@ Now we are back and ready to briefly tell you the tale of the fearless developer
 
 {% image blog/blog-mallorca-1.jpg %}{% endimage %}
 
-With much curiosity we first took some time off. To beginn with, we visited the Drach Caves and the beautiful beach at Porto Cristo to draw fresh inspiration. On the next day, we road trip Sa Calobra and were delighted by the majestic mountains and the bluish tonalities of the Mediterranean Sea.
+With much curiosity we first took some time off and enjoyed the amazing view over the beach skyline from the terrace of our finca [Son Pages](http://sonpages.com). On day two, we visited the [Cuevas del Drach](http://www.cuevasdeldrach.com) and the beautiful yacht harbour at [Porto Cristo](http://www.portocristo.org/) to draw fresh inspiration. On the next day, we undertook road trip to **Sa Calobra** in the north. We were delighted by the majestic mountains and completely captivated by the bluish tonalities of the **Mediterranean Sea**. Alongside the curvy mountain road and nested into the picturesque bay were various [Geocaching](https://www.geocaching.com) possibilites we thankworthy explored with tremendous pleasure.
 
 {% image blog/blog-mallorca-2.jpg %}{% endimage %}
 
