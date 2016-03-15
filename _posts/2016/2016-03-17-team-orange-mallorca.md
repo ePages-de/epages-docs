@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "A productive developer team offsite on Mallorca"
+title: "Developer team enjoys a productive offsite week on Mallorca"
 date: "2016-03-17 16:03:17"
 icon: suitcase
 categories: working-at-epages, events
@@ -13,8 +13,7 @@ Now we are back and ready to briefly tell you the tale of the fearless developer
 
 {% image blog/blog-mallorca-1.jpg %}{% endimage %}
 
-With much curiosity we first took some time off. To beginn with, we visited the Drach Caves and the beautiful beach at Porto Cristo to draw fresh inspiration.
-We also visited Sa Calobra and were delighted by the majestic mountains and the bluish tonalities of the Mediterranean Sea.
+With much curiosity we first took some time off. To beginn with, we visited the Drach Caves and the beautiful beach at Porto Cristo to draw fresh inspiration. On the next day, we road trip Sa Calobra and were delighted by the majestic mountains and the bluish tonalities of the Mediterranean Sea.
 
 {% image blog/blog-mallorca-2.jpg %}{% endimage %}
 
