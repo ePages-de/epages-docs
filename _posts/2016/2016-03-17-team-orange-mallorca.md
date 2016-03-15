@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Productive team offsite on Mallorca"
+title: "A productive developer team offsite on Mallorca"
 date: "2016-03-17 16:03:17"
 icon: suitcase
 categories: working-at-epages, events
