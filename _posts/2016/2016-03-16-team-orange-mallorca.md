@@ -38,4 +38,4 @@ Two [Design Thinking](http://hpi.de/school-of-design-thinking.html) sessions too
 
 In retrospective, Tierra Buena (“Good Land”) was indeed a very good place for thinking out of the box, reviving the technological perspective for each team member and filling the last gaps in our built-on automation landscape. We are more than happy to tell you that not only we have returned to Jena fueled by visionary understanding but we also conjured up a brand new continuous delivery pipeline mascot, Wall-E - self-assembled in Lego of course.
 
-Overall, we can only recommend this welding together expierence for every professional team. Such intense moments can sharpen your focus and broaden your sight at once, but most importantly keep you ahead of the competition.
+Overall, we can only recommend this welding together experience for every professional team. Such intense moments can sharpen your focus and broaden your sight at once, but most importantly keep you ahead of the competition.
