@@ -13,7 +13,7 @@ Now we are back and ready to briefly tell you the tale of the fearless developer
 
 ## Travelling together
 
-With much curiosity we first took some time off and enjoyed the amazing view over the beach skyline from the terrace of our finca [Son Pages](http://sonpages.com). On day two, we visited the [Cuevas del Drach](http://www.cuevasdeldrach.com) and the beautiful yacht harbour at [Porto Cristo](http://www.portocristo.org/) to draw fresh inspiration. On the next day, we undertook a road trip with the team van to **Sa Calobra** in the north. We were delighted by the majestic mountains and completely captivated by the bluish tonalities of the **Mediterranean Sea**. Alongside the curvy mountain road and nested into the picturesque bay were various [Geocaching](https://www.geocaching.com) possibilites that we thankworthy explored with tremendous pleasure.
+With much curiosity we first took some time off and enjoyed the amazing view over the beach skyline from the terrace of our finca, [Son Pages](http://sonpages.com). On day two, we visited the [Cuevas del Drach](http://www.cuevasdeldrach.com) and the beautiful yacht harbour at [Porto Cristo](http://www.portocristo.org/) to draw fresh inspiration. On the next day, we undertook a road trip with the team van to Sa Calobra in the north. We were delighted by the majestic mountains and completely captivated by the bluish tonalities of the Mediterranean Sea. Alongside the curvy mountain road and nested into the picturesque bay were various [Geocaching](https://www.geocaching.com) possibilites that we thankworthy explored with tremendous pleasure.
 
 {% image blog/blog-mallorca-1.jpg %}{% endimage %}
 
@@ -21,7 +21,7 @@ With much curiosity we first took some time off and enjoyed the amazing view ove
 
 ## Living as a team
 
-Sharing daily life activities such as having breakfast, shopping, cooking and playing board games together was definitely a delightful way to become closer. Every morning we even had a wonderful one hour wake-up **fitness workout** by a fun-loving and very disciplined personal trainer. This kick-starting routine often blended nicely into the warming sunrise over the palm island – what a sight!
+Sharing daily life activities such as having breakfast, shopping, cooking and playing board games together was definitely a delightful way to become closer. Every morning we even had a wonderful one hour wake-up **fitness workout** by a fun-loving and very disciplined personal trainer. This kick-starting routine often blended nicely into the warming **sunrise over the palm island** – what a sight!
 
 That's why the offsite time was a **BIG** chance to gain **trust** into the capabilities of our team. We totally adopted this magical present. Unsurprisingly, we soon recognised that living the **team spirit** can be a lot of fun!
 
@@ -31,24 +31,24 @@ That's why the offsite time was a **BIG** chance to gain **trust** into the capa
 
 ## Learning from your peers
 
-During our time on Mallorca, we of course had lots of time to work on our technological and business challenges, too. 
+During our time on Mallorca, we of course had lots of time to work on our **technological and business challenges**, too. 
 
 We accomplished two **knowledge sharing sessions**. One session was held by our continuous delivery pipeline expert in order to understand and explain the tool chain mechanisms that have not been shared equally amongst each team member yet. Another session focused on our evolved know-how and the established workflows around the translation process including language handling and building of language packs for internationalisation.
 
-We also played two rounds of [Coding Dojo](http://codingdojo.org), where we focused on solving the Kata of Conway’s Game of Life. In the first round we tried to apply the constraints “TDD as if you meant it” and “Driver & Navigator“, which strictly separates the roles in pair programming. The second round focused on shaping distinct, comprehensive and sustainable test cases. Therefore, one ePagee had to implement a unit test. Next, the coding partner should lean into the position of an evil programmer and hence only implement as little as possible to make the test pass. Afterwards he gives back the keyboard to the radically stressed writer of the unit test, who has to enforce the desired implementation with the addition of another test case. In this rotary principle we trained our sense for writing high quality tests. This hands-on approach delivered a lot of amusements as well as practical benefits for our programming skills.
+We also played two rounds of [Coding Dojo](http://codingdojo.org), where we focused on solving the Kata of Conway’s Game of Life. In the first round we tried to apply the constraints _“TDD as if you meant it”_ and _“Driver & Navigator”_, which strictly separates the roles in pair programming. The second round focused on shaping distinct, comprehensive and sustainable test cases. Therefore, one ePagee had to implement a unit test. Next, the coding partner should lean into the position of an _“evil programmer”_ and hence only implement as little as possible to make the test pass. Afterwards he gives back the keyboard to the radically stressed writer of the unit test, who has to enforce the desired implementation with the addition of another test case. In this rotary principle we trained our sense for writing high quality tests. This hands-on approach delivered a lot of amusements as well as practical benefits for our **programming skills**.
 
 {% image blog/blog-mallorca-5.jpg %}{% endimage %}
 
 ## Inspiring one another
 
-We also planned one day for a **hackathon**, that accelerated accelerated our ingenious chains of thoughts. From the early afternoon until late into the night three pairs of programmers took the opportunity to delve into topics of their interest – which fortunately often matched the team's scope of duties. One team evaluated the Jenkins [Pipeline Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Pipeline+Plugin) and built a prototype with multiple continuous delivery stages. Others automated the handling around our translation process. The third team developed a new concept on how to deal with failing tests – of course not without a working prototype. Presenting the results to the others the next morning showed how quick ideas can grow into applicable solutions.
+We also planned one day for a **hackathon**, that accelerated accelerated our ingenious chains of thoughts. From the early afternoon until late into the night three pairs of programmers took the opportunity to delve into topics of their interest – which fortunately often matched the team's scope of duties. One team evaluated the Jenkins [Pipeline Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Pipeline+Plugin) and built a prototype with multiple continuous delivery stages. Others engineered the ground-breaking steps for an **automated translation process**. The third team developed a new concept on how to deal with failing tests – of course not without a working **rapid prototype** that considered a quarantine test group. Presenting the results to the others the next morning showed how quick ideas can grow into applicable solutions.
 
-Two [Design Thinking](http://hpi.de/school-of-design-thinking.html) sessions took us beyond the mental barrier of longsome beaten paths. The consistent execution of this method over and over again rapidly helped us to find the desired ideas for our current team mission. Firstly, we want to return a lot of responsibilities to those teams that strongly depend on us these days. Secondly, we would like to establish a fast and secure mechanism to permanently keep the latest build of the next ePages version in a releasable state.
+Two **[Design Thinking](http://hpi.de/school-of-design-thinking.html)** sessions took us beyond the mental barrier of longsome beaten paths. The consistent execution of this method over and over again rapidly helped us to find the desired ideas for our current team mission. Firstly, we want to return a lot of responsibilities to those teams that strongly depend on us these days. Secondly, we would like to establish a fast and secure mechanism to permanently keep the latest build of the next ePages version in a releasable state.
 
 {% image blog/blog-mallorca-6.jpg %}{% endimage %}
 
 ## Summary
 
-In retrospective, Tierra Buena (“Good Land”) was indeed a very good place to come up with new ideas and to think out of the box, reviving the technological perspective for each team member and filling the last gaps in our built-on automation landscape. We have returned to the office fueled by visionary understanding, but we also conjured up a brand new continuous delivery pipeline mascot, Wall-E – self-assembled in Lego, of course.
+In retrospective, **Tierra Buena (“Good Land”)** was indeed a very good place to come up with new ideas and to think out of the box, reviving the technological perspective for each team member and filling the last gaps in our built-on automation landscape. We have returned to the office fueled by visionary understanding, but we also conjured up a brand new continuous delivery pipeline mascot, Wall-E – self-assembled in Lego, of course.
 
 To sum up, we can definitely recommend this team-bonding experience for every professional team. Such intense moments can sharpen your focus and broaden your horizons at once, but most importantly keep you ahead of the competition.
