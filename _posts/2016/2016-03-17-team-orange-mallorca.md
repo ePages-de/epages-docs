@@ -21,7 +21,9 @@ With much curiosity we first took some time off and enjoyed the amazing view ove
 
 ## Living as a team
 
-Sharing daily life activities such as having breakfast, shopping, cooking and playing board games together was definitely a delightful way to become closer. Every morning we even had a wonderful one hour wake-up fitness workout by a fun-loving and very disciplined personal trainer. This kick-starting routine often blended nicely into the warming sunrise over the palm island. That's why the offsite time was a **BIG** chance to gain trust into the capabilities of our team. We totally adopted this magical present. Unsurprisingly, we soon recognised that living the team spirit can be a lot of fun!
+Sharing daily life activities such as having breakfast, shopping, cooking and playing board games together was definitely a delightful way to become closer. Every morning we even had a wonderful one hour wake-up **fitness workout** by a fun-loving and very disciplined personal trainer. This kick-starting routine often blended nicely into the warming sunrise over the palm island – what a sight!
+
+That's why the offsite time was a **BIG** chance to gain **trust** into the capabilities of our team. We totally adopted this magical present. Unsurprisingly, we soon recognised that living the **team spirit** can be a lot of fun!
 
 {% image blog/blog-mallorca-3.jpg %}{% endimage %}
 
@@ -31,7 +33,7 @@ Sharing daily life activities such as having breakfast, shopping, cooking and pl
 
 During our time on Mallorca, we of course had lots of time to work on our technological and business challenges, too. 
 
-We accomplished two knowledge sharing sessions. One session was held by our pipeline expert in order to understand and explain the knowledge that has not been shared equally amongst each team member yet. Another session focused on our evolved know-how and the established workflows around the translation process including language handling and building of language packs for internationalisation.
+We accomplished two **knowledge sharing sessions**. One session was held by our continuous delivery pipeline expert in order to understand and explain the tool chain mechanisms that have not been shared equally amongst each team member yet. Another session focused on our evolved know-how and the established workflows around the translation process including language handling and building of language packs for internationalisation.
 
 We also played two rounds of [Coding Dojo](http://codingdojo.org), where we focused on solving the Kata of Conway’s Game of Life. In the first round we tried to apply the constraints “TDD as if you meant it” and “Driver & Navigator“, which strictly separates the roles in pair programming. The second round focused on shaping distinct, comprehensive and sustainable test cases. Therefore, one ePagee had to implement a unit test. Next, the coding partner should lean into the position of an evil programmer and hence only implement as little as possible to make the test pass. Afterwards he gives back the keyboard to the radically stressed writer of the unit test, who has to enforce the desired implementation with the addition of another test case. In this rotary principle we trained our sense for writing high quality tests. This hands-on approach delivered a lot of amusements as well as practical benefits for our programming skills.
 
@@ -39,7 +41,7 @@ We also played two rounds of [Coding Dojo](http://codingdojo.org), where we focu
 
 ## Inspiring one another
 
-We also planned one day for a hackathon, that accelerated accelerated our ingenious chains of thoughts. From the early afternoon until late into the night three pairs of programmers took the opportunity to delve into topics of their interest – which fortunately often matched the team's scope of duties. One team evaluated the Jenkins [Pipeline Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Pipeline+Plugin) and built a prototype with multiple continuous delivery stages. Others automated the handling around our translation process. The third team developed a new concept on how to deal with failing tests – of course not without a working prototype. Presenting the results to the others the next morning showed how quick ideas can grow into applicable solutions.
+We also planned one day for a **hackathon**, that accelerated accelerated our ingenious chains of thoughts. From the early afternoon until late into the night three pairs of programmers took the opportunity to delve into topics of their interest – which fortunately often matched the team's scope of duties. One team evaluated the Jenkins [Pipeline Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Pipeline+Plugin) and built a prototype with multiple continuous delivery stages. Others automated the handling around our translation process. The third team developed a new concept on how to deal with failing tests – of course not without a working prototype. Presenting the results to the others the next morning showed how quick ideas can grow into applicable solutions.
 
 Two [Design Thinking](http://hpi.de/school-of-design-thinking.html) sessions took us beyond the mental barrier of longsome beaten paths. The consistent execution of this method over and over again rapidly helped us to find the desired ideas for our current team mission. Firstly, we want to return a lot of responsibilities to those teams that strongly depend on us these days. Secondly, we would like to establish a fast and secure mechanism to permanently keep the latest build of the next ePages version in a releasable state.
 
