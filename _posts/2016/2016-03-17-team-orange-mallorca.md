@@ -13,7 +13,7 @@ Now we are back and ready to briefly tell you the tale of the fearless developer
 
 ## Travelling together
 
-With much curiosity we first took some time off and enjoyed the amazing view over the beach skyline from the terrace of our finca, [Son Pages](http://sonpages.com). On day two, we visited the [Cuevas del Drach](http://www.cuevasdeldrach.com) and the beautiful yacht harbour at [Porto Cristo](http://www.portocristo.org/) to draw fresh inspiration. On the next day, we went a road trip with the team van to Sa Calobra in the north. We were impressed by the majestic mountains and the bluish tonalities of the Mediterranean Sea. When cruising along the bay area, we also found various [Geocaching](https://www.geocaching.com) possibilities to explore.
+With much curiosity we first took some time off and enjoyed the amazing view over the beach skyline from the terrace of our finca, [Son Pages](http://sonpages.com). On day two, we visited the [Cuevas del Drach](http://www.cuevasdeldrach.com) and the beautiful yacht harbour at [Porto Cristo](http://www.portocristo.org/) to draw fresh inspiration. On the next day, we went on a road trip with the team van to Sa Calobra in the north. We were impressed by the majestic mountains and the bluish tonalities of the Mediterranean Sea. When cruising along the bay area, we also found various [Geocaching](https://www.geocaching.com) possibilities to explore.
 
 {% image blog/blog-mallorca-1.jpg %}{% endimage %}
 
