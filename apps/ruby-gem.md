@@ -1,17 +1,17 @@
 ---
 layout: page
 key: apps-ruby-gem
-title: API Ruby gem
+title: Ruby SDK
 ---
 
 You love to create awesome Ruby apps?
 You want to create understandable and easy code?
-To support you with that, we have developed the API Ruby gem.
+To support you with that, we have developed the Ruby SDK.
 It speeds up your development and saves valuable time that you could use to create even MORE awesome apps.
 
-## Install the gem in no time
+## Installation
 
-The Ruby gem allows to communicate with an ePages shop from the CLI or any Ruby framework.
+The Ruby SDK allows to communicate with an ePages shop from the CLI or any Ruby framework.
 All you need to do is get yourself a Ruby installation and run this command:
 
 {% highlight text %}
@@ -30,7 +30,7 @@ To integrate the gem with a Ruby framework, add it to the gemfile:
 gem 'epages-rest'
 {% endhighlight %}
 
-## Using the gem is dead easy
+## Usage
 
 Create a shop endpoint:
 {% highlight ruby %}
