@@ -11,7 +11,7 @@ Last week, the ePages release and test automation team was welcomed by the preci
 
 Now we are back and ready to briefly tell you the tale of the fearless developers' journey to a mysterious island. Enjoy the multifaceted report!
 
-#### Travelling together
+## Travelling together
 
 With much curiosity we first took some time off and enjoyed the amazing view over the beach skyline from the terrace of our finca [Son Pages](http://sonpages.com). On day two, we visited the [Cuevas del Drach](http://www.cuevasdeldrach.com) and the beautiful yacht harbour at [Porto Cristo](http://www.portocristo.org/) to draw fresh inspiration. On the next day, we undertook road trip to **Sa Calobra** in the north. We were delighted by the majestic mountains and completely captivated by the bluish tonalities of the **Mediterranean Sea**. Alongside the curvy mountain road and nested into the picturesque bay were various [Geocaching](https://www.geocaching.com) possibilites we thankworthy explored with tremendous pleasure.
 
