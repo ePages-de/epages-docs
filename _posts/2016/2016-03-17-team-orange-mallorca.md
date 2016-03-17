@@ -27,7 +27,7 @@ That's why the offsite time was a **BIG** chance to gain trust into the capabili
 
 ## Learning from your peers
 
-During our time on Mallorca, we of course had lots of time to work on our technological and business challenges, too. 
+During our time on Mallorca, we of course had lots of time to work on our technological and business challenges, too.
 
 We accomplished two knowledge sharing sessions. One session was held by our continuous delivery pipeline expert in order to understand and explain the tool chain mechanisms that have not been shared equally amongst each team member yet. Another session focused on our evolved know-how and the established workflows around the translation process including language handling and building of language packs for internationalisation.
 
