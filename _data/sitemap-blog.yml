@@ -21,15 +21,3 @@
 
     - title: Tech Stories
       link: page:blog-category-tech-stories
-
-- key: blog-links
-  title: Links
-  entries:
-    - title: API docu
-      link: https://developer.epages.com/
-
-    - title: devjobs
-      link: http://www.epages.com/devjobs
-
-    - title: epages.com
-      link: http://www.epages.com/

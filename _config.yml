@@ -10,7 +10,7 @@ google_analytics:
     id: UA-71308214-2
 
 permalink: /blog/:year/:month/:day/:title.html
-paginate: 5
+paginate: 7
 paginate_path: "/blog/page-:num/"
 raml:
   - key_prefix: "apps-api-"

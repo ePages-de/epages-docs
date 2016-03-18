@@ -2,8 +2,8 @@
 layout: post
 title: "Transform creative visions into reality @Geekettes Hamburg Hackathon"
 date: "2015-05-28 10:30:00"
-icon: cog
 categories: tech-stories hackathon
+image: "/assets/images/blog-geekettes-price-featured.jpg"
 authors: ["Andreas"]
 ---
 

@@ -2,8 +2,8 @@
 layout: post
 title: "Follow-up: Automating Jenkins"
 date: "2015-10-22 09:00:00"
-icon: wrench
 categories: tech-stories
+image: "/assets/images/blog/tech-stories1.png"
 authors: ["Dirk"]
 ---
 

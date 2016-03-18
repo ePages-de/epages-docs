@@ -2,7 +2,7 @@
 layout: post
 title: "Microservices Meetup: Service Discovery"
 date: "2016-02-09 07:16:34"
-icon: cc-discover
+image: "/assets/images/blog-microservice-meetup-4.jpg"
 categories: events
 authors: ["Mathias"]
 ---

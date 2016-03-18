@@ -2,8 +2,8 @@
 layout: post
 title: "Global Scrum Gathering 2015 Prague"
 date: "2015-12-07 07:23:00"
-icon: comments
 categories: conferences agile
+image: "/assets/images/blog/events.png"
 authors: ["Anja B."]
 ---
 

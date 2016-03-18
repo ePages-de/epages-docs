@@ -2,7 +2,7 @@
 layout: post
 title: "Scrum Basics Series - Part 4: Estimating"
 date: "2016-01-26 07:23:00"
-icon: university
+image: "/assets/images/blog/agile.png"
 categories: agile
 authors: ["Anja B."]
 ---
