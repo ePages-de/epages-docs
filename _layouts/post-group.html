@@ -6,7 +6,7 @@ layout: page
   {% for post in page.posts %}
   <div class="post-item col-sm-6">
     <div class="img-featured">
-      {% if post.image %}<img class="img-responsive" src="{{ post.image }}" alt="" />{% endif %}
+      <img class="img-responsive" src="{% if post.image %}{{ post.image }}{% else %}/assets/images/blog/tech-stories1.png{% endif %}" alt="" />
     </div>
     <h2 class="post-title">
       <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
