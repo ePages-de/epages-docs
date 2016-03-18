@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "epages talks REST API"
+title: "ePages talks REST API"
 date: "2015-09-08 08:10:00"
 categories: tech-stories conferences api
 image: "/assets/images/blog/api.png"

@@ -70,7 +70,6 @@ test:
           printf "\n%s\n\n" "=== SUCCESS ==="
           printf "\n%s\n\n" "=== ARCHIVE site artifacts of ruby container ==="
           mkdir -v -p "${CIRCLE_ARTIFACTS}/${DOCS_RUBY}"
-          sudo mv -f ~/${CIRCLE_PROJECT_REPONAME}/_site $_
           ;;
         esac
       : parallel: true

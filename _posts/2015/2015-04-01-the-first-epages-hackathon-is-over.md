@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The first epages hackathon is over"
+title: "The first ePages hackathon is over"
 date: "2015-04-01 12:00:00"
 categories: tech-stories hackathon
 image: "/assets/images/blog/events.png"

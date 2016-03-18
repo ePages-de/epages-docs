@@ -4,6 +4,12 @@ key: apps-use-cases
 title: Use cases
 ---
 
+You plan an integration with ePages?
+Thats great!
+Here are some use cases we can think of.
+Need more information on implementing a specific use case?
+Click [here](page:apps-implement-use-case).
+
 ## Social Commerce
 
 Build an application that show cases products on social media platforms like Facebook, integrates products on a blogging platform or on any given site with a widget.
@@ -64,7 +70,7 @@ Availability: <i class="fa fa-check"></i>
 
 Build an application that automatically updates the stock level of a product upon a POS/Marketplace sale.
 
-Suggested calls: [`GET` products](page:apps-api-get-shops-shopid-products-information), [`GET` products/stocklevel](page:apps-api-get-shops-shopid-products-productid-stock-level-information), [`PUT` products/stocklevel](page:apps-api-put-shops-shopid-products-productid-stock-level-information)
+Suggested calls: [`GET` products](page:apps-api-get-shops-shopid-products-information), [`GET` products/stock-level](page:apps-api-get-shops-shopid-products-productid-stock-level-information), [`PUT` products/stock-level](page:apps-api-put-shops-shopid-products-productid-stock-level-information)
 
 Optional calls: [`GET` categories](page:apps-api-get-shops-shopid-categories-information)
 
@@ -82,15 +88,18 @@ Availability: <i class="fa fa-check"></i>
 
 Build an application that provides the ability to get images for a product, upload improved images, delete old images or set the default product image as well as reorder the slideshow.
 
-Suggested calls: [`GET` products](page:apps-api-get-shops-shopid-products-information), [`PATCH` products](page:apps-api-patch-shops-shopid-products-productid-information), [`GET` products/slideshow](page:apps-api-get-shops-shopid-products-productid-slideshow-information), [`POST` products/slideshow](page:apps-api-post-shops-shopid-products-productid-slideshow-information), [`DELETE` products/slideshow](page:apps-api-delete-shops-shopid-products-productid-slideshow-imagename-information), [`GET` products/slideshow/sequence](page:apps-api-get-shops-shopid-products-productid-slideshow-sequence-information), [`PUT` products/slideshow/sequence](page:apps-api-put-shops-shopid-products-productid-slideshow-sequence-information)
+Suggested calls: [`GET` products](page:apps-api-get-shops-shopid-products-information), [`PATCH` products](page:apps-api-patch-shops-shopid-products-productid-information), [`GET` products/slideshow](page:apps-api-get-shops-shopid-products-productid-slideshow-information), [`POST` products/slideshow](page:apps-api-post-shops-shopid-products-productid-slideshow-information), [`DELETE` products/slideshow/{imageName}](page:apps-api-delete-shops-shopid-products-productid-slideshow-imagename-information), [`GET` products/slideshow/sequence](page:apps-api-get-shops-shopid-products-productid-slideshow-sequence-information), [`PUT` products/slideshow/sequence](page:apps-api-put-shops-shopid-products-productid-slideshow-sequence-information)
 
 Availability: <i class="fa fa-check"></i>
+
+Need more support?
+Click [here](page:apps-implement-use-case).
 
 ## Advanced Point of Sale (POS)/Marketplace
 
 Build an application that automatically updates the stock level of a product upon a POS/Marketplace sale and allows to create and manage customers and orders.
 
-Suggested calls: [`GET` products](page:apps-api-get-shops-shopid-products-information), [`PUT` products/stocklevel](page:apps-api-put-shops-shopid-products-productid-stock-level-information), [`PATCH` products](page:apps-api-patch-shops-shopid-products-productid-information), `GET` customers, `PUT` customers, `POST` customers, [`GET` orders](page:apps-api-get-shops-shopid-orders-information), [`PUT` orders](page:apps-api-put-shops-shopid-orders-orderid-information), `POST` orders
+Suggested calls: [`GET` products](page:apps-api-get-shops-shopid-products-information), [`PUT` products/stocklevel](page:apps-api-put-shops-shopid-products-productid-stock-level-information), [`PATCH` products](page:apps-api-patch-shops-shopid-products-productid-information), [`GET` customers](page:apps-api-get-shops-shopid-customers-customerid-information), [`PATCH` customers](page:apps-api-patch-shops-shopid-customers-customerid-information), [`POST` customers](page:apps-api-post-shops-shopid-customers-information), [`GET` orders](page:apps-api-get-shops-shopid-orders-information), [`PUT` orders](page:apps-api-put-shops-shopid-orders-orderid-information), `POST` orders
 
 Optional calls: [`GET` categories](page:apps-api-get-shops-shopid-categories-information)
 
@@ -100,7 +109,7 @@ Availability planned: **06/2016**
 
 Build an application that analyses and groups/targets customers by ordered products and/or newsletter preferences and generates personalised newsletters accordingly.
 
-Suggested calls: `GET` customers, `PUT` customers, `POST` customers, [`GET` orders](page:apps-api-get-shops-shopid-orders-information), [`GET` products](page:apps-api-get-shops-shopid-products-information)
+Suggested calls: [`GET` customers](page:apps-api-get-shops-shopid-customers-customerid-information), `PUT` customers, [`POST` customers](page:apps-api-post-shops-shopid-customers-information), [`GET` orders](page:apps-api-get-shops-shopid-orders-information), [`GET` products](page:apps-api-get-shops-shopid-products-information)
 
 Availability planned: **06/2016**
 
@@ -108,7 +117,7 @@ Availability planned: **06/2016**
 
 Build an application that manages products, customers and orders as well as handles fulfillment, accounting and customer support.
 
-Suggested calls: [`GET` products](page:apps-api-get-shops-shopid-products-information), [`PATCH` products](page:apps-api-patch-shops-shopid-products-productid-information), `POST` products, [`DELETE` products](page:apps-api-delete-shops-shopid-products-productid-information), `GET` customers, `PUT` customers, `POST` customers, [`GET` orders](page:apps-api-get-shops-shopid-orders-information), [`PUT` orders](page:apps-api-put-shops-shopid-orders-orderid-information), `POST` orders
+Suggested calls: [`GET` products](page:apps-api-get-shops-shopid-products-information), [`PATCH` products](page:apps-api-patch-shops-shopid-products-productid-information), `POST` products, [`DELETE` products](page:apps-api-delete-shops-shopid-products-productid-information), [`GET` customers](page:apps-api-get-shops-shopid-customers-customerid-information), `PUT` customers, [`POST` customers](page:apps-api-post-shops-shopid-customers-information), [`GET` orders](page:apps-api-get-shops-shopid-orders-information), [`PUT` orders](page:apps-api-put-shops-shopid-orders-orderid-information), `POST` orders
 
 Optional calls: [`GET` categories](page:apps-api-get-shops-shopid-categories-information)
 

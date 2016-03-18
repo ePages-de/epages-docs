@@ -42,17 +42,12 @@ traits: !include traits.raml
       200:
         body:
           application/json:
-            example: |
-              {
-              "name": "Technic365",
-              "slogan": ""<p>Make some noise>/p>",
-              "logoUrl": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/MediaGallery/logo_technic365_3.png",
-              "sfUrl": "http://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/Technic365",
-              "mboUrl": "https://pm.epages.com/epages/apidocu.admin/?ObjectPath=/Shops/Technic365"
-              }
+            example: !include get_shopid_response.json
+            schema: !include get_shopid.schema.json
   /carts: !include carts/carts.raml
   /categories: !include categories/categories.raml
   /currencies: !include currency/currency.raml
+  /customers: !include customers/customers.raml
   /legal: !include legal/legal.raml
   /locales: !include locale/locale.raml
   /orders: !include orders/orders.raml

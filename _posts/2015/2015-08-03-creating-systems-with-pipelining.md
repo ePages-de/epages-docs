@@ -19,7 +19,7 @@ The key of an automated OS install is the combination of [iPXE](http://ipxe.org/
 Last but not least when it comes to system specialisation [Linux](https://www.linux.com/) itself should be mentioned.
 To speak with the different interfaces, programming languages like [`Perl`](https://www.perl.org/) and [`Python`](https://www.python.org/) or scripting languages like [`PHP`](https://secure.php.net/) and [`bash`](http://www.gnu.org/software/bash/) are used.
 
-{% image blog-pipeline-tools.png %} {% endimage %}
+{% image blog/blog-pipeline-tools.png %} {% endimage %}
 
 The basic idea is simple. First thing we need is a system.
 
@@ -57,6 +57,6 @@ In our situation it depends on the use case. For example internal development sy
 Here is a simplified picture of the whole pipeline.
 The full process lasts about 10 to 15 minutes but depends on the specific configuration you choose.
 
-{% image blog-pipeline-jenkins.png %} {% endimage %}
+{% image blog/blog-pipeline-jenkins.png %} {% endimage %}
 
 In the future we'd like to use the existing build pipelines to create distributed systems with our and other software.

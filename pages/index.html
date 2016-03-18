@@ -1,0 +1,90 @@
+---
+layout: default
+permalink: /
+---
+{% assign chapter = page.url | regex_extract: '^/([^/]+)/' %}
+{% assign sitemap = chapter | sitemap %}
+<div id="landingpage">
+<div id="landingpage-banner">
+  <div id="landingpage-banner-headline">
+Build apps and themes
+  </div>
+  <div id="landingpage-banner-search">
+    <form method="get" action="{{ '/search.html' | prepend: site.baseurl }}" autocomplete="off" class="navbar-form text-center" role="search" >
+      <div class="input-group">
+        <input id="search-box" type="text" name="q" placeholder="Enter your search here" class="form-control"/>
+        <div class="input-group-btn">
+          <button type="submit" class="btn btn-block btn-search">Search</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+</div>
+
+
+<div id="content">
+  <div class="container">
+    <section>
+      <div class="row">
+        <div class="call-to-action col-sm-6">
+          <div class="row">
+            <span class="fa fa-3x fa-cogs"></span>
+            <h2 class="actions"><a href="{{ '/apps' | prepend: site.baseurl }}">Build apps with the REST API</a></h2>
+            <p>Create apps for our <a href="{{ '/apps' | prepend: site.baseurl }}">App Store </a>or develop custom integrations using our REST API</p>
+            <a href="{{ '/apps' | prepend: site.baseurl }}" class="action-button">Read REST API documentation</a>
+          </div>
+          </div>
+
+          <div class="call-to-action col-sm-6">
+            <div class="row">
+              <span class="fa fa-3x fa-pencil"></span>
+              <h2 class="actions"><a href="{{ '/themes' | prepend: site.baseurl }}">Create custom themes</a></h2>
+              <p>Design a theme for our <a href="{{ '/themes' | prepend: site.baseurl }}"> Theme Store</a> or customise the design of an ePages shop</p>
+              <a href="{{ '/themes' | prepend: site.baseurl }}" class="action-button">Read Theme documentation</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+</div>
+<section class="dev-banner">
+    <h2>Not registered for the developer program yet?</h2>
+  <a href="{{ '/devjobs' | prepend: site.baseurl }}" class="action-button action-padding">Join now</a>
+</section>
+
+<div id="content">
+  <div class="container">
+    <section>
+      <div class="row">
+        <h2 class="centered-res-h2">More resources</h2>
+        <div class="call-to-resources col-sm-4">
+          <div class="row">
+            <span class="fa fa-2x fa-cogs"></span>
+            <h2 class="dev-resourses"><a href="{{ '/blog' | prepend: site.baseurl }}">Developer Blog</a></h2>
+            <p>Read about the latest developments at ePages and current industry trends at <a href="{{ '/apps' | prepend: site.baseurl }}">our blog.</a></p>
+          </div>
+        </div>
+
+          <div class="call-to-resources col-sm-4">
+            <div class="row">
+              <span class="fa fa-2x fa-pencil"></span>
+              <h2 class="dev-resourses"><a href="#">Open Source Projects</a></h2>
+              <p>We have various open source projects which you can use and contribute to.</p>
+            </div>
+          </div>
+
+          <div class="call-to-resources col-sm-4">
+            <div class="row">
+              <span class="fa fa-2x fa-pencil"></span>
+              <h2 class="dev-resourses"><a href="{{ '/devjobs' | prepend: site.baseurl }}">Jobs</a></h2>
+              <p>Come work with us! Have a look at our <a href="{{ '/devjobs' | prepend: site.baseurl }}">current job openings.</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+</div>
+<section class="soap-banner">
+    <p>Still working with our old API? No problem, check our <a href="{{ '/soap' | prepend: site.baseurl }}">SOAP API documentation</a></p>
+</section>

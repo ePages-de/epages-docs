@@ -14,7 +14,7 @@ So let's jump right into Scrum Meetings:
 
 ## Sprint Planning I
 
-{% image blog-scrum3-planning.jpg 35% left %}{% endimage %}
+{% image blog/blog-scrum3-planning.jpg 35% left %}{% endimage %}
 
 This meeting takes place right at the beginning of a Sprint.
 Participants are the Development Team, the Product Owner (PO), the Scrum Master (SM) as well as sometimes relevant stakeholders of the product that is currently developed.
@@ -53,7 +53,7 @@ Desired outcome:
 
 ## Daily Standup
 
-{% image blog-scrum3-dailytoken.jpg 35% left %}{% endimage %}
+{% image blog/blog-scrum3-dailytoken.jpg 35% left %}{% endimage %}
 
 The Daily Standup (also called Daily Scrum) takes place every day at the same time, usually in the morning or before lunch.
 It has a maximum timeframe of 15 minutes.
@@ -94,7 +94,7 @@ Desired outcome:
 
 ## Retrospective
 
-{% image blog-scrum3-retrospective.jpg 40% left %}{% endimage %}
+{% image blog/blog-scrum3-retrospective.jpg 40% left %}{% endimage %}
 
 The Retrospective is the last meeting of the Sprint.
 It takes place after the Review and before the Planning of the next Sprint.

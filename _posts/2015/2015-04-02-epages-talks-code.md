@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "epages talks code"
+title: "ePages talks code"
 date: "2015-04-02 12:00:00"
 categories: tech-stories conferences
 image: "/assets/images/blog/events.png"

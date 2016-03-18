@@ -1,0 +1,47 @@
+#%RAML 0.8
+displayName: Customers
+post:
+  description: Creates a customer. If *customerNumber* is not provided in the request, it will be generated automatically.
+  securedBy: [customers_write]
+  body:
+    application/json:
+      example: !include examples/post_customer_request.json
+  responses:
+    201:
+      body:
+        application/json:
+          example: !include examples/post_customer_response.json
+          schema: !include schema/post_customer.schema.json
+/{customerId}:
+  displayName: Customer
+  get:
+    description: Returns a specified customer of a shop.
+    securedBy: [customers_read]
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include examples/get_customer_customerid_response.json
+            schema: !include schema/get_customer_customerid.schema.json
+  patch:
+    description: Updates information for a single customer with partial data according to [RFC 6902](https://tools.ietf.org/html/rfc6902). You can either add or remove certain attributes.<br><br>
+
+        *Supported JSON-PATCH operations*<br>
+        - add (sets or replaces an attribute)<br>
+        - remove (unsets an attribute)<br><br>
+
+        *Attribute paths that allow updates via PATCH* ( **¹** supports *add* only)<br>
+              - /customerNumber¹<br>
+              - /billingAddress<br>
+              - /internalNote<br>
+
+    securedBy: [customers_write]
+    body:
+      application/json:
+        example: !include examples/patch_customer_customerid_request.json
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include examples/patch_customer_customerid_response.json
+            schema: !include schema/patch_customer_customerid.schema.json

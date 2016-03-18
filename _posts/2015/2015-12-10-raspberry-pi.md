@@ -10,7 +10,7 @@ authors: ["Katharina", "Norman"]
 Setting up a Raspberry PI to send SMS notifications was my task within a two-weeks student internship at ePages.
 Starting position: the external service provider AnySMS is integrated in the Icinga Monitoring.
 The Icinga sends error messages to our standby phone via AnySMS.
-To being able to carry out this service ourselves, we had the idea of realising this via a Raspberry Pi.
+To being able to carry out this service ourselves, we realised this via a Raspberry Pi.
 
 First, AnySMS and the Raspberry Pi should run in parallel, so that if one fails the other could still send an SMS.
 The Raspberry Pi should be able to send SMS via a web service and has to be integrated with the Icinga.

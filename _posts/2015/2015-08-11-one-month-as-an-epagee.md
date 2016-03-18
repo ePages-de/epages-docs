@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "One month as an epagee"
+title: "One month as an ePagee"
 date: "2015-08-11 08:00:00"
 categories: working-at-epages
 image: "/assets/images/blog/working-epages.png"
@@ -13,7 +13,7 @@ So it was really a little relief to receive a very warm welcome on our first day
 
 Every new ePagee is assigned to a buddy - usually an experienced employee who should give the new guy a helping hand during the first weeks. Our buddies introduced us to everybody. It turned out that ePages is a very diverse company. The team is very international and has a good mix of age groups. You find people from Spain, Italy, Belarus, Brasil, people that are on their first job and also more experienced ones - and even parents ;-).
 
-{% image blog-one-month-as-an-epagee-scrum.jpg 30% left %}{% endimage %}
+{% image blog/blog-one-month-as-an-epagee-scrum.jpg 30% left %}{% endimage %}
 
 Our first days were packed with different information sessions and trainings. Many departments introduced themselves and gave some insight about their work. This really helped to understand the company. One of the highlights was certainly the Scrum Training given by Anja who is the scrum master for some of the teams in Jena. The session was a nice refresher regarding the principles of scrum and how they are implemented at ePages. Anja also gave us some interesting information about the transformation of ePages from a waterfall-oriented company to an agile one.
 
