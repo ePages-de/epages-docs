@@ -2,8 +2,8 @@
 layout: post
 title: "Service discovery with Consul, Registrator & HAProxy"
 date: "2015-09-28 08:30:00"
-icon: search-plus
 categories: tech-stories
+image: "/assets/images/blog/tech-stories1.png"
 authors: ["Dirk"]
 ---
 

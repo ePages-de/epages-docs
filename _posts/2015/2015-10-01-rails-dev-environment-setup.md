@@ -2,8 +2,8 @@
 layout: post
 title: "Setting up a Linux Development Environment for Ruby (on Rails)"
 date: "2015-10-01 13:02:00"
-icon: diamond
 categories: tech-stories
+image: "/assets/images/blog/tech-stories1.png"
 authors: ["Declan"]
 ---
 

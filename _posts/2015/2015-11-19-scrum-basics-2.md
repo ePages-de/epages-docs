@@ -2,8 +2,8 @@
 layout: post
 title: "Scrum Basics Series - Part 2: Scrum Roles"
 date: "2015-11-19 07:23:00"
-icon: university
 categories: agile
+image: "/assets/images/blog/agile.png"
 authors: ["Anja B."]
 ---
 

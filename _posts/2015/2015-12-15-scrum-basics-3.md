@@ -2,8 +2,8 @@
 layout: post
 title: "Scrum Basics Series - Part 3: Scrum Meetings"
 date: "2015-12-15 07:23:00"
-icon: university
 categories: agile
+image: "/assets/images/blog/agile.png"
 authors: ["Anja B."]
 ---
 

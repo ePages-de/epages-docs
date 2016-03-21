@@ -1,8 +1,25 @@
 ---
-layout: page
+layout: default
 hide_sitemap: true
 ---
+<div id="landingpage">
+<div id="landingpage-banner">
+  <div id="landingpage-banner-headline">
+    Theme Documentation
 
+  </div>
+  <div id="landingpage-banner-search">
+    <form method="get" action="{{ '/search.html' | prepend: site.baseurl }}" autocomplete="off" class="navbar-form text-center" role="search" >
+      <div class="input-group">
+        <input id="search-box" type="text" name="q" placeholder="Enter your search here" class="form-control"/>
+        <div class="input-group-btn">
+          <button type="submit" class="btn btn-block btn-search">Search</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+</div>
 <div id="content">
   <div id="pageoverview" class="container">
     {% assign sitemap = 'themes' | sitemap | chunked_array: 1 %}
