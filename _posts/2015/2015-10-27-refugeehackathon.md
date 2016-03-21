@@ -3,7 +3,7 @@ layout: post
 title: "#refugeehackathon"
 date: "2015-10-27 12:00:00"
 categories: hackathon
-image: "/assets/images/blog-agile-meetup-1.jpg"
+image: "/assets/images/blog/blog-agile-meetup-1.jpg"
 authors: ["Jan"]
 ---
 
