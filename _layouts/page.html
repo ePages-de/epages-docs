@@ -11,10 +11,10 @@ layout: default
     ),url('{{ page.image }}')"{% endif %}>
   <div id="landingpage-banner-headline-small">
     {% if page.title %}{{ page.title }}
-    <div class="post-meta">
-      {{ page.date | date: "%b %-d, %Y" }} authored by {{ page.authors | join: ' and ' }}
-    </div>
-    <img class="img-responsive" src="{{ post.image }}" alt="" />
+      <div class="post-meta">
+        {{ page.date | date: "%b %-d, %Y" }} authored by {{ page.authors | join: ' and ' }}
+      </div>
+      {% if post.image %}<img class="img-responsive" src="{{ post.image }}" alt="hero image" />{% endif %}
     {% else %}Developer Blog{% endif %}
   </div>
 </div>
