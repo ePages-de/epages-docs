@@ -5,45 +5,63 @@ layout: default
 {% assign chapter = page.url | regex_extract: '^/([^/]+)/' %}
 {% assign sitemap = chapter | sitemap %}
 
-{% unless page.hide_searchbar %}
-  {% if page.landingpage %}
-    <div id="landingpage">
-      <div id="landingpage-banner">
-        <div id="landingpage-banner-headline">{{ page.landingpage.title }}</div>
-        <div id="landingpage-banner-text">{{ page.landingpage.text }}</div>
-        <div id="landingpage-banner-search">
-          <form method="get" action="{{ '/search.html' | prepend: chapter | prepend: '/' | prepend: site.baseurl }}" autocomplete="off">
-            <div class="row">
-              <div class="col-sm-9">
-                <input id="search-box" type="text" name="q" placeholder="Enter your search here" class="form-control"/>
-              </div>
-              <div class="col-sm-3">
-                <button type="submit" class="btn btn-block btn-search">Search</button>
-              </div>
-            </div>
-          </form>
+{% if chapter == 'blog' %}
+<div id="landingpage">
+  <div class="landingpage-banner-small" {% if page.image %}style="background-image:linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)
+    ),url('{{ page.image }}')"{% endif %}>
+  <div id="landingpage-banner-headline-small">
+    {% if page.title %}{{ page.title }}
+      <div class="post-meta">
+        {{ page.date | date: "%b %-d, %Y" }} authored by {{ page.authors | join: ' and ' }}
+      </div>
+      {% if post.image %}<img class="img-responsive" src="{{ post.image }}" alt="hero image" />{% endif %}
+    {% else %}Developer Blog{% endif %}
+  </div>
+</div>
+</div>
+{% endif %}
+
+{% if chapter == 'apps' %}
+<div id="landingpage">
+  <div id="landingpage-banner">
+  <div id="landingpage-banner-headline">
+    REST API Documentation
+  </div>
+  <div id="landingpage-banner-search">
+    <form method="get" action="{{ '/search.html' | prepend: site.baseurl }}" autocomplete="off" class="navbar-form text-center" role="search" >
+      <div class="input-group">
+        <input id="search-box" type="text" name="q" placeholder="Enter your search here" class="form-control"/>
+        <div class="input-group-btn">
+          <button type="submit" class="btn btn-block btn-search">Search</button>
         </div>
       </div>
-    </div>
-  {% else %}
-    <div id="landingpage">
-      <div id="landingpage-banner" class="landingpage-banner-small">
-        <div id="landingpage-banner-search" style="padding: 1rem;">
-          <form method="get" action="{{ '/search.html' | prepend: chapter | prepend: '/' | prepend: site.baseurl }}" autocomplete="off">
-            <div class="row">
-              <div class="col-sm-9">
-                <input id="search-box" type="text" name="q" placeholder="Enter your search here" class="form-control"/>
-              </div>
-              <div class="col-sm-3">
-                <button type="submit" class="btn btn-block btn-search">Search</button>
-              </div>
-            </div>
-          </form>
+    </form>
+  </div>
+</div>
+</div>
+{% endif %}
+
+{% if chapter == 'soap' %}
+<div id="landingpage">
+  <div id="landingpage-banner">
+  <div id="landingpage-banner-headline">
+    SOAP API Documentation
+  </div>
+  <div id="landingpage-banner-search">
+    <form method="get" action="{{ '/search.html' | prepend: site.baseurl }}" autocomplete="off" class="navbar-form text-center" role="search" >
+      <div class="input-group">
+        <input id="search-box" type="text" name="q" placeholder="Enter your search here" class="form-control"/>
+        <div class="input-group-btn">
+          <button type="submit" class="btn btn-block btn-search">Search</button>
         </div>
       </div>
-    </div>
-  {% endif %}
-{% endunless %}
+    </form>
+  </div>
+</div>
+</div>
+{% endif %}
+
+
 <div id="content">
   <div class="container">
     <div class="row">
@@ -56,16 +74,22 @@ layout: default
               <li class="sitemap-entry">{% sitemap_link entry %}</li>
             {% endfor %}
           {% endfor %}
+          <div class="post-share">
+            {% assign full_url = page.url | prepend: site.baseurl | prepend: site.url %}
+            {% assign title = page.title %}
+            <h4 class="sitemap-headline">Share</h4>
+            <ul class="socialmedia">
+              <li><a href="https://twitter.com/intent/tweet?text={{ title | url_escape }}&url={{ full_url | url_escape }}&via=epagesdevs&tw_p=tweetbutton" target="_blank" title="Share via Twitter"><span class="icon-twitter"></span></a></li>
+              <li><a href="https://www.facebook.com/sharer/sharer.php?u={{ full_url | url_escape }}" target="_blank"><span class="icon-facebook" title="Share via Facebook"></span></a></li>
+              <li><a href="https://plus.google.com/share?url={{ full_url | url_escape }}" target="_blank"><span class="icon-googleplus" title="Share via Google+"></span></a></li>
+            </ul>
+          </div>
+
           </ul>
         </div>
         <div class="col-sm-9">
       {% endunless %}
       <article>
-        {% if page.title %}
-          <div class="page-header">
-            <h1 class="title">{{ page.title }}</h1>
-          </div>
-        {% endif %}
         {{ content }}
       </article>
       {% unless page.hide_sitemap %}
@@ -75,3 +99,7 @@ layout: default
     {% include pagination.html %}
   </div>
 </div>
+
+<section class="soap-banner">
+    <p>Not registered for the developer program yet? <a href="http://www.epages.cloud/developer/">Join now</a></p>
+</section>

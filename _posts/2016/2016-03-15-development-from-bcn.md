@@ -2,7 +2,7 @@
 layout: post
 title: "Development from the Barcelona paradise"
 date: "2016-03-15 09:00:00"
-icon: bookmark
+image: "/assets/images/blog/blog-bcn-barbecue.jpg"
 categories: working-at-epages
 authors: ["Roger"]
 ---

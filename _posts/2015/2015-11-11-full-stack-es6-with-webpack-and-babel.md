@@ -2,8 +2,8 @@
 layout: post
 title: "On the way to full stack ECMAScript 6"
 date: "2015-11-16 12:00:00"
-icon: code
 categories: tech-stories
+image: "/assets/images/blog/tech-stories1.png"
 authors: ["Paolo"]
 ---
 

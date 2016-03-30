@@ -2,8 +2,8 @@
 layout: post
 title: "One month as an ePagee"
 date: "2015-08-11 08:00:00"
-icon: user-plus
 categories: working-at-epages
+image: "/assets/images/blog/working-epages.png"
 authors: ["Mathias", "Mats"]
 ---
 

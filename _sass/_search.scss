@@ -20,9 +20,16 @@
 #search-box {
   font-size: 1.8rem;
   padding: 9px 0 6px 6px;
-  background: #fff url("/assets/images/search.png") left center no-repeat;
-  text-indent: 40px;
+  background: #fff;
+  text-indent: 10px;
   height: 36px;
+  width: 500px;
+  height: 45px;
+  margin: 0 auto;
+
+  @media screen and (max-width: $screen-xs-min) {
+    max-width: 200px;
+  }
 }
 
 #search-results {
@@ -57,14 +64,16 @@
 
 .btn-search {
   background-color: $green;
-  border-radius: 0;
+  border-radius: 1px;
   border: 1px solid $green;
   color: #fff;
   font-size: 1.8rem;
-  min-height: 16px;
+  min-height: 45px;
   line-height: 24px;
   text-decoration: none;
   height: 36px;
+  width: 120px;
+
 
   &:hover, &:active, &:focus {
     background-color: darken($green, 2);

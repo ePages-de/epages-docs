@@ -1,10 +1,6 @@
 {% assign chapter = page.url | regex_extract: '^/([^/]+)/' %}
-{% assign fork = "apps|blog|themes|soap" | split: "|" | contains: chapter %}
 {% assign beta = "apps|themes" | split: "|" | contains: chapter %}
 {% if chapter %}
-  {% if fork %}
-    <a id="ribbon-github" href="{{ site.github_url }}">Fork us on GitHub</a>
-  {% endif %}
 {% endif %}
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
@@ -15,32 +11,20 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      {% if chapter and chapter != 'support' %}
-        <a class="navbar-brand" href="{{ '/index.html' | prepend: chapter | prepend: '/' | prepend: site.baseurl }}">
-          {% if chapter == 'blog' %}
-            <div id="brand-logo-devblog"></div>
-          {% else %}
-            <div id="brand-logo-documentation"></div>
-          {% endif %}
-        </a>
-      {% else %}
-        <a class="navbar-brand" href="{{ '/' | prepend: site.baseurl }}"><div id="brand-logo"></div></a>
-      {% endif %}
+        {% if chapter != 'blog' %}
+          <a class="navbar-brand" href="{{ '/' | prepend: site.baseurl }}"><div id="brand-logo"></div></a>
+        {% else %}
+          <a class="navbar-brand" href="{{ '/blog/index.html' | prepend: site.baseurl }}"><div id="brand-logo-devblog"></div></a>
+        {% endif %}
     </div>
     <div id="navbar" class="navbar-collapse collapse">
-      {% unless chapter %}
-        <ul class="nav navbar-nav navbar-left">
-          <li><a href="{{ "/apps" | prepend: site.baseurl }}">REST API</a></li>
-          <li><a href="{{ "/themes" | prepend: site.baseurl }}">Themes</a></li>
-        </ul>
-      {% endunless%}
-      {% if chapter == nil or chapter == 'apps' %}
         <ul class="nav navbar-nav navbar-right">
+          <li><a href="{{ "/apps" | prepend: site.baseurl }}">REST API</a></li>
           <li><a href="{{ "/blog/index.html" | prepend: site.baseurl }}">Developer Blog</a></li>
           <li><a href="{{ "/apps/faq.html" | prepend: site.baseurl }}">FAQ</a></li>
           <li><a href="{{ "/support" | prepend: site.baseurl }}">Support</a></li>
+          <a href="{{ "/devjobs" | prepend: site.baseurl }}"><button type="submit" class="hiring-btn">We're hiring</button></a>
         </ul>
-      {% endif %}
     </div>
   </div>
 </nav>

@@ -4,20 +4,16 @@ key: blog-index
 searchable: false
 ---
 
-<ul class="post-list">
+<row class="post-list">
   {% for post in paginator.posts %}
-    <li class="post-item">
+    <div class="post-item col-sm-6">
+      <div class="img-featured">
+        <img class="img-responsive" src="{% if post.image %}{{ post.image }}{% else %}/assets/images/blog/tech-stories1.png{% endif %}" alt="hero image" />
+      </div>
       <h2 class="post-title">
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </h2>
       <div class="post-meta">{{ post.date | date: "%b %-d, %Y" }} authored by {{ post.authors | join: ' and ' }}</div>
-      <p>
-        <i class="fa fa-{{ post.icon }} fa-3x pull-left fa-border"></i>
-        {{ post.excerpt | strip_html }}
-      </p>
-      <p class="clear">
-        <a href="{{ post.url | prepend: site.baseurl }}">Continue reading...</a>
-      </p>
-    </li>
+    </div>
   {% endfor %}
-</ul>
+</div>
