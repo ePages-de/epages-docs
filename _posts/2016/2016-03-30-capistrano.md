@@ -24,7 +24,7 @@ Find another [Configuration Management](https://en.wikipedia.org/wiki/Configurat
 
 ## Evaluation of tools
 
-After a rough preselection the following tools were evaluated:
+After a rough preselection the following tools were evaluated in the middle of 2015:
 
 * [SaltStack](http://saltstack.com/ "SaltStack"): uses a `salt-ssh` command to run commands without additional software
 * [Ansible](http://www.ansible.com/ "Ansible"): provides a role model and uses SSH for encrypted communication
