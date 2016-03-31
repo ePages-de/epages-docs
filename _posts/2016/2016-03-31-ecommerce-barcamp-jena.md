@@ -1,35 +1,35 @@
 ---
 layout: post
-title: "Visiting the eCommerceCamp in Jena"
-date: "2016-03-24 09:03:24"
+title: " A report from the eCommerceCamp in Jena"
+date: "2016-03-31 09:03:24"
 icon: shopping-cart
 categories: events
 authors: ["Benjamin"]
 ---
 
-The [eCommerceCamp](http://www.ecommerce-camp.de) is an annual [BarCamp](http://barcamp.org) that takes place in Jena, the capital of the eCommerce sphere in Germany, where a lot of the magic of online shopping started and still happens today. As always the highly affordable tickets for the unconference were sold out upfront and around 300 participants from near and far were expected. The orga team from [tritum](http://www.tritum.de) and [marmalade](http://www.marmalade.de) did a terrific job by creating an inspiring environment, which let everyone look forward to up-to-date topics about shop systems, productivity habits, email marketing, new technologies, customer satisfaction and team collaboration or even juggling with circus balls.
+The [eCommerceCamp](http://www.ecommerce-camp.de) is an annual [BarCamp](http://barcamp.org) that takes place in Jena, Germany. A lot of online shopping magic started in Jena and still happens there today. As always, the highly affordable tickets for the unconference were sold out upfront and around 300 participants from near and far were expected. The orga team from [tritum](http://www.tritum.de) and [marmalade](http://www.marmalade.de) did a terrific job by creating an inspiring environment, which let everyone look forward to up-to-date topics about shop systems, productivity habits, email marketing, new technologies, customer satisfaction and team collaboration or even juggling with circus balls.
 
 ## The participants
 
-The clientele consists mainly of UI and UX designers, frontend and backend developers, project managers, some marketing people and also a few dedicated testers from web agencies with 1 to 20 people, who typically work with self-contained content management systems like [Magento](https://magento.com), [OXID](http://www.oxid-esales.com), [Shopware](https://en.shopware.com), [TYPO3](https://typo3.org) or even [WordPress](https://wordpress.com). Attendees from the global eCommerce players are typically lesser represented, but this doesn't mean that local matadors like [Intershop](http://www.intershop.com) or ePages are not there as well.
+The clientele consists mainly of UI and UX designers, frontend and backend developers, project managers, some marketing people and also a few dedicated testers from web agencies with 1 to 20 people. These agencies usually work with self-contained content management systems like [Magento](https://magento.com), [OXID](http://www.oxid-esales.com), [Shopware](https://en.shopware.com), [TYPO3](https://typo3.org) or even [WordPress](https://wordpress.com). Attendees from the global eCommerce players are typically represented to a lesser extend, but this doesn't mean that local matadors like ePages or [Intershop](http://www.intershop.com) do not attend.
 
 {% image blog/blog-ecommerce-barcamp-1.jpg %}{% endimage %}
 
 ## The setting
 
-The event began with a dinner on Thursday evening in the famous local restaurant [Zur Noll](http://www.zur-noll.de/), which should break the ice of everyone's comfort zone and kickoff the communication flow.
+The event started with a dinner in a famous local restaurant. This was a nice ice breaker to kick off the communication and get out of our comfort zones.
 
-On Friday morning all participants met in the auditorium at the [Ernst-Abbe-Hochschule Jena](http://www.eah-jena.de/), University of Applied Sciences, which served as hosting space. After a collective breakfast the session planning for both days took place. Everybody can suggest an own Open Space talk. The crowd expresses interest in a suggestion via raising their hands. This immediate reaction allows a proper planning of the time slot and room allocation for the session.
+The next morning, all participants met at the main BarCamp location, the auditorium at the [Ernst-Abbe-Hochschule Jena](http://www.eah-jena.de/), University of Applied Sciences. After a collective breakfast, the session planning for both days started. Anyone who wants to may initiate an OpenSpace talk. The other attendees express interest in a suggestion by raising their hands. This immediate reaction allows a proper planning of the time slot and room allocation for the session.
 
 ## The sessions
 
-To give you a better impression of the actual contents of the conference I want to outline some of the sessions. As I am a backend software craftsman you may recognise easily that I skipped the marketing and lawfully oriented parts of the event and tried to focus on the more technical talks.
+In order to give a better impression of the actual contents of the unconference, I'd like to outline some of the sessions. As I am a backend developer, I will focus on the technical talks and neglect the sessions about marketing or law.
 
 {% image blog/blog-ecommerce-barcamp-2.jpg %}{% endimage %}
 
-The first session was held by Christoph Rüger, who is part of a small team that has built a new cloud service that reads data from files (uploaded CSV, XML, Google Drive etc.) and let's the user create workflows via Drag'n'Drop (e.g. cronjobs with conditions and scheduling) that can interact with other service providers. Christopher revealed which tools his team used for internal project management and customer communication. He also explained the process of finding the fitting frameworks for developing their service, which was a quite interesting to follow.
+The first session was held by Christoph Rüger from [Synesty](http://synesty.com). He is part of a small team that has built a new cloud service that reads data from files (uploaded CSV, XML, Google Drive etc.). This service lets the user create workflows via drag and drop (e.g. cronjobs with conditions and scheduling) that can interact with other service providers. Christoph revealed, which tools his team used for internal project management, customer communication and issue tracking. He also explained the process of finding the fitting frameworks for developing their service, which was a quite interesting to follow.
 
-The next presentation dealt with the topic "Infrastructure as Code". Jan Peschke and Manuel Dieckmann prepared a talk about how they automated the rollout and development of Shopware environments with [Ansible](https://www.ansible.com/) and [OpenStack](https://www.openstack.org), a solution similar to [Amazon AWS](https://aws.amazon.com). Currently this cloud technology is on the transition to the state of production-readyness but not there yet. However a lot of minor service providers already emphasize OpenStack in the marketing ads as a blazing part of their customer portfolio. In the session it was made clear that developers have to be very careful with such announced offers as the promises of most providers can be very disappointing and do not hold up to an usable support of OpenStack. So be careful, if you opt against rackspace. Nevertheless, the framework in general is very interesting and already provides a lot of functionality. It will be worth to follow in the future.
+The next presentation dealt with the topic "Infrastructure as Code". Jan Peschke and Manuel Dieckmann prepared a talk about how they automated the rollout and development of Shopware environments with [Ansible](https://www.ansible.com) and [OpenStack](https://www.openstack.org), a solution similar to [Amazon AWS](https://aws.amazon.com). Currently, this cloud technology is well on the way to, but not yet fully production ready. However, a lot of minor service providers already emphasise OpenStack in the marketing ads as a blazing part of their customer portfolio.  This session made clear that developers have to be very careful with such announced offers as the promises of most providers can be very disappointing and do not hold up to an usable support of OpenStack. So be careful, if you opt against rackspace. Nevertheless, the framework in general is very interesting and already provides a lot of functionality. It will be worth to follow in the future.
 
 {% image blog/blog-ecommerce-barcamp-4.jpg 45% right %}The orga team{% endimage %}
 
