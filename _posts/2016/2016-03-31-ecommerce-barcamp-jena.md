@@ -7,7 +7,7 @@ categories: events
 authors: ["Benjamin"]
 ---
 
-The [eCommerceCamp](http://www.ecommerce-camp.de) is an annual [BarCamp](http://barcamp.org) that takes place every March in Jena, Germany. A lot of online shopping magic started in Jena and still happens there today. As always, the highly affordable tickets for the unconference were sold out upfront and around 300 participants from near and far were expected. The orga team from [tritum](http://www.tritum.de) and [marmalade](http://www.marmalade.de) did a terrific job by creating an inspiring environment, which let everyone look forward to up-to-date topics about shop systems, productivity habits, email marketing, new technologies, customer satisfaction and team collaboration or even juggling with circus balls.
+The [eCommerceCamp](http://www.ecommerce-camp.de) is a [BarCamp](http://barcamp.org) that takes places every year in March in Jena, Germany. A lot of online shopping magic started in Jena and still happens there today. As always, the highly affordable tickets for the unconference were sold out upfront and around 300 participants from near and far were expected. The orga team from [tritum](http://www.tritum.de) and [marmalade](http://www.marmalade.de) did a terrific job by creating an inspiring environment, which let everyone look forward to up-to-date topics about shop systems, productivity habits, email marketing, new technologies, customer satisfaction and team collaboration or even juggling with circus balls.
 
 ## The participants
 
@@ -23,7 +23,7 @@ The next morning, all participants met at the main BarCamp location, the auditor
 
 ## The sessions
 
-In order to give a better impression of the actual contents of the unconference, I'd like to outline some of the sessions. Being a backend developer myself, I will focus on the technical talks and neglect the sessions about marketing or law.
+In order to give a better impression of the actual contents of the unconference, I'd like to outline some of the sessions. As backend developer, I will focus on the technical talks and neglect the sessions about marketing or law.
 
 {% image blog/blog-ecommerce-barcamp-2.jpg %}{% endimage %}
 
@@ -52,6 +52,6 @@ Another form of active relaxation between the session breaks could be accomplish
 
 ## Summary
 
-All in all, the BarCamp offered a friendly atmosphere to meet new people with a wide range of backgrounds. Many sessions were quite enjoyable with a wide variety of topics, and there were some outstanding ones, too. From what I have seen, I can totally recommend this unconference. Especially for PHP developers and all sector newcomers, this event may be a great cliffhanger.
+All in all, the BarCamp offered a friendly atmosphere to meet new people with a wide range of backgrounds. Many sessions were quite enjoyable with a wide variety of topics, and there were some outstanding ones, too. From what I have seen, I can totally recommend this unconference. Especially for PHP developers and all sector newcomers, this event might be worth a visit.
 
 Before the eCommerceCamp is after the eCommerceCamp, so be ready for a visit next year!
