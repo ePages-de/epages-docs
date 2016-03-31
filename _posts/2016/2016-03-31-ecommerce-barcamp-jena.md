@@ -7,7 +7,7 @@ categories: events
 authors: ["Benjamin"]
 ---
 
-The [eCommerceCamp](http://www.ecommerce-camp.de) is an annual [BarCamp](http://barcamp.org) that takes place in Jena, Germany. A lot of online shopping magic started in Jena and still happens there today. As always, the highly affordable tickets for the unconference were sold out upfront and around 300 participants from near and far were expected. The orga team from [tritum](http://www.tritum.de) and [marmalade](http://www.marmalade.de) did a terrific job by creating an inspiring environment, which let everyone look forward to up-to-date topics about shop systems, productivity habits, email marketing, new technologies, customer satisfaction and team collaboration or even juggling with circus balls.
+The [eCommerceCamp](http://www.ecommerce-camp.de) is an annual [BarCamp](http://barcamp.org) that takes place every March in Jena, Germany. A lot of online shopping magic started in Jena and still happens there today. As always, the highly affordable tickets for the unconference were sold out upfront and around 300 participants from near and far were expected. The orga team from [tritum](http://www.tritum.de) and [marmalade](http://www.marmalade.de) did a terrific job by creating an inspiring environment, which let everyone look forward to up-to-date topics about shop systems, productivity habits, email marketing, new technologies, customer satisfaction and team collaboration or even juggling with circus balls.
 
 ## The participants
 
@@ -19,11 +19,11 @@ The clientele consists mainly of UI and UX designers, frontend and backend devel
 
 The event started with a dinner in a famous local restaurant. This was a nice ice breaker to kick off the communication and get out of our comfort zones.
 
-The next morning, all participants met at the main BarCamp location, the auditorium at the [Ernst-Abbe-Hochschule Jena](http://www.eah-jena.de/), University of Applied Sciences. After a collective breakfast, the session planning for both days started. Anyone who wants to may initiate an OpenSpace talk. The other attendees express interest in a suggestion by raising their hands. This immediate reaction allows a proper planning of the time slot and room allocation for the session.
+The next morning, all participants met at the main BarCamp location, the auditorium at the [Ernst-Abbe-Hochschule Jena](http://www.eah-jena.de/), University of Applied Sciences. After a collective breakfast, the session planning for both days started. Anyone who wants may initiate an OpenSpace talk. The other attendees express interest in a suggestion by raising their hands. This immediate reaction allows a proper planning of the time slot and room allocation for the session.
 
 ## The sessions
 
-In order to give a better impression of the actual contents of the unconference, I'd like to outline some of the sessions. As I am a backend developer, I will focus on the technical talks and neglect the sessions about marketing or law.
+In order to give a better impression of the actual contents of the unconference, I'd like to outline some of the sessions. Being a backend developer myself, I will focus on the technical talks and neglect the sessions about marketing or law.
 
 {% image blog/blog-ecommerce-barcamp-2.jpg %}{% endimage %}
 
@@ -50,7 +50,7 @@ Another form of active relaxation between the session breaks could be accomplish
 
 {% image blog/blog-ecommerce-barcamp-3.jpg %}{% endimage %}
 
-## Resume
+## Summary
 
 All in all, the BarCamp offered a friendly atmosphere to meet new people with a wide range of backgrounds. Many sessions were quite enjoyable with a wide variety of topics, and there were some outstanding ones, too. From what I have seen, I can totally recommend this unconference. Especially for PHP developers and all sector newcomers, this event may be a great cliffhanger.
 
