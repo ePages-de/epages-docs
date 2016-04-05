@@ -91,6 +91,9 @@
     - title: ShippingMethods
       link: page:api-resources-shipping-methods
 
+    - title: WatchedProducts
+      link: page:api-resources-watched-products
+
 - key: more
   title: More
   entries:

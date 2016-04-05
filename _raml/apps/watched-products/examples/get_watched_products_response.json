@@ -1,0 +1,31 @@
+{
+    "items": [
+        {
+            "name": "Edelrid Black Bear Seil",
+            "productId": "56D46B1D-11DA-9A48-B589-AC1532073F53",
+            "productNumber": "er_7142303001",
+            "watchers": 1,
+            "links": [
+              {
+                "rel": "product",
+                "href": "http://vm-ubiallas.intern.epages.de/rs/shops/DemoShop/products/56D46B1D-11DA-9A48-B589-AC1532073F53"
+              }
+            ]
+        },
+        {
+            "name": "Eureka El Capitan IV",
+            "productId": "56D46B1E-4E3D-62B0-7D17-AC1532073F08",
+            "productNumber": "eg_1000111010",
+            "watchers": 2,
+            "links": [
+              {
+                "rel": "product",
+                "href": "http://vm-ubiallas.intern.epages.de/rs/shops/DemoShop/products/56D46B1E-4E3D-62B0-7D17-AC1532073F08"
+              }
+            ]
+        }
+    ],
+    "page": 1,
+    "results": 2,
+    "resultsPerPage": 100
+}

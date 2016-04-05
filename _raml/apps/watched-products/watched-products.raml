@@ -1,0 +1,13 @@
+#%RAML 0.8
+displayName: Watched products
+description: Products watched by customers.
+get:
+  description: Returns a list of all watched products.
+  securedBy: [products_read]
+  is: [ locale, paged ]
+  queryParameters:
+  responses:
+    200:
+      body:
+        application/json:
+          example: !include examples/get_watched_products_response.json
