@@ -11,6 +11,7 @@
 .navbar {
   position: relative;
   min-height: $navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
+  margin-bottom: $navbar-margin-bottom;
   border: 1px solid transparent;
 
   // Prevent floats from breaking the navbar
@@ -137,7 +138,7 @@
 // Fix the top/bottom navbars when screen real estate supports it
 .navbar-fixed-top,
 .navbar-fixed-bottom {
-  position: relative;
+  position: fixed;
   right: 0;
   left: 0;
   z-index: $zindex-navbar-fixed;
@@ -417,8 +418,7 @@
 
       &:hover,
       &:focus {
-        color: #fff;
-        text-decoration: underline;
+        color: $navbar-default-link-hover-color;
         background-color: $navbar-default-link-hover-bg;
       }
     }
@@ -427,7 +427,6 @@
       &:hover,
       &:focus {
         color: $navbar-default-link-active-color;
-        text-decoration: underline;
         background-color: $navbar-default-link-active-bg;
       }
     }
@@ -438,28 +437,6 @@
         color: $navbar-default-link-disabled-color;
         background-color: $navbar-default-link-disabled-bg;
       }
-    }
-  }
-
-  .hiring-btn  {
-    background-color: transparent;
-    border-radius: 2px;
-    border: solid 1px #ffffff;
-    color: #fff;
-    font-size: 1.8rem;
-    min-height: 45px;
-    line-height: 24px;
-    text-decoration: none;
-    height: 36px;
-    width: 120px;
-    margin-top: 20px;
-    margin-left: 24px;
-
-    &:hover, &:active, &:focus {
-      background-color: darken($green, 2);
-      border: 1px solid darken($green, 2);
-      color: #fff;
-      text-decoration: none;
     }
   }
 

@@ -2,8 +2,8 @@
 layout: post
 title: "Scrum Basics Series - Part 1: What is Scrum?"
 date: "2015-10-13 08:23:00"
+icon: university
 categories: agile
-image: "/assets/images/blog/agile.png"
 authors: ["Anja B."]
 ---
 

@@ -1,13 +1,14 @@
-#landingpage {
-    margin-top: -85px;
-  }
-
 #landingpage-banner {
   background-image: url('#{$assets-base}/images/landingpage-banner.jpg');
   background-position: center top;
   background-size: cover;
-  height: 450px;
-  padding-top: 6%;
+
+  &.landingpage-banner-small {
+    background-image: none;
+    padding: 1.5rem 0;
+    background-color: #ddd;
+    background: inherit;
+  }
 
   @media screen and (max-width: $screen-sm-max) {
     padding: 20px 0;
@@ -18,39 +19,16 @@
   }
 }
 
-.landingpage-banner-small {
-    height: 325px;
-    background-image: url('#{$assets-base}/images/landingpage-banner.jpg');
-    background-color: inherit;
-    background-size: cover;
-  }
-
-  #landingpage-banner-headline-small {
-    color: white;
-    text-align: center;
-    font-size: 56px;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
-    margin: 0 auto;
-    padding-top: 135px;
-    font-family: 'HelveticaNeue-Bold';
-    font-weight: 400;
-
-    @media screen and (max-width: $screen-sm-max) {
-      padding: 20px;
-      font-size: 32px;
-    }
-  }
-
-
 #landingpage-banner-headline {
   color: white;
   text-align: center;
-  font-size: 56px;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+  font-size: 52px;
+  text-shadow: $text-shadow;
   margin: 0 auto;
   padding-top: 40px;
-  font-family: 'HelveticaNeue-Bold';
-  font-weight: 400;
+  font-family: $font-family-base;
+  font-style: italic;
+  font-weight: 100;
 
   @media screen and (max-width: $screen-sm-max) {
     padding: 20px;

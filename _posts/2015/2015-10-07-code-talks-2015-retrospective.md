@@ -2,8 +2,8 @@
 layout: post
 title: "code.talks 2015 retrospective"
 date: "2015-10-07 09:00:00"
+icon: comments
 categories: conferences
-image: "/assets/images/blog/events.png"
 authors: ["Jens"]
 ---
 

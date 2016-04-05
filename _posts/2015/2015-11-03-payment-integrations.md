@@ -2,8 +2,8 @@
 layout: post
 title: "Payment Integrations"
 date: "2015-11-03 09:00:00"
+icon: money
 categories: tech-stories
-image: "/assets/images/blog/tech-stories1.png"
 authors: ["Xavi"]
 ---
 

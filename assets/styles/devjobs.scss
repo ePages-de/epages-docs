@@ -65,12 +65,7 @@ h4 { font-family: 'ProximaNova', Arial, sans-serif; font-size: 18px; line-height
 .lightGray { background: $gray2; }
 
 .strong { font-family: 'ProximaNova', Verdana, Arial, sans-serif; }
-.center {
-  text-align: center;
-  font-size: 18px;
-  color: #fff;
-  font-style: normal;
-}
+.center { text-align: center; }
 
 .btn {
   padding: 15px 30px;
@@ -96,10 +91,6 @@ h4 { font-family: 'ProximaNova', Arial, sans-serif; font-size: 18px; line-height
 p {
   a, a:hover, a:visited { color: #fff; text-decoration: underline; }
 }
-p {
-margin: 0 0 10px;
-color: #fff;
-  }
 
 #menu {
   a {
@@ -124,7 +115,7 @@ a.logo {
   display: inline-block;
   width: 120px;
   height: 30px;
-  background: transparent url("/assets/logos/epages-white.png") center center no-repeat;
+  background: transparent url("/assets/logos/epages-logo-white.png") center center no-repeat;
   background-size: contain;
   text-indent: -9999px;
   overflow: hidden;
@@ -224,7 +215,6 @@ a.logo {
       text-align: left;
       a {
         color: $red;
-        font-size: 26px;
       }
     }
     h4 {
@@ -234,7 +224,6 @@ a.logo {
       text-align: left;
     }
     .info, .location {
-      color: #fff;
       margin-top: 20px;
       padding-top: 20px;
       border-top: 1px solid lighten($gray2, 20%);
@@ -384,7 +373,6 @@ a.logo {
       text-align: left;
       a {
         color: $red;
-        font-size: 36px;
       }
     }
     .line {

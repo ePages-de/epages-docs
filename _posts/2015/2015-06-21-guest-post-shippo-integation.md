@@ -2,8 +2,8 @@
 layout: post
 title: "Guest post: A Shippo developer gives an insight on the technical integration into ePages"
 date: "2015-06-21 23:59:25"
+icon: truck
 categories: tech-stories
-image: "/assets/images/blog/tech-stories1.png"
 authors: ["Shippo"]
 ---
 

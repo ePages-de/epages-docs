@@ -2,8 +2,8 @@
 layout: post
 title: "Help us improve our API documentation"
 date: "2015-09-04 10:20:00"
+icon: check-square-o
 categories: api
-image: "/assets/images/blog/api.png"
 authors: ["Birgit"]
 ---
 

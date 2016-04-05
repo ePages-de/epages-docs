@@ -2,8 +2,8 @@
 layout: post
 title: "ePages participates in Jena Company Cup"
 date: "2015-06-30 08:00:00"
+icon: users
 categories: events
-image: "/assets/images/blog-company-cup-featured.jpg"
 authors: ["Björn"]
 ---
 On Friday the 19th of June 2015, the first “Jenaer Unternehmenscup” (Jena Company Cup) took place.

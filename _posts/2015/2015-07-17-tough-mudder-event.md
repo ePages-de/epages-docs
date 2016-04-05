@@ -2,8 +2,8 @@
 layout: post
 title: "epagees face the Tough Mudder challenge"
 date: "2015-07-17 08:14:03"
+icon: users
 categories: events
-image: "/assets/images/blog-tough-mudder-featured.jpg"
 authors: ["Ludger"]
 ---
 

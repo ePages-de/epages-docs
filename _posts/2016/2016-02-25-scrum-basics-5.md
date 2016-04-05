@@ -2,7 +2,7 @@
 layout: post
 title: "Scrum Basics Series - Part 5: Principles and Values"
 date: "2016-02-25 07:23:00"
-image: "/assets/images/blog/agile.png"
+icon: university
 categories: agile
 authors: ["Anja B."]
 ---
