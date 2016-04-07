@@ -66,6 +66,7 @@
   "upc": null,
   "ean": null,
   "essentialFeature": null,
+  "stocklevel": 2,
   "links": [
     {
       "rel": "self",
