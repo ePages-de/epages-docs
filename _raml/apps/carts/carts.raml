@@ -16,7 +16,7 @@ post:
 /{cartId}:
   displayName: Cart
   get:
-    description: Returns a specific cart from a shop identified by the provided cart ID.
+    description: Returns a specific cart from a shop identified by the provided cart Id.
     securedBy: [carts_read]
     responses:
       200:
@@ -24,6 +24,17 @@ post:
           application/json:
             example: !include examples/get_carts_cartid_response.json
             schema: !include schema/get_carts_cartid.schema.json
+
+  /order:
+    displayName: Order
+    post:
+      description: Creates an order from a valid cart. Billing address has to be available in the cart before creating an order.
+      responses:
+        201:
+          body:
+            application/json:
+              example: !include examples/post_carts_cartid_order_response.json
+              schema: !include schema/post_carts_cartid_order.schema.json
 
   /line-items:
     displayName: Line items
