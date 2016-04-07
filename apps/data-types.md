@@ -344,7 +344,7 @@ This object is used for the attributes of deliveryWeight and quantity.
 | value | string | The key of an attribute, e.g. 004. |
 | displayValue | string | The displayed name of the attribute, e.g. XtraLarge. |
 
-## watchedProducts
+## watchedProduct
 
 | Attribute | Type | Description |
 | - | :-: |  - |

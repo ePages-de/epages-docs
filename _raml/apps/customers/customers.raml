@@ -2,6 +2,7 @@
 displayName: Customers
 get:
   description: Returns a list of all customers.
+  securedBy: [customers_read]
   is: [ paged ]
   queryParameters:
   responses:
