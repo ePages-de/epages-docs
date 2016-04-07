@@ -229,6 +229,8 @@ This object is used for the attributes of product.
 | ean | string | The European Article Number of the product, either EAN-8 or EAN-13. |
 | essentialFeatures | string | The essential features of the product. |
 | searchKeywords | array of strings | The search terms for the product determined by the merchant in the administration.  |
+| stocklevel | string | Only available with the `products_write` authorisation. Indicates the stocklevel of the product. |
+| isVisible | boolean | Only available with the `products_write` authorisation. Indicates if the product is visible in the shop. Currently only available as request attribute. Planned as response attribute at a later development stage.  |
 | links | array of [link](page:apps-data-types#link) | The links to the product and product category. |
 
 ## productLineItem
@@ -306,6 +308,13 @@ This object is used for the attributes of deliveryWeight and quantity.
 | sfUrl | string | The URL to the storefront of the shop. |
 | mboUrl | string | The URL to the administration area of the shop. |
 
+## taxClass
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| name | string | The name of the tax class. |
+| percentage | number | The percentage the product is taxed with.|
+
 ## updatedProducts
 
 | Attribute | Type | Description |
@@ -334,3 +343,13 @@ This object is used for the attributes of deliveryWeight and quantity.
 | - | :-: |  - |
 | value | string | The key of an attribute, e.g. 004. |
 | displayValue | string | The displayed name of the attribute, e.g. XtraLarge. |
+
+## watchedProducts
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| productId | string | The unique identifier of the product. |
+| name | string | The name of the product. |
+| productNumber | string | The product number. |
+| watchers | number | The number of watchers. |
+| links | array of [link](page:apps-data-types#link) | The link to the watched product. |

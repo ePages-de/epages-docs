@@ -1,253 +1,68 @@
 {
-  "results": 3,
-  "page": 1,
-  "resultsPerPage": 3,
-  "items": [
+  "productId": "5704DD36-CF73-2959-B830-D5809AB3F450",
+  "name": "Brand new product",
+  "shortDescription": "Awesome product",
+  "description": "This is a brand new product",
+  "productImage": null,
+  "images": [],
+  "priceInfo": {
+    "quantity": {
+      "amount": 1,
+      "unit": "piece(s)"
+    },
+    "taxClass": {
+      "name": "normal",
+      "percentage": 19
+    },
+    "price": {
+      "taxType": "GROSS",
+      "formatted": "5,99 €",
+      "amount": 5.99,
+      "currency": "EUR"
+    },
+    "depositPrice": null,
+    "ecoParticipationPrice": null,
+    "priceWithDeposits": {
+      "taxType": "GROSS",
+      "formatted": "5,99 €",
+      "amount": 5.99,
+      "currency": "EUR"
+    },
+    "manufacturerPrice": null,
+    "basePrice": null
+  },
+  "forSale": true,
+  "specialOffer": false,
+  "deliveryWeight": null,
+  "shippingMethodsRestrictedTo": null,
+  "availabilityText": "",
+  "availability": null,
+  "energyLabelsString": null,
+  "energyLabelSourceFile": null,
+  "productDataSheet": null,
+  "sfUrl": "http://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/Products/01234",
+  "productNumber": "01234",
+  "manufacturer": "Awesome Products Company",
+  "upc": null,
+  "ean": null,
+  "essentialFeatures": null,
+  "searchKeywords": [
+    "awesome",
+    "product"
+  ],
+  "stocklevel": null,
+  "links": [
     {
-      "productId": "54EF2E41-FCA8-E0E5-9323-0A0C05E66C2E",
-      "name": "Customised headphone",
-      "shortDescription": null,
-      "description": "Customise your headphone in no time!",
-      "productImage": "headphone3.jpg",
-      "images": [
-        {
-          "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54EF/2E41/FCA8/E0E5/9323/0A0C/05E6/6C2E/001-headphone_h.jpg",
-          "classifier": "HotDeal"
-        },
-        {
-          "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54EF/2E41/FCA8/E0E5/9323/0A0C/05E6/6C2E/001-headphone_m.jpg",
-          "classifier": "Medium"
-        },
-        {
-          "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54EF/2E41/FCA8/E0E5/9323/0A0C/05E6/6C2E/headphone3.jpg",
-          "classifier": "Large"
-        },
-        {
-          "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54EF/2E41/FCA8/E0E5/9323/0A0C/05E6/6C2E/001-headphone_s.jpg",
-          "classifier": "Small"
-        },
-        {
-          "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54EF/2E41/FCA8/E0E5/9323/0A0C/05E6/6C2E/001-headphone_xs.jpg",
-          "classifier": "Thumbnail"
-        }
-      ],
-      "priceInfo": {
-        "quantity": {
-          "amount": 1,
-          "unit": "piece(s)"
-        },
-        "price": {
-          "taxType": "GROSS",
-          "formatted": "299.00 €",
-          "amount": 299,
-          "currency": "EUR"
-        },
-        "depositPrice": null,
-        "ecoParticipationPrice": null,
-        "priceWithDeposits": {
-          "taxType": "GROSS",
-          "formatted": "299.00 €",
-          "amount": 299,
-          "currency": "EUR"
-        },
-        "manufacturerPrice": null,
-        "basePrice": null
-      },
-      "forSale": true,
-      "specialOffer": false,
-      "deliveryWeight": {
-        "amount": 350,
-        "unit": "g"
-      },
-      "shippingMethodsRestrictedTo": null,
-      "availabilityText": "",
-      "availability": null,
-      "energyLabelsString": null,
-      "energyLabelSourceFile": null,
-      "productDataSheet": null,
-      "sfUrl": "http://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/Products/Cust001",
-      "productNumber": "Cust001",
-      "manufacturer": "Dr. Boom",
-      "upc": null,
-      "ean": null,
-      "essentialFeature": null,
-      "links": [
-        {
-          "rel": "self",
-          "href": "https://pm.epages.com/rs/shops/apidocu/products/54EF2E41-FCA8-E0E5-9323-0A0C05E66C2E"
-        },
-        {
-          "rel": "custom-attributes",
-          "href": "https://pm.epages.com/rs/shops/apidocu/products/54EF2E41-FCA8-E0E5-9323-0A0C05E66C2E/custom-attributes"
-        },
-        {
-          "rel": "categories",
-          "href": "https://pm.epages.com/rs/shops/apidocu/products/54EF2E41-FCA8-E0E5-9323-0A0C05E66C2E/categories"
-        }
-      ]
+      "rel": "self",
+      "href": "https://pm.epages.com/rs/shops/apidocu/products/5704DD36-CF73-2959-B830-D5809AB3F450"
     },
     {
-      "productId": "51E7F905-2E4C-78C2-30C2-AC14145FA4E5",
-      "name": "Dr.Boom - Red Power",
-      "shortDescription": null,
-      "description": "<ul>\n\t<li>Surround Sound</li>\n\t<li>Acoustic Noise Cancelling</li>\n\t<li>Correct fit",
-      "images": [
-        {
-          "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F905/2E4C/78C2/30C2/AC14/145F/A4E5/013-headphone-red_h.jpg",
-          "classifier": "HotDeal"
-        },
-        {
-          "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F905/2E4C/78C2/30C2/AC14/145F/A4E5/013-headphone-red_m.jpg",
-          "classifier": "Medium"
-        },
-        {
-          "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F905/2E4C/78C2/30C2/AC14/145F/A4E5/013-headphone-red.jpg",
-          "classifier": "Large"
-        },
-        {
-          "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F905/2E4C/78C2/30C2/AC14/145F/A4E5/013-headphone-red_s.jpg",
-          "classifier": "Small"
-        },
-        {
-          "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F905/2E4C/78C2/30C2/AC14/145F/A4E5/013-headphone-red_xs.jpg",
-          "classifier": "Thumbnail"
-        }
-      ],
-      "priceInfo": {
-        "quantity": {
-          "amount": 1,
-          "unit": "piece(s)"
-        },
-        "price": {
-          "taxType": "GROSS",
-          "formatted": "65.00 €",
-          "amount": 65,
-          "currency": "EUR"
-        },
-        "depositPrice": null,
-        "ecoParticipationPrice": null,
-        "priceWithDeposits": {
-          "taxType": "GROSS",
-          "formatted": "65.00 €",
-          "amount": 65,
-          "currency": "EUR"
-        },
-        "manufacturerPrice": null,
-        "basePrice": null
-      },
-      "forSale": true,
-      "specialOffer": false,
-      "deliveryWeight": {
-        "amount": 260,
-        "unit": "g"
-      },
-      "shippingMethodsRestrictedTo": null,
-      "availabilityText": "In stock<br />can be shipped within 3-5 days",
-      "availability": "OnStock",
-      "energyLabelsString": null,
-      "energyLabelSourceFile": null,
-      "productDataSheet": null,
-      "sfUrl": "http://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/Products/HP-003",
-      "productNumber": "HP-003",
-      "manufacturer": "Bass by Dr.Boom",
-      "upc": null,
-      "ean": null,
-      "links": [
-        {
-          "rel": "self",
-          "href": "https://pm.epages.com/rs/shops/apidocu/products/51E7F905-2E4C-78C2-30C2-AC14145FA4E5"
-        },
-        {
-          "rel": "custom-attributes",
-          "href": "https://pm.epages.com/rs/shops/apidocu/products/51E7F905-2E4C-78C2-30C2-AC14145FA4E5/custom-attributes"
-        },
-        {
-          "rel": "categories",
-          "href": "https://pm.epages.com/rs/shops/apidocu/products/51E7F905-2E4C-78C2-30C2-AC14145FA4E5/categories"
-        }
-      ]
+      "rel": "custom-attributes",
+      "href": "https://pm.epages.com/rs/shops/apidocu/products/5704DD36-CF73-2959-B830-D5809AB3F450/custom-attributes"
     },
     {
-      "productId": "51E7F913-5447-240E-77AE-AC14145FA477",
-      "name": "Dr.Boom - True Voice",
-      "shortDescription": null,
-      "description": "Professional headphones. Bass pipe emphasises low tones for a clear, realistic sound. Ergonomically shaped.",
-       "productImage": "headset1.jpg",
-      "images": [
-        {
-          "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F913/5447/240E/77AE/AC14/145F/A477/headset1_h.jpg",
-          "classifier": "HotDeal"
-        },
-        {
-          "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F913/5447/240E/77AE/AC14/145F/A477/headset1_m.jpg",
-          "classifier": "Medium"
-        },
-        {
-          "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F913/5447/240E/77AE/AC14/145F/A477/headset1.jpg",
-          "classifier": "Large"
-        },
-        {
-          "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F913/5447/240E/77AE/AC14/145F/A477/headset1_s.jpg",
-          "classifier": "Small"
-        },
-        {
-          "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F913/5447/240E/77AE/AC14/145F/A477/headset1_xs.jpg",
-          "classifier": "Thumbnail"
-        }
-      ],
-      "priceInfo": {
-        "quantity": {
-          "amount": 1,
-          "unit": "piece(s)"
-        },
-        "price": {
-          "taxType": "GROSS",
-          "formatted": "149.99 €",
-          "amount": 149.99,
-          "currency": "EUR"
-        },
-        "depositPrice": null,
-        "ecoParticipationPrice": null,
-        "priceWithDeposits": {
-          "taxType": "GROSS",
-          "formatted": "149.99 €",
-          "amount": 149.99,
-          "currency": "EUR"
-        },
-        "manufacturerPrice": null,
-        "basePrice": null
-      },
-      "forSale": true,
-      "specialOffer": false,
-      "deliveryWeight": {
-        "amount": 310,
-        "unit": "g"
-      },
-      "shippingMethodsRestrictedTo": null,
-      "availabilityText": "In stock<br />can be shipped within 3-5 days",
-      "availability": "OnStock",
-      "energyLabelsString": null,
-      "energyLabelSourceFile": null,
-      "productDataSheet": null,
-      "sfUrl": "http://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/Products/HS-001",
-      "productNumber": "HS-001",
-      "manufacturer": "Bass by Dr.Boom",
-      "upc": null,
-      "ean": null,
-      "links": [
-        {
-          "rel": "self",
-          "href": "https://pm.epages.com/rs/shops/apidocu/products/51E7F913-5447-240E-77AE-AC14145FA477"
-        },
-        {
-          "rel": "custom-attributes",
-          "href": "https://pm.epages.com/rs/shops/apidocu/products/51E7F913-5447-240E-77AE-AC14145FA477/custom-attributes"
-        },
-        {
-          "rel": "categories",
-          "href": "https://pm.epages.com/rs/shops/apidocu/products/51E7F913-5447-240E-77AE-AC14145FA477/categories"
-        }
-      ]
+      "rel": "categories",
+      "href": "https://pm.epages.com/rs/shops/apidocu/products/5704DD36-CF73-2959-B830-D5809AB3F450/categories"
     }
   ]
 }

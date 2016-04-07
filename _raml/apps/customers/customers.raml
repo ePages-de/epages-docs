@@ -1,5 +1,15 @@
 #%RAML 0.8
 displayName: Customers
+get:
+  description: Returns a list of all customers.
+  is: [ paged ]
+  queryParameters:
+  responses:
+    200:
+      body:
+        application/json:
+          example: !include examples/get_customer_response.json
+          schema: !include schema/get_customer.schema.json
 post:
   description: Creates a customer. If *customerNumber* is not provided in the request, it will be generated automatically.
   securedBy: [customers_write]
