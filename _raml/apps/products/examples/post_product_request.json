@@ -4,7 +4,6 @@
   "shortDescription": "Awesome product",
   "description": "This is a brand new product",
   "manufacturer": "Awesome Products Company",
-  "isVisible": true,
   "price": 5.99,
   "searchKeywords": ["awesome", "product"]
 }

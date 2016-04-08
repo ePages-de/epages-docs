@@ -230,7 +230,6 @@ This object is used for the attributes of product.
 | essentialFeatures | string | The essential features of the product. |
 | searchKeywords | array of strings | The search terms for the product determined by the merchant in the administration.  |
 | stocklevel | string | Only available with the `products_write` authorisation. Indicates the stocklevel of the product. |
-| isVisible | boolean | Only available with the `products_write` authorisation. Indicates if the product is visible in the shop. Currently only available as request attribute. Planned as response attribute at a later development stage.  |
 | links | array of [link](page:apps-data-types#link) | The links to the product and product category. |
 
 ## productLineItem
