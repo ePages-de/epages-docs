@@ -34,7 +34,7 @@ Availability: <i class="fa fa-check"></i>
 
 Build an application that allows you to print shipping labels and to control the status of an order.
 
-Suggested calls: [`GET` orders](page:apps-api-get-shops-shopid-orders-information), [`PUT` orders](page:apps-api-put-shops-shopid-orders-orderid-information)
+Suggested calls: [`GET` orders](page:apps-api-get-shops-shopid-orders-information), [`PATCH` orders](page:apps-api-patch-shops-shopid-orders-orderid-information)
 
 Optional calls: [`GET` products](page:apps-api-get-shops-shopid-products-information)
 
@@ -44,7 +44,7 @@ Availability: <i class="fa fa-check"></i>
 
 Build an application that allows you to manage and process orders.
 
-Suggested calls: [`GET` orders](page:apps-api-get-shops-shopid-orders-information), [`PUT` orders](page:apps-api-put-shops-shopid-orders-orderid-information)
+Suggested calls: [`GET` orders](page:apps-api-get-shops-shopid-orders-information), [`PATCH` orders](page:apps-api-patch-shops-shopid-orders-orderid-information)
 
 Optional calls: [`GET` products](page:apps-api-get-shops-shopid-products-information)
 
@@ -99,7 +99,7 @@ Click [here](page:apps-implement-use-case).
 
 Build an application that automatically updates the stock level of a product upon a POS/Marketplace sale and allows to create and manage customers and orders.
 
-Suggested calls: [`GET` products](page:apps-api-get-shops-shopid-products-information), [`PUT` products/stocklevel](page:apps-api-put-shops-shopid-products-productid-stock-level-information), [`PATCH` products](page:apps-api-patch-shops-shopid-products-productid-information), [`GET` customers](page:apps-api-get-shops-shopid-customers-customerid-information), [`PATCH` customers](page:apps-api-patch-shops-shopid-customers-customerid-information), [`POST` customers](page:apps-api-post-shops-shopid-customers-information), [`GET` orders](page:apps-api-get-shops-shopid-orders-information), [`PUT` orders](page:apps-api-put-shops-shopid-orders-orderid-information), `POST` orders
+Suggested calls: [`GET` products](page:apps-api-get-shops-shopid-products-information), [`PUT` products/stocklevel](page:apps-api-put-shops-shopid-products-productid-stock-level-information), [`PATCH` products](page:apps-api-patch-shops-shopid-products-productid-information), [`GET` customers](page:apps-api-get-shops-shopid-customers-customerid-information), [`PATCH` customers](page:apps-api-patch-shops-shopid-customers-customerid-information), [`POST` customers](page:apps-api-post-shops-shopid-customers-information), [`GET` orders](page:apps-api-get-shops-shopid-orders-information), [`PATCH` orders](page:apps-api-patch-shops-shopid-orders-orderid-information), `POST` orders
 
 Optional calls: [`GET` categories](page:apps-api-get-shops-shopid-categories-information)
 
@@ -117,7 +117,7 @@ Availability planned: **06/2016**
 
 Build an application that manages products, customers and orders as well as handles fulfillment, accounting and customer support.
 
-Suggested calls: [`GET` products](page:apps-api-get-shops-shopid-products-information), [`PATCH` products](page:apps-api-patch-shops-shopid-products-productid-information), `POST` products, [`DELETE` products](page:apps-api-delete-shops-shopid-products-productid-information), [`GET` customers](page:apps-api-get-shops-shopid-customers-customerid-information), `PUT` customers, [`POST` customers](page:apps-api-post-shops-shopid-customers-information), [`GET` orders](page:apps-api-get-shops-shopid-orders-information), [`PUT` orders](page:apps-api-put-shops-shopid-orders-orderid-information), `POST` orders
+Suggested calls: [`GET` products](page:apps-api-get-shops-shopid-products-information), [`PATCH` products](page:apps-api-patch-shops-shopid-products-productid-information), `POST` products, [`DELETE` products](page:apps-api-delete-shops-shopid-products-productid-information), [`GET` customers](page:apps-api-get-shops-shopid-customers-customerid-information), `PUT` customers, [`POST` customers](page:apps-api-post-shops-shopid-customers-information), [`GET` orders](page:apps-api-get-shops-shopid-orders-information), [`PATCH` orders](page:apps-api-patch-shops-shopid-orders-orderid-information), `POST` orders
 
 Optional calls: [`GET` categories](page:apps-api-get-shops-shopid-categories-information)
 
