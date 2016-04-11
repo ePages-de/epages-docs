@@ -24,7 +24,7 @@ In order to keep track of these changes we recommend you to follow [@epagesdevs]
 #### <i class="fa fa-pencil"></i> Update
 
 * Added `taxClass` attribute to [`GET` products/{productId}](https://developer.epages.com/apps/api-reference/get-shops-shopid-products-productid.html)
-* Added `stocklevel` attribute for products_write authorissation to [`GET` products/{productId}](https://developer.epages.com/apps/api-reference/get-shops-shopid-products-productid.html) and [`PATCH` products/{productId}](https://developer.epages.com/apps/api-reference/patch-shops-shopid-products-productid.html)
+* Added `stocklevel` attribute to [`GET` products/{productId}](https://developer.epages.com/apps/api-reference/get-shops-shopid-products-productid.html) and [`PATCH` products/{productId}](https://developer.epages.com/apps/api-reference/patch-shops-shopid-products-productid.html) for requests with *products_write* scope.
 
 <hr>
 
