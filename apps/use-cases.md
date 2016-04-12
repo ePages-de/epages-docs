@@ -70,7 +70,7 @@ Availability: <i class="fa fa-check"></i>
 
 Build an application that automatically updates the stock level of a product upon a POS/Marketplace sale.
 
-Suggested calls: [`GET` products](page:apps-api-get-shops-shopid-products-information), [`GET` products/stock-level](page:apps-api-get-shops-shopid-products-productid-stock-level-information), [`PUT` products/stock-level](page:apps-api-put-shops-shopid-products-productid-stock-level-information)
+Suggested calls: [`GET` products](page:apps-api-get-shops-shopid-products-information), [`GET` products/{productId}](page:apps-api-get-shops-shopid-products-productid-information), [`PATCH` products/{productId}](page:apps-api-patch-shops-shopid-products-productid-information)
 
 Optional calls: [`GET` categories](page:apps-api-get-shops-shopid-categories-information)
 
@@ -99,7 +99,7 @@ Click [here](page:apps-implement-use-case).
 
 Build an application that automatically updates the stock level of a product upon a POS/Marketplace sale and allows to create and manage customers and orders.
 
-Suggested calls: [`GET` products](page:apps-api-get-shops-shopid-products-information), [`PUT` products/stocklevel](page:apps-api-put-shops-shopid-products-productid-stock-level-information), [`PATCH` products](page:apps-api-patch-shops-shopid-products-productid-information), [`GET` customers](page:apps-api-get-shops-shopid-customers-customerid-information), [`PATCH` customers](page:apps-api-patch-shops-shopid-customers-customerid-information), [`POST` customers](page:apps-api-post-shops-shopid-customers-information), [`GET` orders](page:apps-api-get-shops-shopid-orders-information), [`PATCH` orders](page:apps-api-patch-shops-shopid-orders-orderid-information), `POST` orders
+Suggested calls: [`GET` products](page:apps-api-get-shops-shopid-products-information), [`PATCH` products](page:apps-api-patch-shops-shopid-products-productid-information), [`GET` customers](page:apps-api-get-shops-shopid-customers-customerid-information), [`PATCH` customers](page:apps-api-patch-shops-shopid-customers-customerid-information), [`POST` customers](page:apps-api-post-shops-shopid-customers-information), [`GET` orders](page:apps-api-get-shops-shopid-orders-information), [`PATCH` orders](page:apps-api-patch-shops-shopid-orders-orderid-information), `POST` orders
 
 Optional calls: [`GET` categories](page:apps-api-get-shops-shopid-categories-information)
 
