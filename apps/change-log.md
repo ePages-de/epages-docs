@@ -26,6 +26,12 @@ In order to keep track of these changes we recommend you to follow [@epagesdevs]
 * Added `taxClass` attribute to [`GET` products/{productId}](https://developer.epages.com/apps/api-reference/get-shops-shopid-products-productid.html)
 * Added `stocklevel` attribute to [`GET` products/{productId}](https://developer.epages.com/apps/api-reference/get-shops-shopid-products-productid.html) and [`PATCH` products/{productId}](https://developer.epages.com/apps/api-reference/patch-shops-shopid-products-productid.html) for requests with *products_write* scope.
 
+#### <i class="fa fa-minus"></i> Remove
+
+* `PUT` orders/{orderId}: This endpoint will no longer be supported. Please use [`PATCH` orders/{orderId}](https://developer.epages.com/apps/api-reference/patch-shops-shopid-orders-orderid.html)
+* `GET` products/{productId}/stock-level: This endpoint will no longer be supported. Please use [`GET` products/{productId}](https://developer.epages.com/apps/api-reference/get-shops-shopid-products-productid.html)
+* `PUT` products/{productId}/stock-level: This endpoint will no longer be supported. Please use [`PATCH` products/{productId}](https://developer.epages.com/apps/api-reference/patch-shops-shopid-products-productid.html)
+
 <hr>
 
 ## 2016-03-07

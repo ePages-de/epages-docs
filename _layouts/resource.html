@@ -86,12 +86,38 @@ layout: page
 {% endif %}
 
 {% if page.raml_method.bodies != empty %}
+  {% for body_tmp in page.raml_method.bodies %}
+    {% assign body = body_tmp[1] %}
+    {% if body.media_type == 'application/json' and body.schema != null %}
+      <h2 id="request-body">Request attributes</h2>
+      <table class="table table-bordered table-striped">
+        <thead style="background-color: white;">
+          <tr><th>Name</th><th>Type</th><th>Description</th></tr>
+        </thead>
+        <tbody>
+          {% assign keys = body.schema | json_keys: 'properties' %}
+          {% assign properties = body.schema | json_field: 'properties' %}
+          {% for key in keys %}
+            {% assign p = properties[key] %}
+            <tr>
+              <td><code>{{ key }}</code></td>
+              <td>{% if p.type %}{{ p.type | markdownify }}{% endif %}</td>
+              <td>{% if p.description %}<div>{{ p.description | markdownify }}</div>{% endif %}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+{% if page.raml_method.bodies != empty %}
   <h2 id="request-body">Request body</h2>
   {% for body_tmp in page.raml_method.bodies %}
     {% assign body = body_tmp[1] %}
     <p>Media type <code>{{ body.media_type }}</code></p>
     {% if body.example %}
-      <pre class="pre-scrollable">{{ body.example }}</pre>
+      <pre>{{ body.example }}</pre>
     {% endif %}
     {% if body.media_type == 'multipart/form-data' %}
       <table class="table table-bordered table-striped">
@@ -156,7 +182,7 @@ layout: page
     {% for body_tmp in res.bodies %}
       {% assign body = body_tmp[1] %}
       <p>Media type <code>{{ body.media_type }}</code></p>
-      {% if body.example %}<pre class="pre-scrollable">{{ body.example | xml_escape }}</pre>{% endif %}
+      {% if body.example %}<pre>{{ body.example | xml_escape }}</pre>{% endif %}
     {% endfor %}
   {% endfor %}
 {% endif %}
