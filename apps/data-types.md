@@ -170,7 +170,7 @@ This object is used for the attributes of links.
 | - | :-: |  - |
 | op | string | Patch operation to perform. Allows `add` and `remove`. *orderNumber*, *billingAddress* and *shippingAddress* support `add` only. |
 | path | string | Contains the value that references the location where the operation is performed. |
-| value | object | New value to apply based on the operation. |
+| value | object | New value to apply. Only required for `add` operations. |
 
 ## paymentData
 
