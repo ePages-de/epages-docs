@@ -164,6 +164,14 @@ This object is used for the attributes of links.
 | shippingPrice | object of [price](page:apps-data-types#price) | The shipping price for the order.  |
 | links | array of [link](page:apps-data-types#link) | The links to the products of the order. |
 
+## orderPatchRequest
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| op | string | Patch operation to perform. Allows `add` and `remove`. *orderNumber*, *billingAddress* and *shippingAddress* support `add` only. |
+| path | string | Contains the value that references the location where the operation is performed. |
+| value | object | New value to apply. Only required for `add` operations. |
+
 ## paymentData
 
 | Attribute | Type | Description |
