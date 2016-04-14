@@ -1,10 +1,10 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema",
-  "title": "Patch Order OrderId Request Schema",
+  "title": "Post Carts Request Schema",
   "type": "object",
   "properties": {
     "": {
-      "type": "array of [jsonPatch](page:apps-data-types#jsonpatch)",
+      "type": "object of [cart (create request)](page:apps-data-types#cart-create-request)",
       "description": ""
     }
   }
