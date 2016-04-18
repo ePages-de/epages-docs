@@ -10,7 +10,7 @@ authors: ["Birgit"]
 You are an ePages partner already?
 Or you're interested developing an app for ePages?
 Then you're very welcome to sign up for our next ePages Partner Training.
-If you're curious agenda, here's a quick overview:
+If you're curious about the agenda, here's a quick overview:
 
 Extract from agenda:
 
