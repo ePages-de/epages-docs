@@ -52,13 +52,22 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | minCartValue | object of [price](page:apps-data-types#price) | The minimum order value of a shop. |
 | checkoutURL | string | The URL that redirects the browser to the merchant’s shop in order to complete the checkout. |
 
+## cart (create request)
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| currency | string | The currency code of the price according to ISO 4217.|
+| taxType | string | Indicates if the amount includes tax. Can be gross, net or none.|
+| locale | string | The locale that identifies the origin of the customer.|
+| lineItems | array of [productLineItem (create request)](page:apps-data-types#productlineitem-create-request)  | The product line items in the basket.|
+
 ## category
 
 | Attribute | Type | Description |
 | - | :-: |  - |
 | categoryId | string | The unique identifier of the category a product is assigned to. |
 | name | string | The name of the category. |
-| pageTitle | string | The title of this category. |
+| pageTitle | string | The page title of this category. |
 | description | string | The description of the category. |
 | specialOffer | boolean | Special offers of this category. |
 | images | array of [image](page:apps-data-types#image) | The images belonging to this category. |
@@ -66,11 +75,30 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | subCategories | array of [link](page:apps-data-types#link) | A list of links to the subcategories. |
 | sfUrl | string | The link to the categories in the shop’s storefront. |
 
+## category (update request)
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| categoryId | string | The unique identifier of the category a product is assigned to. |
+| name | string | The name of the category. |
+| pageTitle | string | The page title of this category. |
+| description | string | The description of the category. |
+
 ## contentPageSummary
 
 | Attribute | Type | Description |
 | - | :-: |  - |
 | name | string | The name of the content page. |
+
+## customAttribute
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| key | string | The identifier of the custom attribute. |
+| displayKey | string | The displayed name of the custom attribute. |
+| singleValue | boolean | Indicates if just one feature is selected for the custom attribute.  |
+| type | enum | The data type of the custom attribute. Can be *string*, *number*, *bool*, *datetime*, *time*, *url*.|
+| values | array of [variationValue](page:apps-data-types#variationvalue)| The options selected for the custom attribute. |
 
 ## customer
 
@@ -83,15 +111,13 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | internalNote | string | Internal note for the customer done by the merchant. |
 | links | array of [link](page:apps-data-types#link) | The link to the customer and their orders. |
 
-## customAttribute
+## customer (create request)
 
 | Attribute | Type | Description |
 | - | :-: |  - |
-| key | string | The identifier of the custom attribute. |
-| displayKey | string | The displayed name of the custom attribute. |
-| singleValue | boolean | Indicates if just one feature is selected for the custom attribute.  |
-| type | enum | The data type of the custom attribute. Can be *string*, *number*, *bool*, *datetime*, *time*, *url*.|
-| values | array of [variationValue](page:apps-data-types#variationvalue)| The options selected for the custom attribute. |
+| customerNumber | string | The number by which the merchant tracks the customer. If not provided, the customer number will be generated automatically.|
+| internalNote | string | Internal note for the customer done by the merchant. |
+| billingAddress | [address](page:apps-data-types#address) | The billing address of the customer. |
 
 ## image
 
@@ -108,6 +134,14 @@ This object is used for the attributes of images.
 | - | :-: |  - |
 | name | string | The name of the slideshow image. |
 | sizes | array of [image](page:apps-data-types#image) | The size of the images in the slideshow. |
+
+## jsonPatch
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| op | string | Patch operation to perform. |
+| path | string | Contains the value that references the location where the operation is performed. |
+| value | object | New value to apply.  |
 
 ## lineItemContainer
 
@@ -164,14 +198,6 @@ This object is used for the attributes of links.
 | shippingPrice | object of [price](page:apps-data-types#price) | The shipping price for the order.  |
 | links | array of [link](page:apps-data-types#link) | The links to the products of the order. |
 
-## orderPatchRequest
-
-| Attribute | Type | Description |
-| - | :-: |  - |
-| op | string | Patch operation to perform. Allows `add` and `remove`. *orderNumber*, *billingAddress* and *shippingAddress* support `add` only. |
-| path | string | Contains the value that references the location where the operation is performed. |
-| value | object | New value to apply. Only required for `add` operations. |
-
 ## paymentData
 
 | Attribute | Type | Description |
@@ -192,7 +218,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 
 | Attribute | Type | Description |
 | - | :-: |  - |
-| taxType | string | Indicates if the amount includes tax, e.g. gross. |
+| taxType | string | Indicates if the amount includes tax. Can be gross, net or none. |
 | formatted | string | The amount of the price with currency unit. |
 | amount | number | The amount of the price. |
 | currency | string | The currency code of the price according to ISO 4217. |
@@ -217,8 +243,8 @@ This object is used for the attributes of product.
 | - | :-: |  - |
 | productId | string | The unique identifier of the product. |
 | name | string | The name of the product. |
-| shortDescription | string | Categorises the image, e.g. Thumbnail or Medium. |
-| description | string | Categorises the image, e.g. Thumbnail or Medium. |
+| shortDescription | string | The short description of the product. |
+| description | string | The description of the product. |
 | priceInfo | object of [priceInfo](page:apps-data-types#priceinfo) | Price information on the product. |
 | forSale | boolean | Information on the sale status of the product. Indicates if the product can be added to the shopping basket. |
 | specialOffer | boolean | Indicates if the product is a special offer. |
@@ -240,6 +266,21 @@ This object is used for the attributes of product.
 | stocklevel | string | Only available with the `products_write` authorisation. Indicates the stocklevel of the product. |
 | links | array of [link](page:apps-data-types#link) | The links to the product and product category. |
 
+## product (create or update request)
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| productNumber | string | The product number. |
+| name | string | The name of the product. |
+| shortDescription | string | The short description of the product. |
+| description | string | The description of the product. |
+| manufacturer | string | The manufacturer of the product. |
+| price | string | The price of the product. |
+| essentialFeatures | string | The essential features of the product. |
+| energyLabelsString | string | A list of energy labels applied to this product. Can be one or two values. If two values are returned, the first value is the best energy label, the second is the second-best. |
+| upc | string | The Universal Product Code of the product. |
+| ean | string | The European Article Number of the product, either EAN-8 or EAN-13. |
+
 ## productLineItem
 
 | Attribute | Type | Description |
@@ -254,6 +295,19 @@ This object is used for the attributes of product.
 | essentialFeatures | string | The essential features of the line item. |
 | images | array of [image](page:apps-data-types#image) | The image of the line item. |
 | links | array of [link](page:apps-data-types#link) | The links to the product line item. |
+
+## productLineItem (create request)
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| productId | string | The unique identifier of the product.|
+| quantity | decimal | The product quantity of this line item.|
+
+## productLineItem (update request)
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| quantity | decimal | The quantity of the product line item.|
 
 ## productSuggest
 
@@ -289,13 +343,6 @@ This object is used for the attributes of deliveryWeight and quantity.
 | shippingMethod | object of [shippingMethodInfo](page:apps-data-types#shippingmethodinfo) | Information on the shipping method chosen by the customer. |
 | price | object of [price](page:apps-data-types#price) | The costs for the shipping. |
 
-## shippingMethodInfo
-
-| Attribute | Type | Description |
-| - | :-: |  - |
-| id | string | The unique identifier of the shipping method. |
-| name | string | The name of the shipping method chosen by the customer. |
-
 ## shippingMethod
 
 | Attribute | Type | Description |
@@ -304,6 +351,13 @@ This object is used for the attributes of deliveryWeight and quantity.
 | name | string | The name of the shipping method chosen by the customer.|
 | description | string | The description of the shipping method.|
 | logo | string | The logo of the shipping method. |
+
+## shippingMethodInfo
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| id | string | The unique identifier of the shipping method. |
+| name | string | The name of the shipping method chosen by the customer. |
 
 ## shopInformation
 
