@@ -123,8 +123,9 @@ get:
     securedBy: [orders_write]
     is: [ locale ]
     body:
-      application/json:
+      application/json-patch+json:
         example: !include examples/patch_order_orderid_request.json
+        schema: !include schema/patch_order_orderid_request.schema.json
     responses:
       200:
         body:
