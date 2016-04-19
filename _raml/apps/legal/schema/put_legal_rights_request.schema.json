@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema",
-  "title": "Put Legal Rights of Withdrawal Schema",
+  "title": "Put Legal Rights of Withdrawal Request Schema",
   "type": "object",
   "properties": {
     "": {

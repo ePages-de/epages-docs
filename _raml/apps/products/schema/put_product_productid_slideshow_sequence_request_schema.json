@@ -1,10 +1,10 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema",
-  "title": "Put Legal Rights of Withdrawal Schema",
+  "title": "Put Product ProductId Slideshow Sequence Request Schema",
   "type": "object",
   "properties": {
     "": {
-      "type": "object of [page](page:apps-data-types#page)",
+      "type": "array of strings",
       "description": ""
     }
   }
