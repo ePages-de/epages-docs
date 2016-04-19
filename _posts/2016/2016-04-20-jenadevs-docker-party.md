@@ -23,7 +23,7 @@ The agenda included a one hour talk along with a demo to introduce the technolog
   1. **Beginners:** The official Docker birthday app tutorial
   1. **Advanced:** Building your own Dockerfile according to best practises in conjunction with integration tests 
   1. **Special:** CoresOS Cluster Workshop
-  1. **Hidden:** Orchestration Workshop by [Jérôme Petazzoni](https://twitter.com/jpetazzo), the creator of [Docker-in-Docker](https://github.com/jpetazzo/dind) 
+  1. **Hidden - also known as exploding kittens:** Orchestration Workshop by [Jérôme Petazzoni](https://twitter.com/jpetazzo), the creator of [Docker-in-Docker](https://github.com/jpetazzo/dind) 
 
 ## Introduction talk with demo and best practises
 
@@ -42,7 +42,7 @@ Great news: _All material of **[jenadevs](https://github.com/jenadevs)** is free
 
 The goal of the beginner workshop was to setup the Docker environment, learn the basic commands, run the workflow and become familiar with Docker Compose.
 The participants followed the [official Docker birthday tutorial](https://github.com/docker/docker-birthday-3/blob/master/tutorial.md), while the more experienced Docker users, Benjamin Nothdurft and Kay Abendroth, offered assistance.
-As kittens bustled around the screens, the Docker newbies built simple web applications using the Python microframework [Flask](http://flask.pocoo.org/) – all running in a container, of course.
+As kittens bustled around the beamer and laptop screens, the Docker newbies built simple web applications using the Python microframework [Flask](http://flask.pocoo.org/) – all running in a container, of course.
 
 ### Advanced Workshop
 
