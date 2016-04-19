@@ -1,0 +1,17 @@
+{
+  "results": 2,
+  "page": 1,
+  "resultsPerPage": 10,
+  "items": [
+    {
+      "email": "kirsten.greenholt@corkeryfisher.info",
+      "name": "Kirsten Greenholt",
+      "subscribed": true
+    },
+    {
+      "email": "c.bartell@bartello.de",
+      "name": "Christopher Bartello",
+      "subscribed": false
+    }
+  ]
+}

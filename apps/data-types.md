@@ -69,7 +69,7 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | name | string | The name of the category. |
 | pageTitle | string | The page title of this category. |
 | description | string | The description of the category. |
-| specialOffer | boolean | Special offers of this category. |
+| specialOffer | boolean | Indicates if this category has special offers. |
 | images | array of [image](page:apps-data-types#image) | The images belonging to this category. |
 | parent | [link](page:apps-data-types#link) | The link to the parent category. |
 | subCategories | array of [link](page:apps-data-types#link) | A list of links to the subcategories. |
@@ -163,6 +163,26 @@ This object is used for the attributes of links.
 | rel | string | The link relation that describes how the link relates to the call. |
 | href | string | The URL of the related link that can be used for subsequent calls. |
 | title | string | The title of the item that is linked. (optional)  |
+
+## newsletterCampaign
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| campaignId | string | The unique identifier of the newsletter campaign. |
+| language | string | The language of the newsletter campaign. |
+| identifier | string | The alias of the newsletter campaign.  |
+| name | string | The name of the newsletter campaign. |
+| description | string | The description of the newsletter campaign. |
+| numberOfSubscribers | string | The number of persons that subscribed for the newsletter campaign. |
+| subject | string | The subject of the newsletter campaign chosen by the merchant.|
+
+## newsletterSubscriber
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| email | string | The email address of the subscriber. |
+| name | string | The name of the subscriber. |
+| subscribed | boolean | Indicates if this person is subscribed for the newsletter campaign. |
 
 ## order
 
