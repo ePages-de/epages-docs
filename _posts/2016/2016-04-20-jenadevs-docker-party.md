@@ -39,7 +39,7 @@ Good news: All material of [jenadevs](https://github.com/jenadevs) is free and w
 ### Beginners workshop
 
 The goal of the beginners workshop was to setup the Docker environment, learn the basic commands, follow the common workflow and become familiar with Docker Compose. The participants were guided through the official Docker birthday [tutorial](https://github.com/jenadevs/docker-birthday-3/blob/master/tutorial.md) by Benjamin Nothdurft and Kay Abendroth.
-As first step the Docker newbies built a simple web application which served random kitten pictures using the [Flask](http://flask.pocoo.org) microframework. In the end the beginners already created a multi-container voting application with a Python user app, a Redis queue for buffering, a Java worker for processing, a Postgress database for storage and a Javascript administration app.
+As first step the Docker newbies built a simple web application which served random kitten pictures using the [Flask](http://flask.pocoo.org) microframework. In the end the beginners already created and customized a multi-container voting application with a Python user app, a Redis queue for buffering, a Java worker for processing, a PostgreSQL database for storage and a Javascript administration app - all running from a single `docker-compose.yml` file.
 
 ### Advanced workshop
 
