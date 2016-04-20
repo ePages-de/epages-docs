@@ -12,7 +12,7 @@ ePages hosted the event and provided conference rooms, several workstations as w
 
 ## Agenda
 
-We started with a short meet and greet as well as a brief introduction about the [Softwerkskammer](softwerkskammer.org) – the german part of the [Software Craftsmanship Community](http://manifesto.softwarecraftsmanship.org) – and its current distribution with some helpful contact information like the [@jenadevs](https://twitter.com/jenadevs) Twitter account.
+We started with a short meet and greet as well as a brief introduction about the [Softwerkskammer](softwerkskammer.org) – the german part of the [Software Craftsmanship Community](http://manifesto.softwarecraftsmanship.org) – and its current distribution with some helpful contact information like the [jenadevs](https://twitter.com/jenadevs) Twitter account.
 
 Then the Docker Party was launched and we celebrated the [3rd birthday of Docker](https://www.docker.com/community/docker-birthday-3)!
 
@@ -38,9 +38,8 @@ Good news: All material of [jenadevs](https://github.com/jenadevs) is free and w
 
 ### Beginners workshop
 
-The goal of the beginner workshop was to setup the Docker environment, learn the basic commands, run the workflow and become familiar with Docker Compose.
-The participants followed the official Docker birthday [tutorial](https://github.com/jenadevs/docker-birthday-3/blob/master/tutorial.md), while the more experienced Docker users, Benjamin Nothdurft and Kay Abendroth, offered assistance.
-As kittens bustled around the beamer and laptop screens, the Docker newbies built simple web applications using the Python microframework [Flask](http://flask.pocoo.org/) – all running in a container, of course.
+The goal of the beginners workshop was to setup the Docker environment, learn the basic commands, follow the common workflow and become familiar with Docker Compose. The participants were guided through the official Docker birthday [tutorial](https://github.com/jenadevs/docker-birthday-3/blob/master/tutorial.md) by Benjamin Nothdurft and Kay Abendroth.
+As first step the Docker newbies built a simple web application which served random kitten pictures using the [Flask](http://flask.pocoo.org) microframework. In the end the beginners already created a multi-container voting application with a Python user app, a Redis queue for buffering, a Java worker for processing, a Postgress database for storage and a Javascript administration app.
 
 ### Advanced workshop
 
@@ -58,7 +57,7 @@ Afterwards Christian Köhler gave an insight on how to configure Kubernetes with
 ## Summary 
 
 In retrospect, this meetup was a great success. Every participant had the possibilty to have fun, meet other devs and learn something new.
-Except for the beginners, who rarely neede to finalise their well-documented tutorial at home, all participants were able to finish all workshop tasks on time with excellent results. So it was obvious that a lot of guests joined parts of the orga team in the local bar and just talked about the expierience in their developer life, their favorite editors and some nerdier stuff.
+Except for the beginners, who rarely needed to finalise their well-documented tutorial at home, all participants were able to finish all workshop tasks on time with excellent results. So it was obvious that a lot of guests joined parts of the orga team in the local bar and just talked about the expierience in their developer life, their favorite editors and some nerdier stuff.
 
 Thanks to all attendees and ePages coworkers for making this happen!
 
