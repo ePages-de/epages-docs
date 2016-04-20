@@ -8,7 +8,7 @@ authors: ["Softwerkskammer Jena"]
 ---
 
 The newly founded [Softwerkskammer Jena](https://www.softwerkskammer.org/groups/jena) had its first [Developers Meetup](www.meetup.com/jenadevs) on the beginning of April.
-ePages hosted the event and provided conference rooms, several workstations as well as a variety of snacks, pizza and beverages. Despite the short notice over 30 attendees from a dozen of companies in Jena, university students and even some freelancers followed the invitation to the Docker Party.
+ePages hosted the event and provided conference rooms, several workstations as well as a variety of snacks, pizza and beverages. Despite the short notice over 30 attendees from a dozen of companies in Jena, university students and even some freelancers followed the [invitation to the Docker Party](https://github.com/jenadevs/jenadevs-meetup-001-docker-party/blob/master/orga/Softwerkskammer_Jena_Developers_Meetup_001_Docker_Party.pdf).
 They joined the orga team of 8 developers for 4 hours of coding fun from 6 pm until nearly 10 pm with an open end at the local pub, where the devoted discussions lasted until 2 am in the morning.
 
 ## Agenda
