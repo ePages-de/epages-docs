@@ -34,7 +34,7 @@ The talk finished with some typical base images as well as a discussion about of
 ## Containers, Containers, Con... er Workshops!
 
 Upfront, all necessary material and code for the workshops was hosted on the jenadevs [GitHub](https://github.com/jenadevs) account, which even offers the [complete presentation](https://github.com/jenadevs/jenadevs-meetup-001-docker-party).
-Great news: _All material of **[jenadevs](https://github.com/jenadevs)** is free and will always be open-source!_
+Good news: All material of [jenadevs](https://github.com/jenadevs) is free and will always be open-source!
 
 ### Beginners workshop
 
