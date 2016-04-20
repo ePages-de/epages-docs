@@ -10,6 +10,17 @@ In order to keep track of these changes we recommend you to follow [@epagesdevs]
 
 <hr>
 
+## 2016-04-20
+
+### Changes with software release 6.17.44
+
+#### <i class="fa fa-plus"></i> New
+
+* [`GET` newsletter-campaigns](https://developer.epages.com/apps/api-reference/get-shops-shopid-newsletter-campaigns.html)
+* [`GET` newsletter-campaigns/{campaignId}subscribers](https://developer.epages.com/apps/api-reference/get-shops-shopid-newsletter-campaigns-campaignid-subscribers.html)
+
+<hr>
+
 ## 2016-04-11
 
 ### Changes with software release 6.17.43
