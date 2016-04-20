@@ -3,25 +3,9 @@
   "title": "Put Legal Privacy Policy Schema",
   "type": "object",
   "properties": {
-    "name": {
-      "type": "string",
-      "description": "The name that appears on the privacy policy page."
-    },
-    "title": {
-      "type": "string",
-      "description": "The name of the privacy policy page, that appears on the browser tab."
-    },
-    "navigationCaption": {
-      "type": "string",
-      "description": "The name of the privacy policy page that appears in the navigation bar."
-    },
-    "shortDescription": {
-      "type": "string",
-      "description": "Additional short information that can be given to e.g. better explain what's on the privacy policy page."
-    },
-    "description": {
-      "type": "string",
-      "description": "Information on the privacy policy of the shop."
+    "": {
+      "type": "object of [contentPage](page:apps-data-types#contentpage)",
+      "description": ""
     }
   }
 }

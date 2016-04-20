@@ -3,25 +3,9 @@
   "title": "Get Legal Terms and Conditions Schema",
   "type": "object",
   "properties": {
-    "name": {
-      "type": "string",
-      "description": "The name that appears on the terms and conditions page."
-    },
-    "title": {
-      "type": "string",
-      "description": "The name of the terms and conditions page, that appears on the browser tab."
-    },
-    "navigationCaption": {
-      "type": "string",
-      "description": "The name of the terms and conditions page that appears in the navigation bar."
-    },
-    "shortDescription": {
-      "type": "string",
-      "description": "Additional short information that can be given to e.g. better explain what's on the terms and conditions page."
-    },
-    "description": {
-      "type": "string",
-      "description": "Information on the terms and conditions of the shop."
+    "": {
+      "type": "object of [contentPage](page:apps-data-types#contentpage)",
+      "description": ""
     }
   }
 }

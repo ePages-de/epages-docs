@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema",
-  "title": "Put Legal Contact Information Schema",
+  "title": "Put Legal Contact Information Request Schema",
   "type": "object",
   "properties": {
     "": {

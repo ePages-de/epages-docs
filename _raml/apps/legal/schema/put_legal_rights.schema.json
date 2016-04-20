@@ -3,25 +3,9 @@
   "title": "Put Legal Rights of Withdrawal Schema",
   "type": "object",
   "properties": {
-    "name": {
-      "type": "string",
-      "description": "The name that appears on the rights of withdrawal page."
-    },
-    "title": {
-      "type": "string",
-      "description": "The name of the rights of withdrawal page, that appears on the browser tab."
-    },
-    "navigationCaption": {
-      "type": "string",
-      "description": "The name of the rights of withdrawal page that appears in the navigation bar."
-    },
-    "shortDescription": {
-      "type": "string",
-      "description": "Additional short information that can be given to e.g. better explain what's on the rights of withdrawal page."
-    },
-    "description": {
-      "type": "string",
-      "description": "Information on the rights of withdrawal of the shop."
+    "": {
+      "type": "object of [contentPage](page:apps-data-types#contentpage)",
+      "description": ""
     }
   }
 }

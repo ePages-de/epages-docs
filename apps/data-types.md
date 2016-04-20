@@ -84,7 +84,44 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | pageTitle | string | The page title of this category. |
 | description | string | The description of the category. |
 
+## contactInformation
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| name | string | The name that appears on the contact information page, e.g. Contact Us. |
+| title | string | The name of the contact information page, that appears on the browser tab. |
+| navigationCaption | string | The name of the contact information page that appears in the navigation bar. |
+| shortDescription | string | Additional short information that can be given to e.g. better explain what's on the contact information page. |
+| description | string | Additional information that can be added to the contact information page, e.g. tax identification number or bank account. |
+| company | string | The name of the shop. |
+| contactPerson | string | The contact person for the shop, usually the shop owner. |
+| contactPersonJobTitle | string | The job title of the contact person. |
+| address | string | The postal address of the shop. |
+| phone | string | The phone number of the shop. |
+| email | string | The email address of the shop. |
+
+## contentPage
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| name | string | The name that appears on the page.|
+| title | string | The name of the page, that appears on the browser tab.|
+| navigationCaption | string | The name of the page, that appears in the navigation bar.|
+| shortDescription | string | Additional short information that can be given to better explain what’s on the page.|
+| description | string | Information on the topic of the page.|
+
 ## contentPageSummary
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| contactInformation | [contentPageSummaryItem](page:apps-data-types#contentpagesummaryitem) | The shop’s contact information. |
+| privacyPolicy | [contentPageSummaryItem](page:apps-data-types#contentpagesummaryitem) | The shop’s privacy policy. |
+| rightsOfWithdrawal | [contentPageSummaryItem](page:apps-data-types#contentpagesummaryitem) | The shop’s rights of withdrawal. |
+| termsAndConditions | [contentPageSummaryItem](page:apps-data-types#contentpagesummaryitem) | The shop’s terms and conditions. |
+| shippingInformation | [contentPageSummaryItem](page:apps-data-types#contentpagesummaryitem) | The shop’s shipping conditions. |
+| links | array of [link](page:apps-data-types#link) | The links to the shop's [contact information](page:apps-api-get-shops-shopid-legal-contact-information-information), [privacy policy](page:apps-api-get-shops-shopid-legal-privacy-policy-information), [rights of withdrawal](page:apps-api-get-shops-shopid-legal-rights-of-withdrawal-information), [terms and conditions](page:apps-api-get-shops-shopid-legal-terms-and-conditions-information) and [shipping conditions](page:apps-api-get-shops-shopid-legal-shipping-information-information). |
+
+## contentPageSummaryItem
 
 | Attribute | Type | Description |
 | - | :-: |  - |
@@ -217,6 +254,8 @@ This object is used for the attributes of links.
 | productLineItems | array of [productLineItem](page:apps-data-types#productlineitem) | A list of line items.  |
 | shippingPrice | object of [price](page:apps-data-types#price) | The shipping price for the order.  |
 | links | array of [link](page:apps-data-types#link) | The links to the products of the order. |
+
+
 
 ## paymentData
 
