@@ -73,4 +73,4 @@ We are very happy that [Marco Emrich](https://twitter.com/marcoemrich) from the 
 
 Save the date: this one-day event is planned for Saturday, the 21st of May 2016 from 9:30 am until 5:30 pm! Feel free to already sign up at [Meetup](http://www.meetup.com/jenadevs) or the [Softwerkskammer](https://www.softwerkskammer.org/groups/jena) for the event.
 
-PS: The Docker shirts and stickers finally arrived yesterday after persistent negotiations the custom office. You may catch yours at the next meetup! See you.
+PS: The Docker shirts and stickers finally arrived yesterday after persistent negotiations the customs office. You may catch yours at the next meetup! See you.
