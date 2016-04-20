@@ -18,10 +18,10 @@ Then the Docker Party was launched and we celebrated the [3rd birthday of Docker
 
 The agenda included a one hour talk along with a demo to introduce the technological foundation as well as different workshops for every skill level:
 
-  1. **Beginners:** The official Docker birthday app tutorial
-  1. **Advanced:** Building your own Dockerfile according to best practises in conjunction with integration tests 
-  1. **Special:** CoresOS Cluster Workshop
-  1. **Hidden - also known as exploding kittens:** Orchestration Workshop by [Jérôme Petazzoni](https://twitter.com/jpetazzo), the creator of [Docker-in-Docker](https://github.com/jpetazzo/dind) 
+  1. **Beginners:** The official Docker [birthday app project](https://github.com/jenadevs/docker-birthday-3)
+  2. **Advanced:** Building your own Dockerfile according to best practises in conjunction with integration tests 
+  3. **Special:** CoresOS cluster workshop
+  4. **Hidden:** [Orchestration workshop](https://github.com/jenadevs/orchestration-workshop) by [Jérôme Petazzoni](https://twitter.com/jpetazzo), the creator of [Docker-in-Docker](https://github.com/jpetazzo/dind) 
 
 ## Introduction talk with demo and best practises
 
@@ -39,12 +39,12 @@ Great news: _All material of **[jenadevs](https://github.com/jenadevs)** is free
 ### Beginners workshop
 
 The goal of the beginner workshop was to setup the Docker environment, learn the basic commands, run the workflow and become familiar with Docker Compose.
-The participants followed the [official Docker birthday tutorial](https://github.com/docker/docker-birthday-3/blob/master/tutorial.md), while the more experienced Docker users, Benjamin Nothdurft and Kay Abendroth, offered assistance.
+The participants followed the official Docker birthday [tutorial](https://github.com/jenadevs/docker-birthday-3/blob/master/tutorial.md), while the more experienced Docker users, Benjamin Nothdurft and Kay Abendroth, offered assistance.
 As kittens bustled around the beamer and laptop screens, the Docker newbies built simple web applications using the Python microframework [Flask](http://flask.pocoo.org/) – all running in a container, of course.
 
 ### Advanced workshop
 
-This workshop focused on writing your own Dockerfiles, run the containers and integration testing with [CircleCI](https://circleci.com). Bastian Klein prepared an empty custom [Magento](https://magento.com) `Dockerfile` and `Circle.yml` with comments left only, where the implementation code was completely removed.
+This workshop focused on writing your own Dockerfiles, run the containers and configure integration testing with [CircleCI](https://circleci.com). Bastian Klein prepared an empty custom [Magento](https://magento.com) `Dockerfile` and `Circle.yml` with comments left only, where the implementation code was completely removed.
 The attendees then had to figure out how the Dockerfile commands needed to be configured under the guidance of the workshop maintainer.
 
 ### Special workshop
