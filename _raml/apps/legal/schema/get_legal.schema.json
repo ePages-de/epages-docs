@@ -3,29 +3,9 @@
   "title": "Get Legal Schema",
   "type": "object",
   "properties": {
-    "contactInformation": {
-      "type": "[contentPageSummary](page:apps-data-types#contentpagesummary)",
-      "description": "The shop's contact information."
-    },
-    "privacyPolicy": {
-      "type": "[contentPageSummary](page:apps-data-types#contentpagesummary)",
-      "description": "The shop's privacy policy."
-    },
-    "rightsOfWithdrawal": {
-      "type": "[contentPageSummary](page:apps-data-types#contentpagesummary)",
-      "description": "The shop's rights of withdrawal."
-    },
-    "termsAndConditions": {
-      "type": "[contentPageSummary](page:apps-data-types#contentpagesummary)",
-      "description": "The shop's terms and conditions."
-    },
-    "shippingInformation": {
-      "type": "[contentPageSummary](page:apps-data-types#contentpagesummary)",
-      "description": "The shop's shipping conditions."
-    },
-    "links": {
-      "type": "array of [link](page:apps-data-types#link)",
-      "description": "The links to the shop's [contact information](get-shops-shopid-legal-contact-information.html), [privacy policy](get-shops-shopid-legal-privacy-policy.html), [rights of withdrawal](get-shops-shopid-legal-rights-of-withdrawal.html), [terms and conditions](get-shops-shopid-legal-terms-and-conditions.html) and [shipping conditions](get-shops-shopid-legal-shipping-information.html)."
+    "": {
+      "type": "object of [contentPageSummary](page:apps-data-types#contentpagesummary)",
+      "description": ""
     }
   }
 }

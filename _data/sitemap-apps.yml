@@ -79,6 +79,9 @@
     - title: Miscellaneous
       link: page:api-resources-miscellaneous
 
+    - title: Newsletters
+      link: page:api-resources-newsletter-campaigns
+
     - title: Orders
       link: page:api-resources-orders
 

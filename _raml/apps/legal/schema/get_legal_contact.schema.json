@@ -3,49 +3,9 @@
   "title": "Get Legal Contact Information Schema",
   "type": "object",
   "properties": {
-    "name": {
-      "type": "string",
-      "description": "The name that appears on the contact information page, e.g. Contact Us."
-    },
-    "title": {
-      "type": "string",
-      "description": "The name of the contact information page, that appears on the browser tab."
-    },
-    "navigationCaption": {
-      "type": "string",
-      "description": "The name of the contact information page that appears in the navigation bar."
-    },
-    "shortDescription": {
-      "type": "string",
-      "description": "Additional short information that can be given to e.g. better explain what's on the contact information page."
-    },
-    "description": {
-      "type": "string",
-      "description": "Additional information that can be added to the contact information page, e.g. tax identification number or bank account."
-    },
-    "company": {
-      "type": "string",
-      "description": "The name of the shop."
-    },
-    "contactPerson": {
-      "type": "string",
-      "description": "The contact person for the shop, usually the shop owner."
-    },
-    "contactPersonJobTitle": {
-      "type": "string",
-      "description": "The job title of the contact person."
-    },
-    "address": {
-      "type": "string",
-      "description": "The postal address of the shop."
-    },
-    "phone": {
-      "type": "string",
-      "description": "The phone number of the shop."
-    },
-    "email": {
-      "type": "string",
-      "description": "The email address of the shop."
+    "": {
+      "type": "object of [contactInformation](page:apps-data-types#contactinformation)",
+      "description": ""
     }
   }
 }
