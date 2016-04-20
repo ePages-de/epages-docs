@@ -4,7 +4,7 @@
   "type": "object",
   "properties": {
     "": {
-      "type": "object of [page](page:apps-data-types#page)",
+      "type": "object of [contentPage](page:apps-data-types#contentpage)",
       "description": ""
     }
   }

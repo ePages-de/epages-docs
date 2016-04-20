@@ -100,7 +100,28 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | phone | string | The phone number of the shop. |
 | email | string | The email address of the shop. |
 
+## contentPage
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| name | string | The name that appears on the page.|
+| title | string | The name of the page, that appears on the browser tab.|
+| navigationCaption | string | The name of the page, that appears in the navigation bar.|
+| shortDescription | string | Additional short information that can be given to better explain what’s on the page.|
+| description | string | Information on the topic of the page.|
+
 ## contentPageSummary
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| contactInformation | [contentPageSummaryItem](page:apps-data-types#contentpagesummaryitem) | The shop’s contact information. |
+| privacyPolicy | [contentPageSummaryItem](page:apps-data-types#contentpagesummaryitem) | The shop’s privacy policy. |
+| rightsOfWithdrawal | [contentPageSummaryItem](page:apps-data-types#contentpagesummaryitem) | The shop’s rights of withdrawal. |
+| termsAndConditions | [contentPageSummaryItem](page:apps-data-types#contentpagesummaryitem) | The shop’s terms and conditions. |
+| shippingInformation | [contentPageSummaryItem](page:apps-data-types#contentpagesummaryitem) | The shop’s shipping conditions. |
+| links | array of [link](page:apps-data-types#link) | The links to the shop's [contact information](page:apps-api-get-shops-shopid-legal-contact-information-information), [privacy policy](page:apps-api-get-shops-shopid-legal-privacy-policy-information), [rights of withdrawal](page:apps-api-get-shops-shopid-legal-rights-of-withdrawal-information), [terms and conditions](page:apps-api-get-shops-shopid-legal-terms-and-conditions-information) and [shipping conditions](page:apps-api-get-shops-shopid-legal-shipping-information-information). |
+
+## contentPageSummaryItem
 
 | Attribute | Type | Description |
 | - | :-: |  - |
@@ -214,15 +235,7 @@ This object is used for the attributes of links.
 | shippingPrice | object of [price](page:apps-data-types#price) | The shipping price for the order.  |
 | links | array of [link](page:apps-data-types#link) | The links to the products of the order. |
 
-## page
 
-| Attribute | Type | Description |
-| - | :-: |  - |
-| name | string | The name that appears on the page.|
-| title | string | The name of the page, that appears on the browser tab.|
-| navigationCaption | string | The name of the page, that appears in the navigation bar.|
-| shortDescription | string | Additional short information that can be given to better explain what’s on the page.|
-| description | string | Information on the topic of the page.|
 
 ## paymentData
 
