@@ -72,3 +72,5 @@ In each group we train our coding skills on a specifc kata in iterative 45-minut
 We are very happy that [Marco Emrich](https://twitter.com/marcoemrich) from the [Softwerkskammer Nürnberg](https://www.softwerkskammer.org/groups/nuernberg) will join us - a highly passionate trainer and an experienced Coderetreat facilitator. We cannot think of anyone better to help the participants understand how to start with the test-first approach!
 
 Save the date: this one-day event is planned for Saturday, the 21st of May 2016 from 9:30 am until 5:30 pm! Feel free to already sign up at [Meetup](http://www.meetup.com/jenadevs) or the [Softwerkskammer](https://www.softwerkskammer.org/groups/jena) for the event.
+
+PS: The Docker shirts and stickers finally arrived yesterday after persistent negotiation the custom office. You may catch yours at the next meetup! See you.
