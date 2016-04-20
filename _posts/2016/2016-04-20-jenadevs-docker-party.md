@@ -4,7 +4,7 @@ title: " Guest post: Jena Developers shipped the Docker Party to ePages!"
 date: "2016-04-20 12:04:20"
 icon: cubes
 categories: events
-authors: ["Softwerkskammer Jena"]
+authors: ["Softwerkskammer Jena (Oliver and Benjamin)"]
 ---
 
 The newly founded [Softwerkskammer Jena](https://www.softwerkskammer.org/groups/jena) had its first [Developers Meetup](www.meetup.com/jenadevs) on the beginning of April.
@@ -69,6 +69,6 @@ This time we simulate a [coding dojo](http://codingdojo.org) with a full day of 
 Again, the participants will be able to choose between different workshop-like groups.
 In each group we train our coding skills on a specifc kata in iterative 45-minute-rounds under certain [constraints](http://coderetreat.org/facilitating/activity-catalog) in [pairs](https://en.wikipedia.org/wiki/Pair_programming) and with different team mates at each round.
 
-We are very happy that [Marco Emrich](https://twitter.com/marcoemrich) from the [Softwerkskammer Nürnberg](https://www.softwerkskammer.org/groups/nuernberg) will join us - one of the best trainers, and an experienced Coderetreat facilitator. We cannot think of anyone better to help the participants understand how to start with the test-first approach!
+We are very happy that [Marco Emrich](https://twitter.com/marcoemrich) from the [Softwerkskammer Nürnberg](https://www.softwerkskammer.org/groups/nuernberg) will join us - a highly passionate trainer and an experienced Coderetreat facilitator. We cannot think of anyone better to help the participants understand how to start with the test-first approach!
 
 Save the date: this one-day event is planned for Saturday, the 21st of May 2016 from 9:30 am until 5:30 pm! Feel free to [already sign up](www.meetup.com/jenadevs) for the event.
