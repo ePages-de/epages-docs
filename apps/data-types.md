@@ -334,7 +334,7 @@ This object is used for the attributes of product.
 | shortDescription | string | The short description of the product. |
 | description | string | The description of the product. |
 | manufacturer | string | The manufacturer of the product. |
-| price | string | The price of the product. |
+| price | number | The price of the product. |
 | essentialFeatures | string | The essential features of the product. |
 | energyLabelsString | string | A list of energy labels applied to this product. Can be one or two values. If two values are returned, the first value is the best energy label, the second is the second-best. |
 | upc | string | The Universal Product Code of the product. |
@@ -360,13 +360,13 @@ This object is used for the attributes of product.
 | Attribute | Type | Description |
 | - | :-: |  - |
 | productId | string | The unique identifier of the product.|
-| quantity | decimal | The product quantity of this line item.|
+| quantity | number | The product quantity of this line item (can be a decimal).|
 
 ## productLineItem (update request)
 
 | Attribute | Type | Description |
 | - | :-: |  - |
-| quantity | decimal | The quantity of the product line item.|
+| quantity | number | The quantity of the product line item (can be a decimal).|
 
 ## productSuggest
 
@@ -382,7 +382,7 @@ This object is used for the attributes of deliveryWeight and quantity.
 
 | Attribute | Type | Description |
 | - | :-: |  - |
-| amount | decimal | The amount displayed as a numeric value. |
+| amount | number | The amount displayed as a decimal number. |
 | unit | string | The unit displayed as abbreviated SI unit, if available. Otherwise a localised name if the unit is displayed, e.g. piece(s).  |
 
 ## sales
