@@ -4,17 +4,17 @@ layout: default
 
 {% assign chapter = page.url | regex_extract: '^/([^/]+)/' %}
 {% assign sitemap = chapter | sitemap %}
-{% if chapter == 'apps' %}
-  {% assign title = 'API Reference' %}
-{% elsif chapter == 'blog' and page.title %}
+{% if page.title %}
   {% assign title = page.title %}
+{% elsif chapter == 'apps' %}
+  {% assign title = 'API Reference' %}
 {% elsif chapter == 'blog' %}
   {% assign title = 'Developer Blog'  %}
 {% endif %}
 
 <header id="header" class="jumbotron"
   {% if page.image %}style="background: linear-gradient(rgba(50, 50, 50, 0.4), rgba(50, 50, 50, 0.15)), url('/assets/images/{{ page.image }}')"
-  {% elsif page.categories %}
+  {% elsif page.categories and page.key !="apps-glossary" %}
     {% assign category = page.categories | first %}
     style="background: linear-gradient(rgba(50, 50, 50, 0.4), rgba(50, 50, 50, 0.15)), url('/assets/images/blog/categories/{{ category }}.jpg')"
   {% endif %}>

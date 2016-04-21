@@ -29,7 +29,7 @@ ul li {
 
 /*CTA*/
 
-.cta, .navbar-cta {
+a.cta, .cta, .navbar-cta {
   background-image: none;
   background-color: #28B464;
   border: 1px solid #28B464;
@@ -40,11 +40,12 @@ ul li {
   box-shadow: none !important;
   line-height: 1.4;
 }
-.cta:hover, .cta:active, .cta:focus, .btn.active {
+.cta:hover, .cta:active, .cta:focus, .cta:visited .btn.active {
   background-color: #05A54B !important;
   border-color: #05A54B !important;
   color: #fff !important;
   outline: 0 !important;
+  text-decoration: none;
 }
 .navbar-cta {
   background: transparent;
@@ -167,6 +168,9 @@ nav {
   .navbar-collapse, .navbar-form {
     border: none;
     margin-top: 5px;
+  }
+  .navbar-brand.documentation {
+    background-image: url(../logos/logo_devblog_4c.png);
   }
   nav li a {
     padding-left: 0 !important;
@@ -486,6 +490,9 @@ footer .social .xing:hover {
   width: 80%;
   padding-left: 3%;
   border-left: 1px solid #eee;
+  ul, ol {
+    font-size: 16px;
+  }
 }
 @media (max-width: 1199px) {
   .content-inner {
