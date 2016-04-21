@@ -2,11 +2,12 @@
 layout: page
 ---
 
+{% assign category = page.url | split: '/' %}
 <row class="post-list">
   {% for post in page.posts %}
     <div class="post-item">
       <div class="img-featured">
-        <img class="img-responsive" src="{%if post.image %}{{ post.image }}{% else %}/assets/images/blog/tech-stories1.png{% endif %}" alt="hero image">
+        <img class="img-responsive" src="{% if post.image %}/assets/images/{{ post.image }}{% else %}/assets/images/blog/categories/{{ category[3] }}.jpg{% endif %}" alt="hero image">
       </div>
       {% unless forloop.first %}<div class="ellipsis">{% endunless %}
       <h3 class="post-title">

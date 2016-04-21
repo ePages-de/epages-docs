@@ -12,7 +12,12 @@ layout: default
   {% assign title = 'Developer Blog'  %}
 {% endif %}
 
-<header id="header" class="jumbotron" {% if page.image %}style="background: linear-gradient(rgba(50, 50, 50, 0.4), rgba(50, 50, 50, 0.15)), url('/assets/images/{{ page.image }}')"{% endif %}>
+<header id="header" class="jumbotron"
+  {% if page.image %}style="background: linear-gradient(rgba(50, 50, 50, 0.4), rgba(50, 50, 50, 0.15)), url('/assets/images/{{ page.image }}')"
+  {% elsif page.categories %}
+    {% assign category = page.categories | first %}
+    style="background: linear-gradient(rgba(50, 50, 50, 0.4), rgba(50, 50, 50, 0.15)), url('/assets/images/blog/categories/{{ category }}.jpg')"
+  {% endif %}>
   <h1>{{ title }}</h1>
   {% if page.date and page.authors %}<h3 class="subtitle">{{ page.date | date: "%b %-d, %Y" }} authored by {{ page.authors | join: ' and ' }}</h3>{% endif %}
 </header>

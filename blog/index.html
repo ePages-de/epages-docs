@@ -9,7 +9,7 @@ searchable: false
     <div class="post-item">
       <a href="{{ post.url | prepend: site.baseurl }}">
         <div class="img-featured">
-          <img class="img-responsive" src="{%if post.image %}/assets/images/{{ post.image }}{% else %}/assets/images/blog/tech-stories1.png{% endif %}" alt="hero image">
+          <img class="img-responsive" src="{% if post.image %}/assets/images/{{ post.image }}{% else %}/assets/images/blog/categories/{{ post.categories | first }}.jpg{% endif %}" alt="hero image">
         </div>
       </a>
       {% unless forloop.first %}<div class="ellipsis">{% endunless %}
