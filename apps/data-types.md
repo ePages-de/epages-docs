@@ -360,13 +360,13 @@ This object is used for the attributes of product.
 | Attribute | Type | Description |
 | - | :-: |  - |
 | productId | string | The unique identifier of the product.|
-| quantity | number | The product quantity of this line item (can be a decimal).|
+| quantity | number | The product quantity of this line item displayed as a decimal number.|
 
 ## productLineItem (update request)
 
 | Attribute | Type | Description |
 | - | :-: |  - |
-| quantity | number | The quantity of the product line item (can be a decimal).|
+| quantity | number | The quantity of the product line item displayed as a decimal number.|
 
 ## productSuggest
 
