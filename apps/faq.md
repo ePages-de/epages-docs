@@ -2,6 +2,7 @@
 layout: page
 key: apps-faq
 title: Frequently asked questions
+header: FAQ
 ---
 
 ## How do I get support?

@@ -129,10 +129,6 @@ nav {
   height: 40px;
   background-size: contain;
   background-position: center center;
-  &.documentation {
-    background-image: url('#{$assets-base}/logos/epages-logo-devblog.png');
-    width: 230px;
-  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   nav a {
@@ -169,9 +165,6 @@ nav {
     border: none;
     margin-top: 5px;
   }
-  .navbar-brand.documentation {
-    background-image: url(../logos/logo_devblog_4c.png);
-  }
   nav li a {
     padding-left: 0 !important;
   }
@@ -186,13 +179,14 @@ nav {
 
 .jumbotron {
   background: url(../images/landingpage-banner.jpg);
-  background-size: cover;
-  background-position: center center;
+  background-size: cover !important;
+  background-position: center center !important;
   background-repeat: no-repeat;
   text-align: center;
   color: #fff;
   margin-top: -90px;
   padding-top: 90px;
+  min-height: 350px;
 
   .input-group {
     display: inline-flex;
@@ -204,6 +198,7 @@ nav {
   .jumbotron {
     margin-top: 0;
     padding-top: 30px;
+    min-height: 250px;
   }
 }
 .jumbotron .h1, .jumbotron h1 {
@@ -571,6 +566,8 @@ article ul li {
   text-overflow: ellipsis;
   white-space: nowrap;
   width: 100%;
+  font-size: 15px;
+  color: #444;
 }
 .post-item {
   width: 47%;
@@ -649,11 +646,8 @@ blockquote {
 
 /* API docu */
 ul#resource-list li {
-  border-bottom: 1px dotted #eee;
-  font-size: 18px;
   line-height: 1.6;
   list-style: outside none none;
-  padding: 5px 0;
 }
 .resource-entry {
   font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
@@ -666,7 +660,7 @@ ul#resource-list li {
   color: #fff;
   font-size: 75%;
   font-weight: bold;
-  line-height: 2;
+  line-height: 1;
   text-align: center;
   vertical-align: baseline;
   white-space: nowrap;

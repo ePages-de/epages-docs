@@ -4,12 +4,14 @@ layout: default
 
 {% assign chapter = page.url | regex_extract: '^/([^/]+)/' %}
 {% assign sitemap = chapter | sitemap %}
-{% if page.title %}
+{% if page.header %}
+  {% assign title = page.header %}
+{% elsif page.title %}
   {% assign title = page.title %}
 {% elsif chapter == 'apps' %}
-  {% assign title = 'API Reference' %}
+  {% assign title = 'API reference' %}
 {% elsif chapter == 'blog' %}
-  {% assign title = 'Developer Blog'  %}
+  {% assign title = 'Developer blog'  %}
 {% endif %}
 
 <header id="header" class="jumbotron"
@@ -20,6 +22,12 @@ layout: default
   {% endif %}>
   <h1>{{ title }}</h1>
   {% if page.date and page.authors %}<h3 class="subtitle">{{ page.date | date: "%b %-d, %Y" }} authored by {{ page.authors | join: ' and ' }}</h3>{% endif %}
+  {% if chapter == 'apps' and page.key != 'apps-faq' %}
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Enter your search here" required>
+      <button class="cta" type="button">Search</button>
+    </div>
+  {% endif %}
 </header>
 
 <div id="content">
