@@ -85,7 +85,7 @@ Thanks to all attendees and ePages coworkers for making this happen!
 
 The goal of the Softwerkskammer Jena is to establish a platform for regular meetings.
 And we already arranged the next meetup!
-In the course of a one-day event, we will simulate a [coding dojo](http://codingdojo.org) of classical [Coderetreat](http://coderetreat.org) and lighting talks with demos on [TDD](https://en.wikipedia.org/wiki/Test-driven_development) basics and Unit testing with mock objects upfront.
+In the course of a one-day event, we will facilitate a [coding dojo](http://codingdojo.org) consisting of a classical [Coderetreat](http://coderetreat.org) and lighting talks with demos on [TDD](https://en.wikipedia.org/wiki/Test-driven_development) concepts upfront, e.g. Unit testing with mock objects.
 Again, the participants will be able to choose between different workshop-like groups.
 In each group we train our coding skills on a specific kata in iterative 45-minute-rounds under certain [constraints](http://coderetreat.org/facilitating/activity-catalog) in [pairs](https://en.wikipedia.org/wiki/Pair_programming) and with different team mates in each round.
 
