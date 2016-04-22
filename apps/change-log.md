@@ -29,7 +29,7 @@ In order to keep track of these changes we recommend you to follow [@epagesdevs]
 
 * [`POST` products](https://developer.epages.com/apps/api-reference/post-shops-shopid-products.html)
 * [`GET` watched-products](https://developer.epages.com/apps/api-reference/get-shops-shopid-watched-products.html)
-* [`GET` customers](https://developer.epages.com/apps/api-reference/get-shops-shopid-customers-customerid.html)
+* [`GET` customers](https://developer.epages.com/apps/api-reference/get-shops-shopid-customers.html)
 * [`POST` carts/{cartId}/order](https://developer.epages.com/apps/api-reference/post-shops-shopid-carts-cartid-order.html)
 
 #### <i class="fa fa-pencil"></i> Update
