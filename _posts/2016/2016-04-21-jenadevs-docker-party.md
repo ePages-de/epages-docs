@@ -33,7 +33,7 @@ We had a demo on the basic commands along with some live coding on the terminal,
 
 The second part considered some best practises for writing your own Dockerfile, based on the [official Docker recommendations](https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices), tips by [Michael](http://crosbymichael.com/dockerfile-best-practices.html) [Crosby](http://crosbymichael.com/dockerfile-best-practices-take-2.html) as well as the experiences of [epagesdevs](http://twitter.com/epagesdevs) with developing, testing, integrating, deploying and running supportive images for the eCommerce platform.
 
-This was a nice opportunity to also show some typical use cases at ePages, e.g. the Continuous Delivery Pipeline for integration testing, or that both, the ePages and the provider infrastructure are already based partly on [Kubeneretes](http://kubernetes.io).
+This was a nice opportunity to also show some typical use cases at ePages, e.g. the Continuous Delivery Pipeline for integration testing, or that both, the ePages and the provider infrastructure are already based partly on [Kubernetes](http://kubernetes.io).
 The talk finished with some typical base images as well as a discussion about official app environment images.
 
 {% image blog/blog-docker-presentation.jpg %}{% endimage %}
