@@ -2,14 +2,14 @@
 layout: post
 title: "App development: ePages Partner Training in Hamburg"
 date: "2016-04-01 11:13:24"
-icon: university
+image: blog-header/partner-training.jpg
 categories: events
 authors: ["Birgit"]
 ---
 
 You are an ePages partner already?
 Or you're interested developing an app for ePages?
-Then you're very welcome to sign up for our next ePages Partner Training.
+You're very welcome to sign up for our next ePages Partner Training.
 If you're curious about the agenda, here's a quick overview:
 
 Extract from agenda:

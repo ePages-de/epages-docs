@@ -7,14 +7,8 @@
     - title: API
       link: page:blog-category-api
 
-    - title: Conferences
-      link: page:blog-category-conferences
-
     - title: Events
       link: page:blog-category-events
-
-    - title: Hackathon
-      link: page:blog-category-hackathon
 
     - title: Working at epages
       link: page:blog-category-working-at-epages

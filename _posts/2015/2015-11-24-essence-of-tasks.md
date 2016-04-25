@@ -2,7 +2,7 @@
 layout: post
 title: "On the essence of the task"
 date: "2015-11-24 07:23:00"
-icon: tasks
+image: blog-header/task.jpg
 categories: agile
 authors: ["Timo H."]
 ---

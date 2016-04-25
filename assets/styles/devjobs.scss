@@ -23,7 +23,7 @@ html, body {
 }
 
 body {
-  font-family: 'ProximaNova', Arial, sans-serif;
+  font-family: 'ProximaNova-Regular', Arial, sans-serif;
   font-size: 18px;
   color: $txtBody;
   background: $gray1;
@@ -55,7 +55,7 @@ ul, li {
 h1 { font-size: 54px; }
 h2 { font-size: 40px; }
 h3 { font-family: 'HelveticaNeue-Light', Arial, sans-serif; font-size: 32px; }
-h4 { font-family: 'ProximaNova', Arial, sans-serif; font-size: 18px; line-height: 25px; }
+h4 { font-family: 'ProximaNova-Regular', Arial, sans-serif; font-size: 18px; line-height: 25px; }
 
 .spacer20 { clear: both; height: 20px; }
 .spacer60 { clear: both; height: 60px; }
@@ -64,7 +64,7 @@ h4 { font-family: 'ProximaNova', Arial, sans-serif; font-size: 18px; line-height
 .darkGray { background: $gray1; }
 .lightGray { background: $gray2; }
 
-.strong { font-family: 'ProximaNova', Verdana, Arial, sans-serif; }
+.strong { font-family: 'ProximaNova-Regular', Verdana, Arial, sans-serif; }
 .center { text-align: center; }
 
 .btn {
@@ -82,6 +82,7 @@ h4 { font-family: 'ProximaNova', Arial, sans-serif; font-size: 18px; line-height
   }
   &.green {
     background: $green;
+    color: #FFF;
     &:hover {
       background: darken($green, 2%);
     }
@@ -421,7 +422,7 @@ a.logo {
 }
 
 #footer {
-  font-family: 'ProximaNova', Arial, sans-serif;
+  font-family: 'ProximaNova-Regular', Arial, sans-serif;
   a.logo {
     width: 140px;
     height: 35px;

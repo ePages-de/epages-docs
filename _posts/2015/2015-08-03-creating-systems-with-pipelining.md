@@ -2,7 +2,7 @@
 layout: post
 title: "Creating systems with pipelining"
 date: "2015-08-03"
-icon: wrench
+image: blog-header/pipelines.jpg
 categories: tech-stories
 authors: ["Carsten", "Karsten"]
 ---

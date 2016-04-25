@@ -2,8 +2,8 @@
 layout: post
 title: "ePages talks REST API"
 date: "2015-09-08 08:10:00"
-icon: code
-categories: tech-stories conferences api
+image: blog-header/talk.jpg
+categories: events
 authors: ["Birgit"]
 ---
 
