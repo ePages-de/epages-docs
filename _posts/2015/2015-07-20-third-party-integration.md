@@ -2,8 +2,8 @@
 layout: post
 title: "Challenges of integrating third-parties"
 date: "2015-07-20 14:26:17"
-icon: cloud
-categories: tech-stories api
+image: blog-header/puzzle.jpg
+categories: tech-stories
 authors: ["Ulf B."]
 ---
 

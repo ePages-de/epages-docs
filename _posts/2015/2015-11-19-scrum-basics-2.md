@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Scrum Basics Series - Part 2: Scrum Roles"
+title: "Scrum Basics: Scrum Roles"
 date: "2015-11-19 07:23:00"
-icon: university
+image: blog-header/roles.jpg
 categories: agile
 authors: ["Anja B."]
 ---
@@ -116,6 +116,10 @@ If managers know the two-week time frames, they can go early to the POs and ask 
 Combine “protect the team”, “remove impediments”, “push for constant improvement” and “moderate meeting so they have a valuable outcome and end on time” and you can see where the value of this extra employee pushes in.
 I’ve seen Scrum Teams that were able to double or even quadruple their development speed, after they have been assigned a full-time SM.
 
-## Related post
+## Related posts
 
-[Scrum Basics Series - Part 1: What is Scrum?](https://developer.epages.com/blog/2015/10/13/scrum-basics-1.html)
+* [Scrum Basics: What is Scrum?](https://developer.epages.com/blog/2015/10/13/scrum-basics-1.html)
+* [Scrum Basics: Scrum Meetings](https://developer.epages.com/blog/2015/12/15/scrum-basics-3.html)
+* [Scrum Basics: Estimating](https://developer.epages.com/blog/2016/01/26/scrum-basics-4.html)
+* [Scrum Basics: Principles and Values](https://developer.epages.com/blog/2016/02/25/scrum-basics-5.html)
+* [Scrum Basics: Practicing it](https://developer.epages.com/blog/2016/03/22/scrum-basics-6.html)

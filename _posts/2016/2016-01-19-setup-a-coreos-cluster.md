@@ -2,7 +2,6 @@
 layout: post
 title: "Setting up a CoreOS Cluster just for fun on Windows and CentOS"
 date: "2016-01-19 07:17:17"
-icon: cogs
 categories: tech-stories
 authors: ["Andreas G."]
 ---

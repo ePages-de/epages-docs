@@ -2,7 +2,6 @@
 layout: post
 title: "How ePages gives new developers a great start"
 date: "2015-07-07 07:32:32"
-icon: sign-in
 categories: working-at-epages
 authors: ["Birgit"]
 ---
@@ -12,7 +11,7 @@ Some might tell stories about the best first workday they have ever had, others 
 In the first week of July, a bunch of new developers started at ePages.
 Find out what we did to help them get off on the right foot and give them a positive start.
 
-{% image blog/blog-employee-induction-mind-map.png %}{% endimage %}
+{% image blog/blog-employee-induction-cto.jpg %}{% endimage %}
 
 ## 1. Welcome employee before employment even begins
 
@@ -35,8 +34,6 @@ Here at ePages we call them "buddies".
 
 When having arrived at the office, our human resources coordinator welcomes the new employees, a round of introductions follows and the further course of the day will be explained.
 
-{% image blog/blog-employee-induction-cto.jpg %}{% endimage %}
-
 Our CTO gives a brief introduction including:
 
 * Development teams and their tasks
@@ -45,6 +42,8 @@ Our CTO gives a brief introduction including:
 * Benefits for our merchants
 
 ## 4. Buddy time!
+
+{% image blog/blog-employee-induction-welcome.jpg 45% right %}{% endimage %}
 
 Next we get the newbies into contact with their buddies and off they go exploring the office.
 This is all about settling-in and clarifying feel-good issues such as:
@@ -61,8 +60,6 @@ They'll be shown their workplaces as well as important contact points.
 
 ## 5. Introduction session with HR
 
-{% image blog/blog-employee-induction-welcome.jpg %}{% endimage %}
-
 Our HR team then hands out the office keys and local transport tickets and helps to familiarise our new employees.
 This includes:
 
@@ -74,6 +71,8 @@ This includes:
 * Target agreement discussions
 * Company events and holidays
 * Applications for leave and sick leave
+
+{% image blog/blog-employee-induction-agenda.png 40% left %}{% endimage %}
 
 ## 6. Team lunch
 
@@ -88,8 +87,6 @@ Now it's team time: Setting up the workplace, configuring the laptop, collecting
 The first day is over and the new colleagues have a lot of new information in their luggage.
 The agenda for the following days contains some more interesting topics and valuable tips for a great start at ePages.
 Check out what our typical agenda looks like:
-
-{% image blog/blog-employee-induction-agenda.png %}{% endimage %}
 
 Certainly, it takes plenty of time and coaching to get new employees fully familiar with the company and all work processes.
 With our induction programme we are laying the groundwork to make this process as quick as possible.

@@ -2,7 +2,7 @@
 layout: post
 title: "Working as a QA Engineer at ePages"
 date: "2016-04-12 07:16:17"
-icon: book
+image: blog-header/qa-dev.jpg
 categories: working-at-epages
 authors: ["Birgit, Serena", "Vlad"]
 ---
@@ -11,8 +11,6 @@ In one of our latest posts, you already learned about what it’s like to work a
 To give you some insight into our world of Quality Assurance, we've talked to one of our Quality Assurance Engineers, who shared how he started with us and how his daily work looks like.
 
 ## Here's his story:
-
-{% image blog/blog-qa-1.jpg 55% right %}{% endimage %}
 
 Hi, my name is Vlad.
 I'm 28 years old and I come from Kharkiv, Ukraine.
@@ -83,7 +81,7 @@ I already had experience with that.
 
 ### What does a typical work day look like?
 
-{% image blog/blog-qa-2.jpg %}{% endimage %}
+{% image blog/blog-qa-1.jpg 50% right %}{% endimage %}
 
 I usually start work between 8:30 and 9:00.
 Then I work myself through some administrative stuff or tackle some smaller tasks.

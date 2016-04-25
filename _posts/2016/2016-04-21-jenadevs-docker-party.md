@@ -2,7 +2,6 @@
 layout: post
 title: " Guest post: Softwerkskammer Jena shipped the Docker Party to ePages!"
 date: "2016-04-21 12:04:21"
-icon: cubes
 categories: events
 authors: ["Softwerkskammer Jena (Oliver and Benjamin)"]
 ---
@@ -22,9 +21,9 @@ Then the Docker Party was launched, and we celebrated the [3rd birthday of Docke
 The agenda included a one hour talk along with a demo to introduce the technological foundation as well as different workshops for every skill level:
 
   1. **Beginners:** The official Docker [birthday app project](https://github.com/jenadevs/docker-birthday-3)
-  2. **Advanced:** Build your own Dockerfile according to best practises in conjunction with integration tests 
+  2. **Advanced:** Build your own Dockerfile according to best practises in conjunction with integration tests
   3. **Special:** CoresOS cluster workshop
-  4. **Easter egg:** [Orchestration workshop](https://github.com/jenadevs/orchestration-workshop) by [Jérôme Petazzoni](https://twitter.com/jpetazzo), the creator of [Docker-in-Docker](https://github.com/jpetazzo/dind) 
+  4. **Easter egg:** [Orchestration workshop](https://github.com/jenadevs/orchestration-workshop) by [Jérôme Petazzoni](https://twitter.com/jpetazzo), the creator of [Docker-in-Docker](https://github.com/jpetazzo/dind)
 
 ## Introduction talk with demo and best practises
 

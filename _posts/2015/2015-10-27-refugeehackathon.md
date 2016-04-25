@@ -2,8 +2,7 @@
 layout: post
 title: "#refugeehackathon"
 date: "2015-10-27 12:00:00"
-icon: flag
-categories: hackathon
+categories: events
 authors: ["Jan"]
 ---
 

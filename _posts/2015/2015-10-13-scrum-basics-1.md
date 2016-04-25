@@ -1,8 +1,7 @@
 ---
 layout: post
-title: "Scrum Basics Series - Part 1: What is Scrum?"
+title: "Scrum Basics: What is Scrum?"
 date: "2015-10-13 08:23:00"
-icon: university
 categories: agile
 authors: ["Anja B."]
 ---
@@ -18,8 +17,6 @@ So let’s start with a short definition:
 >“Scrum is a team based framework
 to develop complex products
 or systems in an iterative way.“
-
-{% image blog/blog-scrum1-scrumboard-jira.png %}{% endimage %}
 
 ## What does that mean in detail?
 
@@ -42,6 +39,8 @@ Solutions can be found faster if you have more experience in the room and people
 And let's not forget the much faster feedback cycle with the testers when they are right inside the team!
 No ticket is really done until it has been tested.
 
+{% image blog/blog-scrum1-waterfall-project-trap.jpg 45% right %}Waterfall-projects-trap{% endimage %}
+
 ## How is Scrum made for developing complex products or systems?
 
 Complex problems are usually better solved if more minds are involved.
@@ -50,8 +49,6 @@ If you have to do the same thing every day again (like on an assembly line), Scr
 But if you have to solve new challenges every day and are working on complex products, Scrum is your best choice.
 
 ## Iterations
-
-{% image blog/blog-scrum1-waterfall-project-trap.jpg 45% right %}Waterfall-projects-trap{% endimage %}
 
 The iterations differ between the teams from 1 to 6 weeks.
 Usually they are 2 weeks long.
@@ -63,11 +60,9 @@ You don’t need to be afraid of the “waterfall-projects-trap”.
 All that may sound more difficult than it actually is.
 In contrary, the Scrum framework is so simple that it easily fits on one sheet of paper.
 
-In the next picture you can find two important artefacts Scrum is working with.
-The Product Backlog and the Sprint Backlog.
-
 {% image blog/blog-scrum1-scrum-framework.jpg 45% left %}Scrum artefacts{% endimage %}
 
+Two important artefacts in Scrum are the Product Backlog and the Sprint Backlog.
 The Product Backlog is an estimated, prioritised list of tickets (stories, bugs, tasks) that is sorted by the Product Owner according to the business value of these tickets.
 That means this list contains all the tickets that need to be done for a product to be developed.
 The Sprint Backlog is also a list of estimated, prioritised tickets, but it only contains those tickets that will be solved within the next iteration.
@@ -78,13 +73,10 @@ It provides an overview of all tickets of one team for one Sprint including the 
 With this Scrum Board everyone knows at all times about the development status and if the team is struggling or ahead of time.
 It also shows if one person is working on too many tickets at the same time or if the team has a long queue in QA or Review.
 
-At ePages we only have one team that is using a paper board:
-
-{% image blog/blog-scrum1-scrumboard-paper.jpg %}{% endimage %}
-
+At ePages we only have one team that is using a paper board.
 Having a visual board present in the room at all times has more advantages for them.
-The quick and easy way of adding tasks to stories (more about that in part [Scrum Basics - Part 4: Estimating](https://developer.epages.com/blog/2016/01/26/scrum-basics-4.html)) outbalance the higher administrative effort that occurs because one has to maintain the tickets on the physical board as well as in Jira.
-The other teams are using Jira Boards (see first picture).
+The quick and easy way of adding tasks to stories (more about that in [ Estimating](https://developer.epages.com/blog/2016/01/26/scrum-basics-4.html)) outbalance the higher administrative effort that occurs because one has to maintain the tickets on the physical board as well as in Jira.
+The other teams are using Jira Boards.
 
 ## What will be next?
 
@@ -92,6 +84,12 @@ Scrum defines three roles, which are Product Owner, Scrum Master and the Develop
 Those roles will be discussed in detail in the [next part](https://developer.epages.com/blog/2015/11/19/scrum-basics-2.html) of this Scrum Basics Series.
 
 Next to the roles Scrum brings four standard meetings: Sprint Planning, Daily Standup, Sprint Review and the Retrospective.
-We will talk about these meetings in detail in [Scrum Basics Series - Part 3](https://developer.epages.com/blog/2015/12/15/scrum-basics-3.html).
+We will talk about these meetings in detail in [Scrum Meetings](https://developer.epages.com/blog/2015/12/15/scrum-basics-3.html).
 
-Stay tuned.
+## Related posts
+
+* [Scrum Basics: Scrum Roles](https://developer.epages.com/blog/2015/11/19/scrum-basics-2.html)
+* [Scrum Basics: Scrum Meetings](https://developer.epages.com/blog/2015/12/15/scrum-basics-3.html)
+* [Scrum Basics: Estimating](https://developer.epages.com/blog/2016/01/26/scrum-basics-4.html)
+* [Scrum Basics: Principles and Values](https://developer.epages.com/blog/2016/02/25/scrum-basics-5.html)
+* [Scrum Basics: Practicing it](https://developer.epages.com/blog/2016/03/22/scrum-basics-6.html)
