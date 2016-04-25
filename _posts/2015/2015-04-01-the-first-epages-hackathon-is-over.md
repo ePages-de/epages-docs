@@ -2,8 +2,7 @@
 layout: post
 title: "The first ePages hackathon is over"
 date: "2015-04-01 12:00:00"
-icon: cog
-categories: tech-stories hackathon
+categories: events
 authors: ["Anja", "Birgit"]
 ---
 

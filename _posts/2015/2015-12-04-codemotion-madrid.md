@@ -2,8 +2,7 @@
 layout: post
 title: "Codemotion 2015 - One epagee was there!"
 date: "2015-12-04 12:00:00"
-icon: comments
-categories: conferences
+categories: events
 authors: ["Ángel"]
 ---
 The Codemotion conference took place in Madrid on November 28 and 29. With more than 1900 software enthusiasts, Codemotion is the biggest IT event in Spain.

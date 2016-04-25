@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "RESTful API documentation @ePages. RAML rocks! A TechWriter experience report."
+title: "RESTful API documentation @ePages"
 date: "2015-05-28 13:35:00"
-icon: compass
-categories: tech-stories api
+image: blog-header/compass.jpg
+categories: api
 authors: ["Birgit"]
 ---
 

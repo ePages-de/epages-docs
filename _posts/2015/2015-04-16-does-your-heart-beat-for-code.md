@@ -2,7 +2,7 @@
 layout: post
 title: "Does your heart beat for {code}?"
 date: "2015-04-16 12:00:00"
-icon: heartbeat
+image: blog-header/heartbeat.jpg
 categories: working-at-epages
 authors: ["Birgit"]
 ---

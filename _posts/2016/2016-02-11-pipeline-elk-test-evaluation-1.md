@@ -2,7 +2,7 @@
 layout: post
 title: "Continuous Delivery: Background of automated Selenium test analysis with Elasticsearch and Docker"
 date: "2016-02-11 10:11:12"
-icon: inbox
+image: blog-header/test-automation.jpg
 categories: tech-stories
 authors: ["Benjamin N.", "Bastian K."]
 ---

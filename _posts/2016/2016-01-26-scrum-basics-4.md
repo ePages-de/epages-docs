@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Scrum Basics Series - Part 4: Estimating"
+title: "Scrum Basics: Estimating"
 date: "2016-01-26 07:23:00"
-icon: university
+image: blog-header/estimation.jpg
 categories: agile
 authors: ["Anja B."]
 ---
@@ -85,6 +85,8 @@ It is much faster than Planning Poker but can lead to wrong estimations on compl
 
 ## Related posts
 
-* [Scrum Basics Series - Part 1: What is Scrum?](https://developer.epages.com/blog/2015/10/13/scrum-basics-1.html)
-* [Scrum Basics Series - Part 2: Scrum Roles](https://developer.epages.com/blog/2015/11/19/scrum-basics-2.html)
-* [Scrum Basics Series - Part 3: Scrum Meetings](https://developer.epages.com/blog/2015/12/15/scrum-basics-3.html)
+* [Scrum Basics: What is Scrum?](https://developer.epages.com/blog/2015/10/13/scrum-basics-1.html)
+* [Scrum Basics: Scrum Roles](https://developer.epages.com/blog/2015/11/19/scrum-basics-2.html)
+* [Scrum Basics: Scrum Meetings](https://developer.epages.com/blog/2015/12/15/scrum-basics-3.html)
+* [Scrum Basics: Principles and Values](https://developer.epages.com/blog/2016/02/25/scrum-basics-5.html)
+* [Scrum Basics: Practicing it](https://developer.epages.com/blog/2016/03/22/scrum-basics-6.html)

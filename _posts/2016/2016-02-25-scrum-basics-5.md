@@ -1,8 +1,7 @@
 ---
 layout: post
-title: "Scrum Basics Series - Part 5: Principles and Values"
+title: "Scrum Basics: Principles and Values"
 date: "2016-02-25 07:23:00"
-icon: university
 categories: agile
 authors: ["Anja B."]
 ---
@@ -26,24 +25,24 @@ It’s a short but powerful summary and shows that implementing Scrum in your co
 In addition to this short summary the Agile Manifesto also lists [twelve principles](http://agilemanifesto.org/iso/en/principles.html) an agile company should follow.
 Here only a small selection:
 
->“Our highest priority is to satisfy the customer
+*“Our highest priority is to satisfy the customer
 through early and continuous delivery
-of valuable software.
+of valuable software.*
 
->Welcome changing requirements, even late in
+*Welcome changing requirements, even late in
 development. Agile processes harness change for
-the customer's competitive advantage.
+the customer's competitive advantage.*
 
->Deliver working software frequently, from a
+*Deliver working software frequently, from a
 couple of weeks to a couple of months, with a
-preference to the shorter timescale.
+preference to the shorter timescale.*
 
->Business people and developers must work
-together daily throughout the project.
+*Business people and developers must work
+together daily throughout the project.*
 
->The most efficient and effective method of
+*The most efficient and effective method of
 conveying information to and within a development
-team is face-to-face conversation.
+team is face-to-face conversation.*
 
 Like the fist quotes, also these principles show the deep impact of agile development within a company.
 A lot of points like “welcome changing requirements” or “business people and developers must work together daily” are not normal or even contrarian to companies developing projects with waterfall.
@@ -102,7 +101,8 @@ Let’s see who will achieve that first!
 
 ## Related posts
 
-* [Scrum Basics Series - Part 1: What is Scrum?](https://developer.epages.com/blog/2015/10/13/scrum-basics-1.html)
-* [Scrum Basics Series - Part 2: Scrum Roles](https://developer.epages.com/blog/2015/11/19/scrum-basics-2.html)
-* [Scrum Basics Series - Part 3: Scrum Meetings](https://developer.epages.com/blog/2015/12/15/scrum-basics-3.html)
-* [Scrum Basics Series - Part 4: Estimating](https://developer.epages.com/blog/2016/01/26/scrum-basics-4.html)
+* [Scrum Basics: What is Scrum?](https://developer.epages.com/blog/2015/10/13/scrum-basics-1.html)
+* [Scrum Basics: Scrum Roles](https://developer.epages.com/blog/2015/11/19/scrum-basics-2.html)
+* [Scrum Basics: Scrum Meetings](https://developer.epages.com/blog/2015/12/15/scrum-basics-3.html)
+* [Scrum Basics: Estimating](https://developer.epages.com/blog/2016/01/26/scrum-basics-4.html)
+* [Scrum Basics: Practicing it](https://developer.epages.com/blog/2016/03/22/scrum-basics-6.html)

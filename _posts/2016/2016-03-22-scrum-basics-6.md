@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Scrum Basics Series - Part 6: Practicing it!"
+title: "Scrum Basics: Practicing it!"
 date: "2016-03-22 07:57:03"
-icon: university
+image: blog-header/plane.jpg
 categories: agile
 authors: ["Anja B."]
 ---
@@ -13,8 +13,6 @@ It is easy enough for everyone to understand within minutes.
 
 You don’t need any special resources (like Lego bricks), just some pieces of paper.
 And besides that it's real fun!
-
-{% image blog/blog-scrum6-plane.jpg %}{% endimage %}
 
 ## Rules
 
@@ -49,8 +47,8 @@ And a small hint on the side: if you don’t clean up after that exercise, you w
 
 ## Related posts
 
-* [Scrum Basics Series - Part 1: What is Scrum?](https://developer.epages.com/blog/2015/10/13/scrum-basics-1.html)
-* [Scrum Basics Series - Part 2: Scrum Roles](https://developer.epages.com/blog/2015/11/19/scrum-basics-2.html)
-* [Scrum Basics Series - Part 3: Scrum Meetings](https://developer.epages.com/blog/2015/12/15/scrum-basics-3.html)
-* [Scrum Basics Series - Part 4: Estimating](https://developer.epages.com/blog/2016/01/26/scrum-basics-4.html)
-* [Scrum Basics Series - Part 5: Principles and Values](https://developer.epages.com/blog/2016/02/25/scrum-basics-5.html)
+* [Scrum Basics: What is Scrum?](https://developer.epages.com/blog/2015/10/13/scrum-basics-1.html)
+* [Scrum Basics: Scrum Roles](https://developer.epages.com/blog/2015/11/19/scrum-basics-2.html)
+* [Scrum Basics: Scrum Meetings](https://developer.epages.com/blog/2015/12/15/scrum-basics-3.html)
+* [Scrum Basics: Estimating](https://developer.epages.com/blog/2016/01/26/scrum-basics-4.html)
+* [Scrum Basics: Principles and Values](https://developer.epages.com/blog/2016/02/25/scrum-basics-5.html)
