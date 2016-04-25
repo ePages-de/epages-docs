@@ -2,7 +2,6 @@
 layout: post
 title: "First Agile Hackathon @ePages"
 date: "2016-04-20 09:34:28"
-icon: refresh
 categories: agile
 authors: ["Anja B."]
 ---
