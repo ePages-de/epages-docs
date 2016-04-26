@@ -23,10 +23,12 @@ layout: default
   <h1>{{ title }}</h1>
   {% if page.date and page.authors %}<h3 class="subtitle">{{ page.date | date: "%b %-d, %Y" }} authored by {{ page.authors | join: ' and ' }}</h3>{% endif %}
   {% if chapter == 'apps' and page.key != 'apps-faq' %}
-    <div class="input-group">
-      <input type="text" class="form-control" placeholder="Enter your search here" required>
-      <button class="cta" type="button">Search</button>
-    </div>
+    <form method="get" action="{{ '/search.html' | prepend: chapter | prepend: '/' | prepend: site.baseurl }}" autocomplete="off">
+      <div class="input-group">
+        <input type="text" class="form-control" name="q" placeholder="Enter your search here" required>
+        <button class="cta" type="submit">Search</button>
+      </div>
+    </form>
   {% endif %}
 </header>
 
@@ -55,8 +57,8 @@ layout: default
       <article>
         {{ content }}
       </article>
+      {% include pagination.html %}
     </div>
-    {% include pagination.html %}
   </div>
 </div>
 
