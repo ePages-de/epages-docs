@@ -250,12 +250,10 @@ This object is used for the attributes of links.
 | returnedOn | string | The date/time the order was returned. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
 | shippingData | object of [shippingData](page:apps-data-types#shippingdata) | The shipping data of the order, i.e. short info on shipping method and price.|
 | paymentData | object of [paymentData](page:apps-data-types#paymentdata) | The payment data of the order, i.e. short info on payment method and price.|
-| lineItemContainer | [lineItemContainer](page:apps-data-types#lineitemcontainer) | Contains the line items of an order.  |
-| productLineItems | array of [productLineItem](page:apps-data-types#productlineitem) | A list of line items.  |
+| lineItemContainer | [lineItemContainer](page:apps-data-types#lineitemcontainer) | Contains the line items of an order. Only included in [`GET`/orders/{orderId}](page:apps-api-get-shops-shopid-orders-orderid-information). |
+| productLineItems | array of [productLineItem](page:apps-data-types#productlineitem) | A list of line items. Only included in [`GET`/orders/{orderId}](page:apps-api-get-shops-shopid-orders-orderid-information). |
 | shippingPrice | object of [price](page:apps-data-types#price) | The shipping price for the order.  |
 | links | array of [link](page:apps-data-types#link) | The links to the products of the order. |
-
-
 
 ## paymentData
 
