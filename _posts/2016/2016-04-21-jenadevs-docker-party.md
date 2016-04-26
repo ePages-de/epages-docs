@@ -2,6 +2,7 @@
 layout: post
 title: " Guest post: Softwerkskammer Jena shipped the Docker Party to ePages!"
 date: "2016-04-21 12:04:21"
+image: blog-header/docker-party.jpg
 categories: events
 authors: ["Softwerkskammer Jena (Oliver and Benjamin)"]
 ---
