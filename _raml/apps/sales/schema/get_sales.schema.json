@@ -3,6 +3,14 @@
   "title": "Get Product Sales Schema",
   "type": "object",
   "properties": {
+    "createdAfter": {
+      "type": "string",
+      "description": "The date and time of orders created after this timestamp (format according to ISO 8601)."
+    },
+    "createdBefore": {
+      "type": "string",
+      "description": "The date and time of orders created before this timestamp (format according to ISO 8601)."
+    },
     "salesPerCurrency": {
       "type": "array of [sales](page:apps-data-types#sales)",
       "description": "The sales summary grouped by currency."
