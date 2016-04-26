@@ -11,9 +11,6 @@ body {
   font-family: 'ProximaNova-Regular', Helvetica, Arial, sans-serif;
   font-size: 18px;
 }
-a, a:focus, a:hover, a:active, a:visited {
-  color: #28b363;
-}
 h1, h2, h3, h4 {
   font-family: 'HelveticaNeue-Bold', Helvetica, Arial, sans-serif;
 }
@@ -51,7 +48,7 @@ a.cta, .cta, .navbar-cta {
   background: transparent;
   color: #fff;
   border-color: #fff;
-  margin: 2px 0 0 20px;
+  margin: -1px 0 -1px 10px;
 
   a {
     text-decoration: none !important;
@@ -85,7 +82,7 @@ nav {
     padding: 0;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) {
   nav {
     width: 750px;
   }
@@ -105,7 +102,7 @@ nav {
   }
 }
 
-.nav li a:hover {
+.nav li a:hover, .nav li a:focus {
   color: #fff;
   background-color: transparent;
   text-decoration: underline;
@@ -186,6 +183,7 @@ nav {
   color: #fff;
   margin-top: -90px;
   padding-top: 90px;
+  padding-bottom: 120px;
   min-height: 350px;
 
   .input-group {
@@ -198,6 +196,7 @@ nav {
   .jumbotron {
     margin-top: 0;
     padding-top: 30px;
+    padding-bottom: 48px;
     min-height: 250px;
   }
 }
@@ -208,6 +207,7 @@ nav {
 .jumbotron .h3, .jumbotron h3 {
   font-family: "HelveticaNeue-Light";
   font-size: 20px;
+  margin-top: -20px;
 }
 .form-control {
   height: 47px;
@@ -311,8 +311,9 @@ footer .row {
 }
 footer .logo {
   margin: 0 auto;
-  padding: 0 0 40px;
+  padding: 0 0 15px;
   border-bottom: 1px solid #fff;
+  width: 65%;
 }
 @media (max-width: 767px) {
   footer .logo {
@@ -376,7 +377,10 @@ footer .links li {
     padding: 0 20px;
   }
 }
-
+.social a > span {
+  font-size: inherit;
+  padding: inherit;
+}
 .social ul, .socialmedia {
   display: inline-block;
   margin: 0;
@@ -485,9 +489,6 @@ footer .social .xing:hover {
   width: 80%;
   padding-left: 3%;
   border-left: 1px solid #eee;
-  ul, ol {
-    font-size: 16px;
-  }
 }
 @media (max-width: 1199px) {
   .content-inner {
@@ -497,6 +498,9 @@ footer .social .xing:hover {
 @media screen and (max-width: 991px) {
   .content-inner {
     width: 70%;
+  }
+  footer {
+    font-size: inherit;
   }
 }
 @media (max-width: 767px) {
@@ -508,11 +512,9 @@ footer .social .xing:hover {
 }
 
 article p, article table {
-  font-size: 16px;
   margin: 10px 0 20px;
 }
 article ul li {
-  font-size: 16px;
   list-style: disc;
 }
 
@@ -666,6 +668,10 @@ ul#resource-list li {
   white-space: nowrap;
   display: inline-block;
 }
+.label {
+  line-height: 2;
+  padding: 0 10px;
+}
 .http-method {
   width: 75px;
 }
@@ -689,9 +695,12 @@ ul#resource-list li {
   background-color: #da4848;
   border: 1px solid #c72828;
 }
+.label-default {
+  border: 1px solid #777;
+}
 .label-default:hover, .http-method:hover, .http-method:hover {
   background-color: #ddd;
-  border: 1px solid #ddd;
+  border: 1px solid #5e5e5e;
   color: #333;
 }
 a.label {
@@ -703,6 +712,12 @@ article th {
 article td, article th {
   border: 1px solid #eee;
   padding: 8px;
+}
+.form-control {
+  box-shadow: none;
+}
+.alert {
+  border-radius: 0;
 }
 .alert > p, .alert > ul {
   margin: 5px 0;

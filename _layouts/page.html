@@ -23,10 +23,12 @@ layout: default
   <h1>{{ title }}</h1>
   {% if page.date and page.authors %}<h3 class="subtitle">{{ page.date | date: "%b %-d, %Y" }} authored by {{ page.authors | join: ' and ' }}</h3>{% endif %}
   {% if chapter == 'apps' and page.key != 'apps-faq' %}
-    <div class="input-group">
-      <input type="text" class="form-control" placeholder="Enter your search here" required>
-      <button class="cta" type="button">Search</button>
-    </div>
+    <form method="get" action="{{ '/search.html' | prepend: chapter | prepend: '/' | prepend: site.baseurl }}" autocomplete="off">
+      <div class="input-group">
+        <input type="text" class="form-control" name="q" placeholder="Enter your search here" required>
+        <button class="cta" type="submit">Search</button>
+      </div>
+    </form>
   {% endif %}
 </header>
 
@@ -43,9 +45,9 @@ layout: default
           {% endfor %}
           <li class="sitemap-headline">Share<br />
             <ul class="socialmedia">
-              <li class="twitter"><a href="https://twitter.com/intent/tweet?text=&url=https://developer.epages.com/blog/index.html&via=epagesdevs&tw_p=tweetbutton" target="_blank" title="Share via Twitter"><span class="icon-twitter"></span></a></li>
-              <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://developer.epages.com/blog/index.html" target="_blank"><span class="icon-facebook" title="Share via Facebook"></span></a></li>
-              <li class="googleplus"><a href="https://plus.google.com/share?url=https://developer.epages.com/blog/index.html" target="_blank"><span class="icon-googleplus" title="Share via Google+"></span></a></li>
+              <li class="twitter"><a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ page.url | prepend: site.url }}&via=epagesdevs&tw_p=tweetbutton" target="_blank" title="Share via Twitter"><span class="icon-twitter"></span></a></li>
+              <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.url }}" target="_blank"><span class="icon-facebook" title="Share via Facebook"></span></a></li>
+              <li class="googleplus"><a href="https://plus.google.com/share?url={{ page.url | prepend: site.url }}" target="_blank"><span class="icon-googleplus" title="Share via Google+"></span></a></li>
             </ul>
           </li>
         </ul>
@@ -55,8 +57,8 @@ layout: default
       <article>
         {{ content }}
       </article>
+      {% include pagination.html %}
     </div>
-    {% include pagination.html %}
   </div>
 </div>
 
