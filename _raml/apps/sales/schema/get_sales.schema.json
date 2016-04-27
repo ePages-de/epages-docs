@@ -3,9 +3,9 @@
   "title": "Get Product Sales Schema",
   "type": "object",
   "properties": {
-    "salesPerCurrency": {
-      "type": "array of [sales](page:apps-data-types#sales)",
-      "description": "The sales summary grouped by currency."
+    "": {
+      "type": "object of [salesSummary](page:apps-data-types#salessummary)",
+      "description": ""
     }
   }
 }

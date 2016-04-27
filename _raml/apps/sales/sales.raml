@@ -22,5 +22,7 @@ get:
         application/json:
           example: !include examples/get_sales_response.json
           schema: !include schema/get_sales.schema.json
+    400:
+      description: Query parameter validations errors. Invalid date format or date range longer than one year.
     403:
       description: Forbidden. OAuth 2.0 Token required with 'orders_read' scope.
