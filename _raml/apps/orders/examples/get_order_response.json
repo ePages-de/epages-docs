@@ -66,6 +66,8 @@
           "formatted": "0.00 €",
           "amount": 0,
           "currency": "EUR"
+        }
+      },
       "links": [
         {
           "rel": "self",
@@ -129,6 +131,8 @@
           "formatted": "0.00 €",
           "amount": 0,
           "currency": "EUR"
+        }
+      },
       "links": [
         {
           "rel": "self",
@@ -199,6 +203,8 @@
           "formatted": "0.00 €",
           "amount": 0,
           "currency": "EUR"
+        }
+      },
       "links": [
         {
           "rel": "self",
