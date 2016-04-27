@@ -183,12 +183,12 @@ nav {
   color: #fff;
   margin-top: -90px;
   padding-top: 90px;
-  padding-bottom: 120px;
-  min-height: 350px;
+  padding-bottom: 60px;
 
   .input-group {
     display: inline-flex;
     width: 80%;
+    padding-bottom: 30px;
     min-width: 300px;
   }
 }
@@ -197,7 +197,6 @@ nav {
     margin-top: 0;
     padding-top: 30px;
     padding-bottom: 48px;
-    min-height: 250px;
   }
 }
 .jumbotron .h1, .jumbotron h1 {
