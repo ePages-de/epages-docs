@@ -158,8 +158,6 @@ This object is used for the attributes of shippingAddress and billingAddress.
 
 ## image
 
-This object is used for the attributes of images.
-
 | Attribute | Type | Description |
 | - | :-: |  - |
 | url | string | The URL of an image. |
@@ -192,8 +190,6 @@ This object is used for the attributes of images.
 | shippingPrice | object of [price](page:apps-data-types#price) | The shipping price of the line item. |
 
 ## link
-
-This object is used for the attributes of links.
 
 | Attribute | Type | Description |
 | - | :-: |  - |
@@ -231,7 +227,7 @@ This object is used for the attributes of links.
 | billingAddress | [address](page:apps-data-types#address) | The billing address for the order.  |
 | shippingAddress | [address](page:apps-data-types#address) | The shipping address for the order.  |
 | invoicedOn | string | The date/time the order was invoiced. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
-| delievereOn | string | The date/time the order was delivered. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
+| deliveredOn | string | The date/time the order was delivered. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
 | pendingOn | string | The date/time the order was set to pending. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
 | archivedOn | string | The date/time the order was archived. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
 | dispatchedOn | string | The date/time the order was dispatched. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
@@ -293,8 +289,6 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | basePrice | [basePrice](page:apps-data-types#baseprice) | The price information scaled to a standardised base unit, according to the German base price regulation "Preisangabenverordnung" (PAngV), e.g. 1 l = 1.20 EUR. Is `null` if no reference amount is specified for the product.|
 
 ## product
-
-This object is used for the attributes of product.
 
 | Attribute | Type | Description |
 | - | :-: |  - |
@@ -392,6 +386,14 @@ This object is used for the attributes of deliveryWeight and quantity.
 | totalNetRevenue | number | The total net revenue received from completed orders.|
 | unitsSold | number | The number of sold product units (only available with active filter productId). |
 | totalOrders | number | The number of orders for the defined time frame. |
+
+## salesSummary
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| createdAfter | string | The date and time of orders created after this timestamp (format according to ISO 8601). |
+| createdBefore | string | The date and time of orders created before this timestamp (format according to ISO 8601). |
+| salesPerCurrency | array of [sales](page:apps-data-types#sales)| The sales summary grouped by currency. |
 
 ## shippingData
 
