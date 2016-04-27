@@ -10,6 +10,16 @@ In order to keep track of these changes we recommend you to follow [@epagesdevs]
 
 <hr>
 
+## 2016-04-27
+
+### Changes with software release 6.17.45
+
+#### <i class="fa fa-pencil"></i> Update
+
+* Added `createdAfter` and `createdBefore` attributes to [`GET` sales](https://developer.epages.com/apps/api-reference/get-shops-shopid-sales.html)
+
+<hr>
+
 ## 2016-04-20
 
 ### Changes with software release 6.17.44
