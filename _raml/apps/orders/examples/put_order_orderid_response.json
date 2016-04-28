@@ -101,6 +101,22 @@
         },
         "images": [
           {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54EF/307D/4FF3/3578/CB70/0A0C/05E6/6C3F/eBookNew_h.jpg",
+            "classifier": "HotDeal"
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54EF/307D/4FF3/3578/CB70/0A0C/05E6/6C3F/eBookNew_m.jpg",
+            "classifier": "Medium"
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54EF/307D/4FF3/3578/CB70/0A0C/05E6/6C3F/eBookNew_l.jpg",
+            "classifier": "Large"
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54EF/307D/4FF3/3578/CB70/0A0C/05E6/6C3F/eBookNew_s.jpg",
+            "classifier": "Small"
+          },
+          {
             "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54EF/307D/4FF3/3578/CB70/0A0C/05E6/6C3F/eBookNew_xs.jpg",
             "classifier": "Thumbnail"
           }

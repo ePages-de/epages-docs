@@ -53,6 +53,22 @@
         },
         "images": [
           {
+            "url": "http://gecko/WebRoot/Store/Shops/DemoShop/Products/be_40401/be_40401_blue_h.jpg",
+            "classifier": "HotDeal"
+          },
+          {
+            "url": "http://gecko/WebRoot/Store/Shops/DemoShop/Products/be_40401/be_40401_blue_m.jpg",
+            "classifier": "Medium"
+          },
+          {
+            "url": "http://gecko/WebRoot/Store/Shops/DemoShop/Products/be_40401/be_40401_blue_l.jpg",
+            "classifier": "Large"
+          },
+          {
+            "url": "http://gecko/WebRoot/Store/Shops/DemoShop/Products/be_40401/be_40401_blue_s.jpg",
+            "classifier": "Small"
+          },
+          {
             "url": "http://gecko/WebRoot/Store/Shops/DemoShop/Products/be_40401/be_40401_blue_xs.jpg",
             "classifier": "Thumbnail"
           }
