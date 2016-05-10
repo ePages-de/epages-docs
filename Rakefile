@@ -1,5 +1,4 @@
 # encoding: utf-8
-require 'html/proofer'
 
 class String
   # colorization
@@ -141,35 +140,10 @@ task :test do
 end
 
 task :test do
-  class UnresolvedReferencesLinkCheck < HTML::Proofer::Checkable
-    attr_reader :href
-
-    def unresolved_reference?
-      if @href =~ /([a-z0-9\-]+):([a-z0-9\-]+)(#(.+))?/
-        case $1
-          when 'mailto'
-            false
-          else
-            return 'true'
-        end
-      end
-    end
-  end
-
-  class UnresolvedReferences < HTML::Proofer::CheckRunner
-    def run
-      @html.css('a').each do |l|
-        link = UnresolvedReferencesLinkCheck.new l, self
-
-        if link.unresolved_reference?
-          return add_issue("There is an unresolvable reference to #{link.href}")
-        end
-      end
-    end
-  end
+  require 'html-proofer'
 
   sh "bundle exec jekyll build"
-  HTML::Proofer.new("./_site", :disable_external => true, :href_ignore => ["#"]).run
+  HTMLProofer.check_directory("./_site", :disable_external => true, :assume_extension => true, :href_ignore => ["#"]).run
 end
 
 task :ramlup do
