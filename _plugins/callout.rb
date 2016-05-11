@@ -13,7 +13,12 @@ module Jekyll
 
     def render(context)
       site = context.registers[:site]
-      converter = site.getConverterImpl(Jekyll::Converters::Markdown)
+      converter = if site.respond_to?(:find_converter_instance)
+        site.find_converter_instance(Jekyll::Converters::Markdown)
+      else
+        site.getConverterImpl(Jekyll::Converters::Markdown)
+      end
+
       content = "**#{@title}** #{super.to_s.strip}"
 
       "<div class=\"alert alert-#{@mode}\" role=\"alert\">#{converter.convert(content)}</div>"

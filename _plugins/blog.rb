@@ -38,10 +38,10 @@ module Jekyll
   class BlogPostGroupPageGenerator < Generator
     def generate(site)
       post_per_page = site.config["paginate"]
-      categories = site.posts.inject([]) { |acc, post| acc |= (post.categories || []) }
 
+      categories = site.posts.docs.inject([]) { |acc, post| acc |= (post.data['categories'] || []) }
       categories.each do |category|
-        posts = site.posts.select { |p| (p.categories || []).include? category }.sort { |a,b| b <=> a }
+        posts = site.posts.docs.select { |p| (p.data['categories'] || []).include? category }.sort { |a,b| b <=> a }
         1.upto (posts.size.to_f / post_per_page).ceil do |page|
           paginator = { page: page, total_pages: (posts.size.to_f / post_per_page).ceil, base_path: "/blog/categories/#{category}/page-" }
           dir = page == 1 ? "blog/categories/#{category}" : "blog/categories/#{category}/page-#{page}"
@@ -49,9 +49,9 @@ module Jekyll
         end
       end
 
-      tags = site.posts.inject([]) { |acc, post| acc |= (post.tags || []) }
+      tags = site.posts.docs.inject([]) { |acc, post| acc |= (post.data['tags'] || []) }
       tags.each do |tag|
-        posts = site.posts.select { |p| (p.tags || []).include? tag }.sort { |a,b| b <=> a }
+        posts = site.posts.select { |p| (p.data['tags'] || []).include? tag }.sort { |a,b| b <=> a }
         site.pages << BlogPostGroupPage.new(site, site.source, 'blog/tags', tag, 'tag-' + tag, posts)
       end
     end
