@@ -63,8 +63,17 @@ a.cta, .cta, .navbar-cta {
   outline: 0 !important;
 }
 @media (max-width: 767px) {
-  .navbar-cta, .contentnav {
+  .contentnav .sitemap-headline:not(:last-of-type),
+  .contentnav .sitemap-entry {
     display: none !important;
+  }
+  .contentnav .sitemap-headline:last-of-type {
+    margin-top: 0;
+    font-size: 0;
+    .socialmedia {
+      width: 100vw;
+      padding-left: calc(50vw - 100px);
+    }
   }
 }
 
