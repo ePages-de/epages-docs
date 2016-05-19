@@ -48,7 +48,7 @@ The achieved results, such as redefined Consulting services and a workflow to de
 ## Summary
 
 Despite the fact that Bad Sulzburg was far away, and the travel was very tiring, it was a great place to think out of the box.
-We had a great opportunity to face challenges, come up with new ides, and develop a plan for our future work.
+We had a great opportunity to face challenges, come up with new ideas, and developed a plan for our future work.
 
 From our point of view, a team offsite is an essential part for every professional team which encourages creativity.
 This can be especially helpful when you plan to make strategic decisions.
