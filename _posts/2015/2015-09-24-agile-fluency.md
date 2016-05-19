@@ -12,7 +12,7 @@ Or how many companies achieve certain levels of agility?
 
 Here are all the answers:
 
-{% image blog/blog-agile-fluency.png %}{% endimage %}
+{% image blog/blog-agile-fluency.png %}
 
 The picture shows the so called Agile Fluency Model (originally released by Diana Larsen and James Shore, read [here](http://martinfowler.com/articles/agileFluency.html) for further information).
 The numbers are based on questions that had been asked to companies who changed to an agile methodology some years ago.

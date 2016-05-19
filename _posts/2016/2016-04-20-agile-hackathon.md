@@ -11,7 +11,7 @@ In particular, we clarified the roles of POs and SMs at ePages, we talked about 
 
 ## First day
 
-{% image blog/blog-role-map.jpg 38% left %} Example of Role Map {% endimage %}
+{% imagecaption blog/blog-role-map.jpg 38% left %} Example of Role Map {% endimagecaption %}
 
 We started off in the morning with drawing so called "Role Maps".
 In such a map, you draw your connections to other roles or groups in the company.
@@ -31,7 +31,7 @@ The afternoon was dedicated to really understand and agree on the responsibiliti
 Since the views on the roles differed a lot depending on the company location, this caused some productive discussions.
 In the end, we came up with the following definitions of the roles for ePages:
 
-{% image blog/blog-agile-manifesto.jpg 45% right %} Agile Manifesto {% endimage %}
+{% imagecaption blog/blog-agile-manifesto.jpg 45% right %} Agile Manifesto {% endimagecaption %}
 
 ### Product Owner
 
@@ -90,7 +90,7 @@ Obi-Wan Kenobi
 
 ## Second day
 
-{% image blog/blog-backlog.jpg 45% right %} Backlog after workshop {% endimage %}
+{% imagecaption blog/blog-backlog.jpg 45% right %} Backlog after workshop {% endimagecaption %}
 
 The second day began with a session about magic estimation.
 Most of us already knew that, but it was a nice refreshment.

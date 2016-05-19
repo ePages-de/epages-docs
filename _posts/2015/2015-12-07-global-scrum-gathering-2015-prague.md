@@ -14,7 +14,7 @@ It's been three days filled with interesting workshops, presentations and gettin
 The keynote of Niels Pflaeging followed the ideas of his book "Organize for Complexity".
 The basic idea is that top down management structures were working in the industrial age with slow moving dull markets but that they die with the fast moving markets today.
 
-{% image blog/blog-gsg-1.jpg 50% left %}{% endimage %}
+{% image blog/blog-gsg-1.jpg 50% left %}
 
 He described organisations as peaches rather than pyramids, with a centre and a periphery.
 The customer always contacts the periphery and the periphery the centre.
@@ -25,7 +25,7 @@ He also had a whole slide with example companies (big ones!) that are already wo
 
 One really interesting point was when he started to talk about the theory of X- and Y-people.
 
-{% image blog/blog-gsg-2.jpg %}{% endimage %}
+{% image blog/blog-gsg-2.jpg %}
 
 Everyone in the room wrote on a sticky note if they thinks whether they are an X or a Y person and on a second sticky note they put a guess of percentage of people who think they are an X person.
 Then we exchanged notes and those holding an X were supposed to raise their hands.
@@ -90,7 +90,7 @@ His advice to tackle TD was to make it visible.
 Use a special kind of ticket either on the backlog or a separate board.
 Plan it in the sprint or take a certain percentage of the sprint (e.g. one day per sprint) to only work on TD.
 
-{% image blog/blog-gsg-4.jpg %}{% endimage %}
+{% image blog/blog-gsg-4.jpg %}
 
 ## Pavel Dabrytski - Scrum Economics 101: Contracts, Budgets, Capitalization
 
@@ -99,7 +99,7 @@ It was interesting to hear it from someone that has worked with this in practice
 There were many information I couldn't fully grab because I've never worked in Sales, so my advice would be to have a look at this [video](https://www.youtube.com/watch?v=cteAb9Ap7_4).
 It's roughly the same presentation Pavel was holding on the Agile Africa conference this year.
 
-{% image blog/blog-gsg-5.jpg 50% left %}{% endimage %}
+{% image blog/blog-gsg-5.jpg 50% left %}
 
 The different contract models you can use in Scrum are all based on the idea to fix time and cost, but not scope.
 

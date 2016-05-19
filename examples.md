@@ -84,29 +84,29 @@ Table
 Images
 
 
-{% image landingpage-banner.jpg %}
+{% imagecaption landingpage-banner.jpg %}
 This is an image with at most 100% width
-{% endimage %}
+{% endimagecaption %}
 
-{% image search.png %}
+{% imagecaption search.png %}
 This is an image with at most 100% width
-{% endimage %}
+{% endimagecaption %}
 
-{% image landingpage-banner.jpg 50% %}
+{% imagecaption landingpage-banner.jpg 50% %}
 This is an image with an enforced width of 50%
-{% endimage %}
+{% endimagecaption %}
 
-{% image search.png 50% %}
+{% imagecaption search.png 50% %}
 This is an image with an enforced width of 50%
-{% endimage %}
+{% endimagecaption %}
 
-{% image search.png 50% left %}
+{% imagecaption search.png 50% left %}
 This is an image with an enforced width of 50% floating on the left
-{% endimage %}
+{% endimagecaption %}
 
-{% image search.png 20% right %}
+{% imagecaption search.png 20% right %}
 This is an image with an enforced width of 20% floating on the right
-{% endimage %}
+{% endimagecaption %}
 
 <p style="clear: both">Highlights</p>
 

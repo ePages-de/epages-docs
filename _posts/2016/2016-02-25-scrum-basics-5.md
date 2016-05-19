@@ -57,7 +57,7 @@ What do they mean in detail and why are they important?
 
 ### Focus
 
-{% image blog/blog-focus.jpg 40% left %}{% endimage %}
+{% image blog/blog-focus.jpg 40% left %}
 
 Focus means that the whole team is working on only one topic and that all expertise is available to solve the topic.
 Focussing on one thing at a time leads to early delivery and high quality.
@@ -78,7 +78,7 @@ Everyone can make mistakes, we are just humans in the end, but the earlier you a
 
 ### Commitment
 
-{% image blog/blog-commitment.jpg 40% right %}{% endimage %}
+{% image blog/blog-commitment.jpg 40% right %}
 
 Commitment is very important when it comes to self-organised Scrum teams.
 They decide on their own, how much they are going to solve within the next sprint.

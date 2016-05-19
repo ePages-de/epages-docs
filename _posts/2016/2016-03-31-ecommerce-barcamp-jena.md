@@ -33,7 +33,7 @@ This immediate reaction allows a proper planning of the time slot and room alloc
 In order to give a better impression of the actual contents of the unconference, I'd like to outline some of the sessions.
 As a backend developer, I will focus on the technical talks and neglect the sessions about marketing or law.
 
-{% image blog/blog-ecommerce-barcamp-jena-2.jpg %}{% endimage %}
+{% image blog/blog-ecommerce-barcamp-jena-2.jpg %}
 
 The first session was held by Christoph Rüger from [Synesty](http://synesty.com).
 He is part of a small team that has built a new cloud service that reads data from files (uploaded CSV, XML, Google Drive etc.).
@@ -47,7 +47,7 @@ However, a lot of minor service providers already emphasise OpenStack in the mar
 In practice, hosters support that to a varying extent so that developers should check that carefully themselves.
 Nevertheless, the framework in general is very interesting and already provides a lot of functionality. It will be valuable to follow in the future.
 
-{% image blog/blog-ecommerce-barcamp-jena-4.jpg 45% right %}The orga team{% endimage %}
+{% imagecaption blog/blog-ecommerce-barcamp-jena-4.jpg 45% right %}The orga team{% endimagecaption %}
 
 Another interesting session was a guided discussion about [Magento 2](https://magento.com/developers/magento2).
 Björn Jacob and Tobias Vogt explained in an entertaining fashion the new functio set in frequent interplay with the strongly involved audience.
@@ -73,7 +73,7 @@ Consistently, I could spot happy foodies everywhere!
 Another form of active relaxation between the session breaks could be accomplished by a short visit of the gaming corner.
 Several retro consoles awaited their live field-test in battle matches with Super Mario Kart and other classics.
 
-{% image blog/blog-ecommerce-barcamp-jena-3.jpg %}{% endimage %}
+{% image blog/blog-ecommerce-barcamp-jena-3.jpg %}
 
 ## Summary
 

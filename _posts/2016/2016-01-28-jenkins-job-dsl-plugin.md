@@ -13,7 +13,7 @@ The idea of the project is to describe Jenkins jobs with a [Groovy](http://www.g
 
 Since a job description is just a Groovy script, it can be kept together with your project in source control.
 
-{% image blog/blog-jobdsl-jenkins-jobs-groovy.png %}{% endimage %}
+{% image blog/blog-jobdsl-jenkins-jobs-groovy.png %}
 
 ### Describing jobs with the DSL
 
@@ -66,7 +66,7 @@ By choosing the first option, you can enter the DSL script directly in a text ar
 That's nice if you want to play a bit with the Job DSL to try things.
 Since we want to put the job scripts under source control, we choose **Look on Filesystem**:
 
-{% image blog/blog-jobdsl-lookonfilesystem.png %}{% endimage %}
+{% image blog/blog-jobdsl-lookonfilesystem.png %}
 
 You can now enter the paths to the DSL scripts (relative to the project's root directory) line by line into the text area.
 

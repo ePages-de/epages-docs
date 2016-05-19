@@ -9,7 +9,7 @@ The cart can contain products, variations and custom items.
 All data added to a cart is stored and available as these data or an order is retrieved.
 The cart also holds the feature for setting the billing address as well as the shipping address.
 
-{% image carts-overview.png %}{% endimage %}
+{% image carts-overview.png %}
 
 <ul id="resource-list">
   {% for page in site.pages %}

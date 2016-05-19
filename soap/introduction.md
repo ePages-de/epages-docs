@@ -14,7 +14,6 @@ For our web service description we use WSDL (Web Services Definition Language) a
 # Data exchange
 
 {% image soap-data-exchange.png %}
-{% endimage %}
 
 # Extensibility
 

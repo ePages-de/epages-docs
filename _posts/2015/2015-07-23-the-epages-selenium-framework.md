@@ -83,7 +83,7 @@ information from the page or interacting with it. The tests
 are then using these service methods to fulfil defined
 test specifications. The following picture shows this structure.
 
-{% image blog/blog-selenium-01.png %}{% endimage %}
+{% image blog/blog-selenium-01.png %}
 
 Here you can see a short test script for the search functionality.
 The test scripts are always derived from the base class `TestBaseEp6`.

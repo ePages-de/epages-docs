@@ -14,11 +14,11 @@ We are just as excited as you are!
 
 1. Within the administration area of your test shop, click the tab **Apps & Themes**.
 In the drop down menu, choose the field **Developer apps** and click on your app in the list below.
-    {% image click-apps.png %}{% endimage %}
+    {% image click-apps.png %}
 2. Click the button **Submit app**.
-    {% image submit-app.png %}{% endimage %}
+    {% image submit-app.png %}
 3. You will then be asked to fill out the submission form.
-    {% image submission-form.png %}{% endimage %}
+    {% image submission-form.png %}
 
 ### Walk through the submission form
 

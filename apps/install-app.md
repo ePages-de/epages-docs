@@ -30,7 +30,6 @@ Before jumping into the authorisation process, let's look at some terms that wil
 ## Authorisation process
 
 {% image oauth2-flow.png %}
-{% endimage %}
 
 ### 1. Ask for permission
 
@@ -41,7 +40,6 @@ While submitting the app, you have to define a **scope**, which outlines the per
 ePages displays the user consent form to the merchant as follows:
 
 {% image asking-for-permission.png %}
-{% endimage %}
 
 ### 2. Confirm the installation
 
@@ -144,12 +142,10 @@ In case of a successful app installation, the merchant will be able to open the 
 If an error occurred during installation, the **Install** button instead of the **Open app** button will be shown.
 
 {% image app-install-success.png %}
-{% endimage %}
 
 The app will also appear in the administration area in the section **My apps**.
 
 {% image app-install-success-myapps.png %}
-{% endimage %}
 
 ## Make an authenticated request to the API
 

@@ -6,7 +6,7 @@ title: Legal
 
 Legal holds the shop's key information on contact information, privacy policy, terms and conditions, right and withdrawal and shipping information.
 
-{% image legal-overview.png %}{% endimage %}
+{% image legal-overview.png %}
 
 <ul id="resource-list">
   {% for page in site.pages %}

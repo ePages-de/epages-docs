@@ -24,7 +24,7 @@ In order to do that, we need to create connectors, which allow ePages and the pa
 
 ## Payment flow
 
-{% image blog/blog-payment-integrations.png %}{% endimage %}
+{% image blog/blog-payment-integrations.png %}
 
 A payment flow will normally consist of at least the following elements or steps: create payment, redirect to gateway, backlink and callback.
 
