@@ -16,6 +16,7 @@ get:
   get:
     description: Returns all subscribers of a newsletter campaign from a shop.
     securedBy: [newsletters_read]
+    is: [ paged ]
     responses:
       200:
         body:
