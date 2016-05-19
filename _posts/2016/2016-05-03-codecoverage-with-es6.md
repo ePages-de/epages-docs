@@ -176,11 +176,11 @@ When using ES6 in combination with code coverage reports, then _isparta_ can hel
 
 ### Code coverage with isparta
 
-{% image blog/blog-es6-coverage-old.png %} Code coverage with isparta {% endimage %}
+{% imagecaption blog/blog-es6-coverage-old.png %} Code coverage with isparta {% endimagecaption %}
 
 ### Code coverage with babel-plugin-\_\_coverage\_\_
 
-{% image blog/blog-es6-coverage-new.png %} Code coverage with babel-plugin-\_\_coverage\_\_ isparta {% endimage %}
+{% imagecaption blog/blog-es6-coverage-new.png %} Code coverage with babel-plugin-\_\_coverage\_\_ isparta {% endimagecaption %}
 
 [prev-blog-post]: https://developer.epages.com/blog/2015/11/16/full-stack-es6-with-webpack-and-babel.html
 [demo-project]: https://github.com/ePages-de/codecoverage-with-es6

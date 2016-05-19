@@ -18,7 +18,7 @@ In addition, we were pretty unhappy with not being able to avoid local modificat
 
 ## Introducing Docker
 
-{% image blog/blog-docker-logo-h.png %}{% endimage %}
+{% image blog/blog-docker-logo-h.png %}
 
 So, let's get started on our journey towards immutable Jenkins master!
 The main step to achieve this goal was our decision to build our further steps on [Docker](https://www.docker.com/).

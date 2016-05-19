@@ -21,7 +21,7 @@ Could be worse!
 I was ready to hack!
 I joined the "Runanas" pitch, that matched my interest and I thought would be much fun developing. The goal was to build an app that uses the Sony LifeLog API to find a matching jogging partner.
 
-{% image blog/blog-geekettes-runanas-app.png %}{% endimage %}
+{% image blog/blog-geekettes-runanas-app.png %}
 
 Within 24 hours (Honestly! Some team members survived without even a snatch of sleep) we worked with 8 team members to create the "Runanas App" using the Sony SmartWatch 3.
 One part of the team concentrated on the backend part (realised with Django and SQLite), that connects to the Sony API as well as on the prototype development using Android Studio.
@@ -34,7 +34,7 @@ We established a real data exchange
 * from the app to our backend
 * from the app to the Sony SmartWatch 3.
 
-{% image blog/blog-geekettes-present-runanas-app.jpg %}{% endimage %}
+{% image blog/blog-geekettes-present-runanas-app.jpg %}
 
 When the presentations started, we had 2.5 minutes to present our results to the audience.
 We were very excited!
@@ -42,7 +42,7 @@ To achieve our goal, it was all about producing a good mood in the audience, pre
 
 And then....**Drum roll**... We impressed Sony with our solution and won the Sony SmartWatch 3!
 
-{% image blog/blog-geekettes-price.jpg %}{% endimage %}
+{% image blog/blog-geekettes-price.jpg %}
 
 It has been an inspiring and cool weekend with many new ideas and impulses.
 On my way home, I have not only lots of new experience in my luggage, but also good learnings I can pass on to my colleagues here at ePages.

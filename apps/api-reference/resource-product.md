@@ -9,7 +9,7 @@ This item can be added to the shopping basket and then sold using the checkout.
 Specific items can also be assigned to a category.
 **Note**: In case of errors for certain products or unknown product IDs, the product collections will **not** return errors, but skip the products in question.
 
-{% image products-overview.png %}{% endimage %}
+{% image products-overview.png %}
 
 <ul id="resource-list">
   {% for page in site.pages %}

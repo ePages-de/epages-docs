@@ -17,7 +17,7 @@ At the beginning we had an introduction round with a Daily Standup asking three 
 2. What am I doing here today?
 3. What am I doing in my free time?
 
-{% image blog/blog-agile-meetup-2.jpg 45% left %}{% endimage %}
+{% image blog/blog-agile-meetup-2.jpg 45% left %}
 
 It was a nice ice breaker after which we collected and discussed topics like "agile fixed price projects" and "planning in an agile context".
 The discussion about agile fixed price projects was real fun:
@@ -31,7 +31,7 @@ Most customers have only heard of this cool new thing called agile development, 
 We concluded that it’s necessary to make the customer aware of his role in agile development.
 They need to be present throughout the whole development in reviews as well as in between to give feedback and help with backlog decisions.
 
-{% image blog/blog-agile-meetup-3.jpg 40% right %}{% endimage %}
+{% image blog/blog-agile-meetup-3.jpg 40% right %}
 
 During the evening, we could not cover all of the topics due to time limits.
 But we built a backlog for our next meetups.

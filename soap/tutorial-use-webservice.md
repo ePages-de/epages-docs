@@ -110,7 +110,7 @@ The log content is used for debugging and looks like this:
 More detailed and easier to handle communication tracking is available in tracking or proxy tools such as [Wireshark](https://www.wireshark.org/).
 Configure the **Capture Filter** (1) as "tcp port http" and the **Filter** (2) as "xml" on the ePages machine as shown in this example:
 
-{% image soap-wireshark.png %}{% endimage %}
+{% image soap-wireshark.png %}
 
 The Wireshark UI allows you to easily browse through requests and responses and to take a look at structured xml content.
 Read further [here](http://geekswithblogs.net/EltonStoneman/archive/2009/01/29/debugging-soap-messages-with-wireshark.aspx) on how to capture soap xml content with Wireshark or check this [video](https://www.youtube.com/watch?v=qAF8FMxFwoQ&feature=youtu.be) on Wireshark tracing web services.

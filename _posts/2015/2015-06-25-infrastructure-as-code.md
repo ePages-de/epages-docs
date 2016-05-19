@@ -12,7 +12,7 @@ A mixed language stack mainly composed of `Java`, `JavaScript` and `Perl` spread
 We do not run all build jobs on a single Jenkins instance, but already spread out different jobs to dedicated Jenkins servers.
 Nevertheless some teams still share their build infrastructure, thus lacking independence e.g. when it comes to introducing new Jenkins plugins or other tools needed for their build process.
 
-{% image blog/blog-jenkins-polyglot.png %}{% endimage %}
+{% image blog/blog-jenkins-polyglot.png %}
 
 ## Jenkins configuration
 

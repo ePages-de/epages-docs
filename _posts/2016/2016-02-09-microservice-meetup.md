@@ -17,7 +17,7 @@ And next to soft drinks, beer and pizza, there was also enough time to talk shop
 With microservices, we are pushing complexity from the application into the infrastructure.
 Service discovery is one of the complexities that you find yourself confronted with in the world of microservices.
 
-{% image blog/blog-microservice-meetup-2.jpg 45% right %}{% endimage %}
+{% image blog/blog-microservice-meetup-2.jpg 45% right %}
 
 When many services need to find their peers you want a service discovery solution that:
 
@@ -42,7 +42,7 @@ In Kubernetes we already found a DNS-based service discovery solution that could
 So it felt strange to have our own service discovery stack running while Kubernetes offers something similar. That led us to the adoption of Kubernetes also for service discovery.
 It helped us to reduce our infrastructure complexity and relieved us from managing additional components.
 
-{% image blog/blog-microservice-meetup-3.jpg 45% left %}{% endimage %}
+{% image blog/blog-microservice-meetup-3.jpg 45% left %}
 
 On the service client side we introduced [Ribbon](https://github.com/Netflix/ribbon/wiki) for outbound service calls.
 Thus we can work with logical service names in a managed environment like Kubernetes but can also wire services together that run locally in a dev environment.

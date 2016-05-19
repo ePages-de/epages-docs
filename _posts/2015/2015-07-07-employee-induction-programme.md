@@ -11,7 +11,7 @@ Some might tell stories about the best first workday they have ever had, others 
 In the first week of July, a bunch of new developers started at ePages.
 Find out what we did to help them get off on the right foot and give them a positive start.
 
-{% image blog/blog-employee-induction-cto.jpg %}{% endimage %}
+{% image blog/blog-employee-induction-cto.jpg %}
 
 ## 1. Welcome employee before employment even begins
 
@@ -43,7 +43,7 @@ Our CTO gives a brief introduction including:
 
 ## 4. Buddy time!
 
-{% image blog/blog-employee-induction-welcome.jpg 45% right %}{% endimage %}
+{% image blog/blog-employee-induction-welcome.jpg 45% right %}
 
 Next we get the newbies into contact with their buddies and off they go exploring the office.
 This is all about settling-in and clarifying feel-good issues such as:
@@ -72,7 +72,7 @@ This includes:
 * Company events and holidays
 * Applications for leave and sick leave
 
-{% image blog/blog-employee-induction-agenda.png 40% left %}{% endimage %}
+{% image blog/blog-employee-induction-agenda.png 40% left %}
 
 ## 6. Team lunch
 

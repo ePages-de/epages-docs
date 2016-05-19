@@ -28,7 +28,7 @@ For example, the command `ADD FULLTEXT INDEX` does not allow simultaneous writin
 Changing the data type of a column is also restricted.
 These restrictions can be partially managed via a special patch flow:
 
-{% image blog/blog-online-schema-1.jpg %}{% endimage %}
+{% image blog/blog-online-schema-1.jpg %}
 
 We use an interim version for preparatory and follow-up work on the database.
 
@@ -38,7 +38,7 @@ Interim conclusion: most of the DDL commands in MySQL 5.6 meet the requirements.
 
 ## Quantity
 
-{% image blog/blog-online-schema-2.jpg %} Test results with small database - UPDATE or SELECT operations {% endimage %}
+{% imagecaption blog/blog-online-schema-2.jpg %} Test results with small database - UPDATE or SELECT operations {% endimagecaption %}
 
 As we're working with Scrum processes at ePages, we have a new software release every two weeks.
 The database changes accordingly.
@@ -54,18 +54,18 @@ To summarise the results:
 
 Within a wider context we had three different test scenarios:
 
-{% image blog/blog-online-schema-3.jpg %} Test scenario - wider context {% endimage %}
+{% imagecaption blog/blog-online-schema-3.jpg %} Test scenario - wider context {% endimagecaption %}
 
 The first results show this:
 
-{% image blog/blog-online-schema-4.jpg %} Test results - execution times of DDL commands {% endimage %}
+{% imagecaption blog/blog-online-schema-4.jpg %} Test results - execution times of DDL commands {% endimagecaption %}
 
 You can see clear improvement from version 5.1 to version 5.5.
 But only from the results there's no significant difference between MySQL 5.5 and 5.6.
 So why definitely 5.6?
 Taking a look at the occurred errors, log entries as well as the runtimes of the user test and the patch makes things clearer:
 
-{% image blog/blog-online-schema-5.jpg %} Test results - number of errors, log entries and run times - user tests and patch {% endimage %}
+{% imagecaption blog/blog-online-schema-5.jpg %} Test results - number of errors, log entries and run times - user tests and patch {% endimagecaption %}
 
 In particular, this means:
 

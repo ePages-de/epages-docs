@@ -79,7 +79,7 @@ Since these and all other requirements are met, Capistrano was chosen as a Confi
 
 Capistrano requires some additional configuration in various files in a pre-defined folder structure.
 
-{% image blog/blog-capistrano.jpg %} Required project folder structure {% endimage %}
+{% imagecaption blog/blog-capistrano.jpg %} Required project folder structure {% endimagecaption %}
 
 #### Capfile
 

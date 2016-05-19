@@ -37,7 +37,7 @@ We allow HTTP Application Callback URLs for developer apps, but you need to prov
 
 Once you are done with that, the detail page will show your client credentials.
 
-{% image developer-app-details.png %}{% endimage %}
+{% image developer-app-details.png %}
 
 As you can see, there is no **Access token** right away.
 You have to go through the [installation process](page:apps-install) first to acquire one.
