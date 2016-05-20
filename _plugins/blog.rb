@@ -42,8 +42,9 @@ module Jekyll
       categories = site.posts.docs.inject([]) { |acc, post| acc |= (post.data['categories'] || []) }
       categories.each do |category|
         posts = site.posts.docs.select { |p| (p.data['categories'] || []).include? category }.sort { |a,b| b <=> a }
-        1.upto (posts.size.to_f / post_per_page).ceil do |page|
-          paginator = { page: page, total_pages: (posts.size.to_f / post_per_page).ceil, base_path: "/blog/categories/#{category}/page-" }
+        total_pages = (posts.size.to_f / post_per_page).ceil
+        1.upto total_pages do |page|
+          paginator = { page: page, total_pages: total_pages, base_path: "/blog/categories/#{category}/page-" }
           dir = page == 1 ? "blog/categories/#{category}" : "blog/categories/#{category}/page-#{page}"
           site.pages << BlogPostGroupPage.new(site, site.source, dir, 'index', "category-#{category}", posts.shift(post_per_page), paginator)
         end
