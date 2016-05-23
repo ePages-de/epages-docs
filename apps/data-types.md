@@ -295,7 +295,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | productId | string | The unique identifier of the product. |
 | name | string | The name of the product. |
 | shortDescription | string | The short description of the product. |
-| deliveryPeriod | string | The average time of the product being delivered to the customer. |
+| deliveryPeriod | string | The average time of the product being delivered to the customer. By default, the delivery period is displayed in days, but this can be changed by the merchant. |
 | description | string | The description of the product. |
 | priceInfo | object of [priceInfo](page:apps-data-types#priceinfo) | Price information on the product. |
 | forSale | boolean | Information on the sale status of the product. Indicates if the product can be added to the shopping basket. |
