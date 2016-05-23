@@ -11,7 +11,7 @@
       "unit": "piece(s)"
     },
     "taxClass": {
-      "name": "normal",
+      "name": "standard",
       "percentage": 19
     },
     "price": {
