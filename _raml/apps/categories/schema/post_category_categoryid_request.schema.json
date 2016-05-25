@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "Post Category Request Schema",
+  "type": "object",
+  "properties": {
+    "": {
+      "type": "object of [category (create request)](page:apps-data-types#category-create-request)",
+      "description": ""
+    }
+  }
+}

@@ -10,13 +10,27 @@ In order to keep track of these changes we recommend you to follow [@epagesdevs]
 
 <hr>
 
+## 2016-05-23
+
+### Changes with software release 6.17.46
+
+#### <i class="fa fa-plus"></i> New
+
+* [`POST` category/{categoryId}](https://developer.epages.com/apps/api-reference/post-shops-shopid-categories-categoryid.html)
+
+#### <i class="fa fa-pencil"></i> Update
+
+* Added `deliveryPeriod` attribute to [`GET` products](https://developer.epages.com/apps/api-reference/get-shops-shopid-products.html), [`GET` products/{productId}](https://developer.epages.com/apps/api-reference/get-shops-shopid-products-productid.html), [`GET` products/updated/{productProperty}](https://developer.epages.com/apps/api-reference/get-shops-shopid-products-updated-productproperty.html), [`PATCH` products/{productId}](https://developer.epages.com/apps/api-reference/patch-shops-shopid-products-productid.html) and [`POST` products](https://developer.epages.com/apps/api-reference/post-shops-shopid-products.html).
+
+<hr>
+
 ## 2016-04-27
 
 ### Changes with software release 6.17.45
 
 #### <i class="fa fa-pencil"></i> Update
 
-* Added `createdAfter` and `createdBefore` attributes to [`GET` sales](https://developer.epages.com/apps/api-reference/get-shops-shopid-sales.html)
+* Added `createdAfter` and `createdBefore` attributes to [`GET` sales](https://developer.epages.com/apps/api-reference/get-shops-shopid-sales.html).
 
 <hr>
 
@@ -44,14 +58,14 @@ In order to keep track of these changes we recommend you to follow [@epagesdevs]
 
 #### <i class="fa fa-pencil"></i> Update
 
-* Added `taxClass` attribute to [`GET` products/{productId}](https://developer.epages.com/apps/api-reference/get-shops-shopid-products-productid.html)
+* Added `taxClass` attribute to [`GET` products/{productId}](https://developer.epages.com/apps/api-reference/get-shops-shopid-products-productid.html).
 * Added `stocklevel` attribute to [`GET` products/{productId}](https://developer.epages.com/apps/api-reference/get-shops-shopid-products-productid.html) and [`PATCH` products/{productId}](https://developer.epages.com/apps/api-reference/patch-shops-shopid-products-productid.html) for requests with *products_write* scope.
 
 #### <i class="fa fa-minus"></i> Remove
 
-* `PUT` orders/{orderId}: This endpoint will no longer be supported. Please use [`PATCH` orders/{orderId}](https://developer.epages.com/apps/api-reference/patch-shops-shopid-orders-orderid.html)
-* `GET` products/{productId}/stock-level: This endpoint will no longer be supported. Please use [`GET` products/{productId}](https://developer.epages.com/apps/api-reference/get-shops-shopid-products-productid.html)
-* `PUT` products/{productId}/stock-level: This endpoint will no longer be supported. Please use [`PATCH` products/{productId}](https://developer.epages.com/apps/api-reference/patch-shops-shopid-products-productid.html)
+* `PUT` orders/{orderId}: This endpoint will no longer be supported. Please use [`PATCH` orders/{orderId}](https://developer.epages.com/apps/api-reference/patch-shops-shopid-orders-orderid.html).
+* `GET` products/{productId}/stock-level: This endpoint will no longer be supported. Please use [`GET` products/{productId}](https://developer.epages.com/apps/api-reference/get-shops-shopid-products-productid.html).
+* `PUT` products/{productId}/stock-level: This endpoint will no longer be supported. Please use [`PATCH` products/{productId}](https://developer.epages.com/apps/api-reference/patch-shops-shopid-products-productid.html).
 
 <hr>
 
@@ -68,7 +82,7 @@ In order to keep track of these changes we recommend you to follow [@epagesdevs]
 
 #### <i class="fa fa-pencil"></i> Update
 
-* Added `main-category` link to [`GET` products/{productId}](https://developer.epages.com/apps/api-reference/get-shops-shopid-products-productid.html)
+* Added `main-category` link to [`GET` products/{productId}](https://developer.epages.com/apps/api-reference/get-shops-shopid-products-productid.html).
 
 <hr>
 
@@ -82,8 +96,8 @@ In order to keep track of these changes we recommend you to follow [@epagesdevs]
 
 #### <i class="fa fa-pencil"></i> Update
 
-* Renamed attribute `cancelledOn` to `rejectedOn` as well as attribute `shippedOn` to `deliveredOn` within **orders** calls
-* Added attribute `customerNumber` to [`GET` orders](https://developer.epages.com/apps/api-reference/get-shops-shopid-orders.html) and [`GET` orders/{orderId}](https://developer.epages.com/apps/api-reference/get-shops-shopid-orders-orderid.html)
+* Renamed attribute `cancelledOn` to `rejectedOn` as well as attribute `shippedOn` to `deliveredOn` within **orders** calls.
+* Added attribute `customerNumber` to [`GET` orders](https://developer.epages.com/apps/api-reference/get-shops-shopid-orders.html) and [`GET` orders/{orderId}](https://developer.epages.com/apps/api-reference/get-shops-shopid-orders-orderid.html).
 
 <hr>
 
@@ -110,9 +124,9 @@ In order to keep track of these changes we recommend you to follow [@epagesdevs]
 
 #### <i class="fa fa-pencil"></i> Update
 
-* Added `productImage` attribute
-* Added new attributes `shippingData` and `paymentData` to orders
-* Replaced attribute `comment` with `customerComment` and `internalNote`
+* Added `productImage` attribute.
+* Added new attributes `shippingData` and `paymentData` to orders.
+* Replaced attribute `comment` with `customerComment` and `internalNote`.
 
 <hr>
 
@@ -132,4 +146,4 @@ In order to keep track of these changes we recommend you to follow [@epagesdevs]
 
 #### <i class="fa fa-pencil"></i> Update
 
-* Added date range filters `createdBefore` and `createdAfter` to query parameters of [`GET` orders](https://developer.epages.com/apps/api-reference/get-shops-shopid-orders.html#query-parameters)
+* Added date range filters `createdBefore` and `createdAfter` to query parameters of [`GET` orders](https://developer.epages.com/apps/api-reference/get-shops-shopid-orders.html#query-parameters).
