@@ -72,8 +72,11 @@ a.cta, .cta, .navbar-cta {
     font-size: 0;
     .socialmedia {
       width: 100vw;
-      padding-left: calc(50vw - 100px);
+      padding-left: calc(50vw - 86px);
     }
+  }
+  .navbar-cta {
+    margin-left: 0;
   }
 }
 

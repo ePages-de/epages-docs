@@ -75,6 +75,16 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | subCategories | array of [link](page:apps-data-types#link) | A list of links to the subcategories. |
 | sfUrl | string | The link to the categories in the shop’s storefront. |
 
+## category (create request)
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| name | string | The name of the category. |
+| alias | string | The unique identifier of the new category. If already in use, the system will automatically increment by number, e.g. alias1, alias2. |
+| pageTitle | string | The page title of the category. |
+| description | string | The description of the category. |
+| navigationCaption | string | The name of the category that appears in the navigation bar. |
+
 ## category (update request)
 
 | Attribute | Type | Description |
@@ -295,6 +305,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | productId | string | The unique identifier of the product. |
 | name | string | The name of the product. |
 | shortDescription | string | The short description of the product. |
+| deliveryPeriod | string | The average time of the product being delivered to the customer. By default, the delivery period is displayed in days, but this can be changed by the merchant. |
 | description | string | The description of the product. |
 | priceInfo | object of [priceInfo](page:apps-data-types#priceinfo) | Price information on the product. |
 | forSale | boolean | Information on the sale status of the product. Indicates if the product can be added to the shopping basket. |
@@ -427,6 +438,19 @@ This object is used for the attributes of deliveryWeight and quantity.
 | logoUrl | string | The URL to the logo of the shop.|
 | sfUrl | string | The URL to the storefront of the shop. |
 | mboUrl | string | The URL to the administration area of the shop. |
+
+## subcategory
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| categoryId | string | The unique identifier of the new category. |
+| alias | string | The alternate name that uniquely identifies the category. If already in use, the system will automatically increment by number, e.g. alias1, alias2. |
+| name | string | The name of the category. |
+| pageTitle | string | The page title of this category. |
+| description | string | The description of the category. |
+| parent | object of [link](page:apps-data-types#link) | The link to the parent category. |
+| sfUrl | string | The link to the categories in the shop’s storefront. |
+| links | array of [link](page:apps-data-types#link) | A list of links to the products. |
 
 ## taxClass
 

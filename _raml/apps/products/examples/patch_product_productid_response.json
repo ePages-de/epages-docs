@@ -31,6 +31,10 @@
       "amount": 1,
       "unit": "piece(s)"
     },
+    "taxClass": {
+      "name": "standard",
+      "percentage": 19
+    },
     "price": {
       "taxType": "GROSS",
       "formatted": "65.00 €",
@@ -65,7 +69,12 @@
   "manufacturer": "Bass by Dr.Boom",
   "upc": null,
   "ean": null,
-  "essentialFeature": null,
+  "essentialFeatures": null,
+  "searchKeywords": [
+    "Brilliant Sound",
+    "Noise Cancelling",
+    "Carrying Box"
+  ],
   "stocklevel": 2,
   "links": [
     {
