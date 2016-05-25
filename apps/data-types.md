@@ -80,7 +80,7 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | Attribute | Type | Description |
 | - | :-: |  - |
 | name | string | The name of the category. |
-| alias | string | The alternate name that uniquely identifies the category. If already in use, the system will automatically increment by number, e.g. alias1, alias2.  |
+| alias | string | The unique identifier of the new category. If already in use, the system will automatically increment by number, e.g. alias1, alias2. |
 | pageTitle | string | The page title of the category. |
 | description | string | The description of the category. |
 | navigationCaption | string | The name of the category that appears in the navigation bar. |
@@ -443,7 +443,7 @@ This object is used for the attributes of deliveryWeight and quantity.
 
 | Attribute | Type | Description |
 | - | :-: |  - |
-| categoryId | string | The unique identifier of the category. |
+| categoryId | string | The unique identifier of the new category. |
 | alias | string | The alternate name that uniquely identifies the category. If already in use, the system will automatically increment by number, e.g. alias1, alias2. |
 | name | string | The name of the category. |
 | pageTitle | string | The page title of this category. |

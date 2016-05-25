@@ -26,7 +26,7 @@
                 example: !include examples/get_category_categoryid_response.json
                 schema: !include schema/get_category_categoryid.schema.json
       post:
-        description: Creates a subcategory to a main category. For a successful request, the request body requires at least empty curly brackets.
+        description: Creates a subcategory to an existing category. Providing attributes in the request is optional.
         securedBy: [products_write]
         is: [ locale ]
         body:
