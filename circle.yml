@@ -1,106 +1,23 @@
 machine:
   ruby:
-    version: 2.0.0
+    version: 2.2.0
   services:
     - docker
   environment:
-    # CircleCI runs tests in parallel.
-    CIRCLE_PARALLEL: false
-    # Dedicated names for each Docker image.
-    DOCS_ELASTICSEARCH: docs-elasticsearch
-    DOCS_NGINX: docs-nginx
-    DOCS_RUBY: docs-ruby
-    # Ruby container volume and bind address.
-    DOCS_RUBY_VOL: /usr/src/epages-docs
-    DOCS_RUBY_BIND_ADDRESS: 127.0.0.1:4000
-    # Docker registry and account of ePages.
-    DOCKER_REGISTRY: docker.epages.com
-    DOCKER_ACCOUNT: epages
-    # Docker image and tag names.
-    DOCKER_IMAGE_ELASTICSEARCH: ${DOCKER_REGISTRY}/${DOCKER_ACCOUNT}/${DOCS_ELASTICSEARCH}
-    DOCKER_IMAGE_NGINX: ${DOCKER_REGISTRY}/${DOCKER_ACCOUNT}/${DOCS_NGINX}
-    DOCKER_IMAGE_RUBY: ${DOCKER_REGISTRY}/${DOCKER_ACCOUNT}/${DOCS_RUBY}
+    DOCKER_IMAGE_ELASTICSEARCH: docker.epages.com/epages/docs-elasticsearch
+    DOCKER_IMAGE_NGINX: docker.epages.com/epages/docs-nginx
     DOCKER_IMAGE_TAG: ${CIRCLE_BRANCH//\//-}
-    # Dockerfiles.
-    DOCKERFILE_NGINX: Dockerfile.nginx
-    DOCKERFILE_RUBY: Dockerfile.ruby
-    # Docker Hub images.
-    DOCKER_HUB_ELASTICSEARCH: choffmeister/elasticsearch-prefilled:latest
-
-
-dependencies:
-  pre:
-    - docker info
-    - | 
-        if [[ "${CIRCLE_NODE_TOTAL}" -eq "1" ]]; then {
-          echo "Parallelism [${CIRCLE_NODE_TOTAL}x] needs to be 2x to fasten execution time." 
-          echo "You also need to set our machine env var CIRCLE_PARALLEL [${CIRCLE_PARALLEL}] to true." 
-        }; fi
-
 
 test:
   override:
-    - ? >
-        case ${CIRCLE_NODE_INDEX} in
-        0)
-          printf "\n%s\n\n" "=== TEST nginx container with build site on host ==="
-          bundle exec rake test
-          docker run --name "${DOCS_ELASTICSEARCH}" -p 9200:9200 -d "${DOCKER_HUB_ELASTICSEARCH}"
-          sleep 10
-          bundle exec rake index
-          sleep 10
-          docker stop "${DOCS_ELASTICSEARCH}"
-          docker commit "${DOCS_ELASTICSEARCH}" "${DOCKER_IMAGE_ELASTICSEARCH}:${DOCKER_IMAGE_TAG}"
-          bundle exec rake build
-          docker build -t "${DOCKER_IMAGE_NGINX}:${DOCKER_IMAGE_TAG}" -f "${DOCKERFILE_NGINX}" .
-          printf "\n%s\n\n" "=== SUCCESS ==="
-          printf "\n%s\n\n" "=== ARCHIVE site artifacts of nginx container ==="
-          mkdir -v -p "${CIRCLE_ARTIFACTS}/${DOCS_NGINX}"
-          sudo mv -f ~/${CIRCLE_PROJECT_REPONAME}/_site $_
-          # Exit case statement if run in parallel else proceed to next case.
-          $CIRCLE_PARALLEL && exit 0
-          ;&
-        1)
-          printf "\n%s\n\n" "=== TEST ruby container with build and serve site ==="
-          docker build -t "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" -f "${DOCKERFILE_RUBY}" .
-          docker run --name "${DOCS_RUBY}" -p "${DOCS_RUBY_BIND_ADDRESS}:4000" --volume=$(pwd):"${DOCS_RUBY_VOL}" -it -d "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}"
-          sleep 50
-          curl --silent "${DOCS_RUBY_BIND_ADDRESS}" | grep -q "blog" && print " ---> Served jekyll site is OK"
-          docker stop "${DOCS_RUBY}"
-          printf "\n%s\n\n" "=== SUCCESS ==="
-          printf "\n%s\n\n" "=== ARCHIVE site artifacts of ruby container ==="
-          mkdir -v -p "${CIRCLE_ARTIFACTS}/${DOCS_RUBY}"
-          ;;
-        esac
-      : parallel: true
-
+    - ./build.sh "${DOCKER_IMAGE_TAG}"
 
 deployment:
-  push_tag_develop:
-    branch: develop
+  push:
+    branch:
+      - master
+      - develop
     commands:
-      - docker login -u "${DOCKER_LOGIN_USERNAME}" -p "${DOCKER_LOGIN_PASSWORD}" -e "${DOCKER_LOGIN_EMAIL}" "${DOCKER_REGISTRY}"
+      - docker login -u "${DOCKER_LOGIN_USERNAME}" -p "${DOCKER_LOGIN_PASSWORD}" -e "${DOCKER_LOGIN_EMAIL}" docker.epages.com
       - docker push "${DOCKER_IMAGE_ELASTICSEARCH}:${DOCKER_IMAGE_TAG}"
       - docker push "${DOCKER_IMAGE_NGINX}:${DOCKER_IMAGE_TAG}"
-      - docker push "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}"
-  push_tag_master_stable_latest:
-    branch: master
-    commands:
-      - docker login -u "${DOCKER_LOGIN_USERNAME}" -p "${DOCKER_LOGIN_PASSWORD}" -e "${DOCKER_LOGIN_EMAIL}" "${DOCKER_REGISTRY}"
-      - docker push "${DOCKER_IMAGE_ELASTICSEARCH}:${DOCKER_IMAGE_TAG}"
-      - docker push "${DOCKER_IMAGE_NGINX}:${DOCKER_IMAGE_TAG}"
-      - docker push "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}"
-      - docker tag "${DOCKER_IMAGE_NGINX}:${DOCKER_IMAGE_TAG}" "${DOCKER_IMAGE_NGINX}:stable"
-      - docker tag "${DOCKER_IMAGE_NGINX}:${DOCKER_IMAGE_TAG}" "${DOCKER_IMAGE_NGINX}:latest"
-      - docker tag "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" "${DOCKER_IMAGE_RUBY}:stable"
-      - docker tag "${DOCKER_IMAGE_RUBY}:${DOCKER_IMAGE_TAG}" "${DOCKER_IMAGE_RUBY}:latest"
-      - docker push "${DOCKER_IMAGE_NGINX}:stable"
-      - docker push "${DOCKER_IMAGE_NGINX}:latest"
-      - docker push "${DOCKER_IMAGE_RUBY}:stable"
-      - docker push "${DOCKER_IMAGE_RUBY}:latest"
-
-
-general:
-  artifacts:
-    - "${CIRCLE_ARTIFACTS}/${DOCS_NGINX}"
-    - "${CIRCLE_ARTIFACTS}/${DOCS_RUBY}"
