@@ -36,9 +36,9 @@ He also showed how to use common JS libraries within TypeScript.
 
 {% image blog/blog-magdeburg-4.jpg %}
 
-Our second session was all about "What's still new in Java SE8".
-Bernd Gronostay talked about a lot of new features within Java 8.
-Not only did he talk about them, but also showed a lot of examples which illustrated these features very well. 
+Our second session was all about "What's still new in [Java SE 8](https://docs.oracle.com/javase/8/docs/api)?".
+Bernd Gronostay, who works closely together with the author of "Java ist auch ein Insel", talked about a lot of new features and API changes.
+Not only did he talk about the modifications, but also showed a lot of examples which illustrated these features very well. 
 The perhaps most interesting part in this session were the various show cases of lambda functions and streams.
 This enables developers to write Java in a functional syntax.
 
