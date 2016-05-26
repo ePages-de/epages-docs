@@ -36,10 +36,10 @@ This object is used for the attributes of shippingAddress and billingAddress.
 
 | Attribute | Type | Description |
 | - | :-: |  - |
-| refQuantity  | [quantity](page:apps-data-types#quantity) | The standardised unit for the product, e.g. 1 l. |
+| refQuantity  | object of [quantity](page:apps-data-types#quantity) | The standardised unit for the product, e.g. 1 l. |
 | refPrice | object of [price](page:apps-data-types#price) | The price based upon the standardised unit. |
 | formatted | string | The formatted output of the base price information, e.g. 1 l = 1.20 EUR. |
-| quantity | [quantity](page:apps-data-types#quantity) | The quantity of the product, e.g. 500 ml. |
+| quantity | object of [quantity](page:apps-data-types#quantity) | The quantity of the product, e.g. 500 ml. |
 
 ## cart
 
@@ -249,7 +249,7 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | grandTotal | string | The total cost of the order.  |
 | totalBeforeTax | string | The total cost of the order before tax is applied.  |
 | internalNote | string | Internal notes for the order done by the merchant.  |
-| customerComment | string | Notes on the order from the customer. Can also be amended by the merchant in the administration.  |
+| customerComment | string | Notes on the order from the customer. Can also be amended by the merchant in the administration. Mainly used for order and delivery notes.  |
 | rejectedOn | string | The date/time the order was rejected. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
 | closedOn | string | The date/time the order was closed. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
 | paidOn | string | The date/time the order was paid. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
@@ -290,13 +290,14 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 
 | Attribute | Type | Description |
 | - | :-: |  - |
-| quantity | [quantity](page:apps-data-types#quantity) | The quantity of the product the price refers to.|
+| quantity | object of [quantity](page:apps-data-types#quantity) | The quantity of the product the price refers to.|
+| taxClass | object of [taxClass](page:apps-data-types#taxclass) | The tax that applies for the product.|
 | price | object of [price](page:apps-data-types#price) | The price of the product.|
 | depositPrice | object of [price](page:apps-data-types#price) | The deposit price for the product, e.g. bottle deposit.|
-| ecoParticipationPrice |object of [price](page:apps-data-types#price) | The advance recycling fee for electric and electronic products which is only in some countries prescribed by law.|
+| ecoParticipationPrice | object of [price](page:apps-data-types#price) | The advance recycling fee for electric and electronic products which is only in some countries prescribed by law.|
 | manufacturerPrice | object of [price](page:apps-data-types#price) | The sales price recommended by the manufacturer.|
 | priceWithDeposits | object of [price](page:apps-data-types#price) | The price including all deposits, i.e. price, depositPrice and ecoParticipationPrice.|
-| basePrice | [basePrice](page:apps-data-types#baseprice) | The price information scaled to a standardised base unit, according to the German base price regulation "Preisangabenverordnung" (PAngV), e.g. 1 l = 1.20 EUR. Is `null` if no reference amount is specified for the product.|
+| basePrice | object of [basePrice](page:apps-data-types#baseprice) | The price information scaled to a standardised base unit, according to the German base price regulation "Preisangabenverordnung" (PAngV), e.g. 1 l = 1.20 EUR. Is `null` if no reference amount is specified for the product.|
 
 ## product
 
@@ -310,7 +311,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | priceInfo | object of [priceInfo](page:apps-data-types#priceinfo) | Price information on the product. |
 | forSale | boolean | Information on the sale status of the product. Indicates if the product can be added to the shopping basket. |
 | specialOffer | boolean | Indicates if the product is a special offer. |
-| deliveryWeight | [quantity](page:apps-data-types#quantity) | The delivery weight of the product. |
+| deliveryWeight | object of [quantity](page:apps-data-types#quantity) | The delivery weight of the product. |
 | shippingMethodsRestrictedTo | array of [link](page:apps-data-types#link) | Information on possible shipping method restrictions, e.g. express delivery only. Can be `null` if no restrictions exist. |
 | availabilityText | string | Additional custom information on the product's stock level or the delivery period. |
 | availability | enum | The availability of the product. Can be one of *OnStock*, *WarnStock*, *OutStock*. |
@@ -328,7 +329,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | stocklevel | string | Only available with the `products_write` authorisation. Indicates the stocklevel of the product. |
 | links | array of [link](page:apps-data-types#link) | The links to the product and product category. |
 
-## product (create or update request)
+## product (create request)
 
 | Attribute | Type | Description |
 | - | :-: |  - |
@@ -351,7 +352,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | sku | string | The stock keeping unit (SKU) corresponding to the line item. |
 | name | string | The name of the line item. |
 | productId | string | The unique identifier of the product. |
-| quantity | [quantity](page:apps-data-types#quantity) | The quantity of the line item. |
+| quantity |object of [quantity](page:apps-data-types#quantity) | The quantity of the line item. |
 | lineItemPrice | object of [price](page:apps-data-types#price) | The price of the line item. |
 | singleItemPrice | object of  [price](page:apps-data-types#price) | The price for a single item. |
 | essentialFeatures | string | The essential features of the line item. |
