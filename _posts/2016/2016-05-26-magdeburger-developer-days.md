@@ -38,14 +38,14 @@ He also showed how to use common JS libraries within TypeScript.
 
 Our second session was all about "What's still new in [Java SE 8](https://docs.oracle.com/javase/8/docs/api)?".
 Bernd Gronostay, who works closely together with the author of "Java ist auch ein Insel", talked about a lot of new features and API changes.
-Not only did he talk about the modifications, but also showed a lot of examples which illustrated these features very well. 
+Not only did he talk about the modifications, but also showed a lot of examples which illustrated these features very well.
 The perhaps most interesting part in this session were the various show cases of lambda functions and streams.
 This enables developers to write Java in a functional syntax.
 
 {% image blog/blog-magdeburg-5.jpg %}
 
 After lunch there was a talk with a topic which was completely new to us:
-Functional Domain Driven Design (DDD) with F# held by Marco Heimeshoff. 
+Functional Domain Driven Design (DDD) with F# held by Marco Heimeshoff.
 He is one of the cofounders of the [DDD community](http://dddcommunity.org) in Germany.
 His introduction showed a new idea of how the software models should look like.
 The mapping between the Requirement Space (Domain) and the Implementation Space (Code) is usually a gap that needs to be bridged.
@@ -58,7 +58,7 @@ This is only a little extract of this session with a lot of new, interesting ide
 
 The next session was an introduction into the JavaScript framework [React](https://facebook.github.io/react) by Oliver Zeigermann, who is the author of several JavaScript books.
 He showed and explained the principals of React.
-One feature of React is that it reperesents only the View in a Model-View-Controller (MVC) model. 
+One feature of React is that it reperesents only the View in a Model-View-Controller (MVC) model.
 So it is typical to have a mixture of JavaScript and HTML code in one file.
 Another feature is that the Document Object Model (DOM) tree is virtualized.
 That means, when a webpage flow is establihed only the objects that have change are updated via the calculation of a `diff` between the webpage states.
@@ -67,7 +67,7 @@ The interesting thing about React is, that due to that technique websites are al
 {% image blog/blog-magdeburg-7.jpg %}
 
 The last session of the day was "Architekturdokumentation leicht gemacht" (architecture documentation for dummies) by Andreas Richter, the organiser of the [Softwerkskammer Magdeburg](https://www.softwerkskammer.org/groups/magdeburg).
-He introduced the [arc42](http://arc42.org) template and its most important parts. 
+He introduced the [arc42](http://arc42.org) template and its most important parts.
 The main benefits of such an architectural templates is that there is always the same structure.
 
 ## Summary
