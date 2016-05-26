@@ -12,7 +12,13 @@ get:
       example: name
       required : false
     q:
-      description: Filters products by query string.
+      description: Filters products by query string.<br><br>
+
+            A query parameter q can be<br><br>
+            1. part of a string, e.g. q=myProd (would match "myProduct")<br><br>
+            2. a single phrase string using quotes, e.g. q="myProduct" (would match "myProduct") or q="new%20Product" where %20 is used to encode the space<br><br>
+            or<br><br>
+            a list of elements of type 1 or 2, that have to appear (combined with +), e.g. q=myProd+new e.g. q="new"+product<br><br>
       required : false
     categoryId:
       description: Filters products by category ID.
