@@ -8,7 +8,7 @@ authors: ["Bastian and Benjamin"]
 ---
 
 On May, 18th 2016, the first [Developer Days](http://md-devdays.de/) took place in the exhibition halls of Magdeburg, Germany.
-Although this Java and .NET developer conference was organised for the first time, many developers from across Germany participated and followed the invitation from the [twitter](https://twitter.com/MiB_MD_DevDays) channel of Michael Blume, the initiator and organiser.
+Although this Java and .NET developer conference was organised for the first time, many developers from across Germany participated and followed the invitation from the [Twitter](https://twitter.com/MiB_MD_DevDays) channel of Michael Blume, the initiator and organiser.
 
 {% image blog/blog-magdeburg-1.jpg %}
 
