@@ -8,6 +8,8 @@ google_analytics:
     id: UA-71308214-1
   blog:
     id: UA-71308214-2
+  devjobs:
+    id: UA-71308214-3
 
 future: true
 permalink: /blog/:year/:month/:day/:title.html
