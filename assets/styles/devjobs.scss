@@ -783,7 +783,7 @@ a.logo {
 #block-custom {
   position: relative;
   text-shadow: rgba(0, 0, 0, 0.8) 0 1px 1px;
-  background: $gray2 url('/assets/images/devjobs/team-coffee.jpg') center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/images/devjobs/team-coffee.jpg") center center no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
   height: 450px;
