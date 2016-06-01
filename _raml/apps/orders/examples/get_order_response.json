@@ -24,26 +24,6 @@
         "emailAddress": "Ankunding@bj.com"
       },
       "shippingAddress": null,
-      "invoicedOn": null,
-      "deliveredOn": null,
-      "pendingOn": null,
-      "archivedOn": null,
-      "dispatchedOn": null,
-      "viewedOn": "2015-11-04T11:45:07.000Z",
-      "customerNumber": "1031",
-      "customerId": "56389403-55BC-176C-5343-D5809AB3A579",
-      "locale": null,
-      "currencyId": "EUR",
-      "taxModel": "GROSS",
-      "grandTotal": "250.94",
-      "totalBeforeTax": "250.94",
-      "totalTax": "0",
-      "customerComment": null,
-      "internalNote": null,
-      "rejectedOn": null,
-      "closedOn": null,
-      "paidOn": "2016-01-20T07:23:47.000Z",
-      "returnedOn": null,
       "shippingData": {
         "shippingMethod": {
           "id": "5171DD86-C077-0726-C448-AC14145F9026",
@@ -68,10 +48,39 @@
           "currency": "EUR"
         }
       },
+      "invoicedOn": null,
+      "partialyPaidOn": null,
+      "deliveredOn": null,
+      "partialyInvoicedOn": null,
+      "pendingOn": null,
+      "readyForDispatchOn": null,
+      "partialyDispatchedOn": null,
+      "archivedOn": null,
+      "dispatchedOn": null,
+      "viewedOn": "2015-11-04T11:45:07.000Z",
+      "customerNumber": "1031",
+      "customerId": "56389403-55BC-176C-5343-D5809AB3A579",
+      "locale": null,
+      "currencyId": "EUR",
+      "taxModel": "GROSS",
+      "grandTotal": "250.94",
+      "totalBeforeTax": "250.94",
+      "totalTax": "0",
+      "customerComment": null,
+      "internalNote": null,
+      "rejectedOn": null,
+      "inProcessOn": null,
+      "closedOn": null,
+      "paidOn": "2016-01-20T07:23:47.000Z",
+      "returnedOn": null,
       "links": [
         {
           "rel": "self",
           "href": "https://pm.epages.com/rs/shops/apidocu/orders/5639C509-092F-7704-77D3-D5809AB321D8"
+        },
+        {
+          "rel": "customer",
+          "href": "https://pm.epages.com/rs/shops/apidocu/customers/56389403-55BC-176C-5343-D5809AB3A579"
         },
         {
           "rel": "shipping-method",
@@ -83,6 +92,16 @@
       "orderId": "5639C473-4265-5299-FDE2-D5809AB36284",
       "orderNumber": "ORD151104/1032",
       "creationDate": "2015-11-04T08:40:17.000Z",
+      "customerId": "563874DA-7AE7-9876-9E59-D5809AB38A25",
+      "customerNumber": "1027",
+      "locale": "de_DE",
+      "currencyId": "EUR",
+      "taxModel": "GROSS",
+      "grandTotal": "9.99",
+      "totalBeforeTax": "8.39",
+      "totalTax": "1.6",
+      "customerComment": "I need the product asap",
+      "internalNote": "Tracking code:YAZUN7989",
       "billingAddress": {
         "company": "Schneiderei",
         "salutation": "Mrs",
@@ -100,26 +119,6 @@
         "emailAddress": "schneider@schneiderei.de"
       },
       "shippingAddress": null,
-      "invoicedOn": null,
-      "deliveredOn": "2015-11-04T08:41:35.000Z",
-      "pendingOn": null,
-      "archivedOn": null,
-      "dispatchedOn": "2015-11-04T08:41:35.000Z",
-      "viewedOn": "2015-11-04T08:41:35.000Z",
-      "customerId": "563874DA-7AE7-9876-9E59-D5809AB38A25",
-      "customerNumber": "1089",
-      "locale": null,
-      "currencyId": "EUR",
-      "taxModel": "GROSS",
-      "grandTotal": "9.99",
-      "totalBeforeTax": "8.39",
-      "totalTax": "1.6",
-      "customerComment": "I need the product asap",
-      "internalNote": "Tracking code:YZB098976",
-      "rejectedOn": null,
-      "closedOn": null,
-      "paidOn": "2015-11-04T08:41:35.000Z",
-      "returnedOn": null,
       "shippingData": null,
       "paymentData": {
         "paymentMethod": {
@@ -133,10 +132,29 @@
           "currency": "EUR"
         }
       },
+      "viewedOn": "2015-11-04T08:41:35.000Z",
+      "rejectedOn": null,
+      "inProcessOn": null,
+      "pendingOn": null,
+      "readyForDispatchOn": null,
+      "partialyDispatchedOn": null,
+      "dispatchedOn": "2015-11-04T08:41:35.000Z",
+      "deliveredOn": "2015-11-04T08:41:35.000Z",
+      "partialyInvoicedOn": null,
+      "invoicedOn": null,
+      "partialyPaidOn": null,
+      "paidOn": "2015-11-04T08:41:35.000Z",
+      "returnedOn": null,
+      "closedOn": null,
+      "archivedOn": null,
       "links": [
         {
           "rel": "self",
           "href": "https://pm.epages.com/rs/shops/apidocu/orders/5639C473-4265-5299-FDE2-D5809AB36284"
+        },
+        {
+          "rel": "customer",
+          "href": "https://pm.epages.com/rs/shops/apidocu/customers/563874DA-7AE7-9876-9E59-D5809AB38A25"
         }
       ]
     },
@@ -144,6 +162,16 @@
       "orderId": "5638C3E4-03B6-9023-DE5B-D5809AB3777D",
       "orderNumber": "ORD151103/1031",
       "creationDate": "2015-11-03T14:25:40.000Z",
+      "customerId": "5638A1B2-0580-CA34-5DB3-D5809AB3A51C",
+      "customerNumber": "1029",
+      "locale": "de_DE",
+      "currencyId": "EUR",
+      "taxModel": "GROSS",
+      "grandTotal": "196.05",
+      "totalBeforeTax": "196.05",
+      "totalTax": "0",
+      "customerComment": "Please deliver asap.",
+      "internalNote": null,
       "billingAddress": {
         "company": "Ryan and Sons",
         "salutation": "Mr",
@@ -161,26 +189,6 @@
         "emailAddress": "aaron@RyanandSons.com"
       },
       "shippingAddress": null,
-      "invoicedOn": null,
-      "deliveredOn": null,
-      "pendingOn": null,
-      "archivedOn": null,
-      "dispatchedOn": null,
-      "viewedOn": "2015-11-03T14:48:50.000Z",
-      "customerId": "5638A1B2-0580-CA34-5DB3-D5809AB3A51C",
-      "customerNumber": "1221",
-      "locale": null,
-      "currencyId": "EUR",
-      "taxModel": "GROSS",
-      "grandTotal": "196.05",
-      "totalBeforeTax": "196.05",
-      "totalTax": "0",
-      "customerComment": null,
-      "internalNote": "Tracking code:76980ZXU",
-      "rejectedOn": null,
-      "closedOn": null,
-      "paidOn": null,
-      "returnedOn": null,
       "shippingData": {
         "shippingMethod": {
           "id": "5171DD86-C077-0726-C448-AC14145F9026",
@@ -188,8 +196,8 @@
         },
         "price": {
           "taxType": "GROSS",
-          "formatted": "7.00 €",
-          "amount": 7,
+          "formatted": "7.32 €",
+          "amount": 7.32,
           "currency": "EUR"
         }
       },
@@ -205,10 +213,29 @@
           "currency": "EUR"
         }
       },
+      "viewedOn": "2015-11-03T14:48:50.000Z",
+      "rejectedOn": null,
+      "inProcessOn": null,
+      "pendingOn": null,
+      "readyForDispatchOn": null,
+      "partialyDispatchedOn": null,
+      "dispatchedOn": null,
+      "deliveredOn": null,
+      "partialyInvoicedOn": null,
+      "invoicedOn": null,
+      "partialyPaidOn": null,
+      "paidOn": null,
+      "returnedOn": null,
+      "closedOn": null,
+      "archivedOn": null,
       "links": [
         {
           "rel": "self",
           "href": "https://pm.epages.com/rs/shops/apidocu/orders/5638C3E4-03B6-9023-DE5B-D5809AB3777D"
+        },
+        {
+          "rel": "customer",
+          "href": "https://pm.epages.com/rs/shops/apidocu/customers/5638A1B2-0580-CA34-5DB3-D5809AB3A51C"
         },
         {
           "rel": "shipping-method",
