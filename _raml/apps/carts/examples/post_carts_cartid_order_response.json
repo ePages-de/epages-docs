@@ -1,9 +1,9 @@
 {
-  "orderId": "57065905-8A7B-373D-C70F-D5809AB37526",
-  "orderNumber": "ORD160407/1036",
-  "creationDate": "2016-04-07T12:56:37.000Z",
-  "customerId": "57065905-2BDB-FFAC-A19C-D5809AB375BB",
-  "customerNumber": "1032",
+  "orderId": "574EA7D7-AE87-831D-6C17-D5809AB3C8AA",
+  "orderNumber": "ORD160601/1037",
+  "creationDate": "2016-06-01T09:16:07.000Z",
+  "customerId": "574EA7D7-BF4B-507A-58A5-D5809AB3C832",
+  "customerNumber": "1033",
   "locale": "de_DE",
   "currencyId": "EUR",
   "taxModel": "GROSS",
@@ -15,18 +15,18 @@
   "billingAddress": {
     "company": null,
     "salutation": null,
-    "firstName": "Jane",
-    "lastName": "Doe",
-    "street": "Pilatuspool 2",
+    "firstName": "Heiner",
+    "lastName": "Backland",
+    "street": "Crab Road 2",
     "streetDetails": null,
-    "zipCode": "20355",
-    "city": "Hamburg",
+    "zipCode": "78652",
+    "city": "Buckbeans",
     "state": null,
     "country": "DE",
     "title": null,
     "vatId": null,
     "birthday": null,
-    "emailAddress": "janedoe@test.com"
+    "emailAddress": "h.back@back.com"
   },
   "shippingAddress": null,
   "shippingData": {
@@ -79,11 +79,11 @@
   "links": [
     {
       "rel": "self",
-      "href": "https://pm.epages.com/rs/shops/apidocu/orders/57065905-8A7B-373D-C70F-D5809AB37526"
+      "href": "https://pm.epages.com/rs/shops/apidocu/orders/574EA7D7-AE87-831D-6C17-D5809AB3C8AA"
     },
     {
       "rel": "customer",
-      "href": "https://pm.epages.com/rs/shops/apidocu/customers/57065905-2BDB-FFAC-A19C-D5809AB375BB"
+      "href": "https://pm.epages.com/rs/shops/apidocu/customers/574EA7D7-BF4B-507A-58A5-D5809AB3C832"
     },
     {
       "rel": "shipping-method",
