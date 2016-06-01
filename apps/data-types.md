@@ -49,6 +49,8 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | billingAddress | [address](page:apps-data-types#address) | The billing address for a cart. |
 | shippingAddress | [address](page:apps-data-types#address) | The shipping address for a cart. |
 | lineItemContainer | [lineItemContainer](page:apps-data-types#lineitemcontainer) | Contains the line items of a cart. |
+| shippingData | object of [shippingData](page:apps-data-types#shippingdata) | The shipping data of the order, i.e. short info on shipping method and price.|
+| paymentData | object of [paymentData](page:apps-data-types#paymentdata) | The payment data of the order, i.e. short info on payment method and price.|
 | minCartValue | object of [price](page:apps-data-types#price) | The minimum order value of a shop. |
 | checkoutURL | string | The URL that redirects the browser to the merchant’s shop in order to complete the checkout. |
 
@@ -237,12 +239,17 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | billingAddress | [address](page:apps-data-types#address) | The billing address for the order.  |
 | shippingAddress | [address](page:apps-data-types#address) | The shipping address for the order.  |
 | invoicedOn | string | The date/time the order was invoiced. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
+| partialyPaidOn | string | The date/time a part of the order was paid. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
 | deliveredOn | string | The date/time the order was delivered. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
+| partialyInvoicedOn | string | The date/time a part of the order was invoiced. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
 | pendingOn | string | The date/time the order was set to pending. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
+| readyForDispatchOn | string | The date/time the order was prepared for dispatching. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
+| partialyDispatchedOn | string | The date/time a part of the order was dispatched. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
 | archivedOn | string | The date/time the order was archived. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
 | dispatchedOn | string | The date/time the order was dispatched. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
 | viewedOn | string | The date/time the order was viewed. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
 | customerId | string | The unique identifier of the customer.  |
+| customerNumber | string | The number by which the merchant tracks the customer. |
 | locale | string | The locale that identifies the origin of the customer.  |
 | currencyId | string | The unique identifier of the currency used for payment.  |
 | taxModel | string | The taxmodel that applies for the order, e.g. gross.  |
@@ -251,6 +258,7 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | internalNote | string | Internal notes for the order done by the merchant.  |
 | customerComment | string | Notes on the order from the customer. Can also be amended by the merchant in the administration. Mainly used for order and delivery notes.  |
 | rejectedOn | string | The date/time the order was rejected. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
+| inProcessOn | string | The date/time the order was put into process. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
 | closedOn | string | The date/time the order was closed. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
 | paidOn | string | The date/time the order was paid. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
 | returnedOn | string | The date/time the order was returned. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
@@ -358,6 +366,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | essentialFeatures | string | The essential features of the line item. |
 | images | array of [image](page:apps-data-types#image) | The image of the line item. |
 | links | array of [link](page:apps-data-types#link) | The links to the product line item. |
+| taxClass | object of [taxClass](page:apps-data-types#taxclass) | The tax that applies for the product.|
 
 ## productLineItem (create request)
 
