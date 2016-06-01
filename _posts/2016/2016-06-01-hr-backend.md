@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Working as a Software Developer at ePages"
-date: "2016-06-02 07:16:17"
+date: "2016-06-01 07:16:17"
 image: blog-header/david.jpg
 categories: working-at-epages
 authors: ["Birgit, Serena", "David"]
@@ -18,54 +18,51 @@ I'm working as Software Developer at ePages since September 2014.
 ### How did you get to know ePages?
 
 When looking for jobs on the internet, I came across a job ad for a Java Developer position at ePages.
-I applied for the job, and had a Skype interview with Mario Rieß, the Senior Vice President of R&D.
-We talked about some general topics, and I was then invited for a personal interview.
-I was also asked to solve a specific coding challenge related to Java and MySQL.
+I applied for the job and had a Skype interview with Mario Rieß, the Senior Vice President of R&D, where we talked about some general topics.
+I was then invited for a personal interview, during which I was also asked to solve a specific coding challenge related to Java and MySQL.
 
-Well, and in that interview, I figured out, that I would have to code in PERL.
-Interesting, because the job ad had been advertised for Java {% emoji wink %}.
-
-But however, working at ePages in Jena was the best choice!
-And I will change to a newly established Java team in July.
+In the interview, I found out that I would have to code in PERL {% emoji wink %}.
+But however, working at ePages in Jena was the best choice I had made!
+And I will be part of a newly established Java team in July.
 
 ### What are your main tasks?
 
 Together with my team colleagues, I'm responsible for adding new features to the ePages software as well as maintaining it.
-I'm in close contact with the support team in Hamburg, as they receive the feedback from our merchants on shop behaviour, problems, or new customer demands.
-Furthermore, I'm writing Selenium tests to check, if all the new features work properly.
+I'm in close contact with the support team in Hamburg as they receive the feedback from our merchants on shop behaviour, problems, and new customer demands.
+In addition to these, I'm writing Selenium tests to check if all the new features work properly.
 
-### But besides that, you do a lot of other tasks. You're everywhere, aren't you?
+### But besides those, you do a lot of other tasks. You have your hands in other projects too, haven't you?
 
 What should I say?
-I enjoy these task very much, and I'm used to multi-tasking {% emoji wink %}.
+I enjoy these tasks very much, and I'm used to multi-tasking {% emoji wink %}.
 
 For example, keeping information up-to-date is important to me: either when it comes to documenting our code or cleaning up Confluence, the company intranet.
 
-Since the beginning of the year, I also organise the ePages Partner Training.
-I restructured the agenda, and adapted it to new requirements.
-The main aim is to approach partners as well as potential app developers, and train them how to work with the ePages REST API.
-Next to this, I develop a PHP SDK for our REST API, that I also use for training purpose during the partner workshops.
+Since the beginning of this year, I also organise the ePages Partner Training.
+I restructured the agenda and adapted it to new requirements.
+The main aim is to approach partners as well as potential app developers, and train them on how to work with the ePages REST API.
+Next to this, I develop a PHP SDK for our REST API, which I also use for training purpose during the partner workshops.
 
-So, yeah, I pretty much like to bring fresh motivation, and I'm interested in improving stuff.
+So, yeah, I pretty much like to bring fresh motivation, and I'm always interested in improving stuff.
 
 ### What does a typical work day look like?
 
 {% image blog/blog-hr-david.jpg 50% right %}
 
 I'm the early bird in the team.
-My work day starts at around 7:00 to being able to work on my tasks without any disturbances.
-I check the pipeline, and work through tasks on our Jira board.
+My work day starts around 7:00, so that I can work on my tasks without any disturbances.
+I check the pipeline and work through tasks on our Jira board.
 
-At 11:00 we have our daily standup.
+We have our daily standup at 11:00.
 If there are no other meetings planned, I continue my work until lunch time.
-Usually, we order something, as there are no good restaurants around.
+Usually, we order something, since there are no good restaurants around.
 
-In the afternoon, I work on Talisma tickets, and finish work at around 16:00.
+In the afternoon, I work on Talisma tickets and normally finish work at around 16:00.
 
 ### Can you say a few words about the communication between Jena and Hamburg?
 
 We have a very good communication via HipChat.
-I'm connected in all the team rooms, and receive a lot of information there.
+I'm connected in all the team rooms and receive a lot of information there.
 So I'm up-to-date most of the time.
 
 Furthermore, we use Google Hangouts to connect with the teams in Hamburg or Barcelona.
@@ -73,13 +70,12 @@ Every Friday, we have our R&D status meeting, where we exchange the week's impor
 
 ### What do you like at ePages?
 
-ePages is like a family.
-That's awesome!
+ePages is like a family, which is really awesome!
 
 I like the cooperation with other teams.
 You can give feedback to everyone, bring your own ideas, and people listen to you.
 
-We have the option to do offsite meetings, which always turn out to be very productive and strengthen the team.
+We have the option to do offsite meetings, which always turn out to be very productive and help strengthen the team.
 
 ## Related posts
 
