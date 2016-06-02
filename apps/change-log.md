@@ -10,6 +10,19 @@ In order to keep track of these changes we recommend you to follow [@epagesdevs]
 
 <hr>
 
+## 2016-06-02
+
+### Changes with software release 6.17.47
+
+#### <i class="fa fa-pencil"></i> Update
+
+* Added `stocklevel` attribute to [`GET` products](https://developer.epages.com/apps/api-reference/get-shops-shopid-products.html).
+* Added `shippingMethod` link to all **carts** calls that include the `productLineItems` attribute.
+* Added `taxClass` attribute to [`GET` orders/{orderId}](https://developer.epages.com/apps/api-reference/get-shops-shopid-orders-orderid) as well as to all **carts** calls that include the `productLineItems` attribute.
+* Added `visible` attribute to [`GET` products/{productId}](https://developer.epages.com/apps/api-reference/get-shops-shopid-products-productid.html), [`GET` products/updated/{productProperty}](https://developer.epages.com/apps/api-reference/get-shops-shopid-products-updated-productproperty.html), [`PATCH` products/{productId}](https://developer.epages.com/apps/api-reference/patch-shops-shopid-products-productid.html) and [`POST` products](https://developer.epages.com/apps/api-reference/post-shops-shopid-products.html).
+
+<hr>
+
 ## 2016-05-23
 
 ### Changes with software release 6.17.46
