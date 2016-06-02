@@ -1,14 +1,13 @@
 {
   "cartId": "55FFAE6B-3BB2-A3F7-A11C-D5809AB36A58",
   "billingAddress": {
-    "firstName" : "Jane",
-    "lastName" : "Doe",
-    "street" : "Pilatuspool 2",
-    "zipCode" : 20355,
-    "city" : "Hamburg",
+    "firstName" : "Heiner",
+    "lastName" : "Backland",
+    "street" : "Crab Road 2",
+    "zipCode" : "87956",
+    "city" : "Borrowland",
     "country" : "DE",
-    "birthday" : "1968-10-23",
-    "emailAddress" : "janedoe@test.com"
+    "emailAddress" : "b.heiner@back.com"
   },
   "shippingAddress": null,
   "lineItemContainer": {
@@ -58,8 +57,11 @@
           "amount": 12.99,
           "currency": "EUR"
         },
-        "essentialFeatures": null
-        },
+        "essentialFeatures": null,
+        "taxClass": {
+          "name": "normal",
+          "percentage": 19
+      },
         "images": [
           {
             "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/acc6_h.jpg",

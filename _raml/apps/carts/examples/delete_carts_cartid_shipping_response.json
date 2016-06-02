@@ -1,88 +1,131 @@
-{
-  "cartId": "55FFE909-D96C-91D6-092E-7F000101E1D0",
+
+  "cartId": "574EA03C-C0EB-FC62-14B0-D5809AB36D4E",
   "billingAddress": null,
   "shippingAddress": null,
   "lineItemContainer": {
     "grandTotal": {
       "taxType": "GROSS",
-      "formatted": "173.91 €",
-      "amount": 173.91,
+      "formatted": "20,05 €",
+      "amount": 20.05,
       "currency": "EUR"
     },
     "totalBeforeTax": {
       "taxType": "NET",
-      "formatted": "173.91 €",
-      "amount": 173.91,
+      "formatted": "16,85 €",
+      "amount": 16.85,
       "currency": "EUR"
     },
     "totalTax": {
       "taxType": "NONE",
-      "formatted": "0.00 €",
-      "amount": 0,
+      "formatted": "3,20 €",
+      "amount": 3.2,
       "currency": "EUR"
     },
     "lineItemsSubTotal": {
       "taxType": "GROSS",
-      "formatted": "199.95 €",
-      "amount": 199.95,
+      "formatted": "12,99 €",
+      "amount": 12.99,
       "currency": "EUR"
     },
     "productLineItems": [
       {
-        "lineItemId": "55FFE909-E9BB-FBCE-3ED2-7F000101E144",
-        "sku": "be_40401",
-        "name": "Berghaus Paclite Jacket - Men",
-        "productId": "55F83005-E8C4-D310-1B19-7F00010185F6",
+        "lineItemId": "574EA03C-C97F-1363-D0AE-D5809AB36DBC",
+        "sku": "Acc-001",
+        "name": "Adapter 6,3mm",
+        "productId": "54E72E1F-746A-8B6E-8E41-0A0C05E64669",
         "quantity": {
           "amount": 1,
-          "unit": "piece(s)"
+          "unit": "piece"
         },
         "lineItemPrice": {
           "taxType": "GROSS",
-          "formatted": "199.95 €",
-          "amount": 199.95,
+          "formatted": "12,99 €",
+          "amount": 12.99,
           "currency": "EUR"
         },
         "singleItemPrice": {
           "taxType": "GROSS",
-          "formatted": "199.95 €",
-          "amount": 199.95,
+          "formatted": "12,99 €",
+          "amount": 12.99,
           "currency": "EUR"
-        },
-        "essentialFeatures": null
         },
         "images": [
           {
-            "url": "http://gecko/WebRoot/Store/Shops/DemoShop/Products/be_40401/be_40401_blue_h.jpg",
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/acc6_h.jpg",
             "classifier": "HotDeal"
           },
           {
-            "url": "http://gecko/WebRoot/Store/Shops/DemoShop/Products/be_40401/be_40401_blue_m.jpg",
-            "classifier": "Medium"
-          },
-          {
-            "url": "http://gecko/WebRoot/Store/Shops/DemoShop/Products/be_40401/be_40401_blue_l.jpg",
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/acc6.jpg",
             "classifier": "Large"
           },
           {
-            "url": "http://gecko/WebRoot/Store/Shops/DemoShop/Products/be_40401/be_40401_blue_s.jpg",
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/acc6_m.jpg",
+            "classifier": "Medium"
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/acc6_s.jpg",
             "classifier": "Small"
           },
           {
-            "url": "http://gecko/WebRoot/Store/Shops/DemoShop/Products/be_40401/be_40401_blue_xs.jpg",
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/acc6_xs.jpg",
             "classifier": "Thumbnail"
           }
         ],
         "links": [
           {
             "rel": "product",
-            "href": "http://gecko:8088/rs/shops/DemoShop/products/55F83005-E8C4-D310-1B19-7F00010185F6"
+            "href": "https://pm.epages.com/rs/shops/apidocu/products/54E72E1F-746A-8B6E-8E41-0A0C05E64669"
           }
-        ]
+        ],
+        "essentialFeatures": null,
+        "taxClass": {
+          "name": "normal",
+          "percentage": 19
+        }
       }
     ],
-    "shippingPrice": null
+    "shippingPrice": {
+      "taxType": "GROSS",
+      "formatted": "7,06 €",
+      "amount": 7.06,
+      "currency": "EUR"
+    }
+  },
+  "shippingData": {
+    "shippingMethod": {
+      "id": "5171DD86-C077-0726-C448-AC14145F9026",
+      "name": "Standard delivery"
+    },
+    "price": {
+      "taxType": "GROSS",
+      "formatted": "7,06 €",
+      "amount": 7.06,
+      "currency": "EUR"
+    }
+  },
+  "paymentData": {
+    "paymentMethod": {
+      "id": "5171DD89-6DE5-E758-E046-AC14145F9009",
+      "name": null
+    },
+    "price": {
+      "taxType": "GROSS",
+      "formatted": "0,00 €",
+      "amount": 0,
+      "currency": "EUR"
+    }
   },
   "minCartValue": null,
-  "checkoutUrl": "http://gecko/epages/DemoShop.sf/?ObjectPath=/Shops/DemoShop/AnonymousUsers/13/Baskets/17664&ChangeAction=PickupBasket&PickupToken=ZWNlYTdmZjZiNWFhMjlmMzRiZWIxNTBlMTMwMTRiZmI1NzM3Y2Q2NDE2NGVkMDdkOGFmMTIzZTM5YjQxMjcyNV8xNDQyODM0OTI5"
+  "pickupToken": "YzZhN2E4MDNiNDZlZWQxMTUxOTMxNjVmYzU1NTNkOGM0NTc1NTcxYzExZmZiMTZmMDY4ODI4NmFhMmI2NzNmY18xNDY0NzcwNjQz",
+  "checkoutUrl": "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/1/Baskets/46072&ChangeAction=PickupBasket&PickupToken=YzZhN2E4MDNiNDZlZWQxMTUxOTMxNjVmYzU1NTNkOGM0NTc1NTcxYzExZmZiMTZmMDY4ODI4NmFhMmI2NzNmY18xNDY0NzcwNjQz",
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://pm.epages.com/rs/shops/apidocu/carts/574EA03C-C0EB-FC62-14B0-D5809AB36D4E"
+    },
+    {
+      "rel": "shipping-method",
+      "href": "https://pm.epages.com/rs/shops/apidocu/shipping-methods/5171DD86-C077-0726-C448-AC14145F9026"
+    }
+  ]
 }

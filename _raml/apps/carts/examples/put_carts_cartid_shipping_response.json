@@ -2,14 +2,13 @@
   "cartId": "55FFE909-D96C-91D6-092E-7F000101E1D0",
   "billingAddress": null,
   "shippingAddress": {
-    "firstName" : "Jane",
-    "lastName" : "Doe",
-    "street" : "Carnegy Street 1",
-    "zipCode" : 20355,
-    "city" : "Hamburg",
+    "firstName" : "Heiner",
+    "lastName" : "Backland",
+    "street" : "Crab Road 2",
+    "zipCode" : "87956",
+    "city" : "Borrowland",
     "country" : "DE",
-    "birthday" : "1968-10-23",
-    "emailAddress" : "janedoe@test.com"
+    "emailAddress" : "b.heiner@back.com"
   },
   "lineItemContainer": {
     "grandTotal": {
@@ -58,7 +57,10 @@
           "amount": 199.95,
           "currency": "EUR"
         },
-        "essentialFeatures": null
+        "essentialFeatures": null,
+        "taxClass": {
+          "name": "normal",
+          "percentage": 19
         },
         "images": [
           {
