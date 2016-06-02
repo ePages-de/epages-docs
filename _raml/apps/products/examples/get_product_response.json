@@ -168,6 +168,7 @@
         "Acoustic Noise Cancelling",
         "Correct fit"
       ],
+      "stocklevel": 99,
       "links": [
         {
           "rel": "self",
