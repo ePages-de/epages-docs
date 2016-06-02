@@ -45,12 +45,12 @@ This object is used for the attributes of shippingAddress and billingAddress.
 
 | Attribute | Type | Description |
 | - | :-: |  - |
-| cartid | string | The unique identifier of the cart. |
+| cartId | string | The unique identifier of the cart. |
 | billingAddress | [address](page:apps-data-types#address) | The billing address for a cart. |
 | shippingAddress | [address](page:apps-data-types#address) | The shipping address for a cart. |
 | lineItemContainer | [lineItemContainer](page:apps-data-types#lineitemcontainer) | Contains the line items of a cart. |
-| shippingData | object of [shippingData](page:apps-data-types#shippingdata) | The shipping data of the order, i.e. short info on shipping method and price.|
-| paymentData | object of [paymentData](page:apps-data-types#paymentdata) | The payment data of the order, i.e. short info on payment method and price.|
+| shippingData | object of [shippingData](page:apps-data-types#shippingdata) | The shipping data of a cart or an order, i.e. short info on shipping method and price.|
+| paymentData | object of [paymentData](page:apps-data-types#paymentdata) | The payment data of  a cart or an order, i.e. short info on payment method and price.|
 | minCartValue | object of [price](page:apps-data-types#price) | The minimum order value of a shop. |
 | checkoutURL | string | The URL that redirects the browser to the merchant’s shop in order to complete the checkout. |
 
@@ -262,8 +262,8 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | closedOn | string | The date/time the order was closed. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
 | paidOn | string | The date/time the order was paid. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
 | returnedOn | string | The date/time the order was returned. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
-| shippingData | object of [shippingData](page:apps-data-types#shippingdata) | The shipping data of the order, i.e. short info on shipping method and price.|
-| paymentData | object of [paymentData](page:apps-data-types#paymentdata) | The payment data of the order, i.e. short info on payment method and price.|
+| shippingData | object of [shippingData](page:apps-data-types#shippingdata) | The shipping data of  a cart or an order, i.e. short info on shipping method and price.|
+| paymentData | object of [paymentData](page:apps-data-types#paymentdata) | The payment data of  a cart or an order, i.e. short info on payment method and price.|
 | lineItemContainer | [lineItemContainer](page:apps-data-types#lineitemcontainer) | Contains the line items of an order. Only included in [`GET`/orders/{orderId}](page:apps-api-get-shops-shopid-orders-orderid-information). |
 | productLineItems | array of [productLineItem](page:apps-data-types#productlineitem) | A list of line items. Only included in [`GET`/orders/{orderId}](page:apps-api-get-shops-shopid-orders-orderid-information). |
 | shippingPrice | object of [price](page:apps-data-types#price) | The shipping price for the order.  |
