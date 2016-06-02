@@ -256,7 +256,7 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | grandTotal | string | The total cost of the order.  |
 | totalBeforeTax | string | The total cost of the order before tax is applied.  |
 | internalNote | string | Internal notes for the order done by the merchant.  |
-| customerComment | string | Notes on the order from the customer. Can also be amended by the merchant in the administration. Mainly used for order and delivery notes.  |
+| customerComment | string | Notes on the order from the customer. Can also be amended by the merchant in the administration. Mainly used for order and delivery notes.|
 | rejectedOn | string | The date/time the order was rejected. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
 | inProcessOn | string | The date/time the order was put into process. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
 | closedOn | string | The date/time the order was closed. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
@@ -313,6 +313,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | - | :-: |  - |
 | productId | string | The unique identifier of the product. |
 | name | string | The name of the product. |
+| visible | boolean | Indicates if the product is displayed in the shop. |
 | shortDescription | string | The short description of the product. |
 | deliveryPeriod | string | The average time of the product being delivered to the customer. By default, the delivery period is displayed in days, but this can be changed by the merchant. |
 | description | string | The description of the product. |
