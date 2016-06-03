@@ -1,6 +1,7 @@
 {
   "productId": "5704DD36-CF73-2959-B830-D5809AB3F450",
   "name": "Brand new product",
+  "visible": false,
   "shortDescription": "Awesome product",
   "description": "This is a brand new product",
   "productImage": null,

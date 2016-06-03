@@ -7,7 +7,7 @@ categories: working-at-epages
 authors: ["Birgit, Serena", "Vlad"]
 ---
 
-In one of our latest posts, you already learned about what it’s like to work as a [Ruby Developer](https://developer.epages.com/blog/2016/02/04/hr-ruby.html) and a [Java Developer](https://developer.epages.com/blog/2016/03/01/hr-java.html) at ePages.
+In our latest posts, you already learned about what it’s like to work as a [Ruby Developer](https://developer.epages.com/blog/2016/02/04/hr-ruby.html) and a [Java Developer](https://developer.epages.com/blog/2016/03/01/hr-java.html) at ePages.
 To give you some insight into our world of Quality Assurance, we've talked to one of our Quality Assurance Engineers, who shared how he started with us and how his daily work looks like.
 
 ## Here's his story:
@@ -97,11 +97,11 @@ Finding bugs and suggesting improvements is my job {% emoji wink %}.
 Next to this, I'm responsible for automated tests.
 Sometimes I have meetings with the colleagues in Jena to discuss topics with regards to ESF (ePages Selenium Framework) tests.
 
-## Which technologies do you use?
+### Which technologies do you use?
 
 I mainly work with Selenium, Java and GitHub as well as Docker and Jenkins.
 
-## What do you like at ePages?
+### What do you like at ePages?
 
 I really enjoy working with my colleagues and I love to come to the office in the mornings.
 ePages is like a family.
@@ -115,7 +115,7 @@ You can get things done without appointments.
 You don't even need an appointment with the CTO.
 You can just go to his office and talk to him about your issue.
 
-## What does an applicant need?
+### What does an applicant need?
 
 A Q&A must empathise with a developer, a customer, a merchant and a company at the same time.
 Being able to think from different perspectives is the key.

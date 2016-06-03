@@ -1,10 +1,9 @@
 {
-  "firstName" : "Jane",
-  "lastName" : "Doe",
-  "street" : "Pilatuspool 2",
-  "zipCode" : 20355,
-  "city" : "Hamburg",
+  "firstName" : "Heiner",
+  "lastName" : "Backland",
+  "street" : "Crab Road 2",
+  "zipCode" : "87956",
+  "city" : "Borrowland",
   "country" : "DE",
-  "birthday" : "1968-10-23",
-  "emailAddress" : "janedoe@test.com"
+  "emailAddress" : "b.heiner@back.com"
 }

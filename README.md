@@ -1,8 +1,6 @@
 # epages-docs
 
-| `dev` | `master` |
-| :---: | :-------:|
-| [![Circle CI](https://circleci.com/gh/ePages-de/epages-docs/tree/master.svg?style=svg)](https://circleci.com/gh/ePages-de/epages-docs/tree/dev) | [![Circle CI](https://circleci.com/gh/ePages-de/epages-docs/tree/master.svg?style=svg)](https://circleci.com/gh/ePages-de/epages-docs/tree/master) |
+[![CircleCI](https://circleci.com/gh/ePages-de/epages-docs.svg?style=svg)](https://circleci.com/gh/ePages-de/epages-docs)
 
 ## Bootstrap your machine
 
@@ -21,44 +19,30 @@ You can use this [shell script][bootstrap-linux] to turn your laptop into an awe
 
 TODO
 
-## Run in Docker
+## Run in Docker (development mode)
 
 If you don't like to bootstrap your machine you can also run a [Docker][docker] container for development by invoking a single command only.
 The container will be pulled from our registry.
 Requirement: Install [Docker Engine][docker-engine] first.
 
 ~~~ bash
+# Build and run container with default rake task (eq. build `_site` and serve via jekyll)
+$ docker build -t epages-docs -f Dockerfile.ruby .
+$ docker run --rm --volume=$(pwd):/usr/src/epages-docs -p 4000:4000 -it epages-docs
+
 # On Linux
 $ echo "Open in browser: http://127.0.0.1:4000/"
 
 # On Mac (with one active docker machine)
 $ echo "Open in browser: http://$(docker-machine ip `docker-machine active`):4000/"
-
-# [Pull and] run container with default rake task (eq. build `_site` and serve via jekyll)
-$ docker run --rm --volume=$(pwd):/usr/src/epages-docs -p 4000:4000 -it docker.epages.com/epages/docs-ruby
 ~~~
 
-#### Additional commands
-
-The optional <TAG> can be latest (default if not defined), develop, master or stable [or user-defined if build locally].
-It represents the upstream branch in its current state.
+## Run in Docker (production mode)
 
 ~~~ bash
-# Pull image from registry
-$ docker pull docker.epages.com/epages/docs-ruby:<TAG>
-
-# [Pull and] run epages-docs
-$ docker run --rm -p 4000:4000 -it docker.epages.com/epages/docs-ruby:<TAG>
-
-# Build image locally
-$ docker build -t docker.epages.com/epages/docs-ruby:<TAG> -f Dockerfile.ruby .
-
-# Just build the _site dir at the mounted local repo on your host
-$ docker run --rm --volume=$(pwd):/usr/src/epages-docs -p 4000:4000 -it docker.epages.com/epages/docs-ruby:<TAG> build
-
-# Login to container pseudo-terminal, which works like a normal debian vm.
-# Hint: cd $EPAGES_DOCS to get back to the workdir.
-$ docker run --rm --volume=$(pwd):/usr/src/epages-docs -p 4000:4000 -it docker.epages.com/epages/docs-ruby:<TAG> bash
+# build nginx and elasticsearch docker image
+$ ./build.sh master "$(echo "${DOCKER_HOST}" | sed -E 's/tcp:\/\/([^:]+):([0-9]+)/\1/'):9200"
+$ docker-compose up -d
 ~~~
 
 #### Hints

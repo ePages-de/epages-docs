@@ -10,6 +10,19 @@ In order to keep track of these changes we recommend you to follow [@epagesdevs]
 
 <hr>
 
+## 2016-06-03
+
+### Changes with software release 6.17.47
+
+#### <i class="fa fa-pencil"></i> Update
+
+* Added `stocklevel` attribute to  all **product** calls with data type [`product`](https://developer.epages.com/apps/data-types#product).
+* Added `shippingMethod` link to all **carts** calls that include the `shippingData` attribute.
+* Added `taxClass` attribute to data type [`product`](https://developer.epages.com/apps/data-types#productlineitem).
+* Added `visible` attribute to data type [`product`](https://developer.epages.com/apps/data-types#product).
+
+<hr>
+
 ## 2016-05-23
 
 ### Changes with software release 6.17.46
