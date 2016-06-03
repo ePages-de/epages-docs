@@ -1,99 +1,79 @@
 {
-  "cartId": "55FFE909-D96C-91D6-092E-7F000101E1D0",
-  "billingAddress": null,
+  "cartId": "574FF17E-61D5-5C29-D514-D5809AB38FC0",
+  "billingAddress": {
+    "company": null,
+    "salutation": null,
+    "firstName": "Doris",
+    "lastName": "Daisy",
+    "street": "Daisy Road 2",
+    "streetDetails": null,
+    "zipCode": "87956",
+    "city": "Daisyland",
+    "state": null,
+    "country": "DE",
+    "title": null,
+    "vatId": null,
+    "birthday": null,
+    "emailAddress": "daisy@land.com"
+  },
   "shippingAddress": {
-    "firstName" : "Heiner",
-    "lastName" : "Backland",
-    "street" : "Crab Road 2",
-    "zipCode" : "87956",
-    "city" : "Borrowland",
-    "country" : "DE",
-    "emailAddress" : "b.heiner@back.com"
+    "company": null,
+    "salutation": null,
+    "firstName": "Doris",
+    "lastName": "Daisy",
+    "street": "Daisy Road 2",
+    "streetDetails": null,
+    "zipCode": "87956",
+    "city": "Daisyland",
+    "state": null,
+    "country": "DE",
+    "title": null,
+    "vatId": null,
+    "birthday": null,
+    "emailAddress": "daisy@land.com"
   },
   "lineItemContainer": {
     "grandTotal": {
       "taxType": "GROSS",
-      "formatted": "173.91 €",
-      "amount": 173.91,
+      "formatted": "0,00 €",
+      "amount": 0,
       "currency": "EUR"
     },
     "totalBeforeTax": {
       "taxType": "NET",
-      "formatted": "173.91 €",
-      "amount": 173.91,
+      "formatted": "0,00 €",
+      "amount": 0,
       "currency": "EUR"
     },
     "totalTax": {
       "taxType": "NONE",
-      "formatted": "0.00 €",
+      "formatted": "0,00 €",
       "amount": 0,
       "currency": "EUR"
     },
     "lineItemsSubTotal": {
       "taxType": "GROSS",
-      "formatted": "199.95 €",
-      "amount": 199.95,
+      "formatted": "0,00 €",
+      "amount": 0,
       "currency": "EUR"
     },
-    "productLineItems": [
-      {
-        "lineItemId": "55FFE909-E9BB-FBCE-3ED2-7F000101E144",
-        "sku": "be_40401",
-        "name": "Berghaus Paclite Jacket - Men",
-        "productId": "55F83005-E8C4-D310-1B19-7F00010185F6",
-        "quantity": {
-          "amount": 1,
-          "unit": "piece(s)"
-        },
-        "lineItemPrice": {
-          "taxType": "GROSS",
-          "formatted": "199.95 €",
-          "amount": 199.95,
-          "currency": "EUR"
-        },
-        "singleItemPrice": {
-          "taxType": "GROSS",
-          "formatted": "199.95 €",
-          "amount": 199.95,
-          "currency": "EUR"
-        },
-        "essentialFeatures": null,
-        "taxClass": {
-          "name": "normal",
-          "percentage": 19
-        },
-        "images": [
-          {
-            "url": "http://gecko/WebRoot/Store/Shops/DemoShop/Products/be_40401/be_40401_blue_h.jpg",
-            "classifier": "HotDeal"
-          },
-          {
-            "url": "http://gecko/WebRoot/Store/Shops/DemoShop/Products/be_40401/be_40401_blue_m.jpg",
-            "classifier": "Medium"
-          },
-          {
-            "url": "http://gecko/WebRoot/Store/Shops/DemoShop/Products/be_40401/be_40401_blue_l.jpg",
-            "classifier": "Large"
-          },
-          {
-            "url": "http://gecko/WebRoot/Store/Shops/DemoShop/Products/be_40401/be_40401_blue_s.jpg",
-            "classifier": "Small"
-          },
-          {
-            "url": "http://gecko/WebRoot/Store/Shops/DemoShop/Products/be_40401/be_40401_blue_xs.jpg",
-            "classifier": "Thumbnail"
-          }
-        ],
-        "links": [
-          {
-            "rel": "product",
-            "href": "http://gecko:8088/rs/shops/DemoShop/products/55F83005-E8C4-D310-1B19-7F00010185F6"
-          }
-        ]
-      }
-    ],
-    "shippingPrice": null
+    "productLineItems": [],
+    "shippingPrice": {
+      "taxType": "GROSS",
+      "formatted": "0,00 €",
+      "amount": 0,
+      "currency": "EUR"
+    }
   },
+  "shippingData": null,
+  "paymentData": null,
   "minCartValue": null,
-  "checkoutUrl": "http://gecko/epages/DemoShop.sf/?ObjectPath=/Shops/DemoShop/AnonymousUsers/13/Baskets/17664&ChangeAction=PickupBasket&PickupToken=NzBiMWUyZjg5ZDc4MmIwYzNiNWFjNzMzZGZkMjMzYzRjNGUxYjNjNjgwZTg3NTNkYTYyMTQ0NzhlNmU5YmJmZV8xNDQyODM0NzM2"
+  "pickupToken": "NzRlMmE1MWJmMTNlMmVhNTQ4ODkxNjk5OGE3YzkyOGUyYTkzYTAxYjRkMzEwMWM2NzNiNjdkOTJiYjk2Y2Q4NV8xNDY0ODU3MTUx",
+  "checkoutUrl": "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/1/Baskets/46072&ChangeAction=PickupBasket&PickupToken=NzRlMmE1MWJmMTNlMmVhNTQ4ODkxNjk5OGE3YzkyOGUyYTkzYTAxYjRkMzEwMWM2NzNiNjdkOTJiYjk2Y2Q4NV8xNDY0ODU3MTUx",
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://pm.epages.com/rs/shops/apidocu/carts/574FF17E-61D5-5C29-D514-D5809AB38FC0"
+    }
+  ]
 }
