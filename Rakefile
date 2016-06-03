@@ -330,10 +330,6 @@ title: Miscellaneous
   new_miscellaneous(ENV['misc'].split(",")) if ENV['misc']
 end
 
-task :index do
-  sh "bundle exec jekyll index"
-end
-
 task :build do
   sh "bundle exec jekyll build -t -q"
 end
