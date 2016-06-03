@@ -10,5 +10,4 @@ gem 'gemoji'
 
 group :jekyll_plugins do
   gem 'jekyll-paginate', '~> 1.1.0'
-  gem 'jekyll_search', '~> 0.0.8'
 end

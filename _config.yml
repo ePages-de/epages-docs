@@ -18,7 +18,7 @@ paginate_path: "/blog/page-:num/"
 raml:
   - key_prefix: "apps-api-"
     url_prefix: "apps/api-reference/"
-    root_file: _raml/apps/api.raml
+    root_file: "_raml/apps/api.raml"
 
 # Build settings
 markdown: kramdown
@@ -36,33 +36,3 @@ exclude:
   - vendor
 include:
   - videos
-
-# Search index settings
-search:
-  host: localhost:9200
-  index:
-    name: epages-docs
-    settings:
-      mappings:
-        page:
-          properties:
-            url:
-              type: string
-              analyzer: keyword
-            title:
-              type: string
-              analyzer: english
-            content:
-              type: string
-              analyzer: english
-        section:
-          properties:
-            url:
-              type: string
-              analyzer: keyword
-            title:
-              type: string
-              analyzer: english
-            content:
-              type: string
-              analyzer: english
