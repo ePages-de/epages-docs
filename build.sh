@@ -12,7 +12,6 @@ cd "${DIR}"
 TAG="$1"
 ELASTICSEARCH="$2"
 
-bundle install
 bundle exec jekyll build
 
 # build elasticsearch image
