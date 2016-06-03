@@ -7,13 +7,13 @@ categories: working-at-epages
 authors: ["Birgit, Serena", "David"]
 ---
 
-In the last months, you learned about what it’s like to be a [Ruby Developer](https://developer.epages.com/blog/2016/02/04/hr-ruby.html), a [Java Developer](https://developer.epages.com/blog/2016/03/01/hr-java.html) or a [QA engineer](https://developer.epages.com/blog/2016/04/12/hr-quality-assurance.html) at ePages in Hamburg.
+In the last months, you learned about what it’s like to be a [Ruby Developer](https://developer.epages.com/blog/2016/02/04/hr-ruby.html), a [Java Developer](https://developer.epages.com/blog/2016/03/01/hr-java.html), or a [QA engineer](https://developer.epages.com/blog/2016/04/12/hr-quality-assurance.html) at ePages in Hamburg.
 Now it's time to ask a software developer in Jena about his daily work there.
 
 ## Here's his story:
 
 Hello, my name is David, and I'm 29 years old.
-I'm working as Software Developer at ePages since September 2014.
+I have worked as a Software Developer at ePages since September 2014.
 
 ### How did you get to know ePages?
 
@@ -22,26 +22,26 @@ I applied for the job and had a Skype interview with Mario Rieß, the Senior Vic
 I was then invited for a personal interview, during which I was also asked to solve a specific coding challenge related to Java and MySQL.
 
 In the interview, I found out that I would have to code in PERL {% emoji wink %}.
-But however, working at ePages in Jena was the best choice I had made!
+But however, working at ePages in Jena was the best choice I could have made!
 And I will be part of a newly established Java team in July.
 
 ### What are your main tasks?
 
-Together with my team colleagues, I'm responsible for adding new features to the ePages software as well as maintaining it.
-I'm in close contact with the support team in Hamburg as they receive the feedback from our merchants on shop behaviour, problems, and new customer demands.
-In addition to these, I'm writing Selenium tests to check if all the new features work properly.
+Together with my team colleagues, I'm responsible for adding new features to the ePages software, as well as maintaining it.
+I'm in close contact with the support team in Hamburg, as they receive the feedback from our merchants on shop behaviour, problems, and new customer demands.
+In addition, I'm writing Selenium tests to check if all of the new features work properly.
 
 ### But besides those, you do a lot of other tasks. You have your hands in other projects too, haven't you?
 
 What should I say?
 I enjoy these tasks very much, and I'm used to multi-tasking {% emoji wink %}.
 
-For example, keeping information up-to-date is important to me: either when it comes to documenting our code or cleaning up Confluence, the company intranet.
+For example, keeping information up-to-date is important to me: either when it comes to documenting our code; or cleaning up Confluence, the company intranet.
 
-Since the beginning of this year, I also organise the ePages Partner Training.
+Since the beginning of this year, I have also organised the ePages Partner Training.
 I restructured the agenda and adapted it to new requirements.
-The main aim is to approach partners as well as potential app developers, and train them on how to work with the ePages REST API.
-Next to this, I develop a PHP SDK for our REST API, which I also use for training purpose during the partner workshops.
+The main aim is to approach partners, as well as potential app developers, and train them on how to work with the ePages REST API.
+Furthermore, I'm developing a PHP SDK for our REST API, which I also use for training purpose during the partner workshops.
 
 So, yeah, I pretty much like to bring fresh motivation, and I'm always interested in improving stuff.
 

@@ -6,6 +6,7 @@
     {
       "productId": "54EF2E41-FCA8-E0E5-9323-0A0C05E66C2E",
       "name": "Customised headphone",
+      "visible": true,
       "shortDescription": null,
       "deliveryPeriod": "2-4",
       "description": "Customise your headphone in no time!",
@@ -94,6 +95,7 @@
     {
       "productId": "51E7F905-2E4C-78C2-30C2-AC14145FA4E5",
       "name": "Dr.Boom - Red Power",
+      "visible": true,
       "shortDescription": "<p>Red Resonator S&nbsp;headphones are the best-performing around-ear headphones from&nbsp;Dr.Boom. They give you fresh and&nbsp;powerful sound.&nbsp;These headphones definitely&nbsp;let you hear your music better!</p>",
       "deliveryPeriod": "3-5",
       "description": "<p><strong><em>Dr.Boom - HP001</em></strong>&nbsp;Red Resonator S&nbsp;headphones are the best-performing around-ear headphones from&nbsp;Dr.Boom. They give you fresh and&nbsp;powerful sound.&nbsp;These headphones definitely&nbsp;let you hear your music better!</p>\r\n\r\n<p>The noise cancelling technology monitors the noise around you and cancels it out, helping you focus on what you want to hear -&nbsp;whether it’s music, calls or simply peace and quiet. These headphones look as good as they sound. They’re comfy, durably made and easily to store, with earcups that&nbsp;fit in a small carrying box.</p>",
@@ -168,6 +170,7 @@
         "Acoustic Noise Cancelling",
         "Correct fit"
       ],
+      "stocklevel": 99,
       "links": [
         {
           "rel": "self",
@@ -186,6 +189,7 @@
     {
       "productId": "51E7F913-5447-240E-77AE-AC14145FA477",
       "name": "Dr.Boom - True Voice",
+      "visible": true,
       "shortDescription": null,
       "deliveryPeriod": "3-5",
       "description": "Professional headphones. Bass pipe emphasises low tones for a clear, realistic sound. Ergonomically shaped.",

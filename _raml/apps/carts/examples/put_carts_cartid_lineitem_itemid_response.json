@@ -1,5 +1,5 @@
 {
-  "cartId": "55FFAE6B-3BB2-A3F7-A11C-D5809AB36A58",
+  "cartId": "574EA03C-C0EB-FC62-14B0-D5809AB36D4E",
   "billingAddress": null,
   "shippingAddress": null,
   "lineItemContainer": {
@@ -29,13 +29,13 @@
     },
     "productLineItems": [
       {
-        "lineItemId": "55FFAE6C-ACFF-3896-C312-D5809AB36A9B",
+        "lineItemId": "574EA03C-C97F-1363-D0AE-D5809AB36DBC",
         "sku": "Acc-001",
         "name": "Adapter 6,3mm",
         "productId": "54E72E1F-746A-8B6E-8E41-0A0C05E64669",
         "quantity": {
           "amount": 3,
-          "unit": "Piece"
+          "unit": "piece"
         },
         "lineItemPrice": {
           "taxType": "GROSS",
@@ -49,20 +49,18 @@
           "amount": 12.99,
           "currency": "EUR"
         },
-        "essentialFeatures": null
-        },
         "images": [
           {
             "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/acc6_h.jpg",
             "classifier": "HotDeal"
           },
           {
-            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/acc6_m.jpg",
-            "classifier": "Medium"
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/acc6.jpg",
+            "classifier": "Large"
           },
           {
-            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/acc6_l.jpg",
-            "classifier": "Large"
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/acc6_m.jpg",
+            "classifier": "Medium"
           },
           {
             "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/acc6_s.jpg",
@@ -76,12 +74,58 @@
         "links": [
           {
             "rel": "product",
-            "href": "http://pm.epages.com:8088/rs/shops/apidocu/products/54E72E1F-746A-8B6E-8E41-0A0C05E64669"
+            "href": "https://pm.epages.com/rs/shops/apidocu/products/54E72E1F-746A-8B6E-8E41-0A0C05E64669"
           }
-        ]
+        ],
+        "essentialFeatures": null,
+        "taxClass": {
+          "name": "normal",
+          "percentage": 19
+        }
       }
-    ]
+    ],
+    "shippingPrice": {
+      "taxType": "GROSS",
+      "formatted": "7,06 €",
+      "amount": 7.06,
+      "currency": "EUR"
+    }
+  },
+  "shippingData": {
+    "shippingMethod": {
+      "id": "5171DD86-C077-0726-C448-AC14145F9026",
+      "name": "Standard delivery"
+    },
+    "price": {
+      "taxType": "GROSS",
+      "formatted": "7,06 €",
+      "amount": 7.06,
+      "currency": "EUR"
+    }
+  },
+  "paymentData": {
+    "paymentMethod": {
+      "id": "5171DD89-6DE5-E758-E046-AC14145F9009",
+      "name": null
+    },
+    "price": {
+      "taxType": "GROSS",
+      "formatted": "0,00 €",
+      "amount": 0,
+      "currency": "EUR"
+    }
   },
   "minCartValue": null,
-  "checkoutUrl": "http://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/3/Baskets/46072&ChangeAction=PickupBasket&PickupToken=6247825235"
+  "pickupToken": "YzZhN2E4MDNiNDZlZWQxMTUxOTMxNjVmYzU1NTNkOGM0NTc1NTcxYzExZmZiMTZmMDY4ODI4NmFhMmI2NzNmY18xNDY0NzcwNjQz",
+  "checkoutUrl": "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/1/Baskets/46072&ChangeAction=PickupBasket&PickupToken=YzZhN2E4MDNiNDZlZWQxMTUxOTMxNjVmYzU1NTNkOGM0NTc1NTcxYzExZmZiMTZmMDY4ODI4NmFhMmI2NzNmY18xNDY0NzcwNjQz",
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://pm.epages.com/rs/shops/apidocu/carts/574EA03C-C0EB-FC62-14B0-D5809AB36D4E"
+    },
+    {
+      "rel": "shipping-method",
+      "href": "https://pm.epages.com/rs/shops/apidocu/shipping-methods/5171DD86-C077-0726-C448-AC14145F9026"
+    }
+  ]
 }

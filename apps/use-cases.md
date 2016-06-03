@@ -5,7 +5,7 @@ title: Use cases
 ---
 
 You plan an integration with ePages?
-Thats great!
+That's great!
 Here are some use cases we can think of.
 Need more information on implementing a specific use case?
 Click [here](page:apps-implement-use-case).
