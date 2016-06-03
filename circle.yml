@@ -4,7 +4,6 @@ machine:
   services:
     - docker
   environment:
-    DOCKER_IMAGE_ELASTICSEARCH: epages/docs-elasticsearch
     DOCKER_IMAGE_NGINX: epages/docs-nginx
     DOCKER_IMAGE_TAG: ${CIRCLE_BRANCH//\//-}
 
@@ -20,5 +19,4 @@ deployment:
       - develop
     commands:
       - docker login -u "${DOCKER_USERNAME}" -p "${DOCKER_PASSWORD}" -e "${DOCKER_EMAIL}"
-      - docker push "${DOCKER_IMAGE_ELASTICSEARCH}:${DOCKER_IMAGE_TAG}"
       - docker push "${DOCKER_IMAGE_NGINX}:${DOCKER_IMAGE_TAG}"

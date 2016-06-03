@@ -1,9 +1,4 @@
 nginx:
   image: epages/docs-nginx:master
-  links:
-    - "elasticsearch:elasticsearch"
   ports:
     - "8080:80"
-
-elasticsearch:
-  image: epages/docs-elasticsearch:master

@@ -5,9 +5,10 @@ permalink: /
 
 <header id="header" class="jumbotron">
   <h1>Developer Program</h1>
-  <form method="get" action="{{ '/apps/search.html' | prepend: site.baseurl }}" autocomplete="off">
+  <form method="get" action="https://google.com/search" autocomplete="off">
     <div class="input-group">
-      <input type="text" class="form-control" name="q" placeholder="Enter your search here" required>
+      <input type="text" class="form-control" name="q" placeholder="Enter your search here" required/>
+      <input type="hidden" name="as_sitesearch" value="developer.epages.com"/>
       <button class="cta" type="submit">Search</button>
     </div>
   </form>

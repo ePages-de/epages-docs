@@ -23,9 +23,10 @@ layout: default
   <h1>{{ title }}</h1>
   {% if page.date and page.authors %}<h3 class="subtitle">{{ page.date | date: "%b %-d, %Y" }} authored by {{ page.authors | join: ' and ' }}</h3>{% endif %}
   {% if chapter == 'apps' and page.key != 'apps-faq' %}
-    <form method="get" action="{{ '/search.html' | prepend: chapter | prepend: '/' | prepend: site.baseurl }}" autocomplete="off">
+    <form method="get" action="https://google.com/search" autocomplete="off">
       <div class="input-group">
-        <input type="text" class="form-control" name="q" placeholder="Enter your search here" required>
+        <input type="text" class="form-control" name="q" placeholder="Enter your search here" required/>
+        <input type="hidden" name="as_sitesearch" value="developer.epages.com"/>
         <button class="cta" type="submit">Search</button>
       </div>
     </form>
