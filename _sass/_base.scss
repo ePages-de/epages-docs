@@ -92,6 +92,9 @@ nav {
   ul {
     margin: 0;
     padding: 0;
+    li a.active {
+      text-decoration: underline;
+    }
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -306,6 +309,9 @@ section button {
 .prefooter {
   background-color: #eee;
   padding: 40px 0 0;
+}
+.post-categories {
+  padding-top: 25px;
 }
 
 
@@ -733,4 +739,3 @@ article td, article th {
 .alert > p, .alert > ul {
   margin: 5px 0;
 }
-

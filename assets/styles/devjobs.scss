@@ -146,10 +146,12 @@ a.logo {
     .menu-btn {
       float: right;
       margin-top: 5px;
-      text-transform: uppercase;
       .lang-btn {
         margin-right: 20px;
         color: #fff;
+        &.active {
+          text-decoration: underline;
+        }
       }
       .glyphicon {
         padding-left: 10px;
