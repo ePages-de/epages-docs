@@ -24,17 +24,20 @@ title: CMS plugin
 ### Developer Blog
 
 If you create a file for the **Developer Blog** use the *post* layout.
-Give the post a *title* and a *date*.
-Choose an *icon* from the [Font Awesome icon pool](https://fortawesome.github.io/Font-Awesome/icons/).
-Define a category where the post best relates to.
+Assign the post a *title* and a *date*.
+Choose an *image* that matches the post.
+You can either use your own images, or search for one here: [Pexels](https://www.pexels.com/), [Pixabay](https://pixabay.com/), or [Unsplash](https://unsplash.com/).
+Edit the image as explained in [Confluence](https://epages.atlassian.net/wiki/display/TW/Editing+blog+header+images) (example with Gimp).
+Save the image in the folder "blog-header".
+Define a *category* where the post best relates to.
 
 ~~~ bash
 ---
 layout: post
 title: "ePages REST API out of beta"
 date: "2016-01-21 09:34:28"
-icon: info-circle
-categories: tech-stories api
+image: blog-header/dream-team.jpg
+categories: tech-stories
 authors: ["Birgit"]
 ---
 ~~~
