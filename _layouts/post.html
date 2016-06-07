@@ -7,7 +7,6 @@ layout: page
 </div>
 
 <div class="post-categories">
-  <h4>Categories</h4>
   {% for category in page.categories %}
     <a href="{{ '/index.html' | prepend: category | prepend: '/blog/categories/' | prepend: site.baseurl }}" class="label label-default">{{ category }}</a>
   {% endfor %}

@@ -11,10 +11,9 @@
   </div>
   <div id="navbar" class="navbar-collapse collapse">
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="{{ "/apps" | prepend: site.baseurl }}">API</a></li>
-      <li><a href="{{ "/blog" | prepend: site.baseurl }}">Blog</a></li>
-      <li><a href="{{ "/apps/faq.html" | prepend: site.baseurl }}">FAQ</a></li>
-      <li><a href="{{ "/support/" | prepend: site.baseurl }}">Support</a></li>
+      <li><a href="{{ "/apps" | prepend: site.baseurl }}" class="{% if chapter == "apps" %}active{% endif %}">API</a></li>
+      <li><a href="{{ "/blog" | prepend: site.baseurl }}" class="{% if chapter == "blog" %}active{% endif %}">Blog</a></li>
+      <li><a href="{{ "/support/" | prepend: site.baseurl }}" class="{% if chapter == "support" %}active{% endif %}">Support</a></li>
       <li><a href="{{ "/devjobs" | prepend: site.baseurl }}" class="navbar-cta">We're hiring</a></li>
     </ul>
   </div>
