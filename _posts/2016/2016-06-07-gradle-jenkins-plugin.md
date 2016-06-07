@@ -16,9 +16,11 @@ We already mentioned the DSL on the previous blogpost, you can find more informa
 For the other plugin you need to create a seed job, and at ePages, we have quite a complex structure with a few shell scripts.
 Some of those shell scripts are shared on the company level, so before changing them, we want to make sure they work properly. (Testing phase!)
 
-Another advantage of this plugin is that it is easy to deploy. For instance, I didn't want to break our Team Jenkins installation, so I run an instance of Jenkins in a docker container and deploy my playground scripts to it.
+Another advantage of this plugin is that it is easy to deploy.
+For instance, I didn't want to break our Team Jenkins installation, so I run an instance of Jenkins in a docker container and deploy my playground scripts to it.
 
 ## How to set up the project
+
 In your gradle project, you should use the [gradle-jenkins-plugin](https://github.com/ghale/gradle-jenkins-plugin).
 
 Look at the following sample snippet:
@@ -63,11 +65,13 @@ jenkins {
 }
 {% endhighlight %}
 
-*<font color='red'>Note:</font>* This will not setup a Jenkins for you! It will only authenticate with your own instance!
+*<font color='red'>Note:</font>* This will not setup a Jenkins for you!
+It will only authenticate with your own instance!
 
 ## How to use the plugin
 
-I was using my local Jenkins. After doing the proper changes on the DSL, I just need to trigger the task updateJenkinsItems.
+I was using my local Jenkins.
+After doing the proper changes on the DSL, I just need to trigger the task `updateJenkinsItems`.
 
 To use it, simply create a gradle project and copy the snippet.
 On the project folder you could use:
@@ -94,24 +98,31 @@ This will validate local changes with your Jenkins.
 This will update your Jenkins installation with the DSL defined locally.
 
 -----------------------
-{% image blog/blog-gradlew_updateJenkinsItems.jpg %}
+{% image blog/blog-gradlew_update_jenkins_items.jpg %}
 -----------------------
 
 ## Conclusions
-This plugin is really powerful, and there are many cases where you could use it to empower your jobs/automation environment. I hope this blog post illustrates the application examples of this plugin.
+
+This plugin is really powerful, and there are many cases where you could use it to empower your jobs/automation environment.
+I hope this blog post illustrates the application examples of this plugin.
 If you want to know more about the other jobs, have a look at complete documentation on the [project wiki](https://github.com/ghale/gradle-jenkins-plugin/wiki).
 
 ### Advantages
+
 - We have our Jenkins jobs under a source control system (git).
 - We can recreate our Jenkins instance pretty fast and test locally without effecting the rest of the team.
 
 ### Disadvantages
+
 - If you are not familiar with Gradle, it might take some time for you to become acquainted with the configuration.
 
 
 ### Credits
-We didn't come up with a company-wide solution, but use the plugin in our team and adapt it to our needs. So a big thanks to [Gary Hale](https://github.com/ghale), because without him I wouldn't be writing about it today{% emoji wink %}.
+
+We didn't come up with a company-wide solution, but use the plugin in our team and adapt it to our needs.
+So a big thanks to [Gary Hale](https://github.com/ghale), because without him I wouldn't be writing about it today {% emoji wink %}.
 
 ## References
+
 - [Gradle Jenkins plugin](https://github.com/ghale/gradle-jenkins-plugin).
 - If you want to create a local Jenkins, here is a small tutorial [how to setup a docker instance](https://hub.docker.com/_/jenkins/).
