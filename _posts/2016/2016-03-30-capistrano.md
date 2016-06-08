@@ -2,6 +2,7 @@
 layout: post
 title: "Multi-platform deployment with Capistrano"
 date: "2016-03-30 07:16:17"
+image: blog-header/platform.jpg
 categories: tech-stories
 authors: ["Karsten P."]
 ---
