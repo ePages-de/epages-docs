@@ -3,41 +3,9 @@
   "title": "Put Categories CategoryId Schema",
   "type": "object",
   "properties": {
-    "categoryId": {
-      "type": "string",
-      "description": "The unique identifier of the category a product is assigned to."
-    },
-    "name": {
-      "type": "string",
-      "description": "The name of the category."
-    },
-    "pageTitle": {
-      "type": "string",
-      "description": "The title of this category."
-    },
-    "description": {
-      "type": "string",
-      "description": "The description of the category."
-    },
-    "specialOffer": {
-      "type": "boolean",
-      "description": "Special offers of this category."
-    },
-    "images": {
-      "type": "array of [image](page:apps-data-types#image)",
-      "description": "The images belonging to this category."
-    },
-    "parent": {
-      "type": "[link](page:apps-data-types#link)",
-      "description": "The link to the parent category."
-    },
-    "subCategories": {
-      "type": "array of [link](page:apps-data-types#link)",
-      "description": "A list of links to the subcategories."
-    },
-    "sfUrl": {
-      "type": "string",
-      "description": "The link to the categories in the shop's storefront."
+    "": {
+      "type": "object of [category](page:apps-data-types#category)",
+      "description": ""
     }
   }
 }
