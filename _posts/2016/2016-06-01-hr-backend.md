@@ -41,7 +41,7 @@ For example, keeping information up-to-date is important to me: either when it c
 Since the beginning of this year, I have also organised the ePages Partner Training.
 I restructured the agenda and adapted it to new requirements.
 The main aim is to approach partners, as well as potential app developers, and train them on how to work with the ePages REST API.
-Furthermore, I'm developing a PHP SDK for our REST API, which I also use for training purpose during the partner workshops.
+Furthermore, I'm developing a [PHP SDK](https://developer.epages.com/apps/php-client) for our [REST API](https://developer.epages.com/apps/), which I also use for training purpose during the partner workshops.
 
 So, yeah, I pretty much like to bring fresh motivation, and I'm always interested in improving stuff.
 
@@ -55,7 +55,6 @@ I check the pipeline and work through tasks on our Jira board.
 
 We have our daily standup at 11:00.
 If there are no other meetings planned, I continue my work until lunch time.
-Usually, we order something, since there are no good restaurants around.
 
 In the afternoon, I work on Talisma tickets and normally finish work at around 16:00.
 
