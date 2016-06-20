@@ -1,10 +1,10 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema",
-  "title": "Put Categories CategoryId Schema",
+  "title": "Get Category CategoryId Sequence Schema",
   "type": "object",
   "properties": {
     "": {
-      "type": "object of [category](page:apps-data-types#category)",
+      "type": "array of strings",
       "description": ""
     }
   }
