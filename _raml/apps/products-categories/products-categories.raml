@@ -1,5 +1,5 @@
 #%RAML 0.8
-displayName: Product categories
+displayName: Product and category assignment
 post:
   description: Assigns categories to products and products to categories.
   securedBy: [products_write]
@@ -7,11 +7,11 @@ post:
     application/x-www-form-urlencoded:
       formParameters:
         categoryId:
-          description: The category to be assigned for the defined products. Specify the categoryId as part of the content header. An already existing category cannot be overwritten by a new category with the same ID. Either delete the old category or choose a different alias.
+          description: The category to be assigned for the defined products. Can be one or more categories.
           required: true
           type: string
         productId:
-          description: The product to be assigned to the defined category. Specify the productId as part of the content header.
+          description: The product to be assigned to the defined category. Can be one or more products.
           required: true
           type: string
   responses:
