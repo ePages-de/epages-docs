@@ -67,7 +67,16 @@
   },
   "shippingData": null,
   "paymentData": null,
-  "minCartValue": null,
+  "minCart": {
+    "value": {
+      "taxType": "GROSS",
+      "formatted": "EUR20.00",
+      "amount": 20,
+      "currency": "EUR"
+  },
+    "status": false,
+    "code": "SumDelivery"
+    },
   "pickupToken": "NzRlMmE1MWJmMTNlMmVhNTQ4ODkxNjk5OGE3YzkyOGUyYTkzYTAxYjRkMzEwMWM2NzNiNjdkOTJiYjk2Y2Q4NV8xNDY0ODU3MTUx",
   "checkoutUrl": "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/1/Baskets/46072&ChangeAction=PickupBasket&PickupToken=NzRlMmE1MWJmMTNlMmVhNTQ4ODkxNjk5OGE3YzkyOGUyYTkzYTAxYjRkMzEwMWM2NzNiNjdkOTJiYjk2Y2Q4NV8xNDY0ODU3MTUx",
   "links": [
