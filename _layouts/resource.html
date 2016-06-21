@@ -119,7 +119,7 @@ layout: page
     {% if body.example %}
       <pre>{{ body.example }}</pre>
     {% endif %}
-    {% if body.media_type == 'multipart/form-data' %}
+    {% if body.media_type == 'multipart/form-data' or body.media_type == 'application/x-www-form-urlencoded' %}
       <table class="table table-bordered table-striped">
         <thead style="background-color: white;">
         <tr><th>Name</th><th>Type</th><th>Description</th></tr>
