@@ -34,6 +34,7 @@
       "unit": "piece(s)"
     },
     "taxClass": {
+      "taxClassId":"5446685F-A8AF-0E18-9B4F-D5809AB30FBF",
       "name": "standard",
       "percentage": 19
     },

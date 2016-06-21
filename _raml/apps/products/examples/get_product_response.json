@@ -39,8 +39,9 @@
           "unit": "piece(s)"
         },
         "taxClass": {
+          "taxClassId": "54B50D97-A277-9AF2-58A1-D5809AB32230",
           "name": "standard",
-          "percentage": 19
+          "percentage": null
         },
         "price": {
           "taxType": "GROSS",
@@ -127,6 +128,7 @@
           "unit": "piece(s)"
         },
         "taxClass": {
+          "taxClassId": "5446685F-A8AF-0E18-9B4F-D5809AB30FBF",
           "name": "standard",
           "percentage": 19
         },
@@ -222,6 +224,7 @@
           "unit": "piece(s)"
         },
         "taxClass": {
+          "taxClassId": "5446685F-A8AF-0E18-9B4F-D5809AB30FBF",
           "name": "standard",
           "percentage": 19
         },

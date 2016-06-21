@@ -10,6 +10,29 @@ In order to keep track of these changes we recommend you to follow [@epagesdevs]
 
 <hr>
 
+## 2016-06-21
+
+### Changes with software release 6.17.48
+
+#### <i class="fa fa-plus"></i> New
+
+* [`GET` categories/{categoryId}/sequence](https://developer.epages.com/apps/api-reference/get-shops-shopid-categories-categoryid-sequence.html)
+* [`PUT` categories/{categoryId}/sequence](https://developer.epages.com/apps/api-reference/put-shops-shopid-categories-categoryid-sequence.html)
+* [`POST` categories/{categoryId}](https://developer.epages.com/apps/api-reference/post-shops-shopid-categories-categoryid.html)
+* [`DELETE` categories/{categoryId}](https://developer.epages.com/apps/api-reference/delete-shops-shopid-categories-categoryid.html)
+
+#### <i class="fa fa-pencil"></i> Update
+
+* Changed `minCartValue` attribute to `minCart` and expanded its attributes.
+* Added `taxClassId` attribute to data type [`taxClass`](https://developer.epages.com/apps/data-types#taxclass).
+* Added attributes `partiallyDispatchedOn`, `partiallyPaidOn` and `partiallyInvoicedOn` to data type [`order`](https://developer.epages.com/apps/data-types#order).
+
+#### <i class="fa fa-minus"></i> Remove
+
+* `GET` products/{productId}/categories: This endpoint will no longer be supported. Please use [`GET` categories](https://developer.epages.com/apps/api-reference/get-shops-shopid-categories.html) by applying the query parameter `productId`.
+
+<hr>
+
 ## 2016-06-03
 
 ### Changes with software release 6.17.47
@@ -29,7 +52,7 @@ In order to keep track of these changes we recommend you to follow [@epagesdevs]
 
 #### <i class="fa fa-plus"></i> New
 
-* [`POST` category/{categoryId}](https://developer.epages.com/apps/api-reference/post-shops-shopid-categories-categoryid.html)
+* [`POST` categories/{categoryId}](https://developer.epages.com/apps/api-reference/post-shops-shopid-categories-categoryid.html)
 
 #### <i class="fa fa-pencil"></i> Update
 
