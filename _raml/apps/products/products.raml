@@ -75,7 +75,8 @@ post:
 
           *Supported JSON-PATCH operations*<br>
           - add (sets or replaces an attribute)<br>
-          - remove (unsets an attribute)<br><br>
+          - remove (unsets an attribute)<br>
+          - replace³ (replaces an attribute value)<br><br>
 
           *Attribute paths that allow updates via PATCH* <br>
                 - /productNumber¹<br>
@@ -92,11 +93,13 @@ post:
                 - /priceInfo/manufacturerPrice/amount<br>
                 - /priceInfo/ecoParticipationPrice/amount<br>
                 - /priceInfo/depositPrice/amount<br>
+                - /priceInfo/taxClass/taxClassId³<br>
                 - /productImage¹<br>
                 - /stocklevel²<br><br>
 
                 **¹** supports *add* only<br>
-                **²** value will not be replaced, but changed, i.e. if the stocklevel is 3 and you add 1, you will get 4; if you add -5, you will get -2.<br><br>
+                **²** value will not be replaced, but changed, i.e. if the stocklevel is 3 and you add 1, you will get 4; if you add -5, you will get -2.
+                **³** used for taxClassId only<br><br>
 
     securedBy: [products_write]
     is: [ locale, currency ]
