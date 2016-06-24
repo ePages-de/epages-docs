@@ -22,10 +22,10 @@ delete:
   securedBy: [products_write]
   queryParameters:
     categoryId:
-      description: Filters products by category ID.
+      description: The category from which the specified products should be removed (can be used multiple times).
       required : true
     productId:
-      description: Filters categories by product ID.
+      description: The product to be removed from the specified categories (can be used multiple times).
       required : true
   responses:
     204:
