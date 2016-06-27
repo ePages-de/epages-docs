@@ -8,7 +8,7 @@ authors: ["Benjamin and Birgit"]
 ---
 
 From the 15th to 17th of June, the [Karlsruher Entwicklertag](https://entwicklertag.de/karlsruhe/2016/) took place at the [IHK Karlsruhe](https://www.karlsruhe.ihk.de/).
-The location is annually alternating with Hamburg, and despite its name, it is a 3-day event with two conference days, and a tutorial day.
+Despite its name, it is a 3-day event with two conference days, and a tutorial day.
 
 The frame of each day was formed by a morning keynote, 36 session slots in 6 parallel tracks, and an evening keynote.
 The first day, the Conference Day, was dedicated to development issues, and the talks had been assigned to topics such as Invited Talks, Microservices & Tools, Java User Group, Softwerkskammer, DevOps & Security, and JavaScript.
@@ -83,7 +83,7 @@ Several IT Security Experts helped to create some meaningful mindmaps.
 It had been three great conference days with lots of interesting talks and an awesome atmosphere.
 And of course, it was a special highlight that two ePagees had the chance to present a talk.
 
-We look forward to the next conference next year in Hamburg.
+We look forward to the next conference next year.
 
 ## Related links
 
