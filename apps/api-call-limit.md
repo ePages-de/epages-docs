@@ -4,7 +4,7 @@ key: apps-api-call-limit
 title: API call limit
 ---
 
-Requests to the API are limited to 6000 calls per hour.
+Requests to the API are limited to 6000 calls per hour per token.
 The limit applies to all available resources.
 Once the limit is exceeded, the request will be rejected.
 HTTP status `429 - Too many requests` will be returned and a message telling you that you've been limited, see also [Response codes](page:apps-response-codes).
