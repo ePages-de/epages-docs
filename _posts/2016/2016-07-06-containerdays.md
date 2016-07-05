@@ -42,14 +42,14 @@ Some main points:
 
 ## Conference Day
 
-### [Mandy Waite](https://twitter.com/tekgrrl) - Google : From Borg to Kubernetes: The history and future of container orchestration
+### [Mandy Waite](https://twitter.com/tekgrrl) - [Google](https://www.google.de) : From Borg to Kubernetes: The history and future of container orchestration
 
 This talk was mainly about efficient usage of cluster resources in Borg and with Kubernetes:
 
 * New Feature in 1.3: Federated Cluster
 {% youtube 86jZdmAjWns %}
 
-### [Boyan Dimitrov](https://twitter.com/nathariel) - Sixt: Enterprise Microservice Adoption
+### [Boyan Dimitrov](https://twitter.com/nathariel) - [Sixt](https://www.sixt.de/): Enterprise Microservice Adoption
 
 The talk was about the first services developed as a microservice.
 
@@ -79,7 +79,7 @@ Building blocks of container:
 * cgroups: examples: devices memory freeze
 * Namespaces: cmd tool unshare
 
-### Rainer Sträter - 1&1 Internet SE: Application deployment and management at scale with 1&1
+### Rainer Sträter - [1&1 Internet SE](http://www.1und1.de/): Application deployment and management at scale with 1&1
 
 * Motivation for container: Web hosting stacks, new demands from customers, complex updates
 * Everything is a container (mysql, php, ...)
@@ -134,7 +134,7 @@ What else?
 * Presented Mesos as OS for the data centre
 * Live example of Apache Spark with Zeppelin for analytics
 
-### [Tobias Schmidt](https://twitter.com/dagrobie) - Soundcloud: Efficient monitoring in modern environments
+### [Tobias Schmidt](https://twitter.com/dagrobie) - [Soundcloud](https://soundcloud.com/): Efficient monitoring in modern environments
 
 Why Monitor?
 
