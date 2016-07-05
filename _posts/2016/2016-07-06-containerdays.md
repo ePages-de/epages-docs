@@ -48,7 +48,6 @@ This talk was mainly about efficient usage of cluster resources in Borg and with
 
 * New Feature in 1.3: Federated Cluster
 {% youtube 86jZdmAjWns %}
-* Workshop: [Kubernetes (on Container Engine) - Basics to Advanced](https://docs.google.com/document/d/1e07fTOMXaNFOsKQDJZBLNGMEV78M9oDCELLL3Q5JD9I/edit)
 
 ### [Boyan Dimitrov](https://twitter.com/nathariel) - Sixt: Enterprise Microservice Adoption
 
