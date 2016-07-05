@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "ContainerDays Hamburg"
-date: "2016-07-06 08:16:17"
+date: "2016-07-05 10:16:17"
 image: blog-header/container2.jpg
 categories: events
 authors: ["Christian K."]
