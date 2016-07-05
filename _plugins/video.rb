@@ -32,7 +32,7 @@ module JekyllVideoTag
     def render(context)
       '<div class="video-container" style="text-align: center">
         <iframe width="' + @width + '" height="' + @height + '"
-          src="http://www.youtube.com/embed/' + @video +'" frameborder="0" allowfullscreen></iframe>
+          src="https://www.youtube.com/embed/' + @video +'" frameborder="0" allowfullscreen></iframe>
        </div>'
     end
   end
