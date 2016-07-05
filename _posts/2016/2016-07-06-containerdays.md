@@ -29,7 +29,7 @@ They also integrated the E2E test in [Nagios](https://www.nagios.org/) and got s
 
 [Slides](https://rawgit.com/toschneck/presentation/docker-meetup-container-days/index.html#/)
 
-### [Aaron Huslage](https://twitter.com/huslage?lang=de) - [Docker](https://www.docker.com/): New Stuff in Docker 1.12
+### [Aaron Huslage](https://twitter.com/huslage) - [Docker](https://www.docker.com/): New Stuff in Docker 1.12
 
 Aaron showed the new features of the upcoming docker release. The biggest part was the new orchestration framework (see [blog post](https://blog.docker.com/2016/06/docker-1-12-built-in-orchestration/)).
 
@@ -42,7 +42,7 @@ Some main points:
 
 ## Conference Day
 
-### [Mandy Waite](https://twitter.com/tekgrrl?lang=de) - Google : From Borg to Kubernetes: The history and future of container orchestration
+### [Mandy Waite](https://twitter.com/tekgrrl) - Google : From Borg to Kubernetes: The history and future of container orchestration
 
 This talk was mainly about efficient usage of cluster resources in Borg and with Kubernetes:
 
@@ -93,7 +93,7 @@ Building blocks of container:
 * Currently no own container
 * Shortly publicly available as "Managed Hosting"
 
-### [Mathias Lafeldt](https://twitter.com/mlafeldt?lang=de) - [Jimdo](http://www.jimdo.com/index.php): A journey through wonderland
+### [Mathias Lafeldt](https://twitter.com/mlafeldt) - [Jimdo](http://www.jimdo.com/index.php): A journey through wonderland
 
 * Cloud migration took 5 years, now running on AWS
 * Every team did their own monitoring, deployment, test, and other stuff
@@ -129,7 +129,7 @@ What else?
 
 [Documentation](http://planb.readthedocs.io/en/latest/)
 
-### [Florian Leibert](https://twitter.com/flo?lang=de) - [Mesosphere](https://mesosphere.com/): Lightning Talk
+### [Florian Leibert](https://twitter.com/flo) - [Mesosphere](https://mesosphere.com/): Lightning Talk
 
 * Helped Twitter and Airbnb to containerize their appilcations
 * Presented Mesos as OS for the data centre
