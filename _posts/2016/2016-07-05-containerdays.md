@@ -128,6 +128,8 @@ What else?
 
 [Documentation](http://planb.readthedocs.io/en/latest/)
 
+[Slides](http://de.slideshare.net/try_except_/plan-b-service-to-service-authentication-with-oauth)
+
 ### [Florian Leibert](https://twitter.com/flo) - [Mesosphere](https://mesosphere.com/): Lightning Talk
 
 * Helped Twitter and Airbnb to containerize their appilcations
@@ -159,7 +161,7 @@ Four golden signals to monitor:
 * Alerting: optimise mean time to react and mean time to repair
 * Symptom vs. Cause based monitoring
 * Monitor/Alert for your users
-* Only page if something needs intermediate human intervention
+* Only page if something needs immediate human intervention
 
 * Prevent alert fatigue with:
   * Alert grouping, batch alerts
@@ -173,6 +175,8 @@ What else?
 * Critical(sms),warn(ticket), info(log only)
 * Use run books, playbooks, and link them in the alerts
 * Practice outages "game days"
+
+[Slides](https://speakerdeck.com/grobie/efficient-monitoring-in-modern-environments)
 
 ### [Florian Sellmayr](https://twitter.com/fsellmayr) - [ThoughtWorks](https://www.thoughtworks.com/): A web shop in containers - Building the microservice platform for otto.de
 
