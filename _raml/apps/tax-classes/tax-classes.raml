@@ -1,0 +1,25 @@
+#%RAML 0.8
+displayName: Tax classes
+get:
+  description: Returns the tax classes of a shop.
+  securedBy: [or]
+  is: [ locale, paged ]
+  responses:
+    200:
+      body:
+        application/json:
+          example:
+          schema:
+
+/{taxClassId}:
+  displayName: Tax class ID
+  get:
+    description: Returns the tax classes of a shop identified by the provided tax class Id.
+    securedBy: [or]
+    is: [ locale ]
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+            schema:
