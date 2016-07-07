@@ -11,39 +11,36 @@ On the 30th of June the third [jenadevs](http://www.meetup.com/de-DE/jenadevs/) 
 Approximately 30 participants were interested in the topic and showed up at 6 pm.
 After a short general introduction the presentations started:
 
-## Elastic Stack 5.0
 
-[Pere Urbón-Bayes](http://www.purbon.com/) - [elastic](https://www.elastic.co)
+### Elastic Stack 5.0
 
-Pere walked through the new features of the Elastic 5 stack and explained for every component what's new and what changed.
+[Pere Urbón-Bayes](http://www.purbon.com/) ([elastic](https://www.elastic.co)) walked through the new features of the Elastic 5 stack and explained for every component what's new and what changed.
 Further information on this topic: [elastic v5](https://www.elastic.co/de/v5).
 
-## Visualisation and analysis of Open Data
 
-[Achim Friedland](https://twitter.com/ahzf) - [OK Lab Jena](http://codefor.de/jena/)
+### Visualisation and analysis of Open Data
 
-Achim presented the [CODE for Germany](http://codefor.de/) project and how it uses open data to visualise and solve problems.
+[Achim Friedland](https://twitter.com/ahzf) ([OK Lab Jena](http://codefor.de/jena/)) presented the [CODE for Germany](http://codefor.de/) project and how it uses open data to visualise and solve problems.
 He showed some examples of visualised Open Data.
 
-## Elastic Stack @epages
 
-[Christian Köhler](https://twitter.com/epagesdevs) - [epages](http://www.epages.com/)
+### Elastic Stack @epages
 
-Christian presented the current Elastic Stack at ePages.
+[Christian Köhler](https://twitter.com/epagesdevs) ([epages](http://www.epages.com/)) presented the current Elastic stack at ePages.
 He explained the approach and the lessons learned to build the centralised logging framework.
 
-## Regression Test Analysis with Elastic Search in an Continuous Delivery Pipeline
 
-[Benjamin Nothdurft](https://twitter.com/dataduke) and [Bastian Klein](https://twitter.com/Dastianoro) - [epages](http://www.epages.com/)
+### Regression Test Analysis with ElasticSearch in an Continuous Delivery Pipeline
 
-Benjamin and Bastian presented there implementation of an.....
-
-## Lightning Talk: How ElasticSearch was used in former projects
-
-[Jens Fischer](https://twitter.com/jensfischerhh) - [epages](http://www.epages.com/)
-
-Jens talked about [deploying the Elastic stack](https://slidr.io/jensfischerhh/deploying-the-elastic-stack) in one of his former projects and the adoption of the new technology.
+[Benjamin Nothdurft](https://twitter.com/dataduke) and [Bastian Klein](https://twitter.com/Dastianoro) ([epages](http://www.epages.com/)) presented a short version of their implementation of the ElasticSearch, Logstash and Docker integration for aggregation and collection of integration test results from various systems in the delivery pipeline ([slides](https://speakerdeck.com/dataduke/automated-test-evaluation-short-version)).
 
 
+### Lightning Talk: How ElasticSearch was used in former projects
 
-After the presentations we had some nice discussions about the usage of ElasticSearch with some pizza and beer. Some Bla Bla
+[Jens Fischer](https://twitter.com/jensfischerhh) ([epages](http://www.epages.com/)) talked about [deploying the Elastic stack](https://slidr.io/jensfischerhh/deploying-the-elastic-stack) in one of his former projects and the adoption of the new technology.
+
+
+In the end delivering all this content took about one hour longer than planned,
+but even the UEFA EM 2016 match Poland vs. Portugal was gladly skipped by all participants.
+
+After the presentations we had some nice discussions about the usage of ElasticSearch with some pizza and beer.
