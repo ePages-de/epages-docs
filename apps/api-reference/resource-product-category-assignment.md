@@ -1,11 +1,11 @@
 ---
 layout: page
-key: api-resources-products-categories
-title: Products-categories
+key: api-resources-product-category-assignment
+title: Product-category-assignment
 ---
 <ul id="resource-list">
   {% for page in site.pages %}
-    {% assign match = page.key | regex_match: '^apps-api-([a-z]+)-shops-shopid-products-categories(.*)-information$' %}
+    {% assign match = page.key | regex_match: '^apps-api-([a-z]+)-shops-shopid-product-category-assignment(.*)-information$' %}
     {% if match %}
       <li class="resource-entry">
         <span class="http-method http-method-{{ page.raml_method.method | downcase }}">{{ page.raml_method.method }}</span>
