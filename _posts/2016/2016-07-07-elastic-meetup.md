@@ -6,8 +6,9 @@ categories: events
 authors: ["Christian K.", "Jens"]
 ---
 
-On the 30th of June the third [jenadevs](http://www.meetup.com/de-DE/jenadevs/) meetup took place at the ePages office in Jena.
-Approximately 30 participants ware interested in the topic and showed up at 6 pm.
+On the 30th of June the third [jenadevs](http://www.meetup.com/de-DE/jenadevs/) meetup took place at the ePages office in Jena. A video conference with our office in Hamburg was also established to give more people the option to attend even remotely.
+
+Approximately 30 participants were interested in the topic and showed up at 6 pm.
 After a short general introduction the presentations started:
 
 ## Elastic Stack 5.0
@@ -37,9 +38,12 @@ He explained the approach and the lessons learned to build the centralised loggi
 
 Benjamin and Bastian presented there implementation of an.....
 
-## Lightning Talk: How Elasticsearch was used in former projects
+## Lightning Talk: How ElasticSearch was used in former projects
 
 [Jens Fischer](https://twitter.com/jensfischerhh) - [epages](http://www.epages.com/)
 
-Jens showed the usage of Elastic Search in one of his former projects and the adoption of the new technology.....
-After the presentations we had some nice discussions about the usage of Elasticsearch with some pizza and beer. Some Bla Bla
+Jens talked about [deploying the Elastic stack](https://slidr.io/jensfischerhh/deploying-the-elastic-stack) in one of his former projects and the adoption of the new technology.
+
+
+
+After the presentations we had some nice discussions about the usage of ElasticSearch with some pizza and beer. Some Bla Bla
