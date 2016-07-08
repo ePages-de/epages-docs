@@ -26,6 +26,37 @@ post:
             example: !include examples/get_carts_cartid_response.json
             schema: !include schema/get_carts_cartid.schema.json
 
+  /coupon:
+    displayName: Coupon
+    post:
+      description: Applies a coupon code on a cart which results in creating a couponLineItem and a link to remove the coupon.
+      securedBy: [carts_read]
+      body:
+        application/x-www-form-urlencoded:
+          formParameters:
+            code:
+              description: The coupon code, e.g. PJFNYX8WZU97.
+              required: true
+              type: string
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/post_carts_cartid_coupon_response.json
+              schema: !include schema/post_carts_cartid_coupon.schema.json
+
+    /{couponLineItemId}:
+      displayName: Coupon line item
+      delete:
+        description: Deletes a coupon line item from a specific cart and recalculates cart. The link to add a coupon appears in the links section.
+        securedBy: [carts_read]
+        responses:
+          200:
+            body:
+              application/json:
+                example: !include examples/delete_carts_cartid_coupon_couponlineitemid_response.json
+                schema: !include schema/delete_carts_cartid_coupon_couponlineitemid.schema.json
+
   /order:
     displayName: Order
     post:
