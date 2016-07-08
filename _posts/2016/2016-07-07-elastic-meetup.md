@@ -1,12 +1,14 @@
 ---
 layout: post
 title: "Elastic Meetup at ePages"
-date: "2016-07-07 07:16:17"
+date: "2016-07-11 07:16:17"
 categories: events
 authors: ["Christian K.", "Jens"]
 ---
 
-On the 30th of June the third [jenadevs](http://www.meetup.com/de-DE/jenadevs/) meetup took place at the ePages office in Jena. A video conference with our office in Hamburg was also established to give more people the option to attend even remotely.
+On the 30th of June the third [jenadevs](http://www.meetup.com/de-DE/jenadevs/) meetup took place at the ePages office in Jena. A video conference with our office in Hamburg was also established to give more people the option to attend remotely.
+
+{% image blog/blog-elastic-meetup-1.jpg 75% %}
 
 Approximately 30 participants were interested in the topic and showed up at 6 pm.
 After a short general introduction the presentations started:
@@ -17,6 +19,7 @@ After a short general introduction the presentations started:
 [Pere Urbón-Bayes](http://www.purbon.com/) ([elastic](https://www.elastic.co)) walked through the new features of the Elastic 5 stack and explained for every component what's new and what changed.
 Further information on this topic: [elastic v5](https://www.elastic.co/de/v5).
 
+{% image blog/blog-elastic-meetup-2.jpg 75% %}
 
 ### Visualisation and analysis of Open Data
 
@@ -30,7 +33,7 @@ He showed some examples of visualised Open Data.
 He explained the approach and the lessons learned to build the centralised logging framework.
 
 
-### Regression Test Analysis with ElasticSearch in an Continuous Delivery Pipeline
+### Regression Test Analysis with ElasticSearch in a Continuous Delivery Pipeline
 
 [Benjamin Nothdurft](https://twitter.com/dataduke) and [Bastian Klein](https://twitter.com/Dastianoro) ([epages](http://www.epages.com/)) presented a short version of their implementation of the ElasticSearch, Logstash and Docker integration for aggregation and collection of integration test results from various systems in the delivery pipeline ([slides](https://speakerdeck.com/dataduke/automated-test-evaluation-short-version)).
 
