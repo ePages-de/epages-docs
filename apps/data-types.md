@@ -51,7 +51,7 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | lineItemContainer | [lineItemContainer](page:apps-data-types#lineitemcontainer) | Contains the line items of a cart. |
 | shippingData | object of [shippingData](page:apps-data-types#shippingdata) | The shipping data of a cart or an order, i.e. short info on shipping method and price.|
 | paymentData | object of [paymentData](page:apps-data-types#paymentdata) | The payment data of  a cart or an order, i.e. short info on payment method and price.|
-| minCart | object of [minCart](page:apps-data-types#mincart) | The minimum order value of a shop. |
+| minimumCart | object of [minimumCart](page:apps-data-types#minimumcart) | The minimum order value of a shop. |
 | pickupToken | string | For internal use only. Can be ignored. |
 | checkoutURL | string | The URL that redirects the browser to the merchant’s shop in order to complete the checkout. |
 
@@ -218,13 +218,13 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | href | string | The URL of the related link that can be used for subsequent calls. |
 | title | string | The title of the item that is linked. (optional)  |
 
-## minCart
+## minimumCart
 
 | Attribute | Type | Description |
 | - | :-: |  - |
-| value | object of [price](page:apps-data-types#price) | The amount of the minimum value in the basket with currency and tax type. |
-| status | boolean | Indicates if the minimum order value is exceeded. Creating an order is not possible when a cart is posted with the minCart status `false´. |
+| status | boolean | Indicates if the minimum order value is exceeded. Creating an order is not possible when a cart is posted with the minimumCart status `false´. |
 | code | string | Represents the selected value of the minimum order value that can be set by the merchant in the administration area of the shop. Can be one of *SumProduct*, *SumCoupon*, *SumDiscount*, *SumDelivery* or *SumPayment*. |
+| amount | object of [price](page:apps-data-types#price) | The amount of the minimum value in the basket with currency and tax type. |
 
 ## newsletterCampaign
 
@@ -385,6 +385,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | images | array of [image](page:apps-data-types#image) | The image of the line item. |
 | links | array of [link](page:apps-data-types#link) | The links to the product line item. |
 | taxClass | object of [taxClass](page:apps-data-types#taxclass) | The tax that applies for the product.|
+| deliveryWeight | object of [quantity](page:apps-data-types#quantity) | The delivery weight for the product line item.|
 
 ## productLineItem (create request)
 
@@ -487,6 +488,14 @@ This object is used for the attributes of deliveryWeight and quantity.
 | taxClassId | string | The unique identifier of the tax class. |
 | name | string | The name of the tax class. |
 | percentage | number | The percentage the product is taxed with.|
+
+## taxClassInfo
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| taxClassId | string | The unique identifier of the tax class. |
+| name | string | The name of the tax class. |
+| links | array of [link](page:apps-data-types#link) | A list of links to the products. |
 
 ## updatedProducts
 
