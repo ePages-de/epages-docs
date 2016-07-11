@@ -4,12 +4,13 @@ title: "Elastic Meetup at ePages"
 date: "2016-07-08 11:11:11"
 image: blog-header/elastic-meetup.jpg
 categories: events
-authors: ["Christian K.", "Jens", "Benjamin"]
+authors: ["Christian K., Jens", "Benjamin"]
 ---
 
-On the 30th of June the third [jenadevs](http://www.meetup.com/jenadevs/events/230859746) meetup took place at the ePages office in Jena. A video conference with our office in Hamburg was also established to give more people the option to attend remotely.
+On the 30th of June the third [jenadevs](http://www.meetup.com/jenadevs/events/230859746) meetup took place at the ePages office in Jena.
+A video conference with our office in Hamburg was also established to give more people the option to attend remotely.
 
-{% image blog/blog-elastic-meetup-1.jpg 75% %}
+{% image blog/blog-elastic-meetup-1.jpg %}
 
 Approximately 30 participants were interested in the topic and showed up at 6 pm.
 After a short general introduction the presentations started:
@@ -19,16 +20,16 @@ After a short general introduction the presentations started:
 [Pere Urbón-Bayes](http://www.purbon.com/) ([elastic](https://www.elastic.co)) walked through the new features of the Elastic 5 stack and explained for every component what's new and what changed.
 Further information on this topic: [elastic v5](https://www.elastic.co/de/v5).
 
-{% image blog/blog-elastic-meetup-2.jpg 75% %}
+{% image blog/blog-elastic-meetup-2.jpg %}
 
 ### Visualisation and analysis of Open Data
 
 [Achim Friedland](https://twitter.com/ahzf) ([OK Lab Jena](http://codefor.de/jena/)) presented the [CODE for Germany](http://codefor.de/) project and how it uses open data to visualise and solve problems.
 He showed some examples of visualised Open Data.
 
-### Elastic Stack @epages
+### Elastic Stack @ePages
 
-[Christian Köhler](https://twitter.com/epagesdevs) ([epages](http://www.epages.com/)) presented the current Elastic stack at ePages.
+[Christian Köhler](https://twitter.com/epagesdevs) ([ePages](http://www.epages.com/)) presented the current Elastic stack at ePages.
 He explained the approach and the lessons learned to build the centralised logging framework.
 
 ### Regression Test Analysis with Elasticsearch in a Delivery Pipeline
@@ -37,7 +38,7 @@ He explained the approach and the lessons learned to build the centralised loggi
 
 ### Lightning Talk: How Elasticsearch was used in former projects
 
-[Jens Fischer](https://twitter.com/jensfischerhh) ([epages](http://www.epages.com/)) talked about [deploying the Elastic stack](https://slidr.io/jensfischerhh/deploying-the-elastic-stack) in one of his former projects and the adoption of the new technology.
+[Jens Fischer](https://twitter.com/jensfischerhh) ([ePages](http://www.epages.com/)) talked about [deploying the Elastic stack](https://slidr.io/jensfischerhh/deploying-the-elastic-stack) in one of his former projects and the adoption of the new technology.
 
 In the end delivering all this content took about one hour longer than planned,
 but even the UEFA EM 2016 match Poland vs. Portugal was gladly skipped by all participants.
