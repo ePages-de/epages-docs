@@ -1,0 +1,77 @@
+{
+  "results": 5,
+  "page": 1,
+  "resultsPerPage": 10,
+  "items": [
+    {
+      "taxClassId": "5446685F-D1DC-0823-D290-D5809AB30FB6",
+      "name": "no VAT",
+      "links": [
+        {
+          "rel": "self",
+          "href": "https://pm.epages.com/rs/shops/apidocu/tax-classes/5446685F-D1DC-0823-D290-D5809AB30FB6"
+        }
+      ]
+    },
+    {
+      "taxClassId": "5446685F-A8AF-0E18-9B4F-D5809AB30FBF",
+      "name": "standard",
+      "links": [
+        {
+          "rel": "self",
+          "href": "https://pm.epages.com/rs/shops/apidocu/tax-classes/5446685F-A8AF-0E18-9B4F-D5809AB30FBF"
+        }
+      ]
+    },
+    {
+      "taxClassId": "5446685F-8E47-FAB9-87FB-D5809AB30F6D",
+      "name": "reduced",
+      "links": [
+        {
+          "rel": "self",
+          "href": "https://pm.epages.com/rs/shops/apidocu/tax-classes/5446685F-8E47-FAB9-87FB-D5809AB30F6D"
+        }
+      ]
+    },
+    {
+      "taxClassId": "54B50D97-A277-9AF2-58A1-D5809AB32230",
+      "name": "Digital products and services",
+      "links": [
+        {
+          "rel": "self",
+          "href": "https://pm.epages.com/rs/shops/apidocu/tax-classes/54B50D97-A277-9AF2-58A1-D5809AB32230"
+        }
+      ]
+    },
+    {
+      "taxClassId": "54B50D97-3ADA-E805-55B6-D5809AB3223A",
+      "name": "eBooks",
+      "links": [
+        {
+          "rel": "self",
+          "href": "https://pm.epages.com/rs/shops/apidocu/tax-classes/54B50D97-3ADA-E805-55B6-D5809AB3223A"
+        }
+      ]
+    }
+  ],
+  "defaultTaxClass": {
+    "taxClassId": "5446685F-A8AF-0E18-9B4F-D5809AB30FBF",
+    "name": "standard",
+    "links": [
+      {
+        "rel": "self",
+        "href": "https://pm.epages.com/rs/shops/apidocu/tax-classes/5446685F-A8AF-0E18-9B4F-D5809AB30FBF"
+      }
+    ]
+  },
+  "defaultTaxClassDigital": {
+    "taxClassId": "54B50D97-A277-9AF2-58A1-D5809AB32230",
+    "name": "Digital products and services",
+    "links": [
+      {
+        "rel": "self",
+        "href": "https://pm.epages.com/rs/shops/apidocu/tax-classes/54B50D97-A277-9AF2-58A1-D5809AB32230"
+      }
+    ]
+  }
+}

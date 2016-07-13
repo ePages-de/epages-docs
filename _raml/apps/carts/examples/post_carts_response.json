@@ -1,93 +1,103 @@
 {
-  "cartId": "574EA03C-C0EB-FC62-14B0-D5809AB36D4E",
+  "cartId": "57834820-2D8F-D78D-A727-D5809AB33952",
   "billingAddress": null,
   "shippingAddress": null,
   "lineItemContainer": {
     "grandTotal": {
       "taxType": "GROSS",
-      "formatted": "20,05 €",
-      "amount": 20.05,
+      "formatted": "72,31 €",
+      "amount": 72.31,
       "currency": "EUR"
     },
     "totalBeforeTax": {
       "taxType": "NET",
-      "formatted": "16,85 €",
-      "amount": 16.85,
+      "formatted": "60,76 €",
+      "amount": 60.76,
       "currency": "EUR"
     },
     "totalTax": {
       "taxType": "NONE",
-      "formatted": "3,20 €",
-      "amount": 3.2,
+      "formatted": "11,55 €",
+      "amount": 11.55,
       "currency": "EUR"
     },
     "lineItemsSubTotal": {
       "taxType": "GROSS",
-      "formatted": "12,99 €",
-      "amount": 12.99,
+      "formatted": "65,00 €",
+      "amount": 65,
       "currency": "EUR"
     },
     "productLineItems": [
       {
-        "lineItemId": "574EA03C-C97F-1363-D0AE-D5809AB36DBC",
-        "sku": "Acc-001",
-        "name": "Adapter 6,3mm",
-        "productId": "54E72E1F-746A-8B6E-8E41-0A0C05E64669",
+        "lineItemId": "57834820-7860-16D1-DDCB-D5809AB339C3",
+        "sku": "HP-003",
+        "name": "Dr.Boom - Red Power",
+        "productId": "51E7F905-2E4C-78C2-30C2-AC14145FA4E5",
         "quantity": {
           "amount": 1,
-          "unit": "piece"
+          "unit": "piece(s)"
         },
         "lineItemPrice": {
           "taxType": "GROSS",
-          "formatted": "12,99 €",
-          "amount": 12.99,
+          "formatted": "65,00 €",
+          "amount": 65,
           "currency": "EUR"
         },
         "singleItemPrice": {
           "taxType": "GROSS",
-          "formatted": "12,99 €",
-          "amount": 12.99,
+          "formatted": "65,00 €",
+          "amount": 65,
           "currency": "EUR"
         },
         "images": [
           {
-            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/acc6_h.jpg",
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F905/2E4C/78C2/30C2/AC14/145F/A4E5/013-headphone-red_h.jpg",
             "classifier": "HotDeal"
           },
           {
-            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/acc6.jpg",
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F905/2E4C/78C2/30C2/AC14/145F/A4E5/013-headphone-red.jpg",
             "classifier": "Large"
           },
           {
-            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/acc6_m.jpg",
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F905/2E4C/78C2/30C2/AC14/145F/A4E5/013-headphone-red_m.jpg",
             "classifier": "Medium"
           },
           {
-            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/acc6_s.jpg",
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F905/2E4C/78C2/30C2/AC14/145F/A4E5/013-headphone-red_s.jpg",
             "classifier": "Small"
           },
           {
-            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/acc6_xs.jpg",
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F905/2E4C/78C2/30C2/AC14/145F/A4E5/013-headphone-red_xs.jpg",
             "classifier": "Thumbnail"
           }
         ],
         "links": [
           {
             "rel": "product",
-            "href": "https://pm.epages.com/rs/shops/apidocu/products/54E72E1F-746A-8B6E-8E41-0A0C05E64669"
+            "href": "https://pm.epages.com/rs/shops/apidocu/products/51E7F905-2E4C-78C2-30C2-AC14145FA4E5"
+          },
+          {
+            "rel": "taxClass",
+            "href": "https://pm.epages.com/rs/shops/apidocu/tax-classes/5446685F-A8AF-0E18-9B4F-D5809AB30FBF"
           }
         ],
-        "essentialFeatures": null,
+        "essentialFeatures": "Surround Sound\nAcoustic Noise Cancelling\nPerfect fit",
         "taxClass": {
+          "taxClassId": "5446685F-A8AF-0E18-9B4F-D5809AB30FBF",
           "name": "normal",
           "percentage": 19
+        },
+        "deliveryWeight": {
+          "amount": 260,
+          "unit": "g"
         }
       }
     ],
+    "couponLineItem": null,
     "shippingPrice": {
       "taxType": "GROSS",
-      "formatted": "7,06 €",
-      "amount": 7.06,
+      "formatted": "7,31 €",
+      "amount": 7.31,
       "currency": "EUR"
     }
   },
@@ -98,8 +108,8 @@
     },
     "price": {
       "taxType": "GROSS",
-      "formatted": "7,06 €",
-      "amount": 7.06,
+      "formatted": "7,31 €",
+      "amount": 7.31,
       "currency": "EUR"
     }
   },
@@ -115,26 +125,25 @@
       "currency": "EUR"
     }
   },
-  "minCart": {
-    "value": {
-      "taxType": "GROSS",
-      "formatted": "EUR20.00",
-      "amount": 20,
-      "currency": "EUR"
+  "minimumCart": {
+    "status": true,
+    "code": "SumDiscount",
+    "amount": null
   },
-    "status": false,
-    "code": "SumDelivery"
-    },
-  "pickupToken": "YzZhN2E4MDNiNDZlZWQxMTUxOTMxNjVmYzU1NTNkOGM0NTc1NTcxYzExZmZiMTZmMDY4ODI4NmFhMmI2NzNmY18xNDY0NzcwNjQz",
-  "checkoutUrl": "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/1/Baskets/46072&ChangeAction=PickupBasket&PickupToken=YzZhN2E4MDNiNDZlZWQxMTUxOTMxNjVmYzU1NTNkOGM0NTc1NTcxYzExZmZiMTZmMDY4ODI4NmFhMmI2NzNmY18xNDY0NzcwNjQz",
+  "pickupToken": "ZTRmNzZmNWFkNGU4ZjQ2MGQzNzFlNjA5ZWY4NzcyYWM2MTljYjJjNGQxOTQzY2M0YmNiZGZlOTM1NTJiYzMxY18xNDY4MjIxNDcz",
+  "checkoutUrl": "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/3/Baskets/46072&ChangeAction=PickupBasket&PickupToken=ZTRmNzZmNWFkNGU4ZjQ2MGQzNzFlNjA5ZWY4NzcyYWM2MTljYjJjNGQxOTQzY2M0YmNiZGZlOTM1NTJiYzMxY18xNDY4MjIxNDcz",
   "links": [
     {
       "rel": "self",
-      "href": "https://pm.epages.com/rs/shops/apidocu/carts/574EA03C-C0EB-FC62-14B0-D5809AB36D4E"
+      "href": "https://pm.epages.com/rs/shops/apidocu/carts/57834820-2D8F-D78D-A727-D5809AB33952"
     },
     {
       "rel": "shipping-method",
       "href": "https://pm.epages.com/rs/shops/apidocu/shipping-methods/5171DD86-C077-0726-C448-AC14145F9026"
+    },
+    {
+      "rel": "add-coupon",
+      "href": "https://pm.epages.com/rs/shops/apidocu/carts/57834820-2D8F-D78D-A727-D5809AB33952/coupon"
     }
   ]
 }
