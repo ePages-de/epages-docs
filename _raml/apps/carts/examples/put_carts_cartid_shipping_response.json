@@ -58,6 +58,7 @@
       "currency": "EUR"
     },
     "productLineItems": [],
+    "couponLineItem": null,
     "shippingPrice": {
       "taxType": "GROSS",
       "formatted": "0,00 €",
@@ -67,22 +68,21 @@
   },
   "shippingData": null,
   "paymentData": null,
-  "minCart": {
-    "value": {
-      "taxType": "GROSS",
-      "formatted": "EUR20.00",
-      "amount": 20,
-      "currency": "EUR"
+  "minimumCart": {
+    "status": true,
+    "code": "SumDiscount",
+    "amount": null
   },
-    "status": false,
-    "code": "SumDelivery"
-    },
   "pickupToken": "NzRlMmE1MWJmMTNlMmVhNTQ4ODkxNjk5OGE3YzkyOGUyYTkzYTAxYjRkMzEwMWM2NzNiNjdkOTJiYjk2Y2Q4NV8xNDY0ODU3MTUx",
   "checkoutUrl": "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/1/Baskets/46072&ChangeAction=PickupBasket&PickupToken=NzRlMmE1MWJmMTNlMmVhNTQ4ODkxNjk5OGE3YzkyOGUyYTkzYTAxYjRkMzEwMWM2NzNiNjdkOTJiYjk2Y2Q4NV8xNDY0ODU3MTUx",
   "links": [
     {
       "rel": "self",
       "href": "https://pm.epages.com/rs/shops/apidocu/carts/574FF17E-61D5-5C29-D514-D5809AB38FC0"
+    },
+    {
+      "rel": "add-coupon",
+      "href": "https://pm.epages.com/rs/shops/apidocu/carts/57834820-2D8F-D78D-A727-D5809AB33952/coupon"
     }
   ]
 }

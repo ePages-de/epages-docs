@@ -4,7 +4,7 @@
   "type": "object",
   "properties": {
     "": {
-      "type": "object of [contactInformation](page:apps-data-types#contactinformation)",
+      "type": "object of [contactInfo](page:apps-data-types#contactinfo)",
       "description": ""
     }
   }

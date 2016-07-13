@@ -10,6 +10,30 @@ In order to keep track of these changes we recommend you to follow [@epagesdevs]
 
 <hr>
 
+## 2016-07-13
+
+### Changes with software release 6.17.49
+
+#### <i class="fa fa-plus"></i> New
+
+* [`POST` carts/{cartId}/coupon](https://developer.epages.com/apps/api-reference/post-shops-shopid-carts-cartid-coupon.html)
+* [`DELETE` carts/{cartId}/coupon/{couponLineItemId}](https://developer.epages.com/apps/api-reference/delete-shops-shopid-carts-cartid-coupon-couponlineitemid.html)
+* [`POST` product-category-assignments](https://developer.epages.com/apps/api-reference/post-shops-shopid-product-category-assignments.html)
+* [`DELETE` product-category-assignments](https://developer.epages.com/apps/api-reference/delete-shops-shopid-product-category-assignments.html)
+* [`GET` tax-classes](https://developer.epages.com/apps/api-reference/get-shops-shopid-tax-classes.html)
+* [`GET` tax-classes/{taxClassId}](https://developer.epages.com/apps/api-reference/get-shops-shopid-tax-classes-taxclassid.html)
+
+#### <i class="fa fa-pencil"></i> Update
+
+* Changed `minCart` attribute to [`minimumCart`](https://developer.epages.com/apps/data-types#minimumcart).
+* Added `taxClassId` attribute to cart responses, where missing.
+* Added `deliveryWeight` attribute to data type [`productLineItem`](https://developer.epages.com/apps/data-types#productlineitem).
+* Added `couponLineItem` attribute to data type [`lineItemContainer`](https://developer.epages.com/apps/data-types#lineitemcontainer).
+* Renamed datatype `taxClass` to [`taxClassInfo`](https://developer.epages.com/apps/data-types#taxclassinfo).
+* Added datatype [`taxClass`](https://developer.epages.com/apps/data-types#taxclass).
+
+<hr>
+
 ## 2016-06-21
 
 ### Changes with software release 6.17.48
