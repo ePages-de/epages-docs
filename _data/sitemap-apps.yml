@@ -94,6 +94,9 @@
     - title: ShippingMethods
       link: page:api-resources-shipping-methods
 
+    - title: Tax
+      link: page:api-resources-tax-classes
+
 - key: more
   title: More
   entries:

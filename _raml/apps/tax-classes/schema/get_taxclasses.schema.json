@@ -16,8 +16,16 @@
       "description": "The number of tax classes returned per page."
     },
     "items": {
-      "type": "array of [taxClassInfo](page:apps-data-types#taxclassinfo)",
+      "type": "array of [taxClass](page:apps-data-types#taxclass)",
       "description": "The list of all tax classes."
+    },
+    "defaultTaxClass": {
+      "type": "object of [taxClass](page:apps-data-types#taxclass)",
+      "description": "The default tax class."
+    },
+    "defaultTaxClassDigital": {
+      "type": "object of [taxClass](page:apps-data-types#taxclass)",
+      "description": "The default tax class for digital products and services."
     }
   }
 }

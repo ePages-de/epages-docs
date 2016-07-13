@@ -10,7 +10,7 @@ In order to keep track of these changes we recommend you to follow [@epagesdevs]
 
 <hr>
 
-## 2016-07-11
+## 2016-07-13
 
 ### Changes with software release 6.17.49
 
@@ -29,6 +29,8 @@ In order to keep track of these changes we recommend you to follow [@epagesdevs]
 * Added `taxClassId` attribute to cart responses, where missing.
 * Added `deliveryWeight` attribute to data type [`productLineItem`](https://developer.epages.com/apps/data-types#productlineitem).
 * Added `couponLineItem` attribute to data type [`lineItemContainer`](https://developer.epages.com/apps/data-types#lineitemcontainer).
+* Renamed datatype `taxClass` to [`taxClassInfo`](https://developer.epages.com/apps/data-types#taxclassinfo).
+* Added datatype [`taxClass`](https://developer.epages.com/apps/data-types#taxclass).
 
 <hr>
 

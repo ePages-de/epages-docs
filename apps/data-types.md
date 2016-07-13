@@ -97,7 +97,7 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | pageTitle | string | The page title of this category. |
 | description | string | The description of the category. |
 
-## contactInformation
+## contactInfo
 
 | Attribute | Type | Description |
 | - | :-: |  - |
@@ -183,7 +183,7 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | url | string | The URL of an image. |
 | classifier | string | Specifies the image. Can be *Thumbnail*, *Small*, *HotDeal*, *MediumSmall*, *Medium*, *MediumLarge*, *Large*. |
 
-## imageInformation
+## imageInfo
 
 | Attribute | Type | Description |
 | - | :-: |  - |
@@ -316,7 +316,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | Attribute | Type | Description |
 | - | :-: |  - |
 | quantity | object of [quantity](page:apps-data-types#quantity) | The quantity of the product the price refers to.|
-| taxClass | object of [taxClass](page:apps-data-types#taxclass) | The tax that applies for the product.|
+| taxClass | object of [taxClassInfo](page:apps-data-types#taxclassinfo) | The tax that applies for the product.|
 | price | object of [price](page:apps-data-types#price) | The price of the product.|
 | depositPrice | object of [price](page:apps-data-types#price) | The deposit price for the product, e.g. bottle deposit.|
 | ecoParticipationPrice | object of [price](page:apps-data-types#price) | The advance recycling fee for electric and electronic products which is only in some countries prescribed by law.|
@@ -384,7 +384,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | essentialFeatures | string | The essential features of the line item. |
 | images | array of [image](page:apps-data-types#image) | The image of the line item. |
 | links | array of [link](page:apps-data-types#link) | The links to the product line item. |
-| taxClass | object of [taxClass](page:apps-data-types#taxclass) | The tax that applies for the product.|
+| taxClass | object of [taxClassInfo](page:apps-data-types#taxclassinfo) | The tax that applies for the product.|
 | deliveryWeight | object of [quantity](page:apps-data-types#quantity) | The delivery weight for the product line item.|
 
 ## productLineItem (create request)
@@ -458,7 +458,7 @@ This object is used for the attributes of deliveryWeight and quantity.
 | id | string | The unique identifier of the shipping method. |
 | name | string | The name of the shipping method chosen by the customer. |
 
-## shopInformation
+## shopInfo
 
 | Attribute | Type | Description |
 | - | :-: |  - |
@@ -481,7 +481,7 @@ This object is used for the attributes of deliveryWeight and quantity.
 | sfUrl | string | The link to the categories in the shop’s storefront. |
 | links | array of [link](page:apps-data-types#link) | A list of links to the products. |
 
-## taxClass
+## taxClassInfo
 
 | Attribute | Type | Description |
 | - | :-: |  - |
@@ -489,7 +489,7 @@ This object is used for the attributes of deliveryWeight and quantity.
 | name | string | The name of the tax class. |
 | percentage | number | The percentage the product is taxed with.|
 
-## taxClassInfo
+## taxClass
 
 | Attribute | Type | Description |
 | - | :-: |  - |

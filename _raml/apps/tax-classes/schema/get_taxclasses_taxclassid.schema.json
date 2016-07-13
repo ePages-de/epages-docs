@@ -4,7 +4,7 @@
   "type": "object",
   "properties": {
     "": {
-      "type": "object of [taxClassInfo](page:apps-data-types#taxclassinfo)",
+      "type": "object of [taxClass](page:apps-data-types#taxclass)",
       "description": ""
     }
   }
