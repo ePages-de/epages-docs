@@ -4,7 +4,7 @@
   "type": "object",
   "properties": {
     "": {
-      "type": "object of [shopInformation](page:apps-data-types#shopinformation)",
+      "type": "object of [shopInfo](page:apps-data-types#shopinfo)",
       "description": ""
     }
   }

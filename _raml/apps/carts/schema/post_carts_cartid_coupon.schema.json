@@ -1,10 +1,10 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema",
-  "title": "Get Legal Contact Information Schema",
+  "title": "Post Carts CartId Coupon Schema",
   "type": "object",
   "properties": {
     "": {
-      "type": "object of [contactInfo](page:apps-data-types#contactinfo)",
+      "type": "object of [cart](page:apps-data-types#cart)",
       "description": ""
     }
   }

@@ -76,6 +76,9 @@
     - title: Legal
       link: page:api-resources-legal
 
+    - title: Miscellaneous
+      link: page:api-resources-miscellaneous
+
     - title: Newsletters
       link: page:api-resources-newsletter-campaigns
 
@@ -91,8 +94,8 @@
     - title: ShippingMethods
       link: page:api-resources-shipping-methods
 
-    - title: Miscellaneous
-      link: page:api-resources-miscellaneous
+    - title: Tax
+      link: page:api-resources-tax-classes
 
 - key: more
   title: More
