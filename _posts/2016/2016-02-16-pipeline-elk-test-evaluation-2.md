@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Continuous Delivery: Implementation of automated Selenium test analysis with Elasticsearch and Docker"
+title: "How to ease test evaluation in the Continuous Delivery Pipeline"
 date: "2016-02-16 06:16:02"
-image: blog-header/test-automation.jpg
+image: blog-header/test-automation-2.jpg
 categories: tech-stories
 authors: ["Benjamin N.", "Bastian K."]
 ---

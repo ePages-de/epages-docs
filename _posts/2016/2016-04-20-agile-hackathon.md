@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "First Agile Hackathon @ePages"
+title: "Results from the first Agile Hackathon at ePages"
 date: "2016-04-20 09:34:28"
 categories: agile
 authors: ["Anja B."]

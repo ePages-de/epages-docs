@@ -1,6 +1,6 @@
 ---
 layout: post
-title: " A report from the eCommerceCamp in Jena"
+title: "A report from the eCommerceCamp in Jena"
 date: "2016-03-31 09:03:24"
 image: blog-header/barcamp-jena.jpg
 categories: events
