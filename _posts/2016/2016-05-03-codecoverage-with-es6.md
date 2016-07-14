@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Code coverage with ECMAScript 6"
+title: "How to do code coverage with ECMAScript 6"
 date: "2016-05-03 12:00:00"
 categories: tech-stories
 authors: ["Christian"]
