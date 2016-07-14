@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Continuous Delivery: Background of automated Selenium test analysis with Elasticsearch and Docker"
+title: "Optimised monitoring and evaluation of Selenium test results"
 date: "2016-02-11 10:11:12"
-image: blog-header/test-automation.jpg
+image: blog-header/test-automation-1.jpg
 categories: tech-stories
 authors: ["Benjamin N.", "Bastian K."]
 ---
