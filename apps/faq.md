@@ -48,7 +48,7 @@ Find more detailed information in the [API call limit](page:apps-api-call-limit)
 
 ## Is the API call limit per shop or per app?
 
-The API call limit is per shop.
+The API call limit is per token.
 
 ## How do I test my app before submitting it?
 
