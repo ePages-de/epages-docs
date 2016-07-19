@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to easily connect payment and shipping with online shops"
-date: "2016-08-02 11:11:11"
+date: "2016-08-02 07:11:11"
 image: blog-header/next-gen-webservices.jpg
 categories: tech-stories
 authors: ["Manel"]
@@ -9,6 +9,9 @@ authors: ["Manel"]
 
 In a [previous blog post](https://developer.epages.com/blog/2015/11/03/payment-integrations.html), Xavi explained the standard payment flow model that we use for a long time.
 In fact, flows between different payments or shippings have differences in architecture (SOAP or REST), as well as the requested data, and even the steps required.
+
+## Standard flow for payments and shipping
+
 But all of them have something in common:
 
 *The online shop has to contact the web services from the final payment or shipping company, and provide the required information to make the payment or shipping.*
@@ -22,6 +25,8 @@ We have many different merchants with different needs in many countries, and wan
 This can be a daunting task, because it means a lot of payments and shippings to integrate into ePages.
 Furthermore, every single payment and shipping developed solution that we integrate needs to be adapted to changes performed by their companies because of improvements and/or new features offered by their web services.
 
+## New approach available
+
 Now, a new approach to connecting with payments and shippings for online shops is available.
 That new model is being offered by a few startup companies, and the idea is as follows:
 
@@ -31,7 +36,7 @@ That new model is being offered by a few startup companies, and the idea is as f
 
 Even though the basic idea for both, payment and shipping, is the same, they use different approaches to better fit merchant needs.
 
-## Payments
+### Payments
 
 Three asynchronous processes are required:
 
@@ -48,7 +53,7 @@ This is the flow of step 3:
 
 As you can see, the Payment Card Industry (PCI) compliance is guaranteed by the payments provider, and no matter the final payment gateway used, payment flow remains the same.
 
-## Shipping
+### Shipping
 
 Processes and associated data flows for shipping are quite different than the ones for payments.
 
