@@ -1,24 +1,29 @@
 - title: Senior Java Developer
-  link: http://www.epages.com/en/career/jobs/SnrJavaPro.php
+  link: http://www.epages.com/en/career/?jh=2zr2s8sjxdwkvny4wmv8294nn0dc7j3
   short_description: As a Senior Java Developer based in Hamburg, you will be part of a <br>tight-knit Scrum team working on a microservice-based architecture for <br>our new ePages e-commerce platform. You will be required to utilise ...
   location: Hamburg
 
-- title: Senior JavaScript Engineer
-  link: http://www.epages.com/en/career/jobs/Senior-JavaScript-Engineer-m-f-.php
+- title: (Senior) React.js Engineer
+  link: http://www.epages.com/en/career/?jh=0ml7dxc8s5o3bno9e2tfamouig39b86
   short_description: We're looking for product-aware engineers who are thoughtful, responsible and passionate builders and value user experience. If you love to write code that's DRY, understandable, and easy to maintain by your fellow ...
   location: Hamburg
 
 - title: Software Developer
-  link: http://www.epages.com/en/career/jobs/software-developer.php
+  link: http://www.epages.com/en/career/?jh=24qdehf4abxzl836rd7dnp2lujbufxz
   short_description: Based out of our office in Hamburg and Barcelona, we are currently <br>recruiting for Software Developers (m/f) for our 3rd Party Integration <br>team. You are the part of a tech-savvy team responsible for ...
   location: Hamburg / Barcelona
 
 - title: Ruby on Rails Developer
-  link: http://www.epages.com/en/career/jobs/RoRDev.php
+  link: http://www.epages.com/en/career/?jh=3r12t9pp853d18z17601z39yc7tzgqs
   short_description: In this position as a “Ruby Expert”, you are responsible for the further <br>development and maintenance of all of our crucial in-house tools, such <br>as App-Store-Management-, ...
   location: Hamburg
 
 - title: Automation Engineer (DevOps/QA)
-  link: http://www.epages.com/en/career/jobs/Automation-Engineer-Devops-QA.php
+  link: http://www.epages.com/en/career/?jh=fwhlfnrv1hy1v356ecrp3ey1sfyec06
   short_description: As our Automation Engineer, you are taking the role of a DevOps and QA Engineer. Being part of a Scrum team, you will be responsible for developing and maintaining ...
+  location: Hamburg
+
+- title: Scrum Master
+  link: http://www.epages.com/en/career/?jh=frjs56pwwp07hbyjpfukrm1cqk0j2cn
+  short_description: As a Scrum Master, you will be part of our Research and Development department and responsible for guiding two cross-functional Scrum teams. You work closely not only with the Product Owner ...
   location: Hamburg
