@@ -19,6 +19,7 @@ raml:
   - key_prefix: "apps-api-"
     url_prefix: "apps/api-reference/"
     root_file: "_raml/apps/api.raml"
+    api_versions: "_raml/**/*/api.raml"
 
 # Build settings
 markdown: kramdown
