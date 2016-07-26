@@ -10,6 +10,14 @@ In order to keep track of these changes we recommend you to follow [@epagesdevs]
 
 <hr>
 
+## 2016-07-26
+
+### Changes with software release 6.17.50
+
+* None.
+
+<hr>
+
 ## 2016-07-13
 
 ### Changes with software release 6.17.49
