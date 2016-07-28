@@ -331,7 +331,7 @@ title: Miscellaneous
   new_miscellaneous(ENV['misc'].split(",")) if ENV['misc']
 end
 
-task :release do
+task :archive do
   API_REFERENCES = '_raml'
   API_DOC        = 'apps'
   API_VERSIONS   = '_data/api-versions.yml'
