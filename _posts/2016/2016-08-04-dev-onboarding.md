@@ -10,7 +10,7 @@ authors: ["Birgit, Leana", "Serena"]
 You've spent days and weeks perfecting your resume, preparing for interviews, and making a good impression at personal meetings.
 Now that the application process is over, and you've landed the job, it's definitely time to throw confetti.
 But when the first working day at the new company approaches, you wonder what your first days, weeks, and months will be like.
-Being nicely welcomed and appreciated ensures that we keep our first working day in good memory.
+Being nicely welcomed and appreciated ensures that we fondly remember our first working day..
 
 Here's what we do at ePages to make you feel comfortable in your new job:
 
@@ -22,9 +22,9 @@ You'll receive a little welcome present, as well as a USB stick with all require
 In a relaxed atmosphere, we introduce ourselves and break the ice with a quick Q&A, for example:
 
 * What did you do before working at ePages?
-* What's your mother tongue?
-* What is your favorite movie and food?
-* Which was the last concert you attended?
+* What's your native language?
+* What are your favorite movie and food?
+* What was the last concert you attended?
 
 HR will give you a comprehensive introduction about ePages and how we do things here.
 You'll receive a product overview, and a short demo of our software.
@@ -33,13 +33,13 @@ Our scrum masters explain our workflows and team structures.
 {% image blog/blog-onboarding.jpg %}
 
 You will be assigned a buddy, who will give you a helping hand during your first days and months at ePages.
-They will go for lunch with you, answer organizational questions, or anything that you're not comfortable asking your team or supervisor.
+They will go to lunch with you, answer organizational questions, or anything that you're not comfortable asking your team or supervisor.
 We will take you for a tour around our offices to introduce you to your team members and other colleagues from various departments.
 
 ## 2. "Thank god it's Friday"-talk
 
 At the end of the first week, you'll have a relaxed meeting with your manager.
-You will have the chance to clarify open questions and give first feedback.
+You will have the chance to clarify open questions and give feedback.
 Your manager will reassure that you settle in well and have everything you need for your work.
 Of course, we're also interested in your first days experience working together with your team.
 
