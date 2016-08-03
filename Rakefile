@@ -1,4 +1,6 @@
 # encoding: utf-8
+require 'yaml'
+require 'fileutils'
 
 class String
   # colorization
@@ -224,8 +226,7 @@ task :resource do
   SITEMAP_FILE = '_data/sitemap-apps.yml'
   MISC_FILE    = '_raml/apps/miscellaneous.raml'
   RESOURCE_DIR = 'apps/api-reference/'
-  require 'yaml'
-  require 'fileutils'
+
   require 'active_support/inflector'
 
   def new_resource(resources)
@@ -328,6 +329,46 @@ title: Miscellaneous
 
   new_resource(ENV['new'].split(",")) if ENV['new']
   new_miscellaneous(ENV['misc'].split(",")) if ENV['misc']
+end
+
+task :archive do
+  API_REFERENCES = '_raml'
+  API_DOC        = 'apps'
+  API_VERSIONS   = '_data/api-versions.yml'
+  VERSION        = "v-#{ENV['version']}"
+
+  references_dest = "#{API_REFERENCES}/#{VERSION}"
+  doc_dest = "#{API_DOC}/#{VERSION}"
+
+  def copy_resources(src, dest)
+    sh "rsync -a --exclude 'v-*' #{src}/ #{dest}"
+  end
+
+  def change_file_keys(paths)
+    files = Dir["#{paths}/**/*.md"]
+    files.each do |file_name|
+      text = File.read(file_name)
+      new_contents = text.gsub(/key: (.*)/, "key: \\1-#{VERSION}")
+      File.open(file_name, "w") {|file| file.puts new_contents }
+    end
+  end
+
+  def update_versions
+    content = YAML.load_file(API_VERSIONS)
+    content['versions'].nil? ?
+      content['versions'] = [{'title' => ENV['version']}] :
+      content['versions'] << {'title' => ENV['version']}
+    File.write(API_VERSIONS, YAML.dump(content))
+  end
+
+  raise ArgumentError, "Version not passed as parameter \n Usage:\n > rake release version=my_version" unless ENV['version']
+
+  update_versions
+
+  copy_resources(API_REFERENCES, references_dest)
+
+  copy_resources(API_DOC, doc_dest)
+  change_file_keys(doc_dest)
 end
 
 task :build do

@@ -55,19 +55,23 @@ module Jekyll
   class ApiResourcePageGenerator < Generator
     def generate(site)
       site.config['raml'].each do |raml_config|
-        path = File.join(site.source, raml_config['root_file'])
-        result = RamlParser::Parser.parse_file_with_marks(path)
-        raml = result[:root]
-        not_used = result[:marks].select { |_,m| m != :used }
-        not_used.each { |p,m| puts "#{m} #{p}" }
-
-        pages = raml.resources.map { |res|
-          res.methods.map { |_,meth|
-            ApiResourcePage.new(site, site.source, raml_config['url_prefix'], raml_config['key_prefix'], raml, res, meth)
-          }
-        }
-        site.pages += pages.flatten
+        api_versions = Dir["#{raml_config['api_versions']}"]
+        api_versions.each { |version| site.pages += pages_generator(site, version, raml_config).flatten }
       end
+    end
+
+    def pages_generator(site, version, raml_config)
+      dest = "apps/#{version.split('/')[1].match(/v-.+/).to_s}/api-reference/"
+      path = File.join(site.source, version)
+      result = RamlParser::Parser.parse_file_with_marks(path)
+      raml = result[:root]
+      not_used = result[:marks].select { |_,m| m != :used }
+      not_used.each { |p,m| puts "#{m} #{p}" }
+      raml.resources.map { |res|
+        res.methods.map { |_,meth|
+          ApiResourcePage.new(site, site.source, dest, raml_config['key_prefix'], raml, res, meth)
+        }
+      }
     end
   end
 

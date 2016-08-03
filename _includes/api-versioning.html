@@ -1,0 +1,33 @@
+<script>
+  var apiVersion = document.location.pathname.split("/")[2];
+  apiVersionDefaultValue(apiVersion);
+  apiAnchorsLinkToVersion(apiVersion);
+  apiSelectRedirectsToVersion();
+
+  function apiVersionDefaultValue(version) {
+    if(apiVersion.match(/v-.+/) != null) {
+      document.querySelector("#api-version option[value='" + apiVersion + "']").selected = true;
+    }
+  }
+
+  function apiAnchorsLinkToVersion(apiVersion) {
+    var version = (apiVersion.match(/v-.+/) == null) ? '' : apiVersion + '/';
+    var anchors = document.querySelectorAll("a");
+    for(var z = 0; z < anchors.length; z++){
+      var elem = anchors[z];
+      elem.href = elem.href.replace('/apps/', '/apps/' + version);
+    }
+  }
+
+  function apiSelectRedirectsToVersion() {
+    document.getElementById("api-version").addEventListener("change", function() {
+      var newPath = document.location.pathname.split('/');
+      if(newPath[2].match(/v-.+/) != null){
+        newPath[2] = this.value;
+      } else {
+        newPath[1] = 'apps/' + this.value;
+      }
+      document.location.pathname = newPath.join('/').replace(/\/\//, '/');
+    });
+  }
+</script>
