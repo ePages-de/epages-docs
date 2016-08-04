@@ -359,7 +359,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 
 | Attribute | Type | Description |
 | - | :-: |  - |
-| productNumber | string | The product number. |
+| productNumber | string | The product number (mandatory). |
 | name | string | The name of the product. |
 | shortDescription | string | The short description of the product. |
 | description | string | The description of the product. |

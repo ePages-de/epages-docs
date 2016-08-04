@@ -39,3 +39,7 @@ After this period has expired, the shop account can be prolonged for free.
 
 If you're eager for more information on how to set up your test shop, check out our [Online Help](https://www.online-help-center.com/) for merchants.
 {% endcallout %}
+
+## App activation process
+
+{% image business-model.png %}

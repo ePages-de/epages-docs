@@ -35,9 +35,18 @@ layout: default
 
 <div id="content">
   <div class="container">
+    {% assign versions = site.data['api-versions']['versions'] %}
     {% unless page.hide_sitemap %}
       <div class="contentnav">
         <ul id="sitemap">
+          <li class="sitemap-headline">Release<br />
+            <select id="api-version" name="version">
+              <option value="" selected>{{ site.data['api-versions']['latest'] }}</option>
+              {% for version in versions reversed %}
+                <option value="v-{{ version['title'] }}">{{ version['title'] }}</option>
+              {% endfor %}
+            </select>
+          </li>
           {% for category in sitemap %}
             <li class="sitemap-headline">{{ category.title }}</li>
             {% for entry in category.entries %}
@@ -70,3 +79,5 @@ layout: default
     <p>Not registered for the developer program yet? <a href="http://www.epages.cloud/developer/">Join now</a></p>
   </section>
 {% endunless %}
+
+{% include api-versioning.html %}
