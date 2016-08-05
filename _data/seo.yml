@@ -9,4 +9,9 @@ blog:
   description: >
     Welcome to the ePages Developer Blog! We will give you insights into our
     daily work, share tech stories and open positions with you and much more.
-  keywords: ["ePages developer blog", "developer blog", "ePages dev blog"]
+  keywords: ["ePages developer blog", "developer blog", "ePages dev blog", "blog"]
+devjobs:
+  title: ePages is looking for experienced developers | Apply now
+  description: >
+    Join one of the leading developer teams for online shop software. At ePages we offer various career opportunities especially for experienced web developers.
+  keywords: ["developer", "developer in Hamburg", "developer in Jena", "full time", "software developer", "web developers", "developers", "java", "frontend", "backend", "job search"]

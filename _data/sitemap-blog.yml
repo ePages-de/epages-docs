@@ -1,23 +1,26 @@
 - key: blog-categories
   title: Categories
   entries:
-    - title: Tech Stories
-      link: page:blog-category-tech-stories
+    - title: Agile
+      link: page:blog-category-agile
 
-    - title: Jobs
-      link: page:blog-category-jobs
-
-    - title: Conferences
-      link: page:blog-category-conferences
+    - title: API
+      link: page:blog-category-api
 
     - title: Events
       link: page:blog-category-events
 
+    - title: Working at ePages
+      link: page:blog-category-working-at-epages
+
+    - title: Tech Stories
+      link: page:blog-category-tech-stories
+
 - key: blog-links
   title: Links
   entries:
+    - title: API docu
+      link: https://developer.epages.com/apps
+
     - title: epages.com
       link: http://www.epages.com/
-
-    - title: devjobs
-      link: http://www.epages.com/devjobs

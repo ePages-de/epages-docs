@@ -4,40 +4,42 @@ key: apps-submit
 title: Submit an app
 ---
 
-# Your app is ready for takeoff?
+## Your app is ready for takeoff?
 
-Yay! You're done with developing your awesome app and you're excited to publish it on our Apps & Themes Store? Congrats! We are just as excited as you are!
+Yay! You're done with developing your awesome app and you're excited to publish it on our App & Theme Store?
+Congrats!
+We are just as excited as you are!
 
-## Let's go submit your app
+### Let's go submit your app
 
 1. Within the administration area of your test shop, click the tab **Apps & Themes**.
 In the drop down menu, choose the field **Developer apps** and click on your app in the list below.
-    {% image click-apps.png %}{% endimage %}
+    {% image click-apps.png %}
 2. Click the button **Submit app**.
-    {% image submit-app.png %}{% endimage %}
+    {% image submit-app.png %}
 3. You will then be asked to fill out the submission form.
-    {% image submission-form.png %}{% endimage %}
+    {% image submission-form.png %}
 
-## Walk through the submission form
+### Walk through the submission form
 
 The submission form validates for the **Client ID** and **Client Secret**.
-However, we'll ask you to provide us with additional information and graphics to get accepted into the App Store.
+However, we'll ask you to provide us with additional information and graphics to get accepted into the App & Theme Store.
 Asterisks ( * ) indicate a required field.
 
-### About you
+#### About you
 
 We need your contact details for proper identification and to get in touch with you.
 
-### About your app
+#### About your app
 
 **Client ID** and **Client Secret** will be pre-filled, all other app details have to be provided by you.
 
-#### Authorisation
+**Authorisation**
 
 Tick the respective check box(es) to set up the scope for your app.
 This indicates the type of calls your app will make on the REST API.
 
-#### App details
+**App details**
 
 English app details are mandatory.
 If a merchant switches his shop to a language your app does not support, the fallback language is English.
@@ -103,18 +105,18 @@ YouTube
 https://www.youtube.com/watch?v={Id}
 {% endhighlight %}
 
-We will need logos and at least one screenshot to display your app in the App Store.
+We will need logos and at least one screenshot to display your app in the App & Theme Store.
 
 App detail page: use 64x64px, GIF, JPEG, PNG.
 
-App store: use 260x160px, GIF, JPEG, PNG.
+App & Theme Store: use 260x160px, GIF, JPEG, PNG.
 
 Screenshots: use 800x600px - 1920x1080px, GIF, JPEG, PNG.
 
 Before submitting your app, please make sure you have read and understood our [submission guidelines](page:apps-submit-guide).
 Review all the information that you provide to us and also make sure that the **Application Callback URL** and **Open app URL** are correct.
 
-# You are on the home stretch!
+## You are on the home stretch!
 
 Click the button **Submit app now**.
 

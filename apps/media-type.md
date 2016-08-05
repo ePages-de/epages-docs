@@ -4,19 +4,32 @@ key: apps-media-type
 title: Media type
 ---
 
-The ePages API supports requests and responses in JSON only. Requests have to be encoded using the UTF-8 character set.
+The basic media types the API supports are:
 
-# Request content type
+{% highlight text %}
+application/json
+application/csv
+multipart/form-data
+{% endhighlight %}
 
-When making a request that contains a body, the content type to be sent has to be specified in the `Content-Type` header. To send a JSON body the header would be: `Content-Type: application/json`.
+## Content types
 
-# Response content type
+### Request content type
+
+Requests have to be encoded using the UTF-8 character set.
+When making a request that contains a body, the content type to be sent has to be specified in the `Content-Type` header.
+To send e.g. a JSON body the header would be: `Content-Type: application/json`.
+
+### Response content type
 
 You can specify the content you would like to receive in an `Accept` header, e.g. `Accept: application/vnd.epages.v1+json`.
 
-# Request structure
+## Payload structure
 
-The body of a JSON request is an object containing a set of key-value pairs. A simple JSON object could look like this:
+### Request structure
+
+The body of a JSON request is an object containing a set of key-value pairs.
+A simple JSON object could look like this:
 
 {% highlight json %}
 {
@@ -26,9 +39,11 @@ The body of a JSON request is an object containing a set of key-value pairs. A s
 }
 {% endhighlight %}
 
-# Response structure
+### Response structure
 
-Responses have a similar structure as requests. If a request returns a single object, the response will also contain a single object including the fields for that resource. The response will contain links to available sub-resources, e.g. product images.
+Responses have a similar structure as requests.
+If a request returns a single object, the response will also contain a single object including the fields for that resource.
+The response will contain links to available sub-resources, e.g. product images.
 
 {% highlight json %}
 {

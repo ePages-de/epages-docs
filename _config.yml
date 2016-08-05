@@ -5,22 +5,29 @@ baseurl: ""
 github_url: "https://github.com/ePages-de/epages-docs"
 google_analytics:
   default:
-    id: UA-37161369-23
+    id: UA-71308214-1
   blog:
-    id: UA-37161369-24
+    id: UA-71308214-2
+  devjobs:
+    id: UA-71308214-3
 
+future: true
 permalink: /blog/:year/:month/:day/:title.html
+paginate: 5
+paginate_path: "/blog/page-:num/"
 raml:
   - key_prefix: "apps-api-"
     url_prefix: "apps/api-reference/"
-    root_file: _raml/apps/api.raml
+    root_file: "_raml/apps/api.raml"
+    api_versions: "_raml/**/*/api.raml"
 
 # Build settings
 markdown: kramdown
 exclude:
   - circle.yml
   - docker-compose.yml
-  - Dockerfile
+  - Dockerfile.nginx
+  - Dockerfile.ruby
   - Gemfile
   - Gemfile.lock
   - LICENSE-CC-BY-40.txt
@@ -28,33 +35,5 @@ exclude:
   - Rakefile
   - README.md
   - vendor
-
-# Search index settings
-search:
-  host: localhost:9200
-  index:
-    name: epages-docs
-    settings:
-      mappings:
-        page:
-          properties:
-            url:
-              type: string
-              analyzer: keyword
-            title:
-              type: string
-              analyzer: english
-            content:
-              type: string
-              analyzer: english
-        section:
-          properties:
-            url:
-              type: string
-              analyzer: keyword
-            title:
-              type: string
-              analyzer: english
-            content:
-              type: string
-              analyzer: english
+include:
+  - videos

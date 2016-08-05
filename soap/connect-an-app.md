@@ -20,7 +20,6 @@ Before explaining this process in detail, the following table shows some terms t
 | **Application** | A third party application that would like to access a shop’s data. |
 
 {% image soap-basic-authentication.png %}
-{% endimage %}
 
 ## 1. Setting up login
 

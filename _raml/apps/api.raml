@@ -1,7 +1,7 @@
 #%RAML 0.8
 ---
 title: ePages Public REST API
-baseUri: https://developer.epages.com/api
+baseUri: /rs
 version: v1
 
 securedBy: [OAuth_2.0_Token,oauth_1_0]
@@ -29,18 +29,34 @@ securitySchemes:
 traits: !include traits.raml
 
 /shops/{shopId}:
+  displayName: Shop information
   uriParameters:
     shopId:
       description: The unique identifier of the shop.
       example: DemoShop
-  /products: !include product/product.raml
-  /categories: !include category/category.raml
-  /carts: !include cart/cart.raml
+  get:
+    description: Returns the public information of a shop, like name, slogan and logo.
+    securedBy: [products_read]
+    is: [locale]
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include get_shopid_response.json
+            schema: !include get_shopid.schema.json
+  /carts: !include carts/carts.raml
+  /categories: !include categories/categories.raml
+  /currencies: !include currency/currency.raml
+  /customers: !include customers/customers.raml
   /legal: !include legal/legal.raml
   /locales: !include locale/locale.raml
-  /public-info: !include public-info/public-info.raml
-  /currencies: !include currency/currency.raml
+  /newsletter-campaigns: !include newsletter/newsletter-campaigns.raml
+  /orders: !include orders/orders.raml
+  /products: !include products/products.raml
+  /product-category-assignments: !include product-category-assignments/product-category-assignments.raml
+  /products/export: !include productexport/productexport.raml
+  /sales: !include sales/sales.raml
   /search: !include search/search.raml
-  /shipping-methods: !include shipping-method/shipping-method.raml
-  /start-page: !include start-page/start-page.raml
-  /token: !include appstore/token.raml
+  /shipping-methods: !include shipping-methods/shipping-methods.raml
+  /tax-classes: !include tax-classes/tax-classes.raml
+  /watched-products: !include watched-products/watched-products.raml

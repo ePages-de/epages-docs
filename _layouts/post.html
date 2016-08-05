@@ -2,42 +2,12 @@
 layout: page
 ---
 
-<div class="post-meta">
-  {{ page.date | date: "%b %-d, %Y" }} authored by {{ page.authors | join: ' and ' }}
-</div>
-
 <div class="post-content">
-  <i class="fa fa-{{ page.icon }} fa-3x pull-left fa-border"></i>
   {{ content }}
 </div>
 
-<div class="post-tags">
-  <h3>Tags</h3>
-  {% for tag in page.tags %}
-    <a href="{{ '.html' | prepend: tag | prepend: '/blog/tags/' | prepend: site.baseurl }}" class="label label-default">{{ tag }}</a>
-  {% endfor %}
-</div>
-
 <div class="post-categories">
-  <h3>Categories</h3>
   {% for category in page.categories %}
-    <a href="{{ '.html' | prepend: category | prepend: '/blog/categories/' | prepend: site.baseurl }}" class="label label-default">{{ category }}</a>
+    <a href="{{ '/index.html' | prepend: category | prepend: '/blog/categories/' | prepend: site.baseurl }}" class="label label-default">{{ category }}</a>
   {% endfor %}
-</div>
-
-<div class="post-comments">
-  <h3>Comments</h3>
-  You have comments on this blog post? Ping us on Twitter
-  <a href="https://twitter.com/intent/tweet?screen_name=epagesdevs" target="_blank">@epagesdevs</a>.
-</div>
-
-<div class="post-share">
-  {% assign full_url = page.url | prepend: site.baseurl | prepend: site.url %}
-  {% assign title = page.title %}
-  <h3>Share</h3>
-  <ul class="socialmedia">
-    <li><a href="https://twitter.com/intent/tweet?text={{ title | url_encode }}&url={{ full_url | url_encode }}&via=epagesdevs&tw_p=tweetbutton" target="_blank" title="Share via Twitter"><span class="icon-twitter"></span></a></li>
-    <li><a href="https://www.facebook.com/sharer/sharer.php?u={{ full_url | url_encode }}" target="_blank"><span class="icon-facebook" title="Share via Facebook"></span></a></li>
-    <li><a href="https://plus.google.com/share?url={{ full_url | url_encode }}" target="_blank"><span class="icon-googleplus" title="Share via Google+"></span></a></li>
-  </ul>
 </div>

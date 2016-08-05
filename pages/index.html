@@ -1,0 +1,56 @@
+---
+layout: default
+permalink: /
+---
+
+<header id="header" class="jumbotron">
+  <h1>Developer Program</h1>
+  <form method="get" action="https://google.com/search" autocomplete="off">
+    <div class="input-group">
+      <input type="text" class="form-control" name="q" placeholder="Enter your search here" required/>
+      <input type="hidden" name="as_sitesearch" value="developer.epages.com"/>
+      <button class="cta" type="submit">Search</button>
+    </div>
+  </form>
+</header>
+
+<!--  REST API-->
+
+<section id="rest-api" class="container-fluid">
+  <h2><span class="fa-cogs" aria-hidden="true"></span> Build apps with the REST API</h2>
+  <p>Create apps for our App Store or develop custom integrations using our REST API.</p>
+  <a href="/apps/" class="cta">Read REST API documentation</a>
+</section>
+
+<!--  REGISTER-->
+
+<section id="register" class="container-fluid">
+  <h2>Not registered for the developer program yet?</h2>
+  <a href="http://www.epages.cloud/developer/" target="_blank" class="cta">Join now</a>
+</section>
+
+<!--  MORE RESOURCES-->
+
+<section id="resources" class="container">
+  <h2>More resources</h2>
+  <div class="row">
+    <div>
+      <h4><span aria-hidden="true" class="fa-cogs"></span>Developer Blog</h4>
+      <p>Read about the latest developments at ePages and current industry trends at <a href="{{ '/blog/index.html' | prepend: site.baseurl }}">our blog.</a></p>
+    </div>
+    <div>
+      <h4><span aria-hidden="true" class="fa-pencil"></span>Open Source Projects</h4>
+      <p>We have various open source projects which you can use and contribute to.</p>
+    </div>
+    <div>
+      <h4><span aria-hidden="true" class="fa-pencil"></span>Jobs</h4>
+      <p>Come work with us! Have a look at our <a href="{{ '/devjobs' | prepend: site.baseurl }}">current job openings.</a></p>
+    </div>
+  </div>
+</section>
+
+<!--  SOAP-->
+
+<section class="container-fluid prefooter">
+  <p>Still working with our old API? No problem, check our <a href="{{ '/soap/index.html' | prepend: site.baseurl }}">SOAP API documentation.</a></p>
+</section>

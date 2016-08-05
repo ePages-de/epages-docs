@@ -19,14 +19,14 @@
     - title: Response codes
       link: page:apps-response-codes
 
-    - title: Versions
+    - title: API version
       link: page:apps-version
 
 - key: apps-develop
   title: Developing an app
   entries:
-    - title: Introduction
-      link: page:apps-introduction
+    - title: Use cases
+      link: page:apps-use-cases
 
     - title: Create an app
       link: page:apps-create
@@ -40,26 +40,62 @@
     - title: Submission guidelines
       link: page:apps-submit-guide
 
+    - title: Tutorial (PHP)
+      link: page:apps-tutorial-php
+
+- key: apps-integrate
+  title: Integrations
+  entries:
+    - title: PHP SDK
+      link: page:apps-php-client
+
+    - title: Ruby SDK
+      link: page:apps-ruby-gem
+
+    - title: CMS widget
+      link: page:apps-cms-plugin
+
 - key: api-rest
   title: API reference
   entries:
+    - title: API Change Log
+      link: page:api-change-log
+
+    - title: All resources
+      link: page:api-resources-all
+
     - title: Carts
       link: page:api-resources-carts
 
     - title: Categories
       link: page:api-resources-categories
 
+    - title: Customers
+      link: page:api-resources-customers
+
     - title: Legal
       link: page:api-resources-legal
+
+    - title: Miscellaneous
+      link: page:api-resources-miscellaneous
+
+    - title: Newsletters
+      link: page:api-resources-newsletter-campaigns
+
+    - title: Orders
+      link: page:api-resources-orders
 
     - title: Products
       link: page:api-resources-products
 
+    - title: Sales
+      link: page:api-resources-sales
+
     - title: ShippingMethods
       link: page:api-resources-shipping-methods
 
-    - title: All resources
-      link: page:api-resources-all
+    - title: Tax
+      link: page:api-resources-tax-classes
 
 - key: more
   title: More

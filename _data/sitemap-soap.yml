@@ -34,11 +34,15 @@
     - title: How to use a web service
       link: page:tutorial-use-webservice
 
+    - title: How to build a simple web service client
+      link: page:tutorial-build-simple-webservice-client
+
 - key: api-soap
   title: API Reference
   entries:
     - title: Web service directory
       link: page:soap-directory
+
     - title: Web services
       link: page:soap-api
 

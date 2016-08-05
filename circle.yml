@@ -1,34 +1,22 @@
 machine:
-  pre:
-    - sudo curl -L -o /usr/bin/docker 'http://s3-external-1.amazonaws.com/circle-downloads/docker-1.6.2-circleci'; sudo chmod 0755 /usr/bin/docker; true
   ruby:
-    version: 2.0.0
+    version: 2.2.0
   services:
     - docker
   environment:
-    DOCKER_IMAGE_ELASTICSEARCH: docker.epages.com/epages/docs-elasticsearch
-    DOCKER_IMAGE_NGINX: docker.epages.com/epages/docs-nginx
+    DOCKER_IMAGE_NGINX: epages/docs-nginx
+    DOCKER_IMAGE_TAG: ${CIRCLE_BRANCH//\//-}
 
 test:
   override:
     - bundle exec rake test
+    - ./build.sh "${DOCKER_IMAGE_TAG}"
 
 deployment:
-  dockerimages:
+  push:
     branch:
       - master
       - develop
     commands:
-      - docker run --name elasticsearch -p 9200:9200 -d choffmeister/elasticsearch-prefilled:latest
-      - sleep 10
-      - bundle exec rake index
-      - sleep 10
-      - docker stop elasticsearch
-
-      - docker login -u "$DOCKER_LOGIN_USERNAME" -p "$DOCKER_LOGIN_PASSWORD" -e "$DOCKER_LOGIN_EMAIL" docker.epages.com
-      - docker commit elasticsearch "$DOCKER_IMAGE_ELASTICSEARCH:${CIRCLE_BRANCH//\//-}"
-      - docker push "$DOCKER_IMAGE_ELASTICSEARCH:${CIRCLE_BRANCH//\//-}"
-
-      - bundle exec rake build
-      - docker build -t "$DOCKER_IMAGE_NGINX:${CIRCLE_BRANCH//\//-}" .
-      - docker push "$DOCKER_IMAGE_NGINX:${CIRCLE_BRANCH//\//-}"
+      - docker login -u "${DOCKER_USERNAME}" -p "${DOCKER_PASSWORD}" -e "${DOCKER_EMAIL}"
+      - docker push "${DOCKER_IMAGE_NGINX}:${DOCKER_IMAGE_TAG}"

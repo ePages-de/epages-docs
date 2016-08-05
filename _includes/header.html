@@ -1,41 +1,20 @@
 {% assign chapter = page.url | regex_extract: '^/([^/]+)/' %}
-{% unless chapter == 'blog' %}
-  <span id="ribbon-beta">BETA</span>
-{% endunless %}
-<a id="ribbon-github" href="{{ site.github_url }}">Fork us on GitHub</a>
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      {% if chapter %}
-        <a class="navbar-brand" href="{{ '/index.html' | prepend: chapter | prepend: '/' | prepend: site.baseurl }}">
-          {% if chapter == 'blog' %}
-            <div id="brand-logo-devblog"></div>
-          {% else %}
-            <div id="brand-logo-documentation"></div>
-          {% endif %}
-        </a>
-      {% else %}
-        <a class="navbar-brand" href="http://www.epages.com/">
-          <div id="brand-logo-documentation"></div>
-        </a>
-      {% endif %}
-    </div>
-    {% if chapter == 'apps' %}
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="{{ "/blog/index.html" | prepend: site.baseurl }}">Developer Blog</a></li>
-          <li><a href="{{ "/apps/faq.html" | prepend: site.baseurl }}">FAQ</a></li>
-        </ul>
-      </div>
-    {% else %}
-    {% endif %}
+<nav>
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="{{ '/' | prepend: site.baseurl }}"></a>
+  </div>
+  <div id="navbar" class="navbar-collapse collapse">
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="{{ "/apps" | prepend: site.baseurl }}" class="{% if chapter == "apps" %}active{% endif %}">API</a></li>
+      <li><a href="{{ "/blog" | prepend: site.baseurl }}" class="{% if chapter == "blog" %}active{% endif %}">Blog</a></li>
+      <li><a href="{{ "/support/" | prepend: site.baseurl }}" class="{% if chapter == "support" %}active{% endif %}">Support</a></li>
+      <li><a href="{{ "/devjobs" | prepend: site.baseurl }}" class="navbar-cta">We're hiring</a></li>
+    </ul>
   </div>
 </nav>

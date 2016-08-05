@@ -1,100 +1,46 @@
-<footer>
-  <div class="container">
-    <div class="container logo">
-      <div class="row">
-        <div class="col-sm-12">
-          <a href="http://www.epages.com" title="ePages GmbH">
-            <span class="glyphicon icon-epages"></span>
-          </a>
-        </div>
-      </div>
+<footer id="footer" class="container-fluid">
+  <div class="container text-center">
+    <div class="row logo">
+        <a href="http://www.epages.com" title="ePages GmbH"><img src="/assets/logos/epages-logo-white.png" alt="logo" width="140px"></a>
     </div>
-    <div class="container locations hidden-xs">
-      <div class="row">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-8 locationBorder">
-          <div class="spacer20"></div>
-          <ul>
-            <li>Hamburg</li>
-            <li>Barcelona</li>
-            <li>New York</li>
-            <li>London</li>
-            <li>Jena</li>
-          </ul>
-        </div>
-        <div class="col-sm-2"></div>
-      </div>
+    <div class="row locations">
+      <ul>
+        <li class="hamburg">Hamburg</li>
+        <li class="barcelona">Barcelona</li>
+        <li class="newyork">New York</li>
+        <li class="london">London</li>
+        <li class="jena">Jena</li>
+      </ul>
     </div>
     <div class="row social">
-      <div class="spacer60"></div>
-      <div class="col-sm-12 center">
-        <ul class="socialmedia">
-          <li><a href="https://twitter.com/epagesdevs" title="Twitter"><span class="icon-twitter"></span></a></li>
-          <li><a href="https://www.xing.com/companies/epagesgmbh" title="XING"><span class="icon-xing"></span></a></li>
-          <li><a href="https://www.linkedin.com/company/epages" title="LinkedIn"><span class="icon-linkedin"></span></a></li>
-          <li><a href="https://www.youtube.com/user/ePagesVideos" title="YouTube"><span class="icon-youtube"></span></a></li>
-        </ul>
-      </div>
+      <ul>
+        <li class="linkedin"><a href="http://www.epages.com/linkedin" title="LinkedIn"><span class="glyphicon icon-linkedin"></span></a></li>
+        <li class="youtube"><a href="http://www.epages.com/youtube" title="YouTube"><span class="glyphicon icon-youtube"></span></a></li>
+        <li class="googleplus"><a href="http://www.epages.com/google+" title="Google+"><span class="glyphicon icon-googleplus"></span></a></li>
+        <li class="twitter"><a href="http://www.epages.com/twitter" title="Twitter"><span class="glyphicon icon-twitter"></span></a></li>
+        <li class="facebook"><a href="http://www.epages.com/facebook" title="Facebook"><span class="glyphicon icon-facebook"></span></a></li>
+        <li class="xing"><a href="http://www.epages.com/xing" title="XING"><span class="glyphicon icon-xing"></span></a></li>
+      </ul>
     </div>
-    <div id="footer-info">
-      <div class="row">
-        <div class="col-md-3"></div>
-        <div class="col-md-2">
-          <ul>
-            <li><a href="http://epages.com/devjobs">Join the Force</a></li>
-            <li><a href="http://www.epages.com/en/company/">About us</li>
-          </ul>
-        </div>
-        <div class="col-md-2">
-          <ul>
-            <li><a href="http://www.epages.com/de/features/release-notes/">Release Notes</a></li>
-            <li><a href="http://www.epages.com/de/features/roadmap/">Roadmap</li>
-          </ul>
-        </div>
-        <div class="col-md-2">
-          <ul>
-            <li><a href="http://blog.epages.com/">epages Blog</a></li>
-            <li><a href="http://www.epages.com">epages.com</li>
-          </ul>
-        </div>
-        <div class="col-md-3"></div>
-      </div>
+    <div class="row links">
+      <ul>
+        <li><a href="http://epages.com/devjobs">Join the Force</a></li>
+        <li><a href="http://www.epages.com/en/company/">About us</a></li>
+        <li><a href="http://blog.epages.com/">epages Blog</a></li>
+      </ul>
     </div>
-    <div id="footer-legal">
-      <div>
-        &copy; 2015 ePages GmbH ·
-        Pilatuspool 2 ·
-        20355 Hamburg ·
-        Germany ·
-        +49-40-350 188-0
-      </div>
-      <div>
-        <a href="http://epages.com/">epages.com</a> ·
-        <a href="mailto:developer.support@epages.com">developer.support@epages.com</a> ·
-        <a href="http://epages.com/de/agb/">Terms & Conditions</a> ·
-        <a href="http://epages.com/de/impressum/">Legal Notice</a> ·
-        <a href="http://epages.com/de/datenschutz/">Data Privacy Protection</a>
-      </div>
+    <div class="row copyright">
+      <p>
+        © 2015&nbsp;ePages&nbsp;GmbH · Pilatuspool&nbsp;2 · 20355&nbsp;Hamburg · Germany · +49-40-350&nbsp;188-0
+        <br>
+        <a href="http://epages.com/de/unternehmen/kontakt/">Kontakt</a> ·
+        <a target="_blank" href="http://epages.com">epages.com</a> ·
+        <a href="mailto:info@epages.com">info@epages.com</a> ·
+        <a href="http://epages.com/de/agb/">AGB</a> ·
+        <a href="http://epages.com/de/impressum/">Impressum</a> ·
+        <a href="http://epages.com/de/datenschutz/">Datenschutz</a> ·
+        <a href="http://epages.com/de/features/release-notes/">Release Notes</a>
+      </p>
     </div>
   </div>
 </footer>
-<a class="back-to-top" style="display: inline;" href="#"><span class="icon-arrowup"></span></a>
-<script>
-jQuery(document).ready(function() {
-    var offset = 250;
-    var duration = 300;
-    jQuery(window).scroll(function() {
-        if (jQuery(this).scrollTop() > offset) {
-            jQuery('.back-to-top').fadeIn(duration);
-        } else {
-            jQuery('.back-to-top').fadeOut(duration);
-        }
-    });
-
-    jQuery('.back-to-top').click(function(event) {
-        event.preventDefault();
-        jQuery('html, body').animate({scrollTop: 0}, duration);
-        return false;
-    })
-});
-</script>

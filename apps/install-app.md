@@ -11,13 +11,13 @@ In this section we will help you through this authorisation process.
 This process describes a perfect scenario. Make sure you gracefully handle failures, call limits, communication errors etc.
 {% endcallout %}
 
-# Credentials
+## Credentials
 
 You retrieved a **Client ID** and a **Client Secret** that are known to both ePages and your application.
 Visit the [get your credentials](page:apps-create#get-your-credentials) page for further information on this subject.
 Your app uses these credentials for identification during the authorisation process.
 
-# Terminology
+## Terminology
 
 Before jumping into the authorisation process, let's look at some terms that will be used in this section.
 
@@ -27,12 +27,11 @@ Before jumping into the authorisation process, let's look at some terms that wil
 | **ePages** | This is where the **App** can view and modify a shop's data by accessing the REST API. Within the OAuth 2.0 protocol this is referred to as **service provider**.|
 | **App**      | An application that would like to access a shop's data. The **Merchant** must grant permission before the **App** can access any data. Within the OAuth 2.0 protocol this is referred to as **client**. |
 
-# Authorisation process
+## Authorisation process
 
 {% image oauth2-flow.png %}
-{% endimage %}
 
-## 1. Ask for permission
+### 1. Ask for permission
 
 The merchant decided to install your app.
 Great!
@@ -41,14 +40,13 @@ While submitting the app, you have to define a **scope**, which outlines the per
 ePages displays the user consent form to the merchant as follows:
 
 {% image asking-for-permission.png %}
-{% endimage %}
 
-## 2. Confirm the installation
+### 2. Confirm the installation
 
 The merchant agrees and submits the consent form by clicking the button **Install** on the consent page.
 The merchant will be redirected to the app's **Application Callback URL**.
 
-## 3. Receive authorisation code
+### 3. Receive authorisation code
 
 ePages makes a `GET` request to the **Application Callback URL** provided by the app developer.
 The required query parameters, see table below, will be automatically passed by ePages.
@@ -75,12 +73,12 @@ Substitutions would be made as given in this example table:
 
 Your app can use the `code` in combination with your **Client ID** and **Client Secret** for obtaining an `access_token`. This code is temporary and will be obsolete after app installation.
 
-## 4. Registration (optional)
+### 4. Registration (optional)
 
 If your app requires a registration process, this optional step can be included before obtaining the `access_token`.
 During this, the app would display the registration or login form to the merchant.
 
-## 5. Exchange authorisation code for access token
+### 5. Exchange authorisation code for access token
 
 To get an `access_token`, make a `POST` request to the token endpoint provided by the `access_token` query parameter on the **Application Callback URL** with the following parameters:
 
@@ -136,7 +134,7 @@ The following table is an example on how to manage the data of different merchan
 Unlike the `api_url`, the derived **Shop** does **not** uniquely identify a merchant.
 {% endcallout %}
 
-## 6. Redirect the merchant
+### 6. Redirect the merchant
 
 Once the authorisation process is complete, your app has to send the merchant back to the `return_url` the app received [before](page:apps-install#receive-authorisation-code).
 
@@ -144,14 +142,12 @@ In case of a successful app installation, the merchant will be able to open the 
 If an error occurred during installation, the **Install** button instead of the **Open app** button will be shown.
 
 {% image app-install-success.png %}
-{% endimage %}
 
 The app will also appear in the administration area in the section **My apps**.
 
 {% image app-install-success-myapps.png %}
-{% endimage %}
 
-# Make an authenticated request to the API
+## Make an authenticated request to the API
 
 Now that your application has received an `access_token`, it can make authenticated requests to the ePages API.
 
@@ -161,10 +157,10 @@ Example:
 GET /rs/shops/CreamyIceShop/products HTTP/1.1
 Host: creamyiceshop.com
 Accept: application/vnd.epages.v1+json
-Authorization: "Bearer 4HZ9hriF6J3GOnd10JbFzdVehycOvAZf
+Authorization: Bearer 4HZ9hriF6J3GOnd10JbFzdVehycOvAZf
 {% endhighlight %}
 
-# Fancy more information?
+## Fancy more information?
 
 All API calls are authenticated according to the OAuth 2.0 protocol.
 Read here for further details: [OAuth 2.0 protocol](https://tools.ietf.org/html/rfc6749).

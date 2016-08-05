@@ -3,17 +3,10 @@
   description: Retrieve the currency information of a shop.
   get:
     description: Returns the currency information of a shop.
+    securedBy: [products_read]
     responses:
-      404:
-        description: Not Found
       200:
         body:
           application/json:
-            example: |
-              {
-              "default" : "EUR",
-              "items":
-                    [
-                        "EUR", "USD", "GBP"
-                    ]
-              }
+            example: !include examples/get_currency_response.json
+            schema: !include schema/get_currency.schema.json
