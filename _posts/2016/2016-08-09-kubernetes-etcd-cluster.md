@@ -68,7 +68,7 @@ So in our example, the load balancer URL always references to the service node.
 
 For this simple HA setup, we use 9 computers in total, which are listed in the image above according to their role and affiliation.
 Each computer has just one network card.
-The RAM size and number of CPUs is adapted to its respective function:
+The RAM size and number of CPUs was chosen according to the computer's function:
 
 * Etcd
   * CPU: 2
@@ -87,7 +87,7 @@ The RAM size and number of CPUs is adapted to its respective function:
   * RAM: 2GB
   * Disk: 30GB
 
-The service node outside of the [cluster](#cluster) has a special position.
+The service node outside of the [cluster](#cluster) has a special functionality.
 For a using the cluster productively, a [load balancer](https://en.wikipedia.org/wiki/Load_balancing_(computing)) is required which is provided by this computer.
 It is not part of the Kubernetes cluster, i.e. it does not run Kubernetes services.
 
