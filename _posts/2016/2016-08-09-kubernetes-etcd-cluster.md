@@ -175,7 +175,7 @@ You then copy the peer certificate as well as the root CA certificate to the cor
 root@root-ca-host:~$ scp etcd.crt ca.crt root@etcd:/etc/ssl/etcd/
 {% endhighlight %}
 
-The following files together with their rights should be availabe on all etcd nodes:
+The following files together should be availabe on all etcd nodes with the correct rights:
 
 {% highlight bash %}
 root@etcd:~$ chown -R etcd:etcd /etc/ssl/etcd
@@ -190,7 +190,7 @@ root@etcd:/etc/ssl/etcd$ ls -la
 ### Installing the etcd daemon
 
 In the next step we install the etcd daemon.
-It will be managed via the [Systemd](https://www.freedesktop.org/wiki/Software/systemd/).
+It will be managed via [Systemd](https://www.freedesktop.org/wiki/Software/systemd/).
 By using the **EnvironmentFile** parameter in the service description, the configuration can be easily outsourced to an extra file (**options.env**).
 As the option **ETCD_ADVERTISE_CLIENT_URLS** is node-specific, you will have to enter the IP of the primary network card per node.
 To simplify this, we use the variable **PRIMARY_HOST_IP**  in the following commands:
