@@ -275,7 +275,7 @@ This command is executed on one of the etcd nodes, as the etcd service, addition
 root@etcd:~$ curl -X PUT -d 'value={"Network":"10.2.0.0/16","Backend":{"Type":"vxlan"},"SubnetLen": 24}' http://127.0.0.1:2379/v2/keys/coreos.com/network/config
 {% endhighlight %}
 
-The network area used here (10.2.0.0/16) enables to operated flanneld 256 [worker nodes](#worker-nodes) with 256 [pods](#pod) each.
+The network area used here (10.2.0.0/16) enables to operated flanneld 256 [worker nodes](#frontendworker-nodes) with 256 [pods](#pod) each.
 Depending on the respective network infrastructure, this area has to be changed to avoid collisions with other networks.
 If e.g. the network (10.2.0.0/16) already exists in the own infrastructure, the applications within the cluster would not be able to access that network.
 The iptables rules of flannld would block a redirection.
