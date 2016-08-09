@@ -39,14 +39,16 @@ layout: default
     {% unless page.hide_sitemap %}
       <div class="contentnav">
         <ul id="sitemap">
-          <li class="sitemap-headline">Release<br />
-            <select id="api-version" name="version">
-              <option value="" selected>{{ site.data['api-versions']['latest'] }}</option>
-              {% for version in versions reversed %}
-                <option value="v-{{ version['title'] }}">{{ version['title'] }}</option>
-              {% endfor %}
-            </select>
-          </li>
+          {% if page.url contains '/apps/api-reference' %}
+            <li class="sitemap-headline">Release<br />
+              <select id="api-version" name="version">
+                <option value="" selected>{{ site.data['api-versions']['latest'] }}</option>
+                {% for version in versions reversed %}
+                  <option value="v-{{ version['title'] }}">{{ version['title'] }}</option>
+                {% endfor %}
+              </select>
+            </li>
+          {% endif %}
           {% for category in sitemap %}
             <li class="sitemap-headline">{{ category.title }}</li>
             {% for entry in category.entries %}
