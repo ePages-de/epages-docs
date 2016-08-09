@@ -13,10 +13,10 @@ As part of this process, the whole cluster services communication is secured via
 ## Outline
 
 Kubernetes offers a wide [range of settings](http://kubernetes.io/docs/getting-started-guides/).
-Therefore, in this series we concentrate on version [1.2.2](https://github.com/kubernetes/kubernetes/tree/v1.2.2) and its characteristics.
+Therefore, in this series we focus on version [1.2.2](https://github.com/kubernetes/kubernetes/tree/v1.2.2) and its characteristics.
 
 In order not to specify every command per host, we use role names for groups of computers.
-Together with the user and the workspace, a command could look as follows:
+Considering the user and the workspace, a command could look as follows:
 
 {% highlight bash %}
 root@common:~$ ls -la /etc
@@ -24,8 +24,8 @@ root@common:~$ ls -la /etc
 
 This example shows a *root* user listing all files of the directory */etc* of the computers with the role *common*.
 
-In many cases we will avoid explaining commands in too much detail, as they are self-explaining.
-Any particularities will be mentioned, where specifically required.
+In many cases we will avoid explaining commands in detail, as they are self-explaining.
+Any specific characteristics will be mentioned at the corresponding points.
 
 In order to ensure that all content is well understood, some frequently used terms are explained in the [Glossary](#glossary) at the end of this post.
 These terms are linked first time they appear in the post.
@@ -42,11 +42,11 @@ If not, [it can be easily created](https://jamielinux.com/docs/openssl-certifica
 
 For executing the commands we use the Bash that Debian 8 contains by default.
 It can be reached via a remote console ([ssh](https://en.wikipedia.org/wiki/Secure_Shell)).
-The connection can be established with an additional user that has root access.
+The connection can be established with an additional user who is able to gain root rights.
 
 ### Additional packages
 
-In this series, we use some commands that we assume are installed via the package manager.
+In this series, we assume that the commands we use are installed via the package manager.
 Ensure the following programs are installed on all computers:
 
 * [ssh-server](https://packages.debian.org/en/jessie/openssh-server)
@@ -60,15 +60,15 @@ Ensure the following programs are installed on all computers:
 
 During installation a load balancer URL is used in several places and has to be available in the own network.
 In this simple configuration it is sufficient to enter the [FQDN](https://en.wikipedia.org/wiki/Fully_qualified_domain_name) of the [service nodes](#nodes).
-In our example, the load balancer URL always references to the service node.
+So in our example, the load balancer URL always references to the service node.
 
 ## Hardware assembly
 
 {% imagecaption blog/blog-kube-node-structure.jpg %} Overview of nodes with their IPs and roles {% endimagecaption %}
 
-For this easy HA setup, we use 9 computers in total, which are listed in the image above according to their role and what they belong to.
+For this simple HA setup, we use 9 computers in total, which are listed in the image above according to their role and affiliation.
 Each computer has just one network card.
-The RAM size and number of CPUs is adapted to its respective function:
+The RAM size and number of CPUs was chosen according to the computer's function:
 
 * Etcd
   * CPU: 2
@@ -87,7 +87,7 @@ The RAM size and number of CPUs is adapted to its respective function:
   * RAM: 2GB
   * Disk: 30GB
 
-The service node outside of the [cluster](#cluster) has a special position.
+The service node outside of the [cluster](#cluster) has a special functionality.
 For a using the cluster productively, a [load balancer](https://en.wikipedia.org/wiki/Load_balancing_(computing)) is required which is provided by this computer.
 It is not part of the Kubernetes cluster, i.e. it does not run Kubernetes services.
 
@@ -175,7 +175,7 @@ You then copy the peer certificate as well as the root CA certificate to the cor
 root@root-ca-host:~$ scp etcd.crt ca.crt root@etcd:/etc/ssl/etcd/
 {% endhighlight %}
 
-The following files together with their rights should be availabe on all etcd nodes:
+The following files together should be availabe on all etcd nodes with the correct rights:
 
 {% highlight bash %}
 root@etcd:~$ chown -R etcd:etcd /etc/ssl/etcd
@@ -190,7 +190,7 @@ root@etcd:/etc/ssl/etcd$ ls -la
 ### Installing the etcd daemon
 
 In the next step we install the etcd daemon.
-It will be managed via the [Systemd](https://www.freedesktop.org/wiki/Software/systemd/).
+It will be managed via [Systemd](https://www.freedesktop.org/wiki/Software/systemd/).
 By using the **EnvironmentFile** parameter in the service description, the configuration can be easily outsourced to an extra file (**options.env**).
 As the option **ETCD_ADVERTISE_CLIENT_URLS** is node-specific, you will have to enter the IP of the primary network card per node.
 To simplify this, we use the variable **PRIMARY_HOST_IP**  in the following commands:
@@ -275,7 +275,7 @@ This command is executed on one of the etcd nodes, as the etcd service, addition
 root@etcd:~$ curl -X PUT -d 'value={"Network":"10.2.0.0/16","Backend":{"Type":"vxlan"},"SubnetLen": 24}' http://127.0.0.1:2379/v2/keys/coreos.com/network/config
 {% endhighlight %}
 
-The network area used here (10.2.0.0/16) enables to operated flanneld 256 [worker nodes](#frontendworker-nodes) with 256 [pods](#pod) each.
+The network area used here (10.2.0.0/16) enables to operated flanneld 256 [worker nodes](#worker-nodes) with 256 [pods](#pod) each.
 Depending on the respective network infrastructure, this area has to be changed to avoid collisions with other networks.
 If e.g. the network (10.2.0.0/16) already exists in the own infrastructure, the applications within the cluster would not be able to access that network.
 The iptables rules of flannld would block a redirection.
