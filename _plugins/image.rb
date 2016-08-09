@@ -12,7 +12,7 @@ module Jekyll
       url = unless @url =~ /^https?:\/\// then context.registers[:site].baseurl + '/assets/images/' + @url else @url end
       width_html = unless @width.nil? then "style='width: #{@width}'" else '' end
       image_html = "<img src=\"#{url}\" alt=\"Image could not be loaded\" #{width_html if @float.nil?}/>"
-      "<div class=\"imagebox #{@float}\" #{width_html if @float}>#{image_html}</div>"
+      "<a class=\"imagebox #{@float}\" #{width_html if @float} href=\"#{url}\" data-lightbox=\"imagebox\">#{image_html}</a>"
     end
   end
 
@@ -32,7 +32,7 @@ module Jekyll
       width_html = unless @width.nil? then "style='width: #{@width}'" else '' end
       image_html = "<img src=\"#{url}\" alt=\"Image could not be loaded\" #{width_html if @float.nil?}/>"
       caption_html = if caption != '' then "<label>#{caption}</label>" else '' end
-      "<div class=\"imagebox #{@float}\" #{width_html if @float}>#{image_html + caption_html}</div>"
+      "<a class=\"imagebox #{@float}\" #{width_html if @float} href=\"#{url}\" data-lightbox=\"imagebox\">#{image_html + caption_html}</a>"
     end
   end
 end
