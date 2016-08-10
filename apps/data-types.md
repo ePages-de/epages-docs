@@ -181,7 +181,7 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | Attribute | Type | Description |
 | - | :-: |  - |
 | amount | number | The amount displayed as a decimal number. |
-| unit | enum | The unit displayed as abbreviated unit, if available. Can be *g*, *kg*, *mg*, *oz*, *lb* or *t*. Otherwise a localised name of the unit is displayed. Can be gram(s), *kilogram(s)*, *milligram(s)*, *ounce(s)*, *pound(s)* or *ton(s)*.  |
+| unit | enum | The abbreviation of the delivery weight unit. Can be *g*, *kg*, *mg*, *oz*, *lb* or *t*.  |
 
 ## image
 
