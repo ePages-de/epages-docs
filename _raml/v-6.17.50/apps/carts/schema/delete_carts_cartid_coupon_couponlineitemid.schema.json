@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "Delete Carts CartId Coupon CouponLinItemId Schema",
+  "type": "object",
+  "properties": {
+    "": {
+      "type": "object of [cart](page:apps-data-types#cart)",
+      "description": ""
+    }
+  }
+}
