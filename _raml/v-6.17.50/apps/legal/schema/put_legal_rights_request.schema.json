@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "Put Legal Rights of Withdrawal Request Schema",
+  "type": "object",
+  "properties": {
+    "": {
+      "type": "object of [contentPage](page:apps-data-types#contentpage)",
+      "description": ""
+    }
+  }
+}

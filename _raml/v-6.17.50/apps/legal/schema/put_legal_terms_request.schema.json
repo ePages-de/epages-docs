@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "Put Legal Terms and Conditions Request Schema",
+  "type": "object",
+  "properties": {
+    "": {
+      "type": "object of [contentPage](page:apps-data-types#contentpage)",
+      "description": ""
+    }
+  }
+}

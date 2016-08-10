@@ -1,0 +1,134 @@
+#%RAML 0.8
+displayName: Orders
+get:
+  description: Returns a list of orders. By default the results for orders are sorted by creationDate.
+  securedBy: [orders_read]
+  is: [ locale, paged ]
+  queryParameters:
+    viewedOn:
+      description: Returns orders where the status Viewed is set.
+      type: boolean
+      required : false
+    pendingOn:
+      description: Returns orders where the status Pending is set.
+      type: boolean
+      required : false
+    archivedOn:
+      description: Returns orders where the status Archived is set.
+      type: boolean
+      required : false
+    rejectedOn:
+      description: Returns orders where the status Rejected is set.
+      type: boolean
+      required : false
+    closedOn:
+      description: Returns orders where the status Closed is set.
+      type: boolean
+      required : false
+    dispatchedOn:
+      description: Returns orders where the status Dispatched is set.
+      type: boolean
+      required : false
+    paidOn:
+      description: Returns orders where the status Paid is set.
+      type: boolean
+      required : false
+    returnedOn:
+      description: Returns orders where the status Returned is set.
+      type: boolean
+      required : false
+    deliveredOn:
+      description: Returns orders where the status Delivered is set.
+      type: boolean
+      required : false
+    invoicedOn:
+      description: Returns orders where the status Invoiced is set.
+      type: boolean
+      required : false
+    lastUpdated:
+      description: Sort by last updated orders.
+      type: boolean
+      required : false
+    customerId:
+      description: The unique identifier of the customer.
+      type: string
+      required : false
+    productId:
+      description: The unique identifier of the product.
+      type: string
+      required : false
+    updatedFrom:
+      description: Filters updated orders from this timestamp (format according to ISO 8601).
+      type: string
+      required : false
+    createdBefore:
+      description: Filters orders created before this timestamp (format according to ISO 8601). The maximum time frame for displaying orders is 1 year. If no filter is set, all orders will be displayed.
+      type: string
+      required : false
+    createdAfter:
+      description: Filters orders created after this timestamp (format according to ISO 8601). The maximum time frame for displaying orders is 1 year. If no filter is set, all orders will be displayed.
+      type: string
+      required : false
+    currency:
+      description: Represents the currency code for the order according to ISO 4217.
+      type: string
+      required : false
+  responses:
+    200:
+      body:
+        application/json:
+          example: !include examples/get_order_response.json
+          schema: !include schema/get_order.schema.json
+/{orderId}:
+  displayName: Order
+  get:
+    description: Returns information for a single order identified by the provided order ID.
+    securedBy: [orders_read]
+    is: [ locale ]
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include examples/get_order_orderid_response.json
+            schema: !include schema/get_order_orderid.schema.json
+  patch:
+    description: Updates information for a single order with partial data according to [RFC 6902](https://tools.ietf.org/html/rfc6902). You can either add or remove certain attributes.<br><br>
+
+        *Supported JSON-PATCH operations*<br>
+        - add (sets or replaces an attribute)<br>
+        - remove (unsets an attribute)<br><br>
+
+        *Attribute paths that allow updates via PATCH* ( **¹** supports *add* only)<br>
+              - /orderNumber¹<br>
+              - /customerComment<br>
+              - /internalNote<br>
+              - /billingAddress¹<br>
+              - /shippingAddress¹<br>
+              - /viewedOn<br>
+              - /rejectedOn<br>
+              - /inProcessOn<br>
+              - /pendingOn<br>
+              - /readyForDispatchOn<br>
+              - /partiallyDispatchedOn<br>
+              - /dispatchedOn<br>
+              - /deliveredOn<br>
+              - /partiallyInvoicedOn<br>
+              - /invoicedOn<br>
+              - /partiallyPaidOn<br>
+              - /paidOn<br>
+              - /returnedOn<br>
+              - /closedOn<br>
+              - /archivedOn<br>
+
+    securedBy: [orders_write]
+    is: [ locale ]
+    body:
+      application/json-patch+json:
+        example: !include examples/patch_order_orderid_request.json
+        schema: !include schema/patch_order_orderid_request.schema.json
+    responses:
+      200:
+        body:
+            application/json:
+                example: !include examples/patch_order_orderid_response.json
+                schema: !include schema/patch_order_orderid.schema.json
