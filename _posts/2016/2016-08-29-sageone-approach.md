@@ -2,7 +2,7 @@
 layout: post
 title: "approach of sageone connector as a deep integrated app"
 date: "2016-08-29 07:00:28"
-image: blog-header/sageone-deep-app.jpg
+image: blog-header/bridge.jpg
 categories: tech-stories
 authors: ["Mats"]
 ---
