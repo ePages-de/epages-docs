@@ -39,7 +39,7 @@ layout: default
     {% unless page.hide_sitemap %}
       <div class="contentnav">
         <ul id="sitemap">
-          {% if page.url contains '/apps/api-reference' %}
+          {% if chapter contains 'apps' %}
             <li class="sitemap-headline">Release<br />
               <select id="api-version" name="version">
                 <option value="" selected>{{ site.data['api-versions']['latest'] }}</option>
