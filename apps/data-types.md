@@ -172,7 +172,7 @@ This object is used for the attributes of shippingAddress and billingAddress.
 
 | Attribute | Type | Description |
 | - | :-: |  - |
-| customerNumber | string | The number by which the merchant tracks the customer. If not provided, the customer number will be generated automatically.|
+| customerNumber | string | The number by which the merchant tracks the customer. If provided, the customer number must be unique. If not provided, the customer number will be generated automatically.|
 | internalNote | string | Internal note for the customer done by the merchant. |
 | billingAddress | [address](page:apps-data-types#address) | The billing address of the customer. |
 
