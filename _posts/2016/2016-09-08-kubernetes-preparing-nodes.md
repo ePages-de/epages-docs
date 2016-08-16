@@ -8,7 +8,7 @@ authors: ["Karsten P."]
 ---
 
 The second part of the blog post series deals with the preparation of the Kubernetes and Service nodes.
-It describes the installation of the HAProxy, the Flannel daemon (flanneld), the docker engine (docker) and kubelet. 
+It describes the installation of the HAProxy, the Flannel daemon (flanneld), the docker engine (docker) and kubelet.
 
 ## Install the Service node
 
@@ -109,7 +109,7 @@ root@root-ca-host:~$ openssl x509 \
   -extensions v3_req \
   -extfile openssl.cnf \
   -sha256
-root@root-ca-host:~$ scp etcd-client.crt ca.crt root@kubernetes:/etc/ssl/etcd/  
+root@root-ca-host:~$ scp etcd-client.crt ca.crt root@kubernetes:/etc/ssl/etcd/
 {% endhighlight %}
 
 Alltogether there should be the following files on all Kubernetes nodes:
