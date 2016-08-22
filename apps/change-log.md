@@ -10,6 +10,30 @@ In order to keep track of these changes we recommend you to follow [@epagesdevs]
 
 <hr>
 
+## 2016-08-25
+
+### Changes with software release 6.17.51
+
+#### <i class="fa fa-plus"></i> New
+
+* Implemented menu selection for software release version.
+
+#### <i class="fa fa-pencil"></i> Update
+
+* Added data type [`deliveryWeightQuantity`](https://developer.epages.com/apps/data-types#deliveryweightquantity).
+* Updated data type [`quantity`](https://developer.epages.com/apps/data-types#quantity).
+* Updated description of query parameter `updatedFrom` in [`GET` orders](https://developer.epages.com/apps/api-reference/get-shops-shopid-orders.html).
+* Updated description of [`PATCH` orders/{orderId}](https://developer.epages.com/apps/api-reference/patch-shops-shopid-orders-orderid.html).
+* Added response code [*409 Conflict*](https://developer.epages.com/apps/response-codes#responses-in-the-4xx-range.html).
+* Amended `customerNumber` attribute of data type [`customer (create request)`](https://developer.epages.com/apps/data-types#customer-create-request).
+
+#### <i class="fa fa-minus"></i> Remove
+
+* Removed slideshow link from [`GET` products](https://developer.epages.com/apps/api-reference/get-shops-shopid-products.html).
+* Removed `shippingMethodsRestrictedTo` attribute from [`GET` products](https://developer.epages.com/apps/api-reference/get-shops-shopid-products.html).
+
+<hr>
+
 ## 2016-07-26
 
 ### Changes with software release 6.17.50
@@ -37,8 +61,8 @@ In order to keep track of these changes we recommend you to follow [@epagesdevs]
 * Added `taxClassId` attribute to cart responses, where missing.
 * Added `deliveryWeight` attribute to data type [`productLineItem`](https://developer.epages.com/apps/data-types#productlineitem).
 * Added `couponLineItem` attribute to data type [`lineItemContainer`](https://developer.epages.com/apps/data-types#lineitemcontainer).
-* Renamed datatype `taxClass` to [`taxClassInfo`](https://developer.epages.com/apps/data-types#taxclassinfo).
-* Added datatype [`taxClass`](https://developer.epages.com/apps/data-types#taxclass).
+* Renamed data type `taxClass` to [`taxClassInfo`](https://developer.epages.com/apps/data-types#taxclassinfo).
+* Added data type [`taxClass`](https://developer.epages.com/apps/data-types#taxclass).
 
 <hr>
 
