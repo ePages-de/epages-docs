@@ -46,6 +46,8 @@ ePages displays the user consent form to the merchant as follows:
 The merchant agrees and submits the consent form by clicking the button **Install** on the consent page.
 The merchant will be redirected to the app's **Application Callback URL**.
 
+{% image application-callback.png %}
+
 ### 3. Receive authorisation code
 
 ePages makes a `GET` request to the **Application Callback URL** provided by the app developer.
@@ -77,6 +79,8 @@ Your app can use the `code` in combination with your **Client ID** and **Client 
 
 If your app requires a registration process, this optional step can be included before obtaining the `access_token`.
 During this, the app would display the registration or login form to the merchant.
+
+{% image registration.png %}
 
 ### 5. Exchange authorisation code for access token
 
