@@ -25,7 +25,7 @@ In order to keep track of these changes we recommend you to follow [@epagesdevs]
 * Updated description of query parameter `updatedFrom` in [`GET` orders](https://developer.epages.com/apps/api-reference/get-shops-shopid-orders.html).
 * Updated description of [`PATCH` orders/{orderId}](https://developer.epages.com/apps/api-reference/patch-shops-shopid-orders-orderid.html).
 * Added response code [*409 Conflict*](https://developer.epages.com/apps/response-codes#responses-in-the-4xx-range.html).
-* Amended `customerNumber` attribute of data type [`customer (create request)`](https://developer.epages.com/apps/data-types#customer-create-request).
+* Updated description of `customerNumber` attribute of data type [`customer (create request)`](https://developer.epages.com/apps/data-types#customer-create-request).
 
 #### <i class="fa fa-minus"></i> Remove
 
