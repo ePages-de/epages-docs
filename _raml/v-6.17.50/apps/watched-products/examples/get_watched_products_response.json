@@ -1,0 +1,19 @@
+{
+  "results": 1,
+  "page": 1,
+  "resultsPerPage": 10,
+  "items": [
+    {
+      "productId": "51E7F905-2E4C-78C2-30C2-AC14145FA4E5",
+      "name": "Dr.Boom - Red Power",
+      "productNumber": "HP-003",
+      "watchers": 1,
+      "links": [
+        {
+          "rel": "product",
+          "href": "https://pm.epages.com/rs/shops/apidocu/products/51E7F905-2E4C-78C2-30C2-AC14145FA4E5"
+        }
+      ]
+    }
+  ]
+}
