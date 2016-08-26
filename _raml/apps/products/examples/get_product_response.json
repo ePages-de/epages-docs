@@ -66,7 +66,6 @@
         "amount": 350,
         "unit": "g"
       },
-      "shippingMethodsRestrictedTo": null,
       "availabilityText": "",
       "availability": null,
       "energyLabelsString": null,
@@ -155,7 +154,6 @@
         "amount": 260,
         "unit": "g"
       },
-      "shippingMethodsRestrictedTo": null,
       "availabilityText": "In stock<br />can be shipped within 3-5 days",
       "availability": "OnStock",
       "energyLabelsString": null,
@@ -251,7 +249,6 @@
         "amount": 310,
         "unit": "g"
       },
-      "shippingMethodsRestrictedTo": null,
       "availabilityText": "In stock<br />can be shipped within 3-5 days",
       "availability": "OnStock",
       "energyLabelsString": null,

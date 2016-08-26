@@ -28,11 +28,11 @@ In the drop down menu, choose the field **Developer apps**.
 3. Fill out the input field **App name**.
 Specify the **Application Callback URL**.
 Make sure the URL is https and publicly accessible.
-Note: HTTP Application Callback URLs can be used for developer apps, but you need to provide an HTTPS URL once you want to submit the app to the App & Theme Store.
+Note: HTTP Application Callback URLs can be used for developer apps, but you need to provide an HTTPS URL once you want to submit the app to the App Store.
 Once the input fields are filled out, click the button **Generate access data**.
     {% image fillout-app-name.png %}
 
-4. You will be assigned a **Client ID**, a **Client Secret** as well as an **Access Token**.
+4. You will be assigned a **Client ID**, a **Client Secret** as well as an **Access token**.
 The **Access token** is granted by your test shop, so that you can start accessing the ePages API immediately.
     {% image test-shop-credentials.png %}
 

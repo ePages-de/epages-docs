@@ -58,7 +58,7 @@ get:
       type: string
       required : false
     updatedFrom:
-      description: Filters updated orders from this timestamp (format according to ISO 8601).
+      description: Filters updated orders from this timestamp (format according to ISO 8601).<br><br>Orders with edited product line items (quantity or price), added or removed product line items, changed shipping or payment method, changed billing address as well as changed, added or removed shipping address are also included when using this query parameter.
       type: string
       required : false
     createdBefore:
@@ -92,7 +92,7 @@ get:
             example: !include examples/get_order_orderid_response.json
             schema: !include schema/get_order_orderid.schema.json
   patch:
-    description: Updates information for a single order with partial data according to [RFC 6902](https://tools.ietf.org/html/rfc6902). You can either add or remove certain attributes.<br><br>
+    description: Updates information for a single order with partial data according to [RFC 6902](https://tools.ietf.org/html/rfc6902). You can either add or remove certain attributes. Note that an order cannot be updated once it is in edit mode. In that case, response code 409 will appear.<br><br>
 
         *Supported JSON-PATCH operations*<br>
         - add (sets or replaces an attribute)<br>

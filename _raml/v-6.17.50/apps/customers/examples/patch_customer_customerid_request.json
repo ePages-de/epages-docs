@@ -1,0 +1,7 @@
+[
+  {
+    "op": "add",
+    "path": "/customerNumber",
+    "value": "0812"
+  }
+]

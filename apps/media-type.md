@@ -8,8 +8,10 @@ The basic media types the API supports are:
 
 {% highlight text %}
 application/json
-application/csv
+application/json-patch+json
+application/x-www-form-urlencoded
 multipart/form-data
+text/csv
 {% endhighlight %}
 
 ## Content types
