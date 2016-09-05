@@ -7,13 +7,13 @@ categories: tech-stories
 authors: ["Karsten P."]
 ---
 
-The second part of the blog post series deals with the preparation of the Kubernetes and Service nodes.
+The second part of this blog post series deals with the preparation of the Kubernetes and service nodes.
 It describes the installation of the HAProxy, the Flannel daemon (flanneld), the docker engine (docker) and kubelet.
 
-## Install the Service node
+## Installing the service node
 
-The Service node which is located outside the cluster undertakes the task of a load balancer.
-Since the open source version of nginx does not support TCP loadbalancing we use [HAProxy](http://www.haproxy.org/).
+The service node which is located outside the cluster undertakes the task of a load balancer.
+Since the open source version of nginx does not support TCP load balancing we use [HAProxy](http://www.haproxy.org/).
 HAProxy distributes packages between the hosts on the [transport layer](https://en.wikipedia.org/wiki/Transport_layer) of the [OSI reference model](https://en.wikipedia.org/wiki/OSI_model).
 The following configuration is set up after the [Installation of HAProxy](https://haproxy.debian.net/).
 
@@ -66,8 +66,8 @@ For this purpose flanneld creates its own virtual network interface and must the
 ### Create *etcd* client certificates
 
 Kubernetes nodes need a client certificate because each user of the *etcd* cluster has to authenticate.
-It can be created like described in the first part of this blog post series but there are differences in the _openssl.cnf_.
-It is a bit simpler since flanneld has to show itself as client only.
+It can be created as described in [the first part of this blog post series](https://developer.epages.com/blog/2016/08/09/kubernetes-etcd-cluster.html) but there are differences in the _openssl.cnf_.
+The _openssl.cnf_ has a simpler structure as flanneld has to identify itself as client only.
 
 {% highlight bash %}
 root@kubernetes:~$ mkdir -p /etc/ssl/etcd
@@ -112,7 +112,7 @@ root@root-ca-host:~$ openssl x509 \
 root@root-ca-host:~$ scp etcd-client.crt ca.crt root@kubernetes:/etc/ssl/etcd/
 {% endhighlight %}
 
-Alltogether there should be the following files on all Kubernetes nodes:
+Alltogether, the following files should be available on all Kubernetes nodes:
 
 {% highlight bash %}
 root@kubernetes:~$ cd /etc/ssl/etcd/
@@ -123,11 +123,11 @@ root@kubernetes:/etc/ssl/etcd$ ls -la
 -rw-------  1 root root 4713 Jun  33 08:15 etcd-client.key
 {% endhighlight %}
 
-### Installation of the daemon
+### Installing of the daemon
 
 For the various settings an extra file __options.env__ is used.
-Besides all *Etcd* nodes it contains the certificates.
-Finally the *Systemd* service is created.
+Besides all *etcd* nodes __options.env__ file contains the certificates.
+Finally, the *Systemd* service is created.
 
 {% highlight bash %}
 root@kubernetes:~$ cd /tmp
@@ -141,10 +141,10 @@ root@kubernetes:/tmp$ chmod 755 /opt/flanneld/mk-docker-opts.sh
 root@kubernetes:/tmp$ mkdir -p /etc/flanneld
 root@kubernetes:/tmp$ export PRIMARY_HOST_IP=192.168.1.[1|2] or 192.168.2.[1|2|3]
 root@kubernetes:/tmp$ cat > /etc/flanneld/options.env << EOF
-FLANNELD_ETCD_ENDPOINTS=https://192.168.0.1:2379,https://192.168.0.2:2379,https://192.168.0.3:2379
-FLANNELD_ETCD_CAFILE=/etc/ssl/etcd/ca.crt
-FLANNELD_ETCD_CERTFILE=/etc/ssl/etcd/etcd-client.crt
-FLANNELD_ETCD_KEYFILE=/etc/ssl/etcd/etcd-client.key
+FLANNELD_etcd_ENDPOINTS=https://192.168.0.1:2379,https://192.168.0.2:2379,https://192.168.0.3:2379
+FLANNELD_etcd_CAFILE=/etc/ssl/etcd/ca.crt
+FLANNELD_etcd_CERTFILE=/etc/ssl/etcd/etcd-client.crt
+FLANNELD_etcd_KEYFILE=/etc/ssl/etcd/etcd-client.key
 FLANNELD_IFACE=$PRIMARY_HOST_IP
 FLANNELD_PUBLIC_IP=$PRIMARY_HOST_IP
 EOF
@@ -168,7 +168,7 @@ ExecStartPre=/bin/mkdir -p /run/flanneld
 
 ExecStart=/usr/local/bin/flanneld --ip-masq=true
 
-# Update docker options
+## Updating Docker options
 ExecStartPost=/opt/flanneld/mk-docker-opts.sh -d /run/flanneld/docker_opts.env -i
 
 [Install]
@@ -180,13 +180,13 @@ root@kubernetes:/tmp$ rm -rf flannel-0.5.5
 root@kubernetes:/tmp$ rm -f flannel-0.5.5-linux-amd64.tar.gz
 {% endhighlight %}
 
-## Docker engine
+### Docker engine
 
 As you can see in _/etc/systemd/system/flanneld.service_ the script _mk-docker-opts.sh_ creates environment variables with the file _/run/flanneld/docker_opts.env_.
 These variables are used by the Docker daemon.
 We use the [drop-in feature](https://www.freedesktop.org/software/systemd/man/systemd.unit.html) of *Systemd*.
 So there is no need to change the standard service definition of Docker.
-The [Installation of the Docker engine](https://docs.docker.com/engine/installation/linux/debian/) is done in the standard way.
+The [installation of the Docker engine](https://docs.docker.com/engine/installation/linux/debian/) is done in the standard way.
 
 {% highlight bash %}
 root@kubernetes:~$ apt-get purge lxc-docker*
@@ -213,14 +213,13 @@ root@kubernetes:~$ systemctl restart docker
 {% endhighlight %}
 
 *drop-in* overwrites the start command.
-The new one which is loaded via the option *EnvironmentFile*.
-It contains the variables from the file _/run/flanneld/docker_opts.env_ that was created by *flanneld*.
+The new one contains the variables from the file _/run/flanneld/docker_opts.env_ generated by the *flanneld* and loaded via the option *EnvironmentFile*.
 
-# Kubelet
+## Kubelet
 
 [Kubelet](http://kubernetes.io/docs/admin/kubelet/) controls the directory _/etc/kubernetes/manifests_ and creates Docker containers from the Pod definitions located here.
-Therefore it also needs root rights.
-Please be aware of the fact that the Kubelet version has to be compatible to the one of the API server.
+Therefore, it also needs root rights.
+The Kubelet version has to be compatible to the one of the API server.
 
 ### Installation
 Kubelet is part of the official Kubernetes release.
@@ -239,7 +238,7 @@ root@kubernetes:/tmp$ mkdir -p /etc/kubernetes/manifests
 {% endhighlight %}
 
 In addition we have to add [Kernel boot parameter](https://github.com/kubernetes/kubernetes/issues/9837).
-The example how we do this using *sed*.
+Refer to the following code example on how to do this using *sed*.
 
 {% highlight bash %}
 root@kubernetes:~$ sed -i "s/^GRUB_CMDLINE_LINUX_DEFAULT=\"\(.*\)\"$/GRUB_CMDLINE_LINUX_DEFAULT=\"\1\ cgroup_enable=memory\"/g" /etc/default/grub
@@ -249,11 +248,14 @@ root@kubernetes:~$ reboot
 
 ## Summary
 
-The external __Service node__ is used as a load balancer.
+The external __service node__ is used as a load balancer.
 Working on the [Transport layer](https://en.wikipedia.org/wiki/Transport_layer) of the [OSI reference model](https://en.wikipedia.org/wiki/OSI_model) it does not terminate SSL but simply routes the traffic.
 
 On all __Kubernetes nodes__ run various services.
 *Flanneld* is required to run the *Docker engine*.
-It stores data for the networks in the *Etcd cluster* and therefore needs a client certificate.
+It stores data for the networks in the *etcd cluster* and therefore needs a client certificate.
 The *Docker engine* is a standard installation.
 It uses its own *drop-in* to be able to handle the parameters provided by *flanneld*.
+
+# Related posts
+* [How to set up a HA Kubernetes cluster: etcd cluster with SSL](https://developer.epages.com/blog/2016/08/09/kubernetes-etcd-cluster.html)
