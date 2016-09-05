@@ -141,10 +141,10 @@ root@kubernetes:/tmp$ chmod 755 /opt/flanneld/mk-docker-opts.sh
 root@kubernetes:/tmp$ mkdir -p /etc/flanneld
 root@kubernetes:/tmp$ export PRIMARY_HOST_IP=192.168.1.[1|2] or 192.168.2.[1|2|3]
 root@kubernetes:/tmp$ cat > /etc/flanneld/options.env << EOF
-FLANNELD_etcd_ENDPOINTS=https://192.168.0.1:2379,https://192.168.0.2:2379,https://192.168.0.3:2379
-FLANNELD_etcd_CAFILE=/etc/ssl/etcd/ca.crt
-FLANNELD_etcd_CERTFILE=/etc/ssl/etcd/etcd-client.crt
-FLANNELD_etcd_KEYFILE=/etc/ssl/etcd/etcd-client.key
+FLANNELD_ETCD_ENDPOINTS=https://192.168.0.1:2379,https://192.168.0.2:2379,https://192.168.0.3:2379
+FLANNELD_ETCD_CAFILE=/etc/ssl/etcd/ca.crt
+FLANNELD_ETCD_CERTFILE=/etc/ssl/etcd/etcd-client.crt
+FLANNELD_ETCD_KEYFILE=/etc/ssl/etcd/etcd-client.key
 FLANNELD_IFACE=$PRIMARY_HOST_IP
 FLANNELD_PUBLIC_IP=$PRIMARY_HOST_IP
 EOF
