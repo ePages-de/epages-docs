@@ -10,7 +10,7 @@ authors: ["Birgit, Leana", "Serena"]
 You've spent days and weeks perfecting your resume, preparing for interviews, and making a good impression at personal meetings.
 Now that the application process is over, and you've landed the job, it's definitely time to throw confetti.
 But when the first working day at the new company approaches, you wonder what your first days, weeks, and months will be like.
-Being nicely welcomed and appreciated ensures that we fondly remember our first working day..
+Being nicely welcomed and appreciated ensures that we fondly remember our first working day.
 
 Here's what we do at ePages to make you feel comfortable in your new job:
 

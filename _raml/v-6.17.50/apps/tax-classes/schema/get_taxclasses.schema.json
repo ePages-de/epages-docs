@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "Get Tax Classes Schema",
+  "type": "object",
+  "properties": {
+    "results": {
+      "type": "integer",
+      "description": "The number of tax classes in total."
+    },
+    "page": {
+      "type": "integer",
+      "description": "The page number on which the tax classes appears."
+    },
+    "resultsPerPage": {
+      "type": "integer",
+      "description": "The number of tax classes returned per page."
+    },
+    "items": {
+      "type": "array of [taxClass](page:apps-data-types#taxclass)",
+      "description": "The list of all tax classes."
+    },
+    "defaultTaxClass": {
+      "type": "object of [taxClass](page:apps-data-types#taxclass)",
+      "description": "The default tax class."
+    },
+    "defaultTaxClassDigital": {
+      "type": "object of [taxClass](page:apps-data-types#taxclass)",
+      "description": "The default tax class for digital products and services."
+    }
+  }
+}

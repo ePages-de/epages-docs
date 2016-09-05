@@ -172,9 +172,16 @@ This object is used for the attributes of shippingAddress and billingAddress.
 
 | Attribute | Type | Description |
 | - | :-: |  - |
-| customerNumber | string | The number by which the merchant tracks the customer. If not provided, the customer number will be generated automatically.|
+| customerNumber | string | The number by which the merchant tracks the customer. If provided, the customer number must be unique. If not provided, the customer number will be generated automatically.|
 | internalNote | string | Internal note for the customer done by the merchant. |
 | billingAddress | [address](page:apps-data-types#address) | The billing address of the customer. |
+
+## deliveryWeightQuantity
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| amount | number | The amount displayed as a decimal number. |
+| unit | enum | The abbreviation of the delivery weight unit. Can be *g*, *kg*, *mg*, *oz*, *lb* or *t*.  |
 
 ## image
 
@@ -337,7 +344,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | priceInfo | object of [priceInfo](page:apps-data-types#priceinfo) | Price information on the product. |
 | forSale | boolean | Information on the sale status of the product. Indicates if the product can be added to the shopping basket. |
 | specialOffer | boolean | Indicates if the product is a special offer. |
-| deliveryWeight | object of [quantity](page:apps-data-types#quantity) | The delivery weight of the product. |
+| deliveryWeight | object of [deliveryWeightQuantity](page:apps-data-types#deliveryweightquantity) | The delivery weight of the product. |
 | shippingMethodsRestrictedTo | array of [link](page:apps-data-types#link) | Information on possible shipping method restrictions, e.g. express delivery only. Can be `null` if no restrictions exist. |
 | availabilityText | string | Additional custom information on the product's stock level or the delivery period. |
 | availability | enum | The availability of the product. Can be one of *OnStock*, *WarnStock*, *OutStock*. |
@@ -369,6 +376,10 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | energyLabelsString | string | A list of energy labels applied to this product. Can be one or two values. If two values are returned, the first value is the best energy label, the second is the second-best. |
 | upc | string | The Universal Product Code of the product. |
 | ean | string | The European Article Number of the product, either EAN-8 or EAN-13. |
+| deliveryPeriod | string | The average time of the product being delivered to the customer. By default, the delivery period is displayed in days, but this can be changed by the merchant. |
+| searchKeywords | array of string | The search terms for the product determined by the merchant in the administration. |
+| visible | boolean | Indicates if the product is displayed in the shop. |
+| taxClassId | string | The unique identifier of the tax class. |
 
 ## productLineItem
 
@@ -385,7 +396,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | images | array of [image](page:apps-data-types#image) | The image of the line item. |
 | links | array of [link](page:apps-data-types#link) | The links to the product line item. |
 | taxClass | object of [taxClassInfo](page:apps-data-types#taxclassinfo) | The tax that applies for the product.|
-| deliveryWeight | object of [quantity](page:apps-data-types#quantity) | The delivery weight for the product line item.|
+| deliveryWeight | object of [deliveryWeightQuantity](page:apps-data-types#deliveryweightquantity) | The delivery weight for the product line item.|
 
 ## productLineItem (create request)
 
@@ -410,12 +421,10 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 
 ## quantity
 
-This object is used for the attributes of deliveryWeight and quantity.
-
 | Attribute | Type | Description |
 | - | :-: |  - |
 | amount | number | The amount displayed as a decimal number. |
-| unit | string | The unit displayed as abbreviated SI unit, if available. Otherwise a localised name if the unit is displayed, e.g. piece(s).  |
+| unit | enum | The unit displayed as abbreviated unit, if available. Can be one of *Byte*, *kByte*, *MByte*, *GByte*, *TByte*, *l*, *ml*, *ft³*, *in³*, *m³*, *yd³*, *fl oz*, *gal*, *qt*, *m*, *cm*, *ft*, *in*, *km*, *mm*, *yd*, *s*, *min*, *m²*, *cm²*, *ft²*, *in²*, *mm²* or *yd²*. Otherwise a localised name of the unit is displayed. Can be *piece(s)*, *bottle(s)*, *crate(s)*, *can(s)*, *capsule(s)*, *box(es)*, *glass(es)*, *kit(s)*, *pack(s)*, *package(s)*, *pair(s)*, *roll(s)*, *set(s)*, *sheet(s)*, *ticket(s)*, *unit(s)*, *day(s)*, *hour(s)*, *week(s)*, *month(s)*, *night(s)* or *year(s)*. |
 
 ## sales
 

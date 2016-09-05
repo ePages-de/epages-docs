@@ -1,4 +1,5 @@
 {% assign chapter = page.url | regex_extract: '^/([^/]+)/' %}
+{% assign domain = page.url | regex_extract: '(.*\.com)' %}
 {% assign description = page.excerpt | strip_html | strip_newlines | truncate: 160 %}
 <head>
   <meta charset="utf-8">
@@ -7,6 +8,15 @@
   <title>{% if site.data.seo[chapter].title %}{{ site.data.seo[chapter].title }}{% else %}ePages{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ description }}{% else %}{{ site.data.seo[chapter].description }}{% endif %}">
   <meta name="keywords" content="{% if site.data.seo[chapter].keywords %}{{ site.data.seo[chapter].keywords | join: ', ' }}{% endif %}">
+  {% if page.title %}
+    <meta content="{{ page.title }}" property="og:title">
+  {% endif %}
+  {% if page.image %}
+    <meta content="{{ domain }}/assets/images/{{ page.image }}" property="og:image">
+  {% endif %}
+  {% if page.description %}
+    <meta content="{{ page.description }}" property="og:description">
+  {% endif %}
 
   <link rel="shortcut icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}" type="image/ico">
   <link rel="stylesheet" href="{{ "/assets/styles/main.css" | prepend: site.baseurl }}">

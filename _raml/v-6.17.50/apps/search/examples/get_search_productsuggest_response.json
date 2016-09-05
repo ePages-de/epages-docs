@@ -1,0 +1,134 @@
+{
+  "products": [
+    {
+      "name": "Dr.Boom - Red Bass",
+      "images": [
+        {
+          "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/EE97/FD85/1B66/9962/AC14/145F/A540/001-headphone_xs.jpg",
+          "classifier": "Thumbnail"
+        }
+      ],
+      "link": {
+        "rel": "product",
+        "href": "https://pm.epages.com/rs/shops/apidocu/products/51E7EE97-FD85-1B66-9962-AC14145FA540"
+      }
+    },
+    {
+      "name": "Dr.Boom - Orange Power",
+      "images": [
+        {
+          "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F905/2E4C/78C2/30C2/AC14/145F/A4E5/013-headphone-red_xs.jpg",
+          "classifier": "Thumbnail"
+        }
+      ],
+      "link": {
+        "rel": "product",
+        "href": "https://pm.epages.com/rs/shops/apidocu/products/51E7F905-2E4C-78C2-30C2-AC14145FA4E5"
+      }
+    },
+    {
+      "name": "Dr.Boom - True Voice",
+      "images": [
+        {
+          "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F913/5447/240E/77AE/AC14/145F/A477/headset1_xs.jpg",
+          "classifier": "Thumbnail"
+        }
+      ],
+      "link": {
+        "rel": "product",
+        "href": "https://pm.epages.com/rs/shops/apidocu/products/51E7F913-5447-240E-77AE-AC14145FA477"
+      }
+    },
+    {
+      "name": "Dr.Boom - Black Bass",
+      "images": [
+        {
+          "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51EE/313C/B015/70C3/F368/AC14/145F/D385/006-headset_xs.jpg",
+          "classifier": "Thumbnail"
+        }
+      ],
+      "link": {
+        "rel": "product",
+        "href": "https://pm.epages.com/rs/shops/apidocu/products/51EE313C-B015-70C3-F368-AC14145FD385"
+      }
+    },
+    {
+      "name": "Dr.Boom - Gold",
+      "images": [
+        {
+          "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51F1/29BC/49C0/0469/1B30/AC14/145F/6436/headphone2d_xs.jpg",
+          "classifier": "Thumbnail"
+        }
+      ],
+      "link": {
+        "rel": "product",
+        "href": "https://pm.epages.com/rs/shops/apidocu/products/51F129BC-49C0-0469-1B30-AC14145F6436"
+      }
+    },
+    {
+      "name": "Dr.Boom - Sporty",
+      "images": [
+        {
+          "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51F1/32F3/37CE/05E0/7431/AC14/145F/61B5/012-headphone_xs.jpg",
+          "classifier": "Thumbnail"
+        }
+      ],
+      "link": {
+        "rel": "product",
+        "href": "https://pm.epages.com/rs/shops/apidocu/products/51F132F3-37CE-05E0-7431-AC14145F61B5"
+      }
+    },
+    {
+      "name": "Adapter 6,3mm auf 3,5mm",
+      "images": [
+        {
+          "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/acc6_xs.jpg",
+          "classifier": "Thumbnail"
+        }
+      ],
+      "link": {
+        "rel": "product",
+        "href": "https://pm.epages.com/rs/shops/apidocu/products/54E72E1F-746A-8B6E-8E41-0A0C05E64669"
+      }
+    },
+    {
+      "name": "The Fresh New Audio Sample",
+      "images": [
+        {
+          "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54EF/2CBE/F312/7312/638E/0A0C/05E6/6CA3/Audiosample_xs.jpg",
+          "classifier": "Thumbnail"
+        }
+      ],
+      "link": {
+        "rel": "product",
+        "href": "https://pm.epages.com/rs/shops/apidocu/products/54EF2CBE-F312-7312-638E-0A0C05E66CA3"
+      }
+    },
+    {
+      "name": "Kopfhörer gestalten",
+      "images": [
+        {
+          "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54EF/2E41/FCA8/E0E5/9323/0A0C/05E6/6C2E/001-headphone_xs.jpg",
+          "classifier": "Thumbnail"
+        }
+      ],
+      "link": {
+        "rel": "product",
+        "href": "https://pm.epages.com/rs/shops/apidocu/products/54EF2E41-FCA8-E0E5-9323-0A0C05E66C2E"
+      }
+    },
+    {
+      "name": "Ebook0001",
+      "images": [
+        {
+          "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54EF/307D/4FF3/3578/CB70/0A0C/05E6/6C3F/eBookNew_xs.jpg",
+          "classifier": "Thumbnail"
+        }
+      ],
+      "link": {
+        "rel": "product",
+        "href": "https://pm.epages.com/rs/shops/apidocu/products/54EF307D-4FF3-3578-CB70-0A0C05E66C3F"
+      }
+    }
+  ]
+}

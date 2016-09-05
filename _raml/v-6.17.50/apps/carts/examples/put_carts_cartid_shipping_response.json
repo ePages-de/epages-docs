@@ -1,0 +1,88 @@
+{
+  "cartId": "574FF17E-61D5-5C29-D514-D5809AB38FC0",
+  "billingAddress": {
+    "company": null,
+    "salutation": null,
+    "firstName": "Doris",
+    "lastName": "Daisy",
+    "street": "Daisy Road 2",
+    "streetDetails": null,
+    "zipCode": "87956",
+    "city": "Daisyland",
+    "state": null,
+    "country": "DE",
+    "title": null,
+    "vatId": null,
+    "birthday": null,
+    "emailAddress": "daisy@land.com"
+  },
+  "shippingAddress": {
+    "company": null,
+    "salutation": null,
+    "firstName": "Doris",
+    "lastName": "Daisy",
+    "street": "Daisy Road 2",
+    "streetDetails": null,
+    "zipCode": "87956",
+    "city": "Daisyland",
+    "state": null,
+    "country": "DE",
+    "title": null,
+    "vatId": null,
+    "birthday": null,
+    "emailAddress": "daisy@land.com"
+  },
+  "lineItemContainer": {
+    "grandTotal": {
+      "taxType": "GROSS",
+      "formatted": "0,00 €",
+      "amount": 0,
+      "currency": "EUR"
+    },
+    "totalBeforeTax": {
+      "taxType": "NET",
+      "formatted": "0,00 €",
+      "amount": 0,
+      "currency": "EUR"
+    },
+    "totalTax": {
+      "taxType": "NONE",
+      "formatted": "0,00 €",
+      "amount": 0,
+      "currency": "EUR"
+    },
+    "lineItemsSubTotal": {
+      "taxType": "GROSS",
+      "formatted": "0,00 €",
+      "amount": 0,
+      "currency": "EUR"
+    },
+    "productLineItems": [],
+    "couponLineItem": null,
+    "shippingPrice": {
+      "taxType": "GROSS",
+      "formatted": "0,00 €",
+      "amount": 0,
+      "currency": "EUR"
+    }
+  },
+  "shippingData": null,
+  "paymentData": null,
+  "minimumCart": {
+    "status": true,
+    "code": "SumDiscount",
+    "amount": null
+  },
+  "pickupToken": "NzRlMmE1MWJmMTNlMmVhNTQ4ODkxNjk5OGE3YzkyOGUyYTkzYTAxYjRkMzEwMWM2NzNiNjdkOTJiYjk2Y2Q4NV8xNDY0ODU3MTUx",
+  "checkoutUrl": "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/1/Baskets/46072&ChangeAction=PickupBasket&PickupToken=NzRlMmE1MWJmMTNlMmVhNTQ4ODkxNjk5OGE3YzkyOGUyYTkzYTAxYjRkMzEwMWM2NzNiNjdkOTJiYjk2Y2Q4NV8xNDY0ODU3MTUx",
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://pm.epages.com/rs/shops/apidocu/carts/574FF17E-61D5-5C29-D514-D5809AB38FC0"
+    },
+    {
+      "rel": "add-coupon",
+      "href": "https://pm.epages.com/rs/shops/apidocu/carts/57834820-2D8F-D78D-A727-D5809AB33952/coupon"
+    }
+  ]
+}
