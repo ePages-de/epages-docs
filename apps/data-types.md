@@ -359,6 +359,10 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | ean | string | The European Article Number of the product, either EAN-8 or EAN-13. |
 | essentialFeatures | string | The essential features of the product. |
 | searchKeywords | array of strings | The search terms for the product determined by the merchant in the administration.  |
+| manufacturerProductNumber | string | The unique manufacturer identifier of the product. Used to identify and classify a product.  |
+| productLength | number| The length of the product in mm. |
+| productWidth | number | The width of the product in mm.  |
+| productHeight | number | The height of the product in mm.  |
 | stocklevel | number | Indicates the stock level of the product. |
 | minStocklevel | number | Indicates the minimum stock level of the product. Available if the field *Minimum stock level* is used in the administration area of a shop. Only available with the `products_write` authorisation. |
 | links | array of [link](page:apps-data-types#link) | The links to the product and product category. |
