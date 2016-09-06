@@ -61,7 +61,7 @@ post:
       example: 52F221E0-36F6-DC4E-384A-AC1504050C04
   get:
     description: Returns information on a single product. For product variations, a link
-      to the respective product variations resource (rel="variations") is added. Note that the attribute `stocklevel` is only available with the `products_write` authorisation.
+      to the respective product variations resource (rel="variations") is added.
     securedBy: [products_read]
     is: [ locale, currency ]
     responses:
