@@ -25,6 +25,7 @@ After a short while, I started my new job as a Senior Technical Recruiter at ePa
 My day starts at 9 o'clock with a plate of fruits and a glass of water while checking new emails and replying to candidates.
 I go through the applications that come in, do the screening and shortlisting, and categorize them in our database.
 If the candidate's profile matches what we are looking for, I arrange phone or video or face-to-face interviews.
+
 In a nutshell, I manage the entire recruitment process from getting the job requirements internally until the onboarding of new colleagues, as well as keeping the candidates and my colleagues updated on the progress or next step.
 In addition to this, I cover the basic HR administration and coordination tasks, communicate with external recruitment partners (e.g. job boards, universities and colleagues), representing the company at career events, etc.
 
