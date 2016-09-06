@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "Get Product Sales Schema",
+  "type": "object",
+  "properties": {
+    "": {
+      "type": "object of [salesSummary](page:apps-data-types#salessummary)",
+      "description": ""
+    }
+  }
+}
