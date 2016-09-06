@@ -23,7 +23,6 @@
       "currency": "EUR"
     },
     "depositPrice": null,
-    "ecoParticipationPrice": null,
     "priceWithDeposits": {
       "taxType": "GROSS",
       "formatted": "5,99 €",
@@ -39,7 +38,6 @@
   "shippingMethodsRestrictedTo": null,
   "availabilityText": "",
   "availability": null,
-  "energyLabelsString": null,
   "energyLabelSourceFile": null,
   "productDataSheet": null,
   "sfUrl": "http://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/Products/01234",
