@@ -1,0 +1,9 @@
+{
+  "productNumber": "TP-0815",
+  "name": "Brand new product",
+  "shortDescription": "Awesome product",
+  "description": "This is a brand new product",
+  "manufacturer": "Awesome Products Company",
+  "price": 5.99,
+  "searchKeywords": ["awesome", "product"]
+}
