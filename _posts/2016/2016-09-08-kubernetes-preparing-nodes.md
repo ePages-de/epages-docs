@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Kubernetes HA setup part 2: preparing the nodes"
+title: "How to set up a HA Kubernetes cluster: preparing the nodes"
 date: "2016-09-08 07:16:17"
 image: blog-header/kubernetes-docker-flanneld-logo.jpg
 categories: tech-stories
