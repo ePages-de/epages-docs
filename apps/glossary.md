@@ -93,5 +93,10 @@ It is a coordinated set of constraints applied to the design of components in a 
 A string of characters used to identify the name of a resource.
 This identification enables the interaction with representations of the resource over a network using specific protocols.
 
+### User agent
+A software agent that is acting on behalf of a user.
+The user agent must always be set to make sure an API request can be processed properly.
+That helps filtering out clients that do not send a user agent string and might be ill behaved scripts or unwanted users that cause a lot of load on the servers.
+
 ### UTF-8
 **U** niversal Character Set + **T** ransformation **F** ormat - **8** bit is a character encoding capable of encoding all code points of Unicode/ISO-10646 (UCS).
