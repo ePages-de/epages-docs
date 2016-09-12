@@ -538,6 +538,13 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | displayName | string | The displayed name of the variation attribute. |
 | values | array of [variationValue](page:apps-data-types#variationvalue) | The values of the variation attribute.  |
 
+## variationIdentifier
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| name | string | The name of the selected product variation. |
+| value | string | The value of the selected product variation.  |
+
 ## variationValue
 
 | Attribute | Type | Description |
