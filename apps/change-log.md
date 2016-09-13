@@ -18,7 +18,7 @@ In order to keep track of these changes we recommend you to follow [@epagesdevs]
 
 * Added response code [*410 Gone*](https://developer.epages.com/apps/response-codes#responses-in-the-4xx-range).
 * Required to set user agent in [request header](https://developer.epages.com/apps/request-headers).
-* Specified attributes `stocklevel`, `depositPrice`, `ecoParticipationPrice`, and `manufacturerPrice` for [`POST` products](https://developer.epages.com/apps/api-reference/post-shops-shopid-products.html).
+* Specified attributes `stocklevel`, `depositPrice`, and `manufacturerPrice` for [`POST` products](https://developer.epages.com/apps/api-reference/post-shops-shopid-products.html).
 * Added attributes `manufacturerProductNumber`, `minStocklevel`, `productLength`, `productHeight`, `productWidth` `productVariationType`, and `productVariationSelection` to data type [`product`](https://developer.epages.com/apps/data-types#product).
 * Added data type [`variationIdentifier`](https://developer.epages.com/apps/data-types#variationidentifier).
 * Removed `products_write` authorisation from `stocklevel` attribute.
