@@ -2,6 +2,12 @@
   "productId": "51E7F905-2E4C-78C2-30C2-AC14145FA4E5",
   "name": "BRAND NEW: Dr.Boom - Star Wars Edition",
   "visible": true,
+  "productVariationType": "regular",
+  "manufacturerProductNumber": "HP-003",
+  "productLength": null,
+  "productWidth": null,
+  "productHeight": null,
+  "productVariationSelection": null,
   "shortDescription": "new arrival",
   "description": "<ul>\n\t<li>Surround Sound</li>\n\t<li>Acoustic Noise Cancelling</li>\n\t<li>Correct fit",
   "productImage": "014-headphone-starwars.jpg",
@@ -37,17 +43,16 @@
       "percentage": 19
     },
     "price": {
-      "taxType": "GROSS",
-      "formatted": "65.00 €",
-      "amount": 65,
+      "taxType": "NET",
+      "formatted": "54.62 €",
+      "amount": 54.62,
       "currency": "EUR"
     },
     "depositPrice": null,
-    "ecoParticipationPrice": null,
     "priceWithDeposits": {
-      "taxType": "GROSS",
-      "formatted": "65.00 €",
-      "amount": 65,
+      "taxType": "NET",
+      "formatted": "54.62 €",
+      "amount": 54.62,
       "currency": "EUR"
     },
     "manufacturerPrice": null,
@@ -62,7 +67,6 @@
   "shippingMethodsRestrictedTo": null,
   "availabilityText": "In stock<br />can be shipped within 3-5 days",
   "availability": "OnStock",
-  "energyLabelsString": null,
   "energyLabelSourceFile": null,
   "productDataSheet": null,
   "sfUrl": "http://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/Products/HP-003",
@@ -76,19 +80,16 @@
     "Noise Cancelling",
     "Carrying Box"
   ],
-  "stocklevel": 2,
+  "stocklevel": 100,
+  "minStocklevel": 10,
   "links": [
     {
       "rel": "self",
       "href": "https://pm.epages.com/rs/shops/apidocu/products/51E7F905-2E4C-78C2-30C2-AC14145FA4E5"
     },
     {
-      "rel": "custom-attributes",
-      "href": "https://pm.epages.com/rs/shops/apidocu/products/51E7F905-2E4C-78C2-30C2-AC14145FA4E5/custom-attributes"
-    },
-    {
       "rel": "categories",
-      "href": "https://pm.epages.com/rs/shops/apidocu/products/51E7F905-2E4C-78C2-30C2-AC14145FA4E5/categories"
+      "href": "https://pm.epages.com/rs/shops/apidocu/categories/?productId=51E7F905-2E4C-78C2-30C2-AC14145FA4E5"
     }
   ]
 }

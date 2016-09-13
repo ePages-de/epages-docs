@@ -215,7 +215,7 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | lineItemsSubTotal | object of [price](page:apps-data-types#price) | The sum of the line item price of all line items. |
 | productLineItems | array of [productLineItem](page:apps-data-types#productlineitem) | A list of line items. |
 | shippingPrice | object of [price](page:apps-data-types#price) | The shipping price of the line item. |
-| couponLineItem | array of [couponLineItem](page:apps-data-types#couponlineitem) | Contains the line items of a coupon. |
+| couponLineItem | object of [couponLineItem](page:apps-data-types#couponlineitem) | Contains the line items of a coupon. |
 
 ## link
 
@@ -289,7 +289,6 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | shippingData | object of [shippingData](page:apps-data-types#shippingdata) | The shipping data of  a cart or an order, i.e. short info on shipping method and price.|
 | paymentData | object of [paymentData](page:apps-data-types#paymentdata) | The payment data of  a cart or an order, i.e. short info on payment method and price.|
 | lineItemContainer | [lineItemContainer](page:apps-data-types#lineitemcontainer) | Contains the line items of an order. Only included in [`GET`/orders/{orderId}](page:apps-api-get-shops-shopid-orders-orderid-information). |
-| productLineItems | array of [productLineItem](page:apps-data-types#productlineitem) | A list of line items. Only included in [`GET`/orders/{orderId}](page:apps-api-get-shops-shopid-orders-orderid-information). |
 | shippingPrice | object of [price](page:apps-data-types#price) | The shipping price for the order.  |
 | links | array of [link](page:apps-data-types#link) | The links to the products of the order. |
 
@@ -359,8 +358,15 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | ean | string | The European Article Number of the product, either EAN-8 or EAN-13. |
 | essentialFeatures | string | The essential features of the product. |
 | searchKeywords | array of strings | The search terms for the product determined by the merchant in the administration.  |
-| stocklevel | string | Only available with the `products_write` authorisation. Indicates the stocklevel of the product. |
+| manufacturerProductNumber | string | The unique manufacturer identifier of the product. Used to identify and classify a product.  |
+| productLength | number| The length of the product in mm. |
+| productWidth | number | The width of the product in mm.  |
+| productHeight | number | The height of the product in mm.  |
+| stocklevel | number | Indicates the stock level of the product. |
+| minStocklevel | number | Indicates the minimum stock level of the product. Available if the field *Minimum stock level* is used in the administration area of a shop. Only available with the `products_write` authorisation. |
 | links | array of [link](page:apps-data-types#link) | The links to the product and product category. |
+| productVariationType | enum | The type of the variation product. Can be one of *master*, *regular* or *variation*. |
+| productVariationSelection | array of [variationIdentifier](page:apps-data-types#variationidentifier) | The selection of the variation product. Only available if `productVariationType` is *variation*. |
 
 ## product (create request)
 
@@ -380,6 +386,9 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | searchKeywords | array of string | The search terms for the product determined by the merchant in the administration. |
 | visible | boolean | Indicates if the product is displayed in the shop. |
 | taxClassId | string | The unique identifier of the tax class. |
+| stocklevel | number | Indicates the stock level of the product. |
+| depositPrice | object of [price](page:apps-data-types#price) | The deposit price for the product, e.g. bottle deposit.|
+| manufacturerPrice | object of [price](page:apps-data-types#price) | The sales price recommended by the manufacturer.|
 
 ## productLineItem
 
@@ -527,6 +536,13 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | name | string | The name of the variation attribute. |
 | displayName | string | The displayed name of the variation attribute. |
 | values | array of [variationValue](page:apps-data-types#variationvalue) | The values of the variation attribute.  |
+
+## variationIdentifier
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| name | string | The name of the selected product variation. |
+| value | string | The value of the selected product variation.  |
 
 ## variationValue
 

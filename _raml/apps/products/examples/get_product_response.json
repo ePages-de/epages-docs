@@ -7,6 +7,12 @@
       "productId": "54EF2E41-FCA8-E0E5-9323-0A0C05E66C2E",
       "name": "Customised headphone",
       "visible": true,
+      "productVariationType": "regular",
+      "manufacturerProductNumber": "CU001",
+      "productLength": null,
+      "productWidth": null,
+      "productHeight": null,
+      "productVariationSelection": null,
       "shortDescription": null,
       "deliveryPeriod": "2-4",
       "description": "Customise your headphone in no time!",
@@ -41,20 +47,20 @@
         "taxClass": {
           "taxClassId": "54B50D97-A277-9AF2-58A1-D5809AB32230",
           "name": "standard",
-          "percentage": null
+          "percentage": 19
         },
         "price": {
-          "taxType": "GROSS",
-          "formatted": "299.00 €",
-          "amount": 299,
+          "taxType": "NET",
+          "formatted": "251.26 €",
+          "amount": 251.26,
           "currency": "EUR"
         },
         "depositPrice": null,
         "ecoParticipationPrice": null,
         "priceWithDeposits": {
-          "taxType": "GROSS",
-          "formatted": "299.00 €",
-          "amount": 299,
+          "taxType": "NET",
+          "formatted": "251.26 €",
+          "amount": 251.26,
           "currency": "EUR"
         },
         "manufacturerPrice": null,
@@ -76,19 +82,18 @@
       "manufacturer": "Dr. Boom",
       "upc": null,
       "ean": null,
-      "essentialFeature": null,
+      "essentialFeatures": null,
+      "searchKeywords": [],
+      "stocklevel": null,
+      "minStocklevel": null,
       "links": [
         {
           "rel": "self",
           "href": "https://pm.epages.com/rs/shops/apidocu/products/54EF2E41-FCA8-E0E5-9323-0A0C05E66C2E"
         },
         {
-          "rel": "custom-attributes",
-          "href": "https://pm.epages.com/rs/shops/apidocu/products/54EF2E41-FCA8-E0E5-9323-0A0C05E66C2E/custom-attributes"
-        },
-        {
           "rel": "categories",
-          "href": "https://pm.epages.com/rs/shops/apidocu/products/54EF2E41-FCA8-E0E5-9323-0A0C05E66C2E/categories"
+          "href": "https://pm.epages.com/rs/shops/apidocu/categories/?productId=54EF2E41-FCA8-E0E5-9323-0A0C05E66C2E"
         }
       ]
     },
@@ -96,6 +101,12 @@
       "productId": "51E7F905-2E4C-78C2-30C2-AC14145FA4E5",
       "name": "Dr.Boom - Red Power",
       "visible": true,
+      "productVariationType": "regular",
+      "manufacturerProductNumber": "HP-003",
+      "productLength": null,
+      "productWidth": null,
+      "productHeight": null,
+      "productVariationSelection": null,
       "shortDescription": "<p>Red Resonator S&nbsp;headphones are the best-performing around-ear headphones from&nbsp;Dr.Boom. They give you fresh and&nbsp;powerful sound.&nbsp;These headphones definitely&nbsp;let you hear your music better!</p>",
       "deliveryPeriod": "3-5",
       "description": "<p><strong><em>Dr.Boom - HP001</em></strong>&nbsp;Red Resonator S&nbsp;headphones are the best-performing around-ear headphones from&nbsp;Dr.Boom. They give you fresh and&nbsp;powerful sound.&nbsp;These headphones definitely&nbsp;let you hear your music better!</p>\r\n\r\n<p>The noise cancelling technology monitors the noise around you and cancels it out, helping you focus on what you want to hear -&nbsp;whether it’s music, calls or simply peace and quiet. These headphones look as good as they sound. They’re comfy, durably made and easily to store, with earcups that&nbsp;fit in a small carrying box.</p>",
@@ -132,17 +143,17 @@
           "percentage": 19
         },
         "price": {
-          "taxType": "GROSS",
-          "formatted": "65.00 €",
-          "amount": 65,
+          "taxType": "NET",
+          "formatted": "54.62 €",
+          "amount": 54.62,
           "currency": "EUR"
         },
         "depositPrice": null,
         "ecoParticipationPrice": null,
         "priceWithDeposits": {
-          "taxType": "GROSS",
-          "formatted": "65.00 €",
-          "amount": 65,
+          "taxType": "NET",
+          "formatted": "54.62 €",
+          "amount": 54.62,
           "currency": "EUR"
         },
         "manufacturerPrice": null,
@@ -170,19 +181,16 @@
         "Acoustic Noise Cancelling",
         "Correct fit"
       ],
-      "stocklevel": 99,
+      "stocklevel": 100,
+      "minStocklevel": 10,
       "links": [
         {
           "rel": "self",
           "href": "https://pm.epages.com/rs/shops/apidocu/products/51E7F905-2E4C-78C2-30C2-AC14145FA4E5"
         },
         {
-          "rel": "custom-attributes",
-          "href": "https://pm.epages.com/rs/shops/apidocu/products/51E7F905-2E4C-78C2-30C2-AC14145FA4E5/custom-attributes"
-        },
-        {
           "rel": "categories",
-          "href": "https://pm.epages.com/rs/shops/apidocu/products/51E7F905-2E4C-78C2-30C2-AC14145FA4E5/categories"
+          "href": "https://pm.epages.com/rs/shops/apidocu/categories/?productId=51E7F905-2E4C-78C2-30C2-AC14145FA4E5"
         }
       ]
     },
@@ -190,6 +198,12 @@
       "productId": "51E7F913-5447-240E-77AE-AC14145FA477",
       "name": "Dr.Boom - True Voice",
       "visible": true,
+      "productVariationType": "master",
+      "manufacturerProductNumber": "HS-001",
+      "productLength": null,
+      "productWidth": null,
+      "productHeight": null,
+      "productVariationSelection": null,
       "shortDescription": null,
       "deliveryPeriod": "3-5",
       "description": "Professional headphones. Bass pipe emphasises low tones for a clear, realistic sound. Ergonomically shaped.",
@@ -227,24 +241,24 @@
           "percentage": 19
         },
         "price": {
-          "taxType": "GROSS",
-          "formatted": "149.99 €",
-          "amount": 149.99,
+          "taxType": "NET",
+          "formatted": "126.04 €",
+          "amount": 126.04,
           "currency": "EUR"
         },
         "depositPrice": null,
         "ecoParticipationPrice": null,
         "priceWithDeposits": {
-          "taxType": "GROSS",
-          "formatted": "149.99 €",
-          "amount": 149.99,
+          "taxType": "NET",
+          "formatted": "42.02 €",
+          "amount": 42.02,
           "currency": "EUR"
         },
         "manufacturerPrice": null,
         "basePrice": null
       },
-      "forSale": true,
-      "specialOffer": false,
+      "forSale": false,
+      "specialOffer": true,
       "deliveryWeight": {
         "amount": 310,
         "unit": "g"
@@ -264,18 +278,20 @@
         "Surround Sound",
         "Bluetooth Wireless"
       ],
+      "stocklevel": 100,
+      "minStocklevel": 10,
       "links": [
         {
           "rel": "self",
           "href": "https://pm.epages.com/rs/shops/apidocu/products/51E7F913-5447-240E-77AE-AC14145FA477"
         },
         {
-          "rel": "custom-attributes",
-          "href": "https://pm.epages.com/rs/shops/apidocu/products/51E7F913-5447-240E-77AE-AC14145FA477/custom-attributes"
+          "rel": "variations",
+          "href": "https://pm.epages.com/rs/shops/apidocu/products/51E7F913-5447-240E-77AE-AC14145FA477/variations"
         },
         {
           "rel": "categories",
-          "href": "https://pm.epages.com/rs/shops/apidocu/products/51E7F913-5447-240E-77AE-AC14145FA477/categories"
+          "href": "https://pm.epages.com/rs/shops/apidocu/categories/?productId=51E7F913-5447-240E-77AE-AC14145FA477"
         }
       ]
     }
