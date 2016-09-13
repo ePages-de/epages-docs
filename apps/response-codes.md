@@ -50,6 +50,7 @@ X-epages-Media-Type: application/vnd.epages.v1+json
 | 405      | Method&nbsp;Not&nbsp;Allowed | A request was made of a resource using a request method not supported by that resource, e.g. using a `POST` on a resource that requires a `GET`.
 | 406      | Not&nbsp;Acceptable| The content negotiation between client and server failed. As ePages uses the Accept header to specify the API version, it requires the client to send exactly this header for the respective version of the REST API. So for the currently existing version v1, this is `Accept: application/vnd.epages.v1+json`. The server response for the content-type is always `application/json` unless stated otherwise.
 | 409      | Conflict | The request could not be processed because of a conflict in the request, e.g. using a `PATCH` on an order, that is in edit mode.
+| 410      | Gone | The resource requested is no longer available and will not be available again, e.g. when a cart became an order.
 | 429      | Too Many Requests  | Too many requests have been sent to the API in a given amount of time. The API call limit has been exceeded, see also [API call limit](page:apps-api-call-limit).
 
 ### Example response
