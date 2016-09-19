@@ -33,6 +33,10 @@ get:
         Other query parameters, such as sort, categoryId, page etc, are not supported.
       required: false
       repeat: true
+    includeInvisible:
+      description: Displays invisible products. Only available with `products_write` authorisation.
+      type: boolean
+      required: false
   responses:
     200:
       body:
