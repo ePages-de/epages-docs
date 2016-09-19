@@ -22,6 +22,7 @@ In order to keep track of these changes we recommend you to follow [@epagesdevs]
 * Added attributes `manufacturerProductNumber`, `minStocklevel`, `productLength`, `productHeight`, `productWidth` `productVariationType`, and `productVariationSelection` to data type [`product`](https://developer.epages.com/apps/data-types#product).
 * Added data type [`variationIdentifier`](https://developer.epages.com/apps/data-types#variationidentifier).
 * Removed `products_write` authorisation from `stocklevel` attribute.
+* Added query parameter `includeInvisible` to [`GET` products](https://developer.epages.com/apps/api-reference/get-shops-shopid-products.html).
 
 #### <i class="fa fa-minus"></i> Remove
 
