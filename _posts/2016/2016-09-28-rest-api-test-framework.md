@@ -19,32 +19,50 @@ Of course all the resource and services classes are coverey by unit test on both
 since the functionality of the API is based on two different projects that lie in two different repositories
 which have two different teams responsible for the releases,
 we wanted to have a way to check with one click if everything - from end to end - is working as expected.
+
 This was the starting point of RAT - our Rest API Test framework.
 
 ## RAT
 
-The idea of RAT is to have a framework that test all the features of the REST API, so RAT sends requests to the API and validates the response.
+The idea of RAT is to have a framework that checks the complete state of the REST API on an abritrary ePages installation just at the push of a button.
+
+In order to do so, RAT sends requests to the API and validates the response.
 To be able to compare the response with an expected one, we let the test base on shop of the DemoShopType
 (The developer installation of ePages includes a DemoShopType which allows to create a demo shop with certain products of different types and a few orders).
 We wanted the test cases to be able to run in a arbitrary order. The problem is that some of the API calls change a shop (DELETE product),
 which lead to different results in the following calls. The solution is to create new shops for testing those calls.
 The ePages6 REST API does not offer an endpoint to create new shops so far, so we used the ePages SOAP API to do that.
 
+RAT is based on [REST-assured](http://rest-assured.io/) and [Serenity BDD](http://www.thucydides.info), two tools that take over a lot of work on the way to produce nice test results.
 
-#### Technologies
-
-RAT is based on [Serenity BDD](http://www.thucydides.info) and [REST-assured](http://rest-assured.io/). Similar to [Cucumber](https://cucumber.io/) in the Ruby world,
-Serentiy allows you to describe and structure the test cases in way that acts like a complete specification with a checklist.
-
+### REST-assured
 
 The certain test cases are implemented using REST-assured. It is a framework that is specially designed for testing REST APIs and allows easily to send different kind of requests and validation of their responses.
 
-After running all the test, Serenity generates a HTML test report. On its homepage, the report offers a nice pie chart showing the test results of each category. The following image shows how this diagram currently looks like in our project.
+[WIP]
+
+### Serenity BDD
+
+Similar to [Cucumber](https://cucumber.io/) in the Ruby world,
+Serentiy allows you to describe and structure the test cases in way that acts like a complete specification with a checklist.
+
+#### HTML test report
+
+After running all the test, Serenity generates a HTML test report. On its homepage, the report offers a nice pie chart showing the test results of each feature category. The following image shows how this diagram currently looks like in our project.
 
 {% image blog/blog-rat-serenity-results.png %}
 
 We try to work test-driven, therefore there are a few test cases in a *pending* state (To do that, Serentity offers a @Pending annotation).
-These test cases are already written but will be skipped since the features they should test are not yet implemented. As soon as everything is in place, the tests can be activated.
+These tests are already written but will be skipped since the features they should test are not yet implemented. As soon as everything is in place, they can be activated.
 
+You can click on a feature to see what kind of test cases are there. Each test case can consist of multiple steps which can be displayed in detail:
 
 {% image blog/blog-rat-serenity-results-slideshow.png %}
+
+In this test case we want to check if an image that was uploaded for a product is appearing in the product slideshow. The first step gives us a DemoShop (which can be newly craeted or was already used in other read-only test cases). The we take the first product from the product collection resource (GET /products) and upload the image. Finally we retrieve the product slideshow (GET /products/{productId}/slideshow) and check if the uploaded image is in there.
+
+
+
+## Summary
+
+RAT allows us to check the complete state of the REST API on an abritrary ePages installation just at the push of a button. We use it to partly automate our QA process and run it as last step of a developer installations via Jenkins to make sure everything went fine. Currently we discuss how to include RAT to the Jenkins job that checks our pull requests GitHub. The challenge here is to choose the RAT branch that corresponds with the changes in the branch from the pull request.
