@@ -46,6 +46,59 @@ The certain test cases are implemented using REST-assured. It is a framework tha
 Similar to [Cucumber](https://cucumber.io/) in the Ruby world,
 Serentiy allows you to describe and structure the test cases in way that acts like a complete specification with a checklist.
 
+{% highlight java %}
+@RunWith(SerenityRunner.class)
+public class WhenUploadingProductImage {
+
+    private static final String IMAGE_NAME = "scrum-values-800x800.jpg";
+
+    @Steps(uniqueInstance=true)
+    ProductImageSteps steps;
+
+    @Before
+    public void setup() {
+        steps.given_a_demo_shop();
+        steps.given_a_developer_token();
+    }
+
+    @After
+    public void teardown() {
+        steps.invalidate_shop();
+    }
+
+    @Test
+    public void uploaded_image_is_added_to_slideshow() {
+        steps.given_the_first_product();
+        steps.when_uploading_a_product_image(IMAGE_NAME);
+        steps.then_the_product_slideshow_contains_image(IMAGE_NAME);
+        steps.when_the_product_image_is_changed_with_slideshow_image(IMAGE_NAME);
+        steps.then_the_product_image_is_changed_accordingly();
+    }
+
+}
+{% endhighlight %}
+
+The certain test steps are in a separate classes. We have a class *ShopSteps* which contains tests that are shop specific and needed in all tests. Then we have e.g. *ProductSteps* inherting from ShopSteps for steps that are used in product-related tests.
+
+This example shows the *ProductImageSteps* (which for their part inherit from *ProductSteps*) because the test is about product images. It only contains those steps that are relevant for product image-related tests:
+
+{% highlight java %}
+public class ProductImageSteps extends ProductSteps {
+
+    @Step("When uploading image {0} for product")
+    public void when_uploading_a_product_image(String imageName) {
+        // ... upload image using REST-assured ...
+    }
+
+    @Step("Then the product slideshow contains image '{0}'")
+    public void then_the_product_slideshow_contains_image(String imageName) {
+        // ... get slideshow using REST-assured and check if the imageName appears in the result ...
+    }
+}
+{% endhighlight %}
+
+Serenity offers the *@Step* annotation to define steps. The string in the argument will appear later in the test report. You can use the variable *{n}* which will be replaced with the n-th argument the method is called with.
+
 #### HTML test report
 
 After running all the test, Serenity generates a HTML test report. On its homepage, the report offers a nice pie chart showing the test results of each feature category. The following image shows how this diagram currently looks like in our project.
@@ -59,10 +112,12 @@ You can click on a feature to see what kind of test cases are there. Each test c
 
 {% image blog/blog-rat-serenity-results-slideshow.png %}
 
-In this test case we want to check if an image that was uploaded for a product is appearing in the product slideshow. The first step gives us a DemoShop (which can be newly craeted or was already used in other read-only test cases). The we take the first product from the product collection resource (GET /products) and upload the image. Finally we retrieve the product slideshow (GET /products/{productId}/slideshow) and check if the uploaded image is in there.
+In this test case we want to check if an image that was uploaded for a product is appearing in the product slideshow. The first step gives us a DemoShop (which can be newly craeted or was already used in other read-only test cases). The we take the first product from the product collection resource (*GET /products*) and upload the image. Finally we retrieve the product slideshow (*GET /products/{productId}/slideshow*) and check if the uploaded image is in there.
 
 
 
 ## Summary
 
-RAT allows us to check the complete state of the REST API on an abritrary ePages installation just at the push of a button. We use it to partly automate our QA process and run it as last step of a developer installations via Jenkins to make sure everything went fine. Currently we discuss how to include RAT to the Jenkins job that checks our pull requests GitHub. The challenge here is to choose the RAT branch that corresponds with the changes in the branch from the pull request.
+RAT allows us to check the complete state of the REST API on an abritrary ePages installation just at the push of a button. We use it to partly automate our QA process and run it as last step of a developer installation via Jenkins to make sure everything went fine.
+
+Currently we discuss how to include RAT in the Jenkins job that checks our pull requests GitHub. The challenge here is to choose the RAT branch that corresponds with the changes in the branch from the pull request.
