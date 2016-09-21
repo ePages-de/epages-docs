@@ -33,13 +33,74 @@ We wanted the test cases to be able to run in a arbitrary order. The problem is 
 which lead to different results in the following calls. The solution is to create new shops for testing those calls.
 The ePages6 REST API does not offer an endpoint to create new shops so far, so we used the ePages SOAP API to do that.
 
-RAT is based on [REST-assured](http://rest-assured.io/) and [Serenity BDD](http://www.thucydides.info), two tools that take over a lot of work on the way to produce nice test results.
+RAT is based on [REST-assured](http://rest-assured.io/) and [Serenity BDD](http://www.thucydides.info), two tools that take over a lot of work on the way to produce nice test results. In the next paragraphs I will introduce these tools briefly and show how we use them.
 
 ### REST-assured
 
 The certain test cases are implemented using REST-assured. It is a framework that is specially designed for testing REST APIs and allows easily to send different kind of requests and validation of their responses.
 
-[WIP]
+A simple check if the product resource of our REST API is returning 22 products could look like that:
+
+{% highlight java %}
+given()
+    .baseUri("http://some-host-with-an-epages-installation")
+    .basePath("rs/shops/DemoShop")
+    .accept("application/json")
+.when()
+    .get("products")
+.then()
+    .assertThat()
+    .statusCode(200)
+    .and()
+    .body("results", equalTo(22));
+{% endhighlight %}
+
+So REST-assured allows us to do request and validation in one step (*assertThat()* and *and()* are syntactic sugar and could be left out).
+
+In RAT we usually store the result for later use (e.g. extracting the links and follow them with further requests)
+and do the validation in a separate step.
+
+Since baseUri and request headers are for every request more or less the same, we put the request specification in a separate class.
+{% highlight java %}
+JsonPath products = requestSpecification
+                    .get("products")
+                    .then()
+                    .assertThat() //
+                    .statusCode(200) //
+                    .and() //
+                    .extract() //
+                    .body() //
+                    .jsonPath();
+{% endhighlight %}
+
+...
+
+#### JSONPath ####
+
+REST-assured comes already with a library for JSONPath (it is basically [XPath](https://en.wikipedia.org/wiki/XPath) for JSON) namely *com.jayway.restassured:json-path*,
+which can be used to validate a json response and verify certain attributes.
+
+Unfortunately this library does not implement all the JSONPath expressions from [Stefan Gössner's JSONPath specification](http://goessner.net/articles/JsonPath/),
+that's why we use *com.jayway.jsonpath:json-path* instead.
+To use this library we cannot simply do *... .extract().body().jsonPath();* anymore. Instead we have to get the response as a string first and then parse it as JsonPath object in a second step:
+
+{% highlight java %}
+String body = requestSpecification.get("products")
+            .then().assertThat().statusCode(200)
+            .extract().body().asString();
+
+DocumentContext products = JsonPath.parse(body);
+{% endhighlight %}
+
+Using this library we can finally do some more powerful things like:
+
+{% highlight java %}
+int itemCount = products.read("items.length()");
+// or
+List<String> productNames = products.read("items[\*].name");
+{% endhighlight %}
+
+
 
 ### Serenity BDD
 
