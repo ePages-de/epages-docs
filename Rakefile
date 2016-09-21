@@ -372,11 +372,19 @@ task :archive do
 end
 
 task :build do
-  sh "bundle exec jekyll build -t -q"
+  sh "bundle exec jekyll build -t -q --config '_config.yml'"
 end
 
 task :serve do
-  sh "bundle exec jekyll serve --host 0.0.0.0 --watch"
+  sh "bundle exec jekyll serve --host 0.0.0.0 --watch --config '_config.yml'"
+end
+
+task :dev do
+  sh "bundle exec jekyll serve --host 0.0.0.0 --watch --incremental --config '_dev_config.yml'"
+end
+
+task :fast_dev do
+  sh "bundle exec jekyll serve --host 0.0.0.0 --watch --incremental --skip-initial-build --config '_dev_config.yml'"
 end
 
 task :default do
