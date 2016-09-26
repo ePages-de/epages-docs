@@ -7,24 +7,25 @@ categories: tech-stories
 authors: ["Ulf B."]
 ---
 
-Long ago, when starting the development on the ePages public REST API, they decided to
-implement it as a separate service because
-at this time, ePages6 was only one huge Perl monolith and already hard to handle.
+A few years ago, at the time when the development of the ePages REST API started,
+ePages 6 was just a huge monolith written in Perl and already hard to handle.
+Since the monolith should not be inflated even more and in order to be able to use state-of-the-art frameworks,
+the REST API was started as a separate service implemented in JAVA.
 
-This service is implemented in JAVA using Jersey and it communicates with the monolith via REST and SOAP.
-So we had to add a REST API to the Perl monolith as well, but just a simplified one - without any complex token and right management.
-This is completely moved to the Java part where existing features of Jersey could be used.
+This service communicates with the monolith via REST and SOAP in order to operate on the data we won't to expose to the public.
+All the API related business logic like right management and rate limits are implemented in JAVA such that the API's we had to implement in Perl could
+become quiete simple.
 
-Of course all the resource and services classes are coverey by unit test on both side, Perl and Java, but
-since the functionality of the API is based on two different projects that lie in two different repositories
+Of course all the resource and services classes are coverey by unit test on both sides, Perl and Java,
+but since the functionality of the API is based on two different projects that live in two different repositories
 which have two different teams responsible for the releases,
-we wanted to have a way to check with one click if everything - from end to end - is working as expected.
+we wanted to have a simple way to check with one click if everything - from end to end - is working as expected.
 
 This was the starting point of RAT - our Rest API Test framework.
 
 ## RAT
 
-The idea of RAT is to have a framework that checks the complete state of the REST API on an abritrary ePages installation just at the push of a button.
+The idea of RAT was to create a framework that allows us to easily verify the state of the REST API on an abritrary ePages installation.
 
 In order to do so, RAT sends requests to the API and validates the response.
 To be able to compare the response with an expected one, we let the test base on shop of the DemoShopType
@@ -77,14 +78,18 @@ JsonPath products = requestSpecification
 
 #### JSONPath ####
 
-REST-assured comes already with a library for JSONPath (it is basically [XPath](https://en.wikipedia.org/wiki/XPath) for JSON) namely *com.jayway.restassured:json-path*,
-which can be used to validate a json response and verify certain attributes.
+REST-assured comes already with a library for JSONPath (which is basically [XPath](https://en.wikipedia.org/wiki/XPath) for JSON) namely [com.jayway.restassured:json-path](https://mvnrepository.com/artifact/com.jayway.restassured/json-path),
+that can be used to validate a JSON response and verify certain attributes.
 
-Unfortunately this library does not implement all the JSONPath expressions from [Stefan Gössner's JSONPath specification](http://goessner.net/articles/JsonPath/),
-that's why we use *com.jayway.jsonpath:json-path* instead.
+Unfortunately this library does not implement all the JSONPath expressions from [Stefan Gössner's JSONPath specification](http://goessner.net/articles/JsonPath/) - that's why we use [com.jayway.jsonpath:json-path](https://mvnrepository.com/artifact/com.jayway.jsonpath/json-path) instead.
 To use this library we cannot simply do *... .extract().body().jsonPath();* anymore. Instead we have to get the response as a string first and then parse it as JsonPath object in a second step:
 
 {% highlight java %}
+import com.jayway.jsonpath.DocumentContext;
+import com.jayway.jsonpath.JsonPath;
+
+// ...
+
 String body = requestSpecification.get("products")
             .then().assertThat().statusCode(200)
             .extract().body().asString();
@@ -97,7 +102,7 @@ Using this library we can finally do some more powerful things like:
 {% highlight java %}
 int itemCount = products.read("items.length()");
 // or
-List<String> productNames = products.read("items[\*].name");
+List<String> productNames = products.read("items[*].name");
 {% endhighlight %}
 
 
@@ -179,6 +184,6 @@ In this test case we want to check if an image that was uploaded for a product i
 
 ## Summary
 
-RAT allows us to check the complete state of the REST API on an abritrary ePages installation just at the push of a button. We use it to partly automate our QA process and run it as last step of a developer installation via Jenkins to make sure everything went fine.
+RAT allows us to check the complete state of the REST API on an abritrary ePages installation just at the push of a button. We use it to partly automate our QA process and run it as last step of a developer installation via Jenkins to make sure everything went fine. RAT takes over repetitive tasks and guarantees a certain level of quality - we can spend the saved time on improving our test infrastructure and on the implementation of further test cases.
 
 Currently we discuss how to include RAT in the Jenkins job that checks our pull requests GitHub. The challenge here is to choose the RAT branch that corresponds with the changes in the branch from the pull request.
