@@ -8,12 +8,12 @@ authors: ["Ulf B."]
 ---
 
 A few years ago, at the time when the development of the ePages REST API started,
-ePages 6 was just a huge monolith written in Perl and already hard to handle.
+ePages 6 was a huge monolith written in Perl and already hard to handle.
 The objective was to not further inflate the monolith, but rather be able to use state-of-the-art frameworks. Therefore, the REST API was initiated as a separate service implemented in Java.
 
 This service communicates with the monolith via REST and SOAP in order to process the data we want to expose to the public.
-All the API related business logic like right management and rate limits are implemented in Java such that the API's we had to implement in Perl could
-become quiete simple.
+All the API related business logic like rights management and rate limiting are implemented in Java such that the API's we had to implement in Perl could
+become quite simple.
 
 Of course, all resource and service classes are covered by unit tests on both sides, Perl and Java.
 Yet, since the functionality of the API is based on two different projects that live in two different repositories,
@@ -24,10 +24,10 @@ This was the starting point of RAT - our Rest API Test framework.
 
 ## RAT
 
-The idea of RAT was to create a framework that allows us to easily verify the state of the REST API on an abritrary ePages installation.
+The idea of RAT was to create a framework that allows us to easily verify the state of the REST API on an arbitrary ePages installation.
 
 In order to do so, RAT sends requests to the API and validates the response.
-To be able to compare the response with an expected one, we let the test run on shop of the DemoShopType
+To be able to compare a response with an expected one, we let the test run on shops of the DemoShopType
 (The developer installation of ePages includes a DemoShopType, which allows to create a demo shop with certain products of different types and a few orders).
 We wanted the test cases to be able to run in an arbitrary order. The problem is that some of the API calls change a shop (DELETE product),
 which leads to different results in the following calls. The solution is to create new shops in order to test those calls.
@@ -37,7 +37,7 @@ RAT is based on [REST-assured](http://rest-assured.io/) and [Serenity BDD](http:
 
 ### REST-assured
 
-The particular test cases are implemented using REST-assured. This is a framework that is specially designed for testing REST APIs and allows to easily send different kinds of requests and validations of their responses.
+The particular test cases are implemented using REST-assured. It is a framework that is specially designed for testing REST APIs and allows to easily send different kinds of requests and validations of their responses.
 
 A simple check, for instance, whether the product resource of our REST API is returning 22 products, could look as follows:
 
@@ -77,7 +77,7 @@ JsonPath products = requestSpecification
 
 #### JSONPath ####
 
-REST-assured comes already with a library for JSONPath (which is basically [XPath](https://en.wikipedia.org/wiki/XPath) for JSON) namely [com.jayway.restassured:json-path](https://mvnrepository.com/artifact/com.jayway.restassured/json-path)
+REST-assured already includes a library for JSONPath (which is basically [XPath](https://en.wikipedia.org/wiki/XPath) for JSON) namely [com.jayway.restassured:json-path](https://mvnrepository.com/artifact/com.jayway.restassured/json-path)
 that can be used to validate a JSON response and verify certain attributes.
 
 Unfortunately, this library does not implement all the JSONPath expressions from [Stefan Gössner's JSONPath specification](http://goessner.net/articles/JsonPath/) - this is why we use [com.jayway.jsonpath:json-path](https://mvnrepository.com/artifact/com.jayway.jsonpath/json-path) instead.
@@ -109,9 +109,9 @@ List<String> productNames = products.read("items[*].name");
 ### Serenity BDD
 
 Similar to [Cucumber](https://cucumber.io/) in the Ruby world,
-Serentiy allows you to describe and structure the test cases in a way so that it acts like a complete specification that describes each use case step by step.
+Serenity allows you to describe and structure the test cases in a way so that it acts like a complete specification that describes each use case step by step.
 
-The following snippet shows a test case we use to check, if an uploaded image was added to the slideshow of a product:
+The following snippet shows a test case we use to check, if an uploaded image gets added to the slideshow of a product:
 
 {% highlight java %}
 @RunWith(SerenityRunner.class)
@@ -184,6 +184,6 @@ In this particular test case we wanted to check on whether an image, that was up
 
 ## Summary
 
-RAT allows us to check the complete state of the REST API on an abritrary ePages installation by a single click. We use it to partly automate our QA process and run it as last step of a developer installation via Jenkins to make sure everything went fine. RAT takes over repetitive tasks and guarantees a certain level of quality - this enables us to spend more time on improving our test infrastructure as well as on the implementation of further test cases.
+RAT allows us to check the complete state of the REST API on an arbitrary ePages installation by a single click. We use it to partly automate our QA process and run it as last step of a developer installation via Jenkins to make sure everything went fine. RAT takes over repetitive tasks and guarantees a certain level of quality - this enables us to spend more time on improving our test infrastructure as well as on the implementation of further test cases.
 
 Currently, we are discussing on how to include RAT in the Jenkins job that checks our GitHub pull requests for new features in the Perl or Java repository. Here, the challenge is to choose the particular RAT branch that corresponds to the changes in the branch from the pull request.
