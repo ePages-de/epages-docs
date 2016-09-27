@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How we test our API"
-date: "2016-09-28 11:11:11"
+date: "2016-09-29 11:11:11"
 image: blog-header/heartbeat.jpg
 categories: tech-stories
 authors: ["Ulf B."]
