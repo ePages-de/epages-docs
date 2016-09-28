@@ -12,8 +12,7 @@ ePages 6 was a huge monolith written in Perl and already hard to handle.
 The objective was to not further inflate the monolith, but rather be able to use state-of-the-art frameworks. Therefore, the REST API was initiated as a separate service implemented in Java.
 
 This service communicates with the monolith via REST and SOAP in order to process the data we want to expose to the public.
-All the API related business logic like rights management and rate limiting are implemented in Java such that the API's we had to implement in Perl could
-become quite simple.
+All the API related business logic like rights management and rate limiting are implemented in Java in order to make sure that the Perl implementation of the APIs is simple.
 
 Of course, all resource and service classes are covered by unit tests on both sides, Perl and Java.
 Yet, since the functionality of the API is based on two different projects that live in two different repositories,
@@ -33,7 +32,7 @@ We wanted the test cases to be able to run in an arbitrary order. The problem is
 which leads to different results in the following calls. The solution is to create new shops in order to test those calls.
 So far the ePages 6 REST API does not offer an endpoint to create new shops, this is why we used the ePages SOAP API to do so.
 
-RAT is based on [REST-assured](http://rest-assured.io/) and [Serenity BDD](http://www.thucydides.info), two tools that take over a lot of work on the way to produce nice test results. In the next paragraphs I will introduce these tools briefly and show how we use them.
+RAT is based on [REST-assured](http://rest-assured.io/) and [Serenity BDD](http://www.thucydides.info), two tools that ease a lot of our workload and help us to achieve good test results. In the following paragraphs I will introduce the mentioned tools briefly and show how we use them.
 
 ### REST-assured
 
