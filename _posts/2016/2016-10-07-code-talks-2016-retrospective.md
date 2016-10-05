@@ -46,14 +46,22 @@ He showed how pure functional programming can actually be applied in the wild:
 
 ## The party
 
-{% image blog/blog-codetalks2016-vouchers.jpg 50% right %}
+After the first day of talks everybody was invited to have fun at the code.talks After-Work-Party, which conveniently took place at Kampnagel as well.
+And because it also started to rain it was even more attractive to stay and continue with networking while having some drinks.
+All the speakers where supplied with a batch of vouchers for free drinks and happily gave them out to the thirsty community.
+There was not only a DJ responsible for the perfect mix of music, but he was also accompanied by a live saxophone player who received a lot of cheers.
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+{% image blog/blog-codetalks2016-vouchers.jpg 50% right %}
 
 
 ## Our talk
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Just before lunch on Friday it was time for Oliver and Jens to give their talk on modern Java Frameworks.
+The Alabama Cinema at Kampnagel served as their stage, and although it was a bit separated from all the other conference rooms it was still well visited.
+The talk was delivered as a amusing discussion between Bob Operator and Joe Developer while implementing a new feature live on stage into an existing online pizza shop based on Java microservices.
+Showing best practices and introducing a number of useful Open Source libraries was very well received by the audience.
+Source code for the epizza project can be found on the [ePages GitHub account](https://github.com/ePages-de/epizza).
+The presentation ended with lots of laughter when a real pizza delivery boy carrying steaming hot salami pizza entered the cinema and asking who ordered it - proof that the implementation really worked ;-)
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="de" dir="ltr">Bob &amp; Joe at <a href="https://twitter.com/hashtag/codetalkshh?src=hash">#codetalkshh</a> &quot;shared code is evil&quot; ... es sei denn es ist Infrastruktur-Code cc/ <a href="https://twitter.com/jensfischerhh">@jensfischerhh</a> <a href="https://twitter.com/otrosien">@otrosien</a> <a href="https://t.co/uolOVUqcr5">pic.twitter.com/uolOVUqcr5</a></p>&mdash; harm (@netzfisch) <a href="https://twitter.com/netzfisch/status/781801508484616192">September 30, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
