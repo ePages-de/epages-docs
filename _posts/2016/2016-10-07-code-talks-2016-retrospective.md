@@ -7,23 +7,11 @@ categories: events
 authors: ["Jens", "Mathias"]
 ---
 
-## The headline
-
-Blog post here ;-)
-
-## The party
-
-{% image blog/blog-codetalks2016-vouchers.jpg 50% right %}
-
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
-
-## Our talk
-
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
-{% image blog/blog-codetalks2016-talk.jpg  %}
-
+<style>
+.twitter-tweet {
+  margin: auto;
+}
+</style>
 
 ## Highlights
 
@@ -53,4 +41,19 @@ He showed how pure functional programming can actually be applied in the wild:
 - functional dependency injection
 
 <blockquote class="twitter-tweet" data-lang="de"><p lang="de" dir="ltr">Effizient entwickeln mit Funktionaler Programmierung: talk by <a href="https://twitter.com/sperbsen">@sperbsen</a> at <a href="https://twitter.com/codetalkshh">@codetalkshh</a> <a href="https://t.co/BPDCJ9jo2M">pic.twitter.com/BPDCJ9jo2M</a></p>&mdash; Teresa Holfeld (@TeresaHolfeld) <a href="https://twitter.com/TeresaHolfeld/status/781433670452281344">29. September 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+## The party
+
+{% image blog/blog-codetalks2016-vouchers.jpg 50% right %}
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+
+## Our talk
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="de" dir="ltr">Bob &amp; Joe at <a href="https://twitter.com/hashtag/codetalkshh?src=hash">#codetalkshh</a> &quot;shared code is evil&quot; ... es sei denn es ist Infrastruktur-Code cc/ <a href="https://twitter.com/jensfischerhh">@jensfischerhh</a> <a href="https://twitter.com/otrosien">@otrosien</a> <a href="https://t.co/uolOVUqcr5">pic.twitter.com/uolOVUqcr5</a></p>&mdash; harm (@netzfisch) <a href="https://twitter.com/netzfisch/status/781801508484616192">September 30, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
