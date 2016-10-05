@@ -24,7 +24,7 @@ This was a very entertaining sequence of bashing hot programming languages.
 <blockquote class="twitter-tweet" data-lang="de"><p lang="en" dir="ltr">Pures Entertainment <a href="https://twitter.com/hashtag/codetalkshh?src=hash">#codetalkshh</a> 🚀💯 <a href="https://t.co/V86LhW3qdU">pic.twitter.com/V86LhW3qdU</a></p>&mdash; Mathias D (@zaddo) <a href="https://twitter.com/zaddo/status/781407595202539521">29. September 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-The point Lars and Johann tried to make was that developers often choose technologies because they are interested to learn them and not by experience and profound knowledge.
+The point Lars and Johann tried to make was that developers often choose technologies because they are interested in learning them and not by experience and profound knowledge.
 This is a very selfish pattern for decision making.
 
 The sponsor often has different goals.
@@ -32,7 +32,7 @@ The chosen technology should scale and it should be possible to find skilled peo
 Also fast time to market is more important than a fancy technology stack.
 
 So their appeal was to choose technology more scientifically and not based on hype - they asked everybody to decide as if you have *"skin in the game"*.
-Which technology would you choose if the south Italian investor captured your family and will just release them if the project is delivered in time.
+Which technology would you choose if the south Italian investor captured your family and will only release them if the project is delivered in time.
 
 ### Developing more efficiently with Functional Programming
 
