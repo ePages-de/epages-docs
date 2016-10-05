@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "code.talks 2016 retrospective"
-date: "2016-10-06 09:00:00"
+date: "2016-10-07 09:00:00"
 image: blog-header/codetalks2016.jpg
 categories: events
 authors: ["Jens", "Mathias"]
@@ -47,12 +47,10 @@ So their appeal was to choose technology more scientifically and not based on hy
 <blockquote class="twitter-tweet" data-lang="de"><p lang="de" dir="ltr">Funktionale Programmierung mit überfahrenen Klapperschlangen auf texanischen Highway. Brutal aber unterhaltsam. <a href="https://twitter.com/hashtag/codetalkshh?src=hash">#codetalkshh</a></p>&mdash; Oliver Trosien (@otrosien) <a href="https://twitter.com/otrosien/status/781449543292489728">29. September 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-He showed how pure functional programming can actually be applied in the wild: 
+He showed how pure functional programming can actually be applied in the wild:
 
 - functional UI development using [Reacl](https://github.com/active-group/reacl) - a ClojureScript library for programming with the React framework.
-- functional dependency injection 
+- functional dependency injection
 
 <blockquote class="twitter-tweet" data-lang="de"><p lang="de" dir="ltr">Effizient entwickeln mit Funktionaler Programmierung: talk by <a href="https://twitter.com/sperbsen">@sperbsen</a> at <a href="https://twitter.com/codetalkshh">@codetalkshh</a> <a href="https://t.co/BPDCJ9jo2M">pic.twitter.com/BPDCJ9jo2M</a></p>&mdash; Teresa Holfeld (@TeresaHolfeld) <a href="https://twitter.com/TeresaHolfeld/status/781433670452281344">29. September 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
