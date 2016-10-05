@@ -2,19 +2,32 @@
 layout: post
 title: "code.talks 2016 retrospective"
 date: "2016-10-06 09:00:00"
-image: blog-header/codetalks.jpg
+image: blog-header/codetalks2016.jpg
 categories: events
 authors: ["Jens", "Mathias"]
 ---
 
-# code.talks 2016 - popcorn, nachos and code at Kampnagel
+## The headline
 
-The code talks 2016 
+Blog post here ;-)
+
+## The party
+
+{% image blog/blog-codetalks2016-vouchers.jpg 50% right %}
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
 
-# Highlights
+## Our talk
 
-## The Return of Sanity? (Die Rückkehr der Vernunft?)
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+{% image blog/blog-codetalks2016-talk.jpg  %}
+
+
+## Highlights
+
+### The Return of Sanity? (Die Rückkehr der Vernunft?)
 
 The conference started with a real highlight on the main stage in K6 - [Lars Jankowfsky](https://twitter.com/dodgeris) and [Johann-Peter Hartmann](https://twitter.com/Johannhartmann) gave a talked about *"The Return of Sanity?" ("Die Rückkehr der Vernunft?")*. Their talk was a discussion between the two about which technology stack to use for their imaginary starup *canab.io*. This was a very entertaining sequence of bashing hot programming languages.
 
@@ -30,17 +43,14 @@ The sponsor often has different goals. The choosen technology should scale and i
 
 So their appeal was to choose technology more scientifically and not based on hype - they asked everybody to decide as if you have *"skin in the game"*. Which technology would you choose if the south italian investor captured your family and will just release them if the project is develivered in time.
 
-## Developing more efficiently with functional Programming
+### Developing more efficiently with functional Programming
 
-[Michael Sperber](https://twitter.com/sperbsen) from Active Group talked about functional programming. He took an example based approach to show how useful the main principles of functional programming are. Particularly creative examples are unbeaten 
+[Michael Sperber](https://twitter.com/sperbsen) from Active Group talked about functional programming. He took an example based approach to show how useful the main principles of functional programming are. Particularly creative examples are unbeaten
 
 <blockquote class="twitter-tweet" data-lang="de"><p lang="de" dir="ltr">Funktionale Programmierung mit überfahrenen Klapperschlangen auf texanischen Highway. Brutal aber unterhaltsam. <a href="https://twitter.com/hashtag/codetalkshh?src=hash">#codetalkshh</a></p>&mdash; Oliver Trosien (@otrosien) <a href="https://twitter.com/otrosien/status/781449543292489728">29. September 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-He showed how pure functional programming can also be applied in UI development by giving a few examples in [Reacl](https://github.com/active-group/reacl) - a ClojureScript library for programming with the React framework. 
+He showed how pure functional programming can also be applied in UI development by giving a few examples in [Reacl](https://github.com/active-group/reacl) - a ClojureScript library for programming with the React framework.
 
 <blockquote class="twitter-tweet" data-lang="de"><p lang="de" dir="ltr">Effizient entwickeln mit Funktionaler Programmierung: talk by <a href="https://twitter.com/sperbsen">@sperbsen</a> at <a href="https://twitter.com/codetalkshh">@codetalkshh</a> <a href="https://t.co/BPDCJ9jo2M">pic.twitter.com/BPDCJ9jo2M</a></p>&mdash; Teresa Holfeld (@TeresaHolfeld) <a href="https://twitter.com/TeresaHolfeld/status/781433670452281344">29. September 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-
