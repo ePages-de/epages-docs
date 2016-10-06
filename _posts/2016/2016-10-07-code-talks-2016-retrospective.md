@@ -15,20 +15,30 @@ authors: ["Jens", "Mathias"]
 
 ## Talking Code
 
-The last days of September had a special highlight ready for the dev community in Hamburg. It was time for popcorn nachos and code again. This time even larger and at a different location. Code.talk outgrew the Cinemaxx Dammtor and went for Kampnagel this time. Thus one of the biggest developer conferences in europe could welcome 1.900 guests instead of 1.500 in the previous year.
+The last days of September had a special highlight ready for the dev community in Hamburg.
+It was time for popcorn, nachos, and code again.
+This time even larger and at a different location.
+code.talks outgrew the Cinemaxx Dammtor and went for Kampnagel this time.
+Thus one of the biggest developer conferences in Europe could welcome 1.900 guests instead of 1.500 in the previous year.
 
-As usual for the code.talks the organization was near perfection. Althought the guests did not really benefit from the additional space. There was rather more more queuing for popcorn, drinks and food than last year.
+As usual for code.talks the organization was near perfect, although the guests did not really benefit from the additional space.
+There was rather more queuing for popcorn, drinks and food than last year.
 
 ## Highlights
 
 ### The Return of Sanity? (Die Rückkehr der Vernunft?)
 
-The conference started with a real highlight on the main stage in K6 - [Lars Jankowfsky](https://twitter.com/dodgeris) and [Johann-Peter Hartmann](https://twitter.com/Johannhartmann) gave a talk about *"The Return of Sanity?" ("Die Rückkehr der Vernunft?")*. Actually the talk was rather a play than a talk. It was a discussion between the two about which technology stack to use for their imaginary startup *canab.io*. They started going through a lot of hot technologies only to bash them all. So pure entertainment on the main stage.
+The conference started with a real highlight on the main stage in K6 - [Lars Jankowfsky](https://twitter.com/dodgeris) and [Johann-Peter Hartmann](https://twitter.com/Johannhartmann) gave a talk about *"The Return of Sanity?" ("Die Rückkehr der Vernunft?")*.
+Actually the talk was rather a play than a talk.
+It was a discussion between the two about which technology stack to use for their imaginary startup *canab.io*.
+They started going through a lot of hot technologies only to bash them all.
+So pure entertainment on the main stage.
 
 <blockquote class="twitter-tweet" data-lang="de"><p lang="en" dir="ltr">Pures Entertainment <a href="https://twitter.com/hashtag/codetalkshh?src=hash">#codetalkshh</a> 🚀💯 <a href="https://t.co/V86LhW3qdU">pic.twitter.com/V86LhW3qdU</a></p>&mdash; Mathias D (@zaddo) <a href="https://twitter.com/zaddo/status/781407595202539521">29. September 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-The point Lars and Johann tried to make was actually a serious one. They suggested that developers often choose technologies because they are interested in learning them and not by experience and profound knowledge.
+The point Lars and Johann tried to make was actually a serious one.
+They suggested that developers often choose technologies because they are interested in learning them and not by experience and profound knowledge.
 This is a very selfish pattern for decision making that can have a serious impact on a project.
 
 The project sponsor often has different goals.
@@ -58,12 +68,12 @@ He showed how pure functional programming can actually be applied in the wild:
 
 ## The party
 
+{% image blog/blog-codetalks2016-vouchers.jpg 40% right %}
+
 After the first day of talks everybody was invited to have fun at the code.talks After-Work-Party, which conveniently took place at Kampnagel as well.
 And because it also started to rain it was even more attractive to stay and continue with networking while having some drinks.
 All the speakers where supplied with a batch of vouchers for free drinks and happily gave them out to the thirsty community.
 There was not only a DJ responsible for the perfect mix of music, but he was also accompanied by a live saxophone player who received a lot of cheers.
-
-{% image blog/blog-codetalks2016-vouchers.jpg 50% right %}
 
 
 ## Our talk
@@ -77,3 +87,5 @@ The presentation ended with lots of laughter when a real pizza delivery boy carr
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="de" dir="ltr">Bob &amp; Joe at <a href="https://twitter.com/hashtag/codetalkshh?src=hash">#codetalkshh</a> &quot;shared code is evil&quot; ... es sei denn es ist Infrastruktur-Code cc/ <a href="https://twitter.com/jensfischerhh">@jensfischerhh</a> <a href="https://twitter.com/otrosien">@otrosien</a> <a href="https://t.co/uolOVUqcr5">pic.twitter.com/uolOVUqcr5</a></p>&mdash; harm (@netzfisch) <a href="https://twitter.com/netzfisch/status/781801508484616192">September 30, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+## The aftermath
