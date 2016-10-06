@@ -13,9 +13,9 @@ authors: ["Jens", "Mathias"]
 }
 </style>
 
-## Taking Code
+## Talking Code
 
-The last days of September had a special highlight ready for the dev community in Hamburg. It was time for popcorn nachos and code again. This time even larger and at a different location. Code.talk outgrew the Cinemaxx Dammtor and went for Kampnagel this time. Thus one of the biggest developer conferences in europe could welcome 1.900 guests instead of 1.500 in the previous year. 
+The last days of September had a special highlight ready for the dev community in Hamburg. It was time for popcorn nachos and code again. This time even larger and at a different location. Code.talk outgrew the Cinemaxx Dammtor and went for Kampnagel this time. Thus one of the biggest developer conferences in europe could welcome 1.900 guests instead of 1.500 in the previous year.
 
 As usual for the code.talks the organization was near perfection. Althought the guests did not really benefit from the additional space. There was rather more more queuing for popcorn, drinks and food than last year.
 
