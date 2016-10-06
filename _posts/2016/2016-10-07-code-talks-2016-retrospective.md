@@ -89,3 +89,10 @@ The presentation ended with lots of laughter when a real pizza delivery boy carr
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## The aftermath
+
+Compared to last year's topics it seems like many teams already use [Docker](https://www.docker.com/) on a day-to-day base.
+Also the hype for microservices is still present, but this year more companies could tell from their experiences from actually moving to this kind of architecture.
+[Continuous Delivery Pipelines](https://devops.com/2014/07/29/continuous-delivery-pipeline/) and full process automation are becoming more and more popular.
+What was a lot more prominent than before is the general interest in Functional Programming using different platforms and programming languages.
+
+Once more code.talks where able to deliver on their slogan "biggest class reunion of the developer community". Congratulations to the organizers and see you next year!
