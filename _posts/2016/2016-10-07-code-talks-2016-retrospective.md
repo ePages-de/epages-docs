@@ -96,3 +96,6 @@ Also the hype for microservices is still present, but this year more companies c
 What was a lot more prominent than before is the general interest in Functional Programming using different platforms and programming languages.
 
 Once more code.talks where able to deliver on their slogan "biggest class reunion of the developer community". Congratulations to the organizers and see you next year!
+
+<blockquote class="twitter-tweet" data-lang="de"><p lang="de" dir="ltr">Klasse Talks, viele Teilnehmer, tolle Party – wir sagen DANKE <a href="https://twitter.com/hashtag/codetalkshh?src=hash">#codetalkshh</a>! Slides findet ihr in den Talks unter: <a href="https://t.co/auKkHGh0GF">https://t.co/auKkHGh0GF</a> <a href="https://t.co/Pma1ywdwi8">pic.twitter.com/Pma1ywdwi8</a></p>&mdash; code.talks (@codetalkshh) <a href="https://twitter.com/codetalkshh/status/783962346444169216">6. Oktober 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
