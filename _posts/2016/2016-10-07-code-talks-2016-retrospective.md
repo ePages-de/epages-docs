@@ -13,26 +13,30 @@ authors: ["Jens", "Mathias"]
 }
 </style>
 
+## Taking Code
+
+The last days of September had a special highlight ready for the dev community in Hamburg. It was time for popcorn nachos and code again. This time even larger and at a different location. Code.talk outgrew the Cinemaxx Dammtor and went for Kampnagel this time. Thus one of the biggest developer conferences in europe could welcome 1.900 guests instead of 1.500 in the previous year. 
+
+As usual for the code.talks the organization was near perfection. Althought the guests did not really benefit from the additional space. There was rather more more queuing for popcorn, drinks and food than last year.
+
 ## Highlights
 
 ### The Return of Sanity? (Die Rückkehr der Vernunft?)
 
-The conference started with a real highlight on the main stage in K6 - [Lars Jankowfsky](https://twitter.com/dodgeris) and [Johann-Peter Hartmann](https://twitter.com/Johannhartmann) gave a talk about *"The Return of Sanity?" ("Die Rückkehr der Vernunft?")*.
-Their talk was a discussion between the two about which technology stack to use for their imaginary startup *canab.io*.
-This was a very entertaining sequence of bashing hot programming languages.
+The conference started with a real highlight on the main stage in K6 - [Lars Jankowfsky](https://twitter.com/dodgeris) and [Johann-Peter Hartmann](https://twitter.com/Johannhartmann) gave a talk about *"The Return of Sanity?" ("Die Rückkehr der Vernunft?")*. Actually the talk was rather a play than a talk. It was a discussion between the two about which technology stack to use for their imaginary startup *canab.io*. They started going through a lot of hot technologies only to bash them all. So pure entertainment on the main stage.
 
 <blockquote class="twitter-tweet" data-lang="de"><p lang="en" dir="ltr">Pures Entertainment <a href="https://twitter.com/hashtag/codetalkshh?src=hash">#codetalkshh</a> 🚀💯 <a href="https://t.co/V86LhW3qdU">pic.twitter.com/V86LhW3qdU</a></p>&mdash; Mathias D (@zaddo) <a href="https://twitter.com/zaddo/status/781407595202539521">29. September 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-The point Lars and Johann tried to make was that developers often choose technologies because they are interested in learning them and not by experience and profound knowledge.
-This is a very selfish pattern for decision making.
+The point Lars and Johann tried to make was actually a serious one. They suggested that developers often choose technologies because they are interested in learning them and not by experience and profound knowledge.
+This is a very selfish pattern for decision making that can have a serious impact on a project.
 
-The sponsor often has different goals.
+The project sponsor often has different goals.
 The chosen technology should scale and it should be possible to find skilled people on the market.
 Also fast time to market is more important than a fancy technology stack.
 
-So their appeal was to choose technology more scientifically and not based on hype - they asked everybody to decide as if you have *"skin in the game"*.
-Which technology would you choose if the south Italian investor captured your family and will only release them if the project is delivered in time.
+So their appeal was to choose technology more scientifically and not based on hype - they asked everybody to decide as if one has *"skin in the game"*.
+Which technology would you choose if the south Italian investor captured your family and will only release them if the project is delivered in time?
 
 ### Developing more efficiently with Functional Programming
 
