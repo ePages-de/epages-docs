@@ -68,7 +68,7 @@ He showed how pure functional programming can actually be applied in the wild:
 
 ## The party
 
-{% image blog/blog-codetalks2016-vouchers.jpg 40% right %}
+{% image blog/blog-codetalks2016-vouchers.jpg 30% right %}
 
 After the first day of talks everybody was invited to have fun at the code.talks After-Work-Party, which conveniently took place at Kampnagel as well.
 And because it also started to rain it was even more attractive to stay and continue with networking while having some drinks.
@@ -76,7 +76,7 @@ All the speakers where supplied with a batch of vouchers for free drinks and hap
 There was not only a DJ responsible for the perfect mix of music, but he was also accompanied by a live saxophone player who received a lot of cheers.
 
 
-## Our talk
+## Our talk "Schneller in die Cloud mit modernen Java Frameworks"
 
 Just before lunch on Friday it was time for Oliver and Jens to give their talk on modern Java Frameworks.
 The Alabama Cinema at Kampnagel served as their stage, and although it was a bit separated from all the other conference rooms it was still well visited.
