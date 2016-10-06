@@ -38,7 +38,7 @@ So pure entertainment on the main stage.
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 The point Lars and Johann tried to make was actually a serious one.
-They suggested that developers often choose technologies because they are interested in learning them and not by experience and profound knowledge.
+They argued that developers often choose technologies because they are interested in learning them and not by experience and profound knowledge.
 This is a very selfish pattern for decision making that can have a serious impact on a project.
 
 The project sponsor often has different goals.
