@@ -23,6 +23,7 @@ In order to keep track of these changes we recommend you to follow [@epagesdevs]
 * Added data type [`variationIdentifier`](https://developer.epages.com/apps/data-types#variationidentifier).
 * Removed `products_write` authorisation from `stocklevel` attribute.
 * Added query parameter `includeInvisible` to [`GET` products](https://developer.epages.com/apps/api-reference/get-shops-shopid-products.html).
+* Localized attribute `name` in `productLineItems` in [`GET` orders/{orderId}](https://developer.epages.com/apps/api-reference/get-shops-shopid-orders-orderid.html).
 
 #### <i class="fa fa-minus"></i> Remove
 

@@ -60,7 +60,7 @@ post:
   /order:
     displayName: Order
     post:
-      description: Creates an order from a valid cart. Billing address has to be available in the cart before creating an order. The request body for this REST call remains empty.
+      description: Creates an order that is valid at the time of cart creation. It won't be validated again while processing the actual request. Billing address has to be available in the cart before creating an order. The request body for this REST call remains empty.
       securedBy: [orders_write]
       responses:
         201:
