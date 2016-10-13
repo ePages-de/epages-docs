@@ -4,9 +4,12 @@
 set -e
 
 # Always own possibly mounted docker volumes (files on host).
-chown -R root:root ${EPAGES_DOCS}
+# - exclude all dot files and dot folders in root dir.
+for i in `find ${EPAGES_DOCS} -depth 1 \( ! -iname ".*" \)`; do
+  chown -R root:root "${i}";
+done
 
-# If the first argument is test, build, index or serve 
+# If the first argument is test, build, index or serve
 # then set exec to prepend with rake.
 if [[ "${1}" =~ ^.*(test)|(build)|(index)|(serve).*$ ]]; then
     set rake "${@}"
