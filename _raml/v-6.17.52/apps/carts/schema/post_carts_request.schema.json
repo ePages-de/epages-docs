@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "Post Carts Request Schema",
+  "type": "object",
+  "properties": {
+    "": {
+      "type": "object of [cart (create request)](page:apps-data-types#cart-create-request)",
+      "description": ""
+    }
+  }
+}
