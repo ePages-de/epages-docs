@@ -1,20 +1,12 @@
 ---
 layout: page
-key: api-change-log
+key: api-change-log-v-6.17.52
 title: API Change Log
 version: v1
 ---
 
 This change log covers significant updates and changes to the ePages REST API.
 In order to keep track of these changes we recommend you to follow [@epagesdevs](https://twitter.com/epagesdevs) on Twitter or subscribe to our [RSS feed for the API Change Log](https://developer.epages.com/apps/feed.xml).
-
-<hr>
-
-## 2016-10-13
-
-### Changes with software release 6.17.53
-
-* None.
 
 <hr>
 

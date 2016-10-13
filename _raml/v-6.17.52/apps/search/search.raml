@@ -1,0 +1,27 @@
+#%RAML 0.8
+/product-suggest:
+  displayName: Product suggestions
+  description: Retrieve suggestions for a product search query.
+  get:
+    description: Returns suggestions for a product search query.
+    securedBy: [products_read]
+    is: [ locale ]
+    queryParameters:
+      query:
+        description: |
+          Specifies a non-blank search query. (Example: A query string for the product series 'Dr. Boom' could be 'Boom'.)
+        example: Boom
+        required : true
+      limit:
+        description: Specifies the amount of entries to be returned.
+        type: integer
+        example: 10
+        default: 10
+        minimum: 1
+        maximum: 100
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include examples/get_search_productsuggest_response.json
+            schema: !include schema/get_search_productsuggest.schema.json

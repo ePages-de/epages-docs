@@ -1,0 +1,107 @@
+{
+  "results": 1,
+  "page": 1,
+  "resultsPerPage": 10,
+  "items": [
+    {
+      "item": {
+        "productId": "51E7F905-2E4C-78C2-30C2-AC14145FA4E5",
+        "name": "Dr.Boom - Red Power",
+        "visible": true,
+        "productVariationType": "regular",
+        "manufacturerProductNumber": "HP-003",
+        "productLength": null,
+        "productWidth": null,
+        "productHeight": null,
+        "productVariationSelection": null,
+        "shortDescription": "<p>Red Resonator S&nbsp;headphones are the best-performing around-ear headphones from&nbsp;Dr.Boom. They give you fresh and&nbsp;powerful sound.&nbsp;These headphones definitely&nbsp;let you hear your music better!</p>",
+        "deliveryPeriod": "3-5",
+        "description": "<p><strong><em>Dr.Boom - HP001</em></strong>&nbsp;Red Resonator S&nbsp;headphones are the best-performing around-ear headphones from&nbsp;Dr.Boom. They give you fresh and&nbsp;powerful sound.&nbsp;These headphones definitely&nbsp;let you hear your music better!</p>\r\n\r\n<p>The noise cancelling technology monitors the noise around you and cancels it out, helping you focus on what you want to hear -&nbsp;whether it’s music, calls or simply peace and quiet. These headphones look as good as they sound. They’re comfy, durably made and easily to store, with earcups that&nbsp;fit in a small carrying box.</p>",
+        "images": [
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F905/2E4C/78C2/30C2/AC14/145F/A4E5/013-headphone-red_h.jpg",
+            "classifier": "HotDeal"
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F905/2E4C/78C2/30C2/AC14/145F/A4E5/013-headphone-red_m.jpg",
+            "classifier": "Medium"
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F905/2E4C/78C2/30C2/AC14/145F/A4E5/013-headphone-red.jpg",
+            "classifier": "Large"
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F905/2E4C/78C2/30C2/AC14/145F/A4E5/013-headphone-red_s.jpg",
+            "classifier": "Small"
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F905/2E4C/78C2/30C2/AC14/145F/A4E5/013-headphone-red_xs.jpg",
+            "classifier": "Thumbnail"
+          }
+        ],
+        "priceInfo": {
+          "quantity": {
+            "amount": 1,
+            "unit": "piece(s)"
+          },
+          "taxClass": {
+            "taxClassId": "5446685F-A8AF-0E18-9B4F-D5809AB30FBF",
+            "name": "standard",
+            "percentage": 19
+          },
+          "price": {
+            "taxType": "NET",
+            "formatted": "54.62 €",
+            "amount": 54.62,
+            "currency": "EUR"
+          },
+          "depositPrice": null,
+          "ecoParticipationPrice": null,
+          "priceWithDeposits": {
+            "taxType": "NET",
+            "formatted": "54.62 €",
+            "amount": 54.62,
+            "currency": "EUR"
+          },
+          "manufacturerPrice": null,
+          "basePrice": null
+        },
+        "forSale": true,
+        "specialOffer": false,
+        "deliveryWeight": {
+          "amount": 260,
+          "unit": "g"
+        },
+        "availabilityText": "In stock<br />can be shipped within 3-5 days",
+        "availability": "OnStock",
+        "energyLabelsString": null,
+        "energyLabelSourceFile": null,
+        "productDataSheet": null,
+        "sfUrl": "http://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/Products/HP-003",
+        "productNumber": "HP-003",
+        "manufacturer": "Bass by Dr.Boom",
+        "upc": null,
+        "ean": null,
+        "essentialFeatures": "Surround Sound\r\nAcoustic Noise Cancelling\r\nCorrect fit",
+        "searchKeywords": [
+          "Surround Sound",
+          "Acoustic Noise Cancelling",
+          "Correct fit"
+        ],
+        "stocklevel": 100,
+        "minStocklevel": 10,
+        "links": [
+          {
+            "rel": "self",
+            "href": "https://pm.epages.com/rs/shops/apidocu/products/51E7F905-2E4C-78C2-30C2-AC14145FA4E5"
+          },
+          {
+            "rel": "categories",
+            "href": "https://pm.epages.com/rs/shops/apidocu/categories/?productId=51E7F905-2E4C-78C2-30C2-AC14145FA4E5"
+          }
+        ]
+      },
+      "lastUpdated": "2016-05-23T08:49:31Z"
+    }
+  ]
+}
