@@ -1,0 +1,232 @@
+{
+  "orderId": "5639C509-092F-7704-77D3-D5809AB321D8",
+  "orderNumber": "ORD151104/1033",
+  "creationDate": "2015-11-04T08:42:49.000Z",
+  "customerId": "56389403-55BC-176C-5343-D5809AB3A579",
+  "customerNumber": "1028",
+  "locale": "de_DE",
+  "currencyId": "EUR",
+  "taxModel": "GROSS",
+  "grandTotal": "250.94",
+  "totalBeforeTax": "250.94",
+  "totalTax": "0",
+  "customerComment": null,
+  "internalNote": null,
+  "billingAddress": {
+    "company": "Boehm-Jacobs",
+    "salutation": null,
+    "firstName": "Walter",
+    "lastName": "Ankunding",
+    "street": "Barrows Mountain 8",
+    "streetDetails": null,
+    "zipCode": "89708-4738",
+    "city": "Lunaview",
+    "state": null,
+    "country": null,
+    "title": null,
+    "vatId": null,
+    "birthday": "1975-11-08",
+    "emailAddress": "Ankunding@bj.com"
+  },
+  "shippingAddress": null,
+  "shippingData": {
+    "shippingMethod": {
+      "id": "5171DD86-C077-0726-C448-AC14145F9026",
+      "name": "Standard delivery"
+    },
+    "price": {
+      "taxType": "GROSS",
+      "formatted": "7.63 €",
+      "amount": 7.63,
+      "currency": "EUR"
+    }
+  },
+  "paymentData": {
+    "paymentMethod": {
+      "id": "5171DD86-0714-8E9B-B079-AC14145F900F",
+      "name": "Payment in advance"
+    },
+    "price": {
+      "taxType": "GROSS",
+      "formatted": "0.00 €",
+      "amount": 0,
+      "currency": "EUR"
+    }
+  },
+  "viewedOn": "2015-11-04T11:45:07.000Z",
+  "rejectedOn": null,
+  "inProcessOn": null,
+  "pendingOn": null,
+  "readyForDispatchOn": null,
+  "partiallyDispatchedOn": null,
+  "dispatchedOn": null,
+  "deliveredOn": null,
+  "partiallyInvoicedOn": null,
+  "invoicedOn": null,
+  "partiallyPaidOn": null,
+  "paidOn": "2016-01-20T07:23:47.000Z",
+  "returnedOn": null,
+  "closedOn": null,
+  "archivedOn": null,
+  "lineItemContainer": {
+    "grandTotal": {
+      "taxType": "GROSS",
+      "formatted": "250.94 €",
+      "amount": 250.94,
+      "currency": "EUR"
+    },
+    "totalBeforeTax": {
+      "taxType": "NET",
+      "formatted": "250.94 €",
+      "amount": 250.94,
+      "currency": "EUR"
+    },
+    "totalTax": {
+      "taxType": "NONE",
+      "formatted": "0.00 €",
+      "amount": 0,
+      "currency": "EUR"
+    },
+    "lineItemsSubTotal": {
+      "taxType": "GROSS",
+      "formatted": "290.99 €",
+      "amount": 290.99,
+      "currency": "EUR"
+    },
+    "productLineItems": [
+      {
+        "lineItemId": "5639C51B-10DF-DE6F-EECF-D5809AB32153",
+        "sku": "HS-008",
+        "name": "Dr.Boom - Black Bass",
+        "productId": "51EE313C-B015-70C3-F368-AC14145FD385",
+        "quantity": {
+          "amount": 1,
+          "unit": "piece(s)"
+        },
+        "lineItemPrice": {
+          "taxType": "GROSS",
+          "formatted": "111.99 €",
+          "amount": 111.99,
+          "currency": "EUR"
+        },
+        "singleItemPrice": {
+          "taxType": "GROSS",
+          "formatted": "111.99 €",
+          "amount": 111.99,
+          "currency": "EUR"
+        },
+        "images": [
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51EE/313C/B015/70C3/F368/AC14/145F/D385/006-headset_h.jpg",
+            "classifier": "HotDeal"
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51EE/313C/B015/70C3/F368/AC14/145F/D385/006-headset.jpg",
+            "classifier": "Large"
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51EE/313C/B015/70C3/F368/AC14/145F/D385/006-headset_m.jpg",
+            "classifier": "Medium"
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51EE/313C/B015/70C3/F368/AC14/145F/D385/006-headset_s.jpg",
+            "classifier": "Small"
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51EE/313C/B015/70C3/F368/AC14/145F/D385/006-headset_xs.jpg",
+            "classifier": "Thumbnail"
+          }
+        ],
+        "links": [
+          {
+            "rel": "product",
+            "href": "https://pm.epages.com/rs/shops/apidocu/products/51EE313C-B015-70C3-F368-AC14145FD385"
+          }
+        ],
+        "essentialFeatures": "Surround Sound\nZound Plug-function",
+        "taxClass": {
+          "taxClassId": "5446685F-A8AF-0E18-9B4F-D5809AB30FBF",
+          "name": "standard",
+          "percentage": 0
+        }
+      },
+      {
+        "lineItemId": "5639C51B-AC05-EAB9-08A3-D5809AB321CB",
+        "sku": "WL-001",
+        "name": "Phonasonic - WL001Y",
+        "productId": "51E7F91C-A412-4E28-E89C-AC14145FA426",
+        "quantity": {
+          "amount": 1,
+          "unit": "piece(s)"
+        },
+        "lineItemPrice": {
+          "taxType": "GROSS",
+          "formatted": "179.00 €",
+          "amount": 179,
+          "currency": "EUR"
+        },
+        "singleItemPrice": {
+          "taxType": "GROSS",
+          "formatted": "179.00 €",
+          "amount": 179,
+          "currency": "EUR"
+        },
+        "images": [
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F91C/A412/4E28/E89C/AC14/145F/A426/headphone1b_h.jpg",
+            "classifier": "HotDeal"
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F91C/A412/4E28/E89C/AC14/145F/A426/headphone1b.jpg",
+            "classifier": "Large"
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F91C/A412/4E28/E89C/AC14/145F/A426/headphone1b_m.jpg",
+            "classifier": "Medium"
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F91C/A412/4E28/E89C/AC14/145F/A426/headphone1b_s.jpg",
+            "classifier": "Small"
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F91C/A412/4E28/E89C/AC14/145F/A426/headphone1b_xs.jpg",
+            "classifier": "Thumbnail"
+          }
+        ],
+        "links": [
+          {
+            "rel": "product",
+            "href": "https://pm.epages.com/rs/shops/apidocu/products/51E7F91C-A412-4E28-E89C-AC14145FA426"
+          }
+        ],
+        "essentialFeatures": "Surround Sound\nBluetooth\nWireless",
+        "taxClass": {
+          "taxClassId": "5446685F-A8AF-0E18-9B4F-D5809AB30FBF",
+          "name": "standard",
+          "percentage": 0
+        }
+      }
+    ],
+    "couponLineItem": null,
+    "shippingPrice": {
+      "taxType": "GROSS",
+      "formatted": "7.63 €",
+      "amount": 7.63,
+      "currency": "EUR"
+    }
+  },
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://pm.epages.com/rs/shops/apidocu/orders/5639C509-092F-7704-77D3-D5809AB321D8"
+    },
+    {
+      "rel": "customer",
+      "href": "https://pm.epages.com/rs/shops/apidocu/customers/56389403-55BC-176C-5343-D5809AB3A579"
+    },
+    {
+      "rel": "shipping-method",
+      "href": "https://pm.epages.com/rs/shops/apidocu/shipping-methods/5171DD86-C077-0726-C448-AC14145F9026"
+    }
+  ]
+}

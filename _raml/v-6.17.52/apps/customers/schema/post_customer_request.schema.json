@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "Post Customer Request Schema",
+  "type": "object",
+  "properties": {
+    "": {
+      "type": "object of [customer (create request)](page:apps-data-types#customer-create-request)",
+      "description": ""
+    }
+  }
+}
