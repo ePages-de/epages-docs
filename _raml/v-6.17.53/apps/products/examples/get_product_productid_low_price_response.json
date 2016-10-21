@@ -1,0 +1,20 @@
+{
+  "priceInfo": {
+    "price": {
+      "taxType": "GROSS",
+      "formatted": "149.99 €",
+      "amount": 149.99,
+      "currency": "EUR"
+    },
+    "quantity": {
+      "amount": 1,
+      "unit": "piece(s)"
+    }
+  },
+  "links": [
+    {
+      "rel": "product",
+      "href": "https://pm.epages.com/rs/shops/apidocu/products/54EAF9A4-F2ED-BCBF-372B-0A0C05E6CF70"
+    }
+  ]
+}
