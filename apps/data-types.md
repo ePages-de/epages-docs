@@ -70,12 +70,14 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | - | :-: |  - |
 | categoryId | string | The unique identifier of the category a product is assigned to. |
 | name | string | The name of the category. |
+| alias | string | The unique identifier of the category.|
 | pageTitle | string | The page title of this category. |
 | description | string | The description of the category. |
 | specialOffer | boolean | Indicates if this category has special offers. |
 | images | array of [image](page:apps-data-types#image) | The images belonging to this category. |
 | parent | [link](page:apps-data-types#link) | The link to the parent category. |
 | subCategories | array of [link](page:apps-data-types#link) | A list of links to the subcategories. |
+| navigationCaption | string | The name of the category page that appears in the navigation bar. |
 | sfUrl | string | The link to the categories in the shop’s storefront. |
 
 ## category (create request)
@@ -94,8 +96,10 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | - | :-: |  - |
 | categoryId | string | The unique identifier of the category a product is assigned to. |
 | name | string | The name of the category. |
+| alias | string | The unique identifier of the category.|
 | pageTitle | string | The page title of this category. |
 | description | string | The description of the category. |
+| navigationCaption | string | The name of the category page that appears in the navigation bar. |
 
 ## contactInfo
 
