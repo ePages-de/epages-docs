@@ -1,9 +1,10 @@
 {
   "categoryId": "54E7301B-A6B4-567A-8AE0-0A0C05E6922D",
+  "alias": "Audio_products",
   "name": "Audio Products",
   "pageTitle": "Audio Products",
   "description": null,
-  "specialOffer": null,
+  "specialOffer": false,
   "images": [
     {
       "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/301B/A6B4/567A/8AE0/0A0C/05E6/922D/epages-e_copysmall_m.png",
@@ -41,5 +42,11 @@
       "title": "Your own design!"
     }
   ],
-  "sfUrl": "http://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/Categories/Audio_products"
+  "sfUrl": "http://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/Categories/Audio_products",
+  "links": [
+    {
+      "rel": "products",
+      "href": "https://pm.epages.com/rs/shops/apidocu/products?categoryId=54E7301B-A6B4-567A-8AE0-0A0C05E6922D"
+    }
+  ]
 }

@@ -1,12 +1,11 @@
 [
   {
     "categoryId": "5171DD85-C092-46EB-2BEC-AC14145F9094",
+    "alias": "Categories",
     "name": "Home page",
     "pageTitle": "Technic365 ePages Demoshop",
     "description": "Welcome to the Technic365 shop. Always the first for technique trends.",
-    "specialOffer": null,
-    "images": [],
-    "parent": null,
+    "specialOffer": false,
     "subCategories": [
       {
         "rel": "child",
