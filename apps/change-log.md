@@ -10,6 +10,16 @@ In order to keep track of these changes we recommend you to follow [@epagesdevs]
 
 <hr>
 
+## 2016-10-25
+
+### Changes with software release 7.0.0
+
+#### <i class="fa fa-pencil"></i> Update
+
+* Added `status` attribute to data type [`paymentData`](https://developer.epages.com/apps/data-types#paymentdata).
+
+<hr>
+
 ## 2016-10-13
 
 ### Changes with software release 6.17.53
