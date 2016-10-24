@@ -158,7 +158,7 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | key | string | The identifier of the custom attribute. |
 | displayKey | string | The displayed name of the custom attribute. |
 | singleValue | boolean | Indicates if just one feature is selected for the custom attribute.  |
-| type | enum | The data type of the custom attribute. Can be *string*, *number*, *bool*, *datetime*, *time*, *url*.|
+| type | string | The data type of the custom attribute. Can be *string*, *number*, *bool*, *datetime*, *time*, *url*.|
 | values | array of [variationValue](page:apps-data-types#variationvalue)| The options selected for the custom attribute. |
 
 ## customer
@@ -185,7 +185,7 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | Attribute | Type | Description |
 | - | :-: |  - |
 | amount | number | The amount displayed as a decimal number. |
-| unit | enum | The abbreviation of the delivery weight unit. Can be *g*, *kg*, *mg*, *oz*, *lb* or *t*.  |
+| unit | string | The abbreviation of the delivery weight unit. Can be *g*, *kg*, *mg*, *oz*, *lb* or *t*.  |
 
 ## image
 
@@ -290,8 +290,8 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | closedOn | string | The date/time the order was closed. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
 | paidOn | string | The date/time the order was paid. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
 | returnedOn | string | The date/time the order was returned. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
-| shippingData | object of [shippingData](page:apps-data-types#shippingdata) | The shipping data of  a cart or an order, i.e. short info on shipping method and price.|
-| paymentData | object of [paymentData](page:apps-data-types#paymentdata) | The payment data of  a cart or an order, i.e. short info on payment method and price.|
+| shippingData | object of [shippingData](page:apps-data-types#shippingdata) | The shipping data of a cart or an order, i.e. short info on shipping method and price.|
+| paymentData | object of [paymentData](page:apps-data-types#paymentdata) | The payment data of a cart or an order, i.e. short info on payment method and price.|
 | lineItemContainer | [lineItemContainer](page:apps-data-types#lineitemcontainer) | Contains the line items of an order. Only included in [`GET`/orders/{orderId}](page:apps-api-get-shops-shopid-orders-orderid-information). |
 | shippingPrice | object of [price](page:apps-data-types#price) | The shipping price for the order.  |
 | links | array of [link](page:apps-data-types#link) | The links to the products of the order. |
@@ -302,6 +302,7 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | - | :-: |  - |
 | paymentMethod | object of [paymentMethodInfo](page:apps-data-types#paymentmethodinfo) | Information on the payment type chosen by the customer. |
 | price | object of [price](page:apps-data-types#price) | The costs for the payment method. |
+| status | string | Indicates the status of the payment. Can be either *CANCELED*, *FAILED* or null. |
 
 ## paymentMethodInfo
 
@@ -316,7 +317,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 
 | Attribute | Type | Description |
 | - | :-: |  - |
-| taxType | string | Indicates if the amount includes tax. Can be gross, net or none. |
+| taxType | string | Indicates if the amount includes tax. Can be *GROSS*, *NET* or *NONE*. |
 | formatted | string | The amount of the price with currency unit. |
 | amount | number | The amount of the price. |
 | currency | string | The currency code of the price according to ISO 4217. |
@@ -350,7 +351,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | deliveryWeight | object of [deliveryWeightQuantity](page:apps-data-types#deliveryweightquantity) | The delivery weight of the product. |
 | shippingMethodsRestrictedTo | array of [link](page:apps-data-types#link) | Information on possible shipping method restrictions, e.g. express delivery only. Can be `null` if no restrictions exist. |
 | availabilityText | string | Additional custom information on the product's stock level or the delivery period. |
-| availability | enum | The availability of the product. Can be one of *OnStock*, *WarnStock*, *OutStock*. |
+| availability | string | The availability of the product. Can be one of *OnStock*, *WarnStock*, *OutStock*. |
 | energyLabelsString | string | A list of energy labels applied to this product. Can be one or two values. If two values are returned, the first value is the best energy label, the second is the second-best. |
 | energyLabelSourceFile | string | An image or PDF file containing the energy label image supplied by the manufacturer. |
 | productDataSheet | string | An image or PDF file containing a datasheet with technical information on the product. Has to be available if the product has an energy label. |
@@ -369,7 +370,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | stocklevel | number | Indicates the stock level of the product. |
 | minStocklevel | number | Indicates the minimum stock level of the product. Available if the field *Minimum stock level* is used in the administration area of a shop. Only available with the `products_write` authorisation. |
 | links | array of [link](page:apps-data-types#link) | The links to the product and product category. |
-| productVariationType | enum | The type of the variation product. Can be one of *master*, *regular* or *variation*. |
+| productVariationType | string | The type of the variation product. Can be one of *master*, *regular* or *variation*. |
 | productVariationSelection | array of [variationIdentifier](page:apps-data-types#variationidentifier) | The selection of the variation product. Only available if `productVariationType` is *variation*. |
 
 ## product (create request)
@@ -436,7 +437,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | Attribute | Type | Description |
 | - | :-: |  - |
 | amount | number | The amount displayed as a decimal number. |
-| unit | enum | The unit displayed as abbreviated unit, if available. Can be one of *Byte*, *kByte*, *MByte*, *GByte*, *TByte*, *l*, *ml*, *ft³*, *in³*, *m³*, *yd³*, *fl oz*, *gal*, *qt*, *m*, *cm*, *ft*, *in*, *km*, *mm*, *yd*, *s*, *min*, *m²*, *cm²*, *ft²*, *in²*, *mm²* or *yd²*. Otherwise a localised name of the unit is displayed. Can be *piece(s)*, *bottle(s)*, *crate(s)*, *can(s)*, *capsule(s)*, *box(es)*, *glass(es)*, *kit(s)*, *pack(s)*, *package(s)*, *pair(s)*, *roll(s)*, *set(s)*, *sheet(s)*, *ticket(s)*, *unit(s)*, *day(s)*, *hour(s)*, *week(s)*, *month(s)*, *night(s)* or *year(s)*. |
+| unit | string | The unit displayed as abbreviated unit, if available. Can be one of *Byte*, *kByte*, *MByte*, *GByte*, *TByte*, *l*, *ml*, *ft³*, *in³*, *m³*, *yd³*, *fl oz*, *gal*, *qt*, *m*, *cm*, *ft*, *in*, *km*, *mm*, *yd*, *s*, *min*, *m²*, *cm²*, *ft²*, *in²*, *mm²* or *yd²*. Otherwise a localised name of the unit is displayed. Can be *piece(s)*, *bottle(s)*, *crate(s)*, *can(s)*, *capsule(s)*, *box(es)*, *glass(es)*, *kit(s)*, *pack(s)*, *package(s)*, *pair(s)*, *roll(s)*, *set(s)*, *sheet(s)*, *ticket(s)*, *unit(s)*, *day(s)*, *hour(s)*, *week(s)*, *month(s)*, *night(s)* or *year(s)*. |
 
 ## sales
 
