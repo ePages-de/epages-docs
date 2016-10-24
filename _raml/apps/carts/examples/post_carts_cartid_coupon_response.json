@@ -131,7 +131,8 @@
       "formatted": "0,00 €",
       "amount": 0,
       "currency": "EUR"
-    }
+    },
+    "status": null
   },
   "minimumCart": {
     "status": true,
