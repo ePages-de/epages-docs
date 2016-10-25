@@ -117,7 +117,7 @@ layout: page
     {% assign body = body_tmp[1] %}
     <p>Media type <code>{{ body.media_type }}</code></p>
     {% if body.example %}
-      <pre>{{ body.example }}</pre>
+      <pre>{{ body.example | xml_escape }}</pre>
     {% endif %}
     {% if body.media_type == 'multipart/form-data' or body.media_type == 'application/x-www-form-urlencoded' %}
       <table class="table table-bordered table-striped">
