@@ -15,15 +15,21 @@ authors: ["Rose"]
 
 Last friday, we hosted the seventh edition of the Search Technology Meetup Hamburg organized by [Shopping24](https://www.shopping24.de) in our new building in Holstenwall 5.
 The room was packed and participants from all kinds of backgrounds engaged in discussions with the invited speakers even before the presentations started.
-Next to some snacks and refreshing drinks, we then saw two insightful talks on search architecture and how to use statistical as well as machine learning models for improving search.
+Next to some snacks and refreshing drinks, we then saw two brilliant talks on search architecture and how to use statistical as well as machine learning models for improving search.
 Therefore, [Miguel Olivares](https://twitter.com/moliware) and Christian Würtz from [Xing](https://www.xing.com/) as well as Data Scientist [Andrew Clegg](https://twitter.com/andrew_clegg) from [Etsy](https://www.etsy.com/) gave us interesting insights into their search technology infrastructure, respectively.
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">The room is packed and listening to <a href="https://twitter.com/andrew_clegg">@andrew_clegg</a>! The <a href="https://twitter.com/hashtag/search?src=hash">#search</a> community is in fire in <a href="https://twitter.com/hashtag/hamburg?src=hash">#hamburg</a> at <a href="https://twitter.com/hashtag/stmhh?src=hash">#stmhh</a>. Thanks for joining us! <a href="https://t.co/1j402flFF7">pic.twitter.com/1j402flFF7</a></p>&mdash; Search Tech Meetup (@stmhamburg) <a href="https://twitter.com/stmhamburg/status/792067869114851328">October 28, 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## Evolution of search at Xing
 
-At the social networking site for professionals Xing the search infrastructure plays a mayor role - from simple full text search on products up to an internal geo location service.
+At the social networking site for professionals Xing the search infrastructure plays a mayor role - from simple full text search up to an internal geo location service.
 The speakers explained how they evolutionized Xing's search arquitecture and how they solved arising challenges in order to create their current infrastructure.
-A technology that considerably contributed to its success was the Lucene-based search engine [Elasticsearch](https://www.elastic.co/de/products/elasticsearch).
-...
+At Xing, they put special emphasis on the enhancement of phonetic search to boost the search results, even if users misspell names.
+Also, they improved the categorization of job ads.
+Thus, if users search for the English job ad or the German one for Software Developer or "Entwickler", respectively, they are now unified and result in the same search outcome, which contributes to the improvement of qualitative search.
+Furthermore, Xing developed as a service solution to what they call "search as a service ", since they offer a platform not only to search for business contacts or jobs, yet also they provide a service of auto-suggestion based on one's personal network and geo location, etc.
+A technology that considerably contributed to Xing's success was the Lucene-based search engine [Elasticsearch](https://www.elastic.co/de/products/elasticsearch).
 
 ## Search meets Data Science at Etsy
 
