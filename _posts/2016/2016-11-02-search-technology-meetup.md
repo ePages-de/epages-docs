@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Interesting insights from the Search Technology Meetup VI"
-date: "2016-11-01 09:00:00"
-image: blog-header/stmhh-2016.jpg
+date: "2016-11-02 09:00:00"
+image: blog-header/elastic-meetup.jpg
 categories: events
 authors: ["Rose"]
 ---
@@ -23,12 +23,12 @@ Therefore, [Miguel Olivares](https://twitter.com/moliware) and Christian Würtz 
 
 ## Evolution of search at Xing
 
-At the social networking site for professionals Xing the search infrastructure plays a mayor role - from simple full text search up to an internal geo location service.
+At the social networking site for professionals Xing, the search infrastructure plays a mayor role - from simple full text search up to an internal geo location service.
 The speakers explained how they evolutionized Xing's search arquitecture and how they solved arising challenges in order to create their current infrastructure.
-At Xing, they put special emphasis on the enhancement of phonetic search to boost the search results, even if users misspell names.
+Xing developers put special emphasis on the enhancement of phonetic search to boost the search results, even if users misspell names.
 Also, they improved the categorization of job ads.
 Thus, if users search for the English job ad or the German one for Software Developer or "Entwickler", respectively, they are now unified and result in the same search outcome, which contributes to the improvement of qualitative search.
-Furthermore, Xing developed as a service solution to what they call "search as a service ", since they offer a platform not only to search for business contacts or jobs, yet also they provide a service of auto-suggestion based on one's personal network and geo location, etc.
+Furthermore, Xing developed as a service solution to what they call "search as a service ", since they offer a platform not only to search for business contacts or jobs, yet also they provide auto-suggestions based on one's personal network and geo location, etc.
 A technology that considerably contributed to Xing's success was the Lucene-based search engine [Elasticsearch](https://www.elastic.co/de/products/elasticsearch).
 
 ## Search meets Data Science at Etsy
@@ -38,12 +38,13 @@ The uniqueness of many of the offered items on Etsy adds on to this difficulty.
 The Data Science team at Etsy, as part of the broader Search Science Group, consequently dedicates its work towards improving the outcome of items that people will love and works at the intersection of search and machine learning.
 Andrew Clegg, thus, introduced Etsy's search technology stack and ran through a few remarkable and humorous examples that showed how Etsy was able to improve the search by using statistical and machine learning models.
 Andrew pointed out how challenging it can be to bring together search engineering and machine learning, since dealing with taxonomies surely is a well-known concept for search engineers, yet not so much for data scientists.
-Consequently, it is crucial to consider semantic similarity concepts and Andrew presented some of Etsy's use cases and how to measure similarity.
+Consequently, it is crucial to consider semantic similarity concepts.
+He therefore presented some use cases and how to measure similarity.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Big shout out to <a href="https://twitter.com/DataconomyMedia">@DataconomyMedia</a> and <a href="https://twitter.com/DataNativesConf">@DataNativesConf</a> in Berlin, and <a href="https://twitter.com/stmhamburg">@stmhamburg</a> and <a href="https://twitter.com/epagesdevs">@epagesdevs</a> in Hamburg. 3 talks in 2 cities in 1 day 🏆</p>&mdash; Andrew Clegg (@andrew_clegg) <a href="https://twitter.com/andrew_clegg/status/792123572781285376">October 28, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-For further insights, and to see which method Andrew consideres best to measure semantic similarity, check out his [presentation](http://www.andrewclegg.org/Talks.html).
+For further insights, and to see which method Andrew considers best to measure semantic similarity, check out his [presentation](http://www.andrewclegg.org/Talks.html).
 
 So again, many thanks to everyone who attended, to the speakers and of course the organizers.
 
