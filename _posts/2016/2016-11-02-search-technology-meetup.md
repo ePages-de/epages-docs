@@ -2,7 +2,7 @@
 layout: post
 title: "Interesting insights from the Search Technology Meetup VI"
 date: "2016-11-02 09:00:00"
-image: blog-header/elastic-meetup.jpg
+image: blog-header/search.jpg
 categories: events
 authors: ["Rose"]
 ---
@@ -13,7 +13,7 @@ authors: ["Rose"]
 }
 </style>
 
-Last friday, we hosted the seventh edition of the Search Technology Meetup Hamburg organized by [Shopping24](https://www.shopping24.de) in our new office in Holstenwall 5.
+Last Friday, we hosted the seventh edition of the Search Technology Meetup Hamburg organized by [Shopping24](https://www.shopping24.de) in our new office in Holstenwall 5.
 The room was packed and participants from all kinds of backgrounds engaged in discussions with the invited speakers even before the presentations started.
 Next to some snacks and refreshing drinks, we then saw two brilliant talks on search architecture and how to use statistical as well as machine learning models for improving search.
 
