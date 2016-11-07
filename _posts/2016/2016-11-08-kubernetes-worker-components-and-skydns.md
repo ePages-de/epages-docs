@@ -9,7 +9,7 @@ authors: ["Karsten P."]
 
 The fourth part of this blog post series deals with the worker nodes.
 Due to their role it is easier to install worker nodes than master nodes.
-They also need client certificates to connect to the API server.
+Master nodes also need client certificates to connect to the API server.
 
 ## Certificates
 
@@ -104,7 +104,7 @@ EOF
 
 ## Kubelet
 
-_kubelet_ is running on the worker nodes too.
+_kubelet_ too is running on the worker nodes.
 The configuration is different to the one of the master nodes.
 Yet, the installation is done in the same way as described in [the second part of this blog post series](https://developer.epages.com/blog/2016/09/08/kubernetes-preparing-nodes.html).
 
@@ -138,9 +138,9 @@ root@worker:~$ systemctl enable kubelet
 {% endhighlight %}
 
 As described in [the setup of the master components](https://developer.epages.com/blog/2016/10/18/kubernetes-master-components.html) _kubelet_ and _kube-proxy_ are affected by [an error](https://github.com/kubernetes/kubernetes/issues/18174).
-Therefore we do not insert a comma separated list of API servers but only the load balancer's URL in the parameter _api-servers_.
-Unlike the master nodes on the worker nodes shall run the real application pods.
-As a consequence _kubelet_ registers its own node within the API as "schedulable".
+Therefore, we do not insert a comma separated list of API servers but only the load balancer's URL in the parameter _api-servers_.
+Unlike the master nodes, on the worker nodes shall run the real application pods.
+As a consequence, _kubelet_ registers its own node within the API as "schedulable".
 
 ## Kube-proxy
 
@@ -194,7 +194,7 @@ spec:
 EOF
 {% endhighlight %}
 
-At this place a vulnerability of the HA cluster can be found.
+At this place we see a vulnerability of the HA cluster.
 Normally, the load balancer has to be failure-resistant too, because it is the only connection from the worker to the master nodes.
 But since this would go beyond the constraints of this article, we simply refer to [this older documentation](https://www.howtoforge.com/setting-up-a-high-availability-load-balancer-with-haproxy-keepalived-on-debian-lenny).
 Now, that the _kube-proxy_ pod is created, the worker nodes are ready for operation.
@@ -218,7 +218,7 @@ b9  v1.2.2_coreos.0   "/hyperkube proxy --m"   About a minute ago   Up About a m
 [kubectl](http://kubernetes.io/docs/user-guide/kubectl-overview/) is the administration tool for the cluster.
 It is running on your local computer and interacts via Kubernetes API with the cluster.
 Among others, it enables you to create new pods using YAML files on your local machine.
-Please note that YAML files on the Kubernetes nodes (so called "static pods") cannot be administrated via _kebectl_.
+Note that YAML files on the Kubernetes nodes (so called "static pods") cannot be administrated via _kebectl_.
 The _kubectl_ communication is TLS encrypted.
 The API certificate is created in an accustomed manner (see prior worker certificates).
 
