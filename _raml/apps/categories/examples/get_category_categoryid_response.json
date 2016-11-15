@@ -2,7 +2,9 @@
   "categoryId": "54E7301B-A6B4-567A-8AE0-0A0C05E6922D",
   "alias": "Audio_products",
   "name": "Audio Products",
+  "visible": true,
   "pageTitle": "Audio Products",
+  "navigationCaption": "Audio Products",
   "description": null,
   "specialOffer": false,
   "images": [

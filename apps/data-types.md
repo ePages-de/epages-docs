@@ -70,6 +70,7 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | - | :-: |  - |
 | categoryId | string | The unique identifier of the category a product is assigned to. |
 | name | string | The name of the category. |
+| visible | boolean | Indicates if the category is displayed in the shop. |
 | alias | string | The unique identifier of the category.|
 | pageTitle | string | The page title of this category. |
 | description | string | The description of the category. |
@@ -187,6 +188,16 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | amount | number | The amount displayed as a decimal number. |
 | unit | string | The abbreviation of the delivery weight unit. Can be *g*, *kg*, *mg*, *oz*, *lb* or *t*.  |
 
+## depositLineItem
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| name | string | The name of the line item. |
+| lineItemPrice | object of [price](page:apps-data-types#price) | The price of the line item. |
+| lineItemProductGuid | string | The unique identifier of xxx. |
+| links | array of [link](page:apps-data-types#link) | The links to the xxx. |
+
+
 ## image
 
 | Attribute | Type | Description |
@@ -208,6 +219,13 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | op | string | Patch operation to perform. |
 | path | string | Contains the value that references the location where the operation is performed. |
 | value | object | New value to apply.  |
+
+## lineItem
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| name | string | The name of the line item. |
+| lineItemPrice | object of [price](page:apps-data-types#price) | The price of the line item. |
 
 ## lineItemContainer
 
@@ -294,6 +312,10 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | paymentData | object of [paymentData](page:apps-data-types#paymentdata) | The payment data of a cart or an order, i.e. short info on payment method and price.|
 | lineItemContainer | [lineItemContainer](page:apps-data-types#lineitemcontainer) | Contains the line items of an order. Only included in [`GET`/orders/{orderId}](page:apps-api-get-shops-shopid-orders-orderid-information). |
 | shippingPrice | object of [price](page:apps-data-types#price) | The shipping price for the order.  |
+| deposits | array of [depositLineItem](page:apps-data-types#depositlineitem)  | The deposits that apply for the order. |
+| ecoParticipations | array of [lineItem](page:apps-data-types#lineitem) | The recycling fees included in the order.  |
+| shippingOptions | array of [lineItem](page:apps-data-types#lineitem) | The costs for the specific delivery options, such as greeting cards. |
+| basketDiscount | object of [lineItem](page:apps-data-types#lineitem) | The overall discount for the order. |
 | links | array of [link](page:apps-data-types#link) | The links to the products of the order. |
 
 ## paymentData
