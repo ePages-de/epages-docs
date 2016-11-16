@@ -236,6 +236,10 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | productLineItems | array of [productLineItem](page:apps-data-types#productlineitem) | A list of line items. |
 | shippingPrice | object of [price](page:apps-data-types#price) | The shipping price of the line item. |
 | couponLineItem | object of [couponLineItem](page:apps-data-types#couponlineitem) | Contains the line items of a coupon. |
+| deposits | array of [depositLineItem](page:apps-data-types#depositlineitem)  | The deposits that apply for the order. |
+| ecoParticipations | array of [lineItem](page:apps-data-types#lineitem) | The recycling fees included in the order.  |
+| shippingOptions | array of [lineItem](page:apps-data-types#lineitem) | The costs for the specific delivery options, such as greeting cards. |
+| basketDiscount | object of [lineItem](page:apps-data-types#lineitem) | The overall discount for the order. |
 
 ## link
 
@@ -310,10 +314,6 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | paymentData | object of [paymentData](page:apps-data-types#paymentdata) | The payment data of a cart or an order, i.e. short info on payment method and price.|
 | lineItemContainer | [lineItemContainer](page:apps-data-types#lineitemcontainer) | Contains the line items of an order. Only included in [`GET`/orders/{orderId}](page:apps-api-get-shops-shopid-orders-orderid-information). |
 | shippingPrice | object of [price](page:apps-data-types#price) | The shipping price for the order.  |
-| deposits | array of [depositLineItem](page:apps-data-types#depositlineitem)  | The deposits that apply for the order. |
-| ecoParticipations | array of [lineItem](page:apps-data-types#lineitem) | The recycling fees included in the order.  |
-| shippingOptions | array of [lineItem](page:apps-data-types#lineitem) | The costs for the specific delivery options, such as greeting cards. |
-| basketDiscount | object of [lineItem](page:apps-data-types#lineitem) | The overall discount for the order. |
 | links | array of [link](page:apps-data-types#link) | The links to the products of the order. |
 
 ## paymentData
