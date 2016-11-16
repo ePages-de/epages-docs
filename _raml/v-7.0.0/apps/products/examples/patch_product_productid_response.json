@@ -1,0 +1,95 @@
+{
+  "productId": "51E7F905-2E4C-78C2-30C2-AC14145FA4E5",
+  "name": "BRAND NEW: Dr.Boom - Star Wars Edition",
+  "visible": true,
+  "productVariationType": "regular",
+  "manufacturerProductNumber": "HP-003",
+  "productLength": null,
+  "productWidth": null,
+  "productHeight": null,
+  "productVariationSelection": null,
+  "shortDescription": "new arrival",
+  "description": "<ul>\n\t<li>Surround Sound</li>\n\t<li>Acoustic Noise Cancelling</li>\n\t<li>Correct fit",
+  "productImage": "014-headphone-starwars.jpg",
+  "images": [
+    {
+        "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F905/2E4C/78C2/30C2/AC14/145F/A4E5/013-headphone-red_h.jpg",
+        "classifier": "HotDeal"
+    },
+   {
+      "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F905/2E4C/78C2/30C2/AC14/145F/A4E5/013-headphone-red_m.jpg",
+      "classifier": "Medium"
+    },
+    {
+      "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F905/2E4C/78C2/30C2/AC14/145F/A4E5/013-headphone-red.jpg",
+      "classifier": "Large"
+    },
+    {
+      "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F905/2E4C/78C2/30C2/AC14/145F/A4E5/013-headphone-red_s.jpg",
+      "classifier": "Small"
+    },
+    {
+      "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F905/2E4C/78C2/30C2/AC14/145F/A4E5/013-headphone-red_xs.jpg",
+      "classifier": "Thumbnail"
+    }
+  ],
+  "priceInfo": {
+    "quantity": {
+      "amount": 1,
+      "unit": "piece(s)"
+    },
+    "taxClass": {
+      "name": "standard",
+      "percentage": 19
+    },
+    "price": {
+      "taxType": "NET",
+      "formatted": "54.62 €",
+      "amount": 54.62,
+      "currency": "EUR"
+    },
+    "depositPrice": null,
+    "priceWithDeposits": {
+      "taxType": "NET",
+      "formatted": "54.62 €",
+      "amount": 54.62,
+      "currency": "EUR"
+    },
+    "manufacturerPrice": null,
+    "basePrice": null
+  },
+  "forSale": true,
+  "specialOffer": false,
+  "deliveryWeight": {
+    "amount": 260,
+    "unit": "g"
+  },
+  "shippingMethodsRestrictedTo": null,
+  "availabilityText": "In stock<br />can be shipped within 3-5 days",
+  "availability": "OnStock",
+  "energyLabelSourceFile": null,
+  "productDataSheet": null,
+  "sfUrl": "http://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/Products/HP-003",
+  "productNumber": "HP-003",
+  "manufacturer": "Bass by Dr.Boom",
+  "upc": null,
+  "ean": null,
+  "essentialFeatures": null,
+  "searchKeywords": [
+    "Brilliant Sound",
+    "Noise Cancelling",
+    "Carrying Box"
+  ],
+  "stocklevel": 100,
+  "minStocklevel": 10,
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://pm.epages.com/rs/shops/apidocu/products/51E7F905-2E4C-78C2-30C2-AC14145FA4E5"
+    },
+    {
+      "rel": "categories",
+      "href": "https://pm.epages.com/rs/shops/apidocu/categories/?productId=51E7F905-2E4C-78C2-30C2-AC14145FA4E5"
+    }
+  ]
+}
