@@ -10,6 +10,17 @@ In order to keep track of these changes we recommend you to follow [@epagesdevs]
 
 <hr>
 
+## 2016-11-16
+
+### Changes with software release 7.1.0
+
+#### <i class="fa fa-pencil"></i> Update
+
+* Added `visible` attribute to data type [`category`](https://developer.epages.com/apps/data-types#category).
+* Added attributes `deposits`, `ecoParticipations`, `shippingOptions` and `basketDiscount` to data type [`order`](https://developer.epages.com/apps/data-types#order).
+
+<hr>
+
 ## 2016-10-25
 
 ### Changes with software release 7.0.0
