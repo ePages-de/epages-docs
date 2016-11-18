@@ -70,6 +70,7 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | - | :-: |  - |
 | categoryId | string | The unique identifier of the category a product is assigned to. |
 | name | string | The name of the category. |
+| visible | boolean | Indicates if the category is displayed in the shop. |
 | alias | string | The unique identifier of the category.|
 | pageTitle | string | The page title of this category. |
 | description | string | The description of the category. |
@@ -187,6 +188,14 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | amount | number | The amount displayed as a decimal number. |
 | unit | string | The abbreviation of the delivery weight unit. Can be *g*, *kg*, *mg*, *oz*, *lb* or *t*.  |
 
+## depositLineItem
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| name | string | The name of the line item. |
+| lineItemPrice | object of [price](page:apps-data-types#price) | The price of the line item. |
+| lineItemProductGuid | string | The identifier of the related product line item. A deposit is always bound to a product.|
+
 ## image
 
 | Attribute | Type | Description |
@@ -209,6 +218,13 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | path | string | Contains the value that references the location where the operation is performed. |
 | value | object | New value to apply.  |
 
+## lineItem
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| name | string | The name of the line item. |
+| lineItemPrice | object of [price](page:apps-data-types#price) | The price of the line item. |
+
 ## lineItemContainer
 
 | Attribute | Type | Description |
@@ -220,6 +236,10 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | productLineItems | array of [productLineItem](page:apps-data-types#productlineitem) | A list of line items. |
 | shippingPrice | object of [price](page:apps-data-types#price) | The shipping price of the line item. |
 | couponLineItem | object of [couponLineItem](page:apps-data-types#couponlineitem) | Contains the line items of a coupon. |
+| deposits | array of [depositLineItem](page:apps-data-types#depositlineitem)  | The deposits that apply for the order. |
+| ecoParticipations | array of [lineItem](page:apps-data-types#lineitem) | The recycling fees included in the order.  |
+| shippingOptions | array of [lineItem](page:apps-data-types#lineitem) | The costs for the specific delivery options, such as greeting cards. |
+| basketDiscount | object of [lineItem](page:apps-data-types#lineitem) | The overall discount for the order. |
 
 ## link
 
@@ -409,7 +429,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | images | array of [image](page:apps-data-types#image) | The image of the line item. |
 | links | array of [link](page:apps-data-types#link) | The links to the product line item. |
 | taxClass | object of [taxClassInfo](page:apps-data-types#taxclassinfo) | The tax that applies for the product.|
-| deliveryWeight | object of [deliveryWeightQuantity](page:apps-data-types#deliveryweightquantity) | The delivery weight for the product line item.|
+| deliveryWeight | object of [deliveryWeightQuantity](page:apps-data-types#deliveryweightquantity) | The delivery weight of the product line item.|
 
 ## productLineItem (create request)
 

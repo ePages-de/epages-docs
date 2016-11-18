@@ -46,7 +46,8 @@
           "formatted": "0.00 €",
           "amount": 0,
           "currency": "EUR"
-        }
+        },
+        "status": null
       },
       "invoicedOn": null,
       "partiallyPaidOn": null,
@@ -119,7 +120,11 @@
         "emailAddress": "schneider@schneiderei.de"
       },
       "shippingAddress": null,
-      "shippingData": null,
+      "shippingData": {
+        "shippingMethod": {
+          "id": "5171DD86-C077-0726-C448-AC14145F9026",
+          "name": "Standard delivery"
+        },
       "paymentData": {
         "paymentMethod": {
           "id": "5171DD86-0714-8E9B-B079-AC14145F900F",
@@ -130,7 +135,8 @@
           "formatted": "0.00 €",
           "amount": 0,
           "currency": "EUR"
-        }
+        },
+        "status": null
       },
       "viewedOn": "2015-11-04T08:41:35.000Z",
       "rejectedOn": null,
@@ -211,7 +217,8 @@
           "formatted": "0.00 €",
           "amount": 0,
           "currency": "EUR"
-        }
+        },
+        "status": null
       },
       "viewedOn": "2015-11-03T14:48:50.000Z",
       "rejectedOn": null,

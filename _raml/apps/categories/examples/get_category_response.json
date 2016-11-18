@@ -3,7 +3,9 @@
     "categoryId": "5171DD85-C092-46EB-2BEC-AC14145F9094",
     "alias": "Categories",
     "name": "Home page",
+    "visible": true,
     "pageTitle": "Technic365 ePages Demoshop",
+    "navigationCaption": "Categories",
     "description": "Welcome to the Technic365 shop. Always the first for technique trends.",
     "specialOffer": false,
     "subCategories": [

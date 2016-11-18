@@ -1,0 +1,89 @@
+#%RAML 0.8
+displayName: Categories
+get:
+  description: |
+      Returns the product categories of the shop. This usually is the default root category "Categories",
+      but can also include additional root categories, if supported by the shop.
+  securedBy: [products_read]
+  is: [ locale ]
+  queryParameters:
+    productId:
+      description: Filters categories by product ID.
+      required : false
+  responses:
+    200:
+      body:
+        application/json:
+          example: !include examples/get_category_response.json
+          schema: !include schema/get_category.schema.json
+
+/{categoryId}:
+  displayName: Category
+  get:
+    description: Returns the category identified by the provided category ID.
+    securedBy: [products_read]
+    is: [ locale ]
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include examples/get_category_categoryid_response.json
+            schema: !include schema/get_category_categoryid.schema.json
+  post:
+    description: Creates a subcategory to an existing category. Providing attributes in the request is optional.
+    securedBy: [products_write]
+    is: [ locale ]
+    body:
+      application/json:
+        example: !include examples/post_category_categoryid_request.json
+        schema: !include schema/post_category_categoryid_request.schema.json
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include examples/post_category_categoryid_response.json
+            schema: !include schema/post_category_categoryid.schema.json
+  put:
+    description: Modifies a category identified by the provided category ID.
+    securedBy: [products_write]
+    is: [ locale ]
+    body:
+      application/json:
+        example: !include examples/put_category_categoryid_request.json
+        schema: !include schema/put_category_categoryid_request.schema.json
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include examples/put_category_categoryid_response.json
+            schema: !include schema/put_category_categoryid.schema.json
+  delete:
+    description: Deletes a category identified by the provided category ID.
+    securedBy: [products_write]
+    responses:
+      204:
+
+  /sequence:
+    displayName: Category sequence
+    get:
+      description: Returns the order of subcategories for the provided category ID as an array. If the category has no subcategories, an empty array will be returned.
+      securedBy: [products_read]
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/get_category_categoryid_sequence_response.json
+              schema: !include schema/get_category_categoryid_sequence.schema.json
+    put:
+      description: Updates the order of subcategories for the provided category ID. Note that it is only possible to change the order but not to delete a subcategory.
+      securedBy: [products_write]
+      body:
+        application/json:
+          example: !include examples/put_category_categoryid_sequence_request.json
+          schema: !include schema/put_category_categoryid_sequence_request.schema.json
+      responses:
+          200:
+            body:
+              application/json:
+                example: !include examples/put_category_categoryid_sequence_response.json
+                schema: !include schema/put_category_categoryid_sequence.schema.json

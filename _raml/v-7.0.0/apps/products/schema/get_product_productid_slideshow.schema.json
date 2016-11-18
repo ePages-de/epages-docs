@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "Get Product ProductId Slideshow Schema",
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array of [imageInfo](page:apps-data-types#imageinfo)",
+      "description": "The list of products that appear in the slideshow."
+    }
+  }
+}
