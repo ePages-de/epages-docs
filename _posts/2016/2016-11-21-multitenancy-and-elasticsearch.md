@@ -49,7 +49,7 @@ There are two general ways to go about it, which are
 ### One index per tenant
 
 The first option is a very simple concept, which is easy to implement.
-It provides solid data isolation from a storage perspective and you can still query across multiple indices if you need to.
+It provides solid data isolation from a storage perspective and you can still query across multiple indices, if you need to.
 This solution is sufficient for most cases.
 
 Each index comes with some overhead and this can easily add up.
@@ -129,7 +129,7 @@ Aliases are pretty lightweight, but in extreme cases this might still lead to pe
 If you create too many aliases, you increase the size of your cluster state and might introduce a new bottleneck.
 The cluster state is transferred between nodes on every update and includes index, alias and mapping information.
 
-Another issue with using a shared index in general is that there is no complete data separation for scoring.
+Another issue with using a shared index in general, is that there is no complete data separation for scoring.
 The [inverse document frequency](https://en.wikipedia.org/wiki/Tf%E2%80%93idf#Inverse_document_frequency), which is part of the scoring algorithm, is calculated across all documents.
 This means that documents of different tenants influence the scoring of results.
 
