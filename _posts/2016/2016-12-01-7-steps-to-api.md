@@ -1,13 +1,17 @@
 ---
 layout: post
-title: "6 steps to consider when building an API"
+title: "7 steps to consider when building an web API"
 date: "2016-12-01 07:00:00"
 image: blog-header/construction.jpg
 categories: API
-authors: ["David"]
+authors: ["David", "Ulf B."]
 ---
 
-Creating a new software means to first create a backend and an API.
+Today's ecommerce software is more and more connected with services offered by other companies,
+e.g. payment and delivery providers, ERP-systems or website builders.
+The communication between these different services is happening via Web-API's,
+so if you plan to start a new software, having an API is kind of essential.
+
 Several steps need to be considered when developing an API.
 What do we need to figure out first and which concepts do we have to think about?
 
@@ -15,45 +19,24 @@ What do we need to figure out first and which concepts do we have to think about
 
 As a software developer you're aware of the gap between the defined requirements from stakeholders and the final production-ready software.
 This divergence should be as small as possible.
-When creating an API there could be a similar gap between API developer and API user, such as Frontend Developers.
+When creating an API there could be a similar gap between API developer and API user, such as your Frontend colleages or even developers from other companies if it is a public API.
 
-* In the best case, let the Frontend Developers describe the requirements themselves.
-* Use [Test-driven development](http://wiki.c2.com/?TestDrivenDevelopment): define which REST response you assume to get as a response.
-* In Jira (or your preferred collaboration software) use labels in tasks and stories to show whether this issue should be defined by a Frontend Developer.
+* In the best case, let the users of your API describe the requirements themselves.
+* Use [Test-driven development](http://wiki.c2.com/?TestDrivenDevelopment): Specify the expected responses and write a test checking them.
+* Have a look how competitors define similar API's and don't reinvent the wheel  (Principle of Least Surprise).
 
-## 2 Provide documentation
 
-Changes to the API need notification and proper information cycles.
-This is quite important for breaking changes such as deleting or renaming payload attributes.
+## 2 Secure your API
 
-* Define a version and [version system](http://wiki.c2.com/?VersionNumber) for your API.
-Create a new version on introducing a breaking change.
-* Check how API versioning is solved in other companies, e.g. [Microsoft](https://msdn.microsoft.com/en-us/library/azure/gg592580.aspx), [Amazon](http://docs.aws.amazon.com/AWSEC2/latest/APIReference/CommonParameters.html), [Twitter](https://dev.twitter.com/rest/public) or [Facebook](https://developers.facebook.com/docs/apps/versions).
-* Provide proper and up-to-date [API documentation](https://developer.epages.com/apps).
-* Inform the users regularly about API changes with a [change log](https://developer.epages.com/apps/change-log) and release notes.
-* Check how others handle their release notes: [WordPress](https://codex.wordpress.org/WordPress_Versions), [Mozilla](https://www.mozilla.org/en-US/firefox/releases/), [GIMP](https://www.gimp.org/release-notes/gimp-2.6.html) or [Ubuntu](https://wiki.ubuntu.com/Releases).
+You will need an authorization process to control the access to the API.
+Depending on your business case you can also think about different scopes to
+restrict the usage of certain API calls based on the account.
 
-## 3 Provide an SDK
+* If you want to build a public API, the [OAuth2](https://oauth.net/2/) authorization flow is a good choice.
+* Think about using [JSON Web Token](https://jwt.io/) which have some nice advantages (the token itself can contain user information).
 
-A public API should be usable outside of the company by other developers.
-It's recommended to provide an SDK (for common programming languages) to simplify handling the code for external developers.
 
-* Make the SDK code public.
-External developers can extend the code later on.
-
-At [ePages](https://developer.epages.com), we currently have 4 SDKs: [Ruby](https://developer.epages.com/apps/ruby-gem), Python, Java, and [PHP](https://developer.epages.com/apps/php-client).
-
-## 4 Use automation services
-
-There are lots of to do's in order to build and rollout releases.
-These tasks always have to be done in the same order and with the same requirements.
-
-* Use tools to automate deployment, test, and integration processes.
-At [ePages](http://www.epages.com/en/) we use [Jenkins](https://jenkins.io/) and [CirleCi](https://circleci.com/).
-* Integrate these tools into your daily work.
-There are plugins for [GitHub](https://wiki.jenkins-ci.org/display/JENKINS/GitHub+Plugin) and [Confluence](https://marketplace.atlassian.com/plugins/nl.avisi.confluence.plugins.git-plugin/server/overview).
-
-## 5 Implement flexible API call limits
+## 3 Implement flexible API call limits
 
 API calls have different objectives.
 These objectives will be called at different times.
@@ -64,7 +47,38 @@ You will find the ideal limit by using your API in real life.
 * Return information about the limitation in the response.
 Use headers for these information as in the [ePages REST API](https://developer.epages.com/apps/api-call-limit).
 
-## 6 Plan how to give support
+
+## 4 Provide an SDK
+
+A public API should be easily usable outside of the company by other developers.
+It's recommended to provide an SDK (at least for the common programming languages) to simplify the usage for external developers.
+
+* Make the SDK code public (e.g. on GitHub), so that external developers can extend the code later on.
+
+At [ePages](https://developer.epages.com), we currently have 2 SDKs: [Ruby](https://developer.epages.com/apps/ruby-gem) and [PHP](https://developer.epages.com/apps/php-client).
+
+
+## 5 Use automation services
+
+There are lots of to do's in order to build and rollout releases.
+These tasks always have to be done in the same order and with the same requirements.
+
+* Use tools to automate deployment, test, and integration processes.
+At [ePages](http://www.epages.com/en/) we use [Jenkins](https://jenkins.io/) and [VMware vSphere](http://www.vmware.com/de/products/vsphere.html).
+* Integrate these tools into your daily work.
+There are plugins for [GitHub](https://wiki.jenkins-ci.org/display/JENKINS/GitHub+Plugin) and [Confluence](https://marketplace.atlassian.com/plugins/nl.avisi.confluence.plugins.git-plugin/server/overview).
+
+
+## 6 Provide documentation
+
+This part is often missed out though it is quite important, especially for a public API. An external company cannot simply go to the colleague who designed the API and ask how to use it. A good documentations should include:
+- information about onboarding and the authorization process
+- explanation of every possible API call, its possible parameters and example requests and responses
+- version information and release notes
+- example code if there are SDKs for the API.
+
+
+## 7 Plan how to give support
 
 The API is used by external developers.
 They will, most likely, find bugs or have feature requests.
