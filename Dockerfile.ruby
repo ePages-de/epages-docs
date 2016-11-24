@@ -11,6 +11,7 @@ RUN echo "${TZ}" | tee /etc/timezone && \
     dpkg-reconfigure --frontend noninteractive tzdata
 
 # Install missing packages
+RUN echo 'Acquire::ForceIPv4 "true";' | tee /etc/apt/apt.conf.d/99force-ipv4
 RUN echo "deb http://ftp.de.debian.org/debian jessie main" >> /etc/apt/sources.list && \
     apt-get update && apt-get install --yes \
     locales
