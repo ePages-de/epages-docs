@@ -28,7 +28,7 @@ Requirement: Install [Docker Engine][docker-engine] first.
 ~~~ bash
 # Build and run container with default rake task (eq. build `_site` and serve via jekyll)
 $ docker build -t epages-docs -f Dockerfile.ruby .
-$ docker run --rm --volume=$(pwd):/usr/src/epages-docs -p 4000:4000 -it epages-docs
+$ docker run --rm --volume=$(pwd):/usr/src/epages-docs -p 4000:4000 -it epages-docs dev
 
 # On Linux
 $ echo "Open in browser: http://127.0.0.1:4000/"
