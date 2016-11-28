@@ -36,7 +36,7 @@ At the end we got some very positive feedback for our [pictographic slides](http
 
 <script async class="speakerdeck-embed" data-id="7aacbd41660c4f86b2e1b5fff3b5afac" data-ratio="1.37081659973226" src="//speakerdeck.com/assets/embed.js"></script>
 
-For a more practical approach we invited all participants to join our hands-on workshop in the afternoon which offered [5 different tutorials](training.docker.com/category/docker-mentor-week) for all skill levels.
+For a more practical approach we invited all participants to join our hands-on workshop in the afternoon which offered [5 different tutorials](http://training.docker.com/category/docker-mentor-week) for all skill levels.
 Here we reused the materials of the [Docker Mentor Week](https://blog.docker.com/2016/10/docker-global-mentor-week-2016/) - a global event series that also took place in [Hamburg at Xing](https://www.meetup.com/Docker-Hamburg/events/234772983/) a week before, where we also tutored to help others to [#learndocker](https://twitter.com/search?vertical=default&q=%23learndocker).
 
 # Other talks
