@@ -79,7 +79,6 @@ At the borders of your system mocking is indispensable, which means external ser
 
 # Other workshops
 
-
 **[Impact Mapping](http://www.xpdays.de/2016/sessions/061-impact-mapping-workshop.html)**
 
 [Patrick Baumgartner](https://twitter.com/patbaumgartner) and [Peter Gfader](https://twitter.com/peitor) showed how important it is to take a step backward from your project to gain a deeper view.
