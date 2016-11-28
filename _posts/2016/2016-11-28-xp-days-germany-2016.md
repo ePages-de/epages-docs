@@ -12,7 +12,7 @@ authors: ["Benjamin", "Bastian"]
 }
 </style>
 
-The [13th XP Days Germany](http://www.xpdays.de/2016/) took place again at the [Handwerkskammer Hamburg](https://www.hwk-hamburg.de) – within a stone's throw of our HQ.
+The [13th XP Days Germany](http://www.xpdays.de/2016/) took place again at the [Handwerkskammer Hamburg](https://www.hwk-hamburg.de) – within a stone's throw of [ePages HQ](http://www.epages.com).
 XP Day(s) are a global conference series for developers and by developers with events in France, England, Scotland, Benelux Union, Ukraine and even Vietnam.
 The integral part is the strong focus on agile software development as well as the values, principles and techniques of [eXtreme Programming](https://en.wikipedia.org/wiki/Extreme_programming).
 In this context also several product owners, scrum masters and innovation evangelists had the courage to participate and contribute.
