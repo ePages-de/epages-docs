@@ -101,7 +101,7 @@ Within four rounds the bots needed to compete against each other. It was a lot o
 # One more thing
 
 These days graphic recording of sessions is a major trend.
-Hence, there were not only 2 sessions for learning this skill yourself but also live sketching was done for of all sessions within the big hall by a professional artist – [Benjamin Felis](https://twitter.com/benjaminfelis).  
+Hence, there were not only 2 sessions for learning this skill yourself but also live sketching was done for of all sessions within the big hall by a professional artist – [Benjamin Felis](https://twitter.com/benjaminfelis).
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="de" dir="ltr">Das graphic recording war eine tolle Idee! Sehr wertschätzend für die Moderatoren! Danke <a href="https://twitter.com/hashtag/xdde16?src=hash">#xdde16</a> <a href="https://t.co/WZOZzO5AFh">pic.twitter.com/WZOZzO5AFh</a></p>&mdash; Andy Fischer (@Fischermaen) <a href="https://twitter.com/Fischermaen/status/801088541094715393">November 22, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -112,7 +112,7 @@ This year the keynote with Holger Stanislawski was really impressive and deliver
 To top it all off, [Nat Pryce](https://twitter.com/natpryce) – an academic researcher at the [Imperial College London](http://www.doc.ic.ac.uk/~np2/) and co-founder of the XP Day in London – outlined vividly the [historical journey of TDD](http://www.xpdays.de/2016/downloads/keynote-di/Wisdom_of_the_Ancients__2_.pdf) from Lehman's laws in the 1980s until the three fundamental aspects for software systems in TDD:
 
 1. Consider the system type.
-2. Nurture your feedback cycles
+2. Nurture your feedback cycles.
 3. Accept uncertainty.
 
 To learn more we can highly recommend his book ["Growing Growing Object-Oriented software guided by tests"](https://www.amazon.com/Growing-Object-Oriented-Software-Guided-Tests/dp/0321503627), co-authored with [Steve Freeman](https://twitter.com/sf105).
