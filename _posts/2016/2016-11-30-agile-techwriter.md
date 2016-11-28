@@ -8,7 +8,7 @@ authors: ["Birgit"]
 ---
 
 Two years ago, I started my work as a technical writer in an agile development environment.
-Before, I did not have lot's of experience with this agile "thingy" - none at all.
+Before, I did not have lots of experience with this agile "thingy" - none at all.
 What's even more, gathering information from the species of "software developers" was also quite new to me.
 But hey, I'm a "TechWritress", I can handle everything, right?
 
