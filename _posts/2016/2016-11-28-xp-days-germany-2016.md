@@ -2,7 +2,7 @@
 layout: post
 title: "XP Days Germany 2016"
 date: "2016-11-28 12:11:00"
-image: blog-header/xp-days-2016.jpg
+image: blog-header/hamburg-harbor.jpg
 categories: events
 authors: ["Benjamin", "Bastian"]
 ---
