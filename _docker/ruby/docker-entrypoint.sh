@@ -11,7 +11,7 @@ done
 
 # If the first argument is test, build, index or serve
 # then set exec to prepend with rake.
-if [[ "${1}" =~ ^.*(test)|(build)|(index)|(serve).*$ ]]; then
+if [[ "${1}" =~ ^.*(test)|(build)|(index)|(serve)|(dev)|(fast_dev).*$ ]]; then
     set rake "${@}"
 fi
 
