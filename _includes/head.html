@@ -5,7 +5,15 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if site.data.seo[chapter].title %}{{ site.data.seo[chapter].title }}{% else %}ePages{% endif %}</title>
+  <title>
+    {% if page.title %}
+      {{ page.title }}
+    {% else if site.data.seo[chapter].title %}
+      {{ site.data.seo[chapter].title }}
+    {% else %}
+      ePages
+    {% endif %}
+  </title>
   <meta name="description" content="{% if page.excerpt %}{{ description }}{% else %}{{ site.data.seo[chapter].description }}{% endif %}">
   <meta name="keywords" content="{% if site.data.seo[chapter].keywords %}{{ site.data.seo[chapter].keywords | join: ', ' }}{% endif %}">
   {% if page.title %}

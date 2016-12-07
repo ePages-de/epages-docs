@@ -2,6 +2,61 @@
 layout: default
 permalink: /
 ---
+<div class="modal fade" id="modal-popup">
+  <div style="display:flex; justify-content:center">
+    <section id="demoshop-form modal-section" class="modal-content col col-sm-12" style="max-width: 900px !important; top: 25% !important; padding: 20px 20px 20px 20px; position: absolute;">
+      <div class="container-fluid" id="modal-div">
+        <div id="modal-container">
+          <iframe id="cheat-frame" name="epages-demo-shop-frame" frameborder="0" allowtransparency="true" width="900px" height="720px"></iframe>
+          <div class="row" style= "margin-top: 0px;" id="main-row">
+            <div class="col-md-12 center">
+              <h3>Join the ePages Developer Program</h3>
+              <div class="spacer60"></div>
+              <p>Just enter your details below to sign up for the ePages Developer Program and you will receive a free test shop.</p>
+              <div class="spacer20"></div>
+              <div class="spacer20"></div>
+              <form id="demoshopform" class="demoshopform form-default" method="post" action="https://devshop.epages.com/epages/Site.sf/en_GB/?ObjectPath=/Providers/epagesdev&ViewAction=ViewProviderRegistrationForm" target="epages-demo-shop-frame">
+                <div class="row">
+                  <div class="col-xs-6 col-md-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="LastName" id="LastName" placeholder="Full name" required />
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-md-6">
+                    <div class="form-group">
+                      <input type="email" class="form-control" name="EMail" id="EMail" placeholder="Email address" required />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="spacer20"></div>
+                    <div class="form-group">
+                      <input type="checkbox" required="required" name="tc" required> I have read and agree to the <a href="http://www.epages.com/wAssets-epages/docs/partner/ePages_Developer_Programm_2015_TaCs.pdf" target="_blank">terms and conditions</a>.*
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12 col-md-12">
+                    <input type="hidden" name="ChangeAction" value="RegisterProviderTestShop" />
+                    <input type="hidden" maxlength="40" class="input" name="FirstName" id="FirstName" value="" />
+                    <input type="hidden" maxlength="40" class="input" name="CountryID" id="CountryID" value="826" />
+                    <input type="hidden" maxlength="40" class="input" name="LocaleID" id="LocaleID" value="en_GB" />
+                    <input type="hidden" maxlength="40" class="input" name="RegFormLocale" id="RegFormLocale" value="en_GB" />
+                    <input type="hidden" maxlength="40" class="input" name="Phone" id="Phone" value="000000" />
+                    <input type="hidden" name="ShopTypeAlias" value="PartnerTestShop" />
+                    <input type="hidden" name="language" id="language" value="en" />
+                    <button type="submit" class="submit cta">Get free test shop <span class="icon icon-arrowright"></span></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
 
 <header id="header" class="jumbotron">
   <h1>Developer Program</h1>
@@ -26,7 +81,7 @@ permalink: /
 
 <section id="register" class="container-fluid">
   <h2>Not registered for the developer program yet?</h2>
-  <a href="http://www.epages.cloud/developer/" target="_blank" class="cta">Join now</a>
+  <a data-toggle="modal" href="#modal-popup" class="cta">Join now</a>
 </section>
 
 <!--  MORE RESOURCES-->
@@ -54,3 +109,13 @@ permalink: /
 <section class="container-fluid prefooter">
   <p>Still working with our old API? No problem, check our <a href="{{ '/soap/index.html' | prepend: site.baseurl }}">SOAP API documentation.</a></p>
 </section>
+
+<script type="text/javascript">
+  $( document ).ready(function() {
+    $('#cheat-frame').on('load', function() {
+      document.getElementById('cheat-frame').style.display = 'block';
+      document.getElementById('main-row').style.display = 'none';
+      document.getElementById('demoshop-form modal-section').style.top = "10%";
+    });
+  });
+</script>
