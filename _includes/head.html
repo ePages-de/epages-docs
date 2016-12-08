@@ -18,13 +18,13 @@
   <meta name="description" content="{% if page.excerpt %}{{ description }}{% else %}{{ site.data.seo[chapter].description }}{% endif %}">
   <meta name="keywords" content="{% if site.data.seo[chapter].keywords %}{{ site.data.seo[chapter].keywords | join: ', ' }}{% endif %}">
   {% if page.title %}
-    <meta property="og:title" content="{{ page.title }}">
+    <meta content="{{ page.title }}" property="og:title">
   {% endif %}
   {% if page.image %}
-    <meta property="og:image" content="{{ image_url  | prepend: site.baseurl | prepend: site.url }}">
+    <meta content="{{ image_url  | prepend: site.baseurl | prepend: site.url }}" property="og:image">
   {% endif %}
   {% if page.description %}
-    <meta property="og:description" content="{{ page.description }}">
+    <meta content="{{ page.description }}" property="og:description">
   {% endif %}
   <link rel="shortcut icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}" type="image/ico">
   <link rel="stylesheet" href="{{ "/assets/styles/main.css" | prepend: site.baseurl }}">
