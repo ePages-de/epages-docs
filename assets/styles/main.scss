@@ -19,3 +19,13 @@ $assets-base: {{ "/assets" | prepend: site.baseurl }};
 @import "_socialmedia";
 @import "font-awesome/_font-awesome";
 @import "_base";
+
+#iframe-popup {
+  max-width: 900px !important;
+  min-width: 400px !important;
+  min-height: 496px !important;
+}
+
+#cheat-frame {
+  display: none;
+}

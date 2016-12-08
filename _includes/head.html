@@ -1,23 +1,31 @@
 {% assign chapter = page.url | regex_extract: '^/([^/]+)/' %}
 {% assign domain = page.url | regex_extract: '(.*\.com)' %}
 {% assign description = page.excerpt | strip_html | strip_newlines | truncate: 160 %}
+{% assign image_url = page.image | prepend: '/assets/images/' %}
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if site.data.seo[chapter].title %}{{ site.data.seo[chapter].title }}{% else %}ePages{% endif %}</title>
+  <title>
+    {% if page.title %}
+      {{ page.title }}
+    {% else if site.data.seo[chapter].title %}
+      {{ site.data.seo[chapter].title }}
+    {% else %}
+      ePages
+    {% endif %}
+  </title>
   <meta name="description" content="{% if page.excerpt %}{{ description }}{% else %}{{ site.data.seo[chapter].description }}{% endif %}">
   <meta name="keywords" content="{% if site.data.seo[chapter].keywords %}{{ site.data.seo[chapter].keywords | join: ', ' }}{% endif %}">
   {% if page.title %}
     <meta content="{{ page.title }}" property="og:title">
   {% endif %}
   {% if page.image %}
-    <meta content="{{ domain }}/assets/images/{{ page.image }}" property="og:image">
+    <meta content="{{ image_url  | prepend: site.baseurl | prepend: site.url }}" property="og:image">
   {% endif %}
   {% if page.description %}
     <meta content="{{ page.description }}" property="og:description">
   {% endif %}
-
   <link rel="shortcut icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}" type="image/ico">
   <link rel="stylesheet" href="{{ "/assets/styles/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
@@ -31,7 +39,6 @@
 
   <script type="text/javascript" src="{{ "/assets/javascript/jquery.js" | prepend: site.baseurl }}"></script>
   <script type="text/javascript" src="{{ "/assets/javascript/bootstrap.js" | prepend: site.baseurl }}"></script>
-
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

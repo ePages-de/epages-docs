@@ -67,7 +67,7 @@ get:
     displayName: Category sequence
     get:
       description: Returns the order of subcategories for the provided category ID as an array. If the category has no subcategories, an empty array will be returned.
-      securedBy: [products_read]
+      securedBy: [products_write]
       responses:
         200:
           body:
