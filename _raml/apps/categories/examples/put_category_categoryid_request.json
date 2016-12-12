@@ -4,5 +4,6 @@
   "alias": "Feature",
   "navigationCaption": "Feature",
   "pageTitle": "Featured products",
-  "description": "Our audio products recommendations."
+  "description": "Our audio products recommendations.",
+  "visible": false
 }

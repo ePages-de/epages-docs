@@ -101,6 +101,7 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | pageTitle | string | The page title of this category. |
 | description | string | The description of the category. |
 | navigationCaption | string | The name of the category page that appears in the navigation bar. |
+| visible | boolean | Indicates if the category is displayed in the shop. |
 
 ## contactInfo
 
