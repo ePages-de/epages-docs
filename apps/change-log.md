@@ -16,7 +16,7 @@ In order to keep track of these changes we recommend you to follow [@epagesdevs]
 
 #### <i class="fa fa-pencil"></i> Update
 
-* Added `visible` attribute to data type [`category`](https://developer.epages.com/apps/data-types#category).
+* Added `visible` attribute to data types [`category`](https://developer.epages.com/apps/data-types#category) and [`category (create request)`](https://developer.epages.com/apps/data-types#category-create-request) .
 * Added attributes `deposits`, `ecoParticipations`, `shippingOptions` and `basketDiscount` to data type [`lineItemContainer`](https://developer.epages.com/apps/data-types#lineitemcontainer).
 
 <hr>
