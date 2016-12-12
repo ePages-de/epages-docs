@@ -8,6 +8,7 @@ permalink: /
       <div class="container-fluid" id="modal-div">
         <div id="modal-container">
           <iframe id="cheat-frame" name="epages-demo-shop-frame" frameborder="0" allowtransparency="true" width="900px" height="720px"></iframe>
+          <iframe id="cheat-frame-2" src="https://www.epages.com/en/partner/developer-program/success.php" frameborder="0" allowtransparency="true" width="900px" height="720px"></iframe>
           <div class="row" style= "margin-top: 0px;" id="main-row">
             <div class="col-md-12 center">
               <h3>Join the ePages Developer Program</h3>
@@ -113,9 +114,10 @@ permalink: /
 <script type="text/javascript">
   $( document ).ready(function() {
     $('#cheat-frame').on('load', function() {
-      document.getElementById('cheat-frame').style.display = 'block';
+      // document.getElementById('cheat-frame').style.display = 'block';
       document.getElementById('main-row').style.display = 'none';
       document.getElementById('demoshop-form modal-section').style.top = "10%";
+      document.getElementById('cheat-frame-2').style.display = 'block';
     });
   });
 </script>
