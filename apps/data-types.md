@@ -567,14 +567,14 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | Attribute | Type | Description |
 | - | :-: |  - |
 | name | string | The name of the selected product variation. |
-| value | string | The value of the selected product variation.  |
+| value | string | The key of an attribute, e.g. Purple.  |
 
 ## variationValue
 
 | Attribute | Type | Description |
 | - | :-: |  - |
-| value | string | The key of an attribute, e.g. 004. |
-| displayValue | string | The displayed name of the attribute, e.g. XtraLarge. |
+| value | string | The key of an attribute, e.g. Purple. |
+| displayValue | string | The localized displayed name of the attribute, e.g. Lilac. |
 
 ## watchedProduct
 
