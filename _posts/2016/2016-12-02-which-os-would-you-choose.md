@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Which operating system would you choose?"
+title: "The battle of the Operating Systems"
 date: "2016-12-06 06:34:02"
 image: blog-header/apple-pear-choose.jpg
 categories: tech-stories
@@ -60,9 +60,9 @@ A quick look at the numbers will show us that ePages has a nicely mixed ecosyste
 
 If we take a look at the status of OS installations by departments, we can find out that Product Management, Sales, and Marketing are the ones where Windows is more extensively used.
 Graphic designers have a natural tendency to using Mac.
-And within R&D, there is the biggest mix of systems with Linux as the most commonly used.
-A closer look to the R&D department shows that in this case Linux has a bigger piece of the cake (37.5%) than in previous charts and on the other hand MacOS X has a little bit less weight between developers (26.6%).
-But Windows still is the second most used platform.
+And within R&D, there is the biggest mix of systems with Windows as the most commonly used.
+A closer look to Ocean Teams shows that in this case Linux has a bigger piece of the cake (35.9%) than in previous charts and on the other hand MacOS X has a little bit less weight between developers (26.6%).
+But Windows still is the most used platform (37.5%).
 
 {% image blog/blog-os_market_share_03.png %}
 
@@ -71,3 +71,7 @@ In this case, [Debian](https://www.debian.org/) and [CentOS](https://www.centos.
 Here Linux wins without opposition.
 
 Now it's your turn: which operating system would you choose?
+
+
+
+Note: Statistics are an extrapolation of usage from a significant bunch of ePages users.
