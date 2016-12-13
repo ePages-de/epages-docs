@@ -10,11 +10,11 @@ This object is used for the attributes of shippingAddress and billingAddress.
 
 | Attribute | Type | Description |
 | - | :-: |  - |
-| company | string | The company of the person associated with the address.|
-| salutation | string | The salutation of the customer, e.g. Mr or Mrs.|
-| title | string | The academic title of the customer, e.g. professor or PhD.|
-| firstName | string | The first name of the person associated with the address.|
-| lastName | string | The last name of the person associated with the address.|
+| company | string | The customer's company.|
+| salutation | string | The customer's salutation, e.g. Mr or Mrs.|
+| title | string | The customer's academic title, e.g. professor or PhD.|
+| firstName | string | The customer's first name.|
+| lastName | string | The customer's last name.|
 | street | string | The street name of the address. |
 | streetDetails | string | An additional field for the street address.|
 | zipCode | string | The zip or postal code of the address. |
@@ -22,8 +22,28 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | state | string | The name of the state.|
 | country | string | The name of the country. |
 | vatId | string | The Id of the VAT.|
-| birthday | string | The date of birth of the person associated with the address. |
-| emailAddress | string | The email address of the person associated with the address. |
+| birthday | string | The customer's date of birth. |
+| emailAddress | string | The customer's primary email address. This email address will be used by the merchant if the customer does not have a user account. |
+| addressExtension | string | Further address details.  |
+| bankAccountHolder | string | The name of the bank account holder. |
+| bankAccountNumber | string | The bank account number. |
+| bankName | string | The name of the bank that holds the bank account. |
+| bankSortCode | string | The bank identifier code. |
+| businessEmailAddress | string | The customer's business email address. |
+| businessPhoneNumber | string | The customer's business phone number. |
+| department | string | The department of the company associated with the address. |
+| displayName | string | Specifies the name to display for the customer name. |
+| doorCode | string | The door code associated with the address.  |
+| faxNumber | string | The customer's fax number. |
+| fiscalCode | string | The customer's fiscal code. |
+| gender | string | The customer's gender. |
+| jobTitle | string | The customer's job title. |
+| middleName | string | The customer's middle name. |
+| mobilePhoneNumber | string | The customer's mobile phone number. |
+| phoneNumber | string | The customer's default phone number. |
+| privateEmailAddress | string | The customer's private email address. |
+| privatePhoneNumber | string | The customer's private phone number |
+| websiteUrl | string | The customer's website URL.  |
 
 ## attributeSelection
 
