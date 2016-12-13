@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "Post Product ProductId Slideshow Schema",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of the slideshow image."
+    },
+    "sizes": {
+      "type": "array of [image](page:apps-data-types#image)",
+      "description": "The size of the images in the slideshow."
+    }
+  }
+}

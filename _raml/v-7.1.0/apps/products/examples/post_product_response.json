@@ -1,0 +1,73 @@
+{
+  "productId": "57D647C1-77D5-DD52-3024-D5809AB3A134",
+  "name": "Next brand new product",
+  "visible": false,
+  "productVariationType": "regular",
+  "manufacturerProductNumber": null,
+  "productLength": null,
+  "productWidth": null,
+  "productHeight": null,
+  "productVariationSelection": null,
+  "shortDescription": "Awesome new product",
+  "deliveryPeriod": null,
+  "description": "This is a brand new product",
+  "productImage": null,
+  "images": [],
+  "priceInfo": {
+    "quantity": {
+      "amount": 1,
+      "unit": "piece(s)"
+    },
+    "taxClass": {
+      "taxClassId": "5446685F-A8AF-0E18-9B4F-D5809AB30FBF",
+      "name": "standard",
+      "percentage": 19
+    },
+    "price": {
+      "taxType": "NET",
+      "formatted": "10.99 €",
+      "amount": 10.99,
+      "currency": "EUR"
+    },
+    "depositPrice": null,
+    "ecoParticipationPrice": null,
+    "priceWithDeposits": {
+      "taxType": "NET",
+      "formatted": "10.99 €",
+      "amount": 10.99,
+      "currency": "EUR"
+    },
+    "manufacturerPrice": null,
+    "basePrice": null
+  },
+  "forSale": false,
+  "specialOffer": false,
+  "deliveryWeight": null,
+  "availabilityText": "",
+  "availability": null,
+  "energyLabelsString": null,
+  "energyLabelSourceFile": null,
+  "productDataSheet": null,
+  "sfUrl": "http://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/Products/TP-0821",
+  "productNumber": "TP-0821",
+  "manufacturer": "Awesome Products Company",
+  "upc": null,
+  "ean": null,
+  "essentialFeatures": null,
+  "searchKeywords": [
+    "awesome",
+    "product"
+  ],
+  "stocklevel": null,
+  "minStocklevel": null,
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://pm.epages.com/rs/shops/apidocu/products/57D647C1-77D5-DD52-3024-D5809AB3A134"
+    },
+    {
+      "rel": "categories",
+      "href": "https://pm.epages.com/rs/shops/apidocu/categories/?productId=57D647C1-77D5-DD52-3024-D5809AB3A134"
+    }
+  ]
+}
