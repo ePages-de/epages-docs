@@ -15,7 +15,7 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | title | string | The customer's academic title, e.g. professor or PhD.|
 | firstName | string | The customer's first name.|
 | lastName | string | The customer's last name.|
-| street | string | The street name of the address. |
+| street | string | The street name of the customer's address. |
 | streetDetails | string | An additional field for the street address.|
 | zipCode | string | The zip or postal code of the address. |
 | city | string | The name of the city. |
@@ -24,16 +24,16 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | vatId | string | The Id of the VAT.|
 | birthday | string | The customer's date of birth. |
 | emailAddress | string | The customer's primary email address. This email address will be used by the merchant if the customer does not have a user account. |
-| addressExtension | string | Further address details.  |
+| addressExtension | string | Further address details of the customer.  |
 | bankAccountHolder | string | The name of the bank account holder. |
 | bankAccountNumber | string | The bank account number. |
 | bankName | string | The name of the bank that holds the bank account. |
 | bankSortCode | string | The bank identifier code. |
 | businessEmailAddress | string | The customer's business email address. |
 | businessPhoneNumber | string | The customer's business phone number. |
-| department | string | The department of the company associated with the address. |
+| department | string | The department of the company associated with the customer's address. |
 | displayName | string | Specifies the name to display for the customer name. |
-| doorCode | string | The door code associated with the address.  |
+| doorCode | string | The door code associated with the customer's address.  |
 | faxNumber | string | The customer's fax number. |
 | fiscalCode | string | The customer's fiscal code. |
 | gender | string | The customer's gender. |
