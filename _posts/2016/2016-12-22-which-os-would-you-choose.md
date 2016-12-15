@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "The battle of the Operating Systems"
-date: "2016-12-06 06:34:02"
+title: "The battle of the operating systems"
+date: "2016-12-22 06:34:02"
 image: blog-header/apple-pear-choose.jpg
 categories: tech-stories
 authors: ["Ivan"]
@@ -13,14 +13,14 @@ They find a kind of complicity with their systems that make them passionate defe
 
 {% image blog/blog-os_logos.png 30% right %}
 
-Let’s have a look at some the general advantages and disadvantages we could find in every of the three main OS we can run nowadays in our laptops: MacOS X, Linux, and Windows.
+Let’s have a look at some general advantages and disadvantages we could find in every of the three main OS we can run nowadays in our laptops: MacOS X, Linux, and Windows.
 
 ### MacOS X
 
 MacOS X is probably considered the coolest OS of the moment.
 Mac lovers argue that MacOS X has a great performance and stability, because it’s a closed UNIX based system that also has a beautiful and carefully designed UI.
 Easy to use for plain users who can do their stuff providing some very good killer features like Spotlight, but also allow pro users to have more complex usage of the system.
-The point against macintosh is that you need an approved hardware to run MacOS X; machines which normally are pretty nice but pretty expensive too, especially compared with other white label machines.
+The point against Macintosh is that you need an approved hardware to run MacOS X; machines which normally are pretty nice but pretty expensive too, especially compared with other white label machines.
 
 ### Linux
 
@@ -41,16 +41,16 @@ Leaving fanaticisms aside and bringing to the front some statistics on what’s 
 
 {% image blog/blog-os_market_share_01.png %}
 
-If we have a look at the colors of the chart we will see, in a very first place, an evident domain of Windows platforms (89.79% of the market), mostly there are two Windows versions which are the most popular ones: 7 and 10 in that order, covering almost 70% of the market.
+If we have a look at the colors of the chart we will see, in a very first place, an evident domain of Windows platforms (89.79% of the market). There are two Windows versions which are the most popular ones: 7 and 10 in that order, covering almost 70% of the market.
 Bill should be happy indeed watching at that numbers.
-The second place is for MacOS X that has experienced such a great increment in number of users since the last 10 years also because of the appearance of Apple’s smartphones and tablets, iPhone and iPad and the raise, in terms of popularity, of the company.
+The second place is for MacOS X that has experienced such a great increment in number of users since the last 10 years. Mostly because of the appearance of Apple’s smartphones and tablets, iPhone and iPad and the raise, in terms of popularity, of the company.
 The third and last place is for Linux, getting in comparison a much reduced slice of the cake, but with a very committed and enthusiastic community of advanced users.
 
 ### What about ePages?
 
 Now let’s have a look at how it looks like at ePages.
 
-ePages it’s an open-minded company where developers can choose their favorite environment to work with or simply the one which they feel more comfortable.
+ePages is an open-minded company where developers can choose their favorite environment to work with or simply the one which they feel more comfortable with.
 Of course it’s not always possible due to IDE, software or hardware restrictions, but in most of the cases it is.
 Here we can also find the three big players: Ubuntu, MacOS X, and Windows.
 
@@ -70,8 +70,9 @@ Development environments with virtual machines are completely another world in t
 In this case, [Debian](https://www.debian.org/) and [CentOS](https://www.centos.org/) are the most commonly used Linux distributions to work with the ePages platform.
 Here Linux wins without opposition.
 
+
 Now it's your turn: which operating system would you choose?
 
 
 
-Note: Statistics are an extrapolation of usage from a significant bunch of ePages users.
+Note: Statistics are an extrapolation of usage from a significant bunch of ePages employees.
