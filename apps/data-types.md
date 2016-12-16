@@ -412,8 +412,8 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | visible | boolean | Indicates if the product is displayed in the shop. |
 | taxClassId | string | The unique identifier of the tax class. |
 | stocklevel | number | Indicates the stock level of the product. |
-| depositPrice | object of [price](page:apps-data-types#price) | The deposit price for the product, e.g. bottle deposit.|
-| manufacturerPrice | object of [price](page:apps-data-types#price) | The sales price recommended by the manufacturer.|
+| depositPrice | number | The deposit price for the product, e.g. bottle deposit.|
+| manufacturerPrice | number | The sales price recommended by the manufacturer.|
 
 ## productLineItem
 
