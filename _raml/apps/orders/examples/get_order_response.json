@@ -165,6 +165,13 @@
           "id": "5171DD86-C077-0726-C448-AC14145F9026",
           "name": "Standard delivery"
         },
+        "price": {
+          "taxType": "GROSS",
+          "formatted": "7.00 €",
+          "amount": 7,
+          "currency": "EUR"
+        }
+      },
       "paymentData": {
         "paymentMethod": {
           "id": "5171DD86-0714-8E9B-B079-AC14145F900F",
