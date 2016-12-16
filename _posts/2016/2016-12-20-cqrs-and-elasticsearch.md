@@ -211,7 +211,7 @@ Asynchronous processing of events imposes another complexity by having no guaran
 Introducing Elasticsearch [optimistic concurrency control][es-concurrency] and retrying out-of-order events could minimize this, at the cost of yet another complex implementation detail.
 
 The advantages of solving all these challenges must justify the effort involved.
-In our microservices architecture we already rely on messaging for data synchronization, so there is no additional complexity involved.
+In our microservices architecture we already rely on messaging for data synchronization, so there is no additional complexity introduced.
 Giving us the option to scale *product-view* individually from *product-management* is only a minor benefit, but nevertheless nice to have.
 
 By separating these two microservices, each of them can focus on it's special technology stack, keeping the amount of knowledge needed to maintain each of them at minimum.
