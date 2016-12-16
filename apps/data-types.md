@@ -40,7 +40,7 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | jobTitle | string | The customer's job title. |
 | middleName | string | The customer's middle name. |
 | mobilePhoneNumber | string | The customer's mobile phone number. |
-| phoneNumber | string | The customer's default phone number. |
+| phoneNumber | string | The customer's landline number. |
 | privateEmailAddress | string | The customer's private email address. |
 | privatePhoneNumber | string | The customer's private phone number |
 | websiteUrl | string | The customer's website URL.  |
