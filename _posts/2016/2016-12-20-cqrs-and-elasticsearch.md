@@ -11,7 +11,7 @@ After having explained how we use [Multitenancy and Elasticsearch][prev-blog-pos
 
 ## Different Product Data Models
 
-In our ePages software we identified two fundamentally different usage scenarios when dealing with product data, each coming with it's own data model.
+In our ePages software we identified two fundamentally different usage scenarios when dealing with product data, each coming with its own data model.
 
 ### The Write Model
 
@@ -27,7 +27,7 @@ The storefront application renders product data for the customers visiting a mer
 It is displaying a list of products as a result of a customer browsing a category or using the search functionality of the shop.
 When navigating to a product detail page, more product-related data is presented to the customer.
 
-Especially the need for full-text searching and faceted filtering (also called *after-search navigation*) influenced the choice to use search technology, namely [Elasticsearch][es], as the only source for accessing product data from the storefront.
+Especially the need for full-text searching and faceted filtering (also called *after-search navigation*), influenced the choice to use search technology, namely [Elasticsearch][es], as the only source for accessing product data from the storefront.
 A simplified JSON document of a particular product to be indexed by Elasticsearch looks like this:
 
 {% highlight javascript %}
@@ -49,7 +49,7 @@ A simplified JSON document of a particular product to be indexed by Elasticsearc
 
 The *availability* state is a computed value based on the *stock* and *threshold* numbers.
 
-This full set of attributes is only used when rendering the product detail page;
+This full set of attributes is only used when rendering the product detail page.
 Lists of products only show a subset of these attributes, hiding *sku*, *description* and all but one *image*.
 
 ## Command and Query Responsibility Segregation
@@ -60,7 +60,7 @@ We use a heavily normalized model for updating product data, what is called the 
 Our service for this use case is named *product-management* and uses a relational database for persistence.
 
 The `Query Responsibility` in our scenario uses a denormalized model in a read-only fashion.
-Our service for this use case is named *product-view* and uses Elasticsearch for persistence.
+It is persisted using Elasticsearch and implemented in a service called *product-view*.
 
 By segregating these responsibilites into specialized microservices, we can use the best fitting technology available for implementing them and also scale them asymmetrically.
 This takes into account that many more customers browse the different storefronts concurrently, compared to the number of merchants updating their product data.
@@ -214,8 +214,8 @@ The advantages of solving all these challenges must justify the effort involved.
 In our microservices architecture we already rely on messaging for data synchronization, so there is no additional complexity introduced.
 Giving us the option to scale *product-view* individually from *product-management* is only a minor benefit, but nevertheless nice to have.
 
-By separating these two microservices, each of them can focus on it's special technology stack, keeping the amount of knowledge needed to maintain each of them at minimum.
-Having all the safety of a relational database for manipulating product data, and also offering features mandatory for every e-commerce site by using Elasticsearch is the biggest benefit.
+By separating these two microservices, each of them can focus on its special technology stack, keeping the amount of knowledge needed to maintain each of them at minimum.
+Having all the safety of a relational database for manipulating product data as well as offering features mandatory for every e-commerce site by using Elasticsearch, is the biggest benefit.
 
 
 [prev-blog-post]: /blog/2016/11/21/multitenancy-and-elasticsearch.html
