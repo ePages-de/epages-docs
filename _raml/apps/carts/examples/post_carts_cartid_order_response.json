@@ -72,7 +72,8 @@
       "amount": 0,
       "currency": "EUR"
     },
-    "status": null
+    "status": null,
+    "taxes": null
   },
   "viewedOn": null,
   "rejectedOn": null,

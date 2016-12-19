@@ -59,7 +59,35 @@
       "formatted": "7.63 €",
       "amount": 7.63,
       "currency": "EUR"
-    }
+    },
+    "taxes": [
+      {
+        "taxClass": {
+          "taxClassId": "58495FE6-1112-BB29-7772-AC15320BB028",
+          "name": "standard",
+          "percentage": 19
+        },
+        "price": {
+          "taxType": "NONE",
+          "formatted": "0.27 €",
+          "amount": 0.27,
+          "currency": "EUR"
+        }
+      },
+      {
+        "taxClass": {
+          "taxClassId": "58495FE6-09C9-1DAA-ECCC-AC15320BB02E",
+          "name": "reduced",
+          "percentage": 7
+        },
+        "price": {
+          "taxType": "NONE",
+          "formatted": "0.22 €",
+          "amount": 0.22,
+          "currency": "EUR"
+        }
+      }
+    ]
   },
   "paymentData": {
     "paymentMethod": {

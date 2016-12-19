@@ -67,7 +67,35 @@
           "amount": 0,
           "currency": "EUR"
         },
-        "status": null
+        "status": null,
+    "taxes": [
+      {
+        "taxClass": {
+          "taxClassId": "58495FE6-1112-BB29-7772-AC15320BB028",
+          "name": "standard",
+          "percentage": 19
+        },
+        "price": {
+          "taxType": "NONE",
+          "formatted": "0.27 €",
+          "amount": 0.27,
+          "currency": "EUR"
+        }
+      },
+      {
+        "taxClass": {
+          "taxClassId": "58495FE6-09C9-1DAA-ECCC-AC15320BB02E",
+          "name": "reduced",
+          "percentage": 7
+        },
+        "price": {
+          "taxType": "NONE",
+          "formatted": "0.22 €",
+          "amount": 0.22,
+          "currency": "EUR"
+        }
+      }
+    ]
       },
       "invoicedOn": null,
       "partiallyPaidOn": null,
@@ -183,7 +211,35 @@
           "amount": 0,
           "currency": "EUR"
         },
-        "status": null
+        "status": null,
+    "taxes": [
+      {
+        "taxClass": {
+          "taxClassId": "58495FE6-1112-BB29-7772-AC15320BB028",
+          "name": "standard",
+          "percentage": 19
+        },
+        "price": {
+          "taxType": "NONE",
+          "formatted": "0.27 €",
+          "amount": 0.27,
+          "currency": "EUR"
+        }
+      },
+      {
+        "taxClass": {
+          "taxClassId": "58495FE6-09C9-1DAA-ECCC-AC15320BB02E",
+          "name": "reduced",
+          "percentage": 7
+        },
+        "price": {
+          "taxType": "NONE",
+          "formatted": "0.22 €",
+          "amount": 0.22,
+          "currency": "EUR"
+        }
+      }
+    ]
       },
       "viewedOn": "2015-11-04T08:41:35.000Z",
       "rejectedOn": null,
@@ -285,7 +341,35 @@
           "amount": 0,
           "currency": "EUR"
         },
-        "status": null
+        "status": null,
+    "taxes": [
+      {
+        "taxClass": {
+          "taxClassId": "58495FE6-1112-BB29-7772-AC15320BB028",
+          "name": "standard",
+          "percentage": 19
+        },
+        "price": {
+          "taxType": "NONE",
+          "formatted": "0.27 €",
+          "amount": 0.27,
+          "currency": "EUR"
+        }
+      },
+      {
+        "taxClass": {
+          "taxClassId": "58495FE6-09C9-1DAA-ECCC-AC15320BB02E",
+          "name": "reduced",
+          "percentage": 7
+        },
+        "price": {
+          "taxType": "NONE",
+          "formatted": "0.22 €",
+          "amount": 0.22,
+          "currency": "EUR"
+        }
+      }
+    ]
       },
       "viewedOn": "2015-11-03T14:48:50.000Z",
       "rejectedOn": null,
