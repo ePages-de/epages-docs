@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "CQRS and Elasticsearch"
+title: "Harnessing the best features of RDBMS and Elasticsearch with CQRS"
 date: "2016-12-20 09:00:00"
 image: blog-header/searching.jpg
 categories: tech-stories
@@ -9,22 +9,22 @@ authors: ["Jens"]
 
 After having explained how we use [Multitenancy and Elasticsearch][prev-blog-post], we will continue our series of search-related blog posts by looking at a software architecture pattern called `Command and Query Responsibility Segregation` ([CQRS][fowler-cqrs]) and how we embrace it for managing and accessing product data in our ePages shops.
 
-## Different Product Data Models
+## Different product data models
 
 In our ePages software we identified two fundamentally different usage scenarios when dealing with product data, each coming with its own data model.
 
-### The Write Model
+### The write model
 
-A merchant uses the back office application to manage all aspects of her shop, in particular it's product data.
-This product data is stored in a relational database, where transactions and database constraints guarantee consistency and integrity.
+A merchant uses the administration area to manage all aspects of their shop, in particular it's product data.
+This product data is stored in a relational database ([RDBMS][rdbms]), where transactions and database constraints guarantee consistency and integrity.
 A simplified relational data model looks like this:
 
 {% image blog/blog-cqrs-elasticsearch-database.png %}
 
-### The Read Model
+### The read model
 
 The storefront application renders product data for the customers visiting a merchant's shop.
-It is displaying a list of products as a result of a customer browsing a category or using the search functionality of the shop.
+It displays a list of products as a result of a customer browsing a category or using the search functionality of the shop.
 When navigating to a product detail page, more product-related data is presented to the customer.
 
 Especially the need for full-text searching and faceted filtering (also called *after-search navigation*), influenced the choice to use search technology, namely [Elasticsearch][es], as the only source for accessing product data from the storefront.
@@ -65,7 +65,7 @@ It is persisted using Elasticsearch and implemented in a service called *product
 By segregating these responsibilites into specialized microservices, we can use the best fitting technology available for implementing them and also scale them asymmetrically.
 This takes into account that many more customers browse the different storefronts concurrently, compared to the number of merchants updating their product data.
 
-## Data Synchronization
+## Data synchronization
 
 Whenever a product is created, updated or deleted in the database, we need to keep the Elasticsearch index in sync accordingly.
 In our microservices architecture, we use asynchronous messaging over an event bus to achieve this.
@@ -124,9 +124,9 @@ These events carry only parts of the full product data as JSON payload, based on
 {% endhighlight %}
 
 
-## Partial Updates of Documents
+## Partial updates of documents
 
-[Updating][es-update] an already indexed complete document in Elasticsearch is pretty straight-forward:
+[Updating][es-update] an already indexed complete document in Elasticsearch is pretty straight forward:
 
 {% highlight javascript %}
 PUT /products_12345/product/456
@@ -168,7 +168,7 @@ GET /products_12345/product/456
 }
 {% endhighlight %}
 
-Luckily Elasticsearch offers a feature called [partial updates][es-partial-update] to mitigate exactly this problem, leaving all remaining attributes untouched:
+Luckily, Elasticsearch offers a feature called [partial updates][es-partial-update] to mitigate exactly this problem, leaving all remaining attributes untouched:
 
 {% highlight javascript %}
 POST /products_12345/product/456/_update
@@ -217,8 +217,12 @@ Giving us the option to scale *product-view* individually from *product-manageme
 By separating these two microservices, each of them can focus on its special technology stack, keeping the amount of knowledge needed to maintain each of them at minimum.
 Having all the safety of a relational database for manipulating product data as well as offering features mandatory for every e-commerce site by using Elasticsearch, is the biggest benefit.
 
+## Related posts
+
+[Multitenancy and Elasticsearch][prev-blog-post]
 
 [prev-blog-post]: /blog/2016/11/21/multitenancy-and-elasticsearch.html
+[rdbms]: https://en.wikipedia.org/wiki/Relational_database_management_system
 [fowler-cqrs]: http://martinfowler.com/bliki/CQRS.html
 [fowler-event-sourcing]: http://martinfowler.com/eaaDev/EventSourcing.html
 [fowler-eventual-consistency]: https://martinfowler.com/articles/microservice-trade-offs.html#consistency
