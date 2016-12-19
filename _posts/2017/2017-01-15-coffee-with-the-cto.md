@@ -7,47 +7,53 @@ categories: working-at-epages
 authors: ["Rose", "Harm"]
 ---
 
-The technology and e-commerce expert, [Harm Behrens](https://www.epages.com/de/unternehmen/newsroom/news/Harm-Behrens-ist-neuer-CTO-bei-ePages.php), took over the CTO position at the internationally leading online shop software provider [ePages](https://www.epages.com/de/) in November 2014.
+The technology and e-commerce expert, [Harm Behrens](https://www.epages.com/de/unternehmen/newsroom/news/Harm-Behrens-ist-neuer-CTO-bei-ePages.php), joined [ePages](https://www.epages.com/de/) as CTO in November 2014.
 Ever since ePages benefits from Harm's over 15 years of expertise in the field of development and operation of extensive web and mobile applications.
 In this interview, Harm talks about the next generation commerce platform, about his daily Latte Macchiato as well as his focus on people, directions and technology.
 
 ## Harm, you have been working at ePages for two years now. Back then, you were hired to take charge of the advancement of the ePages platform. What has happened in these two years?
 
 It has happened quite a lot.
-First of all, we tried to establish our Hamburg office location as a developer location, too.
-Before that, there were only a few developers working in our Hanseatic office, but mainly in Jena.
-Secondly, we intended to obtain a few "quick wins" concerning our old product.
-After all, this took us two years, because we needed to keep on track refining our old shop software to add value and benefits for our customers.
-You see, it was not only about the new software or keeping the old software running, but rather about extending and improving the old software by the Java API.
-Consequently, we facilitated an app store as well as a theme store.
-Only then, we integrated the new shop software [ePages Now](https://www.epages.com/de/now/) through an API and the result is what we see now - it's now on the market.
+It's true that I've been hired to push forward our new architecture.
+Yet, it's also true that the scope of my work is much broader than that.
+Roughly, I am taking care of three main areas concerning our product portfolio strategy and development:
 
-## Tell me more about ePages Now!
+1. Refining, developing further and adding value to our current core shop software: *What's the core product called??*
+2. Developing an improved version of our core shop software concerning usability and the new design of the storefront: [ePages Now](https://www.epages.com/de/now/).
+3. Advancing in the development of our very latest shop software: BEYOND.
 
-ePages Now is the latest product we launched to the market by the end of last year.
-It is basically a new store-front that is up-to-date considering responsiveness and selecting one's desired template.
-The modernized usability of the back-office allows the merchant to arrange items by drag and drop, as for example, content pages, landing pages, and alike.
-The starting point for all this was the Java API through which we were able to integrate an app store, a theme store and to integrate ePages Now.
+The first one I mentioned, is our very first and core product, which has at it's disposal a wide range of features and functionalities that our customers highly appreciate.
+Over the past two years, we extended and improved the old software by the [REST API](https://developer.epages.com/apps).
+Consequently, we facilitated an App Store as well as a Theme Store.
 
-So, really, my main task since 2014 was to recruit new developers and assure the further development of our former product as well as to push ahead our new product ePages Now and ultimately drive forward our very latest architecture, which will be launched this year.
-Also, I restructured teams and we determined their focus.
-At the beginning, there was a team that was supposed to work on the new architecture.
-Yet, in day-to-day business it turned out that they were busier fixing bugs of the old software than focussing on the new one.
-Consequently, we set up our senior developer's team that now only dedicates its work towards the new architecture.
+Only then, we integrated the new shop software [ePages Now](https://www.epages.com/de/now/) through the REST API and the result is what we see now:
+We launched the product to the market by the end of last year.
+You might ask, what's ePages Now all about?!
+Well, it is basically a new storefront that is up-to-date considering responsiveness and selecting one's desired template.
+The modernized usability of the administration area allows the merchant to arrange items by drag and drop, as for example, content pages, landing pages, and alike.
+Yet, the shop software is still based on our core product's architecture.
 
+Before going into detail about our very latest architecture, there were a handful of other areas I had to consider before we could start to busily push forward BEYOND:
+For example, in the very beginning, we gave the impulse to establish our Hamburg office location as a developer location, too.
+Before that, there were only a few developers working in our Hanseatic office, the rest was working in Jena.
+So, in fact, my one of my primary tasks since 2014 was to recruit developers for the new architecture as well as for ePages Now to assure its further development.
+Also, I restructured teams and together we determined their focus.
+Consequently, we now have at hand a developer team dedicating its work to its dedicated product focus: ePages xx, ePages Now, and BEYOND.
+
+Now, coming back to your initial question about the status of our newest architecture advancement.
 The new platform pursues three main goals:
 
-1. Deploy modern technologies, e.g. Java instead of monoliths to circumvent dependences
-2. Establish an architecture based on [microservices](http://microservices.io/)
-3. Ensure scalability of the new platform - as we're working across cities and countries
+1. Deploy modern technologies, e.g. Java instead of monoliths to circumvent dependencies.
+2. Establish an architecture based on [microservices](http://microservices.io/).
+3. Ensure scalability of the new platform - as we're working across cities and countries.
 
-With our new platform, BEYOND, we achieve these three goals.
+With our new platform, BEYOND, we obtain these three goals.
 We deploy Java, make use of microservices and rolled out a blueprint approach in order to scale our platform across our three different locations.
 We don't only develop further our new software, but also we created a template that cuts down complexity and thus makes it easier for new teams to work on the project.
+Also, we developed a prototype and determined to use a [greenfield](http://aimblog.uoregon.edu/2015/06/30/benefits-of-the-greenfield-approach/#.WFOW_OHhBTY) approach.
+Our two teams - Team Black in Hamburg and Team White in Jena - currently dedicate their work towards our new product and thus already prove the shop software's scalability.
 
-To sum it all up, what we achieved during the last two years was to hire new developers, find the focus for our teams, integrate a valuable API, an app store, a theme store and alike to our old product and lay the foundation for our new product.
-For our new product we developed a theme, a prototype and determined to use a [greenfield](http://aimblog.uoregon.edu/2015/06/30/benefits-of-the-greenfield-approach/#.WFOW_OHhBTY) approach.
-Our senior teams - team black in Hamburg and team white in Jena - currently dedicate their work towards our new product and thus already prove the shop software's scalability.
+To sum it all up, what we achieved during the last two years was to hire new developers, determine our teams' focus, facilitate an App Store as well as Theme Store for our core product, integrate a valuable REST API in order to integrate ePages Now, and finally lay the foundation for our newest product, BEYOND.
 
 ## How did you come up with the idea of ePages Now - a product with improved usability?
 
