@@ -27,7 +27,7 @@ The storefront application renders product data for the customers visiting a mer
 It is displaying a list of products as a result of a customer browsing a category or using the search functionality of the shop.
 When navigating to a product detail page, more product-related data is presented to the customer.
 
-Especially the need for full-text searching and faceted filtering (also called *after-search navigation*) influenced the choice to use search technology, namely Elasticsearch, as the only source for accessing product data from the storefront.
+Especially the need for full-text searching and faceted filtering (also called *after-search navigation*) influenced the choice to use search technology, namely [Elasticsearch][es], as the only source for accessing product data from the storefront.
 A simplified JSON document of a particular product to be indexed by Elasticsearch looks like this:
 
 {% highlight javascript %}
@@ -222,6 +222,7 @@ Having all the safety of a relational database for manipulating product data, an
 [fowler-cqrs]: http://martinfowler.com/bliki/CQRS.html
 [fowler-event-sourcing]: http://martinfowler.com/eaaDev/EventSourcing.html
 [fowler-eventual-consistency]: https://martinfowler.com/articles/microservice-trade-offs.html#consistency
+[es]: https://www.elastic.co/products/elasticsearch
 [es-update]: https://www.elastic.co/guide/en/elasticsearch/guide/current/update-doc.html
 [es-partial-update]: https://www.elastic.co/guide/en/elasticsearch/guide/current/partial-updates.html
 [es-concurrency]: https://www.elastic.co/guide/en/elasticsearch/guide/current/optimistic-concurrency-control.html
