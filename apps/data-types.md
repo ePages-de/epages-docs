@@ -560,6 +560,13 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | name | string | The name of the tax class. |
 | links | array of [link](page:apps-data-types#link) | A list of links to the products. |
 
+## taxes
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| taxClass | object of [taxClassInfo](page:apps-data-types#taxclassinfo) | The information on the tax class. |
+| price | object of [price](page:apps-data-types#price) | The amount of the charged tax. |
+
 ## updatedProducts
 
 | Attribute | Type | Description |
