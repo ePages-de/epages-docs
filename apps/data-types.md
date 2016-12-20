@@ -36,7 +36,7 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | doorCode | string | The door code associated with the customer's address.  |
 | faxNumber | string | The customer's fax number. |
 | fiscalCode | string | The customer's fiscal code. |
-| gender | string | The customer's gender. |
+| gender | string | The customer's gender. Can be either *MALE* or *FEMALE*. |
 | jobTitle | string | The customer's job title. |
 | middleName | string | The customer's middle name. |
 | mobilePhoneNumber | string | The customer's mobile phone number. |
@@ -344,6 +344,7 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | paymentMethod | object of [paymentMethodInfo](page:apps-data-types#paymentmethodinfo) | Information on the payment type chosen by the customer. |
 | price | object of [price](page:apps-data-types#price) | The costs for the payment method. |
 | status | string | Indicates the status of the payment. Can be either *CANCELED*, *FAILED* or null. |
+| taxes | array of [taxInfo](page:apps-data-types#taxinfo) | Information on the taxes for the payment. |
 
 ## paymentMethodInfo
 
@@ -504,6 +505,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | - | :-: |  - |
 | shippingMethod | object of [shippingMethodInfo](page:apps-data-types#shippingmethodinfo) | Information on the shipping method chosen by the customer. |
 | price | object of [price](page:apps-data-types#price) | The costs for the shipping. |
+| taxes | array of [taxInfo](page:apps-data-types#taxinfo) | Information on the taxes for the shipping. |
 
 ## shippingMethod
 
@@ -559,6 +561,13 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | taxClassId | string | The unique identifier of the tax class. |
 | name | string | The name of the tax class. |
 | links | array of [link](page:apps-data-types#link) | A list of links to the products. |
+
+## taxInfo
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| taxClass | object of [taxClassInfo](page:apps-data-types#taxclassinfo) | The information on the tax class. |
+| price | object of [price](page:apps-data-types#price) | The amount of the charged tax. |
 
 ## updatedProducts
 
