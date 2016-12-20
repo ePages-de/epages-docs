@@ -36,7 +36,7 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | doorCode | string | The door code associated with the customer's address.  |
 | faxNumber | string | The customer's fax number. |
 | fiscalCode | string | The customer's fiscal code. |
-| gender | enum | The customer's gender, e.g. `MALE` or `FEMALE`. |
+| gender | string | The customer's gender. Can be either *MALE* or *FEMALE*. |
 | jobTitle | string | The customer's job title. |
 | middleName | string | The customer's middle name. |
 | mobilePhoneNumber | string | The customer's mobile phone number. |
