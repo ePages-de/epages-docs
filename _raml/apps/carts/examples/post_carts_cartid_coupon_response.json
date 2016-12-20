@@ -1,51 +1,51 @@
 {
-  "cartId": "577DFF54-1A86-6F45-7B1B-D5809AB317E0",
+  "cartId": "5858EDDD-18DF-8D31-502D-D5809AB37DF1",
   "billingAddress": null,
   "shippingAddress": null,
   "lineItemContainer": {
     "grandTotal": {
       "taxType": "GROSS",
-      "formatted": "15,05 €",
-      "amount": 15.05,
+      "formatted": "8.69 €",
+      "amount": 8.69,
       "currency": "EUR"
     },
     "totalBeforeTax": {
       "taxType": "NET",
-      "formatted": "12,65 €",
-      "amount": 12.65,
+      "formatted": "7.30 €",
+      "amount": 7.3,
       "currency": "EUR"
     },
     "totalTax": {
       "taxType": "NONE",
-      "formatted": "2,40 €",
-      "amount": 2.4,
+      "formatted": "1.39 €",
+      "amount": 1.39,
       "currency": "EUR"
     },
     "lineItemsSubTotal": {
       "taxType": "GROSS",
-      "formatted": "12,99 €",
+      "formatted": "12.99 €",
       "amount": 12.99,
       "currency": "EUR"
     },
     "productLineItems": [
       {
-        "lineItemId": "577DFF54-4BE8-F266-FF27-D5809AB31749",
+        "lineItemId": "5858EDE0-6E6D-DBC6-A97B-D5809AB37DD9",
         "sku": "Acc-001",
-        "name": "Adapter 6,3mm auf 3,5mm",
+        "name": "Connector 6.3mm",
         "productId": "54E72E1F-746A-8B6E-8E41-0A0C05E64669",
         "quantity": {
           "amount": 1,
-          "unit": "piece(s)"
+          "unit": "yd³"
         },
         "lineItemPrice": {
           "taxType": "GROSS",
-          "formatted": "12,99 €",
+          "formatted": "12.99 €",
           "amount": 12.99,
           "currency": "EUR"
         },
         "singleItemPrice": {
           "taxType": "GROSS",
-          "formatted": "12,99 €",
+          "formatted": "12.99 €",
           "amount": 12.99,
           "currency": "EUR"
         },
@@ -81,71 +81,93 @@
             "href": "https://pm.epages.com/rs/shops/apidocu/tax-classes/5446685F-A8AF-0E18-9B4F-D5809AB30FBF"
           }
         ],
+        "variationString": null,
         "essentialFeatures": null,
         "taxClass": {
           "taxClassId": "5446685F-A8AF-0E18-9B4F-D5809AB30FBF",
-          "name": "normal",
+          "name": "standard",
           "percentage": 19
         },
         "deliveryWeight": {
           "amount": 50,
-          "unit": "g"
+          "unit": "oz"
         }
       }
     ],
     "couponLineItem": {
-      "couponLineItemId": "577E01E2-5063-0B06-D5BF-D5809AB34CD3",
+      "couponLineItemId": "5858F55B-0C82-4C2C-A435-D5809AB3C878",
       "lineItemPrice": {
         "taxType": "NONE",
-        "formatted": "-5,00 €",
-        "amount": -5,
+        "formatted": "-12.99 €",
+        "amount": -12.99,
         "currency": "EUR"
       }
     },
     "shippingPrice": {
       "taxType": "GROSS",
-      "formatted": "7,06 €",
-      "amount": 7.06,
+      "formatted": "8.69 €",
+      "amount": 8.69,
       "currency": "EUR"
+    },
+    "deposits": [],
+    "ecoParticipations": [],
+    "shippingOptions": [],
+    "basketDiscount": {
+      "links": []
     }
   },
   "shippingData": {
     "shippingMethod": {
       "id": "5171DD86-C077-0726-C448-AC14145F9026",
-      "name": "Standardzustellung"
+      "name": "Standard delivery"
     },
     "price": {
       "taxType": "GROSS",
-      "formatted": "7,06 €",
-      "amount": 7.06,
+      "formatted": "8.69 €",
+      "amount": 8.69,
       "currency": "EUR"
-    }
+    },
+    "taxes": [
+      {
+        "taxClass": {
+          "taxClassId": "5446685F-A8AF-0E18-9B4F-D5809AB30FBF",
+          "name": "standard",
+          "percentage": 19
+        },
+        "price": {
+          "taxType": "NONE",
+          "formatted": "1.39 €",
+          "amount": 1.39,
+          "currency": "EUR"
+        }
+      }
+    ]
   },
   "paymentData": {
     "paymentMethod": {
       "id": "5171DD89-6DE5-E758-E046-AC14145F9009",
-      "name": null
+      "name": "PayPal"
     },
     "price": {
       "taxType": "GROSS",
-      "formatted": "0,00 €",
+      "formatted": "0.00 €",
       "amount": 0,
       "currency": "EUR"
     },
     "status": null,
-    "taxes": null,
+    "taxes": null
   },
   "minimumCart": {
     "status": true,
     "code": "SumDiscount",
     "amount": null
   },
-  "pickupToken": "YmY1YjU3MTJjZDEwZjM4OThhNWUwMWE1NjdiMDU0ODIzMjM2Y2UwYmEwMzg5ZmU1ZjY2NzQ5OTQ5NTRlNjAzZF8xNDY3ODc1ODEx",
-  "checkoutUrl": "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/3/Baskets/46072&ChangeAction=PickupBasket&PickupToken=YmY1YjU3MTJjZDEwZjM4OThhNWUwMWE1NjdiMDU0ODIzMjM2Y2UwYmEwMzg5ZmU1ZjY2NzQ5OTQ5NTRlNjAzZF8xNDY3ODc1ODEx",
+  "pickupToken": "NDJjOWYxOTM0MDFlODJlZmZjYzRhYzIyZDY5ZTg3MzQ1YWI2MzYzYjFkODAwNGE1ZDZhOWUxZTdhNWI2NGM4Zl8xNDgyMjI0OTg4",
+  "checkoutUrl": "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/1/Baskets/46072&ChangeAction=PickupBasket&PickupToken=NDJjOWYxOTM0MDFlODJlZmZjYzRhYzIyZDY5ZTg3MzQ1YWI2MzYzYjFkODAwNGE1ZDZhOWUxZTdhNWI2NGM4Zl8xNDgyMjI0OTg4",
   "links": [
     {
       "rel": "self",
-      "href": "https://pm.epages.com/rs/shops/apidocu/carts/577DFF54-1A86-6F45-7B1B-D5809AB317E0"
+      "href": "https://pm.epages.com/rs/shops/apidocu/carts/5858EDDD-18DF-8D31-502D-D5809AB37DF1"
     },
     {
       "rel": "shipping-method",
@@ -153,7 +175,7 @@
     },
     {
       "rel": "remove-coupon",
-      "href": "https://pm.epages.com/rs/shops/apidocu/carts/577DFF54-1A86-6F45-7B1B-D5809AB317E0/coupon/577E01E2-5063-0B06-D5BF-D5809AB34CD3"
+      "href": "https://pm.epages.com/rs/shops/apidocu/carts/5858EDDD-18DF-8D31-502D-D5809AB37DF1/coupon/5858F55B-0C82-4C2C-A435-D5809AB3C878"
     }
   ]
 }

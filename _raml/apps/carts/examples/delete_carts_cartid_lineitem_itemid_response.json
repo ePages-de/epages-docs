@@ -1,75 +1,64 @@
 {
-  "cartId": "574EA03C-C0EB-FC62-14B0-D5809AB36D4E",
+  "cartId": "5858FD17-147C-661C-9C33-D5809AB3C8BA",
   "billingAddress": null,
   "shippingAddress": null,
   "lineItemContainer": {
     "grandTotal": {
       "taxType": "GROSS",
-      "formatted": "20,05 €",
-      "amount": 20.05,
+      "formatted": "0.00 €",
+      "amount": 0,
       "currency": "EUR"
     },
     "totalBeforeTax": {
       "taxType": "NET",
-      "formatted": "16,85 €",
-      "amount": 16.85,
+      "formatted": "0.00 €",
+      "amount": 0,
       "currency": "EUR"
     },
     "totalTax": {
       "taxType": "NONE",
-      "formatted": "3,20 €",
-      "amount": 3.2,
+      "formatted": "0.00 €",
+      "amount": 0,
       "currency": "EUR"
     },
     "lineItemsSubTotal": {
       "taxType": "GROSS",
-      "formatted": "12,99 €",
-      "amount": 12.99,
+      "formatted": "0.00 €",
+      "amount": 0,
       "currency": "EUR"
     },
-    "productLineItems": []
-  },
-  "shippingData": {
-    "shippingMethod": {
-      "id": "5171DD86-C077-0726-C448-AC14145F9026",
-      "name": "Standard delivery"
-    },
-    "price": {
-      "taxType": "GROSS",
-      "formatted": "7,06 €",
-      "amount": 7.06,
-      "currency": "EUR"
-    }
-  },
-  "paymentData": {
-    "paymentMethod": {
-      "id": "5171DD89-6DE5-E758-E046-AC14145F9009",
-      "name": null
-    },
-    "price": {
+    "productLineItems": [],
+    "couponLineItem": null,
+    "shippingPrice": {
       "taxType": "GROSS",
       "formatted": "0,00 €",
       "amount": 0,
       "currency": "EUR"
     },
-    "status": null,
-    "taxes": null,
+    "deposits": [],
+    "ecoParticipations": [],
+    "shippingOptions": [],
+    "basketDiscount": {
+      "links": []
+    }
   },
+  "shippingData": null,
+  "paymentData": null,
   "minimumCart": {
     "status": true,
     "code": "SumDiscount",
     "amount": null
   },
-  "pickupToken": "YzZhN2E4MDNiNDZlZWQxMTUxOTMxNjVmYzU1NTNkOGM0NTc1NTcxYzExZmZiMTZmMDY4ODI4NmFhMmI2NzNmY18xNDY0NzcwNjQz",
-  "checkoutUrl": "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/1/Baskets/46072&ChangeAction=PickupBasket&PickupToken=YzZhN2E4MDNiNDZlZWQxMTUxOTMxNjVmYzU1NTNkOGM0NTc1NTcxYzExZmZiMTZmMDY4ODI4NmFhMmI2NzNmY18xNDY0NzcwNjQz",
+  "pickupToken": "Yjk5N2M1MGU5MTU4NjM3ZGNiNjU5MDE4MmZhZGIzNzZiN2YwOGU5NjNlYjdjMGQ0ZmI5ZWY1NjU4NTQ4NmMwOV8xNDgyMjI4MDk3",
+  "checkoutUrl": "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/2/Baskets/46072&ChangeAction=PickupBasket&PickupToken=Yjk5N2M1MGU5MTU4NjM3ZGNiNjU5MDE4MmZhZGIzNzZiN2YwOGU5NjNlYjdjMGQ0ZmI5ZWY1NjU4NTQ4NmMwOV8xNDgyMjI4MDk3",
   "links": [
     {
       "rel": "self",
-      "href": "https://pm.epages.com/rs/shops/apidocu/carts/574EA03C-C0EB-FC62-14B0-D5809AB36D4E"
+      "href": "https://pm.epages.com/rs/shops/apidocu/carts/5858FD17-147C-661C-9C33-D5809AB3C8BA"
     },
     {
-      "rel": "shipping-method",
-      "href": "https://pm.epages.com/rs/shops/apidocu/shipping-methods/5171DD86-C077-0726-C448-AC14145F9026"
+      "rel": "add-coupon",
+      "href": "https://pm.epages.com/rs/shops/apidocu/carts/5858FD17-147C-661C-9C33-D5809AB3C8BA/coupon"
     }
   ]
 }

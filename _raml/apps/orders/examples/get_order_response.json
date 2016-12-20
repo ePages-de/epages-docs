@@ -17,7 +17,7 @@
         "zipCode": "W11 1ET",
         "city": "London",
         "state": null,
-        "country": "UK",
+        "country": "GB",
         "title": null,
         "vatId": null,
         "birthday": "1975-11-08",
@@ -34,7 +34,7 @@
         "doorCode": null,
         "faxNumber": "0045099906568",
         "fiscalCode": null,
-        "gender": "male",
+        "gender": "MALE",
         "jobTitle": "Manager",
         "middleName": null,
         "mobilePhoneNumber": "0045099906567",
@@ -51,10 +51,25 @@
         },
         "price": {
           "taxType": "GROSS",
-          "formatted": "7.00 €",
-          "amount": 7,
+          "formatted": "7.63 €",
+          "amount": 7.63,
           "currency": "EUR"
-        }
+        },
+        "taxes": [
+          {
+            "taxClass": {
+              "taxClassId": "5446685F-A8AF-0E18-9B4F-D5809AB30FBF",
+              "name": "standard",
+              "percentage": 0
+            },
+            "price": {
+              "taxType": "NONE",
+              "formatted": "0.00 €",
+              "amount": 0,
+              "currency": "EUR"
+            }
+          }
+        ]
       },
       "paymentData": {
         "paymentMethod": {
@@ -68,34 +83,7 @@
           "currency": "EUR"
         },
         "status": null,
-    "taxes": [
-      {
-        "taxClass": {
-          "taxClassId": "58495FE6-1112-BB29-7772-AC15320BB028",
-          "name": "standard",
-          "percentage": 19
-        },
-        "price": {
-          "taxType": "NONE",
-          "formatted": "0.27 €",
-          "amount": 0.27,
-          "currency": "EUR"
-        }
-      },
-      {
-        "taxClass": {
-          "taxClassId": "58495FE6-09C9-1DAA-ECCC-AC15320BB02E",
-          "name": "reduced",
-          "percentage": 7
-        },
-        "price": {
-          "taxType": "NONE",
-          "formatted": "0.22 €",
-          "amount": 0.22,
-          "currency": "EUR"
-        }
-      }
-    ]
+        "taxes": null
       },
       "invoicedOn": null,
       "partiallyPaidOn": null,
@@ -188,18 +176,7 @@
         "websiteUrl": "http://schneiderei.de"
       },
       "shippingAddress": null,
-      "shippingData": {
-        "shippingMethod": {
-          "id": "5171DD86-C077-0726-C448-AC14145F9026",
-          "name": "Standard delivery"
-        },
-        "price": {
-          "taxType": "GROSS",
-          "formatted": "7.00 €",
-          "amount": 7,
-          "currency": "EUR"
-        }
-      },
+      "shippingData": null,
       "paymentData": {
         "paymentMethod": {
           "id": "5171DD86-0714-8E9B-B079-AC14145F900F",
@@ -212,34 +189,7 @@
           "currency": "EUR"
         },
         "status": null,
-    "taxes": [
-      {
-        "taxClass": {
-          "taxClassId": "58495FE6-1112-BB29-7772-AC15320BB028",
-          "name": "standard",
-          "percentage": 19
-        },
-        "price": {
-          "taxType": "NONE",
-          "formatted": "0.27 €",
-          "amount": 0.27,
-          "currency": "EUR"
-        }
-      },
-      {
-        "taxClass": {
-          "taxClassId": "58495FE6-09C9-1DAA-ECCC-AC15320BB02E",
-          "name": "reduced",
-          "percentage": 7
-        },
-        "price": {
-          "taxType": "NONE",
-          "formatted": "0.22 €",
-          "amount": 0.22,
-          "currency": "EUR"
-        }
-      }
-    ]
+        "taxes": null
       },
       "viewedOn": "2015-11-04T08:41:35.000Z",
       "rejectedOn": null,
@@ -328,7 +278,22 @@
           "formatted": "7.32 €",
           "amount": 7.32,
           "currency": "EUR"
-        }
+        },
+        "taxes": [
+          {
+            "taxClass": {
+              "taxClassId": "5446685F-A8AF-0E18-9B4F-D5809AB30FBF",
+              "name": "standard",
+              "percentage": 0
+            },
+            "price": {
+              "taxType": "NONE",
+              "formatted": "0.00 €",
+              "amount": 0,
+              "currency": "EUR"
+            }
+          }
+        ]
       },
       "paymentData": {
         "paymentMethod": {
@@ -342,34 +307,7 @@
           "currency": "EUR"
         },
         "status": null,
-    "taxes": [
-      {
-        "taxClass": {
-          "taxClassId": "58495FE6-1112-BB29-7772-AC15320BB028",
-          "name": "standard",
-          "percentage": 19
-        },
-        "price": {
-          "taxType": "NONE",
-          "formatted": "0.27 €",
-          "amount": 0.27,
-          "currency": "EUR"
-        }
-      },
-      {
-        "taxClass": {
-          "taxClassId": "58495FE6-09C9-1DAA-ECCC-AC15320BB02E",
-          "name": "reduced",
-          "percentage": 7
-        },
-        "price": {
-          "taxType": "NONE",
-          "formatted": "0.22 €",
-          "amount": 0.22,
-          "currency": "EUR"
-        }
-      }
-    ]
+        "taxes": null
       },
       "viewedOn": "2015-11-03T14:48:50.000Z",
       "rejectedOn": null,
