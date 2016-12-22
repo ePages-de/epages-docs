@@ -10,20 +10,40 @@ This object is used for the attributes of shippingAddress and billingAddress.
 
 | Attribute | Type | Description |
 | - | :-: |  - |
-| company | string | The company of the person associated with the address.|
-| salutation | string | The salutation of the customer, e.g. Mr or Mrs.|
-| title | string | The academic title of the customer, e.g. professor or PhD.|
-| firstName | string | The first name of the person associated with the address.|
-| lastName | string | The last name of the person associated with the address.|
-| street | string | The street name of the address. |
+| company | string | The customer's company.|
+| salutation | string | The customer's salutation, e.g. Mr or Mrs.|
+| title | string | The customer's academic title, e.g. professor or PhD.|
+| firstName | string | The customer's first name.|
+| lastName | string | The customer's last name.|
+| street | string | The street name of the customer's address. |
 | streetDetails | string | An additional field for the street address.|
 | zipCode | string | The zip or postal code of the address. |
 | city | string | The name of the city. |
 | state | string | The name of the state.|
 | country | string | The name of the country. |
 | vatId | string | The Id of the VAT.|
-| birthday | string | The date of birth of the person associated with the address. |
-| emailAddress | string | The email address of the person associated with the address. |
+| birthday | string | The customer's date of birth. |
+| emailAddress | string | The customer's primary email address. This email address will be used by the merchant if the customer does not have a user account. |
+| addressExtension | string | Further address details of the customer.  |
+| bankAccountHolder | string | The name of the bank account holder. |
+| bankAccountNumber | string | The bank account number. |
+| bankName | string | The name of the bank that holds the bank account. |
+| bankSortCode | string | The bank identifier code. |
+| businessEmailAddress | string | The customer's business email address. |
+| businessPhoneNumber | string | The customer's business phone number. |
+| department | string | The department of the company associated with the customer's address. |
+| displayName | string | Specifies the name to display for the customer name. |
+| doorCode | string | The door code associated with the customer's address.  |
+| faxNumber | string | The customer's fax number. |
+| fiscalCode | string | The customer's fiscal code. |
+| gender | string | The customer's gender. Can be either *MALE* or *FEMALE*. |
+| jobTitle | string | The customer's job title. |
+| middleName | string | The customer's middle name. |
+| mobilePhoneNumber | string | The customer's mobile phone number. |
+| phoneNumber | string | The customer's landline number. |
+| privateEmailAddress | string | The customer's private email address. |
+| privatePhoneNumber | string | The customer's private phone number |
+| websiteUrl | string | The customer's website URL.  |
 
 ## attributeSelection
 
@@ -324,6 +344,7 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | paymentMethod | object of [paymentMethodInfo](page:apps-data-types#paymentmethodinfo) | Information on the payment type chosen by the customer. |
 | price | object of [price](page:apps-data-types#price) | The costs for the payment method. |
 | status | string | Indicates the status of the payment. Can be either *CANCELED*, *FAILED* or null. |
+| taxes | array of [taxInfo](page:apps-data-types#taxinfo) | Information on the taxes for the payment. |
 
 ## paymentMethodInfo
 
@@ -484,6 +505,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | - | :-: |  - |
 | shippingMethod | object of [shippingMethodInfo](page:apps-data-types#shippingmethodinfo) | Information on the shipping method chosen by the customer. |
 | price | object of [price](page:apps-data-types#price) | The costs for the shipping. |
+| taxes | array of [taxInfo](page:apps-data-types#taxinfo) | Information on the taxes for the shipping. |
 
 ## shippingMethod
 
@@ -540,6 +562,13 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | name | string | The name of the tax class. |
 | links | array of [link](page:apps-data-types#link) | A list of links to the products. |
 
+## taxInfo
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| taxClass | object of [taxClassInfo](page:apps-data-types#taxclassinfo) | The information on the tax class. |
+| price | object of [price](page:apps-data-types#price) | The amount of the charged tax. |
+
 ## updatedProducts
 
 | Attribute | Type | Description |
@@ -567,14 +596,14 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | Attribute | Type | Description |
 | - | :-: |  - |
 | name | string | The name of the selected product variation. |
-| value | string | The value of the selected product variation.  |
+| value | string | The key of an attribute, e.g. NeonPurple.  |
 
 ## variationValue
 
 | Attribute | Type | Description |
 | - | :-: |  - |
-| value | string | The key of an attribute, e.g. 004. |
-| displayValue | string | The displayed name of the attribute, e.g. XtraLarge. |
+| value | string | The key of an attribute, e.g. NeonPurple. |
+| displayValue | string | The localized displayed name of the attribute, e.g. Neon Purple. |
 
 ## watchedProduct
 

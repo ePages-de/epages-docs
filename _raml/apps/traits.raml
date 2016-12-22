@@ -1,7 +1,7 @@
 - locale:
     queryParameters:
       locale:
-        description: Represents the language code according to ISO 639-1 and the country code according to ISO 3166-1.
+        description: Represents the language code according to ISO 639-1 and the country code according to ISO 3166-1. If not provided, the shop's default language is used. We recommend to always send this parameter with your request. If the default language had been changed in the administration, it might take up to 1 day until this change affects the shop.
         example: en_US
         required : false
 - localeMandatory:

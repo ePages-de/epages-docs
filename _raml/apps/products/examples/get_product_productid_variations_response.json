@@ -5,8 +5,8 @@
       "displayName": "Colour",
       "values": [
         {
-          "value": "Black",
-          "displayValue": "Black"
+          "value": "DeepBlack",
+          "displayValue": "Extreme Black"
         },
         {
           "value": "Silver",
@@ -17,8 +17,8 @@
           "displayValue": "Red"
         },
         {
-          "value": "White",
-          "displayValue": "White"
+          "value": "OffWhite",
+          "displayValue": "Cream"
         },
         {
           "value": "Orange",
@@ -42,7 +42,7 @@
         },
         {
           "value": "Purple",
-          "displayValue": "Purple"
+          "displayValue": "Lilac"
         }
       ]
     }

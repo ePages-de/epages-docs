@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "Get Newsletter Subscriber Schema",
+  "type": "object",
+  "properties": {
+    "results": {
+      "type": "integer",
+      "description": "The number of subscribers in total."
+    },
+    "page": {
+      "type": "integer",
+      "description": "The page number on which the subscribers appear."
+    },
+    "resultsPerPage": {
+      "type": "integer",
+      "description": "The number of subscribers returned per page."
+    },
+    "items": {
+      "type": "array of [newsletterSubscriber](page:apps-data-types#newslettersubscriber)",
+      "description": "The list of all subscribers for a newsletter campaign of a shop."
+    }
+  }
+}
