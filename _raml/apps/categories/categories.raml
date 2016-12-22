@@ -10,6 +10,10 @@ get:
     productId:
       description: Filters categories by product ID.
       required : false
+    includeInvisible:
+      description: Includes invisible categories. Only available with `products_write` authorisation.
+      type: boolean
+      required: false
   responses:
     200:
       body:
@@ -23,6 +27,11 @@ get:
     description: Returns the category identified by the provided category ID.
     securedBy: [products_read]
     is: [ locale ]
+    queryParameters:
+      includeInvisible:
+        description: Includes invisible categories. Only available with `products_write` authorisation.
+        type: boolean
+        required: false
     responses:
       200:
         body:

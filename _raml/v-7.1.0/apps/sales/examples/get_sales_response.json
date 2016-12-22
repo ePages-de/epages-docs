@@ -1,0 +1,13 @@
+{
+  "createdAfter": "2016-03-20T08:21:43.779Z",
+  "createdBefore": "2016-04-19T07:21:43.779Z",
+  "salesPerCurrency": [
+    {
+      "currency": "EUR",
+      "totalGrossRevenue": 9.99,
+      "totalNetRevenue": 8.39495798319328,
+      "unitsSold": 1
+      "totalOrders": 1
+    }
+  ]
+}
