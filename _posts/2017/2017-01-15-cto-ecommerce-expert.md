@@ -13,50 +13,33 @@ In this interview, Harm talks about the next generation commerce platform, about
 
 ## Harm, you have been working at ePages for two years now. Back then, you were hired to take charge of the advancement of the ePages platform. What has happened in these two years?
 
-It has happened quite a lot.
-It's true that I've been hired to push forward our new architecture.
+Quite a lot.
+It's true that I've been hired to push forward our new software architecture for ePages.
 Yet, it's also true that the scope of my work is much broader than that.
 Roughly, I am taking care of three main areas concerning our product portfolio strategy and development:
 
-1. Refining, developing further and adding value to our current core shop software: ePages 6
-2. Developing an improved version of our core shop software concerning usability and the new design of the storefront: [ePages Now](https://www.epages.com/de/now/).
-3. Pushing forward the development of our very latest shop software: BEYOND.
+1. Refining, enhancing and adding value to our current core shop software: ePages 6
+2. Developing an improved version of ePages 6 concerning usability and the new design of the storefront: [ePages Now](https://www.epages.com/de/now/).
+3. Advancing the development of our very latest online shop software: ePages BEYOND.
 
-The first one I mentioned is our very first and core product, which has a wide range of features and functionalities that our customers highly appreciate.
-Over the past two years, we extended and and enhanced ePages 6 with the [REST API](https://developer.epages.com/apps).
-Consequently, we facilitated an App Store as well as a [Theme Store](https://themes.epages.com/de/).
+ePages 6 is our very first and core product, which has a wide range of features and functionalities that our customers highly appreciate.
+Over the past two years, we extended and enhanced ePages 6 with the [REST API](https://developer.epages.com/apps).
+Consequently, we facilitated an App Store as well as a [Theme Store](https://themes.epages.com/en/).
 
-Only then, we integrated the new shop software [ePages Now](https://www.epages.com/de/now/) through the REST API and the result is what we see now:
-We launched the product to the market by the end of last year.
+Only then, we integrated [ePages Now](https://www.epages.com/de/now/) through the REST API and launched the product by the end of last year.
 
 ## Tell me more about ePages Now.
 
-Well, it is basically a new storefront that is up-to-date considering responsiveness and variety of themes.
+Well, it is basically a new storefront that is up-to-date considering responsiveness and a variety of themes.
 The modernized usability of the administration area allows the merchant to arrange items by drag and drop, as for example, content pages, landing pages, and alike.
-Yet, the shop software is still based on on the ePages 6 architecture.
+Yet, the shop software is still based on the ePages 6 architecture.
 
-Before going into detail about our very latest architecture, I had to consider a handful of other issues before we could start to busily push forward our new product ePages BEYOND.
-For example, in the very beginning, I gave the impulse to establish our Hamburg office location as a developer location, too.
-Before that, there were only a few developers working in our Hanseatic office, the rest was working in Jena.
-So, in fact, one of my primary tasks since 2014 was to recruit developers for our new e-commerce platform as well as for ePages Now to assure its further development.
-Also, I restructured teams and together we determined their focus.
-Consequently, we now have several development teams dedicating their work to focus on: ePages 6, ePages Now, and ePages BEYOND.
-
-## What are the goals of the new architecture, ePages BEYOND?
-
-The new platform pursues three main goals:
-
-1. Deploy modern technologies, e.g. Java instead of monoliths to circumvent dependencies.
-2. Establish an architecture based on [microservices](http://microservices.io/).
-3. Ensure scalability of the new platform - as we're working across cities and countries.
-
-With our new platform, BEYOND, we obtain these three goals.
-We deploy Java, make use of microservices and rolled out a blueprint approach in order to scale our platform across our three different locations.
-We don't only develop further our new software, but also we created a template that cuts down complexity and thus makes it easier for new teams to work on the project.
-Also, we developed a prototype and determined to use a [greenfield](http://aimblog.uoregon.edu/2015/06/30/benefits-of-the-greenfield-approach/#.WFOW_OHhBTY) approach.
-Our two teams - Team Black in Hamburg and Team White in Jena - currently dedicate their work towards our new product and thus already prove the shop software's scalability.
-
-To sum it all up, what we achieved during the last two years was to hire new developers, determine our teams' focus, facilitate an App Store as well as Theme Store for our core product, integrate a valuable REST API in order to integrate ePages Now, and finally lay the foundation for our newest product, BEYOND.
+Before I could start to busily push forward our new product ePages BEYOND, I had to consider a handful of other issues.
+For example, I gave the impetus to establish our Hamburg office as developer location.
+Before that we had only a few developers here, the rest of them worked in Jena.
+So, in fact, one of my primary tasks since 2014 was to recruit developers to assure the further development of ePages Now as well as to start off with our new e-commerce platform ePages BEYOND.
+I also restructured some teams and together with the team members we determined their focus.
+Consequently, we now have several development teams dedicating their work to focus on ePages 6, ePages Now, and ePages BEYOND.
 
 ## How did you come up with the idea of ePages Now - a product with improved usability?
 
@@ -65,40 +48,63 @@ In this respect, it is not my own creation.
 Before I joined ePages, the company went through a reorganization from a rather waterfall oriented method of development to an agile one.
 However, I then took over the responsibility to further improve and align the goals of the ePages Now project.
 
-## Where does the development of the new architecture BEYOND stand today and where are you heading to?
+## What are the goals of ePages BEYOND?
+
+The new platform pursues three main goals:
+
+1. Deploy modern technologies, e.g. [Java](https://www.java.com/en/), [Spring Boot](https://projects.spring.io/spring-boot/), [Kubernetes](http://kubernetes.io/), [Kibana](https://www.elastic.co/products/kibana), and alike.
+2. Establish an architecture based on [microservices](http://microservices.io/) instead of monoliths to circumvent dependencies.
+3. Ensure scalability of the new platform - as we're working across cities and countries.
+
+With ePages BEYOND we obtain these three goals.
+We deploy Java, make use of microservices and rolled out a blueprint approach in order to scale our platform across our three different locations.
+Besides continually evolving BEYOND, we also created a template that cuts down complexity and thus makes it easier for new teams to work on the project.
+Furthermore, we developed a prototype and determined to use a [greenfield](http://aimblog.uoregon.edu/2015/06/30/benefits-of-the-greenfield-approach/#.WFOW_OHhBTY) approach.
+Our two teams - Team Black in Hamburg and Team White in Jena - currently dedicate all their work towards ePages BEYOND and thus already prove the software's scalability.
+
+To sum it all up, what we achieved during the last two years was to hire new developers, determine our teams' focus, facilitate an App Store as well as Theme Store for ePages Now, integrate a valuable REST API in order to integrate ePages Now, and finally lay the foundation for our newest product, BEYOND.
+
+## Where does the development of ePages BEYOND stand today and where are you heading to?
 
 We've already developed an excellent prototype.
 Our objective is to finish this prototype by the end of February 2017.
 
-One point that is still very important to me considering the development process, is a completely automated process to ensure that code changes are quickly launched.
-It's basically about finding a way to easily and timely release changes - this means only a few code lines, instead of plenty.
+One point that is still very important to me is a completely automated process to ensure that code changes are quickly launched.
+It's basically about finding a way to easily and timely release changes - this means only a few code lines instead of plenty.
 
-Consequently, it also becomes easier to identify and fix code bugs.
-This automation is what we are working on and we found great support by the Application Management team.
-Working in the cloud already remarkably facilitates scalability.
+Consequently, it also becomes easier to identify and fix bugs.
+This automation process is what we're currently working on.
+We found great support by our Application Management team.
+
+Working in the cloud is also a big topic for me.
+It remarkably facilitates scalability.
 Thus, our Sales and Business Development team can introduce the product to our customers already at an early stage.
-Also, we're aiming to develop even more features for our new architecture.
+Also, we're aiming to develop even more features for ePages BEYOND.
 You see, we always strive forward.
 
-## Besides the new architecture, what else are you responsible for?
+## Besides these new software platforms, what else are you responsible for?
 
 Honestly, my work consists of quite a lot of human resources work.
 We place great value on finding the right employees and establishing a corresponding culture.
 We cherish a company culture that employs great people, that has an international working atmosphere and that challenges our employees.
 
-I get great support from HR in this aspect.
+I receive great support from HR in this regard.
 Together, we redesigned the whole process of tech recruiting at ePages.
-Therefore, we introduced for instance codility tests.
-So, potential candidates have to solve a small coding challenge in advance.
+For instance, we introduced [Codility] (https://codility.com/) tests.
+Potential candidates have to solve a small coding challenge in advance.
 This way, we get a first hint about their programming skills.
 
 During the whole recruiting process, the future team colleagues are closely involved, because we want to ensure good team work.
 We often provide another coding challenge and ask our candidate to put it on GitHub and make a pull request.
-Finally, I always like to get to know the candidates in person to see whether there is sympathy in human levels as well.
+Finally, I always like to get to know the candidates in person to see whether the interpersonal aspect fits as well.
 All in all, we reduced a lot of uncertainties with our improved recruiting process.
 
-We also implemented a peer review framework with the platform [impraise](http://www.impraise.com/) to secure continuous improvement and feedback.
-What I also pushed forward besides the new architecture is the implementation of our developer blog, as we started to notice the lack of employer branding at ePages.
+We also implemented a peer review feedback via [impraise](http://www.impraise.com/) to ensure continuous improvement and employee feedback.
+
+## Certainly there is more...?
+
+Well yes.
+I pushed forward the implementation of our developer blog, as I noticed the lack of employer branding at ePages.
 The teams alternate with writing tech stories that are related to their work every month using [git](https://git-scm.com/) and [GitHub](https://github.com/).
 This way, and by introducing our [epagesdevs](https://twitter.com/epagesdevs) Twitter account, we now ensure that job applicants have a first idea of our work and our recruiting process.
 
@@ -110,24 +116,24 @@ I dedicate my time to issues that call for improvement.
 In the morning it takes me about 35 minutes to cycle to work.
 I always enjoy the bike ride along the beautiful Elbe to distract myself a bit.
 When arriving at ePages, I go through all offices to say "Hi" to everyone and eventually quickly clarify pending tasks or uncertainties.
-I then switch on my computer and check new e-mails.
+I then switch on my computer and check new emails.
 During the day I try to attend as many team reviews as possible, even if it's from remote.
 
-On the other hand, I attempt to keep myself up-to-date on the latest technology trends and news.
+Furthermore, I attempt to keep myself up-to-date on the latest technology trends and news.
 My work basically consists of the following three aspects: people, directions, and technology.
 I regularly have lunch with different teams.
 Also, I have meetings with the teams to ensure that there is room for everyone to proactively approach me with ideas, concerns or whatsoever.
 I am in permanent exchange with HR and my colleague who is in charge for the development teams in Jena.
-Therefore, I try to be in Jena every two months and every three to four months in our office in Barcelona.
-Lastly, I don't want to forget to mention the many Latte Macchiatos I have throughout the day {% emoji wink %}.
+Therefore, I try to visit the Jena office every two months and our Barcelona office every three to four months.
+Hmmm, and I don't want to forget to mention the many Latte Macchiatos I have throughout the day {% emoji wink %}.
 
 ## What are the most important aspects when working with different development teams?
 
 Open and honest communication!
-I appreciate it a lot, if teams approach me to make suggestions for further proceeding and improvements.
+I appreciate it a lot if employees approach me to make suggestions for further proceedings and improvements.
 Sometimes it's challenging for me to immerse myself in all subject areas.
-The development teams that work on their task day-to-day have a deeper understanding of challenges than I and thus can make hands-on proposals.
-This is also what I expect from my colleagues: to work autonomously, take on responsibility and be self-organized.
+The development teams that work on their tasks day-to-day have a deeper understanding of challenges than I and thus can make hands-on proposals.
+This is also what I expect from the teams: to work autonomously, take on responsibility, and be self-organized.
 
 ## Which programming languages and technologies do you mainly work with?
 
@@ -135,21 +141,20 @@ Still a lot of Perl - simply because that's the code base of ePages 6.
 This is changing a bit due to ePages Now.
 It's new storefront and the editor use [React](https://facebook.github.io/react/).
 We use Java for our API and [Solr](http://lucene.apache.org/solr/) for our search engine.
-As mentioned before, BEYOND is our new shop architecture.
 Supporting tools are Ruby and Ruby on Rails.
 
 ## What do you like most about ePages?
 
-ePages allows for everyone to proactively contribute and shape the topics we work at.
+ePages allows for everyone to proactively contribute and shape the topics we we deal with.
 One can work autonomously and with great responsibility.
-The firm culture creates a friendly and collaborative atmosphere - people enjoy working at ePages.
-Personally, I think I could have a chat over a beer with every single one of my colleagues.
+The company culture creates a friendly and collaborative atmosphere - people enjoy working at ePages.
+Personally, I think I could have a chat over a beer with every single ePagee.
 I simply enjoy being in the office and around my colleagues.
 
 ## Can you give me a future outlook on what will happen next?
 
-Last year we launched our new shop software ePages Now.
-For this year, we will have to see how to shift our resources to our newest product BEYOND.
+Last year we launched ePages Now.
+For 2017, we will have to shift more resources to ePages BEYOND.
 This will be this year's challenge.
 Also, we will see, if we are able to assert our position in the US-market.
 
