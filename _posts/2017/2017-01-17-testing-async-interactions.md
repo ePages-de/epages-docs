@@ -1,42 +1,40 @@
 ---
 layout: post
-title: "Testing asynchronous interactions in distributed systems"
-date: "2017-01-15 12:11:00"
+title: "How to test event-based services using contracts"
+date: "2017-01-17 12:11:00"
 image: blog-header/testing-async-interactions.jpg
 categories: tech-stories
 authors: ["Mathias"]
 ---
 
 In a distributed architecture, we strive to build self-contained services.
-We try hard to make these services as autonomous as possible, but it is often impossible to build a service that can fulfill its tasks without interaction with other services.
+We try hard to make these services as autonomous as possible, but it is often impossible to build a service that can fulfill its tasks without interacting with other services.
 
-When it comes to service interaction we try to use an event-based approach as much as possible.
-This means interacting asynchronously and outside the user interaction where this is applicable.
+When it comes to service interaction we try to use an event-based approach.
+This means interacting asynchronously and outside the user interaction where applicable.
 
-Going this route you will soon ask yourself how to test such asynchronous interactions.
+Having embarked on this road you will soon ask yourself how to test such asynchronous interactions.
 [Spring Cloud Contract](https://cloud.spring.io/spring-cloud-contract/) offers great support for such scenarios.
+Let's address this challenge using a simple application consisting of two services and see how Spring Cloud Contract can help improve testing the asynchronous interaction between them.
 
-Let's look at the problem using a simple application consisting of two services and see how Spring Cloud Contract can help us to improve testing the asynchronous interaction between them.
-
-## The Sample Application
+## The sample application
 
 Our application consists of two services:
 
 - the product service is responsible for managing product data
-- the checkout service offers cart-related capabilities
+- the checkout service offers cart-related capabilities.
 
 The checkout service cannot fulfill the task of adding a certain quantity of a product to a cart without product data.
 So the checkout service listens to product events to hold a copy of relevant data of each product.
-
-This approach allows us to satisfy all user requests in the checkout service from its local database which should be a lot faster than having to ask the product service for product data while the user is waiting for a reply.
+This approach allows us to satisfy all user requests in the checkout service from its local database. This is a lot faster than having to ask the product service for product data while the user is waiting for a reply.
 We also reduce runtime dependencies between our services.
+
+Whenever we create a [product](https://github.com/mduesterhoeft/testing-asynchonous-interactions/blob/master/product-service/src/main/java/com/epages/product/Product.java) an event is [published](https://github.com/mduesterhoeft/testing-asynchonous-interactions/blob/master/product-service/src/main/java/com/epages/product/ProductEventHandler.java) which the checkout service [picks up](https://github.com/mduesterhoeft/testing-asynchonous-interactions/blob/master/checkout-service/src/main/java/com/epages/checkout/ProductSubscriber.java).
+It will then store [its view on the product](https://github.com/mduesterhoeft/testing-asynchonous-interactions/blob/master/checkout-service/src/main/java/com/epages/checkout/ProductRef.java) in the checkout database.
 
 For the sample application, we use [Spring Boot](http://projects.spring.io/spring-boot/),  [RabbitMQ](https://www.rabbitmq.com/) as the message broker, and [Spring Amqp](http://projects.spring.io/spring-amqp/) to interact with it from our application.
 
 The code referenced in this post is available on [github](https://github.com/mduesterhoeft/testing-asynchonous-interactions). It is advisable to make yourself familiar with this code before reading on.
-
-Whenever we create a [product](https://github.com/mduesterhoeft/testing-asynchonous-interactions/blob/master/product-service/src/main/java/com/epages/product/Product.java) an event is [published](https://github.com/mduesterhoeft/testing-asynchonous-interactions/blob/master/product-service/src/main/java/com/epages/product/ProductEventHandler.java) which the checkout service [picks up](https://github.com/mduesterhoeft/testing-asynchonous-interactions/blob/master/checkout-service/src/main/java/com/epages/checkout/ProductSubscriber.java).
-It will then store [its view on the product](https://github.com/mduesterhoeft/testing-asynchonous-interactions/blob/master/checkout-service/src/main/java/com/epages/checkout/ProductRef.java) in the checkout database.
 
 ## A primitive test is better than nothing
 
@@ -45,14 +43,14 @@ Of course, an integration test would be possible.
 But we favor fast feedback and ideally want issues to become apparent as early as possible and without having to start all our services.
 So we strive for a solution that allows us to test the interactions on the checkout service in isolation.
 We do not want to run the product service and the message broker to be able to test it.
-We call such a test a local integration test.
+This is what we call a local integration test.
 
-A test that is fairly easy to implement on checkout-service side is to just hard-code the event payload as the checkout service expects it and assert that the service correctly consumes this event.
+A test that is fairly easy to implement on checkout-service side is to just hard-code the event payload as the checkout service expects it and ensure that the service correctly consumes this event.
 
 Such a [test](https://github.com/mduesterhoeft/testing-asynchonous-interactions/blob/master/checkout-service/src/test/java/com/epages/checkout/ProductSubscriberHardcodedPayloadTest.java) should do two things:
 
 - make sure that the JSON event payload can be deserialized correctly
-- assert that the service is reacting appropriately
+- ensure that the service is reacting appropriately.
 
 ```java
 @Test
@@ -72,14 +70,14 @@ public void should_handle_product_created_event() {
 ```
 
 Note that the test uses a mock connection factory to avoid connecting to a running message broker.
-It also uses the Spring Amqp `MessageListener` to emit the event. Thus we leave the deserialization to Spring Amqp and thus also test the configuration there.
-See the [full test source](https://github.com/mduesterhoeft/testing-asynchonous-interactions/blob/master/checkout-service/src/test/java/com/epages/checkout/ProductSubscriberHardcodedPayloadTest.java) for on how this is done in detail.
+It also uses the Spring Amqp `MessageListener` to publish the event. Thus we leave the deserialization to Spring Amqp and also test the configuration there.
+See the [test source](https://github.com/mduesterhoeft/testing-asynchonous-interactions/blob/master/checkout-service/src/test/java/com/epages/checkout/ProductSubscriberHardcodedPayloadTest.java) for on how this is done in detail.
 
-Our basic test works for a start but as our service landscape becomes more and more complex, we will find that such an approach just does not scale.
+Our basic test works for a start but as our service landscape becomes more and more complex, we will figure out that such an approach just does not scale.
 Eventually, we will make changes to the product service without anticipating that these changes will break the checkout service.
 The tests of both services will stay green although the interaction is broken.
 
-## Spring Cloud Contract and Provider Contracts
+## Spring Cloud Contract and provider contracts
 
 Our situation would improve significantly if we could just test the event subscriber against the latest version of the payload as generated by the product service.
 At the same time, we still want to be able to run this test without having to start a message broker and the product service.
@@ -88,11 +86,12 @@ Spring Cloud Contract is the missing piece here.
 It is an umbrella project to help users to implement the [consumer-driven contract approach](http://martinfowler.com/articles/consumerDrivenContracts.html).
 It addresses REST and messaging interactions.
 We will use its messaging functionalities for our sample application.
-Spring Cloud Contract is providing integrations with Spring Integration, Spring Cloud Stream, Apache Camel, and plain [Spring Amqp](https://cloud.spring.io/spring-cloud-contract/spring-cloud-contract.html#_stub_runner_spring_amqp).
+Spring Cloud Contract provides integrations with Spring Integration, Spring Cloud Stream, Apache Camel, and plain [Spring Amqp](https://cloud.spring.io/spring-cloud-contract/spring-cloud-contract.html#_stub_runner_spring_amqp).
 
 Testing the interaction between our checkout and product service with Spring Cloud Contract works as follows.
 
-Our product service expresses the provider contract in the contract definition language which is a groovy DSL that describes the event. This contract describes the structure of the event.
+Our product service expresses the provider contract in the contract definition language which is a groovy DSL that describes the event.
+The main purpose of the contract is to define the event structure.
 
 ```groovy
 org.springframework.cloud.contract.spec.Contract.make {
@@ -121,7 +120,7 @@ The contract contains assertions about the payload and headers of the produced e
 In our scenario, a message is triggered by a certain action.
 
 The `spring-cloud-contract-verifier` will generate a test from this contract which runs together with the usual tests of the application.
-This test asserts that the contract definition is in sync with the implementation.
+This test ensures that the contract definition is in sync with the implementation.
 
 The method name given in the `triggeredBy` attribute of the input section of the contract is used to generate the test.
 The abstract test base class [`ProductPublisherTestBase`](https://github.com/mduesterhoeft/testing-asynchonous-interactions/blob/master/product-service/src/test/java/com/epages/product/ProductPublisherTestBase.java) implements this method.
@@ -145,8 +144,8 @@ public abstract class ProductPublisherTestBase {
 ```
 
 With the contract and test base class given above, a test class `ContractVerifierTest` is generated into `build/generated-test-sources/contracts/org/springframework/cloud/contract/verifier/tests/`.
-The test is calling the trigger method stated in the contract and then captures the event using `ContractVerifierMessaging`.
-The way an event is captured using plain Spring Amqp is part of the Amqp integration in Spring Cloud Contract that I contributed a while ago.
+The test calls the trigger method stated in the contract and then captures the event using `ContractVerifierMessaging`.
+How an event is captured using plain Spring Amqp is part of the Amqp integration in Spring Cloud Contract that I contributed a while ago.
 It is achieved by spying on the `RabbitTemplate`.
 The test then runs the assertions from the `outputMessage` section of our contract against the event.
 
@@ -179,7 +178,6 @@ So if we would change an attribute name in `Product` we would have a failing tes
 **This shields us from making accidental incompatible contract-relevant changes**.
 
 The contracts of the product service are published in a stub jar to a maven repository.
-
 This stub jar can be used by the checkout service.
 This is done by stating the stub information in the [application configuration](https://github.com/mduesterhoeft/testing-asynchonous-interactions/blob/master/checkout-service/src/main/resources/application.yml) of the checkout service.
 
@@ -191,9 +189,9 @@ stubrunner:
 
 Now all we need to do is annotate our improved test on checkout side with `@AutoConfigureStubRunner` and use the `StubTrigger` to send the stub message in.
 The `spring-cloud-contract-stub-runner` downloads the stub jar with our contract from a maven repository and emits it into our application.
-This is done without interaction with a running broker.
+This is done without interacting with a running broker.
 After the event is emitted we can run our assertions to make sure the correct effect can be observed.
-In our case, we assert that the correct product reference has been saved.
+In our case, we check that the correct product reference has been saved.
 Our [refactored test](https://github.com/mduesterhoeft/testing-asynchonous-interactions/blob/master/checkout-service/src/test/java/com/epages/checkout/ProductSubscriberContractTest.java) looks like this:
 
 ```java
@@ -218,15 +216,15 @@ public class ProductSubscriberContractTest {
 }
 ```
 
-Basically, the test is covering the same aspects as our first version.
+Basically, the test covers the same aspects as our first version.
 But **it always picks up the latest contract definitions**.
 This can be called a provider contract test approach. The owner of the interface publishes the information about the structure of the event it emits (e.g. the contract).
 A consumer can use the contract to assert that events that follow the contract can be processed.
 
-## Benefits and Downsides
+## Benefits and drawbacks
 
 The main benefit of this approach is the ability to always test against the contract published by the provider.
-Tests in the consumer of a message break if it no longer is able to process messages that follow the contract.
+Tests in the consumer of a message break if it is no longer able to process messages that follow the contract.
 
 Another big plus is the test generated on the provider side that makes sure the contract is in sync with the implementation.
 **This protection from accidentally breaking the contract is very important**.
@@ -234,9 +232,9 @@ Another big plus is the test generated on the provider side that makes sure the 
 The price we need to pay for these benefits is writing contracts for our events and maintaining them.
 In a complex application with a lot of interactions, this can be a significant effort.
 
-At the moment Consumer-Driven Contracts do not seem to be possible to achieve for event-based interactions and Spring Cloud Contract.
+At the moment consumer-driven contracts for event-based interactions do not seem to be supported in Spring Cloud Contract.
 With this approach, the consumer would publish its expectations about the event produced by the provider.
-The provider would pick up the consumer contracts and run its tests against these.
+The provider would pick up these consumer contracts and run its tests against them.
 Spring Cloud Contract supports this for HTTP-based interactions but not for event-based interactions.
 
 All told, Spring Cloud Contract is a great tool to improve testing of event-based interaction that is well worth considering if your application is event-heavy.
