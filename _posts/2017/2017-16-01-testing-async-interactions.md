@@ -2,7 +2,7 @@
 layout: post
 title: "Testing asynchronous interactions in distributed systems"
 date: "2017-01-15 12:11:00"
-image: blog-header/multitenant.jpg
+image: blog-header/testing-async-interactions.jpg
 categories: tech-stories
 authors: ["Mathias"]
 ---
