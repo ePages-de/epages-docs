@@ -6,7 +6,7 @@ categories: tech-stories
 authors: ["Ulf B."]
 ---
 
-In [Follow-up: Automating Jenkins](https://developer.epages.com/blog/2015/10/22/jenkins-followup.html), Dirk mentioned already the [Job DSL Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Job+DSL+Plugin) for creating and managing Jenkins jobs.
+In [Follow-up: Automating Jenkins](https://developer.epages.com/blog/2015/10/22/followup-automating-jenkins.html), Dirk mentioned already the [Job DSL Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Job+DSL+Plugin) for creating and managing Jenkins jobs.
 In this post I will go into the details and show how to actually use it as well as point out the benefits of using it.
 
 The idea of the project is to describe Jenkins jobs with a [Groovy](http://www.groovy-lang.org)-based [Domain-specific language](https://en.wikipedia.org/wiki/Domain-specific_language) (DSL) and then use the Jenkins plugin to create the jobs from this description.

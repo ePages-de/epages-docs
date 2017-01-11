@@ -7,7 +7,7 @@ categories: working-at-epages
 authors: ["Birgit, Serena", "Jens"]
 ---
 
-In one of our latest posts, you already learned about what it’s like to be a [Ruby Developer at ePages](https://developer.epages.com/blog/2016/02/04/hr-ruby.html).
+In one of our latest posts, you already learned about what it’s like to be a [Ruby Developer at ePages](https://developer.epages.com/blog/2016/02/04/working-as-a-ruby-developer-at-epages.html).
 To give you some insight into the world of Java development, we've talked to one of our Senior Java Developers to “squeeze out” information about his daily work here.
 
 ## Here's the story:
@@ -99,6 +99,6 @@ Together we can make a change and get things moving.
 
 ## Related posts
 
-* [Working as a Ruby Developer at ePages](https://developer.epages.com/blog/2016/02/04/hr-ruby.html)
-* [How ePages gives new developers a great start](https://developer.epages.com/blog/2015/07/07/employee-induction-programme.html)
+* [Working as a Ruby Developer at ePages](https://developer.epages.com/blog/2016/02/04/working-as-a-ruby-developer-at-epages.html)
+* [How ePages gives new developers a great start](https://developer.epages.com/blog/2015/07/07/how-epages-gives-new-developers-a-great-start.html)
 * [One month as an ePagee](https://developer.epages.com/blog/2015/08/11/one-month-as-an-epagee.html)

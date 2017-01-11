@@ -42,8 +42,8 @@ The audience was highly impressed by those well-prepared presentations and all t
 {% image blog/blog-hack16-result.jpg %}
 
 We saw native Android apps developed in Java, cross-platform apps for Android and iOS done with Ionic Framework or React Native, as well as Web apps.
-Meanwhile, some teams focused on other projects, like a REST cache layer, or a complexity measuring tool, or preparing ...
+Meanwhile, some teams focused on other projects, like a REST cache layer, or a complexity measuring tool, or preparing a...
 
-## ... a video about this awesome hackathon!
+## ... video about this awesome hackathon!
 
 {% youtube 2UdyQma76IA %}
