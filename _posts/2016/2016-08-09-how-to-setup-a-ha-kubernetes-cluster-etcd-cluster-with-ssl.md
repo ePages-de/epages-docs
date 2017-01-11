@@ -88,7 +88,7 @@ The RAM size and number of CPUs was chosen according to the computer's function:
   * Disk: 30GB
 
 The service node outside of the [cluster](#cluster) has a special functionality.
-For a using the cluster productively, a [load balancer](https://en.wikipedia.org/wiki/Load_balancing_(computing)) is required which is provided by this computer.
+For a using the cluster productively, a [load balancer](https://en.wikipedia.org/wiki/Load_balancing_(computing) is required which is provided by this computer.
 It is not part of the Kubernetes cluster, i.e. it does not run Kubernetes services.
 
 ## Etcd installation

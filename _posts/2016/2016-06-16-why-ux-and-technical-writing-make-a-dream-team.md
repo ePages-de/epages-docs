@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Why UX and TechWriting make a dream team"
+title: "Why UX and Technical Writing make a dream team"
 date: "2016-06-16 11:16:17"
 image: blog-header/dream-team.jpg
 categories: tech-stories

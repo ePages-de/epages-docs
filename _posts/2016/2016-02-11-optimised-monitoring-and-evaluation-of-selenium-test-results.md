@@ -52,4 +52,4 @@ Look forward to find out if we have choosen our options wisely!
 
 ## Related post
 
-[Continuous Delivery: Implementation of automated Selenium test analysis with Elasticsearch and Docker](https://developer.epages.com/blog/2016/02/16/pipeline-elk-test-evaluation-2.html)
+[How to ease test evaluation in the Continuous Delivery Pipeline](https://developer.epages.com/blog/2016/02/16/how-to-ease-test-evaluation-in-the-continuous-delivery-pipeline.html)

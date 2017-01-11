@@ -7,7 +7,7 @@ categories: working-at-epages
 authors: ["Birgit, Serena", "David"]
 ---
 
-In the last months, you learned about what it’s like to be a [Ruby Developer](https://developer.epages.com/blog/2016/02/04/hr-ruby.html), a [Java Developer](https://developer.epages.com/blog/2016/03/01/hr-java.html), or a [QA engineer](https://developer.epages.com/blog/2016/04/12/hr-quality-assurance.html) at ePages in Hamburg.
+In the last months, you learned about what it’s like to be a [Ruby Developer](https://developer.epages.com/blog/2016/02/04/working-as-a-ruby-developer-at-epages.html), a [Java Developer](https://developer.epages.com/blog/2016/03/01/working-as-a-java-develope-at-epages.html), or a [QA engineer](https://developer.epages.com/blog/2016/04/12/working-as-a-quality-assurance-engineer-at-epages.html) at ePages in Hamburg.
 Now it's time to ask a software developer in Jena about his daily work there.
 
 ## Here's his story:
@@ -78,8 +78,8 @@ We have the option to do offsite meetings, which always turn out to be very prod
 
 ## Related posts
 
-* [Working as a Java Developer at ePages](https://developer.epages.com/blog/2016/03/01/hr-java.html)
-* [Working as a Ruby Developer at ePages](https://developer.epages.com/blog/2016/02/04/hr-ruby.html)
-* [Working as a QA Engineer at ePages](https://developer.epages.com/blog/2016/04/12/hr-quality-assurance.html)
+* [Working as a Java Developer at ePages](https://developer.epages.com/blog/2016/03/01/working-as-a-java-developer-at-epages.html)
+* [Working as a Ruby Developer at ePages](https://developer.epages.com/blog/2016/02/04/working-as-a-ruby-developer-at-epages.html)
+* [Working as a QA Engineer at ePages](https://developer.epages.com/blog/2016/04/12/working-as-a-quality-assurance-engineer-at-epages.html)
 * [One month as an ePagee](https://developer.epages.com/blog/2015/08/11/one-month-as-an-epagee.html)
-* [How ePages gives new developers a great start](https://developer.epages.com/blog/2015/07/07/employee-induction-programme.html)
+* [How ePages gives new developers a great start](https://developer.epages.com/blog/2015/07/07/how-epages-gives-new-developers-a-great-start.html)

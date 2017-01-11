@@ -92,7 +92,7 @@ I like the flexible working hours.
 You can choose the computer you want (I chose the MAC book, of course {% emoji wink %}.)
 The colleagues are amazing.
 And ePages does great company events.
-We had a great [YOU](https://developer.epages.com/blog/2015/09/21/epages-you-2015.html) and a very funny New Year's Kick-off.
+We had a great [YOU](https://developer.epages.com/blog/2015/09/21/annual-company-event-epagees-rock-the-you.html) and a very funny New Year's Kick-off.
 We do internal hackathons.
 And there was an [R&D day](https://developer.epages.com/blog/2015/09/15/rnd-day-2015.html), where all developers from all locations came together for knowledge exchange.
 
@@ -105,5 +105,5 @@ He (or she!) should be a team-player, communicative, motivated and show interest
 
 ## Related posts
 
-* [How ePages gives new developers a great start](https://developer.epages.com/blog/2015/07/07/employee-induction-programme.html)
+* [How ePages gives new developers a great start](https://developer.epages.com/blog/2015/07/07/how-epages-gives-new-developers-a-great-start.html)
 * [One month as an ePagee](https://developer.epages.com/blog/2015/08/11/one-month-as-an-epagee.html)

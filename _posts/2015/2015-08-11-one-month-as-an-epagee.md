@@ -26,4 +26,4 @@ Code-reviews and pair-programming are tools that are frequently used at ePages. 
 
 ## Related post
 
-[How ePages gives new developers a great start](https://developer.epages.com/blog/2015/07/07/employee-induction-programme.html)
+[How ePages gives new developers a great start](https://developer.epages.com/blog/2015/07/07/how-epages-gives-new-developers-a-great-start.html)

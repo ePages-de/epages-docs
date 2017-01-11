@@ -62,7 +62,7 @@ You might find those helpful once your are in the situation of working with a th
 
 ### Related posts
 
-* [How we connected Sage One with ePages](https://developer.epages.com/blog/2016/08/12/sageone-approach.html)
-* [How to easily connect payment and shipping with online shops](https://developer.epages.com/blog/2016/08/02/next-gen-webservices.html)
+* [How we connected Sage One with ePages](https://developer.epages.com/blog/2016/08/12/how-we-connected-sageone-with-epages.html)
+* [How to easily connect payment and shipping with online shops](https://developer.epages.com/blog/2016/08/02/how-to-easily-connect-payment-and-shipping-with-online-shops.html)
 * [Payment integrations](https://developer.epages.com/blog/2015/11/03/payment-integrations.html)
-* [Challenges of integrating third-parties](https://developer.epages.com/blog/2015/07/20/third-party-integration.html)
+* [Challenges of integrating third-parties](https://developer.epages.com/blog/2015/07/20/challenges-of-integrating-third-parties.html)
