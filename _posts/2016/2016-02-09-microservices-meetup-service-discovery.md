@@ -35,7 +35,7 @@ Eureka itself made a good impression but we discarded it along the way - also be
 
 We tried to keep service discovery out of our code as much as possible and we added Docker to our infrastructure tool set.
 So the service discovery solution should seamlessly integrate into this environment as well.
-This lead us to a [Consul](https://www.consul.io/)-based service discovery approach that we already talked about in detail [earlier on this blog](https://developer.epages.com/blog/2015/09/28/service-discovery.html).
+This lead us to a [Consul](https://www.consul.io/)-based service discovery approach that we already talked about in detail [earlier on this blog](https://developer.epages.com/blog/2015/09/28/service-discovery-with-consul-registrator-and-haproxy.html).
 
 Later we chose [Kubernetes](http://kubernetes.io/) as our container management solution.
 In Kubernetes we already found a DNS-based service discovery solution that could also fulfill our needs.

@@ -25,7 +25,7 @@ Well, what am I responsible for?
 Together with my colleagues, I'm working on a new shop design, which includes simpler functionalities as well as a responsive storefront.
 I also conceptualize and develop different designs for the shop so that our merchants can later choose between a wide range of different designs.
 
-## How did you get to know ePages?
+### How did you get to know ePages?
 
 Originally, I studied communication design.
 I then decided to head more into an e-commerce direction and work with languages such as HTML, LESS, JavaScript, and alike.
@@ -35,7 +35,7 @@ I then took the chance to visit the office.
 I got a very good impression of ePages as a company and employer as well as of my potential new colleagues and I was able to clarify some of my open questions.
 I applied for an internship, got invited for an interview and finally got accepted.
 
-## How did you experience the onboarding process and your first weeks at ePages?
+### How did you experience the onboarding process and your first weeks at ePages?
 
 I remember on my very first day, I was shown around and introduced to all teams, such as Application Management, QA, etc.
 Afterwards, I set up my computer and checked out our company's intranet [Confluence](https://de.atlassian.com/software/confluence) to get familiar with the departments and remember all of my colleagues' names.
@@ -45,7 +45,7 @@ In the first month, I attended a partner training in Hamburg and thereby got to 
 After the first week, I began to develop a style guide, which was a perfect way to get an overview of what kind of software we use and also to get in touch with my new colleagues.
 Thereafter, I started with some smaller [Jira](https://de.atlassian.com/software/jira) tickets and fixed some bugs.
 
-## What are typical tasks of a UI Designer and which technologies do you use?
+### What are typical tasks of a UI Designer and which technologies do you use?
 
 This varies quite a bit depending on the type of task.
 At the moment, for example, we are redesigning our existing software.
@@ -57,7 +57,7 @@ At the moment, I don't work a lot with JavaScript, yet I always need to know som
 When it comes to responsive design, we don't use tools such as Bootstrap, but develop our own solution.
 We do use [Bootstrap](http://getbootstrap.com/) though for pages of our administration area, such as the new product detail page or the general settings page.
 
-## Tell us about a typical work day.
+### Tell us about a typical work day.
 
 My day usually starts at 8 o'clock.
 In the morning I am mostly by myself as I am the early bird in the team.
@@ -69,7 +69,7 @@ At 10:30 a.m. we have our daily, where the whole team comes together to talk abo
 At 12 o'clock, we have lunch with the team, although I also enjoy to go and have lunch with colleagues from other teams, or bring my own food.
 Depending on whether we have meetings or not, I try to focus on my dedicated tasks in the afternoon.
 
-## What type of tasks are these?
+### What type of tasks are these?
 
 Currently, I'm working on a conceptual task.
 I also support other teams to prepare UI elements, which can be reused.
@@ -80,7 +80,7 @@ Other than that, I'm designing new features.
 Just yesterday, I designed new icons and a new approach for our drag and drop editor.
 My work is also about bug fixing and code reviews in HTML and LESS.
 
-## Which skills does a UI Designer need at ePages?
+### Which skills does a UI Designer need at ePages?
 
 Regarding soft skills a UI Designer should be communicative and not afraid to ask other colleagues to clarify open questions.
 As already mentioned, I also support other teams and we all don't work together in one room.
@@ -91,7 +91,7 @@ Well, you should of course know HTML and LESS, and have a good understanding of 
 You would also need some basic UX knowledge, as we often work with the UX team in conceptional contexts.
 It is absolutely necessary to be up-to-date when it comes to new design principles, patterns, and latest trends.
 
-## What do you like about ePages and our company culture?
+### What do you like about ePages and our company culture?
 
 Apart from the scrum meetings, it's great that I can structure my day as I like.
 As we have flexible working hours at ePages, I am able to come - as I mentioned before - a lot earlier to the office than my team colleagues and therefore a bit more flexible to organize my work day.
@@ -100,14 +100,14 @@ I like working in a team.
 All of my colleagues are very friendly and helpful.
 If I have a question, I can always count on their support.
 
-Concerning the culture of ePages, I appreciate a lot our yearly get-together,the YOU, as well as the internal [hackathons](https://www.youtube.com/watch?v=2UdyQma76IA).
+Concerning the culture of ePages, I appreciate a lot our yearly get-together, the YOU, as well as the internal [hackathons](https://www.youtube.com/watch?v=2UdyQma76IA).
 I then have the chance to see my colleagues from Jena and Barcelona.
 
 ## Related posts
 
-* [Behind the scenes: TechRecruiting at ePages](https://developer.epages.com/blog/categories/working-at-epages/)
-* [5 steps to make you feel comfortable in your new job](https://developer.epages.com/blog/2016/08/04/dev-onboarding.html)
-* [Working as a QA Engineer at ePages](https://developer.epages.com/blog/2016/04/12/hr-quality-assurance.html)
-* [Working as a Software Developer at ePages](https://developer.epages.com/blog/2016/06/01/hr-backend.html)
-* [Working as a Java Developer at ePages](https://developer.epages.com/blog/2016/03/01/hr-java.html)
-* [Working as a Ruby Developer at ePages](https://developer.epages.com/blog/2016/02/04/hr-ruby.html)
+* [Behind the scenes: TechRecruiting at ePages](https://developer.epages.com/blog/2016/09/13/behind-the-scenes-technical-recruiting-at-epages.html)
+* [5 steps to make you feel comfortable in your new job](https://developer.epages.com/blog/2016/08/04/5-steps-to-make-you-feel-comfortable-in-your-new-job.html)
+* [Working as a QA Engineer at ePages](https://developer.epages.com/blog/2016/04/12/working-as-a-quality-assurance-engineer-at-epages.html)
+* [Working as a Software Developer at ePages](https://developer.epages.com/blog/2016/06/01/working-as-a-software-developer-at-epages.html)
+* [Working as a Java Developer at ePages](https://developer.epages.com/blog/2016/03/01/working-as-a-java-developer-at-epages.html)
+* [Working as a Ruby Developer at ePages](https://developer.epages.com/blog/2016/02/04/working-as-a-ruby-developer-at-epages.html)

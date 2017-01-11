@@ -31,7 +31,7 @@ I metamorphosed to a content writer.
 This was another awesome chance to step into something new.
 I started cooperating closely with UX, which meant understanding the tiny bits and pieces of our different products, and to put myself into yet another user's perspective: this time not developers, but our merchants.
 
-[And with UX already in the boat](https://developer.epages.com/blog/2016/06/16/ux-tw-cooperation.html), we made quite some effort for consistent texts and communication.
+[And with UX already in the boat](https://developer.epages.com/blog/2016/06/16/why-ux-and-technical-writing-make-a-dream-team.html), we made quite some effort for consistent texts and communication.
 Not far from that was another new topic: software localization and translation.
 Yay!
 As I originally studied technical translation, this was like a home match for me.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Behind the scenes: TechRecruiting at ePages"
+title: "Behind the scenes: Technical recruiting at ePages"
 date: "2016-09-13 08:00:21"
 image: blog-header/techrecruiting.jpg
 categories: working-at-epages
@@ -73,5 +73,5 @@ I want to know what the applicant wants to do or to learn.
 
 ## Related posts
 
-* [5 steps to make you feel comfortable in your new job](https://developer.epages.com/blog/2016/08/04/dev-onboarding.html)
-* [Working as a Software Developer at ePages](https://developer.epages.com/blog/2016/06/01/hr-backend.html)
+* [5 steps to make you feel comfortable in your new job](https://developer.epages.com/blog/2016/08/04/5-steps-to-make-you-feel-comfortable-in-your-new-job.html)
+* [Working as a Software Developer at ePages](https://developer.epages.com/blog/2016/06/01/working-as-a-software-developer-at-epages.html)

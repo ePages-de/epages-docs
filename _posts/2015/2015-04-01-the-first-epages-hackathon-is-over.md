@@ -25,11 +25,11 @@ In order to develop a prototype for an interactive administration area guide, th
 Many team members use Sublime Editor in their daily business. But as the support for Windows has been cut off, the team developed timesaving extensions and plugins itself.
 
 * Team 3 - Replace ArgoUML with an easier tool:
-ArgoUML is hard and time-consuming to use. The team's goal was to find an easier tool for creating database models. Split up in two groups, one group fixed the erros in the existing database models and remodeled them in a new modelling language. The other group pushed the results in an eclipse update site/repository and created an eclipse plugin. Every ePages developer can use this solution in future for database modelling.
+ArgoUML is hard and time-consuming to use. The team's goal was to find an easier tool for creating database models. Split up in two groups, one group fixed the errors in the existing database models and remodeled them in a new modelling language. The other group pushed the results in an eclipse update site/repository and created an eclipse plugin. Every ePages developer can use this solution in future for database modelling.
 
 * Team 4 - Implement Circuit Breaker software:
 ePages applications become more and more distributed, but currently highly depend from each other. It's like a house with several rooms: if one room has an energy overload, the circuit breaker trips, shuts down the energy for this room, but keeps the rest of the house safe and running. At ePages, currently a problem in one "room" could shut down the whole "house".
-The team implemented an existing Circuit Breaker software to avoid that a problem of one applicaton affects the rest of the software.
+The team implemented an existing Circuit Breaker software to avoid that a problem of one application affects the rest of the software.
 
 * Team 5 - Increase company culture:
 This team used the hackathon to build a Pong Game. A game takes only two minutes and is ideal for a short pause for reflection. The team members not only achieved to build the game, but learned a lot from each other during the project.

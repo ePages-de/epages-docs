@@ -66,7 +66,7 @@ For this purpose flanneld creates its own virtual network interface and must the
 ### Create *etcd* client certificates
 
 Kubernetes nodes need a client certificate because each user of the *etcd* cluster has to authenticate.
-It can be created as described in [the first part of this blog post series](https://developer.epages.com/blog/2016/08/09/kubernetes-etcd-cluster.html) but there are differences in the _openssl.cnf_.
+It can be created as described in [the first part of this blog post series](https://developer.epages.com/blog/2016/08/09/how-to-setup-a-kubernetes-cluster-etcd-cluster-with-ssl.html) but there are differences in the _openssl.cnf_.
 The _openssl.cnf_ has a simpler structure as flanneld has to identify itself as client only.
 
 {% highlight bash %}
@@ -112,7 +112,7 @@ root@root-ca-host:~$ openssl x509 \
 root@root-ca-host:~$ scp etcd-client.crt ca.crt root@kubernetes:/etc/ssl/etcd/
 {% endhighlight %}
 
-Alltogether, the following files should be available on all Kubernetes nodes:
+Altogether, the following files should be available on all Kubernetes nodes:
 
 {% highlight bash %}
 root@kubernetes:~$ cd /etc/ssl/etcd/
@@ -257,5 +257,6 @@ It stores data for the networks in the *etcd cluster* and therefore needs a clie
 The *Docker engine* is a standard installation.
 It uses its own *drop-in* to be able to handle the parameters provided by *flanneld*.
 
-# Related posts
-* [How to set up a HA Kubernetes cluster: etcd cluster with SSL](https://developer.epages.com/blog/2016/08/09/kubernetes-etcd-cluster.html)
+## Related posts
+
+* [How to set up a HA Kubernetes cluster: etcd cluster with SSL](https://developer.epages.com/blog/2016/08/09/how-to-setup-a-kubernetes-cluster-etcd-cluster-with-ssl.html)
