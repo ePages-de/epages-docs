@@ -7,7 +7,7 @@ categories: working-at-epages
 authors: ["Rose", "Harm"]
 ---
 
-[Harm Behrens](https://www.epages.com/de/unternehmen/newsroom/news/Harm-Behrens-ist-neuer-CTO-bei-ePages.php) joined [ePages](https://www.epages.com/de/) as CTO in September 2014.
+[Harm Behrens](https://www.epages.com/de/unternehmen/newsroom/news/Harm-Behrens-ist-neuer-CTO-bei-ePages.php) joined [ePages](https://www.epages.com/en/) as CTO in September 2014.
 Ever since ePages benefits from Harm's over 15 years of expertise in the field of development and operation of extensive web and mobile applications.
 In this interview, Harm talks about the next generation commerce platform, his daily coffee ration as well as his focus on people, the product portfolio, and development technologies.
 
@@ -98,7 +98,7 @@ All in all, we reduced a lot of uncertainties with this improved recruiting proc
 
 Well yes.
 I introduced our [epagesdevs](https://twitter.com/epagesdevs) Twitter channel and pushed for the implementation of a developer blog, as I noticed the lack of employer branding in the community.
-The teams alternate every month with writing tech stories that are related to their work. They use the markdown structure and [git](https://git-scm.com/) and do pull requests on [GitHub](https://github.com/) which are then reviewed by our [technical writer](https://developer.epages.com/blog/2016/11/30/agile-techwriter.html).
+The teams alternate every month with writing tech stories that are related to their work. They use the markdown structure and [git](https://git-scm.com/) and do pull requests on [GitHub](https://github.com/) which are then reviewed by our [technical writer](https://developer.epages.com/blog/2016/11/30/what-its-like-to-be-an-agile-technical-writer.html).
 This way, and by using [Jekyll](http://jekyllrb.com/) as a static blog engine, we integrated the blogging workflow into the developers' familiar work environment, which increased their motivation and contribution ratio to the blog a lot.
 
 ### What does your typical working day look like?
@@ -106,7 +106,7 @@ This way, and by using [Jekyll](http://jekyllrb.com/) as a static blog engine, w
 In the morning I usually cycle to work.
 I always enjoy the bike ride along the beautiful Elbe to distract myself.
 When arriving at ePages, I go through all offices saying "Hi" to everyone and eventually quickly clarify pending tasks or uncertainties.
-Then I check new emails and try to attend as many [team reviews](https://developer.epages.com/blog/2015/12/15/scrum-basics-3.html) as possible during the day, even if it's from remote.
+Then I check new emails and try to attend as many [team reviews](https://developer.epages.com/blog/2015/12/15/scrum-basics-scrum-meetings.html) as possible during the day, even if it's from remote.
 
 Furthermore, I attempt to keep myself up-to-date on the latest technology trends, and news.
 I regularly have dedicated meetings concerning various technology approaches as well as lunch with different teams.
