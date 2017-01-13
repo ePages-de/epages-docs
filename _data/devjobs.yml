@@ -8,19 +8,19 @@
   short_description: We're looking for product-aware engineers who are thoughtful, responsible and passionate builders and value user experience. If you love to write code that's DRY, understandable, and easy to maintain by your fellow ...
   location: Hamburg
 
-- title: Software Developer
-  link: http://www.epages.com/en/career/?jh=24qdehf4abxzl836rd7dnp2lujbufxz
-  short_description: Based out of our office in Hamburg and Barcelona, we are currently <br>recruiting for Software Developers (m/f) for our 3rd Party Integration <br>team. You are the part of a tech-savvy team responsible for ...
-  location: Hamburg / Barcelona
+- title: Senior UI Developer
+  link: https://www.epages.com/en/career/?jh=6k3t4xnlr506mivlrc5hcchugr6f3hd
+  short_description: As part of our development team in Hamburg, you are driving the visual identity of our products. You develop design concepts as a team member of agile development teams for our cloud-based e-commerce application, ...
+  location: Hamburg
 
-- title: Full Stack Tools Developer
-  link: http://www.epages.com/en/career/?jh=3r12t9pp853d18z17601z39yc7tzgqs
-  short_description: As part of our small, but vital, Internal Tools team, you are responsible for the further development and maintenance of all of our crucial in-house tools, such as ...
+- title: DevOps Engineer
+  link: https://www.epages.com/en/career/?jh=yh9sa5545lniif5q8f0oqlsmssytutc
+  short_description: As our DevOps Engineer based in Hamburg, you will be part of a tight-knit Agile Scrum team, who is working on a microservice-based architecture for our new ePages e-commerce platform. ...
   location: Hamburg
 
 - title: QA Engineer
   link: http://www.epages.com/en/career/?jh=b5omuicu10n5l3ht9qk41cx4ke28ppr
-  short_description: As a passionate QA Engineer, you will be responsible for strategically writing regression tests as well as monitoring the performance for our e-commerce webshop ...
+  short_description: As a passionate QA Engineer, you will be responsible for strategically writing regression tests as well as monitoring the performance for our e-commerce webshop software. The writing of test specifications, ...
   location: Hamburg
 
 - title: Scrum Master
