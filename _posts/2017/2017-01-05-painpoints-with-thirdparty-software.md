@@ -49,7 +49,7 @@ As software testing is especially important to cover very specific edge cases, i
 Usually, integration partners will provide sandbox environments, test credentials, and well-written documentation of the services they offer.
 But as mentioned before, even the best documentation might miss information of very specific corner cases or compromises that you, as the integrator, had to commit in order to couple the different systems with each other.
 
-Furthermore, even the slightest different in behavior between a sandbox and a live environment can make a big difference.
+Furthermore, even the slightest difference in behavior between a sandbox and a live environment can make a big difference.
 Providing a test environment that works exactly the same as the live environment is of course the responsibility of the service owner.
 Although this usually works quite well, in rare cases you can run into differences that the service provider might not even be aware of.
 My point is not to say you shouldn't trust sandbox environments, but it's always worth to keep that fact in mind.

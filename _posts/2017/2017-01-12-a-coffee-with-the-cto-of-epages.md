@@ -38,7 +38,7 @@ But before we could really get started with that, we had to scale our resources.
 
 ### Tell me about that.
 
-Well, shortly before I joined, the company went through a reorganization from a rather waterfall oriented development cycle to an agile approach {% emoji smile %}, and furthermore, we did not have not enough developers to fulfill our ambitious product plans.
+Well, shortly before I joined, the company went through a reorganization from a rather waterfall oriented development cycle to an agile approach {% emoji smile %}, and furthermore, we did not have enough developers to fulfill our ambitious product plans.
 
 So, on the one side I had to restructure some teams and determine their focus.
 On the other side, we established a new developer location in Hamburg, which in fact lead to another primary tasks since 2014: Recruiting developers to assure the development of ePages Now, i.e. the new fronted and administration area as well as to start with our new e-commerce platform ePages BEYOND.
