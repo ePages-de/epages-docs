@@ -10,13 +10,25 @@ In order to keep track of these changes we recommend you to follow [@epagesdevs]
 
 <hr>
 
+## 2016-12-21
+
+### Changes with software release 7.2.0
+
+#### <i class="fa fa-pencil"></i> Update
+
+* Added further attributes to data type [`address`](https://developer.epages.com/apps/data-types#address).
+* Added attribute `taxes` to data types [`paymentData`](https://developer.epages.com/apps/data-types#paymentdata) and [`shippingData`](https://developer.epages.com/apps/data-types#shippingdata).
+* Added `includeInvisible` query parameter to [`GET` categories](https://developer.epages.com/apps/api-reference/get-shops-shopid-categories.html) and [`GET` categories/{categoryId}](https://developer.epages.com/apps/api-reference/get-shops-shopid-categories-categoryid.html).
+
+<hr>
+
 ## 2016-11-16
 
 ### Changes with software release 7.1.0
 
 #### <i class="fa fa-pencil"></i> Update
 
-* Added `visible` attribute to data types [`category`](https://developer.epages.com/apps/data-types#category) and [`category (create request)`](https://developer.epages.com/apps/data-types#category-create-request) .
+* Added `visible` attribute to data types [`category`](https://developer.epages.com/apps/data-types#category) and [`category (create request)`](https://developer.epages.com/apps/data-types#category-create-request).
 * Added attributes `deposits`, `ecoParticipations`, `shippingOptions` and `basketDiscount` to data type [`lineItemContainer`](https://developer.epages.com/apps/data-types#lineitemcontainer).
 
 <hr>

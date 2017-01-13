@@ -1,0 +1,20 @@
+{
+  "categoryId": "5742CDAC-4EC6-859E-15D4-D5809AB3AC2E",
+  "alias": "Accessories",
+  "name": "Accessories",
+  "pageTitle": "Technic365 - Accessories",
+  "navigationCaption": "Technic365 - Accessories",
+  "description": "Accessories for headphones",
+  "parent": {
+    "rel": "parent",
+    "href": "https://pm.epages.com/rs/shops/apidocu/categories/5171DD85-C092-46EB-2BEC-AC14145F9094",
+    "title": "Categories"
+  },
+  "sfUrl": "http://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/Categories/Accessories1",
+  "links": [
+    {
+      "rel": "products",
+      "href": "https://pm.epages.com/rs/shops/apidocu/products?categoryId=5742CDAC-4EC6-859E-15D4-D5809AB3AC2E"
+    }
+  ]
+}

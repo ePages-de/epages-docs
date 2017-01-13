@@ -1,0 +1,47 @@
+{
+  "categoryId": "54E7301B-A6B4-567A-8AE0-0A0C05E6922D",
+  "alias": "Feature",
+  "name": "Featured products",
+  "pageTitle": "Featured products",
+  "navigationCaption": "Feature",
+  "description": "Our audio product recommendations.",
+  "specialOffer": false,
+  "images": [
+    {
+      "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/301B/A6B4/567A/8AE0/0A0C/05E6/922D/epages-e_copysmall_m.png",
+      "classifier": "Medium"
+    },
+    {
+      "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/301B/A6B4/567A/8AE0/0A0C/05E6/922D/epages-e_copysmall_s.png",
+      "classifier": "Small"
+    }
+  ],
+  "parent": {
+    "rel": "parent",
+    "href": "https://pm.epages.com/api/categories/5171DD85-C092-46EB-2BEC-AC14145F9094",
+    "title": "Categories"
+  },
+  "subCategories": [
+    {
+      "rel": "child",
+      "href": "https://pm.epages.com/api/categories/546E01DD-B253-4384-8432-0A0C05E64BE2",
+      "title": "Headphones"
+    },
+    {
+      "rel": "child",
+      "href": "https://pm.epages.com/api/categories/54E73036-E385-5AFD-F14E-0A0C05E692CB",
+      "title": "Headsets"
+    },
+    {
+      "rel": "child",
+      "href": "https://pm.epages.com/api/categories/54E7303C-B8CC-FE92-CFF3-0A0C05E6922C",
+      "title": "In-Ear"
+    },
+    {
+      "rel": "child",
+      "href": "https://pm.epages.com/api/categories/54EF3D25-49A5-881D-3EC9-0A0C05E6A7E7",
+      "title": "Your own design!"
+    }
+  ],
+  "sfUrl": "http://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/Categories/Feature"
+}

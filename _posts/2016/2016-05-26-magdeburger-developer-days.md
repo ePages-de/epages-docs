@@ -58,10 +58,10 @@ This is only a little extract of this session with a lot of new, interesting ide
 
 The next session was an introduction into the JavaScript framework [React](https://facebook.github.io/react) by Oliver Zeigermann, who is the author of several JavaScript books.
 He showed and explained the principals of React.
-One feature of React is that it reperesents only the View in a Model-View-Controller (MVC) model.
+One feature of React is that it represents only the view in a Model-View-Controller (MVC) model.
 So it is typical to have a mixture of JavaScript and HTML code in one file.
 Another feature is that the Document Object Model (DOM) tree is virtualized.
-That means, when a webpage flow is establihed only the objects that have change are updated via the calculation of a `diff` between the webpage states.
+That means, when a webpage flow is established only the objects that have change are updated via the calculation of a `diff` between the webpage states.
 The interesting thing about React is, that due to that technique websites are always very fast.
 
 {% image blog/blog-magdeburg-7.jpg %}
@@ -73,6 +73,6 @@ The main benefits of such an architectural templates is that there is always the
 ## Summary
 
 The Magdeburger Developer Days offered a lot of very interesting talks in a broad range of topics.
-We were stunned from the professionel level that orga team could establish.
-The speakers were well-choosen and the quality of talks was absolutely extraordinary.
+We were stunned from the professional level that orga team could establish.
+The speakers were well-chosen and the quality of talks was absolutely extraordinary.
 The experience of the conference was very great and a visit next year is definitely reasonable.

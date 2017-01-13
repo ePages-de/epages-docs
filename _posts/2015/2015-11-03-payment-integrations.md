@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Payment Integrations"
+title: "Payment integrations"
 date: "2015-11-03 09:00:00"
 image: blog-header/money.jpg
 categories: tech-stories

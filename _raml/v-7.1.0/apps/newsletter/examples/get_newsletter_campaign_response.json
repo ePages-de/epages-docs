@@ -1,0 +1,25 @@
+{
+  "results": 2,
+  "page": 1,
+  "resultsPerPage": 10,
+  "items": [
+    {
+      "campaignId": "570BACBD-7FB3-E667-835B-AC15320732BE",
+      "language": "en",
+      "identifier": "NewTrends_EN",
+      "name": "New trends at Schneiderei",
+      "description": "Learn more about new trends at schneiderei.com",
+      "numberOfSubscribers": 0,
+      "subject": "New shop trends"
+    },
+    {
+      "campaignId": "570BACBE-9333-CAB0-40BC-AC153207322B",
+      "language": "de",
+      "identifier": "NewTrends_DE",
+      "name": "Neue Trends in der Schneiderei",
+      "description": "Lesen Sie über die neuen Trends bei schneiderei.de",
+      "numberOfSubscribers": 0,
+      "subject": "Neue Shop-Trends"
+    }
+  ]
+}
