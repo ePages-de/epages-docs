@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "Get WatchedProducts Schema",
+  "type": "object",
+  "properties": {
+    "results": {
+      "type": "integer",
+      "description": "The number of watched products in total."
+    },
+    "page": {
+      "type": "integer",
+      "description": "The page number of the returned watched products."
+    },
+    "resultsPerPage": {
+      "type": "integer",
+      "description": "The number of watched products returned per page."
+    },
+    "items": {
+      "type": "array of [watchedproduct](page:apps-data-types#watchedproduct)",
+      "description": "The list of all watched products."
+    }
+  }
+}

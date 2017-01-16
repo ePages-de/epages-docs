@@ -1,0 +1,33 @@
+{
+  "name": "logo_small.png",
+  "sizes": [
+    {
+      "classifier": "MediumSmall",
+      "url": "http://demo.intern.epages.de/WebRoot/Store/Shops/DemoShop/Products/be_40401/logo_small_ms.png"
+    },
+    {
+      "classifier": "Thumbnail",
+      "url": "http://demo.intern.epages.de/WebRoot/Store/Shops/DemoShop/Products/be_40401/logo_small_xs.png"
+    },
+    {
+      "classifier": "MediumLarge",
+      "url": "http://demo.intern.epages.de/WebRoot/Store/Shops/DemoShop/Products/be_40401/logo_small_ml.png"
+    },
+    {
+      "classifier": "HotDeal",
+      "url": "http://demo.intern.epages.de/WebRoot/Store/Shops/DemoShop/Products/be_40401/logo_small_h.png"
+    },
+    {
+      "classifier": "Small",
+      "url": "http://demo.intern.epages.de/WebRoot/Store/Shops/DemoShop/Products/be_40401/logo_small_s.png"
+    },
+    {
+      "classifier": "Medium",
+      "url": "http://demo.intern.epages.de/WebRoot/Store/Shops/DemoShop/Products/be_40401/logo_small_m.png"
+    },
+    {
+      "classifier": "Large",
+      "url": "http://demo.intern.epages.de/WebRoot/Store/Shops/DemoShop/Products/be_40401/logo_small.png"
+    }
+  ]
+}
