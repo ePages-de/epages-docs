@@ -7,8 +7,7 @@ categories: tech-stories
 authors: ["Mats"]
 ---
 
-In my team the recent and still ongoing project is the implementation of an application serving as a connector between the ePages e-commerce solution and [Sage One](https://developer.sageone.com).
-Sage One is an ERP solution.
+In my team the recent and still ongoing project is the implementation of an application serving as a connector between the ePages e-commerce solution and [Sage One](https://developer.sageone.com), an Accounting software.
 The main purpose of this connector-application is to transfer the orders being created in the ePages shop into the Sage One accounting application.
 
 ## The initial plan
