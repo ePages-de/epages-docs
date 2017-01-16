@@ -1,0 +1,14 @@
+#%RAML 0.8
+displayName: Tax Model
+description: Operations on the tax model of a shop.
+get:
+  description: Returns a ths shop tax model.
+  responses:
+    200:
+      body:
+        application/json:
+          example: |
+            : {
+              "model": "gross",
+              "displayTaxes": false
+            }
