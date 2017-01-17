@@ -1,14 +1,11 @@
 #%RAML 0.8
-displayName: Tax Model
-description: Operations on the tax model of a shop.
+displayName: Tax model
 get:
-  description: Returns a ths shop tax model.
+  description: Returns the tax model of the shop.
+  securedBy: [products_read]
   responses:
     200:
       body:
         application/json:
-          example: |
-            : {
-              "model": "gross",
-              "displayTaxes": false
-            }
+          example: !include examples/get_taxmodel_response.json
+          schema: !include schema/get_taxmodel.schema.json

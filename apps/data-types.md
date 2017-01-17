@@ -569,6 +569,13 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | taxClass | object of [taxClassInfo](page:apps-data-types#taxclassinfo) | The information on the tax class. |
 | price | object of [price](page:apps-data-types#price) | The amount of the charged tax. |
 
+## taxModel
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| model | string | The tax model of the shop. Can be *gross* or *net*. |
+| displayTaxes | boolean | Indicates if the tax model is displayed in the shop. |
+
 ## updatedProducts
 
 | Attribute | Type | Description |
