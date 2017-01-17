@@ -232,10 +232,11 @@ Another big plus is the test generated on the provider side that makes sure the 
 The price we need to pay for these benefits is writing contracts for our events and maintaining them.
 In a complex application with a lot of interactions, this can be a significant effort.
 
-At the moment consumer-driven contracts for event-based interactions do not seem to be supported in Spring Cloud Contract.
+Our solution could be improved further by working with consumer-driven contracts.
 With this approach, the consumer would publish its expectations about the event produced by the provider.
 The provider would pick up these consumer contracts and run its tests against them.
-Spring Cloud Contract supports this for HTTP-based interactions but not for event-based interactions.
+Spring Cloud Contract supports this for HTTP-based interactions and it is also achievable for event-based interactions.
+For event-based interactions the solution differs from the one outlined above. This could be a topic for follow-up post.
 
 All told, Spring Cloud Contract is a great tool to improve testing of event-based interaction that is well worth considering if your application is event-heavy.
 
