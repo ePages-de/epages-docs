@@ -1,4 +1,4 @@
 {
   "model": "gross",
-  "displayTaxes": false
+  "displayTaxes": true
 }
