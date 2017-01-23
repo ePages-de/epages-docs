@@ -23,7 +23,7 @@
       link: page:apps-version
 
 - key: apps-develop
-  title: Developing an app
+  title: App development
   entries:
     - title: Use cases
       link: page:apps-use-cases
