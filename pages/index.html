@@ -114,10 +114,12 @@ permalink: /
 <script type="text/javascript">
   $( document ).ready(function() {
     $('#cheat-frame').on('load', function() {
-      // document.getElementById('cheat-frame').style.display = 'block';
       document.getElementById('main-row').style.display = 'none';
       document.getElementById('demoshop-form modal-section').style.top = "10%";
       document.getElementById('cheat-frame-2').style.display = 'block';
     });
+    if (document.location.href.match(/#modal-popup/) != null) {
+      $('#modal-popup').modal('show');
+    }
   });
 </script>
