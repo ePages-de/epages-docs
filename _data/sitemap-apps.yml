@@ -22,6 +22,18 @@
     - title: API version
       link: page:apps-version
 
+    - title: App scopes
+      link: page:app-scopes
+
+- key: apps-custom
+  title: Custom apps
+  entries:
+    - title: Use cases
+      link: page:apps-use-cases
+
+    - title: Create an app
+      link: page:apps-create-custom
+
 - key: apps-develop
   title: Developing an app
   entries:
@@ -94,7 +106,7 @@
     - title: ShippingMethods
       link: page:api-resources-shipping-methods
 
-    - title: Tax
+    - title: Taxes
       link: page:api-resources-tax-classes
 
 - key: more

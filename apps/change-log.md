@@ -10,6 +10,22 @@ In order to keep track of these changes we recommend you to follow [@epagesdevs]
 
 <hr>
 
+## 2017-01-30
+
+### Changes with software release 7.3.0
+
+#### <i class="fa fa-plus"></i> New
+
+* [`GET` tax-model](https://developer.epages.com/apps/api-reference/get-shops-shopid-tax-model.html)
+* Added [App Scopes](https://developer.epages.com/apps/app-scopes.html) to the `Getting Started` section.
+* Added `Custom apps` section. This section explains how to [create a custom app](page:apps-create-custom) for a specific shop.
+
+#### <i class="fa fa-pencil"></i> Update
+
+* Developer apps have been  to Private apps. The chapter [Create an app](page:apps-create) in the section `Developing an app` has been refactored and updated.
+
+<hr>
+
 ## 2016-12-21
 
 ### Changes with software release 7.2.0

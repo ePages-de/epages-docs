@@ -13,7 +13,7 @@ The API uses the standard HTTP request types `GET`, `POST`, `PUT`, `PATCH` and `
 
 Making use of this API, you can create awesome apps or single shop connections.
 It is designed to give developers a convenient way to access data contained within ePages shops.
-With a standard interface to store data, it is very simple to create applications that can communicate with our merchant's stores.
+With a standard interface to store data, it is very simple to create applications that can communicate with our merchant's shops.
 
 In a first approach, we support 3rd party applications that connect via the REST API to ePages shops, allowing them to exchange data and allowing the merchant to work with these data.
 
@@ -22,14 +22,14 @@ In a first approach, we support 3rd party applications that connect via the REST
 Put your idea into action!
 Before you can start coding away, you'll need to sign up for the ePages Developer Program and create a test shop.
 To use the ePages API you will need an application registration.
-Once submitted successfully, your app will be available to more than 140,000 online shop owners in the ePages App & Theme Store.
+Once submitted successfully, your app will be available to more than 140,000 online shop owners in the [ePages App Store](https://blog.epages.com/us/2016/05/14/the-epages-app-store-everything-for-your-e-commerce-success/).
 
 Get started and join the ePages Developer Program:
 
-1. [Sign up](http://www.epages.cloud/developer/) for the Developer Program.
+1. [Sign up](/#modal-popup) for the Developer Program.
     * Enter your name and email address in the required fields.
     * Agree to the terms and conditions.
-    * Check your mailbox for the login details from your registration and create a test shop.
+    * Check your mailbox for the login details from your registration.
 2. Log in to your test shop.
 3. Get your [**Client ID** and **Client Secret**](page:apps-create#get-your-credentials).
 

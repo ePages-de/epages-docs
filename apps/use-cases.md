@@ -52,7 +52,7 @@ Availability: <i class="fa fa-check"></i>
 
 ## Content Optimisation and Marketing
 
-Build an application that optimises or enhances the content of product or category descriptions for Search Engine Optimisation (SEO), for general marketing purposes or to add translations to all descriptive content.
+Build an application that optimizes or enhances the content of product or category descriptions for Search Engine Optimization (SEO), for general marketing purposes or to add translations to all descriptive content.
 
 Suggested calls: [`GET` products](page:apps-api-get-shops-shopid-products-information), [`PATCH` products/{productId}](page:apps-api-patch-shops-shopid-products-productid-information), [`GET` categories](page:apps-api-get-shops-shopid-categories-information), [`PUT` categories/{categoryId}](page:apps-api-put-shops-shopid-categories-categoryid-information)
 
@@ -78,7 +78,7 @@ Availability: <i class="fa fa-check"></i>
 
 ## Sales Analytics
 
-Build an application that allows to determine top selling products, top customers, top regions or optimise cross-selling products by evaluating orders.
+Build an application that allows to determine top selling products, top customers, top regions or optimize cross-selling products by evaluating orders.
 
 Suggested calls: [`GET` products](page:apps-api-get-shops-shopid-products-information), [`GET` orders](page:apps-api-get-shops-shopid-orders-information), [`GET` categories](page:apps-api-get-shops-shopid-categories-information), [`GET` sales](page:apps-api-get-shops-shopid-sales-information)
 
@@ -107,7 +107,7 @@ Availability: <i class="fa fa-check"></i>
 
 ## Customer Relationship Management (CRM) and Newsletters
 
-Build an application that analyses and groups/targets customers by ordered products and/or newsletter preferences and generates personalised newsletters accordingly.
+Build an application that analyzes and groups/targets customers by ordered products and/or newsletter preferences and generates personalized newsletters accordingly.
 
 Suggested calls: [`GET` customers](page:apps-api-get-shops-shopid-customers-customerid-information), [`PATCH` customers/{customerId}](page:apps-api-patch-shops-shopid-customers-customerid-information), [`POST` customers](page:apps-api-post-shops-shopid-customers-information), [`GET` orders](page:apps-api-get-shops-shopid-orders-information), [`GET` products](page:apps-api-get-shops-shopid-products-information), [`GET` newsletter-campaigns](page:apps-api-get-shops-shopid-newsletter-campaigns-information), [`GET` newsletter-campaigns/{campaignId}/subscribers](page:apps-api-get-shops-shopid-newsletter-campaigns-campaignid-subscribers-information)
 
