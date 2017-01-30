@@ -25,8 +25,17 @@
     - title: App scopes
       link: page:app-scopes
 
+- key: apps-custom
+  title: Custom apps
+  entries:
+    - title: Use cases
+      link: page:apps-use-cases
+
+    - title: Create an app
+      link: page:apps-create-custom
+
 - key: apps-develop
-  title: App development
+  title: Developing an app
   entries:
     - title: Use cases
       link: page:apps-use-cases

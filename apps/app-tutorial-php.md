@@ -23,14 +23,14 @@ In order to get this code working, you need to setup your development environmen
 
 Simply sign up [here](http://www.epages.cloud/developer/) for a free account.
 
-### Create a private app
+### Create an app
 
-In order to create an app, to test it and to submit it to the App & Theme Store, you have to [create a private app](page:apps-create).
+In order to create an app, to test it and to submit it to the App Store, you have to [create an app](page:apps-create).
 
 After choosing a name to your liking, you need to set the **Application Callback URL** to your publicly available PHP script (e.g. `https://crazytoppingapp.com/callback.php`), which we will implement later.
 
 {% callout info Note: %}
-We allow HTTP Application Callback URLs for private apps, but you need to provide an HTTPS URL once you want to submit the app to the App Store.
+We allow HTTP Application Callback URLs for apps, but you need to provide an HTTPS URL once you want to submit the app to the App Store.
 {% endcallout %}
 
 Once you are done with that, the detail page will show your client credentials.
@@ -56,7 +56,7 @@ We will create the mentioned `callback.php` file, which will be called when a us
 
 ### Setting credentials
 
-The first thing we will do is set the **client credentials** (`client_id` and `client_secret`) you got from the private apps detail page.
+The first thing we will do is set the **client credentials** (`client_id` and `client_secret`) you got from the apps detail page.
 
     <?php
 

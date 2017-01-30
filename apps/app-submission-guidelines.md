@@ -17,7 +17,7 @@ Apps that crash or have obvious bugs will be rejected.
 Apps that include undocumented or hidden features will be rejected.
 * We love to receive the final and production ready version of your app.
 We will not accept demo, trial or test versions.
-* Save your time and effort and don't duplicate an app that is already available in the Apps & Themes Store.
+* Save your time and effort and don't duplicate an app that is already available in the App Store.
 We may reject it.
 * Concentrate on a reasonable and useful app.
 Apps that do not function as expected, which trick the user or are in any form misleading will be rejected.
