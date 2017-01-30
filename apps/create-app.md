@@ -18,25 +18,29 @@ After successful authorisation of your app, you will be assigned an **Access tok
 
 ## Get your credentials
 
-1. Within the administration area of your test shop, click the tab **Apps & Themes**.
-In the drop down menu, choose the field **Developer apps**.
-    {% image click-apps.png %}
+1. Within the administration area of your test shop, click **Apps & Themes**.
+In the drop down menu, choose **App Store**.
+    {% image click-appstore.png %}
 
-2. In the **Developer apps** view, click the button **Add**.
+2. Click the button **Private apps**.
+    {% image click-privateapps.png %}
+
+3. In the **Private apps** view, click **Add**.
     {% image add-button.png %}
 
-3. Fill out the input field **App name**.
-Specify the **Application Callback URL**.
+4. Fill out the input field **App name** and specify the **Application Callback URL**.
 Make sure the URL is https and publicly accessible.
-Note: HTTP Application Callback URLs can be used for developer apps, but you need to provide an HTTPS URL once you want to submit the app to the App Store.
-Once the input fields are filled out, click the button **Generate access data**.
-    {% image fillout-app-name.png %}
+Choose the required **App Scopes**. Read here for further information on the scopes.
+Note: HTTP Application Callback URLs can be used for private apps, but you need to provide an HTTPS URL if you want to submit the app to the App Store.
+Once this is done, click **Generate access data**.
 
-4. You will be assigned a **Client ID**, a **Client Secret** as well as an **Access token**.
+    {% image fillout-appdata.png %}
+
+5. You will be assigned your **App Scopes**, a **Client ID**, a **Client Secret** as well as an **Access token**.
 The **Access token** is granted by your test shop, so that you can start accessing the ePages API immediately.
-    {% image test-shop-credentials.png %}
+    {% image testshop-credentials.png %}
 
-{% callout danger Important! %}
+{% callout danger Warning %}
 Store your **Client Secret** and **Access token** securely!
 {% endcallout %}
 
