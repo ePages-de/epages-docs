@@ -47,7 +47,7 @@ authors: ["Birgit"]
 Use ATX-style for headings.
 
 ~~~ bash
-## Heading 2
+### Heading 3
 ~~~
 
 ### Document title
@@ -62,7 +62,7 @@ Prefer spacing after `#` and new lines before and after a heading:
 ~~~ bash
 ... text before heading.
 
-## Heading 2
+### Heading 3
 
 Text after heading...
 ~~~
