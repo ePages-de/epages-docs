@@ -7,7 +7,7 @@ categories: agile
 authors: ["Alejandra"]
 ---
 
-## First thing first: what actually lies behind the idea of agile development?
+## First things first: what actually lies behind the idea of agile development?
 
 We live in a world where people’s needs change hand in hand with constant arising challenges and developments of distinct nature.
 People’s needs become quite complex in their specifications.
