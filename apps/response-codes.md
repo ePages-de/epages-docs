@@ -18,7 +18,7 @@ However, due to internal technical reasons, in the 4xx and 5xx range HTML respon
 |---------------|---------------| -------|
 | 200       | OK                | This is the standard response for a successful HTTP request.
 | 201       | Created           | The request has been fulfilled and resulted in a new resource being created, e.g a cart.
-| 204       | No&nbsp;Content   | The server successfully processed the request, but is not returning any content. Typically used as a response to a successful delete request.
+| 204       | No&nbsp;Content   | The server successfully processed the request, but is not returning any content. Typically used as a response to a successful `DELETE` request.
 
 ### Example response
 

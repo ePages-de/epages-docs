@@ -1,0 +1,52 @@
+{
+  "customerId": "563874DA-7AE7-9876-9E59-D5809AB38A25",
+  "customerNumber": "0812",
+  "creationDate": "2015-11-03T08:48:26Z",
+  "billingAddress": {
+    "company": "Schneiderei",
+    "salutation": "Mrs",
+    "firstName": "Tanja",
+    "lastName": "Schneider",
+    "street": "Schneiderstraße 10",
+    "streetDetails": null,
+    "zipCode": "12345",
+    "city": "Berlin",
+    "state": null,
+    "country": "DE",
+    "title": null,
+    "vatId": null,
+    "birthday": null,
+    "emailAddress": "schneider@schneiderei.de",
+    "addressExtension": "1.Etage",
+    "bankAccountHolder": "Tanja Schneider",
+    "bankAccountNumber": "DE1567379838510",
+    "bankName": "Nadel Bank",
+    "bankSortCode": "XXSCSBB",
+    "businessEmailAddress": "schneider@schneiderei.de",
+    "businessPhoneNumber": "0049099906543",
+    "department": null,
+    "displayName": null,
+    "doorCode": null,
+    "faxNumber": "0049099906542",
+    "fiscalCode": null,
+    "gender": "female",
+    "jobTitle": "Schneiderin",
+    "middleName": null,
+    "mobilePhoneNumber": "0049099906543",
+    "phoneNumber": "0049099906543",
+    "privateEmailAddress": null,
+    "privatePhoneNumber": null,
+    "websiteUrl": "http://schneiderei.de"
+  },
+  "internalNote": "Long-standing customer",
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://pm.epages.com/rs/shops/apidocu/customers/563874DA-7AE7-9876-9E59-D5809AB38A25"
+    },
+    {
+      "rel": "orders",
+      "href": "https://pm.epages.com/rs/shops/apidocu/orders?customerId=563874DA-7AE7-9876-9E59-D5809AB38A25"
+    }
+  ]
+}
