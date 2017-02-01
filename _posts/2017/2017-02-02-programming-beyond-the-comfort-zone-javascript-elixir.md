@@ -123,7 +123,8 @@ function fibonacci (n) {
 
 ### Enough of the platform
 
-I won't bother you anymore with advantages or language features Elixir provides nor try to persuade you that this is the right language to learn and use.
+At this point I'll stop listing language features Elixir provides since this post is only meant for sweetening.
+I will also not try to persuade you that this is the right language to learn and use.
 Anyway, you should probably check some resources and dive a bit deeper into the awesome world of functional programming.
 A good place to start is [the official elixir-lang site](http://elixir-lang.org/).
 Just click around and look at some beautiful code and examples.
