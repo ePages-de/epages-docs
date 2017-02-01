@@ -19,7 +19,7 @@ So why should you start programming in another language?
 
 Let's take a step back from the frameworks and look at the language itself.
 JavaScript claims to be both, object-oriented (with prototypal inheritance) and functional.
-And since it claims to be both, it is neither the one nor the other to a satisfying extend.
+And since it claims to be both, it is neither one or the other to a satisfying extend.
 Other languages like [Elixir] (http://elixir-lang.org/) (which we're going to talk about in a bit) make it much easier to use functional language features and methods such as *destructuring*, *pattern matching* or *recursion*.
 You might shift from doing everything with a `forEach` loop to solving pretty much every problem with `reduce`.
 This paradigm shift not only broadens your programming knowledge, but lets you view problems (and more importantly their solutions) from a different angle.
@@ -98,7 +98,7 @@ JS
 
 ```js
 // Printing the sum of an array
-console.log([1, 2, 3, 5, 8].reduce((item, acc) => acc + item))
+console.log([1, 2, 3, 5, 8].reduce((acc, item) => acc + item))
 ```
 
 Elixir
@@ -121,7 +121,7 @@ function fibonacci (n) {
 }
 ```
 
-###Enough of the platform
+### Enough of the platform
 
 I won't bother you anymore with advantages or language features Elixir provides nor try to persuade you that this is the right language to learn and use.
 Anyway, you should probably check some resources and dive a bit deeper into the awesome world of functional programming.
@@ -131,7 +131,7 @@ Just click around and look at some beautiful code and examples.
 You think Elixir is not for you?
 Check out another functional language then!
 Take a look at [Scala](https://www.scala-lang.org/), [Haskell](https://www.haskell.org/) or Erlang itself.
-I personally think your daily (programming) life will benefit from everything you learn, even if you do not actively use these languages for active development.
+I personally think your daily (programming) life will benefit from everything you learn, even if you do not actively use these languages for development.
 
 **Next up**: The Phoenix web framework.
 See how it works and which concepts and tools it uses to keep your project bloat-free, how it makes your development faster and delivers responses within microseconds.
