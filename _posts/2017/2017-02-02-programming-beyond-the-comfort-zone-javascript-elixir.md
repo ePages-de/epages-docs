@@ -20,7 +20,7 @@ So why should you start programming in another language?
 Let's take a step back from the frameworks and look at the language itself.
 JavaScript claims to be both, object-oriented (with prototypal inheritance) and functional.
 And since it claims to be both, it is neither one or the other to a satisfying extend.
-Other languages like [Elixir] (http://elixir-lang.org/) (which we're going to talk about in a bit) make it much easier to use functional language features and methods such as *destructuring*, *pattern matching* or *recursion*.
+Other languages like [Elixir](http://elixir-lang.org/) (which we're going to talk about in a bit) make it much easier to use functional language features and methods such as *destructuring*, *pattern matching* or *recursion*.
 You might shift from doing everything with a `forEach` loop to solving pretty much every problem with `reduce`.
 This paradigm shift not only broadens your programming knowledge, but lets you view problems (and more importantly their solutions) from a different angle.
 On top of that, it improves code readability - at least most of the time {% emoji wink %}.
