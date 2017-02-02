@@ -39,9 +39,26 @@ Don't frown, I've seen a lot of people (including myself) starting like this (wh
 
 ```js
 const myNumbers = [-2, 3, 5, -34, 0, 32]
-@@ -38,7 +38,7 @@ const result = myNumbers
- .map(num => num * 2)
+const result = []
+
+myNumbers.forEach(num => {
+    if (num > 0) {
+    result.push(num * 2)
+    }
+})
 ```
+
+So what do we have here? Side effects and mutation! With each iteration we're changing the `result` array. In this simple case we're pretty sure that we know what it contains after we touched each number. With higher complexity (and nesting) we might be guessing the values rather than knowing them. Furthermore it's not quite obvious at first sight how `result` is populated (because there's no assignment we can see right away).
+
+Of course we can do better:
+
+```js
+const myNumbers = [-2, 3, 5, -34, 0, 32]
+const result = myNumbers
+    .filter(num => num > 0)
+    .map(num => num * 2)
+```
+
 
 This time we see that `result` will contain the double of all positive numbers from the source array.
 Way more explicit, isn't it?
@@ -49,7 +66,9 @@ For the record, this is how the above would look in Elixir:
 
 ```elixir
 my_numbers = [-2, 3, 5, -34, 0, 32]
-@@ -48,16 +48,16 @@ result = my_numbers
+result = my_numbers
+    |> Enum.filter(fn (num) -> num > 0 end)
+    |> Enum.map(&(&1 * 2))
 
 ```
 
