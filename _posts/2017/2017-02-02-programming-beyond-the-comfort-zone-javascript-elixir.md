@@ -19,7 +19,7 @@ So why should you start programming in another language?
 
 Let's take a step back from the frameworks and look at the language itself.
 JavaScript claims to be both, object-oriented (with prototypal inheritance) and functional.
-And since it claims to be both, it is neither one or the other to a satisfying extend.
+And since it claims to be both, it is neither one nor the other to a satisfying extend.
 Other languages like [Elixir](http://elixir-lang.org/) (which we're going to talk about in a bit) make it much easier to use functional language features and methods such as *destructuring*, *pattern matching* or *recursion*.
 You might shift from doing everything with a `forEach` loop to solving pretty much every problem with `reduce`.
 This paradigm shift not only broadens your programming knowledge, but lets you view problems (and more importantly their solutions) from a different angle.
@@ -59,7 +59,6 @@ const result = myNumbers
     .map(num => num * 2)
 ```
 
-
 This time we see that `result` will contain the double of all positive numbers from the source array.
 Way more explicit, isn't it?
 For the record, this is how the above would look in Elixir:
@@ -69,7 +68,6 @@ my_numbers = [-2, 3, 5, -34, 0, 32]
 result = my_numbers
     |> Enum.filter(fn (num) -> num > 0 end)
     |> Enum.map(&(&1 * 2))
-
 ```
 
 This pretty much resembles the JavaScript solution, right?!
@@ -109,7 +107,7 @@ Elixir
 # Printing the sum of a list
 Enum.reduce([1, 2, 3, 5, 8], fn(item, acc) -> acc + item end) |> IO.puts
 
-# or without explicitely naming the parameters
+# or without explicitly naming the parameters
 Enum.reduce([1, 2, 3, 5, 8], &(&1 + &2)) |> IO.puts
 ```
 
