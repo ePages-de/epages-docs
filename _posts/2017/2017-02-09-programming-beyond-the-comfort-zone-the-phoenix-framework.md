@@ -66,7 +66,7 @@ Just define everything you need in your corresponding *view* and you can access 
 We're done.
 We just rendered a template with data from our database model.
 Incidentally, the model is responsible for defining the database scheme and processing data written to the database (by the controller) and retrieved from the database (also issued by the controller).
-You could say that the model is the only one "allowed" to produce side effects and interact with the "outside" (in our case the database).
+You could say that the model is the only one "allowed" to produce side effects and interact with the "outside" world (in our case the database).
 
 ## Foreplay
 
@@ -77,7 +77,7 @@ Awesome!
 There are a couple of things we'll need and since I'm a lazy developer I assume you're running Mac OS.
 If not please see the [official Elixir site](http://elixir-lang.org/install.html) to get started.
 
-TL;DR
+### TL;DR
 
 ```sh
 $ brew update && \
@@ -89,6 +89,8 @@ $ brew update && \
   cd restapi
 
 ```
+
+### The slightly longer version
 
 For Mac OS just get [brew](http://brew.sh/index_de.html) and do a
 
@@ -155,7 +157,7 @@ When opening your browser of choice the first thing you should see when navigati
 Bummer.
 Hey, at least it's a beautiful one and it tells you what exactly went wrong.
 Remember we told `mix` not to create any html files or bundle static assets?
-With that it also did not create any views (except the error view) or their related routes (e.g. `/`) in the router.
+With that it also did not create any views (except for the error view) or their related routes (e.g. `/`) in the router.
 The only scope (and pipeline) we have is `/api` (which is exactly what we wanted).
 
 Let's add a new controller that will serve some `shops` once a request is routed to it.
