@@ -1,6 +1,6 @@
 ---
 layout: page
-key: api-resources-carts
+key: api-resources-carts-v-7.3.0
 title: Carts
 ---
 
@@ -8,11 +8,6 @@ A cart allows users to pick products from a shop and store them to be bought now
 The cart can contain products, variations and custom items.
 All data added to a cart is stored and available as these data or an order is retrieved.
 The cart also holds the feature for setting the billing address as well as the shipping address.
-
-When creating a cart, the [response header](page:apps-response-headers) contains a cart token `X-ePages-Cart-Token`.
-Without that token you cannot operate on carts.
-Any further request needs to contain the cart token in the [request header](page:apps-request-headers) `X-ePages-Cart-Token`.
-
 
 {% assign global_key = page.key %}
 {% image carts-overview.png %}
