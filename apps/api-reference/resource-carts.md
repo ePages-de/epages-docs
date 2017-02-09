@@ -9,6 +9,9 @@ The cart can contain products, variations and custom items.
 All data added to a cart is stored and available as these data or an order is retrieved.
 The cart also holds the feature for setting the billing address as well as the shipping address.
 
+You cannot operate on a cart without a cart token.
+The cart token `X-ePages-Cart-Token` will be issued when a cart is created and can be found in the [response header](page:apps-response-headers).
+
 {% assign global_key = page.key %}
 {% image carts-overview.png %}
 
