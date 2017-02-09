@@ -1,0 +1,163 @@
+{
+  "results": 3,
+  "page": 1,
+  "resultsPerPage": 10,
+  "items": [
+    {
+      "customerId": "563874DA-7AE7-9876-9E59-D5809AB38A25",
+      "customerNumber": "1027",
+      "creationDate": "2015-11-03T08:48:26Z",
+      "billingAddress": {
+        "company": "Schneiderei",
+        "salutation": "Mrs",
+        "firstName": "Tanja",
+        "lastName": "Schneider",
+        "street": "Schneiderstraße 10",
+        "streetDetails": null,
+        "zipCode": "12345",
+        "city": "Berlin",
+        "state": null,
+        "country": "DE",
+        "title": null,
+        "vatId": null,
+        "birthday": null,
+        "emailAddress": "schneider@schneiderei.de",
+        "addressExtension": "1.Etage",
+        "bankAccountHolder": "Tanja Schneider",
+        "bankAccountNumber": "DE1567379838510",
+        "bankName": "Nadel Bank",
+        "bankSortCode": "XXSCSBB",
+        "businessEmailAddress": "schneider@schneiderei.de",
+        "businessPhoneNumber": "0049099906543",
+        "department": null,
+        "displayName": null,
+        "doorCode": null,
+        "faxNumber": "0049099906542",
+        "fiscalCode": null,
+        "gender": "female",
+        "jobTitle": "Schneiderin",
+        "middleName": null,
+        "mobilePhoneNumber": "0049099906543",
+        "phoneNumber": "0049099906543",
+        "privateEmailAddress": null,
+        "privatePhoneNumber": null,
+        "websiteUrl": "http://schneiderei.de"
+      },
+      "internalNote": null,
+      "links": [
+        {
+          "rel": "self",
+          "href": "https://pm.epages.com/rs/shops/apidocu/customers/563874DA-7AE7-9876-9E59-D5809AB38A25"
+        },
+        {
+          "rel": "orders",
+          "href": "https://pm.epages.com/rs/shops/apidocu/orders?customerId=563874DA-7AE7-9876-9E59-D5809AB38A25"
+        }
+      ]
+    },
+    {
+      "customerId": "56389403-55BC-176C-5343-D5809AB3A579",
+      "customerNumber": "1028",
+      "creationDate": "2015-11-03T11:01:23Z",
+      "billingAddress": {
+        "company": "Boehm-Jacobs",
+        "salutation": null,
+        "firstName": "Walter",
+        "lastName": "Ankunding",
+        "street": "Barrows Mountain 8",
+        "streetDetails": null,
+        "zipCode": "89708-4738",
+        "city": "Lunaview",
+        "state": null,
+        "country": "GB",
+        "title": null,
+        "vatId": null,
+        "birthday": "1975-11-08",
+        "emailAddress": "Ankunding@bj.com",
+        "addressExtension": "1.Floor",
+        "bankAccountHolder": "Walter Ankunding",
+        "bankAccountNumber": "UK2677379838510",
+        "bankName": "Lunaview Bank",
+        "bankSortCode": "XXLUNBB",
+        "businessEmailAddress": "Ankunding@bj.com",
+        "businessPhoneNumber": "0045099906567",
+        "department": null,
+        "displayName": null,
+        "doorCode": null,
+        "faxNumber": "0045099906568",
+        "fiscalCode": null,
+        "gender": "male",
+        "jobTitle": "Manager",
+        "middleName": null,
+        "mobilePhoneNumber": "0045099906567",
+        "phoneNumber": "0045099906567",
+        "privateEmailAddress": null,
+        "privatePhoneNumber": null,
+        "websiteUrl": "http://bj.com"
+      },
+      "internalNote": null,
+      "links": [
+        {
+          "rel": "self",
+          "href": "https://pm.epages.com/rs/shops/apidocu/customers/56389403-55BC-176C-5343-D5809AB3A579"
+        },
+        {
+          "rel": "orders",
+          "href": "https://pm.epages.com/rs/shops/apidocu/orders?customerId=56389403-55BC-176C-5343-D5809AB3A579"
+        }
+      ]
+    },
+    {
+      "customerId": "5638A1B2-0580-CA34-5DB3-D5809AB3A51C",
+      "customerNumber": "1029",
+      "creationDate": "2015-11-03T11:59:46Z",
+      "billingAddress": {
+        "company": "Ryan and Sons",
+        "salutation": "Mr",
+        "firstName": "Aaron",
+        "lastName": "Grady",
+        "street": "Ardith Route 2",
+        "streetDetails": null,
+        "zipCode": "16772-2059",
+        "city": "Buckborough",
+        "state": "GA",
+        "country": "US",
+        "title": "PhD",
+        "vatId": null,
+        "birthday": null,
+        "emailAddress": "aaron@RyanandSons.com",
+        "addressExtension": "Backyard",
+        "bankAccountHolder": "Aaron Grady",
+        "bankAccountNumber": "US2677379838510",
+        "bankName": "Buckborough Bank",
+        "bankSortCode": "XXBUBB",
+        "businessEmailAddress": "aaron@RyanandSons.com",
+        "businessPhoneNumber": "0045099977567",
+        "department": null,
+        "displayName": null,
+        "doorCode": null,
+        "faxNumber": "0045099977568",
+        "fiscalCode": null,
+        "gender": "male",
+        "jobTitle": "Manager",
+        "middleName": null,
+        "mobilePhoneNumber": "0045099977567",
+        "phoneNumber": "0045099977567",
+        "privateEmailAddress": null,
+        "privatePhoneNumber": null,
+        "websiteUrl": "http://RyanandSons.com"
+      },
+      "internalNote": null,
+      "links": [
+        {
+          "rel": "self",
+          "href": "https://pm.epages.com/rs/shops/apidocu/customers/5638A1B2-0580-CA34-5DB3-D5809AB3A51C"
+        },
+        {
+          "rel": "orders",
+          "href": "https://pm.epages.com/rs/shops/apidocu/orders?customerId=5638A1B2-0580-CA34-5DB3-D5809AB3A51C"
+        }
+      ]
+    }
+  ]
+}

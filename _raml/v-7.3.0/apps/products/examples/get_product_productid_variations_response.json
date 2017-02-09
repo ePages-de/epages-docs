@@ -1,0 +1,92 @@
+{
+  "variationAttributes": [
+    {
+      "name": "Colour",
+      "displayName": "Colour",
+      "values": [
+        {
+          "value": "DeepBlack",
+          "displayValue": "Extreme Black"
+        },
+        {
+          "value": "Silver",
+          "displayValue": "Silver"
+        },
+        {
+          "value": "Red",
+          "displayValue": "Red"
+        },
+        {
+          "value": "OffWhite",
+          "displayValue": "Cream"
+        },
+        {
+          "value": "Orange",
+          "displayValue": "Orange"
+        },
+        {
+          "value": "Blue",
+          "displayValue": "Blue"
+        },
+        {
+          "value": "Green",
+          "displayValue": "Green"
+        },
+        {
+          "value": "Yellow",
+          "displayValue": "Yellow"
+        },
+        {
+          "value": "Pink",
+          "displayValue": "Pink"
+        },
+        {
+          "value": "Purple",
+          "displayValue": "Lilac"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "link": {
+        "rel": "variation",
+        "href": "https://pm.epages.com/rs/shops/apidocu/products/561B822B-8387-3A70-BE21-D5809AB338DD"
+      },
+      "attributeSelection": [
+        {
+          "name": "Colour",
+          "value": "Silver"
+        }
+      ]
+    },
+    {
+      "link": {
+        "rel": "variation",
+        "href": "https://pm.epages.com/rs/shops/apidocu/products/561B822B-3805-771D-8968-D5809AB338A4"
+      },
+      "attributeSelection": [
+        {
+          "name": "Colour",
+          "value": "White"
+        }
+      ]
+    },
+    {
+      "link": {
+        "rel": "variation",
+        "href": "https://pm.epages.com/rs/shops/apidocu/products/561B822B-40EC-A918-DEBC-D5809AB3385B"
+      },
+      "attributeSelection": [
+        {
+          "name": "Colour",
+          "value": "Green"
+        }
+      ]
+    }
+  ],
+  "results": 3,
+  "resultsPerPage": 10,
+  "page": 1,
+  "links": []
+}
