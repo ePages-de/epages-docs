@@ -10,6 +10,18 @@ In order to keep track of these changes we recommend you to follow [@epagesdevs]
 
 <hr>
 
+## 2017-02-09
+
+### Changes with software release 7.4.0
+
+#### <i class="fa fa-pencil"></i> Update
+
+* Until version 7.3.0 the merchant could create a page type "Category" with an ID such as "Shipping" or "Payment". This page was mapped with the [`GET` legal/shipping-information](https://developer.epages.com/apps/api-reference/get-shops-shopid-legal-shipping-information) and [`PUT` legal/shipping-information](https://developer.epages.com/apps/api-reference/put-shops-shopid-legal-shipping-information) requests. With version 7.4.0, a new page type "Payment & Shipping" has been introduced in the administration area of the ePages shop system that these legal calls have been mapped to. If the merchant did not create a new shipping information page via the new page type, the response to these calls will be empty.
+
+* Introduced cart token `X-epages-Cart-Token` for all cart resources, see [Response headers](page:apps-response-headers). The app scopes `carts_read`and `carts_write` have been deprecated at the same time.
+
+<hr>
+
 ## 2017-01-30
 
 ### Changes with software release 7.3.0
@@ -22,7 +34,7 @@ In order to keep track of these changes we recommend you to follow [@epagesdevs]
 
 #### <i class="fa fa-pencil"></i> Update
 
-* Developer apps have been  to Private apps. The chapter [Create an app](page:apps-create) in the section `Developing an app` has been refactored and updated.
+* Developer apps have been renamed to Private apps. The chapter [Create an app](page:apps-create) in the section `Developing an app` has been refactored and updated.
 
 <hr>
 

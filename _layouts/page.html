@@ -58,7 +58,7 @@ layout: default
           {% if chapter == 'blog' and page.title %}
             <li class="sitemap-headline">Share<br />
               <ul class="socialmedia">
-                <li class="twitter"><a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ page.url | prepend: site.url }}&via=epagesdevs&tw_p=tweetbutton" target="_blank" title="Share via Twitter"><span class="icon-twitter"></span></a></li>
+                <li class="twitter"><a href="https://twitter.com/intent/tweet?text={{ page.title | cgi_escape }}&url={{ page.url | prepend: site.url }}&via=epagesdevs&tw_p=tweetbutton" target="_blank" title="Share via Twitter"><span class="icon-twitter"></span></a></li>
                 <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.url }}" target="_blank"><span class="icon-facebook" title="Share via Facebook"></span></a></li>
                 <li class="googleplus"><a href="https://plus.google.com/share?url={{ page.url | prepend: site.url }}" target="_blank"><span class="icon-googleplus" title="Share via Google+"></span></a></li>
               </ul>

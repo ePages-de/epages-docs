@@ -157,3 +157,15 @@ Here you can place some markdown text...
 {% callout info This is a blue callout %}
 Here you can place some markdown text...
 {% endcallout %}
+
+Emojis
+
+[Emoji library](http://www.iemoji.com/emoji-cheat-sheet/all)
+
+{% emoji wink %}
+
+{% emoji smile %}
+
+{% emoji slight_smile %}
+
+{% emoji smirk %}

@@ -52,8 +52,10 @@ Use ATX-style for headings.
 
 ### Document title
 
-As the first heading use a level two heading.
-The level one heading is directly used from the `title` of the page layout.
+As the first heading use a level two heading (# h2).
+The level one heading (# h1) is directly used from the `title` of the page layout.
+
+Exception: for interview blog posts use the level three heading (# h3).
 
 ### Spacings
 
@@ -78,10 +80,10 @@ This is the second sentence.
 This is the third sentence.
 ~~~
 
-## Trailing whitespaces
+## Trailing white spaces
 
-Don't use trailing whitespaces.
-If trailing whitespaces are available, CIRCLE CI tests will fail.
+Don't use trailing white spaces.
+If trailing white spaces are available, CIRCLE CI tests will fail.
 Test you project with the `rake test` command.
 
 ## Lists

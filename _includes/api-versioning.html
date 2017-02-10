@@ -1,8 +1,10 @@
 <script>
   var apiVersion = document.location.pathname.split("/")[2];
-  apiVersionDefaultValue(apiVersion);
-  apiAnchorsLinkToVersion(apiVersion);
-  apiSelectRedirectsToVersion();
+  if (document.location.pathname.match(/.*apps.*/) != null) {
+    apiVersionDefaultValue(apiVersion);
+    apiAnchorsLinkToVersion(apiVersion);
+    apiSelectRedirectsToVersion();
+  }
 
   function apiVersionDefaultValue(version) {
     if(apiVersion.match(/v-.+/) != null) {
@@ -15,7 +17,6 @@
     var anchors = document.querySelectorAll("a");
     for(var z = 0; z < anchors.length; z++){
       var elem = anchors[z];
-      // elem.href = elem.href.replace('/apps/', '/apps/' + version);
     }
   }
 
