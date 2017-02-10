@@ -87,3 +87,6 @@ DEPENDENCIES
   raml_parser (~> 0.2.5)
   rubyzip (~> 1.1.7)
   therubyracer (~> 0.12.1)
+
+BUNDLED WITH
+   1.14.3
