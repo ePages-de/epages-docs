@@ -13,3 +13,20 @@
   word-break: break-all;
   word-wrap: break-word;
 }
+
+.ep-label {
+  font-size: 12px;
+  padding: .3rem 1rem;
+  margin-left: 10px;
+  border-radius: 3px;
+
+  &.ep-label-6 {
+    color: $midnight;
+    border: 1px solid $midnight;
+  }
+
+  &.ep-label-now {
+    color: $red;
+    border: 1px solid $red;
+  }
+}
