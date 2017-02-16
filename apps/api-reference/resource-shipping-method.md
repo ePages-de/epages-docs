@@ -10,7 +10,7 @@ The shipping methods supposed to handle the shipment for a shop.
 
 <ul id="resource-list">
   {% for page in site.pages %}
-    {% assign match = page.key | regex_match: '^apps-api-([a-z]+)-shops-shopid-shipping-methods(.*)-information$' %}
+    {% assign match = page.key | regex_match: '^apps-api-([a-z]+)-shopid-shipping-methods(.*)-information$' %}
     {% assign visible = global_key | versioning_visible: page.url %}
     {% if match and visible %}
       <li class="resource-entry">

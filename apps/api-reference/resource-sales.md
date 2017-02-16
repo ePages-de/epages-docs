@@ -11,7 +11,7 @@ To request the sales of a shop, an order must be created and not rejected (rejec
 
 <ul id="resource-list">
   {% for page in site.pages %}
-    {% assign match = page.key | regex_match: '^apps-api-([a-z]+)-shops-shopid-sales(.*)-information$' %}
+    {% assign match = page.key | regex_match: '^apps-api-([a-z]+)-shopid-sales(.*)-information$' %}
     {% assign visible = global_key | versioning_visible: page.url %}
     {% if match and visible %}
       <li class="resource-entry">

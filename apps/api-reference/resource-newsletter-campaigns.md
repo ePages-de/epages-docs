@@ -7,7 +7,7 @@ title: Newsletters
 
 <ul id="resource-list">
   {% for page in site.pages %}
-    {% assign match = page.key | regex_match: '^apps-api-([a-z]+)-shops-shopid-newsletter-campaigns(.*)-information$' %}
+    {% assign match = page.key | regex_match: '^apps-api-([a-z]+)-shopid-newsletter-campaigns(.*)-information$' %}
     {% assign visible = global_key | versioning_visible: page.url %}
     {% if match and visible %}
       <li class="resource-entry">

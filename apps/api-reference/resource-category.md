@@ -10,7 +10,7 @@ A collection of product categories of a shop.
 
 <ul id="resource-list">
   {% for page in site.pages %}
-    {% assign match = page.key | regex_match: '^apps-api-([a-z]+)-shops-shopid-categories(.*)-information$' %}
+    {% assign match = page.key | regex_match: '^apps-api-([a-z]+)-shopid-categories(.*)-information$' %}
     {% assign exceptions = "product-category-assignment" | split: ' ' %}
     {% assign visible = global_key | versioning_visible: page.url %}
     {% if match and visible %}
