@@ -25,6 +25,12 @@ Any further request needs to contain the cart token in the [request header](page
       <li class="resource-entry">
         <span class="http-method http-method-{{ page.raml_method.method | downcase }}">{{ page.raml_method.method }}</span>
         <a href="{{ page.url | prepend: site.baseurl }}">{{ page.raml_resource.relative_uri }}</a>
+        {% if page.raml_method.description contains '*epages6' %}
+          <span class="ep-label-6 ep-label">ePages 6</span>
+        {% endif %}
+        {% if page.raml_method.description contains '*epagesNow' %}
+          <span class="ep-label-now ep-label">ePages now</span>
+        {% endif %}
       </li>
     {% endif %}
   {% endfor %}

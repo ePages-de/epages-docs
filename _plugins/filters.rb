@@ -48,6 +48,10 @@ module Jekyll
       input.gsub(Regexp.new(pattern), substitution)
     end
 
+    def delete_epages_version(input)
+      input.gsub(Regexp.new(/\*epages\S*/), '')
+    end
+
     def to_xml_feed(input)
       return if input.start_with?('<p>')
 
