@@ -21,7 +21,7 @@ A collection of product categories of a shop.
           <span class="ep-label-6 ep-label">ePages 6</span>
         {% endif %}
         {% if page.raml_method.description contains '*epagesNow' %}
-          <span class="ep-label-now ep-label">ePages now</span>
+          <span class="ep-label-now ep-label">ePages Now</span>
         {% endif %}
       </li>
     {% endif %}
@@ -34,7 +34,7 @@ A collection of product categories of a shop.
             <span class="ep-label-6 ep-label">ePages 6</span>
           {% endif %}
           {% if page.raml_method.description contains '*epagesNow' %}
-            <span class="ep-label-now ep-label">ePages now</span>
+            <span class="ep-label-now ep-label">ePages Now</span>
           {% endif %}
         </li>
       {% endif %}
