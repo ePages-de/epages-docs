@@ -3,7 +3,7 @@ layout: post
 title: "Continuous documentation with Ansible"
 date: "2017-02-20 06:39:20"
 image: blog-header/heartbeat.jpg
-categories: tech-stories agile
+categories: tech-stories agile devops docker jenkins ansible
 authors: ["Thomas H."]
 ---
 
@@ -18,11 +18,11 @@ and the [Agile principles](http://agilemanifesto.org/principles.html) of custome
 
 This post will outline how [Ansible](https://www.ansible.com/) can help in approaching these challenges.
 It also includes a short discussion on the relation of Ansible to other tools supporting continuous delivery and
-scalability of the development process, specifically [Docker](https://www.docker.com/) and [Jenkins](https://jenkins.io/).
+scalability of the development process, [Docker](https://www.docker.com/) and [Jenkins](https://jenkins.io/).
 
 # Documentation vs. Automation
 The way we think about documentation [is changing](https://devops.com/documenting-devops-agile-automation-and-continuous-documentation/).  
-For the documentation of application software it is generally well understood that it should be generated from code, to leave as little possibility for deviation as possible.  
+For the documentation of application software it is generally accepted that it should be generated from code, to leave as little possibility for deviation as possible.  
 In the case of "management code" this is more difficult, because the things being modelled are often heterogeneous and not as focussed in terms of their implementation as for example a REST-API or a library / module.
 The concept of [using declarative formats for automation](https://12factor.net/#introduction) can fill this gap.
 
@@ -35,10 +35,11 @@ Note that I am using the term "Ansible project" without implying a certain struc
 Generally, there are two kinds of Playbooks.
 
 ### Setup Playbooks
-One type of would initially provision / prepare an environment to deploy an application into it.  
+One type of playbook would initially provision / prepare an environment to deploy an application into it.  
 These playbooks would typically be named `setup-<project>.yml`.  
-While this type could traditionally be seen more on the IT department's side of an organization, this playbook would also be used to set up a development environment for that application.  
-The point of using the same technique for both of these things is that it becomes easier to manage and document differences between them in a joint effort. This continually provides value for the company, because setup times for developers are reduced, and problems are noticed sooner.
+While this type could traditionally be seen more on the IT department's side of an organization, this playbook would also be used to set up a development environment (i.e. developer laptop) for that application.  
+The point of using the same technique for both of these things is that it becomes easier to manage and document differences between them in a joint effort. This continually provides value for the company, because setup times for developers are reduced.  
+Using playbooks to install a development environment is actually a great way of incorporating new developers, because it is self-documenting, and invariably occurring problems are a perfect opportunity to familiarize with the environment and getting used to the workflow by documenting their solution.
 
 ### Deployment Playbooks
 The other kind of playbooks would be named `deploy-<project>.yml`.  
@@ -72,15 +73,14 @@ Let's look at an example playbook (`deploy-unity.yml`):
 This playbook should be fairly self-explanatory, given you know what "[Unity](https://www.epages.com/de/now/)" is.    
 Looking at the pre-task, its intention seems to be to document a dependency, providing a bit more context for this playbook.  
 The roles that are being assigned are `docker` (which would correctly be assumed to install Docker on the host) and `epages-unity`.  
-Concerning the hosts (`centos-vms` in this case), the word implies a group of hosts. This could also be read as "the hosts that this playbook is meant to run against", with the distinction, that depending on the environment, it might only be executed against a single host at a time, using the `--limit` parameter of `ansible-playbook`.  
+Concerning the hosts (`application-vms` in this case), the word implies a group of hosts. This could also be read as "the hosts that this playbook is meant to run against", with the distinction, that depending on the environment, it might only be executed against a single host at a time, using the `--limit` parameter of `ansible-playbook`.  
 Motivation for doing it like this is that the exact same playbooks can be used for different inventories (see below).
-Deployment playbooks are
 
 ## Roles
-While playbooks are the entry point, one will soon be looking at [Roles](http://docs.ansible.com/ansible/playbooks_roles.html), because playbooks usually should not contain single tasks, but only sets of roles (that are applied to groups of hosts).  
-When learning about a role, the best place to start is usually `defaults/main.yml`.  
+While playbooks are the entry point, one will soon be looking at [Roles](http://docs.ansible.com/ansible/playbooks_roles.html), because playbooks should not contain single tasks, but only sets of roles (that are applied to groups of hosts).  
+When learning about a role, the best place to start is `defaults/main.yml`.  
 This file is supposed to contain all variables that are being used in the role, and - as the filename implies - their default values. This file serves the primary purpose of documenting the role.  
-When using a role written by others, these are the variables that are meant to be used to adapt the role to specific needs.
+When using a role written by others, these variables are meant to be used to adapt the role to specific needs.
 
 Example `defaults/main.yml` of `epages-unity` role:  
 {% highlight yml %}
@@ -100,14 +100,18 @@ epages_unity_shop_name: demounity
 At the top there is a directory, which probably refers to the host.
 Since the role requires Docker (see playbook example), and there is a reference to docker-compose in the next property, one could (correctly) assume that the file being copied there could be a docker-compose definition file.
 However there is also a property `epages_unity_use_systemd` which is apparently mutually exclusive with `epages_unity_use_docker_compose`.
-The purpose of expressing two different ways of starting the application is to document that there is a transition. While either of the two ways should work, one or the other might be broken while development is still ongoing.  
+The purpose of having two different ways of starting the application could (and should) be questioned, it really just documents the circumstance, that while either of the two ways should work, one or the other might be broken while development is still ongoing.  
+But as Agile thinking suggests this should not prevent us from [automating the deployment as early as possible](http://www.theserverside.com/tip/Try-an-Agile-deployment-strategy).
+
 The file goes on with some more configuration of what seem to be application properties, and finally two options to create a shop with a given name when deploying.
-By looking at the defaults, someone could get a good idea about the scope of the role without looking at the [tasks](http://docs.ansible.com/ansible/playbooks_intro.html#tasks-list).  
+By looking at the defaults, anyone could get a good idea about the scope of the role without looking at the [tasks](http://docs.ansible.com/ansible/playbooks_intro.html#tasks-list).  
+As mentioned before, roles do not necessarily need to live in the same repository as playbooks, because Ansible supports [role dependencies](http://docs.ansible.com/ansible/playbooks_roles.html#role-dependencies).
 
 ## Variables
-There is also a file `vars/main.yml` inside a role that can be used to document [variables](http://docs.ansible.com/ansible/playbooks_variables.html), but generally any role should be considered "immutable", similar to a class in OO programming. Only when it is used in a playbook will it receive its arguments. Assigning role variables in playbooks is a very straight forward way to document things, as it only requires to know about the scope of the involved roles.  
-Other places to put variables include `group_vars/<groupname>.yml` and `host_vars/<inventory-hostname>.yml`. The latter should be avoided, because we are trying to rid of host-specific configuration to begin with.  
-Group vars could be considered acceptable, but the goal should always be to enclose as much behaviour into roles as possible.
+There is also a file `vars/main.yml` inside a role that can be used to document [variables](http://docs.ansible.com/ansible/playbooks_variables.html), but generally any role should be considered "immutable", similar to a class in OO programming. Only when it is used in a playbook will it receive its arguments.  
+Assigning role variables in playbooks is a very straight forward way to document things, as it only requires to know about playbook and the scope of the involved roles.  
+Other places to put variables include `group_vars/<groupname>.yml` and `host_vars/<inventory-hostname>.yml`. The latter should be avoided, because we are trying to get rid of host-specific configuration to begin with.  
+Group vars could be considered acceptable, but the goal should always be to encapsulate as much behaviour into roles as possible.
 Talking about hosts and groups this leads to the next section, the inventory.
 
 ## Inventory
@@ -155,13 +159,15 @@ shared-jenkins
 build-slaves
 shared-tools
 ```
-Referring to the playbook example above, we can see here, that the `application-vms` group comprises `shared-vms` and `developer-vms`, and that there is another group `infrastructure-vms` containing development infrastructure.
-Grouping `application-vms` is a way of documenting that `developer-vms` and `shared-vms` are set up in a very similar way (consisting of the same roles and using similar playbooks).
+Referring to the playbook example above, we can see here, that the `application-vms` group consists of  `shared-vms` and `developer-vms`, and that there is another group `infrastructure-vms` probably containing development infrastructure.
+Grouping `developer-vms` and `shared-vms` into `application-vms` is a way of saying that they are set up in a very similar way (consisting of the same roles and using similar, possibly identical playbooks).
 
 Of course this structure of playbooks and inventories assumes that we are dealing with "hosts" in the first place. But how relevant is this model in an environment where the primary method of deployment is through containers and hosts are being abstracted away?  
-This will be discussed shortly, but first let's have a look at the role of Ansible in the CI/CD pipeline.
+This will be discussed shortly, but first let's have a look at the purpose of Ansible in the CI/CD pipeline.
 
 # Jenkins and Ansible
+While I am referring to Jenkins here because it is the most commonly used CI / CD system out there, the idea is applicable to similar tools just as well.
+
 -> pipeline
 -> only "one command" to get things done -> easier to refactor / lowers entry-barrier
 
@@ -169,16 +175,24 @@ This will be discussed shortly, but first let's have a look at the role of Ansib
 At first glance Docker and Ansible seem to be solving a similar problem in very different ways, making it questionable how and if to use them in conjunction.  
 But their scope is actually quite different.
 
-Docker solves the very specific problem of isolating runtime and dependencies of a process (without neglecting efficient resource usage, in theory). Containers are meant to be deployed into a homogeneous environment (i.e. running at least the Docker daemon, or an orchestration platform like [Marathon](https://mesosphere.github.io/marathon/) or [Kubernetes](https://kubernetes.io/), which one could [set up using Ansible](https://github.com/kubernetes/contrib/tree/master/ansible)).
+Docker solves the very specific problem of isolating the runtime and dependencies of a process (without neglecting efficient resource usage, in theory). Containers are meant to be deployed into a homogeneous environment (i.e. running at least the Docker daemon, or possibly an orchestration platform like [Marathon](https://mesosphere.github.io/marathon/) or [Kubernetes](https://kubernetes.io/), which one could [set up using Ansible](https://github.com/kubernetes/contrib/tree/master/ansible)).
 
-Ansible is a general purpose automation tool, that is designed to work with environments that are heterogenous, consisting of different [devices](http://docs.ansible.com/ansible/bigip_pool_module.html), [networks](http://docs.ansible.com/ansible/list_of_network_modules.html), [operating systems](http://docs.ansible.com/ansible/package_module.html), [cloud providers](http://docs.ansible.com/ansible/list_of_cloud_modules.html), [methods of deployment](https://docs.ansible.com/ansible/deploy_helper_module.html) etc.
+Ansible is a general purpose automation tool, that is suitable for working with environments that are heterogenous, consisting of different [devices](http://docs.ansible.com/ansible/bigip_pool_module.html), [networks](http://docs.ansible.com/ansible/list_of_network_modules.html), [operating systems](http://docs.ansible.com/ansible/package_module.html), [cloud providers](http://docs.ansible.com/ansible/list_of_cloud_modules.html), [methods of deployment](https://docs.ansible.com/ansible/deploy_helper_module.html) etc.
 
-There is increasing motivation for companies of any size to transition to a homogeneous environment, in order to reduce overhead and increase the reliability of their products. But the current state of reality is, that for all but the smallest and [largest](https://www.wired.com/2015/09/google-2-billion-lines-codeand-one-place/) companies, this environment does not exist (yet). In fact, the opposite is the case, as cloud infrastructure is being explored and integrated while both new products and legacy system are being developed and maintained.
-And there will probably always be a Ruby application somewhere, that stubbornly refuses to participate in the Pipeline.
+There is increasing motivation for companies of any size to transition to a homogeneous environment, in order to reduce overhead and increase the reliability of their products. But the current state of reality is, that for all but the smallest and [largest](https://www.wired.com/2015/09/google-2-billion-lines-codeand-one-place/) companies, this environment does not exist (yet). In fact, the opposite is the case, as cloud infrastructure is being explored and integrated while both new products and legacy system are being developed and maintained simultaneously.  
+And there will probably always be a Ruby application, that is hosted somewhere else and stubbornly refuses to participate in the Pipeline.
 
 But what is a concrete use case for using Docker and Ansible? Consider [docker-compose](https://docs.docker.com/compose/gettingstarted/#/step-3-define-services-in-a-compose-file). It wraps the Docker-API to provide a declarative format for defining a group of interconnected containers. The motivation is much the same as in the introduction.   
 The [docker_service module](https://docs.ansible.com/ansible/docker_service_module.html) of Ansible depends on the docker-compose Python module (on the host where `docker-compose` is being executed), and supports identical syntax. `docker-compose.yml` files can be provided either inline in a task, or as separate files.  
-The added benefit might not be worth it if you are not using Ansible to run docker-compose, but the point is that it would allow managing configuration in- and outside of containers in a consistent way, e.g. using templates.
+This allows managing configuration in- and outside of containers in a more consistent way.
 Other modules exist for [managing Docker images](http://docs.ansible.com/ansible/docker_image_module.html#docker-image), [Kubernetes] (https://docs.ansible.com/ansible/kubernetes_module.html) or [GCE](http://docs.ansible.com/ansible/guide_gce.html) resources.  
+There is also a project that works on [building docker images from Ansible playbooks](https://github.com/ansible/ansible-container) that is trying to solve the issue of [using the Docker cache in the process](https://github.com/ansible/ansible-container/issues/143).
+This approach has essentially the same motive as [this lengthy discussion](https://github.com/docker/docker/issues/735) which proposes adding an `INCLUDE` directive to Dockerfiles, to be able to modularize them and avoid duplication.
 
-...
+# Conclusion
+
+
+There is of course no silver bullet for solving the problem of increasing complexity [as software evolves](https://en.wikipedia.org/wiki/Lehman%27s_laws_of_software_evolution).
+
+
+-> ansible vs bash
