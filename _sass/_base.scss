@@ -644,11 +644,23 @@ article ul li {
   float: right;
   margin: 0  0 20px 20px;
 }
+.imagebox.center {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .imagebox img {
   border-radius: 3px;
   height: auto;
   max-width: 100%;
 }
+
+.imagebox img.basic-image {
+  height: 100% !important;
+  width: 100% !important;
+  max-width: auto;
+}
+
 label {
   display: inline-block;
   font-size: 14px;
