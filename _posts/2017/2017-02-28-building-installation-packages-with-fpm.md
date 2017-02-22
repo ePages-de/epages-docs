@@ -43,7 +43,9 @@ This is how you can package your own application as a rpm package.
 
     ```
     mkdir -p /build/myapp/0.0.1/
-    
+    ```
+
+    ```
     touch /build/myapp/0.0.1/test_fpm.txt
     ```
 2. Create rpm package using FPM:
