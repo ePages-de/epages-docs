@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Scrum Master insights at ePages"
-date: "2017-02-09 07:00:00"
+title: "Why I love working as a Scrum Master"
+date: "2017-02-23 07:00:00"
 categories: working-at-epages
 authors: ["Rose", "Ann-Katrin"]
 ---
@@ -9,13 +9,13 @@ authors: ["Rose", "Ann-Katrin"]
 As already argued in our previous [blog post](https://developer.epages.com/blog/2017/01/31/getting-twice-the-things-done-in-half-the-time.html) the agile process framework [Scrum](https://www.scrum.org/resources/what-is-scrum) is our preferred methodology in order to manage our product development at ePages.
 To get further insights into our work with Scrum, we interviewed our Scrum Master Ann-Katrin:
 
-### Ann-Katrin, please introduce yourself!
+### Hi Ann-Katrin. Many thanks for taking the time to do this interview. Please introduce yourself.
 
 Hi, I am Ann-Katrin, the Scrum Master here at ePages.
 I started my career at a small agency, which was specialized in doing e-commerce for big retailers, here in Hamburg.
 This is where I worked for about seven years, before I moved to London.
 In London I worked for two big retailers, namely [Arcadia](https://www.arcadiagroup.co.uk/) and [Debenhams](http://www.debenhams.com/).
-At the beginning, I was dedicated more towards the operational business, yet then I discovered my love for project management where I set my focus on agile projects.
+At the beginning, I was dedicated more towards the operational business, yet I then discovered my love for project management where I set my focus on agile projects.
 So, it was less project management, but rather working with agile teams and being the one coordinating their work.
 This is when I got to know the processes of Scrum and I fell in love right away.
 Therefore, I got certificated as a Scrum Master and ever since worked in that field.
@@ -32,12 +32,12 @@ Ever since I started at ePages, I am very thrilled to be working with bigger tea
 In traditional project management you have got your fixed tasks that you do one after another.
 For example, you start with a big conception phase, then you go on with a design phase as well as development and eventually at the end the customer would see the product.
 However, until then it remains completely non-transparent for the customer on what exactly the development team is working on.
-Only at the end, he will see the product and might realize that he has changed his mind and demands some product changes.
+Only at the end, they will see the product and might realize that they changed their mind and demand some product adjustments.
 This is what makes the project inflexible.
 
 Whereas with the agile approach, you've got iterations and the so-called Product Owner works very closely with the customer.
-There is a lot of communication going on, which also implies that you always review the product after short iterations and make amends.
-Whenever it is necessary, you can make adjustments to make sure the customer stays happy and all his wishes are built into the product.
+There is a lot of communication going on, which also implies that you always review the product after short iterations and make modifications.
+Whenever it is necessary, you can make adjustments to make sure the customer stays happy and all their wishes are built into the product.
 I really like this iterative approach.
 Using Scrum here at ePages allows us to have sprint reviews, which everyone from the company is invited to and see the product as well as to give feedback.
 This feedback is valuable to use it for our next iterations.
@@ -45,43 +45,43 @@ This feedback is valuable to use it for our next iterations.
 ### What is your role as a Scrum Master at ePages?
 
 It's lots of multi-tasking {% emoji wink %}.
-I work very closely with the developer teams.
+I work very closely with the development teams.
 So, I am really a part of each team.
 With every team, we always look at the processes and how we can improve.
-Together, we estimate the scope of stories and if something remains unclear we conduct little amends.
-Working with Scrum implies a regularity in meet-ups and I am responsible to moderate these meetings.
-Therefore, we have a so-called daily, in which the developers give a brief update on what they are currently working on and whether there are any impediments whatsoever.
-Sometimes, I need to stop upcoming discussions and postpone them to after the daily to not lose focus - I like to always keep the daily short and informative.
+Together, we estimate the scope of stories and if something remains unclear we do small adjustments.
+Working with Scrum implies a regularity in meetings and I am responsible to moderate those.
+Therefore, we have a so-called Daily Scrum, in which the developers give a brief update on what they are currently working on and whether there are any impediments.
+Sometimes, I need to stop upcoming discussions and postpone them to after the Daily Scrum to not lose focus - I like to always keep it short and informative.
 
-Also, I collaborate closely with the Product Owner and pass on his feedback to the teams.
-Together, we check the backlog and make sure that the meetings are scheduled in a way that everybody can attend.
+Also, I collaborate closely with the Product Owner and pass on their feedback to the teams.
+Together, we check the product backlog and make sure that the meetings are scheduled in a way that everybody can attend.
 I am also the link between development and management.
 You see, I keep up the communication between all parties - CTO, Product Owners, and developers.
 Beyond that, I have other exciting tasks, such as organizing the yearly Hackathon and R&D day.
 Or just in general, I organize team events, because sometimes it is simply nice to go out and have fun.
 
-### Are there already any insights on this year's Hackathon you could reveal?
+### Are there already any insights on this year's Hackathon you can reveal?
 
 We are organizing the Hackathon for the end of March and of course it's going to be lots of fun {% emoji wink %}.
 It'll be one day and a half and we just started the idea-finding process.
 Our developers can formulate some wishes, we then go over the list and see which topics will make it.
-I think it's just going to be fun, because everyone is pursuing his hacking passion and of course I will order enough pizza and have enough coffee ready, so the developers are completely fueled.
+I think it's just going to be fun, because everyone is pursuing their hacking passion and of course I will order enough pizza and have enough coffee ready, so the developers are completely fueled.
 At the end of the Hackathon, we will then have some drinks to celebrate ourselves.
 
 ### Very briefly, explain us your work in a Scrum team. How is it organized with regards to meetings, moderation, etc.?
 
-Some teams have two week sprints.
-I will make sure that at the beginning of a sprint, we will have our sprint planning and have the backlog prepared for this meeting.
+Some teams have two-week sprints.
+I will make sure that at the beginning of a sprint, we will have our sprint planning and have the product backlog prepared for this meeting.
 We go through it and schedule topics for the upcoming sprint.
-I also ensure that the team doesn't over or underestimate what they can achieve within one sprint.
-When we start our sprints, we of course have our mentioned dailies every morning.
-In the middle of the sprint, we have a refinement, in which we go through the tickets in the backlog and discuss and estimate them in order to have them ready for the next sprint planning, which then happens a week later.
+I also ensure that the team doesn't overestimate or underestimate what they can achieve within one sprint.
+When we start our sprints, we of course have our mentioned Daily Scrums every morning.
+In the middle of the sprint, we have a refinement, in which we go through the tickets in the product backlog and discuss and estimate them in order to have them ready for the next sprint planning, which then happens a week later.
 At the end of the sprint, we have a sprint review, which is open for everyone in the company who is interested.
 
-For that, we make sure that we have a brief presentation, running software we can show and that we get an invite, an internal blog post, out beforehand so everyone knows when and where the meeting takes place.
+For the sprint review meeting, the team prepares a brief presentation, running software we can show and send out an invite so that everyone knows beforehand when and where the meeting takes place.
 The last meeting of the sprint is the sprint retrospective, which shows us how we performed during the sprint, get feedback and see how we feel.
-Apart from these meetings, I will always be there and have an open ear, overseeing the developers' work, or eventually organize other meetings, if topics come up that call for cross-team discussion.
-Sometimes I like to call myself an impediment remover, because I remove anything that would slow down our work processes.
+Apart from these meetings, I will always be there and have an open ear, checking on the developers' work, or eventually organize other meetings, if topics come up that call for cross-team discussion.
+Sometimes I like to call myself an "impediment remover", because I remove anything that would slow down our work processes.
 
 ### You already mentioned the retrospectives, could you give away some secrets?
 
@@ -94,29 +94,25 @@ These are facility methods that are possible, but I don't always do them.
 
 The teams at ePages already know each other so well and they are very good at giving feedback, so we mostly keep it simple.
 I generally talk about three major areas: what went well, what didn't and want do we want to add for the next sprint.
-In the first 10 minutes of the retrospective everyone gathers his feedback.
-After presenting it, we then go into a discussion.
-More important than the discussion is to come out of the retrospective with action items.
+In the first 10 minutes of the retrospective everyone gathers their feedback.
+After presenting the feedback we go into a discussion.
 The most important aspect is to go out of the retrospective with some [smart action items](http://agileinaflash.blogspot.de/2009/06/smart-goals.html) in order to know what to improve.
-And for each action item you assign a person and set a dead line in order to be able to follow it up.
-This would be my task again, to be following up the assigned action items.
-
+For each action item you assign a person and set a deadline in order to be able to follow it up.
+The follow-up would be my task again.
 
 ### What exactly is a sprint and how long is one?
 
 A sprint is the iteration where we would develop new features - you can think of a sprint as one step towards your product.
 There are QA, design and development tasks.
 This is why we have cross-functional teams, because all this needs to be covered in a quite short period of time.
-Some of our teams do three week sprints, because this aligns with our release cycle and others do two week sprints.
-This varies with the tasks that the team has.
+Some of our teams do three-week sprints, because this aligns with our release cycle and others do two-week sprints.
+This varies with the different tasks of the teams.
 
 ### How many Scrum teams are you managing at the moment?
 
 We are currently looking for a second Scrum Master, because we have got four teams and one Scrum Master usually looks after two teams at a time.
 I am also looking after our developer team in Barcelona, so for me it is three in total.
-Yet, I am also helping out other teams concerning the retrospective or other meetings, if they need me to.
-In Barcelona one of the developers takes on the role of the Scrum Master and then I am just there to be the helping hand as well as the link to our Hamburg office.
-Yet, I do join all their meetings remotely.
+Yet, I am also helping out other teams concerning the retrospective or other meetings, if they need me.
 
 ### What challenges have you faced as a Scrum Master so far?
 
@@ -133,8 +129,8 @@ The human part is what I love about this job!
 ### Talking about love, what do you love about ePages?
 
 I think ePages is great, because there are a lot of different people from lots of different nations and I love that I can speak English all day, because I lived in London for so long.
-What is also great, is that there is so much happening with the new product coming out and you can really feel that people get excited about it.
+And there is so much happening with the new product coming out and you can really feel that people get excited about it.
 I feel that there is a passion behind it.
-One of my teams, which is working on integrating third party tools, has to deal with a lot of legacy software, which can be quite cumbersome, but still they keep focused and want to deliver great value for a great product.
+One of my teams, which is working on integrating third-parties tools, has to deal with a lot of legacy software, which can be quite cumbersome, but still they keep focused and want to deliver great value for a great product.
 I can tell that they really love what they are doing and I love to work with people who are passionate about their jobs.
 This is not only about work though, but in all aspects of life I think.
