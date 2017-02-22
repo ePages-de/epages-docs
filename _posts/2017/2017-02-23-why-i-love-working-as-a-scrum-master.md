@@ -98,7 +98,7 @@ I generally talk about three major areas: what went well, what didn't, and what 
 In the first 10 minutes of the retrospective everyone gathers their feedback.
 After presenting the feedback we go into a discussion.
 The most important aspect is to go out of the retrospective with some [smart action items](http://agileinaflash.blogspot.de/2009/06/smart-goals.html) in order to know what to improve.
-For each action item you assign a person and set a deadline in order to be able to follow it up.
+Each action item is assigned to a person and a deadline is set in order to be able to follow it up.
 The follow-up would be my task again.
 
 ### What exactly is a sprint and how long is one?
@@ -111,8 +111,8 @@ This varies with the different tasks of the teams.
 
 ### How many Scrum teams are you managing at the moment?
 
-We are currently looking for a second Scrum Master, because we have got four teams and one Scrum Master usually looks after two teams at a time.
-I am also looking after our developer team in Barcelona, so for me it is three in total.
+We are currently looking for a second Scrum Master, because we have four teams and one Scrum Master usually looks after two teams at a time.
+I am also looking after our development team in Barcelona, so for me it is three in total.
 Yet, I am also helping out other teams concerning the retrospective or other meetings, if they need me.
 
 ### What challenges have you faced as a Scrum Master so far?
@@ -130,7 +130,8 @@ The human part is what I love about this job!
 ### Talking about love, what do you love about ePages?
 
 I think ePages is great, because there are a lot of different people from lots of different nations and I love that I can speak English all day, because I lived in London for so long.
-And there is so much happening with the new product coming out and you can really feel that people get excited about it.
+There is so much happening with the new product coming out.
+You can really feel that people get excited about it.
 I feel that there is a passion behind it.
 One of my teams, which is working on integrating third-parties tools, has to deal with a lot of legacy software, which can be quite cumbersome, but still they keep focused and want to deliver great value for a great product.
 I can tell that they really love what they are doing and I love to work with people who are passionate about their jobs.
