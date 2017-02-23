@@ -171,7 +171,7 @@ About a year ago, Jenkins received a major update, promoting the [Pipeline plugi
 
 A continuous delivery pipeline is hard to maintain, because it models a complex workflow and must constantly be adapted to changes in any of the projects it integrates. This is why the traditional approach of chaining jobs in Jenkins was considered a maintenance nightmare, and [other approaches](https://wiki.jenkins-ci.org/display/JENKINS/Job+DSL+Plugin) to configuring and maintaining jobs and sequences of jobs were developed. This lead to the decision to make "Pipeline as Code" a first class citizen.
 
-Using Ansible in a CD pipeline is a way to separate the concerns of implementing pipeline logic and (building and) deploying an application. Executing only a single command with as few parameters as possible, in any stage of the pipeline, minimizes the number of integration points between the pipeline and the projects that it builds.  
+Using Ansible in a CD pipeline is a way to separate the concerns of implementing pipeline logic and (building and) deploying an application. [Executing only a single command](https://www.thoughtworks.com/radar/techniques/single-command-deploy) with as few parameters as possible minimizes the number of integration points between the pipeline and the projects that it builds.  
 This has a couple of advantages:
 - the pipeline becomes more declarative, which promotes understanding across teams and projects
 - debuggability is improved, because the individual steps could be executed outside of the context of Jenkins
@@ -184,24 +184,24 @@ But their scope is actually quite different.
 
 Docker solves the very specific problem of isolating the runtime and dependencies of a process (without neglecting efficient resource usage, in theory). Containers are meant to be deployed into a homogeneous environment (i.e. running at least the Docker daemon, or possibly an orchestration platform like [Marathon](https://mesosphere.github.io/marathon/) or [Kubernetes](https://kubernetes.io/), which one could [set up using Ansible](https://github.com/kubernetes/contrib/tree/master/ansible)).
 
-Ansible is a general purpose automation tool, that is suitable for working with environments that are heterogenous, consisting of different [devices](http://docs.ansible.com/ansible/bigip_pool_module.html), [networks](http://docs.ansible.com/ansible/list_of_network_modules.html), [operating systems](http://docs.ansible.com/ansible/package_module.html), [cloud providers](http://docs.ansible.com/ansible/list_of_cloud_modules.html), [methods of deployment](https://docs.ansible.com/ansible/deploy_helper_module.html) etc.
+Ansible is a general purpose automation tool, that is suitable for working with heterogeneous environments consisting of different [devices](http://docs.ansible.com/ansible/bigip_pool_module.html), [networks](http://docs.ansible.com/ansible/list_of_network_modules.html), [operating systems](http://docs.ansible.com/ansible/package_module.html), [cloud providers](http://docs.ansible.com/ansible/list_of_cloud_modules.html), [methods of deployment](https://docs.ansible.com/ansible/deploy_helper_module.html) etc.
 
-There is increasing motivation for companies of any size to transition to a homogeneous environment, in order to reduce overhead and increase the reliability of their products. But the current state of reality is, that for all but the smallest and [largest](https://www.wired.com/2015/09/google-2-billion-lines-codeand-one-place/) companies, this environment does not exist (yet). In fact, the opposite is the case, as cloud infrastructure is being evaluated and integrated while new products and legacy system are being developed and maintained concurrently.  
+There is increasing motivation for companies of any size to transition to a homogeneous environment, in order to reduce overhead and increase the reliability of their products. But the current state of reality is, that for all but the smallest and [largest](https://www.wired.com/2015/09/google-2-billion-lines-codeand-one-place/) companies, this environment does not exist (yet)... In fact, the opposite is the case, as cloud infrastructure is being evaluated and integrated while new products and legacy system are being developed and maintained concurrently.  
 And there will probably always be a Ruby application, which is hosted somewhere else and stubbornly refuses to participate in the Pipeline.
 
 But what is a concrete use case for using Docker and Ansible? Consider [docker-compose](https://docs.docker.com/compose/gettingstarted/#/step-3-define-services-in-a-compose-file). It wraps the Docker-API to provide a declarative format for defining a group of interconnected containers.  
-The recurring pattern is again the motivation to [separate the _What_ from the _How_](http://wiki.c2.com/?SeparateTheWhatFromTheHow).
+The recurring pattern is the motivation to [separate the _What_ from the _How_](http://wiki.c2.com/?SeparateTheWhatFromTheHow).
 The [docker_service module](https://docs.ansible.com/ansible/docker_service_module.html) of Ansible depends on the docker-compose Python module (on the host where `docker-compose` is being executed), and supports identical syntax. `docker-compose.yml` files can be provided either inline in a task, or as separate files.  
 Other modules exist for [managing Docker images](http://docs.ansible.com/ansible/docker_image_module.html#docker-image), [Kubernetes] (https://docs.ansible.com/ansible/kubernetes_module.html) or [GCE](http://docs.ansible.com/ansible/guide_gce.html) resources.  
 There is also a project that works on [building docker images from Ansible playbooks](https://github.com/ansible/ansible-container) that is trying to solve the issue of [using the Docker cache in the process](https://github.com/ansible/ansible-container/issues/143).
 This approach has essentially the same motive as [this lengthy discussion](https://github.com/docker/docker/issues/735) which proposes adding an `INCLUDE` directive to Dockerfiles, to be able to modularize them and avoid duplication.
 
 # Conclusion
+Agile principles suggest that changeability is a key quality of competitive software. It is well understood that code readability is a [requirement for staying productive](http://www.goodreads.com/quotes/835238-indeed-the-ratio-of-time-spent-reading-versus-writing-is). Even more so as we are gravitating towards [everything-as-code](https://github.com/lreimer/everything-as-code).
 
-There is of course no silver bullet for solving the problem of increasing complexity [as software evolves](https://en.wikipedia.org/wiki/Lehman%27s_laws_of_software_evolution).
+Using declarative formats for automation is [a way](http://wiki.c2.com/?LiberatingConstraint) to achieve this requirement, and Ansible is a great blend between simplicity and general applicability.
 
+Docker and Ansible complement each other well, in the sense that Ansible describes _what_ is being done, and Docker implements _how_ it is being done.  
+In the case of Ansible and Bash, a similar statement could be made. An important property of Ansible roles and playbooks is that they can be refactored quite easily, because they provide much of the context in which they run.  
 
-
--> service oriented -> more emphasiz on integration work
--> ansible vs bash ?
--> agility is not about "making it right the first time", actually its the opposite, it's about change
+But of course, there is no silver bullet to solve the problem of increasing complexity. When evaluating any software, one should always be mindful about why it is useful, what specific problem it solves for them, and what possible alternatives are.
