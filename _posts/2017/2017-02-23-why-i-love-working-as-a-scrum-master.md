@@ -4,7 +4,7 @@ title: "Why I love working as a Scrum Master"
 date: "2017-02-23 07:00:00"
 image: blog-header/scrum-ann-katrin.jpg
 categories: working-at-epages
-authors: ["Rose, Serena", "Ann-Katrin"]
+authors: ["Rose", "Ann-Katrin"]
 ---
 
 As already discussed in our previous [blog post](https://developer.epages.com/blog/2017/01/31/getting-twice-the-things-done-in-half-the-time.html), the agile process framework [Scrum](https://www.scrum.org/resources/what-is-scrum) is our preferred methodology when it comes to managing the product development at ePages.
@@ -17,7 +17,6 @@ I started my career at an e-commerce agency, here in Hamburg, where I worked for
 In London, I worked for two big retailers, namely [Arcadia](https://www.arcadiagroup.co.uk/) and [Debenhams](http://www.debenhams.com/).
 At the beginning, I was dedicated more towards the operational business, but then moved more and more in the direction of agile project management.
 Although I liked the project management side of my job, my real passion was more working with agile teams and being the one helping them to coordinate their work.
-This is when I got to know the processes of Scrum and I fell in love right away.
 This is when I got to know the processes of Scrum and got certificated as a Scrum Master and ever since worked in that field.
 Back then, some of the teams I worked with were already using Scrum and for the other teams I helped them to introduce the concept to improve their working processes.
 
