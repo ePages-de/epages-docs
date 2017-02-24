@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Team Tools on Rails 2"
+title: "Creating a Sales Analytics App with Ruby on Rails, part 2"
 date: "2017-03-10 07:00:00"
 image: blog-header/hamburg-port-rails.jpg
 categories: tech-stories
