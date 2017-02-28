@@ -1,7 +1,7 @@
 #%RAML 0.8
 displayName: Newsletter campaigns
 get:
-  description: Returns all newsletter campaigns of a shop.
+  description: Returns all newsletter campaigns of a shop. *epages6
   securedBy: [newsletters_read]
   is: [ paged ]
   queryParameters:
@@ -14,7 +14,7 @@ get:
 /{campaignId}/subscribers:
   displayName: Subscribers
   get:
-    description: Returns all subscribers of a newsletter campaign from a shop.
+    description: Returns all subscribers of a newsletter campaign from a shop. *epages6
     securedBy: [newsletters_read]
     is: [ paged ]
     responses:

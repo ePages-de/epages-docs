@@ -1,7 +1,7 @@
 #%RAML 0.8
 displayName: Sales
 get:
-  description: Returns the summary of sales figures for a specified product or for the shop grouped by currencies. The amounts are gross and net amounts. By default the results of the last 30 days are displayed. Open-ended queries are limited to 30 days. The maximum time frame for displaying orders is 1 year.
+  description: Returns the summary of sales figures for a specified product or for the shop grouped by currencies. The amounts are gross and net amounts. By default the results of the last 30 days are displayed. Open-ended queries are limited to 30 days. The maximum time frame for displaying orders is 1 year. *epages6 *epagesNow
   securedBy: [orders_read]
   queryParameters:
     createdBefore:

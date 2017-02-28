@@ -127,6 +127,7 @@ After a successful request, we receive a JSON-encoded response and return the ex
             CURLOPT_URL => $url,
             CURLOPT_POST => 1,
             CURLOPT_HEADER => "Content-Type: application/x-www-form-urlencoded",
+            CURLOPT_USERAGENT => "my-awesome-uniquely-identifiable-client/1.0",
             CURLOPT_POSTFIELDS => $post_content,
             CURLOPT_RETURNTRANSFER => TRUE
         );

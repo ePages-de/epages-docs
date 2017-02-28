@@ -11,15 +11,18 @@ layout: page
 <pre>{{ page.raml_method.method }} {{ page.raml_resource.relative_uri }}</pre>
 
 {% if page.raml_method.description != null %}
-  <p>{{ page.raml_method.description | markdownify }}</p>
+  <p>{{ page.raml_method.description | delete_epages_version | markdownify }}</p>
 {% endif %}
 
-<strong>Authorisation</strong>
-  <p>OAuth 2.0 Token required with scopes: </p>
-  {% assign authorization = page.raml_method.secured_by | shift: 2 %}
+
+{% assign authorization = page.raml_method.secured_by | shift: 2 %}
+{% if authorization. != empty %}
+  <strong>Authorisation</strong>
+    <p>OAuth 2.0 Token required with scopes: </p>
   {% for scope in authorization %}
-    <input type="checkbox" value="{{ scope }}" checked onclick="return false" style="margin-left: 15px"> {{ scope }}<br>
+      <input type="checkbox" value="{{ scope }}" checked onclick="return false" style="margin-left: 15px"> {{ scope }}<br>
   {% endfor %}
+{% endif %}
 
 {% if page.raml_resource.uri_parameters. != empty %}
   <h2 id="uri-parameters">URI parameters</h2>

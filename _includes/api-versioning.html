@@ -1,5 +1,10 @@
 <script>
-  var apiVersion = document.location.pathname.split("/")[2];
+  var apiVersion = document.location.pathname.split("/");
+  if (apiVersion.length > 2) {
+    apiVersion = apiVersion[2];
+  } else {
+    apiVersion = apiVersion[1];
+  }
   if (document.location.pathname.match(/.*apps.*/) != null) {
     apiVersionDefaultValue(apiVersion);
     apiAnchorsLinkToVersion(apiVersion);

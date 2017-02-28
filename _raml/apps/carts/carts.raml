@@ -1,7 +1,7 @@
 #%RAML 0.8
 displayName: Carts
 post:
-  description: Creates a cart for a shop.
+  description: Creates a cart for a shop. *epages6 *epagesNow
   body:
     application/json:
       example: !include examples/post_carts_request.json
@@ -16,7 +16,7 @@ post:
 /{cartId}:
   displayName: Cart
   get:
-    description: Returns a specific cart from a shop identified by the provided cart Id.
+    description: Returns a specific cart from a shop identified by the provided cart Id. *epages6 *epagesNow
     responses:
       200:
         body:
@@ -27,7 +27,7 @@ post:
   /coupon:
     displayName: Coupon
     post:
-      description: Applies a coupon code on a cart which results in creating a couponLineItem and a link to remove the coupon.
+      description: Applies a coupon code on a cart which results in creating a couponLineItem and a link to remove the coupon. *epages6
       body:
         application/x-www-form-urlencoded:
           formParameters:
@@ -45,7 +45,7 @@ post:
     /{couponLineItemId}:
       displayName: Coupon line item
       delete:
-        description: Deletes a coupon line item from a specific cart and recalculates cart. The link to add a coupon appears in the links section.
+        description: Deletes a coupon line item from a specific cart and recalculates cart. The link to add a coupon appears in the links section. *epages6
         responses:
           200:
             body:
@@ -56,7 +56,7 @@ post:
   /order:
     displayName: Order
     post:
-      description: Creates an order that is valid at the time of cart creation. It won't be validated again while processing the actual request. Billing address has to be available in the cart before creating an order. The request body for this REST call remains empty.
+      description: Creates an order that is valid at the time of cart creation. It won't be validated again while processing the actual request. Billing address has to be available in the cart before creating an order. The request body for this REST call remains empty. *epages6 *epagesNow
       securedBy: [orders_write]
       responses:
         201:
@@ -68,7 +68,7 @@ post:
   /line-items:
     displayName: Line items
     post:
-      description: Creates a product line item in a cart.
+      description: Creates a product line item in a cart. *epages6 *epagesNow
       body:
         application/json:
           example: !include examples/post_carts_cartid_lineitem_request.json
@@ -83,7 +83,7 @@ post:
     /{lineItemId}:
       displayName: Line item
       put:
-        description: Modifies a specific product line item in a cart.
+        description: Modifies a specific product line item in a cart. *epages6 *epagesNow
         body:
           application/json:
             example: !include examples/put_carts_cartid_lineitem_itemid_request.json
@@ -95,7 +95,7 @@ post:
                 example: !include examples/put_carts_cartid_lineitem_itemid_response.json
                 schema: !include schema/put_carts_cartid_lineitem_itemid.schema.json
       delete:
-        description: Deletes a specific product line item from a cart.
+        description: Deletes a specific product line item from a cart. *epages6 *epagesNow
         responses:
           200:
             body:
@@ -106,7 +106,7 @@ post:
   /billing-address:
     displayName: Billing address
     put:
-      description: Modifies the billing address for a cart.
+      description: Modifies the billing address for a cart. *epages6 *epagesNow
       body:
         application/json:
           example: !include examples/put_carts_cartid_billing_request.json
@@ -118,7 +118,7 @@ post:
               example: !include examples/put_carts_cartid_billing_response.json
               schema: !include schema/put_carts_cartid_billing.schema.json
     delete:
-      description: Deletes the billing address from a cart.
+      description: Deletes the billing address from a cart. *epages6 *epagesNow
       responses:
         200:
           body:
@@ -129,7 +129,7 @@ post:
   /shipping-address:
     displayName: Shipping address
     put:
-      description: Modifies the shipping address for a cart.
+      description: Modifies the shipping address for a cart. *epages6 *epagesNow
       body:
         application/json:
           example: !include examples/put_carts_cartid_shipping_request.json
@@ -141,7 +141,7 @@ post:
               example: !include examples/put_carts_cartid_shipping_response.json
               schema: !include schema/put_carts_cartid_shipping.schema.json
     delete:
-      description: Deletes the shipping address from a cart.
+      description: Deletes the shipping address from a cart. *epages6 *epagesNow
       responses:
         200:
           body:
