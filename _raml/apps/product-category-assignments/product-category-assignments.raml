@@ -1,7 +1,7 @@
 #%RAML 0.8
 displayName: Product and category assignment
 post:
-  description: Assigns categories to products and products to categories.
+  description: Assigns categories to products and products to categories. *epages6 *epagesNow
   securedBy: [products_write]
   body:
     application/x-www-form-urlencoded:
@@ -18,7 +18,7 @@ post:
     204:
 
 delete:
-  description: Deletes one or more products from a category.
+  description: Deletes one or more products from a category. *epages6
   securedBy: [products_write]
   queryParameters:
     categoryId:

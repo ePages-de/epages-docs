@@ -1,7 +1,7 @@
 #%RAML 0.8
 displayName: Customers
 get:
-  description: Returns a list of all customers.
+  description: Returns a list of all customers. *epages6 *epagesNow
   securedBy: [customers_read]
   is: [ paged ]
   queryParameters:
@@ -12,7 +12,7 @@ get:
           example: !include examples/get_customer_response.json
           schema: !include schema/get_customer.schema.json
 post:
-  description: Creates a customer. If *customerNumber* is not provided in the request, it will be generated automatically.
+  description: Creates a customer. If *customerNumber* is not provided in the request, it will be generated automatically. *epages6 *epagesNow
   securedBy: [customers_write]
   body:
     application/json:
@@ -27,7 +27,7 @@ post:
 /{customerId}:
   displayName: Customer
   get:
-    description: Returns a specified customer of a shop.
+    description: Returns a specified customer of a shop. *epages6 *epagesNow
     securedBy: [customers_read]
     responses:
       200:
@@ -36,7 +36,7 @@ post:
             example: !include examples/get_customer_customerid_response.json
             schema: !include schema/get_customer_customerid.schema.json
   patch:
-    description: Updates information for a single customer with partial data according to [RFC 6902](https://tools.ietf.org/html/rfc6902). You can either add or remove certain attributes.<br><br>
+    description: Updates information for a single customer with partial data according to [RFC 6902](https://tools.ietf.org/html/rfc6902). You can either add or remove certain attributes. *epages6 *epagesNow <br><br>
 
         *Supported JSON-PATCH operations*<br>
         - add (sets or replaces an attribute)<br>

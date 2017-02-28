@@ -3,7 +3,7 @@ displayName: Categories
 get:
   description: |
       Returns the product categories of the shop. This usually is the default root category "Categories",
-      but can also include additional root categories, if supported by the shop.
+      but can also include additional root categories, if supported by the shop. *epages6 *epagesNow
   securedBy: [products_read]
   is: [ locale ]
   queryParameters:
@@ -24,7 +24,7 @@ get:
 /{categoryId}:
   displayName: Category
   get:
-    description: Returns the category identified by the provided category ID.
+    description: Returns the category identified by the provided category ID. *epages6 *epagesNow
     securedBy: [products_read]
     is: [ locale ]
     queryParameters:
@@ -39,7 +39,7 @@ get:
             example: !include examples/get_category_categoryid_response.json
             schema: !include schema/get_category_categoryid.schema.json
   post:
-    description: Creates a subcategory to an existing category. Providing attributes in the request is optional.
+    description: Creates a subcategory to an existing category. Providing attributes in the request is optional. *epages6 *epagesNow
     securedBy: [products_write]
     is: [ locale ]
     body:
@@ -53,7 +53,7 @@ get:
             example: !include examples/post_category_categoryid_response.json
             schema: !include schema/post_category_categoryid.schema.json
   put:
-    description: Modifies a category identified by the provided category ID.
+    description: Modifies a category identified by the provided category ID. *epages6 *epagesNow
     securedBy: [products_write]
     is: [ locale ]
     body:
@@ -67,7 +67,7 @@ get:
             example: !include examples/put_category_categoryid_response.json
             schema: !include schema/put_category_categoryid.schema.json
   delete:
-    description: Deletes a category identified by the provided category ID.
+    description: Deletes a category identified by the provided category ID. *epages6
     securedBy: [products_write]
     responses:
       204:
@@ -75,7 +75,7 @@ get:
   /sequence:
     displayName: Category sequence
     get:
-      description: Returns the order of subcategories for the provided category ID as an array. If the category has no subcategories, an empty array will be returned.
+      description: Returns the order of subcategories for the provided category ID as an array. If the category has no subcategories, an empty array will be returned. *epages6 *epagesNow
       securedBy: [products_write]
       responses:
         200:
@@ -84,7 +84,7 @@ get:
               example: !include examples/get_category_categoryid_sequence_response.json
               schema: !include schema/get_category_categoryid_sequence.schema.json
     put:
-      description: Updates the order of subcategories for the provided category ID. Note that it is only possible to change the order but not to delete a subcategory.
+      description: Updates the order of subcategories for the provided category ID. Note that it is only possible to change the order but not to delete a subcategory. *epages6 *epagesNow
       securedBy: [products_write]
       body:
         application/json:
