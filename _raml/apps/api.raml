@@ -35,7 +35,7 @@ traits: !include traits.raml
       description: The unique identifier of the shop.
       example: DemoShop
   get:
-    description: Returns the public information of a shop, like name, slogan and logo.
+    description: Returns the public information of a shop, like name, slogan and logo. *epages6 *epagesNow
     securedBy: [products_read]
     is: [locale]
     responses:
