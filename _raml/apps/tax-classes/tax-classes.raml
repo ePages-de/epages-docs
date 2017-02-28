@@ -1,7 +1,7 @@
 #%RAML 0.8
 displayName: Tax classes
 get:
-  description: Returns all tax classes of a shop.
+  description: Returns all tax classes of a shop. *epages6 *epagesNow
   securedBy: [products_read]
   is: [ locale, paged ]
   responses:
@@ -14,7 +14,7 @@ get:
 /{taxClassId}:
   displayName: Tax class
   get:
-    description: Returns a specific tax class of a shop identified by the provided tax class Id.
+    description: Returns a specific tax class of a shop identified by the provided tax class Id. *epages6 *epagesNow
     securedBy: [products_read]
     is: [ locale ]
     responses:

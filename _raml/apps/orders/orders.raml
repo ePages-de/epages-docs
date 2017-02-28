@@ -1,7 +1,7 @@
 #%RAML 0.8
 displayName: Orders
 get:
-  description: Returns a list of orders. By default the results for orders are sorted by creationDate.
+  description: Returns a list of orders. By default the results for orders are sorted by creationDate. *epages6 *epagesNow
   securedBy: [orders_read]
   is: [ locale, paged ]
   queryParameters:
@@ -82,7 +82,7 @@ get:
 /{orderId}:
   displayName: Order
   get:
-    description: Returns information for a single order identified by the provided order ID.
+    description: Returns information for a single order identified by the provided order ID. *epages6 *epagesNow
     securedBy: [orders_read]
     is: [ locale ]
     responses:
@@ -92,7 +92,7 @@ get:
             example: !include examples/get_order_orderid_response.json
             schema: !include schema/get_order_orderid.schema.json
   patch:
-    description: Updates information for a single order with partial data according to [RFC 6902](https://tools.ietf.org/html/rfc6902). You can either add or remove certain attributes. Note that an order cannot be updated once it is in edit mode. In that case, response code 409 will appear.<br><br>
+    description: Updates information for a single order with partial data according to [RFC 6902](https://tools.ietf.org/html/rfc6902). You can either add or remove certain attributes. Note that an order cannot be updated once it is in edit mode. In that case, response code 409 will appear. *epages6 *epagesNow <br><br>
 
         *Supported JSON-PATCH operations*<br>
         - add (sets or replaces an attribute)<br>
