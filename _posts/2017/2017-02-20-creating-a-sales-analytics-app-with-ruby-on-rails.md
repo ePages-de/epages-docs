@@ -70,12 +70,18 @@ All these parts are bound to two dates (start date and end date) so the merchant
 The main purpose of the Dashboard was to have all the basic information about a shop at a glance.
 So we decided to include a graph of sales, the amount of sales and orders, as well as the top products, and last orders.
 
+{% imagebasic blog/blog-sales-app-sales.png %} image {% endimagebasic %}
+
 Then we included three charts on the Sales section.
 The first is the same as in the Dashboard, the second one represents the orders on the selected time frame and the last is the revenue per order, the calculation between the first two graphs.
 We also added the option to export the data to an `xlsx` file so the merchant doesn't need an internet connection to review the sales.
 
+{% imagebasic blog/blog-sales-app-customers.png %} image {% endimagebasic %}
+
 The Customers section is a simple table including all the merchant customers ordered via number of orders or the total amount spent.
 Above the table we can see all the customers for the timeframe and if we had any returning ones.
+
+{% imagebasic blog/blog-sales-app-products.png %} image {% endimagebasic %}
 
 The last part are the Products.
 In this view, we have the products ordered via revenue or amount of units sold.
