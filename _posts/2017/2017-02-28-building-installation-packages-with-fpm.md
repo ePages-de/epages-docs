@@ -75,7 +75,7 @@ fpm -s dir -t deb -n myapp -v 0.0.1 -C /build/myapp/
 ```
 
 With FPM you can build many more options and types of packages.
-Visit the [GitHub project](https:/github.com/jordansissel/fpm/wiki).
+Visit the [GitHub project](https://github.com/jordansissel/fpm/wiki).
 
 ### Why we use FPM
 
