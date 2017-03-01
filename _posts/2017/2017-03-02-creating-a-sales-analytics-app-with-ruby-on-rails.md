@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "Creating a Sales Analytics App with Ruby on Rails"
-date: "2017-02-20 07:00:00"
+date: "2017-03-02 07:00:00"
 image: blog-header/hamburg-port-rails.jpg
 categories: tech-stories
 authors: ["Unai M."]
 ---
 
-One of the languages that we use the most on the ePages Tools Team is [Ruby](https://www.ruby-lang.org).
+One of the languages that we use the most in my team is [Ruby](https://www.ruby-lang.org).
 We love the syntax, the simplicity and the big and active community around it.
 Some time ago, [we wrote about our SDK](https://developer.epages.com/blog/2016/02/02/on-the-way-to-a-ruby-sdk.html) for the ePages shops and lots of things have changed since then.
 We've kept developing it to support more operations, such as data pagination and also to keep up with the releases of our colleagues from the [API development team](https://developer.epages.com/apps).
@@ -50,7 +50,7 @@ so you have more control on the call and it gets easier to do batch operations.
 We also fixed some bugs and updated some dependencies.
 
 Testing things in the console was fun, but we needed a real life scenario to check that the gem was working correctly and to find missing features.
-Lucky for us, our Product Owner came up with task perfect for this situation.
+Lucky for us, our Product Owner came up with task perfect for this.
 We needed to create a Sales Analytics App for the ePages [App Store](https://blog.epages.com/us/2016/05/14/the-epages-app-store-everything-for-your-e-commerce-success/).
 
 ## The new app in Rails
@@ -65,34 +65,34 @@ For simplicity we mimicked more or less the API models and added a bit of Rails 
 After that, we created all the sections of the app: Dashboard, Sales, Products, and Customers.
 All these parts are bound to two dates (start date and end date) so the merchant can get even more useful data faster.
 
-{% imagebasic blog/blog-sales-app-dashboard.png %} image {% endimagebasic %}
+{% imagebasic blog/blog-sales-app-dashboard.png Dashboard_of_Sales_Analytics_App %} image {% endimagebasic %}
 
 The main purpose of the Dashboard was to have all the basic information about a shop at a glance.
 So we decided to include a graph of sales, the amount of sales and orders, as well as the top products, and last orders.
 
-{% imagebasic blog/blog-sales-app-sales.png %} image {% endimagebasic %}
+{% imagebasic blog/blog-sales-app-sales.png Sales_view %} image {% endimagebasic %}
 
 Then we included three charts on the Sales section.
 The first is the same as in the Dashboard, the second one represents the orders on the selected time frame and the last is the revenue per order, the calculation between the first two graphs.
 We also added the option to export the data to an `xlsx` file so the merchant doesn't need an internet connection to review the sales.
 
-{% imagebasic blog/blog-sales-app-customers.png %} image {% endimagebasic %}
+{% imagebasic blog/blog-sales-app-customers.png Customers_view %} image {% endimagebasic %}
 
-The Customers section is a simple table including all the merchant customers ordered via number of orders or the total amount spent.
-Above the table we can see all the customers for the timeframe and if we had any returning ones.
+The Customers section is a simple table including all the merchant's customers ordered by number of orders or the total amount spent.
+Above the table we can see all the customers for the specified time frame and and the number of returning customers.
 
-{% imagebasic blog/blog-sales-app-products.png %} image {% endimagebasic %}
+{% imagebasic blog/blog-sales-app-products.png Products_view %} image {% endimagebasic %}
 
 The last part are the Products.
-In this view, we have the products ordered via revenue or amount of units sold.
+In this view, we have the products ordered by revenue or amount of units sold.
 Here we implemented the functionality of having more insights on the product.
-When clicking on one, you can see the extra data or cross selling products, this is, what other items have shared orders with.
-This allows the merchant to maybe realize on connections (or disconnections) between products in an easy and fast way.
+By clicking on a product, the product details appear with additional information such as cross-selling products, i.e. what other items have shared orders with.
+This allows the merchant to maybe realize on connections (or disconnections) between products in a quick and easy way.
 
-Both, the Customers and Products section, have the option to download the data on a `csv`.
-Other basic functionalities like changing you email address or password and 'Forgot my password' are also included in the app.
+Both, the Customers and Products section, have the option to download the data on a `csv` file.
+Other basic functionalities like changing the email address or password as well as a 'Forgot my password' option are also included in the app.
 
-## Some decisions we made
+## Some decisions on technologies
 
 In every project you have to make some decisions on what tech you use.
 We decided to use [Rails](http://rubyonrails.org/) - in part because we love it, but also to use our [own developed library](https://github.com/ePages-de/epages-rest-ruby).
@@ -102,8 +102,8 @@ I love learning new stuff, libraries, languages, paradigms, you name it; and I a
 
 [Devise](https://github.com/plataformatec/devise) was our option for user management.
 This gem is easy and simple, so it was perfect to deliver fast (even though in the end everything became more complicated).
-For this simplicity reason we choose [Slim](http://slim-lang.com/), [Sass](http://sass-lang.com/) and [CoffeeScript](http://coffeescript.org/).
+For this simplicity reason we chose [Slim](http://slim-lang.com/), [Sass](http://sass-lang.com/) and [CoffeeScript](http://coffeescript.org/).
 
 Join us on our next blog post, where we will talk about the issues we encountered during the development and how everything was about get more complex than we expected.
 
-Thanks for reading and keep coding! :)
+Thanks for reading and keep coding! {% emoji blush %}

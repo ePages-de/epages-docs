@@ -40,14 +40,16 @@ module Jekyll
   class ImageBlock3 < Liquid::Block
     def initialize(tag_name, data, tokens)
       super
-      @url = data.strip
+      params = data.split(" ")
+      @url, @caption = params
     end
 
     def render(context)
+      @caption.gsub!(/_/, ' ')
       url = unless @url =~ /^https?:\/\// then context.registers[:site].baseurl + '/assets/images/' + @url else @url end
 
-      image_html = "<img src=\"#{url}\" style=\"height: 100% !important; width: 100% !important; max-width: inherit;\" alt=\"Image could not be loaded\"/>"
-      "<a class=\"imagebox center\" href=\"#{url}\" data-lightbox=\"imagebox\">#{image_html}</a>"
+      image_html = "<img src=\"#{url}\" style=\"height: 100% !important; width: 100% !important; max-width: inherit;\" alt=\"#{@caption}\"/>"
+      "<a class=\"imagebox center\" href=\"#{url}\" data-lightbox=\"imagebox\">#{image_html} <label>#{@caption}</label></a>"
     end
   end
 end
