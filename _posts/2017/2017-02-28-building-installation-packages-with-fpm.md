@@ -77,7 +77,7 @@ fpm -s dir -t deb -n myapp -v 0.0.1 -C /build/myapp/
 With FPM you can build many more options and types of packages.
 Visit the [GitHub project](https://github.com/jordansissel/fpm/wiki).
 
-### Why we use FPM
+## Why we use FPM
 
 We decided to use FPM because it is the best way to create different types of packages on one system.
 In the past, the creation of rpm and deb packages was very painful.
