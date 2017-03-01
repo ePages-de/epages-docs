@@ -2,7 +2,7 @@
 layout: post
 title: "Creating a Sales Analytics App with Ruby on Rails, part 2"
 date: "2017-03-10 07:00:00"
-image: blog-header/hamburg-port-rails.jpg
+image: blog-header/rails-train-path-straight.jpg
 categories: tech-stories
 authors: ["Unai M."]
 ---
