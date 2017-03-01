@@ -50,7 +50,7 @@ so you have more control on the call and it gets easier to do batch operations.
 We also fixed some bugs and updated some dependencies.
 
 Testing things in the console was fun, but we needed a real life scenario to check that the gem was working correctly and to find missing features.
-Lucky for us, our Product Owner came up with task perfect for this.
+Lucky for us, our Product Owner came up with a perfect task for this.
 We needed to create a Sales Analytics App for the ePages [App Store](https://blog.epages.com/us/2016/05/14/the-epages-app-store-everything-for-your-e-commerce-success/).
 
 ## The new app in Rails

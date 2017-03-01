@@ -49,7 +49,7 @@ module Jekyll
       url = unless @url =~ /^https?:\/\// then context.registers[:site].baseurl + '/assets/images/' + @url else @url end
 
       image_html = "<img src=\"#{url}\" style=\"height: 100% !important; width: 100% !important; max-width: inherit;\" alt=\"#{@caption}\"/>"
-      "<a class=\"imagebox center\" href=\"#{url}\" data-lightbox=\"imagebox\">#{image_html} <label>#{@caption}</label></a>"
+      "<a class=\"imagebox center column-image\" href=\"#{url}\" data-lightbox=\"imagebox\">#{image_html} <label>#{@caption}</label></a>"
     end
   end
 end
