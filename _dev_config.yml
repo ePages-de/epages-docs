@@ -36,6 +36,7 @@ exclude:
   - Rakefile
   - README.md
   - vendor
-  - apps/v-6.17.
+  - apps/v-6.
+  - apps/v-7.
 include:
   - videos
