@@ -2,7 +2,6 @@
 layout: post
 title: "Local meetup for i-doit users at ePages"
 date: "2017-03-07 07:00:00"
-image: blog-header/i-doit.jpg
 categories: events
 authors: ["Karsten P."]
 ---
@@ -14,6 +13,8 @@ ePages is using this tool for more than two years now.
 The main part of the event was organized by [Synetics GmbH](https://www.i-doit.com/en/company/) from Duesseldorf, Germany.
 They also invited a representative from their partner [procilon](https://www.procilon.de/).
 The other attendees came from the [University of Jena](https://www.uni-jena.de/), as well as from Erfurt, Leipzig, Dresden, and even Munich.
+
+{% image blog/blog-i-doit.jpg %}
 
 The event started with an interesting presentation at [Carl Zeiss AG](https://www.zeiss.de).
 Such a fringe event is meanwhile kind of a tradition for i-doit meetups.
