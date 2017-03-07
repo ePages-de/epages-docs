@@ -528,6 +528,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | Attribute | Type | Description |
 | - | :-: |  - |
 | name | string | The name of the shop. |
+| email | string | The email address of the merchant. |
 | slogan | string | The slogan of the shop.|
 | logoUrl | string | The URL to the logo of the shop.|
 | sfUrl | string | The URL to the storefront of the shop. |
