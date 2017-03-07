@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "Put Categories CategoryId Request Schema",
+  "type": "object",
+  "properties": {
+    "": {
+      "type": "object of [category (update request)](page:apps-data-types#category-update-request)",
+      "description": ""
+    }
+  }
+}

@@ -1,0 +1,150 @@
+#%RAML 0.8
+displayName: Carts
+post:
+  description: Creates a cart for a shop. *epages6 *epagesNow
+  body:
+    application/json:
+      example: !include examples/post_carts_request.json
+      schema: !include schema/post_carts_request.schema.json
+  responses:
+    201:
+      body:
+        application/json:
+          example: !include examples/post_carts_response.json
+          schema: !include schema/post_carts.schema.json
+
+/{cartId}:
+  displayName: Cart
+  get:
+    description: Returns a specific cart from a shop identified by the provided cart Id. *epages6 *epagesNow
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include examples/get_carts_cartid_response.json
+            schema: !include schema/get_carts_cartid.schema.json
+
+  /coupon:
+    displayName: Coupon
+    post:
+      description: Applies a coupon code on a cart which results in creating a couponLineItem and a link to remove the coupon. *epages6
+      body:
+        application/x-www-form-urlencoded:
+          formParameters:
+            code:
+              description: The coupon code, e.g. PJFNYX8WZU97.
+              required: true
+              type: string
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/post_carts_cartid_coupon_response.json
+              schema: !include schema/post_carts_cartid_coupon.schema.json
+
+    /{couponLineItemId}:
+      displayName: Coupon line item
+      delete:
+        description: Deletes a coupon line item from a specific cart and recalculates cart. The link to add a coupon appears in the links section. *epages6
+        responses:
+          200:
+            body:
+              application/json:
+                example: !include examples/delete_carts_cartid_coupon_couponlineitemid_response.json
+                schema: !include schema/delete_carts_cartid_coupon_couponlineitemid.schema.json
+
+  /order:
+    displayName: Order
+    post:
+      description: Creates an order that is valid at the time of cart creation. It won't be validated again while processing the actual request. Billing address has to be available in the cart before creating an order. The request body for this REST call remains empty. *epages6 *epagesNow
+      securedBy: [orders_write]
+      responses:
+        201:
+          body:
+            application/json:
+              example: !include examples/post_carts_cartid_order_response.json
+              schema: !include schema/post_carts_cartid_order.schema.json
+
+  /line-items:
+    displayName: Line items
+    post:
+      description: Creates a product line item in a cart. *epages6 *epagesNow
+      body:
+        application/json:
+          example: !include examples/post_carts_cartid_lineitem_request.json
+          schema: !include schema/post_carts_cartid_lineitem_request.schema.json
+      responses:
+        201:
+          body:
+            application/json:
+              example: !include examples/post_carts_cartid_lineitem_response.json
+              schema: !include schema/post_carts_cartid_lineitem.schema.json
+
+    /{lineItemId}:
+      displayName: Line item
+      put:
+        description: Modifies a specific product line item in a cart. *epages6 *epagesNow
+        body:
+          application/json:
+            example: !include examples/put_carts_cartid_lineitem_itemid_request.json
+            schema: !include schema/put_carts_cartid_lineitem_itemid_request.schema.json
+        responses:
+          200:
+            body:
+              application/json:
+                example: !include examples/put_carts_cartid_lineitem_itemid_response.json
+                schema: !include schema/put_carts_cartid_lineitem_itemid.schema.json
+      delete:
+        description: Deletes a specific product line item from a cart. *epages6 *epagesNow
+        responses:
+          200:
+            body:
+              application/json:
+                example: !include examples/delete_carts_cartid_lineitem_itemid_response.json
+                schema: !include schema/delete_carts_cartid_lineitem_itemid.schema.json
+
+  /billing-address:
+    displayName: Billing address
+    put:
+      description: Modifies the billing address for a cart. *epages6 *epagesNow
+      body:
+        application/json:
+          example: !include examples/put_carts_cartid_billing_request.json
+          schema: !include schema/put_carts_cartid_billing_request.schema.json
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/put_carts_cartid_billing_response.json
+              schema: !include schema/put_carts_cartid_billing.schema.json
+    delete:
+      description: Deletes the billing address from a cart. *epages6 *epagesNow
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/delete_carts_cartid_billing_response.json
+              schema: !include schema/delete_carts_cartid_billing.schema.json
+
+  /shipping-address:
+    displayName: Shipping address
+    put:
+      description: Modifies the shipping address for a cart. *epages6 *epagesNow
+      body:
+        application/json:
+          example: !include examples/put_carts_cartid_shipping_request.json
+          schema: !include schema/put_carts_cartid_shipping_request.schema.json
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/put_carts_cartid_shipping_response.json
+              schema: !include schema/put_carts_cartid_shipping.schema.json
+    delete:
+      description: Deletes the shipping address from a cart. *epages6 *epagesNow
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/delete_carts_cartid_shipping_response.json
+              schema: !include schema/delete_carts_cartid_shipping.schema.json

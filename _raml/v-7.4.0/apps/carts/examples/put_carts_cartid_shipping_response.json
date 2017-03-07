@@ -1,0 +1,215 @@
+{
+  "cartId": "5858FD17-147C-661C-9C33-D5809AB3C8BA",
+  "billingAddress": null,
+  "shippingAddress": {
+    "company": "Boehm-Jacobs",
+    "salutation": null,
+    "firstName": "Walter",
+    "lastName": "Ankunding",
+    "street": "Barrows Mountain 8",
+    "streetDetails": null,
+    "zipCode": "W11 1ET",
+    "city": "London",
+    "state": null,
+    "country": "GB",
+    "title": null,
+    "vatId": null,
+    "birthday": null,
+    "addressExtension": "1.Floor",
+    "bankAccountHolder": "Walter Ankunding",
+    "bankAccountNumber": "UK2677379838510",
+    "bankName": "Lunaview Bank",
+    "bankSortCode": "XXLUNBB",
+    "businessEmailAddress": "Ankunding@bj.com",
+    "businessPhoneNumber": "0045099906567",
+    "department": null,
+    "displayName": null,
+    "doorCode": null,
+    "faxNumber": "0045099906568",
+    "fiscalCode": null,
+    "gender": "MALE",
+    "jobTitle": "Manager",
+    "middleName": null,
+    "mobilePhoneNumber": "0045099906567",
+    "phoneNumber": "0045099906567",
+    "privateEmailAddress": null,
+    "privatePhoneNumber": null,
+    "websiteUrl": "http://bj.com",
+    "emailAddress": "Ankunding@bj.com"
+  },
+  "lineItemContainer": {
+    "grandTotal": {
+      "taxType": "GROSS",
+      "formatted": "26.35 €",
+      "amount": 26.35,
+      "currency": "EUR"
+    },
+    "totalBeforeTax": {
+      "taxType": "NET",
+      "formatted": "22.14 €",
+      "amount": 22.14,
+      "currency": "EUR"
+    },
+    "totalTax": {
+      "taxType": "NONE",
+      "formatted": "4.21 €",
+      "amount": 4.21,
+      "currency": "EUR"
+    },
+    "lineItemsSubTotal": {
+      "taxType": "GROSS",
+      "formatted": "25.98 €",
+      "amount": 25.98,
+      "currency": "EUR"
+    },
+    "productLineItems": [
+      {
+        "lineItemId": "5858FD17-79EB-9148-E5B3-D5809AB3C842",
+        "sku": "Acc-001",
+        "name": "Connector 6.3 mm",
+        "productId": "54E72E1F-746A-8B6E-8E41-0A0C05E64669",
+        "quantity": {
+          "amount": 2,
+          "unit": "yd³"
+        },
+        "lineItemPrice": {
+          "taxType": "GROSS",
+          "formatted": "25.98 €",
+          "amount": 25.98,
+          "currency": "EUR"
+        },
+        "singleItemPrice": {
+          "taxType": "GROSS",
+          "formatted": "12.99 €",
+          "amount": 12.99,
+          "currency": "EUR"
+        },
+        "images": [
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/acc6_h.jpg",
+            "classifier": "HotDeal"
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/acc6.jpg",
+            "classifier": "Large"
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/acc6_m.jpg",
+            "classifier": "Medium"
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/acc6_s.jpg",
+            "classifier": "Small"
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/acc6_xs.jpg",
+            "classifier": "Thumbnail"
+          }
+        ],
+        "links": [
+          {
+            "rel": "product",
+            "href": "https://pm.epages.com/rs/shops/apidocu/products/54E72E1F-746A-8B6E-8E41-0A0C05E64669"
+          },
+          {
+            "rel": "taxClass",
+            "href": "https://pm.epages.com/rs/shops/apidocu/tax-classes/5446685F-A8AF-0E18-9B4F-D5809AB30FBF"
+          }
+        ],
+        "variationString": null,
+        "essentialFeatures": null,
+        "taxClass": {
+          "taxClassId": "5446685F-A8AF-0E18-9B4F-D5809AB30FBF",
+          "name": "standard",
+          "percentage": 19.0
+        },
+        "deliveryWeight": {
+          "amount": 100,
+          "unit": "oz"
+        }
+      }
+    ],
+    "couponLineItem": null,
+    "shippingPrice": {
+      "taxType": "GROSS",
+      "formatted": "10.37 €",
+      "amount": 10.37,
+      "currency": "EUR"
+    },
+    "deposits": [],
+    "ecoParticipations": [],
+    "shippingOptions": [],
+    "basketDiscount": {
+      "name": "cart discount",
+      "lineItemPrice": {
+        "taxType": "GROSS",
+        "formatted": "-10.00 €",
+        "amount": -10,
+        "currency": "EUR"
+      },
+      "links": []
+    }
+  },
+  "shippingData": {
+    "shippingMethod": {
+      "id": "5171DD86-C077-0726-C448-AC14145F9026",
+      "name": "Standard delivery"
+    },
+    "price": {
+      "taxType": "GROSS",
+      "formatted": "10.37 €",
+      "amount": 10.37,
+      "currency": "EUR"
+    },
+    "taxes": [
+      {
+        "taxClass": {
+          "taxClassId": "5446685F-A8AF-0E18-9B4F-D5809AB30FBF",
+          "name": "standard",
+          "percentage": 19.0
+        },
+        "price": {
+          "taxType": "NONE",
+          "formatted": "1.66 €",
+          "amount": 1.66,
+          "currency": "EUR"
+        }
+      }
+    ]
+  },
+  "paymentData": {
+    "paymentMethod": {
+      "id": "5171DD89-6DE5-E758-E046-AC14145F9009",
+      "name": "PayPal"
+    },
+    "price": {
+      "taxType": "GROSS",
+      "formatted": "0.00 €",
+      "amount": 0,
+      "currency": "EUR"
+    },
+    "status": null,
+    "taxes": null
+  },
+  "minimumCart": {
+    "status": true,
+    "code": "SumDiscount",
+    "amount": null
+  },
+  "pickupToken": "NTI3MDE0NTYyNDI2NzM4NWVjMzAzZjk2N2VjOWU2OTIyMjk4ZjU1NDE5NDUxYmMzNGJjZjE1MzIyMWUzNjg1Ml8xNDgyMjI3NDc1",
+  "checkoutUrl": "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/2/Baskets/46072&ChangeAction=PickupBasket&PickupToken=NTI3MDE0NTYyNDI2NzM4NWVjMzAzZjk2N2VjOWU2OTIyMjk4ZjU1NDE5NDUxYmMzNGJjZjE1MzIyMWUzNjg1Ml8xNDgyMjI3NDc1",
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://pm.epages.com/rs/shops/apidocu/carts/5858FD17-147C-661C-9C33-D5809AB3C8BA"
+    },
+    {
+      "rel": "shipping-method",
+      "href": "https://pm.epages.com/rs/shops/apidocu/shipping-methods/5171DD86-C077-0726-C448-AC14145F9026"
+    },
+    {
+      "rel": "add-coupon",
+      "href": "https://pm.epages.com/rs/shops/apidocu/carts/5858FD17-147C-661C-9C33-D5809AB3C8BA/coupon"
+    }
+  ]
+}
