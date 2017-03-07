@@ -1,0 +1,13 @@
+{
+  "scriptTagId": "22EB0A2A-A143-4BCA-BB75-57E3E49B08A3",
+  "scriptUrl": "https://www.checkoutmonkey.de/scripts/tracker.js",
+  "scriptType": "NORMAL",
+  "createdOn": "2016-12-13T12:32:35.616Z",
+  "updatedOn": "2016-12-13T12:32:35.616Z",
+  "links": [
+    {
+      "rel": "self",
+      "href": "http://restapi-test.intern.epages.de/rs/shops/DemoShop/script-tags/22EB0A2A-A143-4BCA-BB75-57E3E49B08A3"
+    }
+  ]
+}

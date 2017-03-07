@@ -1,0 +1,43 @@
+{
+  "items": [
+    {
+      "scriptTagId": "7A6569EA-46DA-46A5-BC1D-4333310987F3",
+      "scriptUrl": "https://www.salemole.co.uk/snippets/checkout.js",
+      "scriptType": "NORMAL",
+      "createdOn": "2016-12-09T15:04:58Z",
+      "updatedOn": "2016-12-09T15:04:58Z",
+      "links": [
+        {
+          "rel": "self",
+          "href": "http://restapi-test.intern.epages.de/rs/shops/DemoShop/script-tags/7A6569EA-46DA-46A5-BC1D-4333310987F3"
+        }
+      ]
+    },
+    {
+      "scriptTagId": "A12F9A4F-729B-4F68-99F8-8C1192A2FE96",
+      "scriptUrl": "https://statisticamel.io/statistics.js",
+      "scriptType": "NORMAL",
+      "createdOn": "2016-12-09T13:26:03Z",
+      "updatedOn": "2016-12-09T13:26:03Z",
+      "links": [
+        {
+          "rel": "self",
+          "href": "http://restapi-test.intern.epages.de/rs/shops/DemoShop/script-tags/A12F9A4F-729B-4F68-99F8-8C1192A2FE96"
+        }
+      ]
+    },
+    {
+      "scriptTagId": "EEADFDC8-063A-4A09-BB18-73A2FB9E9956",
+      "scriptUrl": "https://ubernews.com/app/newsletter.js",
+      "scriptType": "NEWSLETTER",
+      "createdOn": "2016-12-09T15:03:17Z",
+      "updatedOn": "2016-12-09T15:03:17Z",
+      "links": [
+        {
+          "rel": "self",
+          "href": "http://restapi-test.intern.epages.de/rs/shops/DemoShop/script-tags/EEADFDC8-063A-4A09-BB18-73A2FB9E9956"
+        }
+      ]
+    }
+  ]
+}

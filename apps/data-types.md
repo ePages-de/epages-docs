@@ -499,6 +499,23 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | createdBefore | string | The date and time of orders created before this timestamp (format according to ISO 8601). |
 | salesPerCurrency | array of [sales](page:apps-data-types#sales)| The sales summary grouped by currency. |
 
+## scriptTag
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| scriptTagId | xx | xx. |
+| scriptUrl | xx | xx. |
+| scriptType | xx | xx. |
+| createdOn | xx | xx. |
+| updatedOn | xx | xx. |
+| links | xx | xx. |
+
+## scriptTag (create request)
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| scriptUrl | xx | xx. |
+
 ## shippingData
 
 | Attribute | Type | Description |

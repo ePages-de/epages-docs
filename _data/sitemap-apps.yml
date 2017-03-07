@@ -103,6 +103,9 @@
     - title: Sales
       link: page:api-resources-sales
 
+    - title: Script tags
+      link: page:api-resources-script-tags
+
     - title: ShippingMethods
       link: page:api-resources-shipping-methods
 
