@@ -6,11 +6,11 @@ categories: events
 authors: ["Karsten P."]
 ---
 
-On February 16th 2017 the 12th local meetup of [i-doit](https://www.i-doit.com/) users (i-doit user conference) took place in the [ePages](https://www.epages.com/en/) office in Jena.
+On February 16th 2017 the 12th local meetup of [i-doit](https://www.i-doit.com/) users (i-doit user meeting) took place in the [ePages](https://www.epages.com/en/) office in Jena.
 i-doit is a tool for technical IT documentation.
 ePages is using this tool for more than two years now.
 
-The main part of the event was organized by [Synetics GmbH](https://www.i-doit.com/en/company/) from Duesseldorf, Germany.
+The main part of the event was organized by [synetics GmbH](https://www.i-doit.com/en/company/) from Duesseldorf, Germany.
 They also invited a representative from their partner [procilon](https://www.procilon.de/).
 The other attendees came from the [University of Jena](https://www.uni-jena.de/), as well as from Erfurt, Leipzig, Dresden, and even Munich.
 
