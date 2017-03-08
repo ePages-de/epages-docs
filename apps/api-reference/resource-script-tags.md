@@ -7,8 +7,6 @@ title: Script tags
 Script tags are remote javascripts that are loaded into the pages of a shop's storefront and in the order status page of the checkout.
 This simplifies adding functionality to specific shop pages without touching theme templates.
 
-With script tags you can create, update and delete on an ePages shop, i.e. a script tag refers to the API object.
-A JavaScript script on the other hand is the actual code and script file that is loaded by the script tag.
 When an app is uninstalled from a shop, all of the automatically generated script tags are removed along with it.
 
 The following resources are available to work with script tags:

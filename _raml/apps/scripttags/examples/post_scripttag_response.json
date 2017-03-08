@@ -1,13 +1,13 @@
 {
-  "scriptTagId": "22EB0A2A-A143-4BCA-BB75-57E3E49B08A3",
-  "scriptUrl": "https://www.checkoutmonkey.de/scripts/tracker.js",
+  "scriptTagId": "A348E2BC-F704-4515-868C-5F9E19B4D702",
+  "scriptUrl": "https://widgets.example.com/social.js?id=123ab",
   "scriptType": "NORMAL",
-  "createdOn": "2016-12-13T12:32:35.616Z",
-  "updatedOn": "2016-12-13T12:32:35.616Z",
+  "createdOn": "2017-02-21T14:30:15Z",
+  "updatedOn": "2017-02-21T14:30:15Z",
   "links": [
     {
       "rel": "self",
-      "href": "http://restapi-test.intern.epages.de/rs/shops/DemoShop/script-tags/22EB0A2A-A143-4BCA-BB75-57E3E49B08A3"
+      "href": "https://example.epages.com.com/rs/shops/ExampleShop/script-tags/A348E2BC-F704-4515-868C-5F9E19B4D702"
     }
   ]
 }

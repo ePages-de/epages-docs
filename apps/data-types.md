@@ -495,26 +495,26 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 
 | Attribute | Type | Description |
 | - | :-: |  - |
-| createdAfter | string | The date and time of orders created after this timestamp (format according to ISO 8601). |
-| createdBefore | string | The date and time of orders created before this timestamp (format according to ISO 8601). |
+| createdAfter | string | The date/time of orders created after this timestamp. Expressed according to ISO 8601. Example: `2017-02-04T08:42:49.000Z` |
+| createdBefore | string | The date/time of orders created before this timestamp. Expressed according to ISO 8601. Example: `2017-02-04T08:42:49.000Z` |
 | salesPerCurrency | array of [sales](page:apps-data-types#sales)| The sales summary grouped by currency. |
 
 ## scriptTag
 
 | Attribute | Type | Description |
 | - | :-: |  - |
-| scriptTagId | xx | xx. |
-| scriptUrl | xx | xx. |
-| scriptType | xx | xx. |
-| createdOn | xx | xx. |
-| updatedOn | xx | xx. |
-| links | xx | xx. |
+| scriptTagId | string | The unique identifier for the script tag. |
+| scriptUrl | string | The location of the script tag. |
+| scriptType | string | Identifies the scripting language of code embedded within a script tag. |
+| createdOn | string | The date/time the script tag was created. Expressed according to ISO 8601. Example: `2017-02-04T08:42:49.000Z` |
+| updatedOn | string | The date/time the script tag was last updated. Expressed according to ISO 8601. Example: `2017-03-05T10:51:31.000Z` |
+| links | array of [link](page:apps-data-types#link)| The link to the script tag. |
 
 ## scriptTag (create request)
 
 | Attribute | Type | Description |
 | - | :-: |  - |
-| scriptUrl | xx | xx. |
+| scriptUrl | string | Shows the script tags with a given URL. |
 
 ## shippingData
 
