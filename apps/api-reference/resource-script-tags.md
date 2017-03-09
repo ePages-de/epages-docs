@@ -4,7 +4,7 @@ key: api-resources-script-tags
 title: Script tags
 ---
 
-Script tags are remote javascripts that are loaded into the pages of a shop's storefront and in the order status page of the checkout.
+Script tags provide URLs to remote Javascript files that are loaded on full page loads on all pages of a shop's storefront as well as the order confirmation page.
 This simplifies adding functionality to specific shop pages without touching theme templates.
 
 When an app is uninstalled from a shop, all of the automatically generated script tags are removed along with it.

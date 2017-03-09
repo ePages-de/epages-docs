@@ -503,9 +503,9 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 
 | Attribute | Type | Description |
 | - | :-: |  - |
-| scriptTagId | string | The unique identifier for the script tag. |
-| scriptUrl | string | The location of the script tag. |
-| scriptType | string | Identifies the scripting language of code embedded within a script tag. |
+| scriptTagId | string | The unique identifier of the script tag. |
+| scriptUrl | string | The URL of the script. |
+| scriptType | string | The type of the script. |
 | createdOn | string | The date/time the script tag was created. Expressed according to ISO 8601. Example: `2017-02-04T08:42:49.000Z` |
 | updatedOn | string | The date/time the script tag was last updated. Expressed according to ISO 8601. Example: `2017-03-05T10:51:31.000Z` |
 | links | array of [link](page:apps-data-types#link)| The link to the script tag. |
@@ -514,7 +514,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 
 | Attribute | Type | Description |
 | - | :-: |  - |
-| scriptUrl | string | Shows the script tags with a given URL. |
+| scriptUrl | string | The URL of the script. |
 
 ## shippingData
 

@@ -3,9 +3,9 @@
   "title": "Get Script tags Schema",
   "type": "object",
   "properties": {
-    "": {
+    "items": {
       "type": "array of [scriptTag](page:apps-data-types#scripttag)",
-      "description": ""
+      "description": "The list of all script tags. "
     }
   }
 }
