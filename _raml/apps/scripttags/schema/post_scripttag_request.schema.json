@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "Post Script tag Request Schema",
+  "type": "object",
+  "properties": {
+    "": {
+      "type": "object of [scriptTag (create request)](page:apps-data-types#scripttag-create-request)",
+      "description": ""
+    }
+  }
+}

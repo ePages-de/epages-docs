@@ -1,0 +1,64 @@
+{
+  "cartId": "5858FD17-147C-661C-9C33-D5809AB3C8BA",
+  "billingAddress": null,
+  "shippingAddress": null,
+  "lineItemContainer": {
+    "grandTotal": {
+      "taxType": "GROSS",
+      "formatted": "0.00 €",
+      "amount": 0,
+      "currency": "EUR"
+    },
+    "totalBeforeTax": {
+      "taxType": "NET",
+      "formatted": "0.00 €",
+      "amount": 0,
+      "currency": "EUR"
+    },
+    "totalTax": {
+      "taxType": "NONE",
+      "formatted": "0.00 €",
+      "amount": 0,
+      "currency": "EUR"
+    },
+    "lineItemsSubTotal": {
+      "taxType": "GROSS",
+      "formatted": "0.00 €",
+      "amount": 0,
+      "currency": "EUR"
+    },
+    "productLineItems": [],
+    "couponLineItem": null,
+    "shippingPrice": {
+      "taxType": "GROSS",
+      "formatted": "0.00 €",
+      "amount": 0,
+      "currency": "EUR"
+    },
+    "deposits": [],
+    "ecoParticipations": [],
+    "shippingOptions": [],
+    "basketDiscount": {
+      "links": []
+    }
+  },
+  "shippingData": null,
+  "paymentData": null,
+  "minimumCart": {
+    "status": true,
+    "code": "SumDiscount",
+    "amount": null
+  },
+  "pickupToken": "YjVkY2ZiYzBmYTZkMzUxNTc0NWFkMzYyNGUxN2Y0MDlmZDU5NzhkYjY0NWY1MDBlMTI0YmRjYmNjZjc1YzQ0ZF8xNDgyMjI4MjQ2",
+  "checkoutUrl": "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/2/Baskets/46072&ChangeAction=PickupBasket&PickupToken=YjVkY2ZiYzBmYTZkMzUxNTc0NWFkMzYyNGUxN2Y0MDlmZDU5NzhkYjY0NWY1MDBlMTI0YmRjYmNjZjc1YzQ0ZF8xNDgyMjI4MjQ2",
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://pm.epages.com/rs/shops/apidocu/carts/5858FD17-147C-661C-9C33-D5809AB3C8BA"
+    },
+    {
+      "rel": "add-coupon",
+      "href": "https://pm.epages.com/rs/shops/apidocu/carts/5858FD17-147C-661C-9C33-D5809AB3C8BA/coupon"
+    }
+  ]
+}

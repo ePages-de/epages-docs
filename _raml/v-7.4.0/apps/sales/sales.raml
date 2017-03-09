@@ -1,0 +1,28 @@
+#%RAML 0.8
+displayName: Sales
+get:
+  description: Returns the summary of sales figures for a specified product or for the shop grouped by currencies. The amounts are gross and net amounts. By default the results of the last 30 days are displayed. Open-ended queries are limited to 30 days. The maximum time frame for displaying orders is 1 year. *epages6 *epagesNow
+  securedBy: [orders_read]
+  queryParameters:
+    createdBefore:
+      description: Filters orders created before this timestamp (format according to ISO 8601). The maximum time frame for displaying orders is 1 year. If no filter is set, all orders will be displayed.
+      type: string
+      required : false
+    createdAfter:
+      description: Filters orders created after this timestamp (format according to ISO 8601). The maximum time frame for displaying orders is 1 year. If no filter is set, all orders will be displayed.
+      type: string
+      required : false
+    productId:
+      description: The unique identifier of the product.
+      type: string
+      required: false
+  responses:
+    200:
+      body:
+        application/json:
+          example: !include examples/get_sales_response.json
+          schema: !include schema/get_sales.schema.json
+    400:
+      description: Query parameter validations errors. Invalid date format or date range longer than one year.
+    403:
+      description: Forbidden. OAuth 2.0 Token required with 'orders_read' scope.

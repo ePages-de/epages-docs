@@ -1,0 +1,28 @@
+#%RAML 0.8
+displayName: Shipping methods
+get:
+  description: Returns the shipping methods of a shop. *epages6 *epagesNow
+  securedBy: [products_read]
+  is: [ locale ]
+  responses:
+    200:
+      body:
+        application/json:
+          example: !include examples/get_shipping_response.json
+          schema: !include schema/get_shipping.schema.json
+/{shippingMethodId}:
+  displayName: Shipping method ID
+  uriParameters:
+    shippingMethodId:
+      description: The unique identifier for the shipping method.
+      example: 52F221E0-36F6-DC4E-384A-AC1504050C04
+  get:
+    description: Returns the shipping methods of a shop. *epages6 *epagesNow
+    securedBy: [products_read]
+    is: [ locale ]
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include examples/get_shipping_shippingid_response.json
+            schema: !include schema/get_shipping_shippingid.schema.json
