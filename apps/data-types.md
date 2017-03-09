@@ -451,7 +451,8 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | images | array of [image](page:apps-data-types#image) | The image of the line item. |
 | links | array of [link](page:apps-data-types#link) | The links to the product line item. |
 | taxClass | object of [taxClassInfo](page:apps-data-types#taxclassinfo) | The tax that applies for the product.|
-| deliveryWeight | object of [deliveryWeightQuantity](page:apps-data-types#deliveryweightquantity) | The delivery weight of the product line item.|
+| deliveryWeight | object of [quantity](page:apps-data-types#quantity)(page:apps-data-types#quantity) | The delivery weight of the product line item.|
+| variationString | string | The identifier for the variation.|
 
 ## productLineItem (create request)
 
