@@ -10,6 +10,23 @@ In order to keep track of these changes we recommend you to follow [@epagesdevs]
 
 <hr>
 
+## 2017-03-10
+
+### Changes with software release 7.5.0
+
+#### <i class="fa fa-plus"></i> New
+
+* [`GET` script-tags](https://developer.epages.com/apps/api-reference/get-shopid-script-tags.html)
+* [`POST` script-tags](https://developer.epages.com/apps/api-reference/post-shopid-script-tags.html)
+* [`DELETE` script-tags/{scriptTagId}](https://developer.epages.com/apps/api-reference/delete-shopid-script-tags-scripttagid.html)
+
+
+#### <i class="fa fa-pencil"></i> Update
+
+* Added attribute `email` to data type [`shopInfo`](https://developer.epages.com/apps/data-types#shopinfo).
+
+<hr>
+
 ## 2017-02-09
 
 ### Changes with software release 7.4.0
