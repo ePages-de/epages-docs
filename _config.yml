@@ -1,6 +1,6 @@
 # Site settings
 email: documentation@epages.com
-app_scopes: ["customers_read", "customers_write", "legal_read", "legal_write", "newsletters_read", "orders_read", "orders_write", "products_read", "products_write", "products_read_batch"]
+app_scopes: ["customers_read", "customers_write", "legal_read", "legal_write", "newsletters_read", "orders_read", orders_write", "products_read", "products_write", "products_read_batch", "scripttags_read", "scripttags_write"]
 url: "https://developer.epages.com"
 baseurl: ""
 github_url: "https://github.com/ePages-de/epages-docs"

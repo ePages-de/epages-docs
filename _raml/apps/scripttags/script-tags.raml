@@ -2,6 +2,7 @@
 displayName: Script tags
 get:
   description: Returns a list of all script tags for a shop. *epagesNow
+  securedBy: [scripttags_read]
   queryParameters:
     myScriptTagsOnly:
       description: Shows script tags that have been created for a specific application only.
@@ -15,6 +16,7 @@ get:
           schema: !include schema/get_scripttags.schema.json
 post:
   description: Creates a new script tag. *epagesNow
+  securedBy: [scripttags_write]
   body:
     application/json:
       example: !include examples/post_scripttag_request.json
@@ -30,5 +32,6 @@ post:
   displayName: Script tag
   delete:
     description: Deletes a script tag identified by the provided script tag ID. Using this call, only deletes the script tags created by an application, not all the script tags of a shop.  *epagesNow
+    securedBy: [scripttags_write]
     responses:
       204:
