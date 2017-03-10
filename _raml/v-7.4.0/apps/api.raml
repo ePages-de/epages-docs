@@ -1,0 +1,63 @@
+#%RAML 0.8
+---
+title: ePages Public REST API
+baseUri: /rs
+version: v1
+
+securedBy: [OAuth_2.0_Token,oauth_1_0]
+
+securitySchemes:
+    - OAuth_2.0_Token:
+        type: x-custom
+        description: OAuth 2.0 token authentication
+        describedBy:
+          headers:
+            Authorization:
+              type: string
+              required: true
+              example: "Bearer "
+              pattern: ^Bearer .+
+    - oauth_1_0:
+        description:
+            OAuth 1.0 authentification.
+        type: OAuth 1.0
+        settings:
+          requestTokenUri: /rs/oauth1/request_token
+          authorizationUri: /rs/oauth1/authorize
+          tokenCredentialsUri: /rs/oauth1/access_token
+
+traits: !include traits.raml
+
+/{shopId}:
+  displayName: Shop information
+  uriParameters:
+    shopId:
+      description: The unique identifier of the shop.
+      example: DemoShop
+  get:
+    description: Returns the public information of a shop, like name, slogan and logo. *epages6 *epagesNow
+    securedBy: [products_read]
+    is: [locale]
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include get_shopid_response.json
+            schema: !include get_shopid.schema.json
+  /carts: !include carts/carts.raml
+  /categories: !include categories/categories.raml
+  /currencies: !include currency/currency.raml
+  /customers: !include customers/customers.raml
+  /legal: !include legal/legal.raml
+  /locales: !include locale/locale.raml
+  /newsletter-campaigns: !include newsletter/newsletter-campaigns.raml
+  /orders: !include orders/orders.raml
+  /products: !include products/products.raml
+  /product-category-assignments: !include product-category-assignments/product-category-assignments.raml
+  /products/export: !include productexport/productexport.raml
+  /sales: !include sales/sales.raml
+  /search: !include search/search.raml
+  /shipping-methods: !include shipping-methods/shipping-methods.raml
+  /tax-classes: !include tax-classes/tax-classes.raml
+  /tax-model: !include tax-model/tax-model.raml
+  /watched-products: !include watched-products/watched-products.raml

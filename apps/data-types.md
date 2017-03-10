@@ -451,7 +451,8 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | images | array of [image](page:apps-data-types#image) | The image of the line item. |
 | links | array of [link](page:apps-data-types#link) | The links to the product line item. |
 | taxClass | object of [taxClassInfo](page:apps-data-types#taxclassinfo) | The tax that applies for the product.|
-| deliveryWeight | object of [deliveryWeightQuantity](page:apps-data-types#deliveryweightquantity) | The delivery weight of the product line item.|
+| deliveryWeight | object of [deliveryWeightQuantity](page:apps-data-types#deliveryWeightQuantity)(page:apps-data-types#deliveryweightquantity) | The delivery weight of the product line item.|
+| variationString | string | The description of the selected variation.|
 
 ## productLineItem (create request)
 
@@ -495,9 +496,26 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 
 | Attribute | Type | Description |
 | - | :-: |  - |
-| createdAfter | string | The date and time of orders created after this timestamp (format according to ISO 8601). |
-| createdBefore | string | The date and time of orders created before this timestamp (format according to ISO 8601). |
+| createdAfter | string | The date/time of orders created after this timestamp. Expressed according to ISO 8601. Example: `2017-02-04T08:42:49.000Z` |
+| createdBefore | string | The date/time of orders created before this timestamp. Expressed according to ISO 8601. Example: `2017-02-04T08:42:49.000Z` |
 | salesPerCurrency | array of [sales](page:apps-data-types#sales)| The sales summary grouped by currency. |
+
+## scriptTag
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| scriptTagId | string | The unique identifier of the script tag. |
+| scriptUrl | string | The URL of the script. |
+| scriptType | string | The type of the script. |
+| createdOn | string | The date/time the script tag was created. Expressed according to ISO 8601. Example: `2017-02-04T08:42:49.000Z` |
+| updatedOn | string | The date/time the script tag was last updated. Expressed according to ISO 8601. Example: `2017-03-05T10:51:31.000Z` |
+| links | array of [link](page:apps-data-types#link)| The link to the script tag. |
+
+## scriptTag (create request)
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| scriptUrl | string | The URL of the script. |
 
 ## shippingData
 
@@ -528,6 +546,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | Attribute | Type | Description |
 | - | :-: |  - |
 | name | string | The name of the shop. |
+| email | string | The email address of the merchant. |
 | slogan | string | The slogan of the shop.|
 | logoUrl | string | The URL to the logo of the shop.|
 | sfUrl | string | The URL to the storefront of the shop. |

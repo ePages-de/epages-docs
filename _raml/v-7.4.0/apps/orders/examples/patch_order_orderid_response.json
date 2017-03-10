@@ -1,0 +1,228 @@
+{
+  "orderId": "5638C3E4-03B6-9023-DE5B-D5809AB3777D",
+  "orderNumber": "ORD151103/1031",
+  "creationDate": "2015-11-03T14:25:40.000Z",
+  "customerId": "5638A1B2-0580-CA34-5DB3-D5809AB3A51C",
+  "customerNumber": "1029",
+  "locale": "de_DE",
+  "currencyId": "EUR",
+  "taxModel": "GROSS",
+  "grandTotal": "196.05",
+  "totalBeforeTax": "196.05",
+  "totalTax": "0",
+  "customerComment": "Please deliver asap.",
+  "internalNote": null,
+  "billingAddress": {
+    "company": "Ryan and Sons",
+    "salutation": "Mr",
+    "firstName": "Aaron",
+    "lastName": "Grady",
+    "street": "Ardith Route 2",
+    "streetDetails": null,
+    "zipCode": "16772-2059",
+    "city": "Buckborough",
+    "state": "GA",
+    "country": "US",
+    "title": "PhD",
+    "vatId": null,
+    "birthday": null,
+    "emailAddress": "aaron@RyanandSons.com",
+    "addressExtension": "Backyard",
+    "bankAccountHolder": "Aaron Grady",
+    "bankAccountNumber": "US2677379838510",
+    "bankName": "Buckborough Bank",
+    "bankSortCode": "XXBUBB",
+    "businessEmailAddress": "aaron@RyanandSons.com",
+    "businessPhoneNumber": "0045099977567",
+    "department": null,
+    "displayName": null,
+    "doorCode": null,
+    "faxNumber": "0045099977568",
+    "fiscalCode": null,
+    "gender": "MALE",
+    "jobTitle": "Manager",
+    "middleName": null,
+    "mobilePhoneNumber": "0045099977567",
+    "phoneNumber": "0045099977567",
+    "privateEmailAddress": null,
+    "privatePhoneNumber": null,
+    "websiteUrl": "http://RyanandSons.com"
+  },
+  "shippingAddress": null,
+  "shippingData": {
+    "shippingMethod": {
+      "id": "5171DD86-C077-0726-C448-AC14145F9026",
+      "name": "Standard delivery"
+    },
+    "price": {
+      "taxType": "GROSS",
+      "formatted": "7.32 €",
+      "amount": 7.32,
+      "currency": "EUR"
+    }
+  },
+  "paymentData": {
+    "paymentMethod": {
+      "id": "5171DD86-0714-8E9B-B079-AC14145F900F",
+      "name": "Payment in advance"
+    },
+    "price": {
+      "taxType": "GROSS",
+      "formatted": "0.00 €",
+      "amount": 0,
+      "currency": "EUR"
+    }
+  },
+  "viewedOn": "2015-11-03T14:48:50.000Z",
+  "rejectedOn": null,
+  "inProcessOn": null,
+  "pendingOn": null,
+  "readyForDispatchOn": null,
+  "partiallyDispatchedOn": null,
+  "dispatchedOn": null,
+  "deliveredOn": null,
+  "partiallyInvoicedOn": null,
+  "invoicedOn": null,
+  "partiallyPaidOn": null,
+  "paidOn": null,
+  "returnedOn": null,
+  "closedOn": null,
+  "archivedOn": null,
+  "lineItemContainer": {
+    "grandTotal": {
+      "taxType": "GROSS",
+      "formatted": "196.05 €",
+      "amount": 196.05,
+      "currency": "EUR"
+    },
+    "totalBeforeTax": {
+      "taxType": "NET",
+      "formatted": "196.05 €",
+      "amount": 196.05,
+      "currency": "EUR"
+    },
+    "totalTax": {
+      "taxType": "NONE",
+      "formatted": "0.00 €",
+      "amount": 0,
+      "currency": "EUR"
+    },
+    "lineItemsSubTotal": {
+      "taxType": "GROSS",
+      "formatted": "225.98 €",
+      "amount": 225.98,
+      "currency": "EUR"
+    },
+    "productLineItems": [
+      {
+        "lineItemId": "5638C3FC-9451-9B16-DEB1-D5809AB37761",
+        "sku": "HP-001-0006",
+        "name": "Dr.Boom - Red Bass",
+        "productId": "54EAF9A4-37D7-159F-3307-0A0C05E6CFE7",
+        "quantity": {
+          "amount": 1,
+          "unit": "piece(s)"
+        },
+        "lineItemPrice": {
+          "taxType": "GROSS",
+          "formatted": "199.99 €",
+          "amount": 199.99,
+          "currency": "EUR"
+        },
+        "singleItemPrice": {
+          "taxType": "GROSS",
+          "formatted": "199.99 €",
+          "amount": 199.99,
+          "currency": "EUR"
+        },
+        "images": [
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/EE97/FD85/1B66/9962/AC14/145F/A540/001-headphone-blue_h.jpg",
+            "classifier": "HotDeal"
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/EE97/FD85/1B66/9962/AC14/145F/A540/001-headphone-blue_m.jpg",
+            "classifier": "Medium"
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/EE97/FD85/1B66/9962/AC14/145F/A540/001-headphone-blue_l.jpg",
+            "classifier": "Large"
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/EE97/FD85/1B66/9962/AC14/145F/A540/001-headphone-blue_s.jpg",
+            "classifier": "Small"
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/EE97/FD85/1B66/9962/AC14/145F/A540/001-headphone-blue_xs.jpg",
+            "classifier": "Thumbnail"
+          }
+        ],
+        "links": [
+          {
+            "rel": "product",
+            "href": "https://pm.epages.com/api/products/54EAF9A4-37D7-159F-3307-0A0C05E6CFE7"
+          }
+        ],
+        "essentialFeatures": null
+      },
+      {
+        "lineItemId": "5638C3FD-9C4D-84EC-2DF0-D5809AB37714",
+        "sku": "HP-002-00",
+        "name": "Anschlusskabel",
+        "productId": "54EF20B5-33A2-E55F-213B-0A0C05E62C6B",
+        "quantity": {
+          "amount": 1,
+          "unit": "piece(s)"
+        },
+        "lineItemPrice": {
+          "taxType": "GROSS",
+          "formatted": "25.99 €",
+          "amount": 25.99,
+          "currency": "EUR"
+        },
+        "singleItemPrice": {
+          "taxType": "GROSS",
+          "formatted": "25.99 €",
+          "amount": 25.99,
+          "currency": "EUR"
+        },
+        "images": [
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F901/9AE1/CAC6/00D8/AC14/145F/A463/007-acce-b_h.jpg",
+            "classifier": "HotDeal"
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F901/9AE1/CAC6/00D8/AC14/145F/A463/007-acce-b_m.jpg",
+            "classifier": "Medium"
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F901/9AE1/CAC6/00D8/AC14/145F/A463/007-acce-b_l.jpg",
+            "classifier": "Large"
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F901/9AE1/CAC6/00D8/AC14/145F/A463/007-acce-b_s.jpg",
+            "classifier": "Small"
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F901/9AE1/CAC6/00D8/AC14/145F/A463/007-acce-b_xs.jpg",
+            "classifier": "Thumbnail"
+          }
+        ],
+        "links": [
+          {
+            "rel": "product",
+            "href": "https://pm.epages.com/api/products/54EF20B5-33A2-E55F-213B-0A0C05E62C6B"
+          }
+        ],
+        "essentialFeatures": null
+      }
+    ],
+    "shippingPrice": {
+      "taxType": "GROSS",
+      "formatted": "7.32 €",
+      "amount": 7.32,
+      "currency": "EUR"
+    }
+  },
+  "links": []
+}
