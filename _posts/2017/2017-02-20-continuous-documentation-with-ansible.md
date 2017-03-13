@@ -7,7 +7,7 @@ categories: tech-stories agile devops docker jenkins ansible
 authors: ["Thomas H."]
 ---
 
-# Introduction
+## Introduction
 In recent years there has been a [steady trend towards cloud based deployments](http://www.softwareadvice.com/buyerview/deployment-preference-report-2014/) of applications and services.  
 This increases the distributed nature of the systems we develop, which in turn raises the complexity and effort
 required to develop and manage (i.e. provision resources, build, test, configure, deploy and monitor) them.  
@@ -20,28 +20,28 @@ This post will outline how [Ansible](https://www.ansible.com/) can help in appro
 It also includes a short discussion on the relation of Ansible to other tools supporting continuous delivery and
 scalability of the development process, [Docker](https://www.docker.com/) and [Jenkins](https://jenkins.io/).
 
-# Documentation vs. Automation
+## Documentation vs. Automation
 The way we think about documentation [is changing](https://devops.com/documenting-devops-agile-automation-and-continuous-documentation/).  
 For the documentation of application software it is generally accepted that it should be generated from code, to leave as little possibility for deviation as possible.  
 In the case of "management code" this is more difficult, because the things being modelled are often heterogeneous and not as focussed in terms of their implementation as for example a REST-API or a library / module.  
 The concept of [using declarative formats for automation](https://12factor.net/#introduction) can fill this gap.
 
-# Structure of Ansible projects
+## Structure of Ansible projects
 As there are many sources of Ansible best practices to be found on the web, instead of writing another one, I would like to assume the viewpoint of someone reading a Ansible code, rather than writing it.
 Note that I am using the term "Ansible project" without implying a certain structure in terms of source code repositories.  
 
-## Playbooks
+### Playbooks
 [Playbooks](http://docs.ansible.com/ansible/playbooks.html) are the entry point when looking at an Ansible project.  
 A common convention is two have two kinds of Playbooks.
 
-### Setup Playbooks
+#### Setup Playbooks
 One type of playbook would initially provision / prepare an environment to deploy an application into it.  
 These playbooks would typically be named `setup-<project>.yml`.
 While this type could traditionally be seen more on the IT department's side of an organization, this type of playbook would also be used [to set up a development environment](https://github.com/ePages-de/mac-dev-setup) (i.e. developer laptop) for that application.  
 The point of using the same technique for both of these things is that it becomes easier to manage and document differences between them in a joint effort. This continually provides value for the company, because setup times for developers are reduced.  
 Using playbooks to install a development environment is a good way of incorporating new developers. Invariably occurring problems are an opportunity to familiarize with the environment and getting used to the workflow by documenting their solution.
 
-### Deployment Playbooks
+#### Deployment Playbooks
 The other kind of playbooks would be named `deploy-<project>.yml`.  
 These are meant to execute continuously, deploying changing versions of an application.  
 This type of playbook would typically be executed during a CI/CD run, and a failure during that phase could be the cause for investigating the playbook in the first place.
@@ -77,7 +77,7 @@ The installation of Docker in a deployment playbook is questionable, and should 
 Concerning the hosts (`application-vms` in this case), the word implies a group of hosts. This could also be read as "the hosts that this playbook is meant to run against", with the distinction, that depending on the environment, it might only be executed against a single host at a time, using the `--limit` parameter of `ansible-playbook`.  
 Motivation for doing it like this is that the exact same playbooks can be used for different environments / inventories (see below).
 
-## Roles
+### Roles
 While playbooks are the entry point, one will soon be looking at [Roles](http://docs.ansible.com/ansible/playbooks_roles.html), because playbooks should not contain single tasks, but only sets of roles (that are applied to groups of hosts).  
 When learning about a role, the best place to start is `defaults/main.yml`.  
 This file is supposed to contain all variables that are being used in the role, and - as the filename implies - their default values. This file serves the primary purpose of documenting the role.  
@@ -108,14 +108,14 @@ The file goes on with some more configuration of what seem to be application pro
 By looking at the defaults, anyone could get a good idea about the scope of the role without looking at the [tasks](http://docs.ansible.com/ansible/playbooks_intro.html#tasks-list).  
 As mentioned before, roles do not necessarily need to live in the same repository as playbooks, because Ansible supports [role dependencies](http://docs.ansible.com/ansible/playbooks_roles.html#role-dependencies).
 
-## Variables
+### Variables
 There is also a file `vars/main.yml` inside a role that can be used to document [variables](http://docs.ansible.com/ansible/playbooks_variables.html), but generally any role should be considered "immutable", similar to a class in OO programming. Only when it is used in a playbook will it receive its arguments.  
 Assigning role variables in playbooks is a very straight forward way to document things, as it only requires to know about playbook and the scope of the involved roles.  
 Other places to put variables include `group_vars/<groupname>.yml` and `host_vars/<inventory-hostname>.yml`. The latter should be avoided, because we are trying to get rid of host-specific configuration to begin with.  
 Group vars could be considered acceptable, but the goal should always be to encapsulate as much behaviour into roles as possible.
 Talking about hosts and groups this leads over to the next section, the inventory.
 
-## Inventory
+### Inventory
 The [inventory](http://docs.ansible.com/ansible/intro_inventory.html) contains hosts divided into groups, and can also contain variables per group or host (discouraged, see above). When a playbook is executed using the `ansible-playbook` it usually receives the particular inventory file it should be using.  
 There are several ways how different inventory files can be used, for example
 having a `localhost` inventory file, which has localhost mapped to all relevant groups, and eventually roles.
@@ -166,7 +166,7 @@ Grouping `developer-vms` and `shared-vms` into `application-vms` is a way of say
 Of course this structure of playbooks and inventories assumes that we are dealing with "hosts" in the first place. But how relevant is this model in an environment where the primary method of deployment is through containers and hosts are being abstracted away?  
 This will be discussed shortly, but first let's have a look at the purpose of Ansible in the CI/CD pipeline.
 
-# Jenkins and Ansible
+## Jenkins and Ansible
 About a year ago, Jenkins received a major update, promoting the [Pipeline plugin](https://wiki.jenkins-ci.org/display/JENKINS/Pipeline+Plugin) into its core, and making the creation of  [declarative pipelines](https://jenkins.io/blog/2017/02/03/declarative-pipeline-ga/) the primary use case.  
 
 A continuous delivery pipeline is hard to maintain, because it models a complex workflow and must constantly be adapted to changes in any of the projects it integrates. This is why the traditional approach of chaining jobs in Jenkins was considered a maintenance nightmare, and [other approaches](https://wiki.jenkins-ci.org/display/JENKINS/Job+DSL+Plugin) to configuring and maintaining jobs and sequences of jobs were developed. This lead to the decision to make "Pipeline as Code" a first class citizen.
@@ -178,7 +178,7 @@ This has a couple of advantages:
 - fewer Jenkins plugins are needed
 - either implementation could be changed, without affecting the other (e.g. Jenkins could be replaced with [GoCD](https://www.gocd.io/) more easily)
 
-# Docker and Ansible
+## Docker and Ansible
 At first glance Docker and Ansible seem to be solving a similar problem in very different ways, making it questionable whether and how to use them in conjunction.  
 But their scope is actually quite different.
 
@@ -196,7 +196,7 @@ Other modules exist for [managing Docker images](http://docs.ansible.com/ansible
 There is also a project that works on [building docker images from Ansible playbooks](https://github.com/ansible/ansible-container) that is trying to solve the issue of [using the Docker cache in the process](https://github.com/ansible/ansible-container/issues/143).
 This approach has essentially the same motive as [this lengthy discussion](https://github.com/docker/docker/issues/735) which proposes adding an `INCLUDE` directive to Dockerfiles, to be able to modularize them and avoid duplication.
 
-# Conclusion
+## Conclusion
 Agile principles suggest that changeability is a key quality of competitive software. It is well understood that code readability is a [requirement for staying productive](http://www.goodreads.com/quotes/835238-indeed-the-ratio-of-time-spent-reading-versus-writing-is). Even more so as we are gravitating towards [everything-as-code](https://github.com/lreimer/everything-as-code).
 
 Using declarative formats for automation is [a way](http://wiki.c2.com/?LiberatingConstraint) to achieve this requirement, and Ansible is a great blend between simplicity and general applicability.
