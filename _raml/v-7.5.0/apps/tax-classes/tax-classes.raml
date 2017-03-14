@@ -1,0 +1,25 @@
+#%RAML 0.8
+displayName: Tax classes
+get:
+  description: Returns all tax classes of a shop. *epages6 *epagesNow
+  securedBy: [products_read]
+  is: [ locale, paged ]
+  responses:
+    200:
+      body:
+        application/json:
+          example: !include examples/get_taxclasses_response.json
+          schema: !include schema/get_taxclasses.schema.json
+
+/{taxClassId}:
+  displayName: Tax class
+  get:
+    description: Returns a specific tax class of a shop identified by the provided tax class Id. *epages6 *epagesNow
+    securedBy: [products_read]
+    is: [ locale ]
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include examples/get_taxclasses_taxclassid_response.json
+            schema: !include schema/get_taxclasses_taxclassid.schema.json

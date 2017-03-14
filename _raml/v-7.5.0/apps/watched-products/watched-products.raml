@@ -1,0 +1,13 @@
+#%RAML 0.8
+displayName: Watched products
+get:
+  description: Returns a list of all watched products. Watched products refers to items currently out of stock and therefore can be watched by online shop customers. *epages6 *epagesNow
+  securedBy: [products_write]
+  is: [ locale, paged ]
+  queryParameters:
+  responses:
+    200:
+      body:
+        application/json:
+          example: !include examples/get_watched_products_response.json
+          schema: !include schema/get_watchedproducts.schema.json
