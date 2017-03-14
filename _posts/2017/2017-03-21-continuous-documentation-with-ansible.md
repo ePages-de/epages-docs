@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Continuous Documentation with Ansible"
-date: "2017-02-20 06:39:20"
+date: "2017-03-21 06:39:20"
 image: blog-header/scrum-board.jpg
 categories: tech-stories agile devops docker jenkins ansible
 authors: ["Thomas H."]
