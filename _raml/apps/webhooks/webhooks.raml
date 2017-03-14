@@ -1,0 +1,59 @@
+#%RAML 0.8
+displayName: Webhooks
+get:
+  description: Returns all registered webhooks of a shop. *epages6 *epagesNow
+  is: [ paged ]
+  responses:
+    200:
+      body:
+       application/json:
+         example: !include examples/get_webhooks_response.json
+
+post:
+  description: Register a webhook. *epages6 *epagesNow
+  body:
+    application/json:
+      example: !include examples/post_webhooks_request.json
+  responses:
+    201:
+      body:
+        application/json:
+          example: !include examples/post_webhooks_response.json
+
+
+/{webhookId}:
+  displayName: Webhook
+  description: Operations on a webhook of a shop.
+  uriParameters:
+   webhookId:
+     description: The webhook id
+
+  get:
+    description: Get a webhook by its id. *epages6 *epagesNow
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include examples/get_webhooks_webhookid_response.json
+
+  post:
+    description: Activate or deactivate a webhook. *epages6 *epagesNow
+    body:
+      application/x-www-form-urlencoded:
+        formParameters:
+          active:
+            description: The activation status of the webhook
+            required: true
+            type: boolean
+            example: "active=true"
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include examples/post_webhooks_webhookid_response.json
+
+  delete:
+    description: Delete the webhook. *epages6 *epagesNow
+    responses:
+      204:
+        description: webhook successfully deleted.

@@ -1,0 +1,4 @@
+{
+    "callbackUrl" : "http://salesanalyticsapp.com/rs/shops/DemoShop/webhooks/73CA6C8C-60E3-4B78-AE37-0491EBE57AF8",
+    "eventType" : "PRODUCT_CREATE"
+}

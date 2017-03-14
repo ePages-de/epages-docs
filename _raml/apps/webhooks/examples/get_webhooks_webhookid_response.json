@@ -1,0 +1,14 @@
+{
+  "id": "73CA6C8C-60E3-4B78-AE37-0491EBE57AF8",
+  "active": true,
+  "eventType": "PRODUCT_CREATE",
+  "callbackUrl": "https://vm-ubiallas-2.intern.epages.de/rs/shops/DemoShop/webhooks/callback",
+  "createdOn": "2017-03-06T12:16:19Z",
+  "updatedOn": "2017-03-06T12:16:19Z",
+  "links": [
+    {
+      "rel": "self",
+      "href": "http://vm-ubiallas-2.intern.epages.de/rs/shops/DemoShop/webhooks/73CA6C8C-60E3-4B78-AE37-0491EBE57AF8"
+    }
+  ]
+}
