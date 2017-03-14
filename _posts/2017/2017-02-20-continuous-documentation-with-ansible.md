@@ -34,7 +34,7 @@ Note that I am using the term "Ansible project" without implying a certain struc
 
 ### Playbooks
 [Playbooks](http://docs.ansible.com/ansible/playbooks.html) are the entry point when looking at an Ansible project.  
-A common convention is two categorize playbooks into two kinds.
+A common convention is to categorize playbooks into two kinds.
 
 #### Deployment Playbooks
 One type of playbooks would be named like `deploy-<project>.yml`.  
