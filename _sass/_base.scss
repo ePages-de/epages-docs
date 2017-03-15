@@ -27,6 +27,7 @@ ul li {
 /*CTA*/
 
 a.cta, .cta, .navbar-cta {
+  display: inline-block;
   background-image: none;
   background-color: #28B464;
   border: 1px solid #28B464;
@@ -197,6 +198,7 @@ nav {
   text-align: center;
   color: #fff;
   margin-top: -90px;
+  margin-bottom: 0;
   padding-top: 90px;
   padding-bottom: 60px;
 
@@ -261,6 +263,10 @@ section {
   padding: 80px 20px;
   text-align: center;
 }
+section .row {
+  max-width: 1440px;
+  margin: 0 auto;
+}
 #register {
   background-color: #eee;
 }
@@ -277,38 +283,35 @@ section h4 span {
   font-size-adjust: 0.7;
   margin-right: 20px;
 }
-section .row {
-  margin: 40px 0 0;
-}
 section p {
-  margin: 10px 0 50px;
+  margin: 10px 0 20px;
 }
 section button {
   margin: 40px auto 0;
   display: block;
 }
-
-/* Resources section on start page */
-@media (min-width: 992px) {
-  #resources .row div {
-    width: 33.333%;
-    float: left;
-    padding: 0 15px;
-  }
-  section .row p {
-    margin-bottom: 10px;
-  }
+#rest-api .cta,
+#register .cta,
+#resources .cta {
+  margin-top: 20px;
 }
-@media (max-width:991px){
-  #resources {
-    padding-bottom: 0;
+
+@media screen and (max-width: 991px) {
+  .col-md-6:first-child {
+    margin-bottom: 60px;
+  }
+  .col-md-4:first-child,
+  .col-md-4:nth-child(2) {
+    margin-bottom: 60px;
   }
 }
 
 /* Prefooter used on some pages as last content section */
 .prefooter {
   background-color: #eee;
-  padding: 40px 0 0;
+  padding: 40px 0;
+
+  p {margin: 0;}
 }
 .post-categories {
   padding-top: 25px;
