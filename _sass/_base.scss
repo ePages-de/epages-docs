@@ -290,12 +290,29 @@ section button {
   margin: 40px auto 0;
   display: block;
 }
+section .col-md-6 p {
+  padding: 0 90px;
+}
+@media screen and (min-width: 1401px) {
+  section .col-md-6 p {
+    padding: 0 120px;
+  }
+}
+@media screen and (min-width: 992px) {
+  #rest-api p {
+    padding: 0 90px;
+  }
+}
+@media screen and (min-width: 1401px) {
+  #rest-api p {
+    padding: 0 200px;
+  }
+}
 #rest-api .cta,
 #register .cta,
 #resources .cta {
   margin-top: 20px;
 }
-
 @media screen and (max-width: 991px) {
   .col-md-6:first-child {
     margin-bottom: 60px;
