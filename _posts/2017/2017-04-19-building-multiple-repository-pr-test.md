@@ -1,28 +1,38 @@
 ---
 layout: post
 title: "Build a multiple repository pull request test"
-date: "2017-01-05 10:00:00"
+date: "2017-04-19 10:00:00"
 image: blog-header/challenge-cube.jpg
 categories: tech-stories
-authors: ["Florian"]
+authors: ["Florian Z."]
 ---
 
-Did you ever face the problem of building a feature over multiple repositories? If you start testing the single repository, you may have unknown side effects when your code is rolled out. On the other hand, if you start testing the repositories together, you may have an inconsistent state of one of your code changes. This will lead to either errors in the test suite or wrong testing results. Broken tests, wrong test results and unknown side effects causes a pipeline to misses its validity.
+Did you ever face the problem of building a feature over multiple repositories?
+If you start testing the single repository, you may have unknown side effects when your code is rolled out.
+On the other hand, if you start testing the repositories together, you may have an inconsistent state of one of your code changes.
+This will lead to either errors in the test suite or wrong testing results.
+Broken tests, wrong test results and unknown side effects cause a pipeline to misses its validity.
 Developing effort and the risk of loss of quality increases significantly, but you can solve the situation with building up a multiple repositories pull request test.
 
 ### 1. How do we prepare the test?
-The solution is as simple as complicated: Your Pull request has to know, which code change belongs to a specific feature. While using
-three different repositories, how can you achieve to test all changes at once? Three things are necessary:
+The solution is as simple as complicated: Your Pull request has to know, which code change belongs to a specific feature.
+While using three different repositories, how can you achieve to test all changes at once?
+Three things are necessary:
 * GitHub Organizational Plugin,
 * Pipeline plugin,
 * naming convention.
 
 ### 2. Why do we need those things?
-You can use the [Github Organizational Folder Plugin](https://wiki.jenkins-ci.org/display/JENKINS/GitHub+Organization+Folder+Plugin) to check your repositories for new Pull request. This plugin will check every affected repository for changes and activate the Jenkinsfile in the main directory, if a change was made.
+You can use the [Github Organizational Folder Plugin](https://wiki.jenkins-ci.org/display/JENKINS/GitHub+Organization+Folder+Plugin) to check your repositories for new Pull request.
+This plugin will check every affected repository for changes and activate the Jenkinsfile in the main directory, if a change was made.
 
-You can create a [Jenkinsfile](https://jenkins.io/doc/book/pipeline/jenkinsfile/) at a repository, which will be triggered after a Pull request. The task of this Jenkinsfile is mainly to check, if branches with the same name from the same developer in other repositories exists and will use them for the PR tests, if a change was detected.
+You can create a [Jenkinsfile](https://jenkins.io/doc/book/pipeline/jenkinsfile/) at a repository, which will be triggered after a Pull request.
+The task of this Jenkinsfile is mainly to check, if branches with the same name from the same developer in other repositories exists and will use them for the PR tests, if a change was detected.
 
-You have to agree to naming conventions, mean you have to set the same name for all affected branches in the different repositories. As you work with Pull requests, you need to find out the branch name first. Luckily, you can get the pull request number directly from the trigger. You need to [GET the PR information](https://developer.github.com/v3/pulls/#get-a-single-pull-request) from Github:
+You have to agree to naming conventions, mean you have to set the same name for all affected branches in the different repositories.
+As you work with Pull requests, you need to find out the branch name first.
+Luckily, you can get the pull request number directly from the trigger.
+You need to [GET the PR information](https://developer.github.com/v3/pulls/#get-a-single-pull-request) from Github:
 ````
 BRANCH = git.getBranchNameFromPr("rest-test-gold", env.CHANGE_ID)
 ````
@@ -49,17 +59,21 @@ As you now have the name of the branch, you to do the same for the remote name o
 
 How can we now ensure, that the PR is only triggered once and not for every repository, where a Pull request was set from a developer?
 
-The solution is to build a hierarchy into the repository structure. As every repository has a describing [Jenkinsfile](https://jenkins.io/doc/book/pipeline/jenkinsfile/), we need a kind of control repository.
+The solution is to build a hierarchy into the repository structure.
+As every repository has a describing [Jenkinsfile](https://jenkins.io/doc/book/pipeline/jenkinsfile/), we need a kind of control repository.
 
-![image1](florisarticle1.png "PR to control repository")
+![image1](../../assets/images/blog/blog-pr-test-1.png "PR to control repository")
 
-This is important to avoid uncontrollable starts of the PR_Test. If a Pull request exists there, the other repositories don't have to activate their tests as the control repository will do it.
+This is important to avoid uncontrollable starts of the PR_Test.
+If a Pull request exists there, the other repositories don't have to activate their tests as the control repository will do it.
 
-![image2](florisarticle2.png "PR to other repository")
+![image2](../../assets/images/blog/blog-pr-test-2.png "PR to other repository")
 
-Other repositories have to check, if a branch with the given name exist in the control repository. If the branch was found, the control repository will start the test. If the branch don't exist, one of the other repositories has to trigger the PR test.
+Other repositories have to check, if a branch with the given name exist in the control repository.
+If the branch was found, the control repository will start the test.
+If the branch don't exist, one of the other repositories has to trigger the PR test.
 
-![image3](florisarticle3.png "PR to every repository")
+![image3](../../assets/images/blog/blog-pr-test-3.png  "PR to every repository")
 
 One way or another, we will start to build a new Job called 'PR_Test'.
 
@@ -94,7 +108,14 @@ One way or another, we will start to build a new Job called 'PR_Test'.
 
 ### 3. Environment set up, how to start the test?
 
-To be able to work with different repositories, you need a global job as pull request job. It is easy to start from different repositories, as you only have to overhand variables like branch and remote name. Beginning with the tests, we have to set up our environment first. This will be done in parallel. It can be seen as the first test to assure that at least the installation is still functional. After that, your tests should run as expected. Beginning with short running tests like unit tests up to long running tests like UI tests (if there is a UI). As the tests are built up in stages, the job PR_Test will fail and the result can be send the developer.
+To be able to work with different repositories, you need a global job as pull request job.
+It is easy to start from different repositories, as you only have to overhand variables like branch and remote name.
+Beginning with the tests, we have to set up our environment first.
+This will be done in parallel.
+It can be seen as the first test to assure that at least the installation is still functional.
+After that, your tests should run as expected.
+Beginning with short running tests like unit tests up to long running tests like UI tests (if there is a UI).
+As the tests are built up in stages, the job PR_Test will fail and the result can be send the developer.
 
 ````
 stage "Build EMS & RTG"
@@ -125,7 +146,11 @@ stage "Build EMS & RTG"
 
 ### 4. Summary
 
-With the help of different new plugins and pipeline scripting, you have a simple way to easily build complex structures like a Pull request chain. The preparations of your test can be automated across independent repositories. Your advantage: You don't have to set up the environment manually, which decreases the testing effort. You have a higher warranty (depending on your tests suite), that multi branch features work as expected in the end product. At the end, this will save a lot of development time and increase the software quality significantly.
+With the help of different new plugins and pipeline scripting, you have a simple way to easily build complex structures like a Pull request chain.
+The preparations of your test can be automated across independent repositories.
+Your advantage: You don't have to set up the environment manually, which decreases the testing effort.
+You have a higher warranty (depending on your tests suite), that multi branch features work as expected in the end product.
+At the end, this will save a lot of development time and increase the software quality significantly.
 
 
 ### Related posts
