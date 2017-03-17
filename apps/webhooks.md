@@ -12,24 +12,25 @@ In order to receive the respective information about the events that your app su
 When the event happens, we'll send a `POST` request to your callback URL.
 Your app can then process the information send by us based on that event.
 
-You might build an app that requires the following information:
+Your app might require the following information:
 
-* an order is placed
-* a product is added
-* a cart is created.
+* an order has been created
+* an order has been updated
+* an order has been deleted
+* your app has been uninstalled.
 
-## First things first
+## Before you can get going
 
-Before you can send any requests or receive any responses, you'll need the following:
+Before you can send any requests or receive any responses, this is what you'll need:
 
 * Test shop: you can get a test shop by [joining the ePages Developer Program](/#modal-popup)
 * Client ID and Client Secret: received during [app creation](page:apps-create#get-your-credentials)
 * Access token: received during [app installation](page:apps-install)
 * SSL setup.
 
-## Create a webhook
+## Ready to start creating a webhook
 
-To create a webhook, make a `POST` request to the respective webhook resource, including:
+To create a webhook, make a [`POST` request](page:apps-api-post-shopid-webhooks-information) to the respective webhook resource, including:
 
 * The app's `callbackUrl`
 * The `eventType`.
@@ -38,7 +39,6 @@ By default, new webhooks will be set to **active**.
 If you want a webhook to be inactive initially, pass the following key-value `"active": false` with the request.
 
 An `HTTP 201` response indicates that the webhook was successfully set.
-Refer to the [`POST` webhooks resource](page:apps-api-post-shopid-webhooks-information) for more details.
 
 ## Webhook event types
 
@@ -46,9 +46,6 @@ Refer to the [`POST` webhooks resource](page:apps-api-post-shopid-webhooks-infor
 * ORDERS_CREATE
 * ORDERS_UPDATE
 * ORDERS_DELETE
-* PRODUCT_CREATE
-* PRODUCT_UPDATE
-* PRODUCT_DELETE
 
 ## Receive webhook callbacks
 
