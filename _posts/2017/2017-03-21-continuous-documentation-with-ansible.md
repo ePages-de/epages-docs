@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Continuous Documentation with Ansible"
-date: "2017-03-21 06:39:20"
-image: blog-header/scrum-board.jpg
-categories: tech-stories agile devops docker jenkins ansible
-authors: ["Thomas H."]
+date: "2017-03-21a 06:39:20"
+image: blog-header/blog-forest-park-walk-trail.png
+categories: tech-stories agile
+authors: ["Thomas"]
 ---
 
 ## Introduction
@@ -21,9 +21,7 @@ It also includes a short discussion on the relation of Ansible to other tools su
 scalability of the development process, [Docker](https://www.docker.com/) and [Jenkins](https://jenkins.io/).
 
 ## Documentation vs. Automation
-<img src="/assets/images/blog/blog-dilbert-agile.gif" alt="Dilbert comic agile" style="width: 100%;"/>
-
-The way we think about documentation [is changing](https://devops.com/documenting-devops-agile-automation-and-continuous-documentation/).  
+The way we think about documentation [is changing](https://devops.com/documenting-devops-agile-automation-and-continuous-documentation/).
 For the documentation of application software it is generally accepted that it should be generated from code, to leave as little possibility for deviation as possible.  
 In the case of "management code" this is more difficult, because the things being modelled are often heterogeneous and not as focussed in terms of their implementation as for example a REST-API or a library / module.  
 The concept of [using declarative formats for automation](https://12factor.net/#introduction) can fill this gap.
@@ -82,6 +80,7 @@ Using playbooks to install a development environment is a good way of incorporat
 
 ### Roles
 While playbooks are the entry point, one will soon be looking at [Roles](http://docs.ansible.com/ansible/playbooks_roles.html), because a playbook typically contains sets of roles (that are applied to groups of hosts).  
+The motivation to do it like that is to [separate the What from the How](http://wiki.c2.com/?SeparateTheWhatFromTheHow).  
 When learning about a role, the best place to start is `defaults/main.yml`.  
 This file is supposed to contain all variables that are being used in the role, and - as the filename implies - their default values.  
 This file serves the primary purpose of documenting the role.  
@@ -167,7 +166,7 @@ shared-tools
 {% endhighlight %}
 Referring to the playbook example above, we can see here, that the `application-vms` group consists of  `shared-vms` and `developer-vms`, and that there is another group `infrastructure-vms` supposedly containing development infrastructure.
 Grouping `developer-vms` and `shared-vms` into `application-vms` is a way of saying that they are set up in a similar way (consisting of the same roles and using similar playbooks).  
-It is also worth noting that it makes a lot of sense to model infrastructure in the same way, that is not directly needed by the application, for example a chat server or a [SonarQube](https://www.sonarqube.org/) instance.
+It also makes a lot of sense to model infrastructure in the same way, that is not directly needed by the application, for example a chat server or a [SonarQube](https://www.sonarqube.org/) instance.
 
 Of course this structure of playbooks and inventories assumes that we are dealing with "hosts" in the first place. But how relevant is this model in an environment where the primary method of deployment is through containers and hosts are being abstracted away?  
 This will be discussed shortly, but first let's have a look at the purpose of Ansible in the CI/CD pipeline.
@@ -197,7 +196,6 @@ There is increasing motivation for companies of any size to transition to a homo
 And there will probably always be a Ruby application, which is hosted somewhere else and stubbornly refuses to participate in the pipeline.
 
 But what is a concrete use case for using Docker and Ansible? Consider [docker-compose](https://docs.docker.com/compose/gettingstarted/#/step-3-define-services-in-a-compose-file). It wraps the Docker-API to provide a declarative format for defining a group of interconnected containers.  
-The recurring pattern is the motivation to [separate the What from the How](http://wiki.c2.com/?SeparateTheWhatFromTheHow).
 The [docker_service module](https://docs.ansible.com/ansible/docker_service_module.html) of Ansible depends on the docker-compose Python module (on the host where `docker-compose` is being executed), and supports identical syntax. `docker-compose.yml` files can be provided either inline in a task, or as separate files.  
 Other modules exist for [managing Docker images](http://docs.ansible.com/ansible/docker_image_module.html#docker-image), [Kubernetes](https://docs.ansible.com/ansible/kubernetes_module.html) or [GCE](http://docs.ansible.com/ansible/guide_gce.html) resources.  
 There is also a project that works on [building docker images from Ansible playbooks](https://github.com/ansible/ansible-container) solving the issue of [using the Docker cache in the process](https://github.com/ansible/ansible-container/issues/143).
@@ -205,8 +203,6 @@ This approach has essentially the same motive as [this lengthy discussion](https
 
 ## Conclusion
 Agile principles suggest that changeability is a key quality of competitive software. It is well understood that code readability is a [requirement for staying productive](http://www.goodreads.com/quotes/835238-indeed-the-ratio-of-time-spent-reading-versus-writing-is). Even more so as we are gravitating towards [everything-as-code](https://github.com/lreimer/everything-as-code).
-
-<img src="/assets/images/blog/blog-dilbert-elbonia.gif" alt="Dilbert comic Elbonia" style="width: 100%;"/>
 
 Using declarative formats for automation is [a way](http://wiki.c2.com/?LiberatingConstraint) to achieve this requirement, and the proposition of Ansible is to offer simplicity and general applicability.
 Refactoring of playbooks, roles, tasks and variables is easily possible, which is a requirement for maintainability.
