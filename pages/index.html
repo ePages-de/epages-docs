@@ -2,119 +2,72 @@
 layout: default
 permalink: /
 ---
-<div class="modal fade" id="modal-popup-now">
-  <div style="display:flex; justify-content:center">
-    <section id="demoshop-form-now modal-section-now" class="modal-content col col-sm-12" style="max-width: 900px !important; top: 25% !important; padding: 20px 20px 20px 20px; position: absolute;">
-      <div class="container-fluid" id="modal-div-now">
-        <div id="modal-container-now">
-          <iframe id="cheat-frame-now" name="epages-demo-shop-frame-now" frameborder="0" allowtransparency="true" width="900px" height="720px"></iframe>
-          <iframe id="cheat-frame-2-now" src="https://www.epages.com/en/partner/developer-program/success.php" frameborder="0" allowtransparency="true" width="900px" height="720px"></iframe>
-          <div class="row" style= "margin-top: 0px;" id="main-row-now">
-            <div class="col-md-12 center">
-              <h3>Join the ePages Developer Program</h3>
-              <div class="spacer60"></div>
-              <p>Just enter your details below to sign up for the ePages Developer Program and you will receive a free ePages Now test shop.</p>
-              <div class="spacer20"></div>
-              <div class="spacer20"></div>
-              <form id="demoshopform-now" class="demoshopform form-default" method="post" action="https://devshop.epages.com/epages/Site.sf/en_GB/?ObjectPath=/Providers/epagesdev&ViewAction=ViewProviderRegistrationForm" target="epages-demo-shop-frame-now">
-                <div class="row">
-                  <div class="col-xs-6 col-md-6">
-                    <div class="form-group">
-                      <input type="text" class="form-control" name="LastName" id="LastName" placeholder="Full name" required />
-                    </div>
-                  </div>
-                  <div class="col-xs-6 col-md-6">
-                    <div class="form-group">
-                      <input type="email" class="form-control" name="EMail" id="EMail" placeholder="Email address" required />
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="spacer20"></div>
-                    <div class="form-group">
-                      <input type="checkbox" required="required" name="tc" required> I have read and agree to the <a href="http://www.epages.com/wAssets-epages/docs/partner/ePages_Developer_Programm_2015_TaCs.pdf" target="_blank">terms and conditions</a>.*
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-xs-12 col-md-12">
-                    <input type="hidden" name="ChangeAction" value="RegisterProviderTestShop" />
-                    <input type="hidden" maxlength="40" class="input" name="FirstName" id="FirstName" value="" />
-                    <input type="hidden" maxlength="40" class="input" name="CountryID" id="CountryID" value="826" />
-                    <input type="hidden" maxlength="40" class="input" name="LocaleID" id="LocaleID" value="en_GB" />
-                    <input type="hidden" maxlength="40" class="input" name="RegFormLocale" id="RegFormLocale" value="en_GB" />
-                    <input type="hidden" maxlength="40" class="input" name="Phone" id="Phone" value="000000" />
-                    <input type="hidden" name="ShopTypeAlias" value="PartnerTestShopNow" />
-                    <input type="hidden" name="language" id="language" value="en" />
-                    <button type="submit" class="submit cta">Get free test shop <span class="icon icon-arrowright"></span></button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-</div>
 
-<div class="modal fade" id="modal-popup-6">
-  <div style="display:flex; justify-content:center">
-    <section id="demoshop-form-6 modal-section-6" class="modal-content col col-sm-12" style="max-width: 900px !important; top: 25% !important; padding: 20px 20px 20px 20px; position: absolute;">
-      <div class="container-fluid" id="modal-div-6">
-        <div id="modal-container-6">
-          <iframe id="cheat-frame-6" name="epages-demo-shop-frame-6" frameborder="0" allowtransparency="true" width="900px" height="720px"></iframe>
-          <iframe id="cheat-frame-2-6" src="https://www.epages.com/en/partner/developer-program/success.php" frameborder="0" allowtransparency="true" width="900px" height="720px"></iframe>
-          <div class="row" style= "margin-top: 0px;" id="main-row-6">
-            <div class="col-md-12 center">
-              <h3>Join the ePages Developer Program</h3>
-              <div class="spacer60"></div>
-              <p>Just enter your details below to sign up for the ePages Developer Program and you will receive a free ePages 6 test shop.</p>
-              <div class="spacer20"></div>
-              <div class="spacer20"></div>
-              <form id="demoshopform-6" class="demoshopform form-default" method="post" action="https://devshop.epages.com/epages/Site.sf/en_GB/?ObjectPath=/Providers/epagesdev&ViewAction=ViewProviderRegistrationForm" target="epages-demo-shop-frame-6">
-                <div class="row">
-                  <div class="col-xs-6 col-md-6">
-                    <div class="form-group">
-                      <input type="text" class="form-control" name="LastName" id="LastName" placeholder="Full name" required />
+{% assign versions = "now, 6" | split: ',' %}
+
+{% for version in versions %}
+  <div class="modal fade" id="modal-popup-{{version}}">
+    <div style="display:flex; justify-content:center">
+      <section id="demoshop-form-{{version}} modal-section-{{version}}" class="modal-content col col-sm-12" style="max-width: 900px !important; top: 25% !important; padding: 20px 20px 20px 20px; position: absolute;">
+        <div class="container-fluid" id="modal-div-{{version}}">
+          <div id="modal-container-{{version}}">
+            <iframe id="cheat-frame-{{version}}" name="epages-demo-shop-frame-{{version}}" frameborder="0" allowtransparency="true" width="900px" height="720px"></iframe>
+            <iframe id="cheat-frame-2-{{version}}" src="https://www.epages.com/en/partner/developer-program/success.php" frameborder="0" allowtransparency="true" width="900px" height="720px"></iframe>
+            <div class="row" style= "margin-top: 0px;" id="main-row-{{version}}">
+              <div class="col-md-12 center">
+                <h3>Join the ePages Developer Program</h3>
+                <div class="spacer60"></div>
+                <p>Just enter your details below to sign up for the ePages Developer Program and you will receive a free ePages Now test shop.</p>
+                <div class="spacer20"></div>
+                <div class="spacer20"></div>
+                <form id="demoshopform-{{version}}" class="demoshopform form-default" method="post" action="https://devshop.epages.com/epages/Site.sf/en_GB/?ObjectPath=/Providers/epagesdev&ViewAction=ViewProviderRegistrationForm" target="epages-demo-shop-frame-{{version}}">
+                  <div class="row">
+                    <div class="col-xs-6 col-md-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="LastName" id="LastName" placeholder="Full name" required />
+                      </div>
+                    </div>
+                    <div class="col-xs-6 col-md-6">
+                      <div class="form-group">
+                        <input type="email" class="form-control" name="EMail" id="EMail" placeholder="Email address" required />
+                      </div>
                     </div>
                   </div>
-                  <div class="col-xs-6 col-md-6">
-                    <div class="form-group">
-                      <input type="email" class="form-control" name="EMail" id="EMail" placeholder="Email address" required />
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="spacer20"></div>
+                      <div class="form-group">
+                        <input type="checkbox" required="required" name="tc" required> I have read and agree to the <a href="http://www.epages.com/wAssets-epages/docs/partner/ePages_Developer_Programm_2015_TaCs.pdf" target="_blank">terms and conditions</a>.*
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="spacer20"></div>
-                    <div class="form-group">
-                      <input type="checkbox" required="required" name="tc" required> I have read and agree to the <a href="http://www.epages.com/wAssets-epages/docs/partner/ePages_Developer_Programm_2015_TaCs.pdf" target="_blank">terms and conditions</a>.*
+                  <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                      <input type="hidden" name="ChangeAction" value="RegisterProviderTestShop" />
+                      <input type="hidden" maxlength="40" class="input" name="FirstName" id="FirstName" value="" />
+                      <input type="hidden" maxlength="40" class="input" name="CountryID" id="CountryID" value="826" />
+                      <input type="hidden" maxlength="40" class="input" name="LocaleID" id="LocaleID" value="en_GB" />
+                      <input type="hidden" maxlength="40" class="input" name="RegFormLocale" id="RegFormLocale" value="en_GB" />
+                      <input type="hidden" maxlength="40" class="input" name="Phone" id="Phone" value="000000" />
+                      {% case version %}
+                      {% when 'now' %}
+                        <input type="hidden" name="ShopTypeAlias" value="PartnerTestShopNow" />
+                      {% when '6' %}
+                        <input type="hidden" name="ShopTypeAlias" value="PartnerTestShop" />
+                      {% endcase %}
+                      <input type="hidden" name="language" id="language" value="en" />
+                      <button type="submit" class="submit cta">Get free test shop <span class="icon icon-arrowright"></span></button>
                     </div>
                   </div>
-                </div>
-                <div class="row">
-                  <div class="col-xs-12 col-md-12">
-                    <input type="hidden" name="ChangeAction" value="RegisterProviderTestShop" />
-                    <input type="hidden" maxlength="40" class="input" name="FirstName" id="FirstName" value="" />
-                    <input type="hidden" maxlength="40" class="input" name="CountryID" id="CountryID" value="826" />
-                    <input type="hidden" maxlength="40" class="input" name="LocaleID" id="LocaleID" value="en_GB" />
-                    <input type="hidden" maxlength="40" class="input" name="RegFormLocale" id="RegFormLocale" value="en_GB" />
-                    <input type="hidden" maxlength="40" class="input" name="Phone" id="Phone" value="000000" />
-                    <input type="hidden" name="ShopTypeAlias" value="PartnerTestShop" />
-                    <input type="hidden" name="language" id="language" value="en" />
-                    <button type="submit" class="submit cta">Get free test shop <span class="icon icon-arrowright"></span></button>
-                  </div>
-                </div>
-              </form>
+                </form>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </div>
-</div>
+{% endfor %}
 
 <header id="header" class="jumbotron">
   <h1>Developer Program</h1>
