@@ -61,7 +61,9 @@ task :test do
       errors = []
       files.each do |file|
         errors += check_line_endings(file)
-        errors += check_trailing_whitespaces(file)
+        if !(File.basename(file).end_with?(".md"))
+          errors += check_trailing_whitespaces(file)
+        end
         errors += check_indentation(file)
         errors += check_filename(file)
       end
