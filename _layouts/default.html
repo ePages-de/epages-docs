@@ -1,9 +1,13 @@
 <!DOCTYPE html>
+{% assign chapter = page.url | regex_extract: '^/([^/]+)/' %}
 <html>
-  {% include head.html %}
+  {% include head.html chapter=chapter %}
   <body>
-    {% include header.html %}
+
+    {% assign baseUrl = site.baseUrl %}
+
+    {% include_cached header.html chapter=chapter baseUrl=baseUrl %}
     {{ content }}
-    {% include footer.html %}
+    {% include_cached footer.html %}
   </body>
 </html>

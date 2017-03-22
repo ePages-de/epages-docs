@@ -38,3 +38,5 @@ exclude:
   - vendor
 include:
   - videos
+gem:
+  - jekyll-include-cache
