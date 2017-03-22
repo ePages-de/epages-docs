@@ -3,24 +3,26 @@ layout: default
 permalink: /
 ---
 
-{% assign versions = "now, 6" | split: ',' %}
-
-{% for version in versions %}
-  <div class="modal fade" id="modal-popup-{{version}}">
+{% for version in site.data.test-shop-versions %}
+  <div class="modal fade" id="modal-popup-{{version.key}}">
     <div style="display:flex; justify-content:center">
-      <section id="demoshop-form-{{version}} modal-section-{{version}}" class="modal-content col col-sm-12" style="max-width: 900px !important; top: 25% !important; padding: 20px 20px 20px 20px; position: absolute;">
-        <div class="container-fluid" id="modal-div-{{version}}">
-          <div id="modal-container-{{version}}">
-            <iframe id="cheat-frame-{{version}}" name="epages-demo-shop-frame-{{version}}" frameborder="0" allowtransparency="true" width="900px" height="720px"></iframe>
-            <iframe id="cheat-frame-2-{{version}}" src="https://www.epages.com/en/partner/developer-program/success.php" frameborder="0" allowtransparency="true" width="900px" height="720px"></iframe>
-            <div class="row" style= "margin-top: 0px;" id="main-row-{{version}}">
+      <section id="demoshop-form-{{version.key}} modal-section-{{version.key}}" class="modal-content col col-sm-12" style="max-width: 900px !important; top: 25% !important; padding: 20px 20px 20px 20px; position: absolute;">
+        <div class="container-fluid" id="modal-div-{{version.key}}">
+          <div id="modal-container-{{version.key}}">
+            <div id="response-{{version.key}}" style="display: none;">
+              <h3>Thank you for your registration.</h3>
+              <p>You will receive an email confirmation with your test shop data.</p>
+              <p>If you have any questions, feel free to contact us at <a href="mailto:apps@epages.com">apps@epages.com</a>.</p>
+            </div>
+            <iframe id="cheat-frame-{{version.key}}" name="epages-demo-shop-frame-{{version.key}}" frameborder="0" allowtransparency="true" width="900px" height="720px"></iframe>
+            <div class="row" style= "margin-top: 0px;" id="main-row-{{version.key}}">
               <div class="col-md-12 center">
                 <h3>Join the ePages Developer Program</h3>
                 <div class="spacer60"></div>
-                <p>Just enter your details below to sign up for the ePages Developer Program and you will receive a free ePages Now test shop.</p>
+                <p>{{version.text}}</p>
                 <div class="spacer20"></div>
                 <div class="spacer20"></div>
-                <form id="demoshopform-{{version}}" class="demoshopform form-default" method="post" action="https://devshop.epages.com/epages/Site.sf/en_GB/?ObjectPath=/Providers/epagesdev&ViewAction=ViewProviderRegistrationForm" target="epages-demo-shop-frame-{{version}}">
+                <form id="demoshopform-{{version.key}}" class="demoshopform form-default" method="post" action="https://devshop.epages.com/epages/Site.sf/en_GB/?ObjectPath=/Providers/epagesdev&ViewAction=ViewProviderRegistrationForm" target="epages-demo-shop-frame-{{version.key}}">
                   <div class="row">
                     <div class="col-xs-6 col-md-6">
                       <div class="form-group">
@@ -49,12 +51,7 @@ permalink: /
                       <input type="hidden" maxlength="40" class="input" name="LocaleID" id="LocaleID" value="en_GB" />
                       <input type="hidden" maxlength="40" class="input" name="RegFormLocale" id="RegFormLocale" value="en_GB" />
                       <input type="hidden" maxlength="40" class="input" name="Phone" id="Phone" value="000000" />
-                      {% case version %}
-                      {% when 'now' %}
-                        <input type="hidden" name="ShopTypeAlias" value="PartnerTestShopNow" />
-                      {% when '6' %}
-                        <input type="hidden" name="ShopTypeAlias" value="PartnerTestShop" />
-                      {% endcase %}
+                      <input type="hidden" name="ShopTypeAlias" value="{{version.flag}}" />
                       <input type="hidden" name="language" id="language" value="en" />
                       <button type="submit" class="submit cta">Get free test shop <span class="icon icon-arrowright"></span></button>
                     </div>
@@ -140,23 +137,16 @@ permalink: /
 </section>
 
 <script type="text/javascript">
-  $( document ).ready(function() {
-    $('#cheat-frame-now').on('load', function() {
-      document.getElementById('main-row-now').style.display = 'none';
-      document.getElementById('demoshop-form-now modal-section-now').style.top = "10%";
-      document.getElementById('cheat-frame-2-now').style.display = 'block';
-    });
-    $('#cheat-frame-6').on('load', function() {
-      document.getElementById('main-row-6').style.display = 'none';
-      document.getElementById('demoshop-form-6 modal-section-6').style.top = "10%";
-      document.getElementById('cheat-frame-2-6').style.display = 'block';
-    });
+  $(document).ready(function() {
+    {% for version in site.data.test-shop-versions %}
+      $('#cheat-frame-{{version.key}}').on('load', function() {
+        $('#main-row-{{version.key}}').hide();
+        $('#response-{{version.key}}').show();
+      });
 
-    if (document.location.href.match(/#modal-popup-now/) != null) {
-      $('#modal-popup-now').modal('show');
-    }
-    if (document.location.href.match(/#modal-popup-6/) != null) {
-      $('#modal-popup-6').modal('show');
-    }
+      if (document.location.href.match(/#modal-popup-{{version.key}}/) != null) {
+        $('#modal-popup-{{version.key}}').modal('show');
+      }
+    {% endfor %}
   });
 </script>
