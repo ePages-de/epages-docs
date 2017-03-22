@@ -1,0 +1,7 @@
+- key: now
+  flag: PartnerTestShopNow
+  text: Just enter your details below to sign up for the ePages Developer Program and you will receive a free ePages Now test shop.
+
+- key: 6
+  flag: PartnerTestShop
+  text: Just enter your details below to sign up for the ePages Developer Program and you will receive a free test shop.
