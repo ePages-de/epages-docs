@@ -53,10 +53,34 @@ module Jekyll
   end
 
   class ApiResourcePageGenerator < Generator
+    def initialize(config)
+      @mtimestamps = {}
+    end
+
+    def dir_modified?(dir_path, glob_pattern)
+      mtimestamp = Dir.glob("#{dir_path}/#{glob_pattern}").map { |f| File.mtime(f) }.max.to_i
+      dir_modified = mtimestamp > @mtimestamps[dir_path].to_i
+      @mtimestamps[dir_path] = mtimestamp if dir_modified
+      dir_modified
+    end
+
     def generate(site)
+      layouts_dir_modified = dir_modified?(site.in_source_dir('_layouts'), '**/*.html')
+      apps_dir_modified = dir_modified?(site.in_source_dir('apps'), '**/*.md')
+
       site.config['raml'].each do |raml_config|
         api_versions = Dir["#{raml_config['api_versions']}"]
-        api_versions.each { |version| site.pages += pages_generator(site, version, raml_config).flatten }
+        api_versions.each do |api_version_raml_file_path|
+          raml_dir_path = File.dirname(api_version_raml_file_path)
+          raml_dir_modified = dir_modified?(raml_dir_path, '**/*.{raml,json}')
+
+          # Only generate the API resource pages if files in the RAML directory for this
+          # API version, in the "apps" directory or in "_layouts" have been modified.
+          next unless layouts_dir_modified or apps_dir_modified or raml_dir_modified
+          puts "Generating API resource pages for #{raml_dir_path}"
+
+          site.pages += pages_generator(site, api_version_raml_file_path, raml_config).flatten
+        end
       end
     end
 
