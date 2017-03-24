@@ -65,7 +65,7 @@ Let's look at an example playbook (`deploy-epages-now.yml`):
 {% endhighlight %}
 This playbook should be fairly self-explanatory, given you know what [ePages Now](https://www.epages.com/de/now/) is.    
 Looking at the pre-task, its intention seems to be to document a dependency, providing a bit more context for this playbook.  
-The roles that are being assigned are `docker` (which would correctly be assumed to install Docker on the host) and `epages-unity`.  
+The roles that are being assigned are `docker` (which would correctly be assumed to install Docker on the host) and `epages-now`.  
 The installation of Docker in a deployment playbook is questionable, and should probably be refactored once the way of doing the deployment has stabilized (see below).
 Concerning the hosts (`application-vms` in this case), the word implies a group of hosts. This could also be read as "the hosts that this playbook could run against", keeping in mind that depending on the environment, it might only be executed against a single host at a time.
 This is done using the `--limit` parameter of `ansible-playbook`, which is a very common case for CI/CD jobs.  
@@ -86,7 +86,7 @@ This file is supposed to contain all variables that are being used in the role, 
 This file serves the primary purpose of documenting the role.  
 When using a role written by others, these variables are meant to be used to adapt the role to specific needs.
 
-Example `defaults/main.yml` of `epages-unity` role:  
+Example `defaults/main.yml` of `epages-now` role:  
 {% highlight yml %}
 epages_now_folder: /srv/epages/epages-now
 epages_now_start_using_docker_compose: yes
@@ -99,11 +99,12 @@ epages_now_url: "{{ ansible_fqdn }}"
 epages_now_api_url: "{{ epages_now_url }}/api/v2"
 
 epages_now_create_shop: yes
-epages_now_shop_name: demounity
+epages_now_shop_name: demoshop
 {% endhighlight %}
 At the top there is a directory, which probably refers to the host.
 Since the role requires Docker (see playbook example), and there is a reference to docker-compose in the next property, one could (correctly) assume that the file being copied there could be a docker-compose definition file.
-However there is also a property `epages_unity_use_systemd` which is apparently mutually exclusive with `epages_unity_use_docker_compose`.  
+However there is also a property `epages_now_use_systemd` which is apparently mutually exclusive with `epages_now_use_docker_compose`.  
+
 The purpose of having two different ways of starting the application could (and should) be questioned.  
 In this case it suggests that the staging / production setup is still incubating and the deployment happens very similar to development mode.  
 But as Agile thinking suggests this should not prevent us from [automating the deployment as early as possible](http://www.theserverside.com/tip/Try-an-Agile-deployment-strategy).
