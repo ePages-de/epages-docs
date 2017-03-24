@@ -104,6 +104,7 @@ epages_now_shop_name: demoshop
 At the top there is a directory, which probably refers to the host.
 Since the role requires Docker (see playbook example), and there is a reference to docker-compose in the next property, one could (correctly) assume that the file being copied there could be a docker-compose definition file.
 However there is also a property `epages_now_use_systemd` which is apparently mutually exclusive with `epages_now_use_docker_compose`.  
+
 The purpose of having two different ways of starting the application could (and should) be questioned.  
 In this case it suggests that the staging / production setup is still incubating and the deployment happens very similar to development mode.  
 But as Agile thinking suggests this should not prevent us from [automating the deployment as early as possible](http://www.theserverside.com/tip/Try-an-Agile-deployment-strategy).
