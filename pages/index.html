@@ -84,7 +84,7 @@ permalink: /
     <div class="col-md-10  col-md-offset-1">
       <h2><span class="fa-cogs" aria-hidden="true"></span> Build apps for ePages Online Shops with the REST API</h2>
       <p>Create apps for our App Store or develop custom integrations using our REST API.</p>
-      <p>Sign up for free and join the ePages Developer Program. Gain access to all the API resources you need to develop and successfully publish your app.</p>
+      <p><a href="#register">Sign up for free</a> and join the ePages Developer Program. Gain access to all the API resources you need to develop and successfully publish your app.</p>
       <p>Promote your service in the ePages App Store and earn up to 70% of the revenue from each sale to an <span style="white-space: nowrap">ePages merchant</span>.</p>
       <a href="/apps/" class="cta">Read REST API documentation</a>
     </div>
@@ -96,13 +96,13 @@ permalink: /
 <section id="register" class="container-fluid">
   <div class="row">
     <div class="col-md-6">
-      <h2>Create Apps for ePages Now!</h2>
+      <h2>Create apps for ePages Now!</h2>
       <p>ePages Now is our new product generation that let's you develop awesome storefront apps such as chat tools or exit popup plugins.</p>
       <a data-toggle="modal" href="#modal-popup-now" class="cta">Join now</a>
     </div>
     <div class="col-md-6">
-      <h2>Create Apps for ePages 6!</h2>
-      <p>ePages 6 is our current full-blown shop solution that enables yout o get many different types of data for your service.</p>
+      <h2>Create apps for ePages 6!</h2>
+      <p>ePages 6 is our current full-blown shop solution that enables you to get many different types of data for your service.</p>
       <a data-toggle="modal" href="#modal-popup-6" class="cta">Join now</a>
     </div>
   </div>
@@ -119,7 +119,7 @@ permalink: /
     </div>
     <div class="col-sm-8  col-sm-offset-2  col-md-4  col-md-offset-0">
       <h4><span aria-hidden="true" class="fa-pencil"></span>Open Source Projects</h4>
-      <p>We have various open source projects which you can use and contribute to.</p>
+      <p>Our development teams benefit a lot from open-source software. Here's a list of our <a href="https://github.com/ePages-de" target="_blank">open-source projects</a> that you can use and contribute to.</p>
     </div>
     <div class="col-sm-8  col-sm-offset-2  col-md-4  col-md-offset-0">
       <h4><span aria-hidden="true" class="fa-pencil"></span>Jobs</h4>
@@ -148,5 +148,37 @@ permalink: /
         $('#modal-popup-{{version.key}}').modal('show');
       }
     {% endfor %}
+
+    $('a').click(function(e) {
+      if ($(this).attr('href').indexOf('#') >= 0) {
+        e.preventDefault();
+        $('html, body').animate({
+          scrollTop: $($(this).attr('href')).offset().top - 50
+        }, 500);
+      }
+    });
+
+    $(document).on('click', '.modal-backdrop', function() {
+      cleanForms();
+      {% for version in site.data.test-shop-versions %}
+        $('#response-{{version.key}}').hide();
+        $('#main-row-{{version.key}}').show();
+      {% endfor %}
+    });
   });
+
+  function cleanForms() {
+    $('.form-control[name="LastName"]').val('');
+    $('.form-control[name="EMail"]').val('');
+    $('input[type="checkbox"]').attr('checked', false);
+    // Remove yellow color from autocompleted input fields
+    if (navigator.userAgent.toLowerCase().indexOf("chrome") >= 0) {
+      $('input:-webkit-autofill').each(function(){
+        var text = $(this).val();
+        var name = $(this).attr('name');
+        $(this).after(this.outerHTML).remove();
+        $('input[name=' + name + ']').val(text);
+      });
+    }
+  }
 </script>
