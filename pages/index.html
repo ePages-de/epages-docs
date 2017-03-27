@@ -2,68 +2,75 @@
 layout: default
 permalink: /
 ---
-<div class="modal fade" id="modal-popup">
-  <div style="display:flex; justify-content:center">
-    <section id="demoshop-form modal-section" class="modal-content col col-sm-12" style="max-width: 900px !important; top: 25% !important; padding: 20px 20px 20px 20px; position: absolute;">
-      <div class="container-fluid" id="modal-div">
-        <div id="modal-container">
-          <iframe id="cheat-frame" name="epages-demo-shop-frame" frameborder="0" allowtransparency="true" width="900px" height="720px"></iframe>
-          <iframe id="cheat-frame-2" src="https://www.epages.com/en/partner/developer-program/success.php" frameborder="0" allowtransparency="true" width="900px" height="720px"></iframe>
-          <div class="row" style= "margin-top: 0px;" id="main-row">
-            <div class="col-md-12 center">
-              <h3>Join the ePages Developer Program</h3>
-              <div class="spacer60"></div>
-              <p>Just enter your details below to sign up for the ePages Developer Program and you will receive a free test shop.</p>
-              <div class="spacer20"></div>
-              <div class="spacer20"></div>
-              <form id="demoshopform" class="demoshopform form-default" method="post" action="https://devshop.epages.com/epages/Site.sf/en_GB/?ObjectPath=/Providers/epagesdev&ViewAction=ViewProviderRegistrationForm" target="epages-demo-shop-frame">
-                <div class="row">
-                  <div class="col-xs-6 col-md-6">
-                    <div class="form-group">
-                      <input type="text" class="form-control" name="LastName" id="LastName" placeholder="Full name" required />
+
+{% for version in site.data.test-shop-versions %}
+  <div class="modal fade" id="modal-popup-{{version.key}}">
+    <div style="display:flex; justify-content:center">
+      <section id="demoshop-form-{{version.key}} modal-section-{{version.key}}" class="modal-content col col-sm-12" style="max-width: 900px !important; top: 25% !important; padding: 20px 20px 20px 20px; position: absolute;">
+        <div class="container-fluid" id="modal-div-{{version.key}}">
+          <div id="modal-container-{{version.key}}">
+            <div id="response-{{version.key}}" style="display: none;">
+              <h3>Thank you for your registration.</h3>
+              <p>You will receive an email confirmation with your test shop data.</p>
+              <p>If you have any questions, feel free to contact us at <a href="mailto:apps@epages.com">apps@epages.com</a>.</p>
+            </div>
+            <iframe id="cheat-frame-{{version.key}}" name="epages-demo-shop-frame-{{version.key}}" frameborder="0" allowtransparency="true" width="900px" height="720px"></iframe>
+            <div class="row" style= "margin-top: 0px;" id="main-row-{{version.key}}">
+              <div class="col-md-12 center">
+                <h3>Join the ePages Developer Program</h3>
+                <div class="spacer60"></div>
+                <p>{{version.text}}</p>
+                <div class="spacer20"></div>
+                <div class="spacer20"></div>
+                <form id="demoshopform-{{version.key}}" class="demoshopform form-default" method="post" action="https://devshop.epages.com/epages/Site.sf/en_GB/?ObjectPath=/Providers/epagesdev&ViewAction=ViewProviderRegistrationForm" target="epages-demo-shop-frame-{{version.key}}">
+                  <div class="row">
+                    <div class="col-xs-6 col-md-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="LastName" id="LastName" placeholder="Full name" required />
+                      </div>
+                    </div>
+                    <div class="col-xs-6 col-md-6">
+                      <div class="form-group">
+                        <input type="email" class="form-control" name="EMail" id="EMail" placeholder="Email address" required />
+                      </div>
                     </div>
                   </div>
-                  <div class="col-xs-6 col-md-6">
-                    <div class="form-group">
-                      <input type="email" class="form-control" name="EMail" id="EMail" placeholder="Email address" required />
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="spacer20"></div>
+                      <div class="form-group">
+                        <input type="checkbox" required="required" name="tc" required> I have read and agree to the <a href="http://www.epages.com/wAssets-epages/docs/partner/ePages_Developer_Programm_2015_TaCs.pdf" target="_blank">terms and conditions</a>.*
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="spacer20"></div>
-                    <div class="form-group">
-                      <input type="checkbox" required="required" name="tc" required> I have read and agree to the <a href="http://www.epages.com/wAssets-epages/docs/partner/ePages_Developer_Programm_2015_TaCs.pdf" target="_blank">terms and conditions</a>.*
+                  <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                      <input type="hidden" name="ChangeAction" value="RegisterProviderTestShop" />
+                      <input type="hidden" maxlength="40" class="input" name="FirstName" id="FirstName" value="" />
+                      <input type="hidden" maxlength="40" class="input" name="CountryID" id="CountryID" value="826" />
+                      <input type="hidden" maxlength="40" class="input" name="LocaleID" id="LocaleID" value="en_GB" />
+                      <input type="hidden" maxlength="40" class="input" name="RegFormLocale" id="RegFormLocale" value="en_GB" />
+                      <input type="hidden" maxlength="40" class="input" name="Phone" id="Phone" value="000000" />
+                      <input type="hidden" name="ShopTypeAlias" value="{{version.flag}}" />
+                      <input type="hidden" name="language" id="language" value="en" />
+                      <button type="submit" class="submit cta">Get free test shop <span class="icon icon-arrowright"></span></button>
                     </div>
                   </div>
-                </div>
-                <div class="row">
-                  <div class="col-xs-12 col-md-12">
-                    <input type="hidden" name="ChangeAction" value="RegisterProviderTestShop" />
-                    <input type="hidden" maxlength="40" class="input" name="FirstName" id="FirstName" value="" />
-                    <input type="hidden" maxlength="40" class="input" name="CountryID" id="CountryID" value="826" />
-                    <input type="hidden" maxlength="40" class="input" name="LocaleID" id="LocaleID" value="en_GB" />
-                    <input type="hidden" maxlength="40" class="input" name="RegFormLocale" id="RegFormLocale" value="en_GB" />
-                    <input type="hidden" maxlength="40" class="input" name="Phone" id="Phone" value="000000" />
-                    <input type="hidden" name="ShopTypeAlias" value="PartnerTestShop" />
-                    <input type="hidden" name="language" id="language" value="en" />
-                    <button type="submit" class="submit cta">Get free test shop <span class="icon icon-arrowright"></span></button>
-                  </div>
-                </div>
-              </form>
+                </form>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </div>
-</div>
+{% endfor %}
 
 <header id="header" class="jumbotron">
   <h1>Developer Program</h1>
   <form method="get" action="https://google.com/search" autocomplete="off">
     <div class="input-group">
-      <input type="text" class="form-control" name="q" placeholder="Enter your search here" required/>
+      <input type="text" class="form-control" name="q" placeholder="Search..." required/>
       <input type="hidden" name="as_sitesearch" value="developer.epages.com"/>
       <button class="cta" type="submit">Search</button>
     </div>
@@ -73,32 +80,48 @@ permalink: /
 <!--  REST API-->
 
 <section id="rest-api" class="container-fluid">
-  <h2><span class="fa-cogs" aria-hidden="true"></span> Build apps with the REST API</h2>
-  <p>Create apps for our App Store or develop custom integrations using our REST API.</p>
-  <a href="/apps/" class="cta">Read REST API documentation</a>
+  <div class="row">
+    <div class="col-md-10  col-md-offset-1">
+      <h2><span class="fa-cogs" aria-hidden="true"></span> Build apps for ePages Online Shops with the REST API</h2>
+      <p>Create apps for our App Store or develop custom integrations using our REST API.</p>
+      <p><a href="#register">Sign up for free</a> and join the ePages Developer Program. Gain access to all the API resources you need to develop and successfully publish your app.</p>
+      <p>Promote your service in the ePages App Store and earn up to 70% of the revenue from each sale to an <span style="white-space: nowrap">ePages merchant</span>.</p>
+      <a href="/apps/" class="cta">Read REST API documentation</a>
+    </div>
+  </div>
 </section>
 
 <!--  REGISTER-->
 
 <section id="register" class="container-fluid">
-  <h2>Not registered for the developer program yet?</h2>
-  <a data-toggle="modal" href="#modal-popup" class="cta">Join now</a>
+  <div class="row">
+    <div class="col-md-6">
+      <h2>Create apps for ePages Now!</h2>
+      <p>ePages Now is our new product generation that let's you develop awesome storefront apps such as chat tools or exit popup plugins.</p>
+      <a data-toggle="modal" href="#modal-popup-now" class="cta">Join now</a>
+    </div>
+    <div class="col-md-6">
+      <h2>Create apps for ePages 6!</h2>
+      <p>ePages 6 is our current full-blown shop solution that enables you to get many different types of data for your service.</p>
+      <a data-toggle="modal" href="#modal-popup-6" class="cta">Join now</a>
+    </div>
+  </div>
 </section>
 
 <!--  MORE RESOURCES-->
 
 <section id="resources" class="container">
-  <h2>More resources</h2>
   <div class="row">
-    <div>
+    <h2>More resources</h2>
+    <div class="col-sm-8  col-sm-offset-2  col-md-4  col-md-offset-0">
       <h4><span aria-hidden="true" class="fa-cogs"></span>Developer Blog</h4>
-      <p>Read about the latest developments at ePages and current industry trends at <a href="{{ '/blog/index.html' | prepend: site.baseurl }}">our blog.</a></p>
+      <p>Read about the latest developments at ePages and current industry trends at <a href="{{ '/blog/index.html' | prepend: site.baseurl }}"><span style="white-space: nowrap">our blog</span>.</a></p>
     </div>
-    <div>
+    <div class="col-sm-8  col-sm-offset-2  col-md-4  col-md-offset-0">
       <h4><span aria-hidden="true" class="fa-pencil"></span>Open Source Projects</h4>
-      <p>We have various open source projects which you can use and contribute to.</p>
+      <p>Our development teams benefit a lot from open-source software. Here's a list of our <a href="https://github.com/ePages-de" target="_blank">open-source projects</a> that you can use and contribute to.</p>
     </div>
-    <div>
+    <div class="col-sm-8  col-sm-offset-2  col-md-4  col-md-offset-0">
       <h4><span aria-hidden="true" class="fa-pencil"></span>Jobs</h4>
       <p>Come work with us! Have a look at our <a href="{{ '/devjobs' | prepend: site.baseurl }}">current job openings.</a></p>
     </div>
@@ -108,19 +131,54 @@ permalink: /
 <!--  SOAP-->
 
 <section class="container-fluid prefooter">
-  <p>Still working with our old API? No problem, check our <a href="{{ '/soap/index.html' | prepend: site.baseurl }}">SOAP API documentation.</a></p>
+  <div class="row">
+    <p>Still working with our old API? No problem, check our <a href="{{ '/soap/index.html' | prepend: site.baseurl }}">SOAP API documentation.</a></p>
+  </div>
 </section>
 
 <script type="text/javascript">
-  $( document ).ready(function() {
-    $('#cheat-frame').on('load', function() {
-      document.getElementById('main-row').style.display = 'none';
-      document.getElementById('demoshop-form modal-section').style.top = "10%";
-      document.getElementById('cheat-frame-2').style.display = 'block';
+  $(document).ready(function() {
+    {% for version in site.data.test-shop-versions %}
+      $('#cheat-frame-{{version.key}}').on('load', function() {
+        $('#main-row-{{version.key}}').hide();
+        $('#response-{{version.key}}').show();
+      });
+
+      if (document.location.href.match(/#modal-popup-{{version.key}}/) != null) {
+        $('#modal-popup-{{version.key}}').modal('show');
+      }
+    {% endfor %}
+
+    $('a').click(function(e) {
+      if ($(this).attr('href').indexOf('#') >= 0) {
+        e.preventDefault();
+        $('html, body').animate({
+          scrollTop: $($(this).attr('href')).offset().top - 50
+        }, 500);
+      }
     });
 
-    if (document.location.href.match(/#modal-popup/) != null) {
-      $('#modal-popup').modal('show');
-    }
+    $(document).on('click', '.modal-backdrop', function() {
+      cleanForms();
+      {% for version in site.data.test-shop-versions %}
+        $('#response-{{version.key}}').hide();
+        $('#main-row-{{version.key}}').show();
+      {% endfor %}
+    });
   });
+
+  function cleanForms() {
+    $('.form-control[name="LastName"]').val('');
+    $('.form-control[name="EMail"]').val('');
+    $('input[type="checkbox"]').attr('checked', false);
+    // Remove yellow color from autocompleted input fields
+    if (navigator.userAgent.toLowerCase().indexOf("chrome") >= 0) {
+      $('input:-webkit-autofill').each(function(){
+        var text = $(this).val();
+        var name = $(this).attr('name');
+        $(this).after(this.outerHTML).remove();
+        $('input[name=' + name + ']').val(text);
+      });
+    }
+  }
 </script>
