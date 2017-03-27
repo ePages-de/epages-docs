@@ -7,7 +7,7 @@ categories: events
 authors: ["Benjamin"]
 ---
 
-In mid February the [microXchg conference](http://microxchg.io) took place in Berlin.
+In mid February the [microXchg conference](http://microxchg.io) ([Twitter](https://twitter.com/microXchg)) took place in Berlin.
 It is the biggest two-day event in Europe that focuses on [Microservices](https://martinfowler.com/articles/microservices.html)
 – an architectural design of software systems that has generated a lot of traction within the last years as it is capable of not only transforming old architectures but also align teams properly to the distribution of software artifacts by establishing distinct bounded contexts.
 
@@ -27,6 +27,9 @@ The presentation material latest until the very last second of the workshop.
 Perfectly on time.
 After the workshop I had an interesting discussion about the tech communities in Canada.
 Yaroslav also wrote [a blog post](http://sap1ens.com/blog/2017/02/26/microxchg-2017) about his observations of the conference.
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Last talk for the day:<a href="https://twitter.com/fgeorge52">@fgeorge52</a> about IoT and <a href="https://twitter.com/hashtag/Microservices?src=hash">#Microservices</a> in the Home <a href="https://t.co/JpZYuXrFnf">pic.twitter.com/JpZYuXrFnf</a></p>&mdash; microXchg (@microXchg) <a href="https://twitter.com/microXchg/status/832281234520809472">February 16, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## Visited Talks
 
@@ -59,6 +62,9 @@ Also, without these lines it's a nice handover to the talk you want to describe.
 
 [Here](https://www.infoq.com/news/2017/02/microxchg-day-one) you can find a summary of day one.
 
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">FULL ROOM at Secure Microservices Adoption by <a href="https://twitter.com/ggonchar">@ggonchar</a> <a href="https://twitter.com/Kreditech">@Kreditech</a> <a href="https://twitter.com/microXchg">@microXchg</a> <a href="https://twitter.com/hashtag/microXchg?src=hash">#microXchg</a> <a href="https://twitter.com/hashtag/eCommerce?src=hash">#eCommerce</a> <a href="https://t.co/eFQOAYd2AP">pic.twitter.com/eFQOAYd2AP</a></p>&mdash; Benjamin Nothdurft (@dataduke) <a href="https://twitter.com/dataduke/status/832520703979159552">February 17, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ## Talks on Friday
 
 **Morning:**
@@ -90,8 +96,11 @@ If you are interested in this new endeavor explore the [source code](https://git
 I'm really happy that I could help making this conference a great experience and to also interview some of the top speakers.
 Thanks for such terrific days in Berlin, the delicious catering and the vitalizing discussions.
 
+## Credits
+
 As you can tell the speaker lineup was incredible and the talks absolutly stunning.
 The atmosphere throughout the event, every very single moment, was filled with energy.
 It was amazing – the very best conference within my life of visting conferences, which I stopped counting at 50 conferences.
 
-Special thanks goes to Oliver Gierke, who took nearly ... .
+Special thanks goes to [Oliver Gierke]((http://twitter.com/olivergierke), who took nearly an hour of his time and invested it into talking with me in the lounge area about [Pivotal](https://pivotal.io) internals and [Spring Data Rest](http://projects.spring.io/spring-data-rest) and [Spring Data Elasticsearch](https://projects.spring.io/spring-data-elasticsearch).
+This was very helpful and improved my knowledge besides all talks I have already seen from him at several conferences.
