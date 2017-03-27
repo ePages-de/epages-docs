@@ -70,7 +70,7 @@ If a Pull request exists there, the other repositories don't have to activate th
 
 {% image blog/blog-pr-test-2.png %}
 
-Other repositories have to check, if a branch with the given name exist in the control repository.
+Other repositories have to check, if a branch with the given name exists in the control repository.
 If the branch was found, the control repository will start the test.
 If the branch doesn't exist, one of the other repositories has to trigger the PR_test.
 
