@@ -8,7 +8,7 @@
   "links": [
     {
       "rel": "self",
-      "href": "http://example.test.com/rs/shops/DemoShop/webhooks/73CA6C8C-60E3-4B78-AE37-0491EBE57AF8"
+      "href": "https://example.test.com/rs/shops/DemoShop/webhooks/73CA6C8C-60E3-4B78-AE37-0491EBE57AF8"
     }
   ]
 }
