@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "microXchg 2017 - The Microservices Conference"
-date: "2017-03-26 12:02:22"
+date: "2017-03-28 12:02:22"
 image: blog-header/microxchg-2017.jpg
 categories: events
 authors: ["Benjamin"]
