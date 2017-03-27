@@ -16,7 +16,7 @@ layout: page
 
 
 {% assign authorization = page.raml_method.secured_by | shift: 2 %}
-{% if authorization. != empty %}
+{% if authorization != empty %}
   <strong>Authorisation</strong>
     <p>OAuth 2.0 Token required with scopes: </p>
   {% for scope in authorization %}
@@ -24,7 +24,7 @@ layout: page
   {% endfor %}
 {% endif %}
 
-{% if page.raml_resource.uri_parameters. != empty %}
+{% if page.raml_resource.uri_parameters != empty %}
   <h2 id="uri-parameters">URI parameters</h2>
   <table class="table table-bordered">
     <thead>
@@ -38,8 +38,8 @@ layout: page
     {% for p_tmp in page.raml_resource.uri_parameters %}
       {% assign p = p_tmp[1] %}
       <tr>
-        <td><code>{{ p.name. }}</code></td>
-        <td><strong>{{ p.type. }}</strong></td>
+        <td><code>{{ p.name }}</code></td>
+        <td><strong>{{ p.type }}</strong></td>
         <td>
           {% if p.description %}<div>{{ p.description | markdownify }}</div>{% endif %}
           <div>Required: <code>{{ p.required }}</code></div>
@@ -70,8 +70,8 @@ layout: page
     {% for p_tmp in page.raml_method.query_parameters %}
       {% assign p = p_tmp[1] %}
       <tr>
-        <td><code>{{ p.name. }}</code></td>
-        <td><strong>{{ p.type. }}</strong></td>
+        <td><code>{{ p.name }}</code></td>
+        <td><strong>{{ p.type }}</strong></td>
         <td>
           {% if p.description %}<div>{{ p.description | markdownify }}</div>{% endif %}
           <div>Required: <code>{{ p.required }}</code></div>

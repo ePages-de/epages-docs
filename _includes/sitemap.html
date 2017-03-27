@@ -1,0 +1,6 @@
+{% for category in sitemap %}
+  <li class="sitemap-headline">{{ category.title }}</li>
+  {% for entry in category.entries %}
+    <li class="sitemap-entry">{% sitemap_link entry %}</li>
+  {% endfor %}
+{% endfor %}

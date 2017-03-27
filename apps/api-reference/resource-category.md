@@ -26,7 +26,7 @@ A collection of product categories of a shop.
       </li>
     {% endif %}
     {% for category in exceptions %}
-      {% if (page.raml_resource.relative_uri contains category) and visible %}
+      {% if page.raml_resource.relative_uri contains category and visible %}
         <li class="resource-entry">
           <span class="http-method http-method-{{ page.raml_method.method | downcase }}">{{ page.raml_method.method }}</span>
           <a href="{{ page.url | prepend: site.baseurl }}">{{ page.raml_resource.relative_uri }}</a>
