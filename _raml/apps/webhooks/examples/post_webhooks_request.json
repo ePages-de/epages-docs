@@ -1,0 +1,4 @@
+{
+    "callbackUrl" : "https://salesanalyticsapp.com/callback",
+    "eventType" : "ORDER_CREATE"
+}

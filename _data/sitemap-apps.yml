@@ -40,6 +40,9 @@
     - title: Use cases
       link: page:apps-use-cases
 
+    - title: Webhooks
+      link: page:apps-webhooks
+
     - title: Create an app
       link: page:apps-create
 
@@ -112,6 +115,9 @@
     - title: Taxes
       link: page:api-resources-tax-classes
 
+    - title: Webhooks
+      link: page:api-resources-webhooks
+
 - key: more
   title: More
   entries:
@@ -123,3 +129,4 @@
 
     - title: FAQ
       link: page:apps-faq
+
