@@ -76,9 +76,9 @@ Substitutions would be made as given in this example table:
 
 Your app can use the `code` in combination with your **Client ID** and **Client Secret** for obtaining an `access_token`.
 This code is temporary and will be obsolete after app installation.
-Although the `signature` query parameter is optional, we highly recommend to use it in order to verify that your request was not changed, and for sure has been provided by ePages and no external, insecure party.
+Although it is optional to validate the `signature` query parameter, we highly recommend to do so, in order to verify that your request was not changed, and for sure has been provided by ePages and no external, insecure party.
 
-In order to understand how to verify the signature, see the following Java code example:
+In order to understand how to verify the `signature`, see the following Java code example:
 
 {% highlight java %}
 {
