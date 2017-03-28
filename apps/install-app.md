@@ -60,7 +60,7 @@ All API access is over HTTPS.
 Example:
 
 {% highlight text %}
-GET /callback?code={code}&return_url={return_url}&api_url={api_url}&access_token_url={access_token_url} HTTP/1.1
+GET /callback?code={code}&signature={signature}&return_url={return_url}&api_url={api_url}&access_token_url={access_token_url} HTTP/1.1
 Host: crazytoppingapp.com
 {% endhighlight %}
 
@@ -72,8 +72,30 @@ Substitutions would be made as given in this example table:
 | {`api_url`}      | The base API URL, that uniquely identifies the merchant. The `api_url` differs for every merchant and has to be stored in the app.  | https://creamyiceshop.com/rs/shops/CreamyIceShop |
 | {`return_url`}    | The URL which the merchant should be redirected to after the app installation. | https://creamyiceshop.com/epages/CreamyIceShop.admin/?ObjectID=17811&ViewAction=MBO-ViewAppDetails&appID=54f46f318732110bd85f41c7 |
 | {`access_token_url`} | The URL to obtain the `access_token`. | https://creamyiceshop.com/rs/shops/CreamyIceShop/token. |
+| {`signature`}      | The signature is a message authentification code. It is calculated with the `code`, `access_token_url` and `client_secret`.    | jEPRUggebJDBsEnl1%2FpHlMUBxPbsELQihEVzbx2pFlM%3D |
 
-Your app can use the `code` in combination with your **Client ID** and **Client Secret** for obtaining an `access_token`. This code is temporary and will be obsolete after app installation.
+Your app can use the `code` in combination with your **Client ID** and **Client Secret** for obtaining an `access_token`.
+This code is temporary and will be obsolete after app installation.
+Although it is optional to validate the `signature` query parameter, we highly recommend to do so, in order to verify that your request was not changed, and for sure has been provided by ePages and no external, insecure party.
+
+In order to understand how to verify the `signature`, see the following Java code example:
+
+{% highlight java %}
+{
+import javax.crypto.Mac;
+import javax.crypto.spec.SecretKeySpec;
+import org.apache.commons.codec.CharEncoding;
+
+public String calculateSignature(String authCodeValue, String authTokenUrl, String secret) {
+    String HmacSHA256 = "HmacSHA256";
+
+    final Mac mac = Mac.getInstance(HmacSHA256);
+    mac.init(new SecretKeySpec(secret.getBytes(CharEncoding.UTF_8), HmacSHA256));
+
+    byte[] signature = mac.doFinal((authCodeValue + ":" + authTokenUrl).getBytes());
+    return Base64.getEncoder().encodeToString(signature);
+}
+{% endhighlight %}
 
 ### 4. Registration (optional)
 
