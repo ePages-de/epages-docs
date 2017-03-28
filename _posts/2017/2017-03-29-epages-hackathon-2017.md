@@ -12,8 +12,8 @@ authors: ["Rose"]
 }
 </style>
 
-As every year in spring, last week we organized our third hackathon at ePages.
-This year it has been all about trying out new stuff for our very latest backend architecture ePages BEYOND, adding value to ePages Now as well as automating internal processes.
+As every year in spring, last week we had our third hackathon at ePages.
+This year it has been all about trying out new stuff for our very latest backend architecture ePages BEYOND, adding value to [ePages Now](https://www.epages.com/en/now/) as well as automating internal processes.
 
 ## Getting prepared
 
@@ -28,7 +28,7 @@ The atmosphere was very relaxed and we had a lot of time to chat with colleagues
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Ready to hack away! Starting off with a breakfast! <a href="https://twitter.com/hashtag/ephack17?src=hash">#ephack17</a> <a href="https://t.co/Gf552CgNc9">pic.twitter.com/Gf552CgNc9</a></p>&mdash; ePages Developers (@epagesdevs) <a href="https://twitter.com/epagesdevs/status/844451431872647168">March 22, 2017</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-After the breakfast, each of us started to hack away in one of the 13 teams - all with different exciting topics.
+After the breakfast, each of us started to hack away in one of the 14 teams - all with different exciting topics.
 The whole day was determined by concentration, creativity, and, of course, lots of fun and laughter.
 Some teams got so hooked up and passionate about their project that they even worked until the wee hours, and then again continued early the next morning.
 
@@ -43,19 +43,19 @@ During the two days of the hackathon, the teams mainly focused on pushing forwar
 The audience was quite impressed by the creative outcomes of every single team.
 
 To try out some new ideas for BEYOND, some teams dedicated the two days to simplify API interaction by using the query language [GraphQl](http://graphql.org/learn/).
-Another team code with Amazon's voice service device [Alexa](https://developer.amazon.com/alexa) to enable merchants to interact with their shop administration.
-Yet another team created a dashboard app for visualizing KPIs for the merchant.
+Another team coded with Amazon's voice service device [Alexa](https://developer.amazon.com/alexa) to enable merchants to interact with their shop administration.
+Yet another team created a dashboard app to visualize KPIs for the merchant.
 
 In order to enhance our latest shop software ePages Now, one of the teams developed an Amazon mass uploader to upload a bulk of products at once instead of merely one by one.
 
-And there were teams that dedicated their time to improve internal processes.
-Amongst others, one team made the source of our [API documentation](https://developer.epages.com/apps) and [Developer blog](https://developer.epages.com/blog) [epages-docs](https://github.com/ePages-de/epages-docs) fast again, another automatized the [Linux](https://www.linux.com/) setup for new colleagues starting at ePages.
+And there were teams, that dedicated their time to improve internal processes.
+Amongst others, one team made the source of our [API documentation](https://developer.epages.com/apps) and [Developer blog](https://developer.epages.com/blog), [epages-docs](https://github.com/ePages-de/epages-docs), fast again, another automatized the [Linux](https://www.linux.com/) setup for new colleagues starting at ePages.
 
-In the end everyone could vote for their favorite result.
+In the end everyone could vote for their favorite project.
 The first three winners were the lucky ones and received Amazon vouchers.
 
-The winner team's project was the development of a new stylish theme.
-New features that came with this team were, e.g. modern styling techniques, special fonts, a full screen slide bar, a featured products section, hovering effects, and much more.
+The winner team's project was a new, stylish theme.
+New features that came with this team were, amongst others, modern styling techniques, special fonts, a full screen slide bar, a featured products section, hovering effects, and much more.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/ephack17?src=hash">#ephack17</a> WINNER TEAM of <a href="https://twitter.com/hashtag/epages?src=hash">#epages</a> <a href="https://twitter.com/hashtag/hackathon?src=hash">#hackathon</a> : Building a <a href="https://twitter.com/hashtag/theme?src=hash">#theme</a> for <a href="https://twitter.com/hashtag/epagesnow?src=hash">#epagesnow</a> and <a href="https://twitter.com/hashtag/beyond?src=hash">#beyond</a><br>Congrats! Well done! <a href="https://t.co/nHWxyWkOoV">pic.twitter.com/nHWxyWkOoV</a></p>&mdash; ePages Developers (@epagesdevs) <a href="https://twitter.com/epagesdevs/status/844973976208244736">March 23, 2017</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
