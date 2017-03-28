@@ -44,8 +44,8 @@ A notification would look like this:
 {% highlight json %}
 {
    "id":"732EBF70-7138-426C-ABA4-E48AFDE3E47E",
-   "baseUrl":"http://example.test.com/rs/shops/DemoShop",
-   "entityUrl":"http://example.test.com/rs/shops/DemoShop/orders/58B6F171-3417-072A-0304-AC1532194AAB",
+   "baseUrl":"https://example.test.com/rs/shops/DemoShop",
+   "entityUrl":"https://example.test.com/rs/shops/DemoShop/orders/58B6F171-3417-072A-0304-AC1532194AAB",
    "createdOn":"2017-03-20T10:58:18Z",
    "eventType":"ORDER_UPDATE",
    "entity":{
@@ -96,7 +96,7 @@ A notification would look like this:
        "phoneNumber": "0045099906567",
        "privateEmailAddress": null,
        "privatePhoneNumber": null,
-       "websiteUrl": "http://bj.com"
+       "websiteUrl": "https://bj.com"
      },
      "shippingAddress": null,
      "shippingData": {
