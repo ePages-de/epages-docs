@@ -1,4 +1,3 @@
-{% assign chapter = page.url | regex_extract: '^/([^/]+)/' %}
 {% assign domain = page.url | regex_extract: '(.*\.com)' %}
 {% assign description = page.excerpt | strip_html | strip_newlines | truncate: 160 %}
 {% assign image_url = page.image | prepend: '/assets/images/' %}

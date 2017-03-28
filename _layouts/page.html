@@ -35,26 +35,14 @@ layout: default
 
 <div id="content">
   <div class="container">
-    {% assign versions = site.data['api-versions']['versions'] %}
+    {% assign api_versions = site.data['api-versions'] %}
     {% unless page.hide_sitemap %}
       <div class="contentnav">
         <ul id="sitemap">
           {% if chapter contains 'apps' %}
-            <li class="sitemap-headline">ePagesJ release<br />
-              <select id="api-version" name="version">
-                <option value="" selected>{{ site.data['api-versions']['latest'] }}</option>
-                {% for version in versions reversed %}
-                  <option value="v-{{ version['title'] }}">{{ version['title'] }}</option>
-                {% endfor %}
-              </select>
-            </li>
+            {% include_cached version-dropdown.html api_versions=api_versions %}
           {% endif %}
-          {% for category in sitemap %}
-            <li class="sitemap-headline">{{ category.title }}</li>
-            {% for entry in category.entries %}
-              <li class="sitemap-entry">{% sitemap_link entry %}</li>
-            {% endfor %}
-          {% endfor %}
+          {% include_cached sitemap.html sitemap=sitemap %}
           {% if chapter == 'blog' and page.title %}
             <li class="sitemap-headline">Share<br />
               <ul class="socialmedia">
@@ -71,9 +59,10 @@ layout: default
       <article>
         {{ content }}
       </article>
-      {% include pagination.html %}
+      {% assign paginator = page.paginator %}
+      {% include pagination.html paginator=paginator %}
     </div>
   </div>
 </div>
 
-{% include api-versioning.html %}
+{% include_cached api-versioning.html %}

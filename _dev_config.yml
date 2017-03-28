@@ -40,3 +40,5 @@ exclude:
   - apps/v-7.
 include:
   - videos
+gem:
+  - jekyll-include-cache
