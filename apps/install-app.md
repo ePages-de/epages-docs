@@ -72,8 +72,11 @@ Substitutions would be made as given in this example table:
 | {`api_url`}      | The base API URL, that uniquely identifies the merchant. The `api_url` differs for every merchant and has to be stored in the app.  | https://creamyiceshop.com/rs/shops/CreamyIceShop |
 | {`return_url`}    | The URL which the merchant should be redirected to after the app installation. | https://creamyiceshop.com/epages/CreamyIceShop.admin/?ObjectID=17811&ViewAction=MBO-ViewAppDetails&appID=54f46f318732110bd85f41c7 |
 | {`access_token_url`} | The URL to obtain the `access_token`. | https://creamyiceshop.com/rs/shops/CreamyIceShop/token. |
+| {`mac`}      | The Message Authentication Code required to validate the `access_token_url`.     | code=wl3RYfCmeVaMJoj8XVFpBCBfNzDXHA7Y&access_token_url=http%3A%2F%2Fstore.shop.com%2Ftoken&signature=jEPRUggebJDBsEnl1%2FpHlMUBxPbsELQihEVzbx2pFlM%3D&return_url=http%3A%2F%2Fstore.shop.com%2Fepages%2FDemoShop.admin%2F%3FObjectID%3D20522%26ViewAction%3DMBO-ViewAppDetails%26appID%3D54f46f318732110bd85f41c7&api_url=http%3A%2F%2Fstore.shop.com%2Frs%2Fshops%2FDemoShop |
 
-Your app can use the `code` in combination with your **Client ID** and **Client Secret** for obtaining an `access_token`. This code is temporary and will be obsolete after app installation.
+Your app can use the `code` in combination with your **Client ID** and **Client Secret** for obtaining an `access_token`.
+This code is temporary and will be obsolete after app installation.
+We highly recommended to use the `mac` query parameter in order to verify that your request was not changed and for sure provided by ePages and no external, insecure party.
 
 ### 4. Registration (optional)
 
