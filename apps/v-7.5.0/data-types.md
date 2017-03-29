@@ -1,6 +1,6 @@
 ---
 layout: page
-key: apps-data-types
+key: apps-data-types-v-7.5.0
 title: Data types
 ---
 
@@ -505,7 +505,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | Attribute | Type | Description |
 | - | :-: |  - |
 | scriptTagId | string | The unique identifier of the script tag. |
-| scriptUrl | string | The URL of the script. The URL has to be `https`. |
+| scriptUrl | string | The URL of the script. |
 | scriptType | string | The type of the script. |
 | createdOn | string | The date/time the script tag was created. Expressed according to ISO 8601. Example: `2017-02-04T08:42:49.000Z` |
 | updatedOn | string | The date/time the script tag was last updated. Expressed according to ISO 8601. Example: `2017-03-05T10:51:31.000Z` |
@@ -640,22 +640,3 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | productNumber | string | The product number. |
 | watchers | number | The number of watchers. |
 | links | array of [link](page:apps-data-types#link) | The link to the watched product. |
-
-## webhook
-
-| Attribute | Type | Description |
-| - | :-: |  - |
-| id | string | The unique identifier of the webhook. |
-| active | boolean | The status of the webhook. Can be `true` or `false`. |
-| eventType | string | The event that triggers the webhook. Can be *ORDER_CREATE*, *ORDER_UPDATE*, *ORDER_DELETE* or *APP_UNINSTALL*.  |
-| callbackUrl | string | The URL to your application where the event is received. The URL has to be `https`.|
-| createdOn | string | The date/time the webhook was created. Expressed according to ISO 8601. Example: `2017-03-14T08:42:49.000Z` |
-| updatedOn | string | The date/time the webhook was updated. Expressed according to ISO 8601. Example: `2017-03-15T17:12:15.000Z` |
-| links | array of [link](page:apps-data-types#link) | The link to the webhook resource of the shop. |
-
-## webhook (create request)
-
-| Attribute | Type | Description |
-| - | :-: |  - |
-| callbackUrl | string | The URL to the application where the event is received. The URL has to be `https`.|
-| eventType | string | The event that triggers the webhook. Can be *ORDER_CREATE*, *ORDER_UPDATE*, *ORDER_DELETE* or *APP_UNINSTALL*.|
