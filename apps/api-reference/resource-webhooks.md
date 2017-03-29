@@ -6,6 +6,7 @@ title: Webhooks
 
 Webhooks allow developers to build apps that receive near-real-time information about events that happen in ePages shops.
 Instead of making constant API calls to check for specific changes on the shop, you can register webhooks.
+For more information about webhooks and how to use them, [read here](page:apps-webhooks).
 
 The following webhook resources are available:
 
