@@ -10,6 +10,23 @@ In order to keep track of these changes we recommend you to follow [@epagesdevs]
 
 <hr>
 
+## 2017-03-29
+
+### Changes with software release 7.6.0
+
+#### <i class="fa fa-plus"></i> New
+
+* [`POST` webhooks](https://developer.epages.com/apps/api-reference/post-shopid-webhooks.html)
+* [`GET` webhooks/{webhookId}](https://developer.epages.com/apps/api-reference/get-shopid-webhooks-webhookid.html)
+* [`POST` webhooks/{webhookId}](https://developer.epages.com/apps/api-reference/post-shopid-webhooks-webhookid.html)
+* [`DELETE` webhooks/{webhookId}](https://developer.epages.com/apps/api-reference/delete-shopid-webhooks-webhookid.html)
+
+#### <i class="fa fa-pencil"></i> Update
+
+* Added query parameter [`signature`](page:apps-install#receive-authorisation-code) as a message authentification code for the app authorization process.
+
+<hr>
+
 ## 2017-03-10
 
 ### Changes with software release 7.5.0
@@ -19,7 +36,6 @@ In order to keep track of these changes we recommend you to follow [@epagesdevs]
 * [`GET` script-tags](https://developer.epages.com/apps/api-reference/get-shopid-script-tags.html)
 * [`POST` script-tags](https://developer.epages.com/apps/api-reference/post-shopid-script-tags.html)
 * [`DELETE` script-tags/{scriptTagId}](https://developer.epages.com/apps/api-reference/delete-shopid-script-tags-scripttagid.html)
-
 
 #### <i class="fa fa-pencil"></i> Update
 
