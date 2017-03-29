@@ -6,7 +6,7 @@ title: Webhooks
 
 Webhooks allow developers to build apps that receive near-real-time information about events that happen in ePages shops.
 Instead of making constant API calls to check for specific changes on the shop, you can register webhooks.
-So, directly after having registered for our [Developer Program](/#modal-popup), you might want to know more about how we have implemented webhooks.
+So, directly after having registered for our [Developer Program](/#modal-popup-6), you might want to know more about how we have implemented webhooks.
 
 In order to receive the respective information about the events that your app subscribes to, webhooks require a callback URL.
 When the event happens, we'll send a `POST` request to your callback URL.

@@ -23,7 +23,7 @@ In order to keep track of these changes we recommend you to follow [@epagesdevs]
 
 #### <i class="fa fa-pencil"></i> Update
 
-* Added query parameter [`signature`](page:apps-install#receive-authorisation-code) as a message authentification code for the app authorization process.
+* Added query parameter [`signature`](page:apps-install#3-receive-authorisation-code) as a message authentification code for the app authorization process.
 
 <hr>
 
