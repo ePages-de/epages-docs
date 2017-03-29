@@ -26,6 +26,7 @@ $assets-base: {{ "/assets" | prepend: site.baseurl }};
   min-height: 496px !important;
 }
 
-#cheat-frame, #cheat-frame-2 {
+#cheat-frame-now, #cheat-frame-2-now,
+#cheat-frame-6, #cheat-frame-2-6 {
   display: none;
 }

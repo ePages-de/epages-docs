@@ -110,7 +110,7 @@ To get an `access_token`, make a `POST` request to the token endpoint provided b
 
 | Field              | Description                                                                                             |
 |--------------------|------------------------------|
-| `code`      | The code provided in the **Application Callback URL** ([see above](page:apps-install#receive-authorisation-code)).     |
+| `code`      | The code provided in the **Application Callback URL** ([see above](page:apps-install#3-receive-authorisation-code)).     |
 | `client_id`   | The client key for the app (see the [get your credentials](page:apps-create#get-your-credentials) section).|
 | `client_secret`    | The shared client secret for the app (see the [get your credentials](page:apps-create#get-your-credentials) section). |
 
@@ -162,7 +162,7 @@ Unlike the `api_url`, the derived **Shop** does **not** uniquely identify a merc
 
 ### 6. Redirect the merchant
 
-Once the authorisation process is complete, your app has to send the merchant back to the `return_url` the app received [before](page:apps-install#receive-authorisation-code).
+Once the authorisation process is complete, your app has to send the merchant back to the `return_url` the app received [before](page:apps-install#3-receive-authorisation-code).
 
 In case of a successful app installation, the merchant will be able to open the app in the Apps & Themes Store.
 If an error occurred during installation, the **Install** button instead of the **Open app** button will be shown.

@@ -1,5 +1,5 @@
 # Use official Ruby image
-FROM ruby:2.2.0
+FROM ruby:2.4.1
 
 ####################
 # Configure basics #
