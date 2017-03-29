@@ -2,7 +2,7 @@
 layout: post
 title: "Finding the best vindinium bot written in Elixir"
 date: "2017-03-30 06:39:20"
-image: blog-header/xx.jpg
+image: blog-header/elixir.jpg
 categories: events
 authors: ["Rose"]
 ---
@@ -19,15 +19,19 @@ Despite the amazing weather conditions outside, there were quite a few [Elixir](
 ## Programming a semi static blogengine with Elixir
 
 The event started off with a presentation about our developer Erik's side project to create a semi static blogengine called Jelly Shot.
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/Air2ick">@Air2ick</a> presents his semi static blogengine <a href="https://twitter.com/hashtag/JellyShot?src=hash">#JellyShot</a> with <a href="https://twitter.com/elixirlang">@elixirlang</a> <a href="https://twitter.com/HamburgEx">@HamburgEx</a> <a href="https://twitter.com/hashtag/meetup?src=hash">#meetup</a> <a href="https://twitter.com/hashtag/hamburg?src=hash">#hamburg</a> cc/ <a href="https://twitter.com/epagesdevs">@epagesdevs</a></p>&mdash; harm (@netzfisch) <a href="https://twitter.com/netzfisch/status/846769010389798912">March 28, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 The idea to set up this blogengine with [Elixir](http://elixir-lang.org/) came up, because he found that working with the static site generator [Jekyll](https://jekyllrb.com/) often takes up too much time.
 Motivated to immerse in the world of [Elixir](http://elixir-lang.org/), he thought it couldn't be too difficult to write his own blogengine.
 And he was absolutely right!
-His blogengine Jelly Shot uses the web-framework [Phoenix](http://www.phoenixframework.org/) and is written in [Elixir](http://elixir-lang.org/).
-Unlike other blog systems, Jelly Shot has no access to databases nor uses static file generation, but stores data in its memory
-The agent administers the data and is able to filter, delete, or replace parts of it - and this at a much faster pace.
-Check out Erik's [repository](https://github.com/erikmueller/jelly_shot) for further information!
 
-The Elixir topic sparked great discussions on personal experiences and faced challenges with this functional language.
+His blogengine Jelly Shot uses the web-framework [Phoenix](http://www.phoenixframework.org/) and is written in [Elixir](http://elixir-lang.org/).
+Unlike other blog systems, Jelly Shot has no access to databases nor uses static file generation, but stores data in its memory.
+The agent administers all data and is able to filter, delete, or replace parts of it - and this at a much faster pace.
+
+Check out Erik's [repository](https://github.com/erikmueller/jelly_shot) for more information!
 
 ## The grand hh.ey vindinium challenge tournament
 
@@ -44,4 +48,4 @@ Everyone watched the screen with excitement to see which of the legendary heroes
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">And the winner iiiiis: <a href="https://twitter.com/h4cc">@h4cc</a> :) <a href="https://twitter.com/hashtag/elixirlang?src=hash">#elixirlang</a> <a href="https://twitter.com/hashtag/vindinium?src=hash">#vindinium</a> <a href="https://t.co/uHkPTDbhkb">pic.twitter.com/uHkPTDbhkb</a></p>&mdash; ePages Developers (@epagesdevs) <a href="https://twitter.com/epagesdevs/status/846788530403774467">March 28, 2017</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-The meetup itself was a great way to spark discussions on the participants' experiences and faced challenges with the functional language Elixir.
+The meetup itself was a great way to spark discussions on the participants' experiences and faced challenges with the functional language Elixir. Thanks again for the great organization!
