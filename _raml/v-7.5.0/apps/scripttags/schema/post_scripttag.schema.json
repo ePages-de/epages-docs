@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "Post Script tags Schema",
+  "type": "object",
+  "properties": {
+    "": {
+      "type": "object of [scriptTag](page:apps-data-types#scripttag)",
+      "description": ""
+    }
+  }
+}
