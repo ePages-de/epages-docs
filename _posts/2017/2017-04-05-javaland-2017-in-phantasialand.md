@@ -7,7 +7,15 @@ categories: events
 authors: ["Benjamin, Bastian"]
 ---
 
-The [JavaLand 2017](https://www.javaland.eu/en/javaland-2017/) conference took for the 4th in the famous [Phantasialand](http://www.phantasialand.de/en/) holiday park in Brühl, near Cologne. The [program](https://programm.javaland.eu/2017) consisted of two conference days and one final [workshop day](https://www.javaland.eu/de/programm/schulungstag).
+The [JavaLand 2017](https://www.javaland.eu/en/javaland-2017/) conference took place for the 4th time in the famous [Phantasialand](http://www.phantasialand.de/en/) holiday park in Brühl, near Cologne. The program consisted of [talks](https://programm.javaland.eu/2017/schedule.html) on the frist two days and [in-depth workshops](https://www.javaland.eu/de/programm/schulungstag) at the last and third day.
+
+Here are some random facts so that you can imagine the dimension of the largest community conference for Java in Europe:
+
+- 1600 visitors, 14 different locations in the holiday park
+- 11 parallel talk tracks, 8 session slots each day
+- 8 in-depth workshops which over 8 hours each
+
+# Talks
 
 We visited several talks and three workshops:
 
