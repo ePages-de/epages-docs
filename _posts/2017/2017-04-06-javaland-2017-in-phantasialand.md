@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "JavaLand 2017 - Welcome to Phantasialand"
-date: "2017-04-05 15:16:17"
+date: "2017-04-06 15:16:17"
 image: blog-header/microxchg-2017.jpg
 categories: events
 authors: ["Benjamin, Bastian"]
@@ -19,41 +19,10 @@ Here are some random facts so that you can imagine the dimension of the largest 
 
 We visited several talks and three workshops:
 
-# Spring Web reactive
+### Reactive Programming
 
-Pokemon Go
-Spring Webflux
-
-## Why reactive programming?
-
-Smartphones —> apps
-build better software
-
-## Requirements
-
-System has to be responsive
-What to do when something fails
-System must be elastic
-Must be modular
-message based
-
-## How to build a reactive program
-
-Extending the observer pattern
-Reaktive stream is push-based
-unknown when data will be available
-It’s about streams
-Reactor (Spring)
-
-## Flux
-
-Picture
-Similar to Java 8 Streams
-
-## Spring WebFlux
-
-Spring is adopting reactive paradigm
-Release about June
+[A Reactive Take on Pokémon GO](https://programm.javaland.eu/2017/talk.html#talk?talkId=529316) by [Riccardo Lippolis](https://www.linkedin.com/in/rlippolis)
+was all about [Spring Reactive](http://docs.spring.io/spring-framework/docs/5.0.0.M1/spring-framework-reference/html/web-reactive.html). After a quick introduction he showed how to build a reactive program for smartphones. He extended the observer pattern and added push-based streams, which can be used when it is unknown when data is availible. At its core the [Spring Reactor](fully non-blocking foundation with efficient demand management), a fully non-blocking foundation with efficient demand management, is used. Another important role plays [Flux](https://projectreactor.io/docs/core/release/api/reactor/core/publisher/Flux.html) which is similar to the [Java 8 Stream API](https://docs.oracle.com/javase/8/docs/api/java/util/stream/package-summary.html). A new paradigm in Spring Land will be released in June and is called [Spring Web Flux](https://spring.io/blog/2017/03/15/spring-tips-the-spring-web-flux-reactive-client). See [this video](https://www.youtube.com/watch?v=leZdgr-O4LE) by [Josh Long](https://twitter.com/starbuxman) for more details.
 
 ----
 
@@ -138,3 +107,25 @@ Ein paar Firmen migrieren (Github)
 Kein Riesen Hype —> Nische
 Für Java noch mit kaum Aufmerksamkeit
 Wrapper für REST
+
+
+----
+
+# RxJava
+
+
+
+---
+
+Workshops:
+
+# Hibernate
+
+
+
+
+
+---
+
+
+# Summary
