@@ -143,11 +143,13 @@ permalink: /
         $('#main-row-{{version.key}}').hide();
         $('#response-{{version.key}}').show();
       });
-
-      if (document.location.href.match(/#modal-popup-{{version.key}}/) != null) {
-        $('#modal-popup-{{version.key}}').modal('show');
-      }
     {% endfor %}
+
+    if (document.location.href.match('#register') != null) {
+      $('html, body').animate({
+        scrollTop: $('#register').offset().top - 50
+      }, 500);
+    }
 
     $('a').click(function(e) {
       if ($(this).attr('href').indexOf('#') >= 0) {
