@@ -4,7 +4,7 @@ title: "JavaLand 2017 - Welcome to Phantasialand"
 date: "2017-04-10 11:12:13"
 image: blog-header/javaland-2017.jpg
 categories: events
-authors: ["Benjamin"]
+authors: ["Benjamin, Bastian"]
 ---
 
 The [JavaLand 2017](https://www.javaland.eu/en/javaland-2017/) conference took place for the 4th time in the famous [Phantasialand](http://www.phantasialand.de/en/) holiday park in Brühl, near Cologne.
