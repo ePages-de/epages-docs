@@ -35,16 +35,18 @@ While working with pull requests, you need to find out the branch name first.
 Luckily, you can get the pull request number directly from the trigger.
 You need to [GET the PR information](https://developer.github.com/v3/pulls/#get-a-single-pull-request) from Github:
 
-```groovy
+{% highlight groovy %}
 BRANCH = git.getBranchNameFromPr("rest-test-gold", env.CHANGE_ID)
-```
-```groovy
+{% endhighlight %}
+
+{% highlight groovy %}
 def String getBranchNameFromPr(String repository, String changeID) {
     def getBranchNameURL = 'https://api.github.com/repos/ePages-de/' + repository + '/pulls/' + changeID
     return this.getFromGithubAPI(getBranchNameURL).head.ref
 }
-```
-```groovy
+{% endhighlight %}
+
+{% highlight groovy %}
     // Evaluate, if branches exist in the given repository.
     if (git.getBranchForRepository("rest-test-gold", BRANCH, REMOTE)) {
         println "We can use " + BRANCH + " for rest-test-gold..."
@@ -54,7 +56,7 @@ def String getBranchNameFromPr(String repository, String changeID) {
         println "We can use dev for rest-test-gold..."
         RTG_BRANCH_NAME = "dev"
     }
-```
+{% endhighlight %}
 
 As you now have the name of the branch, you to do the same for the remote name of the developer, who created the pull request.
 
@@ -78,7 +80,7 @@ If the branch doesn't exist, one of the other repositories has to trigger the PR
 
 One way or another, we will start to build a new job called 'PR_Test'.
 
-```groovy
+{% highlight groovy %}
     // Evaluate, if branches exist in the given repository.
     if (git.getBranchForRepository("multistore-MS", BRANCH, REMOTE)) {
         // If a branch with the same name exist in control repository, we can exit here,
@@ -91,8 +93,9 @@ One way or another, we will start to build a new job called 'PR_Test'.
         println "We can use dev for multistore-MS..."
         EMS_BRANCH_NAME = "dev"
     }
-```
-```groovy
+{% endhighlight %}
+
+{% highlight groovy %}
     // Trigger the PR test
     build job: "PR_Test", wait: false, parameters: [
           [$class: 'StringParameterValue', name: 'ep6Branch', value: EP6_BRANCH_NAME],
@@ -101,7 +104,7 @@ One way or another, we will start to build a new job called 'PR_Test'.
           [$class: 'StringParameterValue', name: 'emsRemote', value: EMS_REMOTE_NAME],
           [$class: 'StringParameterValue', name: 'rtgBranch', value: RTG_BRANCH_NAME],
           [$class: 'StringParameterValue', name: 'rtgRemote', value: RTG_REMOTE_NAME]]
-```
+{% endhighlight %}
 
 ## 3. Environment set up, how to start the test?
 
@@ -114,7 +117,7 @@ After that, your tests should run as expected.
 Beginning with short running tests like unit tests up to longer tests such as UI tests (if a UI exists).
 As the tests are built up in stages, the job PR_Test will fail and the result can be send the developer.
 
-```groovy
+{% highlight groovy %}
 stage "Build EMS & RTG"
     parallel (
         // This job starts job from file jobs/install/installEMS.groovy
@@ -130,16 +133,16 @@ stage "Build EMS & RTG"
             ...
             }
     )
-```
+{% endhighlight %}
 
-```groovy
+{% highlight groovy %}
     // Make EMS integration tests from RTG
     stage "Test EMS with sources from RTG"
       // This job starts job from file jobs/tests/runRTGTests.groovy
       build job: "Test_EMS_from_RTG", parameters: [
             [$class: 'StringParameterValue', name: 'installVM', value: 'NODE_NAME'],
             [$class: 'StringParameterValue', name: 'msServerUrl', value: 'SERVER_URL']]
-````
+{% endhighlight %}
 
 ## 4. Summary
 
