@@ -24,11 +24,11 @@ Three things are necessary:
 * naming convention.
 
 ## 2. Why do we need those things?
-You can use the [Github Organizational Folder Plugin](https://wiki.jenkins-ci.org/display/JENKINS/GitHub+Organization+Folder+Plugin) to check your repositories for new ull requests.
+You can use the [Github Organizational Folder Plugin](https://wiki.jenkins-ci.org/display/JENKINS/GitHub+Organization+Folder+Plugin) to check your repositories for new pull requests.
 This plugin will check every affected repository for changes and activates the Jenkinsfile in the main directory, if a change has been made.
 
 You can create a [Jenkinsfile](https://jenkins.io/doc/book/pipeline/jenkinsfile/) for a repository, which will be triggered after a pull request.
-The task of this Jenkinsfile is mainly to check, if branches with the same name from the same developer in other repositories exists and then uses them for the PR tests, if a change was detected.
+The task of this Jenkinsfile is mainly to check, if branches with the same name from the same developer in other repositories exist and then uses them for the PR tests, if a change was detected.
 
 You have to agree to naming conventions, that means you have to set the name for all affected branches in the different repositories.
 While working with pull requests, you need to find out the branch name first.
@@ -58,7 +58,7 @@ def String getBranchNameFromPr(String repository, String changeID) {
     }
 {% endhighlight %}
 
-As you now have the name of the branch, you to do the same for the remote name of the developer, who created the pull request.
+As you now have the name of the branch, you need to do the same for the remote name of the developer, who created the pull request.
 
 How can we now ensure, that the pull request is only triggered once and not for every repository, where a Pull request was set from a developer?
 
@@ -115,7 +115,7 @@ This will be done in parallel.
 It can be seen as the first test to assure that at least the installation is still functional.
 After that, your tests should run as expected.
 Beginning with short running tests like unit tests up to longer tests such as UI tests (if a UI exists).
-As the tests are built up in stages, the job PR_Test will fail and the result can be send the developer.
+As the tests are built up in stages, the job PR_Test will fail and the result can be send to the developer.
 
 {% highlight groovy %}
 stage "Build EMS & RTG"
