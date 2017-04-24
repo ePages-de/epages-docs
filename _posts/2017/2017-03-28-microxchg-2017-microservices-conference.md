@@ -44,8 +44,6 @@ All talks were recorded with cameras and microphones.
 
 ## Talks on Thursday
 
-Also, without these lines it's a nice handover to the talk you want to describe.
-
 **Morning:**
 
 * Resilient functional software design (Uwe Friedrichsen)
@@ -76,7 +74,7 @@ Also, without these lines it's a nice handover to the talk you want to describe.
 **Afternoon:**
 
 * How to properly blame things for causing latency: An intodurction to distributed tracing and Zipkin (Adrian Cole)
-* Micorservies, Conway's Law and the Innovator's Dilemma (Andrea Stubbe)
+* Microservices, Conway's Law and the Innovator's Dilemma (Andrea Stubbe)
 * How to monitor Microservices with dtrace and sysdig (Jorge Salamero)
 
 ## Insights into "Beyond OAuth2: End to End Microservice Security"
@@ -84,11 +82,14 @@ Also, without these lines it's a nice handover to the talk you want to describe.
 As you can watch all recordings online I will only give a summary of one single talk that impressed me the most.
 
 The [talk](https://www.youtube.com/watch?v=G7A6ftCbVQY) of [Will Tran](http://twitter.com/fivetenwill) from Pivotal was all about getting Microservices secure.
-His idea is to have one token to rule them all.
+His idea is to use nested, single use JWT tokens instead of having "one token rule them all".
 The project uses [JOSE](http://connect2id.com/products/nimbus-jose-jwt) and trusted service registries.
 
-If you are interested in this new endeavor explore the [source code](https://github.com/william-tran/microxchg2017) and [slides](https://docs.google.com/presentation/d/1gmMlvBW8JNGGo0rY_CnMt6qRYGCGVfQCvevkxVYhXWs/edit#slide=id.g20cc451819_0_3322) and please support his project so that he can make the next steps at Pivotal.
-This would allow Will to allocate development time so that this interesting new Spring project could take-off.
+If you are interested in this new endeavor explore the [source code](https://github.com/william-tran/microxchg2017) and [slides](https://docs.google.com/presentation/d/1gmMlvBW8JNGGo0rY_CnMt6qRYGCGVfQCvevkxVYhXWs/edit#slide=id.g20cc451819_0_3322).
+
+Will has in the meantime left Pivotal to work at [autonomic.ai](http://autonomic.ai/) with other former Pivotal employees.
+Still he plans to gather more feedback and interest at [IIW24 - Internet Identity Workshop](http://www.internetidentityworkshop.com/) in the hope that others can contribute to the implementation.
+This would allow further development so that maybe in the future the project might get more support by Pivotal.
 
 ## Wrap-up
 
