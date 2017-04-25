@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Creating a Sales Analytics App with Ruby on Rails, part 2"
+title: "Creating a Sales Analytics App: issue solving"
 date: "2017-04-18 07:00:00"
 image: blog-header/rails-train-path-straight.jpg
 categories: tech-stories
@@ -10,15 +10,15 @@ authors: ["Unai M."]
 Last month, I wrote a post about [how and why we started with our Sales Analytics app](https://developer.epages.com/blog/2017/03/02/creating-a-sales-analytics-app-with-ruby-on-rails.html).
 In this post, I'd like to talk about some issues we encountered on our way and how we solved them.
 
-## About our bumpy development road
+## About our - slightly - bumpy development road
 
-### The issue with the graphs
+### The issue with the graphs...
 
 As mentioned in my previous post, [D3](https://d3js.org/) is a really powerful engine to do all sorts of graphs but is by no means simple.
-This and the fact that we (backend, frontend and design) had separated tasks for the graphs, created issues whenever we needed to change anything.
+This and the fact that we (backend, frontend, and design) had separated tasks for the graphs, created issues whenever we needed to change anything.
 The nice thing is that we work really close together and we are used to help each other, so in the end it turned out to be a really enriching experience for the whole team.
 
-### and API call limits
+### ...and API call limits
 
 The data the we use to display on the graphs and tables through the app obviously come from merchant shops.
 Currently, the [ePages REST API](https://developer.epages.com/apps) has a rate limit of 6000 calls per hour and although at the very beginning this seemed more than enough, it turned out to be an issue we had to find a solution for.
