@@ -88,6 +88,7 @@ When using a role written by others, these variables are meant to be used to ada
 
 Example `defaults/main.yml` of `epages-now` role:  
 {% highlight yml %}
+{% raw %}
 epages_now_folder: /srv/epages/epages-now
 epages_now_start_using_docker_compose: yes
 epages_now_start_using_systemd: "{{ not epages_now_start_using_docker_compose }}"
@@ -100,6 +101,7 @@ epages_now_api_url: "{{ epages_now_url }}/api/v2"
 
 epages_now_create_shop: yes
 epages_now_shop_name: demoshop
+{% endraw %}
 {% endhighlight %}
 At the top there is a directory, which probably refers to the host.
 Since the role requires Docker (see playbook example), and there is a reference to docker-compose in the next property, one could (correctly) assume that the file being copied there could be a docker-compose definition file.
