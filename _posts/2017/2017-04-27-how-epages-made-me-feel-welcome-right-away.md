@@ -72,11 +72,11 @@ This way I've been already shown many nice and delicious restaurants (my favorit
 Communication and transparency is really important here at ePages.
 To be always up-to-date, we have regular team meetings which gave me the possibility to get an overview of what is going on and who's working at which topic.
 
-Besides these weekly meetings we have some "special events" such as the [ePages Hackathon](https://developer.epages.com/blog/2017/03/29/epages-hackathon-2017.html) or the ePages YOU.
+Besides these weekly meetings we have some "special events" such as the [ePages Hackathon](https://developer.epages.com/blog/2017/03/29/epages-hackathon-2017.html) or the [ePages YOU](https://blog.epages.com/de/epages-you/).
 On our annual Hackathon event in March I got to know many other ePagees from Barcelona, New York, and Jena.
 As it was my first Hackathon, it was a really great experience for me and it was nice to meet a lot of new people.
 
-##  The tasks
+## The tasks
 
 Making coffee and copies and doing all the annoying stuff nobody else wants to do?
 That's how an internship could be... but not at ePages.
