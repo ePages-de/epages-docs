@@ -67,14 +67,14 @@ Depending on server traffic, notifications on events might take a few seconds.
 
 ### Verify callback requests
 
-Each callback ePages sends to registered webhooks contains a `X-Epages-Hmac-Sha256` header with a signature that can be used to verify that the request is really coming from ePages.
+Each callback ePages sends to registered webhooks contains a `X-Epages-Hmac-Sha256` header with a signature that can be used to verify that the request really comes from ePages.
 This signature is calculated by
 
-**signature = encode_Base64( HMAC_SHA256(secret, message) )**
+`signature = encode_Base64( HMAC_SHA256(secret, message) )`
 
-where message is the request body of the callback request and secret is the OAuth2 Client Secret of the app which has registered the webhook. (It is the one, the developer gets when they create an App on our developer platform).
+where `secret` is the OAuth2 Client Secret of the app which has registered the webhook (the one, the developer receives when creating an app on the developer portal) and `message` is the request body of the callback request.
 
-#### Java Example
+#### Java example
 
 The calculation of the signature can be done easily in Java without any external library:
 
@@ -100,9 +100,9 @@ String body = "{\"id\":\"11AEF3CC-F0D1-485E-B9CF-B28CB409928D\", ....... }]}"
 String signature = calculateSignature(secret, body.getBytes());
 {% endhighlight %}
 
-#### Ruby Example
+#### Ruby example
 
-If you use Ruby instead, you could use this method to calculate the signature:
+Use this method to calculate the signature in Ruby:
 
 {% highlight ruby %}
 require 'openssl'
