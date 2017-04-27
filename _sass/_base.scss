@@ -476,12 +476,6 @@ footer .social .xing {
 footer .social .xing:hover {
   background-color: #0e5051;
 }
-footer .social .rss {
-  background: #ff9900;
-}
-footer .social .rss:hover {
-  background-color: #e28800;
-}
 .googleplus {
   background: #df4a32;
   &:hover {
@@ -498,6 +492,12 @@ footer .social .rss:hover {
   background: #3b5998;
   &:hover {
     background-color: #344e86;
+  }
+}
+.rss {
+  background: #fdc333;
+  &:hover {
+    background-color: #f9af05;
   }
 }
 
