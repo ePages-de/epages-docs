@@ -37,6 +37,8 @@ An `HTTP 201` response indicates that the webhook was successfully set.
 
 ## Receive webhook callbacks
 
+### Structure of callback requests
+
 In order to receive the callback we send whenever events are triggered, you’ll need to create an application and configure your server.
 
 A notification would look like this:
@@ -62,6 +64,65 @@ A notification would look like this:
 | `entity`   | object | Can be either empty or shows the object the event type is about (e.g. in case of an order event, it contains the affected order, just like e.g. a [`GET` orders/{orderId}](https://developer.epages.com/apps/api-reference/get-shopid-orders-orderid) request.  |
 
 Depending on server traffic, notifications on events might take a few seconds.
+
+### Verify callback requests
+
+Each callback ePages sends to registered webhooks contains a `X-Epages-Hmac-Sha256` header with a signature that can be used to verify that the request really comes from ePages.
+This signature is calculated by
+
+`signature = encode_Base64( HMAC_SHA256(secret, message) )`
+
+where `secret` is the OAuth2 Client Secret of the app which has registered the webhook (the one, the developer receives when creating an app on the developer portal) and `message` is the request body of the callback request.
+
+#### Java example
+
+The calculation of the signature can be done easily in Java without any external library:
+
+{% highlight java %}
+import java.util.Base64;
+import javax.crypto.Mac;
+import javax.crypto.spec.SecretKeySpec;
+
+public String calculateSignature(String oauth2ClientSecret, byte[] content) {
+    final Mac mac = Mac.getInstance(HmacSHA256);
+    mac.init(new SecretKeySpec(oauth2ClientSecret.getBytes("UTF-8"), "HmacSHA256"));
+    final byte[] signature = mac.doFinal(content);
+    return Base64.getEncoder().encodeToString(signature);
+}
+{% endhighlight %}
+
+Using this method, the signature can be calculated like that:
+
+{% highlight java %}
+String secret = "A5pnpId0FyHno8caYRAj2YccFU42kta8"
+String body = "{\"id\":\"11AEF3CC-F0D1-485E-B9CF-B28CB409928D\", ....... }]}"
+
+String signature = calculateSignature(secret, body.getBytes());
+{% endhighlight %}
+
+#### Ruby example
+
+Use this method to calculate the signature in Ruby:
+
+{% highlight ruby %}
+require 'openssl'
+require "base64"
+
+def calculateSignature(secret, message)
+    hash = OpenSSL::HMAC.digest('sha256', secret, message)
+    return Base64.encode64(hash)
+end
+{% endhighlight %}
+
+Now it can be used like that:
+
+{% highlight ruby %}
+secret = 'A5pnpId0FyHno8caYRAj2YccFU42kta8'
+message = '{"id":"11AEF3CC-F0D1-485E-B9CF-B28CB409928D", ....... }]}'
+
+signature = calculateSignature(secret, message)
+{% endhighlight %}
+
 
 ## Respond to webhook callbacks
 
