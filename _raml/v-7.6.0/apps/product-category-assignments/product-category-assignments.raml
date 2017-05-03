@@ -1,0 +1,31 @@
+#%RAML 0.8
+displayName: Product and category assignment
+post:
+  description: Assigns categories to products and products to categories. *epages6 *epagesNow
+  securedBy: [products_write]
+  body:
+    application/x-www-form-urlencoded:
+      formParameters:
+        categoryId:
+          description: The category to be assigned for the defined products. Can be one or more categories.
+          required: true
+          type: string
+        productId:
+          description: The product to be assigned to the defined category. Can be one or more products.
+          required: true
+          type: string
+  responses:
+    204:
+
+delete:
+  description: Deletes one or more products from a category. *epages6
+  securedBy: [products_write]
+  queryParameters:
+    categoryId:
+      description: The category from which the specified products should be removed (can be used multiple times).
+      required : true
+    productId:
+      description: The product to be removed from the specified categories (can be used multiple times).
+      required : true
+  responses:
+    204:

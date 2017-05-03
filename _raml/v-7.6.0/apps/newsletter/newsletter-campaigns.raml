@@ -1,0 +1,25 @@
+#%RAML 0.8
+displayName: Newsletter campaigns
+get:
+  description: Returns all newsletter campaigns of a shop. *epages6
+  securedBy: [newsletters_read]
+  is: [ paged ]
+  queryParameters:
+  responses:
+    200:
+      body:
+        application/json:
+          example: !include examples/get_newsletter_campaign_response.json
+          schema: !include schema/get_newsletter_campaign.schema.json
+/{campaignId}/subscribers:
+  displayName: Subscribers
+  get:
+    description: Returns all subscribers of a newsletter campaign from a shop. *epages6
+    securedBy: [newsletters_read]
+    is: [ paged ]
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include examples/get_newsletter_campaign_subscriber_response.json
+            schema: !include schema/get_newsletter_campaign_subscriber.schema.json
