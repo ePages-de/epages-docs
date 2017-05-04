@@ -1,0 +1,10 @@
+[{
+  "op": "add",
+  "path": "/name",
+  "value": "BRAND NEW: Dr.Boom - Star Wars Edition"
+},
+{
+  "op": "add",
+  "path": "/shortDescription",
+  "value": "new arrival"
+}]

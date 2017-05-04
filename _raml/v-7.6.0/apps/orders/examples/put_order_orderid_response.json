@@ -1,0 +1,166 @@
+{
+  "orderId": "5639C473-4265-5299-FDE2-D5809AB36284",
+  "orderNumber": "ORD151104/1032",
+  "creationDate": "2015-11-04T08:40:17.000Z",
+  "billingAddress": {
+    "company": "Schneiderei",
+    "salutation": "Mrs",
+    "firstName": "Tanja",
+    "lastName": "Schneider",
+    "street": "Schneiderstraße 10",
+    "streetDetails": null,
+    "zipCode": "12345",
+    "city": "Berlin",
+    "state": null,
+    "country": "DE",
+    "title": null,
+    "vatId": null,
+    "birthday": null,
+    "emailAddress": "schneider@schneiderei.de",
+    "addressExtension": "1.Etage",
+    "bankAccountHolder": "Tanja Schneider",
+    "bankAccountNumber": "DE1567379838510",
+    "bankName": "Nadel Bank",
+    "bankSortCode": "XXSCSBB",
+    "businessEmailAddress": "schneider@schneiderei.de",
+    "businessPhoneNumber": "0049099906543",
+    "department": null,
+    "displayName": null,
+    "doorCode": null,
+    "faxNumber": "0049099906542",
+    "fiscalCode": null,
+    "gender": "FEMALE",
+    "jobTitle": "Schneiderin",
+    "middleName": null,
+    "mobilePhoneNumber": "0049099906543",
+    "phoneNumber": "0049099906543",
+    "privateEmailAddress": null,
+    "privatePhoneNumber": null,
+    "websiteUrl": "http://schneiderei.de"
+  },
+  "shippingAddress": null,
+  "invoicedOn": null,
+  "deliveredOn": "2015-11-04T08:41:35.000Z",
+  "pendingOn": null,
+  "archivedOn": null,
+  "dispatchedOn": "2015-11-04T08:41:35.000Z",
+  "viewedOn": "2015-11-04T08:41:35.000Z",
+  "customerId": "563874DA-7AE7-9876-9E59-D5809AB38A25",
+  "customerNumber": "1089",
+  "locale": "de_DE",
+  "currencyId": "EUR",
+  "taxModel": "GROSS",
+  "grandTotal": "9.99",
+  "totalBeforeTax": "8.39",
+  "totalTax": "1.6",
+  "customerComment": null,
+  "internalNote": "Exclusive customer",
+  "rejectedOn": null,
+  "closedOn": null,
+  "paidOn": "2015-11-04T08:41:35.000Z",
+  "returnedOn": null,
+  "shippingData": null,
+  "paymentData": {
+    "paymentMethod": {
+      "id": "5171DD86-0714-8E9B-B079-AC14145F900F",
+      "name": "Payment in advance"
+    },
+    "price": {
+      "taxType": "GROSS",
+      "formatted": "0.00 €",
+      "amount": 0,
+      "currency": "EUR"
+    }
+  },
+  "lineItemContainer": {
+    "grandTotal": {
+      "taxType": "GROSS",
+      "formatted": "9.99 €",
+      "amount": 9.99,
+      "currency": "EUR"
+    },
+    "totalBeforeTax": {
+      "taxType": "NET",
+      "formatted": "8.39 €",
+      "amount": 8.39,
+      "currency": "EUR"
+    },
+    "totalTax": {
+      "taxType": "NONE",
+      "formatted": "1.60 €",
+      "amount": 1.6,
+      "currency": "EUR"
+    },
+    "lineItemsSubTotal": {
+      "taxType": "GROSS",
+      "formatted": "9.99 €",
+      "amount": 9.99,
+      "currency": "EUR"
+    },
+    "productLineItems": [
+      {
+        "lineItemId": "5639C489-C950-1048-3B38-D5809AB321E8",
+        "sku": "Ebook0001",
+        "name": "Ebook0001",
+        "productId": "54EF307D-4FF3-3578-CB70-0A0C05E66C3F",
+        "quantity": {
+          "amount": 1,
+          "unit": "piece(s)"
+        },
+        "lineItemPrice": {
+          "taxType": "GROSS",
+          "formatted": "9.99 €",
+          "amount": 9.99,
+          "currency": "EUR"
+        },
+        "singleItemPrice": {
+          "taxType": "GROSS",
+          "formatted": "9.99 €",
+          "amount": 9.99,
+          "currency": "EUR"
+        },
+        "images": [
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54EF/307D/4FF3/3578/CB70/0A0C/05E6/6C3F/eBookNew_h.jpg",
+            "classifier": "HotDeal"
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54EF/307D/4FF3/3578/CB70/0A0C/05E6/6C3F/eBookNew_m.jpg",
+            "classifier": "Medium"
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54EF/307D/4FF3/3578/CB70/0A0C/05E6/6C3F/eBookNew_l.jpg",
+            "classifier": "Large"
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54EF/307D/4FF3/3578/CB70/0A0C/05E6/6C3F/eBookNew_s.jpg",
+            "classifier": "Small"
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54EF/307D/4FF3/3578/CB70/0A0C/05E6/6C3F/eBookNew_xs.jpg",
+            "classifier": "Thumbnail"
+          }
+        ],
+        "links": [
+          {
+            "rel": "product",
+            "href": "https://pm.epages.com/api/products/54EF307D-4FF3-3578-CB70-0A0C05E66C3F"
+          }
+        ],
+        "essentialFeatures": null
+      }
+    ],
+    "shippingPrice": {
+      "taxType": "GROSS",
+      "formatted": "0.00 €",
+      "amount": 0,
+      "currency": "EUR"
+    }
+  },
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://pm.epages.com/rs/shops/apidocu/orders/5639C473-4265-5299-FDE2-D5809AB36284"
+    }
+  ]
+}
