@@ -1,5 +1,5 @@
 {
-  "id": "73CA6C8C-60E3-4B78-AE37-0491EBE57AF8",
+  "webhookId": "73CA6C8C-60E3-4B78-AE37-0491EBE57AF8",
   "active": true,
   "eventType": "ORDER_CREATE",
   "callbackUrl": "https://salesanalyticsapp.com/rs/shops/DemoShop/webhooks/callback",
