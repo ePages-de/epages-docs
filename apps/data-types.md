@@ -645,7 +645,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 
 | Attribute | Type | Description |
 | - | :-: |  - |
-| id | string | The unique identifier of the webhook. |
+| webhookId | string | The unique identifier of the webhook. |
 | active | boolean | The status of the webhook. Can be `true` or `false`. |
 | eventType | string | The event that triggers the webhook. Can be *ORDER_CREATE*, *ORDER_UPDATE*, *ORDER_DELETE* or *APP_UNINSTALL*.  |
 | callbackUrl | string | The URL to your application where the event is received. The URL has to be `https`.|
