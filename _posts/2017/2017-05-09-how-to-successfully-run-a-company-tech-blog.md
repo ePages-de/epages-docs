@@ -8,7 +8,8 @@ authors: ["Rose"]
 ---
 
 At [ePages](https://www.epages.com/us/) we develop e-commerce solutions. Thus, we had enough techies around that supported us setting up a [company tech blog](https://developer.epages.com/blog).
-Our [API documentation](https://developer.epages.com/apps) was already [Jekyll](https://jekyllrb.com/)-based. As Jekyll is a blog engine, it came natural to use it also as a platform for our tech blog.
+Our [API documentation](https://developer.epages.com/apps) was already [Jekyll](https://jekyllrb.com/)-based.
+As Jekyll is a blog engine, it came natural to use it also as a platform for our tech blog.
 The epagesdevs social media adventure, including the [blog](https://developer.epages.com/blog) as well as a [Twitter account](https://twitter.com/epagesdevs), started two years ago.
 
 In the following, I will give you some detailed insights on what we have learned ever since we began our social media journey and how we engaged in the developer community with our tech blog and Twitter.
@@ -18,7 +19,7 @@ In the following, I will give you some detailed insights on what we have learned
 Once the technical framework was set, we were ready to go.
 But where do you actually start when beginning to blog from zero?!
 
-First of all, we had to consider that a tech blog required the right content for our target group.
+First of all, we had to consider that a tech blog requires the right content for our target group.
 Our main goal is to let other developers and interested parties know about our technology stack as well as the challenges we face during software development and how we solve them.
 Furthermore, we are establishing new APIs, actively live Scrum and agile processes as well as participate in lots of conferences throughout the year.
 Not to forget that we're proud of our company culture and familiar working atmosphere.
@@ -32,7 +33,7 @@ Having this in mind, made us come up with the following main categories for our 
 
 Planning our content ahead not only saves us lots of unnecessary stress when it comes to fresh content ideas, but also lets us see the big picture.
 Therefore, we developed an editorial calendar to determine what colleague would cover which topic area for which date.
-Usually, we have a rough content plan for the next two months and try to publish at least four times per months.
+Usually, we have a rough content plan for the next two months and try to publish at least four times per month.
 We soon created a rotating system to make sure that our different developer teams take turns in writing blog posts.
 Here is an example snapshot of our editorial calendar:
 
@@ -85,7 +86,7 @@ When first connecting our Twitter account to buffer, it automatically calculated
 Buffer also analyzes which posts performed best and which did not.
 
 Tweet performance is also measured by the [Twitter Analytics](https://analytics.twitter.com) tool that comes along with setting up a Twitter account.
-Twitter Analytics helps you to see, which content resonates with our audience, understand how people interact with your tweets, and to get to know your followers as well as observe the growth of your follower base.
+Twitter Analytics helps you to see, which content resonates with our audience, to understand how people interact with your tweets, and to get to know your followers as well as to observe the growth of your follower base.
 
 Another tool that boosted our follower base was [IFTTT](https://ifttt.com/) with its function to set up [Twitter recipes](https://ifttt.com/twitter).
 One recipe that was especially efficient, was the one that automatically added those people tweeting about a specific hashtag to a Twitter list.
@@ -99,4 +100,4 @@ Also, potential job candidates can check out what you are working on, and thus y
 And do not forget about Twitter:
 Most developers are very active on Twitter!
 Thus, it is basically a prerequisite in order to engage with the tech community.
-And what is your social media experience?
+So, happy blogging!
