@@ -7,7 +7,8 @@ categories: tech-stories
 authors: ["Rose"]
 ---
 
-At [ePages](https://www.epages.com/us/) we develop e-commerce solutions. Thus, we had enough techies around that supported us setting up a [company tech blog](https://developer.epages.com/blog).
+At [ePages](https://www.epages.com/us/) we develop e-commerce solutions.
+Thus, we had enough techies around that supported us setting up a [company tech blog](https://developer.epages.com/blog).
 Our [API documentation](https://developer.epages.com/apps) was already [Jekyll](https://jekyllrb.com/)-based.
 As Jekyll is a blog engine, it came natural to use it also as a platform for our tech blog.
 The epagesdevs social media adventure, including the [blog](https://developer.epages.com/blog) as well as a [Twitter account](https://twitter.com/epagesdevs), started two years ago.
@@ -32,9 +33,9 @@ Having this in mind, made us come up with the following main categories for our 
 * [Agile](https://developer.epages.com/blog/categories/agile/)
 
 Planning our content ahead not only saves us lots of unnecessary stress when it comes to fresh content ideas, but also lets us see the big picture.
-Therefore, we developed an editorial calendar to determine what colleague would cover which topic area for which date.
+Therefore, we developed an editorial calendar to determine who would cover which topic area for a respective publication date.
 Usually, we have a rough content plan for the next two months and try to publish at least four times per month.
-We soon created a rotating system to make sure that our different developer teams take turns in writing blog posts.
+We soon created a rotating system to make sure that our different developement teams take turns in writing blog posts.
 Here is an example snapshot of our editorial calendar:
 
 {% image blog/blog-editorial-calendar.png %}
@@ -46,7 +47,7 @@ For a company tech blog there will probably be more than only one contributor.
 Therefore, it is essential to provide them with some basic [guidelines](https://github.com/ePages-de/epages-docs/tree/develop/helpdocs).
 Lots of colleagues deliver great ideas and content for our blog.
 But everyone has to follow similar writing and formatting patterns for easy readability and consistency reasons.
-These [guidelines](https://github.com/ePages-de/epages-docs/tree/develop/helpdocs) determine issues concerning the markdown style, including layout, headings, images, code quotation rules, SEO optimization, and alike.
+These guidelines determine issues such as markdown style, layout, headings, images, code quotation rules, SEO optimization, and alike.
 
 Two elements are essential concerning content creation:
 
@@ -70,18 +71,18 @@ Google Analytics, on the other hand, is a very powerful instrument when it comes
 
 Every blog post we publish, we also share on our [epagesdevs Twitter](https://twitter.com/epagesdevs) channel and encourage our colleagues and followers to engage in the sharing fun.
 To increase our readership, we not only tweet about our latest blog post publications but also promote articles from the archives, publish our [job openings](https://developer.epages.com/devjobs) or retweet other relevant content for our followers.
-Twitter is the most suitable social media platform when it comes to getting engaged with the developer community.
+[Twitter](https://twitter.com/) is the most suitable social media platform when it comes to getting engaged with the developer community.
 
 Yet, you should not underestimate the additional workload that the maintenance of a Twitter account implies.
 Statistically, about [92% of companies](https://www.brandwatch.com/blog/44-twitter-stats-2016/) send out a tweet more than once a day.
-To engage with and keep our followers up-to-date, we tweet about *five times* per day via our [ePagesDevs account](https://twitter.com/epagesdevs) - and this even on the weekends.
+To engage with and keep our followers up-to-date, we tweet about *five times* per day - and this even on the weekends.
 
 ## Using Twitter tools
 
 But of course we do not work on our holy weekends {% emoji wink %}.
 So, thank god for Social Media tools!
 Most of our tweets are planned about a week ahead.
-In order to do so we use the planning and analytics tool [buffer](https://buffer.com/app).
+In order to do so, we use the planning and analytics tool [buffer](https://buffer.com/app).
 When first connecting our Twitter account to buffer, it automatically calculated which time schedule would be best to maximize reaching out to and engaging with our followers.
 Buffer also analyzes which posts performed best and which did not.
 
@@ -100,4 +101,5 @@ Also, potential job candidates can check out what you are working on, and thus y
 And do not forget about Twitter:
 Most developers are very active on Twitter!
 Thus, it is basically a prerequisite in order to engage with the tech community.
-So, happy blogging!
+
+Happy blogging!
