@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "Post Webhooks Request Schema",
+  "type": "object",
+  "properties": {
+    "": {
+      "type": "object of [webhook (create request)](page:apps-data-types#webhook-create-request)",
+      "description": ""
+    }
+  }
+}

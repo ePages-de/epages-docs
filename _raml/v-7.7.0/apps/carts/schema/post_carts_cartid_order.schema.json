@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "Post Cart CartId Order Schema",
+  "type": "object",
+  "properties": {
+    "": {
+      "type": "object of [order](page:apps-data-types#order)",
+      "description": ""
+    }
+  }
+}

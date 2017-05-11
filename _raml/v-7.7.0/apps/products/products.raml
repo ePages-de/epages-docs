@@ -1,0 +1,266 @@
+#%RAML 0.8
+displayName: Products
+get:
+  description: Returns a list of products. *epages6 *epagesNow
+  securedBy: [products_read]
+  is: [ locale, currency, paged, direction ]
+  queryParameters:
+    sort:
+      description: Sorts products by attribute.
+      enum: [name, price]
+      default: name
+      example: name
+      required : false
+    q:
+      description: Filters products by a query string that can be either<br><br>
+
+            1. a part of a string, e.g. q=myProd (would match "myProduct")<br><br>
+            2. a single phrase string using quotes, e.g. q="myProduct" (would match "myProduct") or q="new%20Product" where %20 is used to encode the whitespace<br><br>
+            or<br><br>
+            a list of elements of type 1 or 2, that have to appear (combined with +), e.g. q=myProd+new or q="new"+product.
+      required : false
+    categoryId:
+      description: Filters products by category ID.
+      required : false
+    id:
+      description: The ID of the product.<br/>
+
+        The query parameter is repeatable up to 12 times, e.g. "?id=productId1&id=productId2&id=productId3".<br/>
+        The response will return the product data in the same order as the IDs.
+        Invisible, deleted or unknown products are removed from the list.<br/>
+
+        This parameter can only be used together with the locale and currency query parameters.
+        Other query parameters, such as sort, categoryId, page etc, are not supported.
+      required: false
+      repeat: true
+    includeInvisible:
+      description: Includes invisible products. Only available with `products_write` authorisation.
+      type: boolean
+      required: false
+  responses:
+    200:
+      body:
+        application/json:
+          example: !include examples/get_product_response.json
+          schema: !include schema/get_product.schema.json
+post:
+  description: Creates a new product. *epages6 *epagesNow
+  securedBy: [products_write]
+  is: [ locale, currency ]
+  body:
+    application/json:
+      example: !include examples/post_product_request.json
+      schema: !include schema/post_product_request.schema.json
+  responses:
+    201:
+      body:
+        application/json:
+          example: !include examples/post_product_response.json
+          schema: !include schema/post_product.schema.json
+/{productId}:
+  displayName: Product
+  uriParameters:
+    productId:
+      description: The unique identifier of the product.
+      example: 52F221E0-36F6-DC4E-384A-AC1504050C04
+  get:
+    description: Returns information on a single product. For product variations, a link
+      to the respective product variations resource (rel="variations") is added. Note that the attribute `minStocklevel` is only available with the `products_write` authorisation. *epages6 *epagesNow
+    securedBy: [products_read]
+    is: [ locale, currency ]
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include examples/get_product_productid_response.json
+            schema: !include schema/get_product_productid.schema.json
+  patch:
+    description: Updates information for a single product with partial data according to [RFC 6902](https://tools.ietf.org/html/rfc6902). You can either add or remove certain attributes. *epages6 *epagesNow <br><br>
+
+          *Supported JSON-PATCH operations*<br>
+          - add (sets or replaces an attribute)<br>
+          - remove (unsets an attribute)<br>
+          - replace³ (replaces an attribute value)<br><br>
+
+          *Attribute paths that allow updates via PATCH* <br>
+                - /productNumber¹<br>
+                - /name<br>
+                - /shortDescription<br>
+                - /description<br>
+                - /manufacturer<br>
+                - /upc<br>
+                - /ean<br>
+                - /essentialFeatures<br>
+                - /searchKeywords<br>
+                - /priceInfo/price/amount<br>
+                - /priceInfo/manufacturerPrice/amount<br>
+                - /priceInfo/depositPrice/amount<br>
+                - /deliveryPeriod<br>
+                - /minStocklevel<br>
+                - /manufacturerProductNumber<br>
+                - /productLength<br>
+                - /productWidth<br>
+                - /productHeight<br>
+                - /priceInfo/taxClass/taxClassId³<br>
+                - /productImage¹<br>
+                - /stocklevel²<br>
+                - /visible¹<br><br>
+
+                **¹** supports *add* only<br>
+                **²** value will not be replaced, but changed, i.e. if the stocklevel is 3 and you add 1, you will get 4; if you add -5, you will get -2.<br>
+                **³** used for taxClassId only<br><br>
+
+    securedBy: [products_write]
+    is: [ locale, currency ]
+    body:
+      application/json-patch+json:
+        example: !include examples/patch_product_productid_request.json
+        schema: !include schema/patch_product_productid_request.schema.json
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include examples/patch_product_productid_response.json
+            schema: !include schema/patch_product_productid.schema.json
+  delete:
+    description: Deletes a single product. *epages6 *epagesNow
+    securedBy: [products_write]
+    responses:
+      204:
+
+  /variations:
+    displayName: Product variations
+    get:
+      is: [ locale ]
+      queryParameters:
+        page:
+          description: Represents the current page.
+          type: integer
+          minimum: 1
+          default: 1
+        resultsPerPage:
+          description: Specifies the maximum number of results per page.
+          type: integer
+          default: 100
+          maximum: 1000
+      description: Returns links to product variations in a paged item list.<br/>
+        "name" and "value" are used to find a matching variation for the user's selection.
+        Note that the default resultsPerPage is 100 and max resultsPerPage is 1000 for this resource. *epages6
+      securedBy: [products_read]
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/get_product_productid_variations_response.json
+              schema: !include schema/get_product_productid_variations.schema.json
+  /slideshow:
+    displayName: Product slideshow
+    get:
+      description: Returns links to slideshow images of a product. *epages6 *epagesNow
+      securedBy: [products_read]
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/get_product_productid_slideshow_response.json
+              schema: !include schema/get_product_productid_slideshow.schema.json
+    post:
+      description: Creates (uploads) an image for the product slideshow. *epages6 *epagesNow
+      securedBy: [products_write]
+      body:
+        multipart/form-data:
+          formParameters:
+            image:
+              description: The image file to be uploaded. Specify the file name as part of the content header. An already existing image cannot be overwritten by a new image with the same file name. Either delete the old image and upload a new image or choose a different file name.
+              required: true
+              type: file
+      responses:
+        201:
+          body:
+            application/json:
+              example: !include examples/post_product_productid_slideshow_response.json
+              schema: !include schema/post_product_productid_slideshow.schema.json
+        400:
+          description: Image name is taken. (To replace an image, delete the old one first and then upload the new one.)
+        413:
+          description: The file size is too large. The entire HTTP body (including multipart headers) must not exceed the defined limit.
+    /{imageName}:
+      displayName: Slideshow image
+      delete:
+        description: Deletes a single slideshow image. *epages6 *epagesNow
+        securedBy: [products_write]
+        responses:
+          204:
+    /sequence:
+      displayName: Product slideshow sequence
+      get:
+        description: Returns the names of the slideshow images as an array. *epages6 *epagesNow
+        securedBy: [products_read]
+        responses:
+          200:
+            body:
+              application/json:
+                example: !include examples/get_product_productid_slideshow_sequence_response.json
+                schema: !include schema/get_product_productid_slideshow_sequence_schema.json
+      put:
+        description: Updates the sequence of the slideshow images. *epages6 *epagesNow
+        securedBy: [products_write]
+        body:
+          application/json:
+            example: !include examples/put_product_productid_slideshow_sequence_request.json
+            schema: !include schema/put_product_productid_slideshow_sequence_request_schema.json
+        responses:
+          200:
+            body:
+              application/json:
+                example: !include examples/put_product_productid_slideshow_sequence_response.json
+                schema: !include schema/put_product_productid_slideshow_sequence_schema.json
+  /custom-attributes:
+    get:
+      is: [ locale ]
+      description: Returns values of user-defined product attributes. *epages6 *epagesNow
+      securedBy: [products_read]
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/get_product_productid_custom_response.json
+              schema: !include schema/get_product_productid_custom.schema.json
+  /lowest-price:
+    displayName: Product's lowest price
+    get:
+      is: [ locale, currency ]
+      description: Returns the lowest price of all variations of a product that
+        can currently be purchased.<br>
+        Returns 404 Not Found if the product does not have any variation
+        with an independent price, e.g. if all variations share the
+        same price.
+        Also depends on the shop setting to display "from" prices. *epages6
+      securedBy: [products_read]
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/get_product_productid_low_price_response.json
+              schema: !include schema/get_product_productid_low_price.schema.json
+
+/updated/{productProperty}:
+  displayName: Updated products
+  uriParameters:
+    productProperty:
+      description: The updated product property or attribute. *Attributes* refers to all *attributes* the REST API returns, except for *stocklevel*. *Stocklevel* has to be queried separately.
+      enum: [attributes, stocklevel]
+  get:
+    description: Returns all updated products together with the time of their last update. *epages6 *epagesNow
+    is: [ locale, currency ]
+    securedBy: [products_write]
+    queryParameters:
+      changedAfter:
+        description: Filters the last changes of a product property after this timestamp (format according to ISO 8601, e.g. 2016-02-26T10:53:49). By default we return the last 7 days.
+        required: false
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include examples/get_product_updated_property_response.json
+            schema: !include schema/get_product_updated_property.schema.json

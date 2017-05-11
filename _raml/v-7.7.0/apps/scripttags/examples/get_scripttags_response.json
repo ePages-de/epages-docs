@@ -1,0 +1,30 @@
+{
+  "items": [
+    {
+      "scriptTagId": "A348E2BC-F704-4515-868C-5F9E19B4D702",
+      "scriptUrl": "https://widgets.example.com/social.js?id=123ab",
+      "scriptType": "NORMAL",
+      "createdOn": "2017-02-21T14:30:15Z",
+      "updatedOn": "2017-02-21T14:30:15Z",
+      "links": [
+        {
+          "rel": "self",
+          "href": "https://example.epages.com/rs/shops/ExampleShop/script-tags/A348E2BC-F704-4515-868C-5F9E19B4D702"
+        }
+      ]
+    },
+    {
+      "scriptTagId": "F3783939-09CD-463C-AA77-ED0E1677FAF8",
+      "scriptUrl": "https://example.org/path/to/widget.js",
+      "scriptType": "NORMAL",
+      "createdOn": "2017-02-21T14:29:29Z",
+      "updatedOn": "2017-02-21T14:29:29Z",
+      "links": [
+        {
+          "rel": "self",
+          "href": "https://example.epages.com/rs/shops/ExampleShop/script-tags/F3783939-09CD-463C-AA77-ED0E1677FAF8"
+        }
+      ]
+    }
+  ]
+}

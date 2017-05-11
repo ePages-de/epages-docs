@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "Put Legal Contact Information Request Schema",
+  "type": "object",
+  "properties": {
+    "": {
+      "type": "object of [contactInfo](page:apps-data-types#contactinfo)",
+      "description": ""
+    }
+  }
+}
