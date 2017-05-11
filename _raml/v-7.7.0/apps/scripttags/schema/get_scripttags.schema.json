@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "Get Script tags Schema",
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array of [scriptTag](page:apps-data-types#scripttag)",
+      "description": "The list of all script tags. "
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "Get Search Product-Suggest Schema",
+  "type": "object",
+  "properties": {
+    "products": {
+      "type": "array of [productSuggest](page:apps-data-types#productsuggest)",
+      "description": "The suggested products from a specific product search query."
+    }
+  }
+}
