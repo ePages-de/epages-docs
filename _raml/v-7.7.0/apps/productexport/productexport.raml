@@ -1,0 +1,11 @@
+#%RAML 0.8
+displayName: Product export
+get:
+  description: Returns a CSV file with all products of the shop. **Note** that after the first installation of the app by a merchant, the export file will not be available until the next day. *epages6 *epagesNow
+  securedBy: [products_read_batch]
+  is: [ locale ]
+  responses:
+    200:
+      body:
+        text/csv:
+          example: !include examples/product_portal_response.csv

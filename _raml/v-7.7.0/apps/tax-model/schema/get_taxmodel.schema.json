@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "Get Tax Model Schema",
+  "type": "object",
+  "properties": {
+    "": {
+      "type": "object of [taxModel](page:apps-data-types#taxmodel)",
+      "description": ""
+    }
+  }
+}

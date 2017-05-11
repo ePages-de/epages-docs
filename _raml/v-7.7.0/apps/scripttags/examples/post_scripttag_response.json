@@ -1,0 +1,13 @@
+{
+  "scriptTagId": "A348E2BC-F704-4515-868C-5F9E19B4D702",
+  "scriptUrl": "https://widgets.example.com/social.js?id=123ab",
+  "scriptType": "NORMAL",
+  "createdOn": "2017-02-21T14:30:15Z",
+  "updatedOn": "2017-02-21T14:30:15Z",
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://example.epages.com/rs/shops/ExampleShop/script-tags/A348E2BC-F704-4515-868C-5F9E19B4D702"
+    }
+  ]
+}
