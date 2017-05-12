@@ -4,11 +4,3 @@
     <li class="sitemap-entry">{% sitemap_link entry %}</li>
   {% endfor %}
 {% endfor %}
-
-<script type="text/javascript">
-  document.querySelectorAll('li.sitemap-entry').forEach(function(elem) {
-    if (elem.querySelector('a').getAttribute('href') == window.location.pathname) {
-      elem.className += ' active'
-    }
-  })
-</script>
