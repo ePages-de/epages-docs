@@ -1,8 +1,0 @@
-<li class="sitemap-headline">ePagesJ release<br />
-  <select id="api-version" name="version">
-    <option value="" selected>{{ api_versions['latest'] }}</option>
-    {% for version in api_versions['versions'] reversed %}
-      <option value="v-{{ version['title'] }}">{{ version['title'] }}</option>
-    {% endfor %}
-  </select>
-</li>
