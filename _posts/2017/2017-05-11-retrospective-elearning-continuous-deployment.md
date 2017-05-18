@@ -41,7 +41,7 @@ Thus it's easier to find the time to work through it during office hours.
 ## Cons
 
 * Even though I had the official approval for training during working hours, it is impossible to find the time to do the exercises in the office.
-I had find other time slots to do the course.
+I had to find other time slots to do the course.
 * Lots of the examples were not yet applicable for our specific situation.
 * As Python/Django is not our technology stack, wrapping my head around our Kubernetes deployment process is still a challenge for me.
 * More focus on the videos would have been nice.

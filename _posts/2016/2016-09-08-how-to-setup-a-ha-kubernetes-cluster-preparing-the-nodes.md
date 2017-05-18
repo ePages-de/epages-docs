@@ -259,4 +259,4 @@ It uses its own *drop-in* to be able to handle the parameters provided by *flann
 
 ## Related posts
 
-* [How to set up a HA Kubernetes cluster: etcd cluster with SSL](https://developer.epages.com/blog/2016/08/09/how-to-setup-a-kubernetes-cluster-etcd-cluster-with-ssl.html)
+* [How to set up a HA Kubernetes cluster: etcd cluster with SSL](https://developer.epages.com/blog/2016/08/09/how-to-setup-a-ha-kubernetes-cluster-etcd-cluster-with-ssl.html)
