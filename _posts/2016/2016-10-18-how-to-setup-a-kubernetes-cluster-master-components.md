@@ -395,5 +395,5 @@ Once the namespace _kube-system_ is created (after the start of the API server) 
 
 # Related posts
 
-* [How to set up a HA Kubernetes cluster: etcd cluster with SSL](https://developer.epages.com/blog/2016/08/09/kubernetes-etcd-cluster.html)
-* [How to set up a HA Kubernetes cluster: preparing the nodes](https://developer.epages.com/blog/2016/09/08/kubernetes-preparing-nodes.html)
+* [How to set up a HA Kubernetes cluster: etcd cluster with SSL](https://developer.epages.com/blog/2016/08/09/how-to-setup-a-ha-kubernetes-cluster-etcd-cluster-with-ssl.html)
+* [How to set up a HA Kubernetes cluster: preparing the nodes](https://developer.epages.com/blog/2016/09/08/how-to-setup-a-ha-kubernetes-cluster-preparing-the-nodes.html)
