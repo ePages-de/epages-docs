@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Continuous Delivery Pipeline of our Microservices Architecture"
-date: "2017-05-23 07:00:00"
+date: "2017-06-13 07:00:00"
 image: blog-header/microservices-pipeline-3.jpg
 categories: tech-stories
 authors: ["Benjamin and Nicole"]
