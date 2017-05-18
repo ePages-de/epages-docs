@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "The Continuous Delivery Pipeline of our Microservices Architecture"
-date: "2017-05-16 07:00:00"
+date: "2017-05-30 07:00:00"
 image: blog-header/microservices-pipeline-1.jpg
 categories: tech-stories
 authors: ["Benjamin and Nicole"]
 ---
 
-In this blog post series we explain one of the foundation pillars of the ePages next generation E-Commerce platform, the The Continuous Delivery Pipeline (CDP) of our Microservices Architecture.
+In this blog post series we explain one of the foundation pillars of the ePages next generation E-Commerce platform, the The Continuous Delivery Pipeline (CDP) of our new Microservices Architecture.
 
 We prepared 3 posts to answer the 4 most important questions that show how to continuously deliver new microservices, feature updates and bug fixes to our customers within less time than the average lunch break.
 To deploy in under 45 minutes and with highest confidence and without quality compromises we need to apply several advanced techniques for building a solid and high-performance continuous delivery pipeline that is capable of handling all our demands with ease.
