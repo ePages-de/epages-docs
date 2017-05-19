@@ -11,3 +11,63 @@ layout: page
     <a href="{{ '/index.html' | prepend: category | prepend: '/blog/categories/' | prepend: site.baseurl }}" class="label label-default">{{ category }}</a>
   {% endfor %}
 </div>
+
+{% assign category = page.categories[0] %}
+
+{% if site.categories[category].first.url == page.url %}
+  {% assign next_post = site.categories[category][1] %}
+  {% assign prev_post = site.categories[category][2] %}
+{% else %}
+  {% assign posts = site.categories[category] %}
+  {% for post in posts %}
+    {% if post.url == page.url %}
+      {% assign post_index0 = forloop.index0 %}
+      {% assign post_index1 = forloop.index %}
+    {% endif %}
+  {% endfor %}
+  {% for post in posts %}
+    {% if post_index0 == forloop.index %}
+      {% assign next_post = post %}
+    {% endif %}
+    {% if post_index1 == forloop.index0 %}
+      {% assign prev_post = post %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+<div class="post-navigation">
+  {% if next_post %}
+    <div class="post-preview">
+      <a href="{{ next_post.url }}">
+        <div class="post-image" style="background-image: url(/assets/images/{{next_post.image}});"></div>
+        <div class="post-content">
+          <div class="post-description">You might enjoy</div>
+          <div class="post-title">{{ next_post.title }}<br /><span>{{ next_post.authors | join: ', ' }} - {{ next_post.date | date: "%d/%m/%Y" }}</span></div>
+          <div class="post-category">{{ category }}</div>
+        </div>
+      </a>
+    </div>
+  {% endif %}
+  {% if prev_post %}
+    <div class="post-preview">
+      <a href="{{ prev_post.url }}">
+        <div class="post-image" style="background-image: url(/assets/images/{{prev_post.image}});"></div>
+        <div class="post-content">
+          <div class="post-description">You might enjoy</div>
+          <div class="post-title">{{ prev_post.title }}<br /><span>{{ prev_post.authors | join: ', ' }} - {{ prev_post.date | date: "%d/%m/%Y" }}</span></div>
+          <div class="post-category">{{ category }}</div>
+        </div>
+      </a>
+    </div>
+  {% endif %}
+  <div class="post-preview">
+    <a href="{{ prev_post.url }}">
+      <div class="post-image" style="background-image: url(/assets/images/{{prev_post.image}});"></div>
+      <div class="post-content">
+        <div class="post-description">Also of interest</div>
+        <div class="post-title">{{ prev_post.title }}</div>
+        <div class="post-category">{{ category }}</div>
+      </div>
+    </a>
+  </div>
+</div>
