@@ -6,9 +6,11 @@ layout: page
 <row class="post-list">
   {% for post in page.posts %}
     <div class="post-item">
-      <div class="img-featured">
-        <img class="img-responsive" src="{% if post.image %}/assets/images/{{ post.image }}{% else %}/assets/images/blog/categories/{{ category[3] }}.jpg{% endif %}" alt="hero image">
-      </div>
+      <a href="{{ post.url | prepend: site.baseurl }}">
+        <div class="img-featured">
+          <img class="img-responsive" src="{% if post.image %}/assets/images/{{ post.image }}{% else %}/assets/images/blog/categories/{{ category[3] }}.jpg{% endif %}" alt="hero image">
+        </div>
+      </a>
       {% unless forloop.first %}<div class="ellipsis">{% endunless %}
       <h3 class="post-title">
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
