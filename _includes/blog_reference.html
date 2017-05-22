@@ -1,0 +1,84 @@
+{% assign category = page.categories[0] %}
+
+{% if site.categories[category].first.url == page.url %}
+  {% assign next_post = site.categories[category][1] %}
+  {% assign prev_post = site.categories[category][2] %}
+{% else %}
+  {% assign posts = site.categories[category] %}
+  {% for post in posts %}
+    {% if post.url == page.url %}
+      {% assign post_index0 = forloop.index0 %}
+      {% assign post_index1 = forloop.index %}
+    {% endif %}
+  {% endfor %}
+  {% for post in posts %}
+    {% if post_index0 == forloop.index %}
+      {% assign next_post = post %}
+    {% endif %}
+    {% if post_index1 == forloop.index0 %}
+      {% assign prev_post = post %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+{% case category %}
+  {% when 'agile' %}
+    {% assign other_post = site.categories['tech-stories'][0] %}
+  {% when 'api' %}
+    {% assign other_post = site.categories['tech-stories'][0] %}
+  {% when 'events' %}
+    {% assign other_post = site.categories['tech-stories'][0] %}
+  {% when 'working-at-epages' %}
+    {% assign other_post = site.categories['agile'][0] %}
+  {% when 'tech-stories' %}
+    {% assign other_post = site.categories['api'][0] %}
+{% endcase %}
+
+<div class="post-navigation">
+  {% if next_post %}
+    <div class="post-preview">
+      <a href="{{ next_post.url }}">
+        {% if next_post.image == null %}
+          <div class="post-image" style="background-image: url(/assets/images/blog/categories/{{next_post.categories.first}}.jpg);"></div>
+        {% else %}
+          <div class="post-image" style="background-image: url(/assets/images/{{next_post.image}});"></div>
+        {% endif %}
+        <div class="post-content">
+          <div class="post-description">You might enjoy</div>
+          <div class="post-title">{{ next_post.title }}<br /><span>{{ next_post.authors | join: ', ' }} - {{ next_post.date | date: "%b %-d, %Y" }}</span></div>
+          <div class="post-category">{{ category }}</div>
+        </div>
+      </a>
+    </div>
+  {% endif %}
+  {% if prev_post %}
+    <div class="post-preview">
+      <a href="{{ prev_post.url }}">
+        {% if prev_post.image == null %}
+          <div class="post-image" style="background-image: url(/assets/images/blog/categories/{{prev_post.categories.first}}.jpg);"></div>
+        {% else %}
+          <div class="post-image" style="background-image: url(/assets/images/{{prev_post.image}});"></div>
+        {% endif %}
+        <div class="post-content">
+          <div class="post-description">You might enjoy</div>
+          <div class="post-title">{{ prev_post.title }}<br /><span>{{ prev_post.authors | join: ', ' }} - {{ prev_post.date | date: "%b %-d, %Y" }}</span></div>
+          <div class="post-category">{{ category }}</div>
+        </div>
+      </a>
+    </div>
+  {% endif %}
+  <div class="post-preview">
+    <a href="{{ other_post.url }}">
+      {% if other_post.image == null %}
+        <div class="post-image" style="background-image: url(/assets/images/blog/categories/{{other_post.categories.first}}.jpg);"></div>
+      {% else %}
+        <div class="post-image" style="background-image: url(/assets/images/{{other_post.image}});"></div>
+      {% endif %}
+      <div class="post-content">
+        <div class="post-description">Also of interest</div>
+        <div class="post-title">{{ other_post.title }}<br /><span>{{ other_post.authors | join: ', ' }} - {{ other_post.date | date: "%b %-d, %Y" }}</span></div>
+        <div class="post-category">{{ other_post.categories }}</div>
+      </div>
+    </a>
+  </div>
+</div>

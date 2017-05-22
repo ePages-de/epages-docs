@@ -35,13 +35,9 @@ layout: default
 
 <div id="content">
   <div class="container">
-    {% assign api_versions = site.data['api-versions'] %}
     {% unless page.hide_sitemap %}
       <div class="contentnav">
         <ul id="sitemap">
-          {% if chapter contains 'apps' %}
-            {% include_cached version-dropdown.html api_versions=api_versions %}
-          {% endif %}
           {% include_cached sitemap.html sitemap=sitemap %}
           {% if chapter == 'blog' %}
             {% if page.title %}

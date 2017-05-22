@@ -11,3 +11,5 @@ layout: page
     <a href="{{ '/index.html' | prepend: category | prepend: '/blog/categories/' | prepend: site.baseurl }}" class="label label-default">{{ category }}</a>
   {% endfor %}
 </div>
+
+{% include blog_reference.html %}
