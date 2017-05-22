@@ -35,6 +35,19 @@ layout: page
   {% endfor %}
 {% endif %}
 
+{% case category %}
+  {% when 'agile' %}
+    {% assign other_post = site.categories['tech-stories'][0] %}
+  {% when 'api' %}
+    {% assign other_post = site.categories['tech-stories'][0] %}
+  {% when 'events' %}
+    {% assign other_post = site.categories['tech-stories'][0] %}
+  {% when 'working-at-epages' %}
+    {% assign other_post = site.categories['agile'][0] %}
+  {% when 'tech-stories' %}
+    {% assign other_post = site.categories['api'][0] %}
+{% endcase %}
+
 <div class="post-navigation">
   {% if next_post %}
     <div class="post-preview">
@@ -61,12 +74,12 @@ layout: page
     </div>
   {% endif %}
   <div class="post-preview">
-    <a href="{{ prev_post.url }}">
-      <div class="post-image" style="background-image: url(/assets/images/{{prev_post.image}});"></div>
+    <a href="{{ other_post.url }}">
+      <div class="post-image" style="background-image: url(/assets/images/{{other_post.image}});"></div>
       <div class="post-content">
         <div class="post-description">Also of interest</div>
-        <div class="post-title">{{ prev_post.title }}</div>
-        <div class="post-category">{{ category }}</div>
+        <div class="post-title">{{ other_post.title }}<br /><span>{{ other_post.authors | join: ', ' }} - {{ other_post.date | date: "%d/%m/%Y" }}</span></div>
+        <div class="post-category">{{ other_post.categories }}</div>
       </div>
     </a>
   </div>
