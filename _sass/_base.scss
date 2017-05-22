@@ -375,11 +375,7 @@ section .col-md-6 p {
         justify-content: space-around;
 
         .post-category {
-          border: 1px solid #fff;
-          display: table;
-          padding: 4px 8px;
-          border-radius: 4px;
-          margin: 0 auto;
+          text-align: center;
           text-shadow: -1px 1px 2px #505050;
         }
         .post-title {
@@ -396,6 +392,20 @@ section .col-md-6 p {
         .post-description {
           text-align: center;
           text-shadow: -1px 1px 2px #505050;
+          border: 1px solid #fff;
+          border-radius: 4px;
+          padding: 4px 8px;
+          display: table;
+          margin: 0 auto;
+        }
+        &:hover {
+          background: rgba(0, 0, 0, 0.6);
+
+          .post-description {
+            background: #fff;
+            text-shadow: none;
+            color: #333;
+          }
         }
       }
     }
