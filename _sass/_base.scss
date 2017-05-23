@@ -336,12 +336,19 @@ section .col-md-6 p {
   margin-top: 30px;
   display: flex;
   justify-content: center;
+  @media screen and (max-width: 426px) {
+    flex-direction: column;
+  }
 
   .post-preview {
     width: calc(100% / 3);
     height: 400px;
     position: relative;
     overflow: hidden;
+    @media screen and (max-width: 426px) {
+      width: 100%;
+      height: 300px;
+    }
 
     a {
       width: 100%;
