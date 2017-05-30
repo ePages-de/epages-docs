@@ -10,6 +10,16 @@ In order to keep track of these changes we recommend you to follow [@epagesdevs]
 
 <hr>
 
+## 2017-05-30
+
+#### <i class="fa fa-info-circle"></i> Notice
+
+* We have achieved the desired functional range of the REST API.
+Feature-free releases won't be reported anymore.
+Of course, we will continue to inform you if there are any breaking changes to the API.
+
+<hr>
+
 ## 2017-05-11
 
 ### Changes with software release 7.8.0
