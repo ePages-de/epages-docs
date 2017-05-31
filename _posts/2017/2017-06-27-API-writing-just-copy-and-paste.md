@@ -7,21 +7,21 @@ categories: api
 authors: ["Birgit"]
 ---
 
-Can you imagine that?
-There are people who think that API writing is just about copying and pasting text.
-Or that API writers just make things nice and shiny; polish some wording here and there.
-I'm an API writer and I was super sad to hear that.
-When I addressed this with some of my colleagues, they said, of course they know that this is **not** what I do.
-But for them API documentation was a very abstract topic and they were very interested in what exactly I do.
-So I took them on a little API docs journey for our brand new software...
+For many, API documentation is a very abstract topic.
+Is it just copying and pasting text?
+Or about making things nice and shiny?
+Do API writers just polish some wording here and there?
+
+Come with me on a little API docs journey and you'll see, what it is really about.
 
 ## Speaking up for API writers
 
 If you're not born and raised as a developer, but still have to deal with APIs, you have to learn a lot, I mean A LOT.
-API writers need a thorough understanding of the API, its functionality, authentication, parameters, return types, what it supports and what not...
+API writers need a thorough understanding of the API, its functionality, authentication, parameters, return types, what it supports and what not.
 
 They have to be flexible, proactive, sensitive, always present, well-organized...
 Maybe just read [this post](https://developer.epages.com/blog/2016/11/30/what-its-like-to-be-an-agile-technical-writer.html), and you'll know about that part.
+
 In a nutshell, it requires detailed expertise to write API documentation.
 
 ## Playing around with the software
@@ -32,7 +32,7 @@ But before I can start writing straight away, there's some groundwork to do.
 
 As the shop administration reflects what's implemented in our API and I need to understand the functions and features, it's a good idea to play around with the shop administration first.
 
-And this is how I get started:
+And this is how I get started with it:
 
 * Take care of a test shop.
 * Think about a storyline for my test shop business.
@@ -79,9 +79,14 @@ I'll note down all my findings, discuss it with the developers and with it impro
 ## QA inclusive
 
 Oh, talking about findings...
-While intensively trying out the REST calls and working with the user interface, it may happen that I stumble upon things that don't work as expected; sometimes also referred to as bugs {% emoji wink %}.
+While intensively trying out the REST calls and working with the user interface, it may happen that I stumble upon things that don't work as expected - sometimes also referred to as bugs {% emoji wink %}.
 
-## And all this stuff...
+## Text work(s)
+
+Once I've gathered all information together, took notes, and received satisfying answers to all of my questions from the API developers {% emoji wink %}, I write down what I've learned to provide our readers with the best possible documentation experience.
+This is a lot easier when you've had the time to go through the above mentioned steps.
+
+## This and that
 
 * Competitor analysis: how do others do things?
 (You don't have to reinvent the wheel.)
@@ -98,8 +103,8 @@ There's still work to do.
 As soon as everything is online and public, the docs need regular updates.
 I have to keep track of the API changes, follow up with the teams, update the docs, and inform the users.
 
-## Bored to death?!
+## Far from copy and paste
 
-As you might have learned from this post, API writing is an extensive, multifaceted field of work.
+API writing is an extensive, multifaceted field of work.
 It's challenging, but a lot of fun as well.
-And for sure, I wouldn't do this job, if it would be just copy and paste - because then I would be bored to death {% emoji wink %}.
+And for sure, I wouldn't do this job, if it was just copy and paste - because then I would be bored to death {% emoji wink %}.
