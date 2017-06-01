@@ -1,3 +1,9 @@
+- key: blog-about
+  title: About
+  entries:
+    - title: "Who we are"
+      link: /about/
+
 - key: blog-categories
   title: Categories
   entries:
