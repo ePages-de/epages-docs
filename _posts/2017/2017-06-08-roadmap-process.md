@@ -8,7 +8,7 @@ authors: ["Ann-Katrin"]
 ---
 
 At ePages we regularly do plannings for our product roadmap, where we define the roadmap for an iteration of three months.
-This mount of planning has proven to be a good time frame, as it gives our customer facing departments (e.g. sales and marketing) enough information about what they can communicate to our customers, while at the same time, it gives product management enough flexibility to align the roadmap with our changing business needs.
+This has proven to be a good time frame, as it gives our customer facing departments (e.g. sales and marketing) enough information about what they can communicate to our customers, while at the same time, it gives product management enough flexibility to align the roadmap with our changing business needs.
 
 I often hear people questioning, if roadmap planning aligns with an agile mindset, because “planning is so waterfall” and even the agile manifesto says “responding to change over following a plan”.
 And while I am a strong believer that too much planning is often not beneficial for the outcome of a project and can be a waste of time, I also believe that every project requires some planning to keep delivery dates and such in mind.
@@ -24,7 +24,7 @@ Here are my top three:
 
 ## 1. The product strategy gets communicated across the business
 
-This is important for us, because we are currently developing three different products: ePages 6, our long-standing software on the market, ePages Now, our newest product on the market which offers a new shiny interface, and ePages Beyond, our new product, that is currently in development and for which we will release an MVP in September this year.
+This is important for us, because we are currently developing three different products: ePages 6, our long-standing software on the market, ePages Now, our newest product on the market which offers amongst others a completely redesigned storefront, and a new technology platform, that is currently in development and for which we will release an MVP in September this year.
 You can imagine, how important it is, that everyone in the company understands the product strategy, when you have two products on the market and a new one already in the pipeline.
 
 ## 2. The product vision is put into focus
@@ -44,6 +44,6 @@ It helps them to understand what features are in the pipeline for each product.
 Although, we plan out the work for three months, it doesn’t mean, that everything is set in stone and can’t be changed until the next roadmap iteration.
 At the end of the day we are a customer facing company and need to be able to react to market needs (that’s why we are agile, right {% emoji wink %}).
 To ensure, that the business is aware of any changes to the roadmap, we keep high visibility of the progress on a regular basis. For example, the development teams always give an update what roadmap items have already been finished, what items are currently in development and what items have not been started, at the end of each sprint review.
-If the relevant product roadmap would have changed significantly, everybody who attended the sprint review will take notice of it. Once a month our Head of Product shows the current status in a company wide meeting.
+If the relevant product roadmap would have changed significantly, everybody who attended the sprint review will take notice of it. Once a month our Head of Product Management shows the current status in a company wide meeting.
 
 One other important thing, that we do during and after the planning process is to gather feedback from everybody involved. Receiving feedback about what went well or getting ideas what can be improved for the next iteration is great and helps us to make the roadmap planning as effective as possible and to make sure, that our key stakeholders fully understand the process and feel valued along the way.
