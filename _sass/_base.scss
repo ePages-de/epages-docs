@@ -64,8 +64,10 @@ a.cta, .cta, .navbar-cta {
   outline: 0 !important;
 }
 @media (max-width: 767px) {
-  .contentnav .sitemap-headline:not(:last-of-type),
-  .contentnav .sitemap-entry {
+  .blog.blog-preview .container .contentnav #sitemap .sitemap-headline:not(.social-media) {
+    display: none !important;
+  }
+  .contentnav .sitemap-headline.rss-feed {
     display: none !important;
   }
   .contentnav .sitemap-headline:last-of-type {
@@ -78,6 +80,58 @@ a.cta, .cta, .navbar-cta {
   }
   .navbar-cta {
     margin-left: 0;
+  }
+  .contentnav {
+    width: 100% !important;
+    margin-right: 0 !important;
+
+    #sitemap {
+      margin-bottom: 30px;
+      border-left: 1px solid #cfcfcf;
+      border-right: 1px solid #cfcfcf;
+
+      > li {
+        &:last-of-type {
+          border-bottom: 1px solid #cfcfcf;
+        }
+
+        &.sitemap-headline {
+          margin: 0;
+          text-align: center;
+          border-top: 1px solid #cfcfcf;
+          padding: 5px 0;
+          font-size: 18px;
+        }
+      }
+
+      ul {
+        &:last-of-type {
+          border-top: 0 !important;
+          border-bottom: 1px solid #cfcfcf;
+        }
+
+        &.sitemap-content {
+          display: none;
+          border-top: 1px solid #cfcfcf;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          .sitemap-entry {
+            text-align: center;
+
+            &:first-child {
+              margin-top: 10px;
+            }
+
+            &:last-child {
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -518,6 +572,9 @@ footer .links li {
 }
 .socialmedia li:first-child {
   margin-left: 0;
+  @media screen and (max-width: 768px) {
+    margin-left: 7px;
+  }
 }
 footer .social ul li a, .socialmedia li a {
   display: table-cell;
@@ -609,6 +666,9 @@ footer .social .xing:hover {
 .sitemap-headline {
   font-family: 'ProximaNova-Bold', Helvetica, Arial, sans-serif;
   margin-top: 40px;
+}
+ul.sitemap-content {
+  padding-left: 0;
 }
 .sitemap-headline:first-child {
   margin-top: 0;
