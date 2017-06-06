@@ -67,15 +67,20 @@ a.cta, .cta, .navbar-cta {
   .blog.blog-preview .container .contentnav #sitemap .sitemap-headline:not(.social-media) {
     display: none !important;
   }
+  .blog-preview #sitemap {
+    border: 0 !important;
+  }
   .contentnav .sitemap-headline.rss-feed {
     display: none !important;
   }
   .contentnav .sitemap-headline:last-of-type {
     margin-top: 0;
     font-size: 0;
+
     .socialmedia {
-      width: 100vw;
-      padding-left: calc(50vw - 86px);
+      width: 100%;
+      display: flex;
+      justify-content: center;
     }
   }
   .navbar-cta {
@@ -101,13 +106,21 @@ a.cta, .cta, .navbar-cta {
           border-top: 1px solid #cfcfcf;
           padding: 5px 0;
           font-size: 18px;
+          &.social-media {
+            border: 0;
+          }
         }
       }
 
       ul {
+
         &:last-of-type {
           border-top: 0 !important;
           border-bottom: 1px solid #cfcfcf;
+        }
+
+        &.socialmedia {
+          border-bottom: 0 !important;
         }
 
         &.sitemap-content {
