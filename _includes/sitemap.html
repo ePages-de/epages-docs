@@ -1,6 +1,28 @@
 {% for category in sitemap %}
   <li class="sitemap-headline">{{ category.title }}</li>
-  {% for entry in category.entries %}
-    <li class="sitemap-entry">{% sitemap_link entry %}</li>
-  {% endfor %}
+  <ul class="sitemap-content">
+    {% for entry in category.entries %}
+      <li class="sitemap-entry">{% sitemap_link entry %}</li>
+    {% endfor %}
+  </ul>
 {% endfor %}
+
+<script>
+  $(document).ready(function() {
+    width = $(window).width();
+
+    $('li.sitemap-headline').click(function() {
+      if (width <= 767) {
+        if ($(this).next('.sitemap-content').is(':hidden')) {
+          $('.sitemap-content:visible').slideToggle();
+
+        }
+        $(this).next('.sitemap-content').slideToggle();
+      }
+    });
+
+    if (width <= 767) {
+      $('.rss-feed').remove();
+    }
+  });
+</script>

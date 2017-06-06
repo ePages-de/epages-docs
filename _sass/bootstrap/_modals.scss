@@ -49,15 +49,65 @@
 
 // Actual modal
 .modal-content {
-  position: relative;
   background-color: $modal-content-bg;
-  border: 1px solid $modal-content-fallback-border-color; //old browsers fallback (ie8 etc)
   border: 1px solid $modal-content-border-color;
   border-radius: $border-radius-large;
   @include box-shadow(0 3px 9px rgba(0,0,0,.5));
   background-clip: padding-box;
-  // Remove focus outline from opened modal
   outline: 0;
+  max-width: 900px !important;
+  padding: 30px;
+  box-sizing: border-box;
+
+  .submit.cta {
+    display: flex;
+    align-items: center;
+    .icon {
+      margin-left: 8px;
+      font-size: 12px;
+      line-height: 26px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
+    max-width: initial;
+    padding: 20px;
+
+    .container-fluid {
+      padding: 0;
+
+      .row .col-md-12.center {
+        h3 {
+          margin-top: 0;
+          line-height: 32px;
+          font-size: 26px;
+        }
+        .demoshopform .row {
+
+          .col-xs-6.col-md-6 {
+            width: 100%;
+            margin-bottom: 0;
+            padding: 0;
+
+            .form-group input.form-control {
+              -webkit-appearance: none;
+              -moz-appearance: none;
+              appearance: none;
+            }
+          }
+
+          .col-md-12 {
+            padding: 0;
+          }
+
+          .col-xs-12.col-md-12 .submit.cta {
+            margin: 10px auto 0;
+          }
+        }
+      }
+    }
+  }
 }
 
 // Modal background
@@ -67,6 +117,8 @@
   right: 0;
   left: 0;
   background-color: $modal-backdrop-bg;
+  width: 100% !important;
+  height: 100% !important;
   // Fade for backdrop
   &.fade { @include opacity(0); }
   &.in { @include opacity($modal-backdrop-opacity); }

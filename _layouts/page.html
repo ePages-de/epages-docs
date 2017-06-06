@@ -33,7 +33,7 @@ layout: default
   {% endif %}
 </header>
 
-<div id="content">
+<div id="content" class="{% if chapter == 'blog' %} blog{% endif %}{% if page.date and page.authors %} blog-preview{% endif %}">
   <div class="container">
     {% unless page.hide_sitemap %}
       <div class="contentnav">
@@ -49,7 +49,7 @@ layout: default
                 </ul>
               </li>
             {% else %}
-              <li class="sitemap-headline">RSS feed<br />
+              <li class="sitemap-headline rss-feed">RSS feed<br />
                 <ul class="socialmedia">
                   <li class="rss"><a href="/blog/feed.xml" target="_blank"><i class="fa fa-fw fa-rss"></i></a></li>
                 </ul>
