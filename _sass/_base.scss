@@ -64,7 +64,7 @@ a.cta, .cta, .navbar-cta {
   outline: 0 !important;
 }
 @media (max-width: 767px) {
-  .contentnav .sitemap-headline:not(:last-of-type),
+  .contentnav .sitemap-headline:not(.social-media),
   .contentnav .sitemap-entry {
     display: none !important;
   }
