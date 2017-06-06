@@ -33,7 +33,7 @@ layout: default
   {% endif %}
 </header>
 
-<div id="content">
+<div id="content" class="{% if chapter == 'blog' %} blog{% endif %}{% if page.date and page.authors %} blog-preview{% endif %}">
   <div class="container">
     {% unless page.hide_sitemap %}
       <div class="contentnav">
@@ -41,7 +41,7 @@ layout: default
           {% include_cached sitemap.html sitemap=sitemap %}
           {% if chapter == 'blog' %}
             {% if page.title %}
-              <li class="sitemap-headline">Share<br />
+              <li class="sitemap-headline social-media">Share<br />
                 <ul class="socialmedia">
                   <li class="twitter"><a href="https://twitter.com/intent/tweet?text={{ page.title | cgi_escape }}&url={{ page.url | prepend: site.url }}&via=epagesdevs&tw_p=tweetbutton" target="_blank" title="Share via Twitter"><span class="icon-twitter"></span></a></li>
                   <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.url }}" target="_blank"><span class="icon-facebook" title="Share via Facebook"></span></a></li>
@@ -49,7 +49,7 @@ layout: default
                 </ul>
               </li>
             {% else %}
-              <li class="sitemap-headline">RSS feed<br />
+              <li class="sitemap-headline rss-feed">RSS feed<br />
                 <ul class="socialmedia">
                   <li class="rss"><a href="/blog/feed.xml" target="_blank"><i class="fa fa-fw fa-rss"></i></a></li>
                 </ul>
