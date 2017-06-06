@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Reactive streams"
-date: "2017-06-02 16:00:00"
+date: "2017-06-13 08:00:00"
 image: blog-header/api-journey.jpg
 categories: tech-stories
 authors: ["Christian"]
@@ -10,12 +10,12 @@ authors: ["Christian"]
 # akka-streams
 
 Reactive is one of the buzzwords of our time.
-One thread per request is so 90s and so all our beloved microservices have to be reactive, that is responsive, elastic, resilient and message-driven - whatever that means.
-Moreover we understand that modern applications need to deliver information in practical realtime.
-Batch processing is so 80s and so all our beloved microservices have to process data as it gets in and forward the new intermediate results to other microservices as soon as possible which in turn also process the data just in time.
+Since one thread per request is so 90s and so all our beloved microservices have to be reactive, that is responsive, elastic, resilient and message-driven - whatever that means.
+Moreover we understand that modern applications need to deliver information in realtime.
+Batch processing is so 80s and so all our beloved microservices have to process data as it gets in and forward the new intermediate results to other microservices as soon as possible which in turn also process the data the moment it arrives.
 But an upstream service might be faster than it's downstream services and memory is limited, so the upstream might have to slow down so that the downstream does not get overwhelmed.
 The heroic software engineer understood the problem and sallies to build his own library to solve it.
-But reinventing the wheel over and over again is so 70s, so even more antiquated.
+But reinventing the wheel over and over again is so 70s.
 Luckily many smart people sat down together to outline a common framework for [reactive streams][reactive-streams] on the [JVM][java].
 
 ## The idea behind reactive streams
@@ -27,9 +27,9 @@ But as a collection can be picked up as a whole, a stream has a temporal compone
 Even though one might have a stream at hand, the individual elements in that stream might not yet be available.
 And other elements might already have passed away.
 A reactive stream is also just a stream but with another addition, the so-called "back-pressure".
-Back-pressure means, that the upstream part of a stream only produces data when the down-stream part signaled it's readiness.
+Back-pressure means, that the upstream part of a stream only produces data when the down-stream part signaled its readiness.
 This concept is really not new.
-A classical example for a back-pressured stream is a simple file download.
+A classic example for a back-pressured stream is a simple file download.
 
 {% imagebasic blog/blog-reactive-streams-download-example.png Filedownload as reactive stream %} image {% endimagebasic %}
 
@@ -39,7 +39,7 @@ How fast you can download the data depends on the speed of your internet (which 
 But if you have 10GB network, then it might be faster and your webbrowser might be the bottleneck due to CPU limitations.
 And if the CPU is also fast enought then your good old magnetic harddrive will be the bottleneck.
 
-Let's suppose the harddrive is the bottleneck.
+Let's assume the harddrive is the bottleneck.
 If every other stage in the chain keeps running as fast as it can, then data will pile up in your webbrowser.
 Eventually your memory is filled up and the browser only has to bad options: Drop byte chunks or completely cancel the download.
 I guess you never had a download cancelled, because the webserver was too fast.
@@ -49,14 +49,14 @@ No matter which is the slowest stage in a reactive streams chain, the other stag
 
 The back-pressure is achived by a simple twist: Every stage keeps a demand counter that is initially 0.
 Only if the downstream demand is positive it is allowed to send elements downstream.
-To stay in our picture of the download: The first thing that happens, is that the client's disks signals demand, saying it is ready to store data.
-This demand is propagated upstream to the webbrowser, from there over the internet and so on.
-When the demand hits the server's disk, data is read and sent downstream to the webserver, from there over the internet and so on.
+To stay in our picture of the download: The first thing that happens is the client's disks signaling demand, saying it is ready to store data.
+This demand is propagated upstream to the webbrowser and from there over the internet and so on.
+When the demand hits the server's disk, data is read and sent downstream to the webserver and from there over the internet and so on.
 If one stage is slowing down, the whole downstream-data/upstream-demand cycle slows down.
 
 ## Coding example with akka-streams
 
-The reactive-streams API is not intended for direct usage, but as interop-layer between individual frameworks.
+The reactive-streams API is not intended for direct usage, but as an interop-layer between individual frameworks.
 A non-exhaustive unordered list is
 
 * [Akka streams][akka-streams],
@@ -126,11 +126,11 @@ object AkkaStreamsExample {
 {% endhighlight %}
 
 Beautiful just by itself, isn't it? And it is light on used resources.
-We built it to be artifically very slow.
+We artificially made it very slow.
 Most of the time is waiting because of the throttling.
-Still there is no thread bound to all this.
-We only dedicate a thread to do out work (the `println` part) when there is work to do.
-If we do not get new byte chunks there is no thread blocked.
+Still there is no thread bound to all of this.
+Only when there really is work to do, for example the `println` part, then we use processing resources.
+If we do not get new byte chunks no thread blocked.
 So the resources are free to be used somewhere else.
 
 ## Are you even using this?
