@@ -19,7 +19,7 @@ After passing a defined feedback cycle (automated tests and code analysis, devel
 Up to this point there is nothing special about the code infrastructure management that we have in place.
 The interesting part happens in the build and publish job of each microservice when a new CDP run is triggered.
 
-We generate the build jobs for each microservice project (e.g. "microservice-alpha/beta/gamma") for each vertical (= bounded context in DDD in which fixed evolutionary multiple canonical domain models exist, e.g. "vertical-lambda") via the Jenkins Groovy DSL.
+We generate the build jobs for each microservice project (e.g. "microservice-alpha/beta/gamma") for each vertical (= bounded context in Domain-Driven Design in which fixed evolutionary multiple canonical domain models exist, e.g. "vertical-lambda") via the Jenkins Groovy DSL.
 
 {% highlight groovy %}
 def jobHelper = new helpers.JobHelper(this, System.env,'vertical-lambda');
@@ -33,22 +33,20 @@ def projectNames = [
 projectNames.keySet().each { projectName ->
    jobHelper.gradleBuildAndPublishJob(projectName, projectNames[projectName]);
    jobHelper.gradleVerifyPullRequestsJob(projectName);
-
+}
 {% endhighlight %}
 
 Each generated build job consists mainly of the following steps:
 
 - checkout git repository
-- set build name =  `${MIRCOSERVICE_REPONAME}-${BUILD_TIMESTAMP}`
+- set build name = `${MIRCOSERVICE_REPONAME}-${BUILD_TIMESTAMP}`
 - clean workspace, build microservice project, run tests via gradle tasks
 - check code quality metrics via defined rules and push measures to aggregated statistics in [SonarQube](https://www.sonarqube.org/)
 - publish to microservice-timestamp.jar and message-subs.jar to JFrog artifactory
 - push microservice image to docker hub and remove the built docker image from local disk
 - archive test results.
 
-[PICTURE]
-
-Within the build microservice task of gradle we also include the gradle-docker-plugin of [bmuschko](https://github.com/bmuschko).
+Within the build microservice task of gradle we also include the [gradle-docker-plugin](https://github.com/bmuschko/gradle-docker-plugin) of [bmuschko](https://github.com/bmuschko).
 The plugin is in our gradle-plugins groovy repo that wraps all our gradle magic and provides all the gradle tasks that can be pulled and included as dependencies into each mircoservices repo.
 
 `docker build --label git-commit:$GIT_COMMIT --tag $MICROSERVICE_NAME:$IMAGE_TAG .`
