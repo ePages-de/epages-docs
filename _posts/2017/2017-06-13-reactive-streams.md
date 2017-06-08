@@ -7,8 +7,6 @@ categories: tech-stories
 authors: ["Christian H."]
 ---
 
-## akka-streams
-
 **Reactive** is one of the buzzwords of our time.
 Since one thread per request is so 90s and so all our beloved microservices have to be reactive, that is responsive, elastic, resilient, and message-driven - whatever that means.
 Moreover, we understand that modern applications need to deliver information in realtime.
@@ -18,7 +16,7 @@ The heroic software engineer understood the problem and sallies to build their o
 But reinventing the wheel over and over again is so 70s.
 Luckily, many smart people sat together to outline a common framework for [reactive streams][reactive-streams] on the [JVM][java].
 
-### The idea behind reactive streams
+## The idea behind reactive streams
 
 What is a stream?
 A stream shares many traits with an ordinary collection.
@@ -55,7 +53,7 @@ This demand is propagated upstream to the web browser and from there over the in
 When the demand hits the server's disk, data is read and sent downstream to the web server and from there over the internet and so on.
 If one stage slows down, the whole downstream-data/upstream-demand cycle slows down.
 
-### Coding example with akka-streams
+## Coding example with akka-streams
 
 The reactive-streams API is not intended for direct usage, but as an interop-layer between individual frameworks.
 A non-exhaustive unordered list is
@@ -126,7 +124,7 @@ object AkkaStreamsExample {
 }
 {% endhighlight %}
 
-Beautiful just by itself, isn't it?
+Beautiful, isn't it?
 And it is light on used resources.
 We artificially made it very slow.
 Most of the time it is waiting because of the throttling.
