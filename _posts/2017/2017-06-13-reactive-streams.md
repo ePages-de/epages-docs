@@ -12,7 +12,7 @@ authors: ["Christian H."]
 **Reactive** is one of the buzzwords of our time.
 Since one thread per request is so 90s and so all our beloved microservices have to be reactive, that is responsive, elastic, resilient, and message-driven - whatever that means.
 Moreover, we understand that modern applications need to deliver information in realtime.
-Batch processing is so 80s and so all our beloved microservices have to process data as it gets in and forward the new intermediate results to other microservices as soon as possible which in turn also process immediatly.
+Batch processing is so 80s and so all our beloved microservices have to process data as soon as it arrives and forward the new intermediate results to other microservices as soon as possible.
 But an upstream service might be faster than its downstream services, and memory is limited, so the upstream might have to slow down so that the downstream does not get overwhelmed.
 The heroic software engineer understood the problem and sallies to build their own library to solve it.
 But reinventing the wheel over and over again is so 70s.
