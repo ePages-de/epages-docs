@@ -2,7 +2,7 @@
 layout: post
 title: "Reactive streams"
 date: "2017-06-13 08:00:00"
-image: blog-header/api-journey.jpg
+image: blog-header/water-rocks.jpg
 categories: tech-stories
 authors: ["Christian H."]
 ---
@@ -12,13 +12,13 @@ authors: ["Christian H."]
 **Reactive** is one of the buzzwords of our time.
 Since one thread per request is so 90s and so all our beloved microservices have to be reactive, that is responsive, elastic, resilient, and message-driven - whatever that means.
 Moreover, we understand that modern applications need to deliver information in realtime.
-Batch processing is so 80s and so all our beloved microservices have to process data as it gets in and forward the new intermediate results to other microservices as soon as possible which in turn also process the data the moment it arrives.
+Batch processing is so 80s and so all our beloved microservices have to process data as it gets in and forward the new intermediate results to other microservices as soon as possible which in turn also process immediatly.
 But an upstream service might be faster than its downstream services, and memory is limited, so the upstream might have to slow down so that the downstream does not get overwhelmed.
 The heroic software engineer understood the problem and sallies to build their own library to solve it.
 But reinventing the wheel over and over again is so 70s.
 Luckily, many smart people sat together to outline a common framework for [reactive streams][reactive-streams] on the [JVM][java].
 
-## The idea behind reactive streams
+### The idea behind reactive streams
 
 What is a stream?
 A stream shares many traits with an ordinary collection.
@@ -55,7 +55,7 @@ This demand is propagated upstream to the web browser and from there over the in
 When the demand hits the server's disk, data is read and sent downstream to the web server and from there over the internet and so on.
 If one stage slows down, the whole downstream-data/upstream-demand cycle slows down.
 
-## Coding example with akka-streams
+### Coding example with akka-streams
 
 The reactive-streams API is not intended for direct usage, but as an interop-layer between individual frameworks.
 A non-exhaustive unordered list is
@@ -132,7 +132,7 @@ We artificially made it very slow.
 Most of the time it is waiting because of the throttling.
 Still there is no thread bound to all of this.
 Only when there is really work to do, for example, the `println` part, then we use processing resources.
-If we do not get new byte chunks no thread blocked.
+If we do not get new byte chunks no thread will be blocked.
 So the resources are free to be used somewhere else.
 
 ## Are you even using this?
