@@ -71,3 +71,7 @@ After the build jenkins job has finished a new version of the Docker image can b
 
 That's it about how we keep track of our microservice versions.
 Thanks for reading and stay tuned for the next post about handling failures in the continuous delivery pipeline.
+
+## Related post
+
+[Design of a continuous delivery pipeline](https://developer.epages.com/blog/2017/05/30/design-of-a-continuous-delivery-pipeline.html)
