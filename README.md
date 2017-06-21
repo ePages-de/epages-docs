@@ -34,7 +34,7 @@ $ docker run --rm --volume=$(pwd):/usr/src/epages-docs -p 4000:4000 -it epages-d
 $ echo "Open in browser: http://127.0.0.1:4000/"
 
 # On Mac (with one active docker machine)
-$ echo "Open in browser: http://$(docker-machine ip `docker-machine active`):4000/"
+$ open http://$(docker-machine ip `docker-machine active`):4000
 ~~~
 
 ## Run in Docker (production mode)
