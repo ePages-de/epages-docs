@@ -86,7 +86,7 @@ Our C like Api struct holds this data for us.
 ```golang
 // api struct used for implementing the apiMethods interface
 type Api struct {
-	Url, Apikey string
+  Url, Apikey string
 }
 ```
 Since go does not have a strict object orientated model, it has a primitive called interface which specifys the behavior of our Api Object. Interfaces are implemented implicitly. If an object implements all interface functions it can use it without any direct relation to it.
@@ -98,11 +98,11 @@ As you can see you can specify a list of input parameters and also a list of ret
 
 ```golang
 type ApiMethods interface {
-	// i-doit api request structure
-	// as defined in https://kb.i-doit.com/pages/viewpage.action?pageId=7831613
-	// also there is a list of methods available
-	Request(string, interface{}) (Response, error)
-	...
+  // i-doit api request structure
+  // as defined in https://kb.i-doit.com/pages/viewpage.action?pageId=7831613
+  // also there is a list of methods available
+  Request(string, interface{}) (Response, error)
+  ...
 }
 ```
 
@@ -122,24 +122,24 @@ Now lets take a look on our request data.
 
 ```golang
 
-	var params = GetParams(a, parameters)
-	id = getID()
+  var params = GetParams(a, parameters)
+  id = getID()
 
-	data := Request{
-		Version: "2.0",
-		Method:  method,
-		Params:  params,
-		Id:      id,
-	}
+  data := Request{
+    Version: "2.0",
+    Method:  method,
+    Params:  params,
+    Id:      id,
+  }
 ```
 
 The ```GetParams``` function takes our Api object and our parameter struct and merges them together by adding the API-Key to the parameters. ```getID()``` returns a request iterated integer and our datastruct from type Request
 ```
 type Request struct {
-	Version string      `json:"version"`
-	Method  string      `json:"method"`
-	Params  interface{} `json:"params"`
-	Id      int         `json:"id"`
+  Version string      `json:"version"`
+  Method  string      `json:"method"`
+  Params  interface{} `json:"params"`
+  Id      int         `json:"id"`
 }
 ```
 has now all data we need. 
@@ -147,32 +147,32 @@ An you can find examples for the method string other functions like Search uses 
 let's create some json data from our data and use the ```net/http``` and ```crypto/tls``` packet to send our request.
 
 ```golang
-	dataJson, err := json.Marshal(data)
+  dataJson, err := json.Marshal(data)
 
-	req, err := http.NewRequest("POST", a.Url, bytes.NewBuffer(dataJson))
-	if err != nil {
-		fmt.Println("REQUEST ERROR: ", err)
-		return Response{}, err
-	}
-	req.Header.Add("content-type", "application/json")
-	tr := &http.Transport{}
-	if insecure {
-		tr = &http.Transport{
-			TLSClientConfig: &tls.Config{InsecureSkipVerify: true},
-		}
-	} else {
-		tr = &http.Transport{
-			TLSClientConfig: &tls.Config{InsecureSkipVerify: false},
-		}
-	}
-	client := &http.Client{Transport: tr}
-	resp, err := client.Do(req)
-	if err != nil {
-		fmt.Println("REQUEST ERROR: ", err)
-		return Response{}, err
-	}
-	var ret = ParseResponse(resp)
-	return ret, nil
+  req, err := http.NewRequest("POST", a.Url, bytes.NewBuffer(dataJson))
+  if err != nil {
+    fmt.Println("REQUEST ERROR: ", err)
+    return Response{}, err
+  }
+  req.Header.Add("content-type", "application/json")
+  tr := &http.Transport{}
+  if insecure {
+    tr = &http.Transport{
+      TLSClientConfig: &tls.Config{InsecureSkipVerify: true},
+    }
+  } else {
+    tr = &http.Transport{
+      TLSClientConfig: &tls.Config{InsecureSkipVerify: false},
+    }
+  }
+  client := &http.Client{Transport: tr}
+  resp, err := client.Do(req)
+  if err != nil {
+    fmt.Println("REQUEST ERROR: ", err)
+    return Response{}, err
+  }
+  var ret = ParseResponse(resp)
+  return ret, nil
 }
 ```
 As you can see its easy to create some json data from the data struct using the ```encoding/json``` package.
@@ -181,15 +181,15 @@ Now we are fireing our request using the ```client.Do``` with our client created
 
 ```
 func ParseResponse(resp *http.Response) Response {
-	data, err := ioutil.ReadAll(resp.Body)
-	if err != nil {
-		log.Fatal("PARSING ERROR: ", err)
-	}
+  data, err := ioutil.ReadAll(resp.Body)
+  if err != nil {
+    log.Fatal("PARSING ERROR: ", err)
+  }
 
-	var ret Response
-	_ = json.Unmarshal(data, &ret)
+  var ret Response
+  _ = json.Unmarshal(data, &ret)
 
-	return ret
+  return ret
 }
 ```
 
@@ -197,9 +197,9 @@ Using the ```io/ioutil``` package to read the response and again our ```encoding
 
 ```
 type Response struct {
-	Jsonrpc string      `json:"jsonrpc"`
-	Result  interface{} `json:"result"`
-	Error   IdoitError  `json:"error"`
+  Jsonrpc string      `json:"jsonrpc"`
+  Result  interface{} `json:"result"`
+  Error   IdoitError  `json:"error"`
 }
 ```
 
@@ -213,22 +213,22 @@ At last lets take a look on a simple search Request:
 package main
 
 import (
-	"fmt"
-	"github.com/cseeger-epages/i-doit-go-api"
+  "fmt"
+  "github.com/cseeger-epages/i-doit-go-api"
 )
 
 func main() {
-	a, _ := goidoit.NewApi("https://example.com/src/jsonrpc.php", "yourapikey")
+  a, _ := goidoit.NewApi("https://example.com/src/jsonrpc.php", "yourapikey")
 
-	// create your parameters as a struct, that gets marshalled to json
-	p := struct {
-		Query string `json:"q"`
-	}{"test"}
+  // create your parameters as a struct, that gets marshalled to json
+  p := struct {
+    Query string `json:"q"`
+  }{"test"}
 
-	// define request method and request by referencing to your defined parameters
-	data, _ := a.Request("idoit.search", &p)
+  // define request method and request by referencing to your defined parameters
+  data, _ := a.Request("idoit.search", &p)
 
-	fmt.Println(data)
+  fmt.Println(data)
 }
 ```
 
