@@ -79,9 +79,7 @@ Now we take a short look at the very basic function called Request.
 The function does what its name say's, it requests the REST-API of our CMDB. 
 Every more complex Request is based on this generic Request function.
 
-Before we can start requesting we need some basic information like the API URL and the API-Key. 
-I-doit does support login via API also but its not implemented yet. 
-If someone really need this please open an issue on github and i will add it.
+Before we can start requesting we need some basic information like the API URL and the API-Key. I-doit also supports login via X-RPC-Auth Headers (see NewApi and NewLogin function on github) 
 
 Our C like Api struct holds this data for us.
 
