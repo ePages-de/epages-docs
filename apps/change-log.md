@@ -8,15 +8,19 @@ version: v1
 This change log covers significant updates and changes to the ePages REST API.
 In order to keep track of these changes we recommend you to follow [@epagesdevs](https://twitter.com/epagesdevs) on Twitter or subscribe to our [RSS feed for the API Change Log](https://developer.epages.com/apps/feed.xml).
 
+**2017-05-30: We have achieved the desired functional range of the REST API.
+Feature-free releases won't be reported anymore.
+Of course, we will continue to inform you if there are any breaking changes to the API.**
+
 <hr>
 
-## 2017-05-30
+## 2017-06-29
 
-#### <i class="fa fa-info-circle"></i> Notice
+### Changes with software release 7.11.0
 
-* We have achieved the desired functional range of the REST API.
-Feature-free releases won't be reported anymore.
-Of course, we will continue to inform you if there are any breaking changes to the API.
+#### <i class="fa fa-pencil"></i> Update
+
+* Added attributes `couponCampaignId` and `validationErrors` to data type [`couponLineItem`](https://developer.epages.com/apps/data-types#couponlineitem).
 
 <hr>
 
