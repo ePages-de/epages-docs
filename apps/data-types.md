@@ -171,7 +171,9 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | Attribute | Type | Description |
 | - | :-: |  - |
 | couponLineItemId | string | The unique identifier of the coupon line item. |
+| couponCampaignId | string | The unique identifier of the campaign the coupon belongs to. |
 | lineItemPrice | object of [price](page:apps-data-types#price) | The price of the line item. |
+| validationErrors | array of error strings | The error that occurred when redeeming a coupon for this cart. Can be one of *LineItemsSubTotalTooSmall*, *CouponIsInvalidated*, *ValidCouponCountReached*, *CouponNotEffective*, *PaymentMethodMisMatch*, *ShippingMethodMisMatch*, *ProductMisMatch*.
 
 ## customAttribute
 
