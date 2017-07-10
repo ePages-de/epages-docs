@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Where's the bug in my microservices haystack?"
-date: "2017-07-07 09:30:00"
+date: "2017-07-13 09:30:00"
 image: blog-header/needle-in-a-haystack.jpg
 categories: tech-stories
 authors: ["Jens"]
@@ -35,7 +35,7 @@ Dashboards and other visualisation tools can then be used to start digging throu
 Tools like [**L**ogstash][logstash] or [**F**luentd][fluentd] are Open Source solutions for gathering and transforming log events. They provide one part of a technology stack often abbreviated as **ELK** or **EFK**, completed by [**E**lasticsearch][elasticsearch] for storing and [**Ki**bana][kibana] for visualising log events.
 While such tools are very flexible with regards to their input data formats, you should already create log events in a structure that eases (or even let's you completely skip) the transformation step.
 For your microservices developed in Java you can use the combination of [Logback][logback] and [Logback JSON encoder][logstash-logback-encoder] to produce log events in JSON, while still allowing seamless integration into all [SLF4J][slf4j] logging calls of your app.
-The JSON format created out of the box is already a good fit for Logstash, but you can also introduce your [custom JSON structure](https://github.com/logstash/logstash-logback-encoder#composite-encoderlayout) for more advanced use cases. 
+The JSON format created out of the box is already a good fit for Logstash, but you can also introduce your [custom JSON structure](https://github.com/logstash/logstash-logback-encoder#composite-encoderlayout) for more advanced use cases.
 You configure a typical Java application by adding Logback JSON encoder to your classpath and including this `logback.xml` file:
 
 {% highlight xml %}
@@ -177,7 +177,7 @@ Adding this `request-id` to the MDC for every request to your downstream service
 public class RequestIdFilter extends OncePerRequestFilter {
     @Override
     @SneakyThrows
-    protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, 
+    protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response,
                                     FilterChain chain) {
         try (MDC.MDCCloseable mdc = MDC.putCloseable("request-id", request.getHeader("X-Request-Id"))) {
             chain.doFilter(request, response);
@@ -205,7 +205,7 @@ Now all container log events emitted as part of the same request also share the 
 
 ## Outlook
 
-In an upcoming blog post in this series we will have a look at how we can enhance the JSON log events with even more 
+In an upcoming blog post in this series we will have a look at how we can enhance the JSON log events with even more
 helpful information for debugging and how to investigate a request spanning multiple services, also know as **distributed tracing**.
 
 
