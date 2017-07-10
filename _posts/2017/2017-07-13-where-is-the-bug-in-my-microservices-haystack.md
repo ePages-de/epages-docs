@@ -90,7 +90,7 @@ The properties `@timestamp`, `@version` and `message` are what the ELK stack exp
 ## Using Mapped Diagnostic Context
 
 The logging abstraction [SLF4J][slf4j] of our choice comes with a feature called "Mapped Diagnostic Context" (MDC), allowing us to store arbitrary key/value pairs to be automatically attached to each log event without explicitly including them in the message we want to log.
-After request processing, it is important to also cleanup the MDC from all values that were stored in it, to prevent them leaking into unrelated following log events. This can be automatically achieved by leveraging Java's [try-with-resources][try-with-resources] feature:
+After request processing, it is important to also cleanup the MDC from all values that were stored in it, to prevent them from leaking into unrelated following log events. This can be automatically achieved by leveraging Java's [try-with-resources][try-with-resources] feature:
 
 {% highlight java %}
 @Slf4j
@@ -162,7 +162,7 @@ events {}
 {% endhighlight %}
 
 Notice how the `$request_id` [nginx variable](http://nginx.org/en/docs/http/ngx_http_core_module.html#var_request_id) is used to define an additional JSON property for every request, containing a randomly generated hexadecimal value used as the **Correlation ID**.
-It is also communicated to the downstream service using a custom HTTP header `X-Correlation-ID` as well as returned to the calling client as a response header:
+It is also communicated to the downstream service using a custom HTTP header `X-Correlation-ID`, as well as returned to the calling client as a response header:
 
 {% highlight json %}
 {
