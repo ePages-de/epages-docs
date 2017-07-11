@@ -14,7 +14,7 @@ We are going to tell you about our learnings in this series of blog posts, start
 ## It's only after shipping to production...
 
 After a couple of very busy weeks or even months of development, you finally shipped your brand new system of microservices to production.
-You impatiently wait for the first real customer feedback and are ready to implement the next big killer feature of your system.
+You impatiently wait for the first real customer feedback, and are ready to implement the next big killer feature of your system.
 Then nothing is more irritating than your product owner telling you, that an essential feature is sporadically behaving "strange" and asks you to investigate.
 
 ## ...that the real fun begins!
@@ -23,7 +23,7 @@ But because of your well-oiled monitoring system, you were already informed abou
 Here is how we at ePages deal with these situations to find out what is going wrong within our microservices.
 
 Our first step when investigating, involves consulting the logs created in our production environment.
-But since our microservices are running as [Docker][docker] containers somewhere in the cloud, it would be very cumbersome to open a terminal connection to each of them and use command line tools like `grep` to search through log files written to disk.
+But since our microservices are running as [Docker][docker] containers somewhere in the cloud, it would be very cumbersome to open a terminal connection to each of them, and use command line tools like `grep` to search through log files written to disk.
 
 ## Log aggregation to the rescue
 
@@ -34,8 +34,9 @@ Dashboards and other visualization tools can then be used to start digging throu
 
 ## Structured log events
 
-Tools like [**L**ogstash][logstash] or [**F**luentd][fluentd] are Open Source solutions for gathering and transforming log events. They provide one part of a technology stack often abbreviated as **ELK** or **EFK**, completed by [**E**lasticsearch][elasticsearch] for storing and [**Ki**bana][kibana] for visualizing log events.
-While such tools are very flexible with regards to their input data formats, we already create log events in a structure that eases (or even let's us completely skip) the transformation step.
+Tools like [**L**ogstash][logstash] or [**F**luentd][fluentd] are Open Source solutions for gathering and transforming log events.
+They provide one part of a technology stack often abbreviated as **ELK** or **EFK**, completed by [**E**lasticsearch][elasticsearch] for storing and [**K**ibana][kibana] for visualizing log events.
+While such tools are very flexible with regards to their input data formats, we already create log events in a structure that eases (or even lets us completely skip) the transformation step.
 For our microservices executed in a Java Virtual Machine (JVM) we use the combination of [Logback][logback] and [Logback JSON encoder][logstash-logback-encoder] to produce log events in JSON, while still allowing seamless integration into all logging calls of our app.
 The JSON format created out of the box is already a good fit for Logstash, but it's also possible to introduce a [custom JSON structure](https://github.com/logstash/logstash-logback-encoder#composite-encoderlayout) for more advanced use cases.
 A typical Java application can be configured by adding Logback JSON encoder to the classpath and including this `logback.xml` file:
@@ -85,12 +86,14 @@ An excerpt of JSON log events produced during startup of a [Spring Boot][spring-
 }
 {% endhighlight %}
 
-The properties `@timestamp`, `@version` and `message` are what the ELK stack expects in order to visualize log events without any further configuration. We also added the property `app` to include the application name of the microservice for all log events using the following technique.
+The properties `@timestamp`, `@version` and `message` are what the ELK stack expects in order to visualize log events without any further configuration.
+We also added the property `app` to include the application name of the microservice for all log events using the following technique.
 
 ## Using Mapped Diagnostic Context
 
 The logging abstraction [SLF4J][slf4j] of our choice comes with a feature called "Mapped Diagnostic Context" (MDC), allowing us to store arbitrary key/value pairs to be automatically attached to each log event without explicitly including them in the message we want to log.
-After request processing, it is important to also cleanup the MDC from all values that were stored in it, to prevent them from leaking into unrelated following log events. This can be automatically achieved by leveraging Java's [try-with-resources][try-with-resources] feature:
+After request processing, it is important to also cleanup the MDC from all values that were stored in it, to prevent them from leaking into unrelated following log events.
+This can be automatically achieved by leveraging Java's [try-with-resources][try-with-resources] feature:
 
 {% highlight java %}
 @Slf4j
@@ -132,8 +135,8 @@ This correlation can be useful for e.g. filtering all events that happened while
 
 ## Single point of entry
 
-It is not uncommon to have one container act as an [API gateway][api-gateway] in front of all the other containers.
-With its powerful reverse proxy capabilites, [nginx][nginx] is a robust choice for fulfilling this role.
+It is not uncommon to have one container acting as an [API gateway][api-gateway] in front of all the other containers.
+With its powerful reverse proxy capabilities, [nginx][nginx] is a robust choice for fulfilling this role.
 Using a custom log format, it is also possible to directly log every HTTP access using our desired JSON structure:
 
 {% highlight nginx %}
@@ -212,8 +215,7 @@ Now all container log events emitted as part of the same request also share the 
 
 ## Outlook
 
-In an upcoming blog post in this series we will have a look at how we can enhance the JSON log events with even more
-helpful information for debugging, and how to investigate a request spanning multiple services, also know as **distributed tracing**.
+In an upcoming blog post of this series we will have a look at how we can enhance the JSON log events with even more helpful information for debugging, and how to investigate a request spanning multiple services, also known as **distributed tracing**.
 
 
 [docker]:                   https://www.docker.com/         "Docker container platform"
