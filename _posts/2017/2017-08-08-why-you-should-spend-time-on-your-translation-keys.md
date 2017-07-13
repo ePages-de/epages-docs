@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Why you should spend time on your translation keys
-date: "2017-06-29 09:34:02"
-image:
-categories:
+date: "2017-08-08 09:34:02"
+image: blog-header/translation-keys.jpg
+categories: tech-stories
 authors: ["Christina"]
 ---
 Translation keys are not important at all?
