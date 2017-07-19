@@ -18,20 +18,21 @@ This year was no difference.
 
 Here are some things I took away from these awesome three days.
 
-## Keynotes and Workshops
+## Keynotes and workshops
 
-The opening keynote was held by Douglas Crockford (the father of JSON) himself.
-While talking about numbers and their history he came up with [DEC64](http://dec64.com/) a new number type that fixes truncation and overflow problems (besides others) originated from the fifties.
+The opening keynote was held by [Douglas Crockford](https://github.com/douglascrockford) (the father of JSON) himself.
+While talking about numbers and their history he came up with [DEC64](http://dec64.com/) a new number type that fixes truncation and overflow problems (besides others) originated in the fifties.
 The session was not only informative but also very humorous as Crockford is often very opinionated and does not try to hide that at all.
-On top of that Skills Matter gifted (among others) Crockfords _The Good Parts_ book which he signed during the conference.
+On top of that, [Skills Matter](https://skillsmatter.com) gave away (among other things to choose from) Crockfords _The Good Parts_ book which he signed during the conference.
 
-Later that day [Amie D. Dansby](https://twitter.com/amiedoubleD) (who somehow reminded my of NCIS' Abby) an Iot enthusiast and maker (with an RFID chip in her hand) gave an inspiring talk about releasing your inner maker.
-IMHO her slides where a bit overloaded but her spirit and message as well as the content totally made up for that!
+Later that day [Amie D. Dansby](https://twitter.com/amiedoubleD) an Iot enthusiast and maker (with an RFID chip in her hand and a remarkable resemblance to NCIS' Abby) gave an inspiring talk about releasing your inner maker.
+IMHO her slides where a bit overloaded but her spirit and message as well as the content (maybe because of the massive content) totally made up for that!
 She was also the one giving a hands on IoT workshop with Onion's [Omega2](https://onion.io) development board.
-After DDoS'ing the conferences Wi-Fi frequencies and some struggle for more space on the board I managed to get a working Twitter wearable displaying my latest tweet on a OLED display.
+After DDoS'ing the conference's Wi-Fi frequencies and some struggle for more space on the board I managed to get a working Twitter wearable displaying my latest tweet on an OLED display (and thanks to Amie's patience).
 
-There were several other inspiring keynotes including Sitepen's Dylan Schiemann (wearing a Dojo 2.0 t-shirt) about the state of JavaScript and Myles Borins talking about how Node.js releases work.
-The latter made me finally realize why a staging branch is called a staging branch: Because you push releases while on stage.
+There were several other inspiring keynotes including Sitepen's [Dylan Schiemann](https://twitter.com/dylans) (wearing a Dojo 2.0 t-shirt) about the state of JavaScript and a talk about progressive web apps by [Chris Heilmann](https://twitter.com/codepo8).
+Although I thought the whole PWA topic is talked about too much, Chris did a pretty good job outlining what really matters when progressively enhance web sites (and apps).
+[Myles Borins](https://twitter.com/MylesBorins) shared some insights on how Node.js releases work and made me finally realize why a staging branch is called a staging branch: Because you push releases while on stage.
 
 Afterwards there where several tracks in parallel.
 No matter if it's conference talks or festival bands: They're either of the _don't-care-could-go-anywhere_ kind or you want to attend all simultaneously.
@@ -43,7 +44,7 @@ Thanks to [@thekwasti](https://twitter.com/thekwasti) I recently started writing
 I also know decorators (for the spec has been deprecated and was still not reintroduced).
 
 [Damjan Vujnovic](https://twitter.com/returnthis) was (accidentally) picking up Crockfords _numbers_ theme while doing his (vivid) introduction.
-Decorators are an excellent way to let all of you function be responsible for a single purpose and "inject" every other (reusable) behaviour such as logging or measuring.
+Decorators are an excellent way to let all of you function be responsible for a single purpose and "inject" every other (reusable) behaviour, such as logging or measuring.
 This insight does not only apply to TypeScript but can also be used when decorators come (back) to the JavaScript language since they are basically sugar for higher-order functions.
 
 The most interesting example was a timeout decorator that could be used to let an async operation fail if it took longer than specified.
@@ -65,7 +66,7 @@ Finally let webpack (or rollup or one of [substack's](https://github.com/substac
 
 Since the rise of Bitcoin everybody heard about crypto currencies and a mysterious construct that is the blockchain.
 IBM's [Kevin Hoyt](https://twitter.com/krhoyt) did a great job demystifying this "distributed database with special properties".
-And that's what it is (basically)
+And that's what it is (basically).
 When you think about it the whole Internet could be built on blockchain technology 🤔 😱
 
 Watch the [skills cast](https://skillsmatter.com/skillscasts/10360-understanding-blockchain), it'll open your eyes.
@@ -80,7 +81,7 @@ The above quote's author [Ahmad Nassri](https://twitter.com/AhmadNassri) laid ou
 The faster your function executes in these environments the lesser you pay.
 It's that easy.
 Not only should benchmarking be part of the after-release phase (which is basically monitoring at that point) but also during the development cycle.
-However do not overdo optimizing (especially not premature).
+However, do not overdo optimizing (especially not premature).
 
 [Martin Splitt](https://twitter.com/g33konaut) on the other hand was shedding some light on browser rendering performance.
 He literaly took the audience from 3 little shining dots all the way to how (and most importantly when) browsers are painting.
@@ -95,12 +96,12 @@ BigBank's [Nele Sergejeva](https://twitter.com/nelesergejeva) was elaborating on
 She was (in either way) clearly advocating for story-telling.
 The test she presented was indeed way better than all I have done (or created) so far.
 It is not something abstract or technical but it gives you the impression you're solving a real (well actually fictional) problem.
-Furthermore it requires you to solve tasks like coping with REST APIs (and there sometimes interesting responses) as well as designing a simple algorithm.
+Furthermore, it requires you to solve tasks like coping with REST APIs (and there sometimes interesting responses) as well as designing a simple algorithm.
 Especially when having started a new programming language this makes you dive into the fundamentals with a lot of pleasure and freedom (since the task is not as strict on how to exactly solve it).
 
 Checkout how to help the [Kingdom of Mugloar](http://dragonsofmugloar.com) as Head of Dragon Resources Management.
 
-## Async Architecture
+## Async architecture
 
 The one & only [Tomasz Ducin](https://twitter.com/tomasz_ducin) had the slot for the last talk of the day before the workshops began.
 And here I thought I knew about async programming in JavaScript!
