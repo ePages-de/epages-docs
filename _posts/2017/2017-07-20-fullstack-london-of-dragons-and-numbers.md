@@ -13,6 +13,7 @@ authors: ["Erik"]
 }
 </style>
 
+<!-- start is not entirely true  -->
 After one year of abscence I was attending [Fullstack](https://skillsmatter.com/conferences/8264-fullstack-2017-the-conference-on-javascript-node-and-internet-of-things) London again. The past years were well-organised, fun and had an awesome speaker deck on top of that.
 This year was no difference.
 
@@ -21,11 +22,11 @@ Here are some things I took away from these awesome three days.
 ## Keynotes and workshops
 
 The opening keynote was held by [Douglas Crockford](https://github.com/douglascrockford) (the father of JSON) himself.
-While talking about numbers and their history he came up with [DEC64](http://dec64.com/) a new number type that fixes truncation and overflow problems (besides others) originated in the fifties.
+While talking about numbers and their history he came up with [DEC64](http://dec64.com/), a new number type that fixes truncation and overflow problems (besides others) originated in the fifties.
 The session was not only informative but also very humorous as Crockford is often very opinionated and does not try to hide that at all.
 On top of that, [Skills Matter](https://skillsmatter.com) gave away (among other things to choose from) Crockfords _The Good Parts_ book which he signed during the conference.
 
-Later that day [Amie D. Dansby](https://twitter.com/amiedoubleD) an Iot enthusiast and maker (with an RFID chip in her hand and a remarkable resemblance to NCIS' Abby) gave an inspiring talk about releasing your inner maker.
+Later that day [Amie D. Dansby](https://twitter.com/amiedoubleD), an Iot enthusiast and maker (with an RFID chip in her hand and a remarkable resemblance to NCIS' Abby), gave an inspiring talk about releasing your inner maker.
 IMHO her slides where a bit overloaded but her spirit and message as well as the content (maybe because of the massive content) totally made up for that!
 She was also the one giving a hands on IoT workshop with Onion's [Omega2](https://onion.io) development board.
 After DDoS'ing the conference's Wi-Fi frequencies and some struggle for more space on the board I managed to get a working Twitter wearable displaying my latest tweet on an OLED display (and thanks to Amie's patience).
@@ -43,8 +44,8 @@ As hard as it was I managed to single out some interesting sessions since I knew
 Thanks to [@thekwasti](https://twitter.com/thekwasti) I recently started writing some TypeScript (or rather screwing with the TS he wrote).
 I also know decorators (for the spec has been deprecated and was still not reintroduced).
 
-[Damjan Vujnovic](https://twitter.com/returnthis) was (accidentally) picking up Crockfords _numbers_ theme while doing his (vivid) introduction.
-Decorators are an excellent way to let all of you function be responsible for a single purpose and "inject" every other (reusable) behaviour, such as logging or measuring.
+[Damjan Vujnovic](https://twitter.com/returnthis) was (accidentally) picking up Crockford's _numbers_ theme while doing his (vivid) introduction.
+Decorators are an excellent way to let all of your functions be responsible for a single purpose and "inject" every other (reusable) behaviour, such as logging or measuring.
 This insight does not only apply to TypeScript but can also be used when decorators come (back) to the JavaScript language since they are basically sugar for higher-order functions.
 
 The most interesting example was a timeout decorator that could be used to let an async operation fail if it took longer than specified.
@@ -67,7 +68,7 @@ Finally let webpack (or rollup or one of [substack's](https://github.com/substac
 Since the rise of Bitcoin everybody heard about crypto currencies and a mysterious construct that is the blockchain.
 IBM's [Kevin Hoyt](https://twitter.com/krhoyt) did a great job demystifying this "distributed database with special properties".
 And that's what it is (basically).
-When you think about it the whole Internet could be built on blockchain technology 🤔 😱
+When you think about it, the whole Internet could be built on blockchain technology 🤔 😱
 
 Watch the [skills cast](https://skillsmatter.com/skillscasts/10360-understanding-blockchain), it'll open your eyes.
 
@@ -77,6 +78,7 @@ There were two talks I attended that dealt with performance and how to measure i
 
 > Sometimes measuring performance is art rather than science.
 
+<!-- change the next sentence somehow -->
 The above quote's author [Ahmad Nassri](https://twitter.com/AhmadNassri) laid out a pretty relevant case of measuring function call performance especially in the time of AWS, Azure and GCE.
 The faster your function executes in these environments the lesser you pay.
 It's that easy.
@@ -84,8 +86,8 @@ Not only should benchmarking be part of the after-release phase (which is basica
 However, do not overdo optimizing (especially not premature).
 
 [Martin Splitt](https://twitter.com/g33konaut) on the other hand was shedding some light on browser rendering performance.
-He literaly took the audience from 3 little shining dots all the way to how (and most importantly when) browsers are painting.
-Some explainations (especially GPUs and shaders) reminded me a lot of the profs' lectures back at university (meaning he did a pretty good job).
+He literaly took the audience from 3 little shining dots all the way to how (and most importantly when) browsers are rendering a web page.
+Some explainations (especially GPUs and shaders) reminded me a lot of some profs' lectures back at university (meaning he did a pretty good job imho).
 Best takeaway: Avoid the green rectangle of sadness!
 Avoid everything that makes the browser relayout or repaint (since these are the most expensive operations) but keep an eye on memory consumption.
 
