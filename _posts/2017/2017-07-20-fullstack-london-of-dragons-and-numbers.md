@@ -13,8 +13,7 @@ authors: ["Erik"]
 }
 </style>
 
-<!-- start is not entirely true  -->
-After one year of abscence I was attending [Fullstack](https://skillsmatter.com/conferences/8264-fullstack-2017-the-conference-on-javascript-node-and-internet-of-things) London again. The past years were well-organised, fun and had an awesome speaker deck on top of that.
+After one year of abscence I was attending [Fullstack](https://skillsmatter.com/conferences/8264-fullstack-2017-the-conference-on-javascript-node-and-internet-of-things) London again. The past years were well-organized, fun, and had an awesome speaker deck on top of that.
 This year was no difference.
 
 Here are some things I took away from these awesome three days.
@@ -31,7 +30,7 @@ IMHO her slides where a bit overloaded but her spirit and message as well as the
 She was also the one giving a hands on IoT workshop with Onion's [Omega2](https://onion.io) development board.
 After DDoS'ing the conference's Wi-Fi frequencies and some struggle for more space on the board I managed to get a working Twitter wearable displaying my latest tweet on an OLED display (and thanks to Amie's patience).
 
-There were several other inspiring keynotes including Sitepen's [Dylan Schiemann](https://twitter.com/dylans) (wearing a Dojo 2.0 t-shirt) about the state of JavaScript and a talk about progressive web apps by [Chris Heilmann](https://twitter.com/codepo8).
+There were several other inspiring keynotes including SitePen's [Dylan Schiemann](https://twitter.com/dylans) (wearing a Dojo 2.0 t-shirt) about the state of JavaScript and a talk about progressive web apps by [Chris Heilmann](https://twitter.com/codepo8).
 Although I thought the whole PWA topic is talked about too much, Chris did a pretty good job outlining what really matters when progressively enhance web sites (and apps).
 [Myles Borins](https://twitter.com/MylesBorins) shared some insights on how Node.js releases work and made me finally realize why a staging branch is called a staging branch: Because you push releases while on stage.
 
@@ -45,11 +44,11 @@ Thanks to [@thekwasti](https://twitter.com/thekwasti) I recently started writing
 I also know decorators (for the spec has been deprecated and was still not reintroduced).
 
 [Damjan Vujnovic](https://twitter.com/returnthis) was (accidentally) picking up Crockford's _numbers_ theme while doing his (vivid) introduction.
-Decorators are an excellent way to let all of your functions be responsible for a single purpose and "inject" every other (reusable) behaviour, such as logging or measuring.
+Decorators are an excellent way to let all of your functions be responsible for a single purpose and "inject" every other (reusable) behavior, such as logging or measuring.
 This insight does not only apply to TypeScript but can also be used when decorators come (back) to the JavaScript language since they are basically sugar for higher-order functions.
 
 The most interesting example was a timeout decorator that could be used to let an async operation fail if it took longer than specified.
-Therefore the decorator let the original async operation race against a delayed rejecting promise.
+Therefore, the decorator let the original async operation race against a delayed rejecting promise.
 If the operation completed before the rejecting promise it was considered successful.
 As soon as it took longer, the delayed promise would reject and fail the whole operation marking it as timed out.
 
@@ -61,14 +60,14 @@ It was no _X_ is better than _Y_ is better than _Z_ talk which I was very gratef
 Every tool has its right to exist and should be used accordingly.
 Use npm for specifying simple commands or commands that trigger a chain of commands (a pipeline).
 Then specify complex pipelines with gulp (or any task runner that is hip at the time of reading).
-Finally let webpack (or rollup or one of [substack's](https://github.com/substack) epic projects) take care of bundling your application.
+Finally, let webpack (or rollup or one of [substack's](https://github.com/substack) epic projects) take care of bundling your application.
 
 ## Blockchain 101
 
 Since the rise of Bitcoin everybody heard about crypto currencies and a mysterious construct that is the blockchain.
 IBM's [Kevin Hoyt](https://twitter.com/krhoyt) did a great job demystifying this "distributed database with special properties".
 And that's what it is (basically).
-When you think about it, the whole Internet could be built on blockchain technology 🤔 😱
+When you think about it, the whole Internet could be built on blockchain technology 🤔 😱.
 
 Watch the [skills cast](https://skillsmatter.com/skillscasts/10360-understanding-blockchain), it'll open your eyes.
 
@@ -85,9 +84,9 @@ It's that easy.
 Not only should benchmarking be part of the after-release phase (which is basically monitoring at that point) but also during the development cycle.
 However, do not overdo optimizing (especially not premature).
 
-[Martin Splitt](https://twitter.com/g33konaut) on the other hand was shedding some light on browser rendering performance.
-He literaly took the audience from 3 little shining dots all the way to how (and most importantly when) browsers are rendering a web page.
-Some explainations (especially GPUs and shaders) reminded me a lot of some profs' lectures back at university (meaning he did a pretty good job imho).
+[Martin Splitt](https://twitter.com/g33konaut), on the other hand, shed some light on browser rendering performance.
+He took the audience from 3 little shining dots all the way to how (and most importantly when) browsers are rendering a web page.
+Some explanations (especially GPUs and shaders) reminded me a lot of some profs' lectures back at university (meaning he did a pretty good job IMHO).
 Best takeaway: Avoid the green rectangle of sadness!
 Avoid everything that makes the browser relayout or repaint (since these are the most expensive operations) but keep an eye on memory consumption.
 
@@ -107,15 +106,15 @@ Checkout how to help the [Kingdom of Mugloar](http://dragonsofmugloar.com) as He
 
 The one & only [Tomasz Ducin](https://twitter.com/tomasz_ducin) had the slot for the last talk of the day before the workshops began.
 And here I thought I knew about async programming in JavaScript!
-- Callbacks? Sure, I heard there even was a hell for them
-- Promises? Doing that all day
-- Reactive streams? Recently tried some in Elixir
-- Generators? Yeah, heard they exist
-- Async/Await? Was experimenting with that
+- Callbacks? Sure, I heard there even was a hell for them.
+- Promises? Doing that all day.
+- Reactive streams? Recently tried some in Elixir.
+- Generators? Yeah, heard they exist.
+- Async/Await? Was experimenting with that.
 
-What about Coroutines?
+What about croutines?
 Co-What?
-Well, turned out I didn't know that the latter two are actually part of coroutines and I used them without knowing.
+Well, turned out I didn't know that the latter two are actually part of coroutines, and I used them without knowing.
 It also featured the best explanation of `yield` so far:
 
 > `yield` is doing the same as a _Mortal Combat_ fatality. It's taking the promise and ripping out it's heart (value).
