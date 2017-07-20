@@ -3,6 +3,8 @@
   entries:
     - title: "Who we are"
       link: /about/
+    - title: "Meet the epagesdevs team"
+      link: https://www.youtube.com/watch?v=VJRWzhf_Hm4
 
 - key: blog-categories
   title: Categories
