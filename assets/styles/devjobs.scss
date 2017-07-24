@@ -196,6 +196,12 @@ a.logo {
       text-transform: uppercase;
       text-shadow: rgba(0, 0, 0, 0.8) 0 1px 1px;
     }
+    a {
+      text-align: center;
+      display: inherit;
+      font-size: 42px;
+      color: #fff;
+    }
   }
 }
 
