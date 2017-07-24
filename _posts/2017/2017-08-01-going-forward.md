@@ -29,13 +29,10 @@ Before we take a look at how to get data into our CMDB we need some structure.
 By default, the CMDB has some preconfigured objects.
 One of these objects is called the Layer-3-Net.
 For those who forgot the [OSI model ](https://en.wikipedia.org/wiki/OSI_model), the Layer 3 abstraction is called the network Layer.
-Every node in this network needs an IP address, and in most of our networks we have DHCP servers providing them.
-So if we talk about DHCP, we also need a MAC address as IP addresses are configured for specific MAC addresses.
-Often we don't want unfamiliar devices in our network, and in these cases we don't have a dynamic address space configured.
+Every node in this network needs an IP/MAC address, and in most of our networks we have DHCP servers providing these IP's for specific MAC's.
 
-So what's the structure?
-We have a Layer-3-Net.
-Some objects, lets call them Server, Virtual Machine, Router etc., are related to the Layer-3-Net because of the IP address in this network, and everyone has a MAC address configured.
+
+Starting with some objects, lets call them Server, Virtual Machine, Router etc., are related to the Layer-3-Net because of the IP address in this network, and everyone has a MAC address configured.
 With these small pieces of cake we can generate all configs we need for our DHCP server.
 Because we know the domain of the network we can also generate all configs we need for our DNS servers as well.
 
@@ -56,7 +53,7 @@ Another time consuming aspect was the need to Initialize Dennis library every ti
 Jenkins is a great tool for creating generic automation processes and workflows.
 The library initialization is only necessary the first time you use it.
 But our Jenkins nodes sometimes restart (bad guys, they need OS updates and such stuff or sometimes they decide to crash and run away in PANIC {% emoji wink %} ), so we need to take care of this, and initialize the library every time.
-Using these two tricks we reduced the generation time from 5-6 minutes to something around 10-15 seconds.
+This was not necessary anymore and these two tricks we reduced the generation time from 5-6 minutes to something around 10-15 seconds.
 
 ## Lets' GOLANG {% image blog/blog-golang-library-gopher.png %}
 
@@ -65,8 +62,6 @@ I wanted something small and simple.
 The idea was born to write a library by myself.
 When I heard about the programming language GO, I wanted to learn it.
 From my point of view, the best way to learn a new language is by using it.
-
-Now that we have a project and a language, lets start!
 
 Primary requirements for the library:
 
@@ -96,24 +91,21 @@ I-doit also supports login via X-RPC-Auth Headers (see NewApi and NewLogin funct
 
 Our C-like API struct holds this data for us:
 
+{% highlight golang %}
 ```golang
 // api struct used for implementing the apiMethods interface
 type Api struct {
   Url, Apikey string
 }
 ```
-Since GO does not have a strict object-orientated model, it has a primitive called interface which specifies the behavior of our API object.
-Interfaces are implemented implicitly.
-If an object implements all interface functions it can use it without any direct relation to it.
+{% endhighlight %}
+
+Since GO does not have a strict object-orientated model, it has a primitive called [interface](https://gobyexample.com/interfaces) which specifies the behavior of our API object.
 
 Our ApiMethod interface defines the functions.
-At this point we are only interessted in the `request` function.
+As we can see our interface holds our ``Request`` function signature.
 
-For interfaces we have no ```func``` keyword.
-The function is defined by <name\> (input types) (return types).
-As you can see, you can specify a list of input parameters and also a list of returns.
-The interface only defines the method, so there are no variables names, but only the types used for this function.
-
+{% highlight golang %}
 ```golang
 type ApiMethods interface {
   // i-doit api request structure
@@ -123,22 +115,22 @@ type ApiMethods interface {
   ...
 }
 ```
+{% endhighlight %}
 
-We need to implement this method for our API object.
+Now we need implement this method for our API object.
 
+{% highlight golang %}
 ```golang
 func (a Api) Request(method string, parameters interface{}) (Response, error) {
 ```
+{% endhighlight %}
 
-Now we have a fully functioning definition using the ```func``` keyword followed by our object ```(a Api)``` of type API.
-We now have the variables method and parameters as input values and a response and an error returned.
-A nice feature we use here is the so called empty interface ```interface{}``` for our parameters.
-Its like "hey function you will get something and I don't know what it is but lets call it parameters".
+A nice feature we can see here is the so called [empty interface](https://tour.golang.org/methods/14) ```interface{}``` for our parameters.
 We can use the empty interface for encapsulating our request parameters without the need of directly defining the structure.
-Using interfaces as parameter input is a bit like generics (which does not exists in GOLANG!).
 
 Let's take a look on our request data.
 
+{% highlight golang %}
 ```golang
 
   var params = GetParams(a, parameters)
@@ -151,10 +143,12 @@ Let's take a look on our request data.
     Id:      id,
   }
 ```
-
+{% endhighlight %}
 The ```GetParams``` function takes our API object as well as our parameter struct, and merges them together by adding the API key to the parameters.
 
-`getID()` returns a request-iterated integer and our datastruct from type request
+`getID()` returns a request-iterated integer and our struct from type `Request`
+
+{% highlight golang %}
 ```
 type Request struct {
   Version string      `json:"version"`
@@ -163,10 +157,11 @@ type Request struct {
   Id      int         `json:"id"`
 }
 ```
+{% endhighlight %}
 has now all data we need.
-And you can find examples for the method string other functions like Search uses "idoit.search" as method string.
-Let's create some json data from our data and use the ```net/http``` and ```crypto/tls``` packet to send our request.
+Let's create some json data and use the ```net/http``` and ```crypto/tls``` packet to send our request.
 
+{% highlight golang %}
 ```golang
   dataJson, err := json.Marshal(data)
 
@@ -196,11 +191,15 @@ Let's create some json data from our data and use the ```net/http``` and ```cryp
   return ret, nil
 }
 ```
+{% endhighlight %}
 As you can see its easy to create some json data from the data struct using the ```encoding/json``` package.
 We create our new POST request using ```http.NewRequest``` add some content-type to our header and if we you use self-signed certificates on your CMDB you need to import your CA or ignore the verification {% emoji stuck_out_tongue %}.
 Now we are fireing our request using the ```client.Do``` with our client created using the http.Client reference.
 That's it.
-We get some JSON data back and parse them using the ```ParseRespones()``` function:
+
+We get some JSON data back and parse them using the
+{% highlight golang %}
+```ParseRespones()``` function:
 
 ```
 func ParseResponse(resp *http.Response) Response {
@@ -215,9 +214,9 @@ func ParseResponse(resp *http.Response) Response {
   return ret
 }
 ```
-
+{% endhighlight %}
 Using the ```io/ioutil``` package to read the response and again our ```encoding/json``` to unmarshal our json back to our response struct.
-
+{% highlight golang %}
 ```
 type Response struct {
   Jsonrpc string      `json:"jsonrpc"`
@@ -225,13 +224,13 @@ type Response struct {
   Error   IdoitError  `json:"error"`
 }
 ```
-
+{% endhighlight %}
 As you see we use the empty interface here for the result itself so we need to Type Assert our data in a way that corresponds to the data.
 For this purpose the library has a GenericTypeAssert function which does the job for you.
 Type Asserting means you got an interface containing specific data and you assign them to a specific data type in go to make use of them.
 
 Last but not least, let's take a look on a simple search request:
-
+{% highlight golang %}
 ```
 package main
 
@@ -254,8 +253,8 @@ func main() {
   fmt.Println(data)
 }
 ```
-
-We need to create an API object by providing a URL and an API key and do a simple search by creating a struct containing the query parameter ```q ``` and request using the method ```idoit.search```.
+{% endhighlight %}
+We create an API object by providing a URL and an API key and do a simple search by creating a struct containing the query parameter ```q ``` and request using the method ```idoit.search```.
 
 ## That's it, folks
 
