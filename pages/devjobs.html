@@ -33,7 +33,7 @@ permalink: /devjobs/
           <div class="hidden-xs spacer20"></div>
           <h3 class="hidden-xs">Join one of the leading developer teams for online shop software</h3>
           <div class="hidden-xs spacer60"></div>
-          <a href="https://youtu.be/VJRWzhf_Hm4" target="_blank"><i class="fa fa-play" aria-hidden="true"></i></a>
+          <a class="youtube-lightbox" href="https://www.youtube.com/embed/VJRWzhf_Hm4?autoplay=1"><i class="fa fa-play" aria-hidden="true"></i></a>
         </div>
       </div>
     </div>
@@ -367,4 +367,16 @@ permalink: /devjobs/
       document.getElementsByClassName("ep_nav")[0].classList.add("index");
     }
   };
+
+  $('a.youtube-lightbox').click(function(event) {
+    event.preventDefault();
+
+    video_link = $(this).attr('href');
+
+    $('<div id="lightbox_bg"><iframe src="' + video_link + '"></iframe></div>').prependTo('body');
+  });
+
+  $(document).on('click', '#lightbox_bg', function() {
+    $('#lightbox_bg').remove();
+  });
 </script>

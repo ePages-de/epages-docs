@@ -24,5 +24,17 @@
     if (width <= 767) {
       $('.rss-feed').remove();
     }
+
+    $('a.youtube-lightbox').click(function(event) {
+      event.preventDefault();
+
+      video_link = $(this).attr('href');
+
+      $('<div id="lightbox_bg"><iframe src="' + video_link + '"></iframe></div>').prependTo('body');
+    });
+
+    $(document).on('click', '#lightbox_bg', function() {
+      $('#lightbox_bg').remove();
+    });
   });
 </script>

@@ -109,7 +109,8 @@ module Jekyll
 
       title = @ref['title'] || 'UNKNOWN TITLE'
       url = Sitemap.resolve(@ref['link']) || @ref['link']
-      "<a href=\"#{url}\">#{title}</a>"
+      c_class = @ref['class'] || ''
+      "<a class=\"#{c_class}\" href=\"#{url}\">#{title}</a>"
     end
 
     private
