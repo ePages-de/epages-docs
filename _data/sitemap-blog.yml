@@ -3,6 +3,9 @@
   entries:
     - title: "Who we are"
       link: /about/
+    - title: "Meet the team"
+      link: https://www.youtube.com/embed/VJRWzhf_Hm4?autoplay=1
+      class: youtube-lightbox
 
 - key: blog-categories
   title: Categories

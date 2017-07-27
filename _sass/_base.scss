@@ -950,3 +950,24 @@ article td, article th {
 .alert > p, .alert > ul {
   margin: 5px 0;
 }
+
+#lightbox_bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+
+  iframe {
+    border: 0;
+    width: 90%;
+    height: 90%;
+    max-width: 1280px;
+    max-height: 720px;
+  }
+}
