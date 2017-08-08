@@ -724,21 +724,24 @@ ul.sitemap-content {
 article p, article table {
   margin: 10px 0 20px;
 }
-article table {
+body.data-types article table {
   width: 100%;
   border-collapse: collapse;
   table-layout: fixed;
 }
-article table td {
+body.data-types article table td {
   overflow: scroll;
 }
-article table th:first-child, article table td:first-child {
+body.data-types article table th:first-child,
+body.data-types article table td:first-child {
   width: 25%;
 }
-article table th:nth-child(2), article table td:nth-child(2) {
+body.data-types article table th:nth-child(2),
+body.data-types article table td:nth-child(2) {
   width: 25%;
 }
-article table th:nth-child(3), article table td:nth-child(3) {
+body.data-types article table th:nth-child(3),
+body.data-types article table td:nth-child(3) {
   width: 50%;
 }
 article ul li {

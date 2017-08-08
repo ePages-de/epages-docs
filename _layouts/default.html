@@ -2,12 +2,23 @@
 {% assign chapter = page.url | regex_extract: '^/([^/]+)/' %}
 <html>
   {% include head.html chapter=chapter %}
-  <body>
+  {% if page.url == "/apps/data-types" %}
+    <body class="data-types">
 
-    {% assign baseUrl = site.baseUrl %}
+      {% assign baseUrl = site.baseUrl %}
 
-    {% include_cached header.html chapter=chapter baseUrl=baseUrl %}
-    {{ content }}
-    {% include_cached footer.html %}
-  </body>
+      {% include_cached header.html chapter=chapter baseUrl=baseUrl %}
+      {{ content }}
+      {% include_cached footer.html %}
+    </body>
+  {% else %}
+    <body>
+
+      {% assign baseUrl = site.baseUrl %}
+
+      {% include_cached header.html chapter=chapter baseUrl=baseUrl %}
+      {{ content }}
+      {% include_cached footer.html %}
+    </body>
+  {% endif %}
 </html>
