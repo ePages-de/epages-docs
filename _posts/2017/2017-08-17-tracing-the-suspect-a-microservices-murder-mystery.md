@@ -7,6 +7,13 @@ categories: tech-stories
 authors: ["Jens"]
 ---
 
+<style>
+
+.twitter-tweet {
+  margin: auto;
+}
+</style>
+
 The [first post][haystack] in this series of blog posts about debugging microservices covered, how we can produce structured log events to ease log aggregation.
 We also introduced the concept of log correlation using a `correlation-id`, that spans multiple microservices to connect related log events.
 In this second post we will enhance the JSON log structure, and dive deeper into the topic of **distributed tracing**.
@@ -144,76 +151,84 @@ A log event emitted in case of an exception looks like this (after applying some
     at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
     at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)
     at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:652)
-    ...60 common frames omitted
+    ... 60 common frames omitted
     Wrapped by: org.springframework.web.client.ResourceAccessException: I/O error on GET request for \"http://service/\": Read timed out; nested exception is java.net.SocketTimeoutException: Read timed out
     at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:666)
     at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:613)
     at org.springframework.web.client.RestTemplate.getForObject(RestTemplate.java:287)
     at com.epages.pingpong.PingPongController.process(PingPongController.java:31)
-    ...3 frames excluded"
+    ... 3 frames excluded"
 }
 {% endhighlight %}
 
+## Microservices murder mystery
 
-# TODO
+Finding the cause of an outage is a real challenge for organizations that operate with many services:
 
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">We replaced our monolith with micro services so that every outage could be more like a murder mystery.</p>&mdash; Honest Status Page (@honest_update) <a href="https://twitter.com/honest_update/status/651897353889259520">October 7, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+To solve that problem, Google created their own infrastructure for distributed tracing called *Dapper*, and in 2010 [published a paper][dapper] describing their solution.
+Based on that design, a project initially called *Big Brother Bird* (B3) was created at Twitter, and later open-sourced under the name [Zipkin][zipkin].
 
-## B3
+Zipkin can be used to gather, store and visualize timing and latency information in a distributed system, and strives for interoperability of different instrumentations provided by various vendors and programming languages.
+The whole request processed by a distributed system is called a Trace, and can be modeled as a tree of multiple Spans, forming the basic units of work.
+The timing information for each Span and for the whole Trace are stored along additional meta information in Zipkin.
+To get this data into Zipkin we use [Spring Cloud Sleuth][sleuth], which nicely integrates with Spring Boot, and automatically instruments all HTTP requests going from one microservice to another microservice with a number of additional HTTP headers.
 
-The B3 portion of the header is so named for the original name of Zipkin: BigBrotherBird.
+Most importantly Sleuth introduces the HTTP headers `X-B3-TraceId`, `X-B3-SpanId` and `X-B3-ParentSpanId`, all starting with `X-B3-` (in reference of the original project name) as documented in the [B3 specification][b3-spec], plus `X-Span-Export` to mark a particluar span as having been sampled to Zipkin.
+The instrumentation also ensures, that these values are properly stored in the MDC, allowing easy use in our Logback configuration.
+We can modify our `logback-spring.xml` to use `X-B3-TraceId` for correlation (and renaming the JSON property  `correlation-id` to `trace`), while removing the other Sleuth headers from our log event:
 
+{% highlight xml %}
+<pattern>
+    <pattern>{ "trace": "%mdc{X-B3-TraceId:-}" }</pattern>
+</pattern>
+<mdc>
+    <excludeMdcKeyName>X-B3-SpanId</excludeMdcKeyName>
+    <excludeMdcKeyName>X-B3-TraceId</excludeMdcKeyName>
+    <excludeMdcKeyName>X-B3-ParentSpanId</excludeMdcKeyName>
+    <excludeMdcKeyName>X-Span-Export</excludeMdcKeyName>
+</mdc>
+{% endhighlight %}
+
+Sleuth-instrumented requests then produce log events like this:
 
 {% highlight json %}
 {
-  "@timestamp": "2017-08-09T13:08:08.329+00:00",
-  "@version": 1,
-  "message": "PING working hard for 2s",
-  "logger_name": "com.epages.pingpong.PingPongController",
-  "thread_name": "http-nio-80-exec-5",
-  "level": "INFO",
-  "level_value": 20000,
-  "app": "ping",
-  "X-Span-Export": "true",
-  "X-B3-SpanId": "55e38df688e6dfd2",
-  "X-B3-TraceId": "74639eb71741c6e255e38df688e6dfd2"
-} {
-  "@timestamp": "2017-08-09T13:08:10.335+00:00",
-  "@version": 1,
-  "message": "PONG working hard for 0s",
-  "logger_name": "com.epages.pingpong.PingPongController",
-  "thread_name": "http-nio-80-exec-7",
-  "level": "INFO",
-  "level_value": 20000,
-  "app": "pong",
-  "X-Span-Export": "true",
-  "X-B3-SpanId": "2a05d6822505a7e7",
-  "X-B3-ParentSpanId": "55e38df688e6dfd2",
-  "X-B3-TraceId": "74639eb71741c6e255e38df688e6dfd2"
-} {
-  "@timestamp": "2017-08-09T13:08:10.339+00:00",
-  "@version": 1,
-  "message": "ACK working hard for 0s",
-  "logger_name": "com.epages.pingpong.PingPongController",
-  "thread_name": "http-nio-80-exec-7",
-  "level": "INFO",
-  "level_value": 20000,
+  "time": "2017-08-10T07:51:04.796Z",
+  "severity": "INFO",
   "app": "ack",
-  "X-Span-Export": "true",
-  "X-B3-SpanId": "b3bd3b3c4d90de2e",
-  "X-B3-ParentSpanId": "2a05d6822505a7e7",
-  "X-B3-TraceId": "74639eb71741c6e255e38df688e6dfd2"
-} {
-  "@timestamp": "2017-08-09T13:08:10+00:00",
-  "@version": 1,
-  "message": "GET /ping HTTP/1.1",
-  "level": "INFO",
-  "level_value": 20000,
-  "app": "api-gateway",
-  "trace": "74639eb71741c6e255e38df688e6dfd2"
+  "trace": "ab6e804ebf7fd7f042962079b19585b4",
+  "logger": "com.epages.pingpong.PingPongController",
+  "message": "ACK working hard for 1s"
 }
 {% endhighlight %}
 
+
+## Tracing the suspect
+
+The Zipkin web application offers a nice visualization of all traces that have been sampled:
+
+{% image blog/blog-zipkin-overview.png %}
+
+Drilling down into a specific trace offers detailed information about the timings of all affected spans:
+
+{% image blog/blog-zipkin-trace-1.png %}
+
+A trace with a failed span is marked red and can be introspected for further details:
+
+{% image blog/blog-zipkin-trace-2.png %}
+
+
+## Announcing our verdict
+
+With Open Source tools like Sleuth and Zipkin, we gain better visibility into the runtime behaviour of our microservices.
+They give us an easy way to analyze failures and spot areas for performance optimization.
+Besides log aggregation, they form an invaluable addition to our DevOps tool chain.
+
+In an upcoming final post in our blog series about debugging microservices, we will have a look at providing trace ids from the outside by [embedding dynamic scripting capabilities][lua] into our *api-gateway*.
+We will also show how to attach an IDE debugger to a running microservice container to finally access all the internal details to solve even the most intricate bugs.
 
 
 [haystack]:                 /blog/2017/07/13/where-is-the-bug-in-my-microservices-haystack.html         "Where's the bug in my microservices haystack?"
@@ -221,9 +236,9 @@ The B3 portion of the header is so named for the original name of Zipkin: BigBro
 [spring-boot]:              https://projects.spring.io/spring-boot/ "Spring Boot"
 [logback]:                  https://logback.qos.ch/         "Logback - The Generic, Reliable Fast & Flexible Logging Framework"
 [logstash-logback-encoder]: https://github.com/logstash/logstash-logback-encoder    "Logback JSON encoder"
-[stack-hash]: https://github.com/logstash/logstash-logback-encoder/blob/master/stack-hash.md#why-generating-stack-hashes   "Details about stack hash" 
-[nginx]:                    https://nginx.org/en/       "nginx reverse proxy server"
+[stack-hash]: https://github.com/logstash/logstash-logback-encoder/blob/master/stack-hash.md#why-generating-stack-hashes   "Details about stack hash"
 [dapper]:                   https://research.google.com/pubs/pub36356.html  "Dapper, a Large-Scale Distributed Systems Tracing Infrastructure"
 [sleuth]:                   https://cloud.spring.io/spring-cloud-sleuth/    "Spring Cloud Sleuth"
 [zipkin]:                   http://zipkin.io/                               "Zipkin distributed tracing system"
 [b3-spec]:                  https://github.com/openzipkin/b3-propagation    "B3 specification"
+[lua]:                      https://github.com/openresty/lua-nginx-module#readme    "Embed the power of Lua into Nginx HTTP Servers."
