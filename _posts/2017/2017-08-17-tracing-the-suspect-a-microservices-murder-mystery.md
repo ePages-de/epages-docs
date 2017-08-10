@@ -93,19 +93,25 @@ A typical stream of log events produced by processing a single request spanning 
 In our example it is possible, that one of the participating microservices is producing an error, causing the whole request spanning all microservices to fail.
 For investigating these kinds of failures it is important to also get access to the stacktrace providing detailed information.
 Stacktraces in Java can get pretty unwieldy and long, and they happen to hide the most important information at the very bottom.
-We introduce a special `<stackTrace/>` JSON provider, that can be configured to truncate noisy stacktrace frames (e.g. from invocation via reflection), and moves the root cause to the top:
+We introduce a special `<stackTrace/>` JSON provider, that can be configured to truncate noisy stacktrace frames (e.g. from invocation via reflection), and moves the root cause to the top. The `<stackHash/>` JSON provider will create a [short and stable signature][stack-hash] from an exception, so that we can count distinct types of errors and detect new ones easily.
 
 {% highlight xml %}
+<stackHash>
+    <fieldName>exception-hash</fieldName>
+</stackHash>
 <stackTrace>
-    <fieldName>stacktrace</fieldName>
+    <fieldName>exception</fieldName>
     <throwableConverter class="net.logstash.logback.stacktrace.ShortenedThrowableConverter">
+        <shortenedClassNameLength>short</shortenedClassNameLength>
+        <maxDepthPerThrowable>short</maxDepthPerThrowable>
+        <maxLength>short</maxLength>
         <rootCauseFirst>true</rootCauseFirst>
         <exclude>sun\.reflect\..*\.invoke.*</exclude>
     </throwableConverter>
 </stackTrace>
 {% endhighlight %}
 
-The log event looks like this (after applying some additional manual trimming):
+A log event emitted in case of an exception looks like this (after applying some additional manual trimming):
 
 {% highlight json %}
 {
@@ -115,7 +121,8 @@ The log event looks like this (after applying some additional manual trimming):
   "correlation-id": "d82f882ec1fb71386f9ece8a9420f0d7",
   "logger": "com.epages.pingpong.PingPongController",
   "message": "Error calling http://service/",
-  "stacktrace": "java.net.SocketTimeoutException: Read timed out
+  "exception-hash": "318b233f",
+  "exception": "java.net.SocketTimeoutException: Read timed out
     at java.net.SocketInputStream.socketRead0(SocketInputStream.java)
     at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
     at java.net.SocketInputStream.read(SocketInputStream.java:171)
@@ -137,7 +144,13 @@ The log event looks like this (after applying some additional manual trimming):
     at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
     at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)
     at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:652)
-    ... 60 common frames omitted"
+    ...60 common frames omitted
+    Wrapped by: org.springframework.web.client.ResourceAccessException: I/O error on GET request for \"http://service/\": Read timed out; nested exception is java.net.SocketTimeoutException: Read timed out
+    at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:666)
+    at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:613)
+    at org.springframework.web.client.RestTemplate.getForObject(RestTemplate.java:287)
+    at com.epages.pingpong.PingPongController.process(PingPongController.java:31)
+    ...3 frames excluded"
 }
 {% endhighlight %}
 
@@ -208,6 +221,7 @@ The B3 portion of the header is so named for the original name of Zipkin: BigBro
 [spring-boot]:              https://projects.spring.io/spring-boot/ "Spring Boot"
 [logback]:                  https://logback.qos.ch/         "Logback - The Generic, Reliable Fast & Flexible Logging Framework"
 [logstash-logback-encoder]: https://github.com/logstash/logstash-logback-encoder    "Logback JSON encoder"
+[stack-hash]: https://github.com/logstash/logstash-logback-encoder/blob/master/stack-hash.md#why-generating-stack-hashes   "Details about stack hash" 
 [nginx]:                    https://nginx.org/en/       "nginx reverse proxy server"
 [dapper]:                   https://research.google.com/pubs/pub36356.html  "Dapper, a Large-Scale Distributed Systems Tracing Infrastructure"
 [sleuth]:                   https://cloud.spring.io/spring-cloud-sleuth/    "Spring Cloud Sleuth"
