@@ -2,7 +2,7 @@
 layout: post
 title: "Tracing the suspect - a microservices murder mystery"
 date: "2017-08-17 09:30:00"
-image: blog-header/tracing-the-suspect.jpg
+image: blog-header/tracing-the-suspect-a-microservices-murder-mystery.jpg
 categories: tech-stories
 authors: ["Jens"]
 ---
@@ -13,8 +13,8 @@ In this second post we will enhance the JSON log structure, and dive deeper into
 
 ## Custom JSON structure
 
-Since at ePages we use [Google's Stackdriver Logging infrastructure][stackdriver] to aggregate all our log events, we need to adjust our JSON structure to follow their format:
-We want to rename the default JSON properties `@timestamp` and `level` to `time` and `severity` respectively, while completely dropping `@version`, `level_value` and `thread_name`.
+At ePages we use [Google's Stackdriver Logging infrastructure][stackdriver] to aggregate all our log events, thus we need to adjust our JSON structure to follow their format:
+We want to rename the default JSON properties `@timestamp` and `level` to `time` and `severity` respectively, while completely dropping `@version`, `level_value`, and `thread_name`.
 Using [Spring Boot][spring-boot]'s support for [Logback][logback], we control the JSON structure by introducing a [custom encoder layout](https://github.com/logstash/logstash-logback-encoder#composite-encoderlayout) in this `logback-spring.xml` file:
 
 {% highlight xml %}
@@ -50,7 +50,7 @@ Using [Spring Boot][spring-boot]'s support for [Logback][logback], we control th
 </configuration>
 {% endhighlight %}
 
-The JSON property`app` is rendered by the `<context/>` JSON provider, which gets its value from the `<springProperty/>` element used to access the `spring.application.name` configuration value available for every Spring Boot app.
+The JSON property `app` is rendered by the `<context/>` JSON provider, which gets its value from the `<springProperty/>` element used to access the `spring.application.name` configuration value available for every Spring Boot app.
 The `correlation-id` is fetched from the Mapped Diagnostic Context (as introduced in the previous blog post) using the special [conversion word](https://logback.qos.ch/manual/layouts.html#mdc) `%mdc{}`.
 
 A typical stream of log events produced by processing a single request spanning the microservices named *ping*, *pong* and *ack* behind our *api-gateway* in our (artificial) system looks like this:
@@ -88,12 +88,12 @@ A typical stream of log events produced by processing a single request spanning 
 {% endhighlight %}
 
 
-## And then it happened!
+## And then it crashed!
 
 In our example it is possible, that one of the participating microservices is producing an error, causing the whole request spanning all microservices to fail.
 For investigating these kinds of failures it is important to also get access to the stacktrace providing detailed information.
 Stacktraces in Java can get pretty unwieldy and long, and they happen to hide the most important information at the very bottom.
-We introduce a special `<stackTrace/>` JSON provider, that can be configured to truncate noisy stacktrace frames (e.g. from invocation via reflection) and moves the root cause to the top:
+We introduce a special `<stackTrace/>` JSON provider, that can be configured to truncate noisy stacktrace frames (e.g. from invocation via reflection), and moves the root cause to the top:
 
 {% highlight xml %}
 <stackTrace>
@@ -105,7 +105,7 @@ We introduce a special `<stackTrace/>` JSON provider, that can be configured to 
 </stackTrace>
 {% endhighlight %}
 
-The log event looks like this:
+The log event looks like this (after applying some additional manual trimming):
 
 {% highlight json %}
 {
@@ -132,42 +132,12 @@ The log event looks like this:
     at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
     at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)
     at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:99)
-    at org.springframework.cloud.sleuth.instrument.web.client.TraceRestTemplateInterceptor.response(TraceRestTemplateInterceptor.java:59)
-    at org.springframework.cloud.sleuth.instrument.web.client.TraceRestTemplateInterceptor.intercept(TraceRestTemplateInterceptor.java:53)
     at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:86)
     at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:70)
     at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
     at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)
     at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:652)
-    ... 60 common frames omitted
-Wrapped by: org.springframework.web.client.ResourceAccessException: I/O error on GET request for \"http://service/\": Read timed out; nested exception is java.net.SocketTimeoutException: Read timed out
-    at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:666)
-    at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:613)
-    at org.springframework.web.client.RestTemplate.getForObject(RestTemplate.java:287)
-    at com.epages.pingpong.PingPongController.process(PingPongController.java:31)
-    ... 3 frames excluded
-    at java.lang.reflect.Method.invoke(Method.java:498)
-    at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-    at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
-    at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
-    at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
-    at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
-    at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
-    at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
-    at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
-    at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
-    at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
-    at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
-    at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
-    at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
-    at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
-    at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-    at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
-    at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-    at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-    at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
-    at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-    ... 36 frames truncated"
+    ... 60 common frames omitted"
 }
 {% endhighlight %}
 
