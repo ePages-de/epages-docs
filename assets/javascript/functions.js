@@ -12,10 +12,10 @@ $(document).ready(function(){
   if ( regex.test(path) ) {
     var vh = $('header.jumbotron').outerHeight() - $('nav').outerHeight();
     // Animation
-    $('html,body').animate({
-        scrollTop: vh
-      }, 900);
-    // $(document).scrollTop(vh);
+    // $('html,body').animate({
+    //     scrollTop: vh
+    //   }, 900);
+    $(document).scrollTop(vh);
   }
 
   function navbarScroll() {
