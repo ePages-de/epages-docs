@@ -268,6 +268,12 @@ nav {
   margin-bottom: 0;
   padding-top: 90px;
   padding-bottom: 60px;
+  &--top {
+    background-position: center top !important;
+  }
+  &--bottom {
+    background-position: center bottom !important;
+  }
 
   .input-group {
     display: inline-flex;

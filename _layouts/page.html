@@ -14,7 +14,7 @@ layout: default
   {% assign title = 'Developer blog'  %}
 {% endif %}
 
-<header id="header" class="jumbotron"
+<header id="header" class="jumbotron {% if page.image-position == 'bottom' %} jumbotron--bottom {% endif %} {% if page.image-position == 'top' %} jumbotron--top {% endif %}"
   {% if page.image %}style="background: linear-gradient(rgba(50, 50, 50, 0.4), rgba(50, 50, 50, 0.15)), url('/assets/images/{{ page.image }}')"
   {% elsif page.categories and page.key !="apps-glossary" %}
     {% assign category = page.categories | first %}
