@@ -2,7 +2,7 @@
 layout: post
 title: Commerce Summit approaching
 date: "2017-08-15 09:34:02"
-image: blog-header/translation-keys.jpg
+image: blog-header/commerce-summit.jpg
 categories: events
 authors: ["Birgit"]
 ---
