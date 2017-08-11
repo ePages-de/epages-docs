@@ -2,7 +2,7 @@
 layout: post
 title: "Tracing the suspect - a microservices murder mystery"
 date: "2017-08-17 09:30:00"
-image: blog-header/tracing-the-suspect-a-microservices-murder-mystery.jpg
+image: blog-header/tracing-the-suspect.jpg
 categories: tech-stories
 authors: ["Jens"]
 ---
@@ -14,7 +14,7 @@ authors: ["Jens"]
 }
 </style>
 
-The [first post][haystack] in this series of blog posts about debugging microservices covered, how we can produce structured log events to ease log aggregation.
+The [first post][haystack] in this series of blog posts about debugging microservices covered how we can produce structured log events to ease log aggregation.
 We also introduced the concept of log correlation using a `correlation-id`, that spans multiple microservices to connect related log events.
 In this second post we will enhance the JSON log structure, and dive deeper into the topic of **distributed tracing**.
 
@@ -57,10 +57,10 @@ Using [Spring Boot][spring-boot]'s support for [Logback][logback], we control th
 </configuration>
 {% endhighlight %}
 
-The JSON property `app` is rendered by the `<context/>` JSON provider, which gets its value from the `<springProperty/>` element used to access the `spring.application.name` configuration value available for every Spring Boot app.
+The JSON property `app` is rendered by the `<context/>` JSON provider, which gets its value from the `<springProperty/>` element used to access the `spring.application.name` configuration value that is available for every Spring Boot app.
 The `correlation-id` is fetched from the Mapped Diagnostic Context (as introduced in the previous blog post) using the special [conversion word](https://logback.qos.ch/manual/layouts.html#mdc) `%mdc{}`.
 
-A typical stream of log events produced by processing a single request spanning the microservices named *ping*, *pong* and *ack* behind our *api-gateway* in our (artificial) system looks like this:
+A typical stream of log events produced by processing a single request spanning the microservices named *ping*, *pong*, and *ack* behind our *api-gateway* in our (artificial) system looks like this:
 
 {% highlight json %}
 {
@@ -97,10 +97,10 @@ A typical stream of log events produced by processing a single request spanning 
 
 ## And then it crashed!
 
-In our example it is possible, that one of the participating microservices is producing an error, causing the whole request spanning all microservices to fail.
+In our example it is possible, that one of the participating microservices produces an error, causing the whole request spanning all microservices to fail.
 For investigating these kinds of failures it is important to also get access to the stacktrace providing detailed information.
 Stacktraces in Java can get pretty unwieldy and long, and they happen to hide the most important information at the very bottom.
-We introduce a special `<stackTrace/>` JSON provider, that can be configured to truncate noisy stacktrace frames (e.g. from invocation via reflection), and moves the root cause to the top. The `<stackHash/>` JSON provider will create a [short and stable signature][stack-hash] from an exception, so that we can count distinct types of errors and detect new ones easily.
+We introduce a special `<stackTrace/>` JSON provider, that can be configured to truncate noisy stacktrace frames (e.g. from invocation via reflection), and moves the root cause to the top. The `<stackHash/>` JSON provider will create a [short and stable signature][stack-hash] from an exception, so that we can count distinct types of errors, and detect new ones easily.
 
 {% highlight xml %}
 <stackHash>
@@ -168,16 +168,16 @@ Finding the cause of an outage is a real challenge for organizations that operat
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">We replaced our monolith with micro services so that every outage could be more like a murder mystery.</p>&mdash; Honest Status Page (@honest_update) <a href="https://twitter.com/honest_update/status/651897353889259520">October 7, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-To solve that problem, Google created their own infrastructure for distributed tracing called *Dapper*, and in 2010 [published a paper][dapper] describing their solution.
+To solve that problem, Google created their own infrastructure for distributed tracing called *Dapper*, and in 2010 they [published a paper][dapper] describing their solution.
 Based on that design, a project initially called *Big Brother Bird* (B3) was created at Twitter, and later open-sourced under the name [Zipkin][zipkin].
 
-Zipkin can be used to gather, store and visualize timing and latency information in a distributed system, and strives for interoperability of different instrumentations provided by various vendors and programming languages.
-The whole request processed by a distributed system is called a Trace, and can be modeled as a tree of multiple Spans, forming the basic units of work.
-The timing information for each Span and for the whole Trace are stored along additional meta information in Zipkin.
-To get this data into Zipkin we use [Spring Cloud Sleuth][sleuth], which nicely integrates with Spring Boot, and automatically instruments all HTTP requests going from one microservice to another microservice with a number of additional HTTP headers.
+Zipkin can be used to gather, store, and visualize timing as well as latency information in a distributed system, and strives for interoperability of different instrumentations provided by various vendors and programming languages.
+The whole request processed by a distributed system is called a **trace**, and can be modeled as a tree of multiple **spans**, forming the basic units of work.
+The timing information for each span, and for the whole trace are stored along with additional meta information in Zipkin.
+To get this data into Zipkin we use [Spring Cloud Sleuth][sleuth], which nicely integrates with Spring Boot, and automatically instruments all HTTP requests going from one microservice to another with a number of additional HTTP headers.
 
-Most importantly Sleuth introduces the HTTP headers `X-B3-TraceId`, `X-B3-SpanId` and `X-B3-ParentSpanId`, all starting with `X-B3-` (in reference of the original project name) as documented in the [B3 specification][b3-spec], plus `X-Span-Export` to mark a particluar span as having been sampled to Zipkin.
-The instrumentation also ensures, that these values are properly stored in the MDC, allowing easy use in our Logback configuration.
+Most importantly, Sleuth introduces the HTTP headers `X-B3-TraceId`, `X-B3-SpanId` and `X-B3-ParentSpanId`, all starting with `X-B3-` (in reference to the original project name) as documented in the [B3 specification][b3-spec], plus `X-Span-Export` to mark a particular span as having been sampled to Zipkin.
+The instrumentation also ensures that these values are properly stored in the MDC, allowing easy use in our Logback configuration.
 We can modify our `logback-spring.xml` to use `X-B3-TraceId` for correlation (and renaming the JSON property  `correlation-id` to `trace`), while removing the other Sleuth headers from our log event:
 
 {% highlight xml %}
@@ -216,19 +216,23 @@ Drilling down into a specific trace offers detailed information about the timing
 
 {% image blog/blog-zipkin-trace-1.png %}
 
-A trace with a failed span is marked red and can be introspected for further details:
+A trace with a failed span is marked red and can be inspected for further details:
 
 {% image blog/blog-zipkin-trace-2.png %}
 
 
 ## Announcing our verdict
 
-With Open Source tools like Sleuth and Zipkin, we gain better visibility into the runtime behaviour of our microservices.
-They give us an easy way to analyze failures and spot areas for performance optimization.
+With Open Source tools such as Sleuth and Zipkin, we gain better visibility into the runtime behavior of our microservices.
+They give us an easy way to analyze failures, and spot areas for performance optimization.
 Besides log aggregation, they form an invaluable addition to our DevOps tool chain.
 
 In an upcoming final post in our blog series about debugging microservices, we will have a look at providing trace ids from the outside by [embedding dynamic scripting capabilities][lua] into our *api-gateway*.
 We will also show how to attach an IDE debugger to a running microservice container to finally access all the internal details to solve even the most intricate bugs.
+
+## Related post
+
+[Where's the bug in my microservices haystack](https://developer.epages.com/blog/2017/07/13/where-is-the-bug-in-my-microservices-haystack.html)
 
 
 [haystack]:                 /blog/2017/07/13/where-is-the-bug-in-my-microservices-haystack.html         "Where's the bug in my microservices haystack?"
