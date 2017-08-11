@@ -232,7 +232,7 @@ We will also show how to attach an IDE debugger to a running microservice contai
 
 ## Related post
 
-[Where's the bug in my microservices haystack](https://developer.epages.com/blog/2017/07/13/where-is-the-bug-in-my-microservices-haystack.html)
+[Where's the bug in my microservices haystack][haystack]
 
 
 [haystack]:                 /blog/2017/07/13/where-is-the-bug-in-my-microservices-haystack.html         "Where's the bug in my microservices haystack?"
