@@ -11,6 +11,12 @@
   $(document).ready(function() {
     width = $(window).width();
 
+    document.querySelectorAll('li.sitemap-entry').forEach(function(elem) {
+      if (elem.querySelector('a').getAttribute('href') == window.location.pathname) {
+        elem.className += ' active'
+      }
+    });
+
     $('li.sitemap-headline').click(function() {
       if (width <= 767) {
         if ($(this).next('.sitemap-content').is(':hidden')) {
