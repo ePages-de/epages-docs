@@ -396,9 +396,9 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | shippingMethodsRestrictedTo | array of [link](page:apps-data-types#link) | Information on possible shipping method restrictions, e.g. express delivery only. Can be `null` if no restrictions exist. |
 | availabilityText | string | Additional custom information on the product's stock level or the delivery period. |
 | availability | string | The availability of the product. Can be one of *OnStock*, *WarnStock*, *OutStock*. |
-| energyLabelsString | string | A list of energy labels applied to this product. Can be one or two values. If two values are returned, the first value is the best energy label, the second is the second-best. |
-| energyLabelSourceFile | string | An image or PDF file containing the energy label image supplied by the manufacturer. |
-| productDataSheet | string | An image or PDF file containing a datasheet with technical information on the product. Has to be available if the product has an energy label. |
+| energyLabelsString | string | A list of energy labels applied to this product. Can be one value or a range with two values. |
+| energyLabelSourceFile | string | A URL with an image or PDF file containing the energy label image supplied by the manufacturer. |
+| productDataSheet | string | An image or PDF file containing a data sheet with technical information on the product. Has to be available if the product has an energy label. |
 | sfUrl | string | The link to storefront URL of the product. |
 | productNumber | string | The product number. |
 | productImage | string | The name of the product image. |

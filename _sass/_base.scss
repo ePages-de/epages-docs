@@ -295,6 +295,12 @@ nav {
   margin-bottom: 0;
   padding-top: 90px;
   padding-bottom: 60px;
+  &--top {
+    background-position: center top !important;
+  }
+  &--bottom {
+    background-position: center bottom !important;
+  }
 
   .input-group {
     display: inline-flex;
@@ -697,7 +703,7 @@ footer .social .xing:hover {
 /* Content Navigation */
 .contentnav {
   float: left;
-  margin-right: 1%;
+  margin-right: 0;
   width: 19%;
   font-size: 16px;
   line-height: 2;
@@ -719,6 +725,14 @@ ul.sitemap-content {
 .sitemap-headline:nth-child(2) {
   margin-top: 20px;
 }
+
+.sitemap-entry.active {
+  margin-left: -10px;
+  padding-left: 10px;
+  border: 1px solid #eee;
+  border-right: 0;
+  background-color: #eee;
+ }
 
 /* Content */
 .content-inner {

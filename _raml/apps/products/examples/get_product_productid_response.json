@@ -70,7 +70,7 @@
   "shippingMethodsRestrictedTo": null,
   "availabilityText": "In stock<br />can be shipped within 3-5 days",
   "availability": "OnStock",
-  "energyLabelsString": "A+++",
+  "energyLabelsString": null,
   "energyLabelSourceFile": null,
   "productDataSheet": null,
   "sfUrl": "http://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/Products/HP-003",
