@@ -17,7 +17,7 @@ Depending on the shop settings, the order will be created before or after the pa
     {% if match and visible %}
       <li class="resource-entry">
         <span class="http-method http-method-{{ page.raml_method.method | downcase }}">{{ page.raml_method.method }}</span>
-        <a href="{{ page.url | prepend: site.baseurl }}">{{ page.raml_resource.relative_uri }}</a>
+        <a href="{{ page.url | prepend: site.baseurl }}#docs">{{ page.raml_resource.relative_uri }}</a>
         {% if page.raml_method.description contains '*epages6' %}
           <span class="ep-label-6 ep-label">ePages 6</span>
         {% endif %}
