@@ -1,9 +1,9 @@
 * {
   box-sizing: border-box;
-  -webkit-transition: all 0.25s linear;
-  -moz-transition: all 0.25s linear;
-  -o-transition: all 0.25s linear;
-  transition: all 0.25s linear;
+  // -webkit-transition: all 0.25s linear;
+  // -moz-transition: all 0.25s linear;
+  // -o-transition: all 0.25s linear;
+  // transition: all 0.25s linear;
 }
 body {
   -webkit-font-smoothing: antialiased;
@@ -152,8 +152,32 @@ a.cta, .cta, .navbar-cta {
 
 nav {
   padding: 20px 15px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+  &.white {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    a {
+      color: #333 !important;
+      &:hover,
+      &:focus {
+        color: #333 !important;
+      }
+    }
+    .navbar-cta {
+      color: #333 !important;
+      border-color: #333 !important;
+    }
+    .navbar-cta:hover, .navbar-cta:active, .navbar-cta:focus {
+      color: #333 !important;
+      border-color: #333 !important;
+    }
+  }
+  .nav__container {
+    margin-left: auto;
+    margin-right: auto;
+  }
   a {
     color: #fff !important;
   }
@@ -166,7 +190,7 @@ nav {
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  nav {
+  .nav__container {
     width: 750px;
   }
   .nav li > a {
@@ -175,12 +199,12 @@ nav {
   }
 }
 @media (min-width: 992px) {
-  nav {
+  .nav__container {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  nav {
+  .nav__container {
     width: 1170px;
   }
 }
@@ -203,12 +227,15 @@ nav {
 .navbar-brand {
   padding: 10px 15px;
   margin: 3px 0 0;
-  background-image: url('#{$assets-base}/logos/epages-logo-devportal.png');
+  background-image: url('#{$assets-base}/logos/logo_developer_portal_white.svg');
   background-repeat: no-repeat;
   min-width: 230px;
   height: 40px;
   background-size: contain;
   background-position: center center;
+  &.gray {
+    background-image: url('#{$assets-base}/logos/logo_developer_portal_4c.svg');
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   nav a {
@@ -264,10 +291,12 @@ nav {
   background-repeat: no-repeat;
   text-align: center;
   color: #fff;
-  margin-top: -90px;
+  // margin-top: -90px;
   margin-bottom: 0;
   padding-top: 90px;
   padding-bottom: 60px;
+  position: relative;
+  z-index: -1;
   &--top {
     background-position: center top !important;
   }
@@ -280,6 +309,13 @@ nav {
     width: 80%;
     padding-bottom: 30px;
     min-width: 300px;
+  }
+  #docs {
+    width: 100%;
+    height: 90px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
 }
 @media screen and (max-width: 767px) {
