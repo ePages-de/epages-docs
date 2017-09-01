@@ -84,7 +84,7 @@ Supervisors can then restart killed processes, if needed, thus gracefully handli
 One gem was saved for last: On Sunday [Xavier Detant](https://twitter.com/xdetant?lang=en) gave an excellent [introduction to functional programming](https://github.com/FaustXVI/functional-programming-introduction/tree/playing), transforming an imperative program to a functional one, step by step, eventually deriving a valid Haskell program from the original JavaScript source code ("Haskell is just some syntactic sugar for JavaScript").
 If you want to replay the steps taken during the talk, switch to the `playing` branch and check the commits.
 
-## ## Reduce(notes)(essence)
+## Reduce(notes)(essence)
 
 I filled pages with notes, and tapped into invaluable experiences of other attendees.
 I built my first Personal Kanban board from paper at this year's SoCraTes.
