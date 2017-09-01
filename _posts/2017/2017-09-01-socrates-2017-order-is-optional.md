@@ -20,7 +20,7 @@ In the evening, everyone gathers again to recap the day, and share what they hav
 This year's SoCraTes tried to be more inclusive, e.g. by providing gender-neutral bathrooms, and a field on the name tags for your preferred pronoun.
 
 I am always impressed by the openness of the attendees, everyone is sociable, and there are plenty of capable people willing to mentor.
-In this post I'd like to share what I took home from the SoCraTes 2017.
+In this post I would like to share what I took home from the SoCraTes 2017.
 
 ## What I learned
 
@@ -44,7 +44,7 @@ We concluded that bringing your own device should be stated - if at all - as a s
 * During the interview, try to make it a pleasant experience, and ask them beforehand if they feel fit enough to be interviewed (similar to an exam).
 * Make sure the task is somewhat relevant to your day-to-day business or problem domain.
 Some companies use a subset of the production code base.
-Here at ePages we use the [ePizza - a microservices hands-on tutorial](https://github.com/ePages-de/epizza).
+Here at ePages we use [ePizza - a microservices hands-on tutorial](https://github.com/ePages-de/epizza).
 * If you work on the production code during the interview, make the candidate DELETE the code after the interview!
 This is to avoid any legal claims.
 * The time frame for the pair programming interview should be one to two hours.
@@ -57,9 +57,9 @@ But: play "devils advocate" once a while, the candidate needs to be able to reas
 * After the interview have a retro with the candidate, ask for feedback, and give feedback!
 You might want to offer a private, non-company-related communication channel, too.
 
-### The Medium Interview Handbook
+### The Medium interview handbook
 
-In the second session on Saturday we dissected [Medium's Interview Handbook](https://medium.engineering/mediums-engineering-interview-process-b8d6b67927c4) with a focus on the [grading criteria](https://medium.engineering/engineering-interviews-grading-rubric-8b409bec021f).
+In the second session on Saturday we dissected [Medium's interview handbook](https://medium.engineering/mediums-engineering-interview-process-b8d6b67927c4) with a focus on the [grading criteria](https://medium.engineering/engineering-interviews-grading-rubric-8b409bec021f).
 While we found some weak spots of this manual, it is still an incredible resource that helps you assess a candidate's fit.
 
 ### Oh, it's about software development and technology, too
@@ -73,7 +73,7 @@ Obviously, there were Vim vs. Emacs bashes (or [fish](https://fishshell.com/)es?
 Vim clearly won this time around.
 I was able to share knowledge I gained at university in a session about compilers, explaining the basic steps of language processing, grammars, and syntax trees.
 
-Also a talk about the BEAM virtual machine (VM), the Erlang/Elixir/LFE runtime, drew my attention.
+Also a talk about the BEAM virtual machine (VM), the Erlang/Elixir/LFE runtime, by [Jan Stępień](https://twitter.com/janstepien) drew my attention.
 Actually the BEAM VM is more like an operating system than a runtime: It prioritizes processes (Erlang functions), and assigns them to schedulers.
 Inter-process communication happens via messages in [Erlang](https://www.erlang.org/).
 Those are copied from the source to the target process, no memory is shared.
@@ -84,7 +84,7 @@ Supervisors can then restart killed processes, if needed, thus gracefully handli
 One gem was saved for last: On Sunday [Xavier Detant](https://twitter.com/xdetant?lang=en) gave an excellent [introduction to functional programming](https://github.com/FaustXVI/functional-programming-introduction/tree/playing), transforming an imperative program to a functional one, step by step, eventually deriving a valid Haskell program from the original JavaScript source code ("Haskell is just some syntactic sugar for JavaScript").
 If you want to replay the steps taken during the talk, switch to the `playing` branch and check the commits.
 
-## Conclusion
+## ## Reduce(notes)(essence)
 
 I filled pages with notes, and tapped into invaluable experiences of other attendees.
 I built my first Personal Kanban board from paper at this year's SoCraTes.
