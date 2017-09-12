@@ -7,7 +7,7 @@ categories: working-at-epages
 authors: ["Rose", "Harm"]
 ---
 
-[Harm Behrens](https://www.epages.com/de/unternehmen/newsroom/news/Harm-Behrens-ist-neuer-CTO-bei-ePages.php) joined [ePages](https://www.epages.com/en/) as CTO in September 2014.
+[Harm Behrens](https://archive.epages.com/de/unternehmen/newsroom/news/Harm-Behrens-ist-neuer-CTO-bei-ePages.php) joined [ePages](https://www.epages.com/) as CTO in September 2014.
 Ever since ePages benefits from Harm's over 15 years of expertise in the field of development and operation of extensive web and mobile applications.
 In this interview, Harm talks about the next generation commerce platform, his daily coffee ration as well as his focus on people, the product portfolio, and development technologies.
 
@@ -22,7 +22,7 @@ Furthermore, we had to hire a lot of developers and established a new developmen
 
 ePages 6 is our very first and core product, which has a wide range of features and functionalities that our customers highly appreciate.
 Over the past two years, we extended and enhanced ePages 6 with the [REST API](https://developer.epages.com/apps), which consequently allowed us to facilitate an [App Store](https://blog.epages.com/us/2016/05/14/the-epages-app-store-everything-for-your-e-commerce-success/) as well as a [Theme Store](https://themes.epages.com/en/).
-Only then, we integrated the new storefront [ePages Now](https://www.epages.com/en/now/) through the [REST API](https://developer.epages.com/apps) and launched the beta phase by the end of last year.
+Only then, we integrated the new storefront [ePages Now](https://www.epages.com/sell-online/now/) through the [REST API](https://developer.epages.com/apps) and launched the beta phase by the end of last year.
 
 ### How did you come up with the idea of ePages Now - a product with improved usability?
 
