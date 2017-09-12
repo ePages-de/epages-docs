@@ -17,7 +17,7 @@ Hi, my name is Verena and I work as a User Interface Designer at ePages since Ju
 I originally started as an intern in January 2012 in Jena, but then got offered to work as a full-time employee, which I happily accepted.
 
 When I started in Jena, I was involved in a project that was managed both in Jena and Hamburg.
-This project is known as [ePages Now](https://www.epages.com/en/now/).
+This project is known as [ePages Now](https://www.epages.com/sell-online/now/).
 In July 2015, the project was relocated to Hamburg, and I was asked to move along with it.
 After some reflection, I took the opportunity and I now have been living in Hamburg for already a year and four months.
 
