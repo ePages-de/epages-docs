@@ -7,7 +7,7 @@ categories: working-at-epages
 authors: ["Rose", "Harm"]
 ---
 
-Harm Behrens joined [ePages](https://www.epages.com/) as CTO in September 2014.
+[Harm Behrens](https://archive.epages.com/de/unternehmen/newsroom/news/Harm-Behrens-ist-neuer-CTO-bei-ePages.php) joined [ePages](https://www.epages.com/) as CTO in September 2014.
 Ever since ePages benefits from Harm's over 15 years of expertise in the field of development and operation of extensive web and mobile applications.
 In this interview, Harm talks about the next generation commerce platform, his daily coffee ration as well as his focus on people, the product portfolio, and development technologies.
 
