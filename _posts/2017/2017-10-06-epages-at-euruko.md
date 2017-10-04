@@ -26,7 +26,7 @@ Even thought Ruby is the central topic in most of them, it was nice to have othe
 
 ## Lightning talks full of gems
 
-These talks were full of advices, from tips for juniors to system health monitoring. Some of the most interesting libraries for us were [tty](piotrmurach/tty) to ease the process of creating command line apps, [mini-check](https://github.com/workshare/mini-check) a small library to perform health checks or [reality](https://github.com/molybdenum-99/reality) an interesting experiment on ruby to process data and transform it to knowledge.
+These talks were full of advices, from tips for juniors to system health monitoring. Some of the most interesting libraries for us were [tty](https://github.com/piotrmurach/tty) to ease the process of creating command line apps, [mini-check](https://github.com/workshare/mini-check) a small library to perform health checks or [reality](https://github.com/molybdenum-99/reality) an interesting experiment on ruby to process data and transform it to knowledge.
 
 ## Euruko day two
 
