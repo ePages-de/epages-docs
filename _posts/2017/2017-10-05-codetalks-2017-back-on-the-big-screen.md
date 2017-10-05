@@ -14,9 +14,9 @@ authors: ["Mats", "Mathias"]
 }
 </style>
 
-Recently it was time again for popcorn, nachos and code.
+Recently, it was again time for popcorn, nachos, and code.
 Code.talks is back on the big screen at Cinemaxx Dammtor after they tried Kampnagel last year.
-As a result code.talks had to shrink to 1.700 people from 1.900 last year, which is still 200 people more than two years ago.
+As a result, code.talks had to shrink to 1.700 people from 1.900 last year, which is still 200 people more than two years ago.
 
 And yes - again it proved that a cinema is a pretty neat location for a software development conference.
 It seems that cosy seats, popcorn, and nachos are things that most of the attendees seemed comfortable with.
@@ -27,7 +27,7 @@ Here are our highlights of this year's code.talks edition.
 
 ### 10 Tips for failing at microservices
 
-Two years ago microservices was one of the main topics of the code.talks.
+Two years ago, microservices was one of the main topics of the code.talks.
 Everybody talked about it but very few actually had production experience.
 Now the microservices hype cycle passed the "Peak of Inflated Expectations" and we are seeing a more realistic picture.
 
@@ -42,10 +42,10 @@ If you liked David Schmitz' talk you might think about seeing him again at the J
 
 ### An introduction to Kotlin by example
 
-During the second day of this years code.talks [Dmitry Kandalov](https://twitter.com/dmitrykandalov?lang=en) gave a very practical introduction to [JetBrains](https://www.jetbrains.com/) own programming language [Kotlin](https://kotlinlang.org/), which just recently was [announced as an official Android language](https://blog.jetbrains.com/kotlin/2017/05/kotlin-on-android-now-official/).
+During the second day of this year's code.talks [Dmitry Kandalov](https://twitter.com/dmitrykandalov?lang=en) gave a very practical introduction to [JetBrain's](https://www.jetbrains.com/) own programming language [Kotlin](https://kotlinlang.org/), which just recently was [announced as an official Android language](https://blog.jetbrains.com/kotlin/2017/05/kotlin-on-android-now-official/).
 With basic live-coding examples, he demonstrated how simple Kotlin can be integrated within existing JVM based projects and how easy it is to use libraries from the Java ecosystem in Kotlin which rapidly speeds up development.
 
-_"Kotlin is what Java 9 should have been if it as written today from scratch."_ - This quote from the talk description pretty much summarized the tone of Kandalov's talk.
+_"Kotlin is what Java 9 should have been if it was written today from scratch."_ - This quote from the talk description pretty much summarizes the tone of Kandalov's talk.
 It was an entertaining quick tour to get to know Kotlin that made me look forward to getting hands-on Kotlin and maybe introduce it to our JVM-based microservice architecture some day.
 
 ### Die Monde und Du (The Monad and You)
