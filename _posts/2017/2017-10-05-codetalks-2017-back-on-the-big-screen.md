@@ -38,7 +38,7 @@ In his talk David touched many topics that are really hard to get right in a mic
 <blockquote class="twitter-tweet" data-lang="de"><p lang="en" dir="ltr">Hey <a href="https://twitter.com/hashtag/codetalkshh?src=hash&amp;ref_src=twsrc%5Etfw">#codetalkshh</a>, you can find my slides about <a href="https://twitter.com/hashtag/failing?src=hash&amp;ref_src=twsrc%5Etfw">#failing</a> at <a href="https://twitter.com/hashtag/microservices?src=hash&amp;ref_src=twsrc%5Etfw">#microservices</a> here: <a href="https://t.co/gA07TMWHYR">https://t.co/gA07TMWHYR</a> Really awesome audience.</p>&mdash; 👑Der Schmitz💾 (@koenighotze) <a href="https://twitter.com/koenighotze/status/913357102613237760?ref_src=twsrc%5Etfw">28. September 2017</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-If you liked David's talk you might think about seeing him again at the JUG Hamburg giving a talk about [painless object functional Java with Vavr](https://www.meetup.com/de-DE/jug-hamburg/events/243300696/).
+If you liked David Schmitz' talk you might think about seeing him again at the JUG Hamburg giving a talk about [painless object functional Java with Vavr](https://www.meetup.com/de-DE/jug-hamburg/events/243300696/).
 
 ### An introduction to Kotlin by example
 
