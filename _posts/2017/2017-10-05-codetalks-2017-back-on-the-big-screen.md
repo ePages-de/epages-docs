@@ -38,20 +38,20 @@ In his talk David touched many topics that are really hard to get right in a mic
 <blockquote class="twitter-tweet" data-lang="de"><p lang="en" dir="ltr">Hey <a href="https://twitter.com/hashtag/codetalkshh?src=hash&amp;ref_src=twsrc%5Etfw">#codetalkshh</a>, you can find my slides about <a href="https://twitter.com/hashtag/failing?src=hash&amp;ref_src=twsrc%5Etfw">#failing</a> at <a href="https://twitter.com/hashtag/microservices?src=hash&amp;ref_src=twsrc%5Etfw">#microservices</a> here: <a href="https://t.co/gA07TMWHYR">https://t.co/gA07TMWHYR</a> Really awesome audience.</p>&mdash; 👑Der Schmitz💾 (@koenighotze) <a href="https://twitter.com/koenighotze/status/913357102613237760?ref_src=twsrc%5Etfw">28. September 2017</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-If you liked David Schmitz' talk you might think about seeing him again at the JUG Hamburg giving a talk about [painless object functional Java with Vavr](https://www.meetup.com/de-DE/jug-hamburg/events/243300696/).
+If you liked David's talk you might think about seeing him again at the JUG Hamburg giving a talk about [painless object functional Java with Vavr](https://www.meetup.com/de-DE/jug-hamburg/events/243300696/).
 
 ### An introduction to Kotlin by example
 
 During the second day of this year's code.talks [Dmitry Kandalov](https://twitter.com/dmitrykandalov?lang=en) gave a very practical introduction to [JetBrain's](https://www.jetbrains.com/) own programming language [Kotlin](https://kotlinlang.org/), which just recently was [announced as an official Android language](https://blog.jetbrains.com/kotlin/2017/05/kotlin-on-android-now-official/).
 With basic live-coding examples, he demonstrated how simple Kotlin can be integrated within existing JVM based projects and how easy it is to use libraries from the Java ecosystem in Kotlin which rapidly speeds up development.
 
-_"Kotlin is what Java 9 should have been if it was written today from scratch."_ - This quote from the talk description pretty much summarizes the tone of Kandalov's talk.
+_"Kotlin is what Java 9 should have been if it was written today from scratch."_ - This quote from the talk description pretty much summarizes the tone of Dmitry's talk.
 It was an entertaining quick tour to get to know Kotlin that made me look forward to getting hands-on Kotlin and maybe introduce it to our JVM-based microservice architecture some day.
 
-### Die Monde und Du (The Monad and You)
+### Die Monade und Du (The Monad and You)
 
 Who always pondered how an application that runs over animals on the texanian highway could be ideally structured will be able to find answers to that question in [Michael Sperber](https://twitter.com/sperbsen)'s talks.
-In his contribution to the code.talks 2016 _["Developing more efficiently with Functional Programming"](https://developer.epages.com/blog/2016/10/07/code-talks-2016-retrospective.html)_ Sperber already talked about functional programming and how useful its main principles are.
+In his contribution to the code.talks 2016 _["Developing more efficiently with Functional Programming"](https://developer.epages.com/blog/2016/10/07/code-talks-2016-retrospective.html)_ Michael already talked about functional programming and how useful its main principles are.
 
 <blockquote class="twitter-tweet" data-lang="de"><p lang="en" dir="ltr">Again impressed by how lightweight and easy to understand functional programs can be. Thx <a href="https://twitter.com/sperbsen?ref_src=twsrc%5Etfw">@sperbsen</a> for this talk on monads <a href="https://twitter.com/hashtag/codetalkshh?src=hash&amp;ref_src=twsrc%5Etfw">#codetalkshh</a></p>&mdash; Timo E aus E (@timo_e_aus_e) <a href="https://twitter.com/timo_e_aus_e/status/913426902404288512?ref_src=twsrc%5Etfw">28. September 2017</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -71,7 +71,7 @@ Minification measures he took included dropping whitespaces, optional colons, ma
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 The result wasn't exactly an example page from the clean code book, but it was an entertaining demonstration of what is possible to achieve when you know your language inside out and focus on a specific goal.
-The talk ended with an [open GitHub challenge](https://github.com/gweax/code-talks-challenge) to everyone who feels challenged to do better or in this case smaller than Reuter.
+The talk ended with an [open GitHub challenge](https://github.com/gweax/code-talks-challenge) to everyone who feels challenged to do better or in this case smaller than Matthias.
 And of course, the tool used for the presentation was the same CSS slideshow the presentation was about - How meta is that?
 
 ## Wrapping it up
