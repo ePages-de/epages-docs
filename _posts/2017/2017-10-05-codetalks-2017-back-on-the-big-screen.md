@@ -21,9 +21,9 @@ As a result, code.talks had to shrink to 1.700 people from 1.900 last year, whic
 And yes - again it proved that a cinema is a pretty neat location for a software development conference.
 It seems that cosy seats, popcorn, and nachos are things that most of the attendees seemed comfortable with.
 
-Here are our highlights of this year's code.talks edition.
-
 ## Highlights
+
+Here are our highlights of this year's code.talks edition.
 
 ### 10 Tips for failing at microservices
 
@@ -56,21 +56,21 @@ In his contribution to the code.talks 2016 _["Developing more efficiently with F
 <blockquote class="twitter-tweet" data-lang="de"><p lang="en" dir="ltr">Again impressed by how lightweight and easy to understand functional programs can be. Thx <a href="https://twitter.com/sperbsen?ref_src=twsrc%5Etfw">@sperbsen</a> for this talk on monads <a href="https://twitter.com/hashtag/codetalkshh?src=hash&amp;ref_src=twsrc%5Etfw">#codetalkshh</a></p>&mdash; Timo E aus E (@timo_e_aus_e) <a href="https://twitter.com/timo_e_aus_e/status/913426902404288512?ref_src=twsrc%5Etfw">28. September 2017</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-This year he focused his talk _"Die Monade und Du (The Monad and You)"_ around the abstract construct of monads.
+This year he focused his talk _"Die Monade und Du (The Monad and You)"_ on the abstract construct of monads.
 Showcasing entertaining examples in Haskell he explained what exactly a monad is and how it naturally emerges in software when applying functional programming principles.
 
 ### Building a scalable CSS-only slideshow in 1024 Bytes
 
-Back in the days memory was a precious good. Nowadays it's cheap.
+Back in the days, memory was a precious good. Nowadays it's cheap.
 This circumstance must have inspired [Matthias Reuter](https://twitter.com/gweax) when submitting his talk, or let's rather call it code challenge, _Building a scalable CSS-only slideshow in 1024 Bytes_ for code.talks 2017.
 
-In his presentation, he explained how he build a CSS driven slideshow, with only bare minimum use of javascript which he afterward manually morphed into the most minified version possible.
-Minification measures he took included dropping whitespaces, optional colons, making use of language defaults and interpretations, the smart grouping of CSS-styles and even optimising calculation algorithms to shorten the required lines of code.
+In his presentation, he explained how he built a CSS driven slideshow, with only bare minimum use of javascript which he afterward manually morphed into the most minified version possible.
+Minification measures he took included dropping whitespaces, optional colons, making use of language defaults and interpretations, the smart grouping of CSS-styles, and even optimizing calculation algorithms to shorten the required lines of code.
 
 <blockquote class="twitter-tweet" data-lang="de"><p lang="en" dir="ltr">The slides of my talk &quot;Building a scalable CSS-only slideshow in 1024 bytes&quot; at <a href="https://twitter.com/hashtag/codetalkshh?src=hash&amp;ref_src=twsrc%5Etfw">#codetalkshh</a> are available at <a href="https://t.co/CRz6TTSRuN">https://t.co/CRz6TTSRuN</a></p>&mdash; Matthias Reuter (@gweax) <a href="https://twitter.com/gweax/status/913386437428510720?ref_src=twsrc%5Etfw">28. September 2017</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-The result wasn't exactly an example page from the clean code book, but it was an entertaining demonstration of what is possible to achieve when you know your language in and out and focus on a specific goal.
+The result wasn't exactly an example page from the clean code book, but it was an entertaining demonstration of what is possible to achieve when you know your language inside out and focus on a specific goal.
 The talk ended with an [open GitHub challenge](https://github.com/gweax/code-talks-challenge) to everyone who feels challenged to do better or in this case smaller than Reuter.
 And of course, the tool used for the presentation was the same CSS slideshow the presentation was about - How meta is that?
 
@@ -78,8 +78,9 @@ And of course, the tool used for the presentation was the same CSS slideshow the
 
 Again the code.talks team did a great job organizing the conference. The talks covered what the industry is currently talking about but here and there also included topics that are not mainstream.
 Eight different rooms offer a great choice but the amount of possibilities to choose from can also give you a headache.
-Apart from that the Java crowd felt a little underrepresented with just four talks on the Java track.
+Apart from that, the Java crowd felt a little underrepresented with just four talks on the Java track.
 
 The move back to the Cinemaxx was a good choice but the additional 200 people were problematic. Compared to 2015 there was a lot more queuing and waiting involved.
 
+But all in all it has been a great conference.
 Thanks a lot to the code.talks team and see you next year!
