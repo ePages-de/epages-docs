@@ -26,7 +26,7 @@ It seems that cosy seats, popcorn, and nachos are things that most of the attend
 
 Here are our highlights of this year's code.talks edition.
 
-### 10 Tips for failing at microservices
+### 10 tips for failing at microservices
 
 Two years ago, microservices was one of the main topics of the code.talks.
 Everybody talked about it but very few actually had production experience.
@@ -51,7 +51,7 @@ It was an entertaining quick tour to get to know Kotlin that made me look forwar
 
 ### Die Monade und Du (The Monad and You)
 
-Who always pondered how an application that runs over animals on the texanian highway could be ideally structured will be able to find answers to that question in [Michael Sperber](https://twitter.com/sperbsen)'s talks.
+Who always pondered how an application that runs over animals on the Texas Highway could be ideally structured will be able to find answers to that question in [Michael Sperber](https://twitter.com/sperbsen)'s talks.
 In his contribution to the code.talks 2016 _["Developing more efficiently with Functional Programming"](https://developer.epages.com/blog/2016/10/07/code-talks-2016-retrospective.html)_ Michael already talked about functional programming and how useful its main principles are.
 
 <blockquote class="twitter-tweet" data-lang="de"><p lang="en" dir="ltr">Again impressed by how lightweight and easy to understand functional programs can be. Thx <a href="https://twitter.com/sperbsen?ref_src=twsrc%5Etfw">@sperbsen</a> for this talk on monads <a href="https://twitter.com/hashtag/codetalkshh?src=hash&amp;ref_src=twsrc%5Etfw">#codetalkshh</a></p>&mdash; Timo E aus E (@timo_e_aus_e) <a href="https://twitter.com/timo_e_aus_e/status/913426902404288512?ref_src=twsrc%5Etfw">28. September 2017</a></blockquote>
