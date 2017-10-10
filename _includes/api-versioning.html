@@ -8,7 +8,6 @@
   if (document.location.pathname.match(/.*apps.*/) != null) {
     apiVersionDefaultValue(apiVersion);
     apiAnchorsLinkToVersion(apiVersion);
-    apiSelectRedirectsToVersion();
   }
 
   function apiVersionDefaultValue(version) {
@@ -25,15 +24,4 @@
     }
   }
 
-  function apiSelectRedirectsToVersion() {
-    document.getElementById("api-version").addEventListener("change", function() {
-      var newPath = document.location.pathname.split('/');
-      if(newPath[2].match(/v-.+/) != null){
-        newPath[2] = this.value;
-      } else {
-        newPath[1] = 'apps/' + this.value;
-      }
-      document.location.pathname = newPath.join('/').replace(/\/\//, '/');
-    });
-  }
 </script>
