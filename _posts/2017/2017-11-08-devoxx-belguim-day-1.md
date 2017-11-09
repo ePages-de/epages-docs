@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "devoxx Belgium 2017 - Day 1"
-date: "2017-11-08 13:41:02"
+date: "2017-11-09 00:00:00
 image: blog-header/devoxx-be-2017.jpg
 categories: events 
-authors: ["Dirk J."]
+authors: ["Dirk"]
 ---
 
 Being at the devoxx for the first time, but having heard so much praise already, and seeing all those high-profile 
@@ -49,7 +49,7 @@ Once again, definitely worth watching!
 ## Kotlin for Java Programmers
 
 Want to learn Kotlin and don't have much time?
-Then I definitely recommend viewing [Venkat Subramaniam](@venkat_s)'s talk.
+Then I definitely recommend viewing [Venkat Subramaniam](https://twitter.com/venkat_s)'s talk.
 It's force-feeding Kotlin concepts which would fill a two day training somewhere else into 50 minutes.
 When watching this on Youtube, you might want to reduce the speed to avoid brain overload ;-)
 
@@ -61,7 +61,7 @@ to find out who speaks faster and packs more stuff into the minute :D
 ## Quickie: Spring Framework 5: Hidden Gems
 
 If you're using Spring Framework for some time and already know all those major improvements that Spring 5 brings, 
-having a look at this presentation by [Jürgen Höller](@springjuergen) is really worth the time.
+having a look at this presentation by [Jürgen Höller](https://twitter.com/springjuergen) is really worth the time.
 It turns the spotlight to the less prominent improvements, of which several might make the life of an Spring developer
 easier.
 My personal highlight is the build-time annotation processor, which might take away the real pain if long startup times
