@@ -9,14 +9,14 @@ authors: ["Dirk"]
 
 Being at the devoxx for the first time, but having heard so much praise already, and seeing all those high-profile 
 speakers on the schedule, I was really eager to get to Antwerp for this year's devoxx.
-And I'm also eager to share my personal impressions :-)
+And I'm also eager to share my personal impressions o {% emoji simple_smile %}
 
 One really cool thing about devoxx is that they stream all of the talks live at their 
 [Youtube channel](https://www.youtube.com/channel/UCCBVCTuk6uJrN3iFV_3vurg), and put the recordings online pretty soon 
-(should be online the next day).
+(usually online the next day).
 So if you find a topic interesting, tune in.
 
-So, here's my personal schedule and summary for the first of the conference part.
+Now, here's my personal schedule and summary for the first of the conference part.
 
 ## Keynote: Moving Java Forward Faster
 
@@ -56,7 +56,7 @@ When watching this on Youtube, you might want to reduce the speed to avoid brain
 When the session is over, one could feel like you could (and also want to) start programming in Kotlin immediately.
 
 Personally, I would like to see a conference talk battle between Venkat and [Josh Long](https://twitter.com/starbuxman)
-to find out who speaks faster and packs more stuff into the minute :D
+to find out who speaks faster and packs more stuff into the minute {% emoji smile %}
 
 ## Quickie: Spring Framework 5: Hidden Gems
 
@@ -69,13 +69,11 @@ for heavily annotation driven Spring (Boot) applications.
 
 ## Quickie: Let’s config your Java Project (for Cloud)
 
-Sorry to say it this harsh, but the time spent in this session was a waste of time.
-Would have been a state-of-the-art talk 5+ years ago.
-I admit I left after 10 minutes to get a good seat for the next session, which sounded so much more interesting.
+To keep it short: Not worth looking at.
 
 ## Modular Development with JDK 9
 
-Alex Buckley, specification lead for Java at Oracle, gave a really thorough overview on the new medule system im Java 9.
+Alex Buckley, specification lead for Java at Oracle, gave a really thorough overview on the new module system im Java 9.
 Presenting the new concepts, the steps to migrate an existing application to Java 9 and what to watch out for, I would
 recommend this talk to anyone who hasn't looked deeper into the Java module system and wants to get a condensed 
 introduction.
@@ -83,22 +81,25 @@ introduction.
 ## Plain Functional Programming
 
 In this talk, originally announced as a beginner-level talk, but  changed to intermediate-level, Scala inventor 
-[Martin Odersky]() explained Kleisli triples and implicit functions, and why you sometimes shouldn't use them either.
+[Martin Odersky](https://twitter.com/odersky) explained Kleisli triples and implicit functions, and why you sometimes 
+shouldn't use them either.
 Although I wasn't able to grasp everything, being not too deep into functional programming yet, the main takeaway, 
 the concept of least power, is surely relevant way beyond the domain of functional programming. 
 One could also apply this easily to Spring.
 If you're really into functional programming, this session might be interesting to you.
-Otherwise, if you're not too deeply into FP, be wary about this talk, as it definitely not beginner level.   
+Otherwise be aware it is definitely not beginner level.   
 
 ## API Versioning for Zero Downtime
 
 I was keen to visit this talk since the everlasting question on how to deal with changing APIs is also challenging us
-at ePages. From that perspective, and the expectations I had from the abstract, I was really disappointed from what
+at ePages.
+From that perspective, and the expectations I had from the abstract, I was really disappointed from what
 [Patrice Krakow](https://twitter.com/patricekrakow), lead architect at ING, finally presented.
-He talked about service discovery, routing, server-side and client-side loadbalancing and also about how to pin a
-service to a specific API version, but not about how to deal with changes in the API itself.
-Aside from this, the talk gave a good introduction into into mentioned topics, while sometimes being too focused on
-ING's specific requirements, which migth not be relevant for others, which therefore could easily choose different
+He talked about service discovery, routing, server-side and client-side loadbalancing.
+He also explained how to pin a service to a specific API version, but not about how to deal with changes in the API
+itself.
+Aside from this, the talk gave a good introduction into mentioned topics.
+He was sometimes being too focused on ING's specific requirements, where others might be successful with easier
 solutions.
 
 ## JUnit 5 — The New Testing Framework for Java and Platform for the JVM
@@ -113,8 +114,7 @@ Really recommended if you want to get a quick introduction, together with live c
 Wow.
 What an amazing first day, packed with so much good stuff.
 With the amount of information being packed into one day, I might even need to watch the recordings of some talks
-I visited to get all out of it. This was by far the most interesting, but also the most exhausting conference day
-I attended in the last few years. Now I really need to get some sleep to be able to follow tomorrow's sessions,
-which I'm eagerly looking forward to!
-
+I visited to get all out of it.
+This was by far the most interesting, but also the most exhausting conference day I attended in the last few years.
+I' eagerly looking forward for day2.
 Stay tuned for the Thursday summary...
