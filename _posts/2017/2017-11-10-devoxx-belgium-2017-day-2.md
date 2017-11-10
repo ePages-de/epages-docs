@@ -3,8 +3,8 @@ layout: post
 title: "devoxx Belgium 2017 - Day 2"
 date: "2017-11-10 00:00:00"
 image: blog-header/devoxx-be-2017-2.jpg
-categories: events 
-authors: ["Dirk J."]
+categories: events
+authors: ["Dirk"]
 ---
 
 Second day.
@@ -13,16 +13,16 @@ Read on what my schedule looked like on Thursday, and what the talks were like (
 
 ## Lazy Java
 
-To start the day, [Mario Fusco](https://twitter.com/mariofusco) talked about how you could introduce more lazy 
+To start the day, [Mario Fusco](https://twitter.com/mariofusco) talked about how you could introduce more lazy
 evaluation in your Java code, mainly by using lambdas.
 While the content was quite good, the presentation wasn't. Maybe looking at the slides only might be a better use
 of your time.
 
 ## gRPC vs REST: let the battle begin!
 
-With [Alex Borysov](https://twitter.com/aiborisov) being the gRPC advocate and 
-[Mykyta Protsenko](https://twitter.com/mykyta_p) taking the REST part, this was a good session. 
-You could learn about the main characteristics of both styles, and where each of them have their strengths and 
+With [Alex Borysov](https://twitter.com/aiborisov) being the gRPC advocate and
+[Mykyta Protsenko](https://twitter.com/mykyta_p) taking the REST part, this was a good session.
+You could learn about the main characteristics of both styles, and where each of them have their strengths and
 weaknesses. Worth watching.
 
 ## Going Reactive with Spring 5 & Project Reactor
@@ -36,7 +36,7 @@ pure joy of watching a fantastic live coding show!
 ## Quickie: SOLID Principles for Cloud Native Containers
 
 While [Bilgin Ibryam](https://twitter.com/bibryam) showed nothing fundamentally new, he very nicely summarized a lot
-of best practices and good advice for working with Cloud Native containers in this 15 minutes quickie. Recommended! 
+of best practices and good advice for working with Cloud Native containers in this 15 minutes quickie. Recommended!
 
 ## Quickie: Ally for Women in Technology
 
@@ -65,7 +65,7 @@ Not unsurprisingly, the quality of this talk was really great, and it's really w
 
 ## Container Orchestration Considerations
 
-In this talk [Patrick van der Bleek](https://twitter.com/pvdbleek) from Docker tried to give an overview of the 
+In this talk [Patrick van der Bleek](https://twitter.com/pvdbleek) from Docker tried to give an overview of the
 considerations you need to make when taking Docker containers to production, i.e. how to orchestrate them.
 Beginning with on overview of existing solutions, he afterwards focused on the two main players, Kubernetes and Swarm.
 This is where the quality of the talk began to drop, as he was, imho, (natually) so strongly biased towards Swarm that
