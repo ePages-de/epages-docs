@@ -15,8 +15,8 @@ Read on what my schedule looked like on Thursday, and what the talks were like (
 
 To start the day, [Mario Fusco](https://twitter.com/mariofusco) talked about how you could introduce more lazy 
 evaluation in your Java code, mainly by using lambdas.
-While the content was , the presentation was 
-
+While the content was quite good, the presentation wasn't. Maybe looking at the slides only might be a better use
+of your time.
 
 ## gRPC vs REST: let the battle begin!
 
