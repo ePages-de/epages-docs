@@ -86,3 +86,7 @@ Nice talk, not too challenging, and therefore a good fit for the end of the agen
 To round up this day, which again had an amazing density of valuable information to me, the devoxxians were invited to
 see [Blade Runner 2049](http://www.imdb.com/title/tt1856101/), which quite a lot did.
 The movie made it a nice evening of a very long and exhausting day, which once again was really worth visiting the devoxx.
+
+## Related post
+
+[devoxx Belgium 2017 - Day 1](https://developer.epages.com/blog/2017/11/09/devoxx-belgium-2017-day-1.html)
