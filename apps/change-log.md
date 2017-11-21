@@ -46,10 +46,10 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 #### <i class="fa fa-plus"></i> New
 
-* [`POST` webhooks](https://developer.epages.com/apps/api-reference/post-shopid-webhooks.html)
-* [`GET` webhooks/{webhookId}](https://developer.epages.com/apps/api-reference/get-shopid-webhooks-webhookid.html)
-* [`POST` webhooks/{webhookId}](https://developer.epages.com/apps/api-reference/post-shopid-webhooks-webhookid.html)
-* [`DELETE` webhooks/{webhookId}](https://developer.epages.com/apps/api-reference/delete-shopid-webhooks-webhookid.html)
+* `POST` webhooks
+* `GET` webhooks/{webhookId}
+* `POST` webhooks/{webhookId}
+* `DELETE` webhooks/{webhookId}
 
 #### <i class="fa fa-pencil"></i> Update
 
