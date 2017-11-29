@@ -211,7 +211,7 @@ Read further [here](page:soap-api) to access the SOAP web services.
 
 | Web service   |  URN  |  Availability           |
 |---------------|---------------|-------------------------|
-| **ShopConfigService8** | urn://epages.de/WebService/ShopConfigService/2015/07 | 6.17.29&nbsp;or&nbsp;higher |
+| **ShopConfigService12** | urn://epages.de/WebService/ShopConfigService/2017/11 | 7.18.0&nbsp;or&nbsp;higher |
 
 *This is a provider web service.*
 
@@ -245,7 +245,7 @@ Read further [here](page:soap-api) to access the SOAP web services.
 
 | Web service   |  URN  |  Availability           |
 |---------------|---------------|-------------------------|
-| **SimpleProvisioningService4** | urn://epages.de/WebService/SimpleProvisioningService/2015/07 | 6.17.29&nbsp;or&nbsp;higher |
+| **SimpleProvisioningService6** | urn://epages.de/WebService/SimpleProvisioningService/2017/11 | 7.18.0&nbsp;or&nbsp;higher |
 
 *This is a provider web service.
 Using this web service, a provider can set attributes to the shopRef, such as Promo, Bestseller, Channel, Support, Setup, Design and Consulting.
