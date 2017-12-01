@@ -23,7 +23,7 @@ get:
             example: !include examples/get_legal_contact_response.json
             schema: !include schema/get_legal_contact.schema.json
   put:
-    description: Modifies the contact information of a shop. *epages6
+    description: Modifies the contact information of a shop. This endpoint expects a complete object representation, all fields included. If any field is not set, it will be deleted from the transferred object. *epages6
     securedBy: [legal_write]
     is: [ localeMandatory ]
     body:
@@ -51,7 +51,7 @@ get:
               schema: !include schema/get_legal_privacy.schema.json
 
     put:
-      description: Modifies the privacy policy of a shop. *epages6
+      description: Modifies the privacy policy of a shop. This endpoint expects a complete object representation, all fields included. If any field is not set, it will be deleted from the transferred object. *epages6
       securedBy: [legal_write]
       is: [ localeMandatory ]
       body:
@@ -78,7 +78,7 @@ get:
             example: !include examples/get_legal_terms_response.json
             schema: !include schema/get_legal_terms.schema.json
   put:
-    description: Modifies the terms and conditions of a shop. *epages6
+    description: Modifies the terms and conditions of a shop. This endpoint expects a complete object representation, all fields included. If any field is not set, it will be deleted from the transferred object. *epages6
     securedBy: [legal_write]
     is: [ localeMandatory ]
     body:
@@ -105,7 +105,7 @@ get:
               example: !include examples/get_legal_rights_response.json
               schema: !include schema/get_legal_rights.schema.json
     put:
-      description: Modifies the customer rights of withdrawal of a shop. *epages6
+      description: Modifies the customer rights of withdrawal of a shop. This endpoint expects a complete object representation, all fields included. If any field is not set, it will be deleted from the transferred object. *epages6
       securedBy: [legal_write]
       is: [ localeMandatory ]
       body:
@@ -133,7 +133,7 @@ get:
               schema: !include schema/get_legal_shipping.schema.json
 
     put:
-      description: Modifies the shipping information of a shop. *epages6
+      description: Modifies the shipping information of a shop. This endpoint expects a complete object representation, all fields included. If any field is not set, it will be deleted from the transferred object. *epages6
       securedBy: [legal_write]
       is: [ localeMandatory ]
       body:
