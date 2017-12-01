@@ -5,7 +5,7 @@
   "properties": {
     "": {
       "type": "object of [contentPage](page:apps-data-types#contentpage)",
-      "description": ""
+      "description": "This endpoint expects a complete object representation, all fields included. If any field is not set, it will be deleted from the transferred object."
     }
   }
 }
