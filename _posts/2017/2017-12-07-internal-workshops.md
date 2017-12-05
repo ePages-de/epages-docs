@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Gradle Workshop"
-date: "2017-11-01 22:35:13"
+date: "2017-12-07 22:35:13"
 image: blog-header/workshop.jpg
 image-position: bottom
 categories: agile
@@ -11,7 +11,7 @@ authors: ["Thomas"]
 ## Introduction
 
 Recently I conducted my fourth Gradle workshop, and for the first time at ePages.<br>
-It was very well received, so I decided to share it in this blog.
+It was very well received, so I decided to share it on this blog.
 
 Before going into details about Gradle and the event itself, I would like to lose
 a couple of words about the motivation behind it.
@@ -33,7 +33,7 @@ This was the agenda of the workshop.
 - Building Java projects
 - Gradle and IDEs
 
-The workshop starts with a short introduction and explanation of the motivation to
+I started the workshop with a short introduction and explanation of the motivation to
 create and use a tool like Gradle, as well as my own personal motivation to work
 with, and teach others about it.
 
@@ -49,10 +49,10 @@ Gradle makes extensive use of a [Groovy](http://groovy-lang.org/) DSL (domain sp
 language), so it makes sense to cover the basics of that language.<br>
 Below that, Gradle offers a rich model for the domain of building software projects.
 
-When learning how Gradle is used in Java projects I find it very helpful to start
-with simple examples. For example, I prefer to look at everything as files on the
-file system, instead of whatever view your IDE has to offer. These are related of
-course, but different (I am looking at you, Eclipse workspace).<br>
+When Gradle is used in Java projects I find it very helpful to start with simple
+examples. I prefer to look at everything as files on the file system, instead of
+whatever view your IDE has to offer. These are related of course, but different
+(I am looking at you, Eclipse workspace).<br>
 A big part of what Gradle tries to achieve is a unified view of the project, that
 is independent from any IDE-specific configuration or presentation.
 
@@ -60,7 +60,7 @@ This is why I only touch on IDEs in the end, and create the examples and exercis
 in a way they do not require any IDE to work with them.
 
 
-## Personal Motivation
+## Personal motivation
 
 When I was learning about [Gradle](https://gradle.org/) 6 years ago, I found the
 tool quite compelling. Having used [Apache Ant](http://ant.apache.org/) before and
@@ -112,7 +112,7 @@ There was no problem with the build according to Gradle, but Eclipse somehow
 didn't like the structure. The workaround was to cancel the import operation, and
 trigger a "Clean" operation in Eclipse.
 Considering this needed to happen quite often (basically every time a developer
-changed his branch), this was quickly getting annoying.<br>
+changed their branch), this was quickly getting annoying.<br>
 
 Another problem was with the database configuration. There existed a configuration
 file, but *it was not used during (integration-) testing*. Instead, a subproject
@@ -183,8 +183,8 @@ for NodeJS, etc.<br>
 
 There hardly are any "true" multi-language projects in companies, in the sense that
 the same developers write code in different parts of the system in different languages.
-On the other hand, any serious web application typically contains many different
-languages.
+On the other hand, any serious web application typically contains at least a few
+different languages.
 
 After explaining about multi-projects in Gradle, one participant correctly concluded,
 that "the whole ePages could be built with Gradle".<br>
