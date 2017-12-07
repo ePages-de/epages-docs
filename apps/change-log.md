@@ -14,6 +14,20 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
+## 2017-12-08
+
+### Changes with software release 7.17.0
+
+#### <i class="fa fa-plus"></i> New
+
+* [`GET`orders/{orderId}/documents](https://developer.epages.com/apps/api-reference/get-shopid-orders-orderid-documents.html)
+
+#### <i class="fa fa-pencil"></i> Update
+
+* Added attributes `documentType` and `documentNumber` to data type [`order`](https://developer.epages.com/apps/data-types#order).
+
+<hr>
+
 ## 2017-06-29
 
 ### Changes with software release 7.11.0
