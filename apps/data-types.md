@@ -341,6 +341,18 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | shippingPrice | object of [price](page:apps-data-types#price) | The shipping price for the order.  |
 | links | array of [link](page:apps-data-types#link) | The links to the products of the order. |
 
+## orderDocument
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| orderId | string | The unique identifier of the order. |
+| documentType | string | The type of the order document. Can be `Invoice` or `CreditNote`. |
+| documentNumber | string | The number of the order document. |
+| creationDate | string | The date/time of order placement. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z` |
+| address | [address](page:apps-data-types#address) | The billing address for the order.  |
+| lineItemContainer | [lineItemContainer](page:apps-data-types#lineitemcontainer) | Contains the line items of an order. |
+| links | array of [link](page:apps-data-types#link) | The links to the products of the order. |
+
 ## paymentData
 
 | Attribute | Type | Description |
