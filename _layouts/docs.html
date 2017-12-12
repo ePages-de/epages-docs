@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body class="docs">
+    {% include navbar.html %}
+    <div class="docs-wrapper">
+      <aside>
+        <ul id="sitemap">
+          {% assign chapter = page.url | regex_extract: '^/([^/]+)/' %}
+          {% assign sitemap = chapter | sitemap %}
+          {% include sitemap.html %}
+        </ul>
+      </aside>
+      <main>
+        {{ content }}
+      </main>
+    </div>
+    {% include footer.html %}
+  </body>
+</html>

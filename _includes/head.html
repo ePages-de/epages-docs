@@ -1,63 +1,33 @@
-{% assign domain = page.url | regex_extract: '(.*\.com)' %}
-{% assign description = page.excerpt | strip_html | strip_newlines | truncate: 160 %}
-{% assign image_url = page.image | prepend: '/assets/images/' %}
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>
-    {% if page.title %}
-      {{ page.title }}
-    {% else if site.data.seo[chapter].title %}
-      {{ site.data.seo[chapter].title }}
-    {% else %}
-      ePages
-    {% endif %}
-  </title>
-  <meta name="description" content="{% if page.excerpt %}{{ description }}{% else %}{{ site.data.seo[chapter].description }}{% endif %}">
-  <meta name="keywords" content="{% if site.data.seo[chapter].keywords %}{{ site.data.seo[chapter].keywords | join: ', ' }}{% endif %}">
-  {% if page.title %}
-    <meta content="{{ page.title }}" property="og:title">
-  {% endif %}
-  {% if page.image %}
-    <meta content="{{ image_url  | prepend: site.baseurl | prepend: site.url }}" property="og:image">
-  {% endif %}
-  {% if page.description %}
-    <meta content="{{ page.description }}" property="og:description">
-  {% endif %}
-  <link rel="shortcut icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}" type="image/ico">
-  <link rel="stylesheet" href="{{ "/assets/styles/main.css" | prepend: site.baseurl }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  {% if chapter == 'blog' %}
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/blog/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
-  {% endif %}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  {% if chapter == 'devjobs' %}
-    <link rel="stylesheet" href="{{ "/assets/styles/devjobs.css" | prepend: site.baseurl }}">
-  {% endif %}
+  <link rel="icon" type="image/png" href="/assets/img/favicon.ico" sizes="32x32">
 
-  <script type="text/javascript" src="{{ "/assets/javascript/jquery.js" | prepend: site.baseurl }}"></script>
-  <script type="text/javascript" src="{{ "/assets/javascript/bootstrap.js" | prepend: site.baseurl }}"></script>
-  <script src="/assets/javascript/functions.js"></script>
+  <title>{% if page.permalink == '/' %}{{ site.title }}{% else %}{{ page.title }} | {{ site.title }}{% endif %}</title>
+
+  {% capture url_base %}{{ page.url | split: '/' | second }}{% endcapture %}
+  {% if site.data.seo.[url_base].description %}<meta name="description" content="{{ site.data.seo.[url_base].description }}">{% endif %}
+  {% if site.data.seo.[url_base].keywords %}<meta name="keywords" content="{{ site.data.seo.[url_base].keywords | join: ', ' }}">{% endif %}
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,400i,700,700i">
+
+  <link rel="stylesheet" href="/assets/font-awesome/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="/assets/styles/main.css" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    ga('create', '{{ site.google_analytics[chapter].id | default: site.google_analytics.default.id }}', 'auto');
-    ga('set', 'anonymizeIp', true);
+    {% if page.layout == 'default' %}ga('create', 'UA-71308214-1', 'auto');{% endif %}
+    {% if page.layout == 'blog' %}ga('create', 'UA-71308214-2', 'auto');{% endif %}
+    {% if page.layout == 'devjobs' %}ga('create', 'UA-71308214-3', 'auto');{% endif %}
     ga('send', 'pageview');
   </script>
-  <script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:156452,hjsv:5};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
-  </script>
-  <link href="/assets/styles/lightbox.css" rel="stylesheet">
+
 </head>

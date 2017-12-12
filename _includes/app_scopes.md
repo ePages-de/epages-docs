@@ -14,7 +14,7 @@
               {% unless page.url contains '/v-' %}
                 <li class="resource-entry" style="width: 710px;">
                   <span>{{ page.raml_method.method }}</span>
-                  <a href="{{ page.url | prepend: site.baseurl }}#docs">{{ page.raml_resource.relative_uri }}</a>
+                  <a href="{{ page.url | prepend: site.baseurl }}">{{ page.raml_resource.relative_uri }}</a>
                 </li>
               {% endunless %}
             {% endif %}

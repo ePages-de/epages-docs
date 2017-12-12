@@ -1,0 +1,39 @@
+aside
+  width: 220px
+  margin-right: 2rem
+  font-size: 1.8rem
+
+  li.sitemap-headline
+    text-transform: uppercase
+    color: $blue-mid
+    font-weight: bold
+
+  ul.sitemap-content
+    margin: .5rem 0 2rem
+
+    li.sitemap-entry
+      position: relative
+
+      &.active
+        &:before
+          content: ''
+          height: 100%
+          width: 4px
+          background: $beyond-green
+          position: absolute
+          left: 0
+          top: 0
+
+        a
+          color: $blue-mid
+
+      a
+        color: $blue-light
+        padding-left: 2rem
+        line-height: 2
+
+        &:hover,
+        &:focus
+          color: $blue-mid
+          transition: $base-transition
+

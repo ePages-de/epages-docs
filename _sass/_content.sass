@@ -1,0 +1,88 @@
+main
+  max-width: 840px
+  width: 100%
+  background: $card-background-color
+  border-radius: $card-border-radius
+  box-shadow: $card-box-shadow
+
+  h1, h2, h3, h4, h5, h6
+    margin: 2rem
+
+  p, ul, ol, table
+    margin: 2rem
+
+  table, th, td
+    border: $base-border
+
+  table
+    th
+      font-weight: bold
+    td, th
+      padding: .2em .4em
+
+  ul
+    li
+      margin-left: 1em
+      list-style-type: disc
+
+  li.resource-entry
+    font-family: $code-font-family
+    font-size: 1.6rem
+    list-style-type: none
+    margin: 0
+    border-bottom: $base-border
+    padding: 1rem 0
+
+    &:first-child
+      padding: 0 0 1rem
+
+    &:last-child
+      padding: 1rem 0 0
+      border: 0
+
+    .http-method
+      display: inline-block
+      font-size: 1.4rem
+      line-height: 2
+      width: 75px
+      text-align: center
+      vertical-align: baseline
+      text-transform: uppercase
+      border-radius: $base-border-radius
+      color: $white
+
+      &-get
+        background: $get
+
+      &-post
+        background: $post
+
+      &-delete
+        background: $delete
+
+      &-put
+        background: $put
+
+      &-patch
+        background: $patch
+
+    .ep-label
+      display: inline-block
+      font-size: 1.4rem
+      line-height: 2
+      width: 60px
+      text-align: center
+      vertical-align: baseline
+      border-width: 1px
+      border-style: solid
+      border-radius: $base-border-radius
+      float: right
+      margin-left: 1rem
+
+      &-base
+        color: $blue-light
+        border-color: $blue-light
+
+      &-now
+        color: $blue-mid
+        border-color: $blue-mid

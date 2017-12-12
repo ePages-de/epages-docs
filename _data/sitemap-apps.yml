@@ -2,124 +2,124 @@
   title: Getting started
   entries:
     - title: Overview
-      link: page:apps-overview#docs
+      link: page:apps-overview
 
     - title: Request headers
-      link: page:apps-request-headers#docs
+      link: page:apps-request-headers
 
     - title: Response headers
-      link: page:apps-response-headers#docs
+      link: page:apps-response-headers
 
     - title: Media type
-      link: page:apps-media-type#docs
+      link: page:apps-media-type
 
     - title: API call limit
-      link: page:apps-api-call-limit#docs
+      link: page:apps-api-call-limit
 
     - title: Response codes
-      link: page:apps-response-codes#docs
+      link: page:apps-response-codes
 
     - title: API version
-      link: page:apps-version#docs
+      link: page:apps-version
 
     - title: App scopes
-      link: page:app-scopes#docs
+      link: page:app-scopes
 
 - key: apps-custom
   title: Custom apps
   entries:
     - title: Use cases
-      link: page:apps-use-cases#docs
+      link: page:apps-use-cases
 
     - title: Create an app
-      link: page:apps-create-custom#docs
+      link: page:apps-create-custom
 
 - key: apps-develop
   title: Developing an app
   entries:
     - title: Use cases
-      link: page:apps-use-cases#docs
+      link: page:apps-use-cases
 
     - title: Create an app
-      link: page:apps-create#docs
+      link: page:apps-create
 
     - title: Install an app
-      link: page:apps-install#docs
+      link: page:apps-install
 
     - title: Submit an app
-      link: page:apps-submit#docs
+      link: page:apps-submit
 
     - title: Submission guidelines
-      link: page:apps-submit-guide#docs
+      link: page:apps-submit-guide
 
     - title: Tutorial (PHP)
-      link: page:apps-tutorial-php#docs
+      link: page:apps-tutorial-php
 
 - key: apps-integrate
   title: Integrations
   entries:
     - title: PHP SDK
-      link: page:apps-php-client#docs
+      link: page:apps-php-client
 
     - title: Ruby SDK
-      link: page:apps-ruby-gem#docs
+      link: page:apps-ruby-gem
 
     - title: CMS widget
-      link: page:apps-cms-plugin#docs
+      link: page:apps-cms-plugin
 
 - key: api-rest
   title: API reference
   entries:
     - title: API Change Log
-      link: page:api-change-log#docs
+      link: page:api-change-log
 
     - title: All resources
-      link: page:api-resources-all#docs
+      link: page:api-resources-all
 
     - title: Carts
-      link: page:api-resources-carts#docs
+      link: page:api-resources-carts
 
     - title: Categories
-      link: page:api-resources-categories#docs
+      link: page:api-resources-categories
 
     - title: Customers
-      link: page:api-resources-customers#docs
+      link: page:api-resources-customers
 
     - title: Legal
-      link: page:api-resources-legal#docs
+      link: page:api-resources-legal
 
     - title: Miscellaneous
-      link: page:api-resources-miscellaneous#docs
+      link: page:api-resources-miscellaneous
 
     - title: Newsletters
-      link: page:api-resources-newsletter-campaigns#docs
+      link: page:api-resources-newsletter-campaigns
 
     - title: Orders
-      link: page:api-resources-orders#docs
+      link: page:api-resources-orders
 
     - title: Products
-      link: page:api-resources-products#docs
+      link: page:api-resources-products
 
     - title: Sales
-      link: page:api-resources-sales#docs
+      link: page:api-resources-sales
 
     - title: Script tags
-      link: page:api-resources-script-tags#docs
+      link: page:api-resources-script-tags
 
     - title: ShippingMethods
-      link: page:api-resources-shipping-methods#docs
+      link: page:api-resources-shipping-methods
 
     - title: Taxes
-      link: page:api-resources-tax-classes#docs
+      link: page:api-resources-tax-classes
 
 - key: more
   title: More
   entries:
     - title: Data types
-      link: page:apps-data-types#docs
+      link: page:apps-data-types
 
     - title: Glossary
-      link: page:apps-glossary#docs
+      link: page:apps-glossary
 
     - title: FAQ
-      link: page:apps-faq#docs
+      link: page:apps-faq
