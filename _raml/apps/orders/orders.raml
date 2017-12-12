@@ -132,3 +132,16 @@ get:
             application/json:
                 example: !include examples/patch_order_orderid_response.json
                 schema: !include schema/patch_order_orderid.schema.json
+
+  /documents:
+    displayName: Order documents
+    get:
+      description: Returns finalized invoice and credit note order documents by orderId. *epages6 *epagesNow
+      securedBy: [orders_read]
+      is: [ locale, paged ]
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/get_order_orderid_documents_response.json
+              schema: !include schema/get_order_orderid_documents.schema.json
