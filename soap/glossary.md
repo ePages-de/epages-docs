@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: docs
 key: soap-glossary
 title: Glossary
 categories: ['s','u','w','x']

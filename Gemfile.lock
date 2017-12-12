@@ -106,8 +106,9 @@ DEPENDENCIES
   neat
   rake (~> 10.4.2)
   raml_parser (~> 0.2.5)
+  rouge
   rubyzip (~> 1.2.1)
   therubyracer (~> 0.12.1)
 
 BUNDLED WITH
-   1.15.4
+   1.16.0

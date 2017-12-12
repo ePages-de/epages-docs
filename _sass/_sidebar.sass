@@ -1,18 +1,24 @@
 aside
-  width: 220px
+  min-width: 220px
   margin-right: 2rem
   font-size: 1.8rem
+
+  +grid-media($grid-docs)
+    position: relative
+    left: -240px
 
   li.sitemap-headline
     text-transform: uppercase
     color: $blue-mid
     font-weight: bold
+    list-style-type: none
 
   ul.sitemap-content
     margin: .5rem 0 2rem
 
     li.sitemap-entry
       position: relative
+      list-style-type: none
 
       &.active
         &:before

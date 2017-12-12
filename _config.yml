@@ -26,6 +26,9 @@ sass:
   style: compressed
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 exclude:
   - circle.yml
   - docker-compose.yml
@@ -38,6 +41,9 @@ exclude:
   - Rakefile
   - README.md
   - vendor
+  - apps/v-6.
+  - apps/v-7.
+  - _posts
 include:
   - videos
 gem:
@@ -45,3 +51,4 @@ gem:
 plugins:
   - bourbon
   - neat
+  - rouge

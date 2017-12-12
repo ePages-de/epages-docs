@@ -1,66 +1,12 @@
 @import 'grid-media'
 @import 'variables'
 @import 'reset'
+@import 'highlighter'
+@import 'typography'
 @import 'navbar'
 @import 'footer'
 @import 'sidebar'
 @import 'content'
-
-// Typography
-
-html
-  font-size: 62.5%
-
-body, #{$all-text-inputs}, #{$all-buttons}
-  -webkit-font-smoothing: antialiased
-  -moz-osx-font-smoothing: grayscale
-  font-family: $base-font-family
-  line-height: $base-line-height
-  color: $base-font-color
-  font-size: $mobile-font-size
-
-  +grid-media($grid-medium)
-    font-size: $desktop-font-size
-
-h1, h2, h3, h4, h5, h6
-  font-family: $display-font-family
-  line-height: $display-line-height-mobile
-
-  +grid-media($grid-medium)
-    line-height: $display-line-height-desktop
-
-h1
-  font-size: 4.2rem
-
-  +grid-media($grid-medium)
-    font-size: 5.2rem
-
-h2
-  font-size: 2.8rem
-
-h3
-  font-size: 2.4rem
-
-strong
-  font-weight: 700
-
-em
-  font-style: italic
-
-code,
-pre,
-.highlight,
-.highlighter-rouge
-  font-family: $code-font-family
-
-a
-  display: inline-block
-  text-decoration: none
-  color: $link-font-color
-  outline: none
-
-  &:hover
-    color: darken($link-font-color, 10%)
 
 // Base
 
@@ -75,6 +21,7 @@ html
     margin-top: calc(3rem + #{$navbar-height})
     margin-bottom: 3rem
     display: flex
+    position: relative
 
     +grid-media($grid-large)
       margin-top: calc(6rem + #{$navbar-height})

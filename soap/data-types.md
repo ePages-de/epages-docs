@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: docs
 key: soap-data-types
 title: Data types
 ---

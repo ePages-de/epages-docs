@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: docs
 key: soap-error-handling
 title: Error handling
 ---

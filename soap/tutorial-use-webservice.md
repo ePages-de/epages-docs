@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: docs
 key: tutorial-use-webservice
 title: How to use a web service
 ---

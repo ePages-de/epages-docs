@@ -15,7 +15,7 @@ Together with the layout, define a meaningful *key* and choose a *title* for the
 
 ~~~ bash
 ---
-layout: page
+layout: docs
 key: apps-cms-plugin
 title: CMS plugin
 ---

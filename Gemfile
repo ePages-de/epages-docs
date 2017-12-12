@@ -13,4 +13,5 @@ group :jekyll_plugins do
   gem 'jekyll-include-cache'
   gem 'bourbon'
   gem 'neat'
+  gem 'rouge'
 end
