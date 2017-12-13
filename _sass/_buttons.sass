@@ -1,0 +1,17 @@
+.btn-group
+  display: block
+  text-align: center
+  margin: 0 $card-margin-mobile
+  +grid-media($grid-docs)
+    margin: 0 $card-margin-desktop
+
+  .btn
+    background: $whitesmoke
+    border-radius: 0
+    border: 0
+    a
+      padding: .5rem 1.5rem .3rem
+    &:hover,
+    &:focus
+      background: darken($whitesmoke, 5%)
+      transition: $base-transition
