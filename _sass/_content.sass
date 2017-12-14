@@ -3,6 +3,7 @@ main
   height: -moz-min-content
   height: -webkit-min-content
   height: min-content
+  overflow-x: auto
   padding: 2rem 0
   background: $card-background-color
   border-radius: $card-border-radius
@@ -14,17 +15,18 @@ main
     min-width: 100%
     left: -240px
 
-  & *:first-child
+  & h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child, p:first-child
     margin-top: 0
 
-  & .highlight:first-child
-    margin-top: -2rem
+  // & .highlight:first-child
+  //   margin-top: -2rem
 
-  & *:last-child
+  & h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:last-child, p:last-child
+    margin-top: 0
     margin-bottom: 0
 
-  & .highlight:last-child
-    margin-bottom: -2rem
+  // & .highlight:last-child
+  //   margin-bottom: -2rem
 
   h1, h2, h3, h4, h5, h6
     color: $blue-mid
@@ -203,8 +205,9 @@ main
     font-family: $code-font-family
     background: rgba(27,31,35,0.05)
     color: $base-font-color
-    border-radius: $base-border-radius
-    padding: 0 .3rem
+    // border-radius: $base-border-radius
+    // padding: 0 .3rem
+    margin: 2rem 0
     font-size: 1.6rem
 
     pre
