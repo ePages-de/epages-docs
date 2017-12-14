@@ -1,0 +1,94 @@
+.footer
+  background-image: url(/assets/img/pages/footer.jpg)
+  background-size: cover
+  background-position: center center
+  display: flex
+  padding: 6rem 0
+  box-shadow: $negative-box-shadow
+
+  &-wrapper
+    width: 90%
+    max-width: 1200px
+    margin: 0 auto
+    padding: 0
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+
+  .row
+    display: flex
+    width: 100%
+    align-items: center
+    justify-content: center
+    text-align: center
+
+    &--logo
+      margin-bottom: 2rem
+
+      .logo
+        display: block
+
+        &--epages
+          height: 3rem
+
+    &--social
+      margin-bottom: 6rem
+
+      a:not(:first-child)
+        margin-left: 1rem
+
+      .icon
+        display: block
+        height: 3.2rem
+
+    &--links
+      margin-bottom: 4rem
+
+      .navigation
+
+        &__item
+          display: inline-block
+
+          &:not(:last-child)
+            margin-right: 2rem
+
+          &--spacer
+            color: $base-font-color-light
+            display: none
+
+            +grid-media($grid-medium)
+              display: inline-block
+
+        &__link
+          color: $base-font-color-light
+
+          &:hover,
+          &:focus
+            color: $base-font-color-white
+
+    &--impress
+
+      .list__item
+        display: inline-block
+        color: $base-font-color-light
+
+        &--spacer
+          margin: 0 .5rem
+
+      .list__link
+        color: $base-font-color-light
+
+        &:hover,
+        &:focus
+          color: $base-font-color-white
+
+.blank
+
+  .footer
+    background: transparent
+    width: 100%
+    display: flex
+    align-items: center
+    border-top: none
+    box-shadow: none

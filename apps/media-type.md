@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: docs
 key: apps-media-type
 title: Media type
 ---

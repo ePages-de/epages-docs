@@ -281,7 +281,7 @@ task :resource do
 
   def resource_template(resource)
     template = """---
-layout: page
+layout: docs
 key: api-resources-#{resource.pluralize}
 title: #{resource.capitalize.pluralize}
 ---
@@ -293,10 +293,10 @@ title: #{resource.capitalize.pluralize}
         <span class=\"http-method http-method-{{ page.raml_method.method | downcase }}\">{{ page.raml_method.method }}</span>
         <a href=\"{{ page.url | prepend: site.baseurl }}\"#content>{{ page.raml_resource.relative_uri }}#</a>
         {% if page.raml_method.description contains '*epages6' %}
-          <span class='ep-label-6 ep-label'>ePages 6</span>
+          <span class='base ep-label'>Base</span>
         {% endif %}
         {% if page.raml_method.description contains '*epagesNow' %}
-          <span class='ep-label-now ep-label'>ePages Now</span>
+          <span class='ep-label-now ep-label'>Now</span>
         {% endif %}
       </li>
     {% endif %}
@@ -309,7 +309,7 @@ title: #{resource.capitalize.pluralize}
 
   def miscellaneous_template(miscellaneous)
     template = """---
-layout: page
+layout: docs
 key: api-resources-miscellaneous
 title: Miscellaneous
 ---
@@ -322,10 +322,10 @@ title: Miscellaneous
           <span class=\"http-method http-method-{{ page.raml_method.method | downcase }}\">{{ page.raml_method.method }}</span>
           <a href=\"{{ page.url | prepend: site.baseurl }}\"#content>{{ page.raml_resource.relative_uri }}</a>
           {% if page.raml_method.description contains '*epages6' %}
-            <span class='ep-label-6 ep-label'>ePages 6</span>
+            <span class='base ep-label'>Base/span>
           {% endif %}
           {% if page.raml_method.description contains '*epagesNow' %}
-            <span class='ep-label-now ep-label'>ePages Now</span>
+            <span class='ep-label-now ep-label'>Now</span>
           {% endif %}
         </li>
       {% endif %}

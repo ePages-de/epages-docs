@@ -1,4 +1,5 @@
 # Site settings
+title: "API reference"
 email: documentation@epages.com
 app_scopes: ["customers_read", "customers_write", "legal_read", "legal_write", "newsletters_read", "orders_read", "orders_write", "products_read", "products_write", "products_read_batch", "scripttags_read", "scripttags_write"]
 url: "https://developer.epages.com"
@@ -21,9 +22,14 @@ raml:
     url_prefix: "apps/api-reference/"
     root_file: "_raml/apps/api.raml"
     api_versions: "_raml/**/*/api.raml"
-
+sass:
+  sass_dir: _sass
+  style: compressed
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 exclude:
   - circle.yml
   - docker-compose.yml
@@ -36,7 +42,14 @@ exclude:
   - Rakefile
   - README.md
   - vendor
+  - apps/v-6.
+  - apps/v-7.
+  - _posts
 include:
   - videos
 gem:
   - jekyll-include-cache
+plugins:
+  - bourbon
+  - neat
+  - rouge

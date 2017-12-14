@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: docs
 ---
 
 <h2 id="basic-information">Basic information</h2>
@@ -8,7 +8,7 @@ layout: page
   <p>{{ page.raml_resource.description | markdownify }}</p>
 {% endif %}
 
-<pre>{{ page.raml_method.method }} {{ page.raml_resource.relative_uri }}</pre>
+<pre class="highlight">{{ page.raml_method.method }} {{ page.raml_resource.relative_uri }}</pre>
 
 {% if page.raml_method.description != null %}
   <p>{{ page.raml_method.description | delete_epages_version | markdownify }}</p>
@@ -17,10 +17,10 @@ layout: page
 
 {% assign authorization = page.raml_method.secured_by | shift: 2 %}
 {% if authorization != empty %}
-  <strong>Authorisation</strong>
+  <p><strong>Authorisation</strong></p>
     <p>OAuth 2.0 Token required with scopes: </p>
   {% for scope in authorization %}
-      <input type="checkbox" value="{{ scope }}" checked onclick="return false" style="margin-left: 15px"> {{ scope }}<br>
+      <input type="checkbox" value="{{ scope }}" checked onclick="return false"> {{ scope }}<br>
   {% endfor %}
 {% endif %}
 
@@ -120,7 +120,7 @@ layout: page
     {% assign body = body_tmp[1] %}
     <p>Media type <code>{{ body.media_type }}</code></p>
     {% if body.example %}
-      <pre>{{ body.example | xml_escape }}</pre>
+      <pre class="highlight">{{ body.example | xml_escape }}</pre>
     {% endif %}
     {% if body.media_type == 'multipart/form-data' or body.media_type == 'application/x-www-form-urlencoded' %}
       <table class="table table-bordered table-striped">
@@ -179,13 +179,13 @@ layout: page
   <h2 id="response">Response</h2>
   {% for res_tmp in page.raml_method.responses %}
     {% assign res = res_tmp[1] %}
-    <strong>HTTP {{ res.status_code }} {{ res.display_name }}</strong>
+    <p><strong>HTTP {{ res.status_code }} {{ res.display_name }}</strong></p>
     {% if res.description != null %}<p>{{ res.description | markdownify }}</p>{% endif %}
 
     {% for body_tmp in res.bodies %}
       {% assign body = body_tmp[1] %}
       <p>Media type <code>{{ body.media_type }}</code></p>
-      {% if body.example %}<pre>{{ body.example | xml_escape }}</pre>{% endif %}
+      {% if body.example %}<pre class="highlight">{{ body.example | xml_escape }}</pre>{% endif %}
     {% endfor %}
   {% endfor %}
 {% endif %}

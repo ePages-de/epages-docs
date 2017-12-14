@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: docs
 key: apps-use-cases
 title: Use cases
 ---

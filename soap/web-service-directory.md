@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: docs
 key: soap-directory
 title: Web service directory
 ---

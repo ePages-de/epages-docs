@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: docs
 key: apps-faq
 title: Frequently asked questions
 header: FAQ

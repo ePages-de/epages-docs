@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: docs
 key: apps-data-types
 title: Data types
 ---

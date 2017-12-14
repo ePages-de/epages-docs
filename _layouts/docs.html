@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body class="docs">
+    {% include navbar.html %}
+    <div class="docs-wrapper">
+      <aside class="sidebar">
+        <ul id="sitemap">
+          {% assign chapter = page.url | regex_extract: '^/([^/]+)/' %}
+          {% assign sitemap = chapter | sitemap %}
+          {% include sitemap.html %}
+        </ul>
+      </aside>
+      <aside class="sidebar--mobile">
+        <ul id="sitemap">
+          {% assign chapter = page.url | regex_extract: '^/([^/]+)/' %}
+          {% assign sitemap = chapter | sitemap %}
+          {% include sitemap.html %}
+        </ul>
+      </aside>
+      <main>
+        {{ content }}
+      </main>
+    </div>
+    <span class="arrow-up"></span>
+    {% include footer.html %}
+    <script src="/assets/javascript/lightbox.js"></script>
+    <script src="/assets/javascript/scrolltop.js"></script>
+    <script src="/assets/javascript/sidebar.js"></script>
+  </body>
+</html>

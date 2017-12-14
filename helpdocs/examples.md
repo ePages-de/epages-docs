@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: docs
 hide_searchbar: true
 hide_sitemap: true
 key: _examples

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: docs
 key: apps-overview
 title: Overview
 header: REST API documentation

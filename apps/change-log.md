@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: docs
 key: api-change-log
 title: API Change Log
 version: v1
