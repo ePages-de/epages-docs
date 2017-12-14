@@ -1,7 +1,11 @@
-aside
+aside.sidebar
+  display: none
   min-width: 220px
   margin-right: 2rem
   font-size: 1.8rem
+
+  +grid-media($grid-large)
+    display: block
 
   +grid-media($grid-docs)
     position: relative
@@ -43,3 +47,38 @@ aside
           color: $blue-mid
           transition: $base-transition
 
+  &--mobile
+    display: block
+    background: $white
+    box-shadow: $base-box-shadow
+    border-radius: $base-border-radius
+    padding: 2rem
+    margin-bottom: 3rem
+    +grid-media($grid-large)
+      display: none
+    li.sitemap-headline
+      text-transform: uppercase
+      color: $blue-mid
+      font-weight: bold
+      list-style-type: none
+      border-bottom: $base-border
+      padding: 2rem 0
+      &:first-of-type
+        padding-top: 0
+      &:last-of-type
+        padding-bottom: 0
+        border-bottom: 0
+    ul.sitemap-content
+      display: none
+      &--open
+        display: block
+        margin: 2rem 0
+        transition: $base-transition
+      li.sitemap-entry
+        list-style-type: none
+        a
+          color: $blue-light
+          line-height: 2
+        &.active
+          a
+            color: $blue-mid
