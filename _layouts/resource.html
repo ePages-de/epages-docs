@@ -92,7 +92,7 @@ layout: docs
   {% for body_tmp in page.raml_method.bodies %}
     {% assign body = body_tmp[1] %}
     {% if body.media_type contains 'application/json' and body.schema != null %}
-      <h2 id="request-body">Request attributes</h2>
+      <h2 class="request-body">Request attributes</h2>
       <table class="table table-bordered table-striped">
         <thead style="background-color: white;">
           <tr><th>Name</th><th>Type</th><th>Description</th></tr>
@@ -115,7 +115,7 @@ layout: docs
 {% endif %}
 
 {% if page.raml_method.bodies != empty %}
-  <h2 id="request-body">Request body</h2>
+  <h2 class="request-body">Request body</h2>
   {% for body_tmp in page.raml_method.bodies %}
     {% assign body = body_tmp[1] %}
     <p>Media type <code>{{ body.media_type }}</code></p>

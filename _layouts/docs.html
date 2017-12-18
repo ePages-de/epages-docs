@@ -5,14 +5,14 @@
     {% include navbar.html %}
     <div class="docs-wrapper">
       <aside class="sidebar">
-        <ul id="sitemap">
+        <ul class="sitemap">
           {% assign chapter = page.url | regex_extract: '^/([^/]+)/' %}
           {% assign sitemap = chapter | sitemap %}
           {% include sitemap.html %}
         </ul>
       </aside>
       <aside class="sidebar--mobile">
-        <ul id="sitemap">
+        <ul class="sitemap">
           {% assign chapter = page.url | regex_extract: '^/([^/]+)/' %}
           {% assign sitemap = chapter | sitemap %}
           {% include sitemap.html %}
