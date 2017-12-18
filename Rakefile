@@ -146,25 +146,22 @@ end
 task :test do
   require 'html-proofer'
 
-  url_ignore = [/^(?!\/apps).*/,
-                /^(?!\/soap).*/,
-                /^(?!\/assets).*/]
+  url_ignore = ['/',
+                '/about/',
+                /^\/blog.*/,
+                '/devjobs/',
+                '/terms-and-conditions/',
+                '/#register']
 
   options = { disable_external: true,
               url_ignore: url_ignore,
               empty_alt_ignore: true,
               check_html: true,
-              assume_extension: true }
+              assume_extension: true}
 
   sh 'bundle exec jekyll build'
 
   HTMLProofer.check_directory('./_site', options).run
-
-
-  # if line.content =~ /(\[.*?\]\(https?(?!.*developer.epages.com.*)[^ {}\(\)]+\)(?!{:target="_blank"}))/
-
-  # sh "bundle exec jekyll build"
-  # HTMLProofer.check_directory("./_site", :disable_external => true, :assume_extension => true, :href_ignore => ["#"]).run
 end
 
 task :ramlup do

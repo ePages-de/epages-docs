@@ -10,5 +10,3 @@ The API call limit can be applied to the web services *categories*, *customers*,
 
 Requests to the API are limited per day and per store.
 To maintain optimum performance and ensure that the ePages SOAP API is available to all ePages customers, ePages recommends to not exceed the default values.
-
-[asdasdad](/apps/asdasdad)
