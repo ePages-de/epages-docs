@@ -44,8 +44,30 @@ exclude:
   - vendor
   - apps/v-6.
   - apps/v-7.
+  - _includes/blog_reference.html
+  - _includes/header.html
+  - _includes/pagination.html
+  - _layouts/blank.html
+  - _layouts/default.html
+  - _layouts/page.html
+  - _layouts/post-group.html
+  - _layouts/post.html
+  - _plugins/blog.rb
   - _posts
-include:
+  - _assets/images/blog
+  - _assets/images/blog-header
+  - _assets/images/devjobs
+  - _assets/fonts/glyphicons
+  - _assets/fonts/icomoon
+  - _assets/styles/devjobs.scss
+  - blog
+  - pages/about.md
+  - pages/devjobs.html
+  - pages/index.html
+  - pages/support_thankyou.html
+  - pages/support.html
+  - pages/thankyou.html
+  - themes
   - videos
 gem:
   - jekyll-include-cache
