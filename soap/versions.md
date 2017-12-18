@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: docs
 key: soap-version
 title: Versions
 ---

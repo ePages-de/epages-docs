@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: docs
 key: themes-create
 title: Create or switch a theme
 ---

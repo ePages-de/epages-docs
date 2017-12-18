@@ -12,9 +12,9 @@
           {% for page in site.pages %}
             {% if page.raml_method.secured_by contains app_scope %}
               {% unless page.url contains '/v-' %}
-                <li class="resource-entry" style="width: 710px;">
+                <li class="resource-entry">
                   <span>{{ page.raml_method.method }}</span>
-                  <a href="{{ page.url | prepend: site.baseurl }}#docs">{{ page.raml_resource.relative_uri }}</a>
+                  <a href="{{ page.url | prepend: site.baseurl }}">{{ page.raml_resource.relative_uri }}</a>
                 </li>
               {% endunless %}
             {% endif %}

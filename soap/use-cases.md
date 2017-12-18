@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: docs
 key: soap-use-cases
 title: Use cases
 ---

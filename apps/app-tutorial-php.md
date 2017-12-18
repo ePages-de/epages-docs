@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: docs
 key: apps-tutorial-php
 title: Tutorial (PHP)
 ---

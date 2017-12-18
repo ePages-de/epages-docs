@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: docs
 key: themes-getting-started
 title: Getting started
 ---

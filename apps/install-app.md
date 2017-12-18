@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: docs
 key: apps-install
 title: Install an app
 ---

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: docs
 key: themes-structure
 title: Theme structure
 ---
