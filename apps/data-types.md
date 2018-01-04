@@ -305,6 +305,8 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | Attribute | Type | Description |
 | - | :-: |  - |
 | orderId | string | The unique identifier of the order. |
+| documentType | string | The type of the order document. Can be `Invoice` or `CreditNote`. |
+| documentNumber | string | The number of the order document. |
 | orderNumber | string | The order number. |
 | creationDate | string | The date/time of order placement. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z` |
 | billingAddress | [address](page:apps-data-types#address) | The billing address for the order.  |
@@ -337,6 +339,18 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | paymentData | object of [paymentData](page:apps-data-types#paymentdata) | The payment data of a cart or an order, i.e. short info on payment method and price.|
 | lineItemContainer | [lineItemContainer](page:apps-data-types#lineitemcontainer) | Contains the line items of an order. Only included in [`GET`/orders/{orderId}](page:apps-api-get-shopid-orders-orderid-information). |
 | shippingPrice | object of [price](page:apps-data-types#price) | The shipping price for the order.  |
+| links | array of [link](page:apps-data-types#link) | The links to the products of the order. |
+
+## orderDocument
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| orderId | string | The unique identifier of the order. |
+| documentType | string | The type of the order document. Can be `Invoice` or `CreditNote`. |
+| documentNumber | string | The number of the order document. |
+| creationDate | string | The date/time of order placement. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z` |
+| address | [address](page:apps-data-types#address) | The billing address for the order.  |
+| lineItemContainer | [lineItemContainer](page:apps-data-types#lineitemcontainer) | Contains the line items of an order. |
 | links | array of [link](page:apps-data-types#link) | The links to the products of the order. |
 
 ## paymentData

@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "Get Orders OrderId Documents Schema",
+  "type": "object",
+  "properties": {
+    "results": {
+      "type": "integer",
+      "description": "The number of order documents in total. An order can have zero or more documents."
+    },
+    "page": {
+      "type": "integer",
+      "description": "The page number on which the order document appears."
+    },
+    "resultsPerPage": {
+      "type": "integer",
+      "description": "The number of order documents returned per page."
+    },
+    "items": {
+      "type": "array of [orderDocument](page:apps-data-types#orderdocument)",
+      "description": "The list of all order documents."
+    }
+  }
+}
