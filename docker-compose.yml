@@ -1,9 +1,6 @@
 version: '3'
 services:
   jekyll:
-    build:
-      context: /home/deploy/apps/epages_docs/current/.
-      dockerfile: ./Dockerfile
     command: ./build.sh
     ports:
       - 4000:4000
