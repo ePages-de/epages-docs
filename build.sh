@@ -1,13 +1,5 @@
-#!/bin/bash -e
+#!/bin/sh
 
-IMAGE_NGINX="epages/docs-nginx"
+bundle install --without development
 
-DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-cd "${DIR}"
-
-TAG="$1"
-
-bundle exec jekyll build
-
-# build nginx image
-docker build -t "${IMAGE_NGINX}:${TAG}" -f Dockerfile.nginx .
+JEKYLL_ENV=production jekyll build

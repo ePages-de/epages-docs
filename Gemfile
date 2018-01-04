@@ -12,3 +12,7 @@ group :jekyll_plugins do
   gem 'jekyll-paginate', '~> 1.1.0'
   gem 'jekyll-include-cache'
 end
+
+gem 'capistrano', '3.8.1', require: false
+gem 'capistrano-rbenv', require: false
+gem 'capistrano-bundler', require: false
