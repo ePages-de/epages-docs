@@ -12,7 +12,8 @@
     width = $(window).width();
 
     document.querySelectorAll('li.sitemap-entry').forEach(function(elem) {
-      if (elem.querySelector('a').getAttribute('href') == window.location.pathname) {
+      if (elem.querySelector('a').getAttribute('href') == window.location.pathname ||
+          elem.querySelector('a').getAttribute('href') == window.location.pathname + '#docs') {
         elem.className += ' active'
       }
     });
