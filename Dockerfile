@@ -17,7 +17,7 @@ RUN gem install \
     rdiscount \
     rouge
 
-RUN gem install nokogiri -v '1.8.0'
+RUN gem install nokogiri -v '1.8.1'
 RUN gem install therubyracer -v '0.12.3'
 
 EXPOSE 4000
