@@ -1,4 +1,12 @@
-nginx:
-  image: epages/docs-nginx:master
-  ports:
-    - "8080:80"
+version: '3'
+services:
+  jekyll:
+    build:
+      context: /home/deploy/apps/epages_docs/current/.
+      dockerfile: /home/deploy/apps/epages_docs/current/Dockerfile
+    command: ./build.sh
+    ports:
+      - 4000:4000
+      - 35729:35729
+    volumes:
+      - .:/src
