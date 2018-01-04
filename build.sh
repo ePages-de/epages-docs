@@ -2,4 +2,4 @@
 
 bundle install --without development
 
-bundle exec jekyll build
+JEKYLL_ENV=production jekyll build
