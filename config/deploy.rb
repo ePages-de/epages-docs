@@ -38,9 +38,9 @@ namespace :jekyll do
     on roles(:app) do
       execute("mkdir -p #{release_path}/../../epages_devblog/current/_site/apps")
       execute("mkdir -p #{release_path}/../../epages_devblog/current/_site/soap")
-      execute("cp -r /home/#{fetch(:user)}/apps/#{fetch(:application)}/shared/apps/* #{release_path}/../../epages_devblog/current/_site/apps")
-      execute("cp -r /home/#{fetch(:user)}/apps/#{fetch(:application)}/shared/soap/* #{release_path}/../../epages_devblog/current/_site/soap")
-      execute("cp -r /home/#{fetch(:user)}/apps/#{fetch(:application)}/shared/assets/* #{release_path}/../../epages_devblog/current/_site/assets")
+      execute("cp -r #{release_path}/_site/apps/* #{release_path}/../../epages_devblog/current/_site/apps")
+      execute("cp -r #{release_path}/_site/soap/* #{release_path}/../../epages_devblog/current/_site/soap")
+      execute("cp -r #{release_path}/_site/assets/* #{release_path}/../../epages_devblog/current/_site/assets")
       execute("sudo chown -R deploy:deploy /home/#{fetch(:user)}/apps}")
     end
   end
