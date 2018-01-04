@@ -42,7 +42,7 @@ namespace :jekyll do
       execute("cp -r #{release_path}/_site/soap/* #{release_path}/../../../epages_devblog/current/_site/soap")
       execute("cp -r #{release_path}/_site/assets/* #{release_path}/../../../epages_devblog/current/_site/assets")
       execute("sudo chown -R deploy:deploy /home/#{fetch(:user)}/apps/#{fetch(:application)}")
-      execute("sudo chown -R deploy:deploy /home/#{fetch(:user)}/apps/epages_devblog}")
+      execute("sudo chown -R deploy:deploy /home/#{fetch(:user)}/apps/epages_devblog")
     end
   end
 
