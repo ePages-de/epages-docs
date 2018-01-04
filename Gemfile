@@ -7,6 +7,7 @@ gem 'html-proofer', '~> 3.0.5'
 gem 'raml_parser', '~> 0.2.5'
 gem 'rubyzip', '~> 1.2.1'
 gem 'gemoji'
+gem 'nokogiri', '~> 1.8.1'
 
 group :jekyll_plugins do
   gem 'jekyll-paginate', '~> 1.1.0'
