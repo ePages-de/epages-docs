@@ -23,7 +23,7 @@ EXPOSE 4000
 
 WORKDIR /src
 
-COPY build-production.sh .
+COPY build.sh .
 
 RUN dpkg-reconfigure locales && \
     locale-gen C.UTF-8 && \
