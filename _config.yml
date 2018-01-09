@@ -61,12 +61,6 @@ exclude:
   - _assets/fonts/icomoon
   - _assets/styles/devjobs.scss
   - blog
-  - pages/about.md
-  - pages/devjobs.html
-  - pages/index.html
-  - pages/support_thankyou.html
-  - pages/support.html
-  - pages/thankyou.html
 gem:
   - jekyll-include-cache
 plugins:
