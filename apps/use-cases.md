@@ -18,7 +18,7 @@ Suggested calls: [`GET` products](page:apps-api-get-shopid-products-information)
 
 Optional calls: [`POST` carts](page:apps-api-post-shopid-carts-information), [`PUT` carts/{cartId}/line-items/{lineItemId}](page:apps-api-put-shopid-carts-cartid-line-items-lineitemid-information), [`GET` legal](page:apps-api-get-shopid-legal-information)
 
-Availability: <i class="fa fa-check"></i>
+Availability: <i class="fas fa-check"></i>
 
 ## Portal Engines
 
@@ -28,7 +28,7 @@ Suggested calls: [`GET` products](page:apps-api-get-shopid-products-information)
 
 Optional calls: [`GET` categories](page:apps-api-get-shopid-categories-information)
 
-Availability: <i class="fa fa-check"></i>
+Availability: <i class="fas fa-check"></i>
 
 ## Shipping
 
@@ -38,7 +38,7 @@ Suggested calls: [`GET` orders](page:apps-api-get-shopid-orders-information), [`
 
 Optional calls: [`GET` products](page:apps-api-get-shopid-products-information)
 
-Availability: <i class="fa fa-check"></i>
+Availability: <i class="fas fa-check"></i>
 
 ## Accounting
 
@@ -48,7 +48,7 @@ Suggested calls: [`GET` orders](page:apps-api-get-shopid-orders-information), [`
 
 Optional calls: [`GET` products](page:apps-api-get-shopid-products-information)
 
-Availability: <i class="fa fa-check"></i>
+Availability: <i class="fas fa-check"></i>
 
 ## Content Optimisation and Marketing
 
@@ -56,7 +56,7 @@ Build an application that optimizes or enhances the content of product or catego
 
 Suggested calls: [`GET` products](page:apps-api-get-shopid-products-information), [`PATCH` products/{productId}](page:apps-api-patch-shopid-products-productid-information), [`GET` categories](page:apps-api-get-shopid-categories-information), [`PUT` categories/{categoryId}](page:apps-api-put-shopid-categories-categoryid-information)
 
-Availability: <i class="fa fa-check"></i>
+Availability: <i class="fas fa-check"></i>
 
 ## Legal Service
 
@@ -64,7 +64,7 @@ Build an application that provides up-to-date legal information (imprint, terms 
 
 Suggested calls: [`GET` legal](page:apps-api-get-shopid-legal-information), [`PUT` legal/contact-information](page:apps-api-put-shopid-legal-contact-information-information), [`PUT` legal/privacy-policy](page:apps-api-put-shopid-legal-privacy-policy-information), [`PUT` legal/terms-and-conditions](page:apps-api-put-shopid-legal-terms-and-conditions-information), [`PUT` legal/rights-of-withdrawal](page:apps-api-put-shopid-legal-rights-of-withdrawal-information), [`PUT` legal/shipping-information](page:apps-api-put-shopid-legal-shipping-information-information)
 
-Availability: <i class="fa fa-check"></i>
+Availability: <i class="fas fa-check"></i>
 
 ## Basic Point of Sale (POS)/Marketplace
 
@@ -74,7 +74,7 @@ Suggested calls: [`GET` products](page:apps-api-get-shopid-products-information)
 
 Optional calls: [`GET` categories](page:apps-api-get-shopid-categories-information)
 
-Availability: <i class="fa fa-check"></i>
+Availability: <i class="fas fa-check"></i>
 
 ## Sales Analytics
 
@@ -82,7 +82,7 @@ Build an application that allows to determine top selling products, top customer
 
 Suggested calls: [`GET` products](page:apps-api-get-shopid-products-information), [`GET` orders](page:apps-api-get-shopid-orders-information), [`GET` categories](page:apps-api-get-shopid-categories-information), [`GET` sales](page:apps-api-get-shopid-sales-information)
 
-Availability: <i class="fa fa-check"></i>
+Availability: <i class="fas fa-check"></i>
 
 ## Image Service
 
@@ -90,7 +90,7 @@ Build an application that provides the ability to get images for a product, uplo
 
 Suggested calls: [`GET` products](page:apps-api-get-shopid-products-information), [`PATCH` products/{productId}](page:apps-api-patch-shopid-products-productid-information), [`GET` products/{productId}/slideshow](page:apps-api-get-shopid-products-productid-slideshow-information), [`POST` products/{productId}/slideshow](page:apps-api-post-shopid-products-productid-slideshow-information), [`DELETE` products/{productId}/slideshow/{imageName}](page:apps-api-delete-shopid-products-productid-slideshow-imagename-information), [`GET` products/{productId}/slideshow/sequence](page:apps-api-get-shopid-products-productid-slideshow-sequence-information), [`PUT` products/{productId}/slideshow/sequence](page:apps-api-put-shopid-products-productid-slideshow-sequence-information)
 
-Availability: <i class="fa fa-check"></i>
+Availability: <i class="fas fa-check"></i>
 
 Need more support?
 Click [here](page:apps-implement-use-case).
@@ -103,7 +103,7 @@ Suggested calls: [`GET` products](page:apps-api-get-shopid-products-information)
 
 Optional calls: [`GET` categories](page:apps-api-get-shopid-categories-information)
 
-Availability: <i class="fa fa-check"></i>
+Availability: <i class="fas fa-check"></i>
 
 ## Customer Relationship Management (CRM) and Newsletters
 
@@ -111,7 +111,7 @@ Build an application that analyzes and groups/targets customers by ordered produ
 
 Suggested calls: [`GET` customers](page:apps-api-get-shopid-customers-customerid-information), [`PATCH` customers/{customerId}](page:apps-api-patch-shopid-customers-customerid-information), [`POST` customers](page:apps-api-post-shopid-customers-information), [`GET` orders](page:apps-api-get-shopid-orders-information), [`GET` products](page:apps-api-get-shopid-products-information), [`GET` newsletter-campaigns](page:apps-api-get-shopid-newsletter-campaigns-information), [`GET` newsletter-campaigns/{campaignId}/subscribers](page:apps-api-get-shopid-newsletter-campaigns-campaignid-subscribers-information)
 
-Availability: <i class="fa fa-check"></i>
+Availability: <i class="fas fa-check"></i>
 
 ## Enterprise Management Systems (EMS)
 
@@ -121,7 +121,7 @@ Suggested calls: [`GET` products](page:apps-api-get-shopid-products-information)
 
 Optional calls: [`GET` categories](page:apps-api-get-shopid-categories-information)
 
-Availability: <i class="fa fa-check"></i>
+Availability: <i class="fas fa-check"></i>
 
 ## Basic Storefront Apps
 
@@ -129,4 +129,4 @@ Implement different types of social media buttons, a live chat to interact with 
 
 Suggested calls: [`GET` script-tags](page:apps-api-get-shopid-script-tags-information), [`POST` script-tags](page:apps-api-post-shopid-script-tags-information), [`DELETE` script-tags/{scriptTagId}](page:apps-api-delete-shopid-script-tags-scripttagid-information)
 
-Availability: <i class="fa fa-check"></i>
+Availability: <i class="fas fa-check"></i>
