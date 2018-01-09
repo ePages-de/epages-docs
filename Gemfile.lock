@@ -35,7 +35,6 @@ GEM
     eventmachine (1.2.5)
     ffi (1.9.18)
     forwardable-extended (2.6.0)
-    gemoji (3.0.0)
     html-proofer (3.8.0)
       activesupport (>= 4.2, < 6.0)
       addressable (~> 2.3)
@@ -63,7 +62,6 @@ GEM
       safe_yaml (~> 1.0)
     jekyll-include-cache (0.1.0)
       jekyll (~> 3.3)
-    jekyll-paginate (1.1.0)
     jekyll-sass-converter (1.5.1)
       sass (~> 3.4)
     jekyll-watch (2.0.0)
@@ -130,11 +128,9 @@ DEPENDENCIES
   capistrano (= 3.8.1)
   capistrano-bundler
   capistrano-rbenv
-  gemoji
   html-proofer
   jekyll (~> 3.3)
   jekyll-include-cache
-  jekyll-paginate (~> 1.1.0)
   loofah (~> 2.0.1)
   neat
   nokogiri (~> 1.8.1)
