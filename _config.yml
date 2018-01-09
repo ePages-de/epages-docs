@@ -67,7 +67,6 @@ exclude:
   - pages/support_thankyou.html
   - pages/support.html
   - pages/thankyou.html
-  - themes
 gem:
   - jekyll-include-cache
 plugins:
