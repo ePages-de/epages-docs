@@ -17,12 +17,6 @@
       <a href="https://youtube.com/channel/{{site.youtube_username}}" target="_blank">
         <i class="fab  fa-fw  fa-2x  fa-youtube  icon  icon--youtube"></i>
       </a>
-      {% assign url = page.url | split: '/' %}
-      {% if url[1] == 'blog' %}
-        <a href="/blog/feed.xml" target="_blank">
-          <i class="fas  fa-fw  fa-2x  fa-rss  icon  icon--rss"></i>
-        </a>
-      {% endif %}
     </div>
 
     <div class="row  row--links">
