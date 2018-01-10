@@ -39,8 +39,11 @@
         margin-left: 1rem
 
       .icon
-        display: block
-        height: 3.2rem
+        color: transparentize($white, .6)
+
+        &:hover, &:focus
+          transition: $base-transition
+          color: $white
 
     &--links
       margin-bottom: 4rem
