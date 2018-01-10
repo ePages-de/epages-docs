@@ -9,18 +9,18 @@
 
     <div class="row  row--social">
       <a href="https://twitter.com/{{site.twitter_username}}" target="_blank">
-        <img src="/assets/img/icons/twitter_white.svg" alt="Twitter Icon" class="icon  icon--twitter">
+        <i class="fab  fa-fw  fa-2x  fa-twitter  icon  icon--twitter"></i>
       </a>
       <a href="https://github.com/{{site.github_username}}" target="_blank">
-        <img src="/assets/img/icons/github_white.svg" alt="Github Icon" class="icon  icon--github">
+        <i class="fab  fa-fw  fa-2x  fa-github  icon  icon--github"></i>
       </a>
       <a href="https://youtube.com/channel/{{site.youtube_username}}" target="_blank">
-        <img src="/assets/img/icons/youtube_white.svg" alt="YouTube Icon" class="icon  icon--youtube">
+        <i class="fab  fa-fw  fa-2x  fa-youtube  icon  icon--youtube"></i>
       </a>
       {% assign url = page.url | split: '/' %}
       {% if url[1] == 'blog' %}
         <a href="/blog/feed.xml" target="_blank">
-          <img src="/assets/img/icons/rss_white.svg" alt="RSS Icon" class="icon  icon--rss">
+          <i class="fas  fa-fw  fa-2x  fa-rss  icon  icon--rss"></i>
         </a>
       {% endif %}
     </div>
