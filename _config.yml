@@ -1,4 +1,3 @@
-# Site settings
 title: "API reference"
 email: documentation@epages.com
 app_scopes: ["customers_read", "customers_write", "legal_read", "legal_write", "newsletters_read", "orders_read", "orders_write", "products_read", "products_write", "products_read_batch", "scripttags_read", "scripttags_write"]
@@ -12,57 +11,36 @@ google_analytics:
     id: UA-71308214-2
   devjobs:
     id: UA-71308214-3
-
 future: true
-permalink: /blog/:year/:month/:day/:title.html
-
 raml:
-  - key_prefix: "apps-api-"
-    url_prefix: "apps/api-reference/"
-    root_file: "_raml/apps/api.raml"
-    api_versions: "_raml/**/*/api.raml"
+- key_prefix: "apps-api-"
+  url_prefix: "apps/api-reference/"
+  root_file: "_raml/apps/api.raml"
+  api_versions: "_raml/**/*/api.raml"
 sass:
   sass_dir: _sass
   style: compressed
-# Build settings
 markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
 exclude:
-  - circle.yml
-  - docker-compose.yml
-  - Dockerfile.nginx
-  - Dockerfile.ruby
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE-CC-BY-40.txt
-  - LICENSE-MIT.txt
-  - Rakefile
-  - README.md
-  - vendor
-  - apps/v-6.
-  - apps/v-7.
-  - _includes/blog_reference.html
-  - _includes/header.html
-  - _includes/pagination.html
-  - _layouts/blank.html
-  - _layouts/default.html
-  - _layouts/page.html
-  - _layouts/post-group.html
-  - _layouts/post.html
-  - _plugins/blog.rb
-  - _posts
-  - _assets/images/blog
-  - _assets/images/blog-header
-  - _assets/images/devjobs
-  - _assets/fonts/glyphicons
-  - _assets/fonts/icomoon
-  - _assets/styles/devjobs.scss
-  - blog
+- build.sh
+- Capfile
+- CONTRIBUTING.md
+- Dockerfile
+- Jenkinsfile
+- docker-compose.yml
+- Gemfile
+- Gemfile.lock
+- LICENSE-CC-BY-40.txt
+- LICENSE-MIT.txt
+- Rakefile
+- README.md
+- config/
 gem:
-  - jekyll-include-cache
+- jekyll-include-cache
 plugins:
-  - bourbon
-  - neat
-  - rouge
+- bourbon
+- neat
+- rouge
