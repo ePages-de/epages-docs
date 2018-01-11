@@ -408,11 +408,11 @@ task :serve do
 end
 
 task :dev do
-  sh "bundle exec jekyll serve --host 0.0.0.0 --watch --incremental --config '_dev_config.yml'"
+  sh "bundle exec jekyll serve --host 0.0.0.0 --watch --incremental --config '_config.yml'"
 end
 
 task :fast_dev do
-  sh "bundle exec jekyll serve --host 0.0.0.0 --watch --incremental --skip-initial-build --config '_dev_config.yml'"
+  sh "bundle exec jekyll serve --host 0.0.0.0 --watch --incremental --skip-initial-build --config '_config.yml'"
 end
 
 task :default do
