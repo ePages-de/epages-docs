@@ -1,3 +1,33 @@
+#{$all-text-inputs}
+  outline: 0
+  background-color: $white
+  border: $base-border
+  border-radius: $base-border-radius
+  box-shadow: $base-box-shadow
+  box-sizing: border-box
+  padding: .5em
+  margin: 0 0 .5em
+  width: 100%
+  +prefixer(transition, $base-transition, ("webkit", "moz"))
+
+  &:focus
+    border: 1px solid $beyond-green
+
+.form-success, .form-error
+  display: none
+  width: 100%
+  line-height: normal
+  border: 2px solid $white
+  margin-bottom: .5em
+  padding: .5em
+  cursor: pointer
+
+#support_form
+  margin: 2rem 4rem
+
+
+// Checkbox style for reference call detail pages
+
 input[type='checkbox']
   position: relative
   margin-right: 10px
