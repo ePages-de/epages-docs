@@ -4,6 +4,12 @@ key: apps-response-headers
 title: Response headers
 ---
 
+<style>
+  table {
+    table-layout: initial;
+  }
+</style>
+
 A successfully sent request (see [Request headers](page:apps-request-headers)) is followed by an HTTP response.
 The below table contains the response headers sent by the server.
 
