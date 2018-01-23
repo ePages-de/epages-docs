@@ -34,7 +34,24 @@ pipeline {
         '''
       }
     }
-    stage('Deploy') {
+    stage('Deploy Staging') {
+      when { branch 'master' }
+      steps {
+        sh '''
+          source ~/.bash_profile
+          export PATH=$PATH:/usr/local/bin:$HOME/.rbenv/bin:$HOME/.rbenv/shims
+          eval "$(rbenv init -)"
+          rbenv local 2.4.2
+          gem install bundler
+          bundle install
+          rbenv rehash
+          eval `ssh-agent -s`
+          ssh-add
+          bundle exec cap staging deploy --trace
+        '''
+      }
+    }
+    stage('Deploy Live') {
       when { branch 'master' }
       steps {
         sh '''
