@@ -1,9 +1,9 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.8.1"
 
-server '18.196.113.5', roles: [:web, :app, :db], primary: true
+server '18.195.76.160', roles: [:web, :app, :db], primary: true
 
-set :application, "epages_docs"
+set :application, "epages_docs_staging"
 set :repo_url, "git@github.com:ePages-de/epages-docs.git"
 set :rbenv_ruby, '2.4.2'
 set :user, 'deploy'
@@ -36,14 +36,14 @@ namespace :jekyll do
   desc 'Add the old docs to _site'
   task :move_docs do
     on roles(:app) do
-      execute("mkdir -p #{release_path}/../../epages_devblog/current/_site/apps")
-      execute("mkdir -p #{release_path}/../../epages_devblog/current/_site/soap")
-      execute("cp -r #{release_path}/_site/apps/* #{release_path}/../../../epages_devblog/current/_site/apps")
-      execute("cp -r #{release_path}/_site/soap/* #{release_path}/../../../epages_devblog/current/_site/soap")
+      execute("mkdir -p #{release_path}/../../epages_devblog_staging/current/_site/apps")
+      execute("mkdir -p #{release_path}/../../epages_devblog_staging/current/_site/soap")
+      execute("cp -r #{release_path}/_site/apps/* #{release_path}/../../../epages_devblog_staging/current/_site/apps")
+      execute("cp -r #{release_path}/_site/soap/* #{release_path}/../../../epages_devblog_staging/current/_site/soap")
       execute("rm -fr #{release_path}/_site/assets/fonts")
-      execute("cp -r #{release_path}/_site/assets/* #{release_path}/../../../epages_devblog/current/_site/assets")
+      execute("cp -r #{release_path}/_site/assets/* #{release_path}/../../../epages_devblog_staging/current/_site/assets")
       execute("sudo chown -R deploy:deploy /home/#{fetch(:user)}/apps/#{fetch(:application)}")
-      execute("sudo chown -R deploy:deploy /home/#{fetch(:user)}/apps/epages_devblog")
+      execute("sudo chown -R deploy:deploy /home/#{fetch(:user)}/apps/epages_devblog_staging")
     end
   end
 
