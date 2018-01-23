@@ -36,8 +36,8 @@ namespace :jekyll do
   desc 'Add the old docs to _site'
   task :move_docs do
     on roles(:app) do
-      execute("mkdir -p #{release_path}/../../epages_devblog_staging/current/_site/apps")
-      execute("mkdir -p #{release_path}/../../epages_devblog_staging/current/_site/soap")
+      execute("mkdir -p #{release_path}/../../../epages_devblog_staging/current/_site/apps")
+      execute("mkdir -p #{release_path}/../../../epages_devblog_staging/current/_site/soap")
       execute("cp -r #{release_path}/_site/apps/* #{release_path}/../../../epages_devblog_staging/current/_site/apps")
       execute("cp -r #{release_path}/_site/soap/* #{release_path}/../../../epages_devblog_staging/current/_site/soap")
       execute("rm -fr #{release_path}/_site/assets/fonts")
