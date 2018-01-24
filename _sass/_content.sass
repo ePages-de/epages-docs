@@ -1,0 +1,263 @@
+main
+  width: 100%
+  height: -moz-min-content
+  height: -webkit-min-content
+  height: min-content
+  overflow-x: auto
+  padding: 2rem 0
+  background: $card-background-color
+  border-radius: $card-border-radius
+  box-shadow: $card-box-shadow
+
+  +grid-media($grid-large)
+    max-width: 840px
+
+  +grid-media($grid-docs)
+    position: relative
+    min-width: 100%
+    left: -240px
+
+
+  // General styling
+
+  & h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child, p:first-child
+    margin-top: 0
+
+  & h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:last-child, p:last-child
+    margin-top: 0
+    margin-bottom: 0
+
+  h1, h2, h3, h4, h5, h6
+    color: $blue-mid
+    margin: 3rem $card-margin-mobile 1.5rem
+
+    +grid-media($grid-docs)
+      margin: 3rem $card-margin-desktop 1.5rem
+
+  p, ul, ol, table
+    margin: 1.5rem $card-margin-mobile
+
+    +grid-media($grid-docs)
+      margin: 1.5rem $card-margin-desktop
+
+  table
+    width: calc(100% - #{$card-margin-mobile + 2})
+
+    +grid-media($grid-docs)
+      width: calc(100% - #{$card-margin-desktop * 2})
+
+
+  input
+    margin-left: $card-margin-mobile
+
+    +grid-media($grid-docs)
+      margin-left: $card-margin-desktop
+
+  ul
+
+    li
+      margin-left: 1em
+      list-style-type: disc
+
+      p
+        margin-left: 0
+
+  ol
+
+    li
+      margin-left: 1em
+
+      p
+        margin-left: 0
+
+  img
+    width: 100%
+
+  hr
+    border-color: transparentize($blue-light, .8)
+    border-style: solid
+    margin: $card-margin-mobile
+
+    +grid-media($grid-docs)
+        margin: $card-margin-desktop
+
+
+  // Styling of resource entries
+
+  li.resource-entry
+    font-family: $code-font-family
+    font-size: 1.6rem
+    list-style-type: none
+    margin: 0
+    border-bottom: $base-border
+    padding: 1rem 0
+
+    &:first-child
+      padding: 0 0 1rem
+
+    &:last-child
+      padding: 1rem 0 0
+      border: 0
+
+
+    // Styling of http methods
+
+    .http-method
+      display: inline-block
+      font-size: 1.4rem
+      line-height: 2
+      width: 75px
+      text-align: center
+      vertical-align: baseline
+      text-transform: uppercase
+      border-width: 1px
+      border-style: solid
+      border-radius: $base-border-radius
+      color: $white
+
+      &-get
+        background: $get
+        border-color: $get
+
+      &-post
+        background: $post
+        border-color: $post
+
+      &-delete
+        background: $delete
+        border-color: $delete
+
+      &-put
+        background: $put
+        border-color: $put
+
+      &-patch
+        background: $patch
+        border-color: $patch
+
+
+    // Styling of ep labels
+
+    .ep-label
+      display: none
+      font-size: 1.4rem
+      line-height: 2
+      width: 40px
+      text-align: center
+      vertical-align: baseline
+      border-width: 1px
+      border-style: solid
+      border-radius: $base-border-radius
+      float: right
+      margin-left: 1rem
+
+      +grid-media($grid-medium)
+        display: inline-block
+
+      +grid-media($grid-large)
+        display: none
+
+      +grid-media($grid-huge)
+        display: inline-block
+
+      +grid-media($grid-docs)
+        width: 60px
+
+      &-base
+        color: $blue-light
+        border-color: $blue-light
+
+      &-now
+        color: $blue-mid
+        border-color: $blue-mid
+
+
+  // Styling of alert boxes
+
+  .alert
+    padding: 2rem 0
+    margin: 2rem 0
+
+    &-info
+      background: $info-bg
+      color: $info-font
+
+      a
+        text-decoration: underline
+        color: inherit
+
+    &-success
+      background: $success-bg
+      color: $success-font
+
+      a
+        text-decoration: underline
+        color: inherit
+
+    &-warning
+      background: $warning-bg
+      color: $warning-font
+
+      a
+        text-decoration: underline
+        color: inherit
+
+    &-danger
+      background: $danger-bg
+      color: $danger-font
+
+      a
+        text-decoration: underline
+        color: inherit
+
+
+  // Custom styling of all code highlighting
+
+  .highlight
+    margin: 2rem 0
+    font-family: $code-font-family
+    font-size: 1.6rem
+    overflow: auto
+
+    pre
+      padding: 2rem $card-margin-mobile
+      overflow: auto
+
+      +grid-media($grid-docs)
+        padding: 2rem $card-margin-desktop
+
+  .highlighter-rouge
+    font-family: $code-font-family
+    background-color: $code-background
+    color: $base-font-color
+    margin: 2rem 0
+    font-size: 1.6rem
+
+    pre
+      padding: 2rem $card-margin-mobile
+      overflow: auto
+
+      +grid-media($grid-docs)
+        padding: 2rem $card-margin-desktop
+
+  pre
+    color: $base-font-color
+    margin: 2rem 0
+    font-family: $code-font-family
+    font-size: 1.6rem
+    overflow: auto
+    padding: 2rem $card-margin-mobile
+    overflow: auto
+
+    +grid-media($grid-docs)
+      padding: 2rem $card-margin-desktop
+
+
+
+
+
+  // Setting an offset for the anchors on the glossary page
+
+  .headline-anchor
+    padding-top: 80px
+    margin-top: -80px

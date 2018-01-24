@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: docs
 key: apps-create
 title: Create an app
 ---

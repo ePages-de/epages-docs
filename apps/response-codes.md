@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: docs
 key: apps-response-codes
 title: Response codes
 ---

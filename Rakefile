@@ -146,8 +146,22 @@ end
 task :test do
   require 'html-proofer'
 
-  sh "bundle exec jekyll build"
-  HTMLProofer.check_directory("./_site", :disable_external => true, :assume_extension => true, :href_ignore => ["#"]).run
+  url_ignore = ['/',
+                '/about/',
+                /^\/blog.*/,
+                '/devjobs/',
+                '/terms-and-conditions/',
+                '/#register']
+
+  options = { disable_external: true,
+              url_ignore: url_ignore,
+              empty_alt_ignore: true,
+              check_html: true,
+              assume_extension: true}
+
+  sh 'bundle exec jekyll build'
+
+  HTMLProofer.check_directory('./_site', options).run
 end
 
 task :ramlup do
@@ -281,7 +295,7 @@ task :resource do
 
   def resource_template(resource)
     template = """---
-layout: page
+layout: docs
 key: api-resources-#{resource.pluralize}
 title: #{resource.capitalize.pluralize}
 ---
@@ -293,10 +307,10 @@ title: #{resource.capitalize.pluralize}
         <span class=\"http-method http-method-{{ page.raml_method.method | downcase }}\">{{ page.raml_method.method }}</span>
         <a href=\"{{ page.url | prepend: site.baseurl }}\"#content>{{ page.raml_resource.relative_uri }}#</a>
         {% if page.raml_method.description contains '*epages6' %}
-          <span class='ep-label-6 ep-label'>ePages 6</span>
+          <span class='base ep-label'>Base</span>
         {% endif %}
         {% if page.raml_method.description contains '*epagesNow' %}
-          <span class='ep-label-now ep-label'>ePages Now</span>
+          <span class='ep-label-now ep-label'>Now</span>
         {% endif %}
       </li>
     {% endif %}
@@ -309,7 +323,7 @@ title: #{resource.capitalize.pluralize}
 
   def miscellaneous_template(miscellaneous)
     template = """---
-layout: page
+layout: docs
 key: api-resources-miscellaneous
 title: Miscellaneous
 ---
@@ -322,10 +336,10 @@ title: Miscellaneous
           <span class=\"http-method http-method-{{ page.raml_method.method | downcase }}\">{{ page.raml_method.method }}</span>
           <a href=\"{{ page.url | prepend: site.baseurl }}\"#content>{{ page.raml_resource.relative_uri }}</a>
           {% if page.raml_method.description contains '*epages6' %}
-            <span class='ep-label-6 ep-label'>ePages 6</span>
+            <span class='base ep-label'>Base/span>
           {% endif %}
           {% if page.raml_method.description contains '*epagesNow' %}
-            <span class='ep-label-now ep-label'>ePages Now</span>
+            <span class='ep-label-now ep-label'>Now</span>
           {% endif %}
         </li>
       {% endif %}
@@ -394,11 +408,11 @@ task :serve do
 end
 
 task :dev do
-  sh "bundle exec jekyll serve --host 0.0.0.0 --watch --incremental --config '_dev_config.yml'"
+  sh "bundle exec jekyll serve --host 0.0.0.0 --watch --incremental --config '_config.yml'"
 end
 
 task :fast_dev do
-  sh "bundle exec jekyll serve --host 0.0.0.0 --watch --incremental --skip-initial-build --config '_dev_config.yml'"
+  sh "bundle exec jekyll serve --host 0.0.0.0 --watch --incremental --skip-initial-build --config '_config.yml'"
 end
 
 task :default do

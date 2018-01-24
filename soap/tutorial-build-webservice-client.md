@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: docs
 key: tutorial-build-simple-webservice-client
 title: How to build a simple web service client
 ---

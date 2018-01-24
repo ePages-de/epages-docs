@@ -81,8 +81,7 @@ The editorial content in the folders
 
 * `apps/`,
 * `blog/`,
-* `soap/`,
-* `themes/` and
+* `soap/` and
 * `assets/images/`
 
 is licensed under [CC-BY-4.0][license-cc-by-40].

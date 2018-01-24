@@ -1,0 +1,20 @@
+.arrow-up
+  display: none
+  color: $gray-light
+  padding: .5rem
+  background-color: transparentize($whitesmoke, .6)
+  border: 1px solid $gray-light
+  border-radius: 4px
+  position: fixed
+  bottom: 1rem
+  right: 1rem
+  cursor: pointer
+  -webkit-transform: translateZ(0)
+
+  +grid-media($grid-large)
+    background-color: transparentize($whitesmoke, .9)
+
+  &:hover
+    background-color: transparentize($whitesmoke, .8)
+    transition: $base-transition
+    -webkit-transition: $base-transition

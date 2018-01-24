@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: docs
 key: apps-submit-guide
 title: Submission guidelines
 ---

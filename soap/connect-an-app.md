@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: docs
 key: soap-authentication
 title: Connect an app
 ---

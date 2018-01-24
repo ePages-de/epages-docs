@@ -1,0 +1,59 @@
+#{$all-buttons}
+  margin: 0
+
+
+
+// Buttons on Glossary page styling
+
+.btn-group
+  display: block
+  text-align: center
+  margin: 0 $card-margin-mobile
+  +grid-media($grid-docs)
+    margin: 0 $card-margin-desktop
+
+  .btn
+    background: $whitesmoke
+    border-radius: 0
+    border: 0
+    a
+      padding: .5rem 1.5rem .3rem
+    &:hover, &:focus
+      background: darken($whitesmoke, 5%)
+      transition: $base-transition
+
+
+
+// CTA styling
+
+.cta
+  outline: 0
+  border: 0
+  border-radius: 0
+  box-shadow: $base-box-shadow
+  padding: 9px 20px 7px
+  margin: 0
+  transition: background-color 0.125s ease-in
+  font-weight: bold
+  color: $white
+  cursor: pointer
+  letter-spacing: .1rem
+
+  +grid-media($grid-small)
+    padding: 9px 30px 7px
+
+  &:hover
+    color: $white
+    box-shadow: $hover-box-shadow
+
+  &--beyond
+    background-color: $beyond-green
+
+    &:hover
+      background-color: darken($beyond-green, 5%)
+
+  &--now
+    background-color: lighten($beyond-blue, 5%)
+
+    &:hover
+      background-color: darken(lighten($beyond-blue, 5%), 5%)
