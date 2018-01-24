@@ -1,7 +1,7 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.8.1"
 
-server '18.195.76.160', roles: [:web, :app, :db], primary: true
+server '35.158.240.55', roles: [:web, :app, :db], primary: true
 
 set :application, "epages_docs_staging"
 set :repo_url, "git@github.com:ePages-de/epages-docs.git"
