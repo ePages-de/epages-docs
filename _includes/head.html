@@ -6,9 +6,8 @@
 
   <title>{% if page.permalink == '/' %}{{ site.title }}{% else %}{{ page.title }} | {{ site.title }}{% endif %}</title>
 
-  {% capture url_base %}{{ page.url | split: '/' | second }}{% endcapture %}
-  {% if site.data.seo.[url_base].description %}<meta name="description" content="{{ site.data.seo.[url_base].description }}">{% endif %}
-  {% if site.data.seo.[url_base].keywords %}<meta name="keywords" content="{{ site.data.seo.[url_base].keywords | join: ', ' }}">{% endif %}
+  {% if site.data.seo.apps.description %}<meta name="description" content="{{ site.data.seo.apps.description }}">{% endif %}
+  {% if site.data.seo.apps.keywords %}<meta name="keywords" content="{{ site.data.seo.apps.keywords | join: ', ' }}">{% endif %}
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,400i,700,700i">
 
@@ -25,9 +24,8 @@
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    {% if page.layout == 'default' %}ga('create', 'UA-71308214-1', 'auto');{% endif %}
-    {% if page.layout == 'blog' %}ga('create', 'UA-71308214-2', 'auto');{% endif %}
-    {% if page.layout == 'devjobs' %}ga('create', 'UA-71308214-3', 'auto');{% endif %}
+    ga('create', 'UA-71308214-1', 'auto');
+
     ga('send', 'pageview');
   </script>
 

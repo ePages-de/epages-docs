@@ -18,9 +18,9 @@ layout: docs
 {% assign authorization = page.raml_method.secured_by | shift: 2 %}
 {% if authorization != empty %}
   <p><strong>Authorisation</strong></p>
-    <p>OAuth 2.0 Token required with scopes: </p>
+  <p>OAuth 2.0 Token required with scopes: </p>
   {% for scope in authorization %}
-      <input type="checkbox" value="{{ scope }}" checked onclick="return false"> {{ scope }}<br>
+    <p><i class="far  fa-check-square" style="margin-right: 1rem;"></i>{{ scope }}</p>
   {% endfor %}
 {% endif %}
 
