@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: docs
 key: apps-implement-use-case
 title: Implementing a use case
 ---

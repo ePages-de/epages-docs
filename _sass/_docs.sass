@@ -1,0 +1,40 @@
+@import 'grid-media'
+@import 'fonts'
+@import 'variables'
+@import 'reset'
+@import 'highlighter'
+@import 'typography'
+@import 'navbar'
+@import 'footer'
+@import 'sidebar'
+@import 'content'
+@import 'buttons'
+@import 'scrolltop'
+@import 'tables'
+@import 'forms'
+
+// Base
+
+html
+  background-color: $document-background-color
+
+  .docs-wrapper
+    width: 90%
+    max-width: 1080px
+    margin-left: auto
+    margin-right: auto
+    margin-top: calc(3rem + #{$navbar-height})
+    margin-bottom: 3rem
+    display: flex
+    flex-direction: column
+    position: relative
+
+    +grid-media($grid-large)
+      margin-top: calc(6rem + #{$navbar-height})
+      margin-bottom: 6rem
+      flex-direction: row
+
+    a.imagebox
+      margin-left: auto
+      margin-right: auto
+      display: table

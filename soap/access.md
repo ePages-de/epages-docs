@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: docs
 key: soap-access
 title: Access to the web services
 ---

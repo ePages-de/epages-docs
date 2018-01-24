@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: docs
 key: soap-api-call-limit
 title: API call limit
 ---

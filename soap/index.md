@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: docs
 key: soap-overview
 title: Overview
 header: SOAP API documentation
