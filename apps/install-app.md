@@ -164,7 +164,7 @@ Unlike the `api_url`, the derived **Shop** does **not** uniquely identify a merc
 
 Once the authorisation process is complete, your app has to send the merchant back to the `return_url` the app received [before](page:apps-install#3-receive-authorisation-code).
 
-In case of a successful app installation, the merchant will be able to open the app in the Apps & Themes Store.
+In case of a successful app installation, the merchant will be able to open the app in the Apps Store.
 If an error occurred during installation, the **Install** button instead of the **Open app** button will be shown.
 
 {% image app-install-success.png %}

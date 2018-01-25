@@ -18,11 +18,10 @@ After successful authorisation of your app, you will be assigned an **Access tok
 
 ## Get your credentials
 
-1. Within the administration area of your test shop, click **Apps & Themes**.
-In the drop down menu, choose **App Store**.
+1. Within the administration area of your test shop, click **Apps**.  
     {% image click-appstore.png %}
 
-2. Click the button **Private apps**.
+2. Open the **Private apps** card.
     {% image click-privateapps.png %}
 
 3. In the **Private apps** view, click **Add**.
@@ -31,7 +30,7 @@ In the drop down menu, choose **App Store**.
 4. Fill out the input field **App name** and specify the **Application Callback URL**.
 Make sure the URL is https and publicly accessible.
 Choose the required **App Scopes**. Read here for further information on the scopes.
-Note: HTTP Application Callback URLs can be used for private apps, but you need to provide an HTTPS URL if you want to submit the app to the App Store.
+Note: HTTP Application Callback URLs can be used for private apps, but you need to provide an HTTPS URL if you want to submit the app.
 Once this is done, click **Generate access data**.
 
     {% image fillout-appdata.png %}
@@ -54,7 +53,7 @@ But when developing your app, please consider our [API call limit](page:apps-api
 Once you have implemented the authorisation flow in your app, you can trigger it by clicking the button **Test authorisation**.
 Make sure that the **Applicaton Callback URL** for your app is correct.
 Your app will be checked for proper implementation of the [OAuth 2.0 flow](page:apps-install#authorisation-process).
-{% image test-authorisation.png %}
+{% image test-authorization.png %}
 
 {% callout info Note %}
 Triggering the test authorisation flow removes the existing **Access token** first.

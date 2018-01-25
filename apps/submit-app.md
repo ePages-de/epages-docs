@@ -6,21 +6,20 @@ title: Submit an app
 
 ## Your app is ready for takeoff?
 
-Yay! You're done with developing your awesome app and you're excited to publish it on our App & Theme Store?
+Yay! You're done with developing your awesome app and you're excited to publish it on our App Store?
 Congrats!
 We are just as excited as you are!
 
 ### Let's go submit your app
 
-1. Within the administration area of your test shop, click the tab **Apps & Themes**.
-In the drop down menu, choose the field **Developer apps** and click on your app in the list below.
+1. Within the sidebar of the administration area of your test shop, click **Apps**.
+Open the **Private apps** card and click on your app in the list below.
     {% image click-apps.png %}
 
-2. Click the button **Submit app**.
+2. Click the button **Submit app**.    
     {% image submit-app.png %}
 
-3. You will then be asked to fill out the submission form.
-    {% image submission-form.png %}
+3. You will then be asked to fill out the [submission form](https://mate.epages.com/).
 
 ### Walk through the submission form
 
@@ -36,7 +35,7 @@ We need your contact details for proper identification and to get in touch with 
 
 **Client ID** and **Client Secret** will be pre-filled, all other app details have to be provided by you.
 
-**Authorisation**
+**Authorisation scope**
 
 Tick the respective check box(es) to set up the scope for your app.
 This indicates the type of calls your app will make on the REST API.
@@ -107,11 +106,11 @@ YouTube
 https://www.youtube.com/watch?v={Id}
 {% endhighlight %}
 
-We will need logos and at least one screenshot to display your app in the App & Theme Store.
+We will need logos and at least one screenshot to display your app in the App Store.
 
 *App detail page*: use 64x64px, GIF, JPEG, PNG.
 
-*App & Theme Store*: use 260x160px, GIF, JPEG, PNG.
+*App Store*: use 260x160px, GIF, JPEG, PNG.
 
 *Screenshots*: use 800x600px - 1920x1080px, GIF, JPEG, PNG.
 
