@@ -28,7 +28,9 @@ html
     display: flex
     flex-direction: column
     position: relative
-    align-items: flex-start
+
+    +grid-media($grid-large)
+      align-items: flex-start
 
     +grid-media($grid-large)
       margin-top: calc(6rem + #{$navbar-height})
