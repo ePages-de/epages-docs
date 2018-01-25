@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: docs
 key: apps-ruby-gem
 title: Ruby SDK
 ---

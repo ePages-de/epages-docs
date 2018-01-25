@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: docs
 key: apps-glossary
 title: Glossary
 categories: ['a','c','h','j','m','o','r','u']

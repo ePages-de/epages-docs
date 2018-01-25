@@ -1,0 +1,110 @@
+.navbar
+  position: fixed
+  top: 0
+  width: 100%
+  height: $navbar-height
+  display: flex
+  align-items: center
+  z-index: 9999
+  transition: $base-transition
+  box-shadow: $base-box-shadow
+
+  &-wrapper
+    width: 90%
+    max-width: 1080px
+    margin: 0 auto
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+  .logo
+    display: block
+
+    &--devportal
+      height: 3rem
+
+  .navigation
+    $navigation-width: 75%
+    +position(absolute, 0 null null (-$navigation-width))
+    background: $navbar-background-color
+    height: 100vh
+    z-index: 1
+    width: $navigation-width
+
+    +grid-media($grid-medium)
+      background: inherit
+      height: inherit
+      position: relative
+      float: right
+      width: auto
+      left: auto
+
+    &--open
+      left: 0
+      transition: $base-transition
+
+    &__list
+      display: flex
+      flex-direction: column
+
+      +grid-media($grid-medium)
+        flex-direction: row
+
+    &__item
+      border-bottom: $navbar-border
+      display: inherit
+
+      +grid-media($grid-medium)
+        padding: 1em 0
+        border-bottom: none
+
+        &:not(:last-child)
+          margin-right: 2rem
+
+        &--hidden
+          display: none
+
+    &__link
+      color: $base-font-color-white
+      display: block
+      width: 100%
+      padding: 1em
+
+      +grid-media($grid-medium)
+        padding: 0
+
+      &:hover,
+      &:focus,
+      &--active
+        text-decoration: none
+        color: $beyond-green
+
+    &__button
+      float: right
+      color: $white
+
+      +grid-media($grid-medium)
+        display: none
+
+    &__background
+      +position(absolute, 0 null null 0)
+      width: 100vw
+      height: 100vh
+      background: rgba(0, 0, 0, .4)
+      display: none
+
+      +grid-media($grid-medium)
+        display: none
+
+  &--transparent
+    background: linear-gradient(rgba(60,60,60,.5), rgba(0,0,0,0))
+
+    .navigation
+
+      &__link
+
+        +grid-media($grid-medium)
+          text-shadow: $base-text-shadow
+
+  &--dark
+    background: $navbar-background-color

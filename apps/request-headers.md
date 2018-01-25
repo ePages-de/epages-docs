@@ -1,8 +1,14 @@
 ---
-layout: page
+layout: docs
 key: apps-request-headers
 title: Request headers
 ---
+
+<style>
+  table {
+    table-layout: initial;
+  }
+</style>
 
 Request headers give basic information on the request to a server.
 The following table contains the required request headers that allow you to pass information on the request and the client itself to the server.
