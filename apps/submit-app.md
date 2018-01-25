@@ -12,8 +12,8 @@ We are just as excited as you are!
 
 ### Let's go submit your app
 
-1. Within the sidebar of the administration area of your test shop, click **Apps**.
-Open the **Private apps** card and click on your app in the list below.
+1. In the sidebar of your shop’s administration area, click **Apps**.
+Click the tab **Private apps** and click on your app in the list below.
     {% image click-apps.png %}
 
 2. Click the button **Submit app**.    
