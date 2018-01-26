@@ -1,11 +1,20 @@
 aside.sidebar
-  display: none
-  min-width: 220px
-  margin-right: 2rem
-  font-size: 1.8rem
+  display: block
+  background: $white
+  box-shadow: $base-box-shadow
+  border-radius: $base-border-radius
+  padding: 2rem
+  margin-bottom: 3rem
 
   +grid-media($grid-large)
-    display: block
+    min-width: 220px
+    margin-right: 2rem
+    font-size: 1.8rem
+    background: none
+    box-shadow: none
+    border-radius: 0
+    padding: 0
+    margin-bottom: 0
 
   +grid-media($grid-docs)
     position: relative
@@ -16,70 +25,63 @@ aside.sidebar
     color: $blue-mid
     font-weight: bold
     list-style-type: none
+    border-bottom: $base-border
+    padding: 2rem 0
+    cursor: pointer
 
-  ul.sitemap-content
-    margin: .5rem 0 2rem
-
-    li.sitemap-entry
-      position: relative
-      list-style-type: none
-
-      &.active
-        &:before
-          content: ''
-          height: 100%
-          width: 4px
-          background: $beyond-green
-          position: absolute
-          left: 0
-          top: 0
-
-        a
-          color: $blue-mid
-
-      a
-        color: $blue-light
-        padding-left: 2rem
-        line-height: 2
-
-        &:hover,
-        &:focus
-          color: $blue-mid
-          transition: $base-transition
-
-  &--mobile
-    display: block
-    background: $white
-    box-shadow: $base-box-shadow
-    border-radius: $base-border-radius
-    padding: 2rem
-    margin-bottom: 3rem
     +grid-media($grid-large)
-      display: none
-    li.sitemap-headline
       text-transform: uppercase
       color: $blue-mid
       font-weight: bold
       list-style-type: none
-      border-bottom: $base-border
-      padding: 2rem 0
-      cursor: pointer
-      &:first-of-type
-        padding-top: 0
-      &:last-of-type
-        padding-bottom: 0
-        border-bottom: 0
-    ul.sitemap-content
-      display: none
-      &--open
-        display: block
-        margin: 2rem 0
-        transition: $base-transition
-      li.sitemap-entry
-        list-style-type: none
-        a
-          color: $blue-light
-          line-height: 2
+      border-bottom: none
+      padding: 0
+      cursor: auto
+
+    &:first-of-type
+      padding-top: 0
+
+    &:last-of-type
+      padding-bottom: 0
+      border-bottom: 0
+
+  ul.sitemap-content
+    display: none
+    margin: 2rem 0
+
+    +grid-media($grid-large)
+      display: block
+      margin: .5rem 0 2rem
+
+    &--open
+      display: block
+      transition: $base-transition
+
+    li.sitemap-entry
+      list-style-type: none
+
+      +grid-media($grid-large)
+        position: relative
+
         &.active
-          a
-            color: $blue-mid
+          &:before
+            content: ''
+            height: 100%
+            width: 4px
+            background: $beyond-green
+            position: absolute
+            left: 0
+            top: 0
+
+      a
+        color: $blue-light
+        line-height: 2
+
+        +grid-media($grid-large)
+          padding-left: 2rem
+          line-height: 2
+
+      &.active
+
+        a
+          color: $blue-mid
