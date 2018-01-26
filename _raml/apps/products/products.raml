@@ -170,10 +170,30 @@ post:
       body:
         multipart/form-data:
           formParameters:
+            filename:
+              description: >
+                The file name must be specified as property `filename` of the `Content-Disposition: form-data;`, sub-header of the multipart.<br>
+                For further details, refer to [this example](https://stackoverflow.com/questions/4238809/example-of-multipart-form-data#answer-46150309) of a multipart/form-data request.<br>
+                It is important that the file name has a 'file name extension' that is one of `.png` , `.jpg` , `.jpeg` , `.gif` , `.ico`.<br>
+                An already existing image cannot be overwritten by a new image with the same file name.<br>
+                Either delete the old image and upload a new image, or choose a different file name.
+              required: true
+              type: string
+            name:
+              description: >
+                The `name` parameter of the `Content-Disposition: form-data;` subheader.<br>
+                Example for a complete header:<br>
+                `Content-Disposition: form-data; name = image; filename = your-filename.jpg`
+              required: true
+              type: string
             image:
-              description: The image file to be uploaded. Specify the file name as part of the content header. An already existing image cannot be overwritten by a new image with the same file name. Either delete the old image and upload a new image or choose a different file name.
+              description: >
+                The image file to be uploaded. This parameter represents the binary-encoded section of the multipart.<br>
+                Typically an HTTP client library would specify `Content-Type: application/octet-stream` as subheader for a binary part.<br>
+                This is not verified by our API.
               required: true
               type: file
+
       responses:
         201:
           body:
