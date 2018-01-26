@@ -29,7 +29,7 @@ After successful authorisation of your app, you will be assigned an **Access tok
 
 4. Fill out the input field **App name** and specify the **Application Callback URL**.
 Make sure the URL is https and publicly accessible.
-Choose the required **App Scopes**. Read here for further information on the scopes.
+Choose the required **App Scopes**. Read [here](https://developer.epages.com/apps/app-scopes.html) for further information on the scopes.
 Note: HTTP Application Callback URLs can be used for private apps, but you need to provide an HTTPS URL if you want to submit the app.
 Once this is done, click **Generate access data**.
 
