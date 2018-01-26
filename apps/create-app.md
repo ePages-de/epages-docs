@@ -53,7 +53,7 @@ But when developing your app, please consider our [API call limit](page:apps-api
 Once you have implemented the authorisation flow in your app, you can trigger it by clicking the button **Test authorisation**.
 Make sure that the **Applicaton Callback URL** for your app is correct.
 Your app will be checked for proper implementation of the [OAuth 2.0 flow](page:apps-install#authorisation-process).
-{% image test-authorization.png %}
+{% image test-authorisation.png %}
 
 {% callout info Note %}
 Triggering the test authorisation flow removes the existing **Access token** first.
