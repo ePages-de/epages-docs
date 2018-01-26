@@ -11,13 +11,6 @@
           {% include sitemap.html %}
         </ul>
       </aside>
-      <aside class="sidebar--mobile">
-        <ul class="sitemap">
-          {% assign chapter = page.url | regex_extract: '^/([^/]+)/' %}
-          {% assign sitemap = chapter | sitemap %}
-          {% include sitemap.html %}
-        </ul>
-      </aside>
       <main>
         {{ content }}
       </main>
