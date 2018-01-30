@@ -12,7 +12,7 @@ We are just as excited as you are!
 
 ### Let's go submit your app
 
-1. In the sidebar of your shop’s administration area, click **Apps**.
+1. In the sidebar of your test shop’s administration area, click **Apps**.
 Click the tab **Private apps** and click on your app in the list below.
     {% image click-apps.png %}
 

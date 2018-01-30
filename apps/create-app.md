@@ -18,7 +18,7 @@ After successful authorisation of your app, you will be assigned an **Access tok
 
 ## Get your credentials
 
-1. In the sidebar of your shop’s administration area, click **Apps**.  
+1. In the sidebar of your test shop’s administration area, click **Apps**.  
     {% image click-appstore.png %}
 
 2. Click the tab **Private apps**.
