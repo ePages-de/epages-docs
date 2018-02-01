@@ -1,6 +1,5 @@
 ---
 layout: docs
-permalink: /apps/terms-and-conditions/
 title: Terms and Conditions
 ---
 
