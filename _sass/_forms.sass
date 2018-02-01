@@ -8,19 +8,23 @@
   padding: .5em
   margin: 0 0 .5em
   width: 100%
+  min-width: 100%
+  max-width: 100%
   +prefixer(transition, $base-transition, ("webkit", "moz"))
 
   &:focus
     border: 1px solid $beyond-green
 
-.form-success, .form-error
+.form-feedback
   display: none
   width: 100%
-  line-height: normal
-  border: 2px solid $white
-  margin-bottom: .5em
-  padding: .5em
   cursor: pointer
+  border: 1px solid $beyond-green
+  color: $beyond-green
+  border-radius: $base-border-radius
+  box-sizing: border-box
+  padding: .5em
+  margin: 0 0 .5em
 
 #support_form
   margin: 2rem 4rem
