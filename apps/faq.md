@@ -33,10 +33,10 @@ We will then carefully review the app.
 
 When you're done with coding and been through with testing your app successfully, you can login to our test shop and [submit your app](page:apps-submit).
 Fill out the form and that's it!
-We will carefully test your app and also review the information you provide us for the App & Theme Store.
+We will carefully test your app and also review the information you provide us for the App Store.
 Give us some time for the review process.
 This may take a couple of days. When we're done, we will contact you whether your app has been approved or not.
-If your app has been approved, we will provide it in the ePages App & Theme Store.
+If your app has been approved, we will provide it in the ePages App Store.
 If your app has been rejected, we will give you detailed feedback why.
 As soon as the required changes are done, you can submit your app again.
 
@@ -59,7 +59,7 @@ Make sure that the authorisation process works fine and that the app interacts p
 
 No.
 
-## How long does it take to get the app listed in the App & Theme Store once the app is submitted?
+## How long does it take to get the app listed in the App Store once the app is submitted?
 
-For sure, we're as excited as you are to include your app in our App & Theme Store.
+For sure, we're as excited as you are to include your app in our App Store.
 It can take up to 14 days.

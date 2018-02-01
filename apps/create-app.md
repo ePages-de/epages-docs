@@ -18,11 +18,10 @@ After successful authorisation of your app, you will be assigned an **Access tok
 
 ## Get your credentials
 
-1. Within the administration area of your test shop, click **Apps & Themes**.
-In the drop down menu, choose **App Store**.
+1. In the sidebar of your test shop’s administration area, click **Apps**.  
     {% image click-appstore.png %}
 
-2. Click the button **Private apps**.
+2. Click the tab **Private apps**.
     {% image click-privateapps.png %}
 
 3. In the **Private apps** view, click **Add**.
@@ -30,8 +29,8 @@ In the drop down menu, choose **App Store**.
 
 4. Fill out the input field **App name** and specify the **Application Callback URL**.
 Make sure the URL is https and publicly accessible.
-Choose the required **App Scopes**. Read here for further information on the scopes.
-Note: HTTP Application Callback URLs can be used for private apps, but you need to provide an HTTPS URL if you want to submit the app to the App Store.
+Choose the required **App Scopes**. Read [here](https://developer.epages.com/apps/app-scopes.html) for further information on the scopes.
+Note: HTTP Application Callback URLs can be used for private apps, but you need to provide an HTTPS URL if you want to submit the app.
 Once this is done, click **Generate access data**.
 
     {% image fillout-appdata.png %}
