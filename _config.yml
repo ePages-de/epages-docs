@@ -40,7 +40,6 @@ exclude:
 - Rakefile
 - README.md
 - config/
-- /apps/support.html
 gem:
 - jekyll-include-cache
 plugins:
