@@ -1,6 +1,5 @@
 ---
 layout: docs
-permalink: /terms-and-conditions/
 title: Terms and Conditions
 ---
 
