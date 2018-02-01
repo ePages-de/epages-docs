@@ -5,21 +5,18 @@ title: Support
 header: Support
 ---
 
-<form action="form.php" method="post" id="support_form" lang="en">
+<form action="https://api.formbucket.com/f/buk_1JgECbwvcSCUgWp1IiDOknhd" method="post" id="support_form">
 
-  <div class="form-success">Your email was send</div>
-  <div class="form-error">Your email was not send</div>
+  <div class="form-feedback"></div>
 
   <div class="form-group">
-
-    <input class="form-control" name="Name" placeholder="Name*" type="text" required></input>
-
-    <input class="form-control" name="E-Mail" placeholder="E-Mail*" type="email" required></input>
-
-    <textarea class="form-control" rows="6" name="Message" placeholder="Message*" type="text" required></textarea>
+    <input class="form-control" name="name" placeholder="Name*" type="text" required></input>
+    <input class="form-control" name="email" placeholder="E-Mail*" type="email" required></input>
+    <textarea class="form-control" rows="6" name="message" placeholder="Message*" type="text" required></textarea>
 
     <input class="cta  cta--beyond" type="submit" value="Send" >
-
   </div>
 
 </form>
+
+<script src="/assets/javascript/support_form.js"></script>
