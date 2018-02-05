@@ -19,12 +19,14 @@ $(function() {
     })
     .done(function(response) {
       clearForm();
-      $('.form-feedback').html('Your email was sent').slideDown();
+      $('.form-feedback span').html('Your email was sent');
+      $('.form-feedback').css('display', 'flex');
       supportFormButton.prop('disabled', false);
     })
     .fail(function(response) {
       clearForm();
-      $('.form-feedback').html('Oops, this didn\'t work. Please try again.').slideDown();
+      $('.form-feedback span').html('Oops, this didn\'t work. Please try again.');
+      $('.form-feedback').css('display', 'flex');
       supportFormButton.prop('disabled', false);
     })
 
