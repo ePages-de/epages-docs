@@ -29,7 +29,7 @@
   title: Custom apps
   entries:
     - title: Use cases
-      link: page:apps-use-cases
+      link: page:apps-custom-use-cases
 
     - title: Create an app
       link: page:apps-create-custom
@@ -125,4 +125,4 @@
       link: page:apps-faq
 
     - title: Support
-      link: mailto:apps@epages.com
+      link: page:support
