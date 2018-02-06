@@ -19,7 +19,7 @@ $(function() {
     })
     .done(function(response) {
       clearForm();
-      $('.form-feedback span').html('Your email was sent');
+      $('.form-feedback span').html('Your email was sent.');
       $('.form-feedback').css('display', 'flex');
       supportFormButton.prop('disabled', false);
     })
