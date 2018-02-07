@@ -14,6 +14,17 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
+## 2018-02-07
+
+### Changes with software release 7.21.0
+
+#### <i class="fas fa-plus"></i> New
+
+* Added attribute `energyLabelsMaxEfficiencyString` to data type [`product`](https://developer.epages.com/apps/data-types#product).
+* Added attributes `energyLabelsString`, `energyLabelsMaxEfficiencyString` and `energyLabelSourceFile` to [`productLineItem`](https://developer.epages.com/apps/data-types#productlineitem).
+
+<hr>
+
 ## 2017-12-11
 
 ### Changes with software release 7.17.0
