@@ -91,7 +91,10 @@
         "deliveryWeight": {
           "amount": 100,
           "unit": "oz"
-        }
+        },
+        "energyLabelsString": "C",
+        "energyLabelsMaxEfficiencyString": "A+++",
+        "energyLabelSourceFile": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/Products/be_40401/label-1-9dee85f24e1.png",
       }
     ],
     "couponLineItem": null,
