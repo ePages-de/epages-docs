@@ -19,6 +19,7 @@ RUN gem install \
 
 RUN gem install nokogiri -v '1.8.1'
 RUN gem install therubyracer -v '0.12.3'
+RUN gem install ffi -v '1.9.18'
 
 EXPOSE 4000
 
