@@ -7,7 +7,7 @@ set :application, "epages_docs_staging"
 set :repo_url, "git@github.com:ePages-de/epages-docs.git"
 set :rbenv_ruby, '2.4.2'
 set :user, 'deploy'
-set :branch, 'master'
+set :branch, 'develop'
 set :pty,             true
 set :use_sudo,        false
 set :stage,           :production
