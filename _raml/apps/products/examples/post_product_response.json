@@ -46,6 +46,7 @@
   "availabilityText": "",
   "availability": null,
   "energyLabelsString": "A+++",
+  "energyLabelsMaxEfficiencyString": "A+++",
   "energyLabelSourceFile": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/Products/be_40401/label-1-9dee74f24e1.png",
   "productDataSheet": null,
   "sfUrl": "http://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/Products/TP-0821",

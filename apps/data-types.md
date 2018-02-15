@@ -410,6 +410,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | shippingMethodsRestrictedTo | array of [link](page:apps-data-types#link) | Information on possible shipping method restrictions, e.g. express delivery only. Can be `null` if no restrictions exist. |
 | availabilityText | string | Additional custom information on the product's stock level or the delivery period. |
 | availability | string | The availability of the product. Can be one of *OnStock*, *WarnStock*, *OutStock*. |
+| energyLabelsMaxEfficiencyString | string | The highest possible efficiency class of an uploaded energy label. |
 | energyLabelsString | string | A list of energy labels applied to this product. Can be one value or a range with two values. |
 | energyLabelSourceFile | string | A URL with an image or PDF file containing the energy label image supplied by the manufacturer. |
 | productDataSheet | string | An image or PDF file containing a data sheet with technical information on the product. Has to be available if the product has an energy label. |
@@ -468,6 +469,9 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | links | array of [link](page:apps-data-types#link) | The links to the product line item. |
 | taxClass | object of [taxClassInfo](page:apps-data-types#taxclassinfo) | The tax that applies for the product.|
 | deliveryWeight | object of [deliveryWeightQuantity](page:apps-data-types#deliveryweightquantity)| The delivery weight of the product line item.|
+| energyLabelsMaxEfficiencyString | string | The highest possible efficiency class of an uploaded energy label. |
+| energyLabelsString | string | A list of energy labels applied to this product. Can be one value or a range with two values. |
+| energyLabelSourceFile | string | A URL with an image or PDF file containing the energy label image supplied by the manufacturer. |
 | variationString | string | The description of the selected variation.|
 
 ## productLineItem (create request)

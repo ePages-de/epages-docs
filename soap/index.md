@@ -5,7 +5,7 @@ title: Overview
 header: SOAP API documentation
 ---
 
-# Introduction
+## Introduction
 
 The ePages SOAP API is a central data interface to exchange data between ePages and external systems or software applications.
 It is based on web services, which include SOAP (Simple Object Access Protocol), WSDL (Web Services Definition Language), and the XSD (XML Schema Definition) language.
@@ -16,7 +16,7 @@ Web services also allow you to manage shopping carts and inventory as well as re
 
 To successfully work with the web services, profound knowledge in software development and web services is required.
 
-# Using the web services
+## Using the web services
 
 Access to the web services is only enabled for the shop types ePages Flex or ePages Enterprise.
 ePages will provide the credentials to use the web services. Read further [here](page:soap-access).
