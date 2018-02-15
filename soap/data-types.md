@@ -6,41 +6,41 @@ title: Data types
 
 The API uses the following the XSD supported data types:
 
-# Integer
+## Integer
 
 The integer data type is used to specify a numeric value without a fractional component.
 
-## Example
+### Example
 
 {% highlight xml %}
 <Count>356</Count>
 {% endhighlight %}
 
-# Float
+## Float
 
 The float data type is used to specify a numeric value, that has a potential decimal place.
 
-## Example
+### Example
 
 {% highlight xml %}
 <Length>3.56</Length>
 {% endhighlight %}
 
-# String
+## String
 
 The string data type is used to specify values that contain character strings.
 
-## Example
+### Example
 
 {% highlight xml %}
 <CustomerName>John Smith</CustomerName>
 {% endhighlight %}
 
-# Array
+## Array
 
 The array data type is used to specify an ordered collection of values.
 
-## Example
+### Example
 
 {% highlight xml %}
 <Numbers type="array">
@@ -50,33 +50,33 @@ The array data type is used to specify an ordered collection of values.
 </Numbers>
 {% endhighlight %}
 
-# Boolean
+## Boolean
 
 The boolean data type is used to specify a true or false value.
 
-## Example
+### Example
 
 {% highlight xml %}
 <IsAvaliable>true</IsAvailable>
 {% endhighlight %}
 
-# DateTime
+## DateTime
 
 The dateTime data type is used to specify a date and time.
 
-## Example
+### Example
 
 {% highlight xml %}
 <StartDate>2015-05-06T09:00:00</StartDate>
 {% endhighlight %}
 
-# TAttribute
+## TAttribute
 
 ePages-specific data type.
 The TAttribute data type is used to specify a name-value pair of a base type.
 It can be used in an array to receive a list of name-value pairs.
 
-## Example
+### Example
 
 {% highlight xml %}
 <Attribute xsi:type="TAttribute">
@@ -86,13 +86,13 @@ It can be used in an array to receive a list of name-value pairs.
 </Attribute>
 {% endhighlight %}
 
-# TProductPrice
+## TProductPrice
 
 ePages-specific data type.
 The TProductPrice data type handles different prices related to products.
 It holds an amount for each related currency and tax model.
 
-## Example
+### Example
 
 {% highlight xml %}
 <ProductPrice xsi:type="TProductPrice">
@@ -102,13 +102,13 @@ It holds an amount for each related currency and tax model.
 </ProductPrice>
 {% endhighlight %}
 
-# TLocalizedValue
+## TLocalizedValue
 
 ePages-specific data type.
 The TLocalizedValue data type specifies a value for different languages.
 The base type of the values can be one of the general types mentioned above and the type "file".
 
-## Examples
+### Examples
 
 The default base type does not need to be specified by the <Type>String</Type>.
 
@@ -125,7 +125,7 @@ The default base type does not need to be specified by the <Type>String</Type>.
 </Description>
 {% endhighlight %}
 
-### Boolean example
+#### Boolean example
 
 {% highlight xml %}
 <IsAvailableForLanguage soapenc:arrayType="TLocalizedValue[2]" xsi:type="soapenc:Array">
@@ -142,7 +142,7 @@ The default base type does not need to be specified by the <Type>String</Type>.
 </IsAvailableForLanguage>
 {% endhighlight %}
 
-### File example
+#### File example
 
 {% highlight xml %}
 <Picture soapenc:arrayType="TLocalizedValue[2]" xsi:type="soapenc:Array">
@@ -161,12 +161,12 @@ The default base type does not need to be specified by the <Type>String</Type>.
 </Description>
 {% endhighlight %}
 
-# ListOf
+## ListOf
 
 ePages-specific data type.
 The ListOfType data type is based on different ePages-specific data types e.g. TLocalizedValue, TAttribute or similar and holds a list of items of this specific base type.
 
-## Example
+### Example
 
 {% highlight xml %}
 <Mapping type="ListOfAttributes">
@@ -185,12 +185,12 @@ The ListOfType data type is based on different ePages-specific data types e.g. T
 </Mapping>
 {% endhighlight %}
 
-# TError
+## TError
 
 ePages-specific data type.
 The TError data type specifies a message and code and responds with an error.
 
-## Example
+### Example
 
 {% highlight xml %}
 <Error type="TError">

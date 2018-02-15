@@ -9,55 +9,55 @@ ePages offers some use cases and examples to help you get started building an AP
 We hope this gives you a good starting point for your integration with ePages web services.
 Refer to our [web service directory](page:soap-directory) for on overview of the available web services.
 
-# Affiliate Management
+## Affiliate Management
 
 Build a web service that connects to the website, shopping basket or payment gateway of ePages shops to track referrals or purchases and this way constantly promote products, increase web site traffic and sales.
 
 Integrate with: **BasketService**, **OrderService**
 
-# Content Management Systems (CMS)
+## Content Management Systems (CMS)
 
 Build a web service that creates, manages and collaborates on customers and orders.
 
 Integrate with: **CustomerService**, **CustomerGroupService**, **OrderDocumentService**, **OrderService**
 
-# Enterprise Management (CRM, ERP)
+## Enterprise Management (CRM, ERP)
 
 Build a web service integration that manages master data or other enterprise-wide capabilities and handles fulfillment, inventory, licensing or post-transaction support.
 
 Integrate with: **CatalogueService**, **CustomerService**, **CustomerGroupService**, **OrderDocumentService**, **OrderService**, **ProductService**, **ProductTypeService**
 
-# Payments
+## Payments
 
 Build a web service integration that enables ePages merchants to send and receive electronic transactions online.
 
 Integrate with: **CustomerService**, **OrderService**, **PaymentMethodService**
 
-# Reporting, Analytics and Testing
+## Reporting, Analytics and Testing
 
 Build a web service integration that monitors visitor numbers or analyses typical navigation paths.
 
 Integrate with: **CustomerService**, **OrderService**
 
-# Shipping
+## Shipping
 
 Build a web service integration that integrates your orders and allows you to print shipping labels.
 
 Integrate with: **OrderDocumentService**, **OrderService**, **ShippingMethodService**
 
-# Social Media
+## Social Media
 
 Build a web service application that show cases products on social media platforms like Facebook or integrates products on a blogging platform.
 
 Integrate with: **ProductService**
 
-# Tax Calculation
+## Tax Calculation
 
 Build a web service that calculates taxes based on the postal code location.
 
 Integrate with: **CustomerService**
 
-# User Management
+## User Management
 
 Build a web service integration that manages online shop users.
 Enable ePages merchants to push new and updated user registration information to the user management.
