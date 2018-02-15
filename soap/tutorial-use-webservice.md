@@ -4,13 +4,13 @@ key: tutorial-use-webservice
 title: How to use a web service
 ---
 
-# 1. Requirements
+## 1. Requirements
 
-## 1.1 Existing development environment
+### 1.1 Existing development environment
 
 In order to be able to use a web service, make sure to have an appropriate development environment in place such as Java, .NET or Perl.
 
-## 1.2 Installed ePages DemoShop
+### 1.2 Installed ePages DemoShop
 
 For your test environment you should have access to a freshly installed ePages DemoShop with the following data for later use:
 
@@ -28,7 +28,7 @@ rpm -hiv http://www.epages.com/repo/epages/yum/epages-release.noarch.rpm
 yum install @epages
 {% endhighlight %}
 
-## 1.3 Cloned GitHub repository `ePages-de soapclient`
+### 1.3 Cloned GitHub repository `ePages-de soapclient`
 
 You can simply clone the [ePages-de soapclient](https://github.com/ePages-de/soapclient) with this command:
 
@@ -36,7 +36,7 @@ You can simply clone the [ePages-de soapclient](https://github.com/ePages-de/soa
 git clone https://github.com/ePages-de/soapclient.git
 {% endhighlight %}
 
-# 2. Intitialising the git client
+## 2. Intitialising the git client
 
 Initialise the git client and update the required dependencies:
 
@@ -54,7 +54,7 @@ To run the test suite, pass the wsHostName then:
 
 If the name of the DemoShop as well as the access credentials differ, then pass this information as well (see README.md file in [soapclient repository](https://github.com/ePages-de/soapclient)).
 
-# 3. Sending a request
+## 3. Sending a request
 
 Run one of the test cases (here: Java test case of `PageCacheService`):
 

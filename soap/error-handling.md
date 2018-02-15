@@ -7,7 +7,7 @@ title: Error handling
 API calls return error data that your client application can use to identify and resolve errors.
 If an error occurs during the invocation of an API call, the API provides the following types of error handling:
 
-# API data or process error (epages:`TError`)
+## API data or process error (epages:`TError`)
 
 If an error occurs on the SOAP API server during data processing it may be of the type `TError` as defined in ePagesTypes.xsd
 {% highlight xml %}
@@ -60,7 +60,7 @@ The error can be related to the whole response, but if you process a list of dat
 </soap:Envelope>
 {% endhighlight %}
 
-# Missing SOAP service or similar fault in SOAP protocol (`soap:fault`)
+## Missing SOAP service or similar fault in SOAP protocol (`soap:fault`)
 
 If the request cannot be handled by the ePages service due to some error in the previous SOAP protocol, a SOAP error occurs with an HTTP 500 status code and a content such as:
 {% highlight xml %}
@@ -84,6 +84,6 @@ If the request cannot be handled by the ePages service due to some error in the 
 
 Find more details in the ePages log files related to the hash code and the error GUID.
 
-# Incorrect authentication (`http:error`)
+## Incorrect authentication (`http:error`)
 
 If an authentication is missing or incorrect, an HTTP error occurs with an HTTP 401 status code only without content. The error occurs even before the request will be passed to the ePages service.

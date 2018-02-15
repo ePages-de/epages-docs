@@ -4,11 +4,11 @@ key: tutorial-build-simple-webservice-client
 title: How to build a simple web service client
 ---
 
-# 1. How to integrate web services in your own project
+## 1. How to integrate web services in your own project
 
 Go to the [epages-soapclient repository](https://bintray.com/epages/maven/epages-soapclient/) and integrate it with your build automation tool or manually.
 
-## 1.1 Integration with build automation tool
+### 1.1 Integration with build automation tool
 
 Include bintray to your maven repository resolution.
 For gradle this might look like this:
@@ -26,7 +26,7 @@ dependencies {
     compile ‘de.epages:soapclient-provider:${soapProviderVersion}’
 {% endhighlight %}
 
-## 1.2 Integration into an Integrated Development Environment (IDE)
+### 1.2 Integration into an Integrated Development Environment (IDE)
 
 Run your specified task to get the dependencies into your favourite IDE (e.g.: [eclipse](https://eclipse.org/downloads/)).
 
@@ -39,7 +39,7 @@ Open your IDE (here: eclipse) and right-click on your project >> properties >> J
 Libraries.
 Add the dependencies with **Add External JARs** to your java build path.
 
-## 1.3 Import the classes into your project
+### 1.3 Import the classes into your project
 
 Import the packages and use the services for your project.
 
@@ -48,9 +48,9 @@ import de.epages.ws.pagecache.PageCacheServiceClientImpl;
 import de.epages.ws.product{version}.ProductServiceClient;
 {% endhighlight %}
 
-# 2. The actual usage
+## 2. The actual usage
 
-## 2.1 The Authentication
+### 2.1 The Authentication
 
 Create an implementation of the interface WebServiceConfiguration with methods for your web service URL, your username and password.
 Give this object to the web service client implementation you want to use or create your own one with the provided interfaces.
@@ -59,7 +59,7 @@ Give this object to the web service client implementation you want to use or cre
 PageCacheServiceClientImpl pageCacheService = new PageCacheServiceClientImpl (soapShopConfig);
 {% endhighlight %}
 
-## 2.2 Example: The PageCacheService
+### 2.2 Example: The PageCacheService
 
 Use the PageCacheService to delete all cached pages of the shop.
 
@@ -67,9 +67,9 @@ Use the PageCacheService to delete all cached pages of the shop.
 pageCacheServiceClient.clear();
 {% endhighlight %}
 
-## 2.3 Example: The ProductService
+### 2.3 Example: The ProductService
 
-## 2.3.1 Product existence
+### 2.3.1 Product existence
 
 Check if one or more products exists.
 Create an array with strings of aliases you want to check.
@@ -89,7 +89,7 @@ TExists_Return[] existsReturn productService.exists(productAliases);
 
 This kind of service will return an array with information, e.g. call was successful or failed, product exists or not, etc.
 
-## 2.3.2 Product data
+### 2.3.2 Product data
 
 Get the data of one or more product(s) with the same array as before.
 
@@ -106,7 +106,7 @@ You could reach the data of the product with the setter and getter methods of th
 getInfoReturn[0].getManufacturer();
 {% endhighlight %}
 
-## 2.3.3 Product creation
+### 2.3.3 Product creation
 
 Create one or more products.
 First create an object of the type `TCreate_Input` with your new data.
