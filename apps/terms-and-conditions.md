@@ -1,5 +1,6 @@
 ---
 layout: docs
+key: apps-terms-and-conditions
 title: Terms and Conditions
 ---
 
