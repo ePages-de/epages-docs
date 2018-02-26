@@ -12,7 +12,7 @@ It supports JSON media types and uses UTF-8 character encoding.
 The API uses the standard HTTP request types `GET`, `POST`, `PUT`, `PATCH` and `DELETE`.
 
 Making use of this API, you can create awesome apps or single shop connections for our product [ePages Now](https://www.epages.com/us/sell-online/now/). ePages Base developers: Don't worry, the endpoints for our product ePages Base are also still covered.
-It is designed to give developers a convenient way to access data contained within ePages Now shops.
+The API is designed to give developers a convenient way to access data contained within ePages Now shops.
 With a standard interface to store data, it is very simple to create applications that can communicate with our merchant's shops.
 
 ## Registration {#registration}
