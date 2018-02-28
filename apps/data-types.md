@@ -572,6 +572,13 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | sfUrl | string | The URL to the storefront of the shop. |
 | mboUrl | string | The URL to the administration area of the shop. |
 
+## simplePriceInfo
+
+| Attribute | Type | Description |
+| - | - |  - |
+| quantity | object of [quantity](page:apps-data-types#quantity) | The quantity of the product the price refers to.|
+| price | object of [price](page:apps-data-types#price) | The price of the product.|
+
 ## subcategory
 
 | Attribute | Type | Description |

@@ -4,8 +4,8 @@
   "type": "object",
   "properties": {
     "priceInfo": {
-      "type": "object of [priceInfo](page:apps-data-types#priceinfo)",
-      "description": "Price information on the product variation."
+      "type": "object of [simplePriceInfo](page:apps-data-types#simplepriceinfo)",
+      "description": "Price information on the lowest price of the variation."
     },
     "links": {
       "type": "array of [link](page:apps-data-types#link)",
