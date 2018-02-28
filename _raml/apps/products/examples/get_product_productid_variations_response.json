@@ -1,92 +1,122 @@
 {
+  "results": 5,
+  "resultsPerPage": 100,
+  "page": 1,
+  "links": [],
   "variationAttributes": [
-    {
-      "name": "Colour",
-      "displayName": "Colour",
-      "values": [
-        {
-          "value": "DeepBlack",
-          "displayValue": "Extreme Black"
-        },
-        {
-          "value": "Silver",
-          "displayValue": "Silver"
-        },
-        {
-          "value": "Red",
-          "displayValue": "Red"
-        },
-        {
-          "value": "OffWhite",
-          "displayValue": "Cream"
-        },
-        {
-          "value": "Orange",
-          "displayValue": "Orange"
-        },
-        {
-          "value": "Blue",
-          "displayValue": "Blue"
-        },
-        {
-          "value": "Green",
-          "displayValue": "Green"
-        },
-        {
-          "value": "Yellow",
-          "displayValue": "Yellow"
-        },
-        {
-          "value": "Pink",
-          "displayValue": "Pink"
-        },
-        {
-          "value": "Purple",
-          "displayValue": "Lilac"
-        }
-      ]
-    }
+      {
+          "name": "Size",
+          "displayName": "Size",
+          "values": [
+              {
+                  "value": "M",
+                  "displayValue": "M"
+              },
+              {
+                  "value": "L",
+                  "displayValue": "L"
+              }
+          ]
+      },
+      {
+          "name": "Colour",
+          "displayName": "Colour",
+          "values": [
+              {
+                  "value": "Black",
+                  "displayValue": "Black"
+              },
+              {
+                  "value": "White",
+                  "displayValue": "White"
+              },
+              {
+                  "value": "Grey",
+                  "displayValue": "Grey"
+              }
+          ]
+      }
   ],
   "items": [
-    {
-      "link": {
-        "rel": "variation",
-        "href": "https://pm.epages.com/rs/shops/apidocu/products/561B822B-8387-3A70-BE21-D5809AB338DD"
+      {
+          "link": {
+              "rel": "variation",
+              "href": "https://pm.epages.com/rs/shops/apidocu/products/5A8FF070-100C-A364-ACAC-AC154546EA1D"
+          },
+          "attributeSelection": [
+              {
+                  "name": "Size",
+                  "value": "M"
+              },
+              {
+                  "name": "Colour",
+                  "value": "Black"
+              }
+          ]
       },
-      "attributeSelection": [
-        {
-          "name": "Colour",
-          "value": "Silver"
-        }
-      ]
-    },
-    {
-      "link": {
-        "rel": "variation",
-        "href": "https://pm.epages.com/rs/shops/apidocu/products/561B822B-3805-771D-8968-D5809AB338A4"
+      {
+          "link": {
+              "rel": "variation",
+              "href": "https://pm.epages.com/rs/shops/apidocu/products/5A8FF070-84EB-22FE-2BC2-AC154546EA0E"
+          },
+          "attributeSelection": [
+              {
+                  "name": "Size",
+                  "value": "L"
+              },
+              {
+                  "name": "Colour",
+                  "value": "Black"
+              }
+          ]
       },
-      "attributeSelection": [
-        {
-          "name": "Colour",
-          "value": "White"
-        }
-      ]
-    },
-    {
-      "link": {
-        "rel": "variation",
-        "href": "https://pm.epages.com/rs/shops/apidocu/products/561B822B-40EC-A918-DEBC-D5809AB3385B"
+      {
+          "link": {
+              "rel": "variation",
+              "href": "https://pm.epages.com/rs/shops/apidocu/products/5A8FF071-0D78-7764-CF5C-AC154546EA43"
+          },
+          "attributeSelection": [
+              {
+                  "name": "Size",
+                  "value": "M"
+              },
+              {
+                  "name": "Colour",
+                  "value": "White"
+              }
+          ]
       },
-      "attributeSelection": [
-        {
-          "name": "Colour",
-          "value": "Green"
-        }
-      ]
-    }
-  ],
-  "results": 3,
-  "resultsPerPage": 10,
-  "page": 1,
-  "links": []
+      {
+          "link": {
+              "rel": "variation",
+              "href": "https://pm.epages.com/rs/shops/apidocu/products/5A8FF071-D0B0-0A70-891D-AC154546EA75"
+          },
+          "attributeSelection": [
+              {
+                  "name": "Size",
+                  "value": "L"
+              },
+              {
+                  "name": "Colour",
+                  "value": "White"
+              }
+          ]
+      },
+      {
+          "link": {
+              "rel": "variation",
+              "href": "https://pm.epages.com/rs/shops/apidocu/products/5A8FF071-FE88-72D1-E672-AC154546EAE1"
+          },
+          "attributeSelection": [
+              {
+                  "name": "Size",
+                  "value": "M"
+              },
+              {
+                  "name": "Colour",
+                  "value": "Grey"
+              }
+          ]
+      }
+  ]
 }
