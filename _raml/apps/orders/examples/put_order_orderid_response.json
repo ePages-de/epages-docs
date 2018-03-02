@@ -119,6 +119,12 @@
           "amount": 9.99,
           "currency": "EUR"
         },
+        "lineItemCouponDiscount": {
+                    "taxType": "GROSS",
+                    "formatted": "1.70 €",
+                    "amount": 1.7,
+                    "currency": "EUR"
+        },
         "images": [
           {
             "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54EF/307D/4FF3/3578/CB70/0A0C/05E6/6C3F/eBookNew_h.jpg",
