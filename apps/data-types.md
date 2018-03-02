@@ -464,8 +464,8 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | quantity |object of [quantity](page:apps-data-types#quantity) | The quantity of the line item. |
 | lineItemPrice | object of [price](page:apps-data-types#price) | The price of the line item. |
 | singleItemPrice | object of  [price](page:apps-data-types#price) | The price for a single item. |
+| lineItemCouponDiscount | object of [price](page:apps-data-types#price) | The discount of a coupon that is only applied to the line item. |
 | essentialFeatures | string | The essential features of the line item. |
-| lineItemCouponDiscount | object of [price](page:apps-data-types#price) | The discount that is only applied to the line item because of a coupon. |
 | images | array of [image](page:apps-data-types#image) | The image of the line item. |
 | links | array of [link](page:apps-data-types#link) | The links to the product line item. |
 | taxClass | object of [taxClassInfo](page:apps-data-types#taxclassinfo) | The tax that applies for the product.|
