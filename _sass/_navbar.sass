@@ -7,7 +7,9 @@
   align-items: center
   z-index: 9999
   transition: $base-transition
-  box-shadow: $base-box-shadow
+
+  +grid-media($grid-medium)
+    height: auto
 
   &-wrapper
     width: 90%
@@ -21,7 +23,7 @@
     display: block
 
     &--devportal
-      height: 3rem
+      width: 23rem
 
   .navigation
     $navigation-width: 75%
@@ -51,11 +53,12 @@
         flex-direction: row
 
     &__item
+      position: relative
       border-bottom: $navbar-border
-      display: inherit
+      display: flex
+      flex-direction: column
 
       +grid-media($grid-medium)
-        padding: 1em 0
         border-bottom: none
 
         &:not(:last-child)
@@ -64,16 +67,33 @@
         &--hidden
           display: none
 
+        &:hover .dropdown
+          display: block
+
+      svg
+        display: block
+        color: $beyond-green
+
+        +grid-media($grid-medium)
+          display: none
+
     &__link
       color: $base-font-color-white
-      display: block
       width: 100%
       padding: 1em
+      box-sizing: border-box
+      display: flex
+      justify-content: space-between
+      align-items: center
 
       +grid-media($grid-medium)
-        padding: 0
+        padding: 1em 0
 
-      &:hover,
+        &--disabled
+          pointer-events: none
+          cursor: default
+
+      &:hover:not(.navigation__link--disabled),
       &:focus,
       &--active
         text-decoration: none
@@ -108,3 +128,40 @@
 
   &--dark
     background: $navbar-background-color
+
+.dropdown
+  background-color: $beyond-green
+  display: none
+  list-style: none
+
+  +grid-media($grid-medium)
+    +border-bottom-radius(4px)
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    top: 100%
+    padding: 5px 0
+
+    &::before
+      +triangle('up', 2rem, 1rem, $beyond-green)
+      +position(absolute, -1rem 50% null null)
+      transform: translateX(50%)
+      content: ''
+
+    &--border
+      +border-top-radius(4px)
+
+  &__link
+    width: 100%
+    white-space: nowrap
+    color: $white
+    padding: .7em
+    box-sizing: border-box
+
+    +grid-media($grid-medium)
+      padding: .6rem 1.8rem
+
+    &.navigation__link--active,
+    &:hover
+      background-color: darken($beyond-green, 10%)
+      color: $white
