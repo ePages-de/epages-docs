@@ -135,6 +135,12 @@
           "amount": 199.99,
           "currency": "EUR"
         },
+        "lineItemCouponDiscount": {
+                    "taxType": "GROSS",
+                    "formatted": "1.70 €",
+                    "amount": 1.7,
+                    "currency": "EUR"
+        },
         "images": [
           {
             "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/EE97/FD85/1B66/9962/AC14/145F/A540/001-headphone-blue_h.jpg",

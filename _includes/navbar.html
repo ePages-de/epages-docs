@@ -11,16 +11,27 @@
           <a href="/" class="navigation__link">Home</a>
         </li>
         <li class="navigation__item">
-          <a href="http://docs.beyondshop.cloud/" target="_blank" class="navigation__link  navigation__link--active">Docs</a>
+          <a href="#" class="navigation__link  navigation__link--disabled">
+            Docs
+            <i class="fas fa-caret-down"></i>
+          </a>
+          <ul class="dropdown">
+            <li>
+              <a href="http://docs.beyondshop.cloud/" class="dropdown__link" target="_blank">Beyond API</a>
+            </li>
+            <li>
+              <a href="/apps/" class="dropdown__link  {% active_menu apps %}">Now API</a>
+            </li>
+          </ul>
         </li>
         <li class="navigation__item">
-          <a href="/blog/" class="navigation__link">Blog</a>
+          <a href="/blog/" class="navigation__link  {% active_menu blog %}">Blog</a>
         </li>
         <li class="navigation__item">
-          <a href="/devjobs/" class="navigation__link">Jobs</a>
+          <a href="/devjobs/" class="navigation__link  {% active_menu devjobs %}">Jobs</a>
         </li>
         <li class="navigation__item">
-          <a href="/about/" class="navigation__link">About</a>
+          <a href="/about/" class="navigation__link  {% active_menu about %}">About</a>
         </li>
       </ul>
     </nav>
