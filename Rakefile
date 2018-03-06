@@ -156,7 +156,8 @@ task :test do
               url_ignore: url_ignore,
               empty_alt_ignore: true,
               check_html: true,
-              assume_extension: true}
+              assume_extension: true,
+              allow_hash_href: true }
 
   sh 'bundle exec jekyll build'
 
