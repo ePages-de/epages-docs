@@ -1,6 +1,6 @@
 {
   "productId": "57D647C1-77D5-DD52-3024-D5809AB3A134",
-  "name": "Next brand new product",
+  "name": "Amazing Gracephones",
   "visible": false,
   "productVariationType": "regular",
   "manufacturerProductNumber": null,
@@ -11,6 +11,7 @@
   "shortDescription": "Awesome new product",
   "deliveryPeriod": null,
   "description": "This is a brand new product",
+  "title": "Amazing Gracephones - Technic365",
   "productImage": null,
   "images": [],
   "priceInfo": {
