@@ -34,6 +34,14 @@ Of course, we will continue to inform you if there are any breaking changes to t
 * [`GET`orders/{orderId}/documents](https://developer.epages.com/apps/api-reference/get-shopid-orders-orderid-documents.html)
 * Added data type [`orderDocument`](https://developer.epages.com/apps/data-types#orderdocument).
 
+## 2017-07-25
+
+### Changes with software release 7.12.0
+
+#### <i class="fas fa-pencil-alt"></i> Update
+
+* Added attribute `lineItemCouponDiscount` to data type [`productLineItem`](https://developer.epages.com/apps/data-types#productlineitem).
+
 <hr>
 
 ## 2017-06-29
@@ -43,6 +51,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 #### <i class="fas fa-pencil-alt"></i> Update
 
 * Added attributes `couponCampaignId` and `validationErrors` to data type [`couponLineItem`](https://developer.epages.com/apps/data-types#couponlineitem).
+* Added attribute `title` to data type [`product`](https://developer.epages.com/apps/data-types#product).
 
 <hr>
 
