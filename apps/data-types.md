@@ -403,6 +403,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | shortDescription | string | The short description of the product. |
 | deliveryPeriod | string | The average time of the product being delivered to the customer. By default, the delivery period is displayed in days, but this can be changed by the merchant. |
 | description | string | The description of the product. |
+| title | string | The page title of the product page. |
 | priceInfo | object of [priceInfo](page:apps-data-types#priceinfo) | Price information on the product. |
 | forSale | boolean | Information on the sale status of the product. Indicates if the product can be added to the shopping basket. |
 | specialOffer | boolean | Indicates if the product is a special offer. |
@@ -417,6 +418,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | sfUrl | string | The link to storefront URL of the product. |
 | productNumber | string | The product number. |
 | productImage | string | The name of the product image. |
+| images | array of [image](page:apps-data-types#image) | The images belonging to the product. |
 | manufacturer | string | The manufacturer of the product. |
 | upc | string | The Universal Product Code of the product. |
 | ean | string | The European Article Number of the product, either EAN-8 or EAN-13. |
