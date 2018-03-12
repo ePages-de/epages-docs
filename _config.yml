@@ -4,13 +4,6 @@ app_scopes: ["customers_read", "customers_write", "legal_read", "legal_write", "
 url: "https://developer.epages.com"
 baseurl: ""
 github_url: "https://github.com/ePages-de/epages-docs"
-google_analytics:
-  default:
-    id: UA-71308214-1
-  blog:
-    id: UA-71308214-2
-  devjobs:
-    id: UA-71308214-3
 future: true
 raml:
 - key_prefix: "apps-api-"
