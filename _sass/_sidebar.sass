@@ -28,6 +28,9 @@ aside.sidebar
     border-bottom: $base-border
     padding: 2rem 0
     cursor: pointer
+    display: flex
+    justify-content: space-between
+    align-items: center
 
     +grid-media($grid-large)
       text-transform: uppercase
@@ -44,6 +47,11 @@ aside.sidebar
     &:last-of-type
       padding-bottom: 0
       border-bottom: 0
+
+    svg
+
+      +grid-media($grid-large)
+        display: none
 
   ul.sitemap-content
     display: none
