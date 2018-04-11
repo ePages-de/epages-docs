@@ -1,4 +1,5 @@
 {
   "model": "gross",
-  "displayTaxes": true
+  "displayTaxes": true,
+  "noTaxesMessage":"According to the § 19 UStG we do not charge the german sales tax, and consequently do not account it (small business)."
 }

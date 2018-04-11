@@ -623,7 +623,8 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | Attribute | Type | Description |
 | - | - |  - |
 | model | string | The tax model of the shop. Can be *gross* (taxes included) or *net* (taxes excluded). |
-| displayTaxes | boolean | Indicates if a tax notification message for product prices has to be displayed in the shop, e.g. if the `tax model` is *gross* and the `displayedTaxes` is *true*, a message has to be displayed in the shop that the prices include taxes. |
+| displayTaxes | boolean | Indicates if a tax notification message for product prices has to be displayed in the shop, e.g. if the `tax model` is *gross* and the `displayTaxes` is *true*, a message has to be displayed in the shop that the prices include taxes. |
+| noTaxesMessage | string | If `displayTaxes` is *false* this message is displayed for product prices. Used if VAT does not need to be declared as the invoicer is a small-sized business according to §19 UStG (German VAT law). |
 
 ## updatedProducts
 
