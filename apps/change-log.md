@@ -14,11 +14,21 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
+## 2018-04-10
+
+### Changes with software release 7.23.0
+
+#### <i class="fas fa-plus"></i> Update
+
+* Added attribute `noTaxesMessage` to [`taxModel`](https://developer.epages.com/apps/data-types#taxmodel).
+
+<hr>
+
 ## 2018-02-07
 
 ### Changes with software release 7.21.0
 
-#### <i class="fas fa-plus"></i> New
+#### <i class="fas fa-plus"></i> Update
 
 * Added attribute `energyLabelsMaxEfficiencyString` to data type [`product`](https://developer.epages.com/apps/data-types#product).
 * Added attributes `energyLabelsString`, `energyLabelsMaxEfficiencyString` and `energyLabelSourceFile` to [`productLineItem`](https://developer.epages.com/apps/data-types#productlineitem).
