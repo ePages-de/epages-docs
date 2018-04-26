@@ -433,6 +433,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | links | array of [link](page:apps-data-types#link) | The links to the product and product category. |
 | productVariationType | string | The type of the variation product. Can be one of *master*, *regular* or *variation*. |
 | productVariationSelection | array of [variationIdentifier](page:apps-data-types#variationidentifier) | The selection of the variation product. Only available if `productVariationType` is *variation*. |
+| videos | array of [video](page:apps-data-types#video) | The videos belonging to the product. |
 
 ## product (create request)
 
@@ -661,6 +662,13 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | - | - |  - |
 | value | string | The key of an attribute, e.g. NeonPurple. |
 | displayValue | string | The localized displayed name of the attribute, e.g. Neon Purple. |
+
+## video
+
+| Attribute | Type | Description |
+| - | - |  - |
+| type | string | The provider of a video. |
+| source | string | Specifies the video source. Depending on the provider this can be the video id or video URL. |
 
 ## watchedProduct
 
