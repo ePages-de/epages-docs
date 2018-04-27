@@ -14,13 +14,33 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
+## 2018-04-27
+
+### Changes with software release 7.24.0
+
+#### <i class="fas fa-plus"></i> Update
+
+* Added attribute `videos` to data type [`product`](https://developer.epages.com/apps/data-types#product).
+
+<hr>
+
 ## 2018-04-10
 
 ### Changes with software release 7.23.0
 
 #### <i class="fas fa-plus"></i> Update
 
-* Added attribute `noTaxesMessage` to [`taxModel`](https://developer.epages.com/apps/data-types#taxmodel).
+* Added attribute `noTaxesMessage` to data type [`taxModel`](https://developer.epages.com/apps/data-types#taxmodel).
+
+<hr>
+
+## 2018-03-29
+
+### Changes with software release 7.22.0
+
+#### <i class="fas fa-plus"></i> New
+
+* [`GET`products/{productId}/crossselling](https://developer.epages.com/apps/api-reference/get-shopid-products-productid-crossselling.html)
 
 <hr>
 

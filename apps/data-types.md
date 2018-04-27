@@ -175,6 +175,14 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | lineItemPrice | object of [price](page:apps-data-types#price) | The price of the line item. |
 | validationErrors | array of error strings | The error that occurred when redeeming a coupon for this cart. Can be one of *LineItemsSubTotalTooSmall*, *CouponIsInvalidated*, *ValidCouponCountReached*, *CouponNotEffective*, *PaymentMethodMisMatch*, *ShippingMethodMisMatch*, *ProductMisMatch*.
 
+## crossselling
+
+| Attribute | Type | Description |
+| - | - |  - |
+| manualCrossSellingTitle | string | The headline displayed for all crossselling products. Can be edited by the merchant in the administration area. |
+| embedded | object of [productsPaged](page:apps-data-types#productspaged) | The complete product object with the list of all crossselling products. |
+| links | array of [link](page:apps-data-types#link) | The references the crossselling product is linked to. |
+
 ## customAttribute
 
 | Attribute | Type | Description |
@@ -352,6 +360,15 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | address | [address](page:apps-data-types#address) | The billing address for the order.  |
 | lineItemContainer | [lineItemContainer](page:apps-data-types#lineitemcontainer) | Contains the line items of an order. |
 | links | array of [link](page:apps-data-types#link) | The links to the products of the order. |
+
+## productsPaged
+
+| Attribute | Type | Description |
+| - | - |  - |
+| results | string | The number of products in total. |
+| page | string | The page number on which the products appear. |
+| resultsPerPage | string | The number of products returned per page. |
+| items | object of [product](page:apps-data-types#product) | The list of all products. |
 
 ## paymentData
 
