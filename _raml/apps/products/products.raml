@@ -128,6 +128,19 @@ post:
     responses:
       204:
 
+  /crossselling:
+    displayName: Product crossselling
+    get:
+      is: [ locale, currency ]
+      description: Returns information on the crossselling of products. *epagesNow
+      securedBy: [products_read]
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/get_product_productid_crossselling_response.json
+              schema: !include schema/get_product_productid_crossselling.schema.json
+
   /variations:
     displayName: Product variations
     get:
