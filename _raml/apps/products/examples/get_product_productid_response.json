@@ -88,6 +88,16 @@
   ],
   "stocklevel": 100,
   "minStocklevel": 10,
+  "videos": [
+    {
+      "type": "YouTube",
+      "source": "j-bj3nC7qss"
+    },
+    {
+      "type": "Vimeo",
+      "source": "https://vimeo.com/7265982"
+    }
+  ],  
   "links": [
     {
       "rel": "self",

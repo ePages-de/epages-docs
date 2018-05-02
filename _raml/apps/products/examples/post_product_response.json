@@ -62,6 +62,7 @@
   ],
   "stocklevel": null,
   "minStocklevel": null,
+  "videos": [],  
   "links": [
     {
       "rel": "self",
