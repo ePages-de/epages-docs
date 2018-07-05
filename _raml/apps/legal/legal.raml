@@ -13,7 +13,7 @@ get:
 /contact-information:
   displayName: Contact information
   get:
-    description: Returns the contact information of a shop. *epages6
+    description: Returns the contact information of a shop. *epages6 *epagesNow
     securedBy: [legal_read]
     is: [ locale ]
     responses:
@@ -23,7 +23,7 @@ get:
             example: !include examples/get_legal_contact_response.json
             schema: !include schema/get_legal_contact.schema.json
   put:
-    description: Modifies the contact information of a shop. This endpoint expects a complete object representation, all fields included. If any field is not set, it will be deleted from the transferred object. *epages6
+    description: Modifies the contact information of a shop. This endpoint expects a complete object representation, all fields included. If any field is not set, it will be deleted from the transferred object. *epages6 *epagesNow
     securedBy: [legal_write]
     is: [ localeMandatory ]
     body:
@@ -40,7 +40,7 @@ get:
 /privacy-policy:
     displayName: Privacy policy
     get:
-      description: Returns the privacy policy of a shop. *epages6
+      description: Returns the privacy policy of a shop. *epages6 *epagesNow
       securedBy: [legal_read]
       is: [ locale ]
       responses:
@@ -51,7 +51,7 @@ get:
               schema: !include schema/get_legal_privacy.schema.json
 
     put:
-      description: Modifies the privacy policy of a shop. This endpoint expects a complete object representation, all fields included. If any field is not set, it will be deleted from the transferred object. *epages6
+      description: Modifies the privacy policy of a shop. This endpoint expects a complete object representation, all fields included. If any field is not set, it will be deleted from the transferred object. *epages6 *epagesNow
       securedBy: [legal_write]
       is: [ localeMandatory ]
       body:
@@ -68,7 +68,7 @@ get:
 /terms-and-conditions:
   displayName: Terms and conditions
   get:
-    description: Returns the terms and conditions of a shop. *epages6
+    description: Returns the terms and conditions of a shop. *epages6 *epagesNow
     securedBy: [legal_read]
     is: [ locale ]
     responses:
@@ -78,7 +78,7 @@ get:
             example: !include examples/get_legal_terms_response.json
             schema: !include schema/get_legal_terms.schema.json
   put:
-    description: Modifies the terms and conditions of a shop. This endpoint expects a complete object representation, all fields included. If any field is not set, it will be deleted from the transferred object. *epages6
+    description: Modifies the terms and conditions of a shop. This endpoint expects a complete object representation, all fields included. If any field is not set, it will be deleted from the transferred object. *epages6 *epagesNow
     securedBy: [legal_write]
     is: [ localeMandatory ]
     body:
@@ -95,7 +95,7 @@ get:
 /rights-of-withdrawal:
     displayName: Rights of withdrawal
     get:
-      description: Returns the customer rights of withdrawal of a shop. *epages6
+      description: Returns the customer rights of withdrawal of a shop. *epages6 *epagesNow
       securedBy: [legal_read]
       is: [ locale ]
       responses:
@@ -105,7 +105,7 @@ get:
               example: !include examples/get_legal_rights_response.json
               schema: !include schema/get_legal_rights.schema.json
     put:
-      description: Modifies the customer rights of withdrawal of a shop. This endpoint expects a complete object representation, all fields included. If any field is not set, it will be deleted from the transferred object. *epages6
+      description: Modifies the customer rights of withdrawal of a shop. This endpoint expects a complete object representation, all fields included. If any field is not set, it will be deleted from the transferred object. *epages6 *epagesNow
       securedBy: [legal_write]
       is: [ localeMandatory ]
       body:
@@ -122,7 +122,7 @@ get:
 /shipping-information:
     displayName: Shipping information
     get:
-      description: Returns detailed information on possible shipping types and the costs incurred. Also displays the costs for shipment abroad. *epages6
+      description: Returns detailed information on possible shipping types and the costs incurred. Also displays the costs for shipment abroad. *epages6 *epagesNow
       securedBy: [legal_read]
       is: [ locale ]
       responses:
@@ -133,7 +133,7 @@ get:
               schema: !include schema/get_legal_shipping.schema.json
 
     put:
-      description: Modifies the shipping information of a shop. This endpoint expects a complete object representation, all fields included. If any field is not set, it will be deleted from the transferred object. *epages6
+      description: Modifies the shipping information of a shop. This endpoint expects a complete object representation, all fields included. If any field is not set, it will be deleted from the transferred object. *epages6 *epagesNow
       securedBy: [legal_write]
       is: [ localeMandatory ]
       body:
