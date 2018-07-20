@@ -33,6 +33,7 @@ exclude:
 - Rakefile
 - README.md
 - config/
+- vendor
 gem:
 - jekyll-include-cache
 plugins:
