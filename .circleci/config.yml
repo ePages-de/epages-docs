@@ -1,0 +1,85 @@
+defaults: &defaults
+  working_directory: ~/repo
+
+version: 2
+
+jobs:
+  build_test:
+    <<: *defaults
+    docker:
+      - image: circleci/ruby:2.4.2
+    environment:
+      BUNDLE_PATH: ~/repo/vendor/bundle
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - rubygems-v1-{{ checksum "Gemfile.lock" }}
+            - rubygems-v1-fallback
+      - run:
+          name: Bundle Install
+          command: bundle install
+      - run:
+          name: Jekyll build
+          command: bundle exec jekyll build
+      - run:
+          name: Test
+          command: bundle exec rake test_ci
+      - save_cache:
+          key: rubygems-v1-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
+      - persist_to_workspace:
+          root: ./
+          paths:
+            - ./_site
+
+  deploy_production:
+    <<: *defaults
+    docker:
+      - image: circleci/python:3.6.3
+    environment:
+      S3_BUCKET_NAME: developer.epages.com
+    steps:
+      - attach_workspace:
+          at: ./
+      - run:
+          name: Install AWS CLI
+          command: pip install awscli --upgrade --user
+      - run:
+          name: Upload to S3
+          command: ~/.local/bin/aws s3 sync ./_site s3://$S3_BUCKET_NAME/ --delete --acl public-read
+
+  deploy_staging:
+    <<: *defaults
+    docker:
+      - image: circleci/python:3.6.3
+    environment:
+      S3_BUCKET_NAME: staging.developer.epages.com
+    steps:
+      - attach_workspace:
+          at: ./
+      - run:
+          name: Install AWS CLI
+          command: pip install awscli --upgrade --user
+      - run:
+          name: Upload to S3
+          command: ~/.local/bin/aws s3 sync ./_site s3://$S3_BUCKET_NAME/ --size-only --acl public-read
+
+workflows:
+  version: 2
+  build_test_deploy:
+    jobs:
+      - build_test
+      - deploy_production:
+          requires:
+            - build_test
+          filters:
+            branches:
+              only: master
+      - deploy_staging:
+          requires:
+            - build_test
+          filters:
+            branches:
+              only: develop
