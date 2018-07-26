@@ -79,8 +79,10 @@
   "paymentData": {
     "paymentMethod": {
       "id": "5171DD89-6DE5-E758-E046-AC14145F9009",
-      "name": "PayPal"
+      "name": "PayPal",
+      "providerName": "PayPal"
     },
+    "transactionId": "7PM024488F971832G",
     "price": {
       "taxType": "GROSS",
       "formatted": "0.00 €",
@@ -203,7 +205,7 @@
         },
         "energyLabelsString": "C",
         "energyLabelsMaxEfficiencyString": "A+++",
-        "energyLabelSourceFile": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/Products/be_40401/label-1-9dee85f24e1.png",
+        "energyLabelSourceFile": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/Products/be_40401/label-1-9dee85f24e1.png"
       }
     ],
     "couponLineItem": {
