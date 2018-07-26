@@ -375,7 +375,7 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | Attribute | Type | Description |
 | - | - |  - |
 | paymentMethod | object of [paymentMethodInfo](page:apps-data-types#paymentmethodinfo) | Information on the payment type chosen by the customer. |
-| transactionId | string | The unique identifier of the transaction. |
+| transactionId | string | The unique identifier of the payment transaction. |
 | price | object of [price](page:apps-data-types#price) | The costs for the payment method. |
 | status | string | Indicates the status of the payment. Can be either *CANCELED*, *FAILED* or null. |
 | taxes | array of [taxInfo](page:apps-data-types#taxinfo) | Information on the taxes for the payment. |
