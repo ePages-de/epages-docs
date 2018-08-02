@@ -14,6 +14,18 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
+## 2018-08-02
+
+### Changes with software release 7.27.0
+
+#### <i class="fas fa-plus"></i> Update
+
+* Added attribute `providerName` to data type [`paymentMethodInfo`](https://developer.epages.com/apps/data-types#paymentmethodinfo).
+
+* Added attribute `transactionId` to data type [`paymentData`](https://developer.epages.com/apps/data-types#paymentdata).
+
+<hr>
+
 ## 2018-04-27
 
 ### Changes with software release 7.24.0
