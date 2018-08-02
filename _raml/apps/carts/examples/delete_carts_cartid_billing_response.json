@@ -154,8 +154,10 @@
   "paymentData": {
     "paymentMethod": {
       "id": "5171DD89-6DE5-E758-E046-AC14145F9009",
-      "name": "PayPal"
+      "name": "PayPal",
+      "providerName": "PayPal"
     },
+    "transactionId": "7PM024488F971832G",
     "price": {
       "taxType": "GROSS",
       "formatted": "0.00 €",
