@@ -19,7 +19,7 @@ Click the tab **Private apps** and click on your app in the list below.
 2. Click the button **Submit app**.    
     {% image submit-app.png %}
 
-3. You will then be asked to fill out the [submission form](https://mate.epages.com/).
+3. You will then be asked to fill out the submission form.
 
 ### Walk through the submission form
 
