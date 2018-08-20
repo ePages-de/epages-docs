@@ -210,6 +210,7 @@
   },
   "pickupToken": "YmMyM2M0YjMxNzFkNzdjMjdjNjI4OTg3N2IzYzBhM2QxODEyNTU1Zjk4ZWQyYzViY2RjNWNiNjhjZmM1YzQzN18xNDgyMjI2NDYz",
   "checkoutUrl": "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/1/Baskets/46072&ChangeAction=PickupBasket&PickupToken=YmMyM2M0YjMxNzFkNzdjMjdjNjI4OTg3N2IzYzBhM2QxODEyNTU1Zjk4ZWQyYzViY2RjNWNiNjhjZmM1YzQzN18xNDgyMjI2NDYz",
+  "registerSessionUrl": "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/2/Baskets/46072&ChangeAction=PickupBasket&PickupToken=NTRjZWJmNjdhNzNlYTUzNDAxZTgyZTc4ODYwYTliMDUxMDIzNDQ2OWY2NWQ5NWRmN2Q2YmVjZjVjNzljOTQ2N18xNDgyMjI3OTE3",
   "links": [
     {
       "rel": "self",
