@@ -1,6 +1,29 @@
 defaults: &defaults
   working_directory: ~/repo
 
+deploy: &deploy
+  docker:
+    - image: circleci/python:3.6.3
+  steps:
+    - attach_workspace:
+        at: ./
+    - run:
+        name: Install AWS CLI
+        command: pip install awscli --upgrade --user
+    - run:
+        name: Download epages-devportal
+        command: |
+          ~/.local/bin/aws s3 sync s3://$S3_BUCKET_NAME ./_site --exclude "apps/*" \
+                                                                --exclude "soap/*" \
+                                                                --exclude "assets/fonts/*" \
+                                                                --exclude "assets/images/*" \
+                                                                --exclude "assets/javascript/*" \
+                                                                --exclude "assets/styles/*" \
+                                                                --exclude "robots.txt"
+    - run:
+        name: Upload to S3
+        command: ~/.local/bin/aws s3 sync ./_site s3://$S3_BUCKET_NAME/ --size-only --delete --acl public-read
+
 version: 2
 
 jobs:
@@ -36,35 +59,15 @@ jobs:
 
   deploy_production:
     <<: *defaults
-    docker:
-      - image: circleci/python:3.6.3
     environment:
       S3_BUCKET_NAME: developer.epages.com
-    steps:
-      - attach_workspace:
-          at: ./
-      - run:
-          name: Install AWS CLI
-          command: pip install awscli --upgrade --user
-      - run:
-          name: Upload to S3
-          command: ~/.local/bin/aws s3 sync ./_site s3://$S3_BUCKET_NAME/ --delete --acl public-read
+    <<: *deploy
 
   deploy_staging:
     <<: *defaults
-    docker:
-      - image: circleci/python:3.6.3
     environment:
       S3_BUCKET_NAME: staging.developer.epages.com
-    steps:
-      - attach_workspace:
-          at: ./
-      - run:
-          name: Install AWS CLI
-          command: pip install awscli --upgrade --user
-      - run:
-          name: Upload to S3
-          command: ~/.local/bin/aws s3 sync ./_site s3://$S3_BUCKET_NAME/ --size-only --acl public-read
+    <<: *deploy
 
 workflows:
   version: 2
