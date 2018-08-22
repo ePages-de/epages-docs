@@ -25,7 +25,7 @@ class String
   end
 end
 
-task :test do
+task :test_files do
   class LinterLine
     attr_reader :file, :raw, :line_num, :content
 
@@ -143,7 +143,7 @@ task :test do
   Linter.new('.', '*/**/*.*', ['./.git', './.sass_cache', './_site/', './_sass/bootstrap/', './_sass/font-awesome/', './assets/fonts', './vendor/', './README.md']).run
 end
 
-task :test do
+task :test_html do
   require 'html-proofer'
 
   url_ignore = ['/',
@@ -159,9 +159,18 @@ task :test do
               assume_extension: true,
               allow_hash_href: true }
 
+  HTMLProofer.check_directory('./_site', options).run
+end
+
+task :test do
   sh 'bundle exec jekyll build'
 
-  HTMLProofer.check_directory('./_site', options).run
+  sh 'rake test_ci'
+end
+
+task :test_ci do
+  sh 'rake test_html'
+  sh 'rake test_files'
 end
 
 task :ramlup do
