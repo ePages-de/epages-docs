@@ -276,7 +276,7 @@
           "amount": 42.02,
           "currency": "EUR"
         },
-        "lowerPrice": {
+        "lowestPrice": {
             "taxType": "GROSS",
             "formatted": "39.50 €",
             "amount": 39.50,
