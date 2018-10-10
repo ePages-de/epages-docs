@@ -64,6 +64,12 @@
             "amount": 54.62,
             "currency": "EUR"
           },
+          "lowerPrice": {
+              "taxType": "GROSS",
+              "formatted": "49.50 €",
+              "amount": 49.50,
+              "currency": "EUR"
+          },
           "manufacturerPrice": null,
           "basePrice": null
         },
@@ -92,7 +98,7 @@
         ],
         "stocklevel": 100,
         "minStocklevel": 10,
-        "videos": [],        
+        "videos": [],
         "links": [
           {
             "rel": "self",

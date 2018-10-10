@@ -97,7 +97,7 @@
           "type": "Vimeo",
           "source": "https://vimeo.com/7265982"
         }
-      ],       
+      ],
       "links": [
         {
           "rel": "self",
@@ -204,7 +204,7 @@
           "type": "Vimeo",
           "source": "https://vimeo.com/7265982"
         }
-      ],      
+      ],
       "links": [
         {
           "rel": "self",
@@ -276,6 +276,12 @@
           "amount": 42.02,
           "currency": "EUR"
         },
+        "lowerPrice": {
+            "taxType": "GROSS",
+            "formatted": "39.50 €",
+            "amount": 39.50,
+            "currency": "EUR"
+        },
         "manufacturerPrice": null,
         "basePrice": null
       },
@@ -311,7 +317,7 @@
           "type": "Vimeo",
           "source": "https://vimeo.com/7265982"
         }
-      ],      
+      ],
       "links": [
         {
           "rel": "self",
