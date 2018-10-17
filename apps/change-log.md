@@ -14,16 +14,6 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
-## 2018-10-11
-
-### Changes with software release 7.30.0
-
-#### <i class="fas fa-plus"></i> Update
-
-* Updated description of query parameter `updatedFrom` in [`GET` orders](https://developer.epages.com/apps/api-reference/get-shopid-orders.html).
-
-<hr>
-
 ## 2018-08-22
 
 ### Changes with software release 7.28.0
