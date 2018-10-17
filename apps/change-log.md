@@ -14,16 +14,6 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
-## 2018-10-11
-
-### Changes with software release 7.30.0
-
-#### <i class="fas fa-plus"></i> Update
-
-* Added attribute `lowestPrice` to data type [`priceInfo`](https://developer.epages.com/apps/data-types#priceinfo).
-
-<hr>
-
 ## 2018-08-22
 
 ### Changes with software release 7.28.0
