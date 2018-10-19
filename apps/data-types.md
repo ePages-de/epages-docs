@@ -411,6 +411,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | ecoParticipationPrice | object of [price](page:apps-data-types#price) | The advance recycling fee for electric and electronic products which is only in some countries prescribed by law.|
 | manufacturerPrice | object of [price](page:apps-data-types#price) | The sales price recommended by the manufacturer.|
 | priceWithDeposits | object of [price](page:apps-data-types#price) | The price including all deposits, i.e. price, depositPrice and ecoParticipationPrice.|
+| lowestPrice | object of [price](page:apps-data-types#price) | The price of the cheapest variation of a product.|
 | basePrice | object of [basePrice](page:apps-data-types#baseprice) | The price information scaled to a standardised base unit, according to the German base price regulation "Preisangabenverordnung" (PAngV), e.g. 1 l = 1.20 EUR. Is `null` if no reference amount is specified for the product.|
 
 ## product
