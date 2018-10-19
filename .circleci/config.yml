@@ -1,30 +1,7 @@
+version: 2
+
 defaults: &defaults
   working_directory: ~/repo
-
-deploy: &deploy
-  docker:
-    - image: circleci/python:3.6.3
-  steps:
-    - attach_workspace:
-        at: ./
-    - run:
-        name: Install AWS CLI
-        command: pip install awscli --upgrade --user
-    - run:
-        name: Download epages-devportal
-        command: |
-          ~/.local/bin/aws s3 sync s3://$S3_BUCKET_NAME ./_site --exclude "apps/*" \
-                                                                --exclude "soap/*" \
-                                                                --exclude "assets/fonts/*" \
-                                                                --exclude "assets/images/*" \
-                                                                --exclude "assets/javascript/*" \
-                                                                --exclude "assets/styles/*" \
-                                                                --exclude "robots.txt"
-    - run:
-        name: Upload to S3
-        command: ~/.local/bin/aws s3 sync ./_site s3://$S3_BUCKET_NAME/ --size-only --delete --acl public-read
-
-version: 2
 
 jobs:
   build_test:
@@ -56,33 +33,72 @@ jobs:
           root: ./
           paths:
             - ./_site
+            - ./.firebaserc
+            - ./firebase.json
 
-  deploy_production:
-    <<: *defaults
-    environment:
-      S3_BUCKET_NAME: developer.epages.com
-    <<: *deploy
+  deploy_firebase:
+    docker:
+      - image: circleci/node:6.10.3
+    steps:
+      - attach_workspace:
+          at: ./
+      - run:
+          name: Install Firebase tools
+          command: npm install --save-dev firebase-tools
 
-  deploy_staging:
+      - run:
+          name: Deploy to Firebase
+          command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN --non-interactive
+
+  deploy_aws:
     <<: *defaults
     environment:
       S3_BUCKET_NAME: staging.developer.epages.com
-    <<: *deploy
+    docker:
+      - image: circleci/python:3.6.3
+    steps:
+      - attach_workspace:
+          at: ./
+      - run:
+          name: Install AWS CLI
+          command: pip install awscli --upgrade --user
+      - run:
+          name: Download epages-devportal
+          command: |
+            ~/.local/bin/aws s3 sync s3://$S3_BUCKET_NAME ./_site --exclude "apps/*" \
+                                                                  --exclude "soap/*" \
+                                                                  --exclude "assets/fonts/*" \
+                                                                  --exclude "assets/images/*" \
+                                                                  --exclude "assets/javascript/*" \
+                                                                  --exclude "assets/styles/*" \
+                                                                  --exclude "robots.txt"
+      - run:
+          name: Deploy to S3
+          command: ~/.local/bin/aws s3 sync ./_site s3://$S3_BUCKET_NAME/ --size-only --delete --acl public-read
+
+      - persist_to_workspace:
+          root: ./
+          paths:
+            - ./_site
+            - ./.firebaserc
+            - ./firebase.json
 
 workflows:
   version: 2
   build_test_deploy:
     jobs:
       - build_test
-      - deploy_production:
+      - deploy_firebase:
           requires:
-            - build_test
+            - deploy_aws
           filters:
             branches:
               only: master
-      - deploy_staging:
+      - deploy_aws:
           requires:
             - build_test
           filters:
             branches:
-              only: develop
+              only:
+                - develop
+                - master

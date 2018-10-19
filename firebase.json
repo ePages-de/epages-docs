@@ -1,0 +1,628 @@
+{
+  "hosting": {
+    "public": "_site",
+    "redirects" : [
+      {
+        "source" : "/blog/2017/11/10/devoxx-belgium-2017-day-2.html",
+        "destination" : "/blog/events/devoxx-belgium-2017-day-2/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2017/11/09/devoxx-belgium-2017-day-1.html",
+        "destination" : "/blog/events/devoxx-belgium-2017-day-1/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2017/11/07/typescript-codesplitting-treeshaking.html",
+        "destination" : "/blog/tech-stories/typescript-codesplitting-treeshaking/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2017/10/26/recap-tekom-conference-2017.html",
+        "destination" : "/blog/events/recap-tekom-conference-2017/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2017/10/19/when-i-learnt-that-unicorns-sell-vegan-condoms-in-bags-of-chips.html",
+        "destination" : "/blog/events/when-i-learnt-that-unicorns-sell-vegan-condoms-in-bags-of-chips/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2017/10/06/epages-at-euruko-is-ruby-still-alive.html",
+        "destination" : "/blog/events/epages-at-euruko-is-ruby-still-alive/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2017/10/05/codetalks-2017-back-on-the-big-screen.html",
+        "destination" : "/blog/events/codetalks-2017-back-on-the-big-screen/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2017/09/27/commerce-summit-lets-start-now.html",
+        "destination" : "/blog/events/commerce-summit-lets-start-now/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2017/09/12/five-compelling-reasons-why-you-should-care-about-terminology.html",
+        "destination" : "/blog/language-and-localization/five-compelling-reasons-why-you-should-care-about-terminology/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2017/09/05/my-journey-to-become-a-developer.html",
+        "destination" : "/blog/on-the-job/my-journey-to-become-a-developer/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2017/09/01/socrates-2017-order-is-optional.html",
+        "destination" : "/blog/events/socrates-2017-order-is-optional/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2017/08/17/tracing-the-suspect-a-microservices-murder-mystery.html",
+        "destination" : "/blog/tech-stories/tracing-the-suspect-a-microservices-murder-mystery/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2017/08/15/commerce-summit-approaching.html",
+        "destination" : "/blog/events/commerce-summit-approaching/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2017/08/08/why-you-should-invest-time-on-translation-keys.html",
+        "destination" : "/blog/language-and-localization/why-you-should-invest-time-on-translation-keys/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2017/08/01/going-forward.html",
+        "destination" : "/blog/coding/going-forward/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2017/07/20/fullstack-london-of-dragons-and-numbers.html",
+        "destination" : "/blog/events/fullstack-london-of-dragons-and-numbers/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2017/07/13/where-is-the-bug-in-my-microservices-haystack.html",
+        "destination" : "/blog/tech-stories/where-is-the-bug-in-my-microservices-haystack/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2017/07/06/making-a-move-abroad-from-barcelona-to-hamburg.html",
+        "destination" : "/blog/on-the-job/making-a-move-abroad-from-barcelona-to-hamburg/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2017/07/04/handling-failures-in-the-continuous-delivery-pipeline.html",
+        "destination" : "/blog/tech-stories/handling-failures-in-the-continuous-delivery-pipeline/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2017/06/22/what-is-buzzing-in-berlin-2017.html",
+        "destination" : "/blog/events/what-is-buzzing-in-berlin-2017/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2017/06/20/versioning-of-microservices.html",
+        "destination" : "/blog/tech-stories/versioning-of-microservices/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2017/06/13/reactive-streams.html",
+        "destination" : "/blog/tech-stories/reactive-streams/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2017/06/08/roadmap-process.html",
+        "destination" : "/blog/methods-and-tools/roadmap-process/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2017/06/01/api-writing-just-copy-and-paste.html",
+        "destination" : "/blog/techcomm-and-socialmedia/api-writing-just-copy-and-paste/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2017/05/30/design-of-a-continuous-delivery-pipeline.html",
+        "destination" : "/blog/tech-stories/design-of-a-continuous-delivery-pipeline/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2017/05/23/spring-io-2017-what-it-was-really-like.html",
+        "destination" : "/blog/events/spring-io-2017-what-it-was-really-like/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2017/05/16/ia-conference-2017.html",
+        "destination" : "/blog/events/ia-conference-2017/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2017/05/11/retrospective-elearning-continuous-deployment.html",
+        "destination" : "/blog/tech-stories/retrospective-elearning-continuous-deployment/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2017/05/09/how-to-successfully-run-a-company-tech-blog.html",
+        "destination" : "/blog/techcomm-and-socialmedia/how-to-successfully-run-a-company-tech-blog/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2017/04/26/how-epages-made-me-feel-welcome-right-away.html",
+        "destination" : "/blog/on-the-job/how-epages-made-me-feel-welcome-right-away/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2017/04/19/build-a-multiple-repository-pull-request-test.html",
+        "destination" : "/blog/tech-stories/build-a-multiple-repository-pull-request-test/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2017/04/18/creating-a-sales-analytics-app-with-ruby-on-rails-2.html",
+        "destination" : "/blog/tech-stories/creating-a-sales-analytics-app-with-ruby-on-rails-2/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2017/04/10/javaland-2017-welcome-to-phantasialand.html",
+        "destination" : "/blog/events/javaland-2017-welcome-to-phantasialand/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2017/03/31/elixir-meetup-at-epages-whats-the-best-vindinium-bot.html",
+        "destination" : "/blog/events/elixir-meetup-at-epages-whats-the-best-vindinium-bot/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2017/03/29/epages-hackathon-2017.html",
+        "destination" : "/blog/events/epages-hackathon-2017/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2017/03/28/microxchg-2017-microservices-conference.html",
+        "destination" : "/blog/events/microxchg-2017-microservices-conference/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2017/03/21/continuous-documentation-with-ansible.html",
+        "destination" : "/blog/methods-and-tools/continuous-documentation-with-ansible/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2017/03/14/one-development-environment-to-rule-them-all.html",
+        "destination" : "/blog/tech-stories/one-development-environment-to-rule-them-all/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2017/03/07/local-meetup-for-idoit-users-at-epages.html",
+        "destination" : "/blog/events/local-meetup-for-idoit-users-at-epages/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2017/03/02/creating-a-sales-analytics-app-with-ruby-on-rails.html",
+        "destination" : "/blog/coding/creating-a-sales-analytics-app-with-ruby-on-rails/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2017/02/28/building-installation-packages-with-fpm.html",
+        "destination" : "/blog/coding/building-installation-packages-with-fpm/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2017/02/23/why-i-love-working-as-a-scrum-master.html",
+        "destination" : "/blog/on-the-job/why-i-love-working-as-a-scrum-master/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2017/02/09/programming-beyond-the-comfort-zone-the-phoenix-framework.html",
+        "destination" : "/blog/coding/programming-beyond-the-comfort-zone-the-phoenix-framework/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2017/02/02/programming-beyond-the-comfort-zone-javascript-elixir.html",
+        "destination" : "/blog/coding/programming-beyond-the-comfort-zone-javascript-elixir/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2017/01/31/getting-twice-the-things-done-in-half-the-time.html",
+        "destination" : "/blog/methods-and-tools/getting-twice-the-things-done-in-half-the-time/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2017/01/24/thirdparty-development-proven-practices.html",
+        "destination" : "/blog/tech-stories/thirdparty-development-proven-practices/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2017/01/17/how-to-test-eventbased-services-using-contracts.html",
+        "destination" : "/blog/tech-stories/how-to-test-eventbased-services-using-contracts/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2017/01/12/a-coffee-with-the-cto-of-epages.html",
+        "destination" : "/blog/on-the-job/a-coffee-with-the-cto-of-epages/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2017/01/05/painpoints-with-thirdparty-software.html",
+        "destination" : "/blog/tech-stories/painpoints-with-thirdparty-software/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/12/29/localization-quality-static-placeholders.html",
+        "destination" : "/blog/tech-stories/localization-quality-static-placeholders/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/12/22/the-battle-of-the-operating-systems.html",
+        "destination" : "/blog/tech-stories/the-battle-of-the-operating-systems/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/12/20/harnessing-the-best-features-of-rdbms-and-elasticsearch-with-cqrs.html",
+        "destination" : "/blog/tech-stories/harnessing-the-best-features-of-rdbms-and-elasticsearch-with-cqrs/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/12/15/working-as-a-ui-designer-at-epages.html",
+        "destination" : "/blog/on-the-job/working-as-a-ui-designer-at-epages/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/12/08/smart-localization-formats.html",
+        "destination" : "/blog/tech-stories/smart-localization-formats/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/12/02/seven-steps-to-consider-when-building-a-web-api.html",
+        "destination" : "/blog/api-experience/seven-steps-to-consider-when-building-a-web-api/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/11/30/what-its-like-to-be-an-agile-technical-writer.html",
+        "destination" : "/blog/methods-and-tools/what-its-like-to-be-an-agile-technical-writer/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/11/28/xp-days-germany-2016.html",
+        "destination" : "/blog/events/xp-days-germany-2016/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/11/21/multitenancy-and-elasticsearch.html",
+        "destination" : "/blog/tech-stories/multitenancy-and-elasticsearch/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/11/08/how-to-setup-a-ha-kubernetes-cluster-worker-components-and-skydns.html",
+        "destination" : "/blog/tech-stories/how-to-setup-a-ha-kubernetes-cluster-worker-components-and-skydns/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/11/02/interesting-insights-from-the-search-technology-meetup-vi.html",
+        "destination" : "/blog/events/interesting-insights-from-the-search-technology-meetup-vi/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/10/18/how-to-setup-a-kubernetes-cluster-master-components.html",
+        "destination" : "/blog/tech-stories/how-to-setup-a-kubernetes-cluster-master-components/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/10/13/jugsaxony-2016.html",
+        "destination" : "/blog/events/jugsaxony-2016/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/10/07/code-talks-2016-retrospective.html",
+        "destination" : "/blog/events/code-talks-2016-retrospective/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/09/29/how-we-test-our-api.html",
+        "destination" : "/blog/api-experience/how-we-test-our-api/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/09/23/rnd-day-2016.html",
+        "destination" : "/blog/events/rnd-day-2016/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/09/13/behind-the-scenes-technical-recruiting-at-epages.html",
+        "destination" : "/blog/on-the-job/behind-the-scenes-technical-recruiting-at-epages/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/09/08/how-to-setup-a-ha-kubernetes-cluster-preparing-the-nodes.html",
+        "destination" : "/blog/tech-stories/how-to-setup-a-ha-kubernetes-cluster-preparing-the-nodes/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/09/01/socrates.html",
+        "destination" : "/blog/events/socrates/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/08/30/app-development-epages-partner-training-in-hamburg.html",
+        "destination" : "/blog/events/app-development-epages-partner-training-in-hamburg/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/08/23/how-to-find-out-what-your-target-group-needs.html",
+        "destination" : "/blog/techcomm-and-socialmedia/how-to-find-out-what-your-target-group-needs/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/08/12/how-we-connected-sageone-with-epages.html",
+        "destination" : "/blog/tech-stories/how-we-connected-sageone-with-epages/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/08/09/how-to-setup-a-ha-kubernetes-cluster-etcd-cluster-with-ssl.html",
+        "destination" : "/blog/tech-stories/how-to-setup-a-ha-kubernetes-cluster-etcd-cluster-with-ssl/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/08/04/5-steps-to-make-you-feel-comfortable-in-your-new-job.html",
+        "destination" : "/blog/on-the-job/5-steps-to-make-you-feel-comfortable-in-your-new-job/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/08/02/how-to-easily-connect-payment-and-shipping-with-online-shops.html",
+        "destination" : "/blog/tech-stories/how-to-easily-connect-payment-and-shipping-with-online-shops/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/07/26/xconf-2016.html",
+        "destination" : "/blog/events/xconf-2016/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/07/19/fullstackcon-2016-retrospective.html",
+        "destination" : "/blog/events/fullstackcon-2016-retrospective/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/07/14/wiremock.html",
+        "destination" : "/blog/tech-stories/wiremock/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/07/08/elastic-meetup-at-epages.html",
+        "destination" : "/blog/events/elastic-meetup-at-epages/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/07/05/containerdays-hamburg.html",
+        "destination" : "/blog/events/containerdays-hamburg/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/07/04/team-offsite-meeting-workshops-focus-fun.html",
+        "destination" : "/blog/events/team-offsite-meeting-workshops-focus-fun/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/06/23/karlsruher-entwicklertag.html",
+        "destination" : "/blog/events/karlsruher-entwicklertag/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/06/16/why-ux-and-technical-writing-make-a-dream-team.html",
+        "destination" : "/blog/techcomm-and-socialmedia/why-ux-and-technical-writing-make-a-dream-team/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/06/07/how-to-empower-your-jenkins-with-gradle.html",
+        "destination" : "/blog/tech-stories/how-to-empower-your-jenkins-with-gradle/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/06/01/working-as-a-software-developer-at-epages.html",
+        "destination" : "/blog/on-the-job/working-as-a-software-developer-at-epages/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/05/26/magdeburger-developer-days.html",
+        "destination" : "/blog/events/magdeburger-developer-days/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/05/25/spring-io.html",
+        "destination" : "/blog/events/spring-io/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/05/20/geecon.html",
+        "destination" : "/blog/events/geecon/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/05/18/offsite-consulting.html",
+        "destination" : "/blog/events/offsite-consulting/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/05/03/how-to-do-code-coverage-with-ecmascript-6.html",
+        "destination" : "/blog/tech-stories/how-to-do-code-coverage-with-ecmascript-6/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/04/25/epages-hackathon-2016.html",
+        "destination" : "/blog/events/epages-hackathon-2016/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/04/21/softwerkskammer-jena-shipped-the-docker-party-to-epages.html",
+        "destination" : "/blog/events/softwerkskammer-jena-shipped-the-docker-party-to-epages/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/04/20/results-from-the-first-agile-hackathon-at-epages.html",
+        "destination" : "/blog/methods-and-tools/results-from-the-first-agile-hackathon-at-epages/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/04/12/working-as-a-quality-assurance-engineer-at-epages.html",
+        "destination" : "/blog/on-the-job/working-as-a-quality-assurance-engineer-at-epages/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/04/05/tdd-with-java.html",
+        "destination" : "/blog/tech-stories/tdd-with-java/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/04/01/app-development-epages-partner-training-in-hamburg.html",
+        "destination" : "/blog/events/app-development-epages-partner-training-in-hamburg/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/03/31/ecommerce-barcamp-jena.html",
+        "destination" : "/blog/events/ecommerce-barcamp-jena/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/03/30/implementing-capistrano-as-configuration-management-tool.html",
+        "destination" : "/blog/tech-stories/implementing-capistrano-as-configuration-management-tool/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/03/22/scrum-basics-practicing-it.html",
+        "destination" : "/blog/methods-and-tools/scrum-basics-practicing-it/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/03/17/why-mallorca-is-the-perfect-place-for-a-productive-team-offsite.html",
+        "destination" : "/blog/events/why-mallorca-is-the-perfect-place-for-a-productive-team-offsite/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/03/15/development-from-the-barcelona-paradise.html",
+        "destination" : "/blog/on-the-job/development-from-the-barcelona-paradise/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/03/08/online-schema-updates-with-mysql.html",
+        "destination" : "/blog/tech-stories/online-schema-updates-with-mysql/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/03/01/working-as-a-java-developer-at-epages.html",
+        "destination" : "/blog/on-the-job/working-as-a-java-developer-at-epages/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/02/25/scrum-basics-principles-and-values.html",
+        "destination" : "/blog/methods-and-tools/scrum-basics-principles-and-values/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/02/23/mockify-a-mocking-framework-for-perl.html",
+        "destination" : "/blog/coding/mockify-a-mocking-framework-for-perl/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/02/17/first-agile-meetup-in-jena.html",
+        "destination" : "/blog/events/first-agile-meetup-in-jena/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/02/16/how-to-ease-test-evaluation-in-the-continuous-delivery-pipeline.html",
+        "destination" : "/blog/tech-stories/how-to-ease-test-evaluation-in-the-continuous-delivery-pipeline/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/02/11/optimised-monitoring-and-evaluation-of-selenium-test-results.html",
+        "destination" : "/blog/tech-stories/optimised-monitoring-and-evaluation-of-selenium-test-results/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/02/09/microservices-meetup-service-discovery.html",
+        "destination" : "/blog/events/microservices-meetup-service-discovery/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/02/04/working-as-a-ruby-developer-at-epages.html",
+        "destination" : "/blog/on-the-job/working-as-a-ruby-developer-at-epages/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/02/02/on-the-way-to-a-ruby-sdk.html",
+        "destination" : "/blog/tech-stories/on-the-way-to-a-ruby-sdk/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/01/28/jenkins-job-dsl-plugin.html",
+        "destination" : "/blog/tech-stories/jenkins-job-dsl-plugin/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/01/26/scrum-basics-estimating.html",
+        "destination" : "/blog/methods-and-tools/scrum-basics-estimating/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/01/21/epages-rest-api-out-of-beta.html",
+        "destination" : "/blog/api-experience/epages-rest-api-out-of-beta/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2016/01/19/how-to-setup-a-coreos-cluster-on-windows-and-centos.html",
+        "destination" : "/blog/tech-stories/how-to-setup-a-coreos-cluster-on-windows-and-centos/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2015/12/15/scrum-basics-scrum-meetings.html",
+        "destination" : "/blog/methods-and-tools/scrum-basics-scrum-meetings/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2015/12/10/student-internship-setup-a-raspberry-pi-to-send-sms-notifications.html",
+        "destination" : "/blog/tech-stories/student-internship-setup-a-raspberry-pi-to-send-sms-notifications/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2015/12/08/wjax2015-microservices.html",
+        "destination" : "/blog/events/wjax2015-microservices/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2015/12/07/global-scrum-gathering-2015-prague.html",
+        "destination" : "/blog/events/global-scrum-gathering-2015-prague/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2015/12/04/codemotion-madrid.html",
+        "destination" : "/blog/events/codemotion-madrid/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2015/11/30/wjax2015-agile-day.html",
+        "destination" : "/blog/events/wjax2015-agile-day/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2015/11/27/seokomm-2015.html",
+        "destination" : "/blog/events/seokomm-2015/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2015/11/24/essence-of-tasks.html",
+        "destination" : "/blog/methods-and-tools/essence-of-tasks/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2015/11/19/scrum-basics-scrum-roles.html",
+        "destination" : "/blog/methods-and-tools/scrum-basics-scrum-roles/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2015/11/16/on-the-way-to-full-stack-ecmascript-6.html",
+        "destination" : "/blog/coding/on-the-way-to-full-stack-ecmascript-6/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2015/11/03/payment-integrations.html",
+        "destination" : "/blog/tech-stories/payment-integrations/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2015/10/28/code-talks-code-and-nachos.html",
+        "destination" : "/blog/events/code-talks-code-and-nachos/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2015/10/27/refugeehackathon.html",
+        "destination" : "/blog/events/refugeehackathon/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2015/10/22/followup-automating-jenkins.html",
+        "destination" : "/blog/tech-stories/followup-automating-jenkins/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2015/10/13/scrum-basics-what-is-scrum.html",
+        "destination" : "/blog/methods-and-tools/scrum-basics-what-is-scrum/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2015/10/07/code-talks-2015-retrospective.html",
+        "destination" : "/blog/events/code-talks-2015-retrospective/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2015/10/01/setting-up-a-linux-development-environment-for-ruby-on-rails.html",
+        "destination" : "/blog/tech-stories/setting-up-a-linux-development-environment-for-ruby-on-rails/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2015/09/28/service-discovery-with-consul-registrator-and-haproxy.html",
+        "destination" : "/blog/tech-stories/service-discovery-with-consul-registrator-and-haproxy/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2015/09/24/epages-turns-agile.html",
+        "destination" : "/blog/methods-and-tools/epages-turns-agile/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2015/09/21/annual-company-event-epagees-rock-the-you.html",
+        "destination" : "/blog/events/annual-company-event-epagees-rock-the-you/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2015/09/15/rnd-day-2015.html",
+        "destination" : "/blog/tech-stories/rnd-day-2015/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2015/09/08/epages-talks-rest-api.html",
+        "destination" : "/blog/events/epages-talks-rest-api/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2015/09/04/survey-improve-api-docu.html",
+        "destination" : "/blog/api-experience/survey-improve-api-docu/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2015/09/02/barcamp-kiel-2015.html",
+        "destination" : "/blog/events/barcamp-kiel-2015/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2015/08/11/one-month-as-an-epagee.html",
+        "destination" : "/blog/on-the-job/one-month-as-an-epagee/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2015/08/03/creating-systems-with-pipelining.html",
+        "destination" : "/blog/tech-stories/creating-systems-with-pipelining/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2015/07/23/the-epages-selenium-framework.html",
+        "destination" : "/blog/tech-stories/the-epages-selenium-framework/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2015/07/20/challenges-of-integrating-third-parties.html",
+        "destination" : "/blog/tech-stories/challenges-of-integrating-third-parties/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2015/07/17/tough-mudder-event.html",
+        "destination" : "/blog/events/tough-mudder-event/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2015/07/07/how-epages-gives-new-developers-a-great-start.html",
+        "destination" : "/blog/on-the-job/how-epages-gives-new-developers-a-great-start/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2015/06/30/company-cup-jena.html",
+        "destination" : "/blog/events/company-cup-jena/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2015/06/25/infrastructure-as-code-automating-jenkins.html",
+        "destination" : "/blog/tech-stories/infrastructure-as-code-automating-jenkins/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2015/06/21/guest-post-shippo-integation.html",
+        "destination" : "/blog/tech-stories/guest-post-shippo-integation/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2015/06/11/improve-development-with-docker.html",
+        "destination" : "/blog/tech-stories/improve-development-with-docker/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2015/06/04/epages-scrum-team-goes-offsite.html",
+        "destination" : "/blog/events/epages-scrum-team-goes-offsite/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2015/05/28/restful-api-documentation-at-epages.html",
+        "destination" : "/blog/api-experience/restful-api-documentation-at-epages/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2015/05/28/transform-creative-visions-into-reality-at-geekettes-hamburg-hackathon.html",
+        "destination" : "/blog/events/transform-creative-visions-into-reality-at-geekettes-hamburg-hackathon/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2015/04/29/js-unconf-2015-retrospective.html",
+        "destination" : "/blog/events/js-unconf-2015-retrospective/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2015/04/16/does-your-heart-beat-for-code.html",
+        "destination" : "/blog/on-the-job/does-your-heart-beat-for-code/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2015/04/02/epages-talks-code.html",
+        "destination" : "/blog/events/epages-talks-code/",
+        "type" : 301
+      }, {
+        "source" : "/blog/2015/04/01/the-first-epages-hackathon-is-over.html",
+        "destination" : "/blog/events/the-first-epages-hackathon-is-over/",
+        "type" : 301
+      }
+    ]
+  }
+}
