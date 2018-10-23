@@ -14,7 +14,3 @@ group :jekyll_plugins do
   gem 'neat'
   gem 'rouge'
 end
-
-gem 'capistrano', '3.8.1', require: false
-gem 'capistrano-rbenv', require: false
-gem 'capistrano-bundler', require: false
