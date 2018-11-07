@@ -34,6 +34,7 @@ exclude:
 - README.md
 - config/
 - vendor
+- firebase.json
 gem:
 - jekyll-include-cache
 plugins:
