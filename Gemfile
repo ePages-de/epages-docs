@@ -1,12 +1,15 @@
 source 'https://rubygems.org'
-gem 'rake', '~> 10.4.2'
-gem 'jekyll', '~> 3.3'
-gem 'loofah', '~> 2.2.1'
-gem 'therubyracer', '~> 0.12.1'
+
+ruby RUBY_VERSION
+
+gem 'rake'
+gem 'jekyll'
+gem 'loofah'
+gem 'therubyracer'
 gem 'html-proofer'
-gem 'raml_parser', '~> 0.2.5'
-gem 'rubyzip', '~> 1.2.1'
-gem 'nokogiri', '1.8.2'
+gem 'raml_parser'
+gem 'rubyzip'
+gem 'nokogiri'
 
 group :jekyll_plugins do
   gem 'jekyll-include-cache'
