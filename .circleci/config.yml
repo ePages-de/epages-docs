@@ -2,33 +2,96 @@ version: 2
 
 defaults: &defaults
   working_directory: ~/repo
+  environment:
+    BUNDLE_PATH: ~/repo/vendor/bundle
+
+docs_defaults: &docs_defaults
+  <<: *defaults
+  docker:
+    - image: circleci/ruby:2.4.1
+
+devportal_defaults: &devportal_defaults
+  <<: *defaults
+  docker:
+    - image: circleci/ruby:2.4.2
 
 jobs:
-  build_test:
-    <<: *defaults
-    docker:
-      - image: circleci/ruby:2.4.2
-    environment:
-      BUNDLE_PATH: ~/repo/vendor/bundle
+  build_test_docs:
+    <<: *docs_defaults
     steps:
       - checkout
       - restore_cache:
           keys:
-            - rubygems-v1-{{ checksum "Gemfile.lock" }}
-            - rubygems-v1-fallback
+            - docs-rubygems-v1-{{ checksum "Gemfile.lock" }}
+            - docs-rubygems-v1-fallback
       - run:
           name: Bundle Install
           command: bundle install
+      - save_cache:
+          key: docs-rubygems-v1-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
       - run:
           name: Jekyll build
           command: bundle exec jekyll build
       - run:
           name: Test
           command: bundle exec rake test_ci
+      - persist_to_workspace:
+          root: ./
+          paths:
+            - ./_site
+            - ./.firebaserc
+            - ./firebase.json
+
+  build_test_devportal:
+    <<: *devportal_defaults
+    steps:
+      - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
+      - add_ssh_keys:
+          fingerprints:
+            - "86:c0:33:4a:f5:8c:ae:75:b8:f6:1f:38:bf:91:cf:e8"
+      - run:
+          name: Download ePages Devportal
+          command: git clone git@github.com:ePages-de/epages-devportal.git ~/repo -b master
+      - restore_cache:
+          keys:
+            - devportal-rubygems-v1-{{ checksum "Gemfile.lock" }}
+            - devportal-rubygems-v1-fallback
+      - run:
+          name: Bundle Install
+          command: bundle install
       - save_cache:
-          key: rubygems-v1-{{ checksum "Gemfile.lock" }}
+          key: devportal-rubygems-v1-{{ checksum "Gemfile.lock" }}
           paths:
             - vendor/bundle
+      - run:
+          name: Jekyll build
+          command: bundle exec jekyll build
+      - run:
+          name: Test
+          command: bundle exec rake test_ci
+      - run:
+          name: Update folder name
+          command: mv _site _devportal
+      - persist_to_workspace:
+          root: ./
+          paths:
+            - ./_devportal
+
+  combine_projets:
+    working_directory: ~/repo
+    docker:
+      - image: circleci/buildpack-deps:18.10
+    steps:
+      - attach_workspace:
+          at: ./
+      - run:
+          name: Install rsync
+          command: sudo apt-get -y install rsync
+      - run:
+          name: Combine projects
+          command: rsync -abviuzP _devportal/ _site/
       - persist_to_workspace:
           root: ./
           paths:
@@ -43,60 +106,45 @@ jobs:
       - attach_workspace:
           at: ./
       - run:
+          name: Define environment
+          command: |
+            if [ $CIRCLE_BRANCH = "master" ]
+            then
+              echo 'export ENVIRONMENT=production' >> $BASH_ENV
+            elif [ $CIRCLE_BRANCH = "develop" ]
+            then
+              echo 'export ENVIRONMENT=development' >> $BASH_ENV
+            fi
+      - run:
           name: Install Firebase tools
           command: npm install --save-dev firebase-tools
-
       - run:
           name: Deploy to Firebase
-          command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN --non-interactive
-
-  deploy_aws:
-    <<: *defaults
-    environment:
-      S3_BUCKET_NAME: staging.developer.epages.com
-    docker:
-      - image: circleci/python:3.6.3
-    steps:
-      - attach_workspace:
-          at: ./
-      - run:
-          name: Install AWS CLI
-          command: pip install awscli --upgrade --user
-      - run:
-          name: Download epages-devportal
-          command: |
-            ~/.local/bin/aws s3 sync s3://$S3_BUCKET_NAME ./_site --exclude "apps/*" \
-                                                                  --exclude "soap/*" \
-                                                                  --exclude "assets/fonts/*" \
-                                                                  --exclude "assets/images/*" \
-                                                                  --exclude "assets/javascript/*" \
-                                                                  --exclude "assets/styles/*" \
-                                                                  --exclude "robots.txt"
-      - run:
-          name: Deploy to S3
-          command: ~/.local/bin/aws s3 sync ./_site s3://$S3_BUCKET_NAME/ --size-only --delete --acl public-read
-
-      - persist_to_workspace:
-          root: ./
-          paths:
-            - ./_site
-            - ./.firebaserc
-            - ./firebase.json
+          command: ./node_modules/.bin/firebase deploy --project $ENVIRONMENT --token=$FIREBASE_TOKEN --non-interactive
 
 workflows:
   version: 2
   build_test_deploy:
     jobs:
-      - build_test
-      - deploy_firebase:
-          requires:
-            - deploy_aws
+      - build_test_docs
+      - build_test_devportal:
           filters:
             branches:
-              only: master
-      - deploy_aws:
+              only:
+                - develop
+                - master
+      - combine_projets:
           requires:
-            - build_test
+            - build_test_docs
+            - build_test_devportal
+          filters:
+            branches:
+              only:
+                - develop
+                - master
+      - deploy_firebase:
+          requires:
+            - combine_projets
           filters:
             branches:
               only:

@@ -59,6 +59,12 @@
       "amount": 65,
       "currency": "EUR"
     },
+    "lowestPrice": {
+        "taxType": "GROSS",
+        "formatted": "59.50 €",
+        "amount": 59.50,
+        "currency": "EUR"
+    },
     "manufacturerPrice": null,
     "basePrice": null
   },
@@ -97,7 +103,7 @@
       "type": "Vimeo",
       "source": "https://vimeo.com/7265982"
     }
-  ],  
+  ],
   "links": [
     {
       "rel": "self",

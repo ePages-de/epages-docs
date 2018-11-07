@@ -14,11 +14,22 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
+## 2018-11-05
+
+### Changes with software release 7.30.0
+
+#### <i class="fas fa-pencil-alt"></i> Update
+
+* Added attribute `lowestPrice` to data type [`priceInfo`](https://developer.epages.com/apps/data-types#priceinfo).
+* Updated description of query parameter `updatedFrom` in [`GET` orders](https://developer.epages.com/apps/api-reference/get-shopid-orders.html).
+
+<hr>
+
 ## 2018-08-22
 
 ### Changes with software release 7.28.0
 
-#### <i class="fas fa-plus"></i> Update
+#### <i class="fas fa-pencil-alt"></i> Update
 
 * Added attribute `registerSessionUrl` to data type [`cart`](https://developer.epages.com/apps/data-types#cart).
 
@@ -28,7 +39,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 ### Changes with software release 7.27.0
 
-#### <i class="fas fa-plus"></i> Update
+#### <i class="fas fa-pencil-alt"></i> Update
 
 * Added attribute `providerName` to data type [`paymentMethodInfo`](https://developer.epages.com/apps/data-types#paymentmethodinfo).
 * Added attribute `transactionId` to data type [`paymentData`](https://developer.epages.com/apps/data-types#paymentdata).
@@ -39,7 +50,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 ### Changes with software release 7.24.0
 
-#### <i class="fas fa-plus"></i> Update
+#### <i class="fas fa-pencil-alt"></i> Update
 
 * Added attribute `videos` to data type [`product`](https://developer.epages.com/apps/data-types#product).
 
@@ -49,7 +60,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 ### Changes with software release 7.23.0
 
-#### <i class="fas fa-plus"></i> Update
+#### <i class="fas fa-pencil-alt"></i> Update
 
 * Added attribute `noTaxesMessage` to data type [`taxModel`](https://developer.epages.com/apps/data-types#taxmodel).
 
@@ -69,7 +80,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 ### Changes with software release 7.21.0
 
-#### <i class="fas fa-plus"></i> Update
+#### <i class="fas fa-pencil-alt"></i> Update
 
 * Added attribute `energyLabelsMaxEfficiencyString` to data type [`product`](https://developer.epages.com/apps/data-types#product).
 * Added attributes `energyLabelsString`, `energyLabelsMaxEfficiencyString` and `energyLabelSourceFile` to [`productLineItem`](https://developer.epages.com/apps/data-types#productlineitem).
