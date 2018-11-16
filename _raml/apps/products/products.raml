@@ -132,6 +132,11 @@ post:
     displayName: Product crossselling
     get:
       is: [ locale, currency ]
+      queryParameters:
+        includeInvisible:
+          description: Includes invisible products. Only available with `products_write` authorisation.
+          type: boolean
+          required: false
       description: Returns information on the crossselling of products. *epagesNow
       securedBy: [products_read]
       responses:
