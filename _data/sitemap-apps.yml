@@ -52,6 +52,9 @@
     - title: Submission guidelines
       link: page:apps-submit-guide
 
+    - title: Events
+      link: page:events
+
     - title: Tutorial (PHP)
       link: page:apps-tutorial-php
 
