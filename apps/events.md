@@ -12,7 +12,7 @@ These events are currently available:
 
 | Event | Type | Description |
 | - | - |  - |
-| pageview | string | A new page is rendered. Gives information on the path of the page. |
+| pageview | string | A page is rendered. Gives information on the path of the page. |
 | product | immutable.js object | A product page is rendered. Gives information on the respective product. |
 | category | immutable.js object |A category page is rendered. Gives information on the respective category and related products.|
 | cart:add | immutable.js object | A product was added to the cart. Gives information on the current state of the cart, e.g. included items. This event isn't triggered if the customer makes changes in the cart itself, e.g. changing the amount of a product. |
