@@ -5,7 +5,7 @@ title: Events
 ---
 
 Events are triggered when a specific action is done.
-If you request one of these events, your app will be informed about related actions and can react accordingly.
+So, if you implement one of these events, your app will be informed about related actions and can react accordingly.
 This can be helpful if your app needs information like the current page the user is on, or the fact that a product was added to the cart.
 
 These events are currently available:
