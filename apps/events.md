@@ -4,20 +4,21 @@ key: events
 title: Events
 ---
 
-Events are triggered when a specific action is done.
-So, if you implement one of these events, your app will be informed about related actions and can react accordingly.
-This can be helpful if your app needs information like the current page the user is on, or the fact that a product was added to the cart.
+Events can be triggered when a customer executes a specific action in a shop.
+Such an action could be that the customer opens a new page of a shop, or adds a product to the cart.
+If you implement an event, your app will be informed about related actions and can react accordingly.
+Furthermore, your app will receive information related to the event, such as the current page a user is on, or which product was added to the cart.
 
-These events are currently available:
+These events are available:
 
 | Event | Type | Description |
 | - | - |  - |
-| pageview | string | A page is rendered. Gives information on the path of the page. |
-| product | immutable.js object | A product page is rendered. Gives information on the respective product. |
-| category | immutable.js object |A category page is rendered. Gives information on the respective category and related products.|
-| cart:add | immutable.js object | A product was added to the cart. Gives information on the current state of the cart, e.g. included items. This event isn't triggered if the customer makes changes in the cart itself, e.g. changing the amount of a product. |
+| `pageview` | string | Is triggered when the customer opens or reloads a page. Informs about the path of the page. |
+| `product` | immutable.js object | Is triggered when the customer selects a product. Informs about the respective product. |
+| `category` | immutable.js object | Is triggered when the customer selects a category. Informs about the respective category and related products.|
+| `cart:add` | immutable.js object | Is triggered when the customer adds a product to the cart. Informs about the current state of the cart, e.g. included items. This event isn't triggered if the customer makes changes in the cart itself, e.g. changing the amount of an item. |
 
-## Pageview event
+## `Pageview` event
 
 In order to make use of this event, you need to add the following snippet to your code:
 
@@ -29,7 +30,7 @@ if (window.eComEventTarget) {
 }
 ```
 
-These are the information you'll get with this event:
+You'll receive the following information:
 
 ```
 pageview url: /about-us
@@ -47,7 +48,7 @@ if (window.eComEventTarget) {
 }
 ```
 
-These are the information you'll get with this event:
+You'll receive the following information:
 
 ```
 availabilityText: "Available"
@@ -102,7 +103,7 @@ if (window.eComEventTarget) {
   })
 }
 ```
-These are the information you'll get with this event:
+You'll receive the following information:
 
 ```
 categoryId: "5AD608E0-22C3-0009-F213-D5823AB36AC8"
@@ -137,7 +138,7 @@ if (window.eComEventTarget) {
 }
 ```
 
-These are the information you'll get with this event:
+You'll receive the following information:
 
 ```
 billingAddress: null
