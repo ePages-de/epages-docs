@@ -4,9 +4,9 @@ key: events
 title: Events
 ---
 
-Events can be triggered when a customer executes a specific action in a shop.
-Such an action could be that the customer opens a new page of a shop, or adds a product to the cart.
-If you implement an event, your app will be informed about related actions and can react accordingly.
+Events can be triggered when a customer executes a specific action in an ePages online shop.
+This can be e.g. a customer opening a new page of a shop, or adding a product to the cart.
+If you have implemented an event in your application, you will be informed about related actions and can react accordingly.
 Furthermore, your app will receive information related to the event, such as the current page a user is on, or which product was added to the cart.
 
 These events are available:
@@ -18,7 +18,7 @@ These events are available:
 | `category` | immutable.js object | Is triggered when the customer selects a category. Informs about the respective category and related products.|
 | `cart:add` | immutable.js object | Is triggered when the customer adds a product to the cart. Informs about the current state of the cart, e.g. included items. This event isn't triggered if the customer makes changes in the cart itself, e.g. changing the amount of an item. |
 
-## `Pageview` event
+## Pageview event
 
 In order to make use of this event, you need to add the following snippet to your code:
 
