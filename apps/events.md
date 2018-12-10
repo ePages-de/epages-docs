@@ -7,7 +7,7 @@ title: Events
 Events can be triggered when a customer executes a specific action in an ePages online shop.
 This can be e.g. a customer opening a new page of a shop, or adding a product to the cart.
 If you have implemented an event in your application, you will be informed about related actions and can react accordingly.
-Furthermore, your app will receive information related to the event, such as the current page a user is on, or which product was added to the cart.
+Furthermore, your app will receive information related to the event, such as the current page a user is on.
 
 These events are available:
 
