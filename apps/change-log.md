@@ -14,15 +14,18 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
-## 2018-11-05
+## 2018-12-13
 
 ### Changes with software release 7.30.0
+
+#### <i class="fas fa-plus"></i> New
+
+* Added `Events` section. This section explains how applications can [receive information about customer actions in ePages online shops](https://developer.epages.com/apps/events.html).
 
 #### <i class="fas fa-pencil-alt"></i> Update
 
 * Added attribute `lowestPrice` to data type [`priceInfo`](https://developer.epages.com/apps/data-types#priceinfo).
 * Updated description of query parameter `updatedFrom` in [`GET` orders](https://developer.epages.com/apps/api-reference/get-shopid-orders.html).
-* Added `Events` section. This section explains how applications can [receive information about customer actions in ePages online shops](https://developer.epages.com/apps/events.html).
 
 <hr>
 
