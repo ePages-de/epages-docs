@@ -7,11 +7,11 @@ get:
   queryParameters:
     createdBefore:
       description: Filters carts created before this timestamp (format according to ISO 8601). The maximum time frame for displaying carts is 30 days. If no filter is set, all carts will be displayed.
-      type: integer
+      type: string
       required : false
     createdAfter:
       description: Filters carts created after this timestamp (format according to ISO 8601). The maximum time frame for displaying carts is 30 days. If no filter is set, all carts will be displayed.
-      type: integer
+      type: string
       required: false
   responses:
     200:
