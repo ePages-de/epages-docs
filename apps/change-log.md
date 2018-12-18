@@ -14,6 +14,20 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
+## 2018-12-18
+
+### Changes with software release 7.32.0
+
+#### <i class="fas fa-plus"></i> New
+
+* [`GET`carts](https://developer.epages.com/apps/api-reference/get-shopid-carts.html)
+
+#### <i class="fas fa-pencil-alt"></i> Update
+
+* Added attribute `creationDate` to data type [`cart`](https://developer.epages.com/apps/data-types#cart)
+
+<hr>
+
 ## 2018-12-13
 
 ### Changes with software release 7.30.0
