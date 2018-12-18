@@ -14,6 +14,20 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
+## 2018-12-18
+
+### Changes with software release 7.32.0
+
+#### <i class="fas fa-plus"></i> New
+
+* [`GET`carts](https://developer.epages.com/apps/api-reference/get-shopid-carts.html)
+
+#### <i class="fas fa-pencil-alt"></i> Update
+
+* Added attribute `creationDate` to data type [`cart`](https://developer.epages.com/apps/data-types.html#cart)
+
+<hr>
+
 ## 2018-12-13
 
 ### Changes with software release 7.30.0
@@ -24,7 +38,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 #### <i class="fas fa-pencil-alt"></i> Update
 
-* Added attribute `lowestPrice` to data type [`priceInfo`](https://developer.epages.com/apps/data-types#priceinfo).
+* Added attribute `lowestPrice` to data type [`priceInfo`](https://developer.epages.com/apps/data-types.html#priceinfo).
 * Updated description of query parameter `updatedFrom` in [`GET` orders](https://developer.epages.com/apps/api-reference/get-shopid-orders.html).
 
 <hr>
@@ -45,7 +59,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 #### <i class="fas fa-pencil-alt"></i> Update
 
-* Added attribute `registerSessionUrl` to data type [`cart`](https://developer.epages.com/apps/data-types#cart).
+* Added attribute `registerSessionUrl` to data type [`cart`](https://developer.epages.com/apps/data-types.html#cart).
 
 <hr>
 
@@ -55,8 +69,8 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 #### <i class="fas fa-pencil-alt"></i> Update
 
-* Added attribute `providerName` to data type [`paymentMethodInfo`](https://developer.epages.com/apps/data-types#paymentmethodinfo).
-* Added attribute `transactionId` to data type [`paymentData`](https://developer.epages.com/apps/data-types#paymentdata).
+* Added attribute `providerName` to data type [`paymentMethodInfo`](https://developer.epages.com/apps/data-types.html#paymentmethodinfo).
+* Added attribute `transactionId` to data type [`paymentData`](https://developer.epages.com/apps/data-types.html#paymentdata).
 
 <hr>
 
@@ -76,7 +90,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 #### <i class="fas fa-pencil-alt"></i> Update
 
-* Added attribute `videos` to data type [`product`](https://developer.epages.com/apps/data-types#product).
+* Added attribute `videos` to data type [`product`](https://developer.epages.com/apps/data-types.html#product).
 
 <hr>
 
@@ -86,7 +100,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 #### <i class="fas fa-pencil-alt"></i> Update
 
-* Added attribute `noTaxesMessage` to data type [`taxModel`](https://developer.epages.com/apps/data-types#taxmodel).
+* Added attribute `noTaxesMessage` to data type [`taxModel`](https://developer.epages.com/apps/data-types.html#taxmodel).
 
 <hr>
 
@@ -106,8 +120,8 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 #### <i class="fas fa-pencil-alt"></i> Update
 
-* Added attribute `energyLabelsMaxEfficiencyString` to data type [`product`](https://developer.epages.com/apps/data-types#product).
-* Added attributes `energyLabelsString`, `energyLabelsMaxEfficiencyString` and `energyLabelSourceFile` to [`productLineItem`](https://developer.epages.com/apps/data-types#productlineitem).
+* Added attribute `energyLabelsMaxEfficiencyString` to data type [`product`](https://developer.epages.com/apps/data-types.html#product).
+* Added attributes `energyLabelsString`, `energyLabelsMaxEfficiencyString` and `energyLabelSourceFile` to [`productLineItem`](https://developer.epages.com/apps/data-types.html#productlineitem).
 
 <hr>
 
@@ -118,7 +132,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 #### <i class="fas fa-plus"></i> New
 
 * [`GET`orders/{orderId}/documents](https://developer.epages.com/apps/api-reference/get-shopid-orders-orderid-documents.html)
-* Added data type [`orderDocument`](https://developer.epages.com/apps/data-types#orderdocument).
+* Added data type [`orderDocument`](https://developer.epages.com/apps/data-types.html#orderdocument).
 
 ## 2017-07-25
 
@@ -126,7 +140,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 #### <i class="fas fa-pencil-alt"></i> Update
 
-* Added attribute `lineItemCouponDiscount` to data type [`productLineItem`](https://developer.epages.com/apps/data-types#productlineitem).
+* Added attribute `lineItemCouponDiscount` to data type [`productLineItem`](https://developer.epages.com/apps/data-types.html#productlineitem).
 
 <hr>
 
@@ -136,8 +150,8 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 #### <i class="fas fa-pencil-alt"></i> Update
 
-* Added attributes `couponCampaignId` and `validationErrors` to data type [`couponLineItem`](https://developer.epages.com/apps/data-types#couponlineitem).
-* Added attribute `title` to data type [`product`](https://developer.epages.com/apps/data-types#product).
+* Added attributes `couponCampaignId` and `validationErrors` to data type [`couponLineItem`](https://developer.epages.com/apps/data-types.html#couponlineitem).
+* Added attribute `title` to data type [`product`](https://developer.epages.com/apps/data-types.html#product).
 
 <hr>
 
@@ -186,7 +200,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 #### <i class="fas fa-pencil-alt"></i> Update
 
-* Added attribute `email` to data type [`shopInfo`](https://developer.epages.com/apps/data-types#shopinfo).
+* Added attribute `email` to data type [`shopInfo`](https://developer.epages.com/apps/data-types.html#shopinfo).
 
 <hr>
 
@@ -224,8 +238,8 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 #### <i class="fas fa-pencil-alt"></i> Update
 
-* Added further attributes to data type [`address`](https://developer.epages.com/apps/data-types#address).
-* Added attribute `taxes` to data types [`paymentData`](https://developer.epages.com/apps/data-types#paymentdata) and [`shippingData`](https://developer.epages.com/apps/data-types#shippingdata).
+* Added further attributes to data type [`address`](https://developer.epages.com/apps/data-types.html#address).
+* Added attribute `taxes` to data types [`paymentData`](https://developer.epages.com/apps/data-types.html#paymentdata) and [`shippingData`](https://developer.epages.com/apps/data-types.html#shippingdata).
 * Added `includeInvisible` query parameter to [`GET` categories](https://developer.epages.com/apps/api-reference/get-shopid-categories.html) and [`GET` categories/{categoryId}](https://developer.epages.com/apps/api-reference/get-shopid-categories-categoryid.html).
 
 <hr>
@@ -236,8 +250,8 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 #### <i class="fas fa-pencil-alt"></i> Update
 
-* Added `visible` attribute to data types [`category`](https://developer.epages.com/apps/data-types#category) and [`category (create request)`](https://developer.epages.com/apps/data-types#category-create-request).
-* Added attributes `deposits`, `ecoParticipations`, `shippingOptions` and `basketDiscount` to data type [`lineItemContainer`](https://developer.epages.com/apps/data-types#lineitemcontainer).
+* Added `visible` attribute to data types [`category`](https://developer.epages.com/apps/data-types.html#category) and [`category (create request)`](https://developer.epages.com/apps/data-types.html#category-create-request).
+* Added attributes `deposits`, `ecoParticipations`, `shippingOptions` and `basketDiscount` to data type [`lineItemContainer`](https://developer.epages.com/apps/data-types.html#lineitemcontainer).
 
 <hr>
 
@@ -247,7 +261,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 #### <i class="fas fa-pencil-alt"></i> Update
 
-* Added `status` attribute to data type [`paymentData`](https://developer.epages.com/apps/data-types#paymentdata).
+* Added `status` attribute to data type [`paymentData`](https://developer.epages.com/apps/data-types.html#paymentdata).
 
 <hr>
 
@@ -268,8 +282,8 @@ Of course, we will continue to inform you if there are any breaking changes to t
 * Added response code [*410 Gone*](https://developer.epages.com/apps/response-codes#responses-in-the-4xx-range).
 * Required to set user agent in [request header](https://developer.epages.com/apps/request-headers).
 * Specified attributes `stocklevel`, `depositPrice`, and `manufacturerPrice` for [`POST` products](https://developer.epages.com/apps/api-reference/post-shopid-products.html).
-* Added attributes `manufacturerProductNumber`, `minStocklevel`, `productLength`, `productHeight`, `productWidth` `productVariationType`, and `productVariationSelection` to data type [`product`](https://developer.epages.com/apps/data-types#product).
-* Added data type [`variationIdentifier`](https://developer.epages.com/apps/data-types#variationidentifier).
+* Added attributes `manufacturerProductNumber`, `minStocklevel`, `productLength`, `productHeight`, `productWidth` `productVariationType`, and `productVariationSelection` to data type [`product`](https://developer.epages.com/apps/data-types.html#product).
+* Added data type [`variationIdentifier`](https://developer.epages.com/apps/data-types.html#variationidentifier).
 * Removed `products_write` authorisation from `stocklevel` attribute.
 * Added query parameter `includeInvisible` to [`GET` products](https://developer.epages.com/apps/api-reference/get-shopid-products.html).
 * Localized attribute `name` in `productLineItems` in [`GET` orders/{orderId}](https://developer.epages.com/apps/api-reference/get-shopid-orders-orderid.html).
@@ -290,12 +304,12 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 #### <i class="fas fa-pencil-alt"></i> Update
 
-* Added data type [`deliveryWeightQuantity`](https://developer.epages.com/apps/data-types#deliveryweightquantity).
-* Updated data type [`quantity`](https://developer.epages.com/apps/data-types#quantity).
+* Added data type [`deliveryWeightQuantity`](https://developer.epages.com/apps/data-types.html#deliveryweightquantity).
+* Updated data type [`quantity`](https://developer.epages.com/apps/data-types.html#quantity).
 * Updated description of query parameter `updatedFrom` in [`GET` orders](https://developer.epages.com/apps/api-reference/get-shopid-orders.html).
 * Updated description of [`PATCH` orders/{orderId}](https://developer.epages.com/apps/api-reference/patch-shopid-orders-orderid.html).
 * Added response code [*409 Conflict*](https://developer.epages.com/apps/response-codes#responses-in-the-4xx-range.html).
-* Updated description of `customerNumber` attribute of data type [`customer (create request)`](https://developer.epages.com/apps/data-types#customer-create-request).
+* Updated description of `customerNumber` attribute of data type [`customer (create request)`](https://developer.epages.com/apps/data-types.html#customer-create-request).
 
 #### <i class="fa fa-minus"></i> Remove
 
@@ -327,12 +341,12 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 #### <i class="fas fa-pencil-alt"></i> Update
 
-* Changed `minCart` attribute to [`minimumCart`](https://developer.epages.com/apps/data-types#minimumcart).
+* Changed `minCart` attribute to [`minimumCart`](https://developer.epages.com/apps/data-types.html#minimumcart).
 * Added `taxClassId` attribute to cart responses, where missing.
-* Added `deliveryWeight` attribute to data type [`productLineItem`](https://developer.epages.com/apps/data-types#productlineitem).
-* Added `couponLineItem` attribute to data type [`lineItemContainer`](https://developer.epages.com/apps/data-types#lineitemcontainer).
-* Renamed data type `taxClass` to [`taxClassInfo`](https://developer.epages.com/apps/data-types#taxclassinfo).
-* Added data type [`taxClass`](https://developer.epages.com/apps/data-types#taxclass).
+* Added `deliveryWeight` attribute to data type [`productLineItem`](https://developer.epages.com/apps/data-types.html#productlineitem).
+* Added `couponLineItem` attribute to data type [`lineItemContainer`](https://developer.epages.com/apps/data-types.html#lineitemcontainer).
+* Renamed data type `taxClass` to [`taxClassInfo`](https://developer.epages.com/apps/data-types.html#taxclassinfo).
+* Added data type [`taxClass`](https://developer.epages.com/apps/data-types.html#taxclass).
 
 <hr>
 
@@ -350,8 +364,8 @@ Of course, we will continue to inform you if there are any breaking changes to t
 #### <i class="fas fa-pencil-alt"></i> Update
 
 * Changed `minCartValue` attribute to `minCart` and expanded its attributes.
-* Added `taxClassId` attribute to data type [`taxClass`](https://developer.epages.com/apps/data-types#taxclass).
-* Added attributes `partiallyDispatchedOn`, `partiallyPaidOn` and `partiallyInvoicedOn` to data type [`order`](https://developer.epages.com/apps/data-types#order).
+* Added `taxClassId` attribute to data type [`taxClass`](https://developer.epages.com/apps/data-types.html#taxclass).
+* Added attributes `partiallyDispatchedOn`, `partiallyPaidOn` and `partiallyInvoicedOn` to data type [`order`](https://developer.epages.com/apps/data-types.html#order).
 
 #### <i class="fa fa-minus"></i> Remove
 
@@ -365,10 +379,10 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 #### <i class="fas fa-pencil-alt"></i> Update
 
-* Added `stocklevel` attribute to  all **product** calls with data type [`product`](https://developer.epages.com/apps/data-types#product).
+* Added `stocklevel` attribute to  all **product** calls with data type [`product`](https://developer.epages.com/apps/data-types.html#product).
 * Added `shippingMethod` link to all **carts** calls that include the `shippingData` attribute.
-* Added `taxClass` attribute to data type [`product`](https://developer.epages.com/apps/data-types#productlineitem).
-* Added `visible` attribute to data type [`product`](https://developer.epages.com/apps/data-types#product).
+* Added `taxClass` attribute to data type [`product`](https://developer.epages.com/apps/data-types.html#productlineitem).
+* Added `visible` attribute to data type [`product`](https://developer.epages.com/apps/data-types.html#product).
 
 <hr>
 

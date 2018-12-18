@@ -1,5 +1,25 @@
 #%RAML 0.8
 displayName: Carts
+get:
+  description: Returns a list of carts. *epages6 *epagesNow
+  securedBy: [carts_read]
+  is: [ locale, paged ]
+  queryParameters:
+    createdBefore:
+      description: Filters carts created before this timestamp (format according to ISO 8601). The maximum time frame for displaying carts is 30 days. If no filter is set, all carts will be displayed.
+      type: string
+      required : false
+    createdAfter:
+      description: Filters carts created after this timestamp (format according to ISO 8601). The maximum time frame for displaying carts is 30 days. If no filter is set, all carts will be displayed.
+      type: string
+      required: false
+  responses:
+    200:
+      body:
+        application/json:
+          example: !include examples/get_carts_response.json
+          schema: !include schema/get_carts.schema.json
+
 post:
   description: Creates a cart for a shop. *epages6 *epagesNow
   body:

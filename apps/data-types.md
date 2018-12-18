@@ -73,6 +73,7 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | paymentData | object of [paymentData](page:apps-data-types#paymentdata) | The payment data of  a cart or an order, i.e. short info on payment method and price.|
 | minimumCart | object of [minimumCart](page:apps-data-types#minimumcart) | The minimum order value of a shop. |
 | pickupToken | string | For internal use only. Can be ignored. |
+| creationDate | string | The date/time the cart was created. Expressed according to ISO 8601. Example: `2018-12-17T21:07:29Z` |
 | checkoutUrl | string | The URL that redirects the browser to the merchant’s shop in order to complete the checkout. |
 | registerSessionUrl | string | The URL that redirects the browser to the merchant’s shop in order to register a session. |
 
