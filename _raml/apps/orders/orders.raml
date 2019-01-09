@@ -139,6 +139,11 @@ get:
       description: Returns finalized invoice and credit note order documents by orderId. *epages6 *epagesNow
       securedBy: [orders_read]
       is: [ locale, paged ]
+      queryParameters:
+        includePdf:
+          description: Returns the pdf content via the attribute `documentPdf`.
+          type: boolean
+          required : false
       responses:
         200:
           body:
