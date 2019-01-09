@@ -14,7 +14,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
-## 2018-12-18
+## 2019-01-09
 
 ### Changes with software release 7.32.0
 
@@ -25,6 +25,10 @@ Of course, we will continue to inform you if there are any breaking changes to t
 #### <i class="fas fa-pencil-alt"></i> Update
 
 * Added attribute `creationDate` to data type [`cart`](https://developer.epages.com/apps/data-types.html#cart)
+
+* Added attribute `documentPdf` to data type [`orderDocument`](https://developer.epages.com/apps/data-types.html#orderdocument)
+
+* Added query parameter `includePdf` to [`GET`orders/{orderId}/documents](https://developer.epages.com/apps/api-reference/get-shopid-orders-orderid-documents.html)
 
 <hr>
 
@@ -49,7 +53,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 #### <i class="fas fa-plus"></i> New
 
-* Added `carts:add` [event](https://developer.epages.com/apps/events.html).
+* Added `carts:add`[event](https://developer.epages.com/apps/events.html).
 
 <hr>
 
