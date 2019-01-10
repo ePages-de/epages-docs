@@ -361,6 +361,7 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | creationDate | string | The date/time of order placement. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z` |
 | address | [address](page:apps-data-types#address) | The billing address for the order.  |
 | lineItemContainer | [lineItemContainer](page:apps-data-types#lineitemcontainer) | Contains the line items of an order. |
+| documentPdf | string | A base64 encoded string (without new line characters) that is provided in the order checkout language. |
 | links | array of [link](page:apps-data-types#link) | The links to the products of the order. |
 
 ## productsPaged
