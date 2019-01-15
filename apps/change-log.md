@@ -32,7 +32,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 * Added attribute `issueDate` to data type [`orderDocument`](https://developer.epages.com/apps/data-types.html#orderdocument).
 
-* Added query parameter `hasAddressData` to [`GET`orders/{orderId}/documents](https://developer.epages.com/apps/api-reference/get-shopid-orders-orderid-documents.html).
+* Added query parameter `hasAddressData` to [`GET`carts](https://developer.epages.com/apps/api-reference/get-shopid-carts.html).
 
 <hr>
 
