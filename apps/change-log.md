@@ -14,7 +14,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
-## 2019-01-10
+## 2019-01-15
 
 ### Changes with software release 7.32.0
 
@@ -24,13 +24,15 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 #### <i class="fas fa-pencil-alt"></i> Update
 
-* Added attribute `creationDate` to data type [`cart`](https://developer.epages.com/apps/data-types.html#cart)
+* Added attribute `creationDate` to data type [`cart`](https://developer.epages.com/apps/data-types.html#cart).
 
-* Added attribute `documentPdf` to data type [`orderDocument`](https://developer.epages.com/apps/data-types.html#orderdocument)
+* Added attribute `documentPdf` to data type [`orderDocument`](https://developer.epages.com/apps/data-types.html#orderdocument).
 
-* Added query parameter `includePdf` to [`GET`orders/{orderId}/documents](https://developer.epages.com/apps/api-reference/get-shopid-orders-orderid-documents.html)
+* Added query parameter `includePdf` to [`GET`orders/{orderId}/documents](https://developer.epages.com/apps/api-reference/get-shopid-orders-orderid-documents.html).
 
-* Added attribute `issueDate` to data type [`orderDocument`](https://developer.epages.com/apps/data-types.html#orderdocument)
+* Added attribute `issueDate` to data type [`orderDocument`](https://developer.epages.com/apps/data-types.html#orderdocument).
+
+* Added query parameter `hasAddressData` to [`GET`orders/{orderId}/documents](https://developer.epages.com/apps/api-reference/get-shopid-orders-orderid-documents.html).
 
 <hr>
 
