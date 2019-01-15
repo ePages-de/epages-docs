@@ -358,7 +358,7 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | orderId | string | The unique identifier of the order. |
 | documentType | string | The type of the order document. Can be `Invoice` or `CreditNote`. |
 | documentNumber | string | The number of the order document. |
-| issueDate | string | The date/time specified on the document. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z` | Note: This date/time is in UTC and should be converted to the Timezone of the Issuer to match the date on the document |
+| issueDate | string | The date/time specified on the document. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z` | Note: This date/time is in UTC and has to be converted to the timezone of the issuer (merchant) to match the date on the document. |
 | creationDate | string | The date/time of document creation. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z` |
 | address | [address](page:apps-data-types#address) | The billing address for the order.  |
 | lineItemContainer | [lineItemContainer](page:apps-data-types#lineitemcontainer) | Contains the line items of an order. |
