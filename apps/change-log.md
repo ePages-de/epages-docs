@@ -14,7 +14,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
-## 2019-02-06
+## 2019-02-08
 
 ### Changes with software release 7.33.0
 
@@ -23,6 +23,8 @@ Of course, we will continue to inform you if there are any breaking changes to t
 * Added query parameter `hasAddressData` to [`GET`carts](https://developer.epages.com/apps/api-reference/get-shopid-carts.html).
 
 * Added attribute `displayName` to data type [`variationIdentifier`](https://developer.epages.com/apps/data-types.html#variationidentifier).
+
+* Added attribute `displayValue` to data type [`variationIdentifier`](https://developer.epages.com/apps/data-types.html#variationidentifier).
 
 <hr>
 
