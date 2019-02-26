@@ -46,11 +46,15 @@
           "attributeSelection": [
               {
                   "name": "Size",
-                  "value": "M"
+                  "displayName" "Size",
+                  "value": "M",
+                  "displayValue": "M"
               },
               {
                   "name": "Colour",
-                  "value": "Black"
+                  "displayName" "Colour",
+                  "value": "Black",
+                  "displayValue": "Black"
               }
           ]
       },
@@ -62,11 +66,15 @@
           "attributeSelection": [
               {
                   "name": "Size",
-                  "value": "L"
+                  "displayName" "Size",
+                  "value": "L",
+                  "displayValue": "L"
               },
               {
                   "name": "Colour",
-                  "value": "Black"
+                  "displayName" "Colour",
+                  "value": "Black",
+                  "displayValue": "Black"
               }
           ]
       },
@@ -78,11 +86,15 @@
           "attributeSelection": [
               {
                   "name": "Size",
-                  "value": "M"
+                  "displayName" "Size",
+                  "value": "M",
+                  "displayValue": "M"
               },
               {
                   "name": "Colour",
-                  "value": "White"
+                  "displayName" "Colour",
+                  "value": "White",
+                  "displayValue": "White"
               }
           ]
       },
@@ -94,11 +106,15 @@
           "attributeSelection": [
               {
                   "name": "Size",
-                  "value": "L"
+                  "displayName" "Size",
+                  "value": "L",
+                  "displayValue": "L"
               },
               {
                   "name": "Colour",
-                  "value": "White"
+                  "displayName" "Colour",
+                  "value": "White",
+                  "displayValue": "White"
               }
           ]
       },
@@ -110,11 +126,15 @@
           "attributeSelection": [
               {
                   "name": "Size",
-                  "value": "M"
+                  "displayName" "Size",
+                  "value": "M",
+                  "displayValue": "M"
               },
               {
                   "name": "Colour",
-                  "value": "Grey"
+                  "displayName" "Colour",
+                  "value": "Grey",
+                  "displayValue": "Grey"
               }
           ]
       }

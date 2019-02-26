@@ -12,6 +12,16 @@ In order to keep track of these changes we recommend you to follow [@epagesdevs]
 Feature-free releases won't be reported anymore.
 Of course, we will continue to inform you if there are any breaking changes to the API.**
 
+## 2019-02-21
+
+### Changes with software release 7.34.0
+
+#### <i class="fas fa-pencil-alt"></i> Update
+
+* Added attribute `displayName` to data type [`variationIdentifier`](https://developer.epages.com/apps/data-types.html#variationidentifier).
+
+* Added attribute `displayValue` to data type [`variationIdentifier`](https://developer.epages.com/apps/data-types.html#variationidentifier).
+
 <hr>
 
 ## 2019-02-06
@@ -21,8 +31,6 @@ Of course, we will continue to inform you if there are any breaking changes to t
 #### <i class="fas fa-pencil-alt"></i> Update
 
 * Added query parameter `hasAddressData` to [`GET`carts](https://developer.epages.com/apps/api-reference/get-shopid-carts.html).
-
-* Added attribute `displayName` to data type [`variationIdentifier`](https://developer.epages.com/apps/data-types.html#variationidentifier).
 
 <hr>
 
