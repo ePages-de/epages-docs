@@ -680,6 +680,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | name | string | The name of the selected product variation. |
 | displayName | string | The localized displayed name of the selected product variation. |
 | value | string | The key of an attribute, e.g. NeonPurple.  |
+| displayValue | string | The localized displayed name of the attribute, e.g. Neon Purple. |
 
 ## variationValue
 

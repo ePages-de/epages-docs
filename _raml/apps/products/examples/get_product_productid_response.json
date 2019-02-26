@@ -2,7 +2,7 @@
   "productId": "51E7F905-2E4C-78C2-30C2-AC14145FA4E5",
   "name": "Dr.Boom - Red Power",
   "visible": true,
-  "productVariationType": "regular",
+  "productVariationType": "variation",
   "manufacturerProductNumber": "HP-003",
   "productLength": null,
   "productWidth": null,
@@ -11,7 +11,8 @@
     {
       "name": "Color",
       "displayName": "Headphone color",
-      "value": "red"
+      "value": "red",
+      "displayValue": "Ravishing red",
     }
   ],
   "shortDescription": "<p>Red Resonator S&nbsp;headphones are the best-performing around-ear headphones from&nbsp;Dr.Boom. They give you fresh and&nbsp;powerful sound.&nbsp;These headphones definitely&nbsp;let you hear your music better!</p>",
