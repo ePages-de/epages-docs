@@ -19,6 +19,26 @@ You can use this [shell script][bootstrap-linux] to turn your laptop into an awe
 
 You can use the Vagrant or Docker options.
 
+## Run using Vagrant
+
+Install Vagrant on your machine.
+
+~~~ bash
+# This step will download and start the machine
+$ vagrant up
+
+# Here you can acess the machine terminal
+$ vagrant ssh
+
+# Find out the ruby version
+$ ruby -v
+
+# Edit the file `.ruby-version` on epages-docs folder with your favourite editor and update with your version
+$ vi /vagrant/.ruby-version
+~~~
+
+After this run the [Rake tasks](#rake-tasks)
+
 ## Run in Docker (development mode)
 
 If you don't like to bootstrap your machine you can also run a [Docker][docker] container for development by invoking a single command only.
@@ -36,22 +56,6 @@ $ echo "Open in browser: http://127.0.0.1:4000/"
 # On Mac (with one active docker machine)
 $ open http://$(docker-machine ip `docker-machine active`):4000
 ~~~
-
-## Run using Vagrant
-
-Install Vagrant, create a file called 'Vagrantfile' with the following content:
-
-~~~ bash
-Vagrant.configure("2") do |config|
-  config.vm.box = "joshfng/railsbox"
-  config.vm.network "forwarded_port", guest: 4000, host: 4000
-end
-~~~
-
-After running 
-'vagrant up', clone the repository on the folder where the Vagrantfile is.
-
-You'll have to edit the file .ruby-version with your appropriate version 'ruby -v'
 
 ## Run in Docker (production mode)
 
