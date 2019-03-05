@@ -17,7 +17,7 @@ You can use this [shell script][bootstrap-linux] to turn your laptop into an awe
 
 ### Windows
 
-You can use the Vagrant
+You can use the Vagrant or Docker options.
 
 ## Run in Docker (development mode)
 
