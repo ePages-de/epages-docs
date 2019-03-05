@@ -27,7 +27,7 @@ Install [Vagrant][vagrant] on your machine.
 # This step will download and start the machine
 $ vagrant up
 
-# Here you can acess the machine terminal
+# Here you can access the machine terminal
 $ vagrant ssh
 
 # Find out the ruby version
