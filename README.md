@@ -21,7 +21,7 @@ You can use the Vagrant or Docker options.
 
 ## Run using Vagrant
 
-Install Vagrant on your machine.
+Install [Vagrant][vagrant] on your machine.
 
 ~~~ bash
 # This step will download and start the machine
