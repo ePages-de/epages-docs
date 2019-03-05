@@ -17,7 +17,7 @@ You can use this [shell script][bootstrap-linux] to turn your laptop into an awe
 
 ### Windows
 
-TODO
+You can use the Vagrant
 
 ## Run in Docker (development mode)
 
@@ -36,6 +36,22 @@ $ echo "Open in browser: http://127.0.0.1:4000/"
 # On Mac (with one active docker machine)
 $ open http://$(docker-machine ip `docker-machine active`):4000
 ~~~
+
+## Run using Vagrant
+
+Install Vagrant, create a file called 'Vagrantfile' with the following content:
+
+~~~ bash
+Vagrant.configure("2") do |config|
+  config.vm.box = "joshfng/railsbox"
+  config.vm.network "forwarded_port", guest: 4000, host: 4000
+end
+~~~
+
+After running 
+'vagrant up', clone the repository on the folder where the Vagrantfile is.
+
+You'll have to edit the file .ruby-version with your appropriate version 'ruby -v'
 
 ## Run in Docker (production mode)
 
