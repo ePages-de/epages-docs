@@ -4,3 +4,6 @@ _site/
 vendor/
 tmp/
 .jekyll-metadata
+
+#Vagrant
+/.vagrant

@@ -24,6 +24,7 @@ exclude:
 - Capfile
 - CONTRIBUTING.md
 - Dockerfile
+- Vagrantfile
 - Jenkinsfile
 - docker-compose.yml
 - Gemfile
