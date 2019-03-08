@@ -84,6 +84,9 @@
 
     - title: Categories
       link: page:api-resources-categories
+    
+   - title: Coupon campaigns
+      link: page:api-resources-coupon-campaigns
 
     - title: Customers
       link: page:api-resources-customers
@@ -109,7 +112,7 @@
     - title: Script tags
       link: page:api-resources-script-tags
 
-    - title: ShippingMethods
+    - title: Shipping methods
       link: page:api-resources-shipping-methods
 
     - title: Taxes
