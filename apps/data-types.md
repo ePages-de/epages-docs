@@ -685,7 +685,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | Attribute | Type | Description |
 | - | - |  - |
 | name | string| The name of the coupon value type. |
-| waiveShippingCosts | boolean | xxx |
+| waiveShippingCosts | boolean | Indicates if shipping costs are included. |
 
 ## variation
 
