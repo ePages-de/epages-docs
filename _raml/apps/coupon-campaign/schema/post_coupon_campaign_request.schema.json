@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema",
-  "title": "Post Carts Request Schema",
+  "title": "Post Coupon Campaign Request Schema",
   "type": "object",
   "properties": {
     "": {

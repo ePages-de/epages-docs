@@ -85,7 +85,7 @@
     - title: Categories
       link: page:api-resources-categories
     
-   - title: Coupon campaigns
+    - title: Coupon campaigns
       link: page:api-resources-coupon-campaigns
 
     - title: Customers
