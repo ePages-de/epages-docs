@@ -1,0 +1,11 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema",
+    "title": "Get Coupon Campaign CampaignId Schema",
+    "type": "object",
+    "properties": {
+      "": {
+        "type": "object of [couponCampaign](page:apps-data-types#couponcampaign)",
+        "description": ""
+      }
+    }
+  }

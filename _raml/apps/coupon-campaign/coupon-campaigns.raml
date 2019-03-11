@@ -1,7 +1,7 @@
 #%RAML 0.8
 displayName: Coupon campaigns
 post:
-  description: Creates a coupon campaign for a shop. Three different coupon campaign types exist `FIX`(absolute value), `PERCENT` (percentage value), and `SHIPPING` (waive delivery costs). *epages6 *epagesNow
+  description: Creates a coupon campaign for a shop. Coupon campaign types can be FIX (absolute value), `PERCENT` (percentage value), and `SHIPPING` (waive delivery costs). *epages6 *epagesNow
   securedBy: [coupons_write]
   is: [ locale ]
   body:
@@ -15,9 +15,8 @@ post:
           example: !include examples/post_coupon_campaign_response.json
           schema: !include schema/post_coupon_campaign_schema.json
 /{couponCampaignId}:
-  displayName: xxxx
   get:
-    description: xxxx *epages6 *epagesNow
+    description: Returns a specific coupon campaign from a shop identified by the provided coupon campaign Id. *epages6 *epagesNow
     securedBy: [coupons_read]
     responses:
       200:
@@ -26,14 +25,11 @@ post:
             example: !include examples/get_coupon_campaign_couponcampaignid_response.json
             schema: !include schema/get_coupon_campaign_couponcampaignid.schema.json
   delete:
-    description: xxx *epages6 *epagesNow
+    description: Deletes a specific coupon campaign from a shop identified by the provided coupon campaign Id. *epages6 *epagesNow
     securedBy: [coupons_write]
     responses:
-      200:
-        body:
-          application/json:
-            example: !include examples/delete_coupon_campaign_couponcampaignid_response.json
-            schema: !include schema/delete_coupon_campaign_couponcampaignid.schema.json
+      204:
+
   /coupon:
     displayName: Coupon
     put:
@@ -43,15 +39,12 @@ post:
         application/x-www-form-urlencoded:
           formParameters:
             code:
-              description: The coupon code, e.g. PJFNYX8WZU97.
+              description: The coupon code, e.g. `summer2019`.
               required: true
               type: string
+              example: summer2019
       responses:
-        200:
-          body:
-            application/json:
-              example: !include examples/put_coupon_campaign_couponcampaignid_coupon_response.json
-              schema: !include schema/put_coupon_campaign_couponcampaignid_coupon_response.schema.json
+        204:
   
 
     

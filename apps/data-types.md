@@ -168,6 +168,28 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | - | - |  - |
 | name | string | The name of the content page. |
 
+## couponCampaign (create request)
+
+| Attribute | Type | Description |
+| - | - |  - |
+| identifier | string | The alias of the coupon campaign. |
+| name | string | The name of the coupon campaign. |
+| currency | string | The currency code according to ISO 4217. |
+| minimumOrderValue | string | The minimum order value of the coupon campaign, if customers are required to purchase at least a minimum amount to being able to redeem a coupon. |
+| type | object of [valueType](page:apps-data-types#valuetype) | The type of the coupon campaign. Can be one of *FIX*, *PERCENT*, or *SHIPPING*. |
+
+## couponCampaign
+
+| Attribute | Type | Description |
+| - | - |  - |
+| campaignId | string | The unique identifier of the coupon campaign. |
+| identifier | string | The alias of the coupon campaign. |
+| name | string | The name of the coupon campaign. |
+| currency | string | The currency code according to ISO 4217. |
+| type | object of [valueType](page:apps-data-types#valuetype) | The type of the coupon campaign. Can be one of *FIX*, *PERCENT*, or *SHIPPING*. |
+| minimumOrderValue | object of [price](page:apps-data-types#price) | The minimum order value of the coupon campaign, if customers are required to purchase at least a minimum amount to being able to redeem a coupon. |
+| links | array of [link](page:apps-data-types#link) | The link to the exact coupon campaign. |
+
 ## couponLineItem
 
 | Attribute | Type | Description |
@@ -657,6 +679,13 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | - | - |  - |
 | item | object of [product](page:apps-data-types#product) | The data of the product. |
 | lastUpdated | string | The date/time the product was last updated. Expressed according to ISO 8601. Example: `2016-02-25T08:49:31Z`|
+
+## valueType
+
+| Attribute | Type | Description |
+| - | - |  - |
+| name | string| The name of the coupon value type. |
+| waiveShippingCosts | boolean | xxx |
 
 ## variation
 

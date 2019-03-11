@@ -1,0 +1,22 @@
+{
+  "campaignId": "5774E27E-0AD5-A8F6-7395-AC1532116DFC",
+  "identifier": "summer_sale_2019",
+  "name": "Summer Sale 2019",
+  "currency": "EUR",
+  "type": {
+    "name": "FIX",
+    "waiveShippingCosts": false
+  },
+  "minimumOrderValue": {
+    "taxType": "NONE",
+    "formatted": "100.00 €",
+    "amount": 100,
+    "currency": "EUR"
+  },
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://pm.epages.com/rs/shops/apidocu/coupon-campaigns/5774E27E-0AD5-A8F6-7395-AC1532116DFC"
+    }
+  ]
+}

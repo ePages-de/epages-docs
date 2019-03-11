@@ -1,11 +1,12 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema",
-  "title": "Post Carts Request Schema",
+  "title": "Post Coupon Campaign Schema",
   "type": "object",
   "properties": {
     "": {
-      "type": "object of [cart (create request)](page:apps-data-types#cart-create-request)",
+      "type": "object of [couponCampaign](page:apps-data-types#couponcampaign)",
       "description": ""
     }
   }
 }
+

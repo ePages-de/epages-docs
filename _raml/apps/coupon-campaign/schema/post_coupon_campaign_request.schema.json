@@ -4,7 +4,7 @@
   "type": "object",
   "properties": {
     "": {
-      "type": "object of [cart (create request)](page:apps-data-types#cart-create-request)",
+      "type": "object of [couponCampaign (create request)](page:apps-data-types#couponcampaign-create-request)",
       "description": ""
     }
   }
