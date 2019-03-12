@@ -1,0 +1,10 @@
+{
+  "identifier": "summer_sale_2019",
+  "name": "Summer Sale 2019",
+  "currency": "EUR",
+  "minimumOrderValue": 100,
+  "type": {
+    "name": "FIX",
+    "waiveShippingCosts": false
+  }
+}

@@ -17,7 +17,27 @@ You can use this [shell script][bootstrap-linux] to turn your laptop into an awe
 
 ### Windows
 
-TODO
+You can use the Vagrant or Docker options.
+
+## Run using Vagrant
+
+Install [Vagrant][vagrant] on your machine.
+
+~~~ bash
+# This step will download and start the machine
+$ vagrant up
+
+# Here you can access the machine terminal
+$ vagrant ssh
+
+# Find out the ruby version
+$ ruby -v
+
+# Edit the file `.ruby-version` on epages-docs folder with your favourite editor and update with your version
+$ vi /vagrant/.ruby-version
+~~~
+
+After this run the [Rake tasks](#rake-tasks)
 
 ## Run in Docker (development mode)
 
