@@ -1,16 +1,13 @@
 ---
 layout: docs
-key: api-resources-shipping-methods
-title: Shipping methods
+key: api-resources-coupon-campaigns
+title: Coupon campaigns
 ---
-
-The shipping methods supposed to handle the shipment for a shop.
-
 {% assign global_key = page.key %}
 
 <ul id="resource-list">
   {% for page in site.pages %}
-    {% assign match = page.key | regex_match: '^apps-api-([a-z]+)-shopid-shipping-methods(.*)-information$' %}
+    {% assign match = page.key | regex_match: '^apps-api-([a-z]+)-shopid-coupon-campaigns(.*)-information$' %}
     {% assign visible = global_key | versioning_visible: page.url %}
     {% if match and visible %}
       <li class="resource-entry">

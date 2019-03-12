@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "Post Coupon Campaign Request Schema",
+  "type": "object",
+  "properties": {
+    "": {
+      "type": "object of [couponCampaign (create request)](page:apps-data-types#couponcampaign-create-request)",
+      "description": ""
+    }
+  }
+}
