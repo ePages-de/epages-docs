@@ -9,11 +9,13 @@
   "images": [
     {
       "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/301B/A6B4/567A/8AE0/0A0C/05E6/922D/epages-e_copysmall_m.png",
-      "classifier": "Medium"
+      "classifier": "Medium",
+      "isZoomEnabled": null
     },
     {
       "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/301B/A6B4/567A/8AE0/0A0C/05E6/922D/epages-e_copysmall_s.png",
-      "classifier": "Small"
+      "classifier": "Small",
+      "isZoomEnabled": null
     }
   ],
   "parent": {

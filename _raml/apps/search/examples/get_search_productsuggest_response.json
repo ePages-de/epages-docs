@@ -5,7 +5,8 @@
       "images": [
         {
           "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/EE97/FD85/1B66/9962/AC14/145F/A540/001-headphone_xs.jpg",
-          "classifier": "Thumbnail"
+          "classifier": "Thumbnail",
+          "isZoomEnabled": null
         }
       ],
       "link": {
@@ -18,7 +19,8 @@
       "images": [
         {
           "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F905/2E4C/78C2/30C2/AC14/145F/A4E5/013-headphone-red_xs.jpg",
-          "classifier": "Thumbnail"
+          "classifier": "Thumbnail",
+          "isZoomEnabled": null
         }
       ],
       "link": {
@@ -31,7 +33,8 @@
       "images": [
         {
           "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F913/5447/240E/77AE/AC14/145F/A477/headset1_xs.jpg",
-          "classifier": "Thumbnail"
+          "classifier": "Thumbnail",
+          "isZoomEnabled": null
         }
       ],
       "link": {
@@ -44,7 +47,8 @@
       "images": [
         {
           "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51EE/313C/B015/70C3/F368/AC14/145F/D385/006-headset_xs.jpg",
-          "classifier": "Thumbnail"
+          "classifier": "Thumbnail",
+          "isZoomEnabled": null
         }
       ],
       "link": {
@@ -57,7 +61,8 @@
       "images": [
         {
           "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51F1/29BC/49C0/0469/1B30/AC14/145F/6436/headphone2d_xs.jpg",
-          "classifier": "Thumbnail"
+          "classifier": "Thumbnail",
+          "isZoomEnabled": null
         }
       ],
       "link": {
@@ -70,7 +75,8 @@
       "images": [
         {
           "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51F1/32F3/37CE/05E0/7431/AC14/145F/61B5/012-headphone_xs.jpg",
-          "classifier": "Thumbnail"
+          "classifier": "Thumbnail",
+          "isZoomEnabled": null
         }
       ],
       "link": {
@@ -83,7 +89,8 @@
       "images": [
         {
           "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/acc6_xs.jpg",
-          "classifier": "Thumbnail"
+          "classifier": "Thumbnail",
+          "isZoomEnabled": null
         }
       ],
       "link": {
@@ -96,7 +103,8 @@
       "images": [
         {
           "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54EF/2CBE/F312/7312/638E/0A0C/05E6/6CA3/Audiosample_xs.jpg",
-          "classifier": "Thumbnail"
+          "classifier": "Thumbnail",
+          "isZoomEnabled": null
         }
       ],
       "link": {
@@ -109,7 +117,8 @@
       "images": [
         {
           "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54EF/2E41/FCA8/E0E5/9323/0A0C/05E6/6C2E/001-headphone_xs.jpg",
-          "classifier": "Thumbnail"
+          "classifier": "Thumbnail",
+          "isZoomEnabled": null
         }
       ],
       "link": {
@@ -122,7 +131,8 @@
       "images": [
         {
           "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54EF/307D/4FF3/3578/CB70/0A0C/05E6/6C3F/eBookNew_xs.jpg",
-          "classifier": "Thumbnail"
+          "classifier": "Thumbnail",
+          "isZoomEnabled": null
         }
       ],
       "link": {

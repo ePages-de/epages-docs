@@ -101,23 +101,28 @@
             "images": [
               {
                 "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/EE97/FD85/1B66/9962/AC14/145F/A540/001-headphone-blue_h.jpg",
-                "classifier": "HotDeal"
+                "classifier": "HotDeal",
+                "isZoomEnabled": null
               },
               {
                 "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/EE97/FD85/1B66/9962/AC14/145F/A540/001-headphone-blue.jpg",
-                "classifier": "Large"
+                "classifier": "Large",
+                "isZoomEnabled": null
               },
               {
                 "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/EE97/FD85/1B66/9962/AC14/145F/A540/001-headphone-blue_m.jpg",
-                "classifier": "Medium"
+                "classifier": "Medium",
+                "isZoomEnabled": null
               },
               {
                 "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/EE97/FD85/1B66/9962/AC14/145F/A540/001-headphone-blue_s.jpg",
-                "classifier": "Small"
+                "classifier": "Small",
+                "isZoomEnabled": null
               },
               {
                 "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/EE97/FD85/1B66/9962/AC14/145F/A540/001-headphone-blue_xs.jpg",
-                "classifier": "Thumbnail"
+                "classifier": "Thumbnail",
+                "isZoomEnabled": null
               }
             ],
             "links": [
@@ -258,23 +263,28 @@
             "images": [
               {
                 "url": "https://pm.epages.com/rs/shops/apidocu/Products/lt_0401107001/lt_0401107001_h.jpg",
-                "classifier": "HotDeal"
+                "classifier": "HotDeal",
+                "isZoomEnabled": null
               },
               {
                 "url": "https://pm.epages.com/rs/shops/apidocu/Products/lt_0401107001/lt_0401107001_1.jpg",
-                "classifier": "Large"
+                "classifier": "Large",
+                "isZoomEnabled": null
               },
               {
                 "url": "https://pm.epages.com/rs/shops/apidocu/Products/lt_0401107001/lt_0401107001_1_m.jpg",
-                "classifier": "Medium"
+                "classifier": "Medium",
+                "isZoomEnabled": null
               },
               {
                 "url": "https://pm.epages.com/rs/shops/apidocu/Products/lt_0401107001/lt_0401107001_1_s.jpg",
-                "classifier": "Small"
+                "classifier": "Small",
+                "isZoomEnabled": null
               },
               {
                 "url": "https://pm.epages.com/rs/shops/apidocu/Products/lt_0401107001/lt_0401107001_1_xs.jpg",
-                "classifier": "Thumbnail"
+                "classifier": "Thumbnail",
+                "isZoomEnabled": null
               }
             ],
             "links": [
@@ -321,23 +331,28 @@
             "images": [
               {
                 "url": "https://pm.epages.com/rs/shops/apidocu/Products/hm_0100401001/hm_0100401001_h.jpg",
-                "classifier": "HotDeal"
+                "classifier": "HotDeal",
+                "isZoomEnabled": null
               },
               {
                 "url": "https://pm.epages.com/rs/shops/apidocu/Products/hm_0100401001/hm_0100401001.jpg",
-                "classifier": "Large"
+                "classifier": "Large",
+                "isZoomEnabled": null
               },
               {
                 "url": "https://pm.epages.com/rs/shops/apidocu/Products/hm_0100401001/hm_0100401001_m.jpg",
-                "classifier": "Medium"
+                "classifier": "Medium",
+                "isZoomEnabled": null
               },
               {
                 "url": "https://pm.epages.com/rs/shops/apidocu/Products/hm_0100401001/hm_0100401001_s.jpg",
-                "classifier": "Small"
+                "classifier": "Small",
+                "isZoomEnabled": null
               },
               {
                 "url": "https://pm.epages.com/rs/shops/apidocu/Products/hm_0100401001/hm_0100401001_xs.jpg",
-                "classifier": "Thumbnail"
+                "classifier": "Thumbnail",
+                "isZoomEnabled": null
               }
             ],
             "links": [
