@@ -6,37 +6,37 @@
         {
           "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F913/5447/240E/77AE/AC14/145F/A477/iStock_000010566997Medium_xs.jpg",
           "classifier": "Thumbnail",
-          "isZoomEnabled": null
+          "isZoomEnabled": false
         },
         {
           "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F913/5447/240E/77AE/AC14/145F/A477/iStock_000010566997Medium_s.jpg",
           "classifier": "Small",
-          "isZoomEnabled": null
+          "isZoomEnabled": false
         },
         {
           "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F913/5447/240E/77AE/AC14/145F/A477/iStock_000010566997Medium_h.jpg",
           "classifier": "HotDeal",
-          "isZoomEnabled": null
+          "isZoomEnabled": false
         },
         {
           "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F913/5447/240E/77AE/AC14/145F/A477/iStock_000010566997Medium_ms.jpg",
           "classifier": "MediumSmall",
-          "isZoomEnabled": null
+          "isZoomEnabled": false
         },
         {
           "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F913/5447/240E/77AE/AC14/145F/A477/iStock_000010566997Medium_m.jpg",
           "classifier": "Medium",
-          "isZoomEnabled": null
+          "isZoomEnabled": false
         },
         {
           "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F913/5447/240E/77AE/AC14/145F/A477/iStock_000010566997Medium_ml.jpg",
           "classifier": "MediumLarge",
-          "isZoomEnabled": null
+          "isZoomEnabled": false
         },
         {
           "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F913/5447/240E/77AE/AC14/145F/A477/iStock_000010566997Medium.jpg",
           "classifier": "Large",
-          "isZoomEnabled": null
+          "isZoomEnabled": false
         }
       ]
     },
@@ -46,37 +46,37 @@
         {
           "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F913/5447/240E/77AE/AC14/145F/A477/stock-photo-4560666-silver-stereo-headphones_xs.jpg",
           "classifier": "Thumbnail",
-          "isZoomEnabled": null
+          "isZoomEnabled": false
         },
         {
           "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F913/5447/240E/77AE/AC14/145F/A477/stock-photo-4560666-silver-stereo-headphones_s.jpg",
           "classifier": "Small",
-          "isZoomEnabled": null
+          "isZoomEnabled": false
         },
         {
           "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F913/5447/240E/77AE/AC14/145F/A477/stock-photo-4560666-silver-stereo-headphones_h.jpg",
           "classifier": "HotDeal",
-          "isZoomEnabled": null
+          "isZoomEnabled": false
         },
         {
           "url": null,
           "classifier": "MediumSmall",
-          "isZoomEnabled": null
+          "isZoomEnabled": false
         },
         {
           "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F913/5447/240E/77AE/AC14/145F/A477/stock-photo-4560666-silver-stereo-headphones_m.jpg",
           "classifier": "Medium",
-          "isZoomEnabled": null
+          "isZoomEnabled": false
         },
         {
           "url": null,
           "classifier": "MediumLarge",
-          "isZoomEnabled": null
+          "isZoomEnabled": false
         },
         {
           "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F913/5447/240E/77AE/AC14/145F/A477/stock-photo-4560666-silver-stereo-headphones.jpg",
           "classifier": "Large",
-          "isZoomEnabled": null
+          "isZoomEnabled": false
         }
       ]
     }
