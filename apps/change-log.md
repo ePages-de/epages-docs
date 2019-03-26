@@ -12,6 +12,16 @@ In order to keep track of these changes we recommend you to follow [@epagesdevs]
 Feature-free releases won't be reported anymore.
 Of course, we will continue to inform you if there are any breaking changes to the API.**
 
+## 2019-04-25
+
+### Changes with software release 7.35.0
+
+#### <i class="fas fa-pencil-alt"></i> Update
+
+* Added attribute `isZoomEnabled` to data type [`image`](https://developer.epages.com/apps/data-types.html#image).
+
+<hr>
+
 ## 2019-02-21
 
 ### Changes with software release 7.34.0
