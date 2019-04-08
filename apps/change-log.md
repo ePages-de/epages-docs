@@ -18,7 +18,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 #### <i class="fas fa-pencil-alt"></i> Update
 
-* Added attribute `productVariationMasterName` to data type [`product`](https://developer.epages.com/apps/data-types.html#product).
+* Added attributes `productVariationMasterId` and `productVariationMasterName` to data type [`product`](https://developer.epages.com/apps/data-types.html#product).
 
 <hr>
 
