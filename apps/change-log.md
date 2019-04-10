@@ -14,7 +14,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 ## 2019-04-08
 
-### Changes with software release 7.35.1
+### Changes with software release 7.35.2
 
 #### <i class="fas fa-pencil-alt"></i> Update
 
