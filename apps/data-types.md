@@ -256,6 +256,7 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | Attribute | Type | Description |
 | - | - |  - |
 | url | string | The URL of an image. |
+| isZoomEnabled | boolean | Indicates if the zoom is enabled for a product image. |
 | classifier | string | Specifies the image. Can be *Thumbnail*, *Small*, *HotDeal*, *MediumSmall*, *Medium*, *MediumLarge*, *Large*. |
 
 ## imageInfo

@@ -23,23 +23,28 @@
       "images": [
         {
           "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54EF/2E41/FCA8/E0E5/9323/0A0C/05E6/6C2E/001-headphone_h.jpg",
-          "classifier": "HotDeal"
+          "classifier": "HotDeal",
+          "isZoomEnabled": false
         },
         {
           "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54EF/2E41/FCA8/E0E5/9323/0A0C/05E6/6C2E/001-headphone_m.jpg",
-          "classifier": "Medium"
+          "classifier": "Medium",
+          "isZoomEnabled": false
         },
         {
           "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54EF/2E41/FCA8/E0E5/9323/0A0C/05E6/6C2E/headphone3.jpg",
-          "classifier": "Large"
+          "classifier": "Large",
+          "isZoomEnabled": false
         },
         {
           "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54EF/2E41/FCA8/E0E5/9323/0A0C/05E6/6C2E/001-headphone_s.jpg",
-          "classifier": "Small"
+          "classifier": "Small",
+          "isZoomEnabled": false
         },
         {
           "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54EF/2E41/FCA8/E0E5/9323/0A0C/05E6/6C2E/001-headphone_xs.jpg",
-          "classifier": "Thumbnail"
+          "classifier": "Thumbnail",
+          "isZoomEnabled": false
         }
       ],
       "priceInfo": {
@@ -129,23 +134,28 @@
       "images": [
         {
           "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F905/2E4C/78C2/30C2/AC14/145F/A4E5/013-headphone-red_h.jpg",
-          "classifier": "HotDeal"
+          "classifier": "HotDeal",
+          "isZoomEnabled": false
         },
         {
           "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F905/2E4C/78C2/30C2/AC14/145F/A4E5/013-headphone-red_m.jpg",
-          "classifier": "Medium"
+          "classifier": "Medium",
+          "isZoomEnabled": false
         },
         {
           "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F905/2E4C/78C2/30C2/AC14/145F/A4E5/013-headphone-red.jpg",
-          "classifier": "Large"
+          "classifier": "Large",
+          "isZoomEnabled": false
         },
         {
           "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F905/2E4C/78C2/30C2/AC14/145F/A4E5/013-headphone-red_s.jpg",
-          "classifier": "Small"
+          "classifier": "Small",
+          "isZoomEnabled": false
         },
         {
           "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F905/2E4C/78C2/30C2/AC14/145F/A4E5/013-headphone-red_xs.jpg",
-          "classifier": "Thumbnail"
+          "classifier": "Thumbnail",
+          "isZoomEnabled": false
         }
       ],
       "priceInfo": {
@@ -239,23 +249,28 @@
       "images": [
         {
           "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F913/5447/240E/77AE/AC14/145F/A477/headset1_h.jpg",
-          "classifier": "HotDeal"
+          "classifier": "HotDeal",
+          "isZoomEnabled": false
         },
         {
           "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F913/5447/240E/77AE/AC14/145F/A477/headset1_m.jpg",
-          "classifier": "Medium"
+          "classifier": "Medium",
+          "isZoomEnabled": false
         },
         {
           "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F913/5447/240E/77AE/AC14/145F/A477/headset1.jpg",
-          "classifier": "Large"
+          "classifier": "Large",
+          "isZoomEnabled": false
         },
         {
           "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F913/5447/240E/77AE/AC14/145F/A477/headset1_s.jpg",
-          "classifier": "Small"
+          "classifier": "Small",
+          "isZoomEnabled": false
         },
         {
           "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F913/5447/240E/77AE/AC14/145F/A477/headset1_xs.jpg",
-          "classifier": "Thumbnail"
+          "classifier": "Thumbnail",
+          "isZoomEnabled": false
         }
       ],
       "priceInfo": {
