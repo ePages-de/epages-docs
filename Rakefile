@@ -150,6 +150,7 @@ task :test_html do
                 '/about/',
                 /^\/blog.*/,
                 '/devjobs/',
+                '/events/',
                 '/#register']
 
   options = { disable_external: true,
