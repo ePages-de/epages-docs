@@ -12,7 +12,7 @@
       "name": "Color",
       "displayName": "Headphone color",
       "value": "red",
-      "displayValue": "Ravishing red",
+      "displayValue": "Ravishing red"
     }
   ],
   "shortDescription": "<p>Red Resonator S&nbsp;headphones are the best-performing around-ear headphones from&nbsp;Dr.Boom. They give you fresh and&nbsp;powerful sound.&nbsp;These headphones definitely&nbsp;let you hear your music better!</p>",
@@ -23,23 +23,28 @@
   "images": [
     {
       "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F905/2E4C/78C2/30C2/AC14/145F/A4E5/013-headphone-red_h.jpg",
-      "classifier": "HotDeal"
+      "classifier": "HotDeal",
+      "isZoomEnabled": false
     },
     {
       "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F905/2E4C/78C2/30C2/AC14/145F/A4E5/013-headphone-red_m.jpg",
-      "classifier": "Medium"
+      "classifier": "Medium",
+      "isZoomEnabled": false
     },
     {
       "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F905/2E4C/78C2/30C2/AC14/145F/A4E5/013-headphone-red.jpg",
-      "classifier": "Large"
+      "classifier": "Large",
+      "isZoomEnabled": false
     },
     {
       "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F905/2E4C/78C2/30C2/AC14/145F/A4E5/013-headphone-red_s.jpg",
-      "classifier": "Small"
+      "classifier": "Small",
+      "isZoomEnabled": false
     },
     {
       "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F905/2E4C/78C2/30C2/AC14/145F/A4E5/013-headphone-red_xs.jpg",
-      "classifier": "Thumbnail"
+      "classifier": "Thumbnail",
+      "isZoomEnabled": false
     }
   ],
   "priceInfo": {
