@@ -3,6 +3,8 @@
   "name": "Amazing Gracephones",
   "visible": false,
   "productVariationType": "regular",
+  "productVariationMasterName": null,
+  "productVariationMasterId": null,
   "manufacturerProductNumber": null,
   "productLength": null,
   "productWidth": null,
@@ -62,7 +64,7 @@
   ],
   "stocklevel": null,
   "minStocklevel": null,
-  "videos": [],  
+  "videos": [],
   "links": [
     {
       "rel": "self",

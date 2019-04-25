@@ -479,6 +479,8 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | minStocklevel | number | Indicates the minimum stock level of the product. Available if the field *Minimum stock level* is used in the administration area of a shop. Only available with the `products_write` authorisation. |
 | links | array of [link](page:apps-data-types#link) | The links to the product and product category. |
 | productVariationType | string | The type of the variation product. Can be one of *master*, *regular* or *variation*. |
+| productVariationMasterId | string | The unique identifier of the variation product. Null if the `productVariationType` is *master* or *regular*. |
+| productVariationMasterName | string | The name of the variation product. Null if the `productVariationType` is *master* or *regular*. |
 | productVariationSelection | array of [variationIdentifier](page:apps-data-types#variationidentifier) | The selection of the variation product. Only available if `productVariationType` is *variation*. |
 | videos | array of [video](page:apps-data-types#video) | The videos belonging to the product. |
 
