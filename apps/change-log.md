@@ -12,14 +12,6 @@ In order to keep track of these changes we recommend you to follow [@epagesdevs]
 Feature-free releases won't be reported anymore.
 Of course, we will continue to inform you if there are any breaking changes to the API.**
 
-## 2019-04-08
-
-### Changes with software release 7.35.2
-
-#### <i class="fas fa-pencil-alt"></i> Update
-
-* Added attributes `productVariationMasterId` and `productVariationMasterName` to data type [`product`](https://developer.epages.com/apps/data-types.html#product).
-
 <hr>
 
 ## 2019-04-25
@@ -29,6 +21,8 @@ Of course, we will continue to inform you if there are any breaking changes to t
 #### <i class="fas fa-pencil-alt"></i> Update
 
 * Added attribute `isZoomEnabled` to data type [`image`](https://developer.epages.com/apps/data-types.html#image).
+
+* Added attributes `productVariationMasterId` and `productVariationMasterName` to data type [`product`](https://developer.epages.com/apps/data-types.html#product).
 
 <hr>
 
