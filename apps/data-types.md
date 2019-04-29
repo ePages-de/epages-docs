@@ -540,6 +540,13 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | - | - |  - |
 | quantity | number | The quantity of the product line item displayed as a decimal number.|
 
+## productSearch (create request)
+
+| Attribute | Type | Description |
+| - | - |  - |
+| query | string | xxx |
+| sortBy | string | xxx |
+
 ## productSuggest
 
 | Attribute | Type | Description |
