@@ -82,7 +82,7 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | Attribute | Type | Description |
 | - | - |  - |
 | currency | string | The currency code of the price according to ISO 4217.|
-| taxType | string | Indicates if the amount includes tax. Can be gross, net or none.|
+| taxType | string | Indicates if the amount includes tax. Can be *GROSS*, *NET* or *NONE*.|
 | locale | string | The locale that identifies the origin of the customer.|
 | lineItems | array of [productLineItem (create request)](page:apps-data-types#productlineitem-create-request)  | The product line items in the basket.|
 
@@ -544,8 +544,8 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 
 | Attribute | Type | Description |
 | - | - |  - |
-| query | string | xxx |
-| sortBy | string | xxx |
+| query | string | The search term for the search request. |
+| sortBy | string | Sorts the search results by the applied search filter. Can be one of *RELEVANCE*, *NAME_ASC*, *NAME_DESC*, *ALIAS_ASC*, *ALIAS_DESC*, *POSITION*, *POSITION_ASC*, *POSITION_DESC*, *PRICE_ASC*, *PRICE_DESC*, or *CUSTOMER_RATING*. |
 
 ## productSuggest
 
