@@ -61,7 +61,7 @@ deliveryPeriodUnit: "DAYS"
 description: null
 energyLabel: null
 energyLabelSourceFile: null
-gtin: null
+gtin: 7501054530107
 hasCrossSelling: false
 hasStockLevel: true
 hasVariations: false
