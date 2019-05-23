@@ -61,6 +61,7 @@ deliveryPeriodUnit: "DAYS"
 description: null
 energyLabel: null
 energyLabelSourceFile: null
+gtin: 7501054530107
 hasCrossSelling: false
 hasStockLevel: true
 hasVariations: false
@@ -68,6 +69,7 @@ href: "/p/homemade-cherry-jam"
 image: null
 isVariationMaster: false
 isVariationProduct: false
+isVisible: true
 links: [{…}, {…}, {…}, {…}, {…}]
 lowestPrice: null
 mainCategoryId: "5954B711-E377-2A90-C400-D5809AB3F62B"
@@ -88,6 +90,7 @@ slug: "homemade-cherry-jam"
 stockLevelClass: "in"
 stockLevelMicrodata: "InStock"
 title: "Homemade Cherry Jam"
+variationMaster: null
 variations: null
 vatNote: "components.productComponent.priceExclusiveVat"
 warnStock: false
