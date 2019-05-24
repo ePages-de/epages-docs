@@ -3,9 +3,21 @@
     "title": "Post Search Product Schema",
     "type": "object",
     "properties": {
-      "": {
-        "type": "object of [product](page:apps-data-types#product)",
-        "description": ""
+      "results": {
+        "type": "integer",
+        "description": "The number of products in total found for the search query."
+      },
+      "page": {
+        "type": "integer",
+        "description": "The page number on which the found products appear."
+      },
+      "resultsPerPage": {
+        "type": "integer",
+        "description": "The number of found products returned per page."
+      },
+      "items": {
+        "type": "array of [productSearch](page:apps-data-types#productsearch)",
+        "description": "The list of all products found for the search query."
       }
     }
   }
