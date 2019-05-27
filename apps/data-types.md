@@ -264,7 +264,7 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | Attribute | Type | Description |
 | - | - |  - |
 | attributeName | string | The name of the filter. Can be *ListPrice*, *Manufacturer*, *CategoryID*, or any other attribute created by the merchant.  |
-| attributeType | string | xxx |
+| attributeType | string | The type of the filter. Is *Standard* for *Manufacturer*, *CategoryID*, or *Price*. Is *PreDefString* for any other attribute created by the merchant. |
 | values | array of [filterValues](page:apps-data-types#filterValues) | The values to refine the search. |
 
 ## filter
@@ -279,10 +279,10 @@ This object is used for the attributes of shippingAddress and billingAddress.
 
 | Attribute | Type | Description |
 | - | - |  - |
-| matches | string | xxx |
-| name | string | xxx |
-| filter | object of [filter](page:apps-data-types#filter) | xxx |
-| selectedValue | string | xxx |
+| matches | string | The number of objects that match the specified filter criteria. |
+| name | string | The localized name of the attribute. |
+| filter | object of [filter](page:apps-data-types#filter) | The available filter with name and value or name and range that is used for filtering. |
+| selectedValue | string | The search term(s) used for filtering.  |
 
 ## image
 
