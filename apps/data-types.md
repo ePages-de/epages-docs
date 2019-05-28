@@ -264,7 +264,7 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | Attribute | Type | Description |
 | - | - |  - |
 | attributeName | string | The name of the filter. Can be *ListPrice*, *Manufacturer*, *CategoryID*, or any other attribute created by the merchant.  |
-| attributeType | string | The type of the filter. Is *Standard* for *Manufacturer*, *CategoryID*, or *Price*. Is *PreDefString* for any other attribute created by the merchant. |
+| attributeType | string | The type of the filter. Is *Standard* for *Manufacturer*, *CategoryID*, or *ListPrice*. Is *PreDefString* for any other attribute created by the merchant. |
 | values | array of [filterValues](page:apps-data-types#filterValues) | The values to refine the search. |
 
 ## filter
@@ -495,7 +495,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | energyLabelsString | string | A list of energy labels applied to this product. Can be one value or a range with two values. |
 | energyLabelSourceFile | string | A URL with an image or PDF file containing the energy label image supplied by the manufacturer. |
 | productDataSheet | string | An image or PDF file containing a data sheet with technical information on the product. Has to be available if the product has an energy label. |
-| sfUrl | string | The link to storefront URL of the product. |
+| sfUrl | string | The link to the storefront URL of the product. |
 | productNumber | string | The product number. |
 | productImage | string | The name of the product image. |
 | images | array of [image](page:apps-data-types#image) | The images belonging to the product. |
@@ -617,7 +617,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | productVariationSelection | array of [variationIdentifier](page:apps-data-types#variationidentifier) | The selection of the variation product. Only available if `productVariationType` is *variation*. |
 | videos | array of [video](page:apps-data-types#video) | The videos belonging to the product. |
 | query | string | The search query. |
-| fallbackQuery | string | xxx |
+| fallbackQuery | string | The fallback used if the original query did not produce any results. |
 | facets | array of [facet](page:apps-data-types#facet) | The refined search filter options. |
 
 ## product (create request)
