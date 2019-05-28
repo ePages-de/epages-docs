@@ -1,4 +1,20 @@
 #%RAML 0.8
+/products:
+  displayName: Product search
+  post:
+    description: Performs a product search using facets. *epagesNow
+    securedBy: [products_write]
+    is: [ locale, paged, ]
+    body:
+      application/json:
+        example: !include examples/post_search_products_request.json
+        schema: !include schema/post_search_products_request.schema.json
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include examples/post_search_products_response.json
+            schema: !include schema/post_search_products.schema.json
 /product-suggest:
   displayName: Product suggestions
   description: Retrieve suggestions for a product search query.

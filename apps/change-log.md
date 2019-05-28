@@ -14,6 +14,16 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
+## 2019-05-27
+
+### Changes with software release 7.36.0
+
+#### <i class="fas fa-plus"></i> New
+
+* [`POST`search/products](https://developer.epages.com/apps/api-reference/post-shopid-search-products.html)
+
+<hr>
+
 ## 2019-04-25
 
 ### Changes with software release 7.35.0

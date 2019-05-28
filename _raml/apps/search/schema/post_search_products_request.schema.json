@@ -1,0 +1,11 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema",
+    "title": "Post Search Product Request Schema",
+    "type": "object",
+    "properties": {
+      "": {
+        "type": "object of [productSearch (create request)](page:apps-data-types#productsearch-create-request)",
+        "description": ""
+      }
+    }
+  }
