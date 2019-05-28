@@ -1,0 +1,177 @@
+{
+    "results": 1,
+    "page": 1,
+    "resultsPerPage": 1,
+    "items": [
+      {
+        "productId": "54EF2E41-FCA8-E0E5-9323-0A0C05E66C2E",
+        "name": "Boom - Customised headphone",
+        "visible": true,
+        "productVariationType": "regular",
+        "productVariationMasterName": null,
+        "productVariationMasterId": null,
+        "manufacturerProductNumber": "CU001",
+        "productLength": null,
+        "productWidth": null,
+        "productHeight": null,
+        "productVariationSelection": null,
+        "shortDescription": null,
+        "deliveryPeriod": "2-4",
+        "description": "Customise your headphone in no time!",
+        "title": "Boom - Customised headphone - Technic365",
+        "productImage": "headphone3.jpg",
+        "images": [
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54EF/2E41/FCA8/E0E5/9323/0A0C/05E6/6C2E/001-headphone_h.jpg",
+            "classifier": "HotDeal",
+            "isZoomEnabled": false
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54EF/2E41/FCA8/E0E5/9323/0A0C/05E6/6C2E/001-headphone_m.jpg",
+            "classifier": "Medium",
+            "isZoomEnabled": false
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54EF/2E41/FCA8/E0E5/9323/0A0C/05E6/6C2E/headphone3.jpg",
+            "classifier": "Large",
+            "isZoomEnabled": false
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54EF/2E41/FCA8/E0E5/9323/0A0C/05E6/6C2E/001-headphone_s.jpg",
+            "classifier": "Small",
+            "isZoomEnabled": false
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54EF/2E41/FCA8/E0E5/9323/0A0C/05E6/6C2E/001-headphone_xs.jpg",
+            "classifier": "Thumbnail",
+            "isZoomEnabled": false
+          }
+        ],
+        "priceInfo": {
+          "quantity": {
+            "amount": 1,
+            "unit": "piece(s)"
+          },
+          "taxClass": {
+            "taxClassId": "54B50D97-A277-9AF2-58A1-D5809AB32230",
+            "name": "standard",
+            "percentage": 19
+          },
+          "price": {
+            "taxType": "NET",
+            "formatted": "251.26 €",
+            "amount": 251.26,
+            "currency": "EUR"
+          },
+          "depositPrice": null,
+          "ecoParticipationPrice": null,
+          "priceWithDeposits": {
+            "taxType": "NET",
+            "formatted": "251.26 €",
+            "amount": 251.26,
+            "currency": "EUR"
+          },
+          "manufacturerPrice": null,
+          "basePrice": null,
+          "lowestPrice":null
+        },
+        "forSale": true,
+        "specialOffer": false,
+        "deliveryWeight": {
+          "amount": 350,
+          "unit": "g"
+        },
+        "availabilityText": "available",
+        "availability": "OnStock",
+        "energyLabelsString": "B,D",
+        "energyLabelsMaxEfficiencyString": "A+",
+        "energyLabelSourceFile": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/Products/be_40401/label-1-9dee85f24e1.png",
+        "productDataSheet": null,
+        "sfUrl": "http://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/Products/Cust001",
+        "productNumber": "Cust001",
+        "manufacturer": "Dr. Boom",
+        "upc": null,
+        "ean": null,
+        "essentialFeatures": null,
+        "searchKeywords":[  
+
+        ],
+        "stocklevel":10.0,
+        "videos": [
+          {
+            "type": "YouTube",
+            "source": "j-bj3nC7qss"
+          },
+          {
+            "type": "Vimeo",
+            "source": "https://vimeo.com/7265982"
+          }
+        ],
+        "minStocklevel": null,
+        "links": [
+          {
+            "rel": "self",
+            "href": "https://pm.epages.com/rs/shops/apidocu/products/54EF2E41-FCA8-E0E5-9323-0A0C05E66C2E"
+          },
+          {
+            "rel": "categories",
+            "href": "https://pm.epages.com/rs/shops/apidocu/categories/?productId=54EF2E41-FCA8-E0E5-9323-0A0C05E66C2E"
+          }
+        ]
+      }
+    ],
+        "query":"headphone",
+        "fallbackQuery":"",
+        "facets":[
+          {
+            "attributeName":"Category",
+            "attributeType":"Standard",
+            "values":[
+              {
+                "matches":1,
+                "name":"Headphones",
+                "filter":{
+                  "fieldName":"CategoryID",
+                  "attributeValue":"22076"
+                },
+                "selectedValue":"22076"
+              }
+            ]
+          },
+          {
+            "attributeName":"TestAttr",
+            "attributeType":"PreDefString",
+            "values":[
+              {
+                "matches":1,
+                "name":"a",
+                "filter":{
+                  "fieldName":"PreDefString_de_-1082696253",
+                  "attributeValue":"a"
+                }
+              }
+            ]
+          },
+          {
+            "attributeName":"ListPrice",
+            "attributeType":"Standard",
+            "values":[
+              {
+                "matches":-1,
+                "name":"EUR",
+                "filter":{
+                  "fieldName":"ListPrice",
+                  "attributeRange":{
+                    "min":"1",
+                    "max":"500"
+                  }
+                },
+                "selectedRange":{
+                  "min":"1",
+                  "max":"500"
+                }
+              }
+            ]
+          }
+        ]
+      }

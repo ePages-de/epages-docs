@@ -45,6 +45,14 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | privatePhoneNumber | string | The customer's private phone number |
 | websiteUrl | string | The customer's website URL.  |
 
+## attributeRange
+
+ Attribute | Type | Description |
+| - | - |  - |
+| min  | string | The minimum range of the filter applied. |
+| max  | string | The maximum range of the filter applied. |
+
+
 ## attributeSelection
 
 | Attribute | Type | Description |
@@ -82,7 +90,7 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | Attribute | Type | Description |
 | - | - |  - |
 | currency | string | The currency code of the price according to ISO 4217.|
-| taxType | string | Indicates if the amount includes tax. Can be gross, net or none.|
+| taxType | string | Indicates if the amount includes tax. Can be *GROSS*, *NET* or *NONE*.|
 | locale | string | The locale that identifies the origin of the customer.|
 | lineItems | array of [productLineItem (create request)](page:apps-data-types#productlineitem-create-request)  | The product line items in the basket.|
 
@@ -250,6 +258,31 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | name | string | The name of the line item. |
 | lineItemPrice | object of [price](page:apps-data-types#price) | The price of the line item. |
 | lineItemProductGuid | string | The identifier of the related product line item. A deposit is always bound to a product.|
+
+## facet
+
+| Attribute | Type | Description |
+| - | - |  - |
+| attributeName | string | The name of the filter. Can be *ListPrice*, *Manufacturer*, *CategoryID*, or any other attribute created by the merchant.  |
+| attributeType | string | The type of the filter. Is *Standard* for *Manufacturer*, *CategoryID*, or *ListPrice*. Is *PreDefString* for any other attribute created by the merchant. |
+| values | array of [filterValues](page:apps-data-types#filterValues) | The values to refine the search. |
+
+## filter
+
+| Attribute | Type | Description |
+| - | - |  - |
+| attributeValue  | string | The value of the facet. |
+| attributeRange  | object of [attributeRange](page:apps-data-types#attributerange) | The minimum and maximum range of the filter applied. |
+| fieldName  | string | The alias of the filter.  |
+
+## filterValues
+
+| Attribute | Type | Description |
+| - | - |  - |
+| matches | string | The number of objects that match the specified filter criteria. |
+| name | string | The localized name of the attribute. |
+| filter | object of [filter](page:apps-data-types#filter) | The available filter with name and value or name and range that is used for filtering. |
+| selectedValue | string | The search term(s) used for filtering.  |
 
 ## image
 
@@ -452,7 +485,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | description | string | The description of the product. |
 | title | string | The page title of the product page. |
 | priceInfo | object of [priceInfo](page:apps-data-types#priceinfo) | Price information on the product. |
-| forSale | boolean | Information on the sale status of the product. Indicates if the product can be added to the shopping basket. |
+| forSale | boolean | Information on the sale status of the product. Indicates if the product can be added to the basket. |
 | specialOffer | boolean | Indicates if the product is a special offer. |
 | deliveryWeight | object of [deliveryWeightQuantity](page:apps-data-types#deliveryweightquantity) | The delivery weight of the product. |
 | shippingMethodsRestrictedTo | array of [link](page:apps-data-types#link) | Information on possible shipping method restrictions, e.g. express delivery only. Can be `null` if no restrictions exist. |
@@ -462,7 +495,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | energyLabelsString | string | A list of energy labels applied to this product. Can be one value or a range with two values. |
 | energyLabelSourceFile | string | A URL with an image or PDF file containing the energy label image supplied by the manufacturer. |
 | productDataSheet | string | An image or PDF file containing a data sheet with technical information on the product. Has to be available if the product has an energy label. |
-| sfUrl | string | The link to storefront URL of the product. |
+| sfUrl | string | The link to the storefront URL of the product. |
 | productNumber | string | The product number. |
 | productImage | string | The name of the product image. |
 | images | array of [image](page:apps-data-types#image) | The images belonging to the product. |
@@ -539,6 +572,83 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | Attribute | Type | Description |
 | - | - |  - |
 | quantity | number | The quantity of the product line item displayed as a decimal number.|
+
+## productSearch
+
+| Attribute | Type | Description |
+| - | - |  - |
+| productId | string | The unique identifier of the product. |
+| name | string | The name of the product. |
+| visible | boolean | Indicates if the product is displayed in the shop. |
+| shortDescription | string | The short description of the product. |
+| deliveryPeriod | string | The average time of the product being delivered to the customer. By default, the delivery period is displayed in days, but this can be changed by the merchant. |
+| description | string | The description of the product. |
+| title | string | The page title of the product page. |
+| priceInfo | object of [priceInfo](page:apps-data-types#priceinfo) | Price information on the product. |
+| forSale | boolean | Information on the sale status of the product. Indicates if the product can be added to the basket. |
+| specialOffer | boolean | Indicates if the product is a special offer. |
+| deliveryWeight | object of [deliveryWeightQuantity](page:apps-data-types#deliveryweightquantity) | The delivery weight of the product. |
+| shippingMethodsRestrictedTo | array of [link](page:apps-data-types#link) | Information on possible shipping method restrictions, e.g. express delivery only. Can be `null` if no restrictions exist. |
+| availabilityText | string | Additional custom information on the product's stock level or the delivery period. |
+| availability | string | The availability of the product. Can be one of *OnStock*, *WarnStock*, *OutStock*. |
+| energyLabelsMaxEfficiencyString | string | The highest possible efficiency class of an uploaded energy label. |
+| energyLabelsString | string | A list of energy labels applied to this product. Can be one value or a range with two values. |
+| energyLabelSourceFile | string | A URL with an image or PDF file containing the energy label image supplied by the manufacturer. |
+| productDataSheet | string | An image or PDF file containing a data sheet with technical information on the product. Has to be available if the product has an energy label. |
+| sfUrl | string | The link to storefront URL of the product. |
+| productNumber | string | The product number. |
+| productImage | string | The name of the product image. |
+| images | array of [image](page:apps-data-types#image) | The images belonging to the product. |
+| manufacturer | string | The manufacturer of the product. |
+| upc | string | The Universal Product Code of the product. |
+| ean | string | The European Article Number of the product, either EAN-8 or EAN-13. |
+| essentialFeatures | string | The essential features of the product. |
+| searchKeywords | array of strings | The search terms for the product determined by the merchant in the administration.  |
+| manufacturerProductNumber | string | The unique manufacturer identifier of the product. Used to identify and classify a product.  |
+| productLength | number| The length of the product in mm. |
+| productWidth | number | The width of the product in mm.  |
+| productHeight | number | The height of the product in mm.  |
+| stocklevel | number | Indicates the stock level of the product. |
+| minStocklevel | number | Indicates the minimum stock level of the product. Available if the field *Minimum stock level* is used in the administration area of a shop. Only available with the `products_write` authorisation. |
+| links | array of [link](page:apps-data-types#link) | The links to the product and product category. |
+| productVariationType | string | The type of the variation product. Can be one of *master*, *regular* or *variation*. |
+| productVariationMasterId | string | The unique identifier of the variation product. Null if the `productVariationType` is *master* or *regular*. |
+| productVariationMasterName | string | The name of the variation product. Null if the `productVariationType` is *master* or *regular*. |
+| productVariationSelection | array of [variationIdentifier](page:apps-data-types#variationidentifier) | The selection of the variation product. Only available if `productVariationType` is *variation*. |
+| videos | array of [video](page:apps-data-types#video) | The videos belonging to the product. |
+| query | string | The search query. |
+| fallbackQuery | string | The fallback used if the original query did not produce any results. |
+| facets | array of [facet](page:apps-data-types#facet) | The refined search filter options. |
+
+## product (create request)
+
+| Attribute | Type | Description |
+| - | - |  - |
+| productNumber | string | The product number (mandatory). |
+| name | string | The name of the product. |
+| shortDescription | string | The short description of the product. |
+| description | string | The description of the product. |
+| manufacturer | string | The manufacturer of the product. |
+| price | number | The price of the product. |
+| essentialFeatures | string | The essential features of the product. |
+| upc | string | The Universal Product Code of the product. |
+| ean | string | The European Article Number of the product, either EAN-8 or EAN-13. |
+| deliveryPeriod | string | The average time of the product being delivered to the customer. By default, the delivery period is displayed in days, but this can be changed by the merchant. |
+| searchKeywords | array of string | The search terms for the product determined by the merchant in the administration. |
+| visible | boolean | Indicates if the product is displayed in the shop. |
+| taxClassId | string | The unique identifier of the tax class. |
+| stocklevel | number | Indicates the stock level of the product. |
+| depositPrice | number | The deposit price for the product, e.g. bottle deposit.|
+| manufacturerPrice | number | The sales price recommended by the manufacturer.|
+
+
+## productSearch (create request)
+
+| Attribute | Type | Description |
+| - | - |  - |
+| query | string | The search term for the search request. |
+| sortBy | string | Sorts the search results by the applied search filter. Can be one of *RELEVANCE*, *NAME_ASC*, *NAME_DESC*, *ALIAS_ASC*, *ALIAS_DESC*, *POSITION*, *POSITION_ASC*, *POSITION_DESC*, *PRICE_ASC*, *PRICE_DESC*, or *CUSTOMER_RATING*. |
+| attributeFilters | array of [filter](page:apps-data-types#filter) | The attributes to be filtered with the search request. |
 
 ## productSuggest
 

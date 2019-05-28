@@ -1,0 +1,22 @@
+{  
+   "query":"headphone",
+   "sortBy":"RELEVANCE",
+   "attributeFilters":[  
+      {  
+         "attributeValue":null,
+         "attributeRange":{  
+            "min":1,
+            "max":500
+         },
+         "fieldName":"ListPrice"
+      },
+      {  
+         "attributeValue":22076,
+         "fieldName":"CategoryID"
+      },
+      {  
+         "attributeValue":"red",
+         "fieldName":"PreDefString_de_67648890"
+      }
+   ]
+}
