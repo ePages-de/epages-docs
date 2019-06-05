@@ -59,42 +59,42 @@
           {
             "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/acc6_h.jpg",
             "classifier": "HotDeal",
-            "isZoomEnabled": true,
-            "width": 149,
-            "height": 84,
-            "fileSize": 5168
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
           },
           {
             "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/acc6.jpg",
             "classifier": "Large",
-            "isZoomEnabled": true,
-            "width": 1920,
-            "height": 1080,
-            "fileSize": 636262
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
           },
           {
             "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/acc6_m.jpg",
             "classifier": "Medium",
-            "isZoomEnabled": true,
-            "width": 500,
-            "height": 281,
-            "fileSize": 47289
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
           },
           {
             "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/acc6_s.jpg",
             "classifier": "Small",
-            "isZoomEnabled": true,
-            "width": 100,
-            "height": 56,
-            "fileSize": 2498
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
           },
           {
             "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/acc6_xs.jpg",
             "classifier": "Thumbnail",
-            "isZoomEnabled": true,
-            "width": 50,
-            "height": 28,
-            "fileSize": 1031
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
           }
         ],
         "links": [

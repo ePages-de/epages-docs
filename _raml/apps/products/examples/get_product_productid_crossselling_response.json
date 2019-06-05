@@ -16,42 +16,42 @@
           {
             "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54EF/2E41/FCA8/E0E5/9323/0A0C/05E6/6C2E/001-headphone_h.jpg",
             "classifier": "HotDeal",
-            "isZoomEnabled": true,
-            "width": 149,
-            "height": 84,
-            "fileSize": 5168
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
           },
           {
             "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54EF/2E41/FCA8/E0E5/9323/0A0C/05E6/6C2E/001-headphone_m.jpg",
             "classifier": "Medium",
-            "isZoomEnabled": true,
-            "width": 500,
-            "height": 281,
-            "fileSize": 47289
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
           },
           {
             "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54EF/2E41/FCA8/E0E5/9323/0A0C/05E6/6C2E/headphone3.jpg",
             "classifier": "Large",
-            "isZoomEnabled": true,
-            "width": 1920,
-            "height": 1080,
-            "fileSize": 636262
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
           },
           {
             "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54EF/2E41/FCA8/E0E5/9323/0A0C/05E6/6C2E/001-headphone_s.jpg",
             "classifier": "Small",
-            "isZoomEnabled": true,
-            "width": 100,
-            "height": 56,
-            "fileSize": 2498
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
           },
           {
             "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54EF/2E41/FCA8/E0E5/9323/0A0C/05E6/6C2E/001-headphone_xs.jpg",
             "classifier": "Thumbnail",
-            "isZoomEnabled": true,
-            "width": 50,
-            "height": 28,
-            "fileSize": 1031
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
           }
         ],
         "priceInfo": {
@@ -128,42 +128,42 @@
           {
             "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F905/2E4C/78C2/30C2/AC14/145F/A4E5/013-headphone-red_h.jpg",
             "classifier": "HotDeal",
-            "isZoomEnabled": true,
-            "width": 149,
-            "height": 84,
-            "fileSize": 5168
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
           },
           {
             "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F905/2E4C/78C2/30C2/AC14/145F/A4E5/013-headphone-red_m.jpg",
             "classifier": "Medium",
-            "isZoomEnabled": true,
-            "width": 500,
-            "height": 281,
-            "fileSize": 47289
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
           },
           {
             "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F905/2E4C/78C2/30C2/AC14/145F/A4E5/013-headphone-red.jpg",
             "classifier": "Large",
-            "isZoomEnabled": true,
-            "width": 1920,
-            "height": 1080,
-            "fileSize": 636262
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
           },
           {
             "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F905/2E4C/78C2/30C2/AC14/145F/A4E5/013-headphone-red_s.jpg",
             "classifier": "Small",
-            "isZoomEnabled": true,
-            "width": 100,
-            "height": 56,
-            "fileSize": 2498
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
           },
           {
             "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F905/2E4C/78C2/30C2/AC14/145F/A4E5/013-headphone-red_xs.jpg",
             "classifier": "Thumbnail",
-            "isZoomEnabled": true,
-            "width": 50,
-            "height": 28,
-            "fileSize": 1031
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
           }
         ],
         "priceInfo": {

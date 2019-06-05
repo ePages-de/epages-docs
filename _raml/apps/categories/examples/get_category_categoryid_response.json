@@ -11,18 +11,18 @@
     {
       "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/301B/A6B4/567A/8AE0/0A0C/05E6/922D/epages-e_copysmall_m.png",
       "classifier": "Medium",
-      "isZoomEnabled": true,
-      "width": 500,
-      "height": 281,
-      "fileSize": 47289
+      "isZoomEnabled": false,
+      "width": 0,
+      "height": 0,
+      "fileSize": 0
     },
     {
       "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/301B/A6B4/567A/8AE0/0A0C/05E6/922D/epages-e_copysmall_s.png",
       "classifier": "Small",
-      "isZoomEnabled": true,
-      "width": 100,
-      "height": 56,
-      "fileSize": 2498
+      "isZoomEnabled": false,
+      "width": 0,
+      "height": 0,
+      "fileSize": 0
     }
   ],
   "parent": {

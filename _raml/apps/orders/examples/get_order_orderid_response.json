@@ -155,51 +155,51 @@
           "currency": "EUR"
         },
         "lineItemCouponDiscount": {
-                    "taxType": "GROSS",
-                    "formatted": "1.70 €",
-                    "amount": 1.7,
-                    "currency": "EUR"
+          "taxType": "GROSS",
+          "formatted": "1.70 €",
+          "amount": 1.7,
+          "currency": "EUR"
         },
         "images": [
           {
             "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/EE97/FD85/1B66/9962/AC14/145F/A540/001-headphone-blue_h.jpg",
             "classifier": "HotDeal",
-            "isZoomEnabled": true,
-            "width": 149,
-            "height": 84,
-            "fileSize": 5168
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
           },
           {
             "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/EE97/FD85/1B66/9962/AC14/145F/A540/001-headphone-blue.jpg",
             "classifier": "Large",
-            "isZoomEnabled": true,
-            "width": 1920,
-            "height": 1080,
-            "fileSize": 636262
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
           },
           {
             "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/EE97/FD85/1B66/9962/AC14/145F/A540/001-headphone-blue_m.jpg",
             "classifier": "Medium",
-            "isZoomEnabled": true,
-            "width": 500,
-            "height": 281,
-            "fileSize": 47289
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
           },
           {
             "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/EE97/FD85/1B66/9962/AC14/145F/A540/001-headphone-blue_s.jpg",
             "classifier": "Small",
-            "isZoomEnabled": true,
-            "width": 100,
-            "height": 56,
-            "fileSize": 2498
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
           },
           {
             "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/EE97/FD85/1B66/9962/AC14/145F/A540/001-headphone-blue_xs.jpg",
             "classifier": "Thumbnail",
-            "isZoomEnabled": true,
-            "width": 50,
-            "height": 28,
-            "fileSize": 1031
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
           }
         ],
         "links": [
@@ -249,42 +249,42 @@
           {
             "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F901/9AE1/CAC6/00D8/AC14/145F/A463/007-acce-b_h.jpg",
             "classifier": "HotDeal",
-            "isZoomEnabled": true,
-            "width": 149,
-            "height": 84,
-            "fileSize": 5168
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
           },
           {
             "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F901/9AE1/CAC6/00D8/AC14/145F/A463/007-acce-b.jpg",
             "classifier": "Large",
-            "isZoomEnabled": true,
-            "width": 1920,
-            "height": 1080,
-            "fileSize": 636262
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
           },
           {
             "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F901/9AE1/CAC6/00D8/AC14/145F/A463/007-acce-b_m.jpg",
             "classifier": "Medium",
-            "isZoomEnabled": true,
-            "width": 500,
-            "height": 281,
-            "fileSize": 47289
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
           },
           {
             "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F901/9AE1/CAC6/00D8/AC14/145F/A463/007-acce-b_s.jpg",
             "classifier": "Small",
-            "isZoomEnabled": true,
-            "width": 100,
-            "height": 56,
-            "fileSize": 2498
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
           },
           {
             "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F901/9AE1/CAC6/00D8/AC14/145F/A463/007-acce-b_xs.jpg",
             "classifier": "Thumbnail",
-            "isZoomEnabled": true,
-            "width": 50,
-            "height": 28,
-            "fileSize": 1031
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
           }
         ],
         "links": [
