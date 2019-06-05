@@ -94,27 +94,42 @@
           {
             "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/acc6_h.jpg",
             "classifier": "HotDeal",
-            "isZoomEnabled": false
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
           },
           {
             "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/acc6.jpg",
             "classifier": "Large",
-            "isZoomEnabled": false
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
           },
           {
             "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/acc6_m.jpg",
             "classifier": "Medium",
-            "isZoomEnabled": false
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
           },
           {
             "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/acc6_s.jpg",
             "classifier": "Small",
-            "isZoomEnabled": false
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
           },
           {
             "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/acc6_xs.jpg",
             "classifier": "Thumbnail",
-            "isZoomEnabled": false
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
           }
         ],
         "links": [
