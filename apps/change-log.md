@@ -22,7 +22,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 * Added attributes `height`, `width`, and `fileSize` to data type [`image`](https://developer.epages.com/apps/data-types.html#image).
 
-* Updated the attribute `scriptUrl` of data type [scriptTag](https://developer.epages.com/apps/data-types.html#scripttag) by adding the possibility to register a `ServiceWorker`.
+* Updated the attribute `scriptUrl` of data type [`scriptTag`](https://developer.epages.com/apps/data-types.html#scripttag) by adding the possibility to register a `ServiceWorker`.
 
 <hr>
 
