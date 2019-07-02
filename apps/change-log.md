@@ -14,6 +14,18 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
+## 2019-07-04
+
+### Changes with software release 7.37.0
+
+#### <i class="fas fa-pencil-alt"></i> Update
+
+* Added attributes `height`, `width`, and `fileSize` to data type [`image`](https://developer.epages.com/apps/data-types.html#image).
+
+* Updated the attribute `scriptUrl` of data type [`scriptTag`](https://developer.epages.com/apps/data-types.html#scripttag) by adding the possibility to register a `ServiceWorker`.
+
+<hr>
+
 ## 2019-05-27
 
 ### Changes with software release 7.36.0

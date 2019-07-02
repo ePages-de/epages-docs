@@ -147,27 +147,42 @@
           {
             "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/EE97/FD85/1B66/9962/AC14/145F/A540/001-headphone-blue_h.jpg",
             "classifier": "HotDeal",
-            "isZoomEnabled": false
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
           },
           {
             "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/EE97/FD85/1B66/9962/AC14/145F/A540/001-headphone-blue_m.jpg",
             "classifier": "Medium",
-            "isZoomEnabled": false
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
           },
           {
             "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/EE97/FD85/1B66/9962/AC14/145F/A540/001-headphone-blue_l.jpg",
             "classifier": "Large",
-            "isZoomEnabled": false
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
           },
           {
             "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/EE97/FD85/1B66/9962/AC14/145F/A540/001-headphone-blue_s.jpg",
             "classifier": "Small",
-            "isZoomEnabled": false
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
           },
           {
             "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/EE97/FD85/1B66/9962/AC14/145F/A540/001-headphone-blue_xs.jpg",
             "classifier": "Thumbnail",
-            "isZoomEnabled": false
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
           }
         ],
         "links": [
@@ -181,7 +196,7 @@
       {
         "lineItemId": "5638C3FD-9C4D-84EC-2DF0-D5809AB37714",
         "sku": "HP-002-00",
-        "name": "Anschlusskabel",
+        "name": "Connecting cable",
         "productId": "54EF20B5-33A2-E55F-213B-0A0C05E62C6B",
         "quantity": {
           "amount": 1,
@@ -203,27 +218,42 @@
           {
             "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F901/9AE1/CAC6/00D8/AC14/145F/A463/007-acce-b_h.jpg",
             "classifier": "HotDeal",
-            "isZoomEnabled": false
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
           },
           {
             "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F901/9AE1/CAC6/00D8/AC14/145F/A463/007-acce-b_m.jpg",
             "classifier": "Medium",
-            "isZoomEnabled": false
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
           },
           {
             "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F901/9AE1/CAC6/00D8/AC14/145F/A463/007-acce-b_l.jpg",
             "classifier": "Large",
-            "isZoomEnabled": false
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
           },
           {
             "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F901/9AE1/CAC6/00D8/AC14/145F/A463/007-acce-b_s.jpg",
             "classifier": "Small",
-            "isZoomEnabled": false
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
           },
           {
             "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F901/9AE1/CAC6/00D8/AC14/145F/A463/007-acce-b_xs.jpg",
             "classifier": "Thumbnail",
-            "isZoomEnabled": false
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
           }
         ],
         "links": [

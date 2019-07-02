@@ -289,8 +289,11 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | Attribute | Type | Description |
 | - | - |  - |
 | url | string | The URL of an image. |
-| isZoomEnabled | boolean | Indicates if the zoom is enabled for a product image. |
+| isZoomEnabled | boolean | Indicates if the zoom is enabled for a product image. Can be `true` or `false`. |
 | classifier | string | Specifies the image. Can be *Thumbnail*, *Small*, *HotDeal*, *MediumSmall*, *Medium*, *MediumLarge*, *Large*. |
+| width | string | The width of the image in pixels. |
+| height | string | The height of the image in pixels. |
+| fileSize | string | The size of the image in bytes. |
 
 ## imageInfo
 
@@ -688,7 +691,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | Attribute | Type | Description |
 | - | - |  - |
 | scriptTagId | string | The unique identifier of the script tag. |
-| scriptUrl | string | The URL of the script. The URL has to be `https`. |
+| scriptUrl | string | The URL of the script. Has to start with `https`. If the URL ends with `worker.js`, the script tag will be registered as a `ServiceWorker`. |
 | scriptType | string | The type of the script. |
 | createdOn | string | The date/time the script tag was created. Expressed according to ISO 8601. Example: `2017-02-04T08:42:49.000Z` |
 | updatedOn | string | The date/time the script tag was last updated. Expressed according to ISO 8601. Example: `2017-03-05T10:51:31.000Z` |
@@ -698,7 +701,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 
 | Attribute | Type | Description |
 | - | - |  - |
-| scriptUrl | string | The URL of the script. |
+| scriptUrl | string | The URL of the script. Has to start with `https`. If the URL ends with `worker.js`, the script tag will be registered as a `ServiceWorker`. |
 
 ## shippingData
 
