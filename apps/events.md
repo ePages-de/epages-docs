@@ -16,7 +16,7 @@ These events are available:
 | `pageview` | string | Is triggered when the customer opens or reloads a page. Informs about the path of the page. |
 | `product` | immutable.js object | Is triggered when the customer selects a product. Informs about the respective product. |
 | `category` | immutable.js object | Is triggered when the customer selects a category. Informs about the respective category and related products.|
-| `cart:add` | immutable.js object | Is triggered when the customer adds a product to the cart. Informs about the current state of the cart, e.g. included items. This event isn't triggered if the customer makes changes in the cart itself, e.g. changing the amount of an item. |
+| `cart:add` | object | Is triggered when the customer adds a product to the cart. Informs about the current state of the cart, e.g. included items. This event isn't triggered if the customer makes changes in the cart itself, e.g. changing the amount of an item. |
 
 ## Pageview event
 
