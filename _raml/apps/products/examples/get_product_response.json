@@ -86,6 +86,8 @@
           "amount": 251.26,
           "currency": "EUR"
         },
+        "lowestPrice": null,
+        "highestPrice": null,
         "manufacturerPrice": null,
         "basePrice": null
       },
@@ -212,6 +214,8 @@
           "amount": 54.62,
           "currency": "EUR"
         },
+        "lowestPrice": null,
+        "highestPrice": null,
         "manufacturerPrice": null,
         "basePrice": null
       },
@@ -347,6 +351,12 @@
             "formatted": "39.50 €",
             "amount": 39.50,
             "currency": "EUR"
+        },
+        "highestPrice": {
+          "taxType": "GROSS",
+          "formatted": "48.70 €",
+          "amount": 131.70,
+          "currency": "EUR"
         },
         "manufacturerPrice": null,
         "basePrice": null
