@@ -14,11 +14,13 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
-## 2019-07-04
+## 2019-07-18
 
 ### Changes with software release 7.37.0
 
 #### <i class="fas fa-pencil-alt"></i> Update
+
+* Added attribute `highestPrice` to data type [`priceInfo`](https://developer.epages.com/apps/data-types.html#priceinfo).
 
 * Added attributes `height`, `width`, and `fileSize` to data type [`image`](https://developer.epages.com/apps/data-types.html#image).
 

@@ -1,6 +1,6 @@
 {
-  "manualCrossSellingTitle" : "cross-selling headline"
-  "embedded" : {
+  "manualCrossSellingTitle": "cross-selling headline",
+  "embedded": {
     "results": 2,
     "page": 1,
     "resultsPerPage": 4,
@@ -77,6 +77,18 @@
             "formatted": "299.00 €",
             "amount": 299,
             "currency": "EUR"
+          },
+          "lowestPrice": {
+            "taxType": "GROSS",
+            "formatted": "270.50 €",
+            "amount": 270.50,
+            "currency": "EUR"
+          },
+          "highestPrice": {
+          "taxType": "GROSS",
+          "formatted": "310.50 €",
+          "amount": 310.50,
+          "currency": "EUR"
           },
           "manufacturerPrice": null,
           "basePrice": null
@@ -190,6 +202,12 @@
               "formatted": "59.50 €",
               "amount": 59.50,
               "currency": "EUR"
+          },
+          "highestPrice": {
+            "taxType": "GROSS",
+            "formatted": "70.50 €",
+            "amount": 70.50,
+            "currency": "EUR"
           },
           "manufacturerPrice": null,
           "basePrice": null

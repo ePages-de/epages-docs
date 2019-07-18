@@ -40,6 +40,8 @@
       "amount": 10.99,
       "currency": "EUR"
     },
+    "lowestPrice": null,
+    "highestPrice": null,
     "manufacturerPrice": null,
     "basePrice": null
   },

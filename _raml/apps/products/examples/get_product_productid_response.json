@@ -88,12 +88,8 @@
       "amount": 65,
       "currency": "EUR"
     },
-    "lowestPrice": {
-        "taxType": "GROSS",
-        "formatted": "59.50 €",
-        "amount": 59.50,
-        "currency": "EUR"
-    },
+    "lowestPrice": null,
+    "highestPrice": null,
     "manufacturerPrice": null,
     "basePrice": null
   },
