@@ -1,13 +1,18 @@
-<!-- {% for category in sitemap %}
+{% for category in site.data.beyond-sidebar %}
   <li class="sitemap-headline">{{ category.title }}<i class="fas fa-caret-down"></i></li>
   <ul class="sitemap-content">
     {% for entry in category.entries %}
-      <li class="sitemap-entry">{% sitemap_link entry %}</li>
+      <li class="sitemap-entry">{{entry.title}}</li>
+      <ul class="sitemap-content">
+          {% for expand in entry.entries %}
+            <li class="sitemap-entry">{{expand.title}}</li>
+          {% endfor %}
+      </ul>
     {% endfor %}
   </ul>
 {% endfor %}
 
-<script>
+<!-- <script>
   $(document).ready(function() {
     width = $(window).width();
 
