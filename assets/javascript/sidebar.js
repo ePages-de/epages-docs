@@ -12,3 +12,13 @@ $(document).ready(function() {
     }
   })
 });
+
+function changeSiteMap(element) {
+  console.log({element})
+  // debugger
+  if($('svg', element).first().hasClass('fa-caret-down')) {
+    $('svg', element).first().removeClass('fa-caret-down').addClass('fa-caret-up');
+  } else {
+    $('svg', element).first().removeClass('fa-caret-up').addClass('fa-caret-down');
+  }
+}

@@ -2,24 +2,28 @@
   <li class="sitemap-headline">{{ category.title }}<i class="fas fa-caret-down"></i></li>
   <ul class="sitemap-content">
     {% for entry in category.entries %}
-      <li class="sitemap-entry">{{entry.title}}</li>
-      <ul class="sitemap-content">
+      <li class="sitemap-entry" onclick="changeSiteMap(this)">{{entry.title}}
+        {% if entry.entries %}
+          <i class="fas fa-caret-down"></i>
+        {% endif %}
+      </li>
+      <ul class="sitemap-content-expand sitemap-content-expand--open">
           {% for expand in entry.entries %}
-            <li class="sitemap-entry">{{expand.title}}</li>
+            <li class="sitemap-entry-expand">{{expand.title}}</li>
           {% endfor %}
       </ul>
     {% endfor %}
   </ul>
 {% endfor %}
 
-<!-- <script>
+<script>
   $(document).ready(function() {
     width = $(window).width();
 
     document.querySelectorAll('li.sitemap-entry').forEach(function(elem) {
-      if (elem.querySelector('a').getAttribute('href') == window.location.pathname) {
+      if (elem.querySelector('a') && elem.querySelector('a').getAttribute('href') == window.location.pathname) {
         elem.className += ' active'
       }
     });
   });
-</script> -->
+</script>
