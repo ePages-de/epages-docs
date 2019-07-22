@@ -7,7 +7,7 @@
           <i class="fas fa-caret-down"></i>
         {% endif %}
       </li>
-      <ul class="sitemap-content-expand sitemap-content-expand--open">
+      <ul id={{entry.title | downcase }} class="sitemap-content-expand sitemap-content-expand--close">
           {% for expand in entry.entries %}
             <li class="sitemap-entry-expand">{{expand.title}}</li>
           {% endfor %}

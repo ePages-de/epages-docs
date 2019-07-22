@@ -11,3 +11,15 @@
           link: http://docs.beyondshop.cloud/resources-cart-create.html # This is the link that should be loaded in the <iframe>
         - title: Show cart details
           link: http://docs.beyondshop.cloud/resources-cart-get.html
+    - title: Categories # This is an expandable option as it contains sub entries
+      entries:
+        - title: Create cart
+          link: http://docs.beyondshop.cloud/resources-cart-create.html # This is the link that should be loaded in the <iframe>
+        - title: Show cart details
+          link: http://docs.beyondshop.cloud/resources-cart-get.html
+    - title: Checkout # This is an expandable option as it contains sub entries
+      entries:
+        - title: Create cart
+          link: http://docs.beyondshop.cloud/resources-cart-create.html # This is the link that should be loaded in the <iframe>
+        - title: Show cart details
+          link: http://docs.beyondshop.cloud/resources-cart-get.html
