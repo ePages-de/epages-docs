@@ -63,7 +63,6 @@ aside.sidebar
 
     &--open
       display: block
-      transition: $base-transition
 
     li.sitemap-entry
       list-style-type: none
@@ -79,6 +78,49 @@ aside.sidebar
             background: $beyond-green
             position: absolute
             left: 0
+            top: 0
+
+      a
+        color: $blue-light
+        line-height: 2
+
+        +grid-media($grid-large)
+          padding-left: 2rem
+          line-height: 2
+
+      &.active
+
+        a
+          color: $blue-mid
+
+  ul.sitemap-content-expand
+    display: none
+    margin: .5rem 1rem
+
+    +grid-media($grid-large)
+      display: block
+      margin: .5rem 1rem .5rem
+
+    &--open
+      display: block
+
+    &--close
+      display: none
+
+    li.sitemap-entry-expand
+      list-style-type: none
+
+      +grid-media($grid-large)
+        position: relative
+
+        &.active
+          &:before
+            content: ''
+            height: 100%
+            width: 4px
+            background: $beyond-green
+            position: absolute
+            left: -1rem
             top: 0
 
       a
