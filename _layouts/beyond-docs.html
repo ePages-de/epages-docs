@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body class="docs">
+    {% include navbar.html %}
+    <div class="docs-wrapper">
+      <aside class="sidebar">
+        <ul class="sitemap">
+          {% assign chapter = page.url | regex_extract: '^/([^/]+)/' %}
+          {% assign sitemap = chapter | sitemap %}
+          {% include sidebar.html %}
+        </ul>
+      </aside>
+      <main>
+        <div class="iframe-container">
+          <iframe id="docs" src=""></iframe>
+        </div>
+      </main>
+    </div>
+    <span class="arrow-up">
+      <i class="fas  fa-fw  fa-2x  fa-angle-up"></i>
+    </span>
+    {% include footer.html %}
+    <script src="/assets/javascript/lightbox.js"></script>
+    <script src="/assets/javascript/scrolltop.js"></script>
+    <script src="/assets/javascript/sidebar.js"></script>
+  </body>
+</html>
