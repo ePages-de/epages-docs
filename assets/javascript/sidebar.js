@@ -15,12 +15,13 @@ $(document).ready(function() {
 
 function changeSiteMap(element) {
   console.log({element})
+  // debugger
   var id = $(element).text().trim().toLowerCase();
   if($('svg', element).first().hasClass('fa-caret-down')) {
     $('svg', element).first().removeClass('fa-caret-down').addClass('fa-caret-up');
-    $('#'+id).removeClass('sitemap-content-expand--close').addClass('sitemap-content-expand--open');
+    $('#'+id).slideDown().removeClass('sitemap-content-expand--close').addClass('sitemap-content-expand--open');
   } else {
     $('svg', element).first().removeClass('fa-caret-up').addClass('fa-caret-down');
-    $('#'+id).removeClass('sitemap-content-expand--open').addClass('sitemap-content-expand--close');
+    $('#'+id).slideUp().removeClass('sitemap-content-expand--open').addClass('sitemap-content-expand--close');
   }
 }
