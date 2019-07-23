@@ -1,25 +1,25 @@
 - title: Use cases
   entries:
-    - title: Integrate a payment solution # This is not an expandable option as it doesn't contains sub-entries
+    - title: Integrate a payment solution
       link: https://developer.epages.com/beyond-docs/integrate-a-payment-solution/
 
-- title: Api Reference # This option is a title with capital letters (see: https://developer.epages.com/apps/)
+- title: Api Reference
   entries:
-    - title: Carts # This is an expandable option as it contains sub entries
+    - title: Carts
       entries:
         - title: Create cart
-          link: http://docs.beyondshop.cloud/resources-cart-create.html # This is the link that should be loaded in the <iframe>
+          link: https://developer.epages.com/
         - title: Show cart details
-          link: http://docs.beyondshop.cloud/resources-cart-get.html
-    - title: Categories # This is an expandable option as it contains sub entries
+          link: https://developer.epages.com/blog/api-experience/our-journey-away-from-stoplight/
+    - title: Categories
       entries:
         - title: Create cart
-          link: http://docs.beyondshop.cloud/resources-cart-create.html # This is the link that should be loaded in the <iframe>
+          link: https://developer.epages.com/blog/tech-stories/managing-lets-encrypt-certificates-in-vault/
         - title: Show cart details
-          link: http://docs.beyondshop.cloud/resources-cart-get.html
-    - title: Checkout # This is an expandable option as it contains sub entries
+          link: https://developer.epages.com/about/
+    - title: Checkout
       entries:
         - title: Create cart
-          link: http://docs.beyondshop.cloud/resources-cart-create.html # This is the link that should be loaded in the <iframe>
+          link: https://developer.epages.com/devjobs/
         - title: Show cart details
-          link: http://docs.beyondshop.cloud/resources-cart-get.html
+          link: https://developer.epages.com/events/
