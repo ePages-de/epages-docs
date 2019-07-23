@@ -9,7 +9,7 @@
       </li>
       <ul id={{entry.title | downcase }} class="sitemap-content-expand sitemap-content-expand--close">
           {% for expand in entry.entries %}
-            <li class="sitemap-entry-expand">{{expand.title}}</li>
+            <li class="sitemap-entry-expand" link={{expand.link}}>{{expand.title}}</li>
           {% endfor %}
       </ul>
     {% endfor %}
@@ -25,5 +25,11 @@
         elem.className += ' active'
       }
     });
+    
+    $('.sitemap-entry-expand').click(function(e) {
+      e.preventDefault();
+      $('#docs').attr('src', $(this).attr('link'));
+    });
   });
+
 </script>
