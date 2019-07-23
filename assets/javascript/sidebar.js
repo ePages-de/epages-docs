@@ -11,6 +11,10 @@ $(document).ready(function() {
       }
     }
   })
+  $('li.sitemap-entry-expand').click(function() {
+    $('li.sitemap-entry-expand.active').removeClass('active');
+    $(this).addClass('active');
+  })
 });
 
 function changeSiteMap(element) {
