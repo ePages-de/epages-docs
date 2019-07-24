@@ -26,3 +26,15 @@
     <script src="/assets/javascript/sidebar.js"></script>
   </body>
 </html>
+
+<script>
+  $(document).ready(function() {
+    $('#docs').on('load', function() {
+      height = this.contentWindow.document.body.clientHeight + 'px';
+      console.log(height);
+      this.style.height = height;
+      $('.iframe-container').height(height);
+    });
+  });
+
+</script>
