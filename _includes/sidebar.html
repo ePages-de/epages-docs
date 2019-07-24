@@ -2,11 +2,13 @@
   <li class="sitemap-headline">{{ category.title }}<i class="fas fa-caret-down"></i></li>
   <ul class="sitemap-content">
     {% for entry in category.entries %}
-      <li class="sitemap-entry" onclick="changeSiteMap(this)">{{entry.title}}
-        {% if entry.entries %}
-          <i class="fas fa-caret-down"></i>
-        {% endif %}
-      </li>
+      {% if entry.entries %}
+        <li class="sitemap-entry" onclick="changeSiteMap(this)">{{entry.title}}
+          <i class="fas fa-caret-down caret"></i>
+        </li>
+      {% else %}
+        <li class="sitemap-entry-title">{{entry.title}}</li>
+      {% endif %}
       <ul id={{entry.title | downcase }} class="sitemap-content-expand sitemap-content-expand--close">
           {% for expand in entry.entries %}
             <li class="sitemap-entry-expand" link={{expand.link}}>{{expand.title}}</li>
