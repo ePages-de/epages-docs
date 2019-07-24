@@ -30,8 +30,7 @@
 <script>
   $(document).ready(function() {
     $('#docs').on('load', function() {
-      height = this.contentWindow.document.body.clientHeight + 'px';
-      console.log(height);
+      height = this.contentWindow.document.body.offsetHeight + 'px';
       this.style.height = height;
       $('.iframe-container').height(height);
     });

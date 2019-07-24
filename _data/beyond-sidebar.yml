@@ -10,16 +10,16 @@
         - title: Create cart
           link: http://localhost:4000/apps/
         - title: Show cart details
-          link: https://developer.epages.com/blog/api-experience/our-journey-away-from-stoplight/
+          link: http://localhost:4000/apps/
     - title: Categories
       entries:
         - title: Create cart
-          link: https://developer.epages.com/blog/tech-stories/managing-lets-encrypt-certificates-in-vault/
+          link: http://localhost:4000/apps/
         - title: Show cart details
-          link: https://developer.epages.com/about/
+          link: http://localhost:4000/apps/
     - title: Checkout
       entries:
         - title: Create cart
-          link: https://developer.epages.com/devjobs/
+          link: http://localhost:4000/apps/
         - title: Show cart details
-          link: https://developer.epages.com/events/
+          link: http://localhost:4000/apps/
