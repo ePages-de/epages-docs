@@ -3,11 +3,11 @@
   <ul class="sitemap-content">
     {% for entry in category.entries %}
       {% if entry.entries %}
-        <li class="sitemap-entry" onclick="changeSiteMap(this)">{{entry.title}}
+        <li class="sitemap-entry-group" onclick="changeSiteMap(this)">{{entry.title}}
           <i class="fas fa-caret-down caret"></i>
         </li>
       {% else %}
-        <li class="sitemap-entry-title">{{entry.title}}</li>
+        <li class="sitemap-entry">{{entry.title}}</li>
       {% endif %}
       <ul id={{entry.title | downcase }} class="sitemap-content-expand sitemap-content-expand--close">
           {% for expand in entry.entries %}
