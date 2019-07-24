@@ -11,10 +11,11 @@ $(document).ready(function() {
       }
     }
   })
-  $('li.sitemap-entry-expand').click(function() {
+  $('li.sitemap-entry-title, li.sitemap-entry-expand').click(function() {
+    $('li.sitemap-entry-title').removeClass('active');
     $('li.sitemap-entry-expand.active').removeClass('active');
-    $(this).addClass('active');
-  })
+    $(this).addClass('active')
+  });
 });
 
 function changeSiteMap(element) {

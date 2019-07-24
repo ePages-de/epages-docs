@@ -59,13 +59,14 @@ aside.sidebar
 
     +grid-media($grid-large)
       display: block
-      margin: .5rem 0 2rem
+      margin: .5rem 1rem 2rem
 
     &--open
       display: block
 
     li.sitemap-entry
       list-style-type: none
+      color: $blue-mid
 
       +grid-media($grid-large)
         position: relative
@@ -79,6 +80,29 @@ aside.sidebar
             position: absolute
             left: 0
             top: 0
+
+      a
+        color: $blue-light
+        line-height: 2
+
+        +grid-media($grid-large)
+          padding-left: 2rem
+          line-height: 2
+
+      &.active
+
+        a
+          color: $blue-mid
+
+    li.sitemap-entry-title
+      list-style-type: none
+      color: $blue-light
+
+      +grid-media($grid-large)
+        position: relative
+
+        &.active
+          color: $beyond-green
 
       a
         color: $blue-light
@@ -108,20 +132,14 @@ aside.sidebar
       display: none
 
     li.sitemap-entry-expand
+      color: $blue-light
       list-style-type: none
 
       +grid-media($grid-large)
         position: relative
 
         &.active
-          &:before
-            content: ''
-            height: 100%
-            width: 4px
-            background: $beyond-green
-            position: absolute
-            left: -1rem
-            top: 0
+          color: $beyond-green
 
       a
         color: $blue-light
@@ -132,6 +150,6 @@ aside.sidebar
           line-height: 2
 
       &.active
-
-        a
-          color: $blue-mid
+        color: $beyond-green
+.caret
+    margin-left: .5rem
