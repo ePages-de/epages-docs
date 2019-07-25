@@ -153,17 +153,17 @@ checkoutState: null
 checkoutUrl: "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/1/Baskets/46072&ChangeAction=PickupBasket&PickupToken=MjNiZThlOGM0MjAzZWQ0N2ZjYmZmZDFiZjI3OTQxMzkwOWY4ZjZlOGE4NTM0ZWIxMjg3NmY2NzBiY2IxYzQ1OV8xNDgyMjIzMDcz"
 coupon: null
 couponCampaign: null
-grandAmount: "£76,01"
+grandAmount: "76,01 €"
 grandAmountNote: "components.productComponent.priceExclusiveVat"
 minimumOrderValue: null
-netAmount: "£76,01"
+netAmount: "76,01 €"
 paymentLineItem: {lineItemPrice: {…}, paymentMethod: {…}}
 pickupToken: "ZjM3M2Q2YmY4jkFjYWRlZTIzZTBlYzQwMDU4MjYzZjYwNDNhZGY0NWM1N2JiNjZhMGI0YWNlNWFkYzU4ZTQ3OF8xNTQzOTM5MjIx"
 productLineItems: [{…}, {…}, {…}]
 registerSessionUrl: "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/2/Baskets/46072&ChangeAction=PickupBasket&PickupToken=NTRjZWJmNjdhNzNlYTUzNDAxZTgyZTc4ODYwYTliMDUxMDIzNDQ2OWY2NWQ5NWRmN2Q2YmVjZjVjNzljOTQ2N18xNDgyMjI3OTE3"
 shippingAddress: null
 shippingLineItem: {lineItemPrice: {…}, shippingMethod: {…}}
-subAmount: "£76,01"
+subAmount: "76,01 €"
 taxType: "NET"
 taxes: []
 totalNumberOfItems: 3
