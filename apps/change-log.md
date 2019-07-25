@@ -20,7 +20,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 #### <i class="fas fa-pencil-alt"></i> Update
 
-* Added `order:completed event` to [Events](https://developer.epages.com/apps/events.html) section.
+* Added `order:completed` event to [Events](https://developer.epages.com/apps/events.html) section.
 
 * Added attribute `highestPrice` to data type [`priceInfo`](https://developer.epages.com/apps/data-types.html#priceinfo).
 
