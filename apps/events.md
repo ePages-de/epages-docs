@@ -17,6 +17,7 @@ These events are available:
 | `product` | immutable.js object | Is triggered when the customer selects a product. Informs about the respective product. |
 | `category` | immutable.js object | Is triggered when the customer selects a category. Informs about the respective category and related products.|
 | `cart:add` | object | Is triggered when the customer adds a product to the cart. Informs about the current state of the cart, e.g. included items. This event isn't triggered if the customer makes changes in the cart itself, e.g. changing the amount of an item. |
+| `order:completed` | object | Is triggered when the customer completes a purchase by selecting **Buy now**. Does not provide further information. |
 
 ## Pageview event
 
@@ -169,3 +170,31 @@ totalNumberOfItems: 3
 _links: null
 ```
 
+## Order:completed event
+
+In order to make use of this event, you need to add the following snippet to your code:
+
+```js
+if (window.eComEventTarget) {
+  window.eComEventTarget.addEventListener('order:completed', function(event) {
+    console.log('order completed:', event.detail)
+  })
+}
+```
+
+You'll receive the following information:
+
+```
+billingAddress: null
+couponCampaign: null
+currencyId: "EUR"
+customerComment: ""
+grandTotal: "19.21"
+lineItemContainer: {ecoParticipations: Array(0), basketDiscount: {…}, totalTax: {…}, totalBeforeTax: {…}, couponLineItem: null, …}
+orderId: "5D397C93-6BE3-F322-56A6-D5809AB32102"
+orderNumber: "114264"
+paymentData: {paymentMethod: {…}, transactionId: null, price: {…}, status: null, taxes: null, …}
+shippingAddress: null
+shippingData: {shippingMethod: {…}, price: {…}, taxes: Array(1)}
+totalTax: "3.2"
+```
