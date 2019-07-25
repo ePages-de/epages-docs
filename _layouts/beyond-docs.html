@@ -33,6 +33,8 @@
       height = this.contentWindow.document.body.offsetHeight + 'px';
       this.style.height = height;
       $('.iframe-container').height(height);
+      $(this).contents().find("body").css("overflow-y", "hidden");
+      $(this).contents().find("body").css("overflow-x", "visible");
     });
   });
 
