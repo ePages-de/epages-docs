@@ -17,11 +17,11 @@ These events are available:
 | `product` | immutable.js object | Is triggered when the customer selects a product. Informs about the respective product. |
 | `category` | immutable.js object | Is triggered when the customer selects a category. Informs about the respective category and related products.|
 | `cart:add` | object | Is triggered when the customer adds a product to the cart. Informs about the current state of the cart, e.g. included items. This event isn't triggered if the customer makes changes in the cart itself, e.g. changing the amount of an item. |
-| `order:completed` | object | Is triggered when the customer reaches the order confirmation page after completing a purchase. Gives further information on the order, e.g. on the billing address, the order number, and the selected shipping method. |
+| `order:completed` | object | Is triggered when the customer reaches the order confirmation page after completing a purchase. Provides additional information about the order, such as the billing address, the order number, and the selected shipping method. |
 
 ## Pageview event
 
-In order to make use of this event, you need to add the following snippet to your code:
+To make use of this event, you need to add the following snippet to your code:
 
 ```js
 if (window.eComEventTarget) {
@@ -39,7 +39,7 @@ pageview url: /about-us
 
 ## Product event
 
-In order to make use of this event, you need to add the following snippet to your code:
+To make use of this event, you need to add the following snippet to your code:
 
 ```js
 if (window.eComEventTarget) {
@@ -98,7 +98,7 @@ warnStock: false
 ```
 ## Category event
 
-In order to make use of this event, you need to add the following snippet to your code:
+To make use of this event, you need to add the following snippet to your code:
 
 ```js
 if (window.eComEventTarget) {
@@ -132,7 +132,7 @@ url: "/jam"
 
 ## Cart:add event
 
-In order to make use of this event, you need to add the following snippet to your code:
+To make use of this event, you need to add the following snippet to your code:
 
 ```js
 if (window.eComEventTarget) {
@@ -172,7 +172,7 @@ _links: null
 
 ## Order:completed event
 
-In order to make use of this event, you need to add the following snippet to your code:
+To make use of this event, you need to add the following snippet to your code:
 
 ```js
 if (window.eComEventTarget) {
