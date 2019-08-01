@@ -7,7 +7,7 @@
           <i class="fas fa-caret-down caret"></i>
         </li>
       {% else %}
-        <li class="sitemap-entry">{{entry.title}}</li>
+        <li class="sitemap-entry" link={{entry.link}}>{{entry.title}}</li>
       {% endif %}
       <ul id={{entry.title | downcase }} class="sitemap-content-expand sitemap-content-expand--close">
           {% for expand in entry.entries %}
@@ -20,6 +20,8 @@
 
 <script>
   $(document).ready(function() {
+    $('#docs').attr('src', $(".sitemap-entry").attr('link'));
+    
     width = $(window).width();
 
     document.querySelectorAll('li.sitemap-entry').forEach(function(elem) {
@@ -28,7 +30,7 @@
       }
     });
     
-    $('.sitemap-entry-expand').click(function(e) {
+    $(".sitemap-entry, .sitemap-entry-expand").click(function(e) {
       e.preventDefault();
       $('#docs').attr('src', $(this).attr('link'));
     });
