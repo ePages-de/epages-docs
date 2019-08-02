@@ -17,10 +17,11 @@ These events are available:
 | `product` | immutable.js object | Is triggered when the customer selects a product. Informs about the respective product. |
 | `category` | immutable.js object | Is triggered when the customer selects a category. Informs about the respective category and related products.|
 | `cart:add` | object | Is triggered when the customer adds a product to the cart. Informs about the current state of the cart, e.g. included items. This event isn't triggered if the customer makes changes in the cart itself, e.g. changing the amount of an item. |
+| `order:completed` | object | Is triggered when the customer reaches the order confirmation page after completing a purchase. Provides additional information about the order, such as the billing address, the order number, and the selected shipping method. |
 
 ## Pageview event
 
-In order to make use of this event, you need to add the following snippet to your code:
+To make use of this event, you need to add the following snippet to your code:
 
 ```js
 if (window.eComEventTarget) {
@@ -38,7 +39,7 @@ pageview url: /about-us
 
 ## Product event
 
-In order to make use of this event, you need to add the following snippet to your code:
+To make use of this event, you need to add the following snippet to your code:
 
 ```js
 if (window.eComEventTarget) {
@@ -97,7 +98,7 @@ warnStock: false
 ```
 ## Category event
 
-In order to make use of this event, you need to add the following snippet to your code:
+To make use of this event, you need to add the following snippet to your code:
 
 ```js
 if (window.eComEventTarget) {
@@ -131,7 +132,7 @@ url: "/jam"
 
 ## Cart:add event
 
-In order to make use of this event, you need to add the following snippet to your code:
+To make use of this event, you need to add the following snippet to your code:
 
 ```js
 if (window.eComEventTarget) {
@@ -152,20 +153,48 @@ checkoutState: null
 checkoutUrl: "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/1/Baskets/46072&ChangeAction=PickupBasket&PickupToken=MjNiZThlOGM0MjAzZWQ0N2ZjYmZmZDFiZjI3OTQxMzkwOWY4ZjZlOGE4NTM0ZWIxMjg3NmY2NzBiY2IxYzQ1OV8xNDgyMjIzMDcz"
 coupon: null
 couponCampaign: null
-grandAmount: "£76,01"
+grandAmount: "76,01 €"
 grandAmountNote: "components.productComponent.priceExclusiveVat"
 minimumOrderValue: null
-netAmount: "£76,01"
+netAmount: "76,01 €"
 paymentLineItem: {lineItemPrice: {…}, paymentMethod: {…}}
 pickupToken: "ZjM3M2Q2YmY4jkFjYWRlZTIzZTBlYzQwMDU4MjYzZjYwNDNhZGY0NWM1N2JiNjZhMGI0YWNlNWFkYzU4ZTQ3OF8xNTQzOTM5MjIx"
 productLineItems: [{…}, {…}, {…}]
 registerSessionUrl: "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/2/Baskets/46072&ChangeAction=PickupBasket&PickupToken=NTRjZWJmNjdhNzNlYTUzNDAxZTgyZTc4ODYwYTliMDUxMDIzNDQ2OWY2NWQ5NWRmN2Q2YmVjZjVjNzljOTQ2N18xNDgyMjI3OTE3"
 shippingAddress: null
 shippingLineItem: {lineItemPrice: {…}, shippingMethod: {…}}
-subAmount: "£76,01"
+subAmount: "76,01 €"
 taxType: "NET"
 taxes: []
 totalNumberOfItems: 3
 _links: null
 ```
 
+## Order:completed event
+
+To make use of this event, you need to add the following snippet to your code:
+
+```js
+if (window.eComEventTarget) {
+  window.eComEventTarget.addEventListener('order:completed', function(event) {
+    console.log('order completed:', event.detail)
+  })
+}
+```
+
+You'll receive the following information:
+
+```
+billingAddress: null
+couponCampaign: null
+currencyId: "EUR"
+customerComment: ""
+grandTotal: "19.21"
+lineItemContainer: {ecoParticipations: Array(0), basketDiscount: {…}, totalTax: {…}, totalBeforeTax: {…}, couponLineItem: null, …}
+orderId: "5D397C93-6BE3-F322-56A6-D5809AB32102"
+orderNumber: "114264"
+paymentData: {paymentMethod: {…}, transactionId: null, price: {…}, status: null, taxes: null, …}
+shippingAddress: null
+shippingData: {shippingMethod: {…}, price: {…}, taxes: Array(1)}
+totalTax: "3.2"
+```
