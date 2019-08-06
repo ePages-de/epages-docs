@@ -148,6 +148,7 @@ task :test_html do
 
   url_ignore = ['/',
                 '/about/',
+                '/beyond-docs/',
                 /^\/blog.*/,
                 '/devjobs/',
                 '/events/',
