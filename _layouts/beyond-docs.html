@@ -26,16 +26,3 @@
     <script src="/assets/javascript/sidebar.js"></script>
   </body>
 </html>
-
-<script>
-  $(document).ready(function() {
-    $('#docs').on('load', function() {
-      height = this.contentWindow.document.body.offsetHeight + 'px';
-      this.style.height = height;
-      $('.iframe-container').height(height);
-      $(this).contents().find("body").css("overflow-y", "hidden");
-      $(this).contents().find("body").css("overflow-x", "visible");
-    });
-  });
-
-</script>
