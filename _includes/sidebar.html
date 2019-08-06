@@ -21,7 +21,7 @@
 <script>
   $(document).ready(function() {
     $('#docs').attr('src', $(".sitemap-entry").attr('link'));
-    
+
     width = $(window).width();
 
     document.querySelectorAll('li.sitemap-entry').forEach(function(elem) {
@@ -29,7 +29,7 @@
         elem.className += ' active'
       }
     });
-    
+
     $(".sitemap-entry, .sitemap-entry-expand").click(function(e) {
       e.preventDefault();
       $('#docs').attr('src', $(this).attr('link'));
