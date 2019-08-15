@@ -20,7 +20,8 @@
 
 <script>
   $(document).ready(function() {
-    $('#docs').attr('src', $(".sitemap-entry").attr('link'));
+    $('#docs').attr('src', $(".sitemap-entry").first().attr('link'));
+    $(".sitemap-entry").first().addClass('active');
 
     width = $(window).width();
 
