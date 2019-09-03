@@ -81,7 +81,6 @@ Although it is optional to validate the `signature` query parameter, we highly r
 In order to understand how to verify the `signature`, see the following Java code example:
 
 {% highlight java %}
-{
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
 import org.apache.commons.codec.CharEncoding;
