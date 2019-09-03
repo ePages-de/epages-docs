@@ -25,7 +25,7 @@ jobs:
             - docs-rubygems-v1-{{ checksum "Gemfile.lock" }}
             - docs-rubygems-v1-fallback
       - run:
-          name: Bundle Install
+          name: Bundle install
           command: bundle install
       - save_cache:
           key: docs-rubygems-v1-{{ checksum "Gemfile.lock" }}
