@@ -85,13 +85,13 @@ import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
 import org.apache.commons.codec.CharEncoding;
 
-public String calculateSignature(String authCodeValue, String authTokenUrl, String secret) {
+public String calculateSignature(String code, String access_token_url, String client_secret) {
     String HmacSHA256 = "HmacSHA256";
 
     final Mac mac = Mac.getInstance(HmacSHA256);
-    mac.init(new SecretKeySpec(secret.getBytes(CharEncoding.UTF_8), HmacSHA256));
+    mac.init(new SecretKeySpec(client_secret.getBytes(CharEncoding.UTF_8), HmacSHA256));
 
-    byte[] signature = mac.doFinal((authCodeValue + ":" + authTokenUrl).getBytes());
+    byte[] signature = mac.doFinal((code + ":" + access_token_url).getBytes());
     return Base64.getEncoder().encodeToString(signature);
 }
 {% endhighlight %}
