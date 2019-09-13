@@ -68,7 +68,7 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | formatted | string | The formatted output of the base price information, e.g. 1 l = 1.20 EUR. |
 | quantity | object of [quantity](page:apps-data-types#quantity) | The quantity of the product, e.g. 500 ml. |
 
-## bulkPriceInfo
+## bulkPriceInfo (only ePages Now)
 
 | Attribute | Type | Description |
 | - | - |  - |
@@ -480,7 +480,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | - | - |  - |
 | productId | string | The unique identifier of the product. |
 | name | string | The name of the product. |
-| visible | boolean | Indicates if the product is displayed in the shop. |
+| visible | boolean | Indicates if the product is displayed in the shop.|
 | shortDescription | string | The short description of the product. |
 | deliveryPeriod | string | The average time of the product being delivered to the customer. By default, the delivery period is displayed in days, but this can be changed by the merchant. |
 | description | string | The description of the product. |
