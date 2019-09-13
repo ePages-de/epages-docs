@@ -68,7 +68,9 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | formatted | string | The formatted output of the base price information, e.g. 1 l = 1.20 EUR. |
 | quantity | object of [quantity](page:apps-data-types#quantity) | The quantity of the product, e.g. 500 ml. |
 
-## bulkPriceInfo (only ePages Now)
+## bulkPriceInfo
+
+ePages Now only!
 
 | Attribute | Type | Description |
 | - | - |  - |
