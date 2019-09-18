@@ -361,6 +361,32 @@
         "manufacturerPrice": null,
         "basePrice": null
       },
+      "bulkPriceInfo": [
+        {
+          "quantity":{
+            "amount": 3,
+            "unit":"piece(s)"
+          },
+          "price":{
+            "taxType":"GROSS",
+            "formatted": "110.00 €",
+            "amount": "110",
+            "currency": "EUR"
+          }
+        },
+        {
+          "quantity":{
+            "amount": 2,
+            "unit": "piece(s)"
+          },
+          "price":{
+            "taxType":"GROSS",
+            "formatted": "120.00 €",
+            "amount": 120,
+            "currency":"EUR"
+          }
+        }
+      ],
       "forSale": false,
       "specialOffer": true,
       "deliveryWeight": {

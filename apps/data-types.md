@@ -47,11 +47,10 @@ This object is used for the attributes of shippingAddress and billingAddress.
 
 ## attributeRange
 
- Attribute | Type | Description |
+| Attribute | Type | Description |
 | - | - |  - |
 | min  | string | The minimum range of the filter applied. |
 | max  | string | The maximum range of the filter applied. |
-
 
 ## attributeSelection
 
@@ -68,6 +67,15 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | refPrice | object of [price](page:apps-data-types#price) | The price based upon the standardised unit. |
 | formatted | string | The formatted output of the base price information, e.g. 1 l = 1.20 EUR. |
 | quantity | object of [quantity](page:apps-data-types#quantity) | The quantity of the product, e.g. 500 ml. |
+
+## bulkPriceInfo
+
+ePages Now only!
+
+| Attribute | Type | Description |
+| - | - |  - |
+| quantity | object of [quantity](page:apps-data-types#quantity) | The quantity of the product the price refers to.|
+| price | object of [price](page:apps-data-types#price) | The price of the product.|
 
 ## cart
 
@@ -424,15 +432,6 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | documentPdf | string | A base64 encoded string (without new line characters) that is provided in the order checkout language. |
 | links | array of [link](page:apps-data-types#link) | The links to the products of the order. |
 
-## productsPaged
-
-| Attribute | Type | Description |
-| - | - |  - |
-| results | string | The number of products in total. |
-| page | string | The page number on which the products appear. |
-| resultsPerPage | string | The number of products returned per page. |
-| items | object of [product](page:apps-data-types#product) | The list of all products. |
-
 ## paymentData
 
 | Attribute | Type | Description |
@@ -483,12 +482,13 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | - | - |  - |
 | productId | string | The unique identifier of the product. |
 | name | string | The name of the product. |
-| visible | boolean | Indicates if the product is displayed in the shop. |
+| visible | boolean | Indicates if the product is displayed in the shop.|
 | shortDescription | string | The short description of the product. |
 | deliveryPeriod | string | The average time of the product being delivered to the customer. By default, the delivery period is displayed in days, but this can be changed by the merchant. |
 | description | string | The description of the product. |
 | title | string | The page title of the product page. |
 | priceInfo | object of [priceInfo](page:apps-data-types#priceinfo) | Price information on the product. |
+| bulkPriceInfo | object of [bulkPriceInfo](page:apps-data-types#bulkpriceinfo) | Information on bulk pricing for the product. |
 | forSale | boolean | Information on the sale status of the product. Indicates if the product can be added to the basket. |
 | specialOffer | boolean | Indicates if the product is a special offer. |
 | deliveryWeight | object of [deliveryWeightQuantity](page:apps-data-types#deliveryweightquantity) | The delivery weight of the product. |
@@ -576,6 +576,15 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | Attribute | Type | Description |
 | - | - |  - |
 | quantity | number | The quantity of the product line item displayed as a decimal number.|
+
+## productsPaged
+
+| Attribute | Type | Description |
+| - | - |  - |
+| results | string | The number of products in total. |
+| page | string | The page number on which the products appear. |
+| resultsPerPage | string | The number of products returned per page. |
+| items | object of [product](page:apps-data-types#product) | The list of all products. |
 
 ## productSearch
 

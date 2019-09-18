@@ -14,6 +14,16 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
+## 2019-10-04
+
+### Changes with software release 7.40.0
+
+#### <i class="fas fa-plus"></i> New
+
+* Added data type [`bulkPriceInfo`](https://developer.epages.com/apps/data-types.html#bulkpriceinfo). For ePages Now only!
+
+<hr>
+
 ## 2019-07-31
 
 ### Changes with software release 7.37.0
