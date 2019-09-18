@@ -488,7 +488,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | description | string | The description of the product. |
 | title | string | The page title of the product page. |
 | priceInfo | object of [priceInfo](page:apps-data-types#priceinfo) | Price information on the product. |
-| bulkPriceInfo | object of [bulkPriceInfo](page:apps-data-types#bulkpriceinfo) | Information about bulk prices on the product. |
+| bulkPriceInfo | object of [bulkPriceInfo](page:apps-data-types#bulkpriceinfo) | Information on bulk pricing for the product. |
 | forSale | boolean | Information on the sale status of the product. Indicates if the product can be added to the basket. |
 | specialOffer | boolean | Indicates if the product is a special offer. |
 | deliveryWeight | object of [deliveryWeightQuantity](page:apps-data-types#deliveryweightquantity) | The delivery weight of the product. |
