@@ -64,17 +64,17 @@
         - title: Delete category
           link: http://api-docs.beyondshop.cloud/ng-product-management/product-management-public-api.html#resources-categories-delete
         - title: Show product category details
-          link: 
+          link: http://docs.beyondshop.cloud/ng-product-view/product-view-public-api.html#productview-category-get
         - title: List product categories
-          link: 
+          link: http://docs.beyondshop.cloud/ng-product-view/product-view-public-api.html#productview-categories-list
         - title: List products of a category
-          link: 
+          link: http://docs.beyondshop.cloud/ng-product-view/product-view-public-api.html#categories-products
         - title: List product categories assigned to an existing product
-          link: 
+          link: http://docs.beyondshop.cloud/ng-product-view/product-view-public-api.html#categories-find-by-product-id
         - title: Search matching product categories for product
-          link: 
+          link: http://docs.beyondshop.cloud/ng-product-view/product-view-public-api.html#categories-find-by-product
         - title: Find product category by label
-          link: 
+          link: http://docs.beyondshop.cloud/ng-product-view/product-view-public-api.html#categories-find-by-label
     - title: Checkout
       entries:
         - title: List checkout settings
@@ -212,8 +212,7 @@
         - title: Show current cart shipping method details
           link: http://api-docs.beyondshop.cloud/ng-checkout/checkout-public-api.html#resources-cart-get-shipping-methods-current
         - title: Show applicable cart shipping method details
-          link: http://api-docs.beyondshop.cloud/ng-checkout/checkout-public-api.html#_show_applicable_cart_shipping_method_details
-    
+          link: http://api-docs.beyondshop.cloud/ng-checkout/checkout-public-api.html#_show_applicable_cart_shipping_method_details 
     - title: Shipping Zones
       entries:
         - title: Show shipping zone details
@@ -292,3 +291,51 @@
           link: http://api-docs.beyondshop.cloud/ng-shop/shop-public-api.html#resources-merchant-shop-update
         - title: Update shop partially (json patch)
           link: http://api-docs.beyondshop.cloud/ng-shop/shop-public-api.html#resources-merchant-shop-jsonpatch
+    - title: Users
+      entries:
+        - title: List users
+          link: http://api-docs.beyondshop.cloud/ng-auth/auth-public-api.html#resources-users-list
+        - title: Show user details
+          link: http://api-docs.beyondshop.cloud/ng-auth/auth-public-api.html#resources-user-get
+        - title: Create user
+          link: http://api-docs.beyondshop.cloud/ng-auth/auth-public-api.html#resources-users-create
+        - title: List user roles
+          link: http://api-docs.beyondshop.cloud/ng-auth/auth-public-api.html#resources-user-roles-list
+        - title: Set user roles
+          link: http://api-docs.beyondshop.cloud/ng-auth/auth-public-api.html#resources-user-roles-set
+        - title: Add user roles
+          link: http://api-docs.beyondshop.cloud/ng-auth/auth-public-api.html#resources-user-roles-add
+        - title: List user searches
+          link: http://api-docs.beyondshop.cloud/ng-auth/auth-public-api.html#_list_user_searches
+        - title: Find user by username
+          link: http://api-docs.beyondshop.cloud/ng-auth/auth-public-api.html#_find_user_by_username
+        - title: Verify password
+          link: http://api-docs.beyondshop.cloud/ng-auth/auth-public-api.html#resources-verify-password
+        - title: Change password
+          link: http://api-docs.beyondshop.cloud/ng-auth/auth-public-api.html#resources-user-change-password
+        - title: Trigger password reset email
+          link: http://api-docs.beyondshop.cloud/ng-auth/auth-public-api.html#resources-reset-password-request
+        - title: Change username
+          link: http://api-docs.beyondshop.cloud/ng-auth/auth-public-api.html#resources-user-change-username
+        - title: Retrieve support access status
+          link: http://api-docs.beyondshop.cloud/ng-auth/auth-public-api.html#resources-support-access-status
+        - title: Trigger email address change
+          link: http://api-docs.beyondshop.cloud/ng-auth/auth-public-api.html#resources-change-email-request
+    - title: Newsletter targets
+      entries:
+        - title: Create newsletter target
+          link: 
+    - title: Webhooks
+      entries:
+        - title: Create webhook subscription
+          link: http://docs.beyondshop.cloud/ng-webhook/webhook-public-api.html#resources-subscription-create
+        - title: Show webhook subscription details
+          link: http://docs.beyondshop.cloud/ng-webhook/webhook-public-api.html#resources-subscription-get
+        - title: Update webhook subscription
+          link: http://docs.beyondshop.cloud/ng-webhook/webhook-public-api.html#resources-subscription-update
+        - title: List webhook subscriptions
+          link: http://docs.beyondshop.cloud/ng-webhook/webhook-public-api.html#resources-subscription-list
+        - title: Delete webhook subscription
+          link: http://docs.beyondshop.cloud/ng-webhook/webhook-public-api.html#resources-subscription-delete
+        - title: Activate webhook subscription
+          link: http://docs.beyondshop.cloud/ng-webhook/webhook-public-api.html#resources-subscription-activate
