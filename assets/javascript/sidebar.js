@@ -19,12 +19,12 @@ $(document).ready(function() {
 });
 
 function changeSiteMap(element) {
-  var id = $(element).text().trim().toLowerCase().replace(/\s/g,'_');
+  nextElement = $(element).next();
   if($('svg', element).first().hasClass('fa-caret-down')) {
     $('svg', element).first().removeClass('fa-caret-down').addClass('fa-caret-up');
-    $('#'+id).slideDown().removeClass('sitemap-content-expand--close').addClass('sitemap-content-expand--open');
+    $(nextElement).slideDown().removeClass('sitemap-content-expand--close').addClass('sitemap-content-expand--open');
   } else {
     $('svg', element).first().removeClass('fa-caret-up').addClass('fa-caret-down');
-    $('#'+id).slideUp().removeClass('sitemap-content-expand--open').addClass('sitemap-content-expand--close');
+    $(nextElement).slideUp().removeClass('sitemap-content-expand--open').addClass('sitemap-content-expand--close');
   }
 }

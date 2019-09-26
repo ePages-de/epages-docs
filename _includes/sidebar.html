@@ -9,7 +9,7 @@
       {% else %}
         <li class="sitemap-entry" link={{entry.link}}>{{entry.title}}</li>
       {% endif %}
-      <ul id={{entry.title | downcase | strip | replace: " ", "_" }} class="sitemap-content-expand sitemap-content-expand--close">
+      <ul class="sitemap-content-expand sitemap-content-expand--close">
           {% for expand in entry.entries %}
             <li class="sitemap-entry-expand" link={{expand.link}}>{{expand.title}}</li>
           {% endfor %}
