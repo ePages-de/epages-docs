@@ -20,6 +20,7 @@
 
     $(".sitemap-entry, .sitemap-entry-expand").click(function(e) {
       e.preventDefault();
+      $(window).scrollTop(0);
       $('#docs').attr('src', $(this).attr('link'));
     });
   });
