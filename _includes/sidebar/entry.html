@@ -1,0 +1,16 @@
+{% if include.entry.entries %}
+  <li class="sitemap-entry-group" onclick="changeSiteMap(this)">{{include.entry.title}}
+    <i class="fas fa-caret-down caret"></i>
+  </li>
+  <ul class="sitemap-content-expand sitemap-content-expand--close">
+    {% for expand in include.entry.entries %}
+      {% if expand.entries %}
+        {% include sidebar/entry.html entry=expand %}
+      {% else %}
+        <li class="sitemap-entry-expand" link={{expand.link}}>{{expand.title}}</li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+{% else %}
+  <li class="sitemap-entry" link={{include.entry.link}}>{{include.entry.title}}</li>
+{% endif %}
