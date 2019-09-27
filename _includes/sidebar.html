@@ -1,20 +1,7 @@
 {% for category in site.data.beyond-sidebar %}
   <li class="sitemap-headline">{{ category.title }}<i class="fas fa-caret-down"></i></li>
   <ul class="sitemap-content">
-    {% for entry in category.entries %}
-      {% if entry.entries %}
-        <li class="sitemap-entry-group" onclick="changeSiteMap(this)">{{entry.title}}
-          <i class="fas fa-caret-down caret"></i>
-        </li>
-      {% else %}
-        <li class="sitemap-entry" link={{entry.link}}>{{entry.title}}</li>
-      {% endif %}
-      <ul class="sitemap-content-expand sitemap-content-expand--close">
-          {% for expand in entry.entries %}
-            <li class="sitemap-entry-expand" link={{expand.link}}>{{expand.title}}</li>
-          {% endfor %}
-      </ul>
-    {% endfor %}
+    {% include sidebar/entries.html entries=category.entries %}
   </ul>
 {% endfor %}
 
