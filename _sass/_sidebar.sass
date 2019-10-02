@@ -59,15 +59,14 @@ aside.sidebar
 
     +grid-media($grid-large)
       display: block
-      margin: .5rem 1rem 2rem
+      margin: .5rem 0 2rem
 
     &--open
       display: block
+      transition: $base-transition
 
-    li.sitemap-entry-group
+    li.sitemap-entry
       list-style-type: none
-      color: $blue-mid
-      cursor: pointer
 
       +grid-media($grid-large)
         position: relative
@@ -94,66 +93,3 @@ aside.sidebar
 
         a
           color: $blue-mid
-
-    li.sitemap-entry
-      list-style-type: none
-      color: $blue-light
-      cursor: pointer
-
-      +grid-media($grid-large)
-        position: relative
-
-        &.active
-          color: $beyond-green
-
-      a
-        color: $blue-light
-        line-height: 2
-
-        +grid-media($grid-large)
-          padding-left: 2rem
-          line-height: 2
-
-      &.active
-        color: $beyond-green
-
-        a
-          color: $blue-mid
-
-  ul.sitemap-content-expand
-    display: none
-    margin: .5rem 1rem
-
-    +grid-media($grid-large)
-      display: block
-      margin: .5rem 1rem .5rem
-
-    &--open
-      display: block
-
-    &--close
-      display: none
-
-    li.sitemap-entry-expand
-      color: $blue-light
-      list-style-type: none
-      cursor: pointer
-
-      +grid-media($grid-large)
-        position: relative
-
-        &.active
-          color: $beyond-green
-
-      a
-        color: $blue-light
-        line-height: 2
-
-        +grid-media($grid-large)
-          padding-left: 2rem
-          line-height: 2
-
-      &.active
-        color: $beyond-green
-.caret
-    margin-left: .5rem
