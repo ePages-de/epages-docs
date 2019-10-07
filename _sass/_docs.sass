@@ -30,7 +30,7 @@ html
     position: relative
 
     +grid-media($grid-large)
-      align-items: flex-start
+      align-items: stretch
 
       margin-top: calc(6rem + #{$navbar-height})
       margin-bottom: 6rem
@@ -42,15 +42,19 @@ html
       display: table
 
     main
-      .iframe-container
-        position: relative
-        margin: 1.5rem 4rem
-        height: 700px
-        iframe
-          position: absolute
-          width: 100%
-          height: 100%
-        
+      display: grid
+      min-height: 700px
+      width: auto
+
+      +grid-media($grid-large)
+        min-height: 900px
+        width: 100%
+
+      iframe
+        width: 96%
+        height: 100%
+        padding: 0 2%
+
   table.table thead tr
 
     th:nth-child(3)

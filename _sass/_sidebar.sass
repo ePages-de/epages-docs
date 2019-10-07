@@ -5,38 +5,79 @@ aside.sidebar
   border-radius: $base-border-radius
   padding: 2rem
   margin-bottom: 3rem
+  line-height: 2
+  font-size: 1.8rem
 
   +grid-media($grid-large)
     min-width: 220px
+    max-width: 250px
     margin-right: 2rem
-    font-size: 1.8rem
     background: none
     box-shadow: none
     border-radius: 0
     padding: 0
     margin-bottom: 0
+    line-height: 1.4
+    font-size: 1.6rem
 
   +grid-media($grid-docs)
     position: relative
     left: -240px
 
+  //
+  // Basic styling
+  .caret
+      margin-right: 1rem
+
+      +grid-media($grid-large)
+        margin-left: -2rem
+
+  .svg-inline--fa.fa-w-10
+      width: 1rem !important
+
+  a
+    color: darken($blue-light, 5%)
+
+    +grid-media($grid-large)
+      word-break: break-all
+
+  li
+    color: darken($blue-light, 5%)
+    list-style-type: none
+    cursor: pointer
+
+    &:hover,
+    &.active,
+    &:hover a,
+    &.active a
+      color: $blue-mid
+
+    +grid-media($grid-large)
+      position: relative
+
+      &.active
+        &:before
+          content: ' '
+          height: 100%
+          width: 2px
+          background: $beyond-green
+          position: absolute
+          left: 0
+          top: 0
+
+  //
+  // Specific styling
   li.sitemap-headline
     text-transform: uppercase
     color: $blue-mid
     font-weight: bold
-    list-style-type: none
     border-bottom: $base-border
     padding: 2rem 0
-    cursor: pointer
     display: flex
     justify-content: space-between
     align-items: center
 
     +grid-media($grid-large)
-      text-transform: uppercase
-      color: $blue-mid
-      font-weight: bold
-      list-style-type: none
       border-bottom: none
       padding: 0
       cursor: auto
@@ -49,7 +90,6 @@ aside.sidebar
       border-bottom: 0
 
     svg
-
       +grid-media($grid-large)
         display: none
 
@@ -59,74 +99,31 @@ aside.sidebar
 
     +grid-media($grid-large)
       display: block
-      margin: .5rem 1rem 2rem
+      margin: 1rem 1rem 2rem 0
 
     &--open
       display: block
 
-    li.sitemap-entry-group
-      list-style-type: none
-      color: $blue-mid
-      cursor: pointer
-
-      +grid-media($grid-large)
-        position: relative
-
-        &.active
-          &:before
-            content: ''
-            height: 100%
-            width: 4px
-            background: $beyond-green
-            position: absolute
-            left: 0
-            top: 0
-
-      a
-        color: $blue-light
-        line-height: 2
-
-        +grid-media($grid-large)
-          padding-left: 2rem
-          line-height: 2
-
-      &.active
-
-        a
-          color: $blue-mid
-
     li.sitemap-entry
-      list-style-type: none
-      color: $blue-light
-      cursor: pointer
+      margin-bottom: 10px
 
       +grid-media($grid-large)
         position: relative
+        padding-left: 2rem
 
-        &.active
-          color: $beyond-green
+    li.sitemap-entry-group
+      margin-bottom: 10px
 
-      a
-        color: $blue-light
-        line-height: 2
-
-        +grid-media($grid-large)
-          padding-left: 2rem
-          line-height: 2
-
-      &.active
-        color: $beyond-green
-
-        a
-          color: $blue-mid
+      +grid-media($grid-large)
+        padding-left: 2rem
 
   ul.sitemap-content-expand
     display: none
-    margin: .5rem 1rem
+    margin: .5rem 2rem
 
     +grid-media($grid-large)
       display: block
-      margin: .5rem 1rem .5rem
+      margin: .5rem 1rem 2rem 1rem
 
     &--open
       display: block
@@ -135,25 +132,13 @@ aside.sidebar
       display: none
 
     li.sitemap-entry-expand
-      color: $blue-light
-      list-style-type: none
-      cursor: pointer
+      margin-bottom: 8px
 
       +grid-media($grid-large)
         position: relative
-
-        &.active
-          color: $beyond-green
+        padding-left: 2rem
 
       a
-        color: $blue-light
-        line-height: 2
-
         +grid-media($grid-large)
           padding-left: 2rem
-          line-height: 2
 
-      &.active
-        color: $beyond-green
-.caret
-    margin-left: .5rem

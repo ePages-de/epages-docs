@@ -1,6 +1,6 @@
 {% if include.entry.entries %}
-  <li class="sitemap-entry-group" onclick="changeSiteMap(this)">{{include.entry.title}}
-    <i class="fas fa-caret-down caret"></i>
+  <li class="sitemap-entry-group" onclick="changeSiteMap(this)">
+    <i class="fas fa-caret-down caret"></i>{{include.entry.title}}
   </li>
   <ul class="sitemap-content-expand sitemap-content-expand--close">
     {% for expand in include.entry.entries %}
