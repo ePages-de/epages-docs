@@ -30,18 +30,20 @@ html
     position: relative
 
     +grid-media($grid-large)
-      align-items: stretch
-
+      align-items: flex-start
       margin-top: calc(6rem + #{$navbar-height})
       margin-bottom: 6rem
       flex-direction: row
+
+      &.wrapper-beyond
+        align-items: stretch
 
     a.imagebox
       margin-left: auto
       margin-right: auto
       display: table
 
-    main
+    main.iframe-container
       display: grid
       min-height: 700px
       width: auto

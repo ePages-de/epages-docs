@@ -3,7 +3,7 @@
   {% include head.html %}
   <body class="docs">
     {% include navbar.html %}
-    <div class="docs-wrapper">
+    <div class="docs-wrapper wrapper-beyond">
       <aside class="sidebar">
         <ul class="sitemap">
           {% assign chapter = page.url | regex_extract: '^/([^/]+)/' %}
@@ -11,7 +11,7 @@
           {% include sidebar.html %}
         </ul>
       </aside>
-      <main>
+      <main class="iframe-container">
         <iframe id="docs" src=""></iframe>
       </main>
     </div>
