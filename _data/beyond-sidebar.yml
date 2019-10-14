@@ -1,7 +1,62 @@
-- title: Use cases
+- title: Getting started
+  entries:
+    - title: About the API
+      entries:
+        - title: HTTP verbs
+          link: http://api-docs.beyondshop.cloud/index-api-basics.html#_http_verbs
+        - title: API operations
+          link: http://api-docs.beyondshop.cloud/index-api-basics.html#_api_operations
+        - title: Request headers
+          link: http://api-docs.beyondshop.cloud/index-api-basics.html#_request_headers
+        - title: Response headers
+          link: http://api-docs.beyondshop.cloud/index-api-basics.html#_response_headers
+        - title: Versioning
+          link: http://api-docs.beyondshop.cloud/index-api-basics.html#_versioning
+        - title: Pagination
+          link: http://api-docs.beyondshop.cloud/index-api-basics.html#_pagination
+        - title: Hypermedia
+          link: http://api-docs.beyondshop.cloud/index-api-basics.html#hypermedia
+    - title: REST API errors
+      entries:
+        - title: HTTP status codes
+          link: http://api-docs.beyondshop.cloud/index-errors.html#errors-status-codes
+        - title: Error responses
+          link: http://api-docs.beyondshop.cloud/index-errors.html#errors-responses
+        - title: Common error IDs
+          link: http://api-docs.beyondshop.cloud/index-errors.html#_common_error_ids
+        - title: Validation errors
+          link: http://api-docs.beyondshop.cloud/index-errors.html#errors-validation-errors
+
+- title: App development
+  entries:
+    - title: Custom apps
+      link: http://api-docs.beyondshop.cloud/index-apps.html#_custom_apps
+    - title: Scopes
+      link: http://api-docs.beyondshop.cloud/index-apps.html#_scopes
+    - title: Authentication
+      link: http://api-docs.beyondshop.cloud/index-apps.html#_authentication
+    - title: Test authorization
+      link: http://api-docs.beyondshop.cloud/index-apps.html#_test_authorization
+    - title: Signers
+      link: http://api-docs.beyondshop.cloud/ng-auth/auth-public-api.html#_signers
+    - title: App submission
+      link: http://api-docs.beyondshop.cloud/index-apps.html#_app_submission
+    - title: Submission guidelines
+      link: http://api-docs.beyondshop.cloud/index-apps.html#_submission_guidelines
+    - title: Events
+      link: http://api-docs.beyondshop.cloud/index-apps.html#_events
+
+- title: Tutorials
+  entries:
+    - title: JavaScript
+      link: http://api-docs.beyondshop.cloud/ng-payment-gateway/payment-gateway-public-api.html
+
+- title: Integrations
   entries:
     - title: Integrate a payment solution
       link: http://api-docs.beyondshop.cloud/ng-payment-gateway/payment-gateway-public-api.html
+    - title: Ruby client
+      link: https://github.com/ePages-de/beyond_api-ruby_client
 
 - title: API Reference
   entries:
@@ -152,7 +207,7 @@
             - title: List shipping methods of shipping zone
               link: http://api-docs.beyondshop.cloud/ng-checkout/checkout-public-api.html#resources-shipping-zones-shipping-methods-list
             - title: Sort shipping methods in shipping zone
-              link: http://api-docs.beyondshop.cloud/ng-checkout/checkout-public-api.html#_sort_shipping_methods_in_shipping_zone    
+              link: http://api-docs.beyondshop.cloud/ng-checkout/checkout-public-api.html#_sort_shipping_methods_in_shipping_zone
     - title: Order API
       entries:
         - title: Invoices
@@ -294,7 +349,7 @@
             - title: Update category partially (json)
               link: http://api-docs.beyondshop.cloud/ng-product-management/product-management-public-api.html#resources-category-update-json
             - title: Delete category
-              link: http://api-docs.beyondshop.cloud/ng-product-management/product-management-public-api.html#resources-categories-delete  
+              link: http://api-docs.beyondshop.cloud/ng-product-management/product-management-public-api.html#resources-categories-delete
         - title: Products
           entries:
             - title: List products including variation products
@@ -492,7 +547,7 @@
             - title: Delete shop attribute
               link: http://api-docs.beyondshop.cloud/ng-shop/shop-public-api.html#resources-merchant-shop-attribute-delete
         - title: Shop images
-          entries:   
+          entries:
             - title: List shop images
               link: http://api-docs.beyondshop.cloud/ng-shop/shop-public-api.html#resources-merchant-images-list
             - title: Show shop image details
@@ -504,7 +559,7 @@
             - title: Find shop images by label
               link: http://api-docs.beyondshop.cloud/ng-shop/shop-public-api.html#resources-merchant-images-search-find-by-label
             - title: Upload shop image
-              link: http://api-docs.beyondshop.cloud/ng-shop/shop-public-api.html#resources-merchant-image-upload   
+              link: http://api-docs.beyondshop.cloud/ng-shop/shop-public-api.html#resources-merchant-image-upload
     - title: Storefront App Data API
       entries:
         - title: Newsletter targets
