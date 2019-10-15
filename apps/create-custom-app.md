@@ -6,6 +6,10 @@ title: Create an app
 
 Once you have your test shop in place, you can create a custom app for a specific shop, and only for that shop.
 
+{% callout info Note: %}
+Custom apps can only be created for ePages Now.
+{% endcallout %}
+
 You automatically receive a **Client ID** and a **Client Secret** when you create an app in your test shop.
 After successful authorisation of your app, you will be assigned an **Access token**.
 
