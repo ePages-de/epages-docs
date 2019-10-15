@@ -25,15 +25,12 @@
     - title: App scopes
       link: page:app-scopes
 
-- key: apps-custom
-  title: Custom apps
-  entries:
-    - title: Create an app
-      link: page:apps-create-custom
-
 - key: apps-develop
   title: Developing an app
   entries:
+    - title: Create a custom app
+      link: page:apps-create-custom
+
     - title: Create an app
       link: page:apps-create
 
