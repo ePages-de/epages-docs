@@ -28,7 +28,7 @@
 - key: apps-develop
   title: Developing an app
   entries:
-    - title: Create a custom app
+    - title: Create a private app
       link: page:apps-create-custom
 
     - title: Create an app
