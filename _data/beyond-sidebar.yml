@@ -29,32 +29,44 @@
 
 - title: App development
   entries:
-    - title: Custom apps
-      link: http://api-docs.beyondshop.cloud/index-apps.html#_custom_apps
     - title: Scopes
       link: http://api-docs.beyondshop.cloud/index-apps.html#_scopes
-    - title: Authentication
-      link: http://api-docs.beyondshop.cloud/index-apps.html#_authentication
+    - title: Create app
+      link: http://api-docs.beyondshop.cloud/index-apps.html#_custom_apps
     - title: Test authorization
       link: http://api-docs.beyondshop.cloud/index-apps.html#_test_authorization
-    - title: Signers
-      link: http://api-docs.beyondshop.cloud/ng-auth/auth-public-api.html#_signers
-    - title: App submission
+    - title: Authentication
+      link: http://api-docs.beyondshop.cloud/index-apps.html#_authentication
+    - title: Submit app
       link: http://api-docs.beyondshop.cloud/index-apps.html#_app_submission
     - title: Submission guidelines
       link: http://api-docs.beyondshop.cloud/index-apps.html#_submission_guidelines
     - title: Events
       link: http://api-docs.beyondshop.cloud/index-apps.html#_events
+    - title: Signers
+      link: http://api-docs.beyondshop.cloud/ng-auth/auth-public-api.html#_signers
 
 - title: Tutorials
   entries:
     - title: JavaScript
-      link: http://api-docs.beyondshop.cloud/ng-payment-gateway/payment-gateway-public-api.html
+      link: http://api-docs.beyondshop.cloud/index-tutorial.html
 
 - title: Integrations
   entries:
-    - title: Integrate a payment solution
-      link: http://api-docs.beyondshop.cloud/ng-payment-gateway/payment-gateway-public-api.html
+    - title: Payment solution
+      entries:
+        - title: Getting started
+          link: http://api-docs.beyondshop.cloud/ng-payment-gateway/includes-public-api.html#_getting_started
+        - title: Payment methods
+          link: http://api-docs.beyondshop.cloud/ng-payment-gateway/includes-public-api.html#_payment_methods
+        - title: Authorization
+          link: http://api-docs.beyondshop.cloud/ng-payment-gateway/includes-public-api.html#_authorization
+        - title: Connect merchant account
+          link: http://api-docs.beyondshop.cloud/ng-payment-gateway/includes-public-api.html#_connect_merchant_account
+        - title: Payment flow
+          link: http://api-docs.beyondshop.cloud/ng-payment-gateway/includes-public-api.html#_payment_flow
+        - title: Refunds
+          link: http://api-docs.beyondshop.cloud/ng-payment-gateway/includes-public-api.html#_refunds
     - title: Ruby client
       link: https://github.com/ePages-de/beyond_api-ruby_client
 
