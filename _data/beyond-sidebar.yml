@@ -72,6 +72,8 @@
 
 - title: API Reference
   entries:
+    - title: Change log
+      link: http://api-docs.beyondshop.cloud/index-changelog.html
     - title: Authentication API
       entries:
         - title: Email address change
