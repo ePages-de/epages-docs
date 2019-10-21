@@ -20,6 +20,11 @@ $(document).ready(function() {
 
 function changeSiteMap(element) {
   if($('svg', element).first().hasClass('fa-caret-down')) { //open
+    $('.fa-caret-up').each((i,elementSvg)=> { // Close other elements
+      if(!$(elementSvg).parent().is($(element).parent().prev())) {
+        closeSiteMap($(elementSvg).parent());
+      }
+    });
     openSiteMap(element);
   } else { //close
     closeSiteMap(element);
