@@ -32,13 +32,13 @@
     - title: Scopes
       link: http://api-docs.beyondshop.cloud/index-apps.html#_scopes
     - title: Create app
-      link: http://api-docs.beyondshop.cloud/index-apps.html#_custom_apps
+      link: http://api-docs.beyondshop.cloud/index-apps.html#_create_app
     - title: Test authorization
       link: http://api-docs.beyondshop.cloud/index-apps.html#_test_authorization
     - title: Authentication
       link: http://api-docs.beyondshop.cloud/index-apps.html#_authentication
     - title: Submit app
-      link: http://api-docs.beyondshop.cloud/index-apps.html#_app_submission
+      link: http://api-docs.beyondshop.cloud/index-apps.html#_submit_app
     - title: Submission guidelines
       link: http://api-docs.beyondshop.cloud/index-apps.html#_submission_guidelines
     - title: Events
