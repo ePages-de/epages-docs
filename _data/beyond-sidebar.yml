@@ -80,10 +80,6 @@
           entries:
             - title: Trigger email address change
               link: http://api-docs.beyondshop.cloud/ng-auth/auth-public-api.html#resources-change-email-request
-        - title: Scopes
-          entries:
-            - title: List scopes
-              link: http://api-docs.beyondshop.cloud/ng-auth/auth-public-api.html#resources-scopes-list
         - title: Support access
           entries:
             - title: Retrieve support access status
