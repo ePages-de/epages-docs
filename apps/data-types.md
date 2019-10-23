@@ -577,6 +577,12 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | - | - |  - |
 | quantity | number | The quantity of the product line item displayed as a decimal number.|
 
+## productLineItemPrice (update request)
+
+| Attribute | Type | Description |
+| - | - |  - |
+| singleItemPrice | number | The price for a single item.|
+
 ## productsPaged
 
 | Attribute | Type | Description |
