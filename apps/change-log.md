@@ -14,7 +14,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
-## 2019-10-24
+## 2019-11-06
 
 ### Changes with software release 7.41.0
 
