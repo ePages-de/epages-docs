@@ -8,7 +8,7 @@
         {% include sidebar/entry.html entry=expand %}
       {% elsif expand.external_link %}
         <li class="sitemap-entry-expand-external" external_link={{expand.external_link}}>
-          <i class="fas {{expand.icon}} caret"></i>{{expand.title}}
+          {{expand.title}}<i class="fas {{expand.icon}} right-icon"></i>
         </li>
       {% else %}
         <li class="sitemap-entry-expand" link={{expand.link}}>{{expand.title}}</li>
@@ -17,7 +17,7 @@
   </ul>
 {% elsif include.entry.external_link %}
   <li class="sitemap-entry-external" external_link={{include.entry.external_link}}>
-    <i class="fas {{include.entry.icon}} caret"></i>{{include.entry.title}}
+    {{include.entry.title}}<i class="fas {{include.entry.icon}} right-icon"></i>
   </li>
 {% else %}
   <li class="sitemap-entry" link={{include.entry.link}}>{{include.entry.title}}</li>

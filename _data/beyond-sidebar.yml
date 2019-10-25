@@ -68,7 +68,8 @@
         - title: Refunds
           link: http://api-docs.beyondshop.cloud/ng-payment-gateway-includes-public-api.html#_refunds
     - title: Ruby client
-      link: https://github.com/ePages-de/beyond_api-ruby_client
+      external_link: https://github.com/ePages-de/beyond_api-ruby_client
+      icon: fa-external-link-alt
 
 - title: API Reference
   entries:
