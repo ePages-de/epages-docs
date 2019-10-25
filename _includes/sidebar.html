@@ -23,6 +23,12 @@
       $(window).scrollTop(0);
       $('#docs').attr('src', $(this).attr('link'));
     });
+
+    $(".sitemap-entry-external, .sitemap-entry-expand-external").click(function(e) {
+      e.preventDefault();
+      var url = $(this).attr('external_link');
+      window.open(url, '_blank');
+    });
   });
 
 </script>

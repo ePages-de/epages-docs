@@ -6,11 +6,19 @@
     {% for expand in include.entry.entries %}
       {% if expand.entries %}
         {% include sidebar/entry.html entry=expand %}
+      {% elsif expand.external_link %}
+        <li class="sitemap-entry-expand-external" external_link={{expand.external_link}}>
+          <i class="fas {{expand.icon}} caret"></i>{{expand.title}}
+        </li>
       {% else %}
         <li class="sitemap-entry-expand" link={{expand.link}}>{{expand.title}}</li>
       {% endif %}
     {% endfor %}
   </ul>
+{% elsif include.entry.external_link %}
+  <li class="sitemap-entry-external" external_link={{include.entry.external_link}}>
+    <i class="fas {{include.entry.icon}} caret"></i>{{include.entry.title}}
+  </li>
 {% else %}
   <li class="sitemap-entry" link={{include.entry.link}}>{{include.entry.title}}</li>
 {% endif %}
