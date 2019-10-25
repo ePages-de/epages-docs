@@ -25,6 +25,7 @@ function changeSiteMap(element) {
         closeSiteMap($(elementSvg).parent());
       }
     });
+    $(element).addClass("sitemap-entry-group--active");
     openSiteMap(element);
   } else { //close
     closeSiteMap(element);
@@ -38,6 +39,7 @@ function openSiteMap(element) {
 }
 
 function closeSiteMap(element) {
+  $(element).removeClass("sitemap-entry-group--active");
   nextElement = $(element).next();
   $('svg', element).first().removeClass('fa-caret-up').addClass('fa-caret-down');
   $(nextElement).slideUp().removeClass('sitemap-content-expand--open').addClass('sitemap-content-expand--close');
