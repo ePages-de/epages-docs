@@ -6,8 +6,12 @@
     {% for expand in include.entry.entries %}
       {% if expand.entries %}
         {% include sidebar/entry.html entry=expand %}
+      {% elsif expand.download_link %}
+        <a class="sitemap-entry-expand-link" href={{ expand.download_link }} download>
+          {{ expand.title }}<i class="{{ expand.icon }} right-icon"></i>
+        </a>
       {% elsif expand.external_link %}
-        <a class="sitemap-entry-expand-external" href={{ expand.external_link }} target="_blank">
+        <a class="sitemap-entry-expand-link" href={{ expand.external_link }} target="_blank">
           {{ expand.title }}<i class="{{ expand.icon }} right-icon"></i>
         </a>
       {% else %}
@@ -15,8 +19,12 @@
       {% endif %}
     {% endfor %}
   </ul>
+{% elsif include.entry.download_link %}
+  <a class="sitemap-entry-link" href={{ include.entry.download_link }} download>
+    {{ include.entry.title }}<i class="{{ include.entry.icon }} right-icon"></i>
+  </a>
 {% elsif include.entry.external_link %}
-  <a class="sitemap-entry-external" href={{ include.entry.external_link }} target="_blank">
+  <a class="sitemap-entry-link" href={{ include.entry.external_link }} target="_blank">
     {{ include.entry.title }}<i class="{{ include.entry.icon }} right-icon"></i>
   </a>
 {% else %}
