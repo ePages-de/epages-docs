@@ -13,8 +13,12 @@ $(document).ready(function() {
   })
   $('li.sitemap-entry, li.sitemap-entry-expand').click(function() {
     $('li.sitemap-entry').removeClass('active');
+    // remove font color from current active path
+    $('li.sitemap-entry-expand.active').parents("ul.sitemap-content-expand").prev().removeClass('sitemap-entry-group--active');
     $('li.sitemap-entry-expand.active').removeClass('active');
+    // set font color to new active path
     $(this).addClass('active')
+    $(this).parents("ul.sitemap-content-expand--open").prev().addClass('sitemap-entry-group--active');
   });
 });
 
@@ -25,7 +29,6 @@ function changeSiteMap(element) {
         closeSiteMap($(elementSvg).parent());
       }
     });
-    $(element).addClass("sitemap-entry-group--active");
     openSiteMap(element);
   } else { //close
     closeSiteMap(element);
@@ -39,7 +42,6 @@ function openSiteMap(element) {
 }
 
 function closeSiteMap(element) {
-  $(element).removeClass("sitemap-entry-group--active");
   nextElement = $(element).next();
   $('svg', element).first().removeClass('fa-caret-up').addClass('fa-caret-down');
   $(nextElement).slideUp().removeClass('sitemap-content-expand--open').addClass('sitemap-content-expand--close');
