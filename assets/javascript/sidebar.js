@@ -6,8 +6,8 @@ $(document).ready(function() {
       } else {
         $('.sitemap-content').removeClass('sitemap-content--open');
         $(this).next().slideDown().addClass('sitemap-content--open');
-        $('.sitemap-headline svg').removeClass('fa-caret-up').addClass('fa-caret-down');
-        $('svg', this).removeClass('fa-caret-down').addClass('fa-caret-up');
+        $('.sitemap-headline svg').removeClass('fa-angle-down').addClass('fa-angle-right');
+        $('svg', this).removeClass('fa-angle-right').addClass('fa-angle-down');
       }
     }
   })
@@ -19,8 +19,8 @@ $(document).ready(function() {
 });
 
 function changeSiteMap(element) {
-  if($('svg', element).first().hasClass('fa-caret-down')) { //open
-    $('.fa-caret-up').each((i,elementSvg)=> { // Close other elements
+  if ($('svg', element).first().hasClass('fa-angle-right')) { //open
+    $('.fa-angle-down').each((i,elementSvg)=> { // Close other elements
       if(!$(elementSvg).parent().is($(element).parent().prev())) {
         closeSiteMap($(elementSvg).parent());
       }
@@ -33,13 +33,13 @@ function changeSiteMap(element) {
 
 function openSiteMap(element) {
   nextElement = $(element).next();
-  $('svg', element).first().removeClass('fa-caret-down').addClass('fa-caret-up');
+  $('svg', element).first().removeClass('fa-angle-right').addClass('fa-angle-down');
   $(nextElement).slideDown().removeClass('sitemap-content-expand--close').addClass('sitemap-content-expand--open');
 }
 
 function closeSiteMap(element) {
   nextElement = $(element).next();
-  $('svg', element).first().removeClass('fa-caret-up').addClass('fa-caret-down');
+  $('svg', element).first().removeClass('fa-angle-down').addClass('fa-angle-right');
   $(nextElement).slideUp().removeClass('sitemap-content-expand--open').addClass('sitemap-content-expand--close');
-  $(nextElement).find('.fa-caret-up').map((i,elementSvg)=>closeSiteMap($(elementSvg).parent()));
+  $(nextElement).find('.fa-angle-down').map((i,elementSvg)=>closeSiteMap($(elementSvg).parent()));
 }
