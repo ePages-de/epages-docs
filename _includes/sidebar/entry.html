@@ -1,24 +1,24 @@
 {% if include.entry.entries %}
   <li class="sitemap-entry-group" onclick="changeSiteMap(this)">
-    <i class="fas fa-caret-down caret"></i>{{include.entry.title}}
+    <i class="fas fa-caret-down caret"></i>{{ include.entry.title }}
   </li>
   <ul class="sitemap-content-expand sitemap-content-expand--close">
     {% for expand in include.entry.entries %}
       {% if expand.entries %}
         {% include sidebar/entry.html entry=expand %}
       {% elsif expand.external_link %}
-        <li class="sitemap-entry-expand-external" external_link={{expand.external_link}}>
-          {{expand.title}}<i class="fas {{expand.icon}} right-icon"></i>
-        </li>
+        <a class="sitemap-entry-expand-external" href={{ expand.external_link }} target="_blank">
+          {{ expand.title }}<i class="{{ expand.icon }} right-icon"></i>
+        </a>
       {% else %}
-        <li class="sitemap-entry-expand" link={{expand.link}}>{{expand.title}}</li>
+        <li class="sitemap-entry-expand" link={{ expand.link }}>{{ expand.title }}</li>
       {% endif %}
     {% endfor %}
   </ul>
 {% elsif include.entry.external_link %}
-  <li class="sitemap-entry-external" external_link={{include.entry.external_link}}>
-    {{include.entry.title}}<i class="fas {{include.entry.icon}} right-icon"></i>
-  </li>
+  <a class="sitemap-entry-external" href={{ include.entry.external_link }} target="_blank">
+    {{ include.entry.title }}<i class="{{ include.entry.icon }} right-icon"></i>
+  </a>
 {% else %}
-  <li class="sitemap-entry" link={{include.entry.link}}>{{include.entry.title}}</li>
+  <li class="sitemap-entry" link={{ include.entry.link }}>{{ include.entry.title }}</li>
 {% endif %}

@@ -117,12 +117,16 @@ aside.sidebar
         position: relative
         padding-left: 1.5rem
 
-    li.sitemap-entry-external
+    a.sitemap-entry-external
       margin-bottom: 10px
 
       +grid-media($grid-large)
         position: relative
         padding-left: 1.5rem
+
+      &:hover,
+      &.active
+        color: $blue-mid
 
     li.sitemap-entry-group
       margin-bottom: 10px
@@ -158,7 +162,7 @@ aside.sidebar
         +grid-media($grid-large)
           padding-left: 2rem
 
-    li.sitemap-entry-expand-external
+    a.sitemap-entry-expand-external
       margin-bottom: 8px
 
       +grid-media($grid-large)
@@ -168,6 +172,6 @@ aside.sidebar
       &.active:before
         left: 5px
 
-      a
-        +grid-media($grid-large)
-          padding-left: 2rem
+      &:hover,
+      &.active
+        color: $blue-mid
