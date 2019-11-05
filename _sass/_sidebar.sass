@@ -32,6 +32,14 @@ aside.sidebar
       +grid-media($grid-large)
         margin-left: -1.5rem
 
+  .right-icon
+    font-size: 12px
+    margin-bottom: 2px
+    margin-left: 0.7rem
+
+    +grid-media($grid-large)
+      margin-left: 1rem
+
   .svg-inline--fa.fa-w-10
       width: 0.8rem !important
 
@@ -111,6 +119,17 @@ aside.sidebar
         position: relative
         padding-left: 1.5rem
 
+    a.sitemap-entry-link
+      margin-bottom: 10px
+
+      +grid-media($grid-large)
+        position: relative
+        padding-left: 1.5rem
+
+      &:hover,
+      &.active
+        color: $blue-mid
+
     li.sitemap-entry-group
       margin-bottom: 10px
 
@@ -145,3 +164,16 @@ aside.sidebar
         +grid-media($grid-large)
           padding-left: 2rem
 
+    a.sitemap-entry-expand-link
+      margin-bottom: 8px
+
+      +grid-media($grid-large)
+        position: relative
+        padding-left: 1.5rem
+
+      &.active:before
+        left: 5px
+
+      &:hover,
+      &.active
+        color: $blue-mid
