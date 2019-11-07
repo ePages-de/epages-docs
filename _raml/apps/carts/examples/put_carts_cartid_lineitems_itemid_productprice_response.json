@@ -1,0 +1,194 @@
+{
+  "cartId": "5DA87B8C-90B6-1B7F-DABF-D5809220A300",
+  "billingAddress": null,
+  "shippingAddress": null,
+  "lineItemContainer": {
+      "grandTotal": {
+          "taxType": "GROSS",
+          "formatted": "166.90 €",
+          "amount": 166.9,
+          "currency": "EUR"
+      },
+      "totalBeforeTax": {
+          "taxType": "NET",
+          "formatted": "140.25 €",
+          "amount": 140.25,
+          "currency": "EUR"
+      },
+      "totalTax": {
+          "taxType": "NONE",
+          "formatted": "26.65 €",
+          "amount": 26.65,
+          "currency": "EUR"
+      },
+      "lineItemsSubTotal": {
+          "taxType": "GROSS",
+          "formatted": "159.90 €",
+          "amount": 159.9,
+          "currency": "EUR"
+      },
+      "productLineItems": [
+          {
+              "lineItemId": "5DA87B8D-C480-0715-5AC3-D5809220A33E",
+              "sku": "Acc-001",
+              "name": "Connector 6.3 mm",
+              "productId": "5DA77271-0EE8-4EB6-1D08-D58092208F64",
+              "quantity": {
+                  "amount": 1,
+                  "unit": "piece(s)"
+              },
+              "lineItemPrice": {
+                  "taxType": "GROSS",
+                  "formatted": "159.90 €",
+                  "amount": 159.9,
+                  "currency": "EUR"
+              },
+              "singleItemPrice": {
+                  "taxType": "GROSS",
+                  "formatted": "159.90 €",
+                  "amount": 159.9,
+                  "currency": "EUR"
+              },
+              "lineItemCouponDiscount": null,
+              "images": [
+                  {
+                      "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/acc6_h.jpg",
+                      "classifier": "HotDeal",
+                      "isZoomEnabled": false,
+                      "width": 0,
+                      "height": 0,
+                      "fileSize": 0
+                  },
+                  {
+                      "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/acc6.jpg",
+                      "classifier": "Large",
+                      "isZoomEnabled": false,
+                      "width": 0,
+                      "height": 0,
+                      "fileSize": 0
+                  },
+                  {
+                      "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/acc6_m.jpg",
+                      "classifier": "Medium",
+                      "isZoomEnabled": false,
+                      "width": 0,
+                      "height": 0,
+                      "fileSize": 0
+                  },
+                  {
+                      "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/acc6_s.jpg",
+                      "classifier": "Small",
+                      "isZoomEnabled": false,
+                      "width": 0,
+                      "height": 0,
+                      "fileSize": 0
+                  },
+                  {
+                      "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/acc6_xs.jpg",
+                      "classifier": "Thumbnail",
+                      "isZoomEnabled": false,
+                      "width": 0,
+                      "height": 0,
+                      "fileSize": 0
+                  }
+              ],
+              "links": [
+                  {
+                      "rel": "product",
+                      "href": "https://pm.epages.com/rs/shops/apidocu/products/54E72E1F-746A-8B6E-8E41-0A0C05E64669"
+                  },
+                  {
+                      "rel": "taxClass",
+                      "href": "https://pm.epages.com/rs/shops/apidocu/tax-classes/5446685F-A8AF-0E18-9B4F-D5809AB30FBF"
+                  }
+              ],
+              "variationString": null,
+              "essentialFeatures": null,
+              "taxClass": {
+                  "taxClassId": "5DA76873-F0EF-56AA-8344-D58092207057",
+                  "name": "standard",
+                  "percentage": 19.0
+              },
+              "deliveryWeight": null,
+              "energyLabelsString": null,
+              "energyLabelsMaxEfficiencyString": null,
+              "energyLabelSourceFile": null
+          }
+      ],
+      "couponLineItem": null,
+      "shippingPrice": {
+          "taxType": "GROSS",
+          "formatted": "7.00 €",
+          "amount": 7,
+          "currency": "EUR"
+      },
+      "deposits": [],
+      "ecoParticipations": [],
+      "shippingOptions": [],
+      "basketDiscount": {
+          "links": []
+      }
+  },
+  "shippingData": {
+      "shippingMethod": {
+          "id": "5DA77268-5890-9FF2-E474-D58092208F59",
+          "name": "Standard delivery"
+      },
+      "price": {
+          "taxType": "GROSS",
+          "formatted": "7.00 €",
+          "amount": 7,
+          "currency": "EUR"
+      },
+      "taxes": [
+          {
+              "taxClass": {
+                  "taxClassId": "5DA76873-F0EF-56AA-8344-D58092207057",
+                  "name": "standard",
+                  "percentage": 19.0
+              },
+              "price": {
+                  "taxType": "NONE",
+                  "formatted": "1.12 €",
+                  "amount": 1.12,
+                  "currency": "EUR"
+              }
+          }
+      ]
+  },
+  "paymentData": {
+      "paymentMethod": {
+          "id": "5DA7726A-8218-F36C-0E23-D58092208FF5",
+          "name": "PayPal",
+          "providerName": "PayPal"
+      },
+      "transactionId": "7PM024488F971832G",
+      "price": {
+          "taxType": "GROSS",
+          "formatted": "0.00 €",
+          "amount": 0,
+          "currency": "EUR"
+      },
+      "status": null,
+      "taxes": null
+  },
+  "minimumCart": {
+      "status": true,
+      "code": "SumDiscount",
+      "amount": null
+  },
+  "pickupToken": "NjE4NTMzZGY2ODlkZGUzYjgxZDA4MzViMWVhYTk3YzU3MGExYTM3YTlkZmQzMjZlMjRlODM3MDZkMWIyZTQ0Ml8xNTcxMzIyODQ3",
+  "creationDate": "2019-10-17T14:32:44Z",
+  "checkoutUrl": "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/2/Baskets/46072&ChangeAction=PickupBasket&PickupToken=YzZhNzg0MDM4MDcyNDg5NTZkZDQ0OGQ5OTY2MTRkNDk2NWQ2Mzc5OGNkNzllZTI2NGZhY2EzOGExNDRmOThjMV8xNDgyMjI3MDI1",
+  "registerSessionUrl": "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/2/Baskets/46072&ChangeAction=PickupBasket&PickupToken=NTRjZWJmNjdhNzNlYTUzNDAxZTgyZTc4ODYwYTliMDUxMDIzNDQ2OWY2NWQ5NWRmN2Q2YmVjZjVjNzljOTQ2N18xNDgyMjI3OTE3",
+  "links": [
+      {
+          "rel": "self",
+          "href": "https://pm.epages.com/rs/shops/apidocu/carts/5858FD17-147C-661C-9C33-D5809AB3C8BA"
+      },
+      {
+          "rel": "shipping-method",
+          "href": "https://pm.epages.com/rs/shops/apidocu/shipping-methods/5171DD86-C077-0726-C448-AC14145F9026"
+      }
+  ]
+}

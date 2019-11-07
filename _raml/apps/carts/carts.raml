@@ -126,6 +126,21 @@ post:
               application/json:
                 example: !include examples/delete_carts_cartid_lineitem_itemid_response.json
                 schema: !include schema/delete_carts_cartid_lineitem_itemid.schema.json
+      /product-price:
+        displayName: Product price
+        put:
+          description: Modifies the price of a specific product line item in a cart. *epages6 *epagesNow
+          securedBy: [carts_price_write]
+          body:
+            application/json:
+              example: !include examples/put_carts_cartid_lineitems_itemid_productprice_request.json
+              schema: !include schema/put_carts_cartid_lineitems_itemid_productprice_request.schema.json
+          responses:
+            200:
+              body:
+                application/json:
+                  example: !include examples/put_carts_cartid_lineitems_itemid_productprice_response.json
+                  schema: !include schema/put_carts_cartid_lineitems_itemid_productprice.schema.json
 
   /billing-address:
     displayName: Billing address
