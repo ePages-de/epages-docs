@@ -71,7 +71,7 @@
       external_link: https://github.com/ePages-de/beyond_api-ruby_client
       icon: fas fa-external-link-alt
     - title: Postman Collection
-      link: /beyond-docs/postman-collections
+      link: /beyond-docs/postman-collections/
 
 - title: API Reference
   entries:
