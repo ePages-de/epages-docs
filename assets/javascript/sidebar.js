@@ -23,7 +23,7 @@ $(document).ready(function() {
 });
 
 function changeSiteMap(element) {
-  if ($('svg', element).first().hasClass('fa-angle-right')) { //open
+  if ($(element).next().is(':hidden')) { //open
     $('.fa-angle-down').each((i,elementSvg)=> { // Close other elements
       if(!$(elementSvg).parent().is($(element).parent().prev())) {
         closeSiteMap($(elementSvg).parent());
