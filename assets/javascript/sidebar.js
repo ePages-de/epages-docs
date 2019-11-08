@@ -6,8 +6,8 @@ $(document).ready(function() {
       } else {
         $('.sitemap-content').removeClass('sitemap-content--open');
         $(this).next().slideDown().addClass('sitemap-content--open');
-        $('.sitemap-headline svg').removeClass('fa-angle-down').addClass('fa-angle-right');
-        $('svg', this).removeClass('fa-angle-right').addClass('fa-angle-down');
+        $('.sitemap-headline svg').removeClass('js-open-sitemap').addClass('fa-rotate-270');
+        $('svg', this).removeClass('fa-rotate-270').addClass('js-open-sitemap');
       }
     }
   })
@@ -23,8 +23,8 @@ $(document).ready(function() {
 });
 
 function changeSiteMap(element) {
-  if ($('svg', element).first().hasClass('fa-angle-right')) { //open
-    $('.fa-angle-down').each((i,elementSvg)=> { // Close other elements
+  if ($(element).next().is(':hidden')) { //open
+    $('.js-open-sitemap').each((i,elementSvg)=> { // Close other elements
       if(!$(elementSvg).parent().is($(element).parent().prev())) {
         closeSiteMap($(elementSvg).parent());
       }
@@ -37,13 +37,13 @@ function changeSiteMap(element) {
 
 function openSiteMap(element) {
   nextElement = $(element).next();
-  $('svg', element).first().removeClass('fa-angle-right').addClass('fa-angle-down');
+  $('svg', element).first().removeClass('fa-rotate-270').addClass('js-open-sitemap');
   $(nextElement).slideDown().removeClass('sitemap-content-expand--close').addClass('sitemap-content-expand--open');
 }
 
 function closeSiteMap(element) {
   nextElement = $(element).next();
-  $('svg', element).first().removeClass('fa-angle-down').addClass('fa-angle-right');
+  $('svg', element).first().removeClass('js-open-sitemap').addClass('fa-rotate-270');
   $(nextElement).slideUp().removeClass('sitemap-content-expand--open').addClass('sitemap-content-expand--close');
-  $(nextElement).find('.fa-angle-down').map((i,elementSvg)=>closeSiteMap($(elementSvg).parent()));
+  $(nextElement).find('.js-open-sitemap').map((i,elementSvg)=>closeSiteMap($(elementSvg).parent()));
 }
