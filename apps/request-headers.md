@@ -13,6 +13,7 @@ title: Request headers
 Request headers give basic information on the request to a server.
 The following table contains the required request headers that allow you to pass information on the request and the client itself to the server.
 
+{:.headers-table}
 | Header      | Value      | Description    | Example   |
 |---------------|---------------| -------|----------|
 | Accept      | String | The media&nbsp;type acceptable for the response. | `application/vnd.epages.v1+json`   |
