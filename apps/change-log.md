@@ -14,6 +14,16 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
+## 2019-12-17
+
+### Changes with software release 7.42.0
+
+#### <i class="fas fa-plus"></i> Update
+
+* Added attribute `deliveryWeight` to data type [`product (create request)`](https://developer.epages.com/apps/data-types.html#product-create-request)).
+
+<hr>
+
 ## 2019-10-04
 
 ### Changes with software release 7.40.0
