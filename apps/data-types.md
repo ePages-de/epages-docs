@@ -541,6 +541,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | stocklevel | number | Indicates the stock level of the product. |
 | depositPrice | number | The deposit price for the product, e.g. bottle deposit.|
 | manufacturerPrice | number | The sales price recommended by the manufacturer.|
+| deliveryWeight | object of [deliveryWeightQuantity](page:apps-data-types#deliveryweightquantity)| The delivery weight of the product.|
 
 ## productLineItem
 
