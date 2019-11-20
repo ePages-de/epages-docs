@@ -11,5 +11,5 @@
 {
   "op": "add",
   "path": "/deliveryWeight",
-  "value": {"unit":"kg", "amount": 0.45}
+  "value": {"unit":"g", "amount": 260}
 }]
