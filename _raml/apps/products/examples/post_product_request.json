@@ -5,5 +5,9 @@
   "description": "This is a brand new product",
   "manufacturer": "Awesome Products Company",
   "price": 5.99,
+  "deliveryWeight": {
+    "amount": 2,
+    "unit": "kg"
+  },
   "searchKeywords": ["awesome", "product"]
 }

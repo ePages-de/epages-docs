@@ -534,6 +534,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | essentialFeatures | string | The essential features of the product. |
 | upc | string | The Universal Product Code of the product. |
 | ean | string | The European Article Number of the product, either EAN-8 or EAN-13. |
+| deliveryWeight | object of [deliveryWeightQuantity](page:apps-data-types#deliveryweightquantity) | The delivery weight of the product. |
 | deliveryPeriod | string | The average time of the product being delivered to the customer. By default, the delivery period is displayed in days, but this can be changed by the merchant. |
 | searchKeywords | array of string | The search terms for the product determined by the merchant in the administration. |
 | visible | boolean | Indicates if the product is displayed in the shop. |
