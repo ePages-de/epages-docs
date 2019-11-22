@@ -3,8 +3,13 @@ layout: iframe
 permalink: /beyond-docs/postman/
 ---
 
-# Postman Collection
+## Beyond API Postman Collection
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer odio nisl, bibendum sed suscipit vel, tristique ac metus. Aliquam tempus ut dolor vitae tristique. Vivamus et eros in nisl consectetur pharetra a id diam. Duis mollis lectus nibh, a cursus elit rutrum eget. Ut nec facilisis ex. Phasellus rutrum nisl ex, a dapibus lectus aliquet eget. Nulla vitae efficitur eros, et lacinia purus. In ullamcorper, dolor a consectetur porta, nunc libero elementum nunc, scelerisque finibus nisl urna eu ante. Vestibulum fermentum, nisi et efficitur efficitur, magna tellus rhoncus justo, non luctus lacus mauris et quam.
+Are you looking for a quick start with the Beyond API?
+You can download a preconfigured collection that holds the Beyond API resources.
 
-[Download Postman](http://api-docs.beyondshop.cloud/beyond-rest-api-public.json){:target="_blank"}
+{% callout info add here optional text %}
+To stay up to date, we recommend that you check the Beyond API change log regularly, download the postman collection again, and reimport our it from time to time.
+{% endcallout %}
+
+[Download the Beyond API Postman collection](http://api-docs.beyondshop.cloud/beyond-rest-api-public.json){:target="_blank"}
