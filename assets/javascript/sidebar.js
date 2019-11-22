@@ -31,6 +31,8 @@ $(document).ready(function() {
       const data = e[key];
       if(isUrl(data)) {
         window.open(data, '_blank');
+        const iframeUrl = $('#docs').attr('src');
+        $('#docs').attr('src', iframeUrl);
       } else {
         findElement(data);
       }
