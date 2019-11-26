@@ -8,7 +8,7 @@ gem "loofah", "~> 2.3"
 gem "therubyracer", "~> 0.12"
 gem "html-proofer", "~> 3.9"
 gem "raml_parser", "~> 0.2"
-gem "rubyzip", "~> 1.3"
+gem "rubyzip", "~> 2.0"
 gem "nokogiri", "~> 1.10"
 
 group :jekyll_plugins do
