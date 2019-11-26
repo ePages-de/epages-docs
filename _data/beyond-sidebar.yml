@@ -227,8 +227,10 @@
           entries:
             - title: Create invoice
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-create-invoice
-            - title: Send invoice
+            - title: (Deprecated) Send invoice
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-send-invoice
+            - title: Send order document
+              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-send-order-document
         - title: Orders
           entries:
             - title: List orders
@@ -357,7 +359,7 @@
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-category-get
             - title: Update all category properties
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-category-update-all
-            - title: Update category partially (json patch)
+            - title: (Deprecated) Update category partially (json patch)
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-category-update-patch
             - title: Update category partially (json)
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-category-update-json
@@ -375,7 +377,7 @@
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-get
             - title: Show variation product details
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-product-get
-            - title: Update product partially (json patch)
+            - title: (Deprecated) Update product partially (json patch)
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-update-patch
             - title: Update product partially (json)
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-update-json
@@ -441,6 +443,8 @@
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-images-create
             - title: Upload product image
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-images-upload
+            - title: Sort product images
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-image-sort
             - title: Delete product image
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-image-delete
             - title: Assign product image as default image
@@ -461,6 +465,18 @@
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-settings-get
             - title: Update product settings partially (json patch)
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-settings-patch
+        - title: Product videos
+          entries:
+            - title: List product videos
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-video-list
+            - title: Show product video details
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-video-get
+            - title: Add product video
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-video-create
+            - title: Update product video
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-video-update
+            - title: Delete product video
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-video-delete
         - title: Variation products
           entries:
             - title: Show variation details
@@ -493,8 +509,6 @@
               link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#product-view-find-available-tags
             - title: List products by term
               link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#product-view-find-by-term
-            - title: List products by query
-              link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#product-view-find-by-query
         - title: Product categories
           entries:
             - title: Show product category details
@@ -521,7 +535,7 @@
           entries:
             - title: Show legal details
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-legal-get
-            - title: Update legal resource partially (json patch)
+            - title: (Deprecated) Update legal resource partially (json patch)
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-legal-jsonpatch
             - title: Update legal resource partially (json)
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-legal-patch
@@ -537,7 +551,7 @@
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-shop-get
             - title: Update shop partially (json)
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-shop-update
-            - title: Update shop partially (json patch)
+            - title: (Deprecated) Update shop partially (json patch)
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-shop-jsonpatch
         - title: Shop address
           entries:
