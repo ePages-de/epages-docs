@@ -444,7 +444,7 @@
             - title: Upload product image
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-images-upload
             - title: Sort product images
-              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-image-sort
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-images-sort
             - title: Delete product image
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-image-delete
             - title: Assign product image as default image
