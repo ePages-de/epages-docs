@@ -57,12 +57,14 @@
       entries:
         - title: Getting started
           link: https://api-docs.beyondshop.cloud/ng-payment-gateway-includes-public-api.html#_getting_started
-        - title: Payment methods
-          link: https://api-docs.beyondshop.cloud/ng-payment-gateway-includes-public-api.html#_payment_methods
+        - title: Payment Method Definitions
+          link: https://api-docs.beyondshop.cloud/ng-payment-gateway-includes-public-api.html#_payment_method_definitions
         - title: Authorization
           link: https://api-docs.beyondshop.cloud/ng-payment-gateway-includes-public-api.html#_authorization
-        - title: Connect merchant account
-          link: https://api-docs.beyondshop.cloud/ng-payment-gateway-includes-public-api.html#_connect_merchant_account
+        - title: Payment Methods
+          link: https://api-docs.beyondshop.cloud/ng-payment-gateway-includes-public-api.html#_payment_methods
+        - title: Merchant registration
+          link: https://api-docs.beyondshop.cloud/ng-payment-gateway-includes-public-api.html#_merchant_registration
         - title: Payment flow
           link: https://api-docs.beyondshop.cloud/ng-payment-gateway-includes-public-api.html#_payment_flow
         - title: Refunds
