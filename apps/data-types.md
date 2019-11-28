@@ -273,7 +273,7 @@ ePages Now only!
 | - | - |  - |
 | attributeName | string | The name of the filter. Can be *ListPrice*, *Manufacturer*, *CategoryID*, or any other attribute created by the merchant.  |
 | attributeType | string | The type of the filter. Is *Standard* for *Manufacturer*, *CategoryID*, or *ListPrice*. Is *PreDefString* for any other attribute created by the merchant. |
-| values | array of [filterValues](page:apps-data-types#filterValues) | The values to refine the search. |
+| values | array of [filterValues](page:apps-data-types#filtervalues) | The values to refine the search. |
 
 ## filter
 
