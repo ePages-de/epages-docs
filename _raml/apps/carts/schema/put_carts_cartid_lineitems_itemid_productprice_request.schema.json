@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "Put Carts LineItems LineItemId ProductPrice Request Schema",
+  "type": "object",
+  "properties": {
+    "": {
+      "type": "object of [productLineItemPrice (update request)](page:apps-data-types#productlineitemprice-update-request)",
+      "description": ""
+    }
+  }
+}

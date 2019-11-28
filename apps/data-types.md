@@ -212,7 +212,7 @@ ePages Now only!
 | - | - |  - |
 | couponLineItemId | string | The unique identifier of the coupon line item. |
 | couponCampaignId | string | The unique identifier of the campaign the coupon belongs to. |
-| lineItemPrice | object of [price](page:apps-data-types#price) | The price of the line item. |
+| lineItemPrice | object of [price](page:apps-data-types#price) | The price of the line item (`singleItemPrice` multiplied by `quantity`). |
 | validationErrors | array of error strings | The error that occurred when redeeming a coupon for this cart. Can be one of *LineItemsSubTotalTooSmall*, *CouponIsInvalidated*, *ValidCouponCountReached*, *CouponNotEffective*, *PaymentMethodMisMatch*, *ShippingMethodMisMatch*, *ProductMisMatch*.
 
 ## crossselling
@@ -264,7 +264,7 @@ ePages Now only!
 | Attribute | Type | Description |
 | - | - |  - |
 | name | string | The name of the line item. |
-| lineItemPrice | object of [price](page:apps-data-types#price) | The price of the line item. |
+| lineItemPrice | object of [price](page:apps-data-types#price) | The price of the line item (`singleItemPrice` multiplied by `quantity`). |
 | lineItemProductGuid | string | The identifier of the related product line item. A deposit is always bound to a product.|
 
 ## facet
@@ -323,7 +323,7 @@ ePages Now only!
 | Attribute | Type | Description |
 | - | - |  - |
 | name | string | The name of the line item. |
-| lineItemPrice | object of [price](page:apps-data-types#price) | The price of the line item. |
+| lineItemPrice | object of [price](page:apps-data-types#price) | The price of the line item (`singleItemPrice` multiplied by `quantity`). |
 
 ## lineItemContainer
 
@@ -551,8 +551,8 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | name | string | The name of the line item. |
 | productId | string | The unique identifier of the product. |
 | quantity |object of [quantity](page:apps-data-types#quantity) | The quantity of the line item. |
-| lineItemPrice | object of [price](page:apps-data-types#price) | The price of the line item. |
-| singleItemPrice | object of  [price](page:apps-data-types#price) | The price for a single item. |
+| lineItemPrice | object of [price](page:apps-data-types#price) | The price of the line item (`singleItemPrice` multiplied by `quantity`). |
+| singleItemPrice | object of  [price](page:apps-data-types#price) | The price of a single product line item. |
 | lineItemCouponDiscount | object of [price](page:apps-data-types#price) | The discount of a coupon that is only applied to the specific line item. |
 | essentialFeatures | string | The essential features of the line item. |
 | images | array of [image](page:apps-data-types#image) | The image of the line item. |
@@ -576,6 +576,12 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | Attribute | Type | Description |
 | - | - |  - |
 | quantity | number | The quantity of the product line item displayed as a decimal number.|
+
+## productLineItemPrice (update request)
+
+| Attribute | Type | Description |
+| - | - |  - |
+| singleItemPrice | number | The price of a single product line item.|
 
 ## productsPaged
 
