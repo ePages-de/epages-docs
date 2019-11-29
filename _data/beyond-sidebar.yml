@@ -32,7 +32,7 @@
     - title: Scopes
       link: https://api-docs.beyondshop.cloud/index-apps.html#_scopes
     - title: Preparation
-      link: https://api-docs.beyondshop.cloud/index-apps.html#_create_app
+      link: https://api-docs.beyondshop.cloud/index-apps.html#_preparation
     - title: Authentication
       link: https://api-docs.beyondshop.cloud/index-apps.html#_authentication
     - title: Test authorization
