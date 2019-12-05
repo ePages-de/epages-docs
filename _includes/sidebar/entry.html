@@ -15,7 +15,8 @@
           {{ expand.title }}<i class="{{ expand.icon }} right-icon"></i>
         </a>
       {% else %}
-        <li class="sitemap-entry-expand" link={{ expand.link }} id={{ expand.id }}>{{ expand.title }}</li>
+        <li class="sitemap-entry-expand" link={{ expand.link }} {% if expand.id %} id={{ expand.id }}
+          {% endif %}>{{ expand.title }}</li>
       {% endif %}
     {% endfor %}
   </ul>
@@ -28,5 +29,6 @@
     {{ include.entry.title }}<i class="{{ include.entry.icon }} right-icon"></i>
   </a>
 {% else %}
-  <li class="sitemap-entry" link={{ include.entry.link }} id={{ include.entry.id }}>{{ include.entry.title }}</li>
+  <li class="sitemap-entry" link={{ include.entry.link }}
+    {% if include.entry.id %} id={{ include.entry.id }} {% endif %}>{{ include.entry.title }}</li>
 {% endif %}
