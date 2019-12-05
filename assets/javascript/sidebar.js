@@ -19,6 +19,9 @@ $(document).ready(function() {
     // set font color to new active path
     $(this).addClass('active')
     $(this).parents("ul.sitemap-content-expand--open").prev().addClass('sitemap-entry-group--active');
+    if($(this).hasClass('js-sitemap-entry')) {
+      closeSiteMap($('.js-open-sitemap').first().parent());
+    }
   });
 
   const eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
@@ -73,6 +76,18 @@ function findElement(url) {
       $(li).click();
     }
   });
+}
+
+function loadEntryPointUrl(id) {
+  var li = $('li[link][id="' + id + '"]');
+  if (li.length == 0) {
+    li = $('li[link][id="change_log"]');
+  }
+  $('#docs').attr('src', $(li).attr('link'));
+  setTimeout(function() {
+    searchParents(li);
+    $(li).click();
+  }, 20);
 }
 
 function isUrl(str) {

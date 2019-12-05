@@ -79,6 +79,7 @@
   entries:
     - title: Change log
       link: https://api-docs.beyondshop.cloud/index-changelog.html
+      id: change_log
     - title: Authentication API
       entries:
         - title: Email address change
