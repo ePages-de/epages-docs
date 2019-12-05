@@ -29,6 +29,6 @@
     {{ include.entry.title }}<i class="{{ include.entry.icon }} right-icon"></i>
   </a>
 {% else %}
-  <li class="sitemap-entry" link={{ include.entry.link }}
+  <li class="sitemap-entry js-sitemap-entry" link={{ include.entry.link }}
     {% if include.entry.id %} id={{ include.entry.id }} {% endif %}>{{ include.entry.title }}</li>
 {% endif %}

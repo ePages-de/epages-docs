@@ -19,6 +19,9 @@ $(document).ready(function() {
     // set font color to new active path
     $(this).addClass('active')
     $(this).parents("ul.sitemap-content-expand--open").prev().addClass('sitemap-entry-group--active');
+    if($(this).hasClass('js-sitemap-entry')) {
+      closeSiteMap($('.js-open-sitemap').first().parent());
+    }
   });
 
   const eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
