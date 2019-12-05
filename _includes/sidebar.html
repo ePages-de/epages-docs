@@ -21,9 +21,8 @@
       $('#docs').attr('src', $(this).attr('link'));
     });
 
-    var entryPointUrl = 'https://api-docs.beyondshop.cloud/index-changelog.html';
-    $('#docs').attr('src', entryPointUrl);
-    $('li[link="'+ entryPointUrl +'"]').addClass('active');
+    var linkId = window.location.hash.substring(1) || 'change_log';
+    findElementByEndpointId(linkId);
   });
 
 </script>
