@@ -79,16 +79,15 @@ function findElement(url) {
 }
 
 function loadEntryPointUrl(id) {
-  $('li[link]').each((index, li) => {
-    const liId = $(li).attr('id');
-    if (liId == id) {
-      $('#docs').attr('src', $(li).attr('link'));
-      setTimeout(function () {
-        searchParents(li);
-        $(li).click();
-      }, 10);
-    }
-  });
+  var li = $('li[link][id="' + id + '"]');
+  if (li.length == 0) {
+    li = $('li[link][id="change_log"]');
+  }
+  $('#docs').attr('src', $(li).attr('link'));
+  setTimeout(function() {
+    searchParents(li);
+    $(li).click();
+  }, 20);
 }
 
 function isUrl(str) {
