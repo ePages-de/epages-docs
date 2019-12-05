@@ -83,10 +83,10 @@ function loadEntryPointUrl(id) {
     const liId = $(li).attr('id');
     if (liId == id) {
       $('#docs').attr('src', $(li).attr('link'));
-      $(window).on('load', function () {
+      setTimeout(function () {
         searchParents(li);
         $(li).click();
-      });
+      }, 10);
     }
   });
 }
