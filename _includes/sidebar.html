@@ -7,8 +7,6 @@
 
 <script>
   $(document).ready(function() {
-    width = $(window).width();
-
     document.querySelectorAll('li.sitemap-entry').forEach(function(elem) {
       if (elem.querySelector('a') && elem.querySelector('a').getAttribute('href') == window.location.pathname) {
         elem.className += ' active'
@@ -20,9 +18,10 @@
       $(window).scrollTop(0);
       $('#docs').attr('src', $(this).attr('link'));
     });
+  });
 
+  $(window).on('load', function() {
     var linkId = window.location.hash.substring(1) || 'change_log';
     findElementByEndpointId(linkId);
   });
-
 </script>

@@ -81,7 +81,6 @@ function findElementByEndpointId(id) {
     if (liId == id) {
       searchParents(li);
       $(li).click();
-      $(li).addClass('active');
     }
   });
 }
