@@ -18,10 +18,8 @@
       $(window).scrollTop(0);
       $('#docs').attr('src', $(this).attr('link'));
     });
-  });
 
-  $(window).on('load', function() {
-    var linkId = window.location.hash.substring(1) || 'change_log';
-    findElementByEndpointId(linkId);
+    var sidebarEntryId = window.location.hash.substring(1) || 'change_log';
+    loadEntryPointUrl(sidebarEntryId);
   });
 </script>

@@ -75,12 +75,15 @@ function findElement(url) {
   });
 }
 
-function findElementByEndpointId(id) {
+function loadEntryPointUrl(id) {
   $('li[link]').each((index, li) => {
     const liId = $(li).attr('id');
     if (liId == id) {
-      searchParents(li);
-      $(li).click();
+      $('#docs').attr('src', $(li).attr('link'));
+      $(window).on('load', function () {
+        searchParents(li);
+        $(li).click();
+      });
     }
   });
 }
