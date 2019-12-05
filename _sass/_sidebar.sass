@@ -145,7 +145,7 @@ aside.sidebar
 
     +grid-media($grid-large)
       display: block
-      margin: .5rem 0 2.5rem 1rem
+      margin: .5rem 0 1.5rem 1rem
 
     &--open
       display: block
@@ -159,6 +159,9 @@ aside.sidebar
       +grid-media($grid-large)
         position: relative
         padding-left: 1.5rem
+
+        &:last-child
+          margin-bottom: 0
 
       &.active:before
         left: 5px
