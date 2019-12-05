@@ -15,6 +15,11 @@
 
     $(".sitemap-entry, .sitemap-entry-expand").click(function(e) {
       e.preventDefault();
+      if($(this).attr('id')) {
+        window.location.hash = $(this).attr('id');
+      } else {
+        clearHashUrl();
+      }
       $(window).scrollTop(0);
       $('#docs').attr('src', $(this).attr('link'));
     });
@@ -22,4 +27,10 @@
     var sidebarEntryId = window.location.hash.substring(1) || 'change_log';
     loadEntryPointUrl(sidebarEntryId);
   });
+
+  function clearHashUrl() {
+    // SEE: https://developer.mozilla.org/en-US/docs/Web/API/History/replaceState
+    const noHashURL = window.location.href.replace(/#.*$/, '');
+    window.history.replaceState('', document.title, noHashURL);
+  }
 </script>
