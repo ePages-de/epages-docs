@@ -33,7 +33,7 @@
           id: error_responses
         - title: Common error IDs
           link: https://api-docs.beyondshop.cloud/index-errors.html#_common_error_ids
-          id: error_ids
+          id: common_error_ids
         - title: Validation errors
           link: https://api-docs.beyondshop.cloud/index-errors.html#errors-validation-errors
           id: validation_errors
@@ -102,7 +102,7 @@
       icon: fas fa-external-link-alt
     - title: Postman Collection
       link: /beyond-docs/postman/
-      id: postman
+      id: postman_collection
 
 - title: API Reference
   entries:
@@ -195,7 +195,7 @@
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-set-line-items
               id: replace_line_items
             - title: Delete line item
-              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-delete-line-ite
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-delete-line-item
               id: delete_line_item
             - title: Set cart billing address
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-set-billing-address
@@ -480,7 +480,7 @@
               id: retrieve_already_existing_payment_methods
             - title: List payment method definitions
               link: https://api-docs.beyondshop.cloud/ng-payment-gateway-payment-gateway-public-api.html#_list_payment_method_definitions
-              id: list_payment_method_definitons
+              id: list_payment_method_definitions
             - title: Create a payment method definition
               link: https://api-docs.beyondshop.cloud/ng-payment-gateway-payment-gateway-public-api.html#_create_a_payment_method_definition
               id: create_a_payment_method_definition
@@ -743,7 +743,7 @@
           entries:
             - title: Show variation product details
               link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#find-variation-product-by-id
-              id: show_variation_product_dteails
+              id: show_variation_product_details
             - title: Show variation details
               link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#find-variation-by-id
               id: show_variation_details
