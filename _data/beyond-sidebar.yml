@@ -648,7 +648,7 @@
               id: list_product_search_meta_information
             - title: Show product details
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#product-view-find-by-id
-              id: show_product_details
+              id: show_product_details_by_id
         - title: Product settings
           entries:
             - title: Show product settings
@@ -743,10 +743,10 @@
           entries:
             - title: Show variation product details
               link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#find-variation-product-by-id
-              id: show_variation_product_details
+              id: show_variation_product_details_by_id
             - title: Show variation details
               link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#find-variation-by-id
-              id: show_variation_details
+              id: show_variation_details_by_id
     - title: Shop API
       entries:
         - title: Legal
