@@ -709,127 +709,178 @@
           entries:
             - title: List products
               link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#product-view-list
+              id: list_products
             - title: List products by tags
               link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#product-view-find-by-tags
+              id: list_products_by_tags
             - title: List available tags
               link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#product-view-find-available-tags
+              id: list_available_tags
             - title: List products by term
               link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#product-view-find-by-term
+              id: list_products_by_term
         - title: Product categories
           entries:
             - title: Show product category details
               link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#productview-category-get
+              id: show_product_category_details
             - title: List product categories
               link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#productview-categories-list
+              id: list_product_categories
             - title: List products of category
               link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#categories-products
+              id: list_product_of_category
             - title: List product categories assigned to an existing product
               link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#categories-find-by-product-id
+              id: list_product_categories_assigned_to_an_existing_product
             - title: Search matching product categories for product
               link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#categories-find-by-product
+              id: search_matching_product_categories_for_product
             - title: Find product category by label
               link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#categories-find-by-label
+              id: find_product_category_by_label
         - title: Variation products
           entries:
             - title: Show variation product details
               link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#find-variation-product-by-id
+              id: show_variation_product_dteails
             - title: Show variation details
               link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#find-variation-by-id
+              id: show_variation_details
     - title: Shop API
       entries:
         - title: Legal
           entries:
             - title: Show legal details
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-legal-get
+              id: show_legal_details
             - title: (Deprecated) Update legal resource partially (json patch)
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-legal-jsonpatch
+              id: update_legal_resource_partially_jsonpatch
             - title: Update legal resource partially (json)
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-legal-patch
+              id: update_legal_resource_partially_json
             - title: List legal content
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-legal-content-list
+              id: list_legal_content
             - title: Show legal content details
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-legal-content-get
+              id: show_legal_content_details
             - title: Update legal content
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-legal-content-edit
+              id: update_legal_content
         - title: Shop
           entries:
             - title: Show shop details
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-shop-get
+              id: show_shop_details
             - title: Update shop partially (json)
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-shop-update
+              id: update_shop_partially_json
             - title: (Deprecated) Update shop partially (json patch)
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-shop-jsonpatch
+              id: update_shop_partially_jsonpatch
         - title: Shop address
           entries:
             - title: Show address details
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-address-get
+              id: show_address_details
             - title: Update address partially (json patch)
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-address-jsonpatch
+              id: update_address_partially_jsonpatch
             - title: Update address partially (json)
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-address-patch
+              id: update_address_partially_json
         - title: Shop attributes
           entries:
             - title: Create shop attribute
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-shop-attribute-create
+              id: create_shop_attribute
             - title: Show shop attribute details
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-shop-attribute-get
+              id: show_shop_attribute_details
             - title: List shop attributes
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-shop-attribute-get-list
+              id: list_shop_attributes
             - title: Update shop attribute
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-shop-attribute-update
+              id: update_shop_attribute
             - title: Delete shop attribute
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-shop-attribute-delete
+              id: delete_shop_attribute
         - title: Shop images
           entries:
             - title: List shop images
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-images-list
+              id: list_shop_images
             - title: Show shop image details
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-image-get
+              id: show_shop_image_details
             - title: Create shop image
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-images-create
+              id: create_shop_image
             - title: Delete shop image
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-image-delete
+              id: delete_shop_image
             - title: Find shop images by label
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-images-search-find-by-label
+              id: find_shop_images_by_label
             - title: Upload shop image
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-image-upload
+              id: upload_shop_image
     - title: Storefront App Data API
       entries:
         - title: Newsletter targets
           entries:
             - title: Create newsletter target
               link: https://api-docs.beyondshop.cloud/ng-storefront-app-data-storefront-app-data-public-api.html#resources-newsletter-target-create
+              id: create_newsletter_target
             - title: Show newsletter target details
               link: https://api-docs.beyondshop.cloud/ng-storefront-app-data-storefront-app-data-public-api.html#resources-newsletter-target-get
+              id: show_newsletter_target_details
             - title: Update newsletter target
               link: https://api-docs.beyondshop.cloud/ng-storefront-app-data-storefront-app-data-public-api.html#resources-newsletter-target-update
+              id: update_newsletter_target
             - title: Delete newsletter target
               link: https://api-docs.beyondshop.cloud/ng-storefront-app-data-storefront-app-data-public-api.html#resources-newsletter-target-delete
+              id: delete_newsletter_target
         - title: Script tags
           entries:
             - title: Create script tag
               link: https://api-docs.beyondshop.cloud/ng-storefront-app-data-storefront-app-data-public-api.html#resources-script-tags-create
+              id: create_script_tag
             - title: Show script tag details
               link: https://api-docs.beyondshop.cloud/ng-storefront-app-data-storefront-app-data-public-api.html#resources-script-tags-get
+              id: show_script_tag_details
             - title: List script tags
               link: https://api-docs.beyondshop.cloud/ng-storefront-app-data-storefront-app-data-public-api.html#resources-script-tags-get-all
+              id: list_script_tags
             - title: Update script tag
               link: https://api-docs.beyondshop.cloud/ng-storefront-app-data-storefront-app-data-public-api.html#resources-script-tags-update
+              id: update_script_tag
             - title: Delete script tag
               link: https://api-docs.beyondshop.cloud/ng-storefront-app-data-storefront-app-data-public-api.html#resources-script-tags-delete
+              id: delete_script_tag
     - title: Webhook API
       entries:
         - title: Create webhook subscription
           link: https://api-docs.beyondshop.cloud/ng-webhook-webhook-public-api.html#resources-subscription-create
+          id: create_webhook_subscription
         - title: Show webhook subscription details
           link: https://api-docs.beyondshop.cloud/ng-webhook-webhook-public-api.html#resources-subscription-get
+          id: show_webhook_subscription_details
         - title: Update webhook subscription
           link: https://api-docs.beyondshop.cloud/ng-webhook-webhook-public-api.html#resources-subscription-update
+          id: update_webhook_subscription
         - title: List webhook subscriptions
           link: https://api-docs.beyondshop.cloud/ng-webhook-webhook-public-api.html#resources-subscription-list
+          id: list_webhook_subscription
         - title: Delete webhook subscription
           link: https://api-docs.beyondshop.cloud/ng-webhook-webhook-public-api.html#resources-subscription-delete
+          id: delete_webhook_subscription
         - title: Activate webhook subscription
-          link: hhttps://api-docs.beyondshop.cloud/ng-webhook-webhook-public-api.html#resources-subscription-activate
+          link: https://api-docs.beyondshop.cloud/ng-webhook-webhook-public-api.html#resources-subscription-activate
+          id: activate_webhook_subscription
         - title: Deactivate webhook subscription
           link: https://api-docs.beyondshop.cloud/ng-webhook-webhook-public-api.html#resources-subscription-deactivate
+          id: deactivate_webhook_subscription
