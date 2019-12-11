@@ -674,7 +674,7 @@
             - title: Delete product video
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-video-delete
               id: delete_product_video
-        - title: Variation products
+        - title: Variations
           entries:
             - title: Show variation details
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-get
