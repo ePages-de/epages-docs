@@ -684,7 +684,7 @@
             - title: List variations
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variations-list
               id: list_variations
-        - title: Variation product properties
+        - title: Variation properties
           entries:
             - title: List variation properties
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-properties-list
@@ -692,7 +692,7 @@
             - title: Update variation properties
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-properties-update
               id: update_variation_properties
-        - title: Variation product availability
+        - title: Variation availability
           entries:
             - title: Show variation availability details
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-availability-get
@@ -706,23 +706,23 @@
             - title: Adjust stock level of variation
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-availability-adjust-available-stock
               id: adjust_stock_level_of_variation
-        - title: Variation product images
+        - title: Variation images
           entries:
-            - title: List variation product images
+            - title: List variation images
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-images-list
-              id: list_variation_product_images
-            - title: Show variation product image details
+              id: list_variation_images
+            - title: Show variation image details
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-image-get
-              id: show_variation_product_image_details
-            - title: Add variation product image
+              id: show_variation_image_details
+            - title: Add variation image
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-images-create
-              id: add_variation_product_image
-            - title: Upload variation product image
+              id: add_variation_image
+            - title: Upload variation image
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-images-upload
-              id: upload_variation_product_image
-            - title: Delete variation product image
+              id: upload_variation_image
+            - title: Delete variation image
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-image-delete
-              id: delete_variation_product_image
+              id: delete_variation_image
     - title: Product View API
       entries:
         - title: Products
