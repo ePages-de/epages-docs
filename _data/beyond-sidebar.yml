@@ -98,7 +98,6 @@
           id: payment_solution_refunds
     - title: Ruby client
       external_link: https://github.com/ePages-de/beyond_api-ruby_client
-      id: ruby_client
       icon: fas fa-external-link-alt
     - title: Postman Collection
       link: /beyond-docs/postman/
