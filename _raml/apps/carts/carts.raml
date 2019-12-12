@@ -107,7 +107,7 @@ post:
   /multi-line-items:
     displayName: Multiple line items
     post:
-      description: Create product line items in a cart. *epages6 *epagesNow
+      description: Creates multiple product line items in a cart. *epages6 *epagesNow
       body:
         application/json:
           example: !include examples/post_carts_cartid_multilineitem_request.json
@@ -116,7 +116,7 @@ post:
         201:
           body:
             application/json:
-              example: !include examples/post_carts_cartid_lineitem_response.json
+              example: !include examples/post_carts_cartid_multilineitem_response.json
               schema: !include schema/post_carts_cartid_lineitem.schema.json
 
     /{lineItemId}:

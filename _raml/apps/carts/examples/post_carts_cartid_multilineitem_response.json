@@ -1,0 +1,402 @@
+{
+  "cartId": "5858EDDD-18DF-8D31-502D-D5809AB37DF1",
+  "billingAddress": null,
+  "shippingAddress": null,
+  "lineItemContainer": {
+    "grandTotal": {
+      "taxType": "GROSS",
+      "formatted": "10.37 €",
+      "amount": 10.37,
+      "currency": "EUR"
+    },
+    "totalBeforeTax": {
+      "taxType": "NET",
+      "formatted": "8.71 €",
+      "amount": 8.71,
+      "currency": "EUR"
+    },
+    "totalTax": {
+      "taxType": "NONE",
+      "formatted": "1.66 €",
+      "amount": 1.66,
+      "currency": "EUR"
+    },
+    "lineItemsSubTotal": {
+      "taxType": "GROSS",
+      "formatted": "25.98 €",
+      "amount": 25.98,
+      "currency": "EUR"
+    },
+    "productLineItems": [
+      {
+        "lineItemId": "5858EDE0-6E6D-DBC6-A97B-D5809AB37DD9",
+        "sku": "Acc-001",
+        "name": "Connector 6.3 mm",
+        "productId": "54E72E1F-746A-8B6E-8E41-0A0C05E64669",
+        "quantity": {
+          "amount": 2,
+          "unit": "yd³"
+        },
+        "lineItemPrice": {
+          "taxType": "GROSS",
+          "formatted": "25.98 €",
+          "amount": 25.98,
+          "currency": "EUR"
+        },
+        "singleItemPrice": {
+          "taxType": "GROSS",
+          "formatted": "12.99 €",
+          "amount": 12.99,
+          "currency": "EUR"
+        },
+        "lineItemCouponDiscount": {
+                    "taxType": "GROSS",
+                    "formatted": "1.70 €",
+                    "amount": 1.7,
+                    "currency": "EUR"
+        },
+        "images": [
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/acc6_h.jpg",
+            "classifier": "HotDeal",
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/acc6.jpg",
+            "classifier": "Large",
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/acc6_m.jpg",
+            "classifier": "Medium",
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/acc6_s.jpg",
+            "classifier": "Small",
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/acc6_xs.jpg",
+            "classifier": "Thumbnail",
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
+          }
+        ],
+        "links": [
+          {
+            "rel": "product",
+            "href": "https://pm.epages.com/rs/shops/apidocu/products/54E72E1F-746A-8B6E-8E41-0A0C05E64669"
+          },
+          {
+            "rel": "taxClass",
+            "href": "https://pm.epages.com/rs/shops/apidocu/tax-classes/5446685F-A8AF-0E18-9B4F-D5809AB30FBF"
+          }
+        ],
+        "variationString": null,
+        "essentialFeatures": null,
+        "taxClass": {
+          "taxClassId": "5446685F-A8AF-0E18-9B4F-D5809AB30FBF",
+          "name": "standard",
+          "percentage": 19.0
+        },
+        "deliveryWeight": {
+          "amount": 100,
+          "unit": "oz"
+        },
+        "energyLabelsString": "C",
+        "energyLabelsMaxEfficiencyString": "A+++",
+        "energyLabelSourceFile": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/Products/be_40401/label-1-9dee85f24e1.png"
+      },
+      {
+        "lineItemId": "33EF2GHF-746A-8B6E-8E41-0A0C05E62569",
+        "sku": "Bby-001",
+        "name": "Connector 12 mm",
+        "productId": "87E72E1F-746A-8B6E-8E41-0A0C05E62569",
+        "quantity": {
+          "amount": 12,
+          "unit": "yd³"
+        },
+        "lineItemPrice": {
+          "taxType": "GROSS",
+          "formatted": "155.88 €",
+          "amount": 155.88,
+          "currency": "EUR"
+        },
+        "singleItemPrice": {
+          "taxType": "GROSS",
+          "formatted": "12.99 €",
+          "amount": 12.99,
+          "currency": "EUR"
+        },
+        "lineItemCouponDiscount": {
+                    "taxType": "GROSS",
+                    "formatted": "1.70 €",
+                    "amount": 1.7,
+                    "currency": "EUR"
+        },
+        "images": [
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/bby_h.jpg",
+            "classifier": "HotDeal",
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/bby.jpg",
+            "classifier": "Large",
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/bby_m.jpg",
+            "classifier": "Medium",
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/bby_s.jpg",
+            "classifier": "Small",
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/bby_xs.jpg",
+            "classifier": "Thumbnail",
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
+          }
+        ],
+        "links": [
+          {
+            "rel": "product",
+            "href": "https://pm.epages.com/rs/shops/apidocu/products/87E72E1F-746A-8B6E-8E41-0A0C05E62569"
+          },
+          {
+            "rel": "taxClass",
+            "href": "https://pm.epages.com/rs/shops/apidocu/tax-classes/5446685F-A8AF-0E18-9B4F-D5809AB30FBF"
+          }
+        ],
+        "variationString": null,
+        "essentialFeatures": null,
+        "taxClass": {
+          "taxClassId": "5446685F-A8AF-0E18-9B4F-D5809AB30FBF",
+          "name": "standard",
+          "percentage": 19.0
+        },
+        "deliveryWeight": {
+          "amount": 100,
+          "unit": "oz"
+        },
+        "energyLabelsString": "C",
+        "energyLabelsMaxEfficiencyString": "A+++",
+        "energyLabelSourceFile": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/Products/be_40401/label-1-9dee85f24e1.png"
+      },
+      {
+        "lineItemId": "44EF2GHF-746A-8B6E-8E41-0A0C05E62787",
+        "sku": "Ccd-001",
+        "name": "Connector 12 mm",
+        "productId": "66E72E1F-746A-8B6E-8E41-0A0C05E87456",
+        "quantity": {
+          "amount": 12,
+          "unit": "yd³"
+        },
+        "lineItemPrice": {
+          "taxType": "GROSS",
+          "formatted": "77.94 €",
+          "amount": 77.94,
+          "currency": "EUR"
+        },
+        "singleItemPrice": {
+          "taxType": "GROSS",
+          "formatted": "12.99 €",
+          "amount": 12.99,
+          "currency": "EUR"
+        },
+        "lineItemCouponDiscount": {
+                    "taxType": "GROSS",
+                    "formatted": "1.70 €",
+                    "amount": 1.7,
+                    "currency": "EUR"
+        },
+        "images": [
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/ccd_h.jpg",
+            "classifier": "HotDeal",
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/ccd.jpg",
+            "classifier": "Large",
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/ccd_m.jpg",
+            "classifier": "Medium",
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/ccd_s.jpg",
+            "classifier": "Small",
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
+          },
+          {
+            "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/2E1F/746A/8B6E/8E41/0A0C/05E6/4669/ccd_xs.jpg",
+            "classifier": "Thumbnail",
+            "isZoomEnabled": false,
+            "width": 0,
+            "height": 0,
+            "fileSize": 0
+          }
+        ],
+        "links": [
+          {
+            "rel": "product",
+            "href": "https://pm.epages.com/rs/shops/apidocu/products/66E72E1F-746A-8B6E-8E41-0A0C05E87456"
+          },
+          {
+            "rel": "taxClass",
+            "href": "https://pm.epages.com/rs/shops/apidocu/tax-classes/5446685F-A8AF-0E18-9B4F-D5809AB30FBF"
+          }
+        ],
+        "variationString": null,
+        "essentialFeatures": null,
+        "taxClass": {
+          "taxClassId": "5446685F-A8AF-0E18-9B4F-D5809AB30FBF",
+          "name": "standard",
+          "percentage": 19.0
+        },
+        "deliveryWeight": {
+          "amount": 100,
+          "unit": "oz"
+        },
+        "energyLabelsString": "C",
+        "energyLabelsMaxEfficiencyString": "A+++",
+        "energyLabelSourceFile": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/Products/be_40401/label-1-9dee85f24e1.png"
+      }
+    ],
+    "couponLineItem": {
+      "couponLineItemId": "5858F55B-0C82-4C2C-A435-D5809AB3C878",
+      "lineItemPrice": {
+        "taxType": "NONE",
+        "formatted": "-25.98 €",
+        "amount": -25.98,
+        "currency": "EUR"
+      }
+    },
+    "shippingPrice": {
+      "taxType": "GROSS",
+      "formatted": "10.37 €",
+      "amount": 10.37,
+      "currency": "EUR"
+    },
+    "deposits": [],
+    "ecoParticipations": [],
+    "shippingOptions": [],
+    "basketDiscount": {
+      "links": []
+    }
+  },
+  "shippingData": {
+    "shippingMethod": {
+      "id": "5171DD86-C077-0726-C448-AC14145F9026",
+      "name": "Standard delivery"
+    },
+    "price": {
+      "taxType": "GROSS",
+      "formatted": "10,37 €",
+      "amount": 10.37,
+      "currency": "EUR"
+    },
+    "taxes": [
+      {
+        "taxClass": {
+          "taxClassId": "5446685F-A8AF-0E18-9B4F-D5809AB30FBF",
+          "name": "standard",
+          "percentage": 19.0
+        },
+        "price": {
+          "taxType": "NONE",
+          "formatted": "1.66 €",
+          "amount": 1.66,
+          "currency": "EUR"
+        }
+      }
+    ]
+  },
+  "paymentData": {
+    "paymentMethod": {
+      "id": "5171DD89-6DE5-E758-E046-AC14145F9009",
+      "name": "PayPal",
+      "providerName": "PayPal"
+    },
+    "transactionId": "7PM024488F971832G",
+    "price": {
+      "taxType": "GROSS",
+      "formatted": "0.00 €",
+      "amount": 0,
+      "currency": "EUR"
+    },
+    "status": null,
+    "taxes": null
+  },
+  "minimumCart": {
+    "status": true,
+    "code": "SumDiscount",
+    "amount": null
+  },
+  "pickupToken": "NmVhZjQ1N2IzOWNjMzU3YTUwZTUzMGVjMmI4NGE1NGMwODI0M2Q0OTNmMmEyYTBjMTRhMzgzMzI2ODMzYzhhN18xNDgyMjI1ODQ2",
+  "creationDate": "2018-12-17T21:07:29Z",
+  "checkoutUrl": "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/1/Baskets/46072&ChangeAction=PickupBasket&PickupToken=NmVhZjQ1N2IzOWNjMzU3YTUwZTUzMGVjMmI4NGE1NGMwODI0M2Q0OTNmMmEyYTBjMTRhMzgzMzI2ODMzYzhhN18xNDgyMjI1ODQ2",
+  "registerSessionUrl": "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/2/Baskets/46072&ChangeAction=PickupBasket&PickupToken=NTRjZWJmNjdhNzNlYTUzNDAxZTgyZTc4ODYwYTliMDUxMDIzNDQ2OWY2NWQ5NWRmN2Q2YmVjZjVjNzljOTQ2N18xNDgyMjI3OTE3",
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://pm.epages.com/rs/shops/apidocu/carts/5858EDDD-18DF-8D31-502D-D5809AB37DF1"
+    },
+    {
+      "rel": "shipping-method",
+      "href": "https://pm.epages.com/rs/shops/apidocu/shipping-methods/5171DD86-C077-0726-C448-AC14145F9026"
+    },
+    {
+      "rel": "remove-coupon",
+      "href": "https://pm.epages.com/rs/shops/apidocu/carts/5858EDDD-18DF-8D31-502D-D5809AB37DF1/coupon/5858F55B-0C82-4C2C-A435-D5809AB3C878"
+    }
+  ]
+}
