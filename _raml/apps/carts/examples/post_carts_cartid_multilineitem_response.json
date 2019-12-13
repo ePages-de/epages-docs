@@ -34,7 +34,7 @@
         "name": "Connector 6.3 mm",
         "productId": "54E72E1F-746A-8B6E-8E41-0A0C05E64669",
         "quantity": {
-          "amount": 2,
+          "amount": 1,
           "unit": "yd³"
         },
         "lineItemPrice": {
@@ -222,7 +222,7 @@
         "name": "Connector 12 mm",
         "productId": "66E72E1F-746A-8B6E-8E41-0A0C05E87456",
         "quantity": {
-          "amount": 12,
+          "amount": 6,
           "unit": "yd³"
         },
         "lineItemPrice": {
