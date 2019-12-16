@@ -673,6 +673,17 @@
             - title: Delete product video
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-video-delete
               id: delete_product_video
+        - title: Product Cross-Sells
+          entries:
+            - title: List cross-sells
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-cross-sell-list
+              id: list_product_cross-sells
+            - title: Show cross-sell details
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-cross-sell-get
+              id: show_product_cross-sell_details
+            - title: Create cross-sells
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-cross-sell-create
+              id: add_product_cross-sell
         - title: Variations
           entries:
             - title: Show variation details
