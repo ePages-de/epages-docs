@@ -26,6 +26,14 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 * Added attribute `deliveryWeight` to data type [`product (create request)`](https://developer.epages.com/apps/data-types.html#product-create-request).
 
+## 2019-11-06
+
+### Changes with software release 7.41.0
+
+#### <i class="fas fa-plus"></i> New
+
+* [`PUT`carts/{cartId}/line-items/{lineItemId}/product-price](https://developer.epages.com/apps/api-reference/put-shopid-carts-cartid-line-items-lineitemid-product-price.html)
+
 <hr>
 
 ## 2019-10-04

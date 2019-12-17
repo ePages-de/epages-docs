@@ -1,0 +1,34 @@
+{% if include.entry.entries %}
+  <li class="sitemap-entry-group js-group" onclick="changeSiteMap(this)">
+    <i class="fas fa-angle-down fa-rotate-270 caret"></i>{{ include.entry.title }}
+  </li>
+  <ul class="sitemap-content-expand sitemap-content-expand--close">
+    {% for expand in include.entry.entries %}
+      {% if expand.entries %}
+        {% include sidebar/entry.html entry=expand %}
+      {% elsif expand.download_link %}
+        <a class="sitemap-entry-expand-link" href={{ expand.download_link }} download>
+          {{ expand.title }}<i class="{{ expand.icon }} right-icon"></i>
+        </a>
+      {% elsif expand.external_link %}
+        <a class="sitemap-entry-expand-link" href={{ expand.external_link }} target="_blank">
+          {{ expand.title }}<i class="{{ expand.icon }} right-icon"></i>
+        </a>
+      {% else %}
+        <li class="sitemap-entry-expand" link={{ expand.link }} {% if expand.id %} id={{ expand.id }}
+          {% endif %}>{{ expand.title }}</li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+{% elsif include.entry.download_link %}
+  <a class="sitemap-entry-link" href={{ include.entry.download_link }} download>
+    {{ include.entry.title }}<i class="{{ include.entry.icon }} right-icon"></i>
+  </a>
+{% elsif include.entry.external_link %}
+  <a class="sitemap-entry-link" href={{ include.entry.external_link }} target="_blank">
+    {{ include.entry.title }}<i class="{{ include.entry.icon }} right-icon"></i>
+  </a>
+{% else %}
+  <li class="sitemap-entry js-sitemap-entry" link={{ include.entry.link }}
+    {% if include.entry.id %} id={{ include.entry.id }} {% endif %}>{{ include.entry.title }}</li>
+{% endif %}

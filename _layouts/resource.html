@@ -94,7 +94,7 @@ layout: docs
     {% if body.media_type contains 'application/json' and body.schema != null %}
       <h2 class="request-body">Request attributes</h2>
       <table class="table table-bordered table-striped">
-        <thead style="background-color: white;">
+        <thead>
           <tr><th>Name</th><th>Type</th><th>Description</th></tr>
         </thead>
         <tbody>
@@ -124,7 +124,7 @@ layout: docs
     {% endif %}
     {% if body.media_type == 'multipart/form-data' or body.media_type == 'application/x-www-form-urlencoded' %}
       <table class="table table-bordered table-striped">
-        <thead style="background-color: white;">
+        <thead>
         <tr><th>Name</th><th>Type</th><th>Description</th></tr>
         </thead>
         <tbody>
@@ -156,7 +156,7 @@ layout: docs
         {{ response.last | markdownify }}
       {% else %}
         <table class="table table-bordered table-striped">
-          <thead style="background-color: white;">
+          <thead>
             <tr><th>Name</th><th>Type</th><th>Description</th></tr>
           </thead>
           <tbody>
