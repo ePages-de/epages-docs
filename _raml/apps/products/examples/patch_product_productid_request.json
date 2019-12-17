@@ -7,4 +7,9 @@
   "op": "add",
   "path": "/shortDescription",
   "value": "new arrival"
+},
+{
+  "op": "add",
+  "path": "/deliveryWeight",
+  "value": {"unit":"g", "amount": 260}
 }]
