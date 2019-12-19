@@ -2,6 +2,12 @@ title: "API reference"
 email: documentation@epages.com
 app_scopes: ["carts_price_write", "carts_read", "customers_read", "customers_write", "coupons_read", "coupons_write", "legal_read", "legal_write", "newsletters_read", "orders_read", "orders_write", "products_read", "products_write", "products_read_batch", "scripttags_read", "scripttags_write"]
 url: "https://developer.epages.com"
+twitter_username: epagesdevs
+github_username: ePages-de
+youtube_username: UCI5hX9kgUGFnYpfxZYxlP0Q
+linkedin_username: epages
+xing_username: epagesgmbh
+instagram_username: epages_com
 baseurl: ""
 github_url: "https://github.com/ePages-de/epages-docs"
 future: true
