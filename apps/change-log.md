@@ -14,6 +14,18 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
+## 2019-12-17
+
+### Changes with software release 7.42.0
+
+#### <i class="fas fa-plus"></i> New
+
+* [`POST`/carts/{cartId}/multi-line-items](https://developer.epages.com/apps/api-reference/post-shopid-carts-cartid-multi-line-items.html)
+
+#### <i class="fas fa-plus"></i> Update
+
+* Added attribute `deliveryWeight` to data type [`product (create request)`](https://developer.epages.com/apps/data-types.html#product-create-request).
+
 ## 2019-11-06
 
 ### Changes with software release 7.41.0

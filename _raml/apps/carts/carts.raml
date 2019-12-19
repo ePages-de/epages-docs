@@ -142,6 +142,21 @@ post:
                   example: !include examples/put_carts_cartid_lineitems_itemid_productprice_response.json
                   schema: !include schema/put_carts_cartid_lineitems_itemid_productprice.schema.json
 
+  /multi-line-items:
+    displayName: Multiple line items
+    post:
+      description: Creates multiple product line items in a cart. *epages6 *epagesNow
+      body:
+        application/json:
+          example: !include examples/post_carts_cartid_multilineitem_request.json
+          schema: !include schema/post_carts_cartid_multilineitem_request.schema.json
+      responses:
+        201:
+          body:
+            application/json:
+              example: !include examples/post_carts_cartid_multilineitem_response.json
+              schema: !include schema/post_carts_cartid_lineitem.schema.json
+
   /billing-address:
     displayName: Billing address
     put:
