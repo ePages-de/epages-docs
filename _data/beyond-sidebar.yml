@@ -311,6 +311,25 @@
             - title: Sort shipping methods in shipping zone
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#_sort_shipping_methods_in_shipping_zone
               id: sort_shipping_methods_in_shipping_zone
+    - title: Customer API
+      entries:
+        - title: Customers
+          entries:
+            - title: List customers
+              link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customers-list
+              id: list_customers
+            - title: Show customer details
+              link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-get
+              id: show_customer_details
+            - title: Create customer
+              link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-create
+              id: create_customer
+            - title: Update customer
+              link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-update
+              id: update_customer
+            - title: Delete customer
+              link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-delete
+              id: delete_customer
     - title: Order API
       entries:
         - title: Invoices
