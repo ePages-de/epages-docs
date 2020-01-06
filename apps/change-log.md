@@ -14,6 +14,17 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
+## 2020-01-23
+
+### Changes with software release 7.43.0
+
+#### <i class="fas fa-plus"></i> New
+
+* [`PUT`legal/cookie-policy](https://developer.epages.com/apps/api-reference/get-shopid-legal-cookie-policy.html)
+* [`GET`legal/cookie-policy](https://developer.epages.com/apps/api-reference/put-shopid-legal-cookie-policy.html)
+
+<hr>
+
 ## 2019-12-17
 
 ### Changes with software release 7.42.0
