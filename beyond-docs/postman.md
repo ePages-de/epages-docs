@@ -20,9 +20,9 @@ To use our preconfigured collection with the Beyond API resources, here's what y
 
 1. Navigate to [Postman Collection](https://developer.epages.com/beyond-docs/#postman_collection) in the sidebar of the Beyond documentation.
 2. Select **Download the Beyond API Postman collection**.
-3. A new browser tab opens representing a JSON file. Save the file on your device.
+3. A new browser tab opens representing a JSON file. Copy the URL.
 4. Open the Postman REST client.
-5. Select **Import**, then **Choose files**, and select the JSON file you've saved on your device. As a result, you will find the Beyond REST API resources under *Collections* in the sidebar of Postman.
+5. Select **Import**, then **Import From Link**, and paste the URL. As a result, you will find the Beyond REST API resources under *Collections* in the sidebar of Postman.
 
 ### Example API flow
 
