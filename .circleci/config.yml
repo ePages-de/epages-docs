@@ -66,8 +66,18 @@ jobs:
           paths:
             - vendor/bundle
       - run:
+          name: Define environment
+          command: |
+            if [ $CIRCLE_BRANCH = "master" ]
+            then
+              echo 'export ENVIRONMENT=production' >> $BASH_ENV
+            elif [ $CIRCLE_BRANCH = "develop" ]
+            then
+              echo 'export ENVIRONMENT=development' >> $BASH_ENV
+            fi
+      - run:
           name: Jekyll build
-          command: bundle exec jekyll build
+          command: JEKYLL_ENV=$ENVIRONMENT bundle exec jekyll build
       - run:
           name: Test
           command: bundle exec rake test_ci
