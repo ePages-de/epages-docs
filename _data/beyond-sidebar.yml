@@ -422,7 +422,7 @@
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-shipping-processes-create
               id: create_shipping_processes
             - title: Mark shipment as shipped
-              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.htmlresources-shipping-process-mark-shipped
+              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-shipping-process-mark-shipped
               id: mark_shipment_as_shipped
             - title: Mark shipment as delivered
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-shipping-process-mark-delivered
