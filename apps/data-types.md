@@ -92,7 +92,7 @@ ePages Now only!
 | creationDate | string | The date/time the cart was created. Expressed according to ISO 8601. Example: `2018-12-17T21:07:29Z` |
 | checkoutUrl | string | The URL that redirects the browser to the merchant’s shop in order to complete the checkout. |
 | registerSessionUrl | string | The URL that redirects the browser to the merchant’s shop in order to register a session. |
-| status | string | The status of the cart after adding lineitems. Can be "Complete" or "PartiallyComplete". (exists only if resource "/shops/{shopId}/carts/{cartId}/multi-line-items" is used or atttribute "forceCreate=true" is used on resource "/shops/{shopId}/carts") |
+| status | string | The status of the cart. If all line items were added successfully, it is *Complete*. Otherwise, it's *PartiallyComplete*. Only included in [`POST`/carts](page:apps-api-post-shopid-carts-information) if the attribute *forceCreate* is `true` and in [`POST`/carts/{cartId}/multi-line-items](page:apps-api-post-shopid-carts-cartid-multi-line-items-information).
 
 ## cart (create request)
 
@@ -102,7 +102,7 @@ ePages Now only!
 | taxType | string | Indicates if the amount includes tax. Can be *GROSS*, *NET* or *NONE*.|
 | locale | string | The locale that identifies the origin of the customer.|
 | lineItems | array of [productLineItem (create request)](page:apps-data-types#productlineitem-create-request)  | The product line items in the basket.|
-| forceCreate | boolean | (optional) Create cart if at least one of several lineitems can be added successfully to the cart.|
+| forceCreate | boolean | Creates a cart if at least one of several line items can be added to the cart successfully. (optional)|
 
 ## category
 
