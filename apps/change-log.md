@@ -23,6 +23,11 @@ Of course, we will continue to inform you if there are any breaking changes to t
 * [`PUT`legal/cookie-policy](https://developer.epages.com/apps/api-reference/get-shopid-legal-cookie-policy.html)
 * [`GET`legal/cookie-policy](https://developer.epages.com/apps/api-reference/put-shopid-legal-cookie-policy.html)
 
+#### <i class="fas fa-plus"></i> Update
+
+* Added attribute `status` to data type [`cart`](https://developer.epages.com/apps/data-types.html#cart).
+* Added attribute `forceCreate` to data type [`cart (create request)`](https://developer.epages.com/apps/data-types.html#cart-create-request).
+
 <hr>
 
 ## 2019-12-17
