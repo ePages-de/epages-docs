@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "Put Legal Cookie Policy Request Schema",
+  "type": "object",
+  "properties": {
+    "": {
+      "type": "object of [contentPage](page:apps-data-types#contentpage)",
+      "description": "This endpoint expects a complete object representation, all fields included. If any field is not set, it will be deleted from the transferred object."
+    }
+  }
+}
