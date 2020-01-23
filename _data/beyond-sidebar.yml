@@ -311,6 +311,25 @@
             - title: Sort shipping methods in shipping zone
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#_sort_shipping_methods_in_shipping_zone
               id: sort_shipping_methods_in_shipping_zone
+    - title: Customer API
+      entries:
+        - title: Customers
+          entries:
+            - title: List customers
+              link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customers-list
+              id: list_customers
+            - title: Show customer details
+              link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-get
+              id: show_customer_details
+            - title: Create customer
+              link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-create
+              id: create_customer
+            - title: Update customer
+              link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-update
+              id: update_customer
+            - title: Delete customer
+              link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-delete
+              id: delete_customer
     - title: Order API
       entries:
         - title: Invoices
@@ -403,7 +422,7 @@
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-shipping-processes-create
               id: create_shipping_processes
             - title: Mark shipment as shipped
-              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.htmlresources-shipping-process-mark-shipped
+              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-shipping-process-mark-shipped
               id: mark_shipment_as_shipped
             - title: Mark shipment as delivered
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-shipping-process-mark-delivered
@@ -673,6 +692,23 @@
             - title: Delete product video
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-video-delete
               id: delete_product_video
+        - title: Product cross-sells
+          entries:
+            - title: List product cross-sells
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-cross-sell-list
+              id: list_product_cross-sells
+            - title: Show product cross-sell details
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-cross-sell-get
+              id: show_product_cross-sell_details
+            - title: Create product cross-sell
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-cross-sell-create
+              id: create_product_cross-sell
+            - title: Update product cross-sell
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-cross-sell-put
+              id: update_product_cross-sell
+            - title: Delete product cross-sell
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-cross-sell-delete
+              id: delete_product_cross-sell
         - title: Variations
           entries:
             - title: Show variation details
