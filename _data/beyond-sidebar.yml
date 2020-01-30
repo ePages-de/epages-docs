@@ -304,7 +304,7 @@
               id: create_shipping_method_with_weightbased_price_in_shipping_zone
             - title: Update shipping method in shipping zone
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-shipping-zones-shipping-method-update
-              id: create_shipping_method_with_weightbased_price_in_shipping_zone
+              id: update_shipping_method_in_shipping_zone
             - title: Delete shipping method in shipping zone
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-shipping-zones-shipping-method-delete
               id: delete_shipping_method_in_shipping_zone
