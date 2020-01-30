@@ -254,7 +254,7 @@
         - title: Serviceable countries
           entries:
             - title: Find serviceable countries
-              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#_find_serviceable_countries
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-shipping-zones-search-find-serviceable-countries
               id: find_serviceable_countries
         - title: Shipping methods
           entries:
@@ -288,19 +288,22 @@
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-shipping-zones-list
               id: list_shipping_zones
             - title: Sort shipping zones
-              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#_sort_shipping_zones
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-shipping-zones-sort
               id: sort_shipping_zones
             - title: Show details of shipping method in shipping zone
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-shipping-zones-shipping-method-get
               id: show_details_of_shipping_method_in_shipping_zone
             - title: Show details of shipping method with weight-based price in shipping zone
-              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#_show_details_of_shipping_method_with_weight_based_price_in_shipping_zone
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-shipping-zones-shipping-method-get-with-weight-based-price
               id: show_details_of_shipping_method_with_weightbased_price_in_shipping_zone
             - title: Create shipping method in shipping zone
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-shipping-zones-shipping-method-create
               id: create_shipping_method_in_shipping_zone
             - title: Create shipping method with weight-based price in shipping zone
-              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#_create_shipping_method_with_weight_based_price_in_shipping_zone
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-shipping-zones-shipping-methods-create-with-weight-based-price
+              id: create_shipping_method_with_weightbased_price_in_shipping_zone
+            - title: Update shipping method in shipping zone
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-shipping-zones-shipping-method-update
               id: create_shipping_method_with_weightbased_price_in_shipping_zone
             - title: Delete shipping method in shipping zone
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-shipping-zones-shipping-method-delete
@@ -309,27 +312,25 @@
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-shipping-zones-shipping-methods-list
               id: list_shipping_methods_of_shipping_zone
             - title: Sort shipping methods in shipping zone
-              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#_sort_shipping_methods_in_shipping_zone
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-shipping-zones-shipping-methods-sort
               id: sort_shipping_methods_in_shipping_zone
     - title: Customer API
       entries:
-        - title: Customers
-          entries:
-            - title: List customers
-              link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customers-list
-              id: list_customers
-            - title: Show customer details
-              link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-get
-              id: show_customer_details
-            - title: Create customer
-              link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-create
-              id: create_customer
-            - title: Update customer
-              link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-update
-              id: update_customer
-            - title: Delete customer
-              link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-delete
-              id: delete_customer
+        - title: List customers
+          link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customers-list
+          id: list_customers
+        - title: Show customer details
+          link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-get
+          id: show_customer_details
+        - title: Create customer
+          link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-create
+          id: create_customer
+        - title: Update customer
+          link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-update
+          id: update_customer
+        - title: Delete customer
+          link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-delete
+          id: delete_customer
     - title: Order API
       entries:
         - title: Invoices
@@ -664,9 +665,6 @@
             - title: List product search meta information
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-search-meta
               id: list_product_search_meta_information
-            - title: Show product details
-              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#product-view-find-by-id
-              id: show_product_details_by_id
         - title: Product settings
           entries:
             - title: Show product settings
