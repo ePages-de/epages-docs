@@ -409,13 +409,13 @@
               id: list_refund_processes
             - title: Show refund process details
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-refund-process-get
-              id: list_refund_process_details
+              id: show_refund_process_details
             - title: Show active refund process details
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-active-refund-process-get
               id: show_active_refund_process_details
             - title: Mark refund process as paid
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-refund-process-mark-paid
-              id: mark_refund_processes_as_paid
+              id: mark_refund_process_as_paid
             - title: List shipping processes
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-shipping-processes-list
               id: list_shipping_processes
