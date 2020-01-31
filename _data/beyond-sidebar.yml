@@ -70,6 +70,9 @@
     - title: JavaScript
       link: https://api-docs.beyondshop.cloud/index-tutorial.html
       id: js_tutorial
+    - title: Rails
+      link: https://api-docs.beyondshop.cloud/index-tutorial.html#rails-tutorial
+      id: rails_tutorial
 
 - title: Integrations
   entries:
