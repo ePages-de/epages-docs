@@ -70,6 +70,9 @@
     - title: JavaScript
       link: https://api-docs.beyondshop.cloud/index-tutorial.html
       id: js_tutorial
+    - title: Rails
+      link: https://api-docs.beyondshop.cloud/index-tutorial.html#rails-tutorial
+      id: rails_tutorial
 
 - title: Integrations
   entries:
@@ -404,15 +407,15 @@
             - title: List refund processes
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-refund-processes-list
               id: list_refund_processes
-            - title: List refund process details
+            - title: Show refund process details
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-refund-process-get
-              id: list_refund_process_details
+              id: show_refund_process_details
             - title: Show active refund process details
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-active-refund-process-get
               id: show_active_refund_process_details
-            - title: Mark refund processes as paid
+            - title: Mark refund process as paid
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-refund-process-mark-paid
-              id: mark_refund_processes_as_paid
+              id: mark_refund_process_as_paid
             - title: List shipping processes
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-shipping-processes-list
               id: list_shipping_processes
