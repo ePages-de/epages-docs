@@ -489,29 +489,29 @@
             - title: Create a payment method
               link: https://api-docs.beyondshop.cloud/ng-payment-gateway-payment-gateway-public-api.html#_create_a_payment_method
               id: create_a_payment_method
+            - title: Retrieve payment methods
+              link: https://api-docs.beyondshop.cloud/ng-payment-gateway-payment-gateway-public-api.html#_delete_a_payment_method
+              id: retrieve_payment_methods
             - title: Delete a payment method
               link: https://api-docs.beyondshop.cloud/ng-payment-gateway-payment-gateway-public-api.html#_delete_a_payment_method
               id: delete_a_payment_method
         - title: Payment method definitions
           entries:
-            - title: Retrieve a payment method definition
-              link: https://api-docs.beyondshop.cloud/ng-payment-gateway-payment-gateway-public-api.html#_retrieve_a_payment_method_definition
-              id: retrieve_a_payment_method_definition
-            - title: Retrieve already existing payment methods
-              link: https://api-docs.beyondshop.cloud/ng-payment-gateway-payment-gateway-public-api.html#_retrieve_already_existing_payment_methods
-              id: retrieve_already_existing_payment_methods
+            - title: Create payment method definition
+              link: https://api-docs.beyondshop.cloud/ng-payment-gateway-payment-gateway-public-api.html#_create_payment_method_definition
+              id: create_payment_method_definition
             - title: List payment method definitions
               link: https://api-docs.beyondshop.cloud/ng-payment-gateway-payment-gateway-public-api.html#_list_payment_method_definitions
               id: list_payment_method_definitions
-            - title: Create a payment method definition
-              link: https://api-docs.beyondshop.cloud/ng-payment-gateway-payment-gateway-public-api.html#_create_a_payment_method_definition
-              id: create_a_payment_method_definition
-            - title: Update a payment method definition
-              link: https://api-docs.beyondshop.cloud/ng-payment-gateway-payment-gateway-public-api.html#_update_a_payment_method_definition
-              id: update_a_payment_method_definition
-            - title: Delete a payment method definition
-              link: https://api-docs.beyondshop.cloud/ng-payment-gateway-payment-gateway-public-api.html#_delete_a_payment_method_definition
-              id: delete_a_payment_method_definition
+            - title: Retrieve payment method definition
+              link: https://api-docs.beyondshop.cloud/ng-payment-gateway-payment-gateway-public-api.html#_retrieve_payment_method_definition
+              id: retrieve_payment_method_definition
+            - title: Update payment method definition
+              link: https://api-docs.beyondshop.cloud/ng-payment-gateway-payment-gateway-public-api.html#_update_payment_method_definition
+              id: update_payment_method_definition
+            - title: Delete payment method definition
+              link: https://api-docs.beyondshop.cloud/ng-payment-gateway-payment-gateway-public-api.html#_delete_payment_method_definition
+              id: delete_payment_method_definition
     - title: Product Management API
       entries:
         - title: Categories
@@ -668,14 +668,6 @@
             - title: List product search meta information
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-search-meta
               id: list_product_search_meta_information
-        - title: Product settings
-          entries:
-            - title: Show product settings
-              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-settings-get
-              id: show_product_settings
-            - title: Update product settings partially (json patch)
-              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-settings-patch
-              id: update_product_settings_partially_json_patch
         - title: Product videos
           entries:
             - title: List product videos
@@ -721,14 +713,6 @@
             - title: List variations
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variations-list
               id: list_variations
-        - title: Variation properties
-          entries:
-            - title: List variation properties
-              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-properties-list
-              id: list_variation_properties
-            - title: Update variation properties
-              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-properties-update
-              id: update_variation_properties
         - title: Variation availability
           entries:
             - title: Show variation availability details
@@ -760,6 +744,20 @@
             - title: Delete variation image
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-image-delete
               id: delete_variation_image
+            - title: Assign variation image as default image
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-images-set-default
+              id: assign_variation_image_as_default_image
+            - title: Assign variation images differentiator
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-images-differentiator-set
+              id: assign_variation_images_differentiator
+        - title: Variation properties
+          entries:
+            - title: List variation properties
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-properties-list
+              id: list_variation_properties
+            - title: Update variation properties
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-properties-update
+              id: update_variation_properties
     - title: Product View API
       entries:
         - title: Products
@@ -776,6 +774,12 @@
             - title: List products by term
               link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#product-view-find-by-term
               id: list_products_by_term
+            - title: Show product details
+              link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#product-view-find-by-id
+              id: product_view_show_product_details
+            - title: List product cross-sells
+              link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#product-view-cross-sells-list
+              id: product_view_list_product_cross-sells
         - title: Product categories
           entries:
             - title: Show product category details
