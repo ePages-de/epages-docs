@@ -27,4 +27,4 @@ To use our preconfigured collection with the Beyond API resources, here's what y
 
 To give you an idea of what you can do with the Beyond API, here's a basic flow of ordering a product: 
 
-![example-api-flow-byd](/assets/images/beyond/example-api-flow-byd.png)
+![example-api-flow-byd](/assets/images/beyond/example-api-flow-byd-new.png)
