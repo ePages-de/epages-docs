@@ -211,9 +211,9 @@
             - title: Set current cart payment method
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-set-payment-methods-current
               id: set_current_cart_payment_method
-            - title: Set current cart payment method to default
+            - title: Set cart payment method to current default
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-set-payment-methods-default
-              id: set_current_cart_payment_method_to_default
+              id: set_cart_payment_method_to_current_default
             - title: Show current cart payment method details
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-get-payment-methods-current
               id: show_current_cart_payment_method_details
@@ -383,6 +383,15 @@
             - title: List order processes
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-processes-get
               id: list_order_processes
+            - title: List cancelation processes
+              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-cancel-processes-list
+              id: list_cancelation_processes
+            - title: Show cancelation process details
+              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-cancel-process-get
+              id: show_cancelation_process_details
+            - title: Create cancelation processes
+              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-cancel-processes-create
+              id: create_cancelation_processes
             - title: List payment processes
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-payment-processes-list
               id: list_payment_processes
@@ -416,6 +425,15 @@
             - title: Mark refund process as paid
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-refund-process-mark-paid
               id: mark_refund_process_as_paid
+            - title: List return processes
+              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-return-processes-list
+              id: list_return_processes
+            - title: Show return process details
+              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-return-process-get
+              id: show_return_process_details
+            - title: Create return processes
+              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-return-processes-create
+              id: create_return_processes
             - title: List shipping processes
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-shipping-processes-list
               id: list_shipping_processes
@@ -431,24 +449,8 @@
             - title: Mark shipment as delivered
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-shipping-process-mark-delivered
               id: mark_shipment_as_delivered
-            - title: List return processes
-              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-return-processes-list
-              id: list_return_processes
-            - title: Show return process details
-              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-return-process-get
-              id: show_return_process_details
-            - title: Create return processes
-              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-return-processes-create
-              id: create_return_processes
-            - title: List cancelation processes
-              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-cancel-processes-list
-              id: list_cancelation_processes
-            - title: Show cancelation process details
-              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-cancel-process-get
-              id: show_cancelation_process_details
-            - title: Create cancelation processes
-              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-cancel-processes-create
-              id: create_cancelation_processes
+
+
         - title: Order settings
           entries:
             - title: List order settings
@@ -467,9 +469,6 @@
             - title: Show merchant account details
               link: https://api-docs.beyondshop.cloud/ng-payment-gateway-payment-gateway-public-api.html#_show_merchant_account_details
               id: show_merchant_account_details
-            - title: Signup referral
-              link: https://api-docs.beyondshop.cloud/ng-payment-gateway-payment-gateway-public-api.html#_signup_referral
-              id: signup_referral
         - title: Payments
           entries:
             - title: Approve payment
@@ -479,22 +478,22 @@
               link: https://api-docs.beyondshop.cloud/ng-payment-gateway-payment-gateway-public-api.html#_cancel_payment
               id: cancel_payment
             - title: Fail payment
-              link: https://api-docs.beyondshop.cloud/ng-payment-gateway-payment-gateway-public-api.html#Fail_payment
+              link: https://api-docs.beyondshop.cloud/ng-payment-gateway-payment-gateway-public-api.html#_fail_payment
               id: fail_payment
             - title: Set payment status
               link: https://api-docs.beyondshop.cloud/ng-payment-gateway-payment-gateway-public-api.html#_set_payment_status
               id: set_payment_status
         - title: Payment methods
           entries:
-            - title: Create a payment method
-              link: https://api-docs.beyondshop.cloud/ng-payment-gateway-payment-gateway-public-api.html#_create_a_payment_method
-              id: create_a_payment_method
+            - title: Create payment method
+              link: https://api-docs.beyondshop.cloud/ng-payment-gateway-payment-gateway-public-api.html#_create_payment_method
+              id: create_payment_method
             - title: Retrieve payment methods
-              link: https://api-docs.beyondshop.cloud/ng-payment-gateway-payment-gateway-public-api.html#_delete_a_payment_method
+              link: https://api-docs.beyondshop.cloud/ng-payment-gateway-payment-gateway-public-api.html#_delete_payment_method
               id: retrieve_payment_methods
-            - title: Delete a payment method
-              link: https://api-docs.beyondshop.cloud/ng-payment-gateway-payment-gateway-public-api.html#_delete_a_payment_method
-              id: delete_a_payment_method
+            - title: Delete payment method
+              link: https://api-docs.beyondshop.cloud/ng-payment-gateway-payment-gateway-public-api.html#_delete_payment_method
+              id: delete_payment_method
         - title: Payment method definitions
           entries:
             - title: Create payment method definition
@@ -634,6 +633,23 @@
             - title: Disable purchasability
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-availability-disable-purchasability
               id: disable_purchasability
+        - title: Product cross-sells
+          entries:
+            - title: List product cross-sells
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-cross-sell-list
+              id: list_product_cross-sells
+            - title: Show product cross-sell details
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-cross-sell-get
+              id: show_product_cross-sell_details
+            - title: Create product cross-sell
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-cross-sell-create
+              id: create_product_cross-sell
+            - title: Update product cross-sell
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-cross-sell-put
+              id: update_product_cross-sell
+            - title: Delete product cross-sell
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-cross-sell-delete
+              id: delete_product_cross-sell
         - title: Product images
           entries:
             - title: List product images
@@ -685,23 +701,6 @@
             - title: Delete product video
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-video-delete
               id: delete_product_video
-        - title: Product cross-sells
-          entries:
-            - title: List product cross-sells
-              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-cross-sell-list
-              id: list_product_cross-sells
-            - title: Show product cross-sell details
-              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-cross-sell-get
-              id: show_product_cross-sell_details
-            - title: Create product cross-sell
-              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-cross-sell-create
-              id: create_product_cross-sell
-            - title: Update product cross-sell
-              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-cross-sell-put
-              id: update_product_cross-sell
-            - title: Delete product cross-sell
-              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-cross-sell-delete
-              id: delete_product_cross-sell
         - title: Variations
           entries:
             - title: Show variation details
@@ -800,6 +799,14 @@
             - title: Find product category by label
               link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#categories-find-by-label
               id: find_product_category_by_label
+        - title: Product images
+          entries:
+            - title: List product images
+              link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#productview-images-list
+              id: product_view_list_product_images
+            - title: Show product image details
+              link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#productview-image-get
+              id: product_view_show_product_image_details
         - title: Variation products
           entries:
             - title: Show variation product details
@@ -810,6 +817,16 @@
               id: show_variation_details_by_id
     - title: Shop API
       entries:
+        - title: Feature assignments
+          link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-shop-features
+          id: feature_assignments
+          entries:
+            - title: List feature assignments
+              link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-shop-features-list
+              id: list_feature_assignments
+            - title: Show feature assignment details
+              link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-shop-features-get
+              id: show_feature_assignment_details
         - title: Legal
           entries:
             - title: Show legal details
@@ -846,7 +863,7 @@
             - title: Show address details
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-address-get
               id: show_address_details
-            - title: Update address partially (json patch)
+            - title: (Deprecated) Update address partially (json patch)
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-address-jsonpatch
               id: update_address_partially_json_patch
             - title: Update address partially (json)
