@@ -449,8 +449,6 @@
             - title: Mark shipment as delivered
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-shipping-process-mark-delivered
               id: mark_shipment_as_delivered
-
-
         - title: Order settings
           entries:
             - title: List order settings
@@ -818,8 +816,6 @@
     - title: Shop API
       entries:
         - title: Feature assignments
-          link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-shop-features
-          id: feature_assignments
           entries:
             - title: List feature assignments
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-shop-features-list
