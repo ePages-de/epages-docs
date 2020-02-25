@@ -92,7 +92,7 @@ jobs:
   combine_projets:
     working_directory: ~/repo
     docker:
-      - image: circleci/buildpack-deps:18.10
+      - image: circleci/buildpack-deps:18.04
     steps:
       - attach_workspace:
           at: ./
