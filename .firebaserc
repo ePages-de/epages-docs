@@ -1,6 +1,7 @@
 {
   "projects": {
     "production": "epages-devportal",
-    "development": "epages-devportal-development"
+    "development": "epages-devportal-development",
+    "local-development": "epages-devportal-staging-22116"
   }
 }
