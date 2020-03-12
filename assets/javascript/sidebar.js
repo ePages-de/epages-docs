@@ -84,7 +84,7 @@ function findElement(url) {
 }
 
 function loadEntryPointUrl(id) {
-  var li = $('li[link][id="' + id + '"]');
+  let li = $(`li[link][id='${id}'], li[link$=${id}]`);
   if (li.length == 0) {
     li = $('li[link][id="change_log"]');
   }
