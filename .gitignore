@@ -4,6 +4,7 @@ _site/
 vendor/
 tmp/
 .jekyll-metadata
+.firebase
 
 #Vagrant
 /.vagrant

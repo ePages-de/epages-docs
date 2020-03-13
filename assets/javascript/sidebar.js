@@ -33,9 +33,14 @@ $(document).ready(function() {
       const key = e.message ? "message" : "data";
       const data = e[key];
       if(isUrl(data)) {
-        window.open(data, '_blank');
-        const iframeUrl = $('#docs').attr('src');
-        $('#docs').attr('src', iframeUrl);
+        if(data.startsWith(location.origin)) {
+          const anchor = data.substr(data.indexOf('#'));
+          setTimeout(()=> findElement(anchor), 10);
+        } else {
+          window.open(data, '_blank');
+          const iframeUrl = $('#docs').attr('src');
+          $('#docs').attr('src', iframeUrl);
+        }
       } else {
         findElement(data);
       }
@@ -79,7 +84,7 @@ function findElement(url) {
 }
 
 function loadEntryPointUrl(id) {
-  var li = $('li[link][id="' + id + '"]');
+  let li = $(`li[link][id='${id}'], li[link$=${id}]`);
   if (li.length == 0) {
     li = $('li[link][id="change_log"]');
   }

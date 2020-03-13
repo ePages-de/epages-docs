@@ -1,0 +1,29 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build jekyll",
+      "command": "bundle exec jekyll build",
+      "type": "shell",
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "silent",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
+      "label": "jekyll serve",
+      "command": "bundle exec jekyll serve",
+      "type": "shell"
+    },
+    {
+      "label": "Upload to development firebase",
+      "command": "firebase deploy --project local-development",
+      "type": "shell"
+    }
+  ]
+}
