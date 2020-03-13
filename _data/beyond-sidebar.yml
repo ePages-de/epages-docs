@@ -234,6 +234,14 @@
             - title: Update checkout settings
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-checkout-settings-update
               id: update_checkout_settings
+        - title: Customers
+          entries:
+            - title: Create customer
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-signup-customer
+              id: checkout_create_customer
+            - title: Assign customer to cart
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-assign-customer
+              id: checkout_assign_customer_to_cart
         - title: Payment methods
           entries:
             - title: Show payment method details
@@ -341,9 +349,6 @@
             - title: Create invoice
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-create-invoice
               id: create_invoice
-            - title: (Deprecated) Send invoice
-              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-send-invoice
-              id: send_invoice
             - title: Send order document
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-send-order-document
               id: send_order_document
@@ -361,6 +366,9 @@
             - title: Show order number and order ID by cart ID
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-find-order-number-by-cart-id
               id: show_order_number_and_order_id_by_cart_id
+            - title: Find used shipping countries
+              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-find-used-shipping-countries
+              id: find_used_shipping_countries
             - title: Cancel order
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-cancel-order
               id: cancel_order
@@ -659,9 +667,15 @@
             - title: Add product image
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-images-create
               id: add_product_image
+            - title: Add multiple product images
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-multiple-product-images-create
+              id: add_multiple_product_images
             - title: Upload product image
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-images-upload
               id: upload_product_image
+            - title: Upload multiple product images
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-images-upload-multiple
+              id: upload_multiple_product_images
             - title: Sort product images
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-images-sort
               id: sort_product_images
@@ -710,6 +724,11 @@
             - title: List variations
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variations-list
               id: list_variations
+        - title: Variation attributes
+          entries:
+            - title: Update variation attribute
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-attributes-update
+              id: update_variation_attribute
         - title: Variation availability
           entries:
             - title: Show variation availability details
@@ -735,9 +754,18 @@
             - title: Add variation image
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-images-create
               id: add_variation_image
+            - title: Add multiple variation images
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-multiple-images-create
+              id: add_multiple_variation_images
             - title: Upload variation image
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-images-upload
               id: upload_variation_image
+            - title: Upload multiple variation images
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-images-upload-multiple
+              id: upload_multiple_variation_images
+            - title: Sort variation images
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-images-sort
+              id: sort_variation_images
             - title: Delete variation image
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-image-delete
               id: delete_variation_image
@@ -805,6 +833,14 @@
             - title: Show product image details
               link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#productview-image-get
               id: product_view_show_product_image_details
+        - title: Product videos
+          entries:
+            - title: List product videos
+              link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#productview-videos-list
+              id: product_view_list_product_videos
+            - title: Show product video details
+              link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#productview-video-get
+              id: product_view_show_product_video_details
         - title: Variation products
           entries:
             - title: Show variation product details
