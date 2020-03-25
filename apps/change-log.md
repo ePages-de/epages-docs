@@ -14,6 +14,16 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
+## 2020-03-31
+
+### Changes with software release 7.XX.X
+
+#### <i class="fas fa-plus"></i> Update
+
+* Added attribute `additionalData` to data type [`paymentMethodInfo`](https://developer.epages.com/apps/data-types.html#paymentmethodinfo).
+
+<hr>
+
 ## 2020-01-23
 
 ### Changes with software release 7.43.0
