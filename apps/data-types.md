@@ -451,6 +451,7 @@ ePages Now only!
 | id | string | The unique identifier of the payment method. |
 | name | string | The name of the payment method chosen by the customer. |
 | providerName | string | The name of the payment provider that executes the payment. |
+| additionalData | string | Additional information for the payment method. (optional) |
 
 ## price
 
