@@ -14,9 +14,9 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
-## 2020-03-31
+## 2020-04-17
 
-### Changes with software release 7.XX.X
+### Changes with software release 7.46.0
 
 #### <i class="fas fa-plus"></i> Update
 
