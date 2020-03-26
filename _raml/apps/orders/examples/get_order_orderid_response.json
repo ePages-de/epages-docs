@@ -80,7 +80,8 @@
     "paymentMethod": {
       "id": "5171DD86-0714-8E9B-B079-AC14145F900F",
       "name": "Payment in advance",
-      "providerName": "null"
+      "providerName": "null",
+      "additionalData": null
     },
     "transactionId": "null",
     "price": {
