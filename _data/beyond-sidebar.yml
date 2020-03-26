@@ -1,5 +1,8 @@
 - title: Getting started
   entries:
+    - title: Introduction
+      link: https://api-docs.beyondshop.cloud/index-introduction.html
+      id: introduction
     - title: About the API
       entries:
         - title: HTTP verbs
@@ -729,6 +732,12 @@
             - title: Update variation attribute
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-attributes-update
               id: update_variation_attribute
+            - title: Sort variation attribute values
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-attribute-values-sort
+              id: sort_variation_attribute_values
+            - title: Delete variation attribute values
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-attribute-values-delete
+              id: delete_variation_attribute_values
         - title: Variation availability
           entries:
             - title: Show variation availability details
@@ -805,6 +814,9 @@
             - title: List product cross-sells
               link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#product-view-cross-sells-list
               id: product_view_list_product_cross-sells
+            - title: List cross-selling products
+              link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#product-view-list-cross-sell-products
+              id: list_cross_selling_products
         - title: Product categories
           entries:
             - title: Show product category details
@@ -833,6 +845,11 @@
             - title: Show product image details
               link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#productview-image-get
               id: product_view_show_product_image_details
+        - title: Product media
+          entries:
+            - title: List product media
+              link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#productview-media-get
+              id: list_product_media
         - title: Product videos
           entries:
             - title: List product videos

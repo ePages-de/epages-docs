@@ -49,11 +49,6 @@ $(document).ready(function() {
 
 function changeSiteMap(element) {
   if ($(element).next().is(':hidden')) { //open
-    $('.js-open-sitemap').each((i,elementSvg)=> { // Close other elements
-      if(!$(elementSvg).parent().is($(element).parent().prev())) {
-        closeSiteMap($(elementSvg).parent());
-      }
-    });
     openSiteMap(element);
   } else { //close
     closeSiteMap(element);
