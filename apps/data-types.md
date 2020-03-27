@@ -6,6 +6,8 @@ title: Data types
 
 ## additionalData
 
+This object is representing the attribute structure for PayPal PLUS. The structure for other external payments might differ.
+
 | Attribute | Type | Description |
 | - | - |  - |
 | InvoiceBankName  | string | The name of the bank that holds the bank account to which the invoice is due. |
