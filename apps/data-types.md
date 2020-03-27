@@ -12,7 +12,7 @@ title: Data types
 | InvoiceAmount  | number | The invoice amount displayed as a decimal number. |
 | InvoiceAccountHolderName  | string | The name of the bank account holder to whom the invoice is due. |
 | InvoiceIBAN  | string | The International Bank Account Number of the bank account to which the invoice is due. |
-| InvoiceReferenceNumber  | string | The unique reference number that is assigned to the invoice. |
+| InvoiceReferenceNumber  | string | The unique reference code that is assigned to the invoice. |
 | InvoiceCurrency  | string | The currency code of the invoice amount according to ISO 4217. |
 | InvoicePaymentDueDate  | string | The due date of the invoice. |
 | InvoiceBIC  | string | The Bank Identifier Code of the bank that holds the account to which the invoice is due. |
@@ -464,7 +464,7 @@ ePages Now only!
 | id | string | The unique identifier of the payment method. |
 | name | string | The name of the payment method chosen by the customer. |
 | providerName | string | The name of the payment provider that executes the payment. |
-| additionalData | object of [additionalData](page:apps-data-types#additionaldata) | Additional information required for the payment that can be given to e.g. determine the `invoiceReferenceNumber`. |
+| additionalData | object of [additionalData](page:apps-data-types#additionaldata) | Additional information required for the payment that can be given to e.g. determine the `invoiceIBAN`. |
 
 ## price
 
