@@ -49,11 +49,6 @@ $(document).ready(function() {
 
 function changeSiteMap(element) {
   if ($(element).next().is(':hidden')) { //open
-    $('.js-open-sitemap').each((i,elementSvg)=> { // Close other elements
-      if(!$(elementSvg).parent().is($(element).parent().prev())) {
-        closeSiteMap($(elementSvg).parent());
-      }
-    });
     openSiteMap(element);
   } else { //close
     closeSiteMap(element);
@@ -86,7 +81,7 @@ function findElement(url) {
 function loadEntryPointUrl(id) {
   let li = $(`li[link][id='${id}'], li[link$=${id}]`);
   if (li.length == 0) {
-    li = $('li[link][id="change_log"]');
+    li = $('li[link][id="introduction"]');
   }
   $('#docs').attr('src', $(li).attr('link'));
   setTimeout(function() {
