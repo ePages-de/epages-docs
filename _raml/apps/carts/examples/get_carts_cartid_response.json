@@ -174,8 +174,18 @@
   "paymentData": {
     "paymentMethod": {
       "id": "5171DD89-6DE5-E758-E046-AC14145F9009",
-      "name": "PayPal",
-      "providerName": "PayPal"
+      "name": "PayPal, Direct debit, Credit card",
+      "providerName": "PayPal PLUS",
+      "additionalData": {
+        "InvoiceBankName": "Lunaview Bank",
+        "InvoiceAmount": "11.68",
+        "InvoiceAccountHolderName": "PayPal Europe",
+        "InvoiceIBAN": "GB7767776777677767776",
+        "InvoiceReferenceNumber": "87H76148KK7607810",
+        "InvoiceCurrency": "EUR",
+        "InvoicePaymentDueDate": "2020-03-27T08:16:30.000Z",
+        "InvoiceBIC": "XXLUNBB"
+      }
     },
     "transactionId": "7PM024488F971832G",
     "price": {
