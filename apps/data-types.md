@@ -15,8 +15,8 @@ This object represents the attribute structure for PayPal PLUS. The structure fo
 | InvoiceAccountHolderName  | string | The name of the bank account holder to whom the invoice is due. |
 | InvoiceIBAN  | string | The International Bank Account Number of the bank account to which the invoice is due. |
 | InvoiceReferenceNumber  | string | The unique reference code that is assigned to the invoice. |
-| InvoiceCurrency  | string | The currency code of the invoice amount according to ISO 4217. |
-| InvoicePaymentDueDate  | string | The due date of the invoice according to ISO 8601. |
+| InvoiceCurrency  | string | The currency code of the invoice amount. Expressed according to ISO 4217. |
+| InvoicePaymentDueDate  | string | The due date of the invoice. Expressed according to ISO 8601. Example: `2020-11-04T08:42:49.000Z`|
 | InvoiceBIC  | string | The Bank Identifier Code of the bank that holds the account to which the invoice is due. |
 
 ## address
