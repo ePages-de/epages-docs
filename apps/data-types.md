@@ -6,7 +6,7 @@ title: Data types
 
 ## additionalData
 
-This object is representing the attribute structure for PayPal PLUS. The structure for other external payments might differ.
+This object represents the attribute structure for PayPal PLUS. The structure for other external payments might differ.
 
 | Attribute | Type | Description |
 | - | - |  - |
