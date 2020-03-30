@@ -179,9 +179,11 @@
       "providerName": "PayPal PLUS",
       "additionalData": {
         "InvoiceBankName": "Fast bank",
+        "InvoiceAmount": "10,37",
         "InvoiceAccountHolderName": "PayPal Europe",
         "InvoiceIBAN": "DE7767776777677767776",
         "InvoiceReferenceNumber": "87H76148KK7607810",
+        "InvoiceCurrency": "EUR",
         "InvoicePaymentDueDate": "2020-03-27T08:16:30.000Z",
         "InvoiceBIC": "FAST76BANK"
       }
