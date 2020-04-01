@@ -34,7 +34,7 @@ $(document).ready(function() {
       const data = e[key];
       if(isUrl(data)) {
         if(data.startsWith(location.origin)) {
-          const anchor = data.substr(data.indexOf('#'));
+          const anchor = data.substring(data.indexOf('#') + 1);
           setTimeout(()=> findElement(anchor), 10);
         } else {
           window.open(data, '_blank');
@@ -68,14 +68,10 @@ function closeSiteMap(element) {
   $(nextElement).find('.js-open-sitemap').map((i,elementSvg)=>closeSiteMap($(elementSvg).parent()));
 }
 
-function findElement(url) {
-  $('li[link]').each((index, li) => {
-    const liUrl = $(li).attr('link');
-    if(liUrl.endsWith(url)) {
-      searchParents(li);
-      $(li).click();
-    }
-  });
+function findElement(id) {
+  let li = $(`li[link][id='${id}'], li[link$=${id}]`);
+  searchParents(li);
+  $(li).click();
 }
 
 function loadEntryPointUrl(id) {
