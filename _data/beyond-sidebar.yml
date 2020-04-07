@@ -732,6 +732,9 @@
             - title: Update variation attribute
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-attributes-update
               id: update_variation_attribute
+            - title: Sort variation attributes
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-attributes-sort
+              id: sort_variation_attributes
             - title: Sort variation attribute values
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-attribute-values-sort
               id: sort_variation_attribute_values
@@ -766,12 +769,18 @@
             - title: Add multiple variation images
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-multiple-images-create
               id: add_multiple_variation_images
+            - title: Add multiple variation images to multiple variations
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variations-images-create
+              id: add_multiple_variation_images_to_multiple_variations
             - title: Upload variation image
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-images-upload
               id: upload_variation_image
             - title: Upload multiple variation images
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-images-upload-multiple
               id: upload_multiple_variation_images
+            - title: Upload multiple variation images for multiple variations
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-images-upload-multiple_for_variations
+              id: upload_multiple_variation_images_for_multiple_variations
             - title: Sort variation images
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-images-sort
               id: sort_variation_images
