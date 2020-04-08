@@ -729,6 +729,12 @@
               id: list_variations
         - title: Variation attributes
           entries:
+            - title: List variation attributes
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-attributes-list
+              id: list_variation_attributes
+            - title: Show variation attribute details
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-attribute-get
+              id: show_variation_attribute_details
             - title: Update variation attribute
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-attributes-update
               id: update_variation_attribute
