@@ -160,7 +160,8 @@
       "paymentMethod": {
           "id": "5DA7726A-8218-F36C-0E23-D58092208FF5",
           "name": "PayPal",
-          "providerName": "PayPal"
+          "providerName": "PayPal",
+          "additionalData": null
       },
       "transactionId": "7PM024488F971832G",
       "price": {
