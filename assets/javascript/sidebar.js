@@ -33,9 +33,14 @@ $(document).ready(function() {
       const key = e.message ? "message" : "data";
       const data = e[key];
       if(isUrl(data)) {
-        window.open(data, '_blank');
-        const iframeUrl = $('#docs').attr('src');
-        $('#docs').attr('src', iframeUrl);
+        if(data.startsWith(location.origin)) {
+          const anchor = data.substring(data.indexOf('#') + 1);
+          setTimeout(()=> findElement(anchor), 10);
+        } else {
+          window.open(data, '_blank');
+          const iframeUrl = $('#docs').attr('src');
+          $('#docs').attr('src', iframeUrl);
+        }
       } else {
         findElement(data);
       }
@@ -44,11 +49,6 @@ $(document).ready(function() {
 
 function changeSiteMap(element) {
   if ($(element).next().is(':hidden')) { //open
-    $('.js-open-sitemap').each((i,elementSvg)=> { // Close other elements
-      if(!$(elementSvg).parent().is($(element).parent().prev())) {
-        closeSiteMap($(elementSvg).parent());
-      }
-    });
     openSiteMap(element);
   } else { //close
     closeSiteMap(element);
@@ -68,20 +68,16 @@ function closeSiteMap(element) {
   $(nextElement).find('.js-open-sitemap').map((i,elementSvg)=>closeSiteMap($(elementSvg).parent()));
 }
 
-function findElement(url) {
-  $('li[link]').each((index, li) => {
-    const liUrl = $(li).attr('link');
-    if(liUrl.endsWith(url)) {
-      searchParents(li);
-      $(li).click();
-    }
-  });
+function findElement(id) {
+  let li = $(`li[link][id='${id}'], li[link$=${id}]`);
+  searchParents(li);
+  $(li).click();
 }
 
 function loadEntryPointUrl(id) {
-  var li = $('li[link][id="' + id + '"]');
+  let li = $(`li[link][id='${id}'], li[link$=${id}]`);
   if (li.length == 0) {
-    li = $('li[link][id="change_log"]');
+    li = $('li[link][id="introduction"]');
   }
   $('#docs').attr('src', $(li).attr('link'));
   setTimeout(function() {
