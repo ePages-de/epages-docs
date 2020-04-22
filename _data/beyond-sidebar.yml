@@ -679,6 +679,9 @@
             - title: Upload multiple product images
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-images-upload-multiple
               id: upload_multiple_product_images
+            - title: Upload external product image
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-images-upload-external
+              id: upload_external_product_image
             - title: Sort product images
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-images-sort
               id: sort_product_images
@@ -741,6 +744,9 @@
             - title: Sort variation attributes
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-attributes-sort
               id: sort_variation_attributes
+            - title: Add variation attribute values
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-attribute-values-create
+              id: add_variation_attribute_values
             - title: Sort variation attribute values
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-attribute-values-sort
               id: sort_variation_attribute_values
