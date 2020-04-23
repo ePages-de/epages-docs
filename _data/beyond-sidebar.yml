@@ -744,9 +744,9 @@
             - title: Sort variation attributes
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-attributes-sort
               id: sort_variation_attributes
-            - title: Add variation attribute values
+            - title: Create variation attribute value
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-attribute-values-create
-              id: add_variation_attribute_values
+              id: create_variation_attribute_value
             - title: Sort variation attribute values
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-attribute-values-sort
               id: sort_variation_attribute_values
