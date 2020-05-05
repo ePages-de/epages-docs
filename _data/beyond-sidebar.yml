@@ -574,6 +574,9 @@
             - title: Delete product
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-products-delete
               id: delete_product
+            - title: Duplicate product
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-products-duplicate
+              id: duplicate_product
         - title: Product attachments
           entries:
             - title: List product attachments
