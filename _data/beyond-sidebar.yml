@@ -574,6 +574,9 @@
             - title: Delete product
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-products-delete
               id: delete_product
+            - title: Duplicate product
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-products-duplicate
+              id: duplicate_product
         - title: Product attachments
           entries:
             - title: List product attachments
@@ -841,10 +844,10 @@
         - title: Product categories
           entries:
             - title: Show product category details
-              link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#productview-category-get
+              link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#product-view-category-get
               id: show_product_category_details
             - title: List product categories
-              link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#productview-categories-list
+              link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#product-view-categories-list
               id: list_product_categories
             - title: List products of category
               link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#categories-products
@@ -861,23 +864,23 @@
         - title: Product images
           entries:
             - title: List product images
-              link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#productview-images-list
+              link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#product-view-images-list
               id: product_view_list_product_images
             - title: Show product image details
-              link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#productview-image-get
+              link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#product-view-image-get
               id: product_view_show_product_image_details
         - title: Product media
           entries:
             - title: List product media
-              link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#productview-media-get
+              link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#product-view-media-get
               id: list_product_media
         - title: Product videos
           entries:
             - title: List product videos
-              link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#productview-videos-list
+              link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#product-view-videos-list
               id: product_view_list_product_videos
             - title: Show product video details
-              link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#productview-video-get
+              link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#product-view-video-get
               id: product_view_show_product_video_details
         - title: Variation products
           entries:
