@@ -536,9 +536,6 @@
             - title: Update all category properties
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-category-update-all
               id: update_all_category_properties
-            - title: (Deprecated) Update category partially (json patch)
-              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-category-update-patch
-              id: update_category_partially_json_patch
             - title: Update category partially (json)
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-category-update-json
               id: update_category_partially_json
@@ -562,9 +559,6 @@
             - title: Show variation product details
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-product-get
               id: show_variation_product_details
-            - title: (Deprecated) Update product partially (json patch)
-              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-update-patch
-              id: update_product_partially_json_patch
             - title: Update product partially (json)
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-update-json
               id: update_product_partially_json
@@ -905,9 +899,6 @@
             - title: Show legal details
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-legal-get
               id: show_legal_details
-            - title: (Deprecated) Update legal resource partially (json patch)
-              link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-legal-jsonpatch
-              id: update_legal_resource_partially_json_patch
             - title: Update legal resource partially (json)
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-legal-patch
               id: update_legal_resource_partially_json
@@ -928,17 +919,11 @@
             - title: Update shop partially (json)
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-shop-update
               id: update_shop_partially_json
-            - title: (Deprecated) Update shop partially (json patch)
-              link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-shop-jsonpatch
-              id: update_shop_partially_json_patch
         - title: Shop address
           entries:
             - title: Show address details
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-address-get
               id: show_address_details
-            - title: (Deprecated) Update address partially (json patch)
-              link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-address-jsonpatch
-              id: update_address_partially_json_patch
             - title: Update address partially (json)
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-address-patch
               id: update_address_partially_json
