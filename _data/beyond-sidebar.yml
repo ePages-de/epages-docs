@@ -229,6 +229,12 @@
             - title: Create payment and order
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-create-payment-and-order
               id: create_payment_and_order
+            - title: Redeem coupon
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-redeem-coupon
+              id: redeeem_coupon
+            - title: Remove coupon from cart
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-delete-coupon
+              id: remove_coupon_from_cart
         - title: Checkout settings
           entries:
             - title: List checkout settings
@@ -260,14 +266,6 @@
             - title: Update coupon codes
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-coupon-code-update
               id: update_coupon_codes
-        - title: Coupons
-          entries:
-            - title: Redeem coupon
-              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-redeem-coupon
-              id: redeeem_coupon
-            - title: Remove coupon from cart
-              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-delete-coupon
-              id: remove_coupon_from_cart
         - title: Customers
           entries:
             - title: Create customer
