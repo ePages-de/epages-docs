@@ -722,7 +722,7 @@
               id: assign_product_image_as_default_image
         - title: Product-related searches
           entries:
-            - title: Search products
+            - title: Find products by search term
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#product-search-result
               id: search_products
             - title: Find product by SKU
