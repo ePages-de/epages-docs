@@ -722,12 +722,21 @@
               id: assign_product_image_as_default_image
         - title: Product-related searches
           entries:
+            - title: Find products by search term
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#product-search-result
+              id: search_products
             - title: Find product by SKU
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#products-search-findBySku
               id: find_product_by_sku
             - title: Find used tags
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#find-tags-starts-with
               id: find_used_tags
+            - title: List product filter categories
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-filter-data-all
+              id: list_product_filter_categories
+            - title: Show product filter category details
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-filter-data-detail
+              id: show_product_filter_category_details
             - title: List product search meta information
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-search-meta
               id: list_product_search_meta_information
