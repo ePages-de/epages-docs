@@ -834,9 +834,15 @@
             - title: Sort variation images
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-images-sort
               id: sort_variation_images
+            - title: Sort variation images of multiple variations
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-images-sort-multiple-variations
+              id: sort_variation_images_of_multiple_variations
             - title: Delete variation image
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-image-delete
               id: delete_variation_image
+            - title: Delete variation images of multiple variations
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-images-delete-multiple-variations
+              id: delete_variation_images_of_multiple_variations
             - title: Assign variation image as default image
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-images-set-default
               id: assign_variation_image_as_default_image
