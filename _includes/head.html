@@ -18,4 +18,18 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+  <script src="{{ '/assets/javascript/cookie-notice.js' | relative_url }}"></script>
+
+  <script>
+    if (!readCookie('cookie-notice-dismissed')) {
+      /* Show the cookie notice if no option has been selected yet */
+      $(document).ready(function() {
+        $('.cookie-notice__backdrop').css('display', 'flex');
+      });
+    } else if (readCookie('cookie-notice-dismissed') == 'true') {
+      /* Load user's custom scripts if cookie notice has been accepted */
+      {% include cookie_notice_scripts.html %}
+    }
+  </script>
+
 </head>
