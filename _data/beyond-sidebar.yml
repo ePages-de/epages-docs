@@ -229,6 +229,12 @@
             - title: Create payment and order
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-create-payment-and-order
               id: create_payment_and_order
+            - title: Redeem coupon
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-redeem-coupon
+              id: redeem_coupon
+            - title: Remove coupon from cart
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-delete-coupon
+              id: remove_coupon_from_cart
         - title: Checkout settings
           entries:
             - title: List checkout settings
@@ -237,6 +243,32 @@
             - title: Update checkout settings
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-checkout-settings-update
               id: update_checkout_settings
+        - title: Coupon campaigns
+          entries:
+            - title: List coupon campaigns
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-coupon-campaign-list
+              id: list_coupon_campaigns
+            - title: Show coupon campaign details
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-coupon-campaign-get
+              id: show_coupon_campaign_details
+            - title: Create coupon campaign
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-coupon-campaign-create
+              id: create_coupon_campaign
+            - title: Update coupon campaign
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-coupon-campaign-update
+              id: update_coupon_campaign
+            - title: Update coupon campaign status
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-coupon-campaign-status-update
+              id: update_coupon_campaign_status
+            - title: Delete coupon campaign
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-coupon-campaign-delete
+              id: delete_coupon_campaign
+            - title: List coupon codes
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-coupon-code-list
+              id: list_coupon_codes
+            - title: Update coupon codes
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-coupon-code-update
+              id: update_coupon_codes
         - title: Customers
           entries:
             - title: Create customer
@@ -536,9 +568,6 @@
             - title: Update all category properties
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-category-update-all
               id: update_all_category_properties
-            - title: (Deprecated) Update category partially (json patch)
-              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-category-update-patch
-              id: update_category_partially_json_patch
             - title: Update category partially (json)
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-category-update-json
               id: update_category_partially_json
@@ -562,9 +591,6 @@
             - title: Show variation product details
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-product-get
               id: show_variation_product_details
-            - title: (Deprecated) Update product partially (json patch)
-              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-update-patch
-              id: update_product_partially_json_patch
             - title: Update product partially (json)
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-update-json
               id: update_product_partially_json
@@ -696,12 +722,21 @@
               id: assign_product_image_as_default_image
         - title: Product-related searches
           entries:
+            - title: Find products by search term
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#product-search-result
+              id: search_products
             - title: Find product by SKU
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#products-search-findBySku
               id: find_product_by_sku
             - title: Find used tags
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#find-tags-starts-with
               id: find_used_tags
+            - title: List product filter categories
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-filter-data-all
+              id: list_product_filter_categories
+            - title: Show product filter category details
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-filter-data-detail
+              id: show_product_filter_category_details
             - title: List product search meta information
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-search-meta
               id: list_product_search_meta_information
@@ -799,9 +834,15 @@
             - title: Sort variation images
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-images-sort
               id: sort_variation_images
+            - title: Sort variation images of multiple variations
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-images-sort-multiple-variations
+              id: sort_variation_images_of_multiple_variations
             - title: Delete variation image
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-image-delete
               id: delete_variation_image
+            - title: Delete variation images of multiple variations
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-images-delete-multiple-variations
+              id: delete_variation_images_of_multiple_variations
             - title: Assign variation image as default image
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-images-set-default
               id: assign_variation_image_as_default_image
@@ -905,9 +946,6 @@
             - title: Show legal details
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-legal-get
               id: show_legal_details
-            - title: (Deprecated) Update legal resource partially (json patch)
-              link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-legal-jsonpatch
-              id: update_legal_resource_partially_json_patch
             - title: Update legal resource partially (json)
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-legal-patch
               id: update_legal_resource_partially_json
@@ -928,17 +966,11 @@
             - title: Update shop partially (json)
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-shop-update
               id: update_shop_partially_json
-            - title: (Deprecated) Update shop partially (json patch)
-              link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-shop-jsonpatch
-              id: update_shop_partially_json_patch
         - title: Shop address
           entries:
             - title: Show address details
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-address-get
               id: show_address_details
-            - title: (Deprecated) Update address partially (json patch)
-              link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-address-jsonpatch
-              id: update_address_partially_json_patch
             - title: Update address partially (json)
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-address-patch
               id: update_address_partially_json
