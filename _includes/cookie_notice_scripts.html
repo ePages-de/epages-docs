@@ -1,0 +1,21 @@
+{% assign ga_paths = "['/', 'blog', 'devjobs']" %}
+
+{% if ga_paths contains base_url %}
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  {% case base_url %}
+  {%- when '/' -%}
+    ga('create', 'UA-71308214-1', 'auto');
+  {%- when 'blog' -%}
+    ga('create', 'UA-71308214-2', 'auto');
+  {%- when 'devjobs' -%}
+    ga('create', 'UA-71308214-3', 'auto');
+  {% endcase %}
+
+  ga('require', 'linkid');
+  ga('send', 'pageview');
+
+{% endif %}
