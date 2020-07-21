@@ -727,7 +727,7 @@
           entries:
             - title: Find products by search term
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#product-search-result
-              id: search_products
+              id: find_products_by_search_term
             - title: Find product by SKU
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#products-search-findBySku
               id: find_product_by_sku
