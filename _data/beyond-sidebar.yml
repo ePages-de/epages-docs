@@ -404,6 +404,9 @@
             - title: Find used shipping countries
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-find-used-shipping-countries
               id: find_used_shipping_countries
+            - title: List order filter categories
+              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-orders-search-filters
+              id: list_order_filter_categories
             - title: Cancel order
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-cancel-order
               id: cancel_order
@@ -724,7 +727,7 @@
           entries:
             - title: Find products by search term
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#product-search-result
-              id: search_products
+              id: find_products_by_search_term
             - title: Find product by SKU
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#products-search-findBySku
               id: find_product_by_sku
