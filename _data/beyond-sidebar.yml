@@ -557,26 +557,6 @@
               id: delete_payment_method_definition
     - title: Product Management API
       entries:
-        - title: Categories
-          entries:
-            - title: List categories
-              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-categories-list
-              id: list_categories
-            - title: Create category
-              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-category-create
-              id: create_category
-            - title: Show category details
-              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-category-get
-              id: show_category_details
-            - title: Update all category properties
-              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-category-update-all
-              id: update_all_category_properties
-            - title: Update category partially (json)
-              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-category-update-json
-              id: update_category_partially_json
-            - title: Delete category
-              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-categories-delete
-              id: delete_category
         - title: Products
           entries:
             - title: List products including variation products
@@ -674,6 +654,26 @@
             - title: Disable purchasability
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-availability-disable-purchasability
               id: disable_purchasability
+        - title: Product categories
+          entries:
+            - title: List product categories
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-categories-list
+              id: list_categories
+            - title: Create product category
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-category-create
+              id: create_category
+            - title: Show product category details
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-category-get
+              id: show_category_details
+            - title: Update all product category properties
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-category-update-all
+              id: update_all_category_properties
+            - title: Update product category partially (json)
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-category-update-json
+              id: update_category_partially_json
+            - title: Delete product category
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-categories-delete
+              id: delete_category
         - title: Product cross-sells
           entries:
             - title: List product cross-sells
@@ -725,7 +725,7 @@
               id: assign_product_image_as_default_image
         - title: Product-related searches
           entries:
-            - title: Find products by search term
+            - title: Search and filter products
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#product-search-result
               id: find_products_by_search_term
             - title: Find product by SKU
@@ -887,12 +887,12 @@
               id: list_cross_selling_products
         - title: Product categories
           entries:
-            - title: Show product category details
-              link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#product-view-category-get
-              id: show_product_category_details
             - title: List product categories
               link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#product-view-categories-list
               id: list_product_categories
+            - title: Show product category details
+              link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#product-view-category-get
+              id: show_product_category_details
             - title: List products of category
               link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#categories-products
               id: list_products_of_category
