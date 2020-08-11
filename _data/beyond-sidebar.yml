@@ -128,6 +128,9 @@
               id: retrieve_support_access_status
         - title: Tokens
           entries:
+            - title: Create a JsonWebToken from Authorization Code
+              link: https://api-docs.beyondshop.cloud/ng-auth-auth-public-api.html#resources-tokens-auth-code
+              id: create_a_jsonwebtoken_from_authorization_code
             - title: Create a JsonWebToken from Refresh Token
               link: https://api-docs.beyondshop.cloud/ng-auth-auth-public-api.html#resources-tokens-refresh
               id: create_a_jsonwebtoken_from_refresh_token
@@ -813,6 +816,9 @@
             - title: List variation images
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-images-list
               id: list_variation_images
+            - title: List variation images of all variations
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-all-variations-images-list
+              id: list_variation_images_of_all_variations
             - title: Show variation image details
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-image-get
               id: show_variation_image_details
