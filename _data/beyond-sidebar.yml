@@ -873,6 +873,9 @@
             - title: List products
               link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#product-view-list
               id: list_products
+            - title: List products by IDs
+              link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#product-view-find-by-ids
+              id: list_products_by_ids
             - title: List products by tags
               link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#product-view-find-by-tags
               id: list_products_by_tags
@@ -967,6 +970,23 @@
             - title: Update legal content
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-legal-content-edit
               id: update_legal_content
+        - title: Locations
+          entries:
+            - title: Create location
+              link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-location-create
+              id: create_location
+            - title: Show location details
+              link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-location-get
+              id: show_location_details
+            - title: List locations
+              link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-location-get-list
+              id: list_locations
+            - title: Update location
+              link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-location-update
+              id: update_location
+            - title: Delete location
+              link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-location-delete
+              id: delete_location
         - title: Shop
           entries:
             - title: Show shop details
