@@ -20,6 +20,9 @@
         - title: Versioning
           link: https://api-docs.beyondshop.cloud/index-api-basics.html#_versioning
           id: versioning
+        - title: Sorting
+          link: https://api-docs.beyondshop.cloud/index-api-basics.html#_sorting
+          id: sorting
         - title: Pagination
           link: https://api-docs.beyondshop.cloud/index-api-basics.html#_pagination
           id: pagination
