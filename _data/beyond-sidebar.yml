@@ -20,6 +20,9 @@
         - title: Versioning
           link: https://api-docs.beyondshop.cloud/index-api-basics.html#_versioning
           id: versioning
+        - title: Sorting
+          link: https://api-docs.beyondshop.cloud/index-api-basics.html#_sorting
+          id: sorting
         - title: Pagination
           link: https://api-docs.beyondshop.cloud/index-api-basics.html#_pagination
           id: pagination
@@ -914,6 +917,9 @@
             - title: Find product category by label
               link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#categories-find-by-label
               id: find_product_category_by_label
+            - title: Filter products
+              link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#categories-products-preview
+              id: product_view_filter_products
         - title: Product images
           entries:
             - title: List product images
