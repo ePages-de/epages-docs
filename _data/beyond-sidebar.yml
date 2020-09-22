@@ -385,14 +385,6 @@
           id: delete_customer
     - title: Order API
       entries:
-        - title: Invoices
-          entries:
-            - title: Create invoice
-              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-create-invoice
-              id: create_invoice
-            - title: Send order document
-              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-send-order-document
-              id: send_order_document
         - title: Orders
           entries:
             - title: List orders
@@ -425,6 +417,17 @@
             - title: Update shipping address
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-update-shipping-address
               id: update_shipping_address
+        - title: Order documents
+          entries:
+            - title: List order documents
+              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-documents-list
+              id: list_order_documents
+            - title: Create invoice
+              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-create-invoice
+              id: create_invoice
+            - title: Send order document
+              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-send-order-document
+              id: send_order_document
         - title: Order events
           entries:
             - title: List order events
