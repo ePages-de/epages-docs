@@ -422,6 +422,9 @@
             - title: List order documents
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-documents-list
               id: list_order_documents
+            - title: Show order document details
+              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-document-get
+              id: show_order_document_details
             - title: Create invoice
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-create-invoice
               id: create_invoice
