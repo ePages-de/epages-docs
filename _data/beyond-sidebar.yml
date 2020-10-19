@@ -519,6 +519,9 @@
       entries:
         - title: Merchant account connection
           entries:
+            - title: Generate referral URI
+              link: https://api-docs.beyondshop.cloud/ng-payment-gateway-payment-gateway-public-api.html#_generate_referral_uri
+              id: generate_referral_uri
             - title: Retrieve shop ID
               link: https://api-docs.beyondshop.cloud/ng-payment-gateway-payment-gateway-public-api.html#_retrieve_shop_id
               id: retrieve_shop_id
@@ -1004,6 +1007,12 @@
             - title: Update shop partially (json)
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-shop-update
               id: update_shop_partially_json
+            - title: Open shop
+              link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-shop-open
+              id: open_shop
+            - title: Close shop
+              link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-shop-close
+              id: close_shop
         - title: Shop address
           entries:
             - title: Show address details
