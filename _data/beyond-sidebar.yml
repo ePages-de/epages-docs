@@ -140,32 +140,6 @@
             - title: Create a JsonWebToken from Client Credentials
               link: https://api-docs.beyondshop.cloud/ng-auth-auth-public-api.html#resources-tokens-client
               id: create_a_jsonwebtoken_from_client_credentials
-        - title: Users
-          entries:
-            - title: List users
-              link: https://api-docs.beyondshop.cloud/ng-auth-auth-public-api.html#resources-users-list
-              id: list_users
-            - title: Show user details
-              link: https://api-docs.beyondshop.cloud/ng-auth-auth-public-api.html#resources-user-get
-              id: show_user_details
-            - title: Create user
-              link: https://api-docs.beyondshop.cloud/ng-auth-auth-public-api.html#resources-users-create
-              id: create_user
-            - title: List user roles
-              link: https://api-docs.beyondshop.cloud/ng-auth-auth-public-api.html#resources-user-roles-list
-              id: list_user_roles
-            - title: Set user roles
-              link: https://api-docs.beyondshop.cloud/ng-auth-auth-public-api.html#resources-user-roles-set
-              id: set_user_roles
-            - title: Add user roles
-              link: https://api-docs.beyondshop.cloud/ng-auth-auth-public-api.html#resources-user-roles-add
-              id: add_user_roles
-            - title: List user searches
-              link: https://api-docs.beyondshop.cloud/ng-auth-auth-public-api.html#_list_user_searches
-              id: list_user_searches
-            - title: Find user by username
-              link: https://api-docs.beyondshop.cloud/ng-auth-auth-public-api.html#_find_user_by_username
-              id: find_user_by_username
         - title: Username & Password
           entries:
             - title: Verify password
