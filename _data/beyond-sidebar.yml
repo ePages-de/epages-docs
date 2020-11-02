@@ -361,6 +361,9 @@
       entries:
         - title: Orders
           entries:
+            - title: Create order
+              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-orders-create
+              id: create_order
             - title: List orders
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-orders-list
               id: list_orders
