@@ -783,9 +783,9 @@
             - title: Sort variation attribute values
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-attribute-values-sort
               id: sort_variation_attribute_values
-            - title: Delete variation attribute values from multiple variation attributes
+            - title: Delete variation attribute values of multiple variation attributes
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-attribute-values-delete-multiple
-              id: delete_variation_attribute_values_from_multiple_variation_attributes
+              id: delete_variation_attribute_values_of_multiple_variation_attributes
             - title: Delete variation attribute values
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-attribute-values-delete
               id: delete_variation_attribute_values
