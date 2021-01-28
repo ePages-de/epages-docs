@@ -357,6 +357,9 @@
         - title: Delete customer
           link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-delete
           id: delete_customer
+        - title: List customer events
+          link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-events-get
+          id: list_customer_events
     - title: Order API
       entries:
         - title: Orders
