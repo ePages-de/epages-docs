@@ -16,6 +16,7 @@ These events are available:
 | `pageview` | string | Is triggered when the customer opens or reloads a page. Informs about the path of the page. |
 | `product` | immutable.js object | Is triggered when the customer selects a product. Informs about the respective product. |
 | `category` | immutable.js object | Is triggered when the customer selects a category. Informs about the respective category and related products.|
+| `cart` | object | Is triggered when XXX |
 | `cart:add` | object | Is triggered when the customer adds a product to the cart. Informs about the current state of the cart, e.g. included items. This event isn't triggered if the customer makes changes in the cart itself, e.g. changing the amount of an item. |
 | `order:completed` | object | Is triggered when the customer reaches the order confirmation page after completing a purchase. Provides additional information about the order, such as the billing address, the order number, and the selected shipping method. |
 
@@ -52,49 +53,82 @@ if (window.eComEventTarget) {
 You'll receive the following information:
 
 ```
-availabilityText: "Available"
-available: true
-basePrice: {refQuantity: {…}, refPrice: {…}, formatted: "1 m³ = £0,12", quantity: {…}}
-conditionMicrodata: "NewCondition"
-customAttributes: [{…}]
-deliveryPeriod: "2-3"
-deliveryPeriodUnit: "DAYS"
-description: null
-energyLabel: null
-energyLabelSourceFile: null
-gtin: 7501054530107
-hasCrossSelling: false
-hasStockLevel: true
-hasVariations: false
-href: "/p/homemade-cherry-jam"
-image: null
-isVariationMaster: false
-isVariationProduct: false
-isVisible: true
-links: [{…}, {…}, {…}, {…}, {…}]
-lowestPrice: null
-mainCategoryId: "5954B711-E377-2A90-C400-D5809AB3F62B"
-manufacturer: null
-manufacturerPrice: null
-metaDescription: ""
-name: "Homemade Cherry Jam"
-onStock: true
-outOfStock: false
-price: {taxType: "NET", formatted: "£40,00", amount: 40, currency: "GBP"}
-productDataSheet: null
-productId: "5954B706-E701-F357-A52D-D5809AB3F606"
-productVariationSelection: null
-productVariationValues: ""
-sku: "1007"
-slideshow: [{…}, {…}, {…}, {…}]
-slug: "homemade-cherry-jam"
-stockLevelClass: "in"
-stockLevelMicrodata: "InStock"
-title: "Homemade Cherry Jam"
-variationMaster: null
-variations: null
-vatNote: "components.productComponent.priceExclusiveVat"
-warnStock: false
+product: {
+	availabilityText: "Available"
+	available: true
+	basePrice: {refQuantity: {…}, refPrice: {…}, formatted: "1 m³ = £0,12", quantity: {…}}
+	conditionMicrodata: "NewCondition"
+	customAttributes: [{…}]
+	deliveryPeriod: "2-3"
+	deliveryPeriodUnit: "DAYS"
+	description: null
+	energyLabel: null
+	energyLabelSourceFile: null
+	gtin: 7501054530107
+	hasCrossSelling: false
+	hasStockLevel: true
+	hasVariations: false
+	href: "/p/homemade-cherry-jam"
+	image: null
+	isVariationMaster: false
+	isVariationProduct: false
+	isVisible: true
+	links: [{…}, {…}, {…}, {…}, {…}]
+	lowestPrice: null
+	mainCategoryId: "5954B711-E377-2A90-C400-D5809AB3F62B"
+	manufacturer: null
+	manufacturerPrice: null
+	metaDescription: ""
+	name: "Homemade Cherry Jam"
+	onStock: true
+	outOfStock: false
+	price: {taxType: "NET", formatted: "£40,00", amount: 40, currency: "GBP"}
+	productDataSheet: null
+	productId: "5954B706-E701-F357-A52D-D5809AB3F606"
+	productVariationSelection: null
+	productVariationValues: ""
+	sku: "1007"
+	slideshow: [{…}, {…}, {…}, {…}]
+	slug: "homemade-cherry-jam"
+	stockLevelClass: "in"
+	stockLevelMicrodata: "InStock"
+	title: "Homemade Cherry Jam"
+	variationMaster: null
+	variations: null
+	vatNote: "components.productComponent.priceExclusiveVat"
+	warnStock: false
+}
+cart: {
+	billingAddress: null
+	canHaveCoupon: true
+	cartId: "5C06901F-150A-3D9B-B144-D509AB34800"
+	checkoutButtons: [{…}]
+	checkoutState: null
+	checkoutUrl: "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/1/Baskets/46072&ChangeAction=PickupBasket&PickupToken=MjNiZThlOGM0MjAzZWQ0N2ZjYmZmZDFiZjI3OTQxMzkwOWY4ZjZlOGE4NTM0ZWIxMjg3NmY2NzBiY2IxYzQ1OV8xNDgyMjIzMDcz"
+	coupon: null
+	couponCampaign: null
+	grandTotal: {
+    	amount: 76.01
+    	currency: "EUR"
+    	formatted: "€76,01"
+    	taxType: "NET"
+  	}
+	grandAmount: "76,01 €"
+	grandAmountNote: "components.productComponent.priceExclusiveVat"
+	minimumOrderValue: null
+	netAmount: "76,01 €"
+	paymentLineItem: {lineItemPrice: {…}, paymentMethod: {…}}
+	pickupToken: "ZjM3M2Q2YmY4jkFjYWRlZTIzZTBlYzQwMDU4MjYzZjYwNDNhZGY0NWM1N2JiNjZhMGI0YWNlNWFkYzU4ZTQ3OF8xNTQzOTM5MjIx"
+	productLineItems: [{…}, {…}, {…}]
+	registerSessionUrl: "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/2/Baskets/46072&ChangeAction=PickupBasket&PickupToken=NTRjZWJmNjdhNzNlYTUzNDAxZTgyZTc4ODYwYTliMDUxMDIzNDQ2OWY2NWQ5NWRmN2Q2YmVjZjVjNzljOTQ2N18xNDgyMjI3OTE3"
+	shippingAddress: null
+	shippingLineItem: {lineItemPrice: {…}, shippingMethod: {…}}
+	subAmount: "76,01 €"
+	taxType: "NET"
+	taxes: []
+	totalNumberOfItems: 3
+	_links: null
+}
 ```
 ## Category event
 
@@ -135,6 +169,48 @@ url: "/jam"
 To make use of this event, you need to add the following snippet to your code:
 
 ```js
+XXX
+```
+
+You'll receive the following information:
+
+```
+billingAddress: null
+canHaveCoupon: true
+cartId: "5C06901F-150C-3D9B-B144-D509AB34875"
+checkoutButtons: [{…}]
+checkoutState: null
+checkoutUrl: "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/1/Baskets/46072&ChangeAction=PickupBasket&PickupToken=MjNiZThlOGM0MjAzZWQ0N2ZjYmZmZDFiZjI3OTQxMzkwOWY4ZjZlOGE4NTM0ZWIxMjg3NmY2NzBiY2IxYzQ1OV8xNDgyMjIzMDcz"
+coupon: null
+couponCampaign: null
+grandTotal: {
+    amount: 76.01
+    currency: "EUR"
+    formatted: "€76,01"
+    taxType: "NET"
+  	}
+grandAmount: "76,01 €"
+grandAmountNote: "components.productComponent.priceExclusiveVat"
+minimumOrderValue: null
+netAmount: "76,01 €"
+paymentLineItem: {lineItemPrice: {…}, paymentMethod: {…}}
+pickupToken: "ZjM3M2Q2YmY4jkFjYWRlZTIzZTBlYzQwMDU4MjYzZjYwNDNhZGY0NWM1N2JiNjZhMGI0YWNlNWFkYzU4ZTQ3OF8xNTQzOTM5MjIx"
+productLineItems: [{…}, {…}, {…}]
+registerSessionUrl: "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/2/Baskets/46072&ChangeAction=PickupBasket&PickupToken=NTRjZWJmNjdhNzNlYTUzNDAxZTgyZTc4ODYwYTliMDUxMDIzNDQ2OWY2NWQ5NWRmN2Q2YmVjZjVjNzljOTQ2N18xNDgyMjI3OTE3"
+shippingAddress: null
+shippingLineItem: {lineItemPrice: {…}, shippingMethod: {…}}
+subAmount: "76,01 €"
+taxType: "NET"
+taxes: []
+totalNumberOfItems: 3
+_links: null
+```
+
+## Cart:add event
+
+To make use of this event, you need to add the following snippet to your code:
+
+```js
 if (window.eComEventTarget) {
   window.eComEventTarget.addEventListener('cart:add', function (event) {
     console.log('new cart data:', event.detail.cart)
@@ -153,6 +229,12 @@ checkoutState: null
 checkoutUrl: "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/1/Baskets/46072&ChangeAction=PickupBasket&PickupToken=MjNiZThlOGM0MjAzZWQ0N2ZjYmZmZDFiZjI3OTQxMzkwOWY4ZjZlOGE4NTM0ZWIxMjg3NmY2NzBiY2IxYzQ1OV8xNDgyMjIzMDcz"
 coupon: null
 couponCampaign: null
+grandTotal: {
+    amount: 76.01
+    currency: "EUR"
+    formatted: "€76,01"
+    taxType: "NET"
+  	}
 grandAmount: "76,01 €"
 grandAmountNote: "components.productComponent.priceExclusiveVat"
 minimumOrderValue: null
