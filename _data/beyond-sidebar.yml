@@ -416,6 +416,14 @@
             - title: List order events
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-events-list
               id: list_order_events
+        - title: Order export
+          entries:
+            - title: Create order export
+              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-orders-export-start
+              id: create_order_export
+            - title: Show order export status
+              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-orders-export-get
+              id: show_order_export_status
         - title: Order processes
           entries:
             - title: List order processes
