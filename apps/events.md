@@ -17,7 +17,7 @@ These events are available:
 | `product` | immutable.js object | Is triggered when the customer selects a product. Informs about the respective product as well as the current state of the cart. |
 | `category` | immutable.js object | Is triggered when the customer selects a category. Informs about the respective category and related products. |
 | `cart` | object | Is triggered when the customer accesses the cart. Informs about the current state of the cart, e.g. included items. |
-| `cart:add` | object | Is triggered when the customer adds a product to the cart. Informs about the current state of the cart, e.g. included items. |
+| `cart:add` | object | Is triggered when the customer adds a product to the cart. Provides information about the current state of the cart and the product that was added to it. |
 | `cart:setQuantity` | object | Is triggered when the quantity of a product in the cart is changed. This also includes the removal of a product. Informs about the quantity change and the affected product. |
 | `order:completed` | object | Is triggered when the customer reaches the order confirmation page after completing a purchase. Provides additional information about the order, such as the billing address, the order number, and the selected shipping method. |
 
