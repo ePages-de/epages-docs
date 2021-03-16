@@ -57,7 +57,7 @@ You'll receive the following information:
 product: {
     availabilityText: "Available"
     available: true
-    basePrice: {refQuantity: {…}, refPrice: {…}, formatted: "1 m³ = £0,12", quantity: {…}}
+    basePrice: {refQuantity: {…}, refPrice: {…}, formatted: "1 m³ = €0,12", quantity: {…}}
     bulkPrices: null
     conditionMicrodata: "NewCondition"
     customAttributes: [{…}]
@@ -85,7 +85,7 @@ product: {
     name: "Homemade Cherry Jam"
     onStock: true
     outOfStock: false
-    price: {taxType: "NET", formatted: "£40,00", amount: 40, currency: "GBP"}
+    price: {taxType: "NET", formatted: "€40,00", amount: 40, currency: "EUR"}
     productDataSheet: null
     productId: "5954B706-E701-F357-A52D-D5809AB3F606"
     productVariationSelection: null
@@ -257,7 +257,7 @@ new cart data:{
 added product:{
     availabilityText: "Available"
     available: true
-    basePrice: {refQuantity: {…}, refPrice: {…}, formatted: "1 m³ = £0,12", quantity: {…}}
+    basePrice: {refQuantity: {…}, refPrice: {…}, formatted: "1 m³ = €0,12", quantity: {…}}
     bulkPrices: null
     conditionMicrodata: "NewCondition"
     customAttributes: [{…}]
@@ -285,7 +285,7 @@ added product:{
     name: "Homemade Cherry Jam"
     onStock: true
     outOfStock: false
-    price: {taxType: "NET", formatted: "£40,00", amount: 40, currency: "GBP"}
+    price: {taxType: "NET", formatted: "€40,00", amount: 40, currency: "EUR"}
     productDataSheet: null
     productId: "5954B706-E701-F357-A52D-D5809AB3F606"
     productVariationSelection: null
@@ -339,6 +339,7 @@ lineItem:{
 }
 quantity: 2
 quantityDelta: 1
+```
 
 ## Order:completed event
 
