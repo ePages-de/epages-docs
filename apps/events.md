@@ -14,9 +14,9 @@ These events are available:
 | Event | Type | Description |
 | - | - |  - |
 | `pageview` | string | Is triggered when the customer opens or reloads a page. Informs about the path of the page. |
-| `product` | immutable.js object | Is triggered when the customer selects a product. Informs about the respective product. |
+| `product` | immutable.js object | Is triggered when the customer selects a product. Informs about the respective product as well as the current state of the cart. |
 | `category` | immutable.js object | Is triggered when the customer selects a category. Informs about the respective category and related products.|
-| `cart` | object | Is triggered when XXX |
+| `cart` | object | Is triggered when the customer accesses their cart. Informs about the current state of the cart, e.g. included items. |
 | `cart:add` | object | Is triggered when the customer adds a product to the cart. Informs about the current state of the cart, e.g. included items. This event isn't triggered if the customer makes changes in the cart itself, e.g. changing the amount of an item. |
 | `order:completed` | object | Is triggered when the customer reaches the order confirmation page after completing a purchase. Provides additional information about the order, such as the billing address, the order number, and the selected shipping method. |
 
@@ -44,8 +44,9 @@ To make use of this event, you need to add the following snippet to your code:
 
 ```js
 if (window.eComEventTarget) {
-  window.eComEventTarget.addEventListener('product', function (event) {
-    console.log('product:', event.detail.product.toJS())
+  window.eComEventTarget.addEventListener('product', function(event){
+    console.log('product', event.detail.product.toJS());
+	console.log('cart', event.detail.cart.toJS());
   })
 }
 ```
@@ -164,12 +165,16 @@ updatedAt: "2018-04-17T14:48:29.000Z"
 url: "/jam"
 ```
 
-## Cart:add event
+## Cart event
 
 To make use of this event, you need to add the following snippet to your code:
 
 ```js
-XXX
+if (window.eComEventTarget) {
+  window.eComEventTarget.addEventListener('cart', function(event){
+    console.log('cart', event.detail)
+  })
+}
 ```
 
 You'll receive the following information:
