@@ -218,7 +218,7 @@ To make use of this event, you need to add the following snippet to your code:
 ```js
 if (window.eComEventTarget) {
   window.eComEventTarget.addEventListener('cart:add', function (event) {
-    console.log('new cart data:', event.detail.cart)
+    console.log('new cart data:',event.detail.cart,'added product',event.detail.product,'quantity',event.detail.quantity)
   })
 }
 ```
@@ -226,33 +226,83 @@ if (window.eComEventTarget) {
 You'll receive the following information:
 
 ```
-billingAddress: null
-canHaveCoupon: true
-cartId: "5C06901F-150C-3D9B-B144-D509AB34875"
-checkoutButtons: [{…}]
-checkoutState: null
-checkoutUrl: "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/1/Baskets/46072&ChangeAction=PickupBasket&PickupToken=MjNiZThlOGM0MjAzZWQ0N2ZjYmZmZDFiZjI3OTQxMzkwOWY4ZjZlOGE4NTM0ZWIxMjg3NmY2NzBiY2IxYzQ1OV8xNDgyMjIzMDcz"
-coupon: null
-couponCampaign: null
-customerEmail: null
-grandAmount: "76,01 €"
-grandAmountNote: "components.productComponent.priceExclusiveVat"
-grandTotal: {amount: 76.01, currency: "EUR", formatted: "€76,01"}
-minimumOrderValue: null
-mustAcceptTermsAndConditions: false
-netAmount: "76,01 €"
-paymentLineItem: {lineItemPrice: {…}, paymentMethod: {…}}
-pickupToken: "ZjM3M2Q2YmY4jkFjYWRlZTIzZTBlYzQwMDU4MjYzZjYwNDNhZGY0NWM1N2JiNjZhMGI0YWNlNWFkYzU4ZTQ3OF8xNTQzOTM5MjIx"
-productLineItems: [{…}, {…}, {…}]
-registerSessionUrl: "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/2/Baskets/46072&ChangeAction=PickupBasket&PickupToken=NTRjZWJmNjdhNzNlYTUzNDAxZTgyZTc4ODYwYTliMDUxMDIzNDQ2OWY2NWQ5NWRmN2Q2YmVjZjVjNzljOTQ2N18xNDgyMjI3OTE3"
-shippingAddress: null
-shippingLineItem: {lineItemPrice: {…}, shippingMethod: {…}}
-status: null
-subAmount: "76,01 €"
-taxType: "NET"
-taxes: []
-totalNumberOfItems: 3
-_links: null
+new cart data:{
+    billingAddress: null
+    canHaveCoupon: true
+    cartId: "5C06901F-150C-3D9B-B144-D509AB34875"
+    checkoutButtons: [{…}]
+    checkoutState: null
+    checkoutUrl: "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/1/Baskets/46072&ChangeAction=PickupBasket&PickupToken=MjNiZThlOGM0MjAzZWQ0N2ZjYmZmZDFiZjI3OTQxMzkwOWY4ZjZlOGE4NTM0ZWIxMjg3NmY2NzBiY2IxYzQ1OV8xNDgyMjIzMDcz"
+    coupon: null
+    couponCampaign: null
+    customerEmail: null
+    grandAmount: "76,01 €"
+    grandAmountNote: "components.productComponent.priceExclusiveVat"
+    grandTotal: {amount: 76.01, currency: "EUR", formatted: "€76,01"}
+    minimumOrderValue: null
+    mustAcceptTermsAndConditions: false
+    netAmount: "76,01 €"
+    paymentLineItem: {lineItemPrice: {…}, paymentMethod: {…}}
+    pickupToken: "ZjM3M2Q2YmY4jkFjYWRlZTIzZTBlYzQwMDU4MjYzZjYwNDNhZGY0NWM1N2JiNjZhMGI0YWNlNWFkYzU4ZTQ3OF8xNTQzOTM5MjIx"
+    productLineItems: [{…}, {…}, {…}]
+    registerSessionUrl: "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/2/Baskets/46072&ChangeAction=PickupBasket&PickupToken=NTRjZWJmNjdhNzNlYTUzNDAxZTgyZTc4ODYwYTliMDUxMDIzNDQ2OWY2NWQ5NWRmN2Q2YmVjZjVjNzljOTQ2N18xNDgyMjI3OTE3"
+    shippingAddress: null
+    shippingLineItem: {lineItemPrice: {…}, shippingMethod: {…}}
+    status: null
+    subAmount: "76,01 €"
+    taxType: "NET"
+    taxes: []
+    totalNumberOfItems: 3
+    _links: null
+}
+added product:{
+    availabilityText: "Available"
+    available: true
+    basePrice: {refQuantity: {…}, refPrice: {…}, formatted: "1 m³ = £0,12", quantity: {…}}
+    bulkPrices: null
+    conditionMicrodata: "NewCondition"
+    customAttributes: [{…}]
+    deliveryPeriod: "2-3"
+    deliveryPeriodUnit: "DAYS"
+    description: null
+    energyLabel: null
+    energyLabelSourceFile: null
+    gtin: 7501054530107
+    hasCrossSelling: false
+    hasStockLevel: true
+    hasVariations: false
+    href: "/p/homemade-cherry-jam"
+    image: null
+    isVariationMaster: false
+    isVariationProduct: false
+    isVisible: true
+    links: (5) [{…}, {…}, {…}, {…}, {…}]
+    listPrice: null
+    lowestPrice: null
+    mainCategoryId: "5954B711-E377-2A90-C400-D5809AB3F62B"
+    manufacturer: null
+    manufacturerPrice: null
+    metaDescription: ""
+    name: "Homemade Cherry Jam"
+    onStock: true
+    outOfStock: false
+    price: {taxType: "NET", formatted: "£40,00", amount: 40, currency: "GBP"}
+    productDataSheet: null
+    productId: "5954B706-E701-F357-A52D-D5809AB3F606"
+    productVariationSelection: null
+    productVariationValues: ""
+    sku: "1007"
+    slideshow: [{…}, {…}, {…}, {…}]
+    slug: "homemade-cherry-jam"
+    stockLevelClass: "in"
+    stockLevelMicrodata: "InStock"
+    title: "Homemade Cherry Jam"
+    variationMaster: null
+    variations: null
+    vatNote: "components.productComponent.priceExclusiveVat"
+    warnStock: false
+}
+quantity 1
 ```
 
 ## Cart:setQuantity event
@@ -270,7 +320,7 @@ if (window.eComEventTarget) {
 You'll receive the following information:
 
 ```
-lineItem:
+lineItem:{
     energyLabel: null
     energyLabelSourceFile: null
     essentialFeatures: []
@@ -287,6 +337,7 @@ lineItem:
     slug: "homemade-cherry-jam"
     taxClass: "NET"
     variationString: ""
+}
 quantity: 2
 quantityDelta: 1
 
