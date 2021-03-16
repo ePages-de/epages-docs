@@ -59,7 +59,7 @@ product: {
     availabilityText: "Available"
     available: true
     basePrice: {refQuantity: {…}, refPrice: {…}, formatted: "1 m³ = £0,12", quantity: {…}}
-	bulkPrices: null
+    bulkPrices: null
     conditionMicrodata: "NewCondition"
     customAttributes: [{…}]
     deliveryPeriod: "2-3"
@@ -77,7 +77,7 @@ product: {
     isVariationProduct: false
     isVisible: true
     links: (5) [{…}, {…}, {…}, {…}, {…}]
-	listPrice: null
+    listPrice: null
     lowestPrice: null
     mainCategoryId: "5954B711-E377-2A90-C400-D5809AB3F62B"
     manufacturer: null
@@ -111,12 +111,12 @@ cart: {
     checkoutUrl: "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/1/Baskets/46072&ChangeAction=PickupBasketPickupToken=MjNiZThlOGM0MjAzZWQ0N2ZjYmZmZDFiZjI3OTQxMzkwOWY4ZjZlOGE4NTM0ZWIxMjg3NmY2NzBiY2IxYzQ1OV8xNDgyMjIzMDcz"
     coupon: null
     couponCampaign: null
-	customerEmail: null
+    customerEmail: null
     grandAmount: "76,01 €"
     grandAmountNote: "components.productComponent.priceExclusiveVat"
     grandTotal: {amount: 76.01, currency: "EUR", formatted: "€76,01"}
-	minimumOrderValue: null
-	mustAcceptTermsAndConditions: false
+    minimumOrderValue: null
+    mustAcceptTermsAndConditions: false
     netAmount: "76,01 €"
     paymentLineItem: {lineItemPrice: {…}, paymentMethod: {…}}
     pickupToken: "ZjM3M2Q2YmY4jkFjYWRlZTIzZTBlYzQwMDU4MjYzZjYwNDNhZGY0NWM1N2JiNjZhMGI0YWNlNWFkYzU4ZTQ3OF8xNTQzOTM5MjIx"
@@ -124,7 +124,7 @@ cart: {
     registerSessionUrl: "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/2/Baskets/46072&ChangeAction=PickupBasket&PickupToken=NTRjZWJmNjdhNzNlYTUzNDAxZTgyZTc4ODYwYTliMDUxMDIzNDQ2OWY2NWQ5NWRmN2Q2YmVjZjVjNzljOTQ2N18xNDgyMjI3OTE3"
     shippingAddress: null
     shippingLineItem: {lineItemPrice: {…}, shippingMethod: {…}}
-	status: null
+    status: null
     subAmount: "76,01 €"
     taxType: "NET"
     taxes: []
