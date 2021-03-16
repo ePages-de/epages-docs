@@ -173,7 +173,7 @@ To make use of this event, you need to add the following snippet to your code:
 ```js
 if (window.eComEventTarget) {
   window.eComEventTarget.addEventListener('cart', function (event) {
-    console.log('cart:', event.detail)
+    console.log('cart:', event.detail.cart)
   })
 }
 ```
