@@ -16,9 +16,9 @@ These events are available:
 | `pageview` | string | Is triggered when the customer opens or reloads a page. Informs about the path of the page. |
 | `product` | immutable.js object | Is triggered when the customer selects a product. Informs about the respective product as well as the current state of the cart. |
 | `category` | immutable.js object | Is triggered when the customer selects a category. Informs about the respective category and related products.|
-| `cart` | object | Is triggered when the customer accesses their cart. Informs about the current state of the cart, e.g. included items. |
+| `cart` | object | Is triggered when the customer accesses the cart. Informs about the current state of the cart, e.g. included items. |
 | `cart:add` | object | Is triggered when the customer adds a product to the cart. Informs about the current state of the cart, e.g. included items. This event isn't triggered if the customer makes changes in the cart itself, e.g. changing the amount of an item. |
-| `cart:setQuantity` | object | Is triggered when the the quantity of a product in the cart is changed. This also includes the removal of a product. Informs about the quantity change and the affected product. |
+| `cart:setQuantity` | object | Is triggered when the quantity of a product in the cart is changed. This also includes the removal of a product. Informs about the quantity change and the affected product. |
 | `order:completed` | object | Is triggered when the customer reaches the order confirmation page after completing a purchase. Provides additional information about the order, such as the billing address, the order number, and the selected shipping method. |
 
 ## Pageview event
