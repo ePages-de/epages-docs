@@ -262,7 +262,7 @@ To make use of this event, you need to add the following snippet to your code:
 ```js
 if (window.eComEventTarget) {
   window.eComEventTarget.addEventListener('cart:setQuantity',function(event) {
-	console.log('cart quantity update:','lineItem:',event.detail.lineItem,'quantity:',event.detail.quantity,'quantityDelta:',event.detail.quantityDelta)
+    console.log('cart quantity update:','lineItem:',event.detail.lineItem,'quantity:',event.detail.quantity,'quantityDelta:',event.detail.quantityDelta)
   })
 }
 ```
