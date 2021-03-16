@@ -55,80 +55,80 @@ You'll receive the following information:
 
 ```
 product: {
-	availabilityText: "Available"
-	available: true
-	basePrice: {refQuantity: {…}, refPrice: {…}, formatted: "1 m³ = £0,12", quantity: {…}}
-	conditionMicrodata: "NewCondition"
-	customAttributes: [{…}]
-	deliveryPeriod: "2-3"
-	deliveryPeriodUnit: "DAYS"
-	description: null
-	energyLabel: null
-	energyLabelSourceFile: null
-	gtin: 7501054530107
-	hasCrossSelling: false
-	hasStockLevel: true
-	hasVariations: false
-	href: "/p/homemade-cherry-jam"
-	image: null
-	isVariationMaster: false
-	isVariationProduct: false
-	isVisible: true
-	links: [{…}, {…}, {…}, {…}, {…}]
-	lowestPrice: null
-	mainCategoryId: "5954B711-E377-2A90-C400-D5809AB3F62B"
-	manufacturer: null
-	manufacturerPrice: null
-	metaDescription: ""
-	name: "Homemade Cherry Jam"
-	onStock: true
-	outOfStock: false
-	price: {taxType: "NET", formatted: "£40,00", amount: 40, currency: "GBP"}
-	productDataSheet: null
-	productId: "5954B706-E701-F357-A52D-D5809AB3F606"
-	productVariationSelection: null
-	productVariationValues: ""
-	sku: "1007"
-	slideshow: [{…}, {…}, {…}, {…}]
-	slug: "homemade-cherry-jam"
-	stockLevelClass: "in"
-	stockLevelMicrodata: "InStock"
-	title: "Homemade Cherry Jam"
-	variationMaster: null
-	variations: null
-	vatNote: "components.productComponent.priceExclusiveVat"
-	warnStock: false
+    availabilityText: "Available"
+    available: true
+    basePrice: {refQuantity: {…}, refPrice: {…}, formatted: "1 m³ = £0,12", quantity: {…}}
+    conditionMicrodata: "NewCondition"
+    customAttributes: [{…}]
+    deliveryPeriod: "2-3"
+    deliveryPeriodUnit: "DAYS"
+    description: null
+    energyLabel: null
+    energyLabelSourceFile: null
+    gtin: 7501054530107
+    hasCrossSelling: false
+    hasStockLevel: true
+    hasVariations: false
+    href: "/p/homemade-cherry-jam"
+    image: null
+    isVariationMaster: false
+    isVariationProduct: false
+    isVisible: true
+    links: [{…}, {…}, {…}, {…}, {…}]
+    lowestPrice: null
+    mainCategoryId: "5954B711-E377-2A90-C400-D5809AB3F62B"
+    manufacturer: null
+    manufacturerPrice: null
+    metaDescription: ""
+    name: "Homemade Cherry Jam"
+    onStock: true
+    outOfStock: false
+    price: {taxType: "NET", formatted: "£40,00", amount: 40, currency: "GBP"}
+    productDataSheet: null
+    productId: "5954B706-E701-F357-A52D-D5809AB3F606"
+    productVariationSelection: null
+    productVariationValues: ""
+    sku: "1007"
+    slideshow: [{…}, {…}, {…}, {…}]
+    slug: "homemade-cherry-jam"
+    stockLevelClass: "in"
+    stockLevelMicrodata: "InStock"
+    title: "Homemade Cherry Jam"
+    variationMaster: null
+    variations: null
+    vatNote: "components.productComponent.priceExclusiveVat"
+    warnStock: false
 }
 cart: {
-	billingAddress: null
-	canHaveCoupon: true
-	cartId: "5C06901F-150A-3D9B-B144-D509AB34800"
-	checkoutButtons: [{…}]
-	checkoutState: null
-	checkoutUrl: "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/1/Baskets/46072&ChangeAction=PickupBasket&PickupToken=MjNiZThlOGM0MjAzZWQ0N2ZjYmZmZDFiZjI3OTQxMzkwOWY4ZjZlOGE4NTM0ZWIxMjg3NmY2NzBiY2IxYzQ1OV8xNDgyMjIzMDcz"
-	coupon: null
-	couponCampaign: null
-	grandTotal: {
-    	amount: 76.01
-    	currency: "EUR"
-    	formatted: "€76,01"
-    	taxType: "NET"
-  	}
-	grandAmount: "76,01 €"
-	grandAmountNote: "components.productComponent.priceExclusiveVat"
-	minimumOrderValue: null
-	netAmount: "76,01 €"
-	paymentLineItem: {lineItemPrice: {…}, paymentMethod: {…}}
-	pickupToken: "ZjM3M2Q2YmY4jkFjYWRlZTIzZTBlYzQwMDU4MjYzZjYwNDNhZGY0NWM1N2JiNjZhMGI0YWNlNWFkYzU4ZTQ3OF8xNTQzOTM5MjIx"
-	productLineItems: [{…}, {…}, {…}]
-	registerSessionUrl: "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/2/Baskets/46072&ChangeAction=PickupBasket&PickupToken=NTRjZWJmNjdhNzNlYTUzNDAxZTgyZTc4ODYwYTliMDUxMDIzNDQ2OWY2NWQ5NWRmN2Q2YmVjZjVjNzljOTQ2N18xNDgyMjI3OTE3"
-	shippingAddress: null
-	shippingLineItem: {lineItemPrice: {…}, shippingMethod: {…}}
-	subAmount: "76,01 €"
-	taxType: "NET"
-	taxes: []
-	totalNumberOfItems: 3
-	_links: null
+    billingAddress: null
+    canHaveCoupon: true
+    cartId: "5C06901F-150A-3D9B-B144-D509AB34800"
+    checkoutButtons: [{…}]
+    checkoutState: null
+    checkoutUrl: "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/1/Baskets/46072&ChangeAction=PickupBasketPickupToken=MjNiZThlOGM0MjAzZWQ0N2ZjYmZmZDFiZjI3OTQxMzkwOWY4ZjZlOGE4NTM0ZWIxMjg3NmY2NzBiY2IxYzQ1OV8xNDgyMjIzMDcz"
+    coupon: null
+    couponCampaign: null
+    grandTotal: {
+        amount: 76.01
+        currency: "EUR"
+        formatted: "€76,01"
+        taxType: "NET"
+    }
+    grandAmount: "76,01 €"
+    grandAmountNote: "components.productComponent.priceExclusiveVat"
+    minimumOrderValue: null
+    netAmount: "76,01 €"
+    paymentLineItem: {lineItemPrice: {…}, paymentMethod: {…}}
+    pickupToken: "ZjM3M2Q2YmY4jkFjYWRlZTIzZTBlYzQwMDU4MjYzZjYwNDNhZGY0NWM1N2JiNjZhMGI0YWNlNWFkYzU4ZTQ3OF8xNTQzOTM5MjIx"
+    productLineItems: [{…}, {…}, {…}]
+    registerSessionUrl: "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/2/Baskets/46072&ChangeAction=PickupBasketPickupToken=NTRjZWJmNjdhNzNlYTUzNDAxZTgyZTc4ODYwYTliMDUxMDIzNDQ2OWY2NWQ5NWRmN2Q2YmVjZjVjNzljOTQ2N18xNDgyMjI3OTE3"
+    shippingAddress: null
+    shippingLineItem: {lineItemPrice: {…}, shippingMethod: {…}}
+    subAmount: "76,01 €"
+    taxType: "NET"
+    taxes: []
+    totalNumberOfItems: 3
+    _links: null
 }
 ```
 ## Category event
@@ -193,7 +193,7 @@ grandTotal: {
     currency: "EUR"
     formatted: "€76,01"
     taxType: "NET"
-  	}
+    }
 grandAmount: "76,01 €"
 grandAmountNote: "components.productComponent.priceExclusiveVat"
 minimumOrderValue: null
@@ -239,7 +239,7 @@ grandTotal: {
     currency: "EUR"
     formatted: "€76,01"
     taxType: "NET"
-  	}
+    }
 grandAmount: "76,01 €"
 grandAmountNote: "components.productComponent.priceExclusiveVat"
 minimumOrderValue: null
