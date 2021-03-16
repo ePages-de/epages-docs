@@ -45,7 +45,7 @@ To make use of this event, you need to add the following snippet to your code:
 
 ```js
 if (window.eComEventTarget) {
-  window.eComEventTarget.addEventListener('product', function(event){
+  window.eComEventTarget.addEventListener('product', function (event) {
     console.log('product:', event.detail.product.toJS(), 'cart:', event.detail.cart.toJS())
   })
 }
