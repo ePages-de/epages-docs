@@ -14,6 +14,20 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
+## 2021-03-22
+
+### Changes with software release 7.57.0
+
+#### <i class="fas fa-plus"></i> New
+
+* Added `cart` and `cart:setQuantity` events to the [Events](https://developer.epages.com/apps/events.html) section.
+
+#### <i class="fas fa-plus"></i> Update
+
+* Updated `product` event in the [Events](https://developer.epages.com/apps/events.html) section. It now also informs about the current state of the cart.
+
+<hr>
+
 ## 2020-04-17
 
 ### Changes with software release 7.46.0
@@ -174,7 +188,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 #### <i class="fas fa-plus"></i> New
 
-* Added `carts:add`[event](https://developer.epages.com/apps/events.html).
+* Added `carts:add` [event](https://developer.epages.com/apps/events.html).
 
 <hr>
 
