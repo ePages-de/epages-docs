@@ -22,7 +22,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 * Added `cart` and `cart:setQuantity` events to the [Events](https://developer.epages.com/apps/events.html) section.
 
-#### <i class="fas fa-plus"></i> Update
+#### <i class="fas fa-pencil-alt"></i> Update
 
 * Updated `product` event in the [Events](https://developer.epages.com/apps/events.html) section. It now also informs about the current state of the cart.
 
@@ -32,7 +32,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 ### Changes with software release 7.46.0
 
-#### <i class="fas fa-plus"></i> Update
+#### <i class="fas fa-pencil-alt"></i> Update
 
 * Added attribute `additionalData` to data type [`paymentMethodInfo`](https://developer.epages.com/apps/data-types.html#paymentmethodinfo).
 * Added data type [`additionalData`](https://developer.epages.com/apps/data-types.html#additionaldata).
@@ -48,7 +48,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 * [`PUT`legal/cookie-policy](https://developer.epages.com/apps/api-reference/get-shopid-legal-cookie-policy.html)
 * [`GET`legal/cookie-policy](https://developer.epages.com/apps/api-reference/put-shopid-legal-cookie-policy.html)
 
-#### <i class="fas fa-plus"></i> Update
+#### <i class="fas fa-pencil-alt"></i> Update
 
 * Added attribute `status` to data type [`cart`](https://developer.epages.com/apps/data-types.html#cart).
 * Added attribute `forceCreate` to data type [`cart (create request)`](https://developer.epages.com/apps/data-types.html#cart-create-request).
@@ -63,7 +63,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 * [`POST`/carts/{cartId}/multi-line-items](https://developer.epages.com/apps/api-reference/post-shopid-carts-cartid-multi-line-items.html)
 
-#### <i class="fas fa-plus"></i> Update
+#### <i class="fas fa-pencil-alt"></i> Update
 
 * Added attribute `deliveryWeight` to data type [`product (create request)`](https://developer.epages.com/apps/data-types.html#product-create-request).
 
