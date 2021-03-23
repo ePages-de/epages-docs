@@ -24,7 +24,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 #### <i class="fas fa-pencil-alt"></i> Update
 
-* Updated `product` event in the [Events](https://developer.epages.com/apps/events.html) section. It now also informs about the current state of the cart.
+* Updated the `product` event in the [Events](https://developer.epages.com/apps/events.html) section. It now also informs about the current state of the cart.
 
 <hr>
 
