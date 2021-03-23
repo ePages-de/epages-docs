@@ -14,11 +14,26 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
+## 2021-03-23
+
+### Changes with software release 7.56.0
+
+#### <i class="fas fa-plus"></i> New
+
+* Added `cart` and `cart:setQuantity` events to the [Events](https://developer.epages.com/apps/events.html) section.
+
+#### <i class="fas fa-pencil-alt"></i> Update
+
+* Updated the `product` event in the [Events](https://developer.epages.com/apps/events.html) section. It now also informs about the current state of the cart.
+* Updated the `cart:add` event in the [Events](https://developer.epages.com/apps/events.html) section. It now indicates the grand total of the cart and informs about the product that was added to the cart.
+
+<hr>
+
 ## 2020-04-17
 
 ### Changes with software release 7.46.0
 
-#### <i class="fas fa-plus"></i> Update
+#### <i class="fas fa-pencil-alt"></i> Update
 
 * Added attribute `additionalData` to data type [`paymentMethodInfo`](https://developer.epages.com/apps/data-types.html#paymentmethodinfo).
 * Added data type [`additionalData`](https://developer.epages.com/apps/data-types.html#additionaldata).
@@ -34,7 +49,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 * [`PUT`legal/cookie-policy](https://developer.epages.com/apps/api-reference/get-shopid-legal-cookie-policy.html)
 * [`GET`legal/cookie-policy](https://developer.epages.com/apps/api-reference/put-shopid-legal-cookie-policy.html)
 
-#### <i class="fas fa-plus"></i> Update
+#### <i class="fas fa-pencil-alt"></i> Update
 
 * Added attribute `status` to data type [`cart`](https://developer.epages.com/apps/data-types.html#cart).
 * Added attribute `forceCreate` to data type [`cart (create request)`](https://developer.epages.com/apps/data-types.html#cart-create-request).
@@ -49,7 +64,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 * [`POST`/carts/{cartId}/multi-line-items](https://developer.epages.com/apps/api-reference/post-shopid-carts-cartid-multi-line-items.html)
 
-#### <i class="fas fa-plus"></i> Update
+#### <i class="fas fa-pencil-alt"></i> Update
 
 * Added attribute `deliveryWeight` to data type [`product (create request)`](https://developer.epages.com/apps/data-types.html#product-create-request).
 
@@ -174,7 +189,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 #### <i class="fas fa-plus"></i> New
 
-* Added `carts:add`[event](https://developer.epages.com/apps/events.html).
+* Added `carts:add` [event](https://developer.epages.com/apps/events.html).
 
 <hr>
 
