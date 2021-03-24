@@ -586,9 +586,6 @@
             - title: Delete product
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-products-delete
               id: delete_product
-            - title: Duplicate product
-              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-products-duplicate
-              id: duplicate_product
         - title: Product attachments
           entries:
             - title: List product attachments
@@ -788,6 +785,9 @@
             - title: Sort variation attributes
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-attributes-sort
               id: sort_variation_attributes
+            - title: Assign variation attribute as variation images differentiator
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-attribute-make-differentiator
+              id: assign_variation_attribute_as_variation_images_differentiator
             - title: Create variation attribute value
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-attribute-values-create
               id: create_variation_attribute_value
@@ -797,9 +797,6 @@
             - title: Delete variation attribute values of multiple variation attributes
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-attribute-values-delete-multiple
               id: delete_variation_attribute_values_of_multiple_variation_attributes
-            - title: Delete variation attribute values
-              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-attribute-values-delete
-              id: delete_variation_attribute_values
         - title: Variation availability
           entries:
             - title: Show variation availability details
