@@ -1081,24 +1081,37 @@
               id: delete_script_tag
     - title: Webhook API
       entries:
-        - title: Create webhook subscription
-          link: https://api-docs.beyondshop.cloud/ng-webhook-webhook-public-api.html#resources-subscription-create
-          id: create_webhook_subscription
-        - title: Show webhook subscription details
-          link: https://api-docs.beyondshop.cloud/ng-webhook-webhook-public-api.html#resources-subscription-get
-          id: show_webhook_subscription_details
-        - title: Update webhook subscription
-          link: https://api-docs.beyondshop.cloud/ng-webhook-webhook-public-api.html#resources-subscription-update
-          id: update_webhook_subscription
-        - title: List webhook subscriptions
-          link: https://api-docs.beyondshop.cloud/ng-webhook-webhook-public-api.html#resources-subscription-list
-          id: list_webhook_subscriptions
-        - title: Delete webhook subscription
-          link: https://api-docs.beyondshop.cloud/ng-webhook-webhook-public-api.html#resources-subscription-delete
-          id: delete_webhook_subscription
-        - title: Activate webhook subscription
-          link: https://api-docs.beyondshop.cloud/ng-webhook-webhook-public-api.html#resources-subscription-activate
-          id: activate_webhook_subscription
-        - title: Deactivate webhook subscription
-          link: https://api-docs.beyondshop.cloud/ng-webhook-webhook-public-api.html#resources-subscription-deactivate
-          id: deactivate_webhook_subscription
+        - title: Webhook subscriptions
+          entries:
+            - title: Create webhook subscription
+              link: https://api-docs.beyondshop.cloud/ng-webhook-webhook-public-api.html#resources-subscription-create
+              id: create_webhook_subscription
+            - title: Show webhook subscription details
+              link: https://api-docs.beyondshop.cloud/ng-webhook-webhook-public-api.html#resources-subscription-get
+              id: show_webhook_subscription_details
+            - title: Update webhook subscription
+              link: https://api-docs.beyondshop.cloud/ng-webhook-webhook-public-api.html#resources-subscription-update
+              id: update_webhook_subscription
+            - title: List webhook subscriptions
+              link: https://api-docs.beyondshop.cloud/ng-webhook-webhook-public-api.html#resources-subscription-list
+              id: list_webhook_subscriptions
+            - title: Delete webhook subscription
+              link: https://api-docs.beyondshop.cloud/ng-webhook-webhook-public-api.html#resources-subscription-delete
+              id: delete_webhook_subscription
+            - title: Activate webhook subscription
+              link: https://api-docs.beyondshop.cloud/ng-webhook-webhook-public-api.html#resources-subscription-activate
+              id: activate_webhook_subscription
+            - title: Deactivate webhook subscription
+              link: https://api-docs.beyondshop.cloud/ng-webhook-webhook-public-api.html#resources-subscription-deactivate
+              id: deactivate_webhook_subscription
+        - title: Example callbacks
+          entries:
+            - title: Order events callback
+              link: https://api-docs.beyondshop.cloud/ng-webhook-webhook-public-api.html#resources-callback-order-created
+              id: order_events_callback
+            - title: Product events callback
+              link: https://api-docs.beyondshop.cloud/ng-webhook-webhook-public-api.html#resources-callback-product-created
+              id: product_events_callback
+            - title: App events callback
+              link: https://api-docs.beyondshop.cloud/ng-webhook-webhook-public-api.html#resources-callback-app-uninstalled
+              id: app_events_callback
