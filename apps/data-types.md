@@ -116,7 +116,7 @@ ePages Now only!
 | creationDate | string | The date/time the cart was created. Expressed according to ISO 8601. Example: `2018-12-17T21:07:29Z` |
 | checkoutUrl | string | The URL that redirects the browser to the merchant’s shop in order to complete the checkout. |
 | registerSessionUrl | string | The URL that redirects the browser to the merchant’s shop in order to register a session. |
-| canBasketDiscounts | object of [canBasketDiscounts](page:apps-data-types#canBasketDiscounts) | The possible global value discounts of a shop. |
+| canBasketDiscounts | object of [canBasketDiscounts](page:apps-data-types#canbasketdiscounts) | The possible global value discounts of a shop. |
 | status | string | The status of the cart. If all line items were added successfully, it is *Complete*. Otherwise, it is *PartiallyComplete*. Only included in [`POST`/carts](page:apps-api-post-shopid-carts-information) if the attribute *forceCreate* is `true` and in [`POST`/carts/{cartId}/multi-line-items](page:apps-api-post-shopid-carts-cartid-multi-line-items-information). |
 
 ## cart (create request)
