@@ -53,6 +53,36 @@
   "creationDate": "2018-12-17T21:07:29Z",
   "checkoutUrl": "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/2/Baskets/46072&ChangeAction=PickupBasket&PickupToken=Yjk5N2M1MGU5MTU4NjM3ZGNiNjU5MDE4MmZhZGIzNzZiN2YwOGU5NjNlYjdjMGQ0ZmI5ZWY1NjU4NTQ4NmMwOV8xNDgyMjI4MDk3",
   "registerSessionUrl": "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/2/Baskets/46072&ChangeAction=PickupBasket&PickupToken=NTRjZWJmNjdhNzNlYTUzNDAxZTgyZTc4ODYwYTliMDUxMDIzNDQ2OWY2NWQ5NWRmN2Q2YmVjZjVjNzljOTQ2N18xNDgyMjI3OTE3",
+  "canBasketDiscounts": [
+    {
+      "absolute": {
+          "taxType": "GROSS",
+          "formatted": "2,00 €",
+          "amount": 2,
+          "currency": "EUR"
+      },
+      "minimumAmount": {
+          "taxType": "GROSS",
+          "formatted": "12,00 €",
+          "amount": 12,
+          "currency": "EUR"
+      },
+      "percent": null
+    },
+    {
+      "absolute": null,
+      "minimumAmount": {
+          "taxType": "GROSS",
+          "formatted": "50,00 €",
+          "amount": 50,
+          "currency": "EUR"
+      },
+      "percent": {
+          "percentage": 10.0,
+          "formatted": "10 %"
+      }
+    }
+  ],
   "links": [
     {
       "rel": "self",
