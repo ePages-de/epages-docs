@@ -23,7 +23,7 @@
         "amount": "110",
         "currency": "EUR"
       },
-        "basePrice": null
+      "basePrice": null
     },
     {
       "quantity":{
