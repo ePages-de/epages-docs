@@ -186,13 +186,13 @@
     {
       "absolute": {
           "taxType": "GROSS",
-          "formatted": "2,00 €",
+          "formatted": "2.00 €",
           "amount": 2,
           "currency": "EUR"
       },
       "minimumAmount": {
           "taxType": "GROSS",
-          "formatted": "12,00 €",
+          "formatted": "12.00 €",
           "amount": 12,
           "currency": "EUR"
       },
@@ -202,7 +202,7 @@
       "absolute": null,
       "minimumAmount": {
           "taxType": "GROSS",
-          "formatted": "50,00 €",
+          "formatted": "50.00 €",
           "amount": 50,
           "currency": "EUR"
       },
