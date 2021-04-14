@@ -126,7 +126,7 @@ ePages Now only!
 | currency | string | The currency code of the price according to ISO 4217.|
 | taxType | string | Indicates if the amount includes tax. Can be *GROSS*, *NET* or *NONE*.|
 | locale | string | The locale that identifies the origin of the customer.|
-| lineItems | array of [productLineItem (create request)](page:apps-data-types#productlineitem-create-request)  | The product line items in the basket.|
+| lineItems | array of [productLineItem (create request)](page:apps-data-types#productlineitem-create-request)  | The product line items in the cart.|
 | forceCreate | boolean | Creates a cart if at least one of several line items can be added to the cart successfully. (optional)|
 
 ## category
@@ -382,7 +382,7 @@ ePages Now only!
 | - | - |  - |
 | status | boolean | Indicates if the minimum order value is exceeded. Creating an order is not possible when a cart is posted with the minimumCart status `false´. |
 | code | string | Represents the selected value of the minimum order value that can be set by the merchant in the administration area of the shop. Can be one of *SumProduct*, *SumCoupon*, *SumDiscount*, *SumDelivery* or *SumPayment*. |
-| amount | object of [price](page:apps-data-types#price) | The amount of the minimum value in the basket with currency and tax type. |
+| amount | object of [price](page:apps-data-types#price) | The amount of the minimum value in the cart with currency and tax type. |
 
 ## newsletterCampaign
 
@@ -526,7 +526,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | title | string | The page title of the product page. |
 | priceInfo | object of [priceInfo](page:apps-data-types#priceinfo) | Price information on the product. |
 | bulkPriceInfo | object of [bulkPriceInfo](page:apps-data-types#bulkpriceinfo) | Information on bulk pricing for the product. |
-| forSale | boolean | Information on the sale status of the product. Indicates if the product can be added to the basket. |
+| forSale | boolean | Information on the sale status of the product. Indicates if the product can be added to the cart. |
 | specialOffer | boolean | Indicates if the product is a special offer. |
 | deliveryWeight | object of [deliveryWeightQuantity](page:apps-data-types#deliveryweightquantity) | The delivery weight of the product. |
 | shippingMethodsRestrictedTo | array of [link](page:apps-data-types#link) | Information on possible shipping method restrictions, e.g. express delivery only. Can be `null` if no restrictions exist. |
@@ -642,7 +642,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | description | string | The description of the product. |
 | title | string | The page title of the product page. |
 | priceInfo | object of [priceInfo](page:apps-data-types#priceinfo) | Price information on the product. |
-| forSale | boolean | Information on the sale status of the product. Indicates if the product can be added to the basket. |
+| forSale | boolean | Information on the sale status of the product. Indicates if the product can be added to the cart. |
 | specialOffer | boolean | Indicates if the product is a special offer. |
 | deliveryWeight | object of [deliveryWeightQuantity](page:apps-data-types#deliveryweightquantity) | The delivery weight of the product. |
 | shippingMethodsRestrictedTo | array of [link](page:apps-data-types#link) | Information on possible shipping method restrictions, e.g. express delivery only. Can be `null` if no restrictions exist. |
