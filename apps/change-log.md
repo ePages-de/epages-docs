@@ -14,14 +14,32 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
+## 2020-05-14
+
+### Changes with software release 7.59.0
+
+#### <i class="fas fa-plus"></i> New
+
+* Added data type [`canBasketDiscounts`](https://developer.epages.com/apps/data-types.html#canbasketdiscounts).
+
+#### <i class="fas fa-pencil-alt"></i> Update
+
+* Added attribute `canBasketDiscounts` to data type [`cart`](https://developer.epages.com/apps/data-types.html#cart).
+* Added attribute `basePrice` to data type [`bulkPriceInfo`](https://developer.epages.com/apps/data-types.html#bulkpriceinfo).
+
+<hr>
+
 ## 2020-04-17
 
 ### Changes with software release 7.46.0
 
+#### <i class="fas fa-plus"></i> New
+
+* Added data type [`additionalData`](https://developer.epages.com/apps/data-types.html#additionaldata).
+
 #### <i class="fas fa-plus"></i> Update
 
 * Added attribute `additionalData` to data type [`paymentMethodInfo`](https://developer.epages.com/apps/data-types.html#paymentmethodinfo).
-* Added data type [`additionalData`](https://developer.epages.com/apps/data-types.html#additionaldata).
 
 <hr>
 
