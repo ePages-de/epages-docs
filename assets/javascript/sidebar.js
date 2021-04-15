@@ -42,7 +42,8 @@ $(document).ready(function() {
           $('#docs').attr('src', iframeUrl);
         }
       } else {
-        findElement(data);
+        const anchor = data.substring(data.indexOf('#') + 1);
+        findElement(anchor);
       }
   },false);
 });
