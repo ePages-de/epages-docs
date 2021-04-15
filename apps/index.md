@@ -20,7 +20,7 @@ With a standard interface to store data, it is very simple to create application
 Put your idea into action!
 Before you can start coding away, you'll need to sign up for the ePages Developer Program and create a test shop.
 To use the ePages Now API you will need an application registration.
-Once submitted successfully, your app will be available to more than **140,000 online shop owners** in the [ePages App Store](https://blog.epages.com/us/2016/05/14/the-epages-app-store-everything-for-your-e-commerce-success/).
+Once submitted successfully, your app will be available to more than **100,000 online shop owners** in the [ePages App Store](https://blog.epages.com/us/2016/05/14/the-epages-app-store-everything-for-your-e-commerce-success/).
 
 Get started and join the ePages Developer Program:
 
@@ -35,7 +35,7 @@ Get started and join the ePages Developer Program:
 The account for your test shop will be active for 365 days.
 After this period has expired, the shop account can be prolonged for free.
 
-If you're eager for more information on how to set up your test shop, check out our [Online Help](https://www.online-help-center.com/) for merchants.
+If you're eager for more information on how to set up your test shop, check out our [Help center](https://helpspace.zendesk.com/hc/en-gb) for merchants.
 {% endcallout %}
 
 ## App activation process
