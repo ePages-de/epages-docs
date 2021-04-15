@@ -35,7 +35,6 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 #### <i class="fas fa-pencil-alt"></i> Update
 
-
 * Added attribute `additionalData` to data type [`paymentMethodInfo`](https://developer.epages.com/apps/data-types.html#paymentmethodinfo).
 * Added data type [`additionalData`](https://developer.epages.com/apps/data-types.html#additionaldata).
 
