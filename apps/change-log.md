@@ -20,7 +20,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 #### <i class="fas fa-plus"></i> New
 
-* Added data type [`potentialBasketDiscounts`](https://developer.epages.com/apps/data-types.html#potentialBasketDiscounts).
+* Added data type [`potentialBasketDiscounts`](https://developer.epages.com/apps/data-types.html#potentialbasketdiscounts).
 
 #### <i class="fas fa-pencil-alt"></i> Update
 
