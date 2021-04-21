@@ -855,9 +855,6 @@
             - title: Assign variation image as default image
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-images-set-default
               id: assign_variation_image_as_default_image
-            - title: Assign variation images differentiator
-              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-images-differentiator-set
-              id: assign_variation_images_differentiator
         - title: Variation properties
           entries:
             - title: List variation properties
