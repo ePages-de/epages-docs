@@ -20,11 +20,11 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 #### <i class="fas fa-plus"></i> New
 
-* Added data type [`canBasketDiscounts`](https://developer.epages.com/apps/data-types.html#canbasketdiscounts).
+* Added data type [`possibleBasketDiscounts`](https://developer.epages.com/apps/data-types.html#possibleBasketDiscounts).
 
 #### <i class="fas fa-pencil-alt"></i> Update
 
-* Added attribute `canBasketDiscounts` to data type [`cart`](https://developer.epages.com/apps/data-types.html#cart).
+* Added attribute `possibleBasketDiscounts` to data type [`cart`](https://developer.epages.com/apps/data-types.html#cart).
 * Added attribute `basePrice` to data type [`bulkPriceInfo`](https://developer.epages.com/apps/data-types.html#bulkpriceinfo).
 
 <hr>

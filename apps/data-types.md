@@ -92,7 +92,7 @@ ePages Now only!
 | quantity | object of [quantity](page:apps-data-types#quantity) | The quantity of the product the price refers to.|
 | price | object of [price](page:apps-data-types#price) | The price of the product.|
 
-## canBasketDiscounts
+## possibleBasketDiscounts
 
 | Attribute | Type | Description |
 | - | - |  - |
@@ -116,7 +116,7 @@ ePages Now only!
 | creationDate | string | The date/time the cart was created. Expressed according to ISO 8601. Example: `2018-12-17T21:07:29Z` |
 | checkoutUrl | string | The URL that redirects the browser to the merchant’s shop in order to complete the checkout. |
 | registerSessionUrl | string | The URL that redirects the browser to the merchant’s shop in order to register a session. |
-| canBasketDiscounts | object of [canBasketDiscounts](page:apps-data-types#canbasketdiscounts) | The list of all potential overall discounts for orders in the shop. The included discounts can be of type *absolute* or *percent*.|
+| possibleBasketDiscounts | object of [possibleBasketDiscounts](page:apps-data-types#possibleBasketDiscounts) | The list of all potential overall discounts for orders in the shop. The included discounts can be of type *absolute* or *percent*.|
 | status | string | The status of the cart. If all line items were added successfully, it is *Complete*. Otherwise, it is *PartiallyComplete*. Only included in [`POST`/carts](page:apps-api-post-shopid-carts-information) if the attribute *forceCreate* is `true` and in [`POST`/carts/{cartId}/multi-line-items](page:apps-api-post-shopid-carts-cartid-multi-line-items-information). |
 
 ## cart (create request)
@@ -480,7 +480,7 @@ ePages Now only!
 
 ## percent
 
-This object is used for the attributes of canBasketDiscounts.
+This object is used for the attributes of possibleBasketDiscounts.
 
 | Attribute | Type | Description |
 | - | - |  - |

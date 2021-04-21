@@ -211,17 +211,17 @@
       "creationDate": "2018-12-17T21:07:29Z",
       "checkoutUrl": "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/1/Baskets/46072&ChangeAction=PickupBasket&PickupToken=NDU0NjIzY2FkYjg3OTNmOGQyOGYyZjg0NTliYTgwNDFjMzBjODYzYjcyN2Y2ZDZmMmVlYWMwYjFiYWU0NjRkZV8xNDgyMjIzOTAz",
       "registerSessionUrl": "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/2/Baskets/46072&ChangeAction=PickupBasket&PickupToken=NTRjZWJmNjdhNzNlYTUzNDAxZTgyZTc4ODYwYTliMDUxMDIzNDQ2OWY2NWQ5NWRmN2Q2YmVjZjVjNzljOTQ2N18xNDgyMjI3OTE3",
-      "canBasketDiscounts": [
+      "possibleBasketDiscounts": [
         {
           "absolute": {
               "taxType": "GROSS",
-              "formatted": "2.00 €",
+              "formatted": "10.00 €",
               "amount": 2,
               "currency": "EUR"
           },
           "minimumAmount": {
               "taxType": "GROSS",
-              "formatted": "12.00 €",
+              "formatted": "30.00 €",
               "amount": 12,
               "currency": "EUR"
           },
