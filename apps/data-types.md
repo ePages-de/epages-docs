@@ -92,15 +92,6 @@ ePages Now only!
 | quantity | object of [quantity](page:apps-data-types#quantity) | The quantity of the product the price refers to.|
 | price | object of [price](page:apps-data-types#price) | The price of the product.|
 
-## potentialBasketDiscounts
-
-| Attribute | Type | Description |
-| - | - |  - |
-| absolute | object of [price](page:apps-data-types#price) | The potential absolute overall discount for orders in the shop. |
-| minimumAmount | object of [price](page:apps-data-types#price) | The minimum basket amount of the overall discount, if customers are required to purchase at least a minimum amount to being able to receive the discount. |
-| percent | object of [percent](page:apps-data-types#percent) | The potential percentage overall discount for orders in the shop. |
-
-
 ## cart
 
 | Attribute | Type | Description |
@@ -484,8 +475,16 @@ This object is used for the attributes of potentialBasketDiscounts.
 
 | Attribute | Type | Description |
 | - | - |  - |
-| formatted | string | The number amount of the percentage with the percentage sign. |
 | percentage | number | The number amount of the percentage. |
+| formatted | string | The number amount of the percentage with the percentage sign. |
+
+## potentialBasketDiscounts
+
+| Attribute | Type | Description |
+| - | - |  - |
+| absolute | object of [price](page:apps-data-types#price) | The potential absolute overall discount for orders in the shop. |
+| minimumAmount | object of [price](page:apps-data-types#price) | The minimum basket amount of the overall discount, if customers are required to purchase at least a minimum amount to being able to receive the discount. |
+| percent | object of [percent](page:apps-data-types#percent) | The potential percentage overall discount for orders in the shop. |
 
 ## price
 
