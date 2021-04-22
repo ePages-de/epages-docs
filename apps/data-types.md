@@ -489,7 +489,7 @@ This object is used for the attributes of potentialBasketDiscounts.
 
 ## price
 
-This object is used for the attributes of basePrice, depositPrice, ecoParticipationPrice, manufacturerPrice, grandTotal, priceWithDeposits, totalBeforeTax, totalTax and lineItemsSubTotal.
+This object is used for the attributes of basePrice, depositPrice, ecoParticipationPrice, manufacturerPrice, grandTotal, priceWithDeposits, shippingMethod, totalBeforeTax, totalTax and lineItemsSubTotal.
 
 | Attribute | Type | Description |
 | - | - |  - |
@@ -770,16 +770,17 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | Attribute | Type | Description |
 | - | - |  - |
 | shippingMethodId | string | The unique identifier of the shipping method. |
-| name | string | The name of the shipping method chosen by the customer.|
+| name | string | The name of the shipping method.|
 | description | string | The description of the shipping method.|
 | logo | string | The logo of the shipping method. |
+| price | object of [price](page:apps-data-types#price) | The costs for the shipping. If the costs for the shipping can differ, for example for weight-based shipping methods, the minimum costs will be returned. |
 
 ## shippingMethodInfo
 
 | Attribute | Type | Description |
 | - | - |  - |
 | id | string | The unique identifier of the shipping method. |
-| name | string | The name of the shipping method chosen by the customer. |
+| name | string | The name of the shipping method. |
 
 ## shopInfo
 

@@ -3,9 +3,9 @@
   "title": "Get Shipping Method Schema",
   "type": "object",
   "properties": {
-    "": {
+    "[]": {
       "type": "array of [shippingMethod](page:apps-data-types#shippingmethod)",
-      "description": ""
+      "description": "The list of all shipping methods."
     }
   }
 }

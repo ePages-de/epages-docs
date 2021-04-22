@@ -3,18 +3,31 @@
     "shippingMethodId": "5171DD86-C077-0726-C448-AC14145F9026",
     "name": "Standard delivery",
     "description": null,
-    "logo": null
-  },
+    "logo": null,
+    "price": {
+      "taxType": "GROSS",
+      "formatted": "7.00 €",
+      "amount": 7,
+      "currency": "EUR"
+  }
+},
   {
     "shippingMethodId": "5171DD86-4B9C-4281-30BC-AC14145F908F",
     "name": "Express delivery",
     "description": null,
-    "logo": null
-  },
+    "logo": null,
+    "price": {
+      "taxType": "GROSS",
+      "formatted": "12.00 €",
+      "amount": 12,
+      "currency": "EUR"
+  }
+},
   {
     "shippingMethodId": "5171DD86-CCFD-ED56-DBF3-AC14145F900E",
     "name": "Customer pickup",
     "description": null,
-    "logo": null
+    "logo": null,
+    "price": null
   }
 ]
