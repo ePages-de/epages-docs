@@ -27,6 +27,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 * Added attribute `potentialBasketDiscounts` to data type [`cart`](https://developer.epages.com/apps/data-types.html#cart).
 * Added attribute `basePrice` to data type [`bulkPriceInfo`](https://developer.epages.com/apps/data-types.html#bulkpriceinfo).
 * Added attribute `price` to data type [`shippingMethod`](https://developer.epages.com/apps/data-types.html#shippingmethod).
+* The attribute path `/payment` can now also be updated via [`PATCH`orders/{orderId}](https://developer.epages.com/apps/api-reference/patch-shopid-orders-orderid.html). 
 
 <hr>
 
