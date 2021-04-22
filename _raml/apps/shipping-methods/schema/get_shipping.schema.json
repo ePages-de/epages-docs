@@ -5,7 +5,7 @@
   "properties": {
     "": {
       "type": "array of [shippingMethod](page:apps-data-types#shippingmethod)",
-      "description": ""
+      "description": "Information on the shipping method chosen by the customer."
     }
   }
 }
