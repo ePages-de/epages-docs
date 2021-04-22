@@ -6,7 +6,7 @@
     "logo": null,
     "price": {
       "taxType": "GROSS",
-      "formatted": "7,00 €",
+      "formatted": "7.00 €",
       "amount": 7,
       "currency": "EUR"
   }
@@ -18,7 +18,7 @@
     "logo": null,
     "price": {
       "taxType": "GROSS",
-      "formatted": "12,00 €",
+      "formatted": "12.00 €",
       "amount": 12,
       "currency": "EUR"
   }
