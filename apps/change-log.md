@@ -20,6 +20,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 #### <i class="fas fa-plus"></i> New
 
+* [`PUT`/carts/{cartId}/shipping-data/shipping-method](https://developer.epages.com/apps/api-reference/put-shopid-carts-cartid-shipping-data-shipping-method.html)
 * Added data type [`potentialBasketDiscounts`](https://developer.epages.com/apps/data-types.html#potentialbasketdiscounts).
 
 #### <i class="fas fa-pencil-alt"></i> Update
