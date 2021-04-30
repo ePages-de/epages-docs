@@ -203,17 +203,17 @@ post:
               example: !include examples/delete_carts_cartid_shipping_response.json
               schema: !include schema/delete_carts_cartid_shipping.schema.json
 
-  /shippingData/shippingMethod:
+  /shipping-data/shipping-method:
     displayName: Shipping method
     put:
       description: Modifies the shipping method for a cart. *epages6 *epagesNow
       body:
         application/json:
-          example: !include examples/put_carts_cartid_shipping_request.json
-          schema: !include schema/put_carts_cartid_shipping_request.schema.json
+          example: !include examples/put_carts_cartid_shippingdata_shippingmethod_request.json
+          schema: !include schema/put_carts_cartid_shippingdata_shippingmethod_request.schema.json
       responses:
         200:
           body:
             application/json:
-              example: !include examples/put_carts_cartid_shipping_response.json
-              schema: !include schema/put_carts_cartid_shipping.schema.json
+              example: !include examples/put_carts_cartid_shippingdata_shippingmethod_response.json
+              schema: !include schema/put_carts_cartid_shippingdata_shippingmethod.schema.json
