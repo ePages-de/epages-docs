@@ -309,6 +309,9 @@
             - title: Update pickup option
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-pickup-option-update
               id: update_pickup_option
+            - title: Sort pickup options
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-pickup-option-sort
+              id: sort_pickup_options
             - title: Delete pickup option
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-pickup-option-delete
               id: delete_pickup_option
