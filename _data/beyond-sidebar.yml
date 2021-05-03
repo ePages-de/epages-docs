@@ -209,6 +209,24 @@
             - title: Create payment and order
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-create-payment-and-order
               id: create_payment_and_order
+            - title: Set current cart shipping method
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-set-shipping-methods-current
+              id: set_current_cart_shipping_method
+            - title: Set cart shipping method to current default
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-set-shipping-methods-default
+              id: set_cart_shipping_method_to_current_default
+            - title: Show current cart shipping method details
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-get-shipping-methods-current
+              id: show_current_cart_shipping_method_details
+            - title: Show applicable cart shipping method details
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#_show_applicable_cart_shipping_method_details
+              id: show_applicable_cart_shipping_method_details
+            - title: Find serviceable countries
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-shipping-zones-search-find-serviceable-countries
+              id: find_serviceable_countries
+            - title: List pickup options
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-pickup-options
+              id: cart_list_pickup_options
             - title: Redeem coupon
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-redeem-coupon
               id: redeem_coupon
@@ -277,26 +295,24 @@
             - title: Deactivate payment method
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-payment-method-deactivate
               id: deactivate_payment_method
-        - title: Serviceable countries
+        - title: Pickup options
           entries:
-            - title: Find serviceable countries
-              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-shipping-zones-search-find-serviceable-countries
-              id: find_serviceable_countries
-        - title: Shipping methods
-          entries:
-            - title: Set current cart shipping method
-              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-set-shipping-methods-current
-              id: set_current_cart_shipping_method
-            - title: Set cart shipping method to current default
-              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-set-shipping-methods-default
-              id: set_cart_shipping_method_to_current_default
-            - title: Show current cart shipping method details
-              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-get-shipping-methods-current
-              id: show_current_cart_shipping_method_details
-            - title: Show applicable cart shipping method details
-              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#_show_applicable_cart_shipping_method_details
-              id: show_applicable_cart_shipping_method_details
-        - title: Shipping zones
+            - title: Create pickup option
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-pickup-option-create
+              id: create_pickup_option
+            - title: List pickup options
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-pickup-option-list
+              id: list_pickup_options
+            - title: Show pickup option details
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-pickup-option-get
+              id: show_pickup_option_details
+            - title: Update pickup option
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-pickup-option-update
+              id: update_pickup_option
+            - title: Delete pickup option
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-pickup-option-delete
+              id: delete_pickup_option
+        - title: Shipping zones and methods
           entries:
             - title: Show shipping zone details
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-shipping-zone-get
