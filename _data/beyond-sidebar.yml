@@ -224,9 +224,9 @@
             - title: Find serviceable countries
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-shipping-zones-search-find-serviceable-countries
               id: find_serviceable_countries
-            - title: List pickup options
+            - title: List pickup options for current cart
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-pickup-options
-              id: cart_list_pickup_options
+              id: list_pickup_options_for_current_cart
             - title: Redeem coupon
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-redeem-coupon
               id: redeem_coupon
