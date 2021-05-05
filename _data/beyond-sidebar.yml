@@ -224,9 +224,9 @@
             - title: Find serviceable countries
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-shipping-zones-search-find-serviceable-countries
               id: find_serviceable_countries
-            - title: List pickup options
+            - title: List pickup options for current cart
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-pickup-options
-              id: cart_list_pickup_options
+              id: list_pickup_options_for_current_cart
             - title: Redeem coupon
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-redeem-coupon
               id: redeem_coupon
@@ -407,6 +407,12 @@
             - title: Cancel order
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-cancel-order
               id: cancel_order
+            - title: List unviewed orders
+              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-orders-list-unviewed
+              id: list_unviewed_orders
+            - title: Mark order as viewed
+              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-mark-order-as-viewed
+              id: mark_order_as_viewed
             - title: Update order note
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-note-update
               id: update_order_note
