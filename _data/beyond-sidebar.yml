@@ -408,7 +408,7 @@
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-cancel-order
               id: cancel_order
             - title: List unviewed orders
-              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-get-all-unviewed-orders
+              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-orders-list-unviewed
               id: list_unviewed_orders
             - title: Mark order as viewed
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-mark-order-as-viewed
