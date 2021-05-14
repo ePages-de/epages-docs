@@ -14,6 +14,24 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
+## 2021-05-14
+
+### Changes with software release 7.59.0
+
+#### <i class="fas fa-plus"></i> New
+
+* [`PUT`/carts/{cartId}/shipping-data/shipping-method](https://developer.epages.com/apps/api-reference/put-shopid-carts-cartid-shipping-data-shipping-method.html)
+* Added data type [`potentialBasketDiscounts`](https://developer.epages.com/apps/data-types.html#potentialbasketdiscounts).
+
+#### <i class="fas fa-pencil-alt"></i> Update
+
+* Added attribute `potentialBasketDiscounts` to data type [`cart`](https://developer.epages.com/apps/data-types.html#cart).
+* Added attribute `basePrice` to data type [`bulkPriceInfo`](https://developer.epages.com/apps/data-types.html#bulkpriceinfo).
+* Added attribute `price` to data type [`shippingMethod`](https://developer.epages.com/apps/data-types.html#shippingmethod).
+* The attribute path `/payment` can now also be updated via [`PATCH`orders/{orderId}](https://developer.epages.com/apps/api-reference/patch-shopid-orders-orderid.html). 
+
+<hr>
+
 ## 2021-03-23
 
 ### Changes with software release 7.56.0
@@ -33,10 +51,13 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 ### Changes with software release 7.46.0
 
+#### <i class="fas fa-plus"></i> New
+
+* Added data type [`additionalData`](https://developer.epages.com/apps/data-types.html#additionaldata).
+
 #### <i class="fas fa-pencil-alt"></i> Update
 
 * Added attribute `additionalData` to data type [`paymentMethodInfo`](https://developer.epages.com/apps/data-types.html#paymentmethodinfo).
-* Added data type [`additionalData`](https://developer.epages.com/apps/data-types.html#additionaldata).
 
 <hr>
 

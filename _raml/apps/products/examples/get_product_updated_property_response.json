@@ -102,7 +102,8 @@
               "formatted": "110.00 €",
               "amount": "110",
               "currency": "EUR"
-            }
+            },
+            "basePrice": null
           },
           {
             "quantity":{
@@ -114,7 +115,8 @@
               "formatted": "120.00 €",
               "amount": 120,
               "currency":"EUR"
-            }
+            },
+            "basePrice": null
           }
         ],
         "forSale": true,

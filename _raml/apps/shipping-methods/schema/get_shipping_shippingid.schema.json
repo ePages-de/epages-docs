@@ -18,6 +18,10 @@
     "logo": {
       "type": "string",
       "description": "The logo of the shipping method."
+    },
+    "price": {
+      "type": "object of [price](page:apps-data-types#price)",
+      "description": "The costs for the shipping. If the costs for the shipping can differ, for example for weight-based shipping methods, the minimum costs will be returned."
     }
   }
 }

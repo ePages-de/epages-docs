@@ -91,6 +91,7 @@ ePages Now only!
 | - | - |  - |
 | quantity | object of [quantity](page:apps-data-types#quantity) | The quantity of the product the price refers to.|
 | price | object of [price](page:apps-data-types#price) | The price of the product.|
+| basePrice | object of [basePrice](page:apps-data-types#baseprice) | The price information scaled to a standardised base unit, according to the German base price regulation "Preisangabenverordnung" (PAngV), e.g. 1 l = 1.20 EUR. Is `null` if no reference amount is specified for the product.|
 
 ## cart
 
@@ -107,6 +108,7 @@ ePages Now only!
 | creationDate | string | The date/time the cart was created. Expressed according to ISO 8601. Example: `2018-12-17T21:07:29Z` |
 | checkoutUrl | string | The URL that redirects the browser to the merchant’s shop in order to complete the checkout. |
 | registerSessionUrl | string | The URL that redirects the browser to the merchant’s shop in order to register a session. |
+| potentialBasketDiscounts | object of [potentialBasketDiscounts](page:apps-data-types#potentialbasketdiscounts) | The list of all potential overall discounts for orders in the shop. The included discounts can be of type *absolute* or *percent*.|
 | status | string | The status of the cart. If all line items were added successfully, it is *Complete*. Otherwise, it is *PartiallyComplete*. Only included in [`POST`/carts](page:apps-api-post-shopid-carts-information) if the attribute *forceCreate* is `true` and in [`POST`/carts/{cartId}/multi-line-items](page:apps-api-post-shopid-carts-cartid-multi-line-items-information). |
 
 ## cart (create request)
@@ -116,7 +118,7 @@ ePages Now only!
 | currency | string | The currency code of the price according to ISO 4217.|
 | taxType | string | Indicates if the amount includes tax. Can be *GROSS*, *NET* or *NONE*.|
 | locale | string | The locale that identifies the origin of the customer.|
-| lineItems | array of [productLineItem (create request)](page:apps-data-types#productlineitem-create-request)  | The product line items in the basket.|
+| lineItems | array of [productLineItem (create request)](page:apps-data-types#productlineitem-create-request)  | The product line items in the cart.|
 | forceCreate | boolean | Creates a cart if at least one of several line items can be added to the cart successfully. (optional)|
 
 ## category
@@ -372,7 +374,7 @@ ePages Now only!
 | - | - |  - |
 | status | boolean | Indicates if the minimum order value is exceeded. Creating an order is not possible when a cart is posted with the minimumCart status `false´. |
 | code | string | Represents the selected value of the minimum order value that can be set by the merchant in the administration area of the shop. Can be one of *SumProduct*, *SumCoupon*, *SumDiscount*, *SumDelivery* or *SumPayment*. |
-| amount | object of [price](page:apps-data-types#price) | The amount of the minimum value in the basket with currency and tax type. |
+| amount | object of [price](page:apps-data-types#price) | The amount of the minimum value in the cart with currency and tax type. |
 
 ## newsletterCampaign
 
@@ -468,9 +470,26 @@ ePages Now only!
 | providerName | string | The name of the payment provider that executes the payment. |
 | additionalData | object of [additionalData](page:apps-data-types#additionaldata) | Additional information required for the payment that can be given to e.g. determine the `invoiceIBAN`. |
 
+## percent
+
+This object is used for the attributes of potentialBasketDiscounts.
+
+| Attribute | Type | Description |
+| - | - |  - |
+| percentage | number | The number amount of the percentage. |
+| formatted | string | The number amount of the percentage with the percentage sign. |
+
+## potentialBasketDiscounts
+
+| Attribute | Type | Description |
+| - | - |  - |
+| absolute | object of [price](page:apps-data-types#price) | The potential absolute overall discount for orders in the shop. |
+| minimumAmount | object of [price](page:apps-data-types#price) | The minimum basket amount of the overall discount, if customers are required to purchase at least a minimum amount to being able to receive the discount. |
+| percent | object of [percent](page:apps-data-types#percent) | The potential percentage overall discount for orders in the shop. |
+
 ## price
 
-This object is used for the attributes of basePrice, depositPrice, ecoParticipationPrice, manufacturerPrice, grandTotal, priceWithDeposits, totalBeforeTax, totalTax and lineItemsSubTotal.
+This object is used for the attributes of basePrice, depositPrice, ecoParticipationPrice, manufacturerPrice, grandTotal, priceWithDeposits, shippingMethod, totalBeforeTax, totalTax and lineItemsSubTotal.
 
 | Attribute | Type | Description |
 | - | - |  - |
@@ -507,7 +526,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | title | string | The page title of the product page. |
 | priceInfo | object of [priceInfo](page:apps-data-types#priceinfo) | Price information on the product. |
 | bulkPriceInfo | object of [bulkPriceInfo](page:apps-data-types#bulkpriceinfo) | Information on bulk pricing for the product. |
-| forSale | boolean | Information on the sale status of the product. Indicates if the product can be added to the basket. |
+| forSale | boolean | Information on the sale status of the product. Indicates if the product can be added to the cart. |
 | specialOffer | boolean | Indicates if the product is a special offer. |
 | deliveryWeight | object of [deliveryWeightQuantity](page:apps-data-types#deliveryweightquantity) | The delivery weight of the product. |
 | shippingMethodsRestrictedTo | array of [link](page:apps-data-types#link) | Information on possible shipping method restrictions, e.g. express delivery only. Can be `null` if no restrictions exist. |
@@ -623,7 +642,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | description | string | The description of the product. |
 | title | string | The page title of the product page. |
 | priceInfo | object of [priceInfo](page:apps-data-types#priceinfo) | Price information on the product. |
-| forSale | boolean | Information on the sale status of the product. Indicates if the product can be added to the basket. |
+| forSale | boolean | Information on the sale status of the product. Indicates if the product can be added to the cart. |
 | specialOffer | boolean | Indicates if the product is a special offer. |
 | deliveryWeight | object of [deliveryWeightQuantity](page:apps-data-types#deliveryweightquantity) | The delivery weight of the product. |
 | shippingMethodsRestrictedTo | array of [link](page:apps-data-types#link) | Information on possible shipping method restrictions, e.g. express delivery only. Can be `null` if no restrictions exist. |
@@ -751,16 +770,17 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | Attribute | Type | Description |
 | - | - |  - |
 | shippingMethodId | string | The unique identifier of the shipping method. |
-| name | string | The name of the shipping method chosen by the customer.|
+| name | string | The name of the shipping method.|
 | description | string | The description of the shipping method.|
 | logo | string | The logo of the shipping method. |
+| price | object of [price](page:apps-data-types#price) | The costs for the shipping. If the costs for the shipping can differ, for example for weight-based shipping methods, the minimum costs will be returned. |
 
 ## shippingMethodInfo
 
 | Attribute | Type | Description |
 | - | - |  - |
 | id | string | The unique identifier of the shipping method. |
-| name | string | The name of the shipping method chosen by the customer. |
+| name | string | The name of the shipping method. |
 
 ## shopInfo
 

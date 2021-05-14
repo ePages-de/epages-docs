@@ -2,5 +2,10 @@
   "shippingMethodId": "5171DD86-C077-0726-C448-AC14145F9026",
   "name": "Standard delivery",
   "description": null,
-  "logo": null
+  "logo": null,
+  "price": {
+    "taxType": "GROSS",
+    "formatted": "7.00 €",
+    "amount": 7,
+    "currency": "EUR"
 }
