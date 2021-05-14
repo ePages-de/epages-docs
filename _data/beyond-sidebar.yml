@@ -17,18 +17,21 @@
         - title: Response headers
           link: https://api-docs.beyondshop.cloud/index-api-basics.html#_response_headers
           id: response_headers
-        - title: Versioning
-          link: https://api-docs.beyondshop.cloud/index-api-basics.html#_versioning
-          id: versioning
         - title: Sorting
           link: https://api-docs.beyondshop.cloud/index-api-basics.html#_sorting
           id: sorting
+        - title: Optional properties
+          link: https://api-docs.beyondshop.cloud/index-api-basics.html#_optional_properties
+          id: optional_properties
         - title: Pagination
           link: https://api-docs.beyondshop.cloud/index-api-basics.html#_pagination
           id: pagination
         - title: Hypermedia
           link: https://api-docs.beyondshop.cloud/index-api-basics.html#hypermedia
           id: hypermedia
+        - title: Versioning
+          link: https://api-docs.beyondshop.cloud/index-api-basics.html#_versioning
+          id: versioning
     - title: REST API errors
       entries:
         - title: HTTP status codes
@@ -209,6 +212,24 @@
             - title: Create payment and order
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-create-payment-and-order
               id: create_payment_and_order
+            - title: Set current cart shipping method
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-set-shipping-methods-current
+              id: set_current_cart_shipping_method
+            - title: Set cart shipping method to current default
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-set-shipping-methods-default
+              id: set_cart_shipping_method_to_current_default
+            - title: Show current cart shipping method details
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-get-shipping-methods-current
+              id: show_current_cart_shipping_method_details
+            - title: Show applicable cart shipping method details
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#_show_applicable_cart_shipping_method_details
+              id: show_applicable_cart_shipping_method_details
+            - title: Find serviceable countries
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-shipping-zones-search-find-serviceable-countries
+              id: find_serviceable_countries
+            - title: List pickup options for current cart
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-pickup-options
+              id: list_pickup_options_for_current_cart
             - title: Redeem coupon
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-redeem-coupon
               id: redeem_coupon
@@ -277,26 +298,27 @@
             - title: Deactivate payment method
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-payment-method-deactivate
               id: deactivate_payment_method
-        - title: Serviceable countries
+        - title: Pickup options
           entries:
-            - title: Find serviceable countries
-              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-shipping-zones-search-find-serviceable-countries
-              id: find_serviceable_countries
-        - title: Shipping methods
-          entries:
-            - title: Set current cart shipping method
-              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-set-shipping-methods-current
-              id: set_current_cart_shipping_method
-            - title: Set cart shipping method to current default
-              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-set-shipping-methods-default
-              id: set_cart_shipping_method_to_current_default
-            - title: Show current cart shipping method details
-              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-get-shipping-methods-current
-              id: show_current_cart_shipping_method_details
-            - title: Show applicable cart shipping method details
-              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#_show_applicable_cart_shipping_method_details
-              id: show_applicable_cart_shipping_method_details
-        - title: Shipping zones
+            - title: Create pickup option
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-pickup-option-create
+              id: create_pickup_option
+            - title: List pickup options
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-pickup-option-list
+              id: list_pickup_options
+            - title: Show pickup option details
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-pickup-option-get
+              id: show_pickup_option_details
+            - title: Update pickup option
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-pickup-option-update
+              id: update_pickup_option
+            - title: Sort pickup options
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-pickup-option-sort
+              id: sort_pickup_options
+            - title: Delete pickup option
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-pickup-option-delete
+              id: delete_pickup_option
+        - title: Shipping zones and methods
           entries:
             - title: Show shipping zone details
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-shipping-zone-get
@@ -388,6 +410,12 @@
             - title: Cancel order
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-cancel-order
               id: cancel_order
+            - title: List unviewed orders
+              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-orders-list-unviewed
+              id: list_unviewed_orders
+            - title: Mark order as viewed
+              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-mark-order-as-viewed
+              id: mark_order_as_viewed
             - title: Update order note
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-note-update
               id: update_order_note
@@ -855,9 +883,6 @@
             - title: Assign variation image as default image
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-images-set-default
               id: assign_variation_image_as_default_image
-            - title: Assign variation images differentiator
-              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-images-differentiator-set
-              id: assign_variation_images_differentiator
         - title: Variation properties
           entries:
             - title: List variation properties
