@@ -230,6 +230,12 @@
             - title: List pickup options for current cart
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-pickup-options
               id: list_pickup_options_for_current_cart
+            - title: Set current cart pickup option
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-set-pickup-option-current
+              id: set_current_cart_pickup_option
+            - title: Show current cart pickup option details
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-get-pickup-option-current
+              id: show_current_cart_pickup_option_details
             - title: Redeem coupon
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-redeem-coupon
               id: redeem_coupon
@@ -605,15 +611,21 @@
             - title: Show variation product details
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-product-get
               id: show_variation_product_details
-            - title: Update product partially (json)
+            - title: Update product partially
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-update-json
               id: update_product_partially_json
-            - title: Update variation product partially (json)
+            - title: Update multiple products partially
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-products-batch-update-json
+              id: update_multiple_products_partially
+            - title: Update variation product partially
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-product-update-json
               id: update_variation_product_partially_json
             - title: Delete product
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-products-delete
               id: delete_product
+            - title: Delete multiple products
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-products-batch-delete-json
+              id: delete_multiple_products
         - title: Product attachments
           entries:
             - title: List product attachments
