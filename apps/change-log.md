@@ -14,6 +14,20 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
+## 2021-06-10
+
+### Changes with software release 7.60.0
+
+#### <i class="fas fa-plus"></i> New
+
+* Added data type [`cartValidation`](https://developer.epages.com/apps/data-types.html#cartvalidation).
+
+#### <i class="fas fa-pencil-alt"></i> Update
+
+* Added attribute `cartValidation` to data type [`cart`](https://developer.epages.com/apps/data-types.html#cart).
+
+<hr>
+
 ## 2021-05-14
 
 ### Changes with software release 7.59.0

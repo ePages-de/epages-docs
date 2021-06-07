@@ -232,6 +232,13 @@
   "creationDate": "2018-12-17T21:07:29Z",
   "checkoutUrl": "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/2/Baskets/46072&ChangeAction=PickupBasket&PickupToken=NTI3MDE0NTYyNDI2NzM4NWVjMzAzZjk2N2VjOWU2OTIyMjk4ZjU1NDE5NDUxYmMzNGJjZjE1MzIyMWUzNjg1Ml8xNDgyMjI3NDc1",
   "registerSessionUrl": "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/2/Baskets/46072&ChangeAction=PickupBasket&PickupToken=NTRjZWJmNjdhNzNlYTUzNDAxZTgyZTc4ODYwYTliMDUxMDIzNDQ2OWY2NWQ5NWRmN2Q2YmVjZjVjNzljOTQ2N18xNDgyMjI3OTE3",
+  "cartValidation": {
+    "possibleShippingMethods" : [
+      "Standard delivery",
+      "Express delivery",
+      "Customer pickup"
+    ]
+  },
   "potentialBasketDiscounts": [
     {
       "absolute": {
