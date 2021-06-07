@@ -126,7 +126,7 @@ ePages Now only!
 
 | Attribute | Type | Description |
 | - | - |  - |
-| possibleShippingMethods | string[] | The shipping methods that are valid for the current set of products included in the cart. The list gets updated with every product that is added to the cart. |
+| possibleShippingMethods | string[] | The shipping methods that are valid for the current set of products included in the cart. |
 
 ## category
 
