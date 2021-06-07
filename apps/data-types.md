@@ -108,7 +108,7 @@ ePages Now only!
 | creationDate | string | The date/time the cart was created. Expressed according to ISO 8601. Example: `2018-12-17T21:07:29Z` |
 | checkoutUrl | string | The URL that redirects the browser to the merchant’s shop in order to complete the checkout. |
 | registerSessionUrl | string | The URL that redirects the browser to the merchant’s shop in order to register a session. |
-| cartValidation | object of [cartValidation](page:apps-data-types#cartvalidation) | The list of all cart validations. |
+| cartValidation | object of [cartValidation](page:apps-data-types#cartvalidation) | The list of all validations that are made against the cart. |
 | potentialBasketDiscounts | object of [potentialBasketDiscounts](page:apps-data-types#potentialbasketdiscounts) | The list of all potential overall discounts for orders in the shop. The included discounts can be of type *absolute* or *percent*.|
 | status | string | The status of the cart. If all line items were added successfully, it is *Complete*. Otherwise, it is *PartiallyComplete*. Only included in [`POST`/carts](page:apps-api-post-shopid-carts-information) if the attribute *forceCreate* is `true` and in [`POST`/carts/{cartId}/multi-line-items](page:apps-api-post-shopid-carts-cartid-multi-line-items-information). |
 
@@ -121,6 +121,12 @@ ePages Now only!
 | locale | string | The locale that identifies the origin of the customer.|
 | lineItems | array of [productLineItem (create request)](page:apps-data-types#productlineitem-create-request)  | The product line items in the cart.|
 | forceCreate | boolean | Creates a cart if at least one of several line items can be added to the cart successfully. (optional)|
+
+## cartValidation
+
+| Attribute | Type | Description |
+| - | - |  - |
+| possibleShippingMethods | string[] | The shipping methods that are available for the current set of products included in the cart. The list gets updated with every product that is added to the cart. |
 
 ## category
 
@@ -479,12 +485,6 @@ This object is used for the attributes of potentialBasketDiscounts.
 | - | - |  - |
 | percentage | number | The number amount of the percentage. |
 | formatted | string | The number amount of the percentage with the percentage sign. |
-
-## cartValidation
-
-| Attribute | Type | Description |
-| - | - |  - |
-| possibleShippingMethods | string[] | The possible shipping methods which are available in the cart. |
 
 ## potentialBasketDiscounts
 
