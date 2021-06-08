@@ -39,6 +39,10 @@ post:
 
 /{cartId}:
   displayName: Cart
+  uriParameters:
+    cartId:
+      description: The unique identifier of the cart.
+      example: 5858FD17-147C-661C-9C33-D5809AB3C8BA
   get:
     description: Returns a specific cart from a shop identified by the provided cart Id. *epages6 *epagesNow
     responses:

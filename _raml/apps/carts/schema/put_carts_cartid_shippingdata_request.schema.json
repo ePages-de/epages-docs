@@ -5,11 +5,12 @@
   "properties": {
     "id": {
       "type": "string",
-      "description": "The unique identifier of the shipping method."
+      "description": "The unique identifier of the shipping method.<br>Required: `true`"
     },
     "priceAmount": {
       "type": "number",
-      "description": "The costs for the shipping."
+      "description": "The costs for the shipping.<br>Required: `false`",
+      "required": false
     }
   }
 }

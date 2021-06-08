@@ -20,11 +20,14 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 #### <i class="fas fa-plus"></i> New
 
+* [`PUT`/carts/{cartId}/payment-data](https://developer.epages.com/apps/api-reference/put-shopid-carts-cartid-payment-data.html)
 * Added data type [`cartValidation`](https://developer.epages.com/apps/data-types.html#cartvalidation).
 
 #### <i class="fas fa-pencil-alt"></i> Update
 
 * Added attribute `cartValidation` to data type [`cart`](https://developer.epages.com/apps/data-types.html#cart).
+* Renamed _`PUT`/carts/{cartId}/shipping-data/shipping-method_ to [`PUT`/carts/{cartId}/shipping-data](https://developer.epages.com/apps/api-reference/put-shopid-carts-cartid-shipping-data.html).
+* Added request attribute `priceAmount` to [`PUT`/carts/{cartId}/shipping-data](https://developer.epages.com/apps/api-reference/put-shopid-carts-cartid-shipping-data.html).
 
 <hr>
 
