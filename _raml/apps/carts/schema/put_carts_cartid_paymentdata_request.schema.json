@@ -9,7 +9,7 @@
     },
     "priceAmount": {
       "type": "number",
-      "description": "The costs for the payment method.<br>Required: `false`"
+      "description": "The costs or the discount for the payment method.<br>Required: `false`"
     }
   }
 }
