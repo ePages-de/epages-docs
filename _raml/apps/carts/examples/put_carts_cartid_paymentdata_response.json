@@ -207,12 +207,7 @@
     ]
   },
   "paymentData": {
-    "paymentMethod": {
-      "id": null,
-      "name": null,
-      "providerName": null,
-      "additionalData": null
-    },
+    "paymentMethod": null,
     "transactionId": null,
     "price": {
       "taxType": "GROSS",
