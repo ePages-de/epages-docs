@@ -421,10 +421,10 @@ ePages Now only!
 | customerNumber | string | The number by which the merchant tracks the customer. |
 | locale | string | The locale that identifies the origin of the customer.  |
 | currencyId | string | The unique identifier of the currency used for payment.  |
-| taxModel | string | The taxmodel that applies for the order, e.g. gross.  |
-| grandTotal | string | The total cost of the order.  |
-| totalBeforeTax | string | The total cost of the order before tax is applied.  |
-| totalTax | object of [price](page:apps-data-types#price) | The total amount of the tax. |
+| taxModel | string | The tax model that applies for the order, e.g. gross.  |
+| grandTotal | number | The total cost of the order.  |
+| totalBeforeTax | number | The total cost of the order before tax is applied.  |
+| totalTax | number | The total amount of the tax. |
 | customerComment | string | Notes on the order from the customer. Can also be amended by the merchant in the administration. Mainly used for order and delivery notes.|
 | internalNote | string | Internal notes for the order done by the merchant.  |
 | rejectedOn | string | The date/time the order was rejected. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
