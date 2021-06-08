@@ -208,16 +208,16 @@
   },
   "paymentData": {
     "paymentMethod": {
-      "id": "5171DD89-6DE5-E758-E046-AC14145F9009",
-      "name": "PayPal",
-      "providerName": "PayPal",
+      "id": null,
+      "name": null,
+      "providerName": null,
       "additionalData": null
     },
-    "transactionId": "7PM024488F971832G",
+    "transactionId": null,
     "price": {
       "taxType": "GROSS",
-      "formatted": "0.00 €",
-      "amount": 0,
+      "formatted": "1.95 €",
+      "amount": 1.95,
       "currency": "EUR"
     },
     "status": null,
