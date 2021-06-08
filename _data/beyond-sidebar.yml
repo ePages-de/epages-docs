@@ -127,11 +127,6 @@
             - title: Trigger email address change
               link: https://api-docs.beyondshop.cloud/ng-auth-auth-public-api.html#resources-change-email-request
               id: trigger_email_address_change
-        - title: Support access
-          entries:
-            - title: Retrieve support access status
-              link: https://api-docs.beyondshop.cloud/ng-auth-auth-public-api.html#resources-support-access-status
-              id: retrieve_support_access_status
         - title: Tokens
           entries:
             - title: Create a JsonWebToken from Authorization Code
