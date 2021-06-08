@@ -424,8 +424,9 @@ ePages Now only!
 | taxModel | string | The taxmodel that applies for the order, e.g. gross.  |
 | grandTotal | string | The total cost of the order.  |
 | totalBeforeTax | string | The total cost of the order before tax is applied.  |
-| internalNote | string | Internal notes for the order done by the merchant.  |
+| totalTax | object of [price](page:apps-data-types#price) | The total amount of the tax. |
 | customerComment | string | Notes on the order from the customer. Can also be amended by the merchant in the administration. Mainly used for order and delivery notes.|
+| internalNote | string | Internal notes for the order done by the merchant.  |
 | rejectedOn | string | The date/time the order was rejected. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
 | inProcessOn | string | The date/time the order was put into process. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
 | closedOn | string | The date/time the order was closed. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
@@ -525,7 +526,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | description | string | The description of the product. |
 | title | string | The page title of the product page. |
 | priceInfo | object of [priceInfo](page:apps-data-types#priceinfo) | Price information on the product. |
-| bulkPriceInfo | object of [bulkPriceInfo](page:apps-data-types#bulkpriceinfo) | Information on bulk pricing for the product. |
+| bulkPriceInfo | array of [bulkPriceInfo](page:apps-data-types#bulkpriceinfo) | Information on bulk pricing for the product. |
 | forSale | boolean | Information on the sale status of the product. Indicates if the product can be added to the cart. |
 | specialOffer | boolean | Indicates if the product is a special offer. |
 | deliveryWeight | object of [deliveryWeightQuantity](page:apps-data-types#deliveryweightquantity) | The delivery weight of the product. |
