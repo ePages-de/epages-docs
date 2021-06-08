@@ -9,7 +9,7 @@
     },
     "priceAmount": {
       "type": "number",
-      "description": "The costs for the shipping.<br>Required: `false`",
+      "description": "The costs for the shipping.<br>Required: `false`"
     }
   }
 }
