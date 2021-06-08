@@ -421,7 +421,7 @@ ePages Now only!
 | customerNumber | string | The number by which the merchant tracks the customer. |
 | locale | string | The locale that identifies the origin of the customer.  |
 | currencyId | string | The unique identifier of the currency used for payment.  |
-| taxModel | string | The tax model that applies for the order, e.g. gross.  |
+| taxModel | string | The tax model that applies for the order, e.g. *GROSS*.  |
 | grandTotal | number | The total cost of the order.  |
 | totalBeforeTax | number | The total cost of the order before tax is applied.  |
 | totalTax | number | The total amount of the tax. |
@@ -841,8 +841,8 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 
 | Attribute | Type | Description |
 | - | - |  - |
-| model | string | The tax model of the shop. Can be *gross* (taxes included) or *net* (taxes excluded). |
-| displayTaxes | boolean | Indicates if a tax notification message for product prices has to be displayed in the shop, e.g. if the `tax model` is *gross* and the `displayTaxes` is *true*, a message has to be displayed in the shop that the prices include taxes. |
+| model | string | The tax model of the shop. Can be *GROSS* (taxes included) or *NET* (taxes excluded). |
+| displayTaxes | boolean | Indicates if a tax notification message for product prices has to be displayed in the shop, e.g. if the `tax model` is *GROSS* and the `displayTaxes` is *true*, a message has to be displayed in the shop that the prices include taxes. |
 | noTaxesMessage | string | If `displayTaxes` is *false* this message is displayed for product prices. Used if VAT does not need to be declared as the invoicer is a small-sized business according to §19 UStG (German VAT law). |
 
 ## updatedProducts
