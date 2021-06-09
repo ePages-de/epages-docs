@@ -186,8 +186,8 @@
     },
     "price": {
       "taxType": "GROSS",
-      "formatted": "10.37 €",
-      "amount": 10.37,
+      "formatted": "3.95 €",
+      "amount": 3.95,
       "currency": "EUR"
     },
     "taxes": [
