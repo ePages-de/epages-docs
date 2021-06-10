@@ -428,11 +428,12 @@ ePages Now only!
 | customerNumber | string | The number by which the merchant tracks the customer. |
 | locale | string | The locale that identifies the origin of the customer.  |
 | currencyId | string | The unique identifier of the currency used for payment.  |
-| taxModel | string | The taxmodel that applies for the order, e.g. gross.  |
-| grandTotal | string | The total cost of the order.  |
-| totalBeforeTax | string | The total cost of the order before tax is applied.  |
-| internalNote | string | Internal notes for the order done by the merchant.  |
+| taxModel | string | The tax model that applies for the order, e.g. *GROSS*.  |
+| grandTotal | number | The total cost of the order.  |
+| totalBeforeTax | number | The total cost of the order before tax is applied.  |
+| totalTax | number | The total amount of the tax. |
 | customerComment | string | Notes on the order from the customer. Can also be amended by the merchant in the administration. Mainly used for order and delivery notes.|
+| internalNote | string | Internal notes for the order done by the merchant.  |
 | rejectedOn | string | The date/time the order was rejected. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
 | inProcessOn | string | The date/time the order was put into process. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
 | closedOn | string | The date/time the order was closed. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
@@ -532,7 +533,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | description | string | The description of the product. |
 | title | string | The page title of the product page. |
 | priceInfo | object of [priceInfo](page:apps-data-types#priceinfo) | Price information on the product. |
-| bulkPriceInfo | object of [bulkPriceInfo](page:apps-data-types#bulkpriceinfo) | Information on bulk pricing for the product. |
+| bulkPriceInfo | array of [bulkPriceInfo](page:apps-data-types#bulkpriceinfo) | Information on bulk pricing for the product. |
 | forSale | boolean | Information on the sale status of the product. Indicates if the product can be added to the cart. |
 | specialOffer | boolean | Indicates if the product is a special offer. |
 | deliveryWeight | object of [deliveryWeightQuantity](page:apps-data-types#deliveryweightquantity) | The delivery weight of the product. |
@@ -847,8 +848,8 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 
 | Attribute | Type | Description |
 | - | - |  - |
-| model | string | The tax model of the shop. Can be *gross* (taxes included) or *net* (taxes excluded). |
-| displayTaxes | boolean | Indicates if a tax notification message for product prices has to be displayed in the shop, e.g. if the `tax model` is *gross* and the `displayTaxes` is *true*, a message has to be displayed in the shop that the prices include taxes. |
+| model | string | The tax model of the shop. Can be *GROSS* (taxes included) or *NET* (taxes excluded). |
+| displayTaxes | boolean | Indicates if a tax notification message for product prices has to be displayed in the shop, e.g. if the `tax model` is *GROSS* and the `displayTaxes` is *true*, a message has to be displayed in the shop that the prices include taxes. |
 | noTaxesMessage | string | If `displayTaxes` is *false* this message is displayed for product prices. Used if VAT does not need to be declared as the invoicer is a small-sized business according to §19 UStG (German VAT law). |
 
 ## updatedProducts
