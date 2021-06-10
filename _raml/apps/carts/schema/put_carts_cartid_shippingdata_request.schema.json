@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "Put Carts CartId ShippingData Request Schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "The unique identifier of the shipping method.<br>Required: `true`"
+    },
+    "priceAmount": {
+      "type": "number",
+      "description": "The costs for the shipping.<br>Required: `false`"
+    }
+  }
+}

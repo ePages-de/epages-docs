@@ -39,6 +39,10 @@ post:
 
 /{cartId}:
   displayName: Cart
+  uriParameters:
+    cartId:
+      description: The unique identifier of the cart.
+      example: 5858FD17-147C-661C-9C33-D5809AB3C8BA
   get:
     description: Returns a specific cart from a shop identified by the provided cart Id. *epages6 *epagesNow
     responses:
@@ -203,17 +207,34 @@ post:
               example: !include examples/delete_carts_cartid_shipping_response.json
               schema: !include schema/delete_carts_cartid_shipping.schema.json
 
-  /shipping-data/shipping-method:
-    displayName: Shipping method
+  /payment-data:
+    displayName: Payment data
     put:
-      description: Modifies the shipping method for a cart. *epages6 *epagesNow
+      description: Modifies the payment data for a cart.<br><br>Please note that by providing the attribute `name` in the request body, the attributes `paymentMethod` and `transactionId` included in `paymentData` will be set to `null`. The provided name will not be included in the response. Instead, it will be displayed as the payment method used for the related order in the administration area of the merchant.<br><br>If the attribute `priceAmount` is provided in the request, the price included in `paymentData` will be changed to the given amount. If the attribute `priceAmount` is not provided in the request, the price will be set to `0`. *epages6 *epagesNow
+      securedBy: [carts_price_write]
       body:
         application/json:
-          example: !include examples/put_carts_cartid_shippingdata_shippingmethod_request.json
-          schema: !include schema/put_carts_cartid_shippingdata_shippingmethod_request.schema.json
+          example: !include examples/put_carts_cartid_paymentdata_request.json
+          schema: !include schema/put_carts_cartid_paymentdata_request.schema.json
       responses:
         200:
           body:
             application/json:
-              example: !include examples/put_carts_cartid_shippingdata_shippingmethod_response.json
-              schema: !include schema/put_carts_cartid_shippingdata_shippingmethod.schema.json
+              example: !include examples/put_carts_cartid_paymentdata_response.json
+              schema: !include schema/put_carts_cartid_paymentdata.schema.json
+
+  /shipping-data:
+    displayName: Shipping data
+    put:
+      description: Modifies the shipping data for a cart. *epages6 *epagesNow
+      securedBy: [carts_price_write]
+      body:
+        application/json:
+          example: !include examples/put_carts_cartid_shippingdata_request.json
+          schema: !include schema/put_carts_cartid_shippingdata_request.schema.json
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/put_carts_cartid_shippingdata_response.json
+              schema: !include schema/put_carts_cartid_shippingdata.schema.json

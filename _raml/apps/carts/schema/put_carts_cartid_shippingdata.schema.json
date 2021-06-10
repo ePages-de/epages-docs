@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema",
-  "title": "Put Carts CartId ShippingData ShippingMethod Schema",
+  "title": "Put Carts CartId ShippingData Schema",
   "type": "object",
   "properties": {
     "": {
