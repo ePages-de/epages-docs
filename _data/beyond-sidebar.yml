@@ -24,7 +24,7 @@
           link: https://api-docs.beyondshop.cloud/index-api-basics.html#_optional_properties
           id: optional_properties
         - title: Pagination
-          link: https://api-docs.beyondshop.cloud/index-api-basics.html#_pagination
+          link: https://api-docs.beyondshop.cloud/index-api-basics.html#pagination
           id: pagination
         - title: Hypermedia
           link: https://api-docs.beyondshop.cloud/index-api-basics.html#hypermedia
