@@ -958,6 +958,9 @@
             - title: Find product category by label
               link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#categories-find-by-label
               id: find_product_category_by_label
+            - title: Preview products included in category
+              link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#categories-products-preview
+              id: preview_products_included_in_category
         - title: Product images
           entries:
             - title: List product images
