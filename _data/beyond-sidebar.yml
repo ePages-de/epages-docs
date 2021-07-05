@@ -107,22 +107,27 @@
           id: payment_solution_payment_flow
         - title: Create a payment
           link: https://api-docs.beyondshop.cloud/ng-payment-gateway-includes-public-api.html#create-a-payment
-          id: create_a_payment
+          id: payment_solution_create_a_payment
           parentId: payment_solution_payment_flow
           hide: true
         - title: Approve a payment
           link: https://api-docs.beyondshop.cloud/ng-payment-gateway-includes-public-api.html#approve-a-payment
-          id: approve_a_payment
+          id: payment_solution_approve_a_payment
           parentId: payment_solution_payment_flow
           hide: true
         - title: Capture a payment
           link: https://api-docs.beyondshop.cloud/ng-payment-gateway-includes-public-api.html#capture-a-payment
-          id: capture_a_payment
+          id: payment_solution_capture_a_payment
           parentId: payment_solution_payment_flow
           hide: true
         - title: Status transitions
           link: https://api-docs.beyondshop.cloud/ng-payment-gateway-includes-public-api.html#status-transitions
-          id: status_transitions
+          id: payment_solution_status_transitions
+          parentId: payment_solution_payment_flow
+          hide: true
+        - title: Set a payment status
+          link: https://api-docs.beyondshop.cloud/ng-payment-gateway-includes-public-api.html#set-a-payment-status
+          id: payment_solution_set_a_payment_status
           parentId: payment_solution_payment_flow
           hide: true
         - title: Refunds
