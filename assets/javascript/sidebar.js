@@ -42,7 +42,7 @@ $(document).ready(function() {
       const data = e[key];
 
       if(isUrl(data)) {
-        if(data.startsWith('https://developer.epages.com')) {
+        if(data.startsWith(location.origin)) {
           const anchor = data.substring(data.indexOf('#') + 1);
 
           setTimeout(()=> findElement(anchor), 10);
