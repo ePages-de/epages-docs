@@ -29,8 +29,6 @@ $(document).ready(function() {
     const element = e.target;
     const parentElement = $(`#${$(element).attr('parentid')}`);
 
-    $(window).scrollTop(0);
-    window.location.hash = $(element).attr('id');
     markAsActiveEntry(parentElement);
   });
 
@@ -42,17 +40,21 @@ $(document).ready(function() {
   eventer(messageEvent,function(e) {
       const key = e.message ? "message" : "data";
       const data = e[key];
+
       if(isUrl(data)) {
         if(data.startsWith(location.origin)) {
           const anchor = data.substring(data.indexOf('#') + 1);
+
           setTimeout(()=> findElement(anchor), 10);
         } else {
-          window.open(data, '_blank');
           const iframeUrl = $('#docs').attr('src');
+
+          window.open(data, '_blank');
           $('#docs').attr('src', iframeUrl);
         }
       } else {
         const anchor = data.substring(data.indexOf('#') + 1);
+
         findElement(anchor);
       }
   },false);
@@ -89,6 +91,7 @@ function findElement(id) {
 
 function loadEntryPointUrl(id) {
   let li = $(`li[link][id='${id}'], li[link$=${id}]`);
+
   if (li.length == 0) {
     li = $('li[link][id="introduction"]');
   }
@@ -108,9 +111,11 @@ function isUrl(str) {
 function searchParents(element) {
   if($(element).is('li')) {
     const parent = $(element).parent();
+
     searchParents(parent);
   } else if($(element).is('ul')) {
     const prev = $(element).prev();
+
     if($(prev).hasClass('js-group')) {
       searchParents(prev);
       $(prev).click();
