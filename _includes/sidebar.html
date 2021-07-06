@@ -13,7 +13,7 @@
       }
     });
 
-    $(".sitemap-entry, .sitemap-entry-expand").click(function(e) {
+    $(".sitemap-entry, .sitemap-entry-expand, .sitemap-entry-expand--hidden").click(function(e) {
       e.preventDefault();
       if($(this).attr('id')) {
         window.location.hash = $(this).attr('id');
