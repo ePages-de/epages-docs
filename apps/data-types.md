@@ -19,6 +19,14 @@ This object represents the attribute structure for PayPal PLUS. The structure fo
 | InvoicePaymentDueDate  | string | The due date of the invoice. Expressed according to ISO 8601. Example: `2020-11-04T08:42:49.000Z`|
 | InvoiceBIC  | string | The Bank Identifier Code of the bank that holds the account to which the invoice is due. |
 
+## additionalInformation
+
+This object represents the attribute structure for all additional information on a Product.
+
+| Attribute | Type | Description |
+| - | - |  - |
+| bulkPriceInfo | array of [bulkPriceInfo](page:apps-data-types#bulkpriceinfo) | Information on bulk pricing for the product. |
+
 ## address
 
 This object is used for the attributes of shippingAddress and billingAddress.
@@ -92,6 +100,7 @@ ePages Now only!
 | quantity | object of [quantity](page:apps-data-types#quantity) | The quantity of the product the price refers to.|
 | price | object of [price](page:apps-data-types#price) | The price of the product.|
 | basePrice | object of [basePrice](page:apps-data-types#baseprice) | The price information scaled to a standardised base unit, according to the German base price regulation "Preisangabenverordnung" (PAngV), e.g. 1 l = 1.20 EUR. Is `null` if no reference amount is specified for the product.|
+| priceSavings | object of [priceSavings](page:apps-data-types#pricesavings) | The price saving information which a logged in customer gets from customer specific prices. |
 
 ## cart
 
@@ -521,6 +530,13 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | highestPrice | object of [price](page:apps-data-types#price) | The price of the most expensive variation of a product. Only available if the `productVariationType` is *master*, and a price for at least one variation is available. |
 | basePrice | object of [basePrice](page:apps-data-types#baseprice) | The price information scaled to a standardised base unit, according to the German base price regulation "Preisangabenverordnung" (PAngV), e.g. 1 l = 1.20 EUR. Is `null` if no reference amount is specified for the product.|
 
+## priceSavings
+
+| Attribute | Type | Description |
+| - | - |  - |
+| percent  | object of [percent](page:apps-data-types#percent) | The potential percentage overall discount for orders in the shop. |
+| basePrice | object of [basePrice](page:apps-data-types#baseprice) | The price information scaled to a standardised base unit, according to the German base price regulation "Preisangabenverordnung" (PAngV), e.g. 1 l = 1.20 EUR. Is `null` if no reference amount is specified for the product.|
+
 ## product
 
 | Attribute | Type | Description |
@@ -609,6 +625,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | energyLabelsString | string | A list of energy labels applied to this product. Can be one value or a range with two values. |
 | energyLabelSourceFile | string | A URL with an image or PDF file containing the energy label image supplied by the manufacturer. |
 | variationString | string | The description of the selected variation.|
+| additionalInformation | object of  [additionalInformation](page:apps-data-types#additionalinformation) | Additional information for a product line item.|
 
 ## productLineItem (create request)
 
