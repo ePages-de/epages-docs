@@ -13,30 +13,54 @@
   },
   "bulkPriceInfo": [
     {
-      "quantity":{
-        "amount": 3,
+      "quantity": {
+        "amount": 2,
         "unit":"piece(s)"
       },
-      "price":{
-        "taxType":"GROSS",
-        "formatted": "110.00 €",
-        "amount": "110",
+      "price": {
+        "taxType": "GROSS",
+        "formatted": "117,00 €",
+        "amount": 117,
         "currency": "EUR"
       },
-      "basePrice": null
+      "basePrice": null,
+      "priceSavings": {
+        "percent": {
+          "formatted": "10 %",
+          "percentage": 10.0
+        },
+        "basePrice": {
+          "taxType": "GROSS",
+          "formatted": "130,00 €",
+          "amount": 130,
+          "currency": "EUR"
+        }
+      }
     },
     {
-      "quantity":{
-        "amount": 2,
-        "unit": "piece(s)"
+      "quantity": {
+        "amount": 1,
+        "unit":"piece(s)"
       },
-      "price":{
-        "taxType":"GROSS",
-        "formatted": "120.00 €",
-        "amount": 120,
-        "currency":"EUR"
+      "price": {
+        "taxType": "GROSS",
+        "formatted": "135,00 €",
+        "amount": 135,
+        "currency": "EUR"
       },
-      "basePrice": null
+      "basePrice": null,
+      "priceSavings": {
+        "percent": {
+          "formatted": "10 %",
+          "percentage": 10.0
+        },
+        "basePrice": {
+          "taxType": "GROSS",
+          "formatted": "150,00 €",
+          "amount": 150,
+          "currency": "EUR"
+        }
+      }
     }
   ],
   "links": [
