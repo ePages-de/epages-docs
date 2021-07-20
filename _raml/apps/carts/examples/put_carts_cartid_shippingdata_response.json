@@ -132,6 +132,35 @@
             "fileSize": 0
           }
         ],
+        "additionalInformation": {
+          "bulkPriceInfo": [
+            {
+              "quantity": {
+                "amount": 1,
+                "unit": "piece(s)"
+              },
+              "price": {
+                "taxType": "GROSS",
+                "formatted": "9.00 €",
+                "amount": 9.00,
+                "currency": "EUR"
+              },
+              "basePrice": null,
+              "priceSavings": {
+                "percent": {
+                  "formatted": "10 %",
+                  "percentage": 10.0
+                },
+                "basePrice": {
+                  "taxType": "GROSS",
+                  "formatted": "10,00 €",
+                  "amount": 1,
+                  "currency": "EUR"
+                }
+              }
+            }
+          ]
+        },
         "links": [
           {
             "rel": "product",
