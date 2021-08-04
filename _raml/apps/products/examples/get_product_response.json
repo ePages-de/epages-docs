@@ -347,13 +347,13 @@
           "currency": "EUR"
         },
         "lowestPrice": {
-            "taxType": "GROSS",
+            "taxType": "NET",
             "formatted": "39.50 €",
             "amount": 39.50,
             "currency": "EUR"
         },
         "highestPrice": {
-          "taxType": "GROSS",
+          "taxType": "NET",
           "formatted": "131.70 €",
           "amount": 131.70,
           "currency": "EUR"
@@ -369,7 +369,7 @@
           },
           "price": {
             "taxType": "NET",
-            "formatted": "90,00 €",
+            "formatted": "90.00 €",
             "amount": 90,
             "currency": "EUR"
           },
@@ -381,7 +381,7 @@
             },
             "basePrice": {
               "taxType": "NET",
-              "formatted": "100,00 €",
+              "formatted": "100.00 €",
               "amount": 100,
               "currency": "EUR"
             }
@@ -394,7 +394,7 @@
           },
           "price": {
             "taxType": "NET",
-            "formatted": "108,00 €",
+            "formatted": "108.00 €",
             "amount": 108,
             "currency": "EUR"
           },
@@ -406,7 +406,7 @@
             },
             "basePrice": {
               "taxType": "NET",
-              "formatted": "120,00 €",
+              "formatted": "120.00 €",
               "amount": 120,
               "currency": "EUR"
             }

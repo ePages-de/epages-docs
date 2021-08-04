@@ -100,8 +100,8 @@
         "unit":"piece(s)"
       },
       "price": {
-        "taxType": "NET",
-        "formatted": "117,00 €",
+        "taxType": "GROSS",
+        "formatted": "117.00 €",
         "amount": 117,
         "currency": "EUR"
       },
@@ -112,8 +112,8 @@
           "percentage": 10.0
         },
         "basePrice": {
-          "taxType": "NET",
-          "formatted": "130,00 €",
+          "taxType": "GROSS",
+          "formatted": "130.00 €",
           "amount": 130,
           "currency": "EUR"
         }
@@ -125,8 +125,8 @@
         "unit":"piece(s)"
       },
       "price": {
-        "taxType": "NET",
-        "formatted": "135,00 €",
+        "taxType": "GROSS",
+        "formatted": "135.00 €",
         "amount": 135,
         "currency": "EUR"
       },
@@ -137,8 +137,8 @@
           "percentage": 10.0
         },
         "basePrice": {
-          "taxType": "NET",
-          "formatted": "150,00 €",
+          "taxType": "GROSS",
+          "formatted": "150.00 €",
           "amount": 150,
           "currency": "EUR"
         }

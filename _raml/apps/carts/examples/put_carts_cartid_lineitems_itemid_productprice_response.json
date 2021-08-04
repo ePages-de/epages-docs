@@ -102,7 +102,7 @@
                           "price": {
                               "taxType": "GROSS",
                               "formatted": "9.00 €",
-                              "amount": 9.00,
+                              "amount": 9,
                               "currency": "EUR"
                           },
                           "basePrice": null,
@@ -113,8 +113,8 @@
                               },
                               "basePrice": {
                                   "taxType": "GROSS",
-                                  "formatted": "10,00 €",
-                                  "amount": 1,
+                                  "formatted": "10.00 €",
+                                  "amount": 10,
                                   "currency": "EUR"
                               }
                           }

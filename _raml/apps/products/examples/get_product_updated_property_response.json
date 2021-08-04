@@ -99,7 +99,7 @@
             },
             "price": {
               "taxType": "NET",
-              "formatted": "27,00 €",
+              "formatted": "27.00 €",
               "amount": 27,
               "currency": "EUR"
             },
@@ -111,7 +111,7 @@
               },
               "basePrice": {
                 "taxType": "NET",
-                "formatted": "30,00 €",
+                "formatted": "30.00 €",
                 "amount": 30,
                 "currency": "EUR"
               }
@@ -124,7 +124,7 @@
             },
             "price": {
               "taxType": "NET",
-              "formatted": "36,00 €",
+              "formatted": "36.00 €",
               "amount": 36,
               "currency": "EUR"
             },
@@ -136,7 +136,7 @@
               },
               "basePrice": {
                 "taxType": "NET",
-                "formatted": "40,00 €",
+                "formatted": "40.00 €",
                 "amount": 40,
                 "currency": "EUR"
               }

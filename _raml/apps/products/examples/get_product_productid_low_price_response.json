@@ -19,7 +19,7 @@
       },
       "price": {
         "taxType": "GROSS",
-        "formatted": "117,00 €",
+        "formatted": "117.00 €",
         "amount": 117,
         "currency": "EUR"
       },
@@ -31,7 +31,7 @@
         },
         "basePrice": {
           "taxType": "GROSS",
-          "formatted": "130,00 €",
+          "formatted": "130.00 €",
           "amount": 130,
           "currency": "EUR"
         }
@@ -44,7 +44,7 @@
       },
       "price": {
         "taxType": "GROSS",
-        "formatted": "135,00 €",
+        "formatted": "135.00 €",
         "amount": 135,
         "currency": "EUR"
       },
@@ -56,7 +56,7 @@
         },
         "basePrice": {
           "taxType": "GROSS",
-          "formatted": "150,00 €",
+          "formatted": "150.00 €",
           "amount": 150,
           "currency": "EUR"
         }
