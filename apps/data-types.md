@@ -617,12 +617,12 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | singleItemPrice | object of  [price](page:apps-data-types#price) | The price of a single product line item. |
 | lineItemCouponDiscount | object of [price](page:apps-data-types#price) | The discount of a coupon that is only applied to the specific line item. |
 | images | array of [image](page:apps-data-types#image) | The image of the line item. |
-| additionalInformation | object of  [additionalInformation](page:apps-data-types#additionalinformation) | Additional information for the product line item, for example information on bulk pricing.|
+| additionalInformation | object of  [additionalInformation](page:apps-data-types#additionalinformation) | Additional information for the product line item, for example information on bulk pricing. |
 | links | array of [link](page:apps-data-types#link) | The links to the product line item. |
-| variationString | string | The description of the selected variation.|
+| variationString | string | The description of the selected variation. |
 | essentialFeatures | string | The essential features of the line item. |
-| taxClass | object of [taxClassInfo](page:apps-data-types#taxclassinfo) | The tax that applies for the product.|
-| deliveryWeight | object of [deliveryWeightQuantity](page:apps-data-types#deliveryweightquantity)| The delivery weight of the product line item.|
+| taxClass | object of [taxClassInfo](page:apps-data-types#taxclassinfo) | The tax that applies for the product. |
+| deliveryWeight | object of [deliveryWeightQuantity](page:apps-data-types#deliveryweightquantity)| The delivery weight of the product line item. |
 | energyLabelsString | string | A list of energy labels applied to this product. Can be one value or a range with two values. |
 | energyLabelsMaxEfficiencyString | string | The highest possible efficiency class of an uploaded energy label. |
 | energyLabelSourceFile | string | A URL with an image or PDF file containing the energy label image supplied by the manufacturer. |
