@@ -534,7 +534,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 
 | Attribute | Type | Description |
 | - | - |  - |
-| percent  | object of [percent](page:apps-data-types#percent) | The percentage discount a logged in customer benefits from due to the merchant's settings for customer specific prices. |
+| percent  | object of [percent](page:apps-data-types#percent) | The percentage discount on the regular bulk price the customer benefits from due to the merchant's settings for customer specific prices. |
 | regularBulkPrice | object of [price](page:apps-data-types#price) | The regular bulk price for the product. |
 
 ## product
