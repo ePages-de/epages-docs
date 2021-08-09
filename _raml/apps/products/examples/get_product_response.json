@@ -349,13 +349,13 @@
         "lowestPrice": {
             "taxType": "NET",
             "formatted": "39.50 €",
-            "amount": 39.50,
+            "amount": 39.5,
             "currency": "EUR"
         },
         "highestPrice": {
           "taxType": "NET",
           "formatted": "131.70 €",
-          "amount": 131.70,
+          "amount": 131.7,
           "currency": "EUR"
         },
         "manufacturerPrice": null,

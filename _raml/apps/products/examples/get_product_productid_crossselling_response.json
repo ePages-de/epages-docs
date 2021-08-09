@@ -81,13 +81,13 @@
           "lowestPrice": {
             "taxType": "GROSS",
             "formatted": "270.50 €",
-            "amount": 270.50,
+            "amount": 270.5,
             "currency": "EUR"
           },
           "highestPrice": {
           "taxType": "GROSS",
           "formatted": "310.50 €",
-          "amount": 310.50,
+          "amount": 310.5,
           "currency": "EUR"
           },
           "manufacturerPrice": null,
