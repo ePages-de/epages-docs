@@ -100,7 +100,7 @@ ePages Now only!
 | quantity | object of [quantity](page:apps-data-types#quantity) | The quantity of the product the price refers to.|
 | price | object of [price](page:apps-data-types#price) | The price of the product.|
 | basePrice | object of [basePrice](page:apps-data-types#baseprice) | The price information scaled to a standardised base unit, according to the German base price regulation "Preisangabenverordnung" (PAngV), e.g. 1 l = 1.20 EUR. Is `null` if no reference amount is specified for the product.|
-| priceSavings | object of [priceSavings](page:apps-data-types#pricesavings) | Information on the discount a logged in customer benefits from due to the merchant's settings for customer specific prices. |
+| priceSavings | object of [priceSavings](page:apps-data-types#pricesavings) | Information on the discount the customer benefits from due to the merchant's settings for customer specific prices. |
 
 ## cart
 
@@ -535,7 +535,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | Attribute | Type | Description |
 | - | - |  - |
 | percent  | object of [percent](page:apps-data-types#percent) | The percentage discount a logged in customer benefits from due to the merchant's settings for customer specific prices. |
-| basePrice | object of [price](page:apps-data-types#price) | The regular bulk price for the product. |
+| regularBulkPrice | object of [price](page:apps-data-types#price) | The regular bulk price for the product. |
 
 ## product
 

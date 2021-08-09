@@ -222,7 +222,7 @@
                   "formatted": "10 %",
                   "percentage": 10.0
                 },
-                "basePrice": {
+                "regularBulkPrice": {
                   "taxType": "GROSS",
                   "formatted": "10.00 €",
                   "amount": 10,

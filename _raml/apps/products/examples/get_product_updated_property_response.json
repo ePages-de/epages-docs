@@ -109,7 +109,7 @@
                 "formatted": "10 %",
                 "percentage": 10.0
               },
-              "basePrice": {
+              "regularBulkPrice": {
                 "taxType": "NET",
                 "formatted": "30.00 €",
                 "amount": 30,
@@ -134,7 +134,7 @@
                 "formatted": "10 %",
                 "percentage": 10.0
               },
-              "basePrice": {
+              "regularBulkPrice": {
                 "taxType": "NET",
                 "formatted": "40.00 €",
                 "amount": 40,
