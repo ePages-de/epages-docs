@@ -216,7 +216,7 @@
               id: remove_cart_shipping_address
             - title: List applicable payment methods for current cart
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-list-paymemt-methods-current
-              id: show_applicable_cart_payment_method_details
+              id: list_applicable_payment_methods_for_current_cart
             - title: Set current cart payment method
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-set-payment-methods-current
               id: set_current_cart_payment_method
@@ -234,7 +234,7 @@
               id: create_payment_and_order
             - title: List applicable shipping methods for current cart
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-list-shipping-methods-current
-              id: show_applicable_cart_shipping_method_details
+              id: list_applicable_shipping_methods_for_current_cart
             - title: Set current cart shipping method
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-set-shipping-methods-current
               id: set_current_cart_shipping_method
@@ -249,7 +249,7 @@
               id: find_serviceable_countries
             - title: List applicable pickup options for current cart
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-list-pickup-options-current
-              id: list_pickup_options_for_current_cart
+              id: list_applicable_pickup_options_for_current_cart
             - title: Set current cart pickup option
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-set-pickup-option-current
               id: set_current_cart_pickup_option
