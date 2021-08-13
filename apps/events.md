@@ -15,7 +15,10 @@ These events are available:
 | - | - |  - |
 | `pageview` | string | Is triggered when the customer opens or reloads a page. Informs about the path of the page. |
 | `product` | immutable.js object | Is triggered when the customer selects a product. Informs about the respective product as well as the current state of the cart. |
+| `product:click` | immutable.js object | Is triggered when the customer selects a product impression. The type indicates the source of the product impression, e.g. `category` or `search`. The `detail` will contain informations about the type, for example the category or search query. |
+| `wishlist:add` | object | Is triggered when the customer adds a product to their wishlist. The wishlist is only available for logged-in customers. |
 | `category` | immutable.js object | Is triggered when the customer selects a category. Informs about the respective category and related products. |
+| `search` | immutable.js object | Is triggered when the customer performs a search via the search bar of the online shop. |
 | `cart` | object | Is triggered when the customer accesses the cart. Informs about the current state of the cart, e.g. included items. |
 | `cart:add` | object | Is triggered when the customer adds a product to the cart. Provides information about the current state of the cart and the product that was added to it. |
 | `cart:setQuantity` | object | Is triggered when the quantity of a product in the cart is changed. This also includes the removal of a product. Informs about the quantity change and the affected product. |
