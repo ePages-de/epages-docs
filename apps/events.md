@@ -134,6 +134,35 @@ cart: {
     _links: null
 }
 ```
+
+## Product:click event
+
+To make use of this event, you need to add the following snippet to your code:
+
+```js
+
+```
+
+You'll receive the following information:
+
+```
+
+```
+
+## Wishlist:add event
+
+To make use of this event, you need to add the following snippet to your code:
+
+```js
+
+```
+
+You'll receive the following information:
+
+```
+
+```
+
 ## Category event
 
 To make use of this event, you need to add the following snippet to your code:
@@ -167,6 +196,20 @@ titleTag: ""
 type: "category"
 updatedAt: "2018-04-17T14:48:29.000Z"
 url: "/jam"
+```
+
+## Search event
+
+To make use of this event, you need to add the following snippet to your code:
+
+```js
+
+```
+
+You'll receive the following information:
+
+```
+
 ```
 
 ## Cart event
