@@ -804,10 +804,10 @@
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#products-search-findBySku
               id: find_product_by_sku
             - title: Find used tags
-              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#find-tags-starts-with
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#find-tags-contains
               id: find_used_tags
             - title: Find manufacturers
-              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#find-manufacturers-starts-with
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#find-manufacturers-contains
               id: find_manufacturers
             - title: List product filter categories
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-filter-data-all
