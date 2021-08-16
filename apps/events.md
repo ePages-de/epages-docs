@@ -88,8 +88,7 @@ product: {
     name: "Homemade Cherry Jam"
     onStock: true
     outOfStock: false
-    pickupPeriod: "1-2"
-    pickupPeriodUnit: "DAYS"
+    pickupPeriod: ""
     price: {taxType: "NET", formatted: "€40,00", amount: 40, currency: "EUR"}
     productDataSheet: null
     productId: "5954B706-E701-F357-A52D-D5809AB3F606"
@@ -189,8 +188,7 @@ product: {
     name: "Homemade Cherry Jam"
     onStock: true
     outOfStock: false
-    pickupPeriod: "1-2"
-    pickupPeriodUnit: "DAYS"
+    pickupPeriod: ""
     price: {taxType: "NET", formatted: "€40,00", amount: 40, currency: "EUR"}
     productDataSheet: null
     productId: "5954B706-E701-F357-A52D-D5809AB3F606"
@@ -426,8 +424,7 @@ added product:{
     name: "Homemade Cherry Jam"
     onStock: true
     outOfStock: false
-    pickupPeriod: "1-2"
-    pickupPeriodUnit: "DAYS"
+    pickupPeriod: ""
     price: {taxType: "NET", formatted: "€40,00", amount: 40, currency: "EUR"}
     productDataSheet: null
     productId: "5954B706-E701-F357-A52D-D5809AB3F606"
