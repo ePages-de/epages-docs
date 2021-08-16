@@ -288,7 +288,7 @@ if (window.eComEventTarget) {
 You'll receive the following information:
 
 ```
-product: { Ot
+product: {
   size: 5
   __altered: false
   __hash: undefined
