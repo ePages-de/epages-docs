@@ -5,24 +5,24 @@ title: Events
 ---
 
 Events can be triggered when a customer executes a specific action in an ePages online shop.
-This can be e.g. a customer opening a new page of a shop, or adding a product to the cart.
+This can, for example, be a customer opening a new page of a shop, or adding a product to the cart.
 If you have implemented an event in your application, you will be informed about related actions and can react accordingly.
 Furthermore, your app will receive information related to the event, such as the current page a user is on.
 
 These events are available:
 
-| Event | Type | Description |
-| - | - |  - |
-| `pageview` | string | Is triggered when the customer opens or reloads a page. Informs about the path of the page. |
-| `product` | immutable.js object | Is triggered when the customer visits a product detail page. Informs about the respective product as well as the current state of the cart. |
-| `product:click` | immutable.js object | Is triggered when the customer selects a link to a product detail page, for example, on category pages or in a list of search results. Please note that the event is not triggered when selecting a link to a product detail page in a product slider. Informs about the respective product as well as the origin of the link. |
-| `wishlist:add` | object | Is triggered when the customer adds a product to their wishlist. Informs about the added product. The wishlist is only available for logged-in customers. |
-| `category` | immutable.js object | Is triggered when the customer selects a category. Informs about the respective category and related products. |
-| `search` | immutable.js object | Is triggered when the customer performs a search via the search bar of the online shop and thus accesses the search results page. The event is also triggered when the customer updates the search results page, for example, by selecting the _Show more_ button. Informs about the number of search results and the search query. |
-| `cart` | object | Is triggered when the customer accesses the cart. Informs about the current state of the cart, e.g. included items. |
-| `cart:add` | object | Is triggered when the customer adds a product to the cart. Provides information about the current state of the cart and the product that was added to it. |
-| `cart:setQuantity` | object | Is triggered when the quantity of a product in the cart is changed. This also includes the removal of a product. Informs about the quantity change and the affected product. |
-| `order:completed` | object | Is triggered when the customer reaches the order confirmation page after completing a purchase. Provides additional information about the order, such as the billing address, the order number, and the selected shipping method. Please note that this event will only be triggered if the customer accepted all cookies. |
+| Event | Description |
+| - |  - |
+| `pageview` | Is triggered when the customer opens or reloads a page. Informs about the path of the page. |
+| `product` | Is triggered when the customer accesses a product detail page. Informs about the respective product as well as the current state of the cart. |
+| `product:click` | Is triggered when the customer selects a link to a product detail page, for example, on category pages or the search results page. Please note that the event is not triggered when the customer selects a link to a product detail page in a product slider. Informs about the respective product as well as the source of the link. |
+| `wishlist:add` | Is triggered when the customer adds a product to their wishlist. Informs about the added product. |
+| `category` | Is triggered when the customer selects a category. Informs about the respective category and related products. |
+| `search` | Is triggered when the customer accesses the search results page. The event is also triggered when the customer updates the search results page, for example, by selecting the _Show more_ button. Informs about the number of search results and the search query. |
+| `cart` | Is triggered when the customer accesses the cart. Informs about the current state of the cart, for example, about included items. |
+| `cart:add` | Is triggered when the customer adds a product to the cart. Provides information about the current state of the cart and the added product. |
+| `cart:setQuantity` | Is triggered when the quantity of a product in the cart is changed. This also includes the removal of a product. Informs about the quantity change and the affected product. |
+| `order:completed` | Is triggered when a customer who accepted all cookies reaches the order confirmation page after completing a purchase. Provides additional information about the order, such as the billing address, the order number, and the selected shipping method. |
 
 ## Pageview event
 
@@ -298,7 +298,6 @@ product: { Ot
   _origin: 0
   _root: null
   _tail: Tt {array: Array(5), ownerID: undefined}
-  [[Prototype]]: o
 }
 query: {
   q: "Cherry Jam"
