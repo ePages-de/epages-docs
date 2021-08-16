@@ -14,15 +14,15 @@ These events are available:
 | Event | Type | Description |
 | - | - |  - |
 | `pageview` | string | Is triggered when the customer opens or reloads a page. Informs about the path of the page. |
-| `product` | immutable.js object | Is triggered when the customer selects a product. Informs about the respective product as well as the current state of the cart. |
-| `product:click` | immutable.js object | Is triggered when the customer selects a product impression. The type indicates the source of the product impression, e.g. `category` or `search`. The `detail` will contain informations about the type, for example the category or search query. |
-| `wishlist:add` | object | Is triggered when the customer adds a product to their wishlist. The wishlist is only available for logged-in customers. |
+| `product` | immutable.js object | Is triggered when the customer visits a product detail page. Informs about the respective product as well as the current state of the cart. |
+| `product:click` | immutable.js object | Is triggered when the customer selects a link to a product detail page, for example, on category pages or in a list of search results. Please note that the event is not triggered when selecting a link to a product detail page in a product slider. Informs about the respective product as well as the origin of the link. |
+| `wishlist:add` | object | Is triggered when the customer adds a product to their wishlist. Informs about the added product. The wishlist is only available for logged-in customers. |
 | `category` | immutable.js object | Is triggered when the customer selects a category. Informs about the respective category and related products. |
-| `search` | immutable.js object | Is triggered when the customer performs a search via the search bar of the online shop. |
+| `search` | immutable.js object | Is triggered when the customer performs a search via the search bar of the online shop and thus accesses the search results page. The event is also triggered when the customer updates the search results page, for example, by selecting the _Show more_ button. Informs about the number of search results and the search query. |
 | `cart` | object | Is triggered when the customer accesses the cart. Informs about the current state of the cart, e.g. included items. |
 | `cart:add` | object | Is triggered when the customer adds a product to the cart. Provides information about the current state of the cart and the product that was added to it. |
 | `cart:setQuantity` | object | Is triggered when the quantity of a product in the cart is changed. This also includes the removal of a product. Informs about the quantity change and the affected product. |
-| `order:completed` | object | Is triggered when the customer reaches the order confirmation page after completing a purchase. Provides additional information about the order, such as the billing address, the order number, and the selected shipping method. |
+| `order:completed` | object | Is triggered when the customer reaches the order confirmation page after completing a purchase. Provides additional information about the order, such as the billing address, the order number, and the selected shipping method. Please note that this event will only be triggered if the customer accepted all cookies. |
 
 ## Pageview event
 
@@ -88,6 +88,8 @@ product: {
     name: "Homemade Cherry Jam"
     onStock: true
     outOfStock: false
+    pickupPeriod: "1-2"
+    pickupPeriodUnit: "DAYS"
     price: {taxType: "NET", formatted: "€40,00", amount: 40, currency: "EUR"}
     productDataSheet: null
     productId: "5954B706-E701-F357-A52D-D5809AB3F606"
@@ -140,13 +142,73 @@ cart: {
 To make use of this event, you need to add the following snippet to your code:
 
 ```js
-
+if (window.eComEventTarget) {
+  window.eComEventTarget.addEventListener('product:click', function (event) {
+    console.log('product click', {
+      type: event.detail.type,
+      detail: event.detail.detail,
+      product: event.detail.product,
+      productIndex: event.detail.productIndex,
+    })
+  })
+}
 ```
 
 You'll receive the following information:
 
 ```
-
+detail: "Cherry Jam"
+product: {
+    availabilityText: "Available"
+    available: true
+    basePrice: {refQuantity: {…}, refPrice: {…}, formatted: "1 m³ = €0,12", quantity: {…}}
+    bulkPrices: null
+    conditionMicrodata: "NewCondition"
+    customAttributes: [{…}]
+    deliveryPeriod: "2-3"
+    deliveryPeriodUnit: "DAYS"
+    description: null
+    energyLabel: null
+    energyLabelSourceFile: null
+    gtin: 7501054530107
+    hasCrossSelling: false
+    hasStockLevel: true
+    hasVariations: false
+    href: "/p/homemade-cherry-jam"
+    image: null
+    isVariationMaster: false
+    isVariationProduct: false
+    isVisible: true
+    links: (5) [{…}, {…}, {…}, {…}, {…}]
+    listPrice: null
+    lowestPrice: null
+    mainCategoryId: "5954B711-E377-2A90-C400-D5809AB3F62B"
+    manufacturer: null
+    manufacturerPrice: null
+    metaDescription: ""
+    name: "Homemade Cherry Jam"
+    onStock: true
+    outOfStock: false
+    pickupPeriod: "1-2"
+    pickupPeriodUnit: "DAYS"
+    price: {taxType: "NET", formatted: "€40,00", amount: 40, currency: "EUR"}
+    productDataSheet: null
+    productId: "5954B706-E701-F357-A52D-D5809AB3F606"
+    productVariationSelection: null
+    productVariationValues: ""
+    sku: "1007"
+    slideshow: [{…}, {…}, {…}, {…}]
+    slug: "homemade-cherry-jam"
+    stockLevelClass: "in"
+    stockLevelMicrodata: "InStock"
+    title: "Homemade Cherry Jam"
+    variationMaster: null
+    variations: null
+    vatNote: "components.productComponent.priceExclusiveVat"
+    warnStock: false
+}
+productIndex: 1
+type: "search"
 ```
 
 ## Wishlist:add event
@@ -154,13 +216,25 @@ You'll receive the following information:
 To make use of this event, you need to add the following snippet to your code:
 
 ```js
-
+if (window.eComEventTarget) {
+  window.eComEventTarget.addEventListener('wishlist:add', function (event) {
+    console.log('add to wishlist', {
+      locale: event.detail.locale,
+      productId: event.detail.product.productId,
+      quantity: event.detail.product.quantity,
+      lineItemId: event.detail.lineItemId,
+    })
+  })
+}
 ```
 
 You'll receive the following information:
 
 ```
-
+lineItemId: undefined
+locale: "en_GB"
+productId: "5C3F2C7C-F3FD-C400-7A06-D5809AB3608D"
+quantity: 1
 ```
 
 ## Category event
@@ -203,13 +277,34 @@ url: "/jam"
 To make use of this event, you need to add the following snippet to your code:
 
 ```js
-
+if (window.eComEventTarget) {
+  window.eComEventTarget.addEventListener('search', function (event) {
+    console.log('search', {
+      products: event.detail.products,
+      query: event.detail.query,
+    })
+  })
+}
 ```
 
 You'll receive the following information:
 
 ```
-
+product: { Ot
+  size: 5
+  __altered: false
+  __hash: undefined
+  __ownerID: undefined
+  _capacity: 5
+  _level: 5
+  _origin: 0
+  _root: null
+  _tail: Tt {array: Array(5), ownerID: undefined}
+  [[Prototype]]: o
+}
+query: {
+  q: "Cherry Jam"
+}
 ```
 
 ## Cart event
@@ -331,6 +426,8 @@ added product:{
     name: "Homemade Cherry Jam"
     onStock: true
     outOfStock: false
+    pickupPeriod: "1-2"
+    pickupPeriodUnit: "DAYS"
     price: {taxType: "NET", formatted: "€40,00", amount: 40, currency: "EUR"}
     productDataSheet: null
     productId: "5954B706-E701-F357-A52D-D5809AB3F606"
