@@ -26,7 +26,11 @@ These events are available:
 | `cart:setQuantity` | Is triggered when the quantity of a product in the cart is changed. This also includes the removal of a product. Informs about the quantity change and the affected line item. |
 | `order:completed` | Is triggered when a customer who accepted all cookies reaches the order confirmation page after completing a purchase. Provides additional information about the order, such as the billing address, the order number, and the selected shipping method. |
 
-## pageview
+## Examples
+
+This section explains how to make use of the single events and what to expect from them.
+
+### pageview
 
 To get more information about this event, you can use the following snippet:
 
@@ -46,7 +50,7 @@ Here's an example of what you will get:
 pageview url: /about-us
 ```
 
-## product
+### product
 
 To get more information about this event, you can use the following snippet:
 
@@ -146,7 +150,7 @@ cart: {
 }
 ```
 
-## product:click
+### product:click
 
 To get more information about this event, you can use the following snippet:
 
@@ -220,7 +224,7 @@ productIndex: 1
 type: "search"
 ```
 
-## wishlist:add
+### wishlist:add
 
 To get more information about this event, you can use the following snippet:
 
@@ -246,7 +250,7 @@ productId: "5C3F2C7C-F3FD-C400-7A06-D5809AB3608D"
 quantity: 1
 ```
 
-## category
+### category
 
 To get more information about this event, you can use the following snippet:
 
@@ -387,7 +391,7 @@ products: Array (2) {
 }
 ```
 
-## search
+### search
 
 To get more information about this event, you can use the following snippet:
 
@@ -512,7 +516,7 @@ query: {
 }
 ```
 
-## cart
+### cart
 
 To get more information about this event, you can use the following snippet:
 
@@ -562,7 +566,7 @@ cart: {
 }
 ```
 
-## cart:add
+### cart:add
 
 To get more information about this event, you can use the following snippet:
 
@@ -664,7 +668,7 @@ added_product:{
 quantity 1
 ```
 
-## cart:setQuantity
+### cart:setQuantity
 
 To get more information about this event, you can use the following snippet:
 
@@ -705,7 +709,7 @@ quantity: 2
 quantityDelta: 1
 ```
 
-## order:completed
+### order:completed
 
 **Note:** Please note that this event will only be triggered if the customer accepted all cookies in the cookie notice.
 
