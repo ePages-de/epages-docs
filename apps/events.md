@@ -580,8 +580,8 @@ To get more information about this event, you can use the following snippet:
 if (window.eComEventTarget) {
   window.eComEventTarget.addEventListener('cart:add', function (event) {
     console.log('cart:add', {
-      new_cart_data: event.detail.cart,
-      added_product: event.detail.product,
+      cart: event.detail.cart,
+      product: event.detail.product,
       quantity: event.detail.quantity,
     })
   })
@@ -591,7 +591,7 @@ if (window.eComEventTarget) {
 Here's an example of what you can get:
 
 ```
-new_cart_data:{
+cart: {
     billingAddress: null
     canHaveCoupon: true
     cartId: "5C06901F-150C-3D9B-B144-D509AB34875"
@@ -622,7 +622,7 @@ new_cart_data:{
     totalNumberOfItems: 3
     _links: null
 }
-added_product:{
+product: {
     availabilityText: "Available"
     available: true
     basePrice: {refQuantity: {…}, refPrice: {…}, formatted: "1 m³ = €0,12", quantity: {…}}
@@ -671,7 +671,7 @@ added_product:{
     warnStock: false
     weight: null
 }
-quantity 1
+quantity: 1
 ```
 
 ### cart:setQuantity
@@ -693,7 +693,7 @@ if (window.eComEventTarget) {
 Here's an example of what you can get:
 
 ```
-lineItem:{
+lineItem: {
     energyLabel: null
     energyLabelSourceFile: null
     essentialFeatures: []
