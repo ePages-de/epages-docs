@@ -9,9 +9,15 @@ This can, for example, be a customer accessing a shops's page, or adding a produ
 If you have implemented an event in your application, you will be informed about related actions and can react accordingly.
 Furthermore, your app will receive information related to the event, such as the current page a user is on.
 
-**Note:** Please be sure to regularly check our [change log](https://developer.epages.com/apps/change-log.html) to keep track of updates and changes on properties that might affect your app.
 
-These events are available:
+{% callout info Note: %}
+Please be sure to regularly check our [change log](https://developer.epages.com/apps/change-log.html) to keep track of updates and changes on properties that might affect your app.
+{% endcallout %}
+
+## Available events
+
+In the following table, you can find all available events.
+For more detailed information on a specific event, see the section [Examples](#examples).
 
 | Event | Description |
 | - |  - |
@@ -19,7 +25,7 @@ These events are available:
 | `product` | Is triggered when the customer accesses a product detail page. Informs about the respective product as well as the current state of the cart. |
 | `product:click` | Is triggered when the customer selects a link to a product detail page, for example, on category pages or the search results page. Please note that the event is not triggered when the customer selects a link to a product detail page in a product slider. Informs about the respective product as well as the source of the link. |
 | `wishlist:add` | Is triggered when the customer adds a product to their wishlist. Informs about the added product. |
-| `category` | Is triggered when the customer selects a category. Informs about the respective category and related products. |
+| `category` | Is triggered when the customer selects a category. Informs about the respective category and included products. |
 | `search` | Is triggered when the customer accesses the search results page. The event is also triggered when the customer updates the search results page, for example, by selecting the _Show more_ button. Informs about the number of search results, the search query, and the products included in the search results. |
 | `cart` | Is triggered when the customer accesses the cart. Informs about the current state of the cart, for example, about included items. |
 | `cart:add` | Is triggered when the customer adds a product to the cart. Provides information about the current state of the cart and the added product. |
@@ -711,7 +717,9 @@ quantityDelta: 1
 
 ### order:completed
 
-**Note:** Please note that this event will only be triggered if the customer accepted all cookies in the cookie notice.
+{% callout info Note: %}
+Please note that this event can only be triggered if the customer accepted all cookies in the cookie notice.
+{% endcallout %}
 
 To get more information about this event, you can use the following snippet:
 
