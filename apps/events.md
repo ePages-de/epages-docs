@@ -50,7 +50,7 @@ if (window.eComEventTarget) {
 }
 ```
 
-Here's an example of what you will get:
+Here's an example of what you can get:
 
 ```
 pageview url: /about-us
@@ -71,7 +71,7 @@ if (window.eComEventTarget) {
 }
 ```
 
-Here's an example of what you will get:
+Here's an example of what you can get:
 
 ```
 product: {
@@ -173,7 +173,7 @@ if (window.eComEventTarget) {
 }
 ```
 
-Here's an example of what you will get:
+Here's an example of what you can get:
 
 ```
 detail: "Cherry Jam"
@@ -247,7 +247,7 @@ if (window.eComEventTarget) {
 }
 ```
 
-Here's an example of what you will get:
+Here's an example of what you can get:
 
 ```
 lineItemId: undefined
@@ -270,7 +270,7 @@ if (window.eComEventTarget) {
   })
 }
 ```
-Here's an example of what you will get:
+Here's an example of what you can get:
 
 ```
 category: {
@@ -412,7 +412,7 @@ if (window.eComEventTarget) {
 }
 ```
 
-Here's an example of what you will get:
+Here's an example of what you can get:
 
 ```
 products: Array(2) {
@@ -536,7 +536,7 @@ if (window.eComEventTarget) {
 }
 ```
 
-Here's an example of what you will get:
+Here's an example of what you can get:
 
 ```
 cart: {
@@ -588,7 +588,7 @@ if (window.eComEventTarget) {
 }
 ```
 
-Here's an example of what you will get:
+Here's an example of what you can get:
 
 ```
 new_cart_data:{
@@ -690,7 +690,7 @@ if (window.eComEventTarget) {
 }
 ```
 
-Here's an example of what you will get:
+Here's an example of what you can get:
 
 ```
 lineItem:{
@@ -733,7 +733,7 @@ if (window.eComEventTarget) {
 }
 ```
 
-Here's an example of what you will get:
+Here's an example of what you can get:
 
 ```
 billingAddress: null
