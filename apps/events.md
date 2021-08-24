@@ -241,7 +241,6 @@ if (window.eComEventTarget) {
       locale: event.detail.locale,
       productId: event.detail.product.productId,
       quantity: event.detail.product.quantity,
-      lineItemId: event.detail.lineItemId,
     })
   })
 }
@@ -250,7 +249,6 @@ if (window.eComEventTarget) {
 Here's an example of what you can get:
 
 ```
-lineItemId: undefined
 locale: "en_GB"
 productId: "5C3F2C7C-F3FD-C400-7A06-D5809AB3608D"
 quantity: 1
