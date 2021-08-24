@@ -358,7 +358,7 @@ products: Array (2) {
     hasCrossSelling: false
     hasStockLevel: true
     hasVariations: false
-    href: "/p/homemade-cherry-jam"
+    href: "/p/homemade-strawberry-jam"
     image: null
     isVariationMaster: false
     isVariationProduct: false
@@ -479,7 +479,7 @@ products: Array(2) {
     hasCrossSelling: false
     hasStockLevel: true
     hasVariations: false
-    href: "/p/homemade-cherry-jam"
+    href: "/p/homemade-strawberry-jam"
     image: null
     isVariationMaster: false
     isVariationProduct: false
