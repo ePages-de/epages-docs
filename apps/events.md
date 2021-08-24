@@ -391,7 +391,7 @@ products: Array (2) {
     warnStock: false
     weight: null
   } 
-  lenght: 2
+  length: 2
 }
 ```
 
