@@ -5,7 +5,7 @@ title: Events
 ---
 
 Events can be triggered when a customer executes a specific action in an ePages online shop.
-This can, for example, be a customer accessing a shops's page, or adding a product to the cart.
+This can, for example, be a customer accessing a shop's page, or adding a product to the cart.
 If you have implemented an event in your application, you will be informed about related actions and can react accordingly.
 Furthermore, your app will receive information related to the event, such as the current page a user is on.
 
@@ -512,7 +512,7 @@ products: Array(2) {
     warnStock: false
     weight: null
   } 
-  lenght: 2
+  length: 2
 }
 query: {
   q: "Jam"
@@ -734,16 +734,18 @@ if (window.eComEventTarget) {
 Here's an example of what you can get:
 
 ```
-billingAddress: null
-couponCampaign: null
-currencyId: "EUR"
-customerComment: ""
-grandTotal: "19.21"
-lineItemContainer: {ecoParticipations: Array(0), basketDiscount: {…}, totalTax: {…}, totalBeforeTax: {…}, couponLineItem: null, …}
-orderId: "5D397C93-6BE3-F322-56A6-D5809AB32102"
-orderNumber: "114264"
-paymentData: {paymentMethod: {…}, transactionId: null, price: {…}, status: null, taxes: null, …}
-shippingAddress: null
-shippingData: {shippingMethod: {…}, price: {…}, taxes: Array(1)}
-totalTax: "3.2"
+order: {
+  billingAddress: null
+  couponCampaign: null
+  currencyId: "EUR"
+  customerComment: ""
+  grandTotal: "19.21"
+  lineItemContainer: {ecoParticipations: Array(0), basketDiscount: {…}, totalTax: {…}, totalBeforeTax: {…}, couponLineItem: null, …}
+  orderId: "5D397C93-6BE3-F322-56A6-D5809AB32102"
+  orderNumber: "114264"
+  paymentData: {paymentMethod: {…}, transactionId: null, price: {…}, status: null, taxes: null, …}
+  shippingAddress: null
+  shippingData: {shippingMethod: {…}, price: {…}, taxes: Array(1)}
+  totalTax: "3.2"
+}
 ```
