@@ -22,6 +22,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 * Added data type [`additionalInformation`](https://developer.epages.com/apps/data-types.html#additionalinformation).
 * Added data type [`priceSavings`](https://developer.epages.com/apps/data-types.html#pricesavings).
+* Added the events `product:click`, `wishlist:add`, and `search` to the [Events](https://developer.epages.com/apps/events.html) section.
 
 #### <i class="fas fa-pencil-alt"></i> Update
 
