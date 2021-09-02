@@ -14,6 +14,9 @@
         <a class="sitemap-entry-expand-link" href={{ expand.external_link }} target="_blank">
           {{ expand.title }}<i class="{{ expand.icon }} right-icon"></i>
         </a>
+      {% elsif expand.hide %}
+        <li class="sitemap-entry-expand--hidden" link={{ expand.link }} parentId={{ expand.parentId }} {% if expand.id %} id={{ expand.id }}
+          {% endif %}>{{ expand.title }}</li>
       {% else %}
         <li class="sitemap-entry-expand" link={{ expand.link }} {% if expand.id %} id={{ expand.id }}
           {% endif %}>{{ expand.title }}</li>
@@ -28,6 +31,9 @@
   <a class="sitemap-entry-link" href={{ include.entry.external_link }} target="_blank">
     {{ include.entry.title }}<i class="{{ include.entry.icon }} right-icon"></i>
   </a>
+{% elsif include.entry.hide %}
+  <li class="sitemap-entry-hidden js-sitemap-entry" link={{ include.entry.link }} parentId={{ include.entry.parentId }}
+    {% if include.entry.id %} id={{ include.entry.id }} {% endif %}>{{ include.entry.title }}</li>
 {% else %}
   <li class="sitemap-entry js-sitemap-entry" link={{ include.entry.link }}
     {% if include.entry.id %} id={{ include.entry.id }} {% endif %}>{{ include.entry.title }}</li>
