@@ -9,7 +9,7 @@ gem "therubyracer", "~> 0.12"
 gem "html-proofer", "~> 3.9"
 gem "raml_parser", "~> 0.2"
 gem "rubyzip", "~> 1.3"
-gem "nokogiri", "~> 1.10"
+gem "nokogiri", "~> 1.12"
 
 group :jekyll_plugins do
   gem "jekyll-include-cache", "~> 0.1"
