@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "Get Shop countries",
+  "type": "object",
+  "properties": {
+    "": {
+      "type": "object of [countries](page:apps-data-types#countries)",
+      "description": ""
+    }
+  }
+}
