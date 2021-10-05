@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema",
-  "title": "Get Shop countries",
+  "title": "Get Countries Schema",
   "type": "object",
   "properties": {
     "": {

@@ -214,13 +214,13 @@ ePages Now only!
 
 | Attribute | Type | Description |
 | - | - |  - |
-| code2 | string | The country code according to ISO 3166-1 Alpha code 2. |
+| nativeName | string | The endonym(s) for the country. |
 | countryIsDefault | boolean | Indicates if the country is the default country for the shop. |
-| nativeName | string | The endonym for the country. |
-| englishName | string | The country name in English. |
-| countryID | string | The country ID according to ISO 3166-1 Numeric code. |
-| countryIsEU | boolean | Indicates if the country is a member country of the European Union (EU). |
 | code3 | string | The country code according to ISO 3166-1 Alpha code 3. |
+| code2 | string | The country code according to ISO 3166-1 Alpha code 2. |
+| englishName | string | The country name in English. |
+| countryIsEU | boolean | Indicates if the country is a member country of the European Union (EU). |
+| countryID | string | The country ID according to ISO 3166-1 Numeric code. |
 
 ## couponCampaign (create request)
 

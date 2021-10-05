@@ -1,12 +1,12 @@
 [
   {
-    "code2": "DE",
-    "countryIsDefault": true,
-    "englishName": "Germany",
     "nativeName": "Deutschland",
-    "countryID": "276",
-    "countryIsEU": true,
-    "code3": "DEU"
+    "countryIsDefault": 1,
+    "code3": "DEU",
+    "code2": "DE",
+    "englishName": "Germany",
+    "countryIsEU": 1,
+    "countryID": "276"
   }
 ]
 
