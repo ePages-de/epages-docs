@@ -2,6 +2,6 @@
   "model": "gross",
   "displayTaxes": true,
   "noTaxesMessage": "According to § 19 UStG we do not charge the German sales tax, and consequently do not levy it (regulation for small business entrepreneurs).",
-  "deliveryThresholdIsActive": "false",
+  "deliveryThresholdIsActive": false,
   "countryCode2": "DE"
 }
