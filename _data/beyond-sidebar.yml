@@ -658,6 +658,9 @@
             - title: Delete multiple products
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-products-batch-delete-json
               id: delete_multiple_products
+            - title: Add tags to multiple products
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-products-batch-add-tags
+              id: add_tags_to_multiple_products
         - title: Product attachments
           entries:
             - title: Add product attachment
