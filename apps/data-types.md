@@ -19,6 +19,14 @@ This object represents the attribute structure for PayPal PLUS. The structure fo
 | InvoicePaymentDueDate  | string | The due date of the invoice. Expressed according to ISO 8601. Example: `2020-11-04T08:42:49.000Z`|
 | InvoiceBIC  | string | The Bank Identifier Code of the bank that holds the account to which the invoice is due. |
 
+## additionalInformation
+
+ePages Now only!
+
+| Attribute | Type | Description |
+| - | - |  - |
+| bulkPriceInfo | array of [bulkPriceInfo](page:apps-data-types#bulkpriceinfo) | Information on bulk pricing for the product. |
+
 ## address
 
 This object is used for the attributes of shippingAddress and billingAddress.
@@ -92,6 +100,7 @@ ePages Now only!
 | quantity | object of [quantity](page:apps-data-types#quantity) | The quantity of the product the price refers to.|
 | price | object of [price](page:apps-data-types#price) | The price of the product.|
 | basePrice | object of [basePrice](page:apps-data-types#baseprice) | The price information scaled to a standardised base unit, according to the German base price regulation "Preisangabenverordnung" (PAngV), e.g. 1 l = 1.20 EUR. Is `null` if no reference amount is specified for the product.|
+| priceSavings | object of [priceSavings](page:apps-data-types#pricesavings) | Information on the discount the customer benefits from due to the merchant's settings for customer-specific prices. |
 
 ## cart
 
@@ -533,6 +542,13 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | highestPrice | object of [price](page:apps-data-types#price) | The price of the most expensive variation of a product. Only available if the `productVariationType` is *master*, and a price for at least one variation is available. |
 | basePrice | object of [basePrice](page:apps-data-types#baseprice) | The price information scaled to a standardised base unit, according to the German base price regulation "Preisangabenverordnung" (PAngV), e.g. 1 l = 1.20 EUR. Is `null` if no reference amount is specified for the product.|
 
+## priceSavings
+
+| Attribute | Type | Description |
+| - | - |  - |
+| percent  | object of [percent](page:apps-data-types#percent) | The percentage discount on the regular bulk price the customer benefits from due to the merchant's settings for customer-specific prices. |
+| regularBulkPrice | object of [price](page:apps-data-types#price) | The regular bulk price for the product. |
+
 ## product
 
 | Attribute | Type | Description |
@@ -612,15 +628,16 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | lineItemPrice | object of [price](page:apps-data-types#price) | The price of the line item (`singleItemPrice` multiplied by `quantity`). |
 | singleItemPrice | object of  [price](page:apps-data-types#price) | The price of a single product line item. |
 | lineItemCouponDiscount | object of [price](page:apps-data-types#price) | The discount of a coupon that is only applied to the specific line item. |
-| essentialFeatures | string | The essential features of the line item. |
 | images | array of [image](page:apps-data-types#image) | The image of the line item. |
+| additionalInformation | object of  [additionalInformation](page:apps-data-types#additionalinformation) | Additional information about the product line item, for example, information on bulk pricing. |
 | links | array of [link](page:apps-data-types#link) | The links to the product line item. |
-| taxClass | object of [taxClassInfo](page:apps-data-types#taxclassinfo) | The tax that applies for the product.|
-| deliveryWeight | object of [deliveryWeightQuantity](page:apps-data-types#deliveryweightquantity)| The delivery weight of the product line item.|
-| energyLabelsMaxEfficiencyString | string | The highest possible efficiency class of an uploaded energy label. |
+| variationString | string | The description of the selected variation. |
+| essentialFeatures | string | The essential features of the line item. |
+| taxClass | object of [taxClassInfo](page:apps-data-types#taxclassinfo) | The tax that applies for the product. |
+| deliveryWeight | object of [deliveryWeightQuantity](page:apps-data-types#deliveryweightquantity)| The delivery weight of the product line item. |
 | energyLabelsString | string | A list of energy labels applied to this product. Can be one value or a range with two values. |
+| energyLabelsMaxEfficiencyString | string | The highest possible efficiency class of an uploaded energy label. |
 | energyLabelSourceFile | string | A URL with an image or PDF file containing the energy label image supplied by the manufacturer. |
-| variationString | string | The description of the selected variation.|
 
 ## productLineItem (create request)
 

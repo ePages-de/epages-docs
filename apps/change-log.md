@@ -28,6 +28,23 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
+## 2021-09-02
+
+### Changes with software release 7.63.0
+
+#### <i class="fas fa-plus"></i> New
+
+* Added data type [`additionalInformation`](https://developer.epages.com/apps/data-types.html#additionalinformation).
+* Added data type [`priceSavings`](https://developer.epages.com/apps/data-types.html#pricesavings).
+* Added the events `product:click`, `wishlist:add`, and `search` to the [Events](https://developer.epages.com/apps/events.html) section.
+
+#### <i class="fas fa-pencil-alt"></i> Update
+
+* Added attribute `additionalInformation` to data type [`productLineItem`](https://developer.epages.com/apps/data-types.html#productlineitem).
+* Added attribute `priceSavings` to data type [`bulkPriceInfo`](https://developer.epages.com/apps/data-types.html#bulkpriceinfo).
+
+<hr>
+
 ## 2021-06-10
 
 ### Changes with software release 7.60.0
