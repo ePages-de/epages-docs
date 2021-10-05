@@ -14,6 +14,16 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
+## 2021-10-28
+
+### Changes with software release 7.65.0
+
+#### <i class="fas fa-plus"></i> New
+
+* [`GET`/{shopId}/countries](https://developer.epages.com/apps/api-reference/get-shopid-countries.html)
+
+<hr>
+
 ## 2021-06-10
 
 ### Changes with software release 7.60.0
