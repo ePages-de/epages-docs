@@ -22,6 +22,10 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 * [`GET`/{shopId}/countries](https://developer.epages.com/apps/api-reference/get-shopid-countries.html)
 
+#### <i class="fas fa-pencil-alt"></i> Update
+
+* Added attributes `deliveryThresholdIsActive` and `countryCode2` to data type [`taxModel`](https://developer.epages.com/apps/data-types.html#taxmodel).
+
 <hr>
 
 ## 2021-06-10
