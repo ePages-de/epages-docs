@@ -103,13 +103,14 @@ post:
                 - /productWidth<br>
                 - /productHeight<br>
                 - /priceInfo/taxClass/taxClassId³<br>
-                - /productImage¹<br>
+                - /productImage⁴<br>
                 - /stocklevel²<br>
                 - /visible¹<br><br>
 
                 **¹** supports *add* only<br>
                 **²** value will not be replaced, but changed, i.e. if the stocklevel is 3 and you add 1, you will get 4; if you add -5, you will get -2.<br>
-                **³** used for taxClassId only<br><br>
+                **³** used for taxClassId only<br>
+                **⁴** can only be used to determine the slideshow image that should serve as the main image for the product. To upload images to the slideshow, refer to [the respective POST endpoint](https://developer.epages.com/apps/api-reference/post-shopid-products-productid-slideshow.html).<br><br>
 
     securedBy: [products_write]
     is: [ locale, currency ]
@@ -175,7 +176,7 @@ post:
   /slideshow:
     displayName: Product slideshow
     get:
-      description: Returns links to slideshow images of a product. *epages6 *epagesNow
+      description: Returns links to slideshow images of a product. Slideshow images are all images uploaded for a product. *epages6 *epagesNow
       securedBy: [products_read]
       responses:
         200:
@@ -184,7 +185,7 @@ post:
               example: !include examples/get_product_productid_slideshow_response.json
               schema: !include schema/get_product_productid_slideshow.schema.json
     post:
-      description: Creates (uploads) an image for the product slideshow. *epages6 *epagesNow
+      description: Creates (uploads) an image for the product slideshow. The product slideshow reflects all images uploaded for the product. To determine the slideshow image that should serve as the main image for the product, refer to [the respective PATCH endpoint](https://developer.epages.com/apps/api-reference/patch-shopid-products-productid.html). *epages6 *epagesNow
       securedBy: [products_write]
       body:
         multipart/form-data:
@@ -226,14 +227,14 @@ post:
     /{imageName}:
       displayName: Slideshow image
       delete:
-        description: Deletes a single slideshow image. *epages6 *epagesNow
+        description: Deletes a single image from the product slideshow. The product slideshow reflects all images uploaded for the product. *epages6 *epagesNow
         securedBy: [products_write]
         responses:
           204:
     /sequence:
       displayName: Product slideshow sequence
       get:
-        description: Returns the names of the slideshow images as an array. *epages6 *epagesNow
+        description: Returns the names of the slideshow images as an array. Slideshow images are all images uploaded for a product. They will be displayed in the same order as they are included in the array. *epages6 *epagesNow
         securedBy: [products_read]
         responses:
           200:
@@ -242,7 +243,7 @@ post:
                 example: !include examples/get_product_productid_slideshow_sequence_response.json
                 schema: !include schema/get_product_productid_slideshow_sequence_schema.json
       put:
-        description: Updates the sequence of the slideshow images. *epages6 *epagesNow
+        description: Updates the sequence of the slideshow images. Slideshow images are all images uploaded for a product. They will be displayed in the same order as they are provided in the array. *epages6 *epagesNow
         securedBy: [products_write]
         body:
           application/json:
