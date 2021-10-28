@@ -658,6 +658,12 @@
             - title: Delete multiple products
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-products-batch-delete-json
               id: delete_multiple_products
+            - title: Add tags to multiple products
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-products-batch-add-tags
+              id: add_tags_to_multiple_products
+            - title: Remove tags from multiple products
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-products-batch-remove-tags
+              id: remove_tags_from_multiple_products
         - title: Product attachments
           entries:
             - title: Add product attachment
@@ -746,6 +752,12 @@
             - title: Delete product category
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-categories-delete
               id: delete_category
+            - title: Add multiple products to product categories
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-categories-batch-add-products
+              id: add_multiple_products_to_product_categories
+            - title: Remove multiple products from product categories
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-categories-batch-remove-products
+              id: remove_multiple_products_from_product_categories
         - title: Product cross-sells
           entries:
             - title: Create product cross-sell
@@ -804,7 +816,7 @@
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#products-search-findBySku
               id: find_product_by_sku
             - title: Find used tags
-              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#find-tags-contains
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#find-tags
               id: find_used_tags
             - title: Find manufacturers
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#find-manufacturers-contains
