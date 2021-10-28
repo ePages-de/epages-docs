@@ -14,6 +14,20 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
+## 2021-10-28
+
+### Changes with software release 7.65.0
+
+#### <i class="fas fa-plus"></i> New
+
+* [`GET`/{shopId}/countries](https://developer.epages.com/apps/api-reference/get-shopid-countries.html)
+
+#### <i class="fas fa-pencil-alt"></i> Update
+
+* Added attributes `deliveryThresholdIsActive` and `countryCode2` to data type [`taxModel`](https://developer.epages.com/apps/data-types.html#taxmodel).
+
+<hr>
+
 ## 2021-09-02
 
 ### Changes with software release 7.63.0

@@ -219,6 +219,18 @@ ePages Now only!
 | - | - |  - |
 | name | string | The name of the content page. |
 
+## countries
+
+| Attribute | Type | Description |
+| - | - |  - |
+| nativeName | string | The endonym(s) for the country. |
+| countryIsDefault | boolean | Indicates if the country is the default country for the shop. |
+| code3 | string | The country code according to ISO 3166-1 Alpha code 3. |
+| code2 | string | The country code according to ISO 3166-1 Alpha code 2. |
+| englishName | string | The country name in English. |
+| countryIsEU | boolean | Indicates if the country is a member country of the European Union (EU). |
+| countryID | string | The country ID according to ISO 3166-1 Numeric code. |
+
 ## couponCampaign (create request)
 
 | Attribute | Type | Description |
@@ -868,6 +880,8 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | model | string | The tax model of the shop. Can be *GROSS* (taxes included) or *NET* (taxes excluded). |
 | displayTaxes | boolean | Indicates if a tax notification message for product prices has to be displayed in the shop, e.g. if the `tax model` is *GROSS* and the `displayTaxes` is *true*, a message has to be displayed in the shop that the prices include taxes. |
 | noTaxesMessage | string | If `displayTaxes` is *false* this message is displayed for product prices. Used if VAT does not need to be declared as the invoicer is a small-sized business according to §19 UStG (German VAT law). |
+| deliveryThresholdIsActive | boolean | Indicates if the delivery threshold is exceeded in the shop. |
+| countryCode2 | string | The country code of the shop according to ISO 3166-1 Alpha code 2. |
 
 ## updatedProducts
 
