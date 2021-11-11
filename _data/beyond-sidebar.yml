@@ -743,9 +743,6 @@
             - title: List product categories
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-categories-list
               id: list_categories
-            - title: Search product categories
-              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-categories-search
-              id: search_product_categories
             - title: Show product category details
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-category-get
               id: show_category_details
@@ -764,6 +761,9 @@
             - title: Remove multiple products from product categories
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-categories-batch-remove-products
               id: remove_multiple_products_from_product_categories
+            - title: Search product categories
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-categories-search
+              id: search_product_categories
         - title: Product cross-sells
           entries:
             - title: Create product cross-sell
