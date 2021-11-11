@@ -304,6 +304,9 @@
             - title: Assign customer to cart
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-assign-customer
               id: checkout_assign_customer_to_cart
+            - title: Show latest open cart details
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-customer-search-find-latest
+              id: show_latest_open_cart_details
         - title: Payment methods
           entries:
             - title: List payment methods
@@ -740,6 +743,9 @@
             - title: List product categories
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-categories-list
               id: list_categories
+            - title: Search product categories
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-categories-search
+              id: search_product_categories
             - title: Show product category details
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-category-get
               id: show_category_details
