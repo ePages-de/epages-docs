@@ -304,6 +304,9 @@
             - title: Assign customer to cart
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-assign-customer
               id: checkout_assign_customer_to_cart
+            - title: Show latest open cart details
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-customer-search-find-latest
+              id: show_latest_open_cart_details
         - title: Payment methods
           entries:
             - title: List payment methods
@@ -758,6 +761,9 @@
             - title: Remove multiple products from product categories
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-categories-batch-remove-products
               id: remove_multiple_products_from_product_categories
+            - title: Search product categories
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-categories-search
+              id: search_product_categories
         - title: Product cross-sells
           entries:
             - title: Create product cross-sell
