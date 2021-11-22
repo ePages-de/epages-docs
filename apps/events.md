@@ -21,29 +21,42 @@ For more detailed information on a specific event, see the section [Examples](#e
 
 | Event | Description |
 | - |  - |
-| `pageview` | Is triggered when the customer opens or reloads a page. Informs about the path of the page. |
-| `product` | Is triggered when the customer accesses a product detail page. Informs about the respective product as well as the current state of the cart. |
+| `page:view` | Is triggered when the customer opens or reloads a page. Informs about the path of the page. |
+| `product:view` | Is triggered when the customer accesses a product detail page. Informs about the respective product as well as the current state of the cart. |
 | `product:click` | Is triggered when the customer selects a link to a product detail page, for example, on category pages or the search results page. Please note that the event is not triggered when the customer selects a link to a product detail page in a product slider. Informs about the respective product as well as the source of the link. |
 | `wishlist:add` | Is triggered when the customer adds a product to their wishlist. Informs about the added product. |
-| `category` | Is triggered when the customer selects a category. Informs about the respective category and included products. |
-| `search` | Is triggered when the customer accesses the search results page. The event is also triggered when the customer updates the search results page, for example, by selecting the _Show more_ button. Informs about the number of search results, the search query, and the products included in the search results. |
-| `cart` | Is triggered when the customer accesses the cart. Informs about the current state of the cart, for example, about included items. |
+| `category:view` | Is triggered when the customer selects a category. Informs about the respective category and included products. |
+| `searchResults:view` | Is triggered when the customer accesses the search results page. The event is also triggered when the customer updates the search results page, for example, by selecting the _Show more_ button. Informs about the number of search results, the search query, and the products included in the search results. |
+| `cart:view` | Is triggered when the customer accesses the cart. Informs about the current state of the cart, for example, about included items. |
 | `cart:add` | Is triggered when the customer adds a product to the cart. Provides information about the current state of the cart and the added product. |
 | `cart:setQuantity` | Is triggered when the quantity of a product in the cart is changed. This also includes the removal of a product. Informs about the quantity change and the affected line item. |
+| `cart:update` | Is triggered when the cart is changed on the cart overview. Informs about the current state of the cart, for example, about included items. |
 | `order:completed` | Is triggered when a customer who accepted all cookies reaches the order confirmation page after completing a purchase. Provides additional information about the order, such as the billing address, the order number, and the selected shipping method. |
+
+## Deprecated events
+
+The following events are deprecated. Please use the respective alternatives that are further explained in the section [Available events](#available-events).
+
+| Event | Description | Alternative |
+| - |  - | - |
+| `pageview` | Is triggered when the customer opens or reloads a page. Informs about the path of the page. | `page:view` |
+| `product` | Is triggered when the customer accesses a product detail page. Informs about the respective product as well as the current state of the cart. | `product:view` |
+| `category` | Is triggered when the customer selects a category. Informs about the respective category and included products. | `category:view` |
+| `search` | Is triggered when the customer accesses the search results page. The event is also triggered when the customer updates the search results page, for example, by selecting the _Show more_ button. Informs about the number of search results, the search query, and the products included in the search results. | `searchResults:view` |
+| `cart` | Is triggered when the customer accesses the cart. Informs about the current state of the cart, for example, about included items. | `cart:view` |
 
 ## Examples
 
 This section explains how to make use of the single events and what to expect from them.
 
-### pageview
+### page:view
 
 To get more information about this event, you can use the following snippet:
 
 ```js
 if (window.eComEventTarget) {
-  window.eComEventTarget.addEventListener('pageview', function (event) {
-    console.log('pageview', {
+  window.eComEventTarget.addEventListener('page:view', function (event) {
+    console.log('page:view', {
       url: event.detail.url,
     })
   })
@@ -53,19 +66,19 @@ if (window.eComEventTarget) {
 Here's an example of what you can get:
 
 ```
-pageview url: /about-us
+url: /about-us
 ```
 
-### product
+### product:view
 
 To get more information about this event, you can use the following snippet:
 
 ```js
 if (window.eComEventTarget) {
-  window.eComEventTarget.addEventListener('product', function (event) {
-    console.log('product', {
-      product: event.detail.product.toJS(),
-      cart: event.detail.cart.toJS(),
+  window.eComEventTarget.addEventListener('product:view', function (event) {
+    console.log('product:view', {
+      product: event.detail.product,
+      cart: event.detail.cart,
     })
   })
 }
@@ -254,16 +267,16 @@ productId: "5C3F2C7C-F3FD-C400-7A06-D5809AB3608D"
 quantity: 1
 ```
 
-### category
+### category:view
 
 To get more information about this event, you can use the following snippet:
 
 ```js
 if (window.eComEventTarget) {
-  window.eComEventTarget.addEventListener('category', function (event) {
-    console.log('category', {
-      category: event.detail.category.toJS(),
-      products: event.detail.products.toJS(),
+  window.eComEventTarget.addEventListener('category:view', function (event) {
+    console.log('category:view', {
+      category: event.detail.category,
+      products: event.detail.products,
     })
   })
 }
@@ -395,15 +408,15 @@ products: Array (2) {
 }
 ```
 
-### search
+### searchResults:view
 
 To get more information about this event, you can use the following snippet:
 
 ```js
 if (window.eComEventTarget) {
-  window.eComEventTarget.addEventListener('search', function (event) {
-    console.log('search', {
-      products: event.detail.products.toJS(),
+  window.eComEventTarget.addEventListener('searchResults:view', function (event) {
+    console.log('searchResults:view', {
+      products: event.detail.products,
       query: event.detail.query,
     })
   })
@@ -520,14 +533,14 @@ query: {
 }
 ```
 
-### cart
+### cart:view
 
 To get more information about this event, you can use the following snippet:
 
 ```js
 if (window.eComEventTarget) {
-  window.eComEventTarget.addEventListener('cart', function (event) {
-    console.log('cart', {
+  window.eComEventTarget.addEventListener('cart:view', function (event) {
+    console.log('cart:view', {
       cart: event.detail.cart,
     })
   })
@@ -711,6 +724,56 @@ lineItem: {
 }
 quantity: 2
 quantityDelta: 1
+```
+
+### cart:update
+
+To get more information about this event, you can use the following snippet:
+
+```js
+if (window.eComEventTarget) {
+  window.eComEventTarget.addEventListener('cart:update',function(event) {
+    console.log('cart:update', {
+      cart: event.detail.cart,
+    })
+  })
+}
+```
+
+Here's an example of what you can get:
+
+```
+cart: {
+  billingAddress: null
+  canHaveCoupon: true
+  cartId: "5C06901F-150C-3D9B-B144-D509AB34875"
+  checkoutButtons: [{…}]
+  checkoutState: null
+  checkoutUrl: "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/1/Baskets/46072&ChangeAction=PickupBasket&PickupToken=MjNiZThlOGM0MjAzZWQ0N2ZjYmZmZDFiZjI3OTQxMzkwOWY4ZjZlOGE4NTM0ZWIxMjg3NmY2NzBiY2IxYzQ1OV8xNDgyMjIzMDcz"
+  coupon: null
+  couponCampaign: null
+  customerEmail: null
+  grandAmount: "76,01 €"
+  grandAmountNote: "components.productComponent.priceExclusiveVat"
+  grandTotal: {amount: 76.01, currency: "EUR", formatted: "€76,01"}
+  minimumOrderValue: null
+  mustAcceptTermsAndConditions: false
+  netAmount: "76,01 €"
+  paymentLineItem: {lineItemPrice: {…}, paymentMethod: {…}}
+  pickupToken: "ZjM3M2Q2YmY4jkFjYWRlZTIzZTBlYzQwMDU4MjYzZjYwNDNhZGY0NWM1N2JiNjZhMGI0YWNlNWFkYzU4ZTQ3OF8xNTQzOTM5MjIx"
+  potentialBasketDiscounts: null
+  productLineItems: [{…}, {…}, {…}]
+  registerSessionUrl: "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/2/Baskets/46072&ChangeAction=PickupBasket&PickupToken=NTRjZWJmNjdhNzNlYTUzNDAxZTgyZTc4ODYwYTliMDUxMDIzNDQ2OWY2NWQ5NWRmN2Q2YmVjZjVjNzljOTQ2N18xNDgyMjI3OTE3"
+  shippingAddress: null
+  shippingLineItem: {lineItemPrice: {…}, shippingMethod: {…}}
+  status: null
+  subAmount: "76,01 €"
+  taxType: "NET"
+  taxes: []
+  totalBasketDiscount: null
+  totalNumberOfItems: 3
+  _links: null
+}
 ```
 
 ### order:completed
