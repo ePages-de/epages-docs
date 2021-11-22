@@ -18,7 +18,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 #### <i class="fa fa-minus"></i> Deprecate
 
-* The `pageview`, `product`, `category`, `search`, and `cart` event in the [Events](https://developer.epages.com/apps/events.html) section are deprecated and will be removed on 22nd February 2022. Please use the respective alternatives `page:view`, `product:view`, `category:view`, `searchResults:view`, and `cart:view`.
+* The `pageview`, `product`, `category`, `search`, and `cart` event in the [Events](https://developer.epages.com/apps/events.html) section are deprecated and will be removed on 22nd February 2022. Please use the respective alternatives `page:view`, `product:view`, `category:view`, `searchResults:view`, and `cart:view` instead.
 
 <hr>
 
