@@ -177,6 +177,17 @@
             - title: Change username
               link: https://api-docs.beyondshop.cloud/ng-auth-auth-public-api.html#resources-user-change-username
               id: change_username
+        - title: Signers
+          entries:
+            - title: Create signer
+              link: https://api-docs.beyondshop.cloud/ng-auth-auth-public-api.html#resources-signers-create
+              id: create_signer
+            - title: List signers
+              link: https://api-docs.beyondshop.cloud/ng-auth-auth-public-api.html#resources-signers-get
+              id: list_signers
+            - title: Delete signer
+              link: https://api-docs.beyondshop.cloud/ng-auth-auth-public-api.html#resources-signers-delete
+              id: delete_signer
     - title: Checkout API
       entries:
         - title: Carts
