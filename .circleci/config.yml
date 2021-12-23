@@ -119,7 +119,7 @@ jobs:
 
   deploy_firebase:
     docker:
-      - image: circleci/node:10.16.0
+      - image: circleci/node:16.13.1
     steps:
       - attach_workspace:
           at: ./
