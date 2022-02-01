@@ -8,16 +8,16 @@ defaults: &defaults
 docs_defaults: &docs_defaults
   <<: *defaults
   docker:
-    - image: circleci/ruby:2.6.6
+    - image: circleci/ruby:2.7.3
       environment:
-        BUNDLER_VERSION: 2.1.4
+        BUNDLER_VERSION: 2.3.6
 
 devportal_defaults: &devportal_defaults
   <<: *defaults
   docker:
-    - image: circleci/ruby:2.6.6
+    - image: circleci/ruby:2.7.3
       environment:
-        BUNDLER_VERSION: 2.1.4
+        BUNDLER_VERSION: 2.3.6
 
 jobs:
   build_test_docs:
