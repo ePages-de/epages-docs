@@ -113,7 +113,6 @@ PLATFORMS
 
 DEPENDENCIES
   activesupport (~> 5.2.4.3)
-  addressable (~> 2.8)
   bourbon (~> 5.1)
   html-proofer (~> 3.9)
   jekyll (~> 3.9.0)
@@ -129,7 +128,7 @@ DEPENDENCIES
   therubyracer (~> 0.12)
 
 RUBY VERSION
-   ruby 2.6.6p146
+   ruby 2.7.3p183
 
 BUNDLED WITH
    2.3.6
