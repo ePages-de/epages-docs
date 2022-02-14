@@ -264,12 +264,12 @@
             - title: Set current cart pickup option
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-set-pickup-option-current
               id: set_current_cart_pickup_option
-            - title: Remove current cart pickup option
-              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-delete-pickup-option-current
-              id: remove_current_cart_pickup_option
             - title: Show current cart pickup option details
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-get-pickup-option-current
               id: show_current_cart_pickup_option_details
+            - title: Remove current cart pickup option
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-delete-pickup-option-current
+              id: remove_current_cart_pickup_option
             - title: Redeem coupon
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-redeem-coupon
               id: redeem_coupon
