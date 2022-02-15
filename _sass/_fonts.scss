@@ -59,3 +59,31 @@
   src: url('/assets/fonts/Proxima-Nova/ProximaNova-RegularItWeb.eot#iefix') format('embedded-opentype'),
        url('/assets/fonts/Proxima-Nova/ProximaNova-RegularItWeb.woff') format('woff');
 }
+
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/Roboto-Mono/RobotoMono-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: italic;
+  font-weight: 400;
+  src: url('/assets/fonts/Roboto-Mono/RobotoMono-Italic.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/assets/fonts/Roboto-Mono/RobotoMono-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/assets/fonts/Roboto-Mono/RobotoMono-MediumItalic.ttf');
+}
