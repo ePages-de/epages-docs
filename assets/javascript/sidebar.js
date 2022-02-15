@@ -41,7 +41,13 @@ $(document).ready(function() {
       const key = e.message ? "message" : "data";
       const data = e[key];
 
-      if(isUrl(data)) {
+      if(data === 'onbeforeunload') {
+        setTimeout(()=> {
+          if ($('#docs').prop('contentDocument')) {
+            history.back();
+          }
+        } , 200);
+      } else if(isUrl(data)) {
         if(data.startsWith(location.origin)) {
           const anchor = data.substring(data.indexOf('#') + 1);
 
