@@ -9,7 +9,7 @@ title: Miscellaneous
   {% for page in site.pages %}
     {% assign visible = global_key | versioning_visible: page.url %}
     {% if visible %}
-      {% assign misc = "currencies locales search start-page watched-products" | split: ' ' %}
+      {% assign misc = "countries currencies locales search start-page watched-products" | split: ' ' %}
         {% for category in misc %}
           {% if page.raml_resource.relative_uri contains category %}
             <li class="resource-entry">

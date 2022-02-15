@@ -5,53 +5,86 @@ title: Events
 ---
 
 Events can be triggered when a customer executes a specific action in an ePages online shop.
-This can be e.g. a customer opening a new page of a shop, or adding a product to the cart.
+This can, for example, be a customer accessing a shop's page, or adding a product to the cart.
 If you have implemented an event in your application, you will be informed about related actions and can react accordingly.
 Furthermore, your app will receive information related to the event, such as the current page a user is on.
 
-These events are available:
 
-| Event | Type | Description |
-| - | - |  - |
-| `pageview` | string | Is triggered when the customer opens or reloads a page. Informs about the path of the page. |
-| `product` | immutable.js object | Is triggered when the customer selects a product. Informs about the respective product as well as the current state of the cart. |
-| `category` | immutable.js object | Is triggered when the customer selects a category. Informs about the respective category and related products. |
-| `cart` | object | Is triggered when the customer accesses the cart. Informs about the current state of the cart, e.g. included items. |
-| `cart:add` | object | Is triggered when the customer adds a product to the cart. Provides information about the current state of the cart and the product that was added to it. |
-| `cart:setQuantity` | object | Is triggered when the quantity of a product in the cart is changed. This also includes the removal of a product. Informs about the quantity change and the affected product. |
-| `order:completed` | object | Is triggered when the customer reaches the order confirmation page after completing a purchase. Provides additional information about the order, such as the billing address, the order number, and the selected shipping method. |
+{% callout info Note: %}
+Please be sure to regularly check our [change log](https://developer.epages.com/apps/change-log.html) to keep track of updates and changes on properties that might affect your app.
+{% endcallout %}
 
-## Pageview event
+## Available events
 
-To make use of this event, you need to add the following snippet to your code:
+In the following table, you can find all available events.
+For more detailed information on a specific event, see the section [Examples](#examples).
+
+| Event | Description |
+| - |  - |
+| `page:view` | Is triggered when the customer opens or reloads a page. Informs about the path of the page. |
+| `product:view` | Is triggered when the customer accesses a product detail page. Informs about the respective product as well as the current state of the cart. |
+| `product:click` | Is triggered when the customer selects a link to a product detail page, for example, on category pages or the search results page. Please note that the event is not triggered when the customer selects a link to a product detail page in a product slider. Informs about the respective product as well as the source of the link. |
+| `wishlist:add` | Is triggered when the customer adds a product to their wishlist. Informs about the added product. |
+| `category:view` | Is triggered when the customer selects a category. Informs about the respective category and included products. |
+| `searchResults:view` | Is triggered when the customer accesses the search results page. The event is also triggered when the customer updates the search results page, for example, by selecting the _Show more_ button. Informs about the number of search results, the search query, and the products included in the search results. |
+| `cart:view` | Is triggered when the customer accesses the cart. Informs about the current state of the cart, for example, about included items. |
+| `cart:add` | Is triggered when the customer adds a product to the cart. Provides information about the current state of the cart and the added product. |
+| `cart:setQuantity` | Is triggered when the quantity of a product in the cart is changed. This also includes the removal of a product. Informs about the quantity change and the affected line item. |
+| `cart:update` | Is triggered when the cart is changed on the cart overview. Informs about the current state of the cart, for example, about included items. |
+| `order:completed` | Is triggered when a customer who accepted all cookies reaches the order confirmation page after completing a purchase. Provides additional information about the order, such as the billing address, the order number, and the selected shipping method. |
+
+## Deprecated events
+
+The following events are deprecated. Please use the respective alternatives that are further explained in the section [Available events](#available-events).
+
+| Event | Description | Alternative |
+| - |  - | - |
+| `pageview` | Is triggered when the customer opens or reloads a page. Informs about the path of the page. | `page:view` |
+| `product` | Is triggered when the customer accesses a product detail page. Informs about the respective product as well as the current state of the cart. | `product:view` |
+| `category` | Is triggered when the customer selects a category. Informs about the respective category and included products. | `category:view` |
+| `search` | Is triggered when the customer accesses the search results page. The event is also triggered when the customer updates the search results page, for example, by selecting the _Show more_ button. Informs about the number of search results, the search query, and the products included in the search results. | `searchResults:view` |
+| `cart` | Is triggered when the customer accesses the cart. Informs about the current state of the cart, for example, about included items. | `cart:view` |
+
+## Examples
+
+This section explains how to make use of the single events and what to expect from them.
+
+### page:view
+
+To get more information about this event, you can use the following snippet:
 
 ```js
 if (window.eComEventTarget) {
-  window.eComEventTarget.addEventListener('pageview', function (event) {
-    console.log('pageview url:', event.detail.url)
+  window.eComEventTarget.addEventListener('page:view', function (event) {
+    console.log('page:view', {
+      url: event.detail.url,
+    })
   })
 }
 ```
 
-You'll receive the following information:
+Here's an example of what you can get:
 
 ```
-pageview url: /about-us
+url: /about-us
 ```
 
-## Product event
+### product:view
 
-To make use of this event, you need to add the following snippet to your code:
+To get more information about this event, you can use the following snippet:
 
 ```js
 if (window.eComEventTarget) {
-  window.eComEventTarget.addEventListener('product', function (event) {
-    console.log('product:', event.detail.product.toJS(), 'cart:', event.detail.cart.toJS())
+  window.eComEventTarget.addEventListener('product:view', function (event) {
+    console.log('product:view', {
+      product: event.detail.product,
+      cart: event.detail.cart,
+    })
   })
 }
 ```
 
-You'll receive the following information:
+Here's an example of what you can get:
 
 ```
 product: {
@@ -85,6 +118,7 @@ product: {
     name: "Homemade Cherry Jam"
     onStock: true
     outOfStock: false
+    pickupPeriod: ""
     price: {taxType: "NET", formatted: "€40,00", amount: 40, currency: "EUR"}
     productDataSheet: null
     productId: "5954B706-E701-F357-A52D-D5809AB3F606"
@@ -100,6 +134,7 @@ product: {
     variations: null
     vatNote: "components.productComponent.priceExclusiveVat"
     warnStock: false
+    weight: null
 }
 cart: {
     billingAddress: null
@@ -119,6 +154,7 @@ cart: {
     netAmount: "76,01 €"
     paymentLineItem: {lineItemPrice: {…}, paymentMethod: {…}}
     pickupToken: "ZjM3M2Q2YmY4jkFjYWRlZTIzZTBlYzQwMDU4MjYzZjYwNDNhZGY0NWM1N2JiNjZhMGI0YWNlNWFkYzU4ZTQ3OF8xNTQzOTM5MjIx"
+    potentialBasketDiscounts: null
     productLineItems: [{…}, {…}, {…}]
     registerSessionUrl: "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/2/Baskets/46072&ChangeAction=PickupBasket&PickupToken=NTRjZWJmNjdhNzNlYTUzNDAxZTgyZTc4ODYwYTliMDUxMDIzNDQ2OWY2NWQ5NWRmN2Q2YmVjZjVjNzljOTQ2N18xNDgyMjI3OTE3"
     shippingAddress: null
@@ -127,134 +163,34 @@ cart: {
     subAmount: "76,01 €"
     taxType: "NET"
     taxes: []
+    totalBasketDiscount: null
     totalNumberOfItems: 3
     _links: null
 }
 ```
-## Category event
 
-To make use of this event, you need to add the following snippet to your code:
+### product:click
 
-```js
-if (window.eComEventTarget) {
-  window.eComEventTarget.addEventListener('category', function (event) {
-    console.log('category:', event.detail.category.toJS(), 'products:', event.detail.products.toJS())
-  })
-}
-```
-You'll receive the following information:
-
-```
-categoryId: "5AD608E0-22C3-0009-F213-D5823AB36AC8"
-content: {id: "4e230bbd-2a8a-4941-8c43-3de323d40a9e", pageId: "208eb23a-3f83-4e7e-a890-87d5de254af7", themeId: "a42ec23f-59f2-41b5-bf35-a99b8ccd0663", blocks: Array(0), elements: Array(0)}
-createdAt: "2018-04-17T14:48:29.000Z"
-ep6path: "/Shops/Categories/Jam"
-ep6pathMD5: null
-guid: "5AD608E0-22C3-0009-F213-D58093346AC8"
-id: "208eb3ba-3f83-4e7e-a890-87d5de223af7"
-isVisible: true
-lft: null
-metaDescription: ""
-navigation: null
-rgt: null
-shopId: "7eb738eb-68b1-4ff1-8aa8-9d74e785a621"
-slug: "jam"
-title: "Jam"
-titleTag: ""
-type: "category"
-updatedAt: "2018-04-17T14:48:29.000Z"
-url: "/jam"
-```
-
-## Cart event
-
-To make use of this event, you need to add the following snippet to your code:
+To get more information about this event, you can use the following snippet:
 
 ```js
 if (window.eComEventTarget) {
-  window.eComEventTarget.addEventListener('cart', function (event) {
-    console.log('cart:', event.detail.cart)
+  window.eComEventTarget.addEventListener('product:click', function (event) {
+    console.log('product:click', {
+      type: event.detail.type,
+      detail: event.detail.detail,
+      product: event.detail.product,
+      productIndex: event.detail.productIndex,
+    })
   })
 }
 ```
 
-You'll receive the following information:
+Here's an example of what you can get:
 
 ```
-billingAddress: null
-canHaveCoupon: true
-cartId: "5C06901F-150C-3D9B-B144-D509AB34875"
-checkoutButtons: [{…}]
-checkoutState: null
-checkoutUrl: "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/1/Baskets/46072&ChangeAction=PickupBasket&PickupToken=MjNiZThlOGM0MjAzZWQ0N2ZjYmZmZDFiZjI3OTQxMzkwOWY4ZjZlOGE4NTM0ZWIxMjg3NmY2NzBiY2IxYzQ1OV8xNDgyMjIzMDcz"
-coupon: null
-couponCampaign: null
-customerEmail: null
-grandAmount: "76,01 €"
-grandAmountNote: "components.productComponent.priceExclusiveVat"
-grandTotal: {amount: 76.01, currency: "EUR", formatted: "€76,01"}
-minimumOrderValue: null
-mustAcceptTermsAndConditions: false
-netAmount: "76,01 €"
-paymentLineItem: {lineItemPrice: {…}, paymentMethod: {…}}
-pickupToken: "ZjM3M2Q2YmY4jkFjYWRlZTIzZTBlYzQwMDU4MjYzZjYwNDNhZGY0NWM1N2JiNjZhMGI0YWNlNWFkYzU4ZTQ3OF8xNTQzOTM5MjIx"
-productLineItems: [{…}, {…}, {…}]
-registerSessionUrl: "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/2/Baskets/46072&ChangeAction=PickupBasket&PickupToken=NTRjZWJmNjdhNzNlYTUzNDAxZTgyZTc4ODYwYTliMDUxMDIzNDQ2OWY2NWQ5NWRmN2Q2YmVjZjVjNzljOTQ2N18xNDgyMjI3OTE3"
-shippingAddress: null
-shippingLineItem: {lineItemPrice: {…}, shippingMethod: {…}}
-status: null
-subAmount: "76,01 €"
-taxType: "NET"
-taxes: []
-totalNumberOfItems: 3
-_links: null
-```
-
-## Cart:add event
-
-To make use of this event, you need to add the following snippet to your code:
-
-```js
-if (window.eComEventTarget) {
-  window.eComEventTarget.addEventListener('cart:add', function (event) {
-    console.log('new cart data:',event.detail.cart,'added product:',event.detail.product,'quantity:',event.detail.quantity)
-  })
-}
-```
-
-You'll receive the following information:
-
-```
-new cart data:{
-    billingAddress: null
-    canHaveCoupon: true
-    cartId: "5C06901F-150C-3D9B-B144-D509AB34875"
-    checkoutButtons: [{…}]
-    checkoutState: null
-    checkoutUrl: "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/1/Baskets/46072&ChangeAction=PickupBasket&PickupToken=MjNiZThlOGM0MjAzZWQ0N2ZjYmZmZDFiZjI3OTQxMzkwOWY4ZjZlOGE4NTM0ZWIxMjg3NmY2NzBiY2IxYzQ1OV8xNDgyMjIzMDcz"
-    coupon: null
-    couponCampaign: null
-    customerEmail: null
-    grandAmount: "76,01 €"
-    grandAmountNote: "components.productComponent.priceExclusiveVat"
-    grandTotal: {amount: 76.01, currency: "EUR", formatted: "€76,01"}
-    minimumOrderValue: null
-    mustAcceptTermsAndConditions: false
-    netAmount: "76,01 €"
-    paymentLineItem: {lineItemPrice: {…}, paymentMethod: {…}}
-    pickupToken: "ZjM3M2Q2YmY4jkFjYWRlZTIzZTBlYzQwMDU4MjYzZjYwNDNhZGY0NWM1N2JiNjZhMGI0YWNlNWFkYzU4ZTQ3OF8xNTQzOTM5MjIx"
-    productLineItems: [{…}, {…}, {…}]
-    registerSessionUrl: "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/2/Baskets/46072&ChangeAction=PickupBasket&PickupToken=NTRjZWJmNjdhNzNlYTUzNDAxZTgyZTc4ODYwYTliMDUxMDIzNDQ2OWY2NWQ5NWRmN2Q2YmVjZjVjNzljOTQ2N18xNDgyMjI3OTE3"
-    shippingAddress: null
-    shippingLineItem: {lineItemPrice: {…}, shippingMethod: {…}}
-    status: null
-    subAmount: "76,01 €"
-    taxType: "NET"
-    taxes: []
-    totalNumberOfItems: 3
-    _links: null
-}
-added product:{
+detail: "Cherry Jam"
+product: {
     availabilityText: "Available"
     available: true
     basePrice: {refQuantity: {…}, refPrice: {…}, formatted: "1 m³ = €0,12", quantity: {…}}
@@ -285,6 +221,7 @@ added product:{
     name: "Homemade Cherry Jam"
     onStock: true
     outOfStock: false
+    pickupPeriod: ""
     price: {taxType: "NET", formatted: "€40,00", amount: 40, currency: "EUR"}
     productDataSheet: null
     productId: "5954B706-E701-F357-A52D-D5809AB3F606"
@@ -300,26 +237,474 @@ added product:{
     variations: null
     vatNote: "components.productComponent.priceExclusiveVat"
     warnStock: false
+    weight: null
 }
-quantity 1
+productIndex: 1
+type: "search"
 ```
 
-## Cart:setQuantity event
+### wishlist:add
 
-To make use of this event, you need to add the following snippet to your code:
+To get more information about this event, you can use the following snippet:
 
 ```js
 if (window.eComEventTarget) {
-  window.eComEventTarget.addEventListener('cart:setQuantity',function(event) {
-    console.log('cart quantity update:','lineItem:',event.detail.lineItem,'quantity:',event.detail.quantity,'quantityDelta:',event.detail.quantityDelta)
+  window.eComEventTarget.addEventListener('wishlist:add', function (event) {
+    console.log('wishlist:add', {
+      locale: event.detail.locale,
+      productId: event.detail.product.productId,
+      quantity: event.detail.product.quantity,
+    })
   })
 }
 ```
 
-You'll receive the following information:
+Here's an example of what you can get:
 
 ```
-lineItem:{
+locale: "en_GB"
+productId: "5C3F2C7C-F3FD-C400-7A06-D5809AB3608D"
+quantity: 1
+```
+
+### category:view
+
+To get more information about this event, you can use the following snippet:
+
+```js
+if (window.eComEventTarget) {
+  window.eComEventTarget.addEventListener('category:view', function (event) {
+    console.log('category:view', {
+      category: event.detail.category,
+      products: event.detail.products,
+    })
+  })
+}
+```
+Here's an example of what you can get:
+
+```
+category: {
+  categoryId: "5AD608E0-22C3-0009-F213-D5823AB36AC8"
+  content: {id: "4e230bbd-2a8a-4941-8c43-3de323d40a9e", pageId: "208eb23a-3f83-4e7e-a890-87d5de254af7", themeId: "a42ec23f-59f2-41b5-bf35-a99b8ccd0663", 
+  createdAt: "2018-04-17T14:48:29.000Z"
+  ep6path: "/Shops/Categories/Jam"
+  ep6pathMD5: null
+  guid: "5AD608E0-22C3-0009-F213-D58093346AC8"
+  id: "208eb3ba-3f83-4e7e-a890-87d5de223af7"
+  isVisible: true
+  lft: null
+  metaDescription: ""
+  navigation: null
+  rgt: null
+  shopId: "7eb738eb-68b1-4ff1-8aa8-9d74e785a621"
+  slug: "jam"
+  title: "Jam"
+  titleTag: ""
+  type: "category"
+  updatedAt: "2018-04-17T14:48:29.000Z"
+  url: "/jam"
+}
+products: Array (2) {
+  0: {
+    availabilityText: "Available"
+    available: true
+    basePrice: {refQuantity: {…}, refPrice: {…}, formatted: "1 m³ = €0,12", quantity: {…}}
+    bulkPrices: null
+    conditionMicrodata: "NewCondition"
+    customAttributes: [{…}]
+    deliveryPeriod: "2-3"
+    deliveryPeriodUnit: "DAYS"
+    description: null
+    energyLabel: null
+    energyLabelSourceFile: null
+    gtin: 7501054530107
+    hasCrossSelling: false
+    hasStockLevel: true
+    hasVariations: false
+    href: "/p/homemade-cherry-jam"
+    image: null
+    isVariationMaster: false
+    isVariationProduct: false
+    isVisible: true
+    links: (5) [{…}, {…}, {…}, {…}, {…}]
+    listPrice: null
+    lowestPrice: null
+    mainCategoryId: "5954B711-E377-2A90-C400-D5809AB3F62B"
+    manufacturer: null
+    manufacturerPrice: null
+    metaDescription: ""
+    name: "Homemade Cherry Jam"
+    onStock: true
+    outOfStock: false
+    pickupPeriod: ""
+    price: {taxType: "NET", formatted: "€40,00", amount: 40, currency: "EUR"}
+    productDataSheet: null
+    productId: "5954B706-E701-F357-A52D-D5809AB3F606"
+    productVariationSelection: null
+    productVariationValues: ""
+    sku: "1007"
+    slideshow: [{…}, {…}, {…}, {…}]
+    slug: "homemade-cherry-jam"
+    stockLevelClass: "in"
+    stockLevelMicrodata: "InStock"
+    title: "Homemade Cherry Jam"
+    variationMaster: null
+    variations: null
+    vatNote: "components.productComponent.priceExclusiveVat"
+    warnStock: false
+    weight: null
+  }
+  1: {
+    availabilityText: "Available"
+    available: true
+    basePrice: {refQuantity: {…}, refPrice: {…}, formatted: "1 m³ = €0,11", quantity: {…}}
+    bulkPrices: null
+    conditionMicrodata: "NewCondition"
+    customAttributes: [{…}]
+    deliveryPeriod: "1-3"
+    deliveryPeriodUnit: "DAYS"
+    description: null
+    energyLabel: null
+    energyLabelSourceFile: null
+    gtin: 7501054230107
+    hasCrossSelling: false
+    hasStockLevel: true
+    hasVariations: false
+    href: "/p/homemade-strawberry-jam"
+    image: null
+    isVariationMaster: false
+    isVariationProduct: false
+    isVisible: true
+    links: (5) [{…}, {…}, {…}, {…}, {…}]
+    listPrice: null
+    lowestPrice: null
+    mainCategoryId: "5954B711-E377-2A90-C400-D5809AB3F62B"
+    manufacturer: null
+    manufacturerPrice: null
+    metaDescription: ""
+    name: "Homemade Strawberry Jam"
+    onStock: true
+    outOfStock: false
+    pickupPeriod: ""
+    price: {taxType: "NET", formatted: "€36,00", amount: 36, currency: "EUR"}
+    productDataSheet: null
+    productId: "6054B706-E701-F357-A52D-D5809AB3F606"
+    productVariationSelection: null
+    productVariationValues: ""
+    sku: "1090"
+    slideshow: [{…}, {…}, {…}, {…}]
+    slug: "homemade-strawberry-jam"
+    stockLevelClass: "in"
+    stockLevelMicrodata: "InStock"
+    title: "Homemade Strawberry Jam"
+    variationMaster: null
+    variations: null
+    vatNote: "components.productComponent.priceExclusiveVat"
+    warnStock: false
+    weight: null
+  } 
+  length: 2
+}
+```
+
+### searchResults:view
+
+To get more information about this event, you can use the following snippet:
+
+```js
+if (window.eComEventTarget) {
+  window.eComEventTarget.addEventListener('searchResults:view', function (event) {
+    console.log('searchResults:view', {
+      products: event.detail.products,
+      query: event.detail.query,
+    })
+  })
+}
+```
+
+Here's an example of what you can get:
+
+```
+products: Array(2) {
+  0: {
+    availabilityText: "Available"
+    available: true
+    basePrice: {refQuantity: {…}, refPrice: {…}, formatted: "1 m³ = €0,12", quantity: {…}}
+    bulkPrices: null
+    conditionMicrodata: "NewCondition"
+    customAttributes: [{…}]
+    deliveryPeriod: "2-3"
+    deliveryPeriodUnit: "DAYS"
+    description: null
+    energyLabel: null
+    energyLabelSourceFile: null
+    gtin: 7501054530107
+    hasCrossSelling: false
+    hasStockLevel: true
+    hasVariations: false
+    href: "/p/homemade-cherry-jam"
+    image: null
+    isVariationMaster: false
+    isVariationProduct: false
+    isVisible: true
+    links: (5) [{…}, {…}, {…}, {…}, {…}]
+    listPrice: null
+    lowestPrice: null
+    mainCategoryId: "5954B711-E377-2A90-C400-D5809AB3F62B"
+    manufacturer: null
+    manufacturerPrice: null
+    metaDescription: ""
+    name: "Homemade Cherry Jam"
+    onStock: true
+    outOfStock: false
+    pickupPeriod: ""
+    price: {taxType: "NET", formatted: "€40,00", amount: 40, currency: "EUR"}
+    productDataSheet: null
+    productId: "5954B706-E701-F357-A52D-D5809AB3F606"
+    productVariationSelection: null
+    productVariationValues: ""
+    sku: "1007"
+    slideshow: [{…}, {…}, {…}, {…}]
+    slug: "homemade-cherry-jam"
+    stockLevelClass: "in"
+    stockLevelMicrodata: "InStock"
+    title: "Homemade Cherry Jam"
+    variationMaster: null
+    variations: null
+    vatNote: "components.productComponent.priceExclusiveVat"
+    warnStock: false
+    weight: null
+  }
+  1: {
+    availabilityText: "Available"
+    available: true
+    basePrice: {refQuantity: {…}, refPrice: {…}, formatted: "1 m³ = €0,11", quantity: {…}}
+    bulkPrices: null
+    conditionMicrodata: "NewCondition"
+    customAttributes: [{…}]
+    deliveryPeriod: "1-3"
+    deliveryPeriodUnit: "DAYS"
+    description: null
+    energyLabel: null
+    energyLabelSourceFile: null
+    gtin: 7501054230107
+    hasCrossSelling: false
+    hasStockLevel: true
+    hasVariations: false
+    href: "/p/homemade-strawberry-jam"
+    image: null
+    isVariationMaster: false
+    isVariationProduct: false
+    isVisible: true
+    links: (5) [{…}, {…}, {…}, {…}, {…}]
+    listPrice: null
+    lowestPrice: null
+    mainCategoryId: "5954B711-E377-2A90-C400-D5809AB3F62B"
+    manufacturer: null
+    manufacturerPrice: null
+    metaDescription: ""
+    name: "Homemade Strawberry Jam"
+    onStock: true
+    outOfStock: false
+    pickupPeriod: ""
+    price: {taxType: "NET", formatted: "€36,00", amount: 36, currency: "EUR"}
+    productDataSheet: null
+    productId: "6054B706-E701-F357-A52D-D5809AB3F606"
+    productVariationSelection: null
+    productVariationValues: ""
+    sku: "1090"
+    slideshow: [{…}, {…}, {…}, {…}]
+    slug: "homemade-strawberry-jam"
+    stockLevelClass: "in"
+    stockLevelMicrodata: "InStock"
+    title: "Homemade Strawberry Jam"
+    variationMaster: null
+    variations: null
+    vatNote: "components.productComponent.priceExclusiveVat"
+    warnStock: false
+    weight: null
+  } 
+  length: 2
+}
+query: {
+  q: "Jam"
+  token: "ZjM3M2Q2YmY4jkFjYWRlZTIzZTBlYzQwMDU4MjYzZjYwNDNhZGY0NWM1N2JiNjZhMGI0YWNlNWFkYzU4ZTQ3OF8xNTQzOTM5MjIx"
+}
+```
+
+### cart:view
+
+To get more information about this event, you can use the following snippet:
+
+```js
+if (window.eComEventTarget) {
+  window.eComEventTarget.addEventListener('cart:view', function (event) {
+    console.log('cart:view', {
+      cart: event.detail.cart,
+    })
+  })
+}
+```
+
+Here's an example of what you can get:
+
+```
+cart: {
+  billingAddress: null
+  canHaveCoupon: true
+  cartId: "5C06901F-150C-3D9B-B144-D509AB34875"
+  checkoutButtons: [{…}]
+  checkoutState: null
+  checkoutUrl: "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/1/Baskets/46072&ChangeAction=PickupBasket&PickupToken=MjNiZThlOGM0MjAzZWQ0N2ZjYmZmZDFiZjI3OTQxMzkwOWY4ZjZlOGE4NTM0ZWIxMjg3NmY2NzBiY2IxYzQ1OV8xNDgyMjIzMDcz"
+  coupon: null
+  couponCampaign: null
+  customerEmail: null
+  grandAmount: "76,01 €"
+  grandAmountNote: "components.productComponent.priceExclusiveVat"
+  grandTotal: {amount: 76.01, currency: "EUR", formatted: "€76,01"}
+  minimumOrderValue: null
+  mustAcceptTermsAndConditions: false
+  netAmount: "76,01 €"
+  paymentLineItem: {lineItemPrice: {…}, paymentMethod: {…}}
+  pickupToken: "ZjM3M2Q2YmY4jkFjYWRlZTIzZTBlYzQwMDU4MjYzZjYwNDNhZGY0NWM1N2JiNjZhMGI0YWNlNWFkYzU4ZTQ3OF8xNTQzOTM5MjIx"
+  potentialBasketDiscounts: null
+  productLineItems: [{…}, {…}, {…}]
+  registerSessionUrl: "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/2/Baskets/46072&ChangeAction=PickupBasket&PickupToken=NTRjZWJmNjdhNzNlYTUzNDAxZTgyZTc4ODYwYTliMDUxMDIzNDQ2OWY2NWQ5NWRmN2Q2YmVjZjVjNzljOTQ2N18xNDgyMjI3OTE3"
+  shippingAddress: null
+  shippingLineItem: {lineItemPrice: {…}, shippingMethod: {…}}
+  status: null
+  subAmount: "76,01 €"
+  taxType: "NET"
+  taxes: []
+  totalBasketDiscount: null
+  totalNumberOfItems: 3
+  _links: null
+}
+```
+
+### cart:add
+
+To get more information about this event, you can use the following snippet:
+
+```js
+if (window.eComEventTarget) {
+  window.eComEventTarget.addEventListener('cart:add', function (event) {
+    console.log('cart:add', {
+      cart: event.detail.cart,
+      product: event.detail.product,
+      quantity: event.detail.quantity,
+    })
+  })
+}
+```
+
+Here's an example of what you can get:
+
+```
+cart: {
+    billingAddress: null
+    canHaveCoupon: true
+    cartId: "5C06901F-150C-3D9B-B144-D509AB34875"
+    checkoutButtons: [{…}]
+    checkoutState: null
+    checkoutUrl: "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/1/Baskets/46072&ChangeAction=PickupBasket&PickupToken=MjNiZThlOGM0MjAzZWQ0N2ZjYmZmZDFiZjI3OTQxMzkwOWY4ZjZlOGE4NTM0ZWIxMjg3NmY2NzBiY2IxYzQ1OV8xNDgyMjIzMDcz"
+    coupon: null
+    couponCampaign: null
+    customerEmail: null
+    grandAmount: "76,01 €"
+    grandAmountNote: "components.productComponent.priceExclusiveVat"
+    grandTotal: {amount: 76.01, currency: "EUR", formatted: "€76,01"}
+    minimumOrderValue: null
+    mustAcceptTermsAndConditions: false
+    netAmount: "76,01 €"
+    paymentLineItem: {lineItemPrice: {…}, paymentMethod: {…}}
+    pickupToken: "ZjM3M2Q2YmY4jkFjYWRlZTIzZTBlYzQwMDU4MjYzZjYwNDNhZGY0NWM1N2JiNjZhMGI0YWNlNWFkYzU4ZTQ3OF8xNTQzOTM5MjIx"
+    potentialBasketDiscounts: null
+    productLineItems: [{…}, {…}, {…}]
+    registerSessionUrl: "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/2/Baskets/46072&ChangeAction=PickupBasket&PickupToken=NTRjZWJmNjdhNzNlYTUzNDAxZTgyZTc4ODYwYTliMDUxMDIzNDQ2OWY2NWQ5NWRmN2Q2YmVjZjVjNzljOTQ2N18xNDgyMjI3OTE3"
+    shippingAddress: null
+    shippingLineItem: {lineItemPrice: {…}, shippingMethod: {…}}
+    status: null
+    subAmount: "76,01 €"
+    taxType: "NET"
+    taxes: []
+    totalBasketDiscount: null
+    totalNumberOfItems: 3
+    _links: null
+}
+product: {
+    availabilityText: "Available"
+    available: true
+    basePrice: {refQuantity: {…}, refPrice: {…}, formatted: "1 m³ = €0,12", quantity: {…}}
+    bulkPrices: null
+    conditionMicrodata: "NewCondition"
+    customAttributes: [{…}]
+    deliveryPeriod: "2-3"
+    deliveryPeriodUnit: "DAYS"
+    description: null
+    energyLabel: null
+    energyLabelSourceFile: null
+    gtin: 7501054530107
+    hasCrossSelling: false
+    hasStockLevel: true
+    hasVariations: false
+    href: "/p/homemade-cherry-jam"
+    image: null
+    isVariationMaster: false
+    isVariationProduct: false
+    isVisible: true
+    links: (5) [{…}, {…}, {…}, {…}, {…}]
+    listPrice: null
+    lowestPrice: null
+    mainCategoryId: "5954B711-E377-2A90-C400-D5809AB3F62B"
+    manufacturer: null
+    manufacturerPrice: null
+    metaDescription: ""
+    name: "Homemade Cherry Jam"
+    onStock: true
+    outOfStock: false
+    pickupPeriod: ""
+    price: {taxType: "NET", formatted: "€40,00", amount: 40, currency: "EUR"}
+    productDataSheet: null
+    productId: "5954B706-E701-F357-A52D-D5809AB3F606"
+    productVariationSelection: null
+    productVariationValues: ""
+    sku: "1007"
+    slideshow: [{…}, {…}, {…}, {…}]
+    slug: "homemade-cherry-jam"
+    stockLevelClass: "in"
+    stockLevelMicrodata: "InStock"
+    title: "Homemade Cherry Jam"
+    variationMaster: null
+    variations: null
+    vatNote: "components.productComponent.priceExclusiveVat"
+    warnStock: false
+    weight: null
+}
+quantity: 1
+```
+
+### cart:setQuantity
+
+To get more information about this event, you can use the following snippet:
+
+```js
+if (window.eComEventTarget) {
+  window.eComEventTarget.addEventListener('cart:setQuantity',function(event) {
+    console.log('cart:setQuantity', {
+      lineItem: event.detail.lineItem,
+      quantity: event.detail.quantity,
+      quantityDelta: event.detail.quantityDelta,
+    })
+  })
+}
+```
+
+Here's an example of what you can get:
+
+```
+lineItem: {
     energyLabel: null
     energyLabelSourceFile: null
     essentialFeatures: []
@@ -341,31 +726,89 @@ quantity: 2
 quantityDelta: 1
 ```
 
-## Order:completed event
+### cart:update
 
-To make use of this event, you need to add the following snippet to your code:
+To get more information about this event, you can use the following snippet:
 
 ```js
 if (window.eComEventTarget) {
-  window.eComEventTarget.addEventListener('order:completed', function(event) {
-    console.log('order completed:', event.detail)
+  window.eComEventTarget.addEventListener('cart:update',function(event) {
+    console.log('cart:update', {
+      cart: event.detail.cart,
+    })
   })
 }
 ```
 
-You'll receive the following information:
+Here's an example of what you can get:
 
 ```
-billingAddress: null
-couponCampaign: null
-currencyId: "EUR"
-customerComment: ""
-grandTotal: "19.21"
-lineItemContainer: {ecoParticipations: Array(0), basketDiscount: {…}, totalTax: {…}, totalBeforeTax: {…}, couponLineItem: null, …}
-orderId: "5D397C93-6BE3-F322-56A6-D5809AB32102"
-orderNumber: "114264"
-paymentData: {paymentMethod: {…}, transactionId: null, price: {…}, status: null, taxes: null, …}
-shippingAddress: null
-shippingData: {shippingMethod: {…}, price: {…}, taxes: Array(1)}
-totalTax: "3.2"
+cart: {
+  billingAddress: null
+  canHaveCoupon: true
+  cartId: "5C06901F-150C-3D9B-B144-D509AB34875"
+  checkoutButtons: [{…}]
+  checkoutState: null
+  checkoutUrl: "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/1/Baskets/46072&ChangeAction=PickupBasket&PickupToken=MjNiZThlOGM0MjAzZWQ0N2ZjYmZmZDFiZjI3OTQxMzkwOWY4ZjZlOGE4NTM0ZWIxMjg3NmY2NzBiY2IxYzQ1OV8xNDgyMjIzMDcz"
+  coupon: null
+  couponCampaign: null
+  customerEmail: null
+  grandAmount: "76,01 €"
+  grandAmountNote: "components.productComponent.priceExclusiveVat"
+  grandTotal: {amount: 76.01, currency: "EUR", formatted: "€76,01"}
+  minimumOrderValue: null
+  mustAcceptTermsAndConditions: false
+  netAmount: "76,01 €"
+  paymentLineItem: {lineItemPrice: {…}, paymentMethod: {…}}
+  pickupToken: "ZjM3M2Q2YmY4jkFjYWRlZTIzZTBlYzQwMDU4MjYzZjYwNDNhZGY0NWM1N2JiNjZhMGI0YWNlNWFkYzU4ZTQ3OF8xNTQzOTM5MjIx"
+  potentialBasketDiscounts: null
+  productLineItems: [{…}, {…}, {…}]
+  registerSessionUrl: "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/2/Baskets/46072&ChangeAction=PickupBasket&PickupToken=NTRjZWJmNjdhNzNlYTUzNDAxZTgyZTc4ODYwYTliMDUxMDIzNDQ2OWY2NWQ5NWRmN2Q2YmVjZjVjNzljOTQ2N18xNDgyMjI3OTE3"
+  shippingAddress: null
+  shippingLineItem: {lineItemPrice: {…}, shippingMethod: {…}}
+  status: null
+  subAmount: "76,01 €"
+  taxType: "NET"
+  taxes: []
+  totalBasketDiscount: null
+  totalNumberOfItems: 3
+  _links: null
+}
+```
+
+### order:completed
+
+{% callout info Note: %}
+Please note that this event can only be triggered if the customer accepted all cookies in the cookie notice.
+{% endcallout %}
+
+To get more information about this event, you can use the following snippet:
+
+```js
+if (window.eComEventTarget) {
+  window.eComEventTarget.addEventListener('order:completed', function (event) {
+    console.log('order:completed', {
+      order: event.detail,
+    })
+  })
+}
+```
+
+Here's an example of what you can get:
+
+```
+order: {
+  billingAddress: null
+  couponCampaign: null
+  currencyId: "EUR"
+  customerComment: ""
+  grandTotal: "19.21"
+  lineItemContainer: {ecoParticipations: Array(0), basketDiscount: {…}, totalTax: {…}, totalBeforeTax: {…}, couponLineItem: null, …}
+  orderId: "5D397C93-6BE3-F322-56A6-D5809AB32102"
+  orderNumber: "114264"
+  paymentData: {paymentMethod: {…}, transactionId: null, price: {…}, status: null, taxes: null, …}
+  shippingAddress: null
+  shippingData: {shippingMethod: {…}, price: {…}, taxes: Array(1)}
+  totalTax: "3.2"
+}
 ```

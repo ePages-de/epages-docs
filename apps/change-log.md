@@ -14,6 +14,47 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
+## 2021-12-07
+
+### Changes with software release 7.66.0
+
+#### <i class="fa fa-minus"></i> Deprecate
+
+* The events `pageview`, `product`, `category`, `search`, and `cart` of the [Events](https://developer.epages.com/apps/events.html) section are deprecated and will be removed on 7th March 2022. Please use the respective alternatives `page:view`, `product:view`, `category:view`, `searchResults:view`, and `cart:view` instead.
+
+<hr>
+
+## 2021-10-28
+
+### Changes with software release 7.65.0
+
+#### <i class="fas fa-plus"></i> New
+
+* [`GET`/{shopId}/countries](https://developer.epages.com/apps/api-reference/get-shopid-countries.html)
+
+#### <i class="fas fa-pencil-alt"></i> Update
+
+* Added attributes `deliveryThresholdIsActive` and `countryCode2` to data type [`taxModel`](https://developer.epages.com/apps/data-types.html#taxmodel).
+
+<hr>
+
+## 2021-09-02
+
+### Changes with software release 7.63.0
+
+#### <i class="fas fa-plus"></i> New
+
+* Added data type [`additionalInformation`](https://developer.epages.com/apps/data-types.html#additionalinformation).
+* Added data type [`priceSavings`](https://developer.epages.com/apps/data-types.html#pricesavings).
+* Added the events `product:click`, `wishlist:add`, and `search` to the [Events](https://developer.epages.com/apps/events.html) section.
+
+#### <i class="fas fa-pencil-alt"></i> Update
+
+* Added attribute `additionalInformation` to data type [`productLineItem`](https://developer.epages.com/apps/data-types.html#productlineitem).
+* Added attribute `priceSavings` to data type [`bulkPriceInfo`](https://developer.epages.com/apps/data-types.html#bulkpriceinfo).
+
+<hr>
+
 ## 2021-06-10
 
 ### Changes with software release 7.60.0
