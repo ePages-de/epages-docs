@@ -779,7 +779,7 @@ cart: {
 ### order:completed
 
 {% callout info Note: %}
-Please note that this event can only be triggered if the customer accepted all cookies in the cookie notice.
+Please note that your app will only receive this event if the customer accepted all cookies in the cookie notice.
 {% endcallout %}
 
 To get more information about this event, you can use the following snippet:
