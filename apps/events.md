@@ -801,7 +801,6 @@ order: {
   billingAddress: null
   couponCampaign: null
   currencyId: "EUR"
-  customerComment: ""
   grandTotal: "19.21"
   lineItemContainer: {ecoParticipations: Array(0), basketDiscount: {…}, totalTax: {…}, totalBeforeTax: {…}, couponLineItem: null, …}
   orderId: "5D397C93-6BE3-F322-56A6-D5809AB32102"
