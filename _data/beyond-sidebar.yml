@@ -845,8 +845,11 @@
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#find-manual-categories
               id: find_manual_product_categories
             - title: Find manufacturers
-              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#find-manufacturers-contains
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#find-manufacturers
               id: find_manufacturers
+            - title: (Deprecated) Find manufacturers
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#find-manufacturers-contains
+              id: find_manufacturers_contains
             - title: List product filter categories
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-filter-data-all
               id: list_product_filter_categories
