@@ -6757,7 +6757,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"errorId\" : \"payment-method-definition-missing-locale\",\n  \"details\" : { },\n  \"message\" : \"Payment method definition testPMD is not localized for locale de-AT needed by shop 98459078-9b5b-4190-954c-ecf4139dd1e5\",\n  \"traceId\" : null\n}",
+      "body" : "{\n  \"errorId\" : \"payment-method-definition-missing-locale\",\n  \"details\" : { },\n  \"message\" : \"Payment method definition testPMD is not localized for locale de-AT needed by shop e24dd0bf-1200-453c-9e04-2538782283cf\",\n  \"traceId\" : null\n}",
       "code" : 409
     } ]
   }, {
@@ -7181,7 +7181,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"ready\" : true,\n  \"details\" : {\n    \"accountId\" : \"481ae017-53d6-4bbc-989d-0b397275c056\"\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/payment-signup/merchant-accounts/credit-card\"\n    },\n    \"generate-referral-uri\" : {\n      \"href\" : \"https://yourshop.api.urn/payment-signup/referrals/credit-card\"\n    },\n    \"disconnect\" : {\n      \"href\" : \"https://yourshop.api.urn/payment-signup/merchant-accounts/credit-card\"\n    }\n  }\n}",
+      "body" : "{\n  \"ready\" : true,\n  \"details\" : {\n    \"accountId\" : \"b787ea64-534a-47ad-aacb-8b54988a1218\"\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/payment-signup/merchant-accounts/credit-card\"\n    },\n    \"generate-referral-uri\" : {\n      \"href\" : \"https://yourshop.api.urn/payment-signup/referrals/credit-card\"\n    },\n    \"disconnect\" : {\n      \"href\" : \"https://yourshop.api.urn/payment-signup/merchant-accounts/credit-card\"\n    }\n  }\n}",
       "code" : 200
     } ]
   }, {
@@ -7380,7 +7380,7 @@
       } ],
       "body" : {
         "mode" : "raw",
-        "raw" : "{\"paymentStatus\":\"APPROVED\",\"externalPaymentId\":\"transactionDDA5163293614660932BA36AAEFAD7D3\",\"externalPaymentUri\":\"https://example.com/transactions/transactionDDA5163293614660932BA36AAEFAD7D3\",\"message\":\"For some transactions that are only preauthorized (to be captured later) there is a timeframe until the authorization expires.\"}",
+        "raw" : "{\"paymentStatus\":\"APPROVED\",\"externalPaymentId\":\"transaction15E5BE8459EA40FFA132CF596214A82B\",\"externalPaymentUri\":\"https://example.com/transactions/transaction15E5BE8459EA40FFA132CF596214A82B\",\"message\":\"For some transactions that are only preauthorized (to be captured later) there is a timeframe until the authorization expires.\"}",
         "urlencoded" : [ ]
       }
     },
@@ -7401,7 +7401,7 @@
         } ],
         "body" : {
           "mode" : "raw",
-          "raw" : "{\"paymentStatus\":\"APPROVED\",\"externalPaymentId\":\"transactionDDA5163293614660932BA36AAEFAD7D3\",\"externalPaymentUri\":\"https://example.com/transactions/transactionDDA5163293614660932BA36AAEFAD7D3\",\"message\":\"For some transactions that are only preauthorized (to be captured later) there is a timeframe until the authorization expires.\"}",
+          "raw" : "{\"paymentStatus\":\"APPROVED\",\"externalPaymentId\":\"transaction15E5BE8459EA40FFA132CF596214A82B\",\"externalPaymentUri\":\"https://example.com/transactions/transaction15E5BE8459EA40FFA132CF596214A82B\",\"message\":\"For some transactions that are only preauthorized (to be captured later) there is a timeframe until the authorization expires.\"}",
           "urlencoded" : [ ]
         }
       },
@@ -7411,7 +7411,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"paymentStatus\" : \"APPROVED\",\n  \"externalPaymentId\" : \"transactionDDA5163293614660932BA36AAEFAD7D3\",\n  \"externalPaymentUri\" : \"https://example.com/transactions/transactionDDA5163293614660932BA36AAEFAD7D3\",\n  \"message\" : \"For some transactions that are only preauthorized (to be captured later) there is a timeframe until the authorization expires.\"\n}",
+      "body" : "{\n  \"paymentStatus\" : \"APPROVED\",\n  \"externalPaymentId\" : \"transaction15E5BE8459EA40FFA132CF596214A82B\",\n  \"externalPaymentUri\" : \"https://example.com/transactions/transaction15E5BE8459EA40FFA132CF596214A82B\",\n  \"message\" : \"For some transactions that are only preauthorized (to be captured later) there is a timeframe until the authorization expires.\"\n}",
       "code" : 200
     } ]
   }, {
@@ -15480,7 +15480,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"shopId\" : \"3a234d78-4d52-4085-8894-5c952ae7362f\"\n}",
+      "body" : "{\n  \"shopId\" : \"57d5da5a-8f3e-4585-a95d-08425a88f76d\"\n}",
       "code" : 200
     } ]
   }, {
