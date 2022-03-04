@@ -105,6 +105,9 @@ jobs:
       - attach_workspace:
           at: ./
       - run:
+          name: Update dependencies
+          command: sudo apt-get -y update
+      - run:
           name: Install rsync
           command: sudo apt-get -y install rsync
       - run:
