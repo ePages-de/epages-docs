@@ -2,10 +2,13 @@
   "categoryId": "54E7301B-A6B4-567A-8AE0-0A0C05E6922D",
   "alias": "Feature",
   "name": "Featured products",
+  "visible": false,
   "pageTitle": "Featured products",
   "navigationCaption": "Feature",
   "description": "Our audio product recommendations.",
   "specialOffer": false,
+  "facetedSearchShowFacetsOnCategory": true ,
+  "facetedSearchCategoryStartDepth": 3,
   "images": [
     {
       "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/301B/A6B4/567A/8AE0/0A0C/05E6/922D/epages-e_copysmall_m.png",
