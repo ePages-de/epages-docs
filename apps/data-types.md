@@ -154,7 +154,7 @@ ePages Now only!
 | navigationCaption | string | The name of the category page that appears in the navigation bar. |
 | sfUrl | string | The link to the categories in the shop’s storefront. |
 | facetedSearchShowFacetsOnCategory | boolean | Indicates if the search field is displayed on category pages. |
-| facetedSearchCategoryStartDepth | number | The category depth for showing the search field on category pages. |
+| facetedSearchCategoryStartDepth | number | The category level for displaying the search field on category pages. The search field is displayed on the indicated level and all sub levels. |
 
 ## category (create request)
 
