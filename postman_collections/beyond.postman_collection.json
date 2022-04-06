@@ -13425,6 +13425,60 @@
       "code" : 200
     } ]
   }, {
+    "id" : "shop-attribute-name-already-used",
+    "name" : "/resellers/epages/shops/{id}/attributes/{name}",
+    "description" : "When the shop attribute is created with an already taken `name` property, a `409 Conflict` error will be returned.",
+    "variable" : [ ],
+    "event" : [ ],
+    "request" : {
+      "url" : {
+        "protocol" : "https",
+        "host" : "{{host}}",
+        "path" : "/api/resellers/epages/shops/:id/attributes/:name"
+      },
+      "method" : "PUT",
+      "header" : [ {
+        "key" : "Content-Type",
+        "value" : "application/json",
+        "disabled" : false
+      } ],
+      "body" : {
+        "mode" : "raw",
+        "raw" : "{\n  \"value\" : \"manuallyCreateSku\",\n  \"public\" : true\n}",
+        "urlencoded" : [ ]
+      }
+    },
+    "response" : [ {
+      "id" : "shop-attribute-name-already-used",
+      "name" : "shop-attribute-name-already-used",
+      "originalRequest" : {
+        "url" : {
+          "protocol" : "https",
+          "host" : "{{host}}",
+          "path" : "/api/resellers/epages/shops/:id/attributes/:name"
+        },
+        "method" : "PUT",
+        "header" : [ {
+          "key" : "Content-Type",
+          "value" : "application/json",
+          "disabled" : false
+        } ],
+        "body" : {
+          "mode" : "raw",
+          "raw" : "{\n  \"value\" : \"manuallyCreateSku\",\n  \"public\" : true\n}",
+          "urlencoded" : [ ]
+        }
+      },
+      "header" : [ {
+        "key" : "Content-Type",
+        "value" : "application/json",
+        "disabled" : false
+      } ],
+      "cookie" : [ ],
+      "body" : "{\n  \"errorId\" : \"attribute-name-already-used\",\n  \"details\" : { },\n  \"message\" : \"A public attribute with the name createSku was already created.\",\n  \"traceId\" : null\n}",
+      "code" : 409
+    } ]
+  }, {
     "id" : "script-tags-create",
     "name" : "/script-tags",
     "description" : "Creates a script tag.",
@@ -14325,7 +14379,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"_id\" : \"bac68861-176e-4b12-9e63-e1ca03ac352e\",\n  \"name\" : \"anotherName\",\n  \"resellerName\" : \"epages\",\n  \"primaryHostname\" : \"cornershop.amazingdiscounts.xyz\",\n  \"fallbackHostname\" : \"cornershop.beyondshop.cloud\",\n  \"tax\" : {\n    \"taxModel\" : \"GROSS\",\n    \"vatExempted\" : true,\n    \"country\" : \"GB\"\n  },\n  \"currencies\" : [ \"GBP\", \"EUR\" ],\n  \"defaultCurrency\" : \"EUR\",\n  \"locales\" : [ \"en-GB\", \"de-DE\" ],\n  \"defaultLocale\" : \"en-GB\",\n  \"closedByMerchant\" : false,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop\"\n    },\n    \"shop\" : {\n      \"href\" : \"https://yourshop.api.urn/shop\"\n    },\n    \"address\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/address\"\n    },\n    \"images\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images\"\n    },\n    \"legal\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/legal\"\n    },\n    \"attributes\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/attributes\"\n    }\n  }\n}",
+      "body" : "{\n  \"_id\" : \"60321bd4-30f2-4bf2-ac87-72b93d5bc6fd\",\n  \"name\" : \"anotherName\",\n  \"resellerName\" : \"epages\",\n  \"primaryHostname\" : \"cornershop.amazingdiscounts.xyz\",\n  \"fallbackHostname\" : \"cornershop.beyondshop.cloud\",\n  \"tax\" : {\n    \"taxModel\" : \"GROSS\",\n    \"vatExempted\" : true,\n    \"country\" : \"GB\"\n  },\n  \"currencies\" : [ \"EUR\", \"GBP\" ],\n  \"defaultCurrency\" : \"EUR\",\n  \"locales\" : [ \"en-GB\", \"de-DE\" ],\n  \"defaultLocale\" : \"en-GB\",\n  \"closedByMerchant\" : false,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop\"\n    },\n    \"shop\" : {\n      \"href\" : \"https://yourshop.api.urn/shop\"\n    },\n    \"address\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/address\"\n    },\n    \"images\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images\"\n    },\n    \"legal\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/legal\"\n    },\n    \"attributes\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/attributes\"\n    }\n  }\n}",
       "code" : 200
     } ]
   }, {
@@ -14359,7 +14413,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"_id\" : \"c3680ea1-b14b-447f-b608-9ee10d8b08e5\",\n  \"name\" : \"My little Cornershop\",\n  \"resellerName\" : \"epages\",\n  \"primaryHostname\" : \"cornershop.amazingdiscounts.xyz\",\n  \"fallbackHostname\" : \"cornershop.beyondshop.cloud\",\n  \"tax\" : {\n    \"taxModel\" : \"GROSS\",\n    \"vatExempted\" : false,\n    \"country\" : \"GB\",\n    \"supportedTaxClasses\" : [ \"REGULAR\", \"EXEMPT\", \"REDUCED\" ]\n  },\n  \"currencies\" : [ \"EUR\", \"GBP\" ],\n  \"defaultCurrency\" : \"EUR\",\n  \"locales\" : [ \"de-DE\", \"en-GB\" ],\n  \"defaultLocale\" : \"en-GB\",\n  \"closedByMerchant\" : false,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop\"\n    },\n    \"shop\" : {\n      \"href\" : \"https://yourshop.api.urn/shop\"\n    },\n    \"address\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/address\"\n    },\n    \"images\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images\"\n    },\n    \"legal\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/legal\"\n    },\n    \"attributes\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/attributes\"\n    }\n  }\n}",
+      "body" : "{\n  \"_id\" : \"31231197-71f4-4b18-9bba-3cdff5d62903\",\n  \"name\" : \"My little Cornershop\",\n  \"resellerName\" : \"epages\",\n  \"primaryHostname\" : \"cornershop.amazingdiscounts.xyz\",\n  \"fallbackHostname\" : \"cornershop.beyondshop.cloud\",\n  \"tax\" : {\n    \"taxModel\" : \"GROSS\",\n    \"vatExempted\" : false,\n    \"country\" : \"GB\",\n    \"supportedTaxClasses\" : [ \"REDUCED\", \"EXEMPT\", \"REGULAR\" ]\n  },\n  \"currencies\" : [ \"EUR\", \"GBP\" ],\n  \"defaultCurrency\" : \"EUR\",\n  \"locales\" : [ \"de-DE\", \"en-GB\" ],\n  \"defaultLocale\" : \"en-GB\",\n  \"closedByMerchant\" : false,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop\"\n    },\n    \"shop\" : {\n      \"href\" : \"https://yourshop.api.urn/shop\"\n    },\n    \"address\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/address\"\n    },\n    \"images\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images\"\n    },\n    \"legal\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/legal\"\n    },\n    \"attributes\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/attributes\"\n    }\n  }\n}",
       "code" : 200
     } ]
   }, {
@@ -14569,7 +14623,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"_embedded\" : {\n    \"features\" : [ {\n      \"name\" : \"domain-management.custom-domains\",\n      \"type\" : \"COUNTER\",\n      \"details\" : {\n        \"maxValue\" : 10,\n        \"currentValue\" : 0\n      },\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/features/domain-management.custom-domains\"\n        },\n        \"owner\" : {\n          \"href\" : \"https://yourshop.api.urn/shop\"\n        },\n        \"feature-definition\" : {\n          \"href\" : \"https://yourshop.api.urn/feature-definitions/domain-management.custom-domains\"\n        }\n      }\n    }, {\n      \"name\" : \"app.paypal-express\",\n      \"type\" : \"APP\",\n      \"details\" : {\n        \"preInstalled\" : true,\n        \"uninstallable\" : true\n      },\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/features/app.paypal-express\"\n        },\n        \"owner\" : {\n          \"href\" : \"https://yourshop.api.urn/shop\"\n        },\n        \"feature-definition\" : {\n          \"href\" : \"https://yourshop.api.urn/feature-definitions/app.paypal-express\"\n        }\n      }\n    }, {\n      \"name\" : \"add-on.custom-apps\",\n      \"type\" : \"TOGGLE\",\n      \"details\" : { },\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/features/add-on.custom-apps\"\n        },\n        \"owner\" : {\n          \"href\" : \"https://yourshop.api.urn/shop\"\n        },\n        \"feature-definition\" : {\n          \"href\" : \"https://yourshop.api.urn/feature-definitions/add-on.custom-apps\"\n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/features?page=0&size=20\"\n    },\n    \"owner\" : {\n      \"href\" : \"https://yourshop.api.urn/shop\"\n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\" : 3,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}",
+      "body" : "{\n  \"_embedded\" : {\n    \"features\" : [ {\n      \"name\" : \"app.paypal-express\",\n      \"type\" : \"APP\",\n      \"details\" : {\n        \"preInstalled\" : true,\n        \"uninstallable\" : true\n      },\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/features/app.paypal-express\"\n        },\n        \"owner\" : {\n          \"href\" : \"https://yourshop.api.urn/shop\"\n        },\n        \"feature-definition\" : {\n          \"href\" : \"https://yourshop.api.urn/feature-definitions/app.paypal-express\"\n        }\n      }\n    }, {\n      \"name\" : \"domain-management.custom-domains\",\n      \"type\" : \"COUNTER\",\n      \"details\" : {\n        \"maxValue\" : 10,\n        \"currentValue\" : 0\n      },\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/features/domain-management.custom-domains\"\n        },\n        \"owner\" : {\n          \"href\" : \"https://yourshop.api.urn/shop\"\n        },\n        \"feature-definition\" : {\n          \"href\" : \"https://yourshop.api.urn/feature-definitions/domain-management.custom-domains\"\n        }\n      }\n    }, {\n      \"name\" : \"add-on.custom-apps\",\n      \"type\" : \"TOGGLE\",\n      \"details\" : { },\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/features/add-on.custom-apps\"\n        },\n        \"owner\" : {\n          \"href\" : \"https://yourshop.api.urn/shop\"\n        },\n        \"feature-definition\" : {\n          \"href\" : \"https://yourshop.api.urn/feature-definitions/add-on.custom-apps\"\n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/features?page=0&size=20\"\n    },\n    \"owner\" : {\n      \"href\" : \"https://yourshop.api.urn/shop\"\n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\" : 3,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}",
       "code" : 200
     } ]
   }, {
@@ -14690,7 +14744,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"_id\" : \"67968e87-9982-4082-bbb3-cd654becb822\",\n  \"label\" : \"Shop Logo 1\",\n  \"width\" : 1140,\n  \"height\" : 420,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images/67968e87-9982-4082-bbb3-cd654becb822\"\n    },\n    \"image\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images/67968e87-9982-4082-bbb3-cd654becb822\"\n    },\n    \"data\" : {\n      \"href\" : \"https://yourshop.api.urn/api/core-storage/images/sample.png?hash=80d4ab42cfd7823b34e4ad406d9bc470d5d13298{&width,height,upscale}\",\n      \"templated\" : true\n    },\n    \"metadata\" : {\n      \"href\" : \"https://yourshop.api.urn/api/core-storage/images/sample.png?hash=80d4ab42cfd7823b34e4ad406d9bc470d5d13298&download=no\"\n    }\n  }\n}",
+      "body" : "{\n  \"_id\" : \"4198fad2-39f5-470e-88ef-7afbe8d50d9d\",\n  \"label\" : \"Shop Logo 1\",\n  \"width\" : 1140,\n  \"height\" : 420,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images/4198fad2-39f5-470e-88ef-7afbe8d50d9d\"\n    },\n    \"image\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images/4198fad2-39f5-470e-88ef-7afbe8d50d9d\"\n    },\n    \"data\" : {\n      \"href\" : \"https://yourshop.api.urn/api/core-storage/images/sample.png?hash=80d4ab42cfd7823b34e4ad406d9bc470d5d13298{&width,height,upscale}\",\n      \"templated\" : true\n    },\n    \"metadata\" : {\n      \"href\" : \"https://yourshop.api.urn/api/core-storage/images/sample.png?hash=80d4ab42cfd7823b34e4ad406d9bc470d5d13298&download=no\"\n    }\n  }\n}",
       "code" : 201
     }, {
       "id" : "merchant-images-create",
@@ -14766,7 +14820,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"_embedded\" : {\n    \"images\" : [ {\n      \"_id\" : \"18302b74-e8ca-480f-a38e-ea62bfd9bf1f\",\n      \"label\" : \"logo\",\n      \"width\" : 250,\n      \"height\" : 300,\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/images/18302b74-e8ca-480f-a38e-ea62bfd9bf1f\"\n        },\n        \"image\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/images/18302b74-e8ca-480f-a38e-ea62bfd9bf1f\"\n        },\n        \"data\" : {\n          \"href\" : \"https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343{&width,height,upscale}\",\n          \"templated\" : true\n        },\n        \"metadata\" : {\n          \"href\" : \"https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343&download=no\"\n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images?page=0&size=20\"\n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\" : 1,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}",
+      "body" : "{\n  \"_embedded\" : {\n    \"images\" : [ {\n      \"_id\" : \"73c20484-5cde-4cdb-853d-e3f567e91f01\",\n      \"label\" : \"logo\",\n      \"width\" : 250,\n      \"height\" : 300,\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/images/73c20484-5cde-4cdb-853d-e3f567e91f01\"\n        },\n        \"image\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/images/73c20484-5cde-4cdb-853d-e3f567e91f01\"\n        },\n        \"data\" : {\n          \"href\" : \"https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343{&width,height,upscale}\",\n          \"templated\" : true\n        },\n        \"metadata\" : {\n          \"href\" : \"https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343&download=no\"\n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images?page=0&size=20\"\n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\" : 1,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}",
       "code" : 200
     } ]
   }, {
@@ -14908,7 +14962,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"_id\" : \"602cf3b1-f648-4302-abec-51bf5d06836a\",\n  \"storeCode\" : \"MLC-St-Ives\",\n  \"languageCode\" : \"en\",\n  \"address\" : {\n    \"street\" : \"Hudson Way\",\n    \"houseNumber\" : \"27\",\n    \"postalCode\" : \"90999\",\n    \"city\" : \"St.Ives\",\n    \"country\" : \"GB\",\n    \"dependentLocality\" : \"\",\n    \"state\" : \"Cornwall\",\n    \"displayAddressLines\" : [ \"27 Hudson Way\", \"ST.IVES\", \"90999\", \"UNITED KINGDOM\" ]\n  },\n  \"locationName\" : \"My little Cornershop - St.Ives\",\n  \"companyName\" : \"My little Cornershop - St.Ives\",\n  \"primaryPhone\" : \"(800) 555-0102\",\n  \"googleStatus\" : \"ACTIVE\",\n  \"googlePrimaryCategory\" : {\n    \"displayName\" : \"Food\",\n    \"categoryId\" : \"gcid:storefood\"\n  },\n  \"googleAdditionalCategories\" : [ {\n    \"displayName\" : \"Drinks\",\n    \"categoryId\" : \"gcid:storedrinks\"\n  } ],\n  \"latLng\" : {\n    \"latitude\" : 53.5847424,\n    \"longitude\" : 9.968901\n  },\n  \"regularHours\" : {\n    \"periods\" : [ {\n      \"openDay\" : \"MONDAY\",\n      \"openTime\" : \"08:00\",\n      \"closeDay\" : \"MONDAY\",\n      \"closeTime\" : \"17:00\"\n    }, {\n      \"openDay\" : \"SATURDAY\",\n      \"openTime\" : \"10:00\",\n      \"closeDay\" : \"SATURDAY\",\n      \"closeTime\" : \"16:00\"\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/locations/602cf3b1-f648-4302-abec-51bf5d06836a\"\n    }\n  }\n}",
+      "body" : "{\n  \"_id\" : \"54622ca1-8c07-4619-9678-e88f37afaff5\",\n  \"storeCode\" : \"MLC-St-Ives\",\n  \"languageCode\" : \"en\",\n  \"address\" : {\n    \"street\" : \"Hudson Way\",\n    \"houseNumber\" : \"27\",\n    \"postalCode\" : \"90999\",\n    \"city\" : \"St.Ives\",\n    \"country\" : \"GB\",\n    \"dependentLocality\" : \"\",\n    \"state\" : \"Cornwall\",\n    \"displayAddressLines\" : [ \"27 Hudson Way\", \"ST.IVES\", \"90999\", \"UNITED KINGDOM\" ]\n  },\n  \"locationName\" : \"My little Cornershop - St.Ives\",\n  \"companyName\" : \"My little Cornershop - St.Ives\",\n  \"primaryPhone\" : \"(800) 555-0102\",\n  \"googleStatus\" : \"ACTIVE\",\n  \"googlePrimaryCategory\" : {\n    \"displayName\" : \"Food\",\n    \"categoryId\" : \"gcid:storefood\"\n  },\n  \"googleAdditionalCategories\" : [ {\n    \"displayName\" : \"Drinks\",\n    \"categoryId\" : \"gcid:storedrinks\"\n  } ],\n  \"latLng\" : {\n    \"latitude\" : 53.5847424,\n    \"longitude\" : 9.968901\n  },\n  \"regularHours\" : {\n    \"periods\" : [ {\n      \"openDay\" : \"MONDAY\",\n      \"openTime\" : \"08:00\",\n      \"closeDay\" : \"MONDAY\",\n      \"closeTime\" : \"17:00\"\n    }, {\n      \"openDay\" : \"SATURDAY\",\n      \"openTime\" : \"10:00\",\n      \"closeDay\" : \"SATURDAY\",\n      \"closeTime\" : \"16:00\"\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/locations/54622ca1-8c07-4619-9678-e88f37afaff5\"\n    }\n  }\n}",
       "code" : 201
     } ]
   }, {
@@ -14942,7 +14996,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"_embedded\" : {\n    \"locations\" : [ {\n      \"_id\" : \"012b8346-a1a3-41e3-b127-60e1e2b16657\",\n      \"storeCode\" : \"MLC-St-Ives\",\n      \"languageCode\" : \"en\",\n      \"address\" : {\n        \"street\" : \"Hudson Way\",\n        \"houseNumber\" : \"27\",\n        \"postalCode\" : \"90999\",\n        \"city\" : \"St.Ives\",\n        \"country\" : \"GB\",\n        \"dependentLocality\" : \"\",\n        \"state\" : \"Cornwall\",\n        \"displayAddressLines\" : [ ]\n      },\n      \"locationName\" : \"My little Cornershop - St.Ives\",\n      \"companyName\" : \"My little Cornershop - St.Ives\",\n      \"primaryPhone\" : \"(800) 555-0102\",\n      \"googleStatus\" : \"ACTIVE\",\n      \"googlePrimaryCategory\" : {\n        \"displayName\" : \"Food\",\n        \"categoryId\" : \"gcid:storefood\"\n      },\n      \"googleAdditionalCategories\" : [ {\n        \"displayName\" : \"Drinks\",\n        \"categoryId\" : \"gcid:storedrinks\"\n      } ],\n      \"latLng\" : {\n        \"latitude\" : 53.5847424,\n        \"longitude\" : 9.968901\n      },\n      \"regularHours\" : {\n        \"periods\" : [ {\n          \"openDay\" : \"MONDAY\",\n          \"openTime\" : \"08:00\",\n          \"closeDay\" : \"MONDAY\",\n          \"closeTime\" : \"17:00\"\n        }, {\n          \"openDay\" : \"SATURDAY\",\n          \"openTime\" : \"10:00\",\n          \"closeDay\" : \"SATURDAY\",\n          \"closeTime\" : \"16:00\"\n        } ]\n      },\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/locations/012b8346-a1a3-41e3-b127-60e1e2b16657\"\n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/locations?page=0&size=20&sort=createdAt,asc\"\n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\" : 1,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}",
+      "body" : "{\n  \"_embedded\" : {\n    \"locations\" : [ {\n      \"_id\" : \"a4680226-8c26-4e60-8397-f66af3c453e7\",\n      \"storeCode\" : \"MLC-St-Ives\",\n      \"languageCode\" : \"en\",\n      \"address\" : {\n        \"street\" : \"Hudson Way\",\n        \"houseNumber\" : \"27\",\n        \"postalCode\" : \"90999\",\n        \"city\" : \"St.Ives\",\n        \"country\" : \"GB\",\n        \"dependentLocality\" : \"\",\n        \"state\" : \"Cornwall\",\n        \"displayAddressLines\" : [ ]\n      },\n      \"locationName\" : \"My little Cornershop - St.Ives\",\n      \"companyName\" : \"My little Cornershop - St.Ives\",\n      \"primaryPhone\" : \"(800) 555-0102\",\n      \"googleStatus\" : \"ACTIVE\",\n      \"googlePrimaryCategory\" : {\n        \"displayName\" : \"Food\",\n        \"categoryId\" : \"gcid:storefood\"\n      },\n      \"googleAdditionalCategories\" : [ {\n        \"displayName\" : \"Drinks\",\n        \"categoryId\" : \"gcid:storedrinks\"\n      } ],\n      \"latLng\" : {\n        \"latitude\" : 53.5847424,\n        \"longitude\" : 9.968901\n      },\n      \"regularHours\" : {\n        \"periods\" : [ {\n          \"openDay\" : \"MONDAY\",\n          \"openTime\" : \"08:00\",\n          \"closeDay\" : \"MONDAY\",\n          \"closeTime\" : \"17:00\"\n        }, {\n          \"openDay\" : \"SATURDAY\",\n          \"openTime\" : \"10:00\",\n          \"closeDay\" : \"SATURDAY\",\n          \"closeTime\" : \"16:00\"\n        } ]\n      },\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/locations/a4680226-8c26-4e60-8397-f66af3c453e7\"\n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/locations?page=0&size=20&sort=createdAt,asc\"\n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\" : 1,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}",
       "code" : 200
     } ]
   }, {
@@ -14998,35 +15052,6 @@
       "cookie" : [ ],
       "body" : "{\n  \"name\" : \"createSku\",\n  \"value\" : \"manuallyCreateSku\",\n  \"public\" : false,\n  \"readOnly\" : false,\n  \"owner\" : \"krypton\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/attributes/createSku\"\n    },\n    \"owner\" : {\n      \"href\" : \"https://yourshop.api.urn/shop\"\n    }\n  }\n}",
       "code" : 200
-    }, {
-      "id" : "shop-attribute-name-already-used",
-      "name" : "shop-attribute-name-already-used",
-      "originalRequest" : {
-        "url" : {
-          "protocol" : "https",
-          "host" : "{{host}}",
-          "path" : "/api/shop/attributes/:name"
-        },
-        "method" : "PUT",
-        "header" : [ {
-          "key" : "Content-Type",
-          "value" : "application/json",
-          "disabled" : false
-        } ],
-        "body" : {
-          "mode" : "raw",
-          "raw" : "{\n  \"value\" : \"manuallyCreateSku\",\n  \"public\" : true\n}",
-          "urlencoded" : [ ]
-        }
-      },
-      "header" : [ {
-        "key" : "Content-Type",
-        "value" : "application/json",
-        "disabled" : false
-      } ],
-      "cookie" : [ ],
-      "body" : "{\n  \"errorId\" : \"attribute-name-already-used\",\n  \"details\" : { },\n  \"message\" : \"A public attribute with the name createSku was already created.\",\n  \"traceId\" : null\n}",
-      "code" : 409
     } ]
   }, {
     "id" : "merchant-shop-attribute-get",
@@ -15155,7 +15180,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"_id\" : \"4baf99a0-5adf-459c-8b4b-d0858734287b\",\n  \"label\" : \"logo\",\n  \"width\" : 250,\n  \"height\" : 300,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images/4baf99a0-5adf-459c-8b4b-d0858734287b\"\n    },\n    \"image\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images/4baf99a0-5adf-459c-8b4b-d0858734287b\"\n    },\n    \"data\" : {\n      \"href\" : \"https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343{&width,height,upscale}\",\n      \"templated\" : true\n    },\n    \"metadata\" : {\n      \"href\" : \"https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343&download=no\"\n    }\n  }\n}",
+      "body" : "{\n  \"_id\" : \"bcee2265-a510-4ad2-9516-1946fb01b150\",\n  \"label\" : \"logo\",\n  \"width\" : 250,\n  \"height\" : 300,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images/bcee2265-a510-4ad2-9516-1946fb01b150\"\n    },\n    \"image\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images/bcee2265-a510-4ad2-9516-1946fb01b150\"\n    },\n    \"data\" : {\n      \"href\" : \"https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343{&width,height,upscale}\",\n      \"templated\" : true\n    },\n    \"metadata\" : {\n      \"href\" : \"https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343&download=no\"\n    }\n  }\n}",
       "code" : 200
     } ]
   }, {
@@ -15217,7 +15242,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"_id\" : \"35a9bc99-ddd0-44bc-8bde-540801763bce\",\n  \"storeCode\" : \"MLC-St-Ives\",\n  \"languageCode\" : \"en\",\n  \"address\" : {\n    \"street\" : \"Hudson Way\",\n    \"houseNumber\" : \"27\",\n    \"postalCode\" : \"90999\",\n    \"city\" : \"St.Ives\",\n    \"country\" : \"GB\",\n    \"dependentLocality\" : \"\",\n    \"state\" : \"Cornwall\",\n    \"displayAddressLines\" : [ \"27 Hudson Way\", \"ST.IVES\", \"90999\", \"UNITED KINGDOM\" ]\n  },\n  \"locationName\" : \"My little Cornershop - St.Ives\",\n  \"companyName\" : \"My little Cornershop - St.Ives\",\n  \"primaryPhone\" : \"(800) 555-0102\",\n  \"googleStatus\" : \"ACTIVE\",\n  \"googlePrimaryCategory\" : {\n    \"displayName\" : \"Food\",\n    \"categoryId\" : \"gcid:storefood\"\n  },\n  \"googleAdditionalCategories\" : [ {\n    \"displayName\" : \"Drinks\",\n    \"categoryId\" : \"gcid:storedrinks\"\n  } ],\n  \"latLng\" : {\n    \"latitude\" : 53.5847424,\n    \"longitude\" : 9.968901\n  },\n  \"regularHours\" : {\n    \"periods\" : [ {\n      \"openDay\" : \"MONDAY\",\n      \"openTime\" : \"08:00\",\n      \"closeDay\" : \"MONDAY\",\n      \"closeTime\" : \"17:00\"\n    }, {\n      \"openDay\" : \"SATURDAY\",\n      \"openTime\" : \"10:00\",\n      \"closeDay\" : \"SATURDAY\",\n      \"closeTime\" : \"16:00\"\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/locations/35a9bc99-ddd0-44bc-8bde-540801763bce\"\n    }\n  }\n}",
+      "body" : "{\n  \"_id\" : \"d44ffabf-b5fe-4439-9c86-4655945e44d6\",\n  \"storeCode\" : \"MLC-St-Ives\",\n  \"languageCode\" : \"en\",\n  \"address\" : {\n    \"street\" : \"Hudson Way\",\n    \"houseNumber\" : \"27\",\n    \"postalCode\" : \"90999\",\n    \"city\" : \"St.Ives\",\n    \"country\" : \"GB\",\n    \"dependentLocality\" : \"\",\n    \"state\" : \"Cornwall\",\n    \"displayAddressLines\" : [ \"27 Hudson Way\", \"ST.IVES\", \"90999\", \"UNITED KINGDOM\" ]\n  },\n  \"locationName\" : \"My little Cornershop - St.Ives\",\n  \"companyName\" : \"My little Cornershop - St.Ives\",\n  \"primaryPhone\" : \"(800) 555-0102\",\n  \"googleStatus\" : \"ACTIVE\",\n  \"googlePrimaryCategory\" : {\n    \"displayName\" : \"Food\",\n    \"categoryId\" : \"gcid:storefood\"\n  },\n  \"googleAdditionalCategories\" : [ {\n    \"displayName\" : \"Drinks\",\n    \"categoryId\" : \"gcid:storedrinks\"\n  } ],\n  \"latLng\" : {\n    \"latitude\" : 53.5847424,\n    \"longitude\" : 9.968901\n  },\n  \"regularHours\" : {\n    \"periods\" : [ {\n      \"openDay\" : \"MONDAY\",\n      \"openTime\" : \"08:00\",\n      \"closeDay\" : \"MONDAY\",\n      \"closeTime\" : \"17:00\"\n    }, {\n      \"openDay\" : \"SATURDAY\",\n      \"openTime\" : \"10:00\",\n      \"closeDay\" : \"SATURDAY\",\n      \"closeTime\" : \"16:00\"\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/locations/d44ffabf-b5fe-4439-9c86-4655945e44d6\"\n    }\n  }\n}",
       "code" : 200
     } ]
   }, {
@@ -15299,7 +15324,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"_id\" : \"cda1ea94-6bc5-41d7-800a-852a083fb696\",\n  \"storeCode\" : \"MLC Carnivaly\",\n  \"languageCode\" : \"en\",\n  \"address\" : {\n    \"street\" : \"Taranulla Drive\",\n    \"houseNumber\" : \"18\",\n    \"postalCode\" : \"2XJ90\",\n    \"city\" : \"Carnivaly\",\n    \"country\" : \"GB\",\n    \"dependentLocality\" : \"\",\n    \"state\" : \"Southampton\",\n    \"displayAddressLines\" : [ \"18 Taranulla Drive\", \"CARNIVALY\", \"2XJ90\", \"UNITED KINGDOM\" ]\n  },\n  \"locationName\" : \"My little Cornershop - Carnivaly\",\n  \"companyName\" : \"My little Cornershop - Carnivaly\",\n  \"primaryPhone\" : \"(800) 555-0111\",\n  \"googleStatus\" : \"VERIFIED\",\n  \"googlePrimaryCategory\" : {\n    \"displayName\" : \"Food\",\n    \"categoryId\" : \"gcid:storefood\"\n  },\n  \"googleAdditionalCategories\" : [ {\n    \"displayName\" : \"Drinks\",\n    \"categoryId\" : \"gcid:storedrinks\"\n  } ],\n  \"latLng\" : {\n    \"latitude\" : 51.5072,\n    \"longitude\" : -0.1353\n  },\n  \"regularHours\" : {\n    \"periods\" : [ {\n      \"openDay\" : \"WEDNESDAY\",\n      \"openTime\" : \"09:30\",\n      \"closeDay\" : \"WEDNESDAY\",\n      \"closeTime\" : \"19:00\"\n    }, {\n      \"openDay\" : \"FRIDAY\",\n      \"openTime\" : \"10:00\",\n      \"closeDay\" : \"FRIDAY\",\n      \"closeTime\" : \"20:00\"\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/locations/cda1ea94-6bc5-41d7-800a-852a083fb696\"\n    }\n  }\n}",
+      "body" : "{\n  \"_id\" : \"a0cf2c1f-1523-4a5d-9ea7-3561010632a7\",\n  \"storeCode\" : \"MLC Carnivaly\",\n  \"languageCode\" : \"en\",\n  \"address\" : {\n    \"street\" : \"Taranulla Drive\",\n    \"houseNumber\" : \"18\",\n    \"postalCode\" : \"2XJ90\",\n    \"city\" : \"Carnivaly\",\n    \"country\" : \"GB\",\n    \"dependentLocality\" : \"\",\n    \"state\" : \"Southampton\",\n    \"displayAddressLines\" : [ \"18 Taranulla Drive\", \"CARNIVALY\", \"2XJ90\", \"UNITED KINGDOM\" ]\n  },\n  \"locationName\" : \"My little Cornershop - Carnivaly\",\n  \"companyName\" : \"My little Cornershop - Carnivaly\",\n  \"primaryPhone\" : \"(800) 555-0111\",\n  \"googleStatus\" : \"VERIFIED\",\n  \"googlePrimaryCategory\" : {\n    \"displayName\" : \"Food\",\n    \"categoryId\" : \"gcid:storefood\"\n  },\n  \"googleAdditionalCategories\" : [ {\n    \"displayName\" : \"Drinks\",\n    \"categoryId\" : \"gcid:storedrinks\"\n  } ],\n  \"latLng\" : {\n    \"latitude\" : 51.5072,\n    \"longitude\" : -0.1353\n  },\n  \"regularHours\" : {\n    \"periods\" : [ {\n      \"openDay\" : \"WEDNESDAY\",\n      \"openTime\" : \"09:30\",\n      \"closeDay\" : \"WEDNESDAY\",\n      \"closeTime\" : \"19:00\"\n    }, {\n      \"openDay\" : \"FRIDAY\",\n      \"openTime\" : \"10:00\",\n      \"closeDay\" : \"FRIDAY\",\n      \"closeTime\" : \"20:00\"\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/locations/a0cf2c1f-1523-4a5d-9ea7-3561010632a7\"\n    }\n  }\n}",
       "code" : 200
     } ]
   }, {
@@ -15343,7 +15368,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"_embedded\" : {\n    \"images\" : [ {\n      \"_id\" : \"2891fd58-b418-4c8f-b172-574b7e2b9f3b\",\n      \"label\" : \"logo\",\n      \"width\" : 250,\n      \"height\" : 300,\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/images/2891fd58-b418-4c8f-b172-574b7e2b9f3b\"\n        },\n        \"image\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/images/2891fd58-b418-4c8f-b172-574b7e2b9f3b\"\n        },\n        \"data\" : {\n          \"href\" : \"https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343{&width,height,upscale}\",\n          \"templated\" : true\n        },\n        \"metadata\" : {\n          \"href\" : \"https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343&download=no\"\n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images/search/find-by-label?page=0&size=20\"\n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\" : 1,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}",
+      "body" : "{\n  \"_embedded\" : {\n    \"images\" : [ {\n      \"_id\" : \"ac4fbdce-2713-4c98-84da-8c6c5ee28546\",\n      \"label\" : \"logo\",\n      \"width\" : 250,\n      \"height\" : 300,\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/images/ac4fbdce-2713-4c98-84da-8c6c5ee28546\"\n        },\n        \"image\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/images/ac4fbdce-2713-4c98-84da-8c6c5ee28546\"\n        },\n        \"data\" : {\n          \"href\" : \"https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343{&width,height,upscale}\",\n          \"templated\" : true\n        },\n        \"metadata\" : {\n          \"href\" : \"https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343&download=no\"\n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images/search/find-by-label?page=0&size=20\"\n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\" : 1,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}",
       "code" : 200
     } ]
   }, {
