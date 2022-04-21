@@ -847,9 +847,6 @@
             - title: Find manufacturers
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#find-manufacturers
               id: find_manufacturers
-            - title: (Deprecated) Find manufacturers
-              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#find-manufacturers-contains
-              id: find_manufacturers_contains
             - title: List product search meta information
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-search-meta
               id: list_product_search_meta_information
@@ -858,7 +855,7 @@
             - title: Add product video
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-video-create
               id: add_product_video
-            - title: List product videos
+            - title: List product vigstdeos
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-video-list
               id: list_product_videos
             - title: Show product video details
