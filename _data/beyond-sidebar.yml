@@ -855,7 +855,7 @@
             - title: Add product video
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-video-create
               id: add_product_video
-            - title: List product vigstdeos
+            - title: List product videos
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-video-list
               id: list_product_videos
             - title: Show product video details
