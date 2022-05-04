@@ -6517,9 +6517,9 @@
       "code" : 200
     } ]
   }, {
-    "id" : "create-payment-method-tenant-id-mismatch",
+    "id" : "payment-method-definition-owned-by-other-client",
     "name" : "/payment-method-definitions",
-    "description" : "The app needs to use the shop access token obtained via app installation or refresh token. If it tries to use the system access token required for managing payment method definitions on system level for the current shop, a `401 Unauthorized` error will be returned.",
+    "description" : "A payment method definition with the same name was already created by another client.",
     "variable" : [ ],
     "event" : [ ],
     "request" : {
@@ -6541,6 +6541,35 @@
       }
     },
     "response" : [ {
+      "id" : "payment-method-definition-owned-by-other-client",
+      "name" : "payment-method-definition-owned-by-other-client",
+      "originalRequest" : {
+        "url" : {
+          "protocol" : "https",
+          "host" : "{{host}}",
+          "path" : "/api/payment-method-definitions"
+        },
+        "method" : "POST",
+        "header" : [ {
+          "key" : "Content-Type",
+          "value" : "application/json",
+          "disabled" : false
+        } ],
+        "body" : {
+          "mode" : "raw",
+          "raw" : "{\n  \"name\": \"credit-card\",\n  \"referralUriTemplate\": \"https://example.com/merchants\",\n  \"statusUriTemplate\": \"https://example.com/merchants/{shopId}/status\",\n  \"disconnectUriTemplate\": \"https://example.com/merchants/{shopId}/disconnect\",\n  \"createPaymentUriTemplate\": \"https://example.com/payments\",\n  \"capturePaymentUriTemplate\": \"https://example.com/payments/{paymentId}/capture\",\n  \"refundPaymentUriTemplate\": \"https://example.com/payments/{paymentId}/refund\",\n\"sandbox\": \"true\",\n  \"workflow\": \"PAYMENT_ON_BUY\",\n  \"captureWorkflow\": \"CAPTURE_ON_ORDER\",\n  \"refund\": \"NO_REFUND\",\n  \"logos\": [{\n    \"setName\" : \"official\",\n    \"variant\" : \"STOREFRONT\",\n    \"uri\" : \"https://example.com/static/storefront.png\"\n  }],\n\"officialName\": {\"de-DE\" : \"Ermögliche deinen Kunden, mit Kreditkarte zu bezahlen.\",\n\"en-US\" : \"Allow your customers to pay by credit card.\"\n},\n  \"officialDescription\": {\n    \"de-DE\" : \"Ermögliche deinen Kunden, mit Kreditkarte zu bezahlen.\",\n    \"en-US\" : \"Allow your customers to pay by credit card.\"\n  },\n  \"defaultName\": {\n    \"de-DE\" : \"Kreditkarte\",\n    \"en-US\" : \"Credit card\"\n  },\n  \"defaultDescription\": {\"de-DE\" : \"Bezahlen Sie mit Kreditkarte.\",\"en-US\" : \"Pay by credit card.\"}}",
+          "urlencoded" : [ ]
+        }
+      },
+      "header" : [ {
+        "key" : "Content-Type",
+        "value" : "application/hal+json",
+        "disabled" : false
+      } ],
+      "cookie" : [ ],
+      "body" : "{\n  \"errorId\" : \"payment-method-definition-owned-by-other-client\",\n  \"details\" : { },\n  \"message\" : \"A payment method definition with this name is already owned by a different client!\",\n  \"traceId\" : null\n}",
+      "code" : 409
+    }, {
       "id" : "create-payment-method-tenant-id-mismatch",
       "name" : "create-payment-method-tenant-id-mismatch",
       "originalRequest" : {
@@ -6831,7 +6860,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"errorId\" : \"payment-method-definition-missing-locale\",\n  \"details\" : { },\n  \"message\" : \"Payment method definition testPMD is not localized for locale de-AT needed by shop 0f630380-d778-49ed-8a82-cf00f2ec932c\",\n  \"traceId\" : null\n}",
+      "body" : "{\n  \"errorId\" : \"payment-method-definition-missing-locale\",\n  \"details\" : { },\n  \"message\" : \"Payment method definition testPMD is not localized for locale de-AT needed by shop e80bba43-54b6-4716-a45a-5ff95823d053\",\n  \"traceId\" : null\n}",
       "code" : 409
     } ]
   }, {
@@ -7255,7 +7284,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"ready\" : true,\n  \"details\" : {\n    \"accountId\" : \"c2447ea8-5cd1-4be1-b4c7-026906f13f3f\"\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/payment-signup/merchant-accounts/credit-card\"\n    },\n    \"generate-referral-uri\" : {\n      \"href\" : \"https://yourshop.api.urn/payment-signup/referrals/credit-card\"\n    },\n    \"disconnect\" : {\n      \"href\" : \"https://yourshop.api.urn/payment-signup/merchant-accounts/credit-card\"\n    }\n  }\n}",
+      "body" : "{\n  \"ready\" : true,\n  \"details\" : {\n    \"accountId\" : \"3382ec12-bed3-47d5-bf1e-1586877cce20\"\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/payment-signup/merchant-accounts/credit-card\"\n    },\n    \"generate-referral-uri\" : {\n      \"href\" : \"https://yourshop.api.urn/payment-signup/referrals/credit-card\"\n    },\n    \"disconnect\" : {\n      \"href\" : \"https://yourshop.api.urn/payment-signup/merchant-accounts/credit-card\"\n    }\n  }\n}",
       "code" : 200
     } ]
   }, {
@@ -7454,7 +7483,7 @@
       } ],
       "body" : {
         "mode" : "raw",
-        "raw" : "{\"paymentStatus\":\"APPROVED\",\"externalPaymentId\":\"transaction4F3F09D44A594AD485444E8914D242D6\",\"externalPaymentUri\":\"https://example.com/transactions/transaction4F3F09D44A594AD485444E8914D242D6\",\"message\":\"For some transactions that are only preauthorized (to be captured later) there is a timeframe until the authorization expires.\"}",
+        "raw" : "{\"paymentStatus\":\"APPROVED\",\"externalPaymentId\":\"transactionC8511966CBE445C38BB2D4E6457D247A\",\"externalPaymentUri\":\"https://example.com/transactions/transactionC8511966CBE445C38BB2D4E6457D247A\",\"message\":\"For some transactions that are only preauthorized (to be captured later) there is a timeframe until the authorization expires.\"}",
         "urlencoded" : [ ]
       }
     },
@@ -7475,7 +7504,7 @@
         } ],
         "body" : {
           "mode" : "raw",
-          "raw" : "{\"paymentStatus\":\"APPROVED\",\"externalPaymentId\":\"transaction4F3F09D44A594AD485444E8914D242D6\",\"externalPaymentUri\":\"https://example.com/transactions/transaction4F3F09D44A594AD485444E8914D242D6\",\"message\":\"For some transactions that are only preauthorized (to be captured later) there is a timeframe until the authorization expires.\"}",
+          "raw" : "{\"paymentStatus\":\"APPROVED\",\"externalPaymentId\":\"transactionC8511966CBE445C38BB2D4E6457D247A\",\"externalPaymentUri\":\"https://example.com/transactions/transactionC8511966CBE445C38BB2D4E6457D247A\",\"message\":\"For some transactions that are only preauthorized (to be captured later) there is a timeframe until the authorization expires.\"}",
           "urlencoded" : [ ]
         }
       },
@@ -7485,7 +7514,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"paymentStatus\" : \"APPROVED\",\n  \"externalPaymentId\" : \"transaction4F3F09D44A594AD485444E8914D242D6\",\n  \"externalPaymentUri\" : \"https://example.com/transactions/transaction4F3F09D44A594AD485444E8914D242D6\",\n  \"message\" : \"For some transactions that are only preauthorized (to be captured later) there is a timeframe until the authorization expires.\"\n}",
+      "body" : "{\n  \"paymentStatus\" : \"APPROVED\",\n  \"externalPaymentId\" : \"transactionC8511966CBE445C38BB2D4E6457D247A\",\n  \"externalPaymentUri\" : \"https://example.com/transactions/transactionC8511966CBE445C38BB2D4E6457D247A\",\n  \"message\" : \"For some transactions that are only preauthorized (to be captured later) there is a timeframe until the authorization expires.\"\n}",
       "code" : 200
     } ]
   }, {
@@ -15416,7 +15445,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"shopId\" : \"e204ca70-1fa1-48c5-b3ff-e34f290a0f2b\"\n}",
+      "body" : "{\n  \"shopId\" : \"2b631f09-f033-4200-ac3b-d7468344e1ee\"\n}",
       "code" : 200
     } ]
   }, {
