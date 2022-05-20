@@ -593,6 +593,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | productVariationMasterName | string | The name of the variation product. Null if the `productVariationType` is *master* or *regular*. |
 | productVariationSelection | array of [variationIdentifier](page:apps-data-types#variationidentifier) | The selection of the variation product. Only available if `productVariationType` is *variation*. |
 | videos | array of [video](page:apps-data-types#video) | The videos belonging to the product. |
+| isProductNumberVisible | boolean | Indicates if the product number can be shown in the storefront. |
 
 ## product (create request)
 
@@ -710,6 +711,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | productVariationMasterName | string | The name of the variation product. Null if the `productVariationType` is *master* or *regular*. |
 | productVariationSelection | array of [variationIdentifier](page:apps-data-types#variationidentifier) | The selection of the variation product. Only available if `productVariationType` is *variation*. |
 | videos | array of [video](page:apps-data-types#video) | The videos belonging to the product. |
+| isProductNumberVisible | boolean | Indicates if the product number can be shown in the storefront. |
 | query | string | The search query. |
 | fallbackQuery | string | The fallback used if the original query did not produce any results. |
 | facets | array of [facet](page:apps-data-types#facet) | The refined search filter options. |
