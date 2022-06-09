@@ -88,50 +88,50 @@
     - title: Payment solution
       entries:
         - title: Getting started
-          link: https://api-docs.beyondshop.cloud/ng-payment-gateway-includes-public-api.html#_getting_started
+          link: https://api-docs.beyondshop.cloud/ng-payment-gateway-payment-solution-public-api.html#_getting_started
           id: payment_solution_getting_started
         - title: Payment Method Definitions
-          link: https://api-docs.beyondshop.cloud/ng-payment-gateway-includes-public-api.html#_payment_method_definitions
+          link: https://api-docs.beyondshop.cloud/ng-payment-gateway-payment-solution-public-api.html#_payment_method_definitions
           id: payment_solution_payment_method_definitions
         - title: Authorization
-          link: https://api-docs.beyondshop.cloud/ng-payment-gateway-includes-public-api.html#_authorization
+          link: https://api-docs.beyondshop.cloud/ng-payment-gateway-payment-solution-public-api.html#_authorization
           id: payment_solution_authorization
         - title: Payment Methods
-          link: https://api-docs.beyondshop.cloud/ng-payment-gateway-includes-public-api.html#_payment_methods
+          link: https://api-docs.beyondshop.cloud/ng-payment-gateway-payment-solution-public-api.html#_payment_methods
           id: payment_solution_payment_methods
         - title: Merchant registration
-          link: https://api-docs.beyondshop.cloud/ng-payment-gateway-includes-public-api.html#_merchant_registration
+          link: https://api-docs.beyondshop.cloud/ng-payment-gateway-payment-solution-public-api.html#_merchant_registration
           id: payment_solution_merchant_registration
         - title: Payment flow
-          link: https://api-docs.beyondshop.cloud/ng-payment-gateway-includes-public-api.html#_payment_flow
+          link: https://api-docs.beyondshop.cloud/ng-payment-gateway-payment-solution-public-api.html#_payment_flow
           id: payment_solution_payment_flow
         - title: Create a payment
-          link: https://api-docs.beyondshop.cloud/ng-payment-gateway-includes-public-api.html#create-a-payment
+          link: https://api-docs.beyondshop.cloud/ng-payment-gateway-payment-solution-public-api.html#create-a-payment
           id: payment_solution_create_a_payment
           parentId: payment_solution_payment_flow
           hide: true
         - title: Approve a payment
-          link: https://api-docs.beyondshop.cloud/ng-payment-gateway-includes-public-api.html#approve-a-payment
+          link: https://api-docs.beyondshop.cloud/ng-payment-gateway-payment-solution-public-api.html#approve-a-payment
           id: payment_solution_approve_a_payment
           parentId: payment_solution_payment_flow
           hide: true
         - title: Capture a payment
-          link: https://api-docs.beyondshop.cloud/ng-payment-gateway-includes-public-api.html#capture-a-payment
+          link: https://api-docs.beyondshop.cloud/ng-payment-gateway-payment-solution-public-api.html#capture-a-payment
           id: payment_solution_capture_a_payment
           parentId: payment_solution_payment_flow
           hide: true
         - title: Status transitions
-          link: https://api-docs.beyondshop.cloud/ng-payment-gateway-includes-public-api.html#status-transitions
+          link: https://api-docs.beyondshop.cloud/ng-payment-gateway-payment-solution-public-api.html#status-transitions
           id: payment_solution_status_transitions
           parentId: payment_solution_payment_flow
           hide: true
         - title: Set a payment status
-          link: https://api-docs.beyondshop.cloud/ng-payment-gateway-includes-public-api.html#set-a-payment-status
+          link: https://api-docs.beyondshop.cloud/ng-payment-gateway-payment-solution-public-api.html#set-a-payment-status
           id: payment_solution_set_a_payment_status
           parentId: payment_solution_payment_flow
           hide: true
         - title: Refunds
-          link: https://api-docs.beyondshop.cloud/ng-payment-gateway-includes-public-api.html#_refunds
+          link: https://api-docs.beyondshop.cloud/ng-payment-gateway-payment-solution-public-api.html#_refunds
           id: payment_solution_refunds
     - title: Ruby client
       external_link: https://github.com/ePages-de/beyond_api-ruby_client
@@ -177,6 +177,17 @@
             - title: Change username
               link: https://api-docs.beyondshop.cloud/ng-auth-auth-public-api.html#resources-user-change-username
               id: change_username
+        - title: Signers
+          entries:
+            - title: Create signer
+              link: https://api-docs.beyondshop.cloud/ng-auth-auth-public-api.html#resources-signers-create
+              id: create_signer
+            - title: List signers
+              link: https://api-docs.beyondshop.cloud/ng-auth-auth-public-api.html#resources-signers-get
+              id: list_signers
+            - title: Delete signer
+              link: https://api-docs.beyondshop.cloud/ng-auth-auth-public-api.html#resources-signers-delete
+              id: delete_signer
     - title: Checkout API
       entries:
         - title: Carts
@@ -256,6 +267,9 @@
             - title: Show current cart pickup option details
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-get-pickup-option-current
               id: show_current_cart_pickup_option_details
+            - title: Remove current cart pickup option
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-delete-pickup-option-current
+              id: remove_current_cart_pickup_option
             - title: Redeem coupon
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-redeem-coupon
               id: redeem_coupon
@@ -304,6 +318,9 @@
             - title: Assign customer to cart
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-assign-customer
               id: checkout_assign_customer_to_cart
+            - title: Show latest open cart details
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-customer-search-find-latest
+              id: show_latest_open_cart_details
         - title: Payment methods
           entries:
             - title: List payment methods
@@ -422,8 +439,11 @@
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-get
               id: show_order_details
             - title: Show order by cart ID
-              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-get-by-cartid
+              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-find-by-cart-id
               id: show_order_by_cart_id
+            - title: Show order confirmation details by cart ID
+              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-find-order-confirmation
+              id: show_order_confirmation_details_by_cart_id
             - title: Show order number and order ID by cart ID
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-find-order-number-by-cart-id
               id: show_order_number_and_order_id_by_cart_id
@@ -758,6 +778,9 @@
             - title: Remove multiple products from product categories
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-categories-batch-remove-products
               id: remove_multiple_products_from_product_categories
+            - title: Search product categories
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-categories-search
+              id: search_product_categories
         - title: Product cross-sells
           entries:
             - title: Create product cross-sell
@@ -818,15 +841,12 @@
             - title: Find used tags
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#find-tags
               id: find_used_tags
+            - title: Find manual product categories
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#find-manual-categories
+              id: find_manual_product_categories
             - title: Find manufacturers
-              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#find-manufacturers-contains
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#find-manufacturers
               id: find_manufacturers
-            - title: List product filter categories
-              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-filter-data-all
-              id: list_product_filter_categories
-            - title: Show product filter category details
-              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-filter-data-detail
-              id: show_product_filter_category_details
             - title: List product search meta information
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-search-meta
               id: list_product_search_meta_information
@@ -995,9 +1015,6 @@
             - title: Search matching product categories for product
               link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#categories-find-by-product
               id: search_matching_product_categories_for_product
-            - title: Find product category by label
-              link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#categories-find-by-label
-              id: find_product_category_by_label
             - title: Preview products included in category
               link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#categories-products-preview
               id: preview_products_included_in_category
@@ -1082,12 +1099,6 @@
             - title: Update shop partially (json)
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-shop-update
               id: update_shop_partially_json
-            - title: Open shop
-              link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-shop-open
-              id: open_shop
-            - title: Close shop
-              link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-shop-close
-              id: close_shop
         - title: Shop address
           entries:
             - title: Show address details

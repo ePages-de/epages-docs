@@ -14,6 +14,16 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
+## 2021-12-07
+
+### Changes with software release 7.66.0
+
+#### <i class="fa fa-minus"></i> Deprecate
+
+* The events `pageview`, `product`, `category`, `search`, and `cart` of the [Events](https://developer.epages.com/apps/events.html) section are deprecated and will be removed on 7th March 2022. Please use the respective alternatives `page:view`, `product:view`, `category:view`, `searchResults:view`, and `cart:view` instead.
+
+<hr>
+
 ## 2021-10-28
 
 ### Changes with software release 7.65.0
