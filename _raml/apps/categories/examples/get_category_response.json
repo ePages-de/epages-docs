@@ -8,6 +8,8 @@
     "navigationCaption": "Categories",
     "description": "Welcome to the Technic365 shop. Always the first for technique trends.",
     "specialOffer": false,
+    "facetedSearchShowFacetsOnCategory": true ,
+    "facetedSearchCategoryStartDepth": 3,
     "subCategories": [
       {
         "rel": "child",
