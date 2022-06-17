@@ -425,6 +425,32 @@
         - title: List customer events
           link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-events-get
           id: list_customer_events
+    - title: Customer Account API
+      entries:
+        - title: Show customer details in customer account
+          link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-get-details
+          id: show_customer_details_in_customer_account
+        - title: Show shipping address in customer account
+          link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-get-shipping-address
+          id: show_shipping_address_in_customer_account
+        - title: Show billing address in customer account
+          link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-get-billing-address
+          id: show_billing_address_in_customer_account
+        - title: List orders in customer account
+          link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-get-orders
+          id: list_orders_in_customer_account
+        - title: Show order details in customer account
+          link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-get-order
+          id: show_order_details_in_customer_account
+        - title: Update shipping address in customer account
+          link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-update-shipping-address
+          id: update_shipping_address_in_customer_account
+        - title: Update billing address in customer account
+          link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-update-billing-address
+          id: update_billing_address_in_customer_account
+        - title: Delete customer account
+          link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-account-delete
+          id: delete_customer_account
     - title: Order API
       entries:
         - title: Orders
