@@ -409,7 +409,7 @@
       entries:
         - title: Customer
           entries:
-            - title: Create customer
+            -  title: Create customer
               link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-create
               id: create_customer
             - title: List customers
