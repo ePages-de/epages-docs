@@ -409,7 +409,7 @@
       entries:
         - title: Customer
           entries:
-            -  title: Create customer
+            - title: Create customer
               link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-create
               id: create_customer
             - title: List customers
@@ -435,7 +435,7 @@
             - title: Show shipping address in customer account
               link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-get-shipping-address
               id: show_shipping_address_in_customer_account
-            -  title: Show billing address in customer account
+            - title: Show billing address in customer account
               link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-get-billing-address
               id: show_billing_address_in_customer_account
             - title: List orders in customer account
