@@ -105,6 +105,7 @@
         "productDataSheet": null,
         "sfUrl": "http://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/Products/Cust001",
         "productNumber": "Cust001",
+        "isProductNumberVisible": true,
         "manufacturer": "Dr. Boom",
         "upc": null,
         "ean": null,
