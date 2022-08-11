@@ -576,6 +576,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | productDataSheet | string | An image or PDF file containing a data sheet with technical information on the product. Has to be available if the product has an energy label. |
 | sfUrl | string | The link to the storefront URL of the product. |
 | productNumber | string | The product number. |
+| isProductNumberVisible | boolean | Indicates if the product number is displayed in the storefront. |
 | productImage | string | The name of the product image. |
 | images | array of [image](page:apps-data-types#image) | The images belonging to the product. |
 | manufacturer | string | The manufacturer of the product. |
@@ -693,6 +694,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | productDataSheet | string | An image or PDF file containing a data sheet with technical information on the product. Has to be available if the product has an energy label. |
 | sfUrl | string | The link to storefront URL of the product. |
 | productNumber | string | The product number. |
+| isProductNumberVisible | boolean | Indicates if the product number is displayed in the storefront. |
 | productImage | string | The name of the product image. |
 | images | array of [image](page:apps-data-types#image) | The images belonging to the product. |
 | manufacturer | string | The manufacturer of the product. |

@@ -14,6 +14,16 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
+## 2022-08-11
+
+### Changes with software release 7.74.0
+
+#### <i class="fas fa-pencil-alt"></i> Update
+
+* Added attribute `isProductNumberVisible` to data types [`product`](https://developer.epages.com/apps/data-types.html#product) and [`productSearch`](https://developer.epages.com/apps/data-types.html#productsearch).
+
+<hr>
+
 ## 2022-05-10
 
 ### Changes with software release 7.70.0
