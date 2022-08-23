@@ -24,12 +24,6 @@ post:
           application/json:
             example: !include examples/get_coupon_campaign_couponcampaignid_response.json
             schema: !include schema/get_coupon_campaign_couponcampaignid.schema.json
-  delete:
-    description: Deletes a specific coupon campaign from a shop identified by the provided coupon campaign Id. *epages6 *epagesNow
-    securedBy: [coupons_write]
-    responses:
-      204:
-
   /coupons:
     displayName: Coupons
     put:
