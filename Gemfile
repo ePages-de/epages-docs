@@ -5,7 +5,6 @@ ruby RUBY_VERSION
 gem "rake", "~> 12.3"
 gem "jekyll", "~> 3.9.0"
 gem "loofah", "~> 2.3"
-gem "therubyracer", "~> 0.12"
 gem "html-proofer", "~> 3.9"
 gem "raml_parser", "~> 0.2"
 gem "rubyzip", "~> 1.3"
