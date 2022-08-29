@@ -13660,7 +13660,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"_id\" : \"b21390b0-4554-4722-a59e-1c26b2247074\",\n  \"categories\" : [ ],\n  \"scriptUrl\" : \"https://example.com/scripts/exampleScript.js\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/script-tags/b21390b0-4554-4722-a59e-1c26b2247074\"\n    }\n  }\n}",
+      "body" : "{\n  \"_id\" : \"d84e0588-f709-4ad7-ac9e-ab3f467ed4a6\",\n  \"categories\" : [ ],\n  \"scriptUrl\" : \"https://example.com/scripts/exampleScript.js\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/script-tags/d84e0588-f709-4ad7-ac9e-ab3f467ed4a6\"\n    }\n  }\n}",
       "code" : 201
     } ]
   }, {
@@ -13694,7 +13694,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"_embedded\" : {\n    \"script-tags\" : [ {\n      \"_id\" : \"4a64c6b5-8b31-4829-9909-835276aba4b7\",\n      \"categories\" : [ ],\n      \"scriptUrl\" : \"https://example.com/scripts/exampleScript.js\"\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/script-tags?page=0&size=20\"\n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\" : 1,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}",
+      "body" : "{\n  \"_embedded\" : {\n    \"script-tags\" : [ {\n      \"_id\" : \"46d0ab6a-acb8-47ba-ae4f-73cd87160952\",\n      \"categories\" : [ ],\n      \"scriptUrl\" : \"https://example.com/scripts/exampleScript.js\"\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/script-tags?page=0&size=20\"\n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\" : 1,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}",
       "code" : 200
     } ]
   }, {
@@ -13776,7 +13776,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"_id\" : \"656b0df9-198a-40f7-b2e7-59e717d209bf\",\n  \"categories\" : [ ],\n  \"scriptUrl\" : \"https://example.com/scripts/updatedExampleScript.js\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/script-tags/656b0df9-198a-40f7-b2e7-59e717d209bf\"\n    }\n  }\n}",
+      "body" : "{\n  \"_id\" : \"de1018f4-f5b7-48ab-83db-53282289e206\",\n  \"categories\" : [ ],\n  \"scriptUrl\" : \"https://example.com/scripts/updatedExampleScript.js\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/script-tags/de1018f4-f5b7-48ab-83db-53282289e206\"\n    }\n  }\n}",
       "code" : 200
     } ]
   }, {
@@ -13810,7 +13810,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"_id\" : \"8915bceb-5522-4c76-9681-dfe41a3d99ab\",\n  \"categories\" : [ \"ORDER\", \"PAYMENT\" ],\n  \"scriptUrl\" : \"https://example.com/scripts/exampleScript.js\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/script-tags/8915bceb-5522-4c76-9681-dfe41a3d99ab\"\n    }\n  }\n}",
+      "body" : "{\n  \"_id\" : \"e5da2eb2-9d06-4fd3-b189-025f68026459\",\n  \"categories\" : [ \"PAYMENT\", \"ORDER\" ],\n  \"scriptUrl\" : \"https://example.com/scripts/exampleScript.js\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/script-tags/e5da2eb2-9d06-4fd3-b189-025f68026459\"\n    }\n  }\n}",
       "code" : 200
     } ]
   }, {
