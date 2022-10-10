@@ -870,12 +870,18 @@
             - title: Find used tags
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#find-tags
               id: find_used_tags
+            - title: Find used category tags
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#find-category-tags
+              id: find_used_category_tags
             - title: Find manual product categories
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#find-manual-categories
               id: find_manual_product_categories
             - title: Find manufacturers
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#find-manufacturers
               id: find_manufacturers
+            - title: Find category manufacturers
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#find-category-manufacturers
+              id: find_category_manufacturers
             - title: List product search meta information
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-search-meta
               id: list_product_search_meta_information
