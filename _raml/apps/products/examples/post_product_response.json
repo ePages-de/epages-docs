@@ -57,6 +57,7 @@
   "sfUrl": "http://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/Products/TP-0821",
   "productNumber": "TP-0821",
   "isProductNumberVisible": true,
+  "isManufacturerPriceRRP": true,
   "manufacturer": "Awesome Products Company",
   "upc": null,
   "ean": null,
