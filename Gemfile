@@ -8,7 +8,7 @@ gem "loofah", "~> 2.3"
 gem "html-proofer", "~> 3.9"
 gem "raml_parser", "~> 0.2"
 gem "rubyzip", "~> 1.3"
-gem "nokogiri", "~> 1.12"
+gem "nokogiri", "~> 1.13"
 gem "kramdown-parser-gfm", "~> 1.1"
 gem "activesupport", "~> 5.2.4.3"
 
