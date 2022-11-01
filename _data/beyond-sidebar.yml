@@ -312,9 +312,6 @@
               id: update_coupon_codes
         - title: Customers
           entries:
-            - title: Create customer
-              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-signup-customer
-              id: checkout_create_customer
             - title: Assign customer to cart
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-assign-customer
               id: checkout_assign_customer_to_cart
