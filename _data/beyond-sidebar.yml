@@ -804,9 +804,17 @@
             - title: Remove multiple products from product categories
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-categories-batch-remove-products
               id: remove_multiple_products_from_product_categories
+        - title: Product category-related searches
+          entries:
             - title: Search product categories
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-categories-search
               id: search_product_categories
+            - title: Find used category tags
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-find-category-tags
+              id: find_used_category_tags
+            - title: Find category manufacturers
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-find-category-manufacturers
+              id: find_category_manufacturers              
         - title: Product cross-sells
           entries:
             - title: Create product cross-sell
@@ -867,18 +875,12 @@
             - title: Find used tags
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#find-tags
               id: find_used_tags
-            - title: Find used category tags
-              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#find-category-tags
-              id: find_used_category_tags
             - title: Find manual product categories
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#find-manual-categories
               id: find_manual_product_categories
             - title: Find manufacturers
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#find-manufacturers
               id: find_manufacturers
-            - title: Find category manufacturers
-              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#find-category-manufacturers
-              id: find_category_manufacturers
             - title: List product search meta information
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-search-meta
               id: list_product_search_meta_information
