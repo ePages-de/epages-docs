@@ -814,7 +814,7 @@
               id: find_used_category_tags
             - title: Find category manufacturers
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-find-category-manufacturers
-              id: find_category_manufacturers              
+              id: find_category_manufacturers
         - title: Product cross-sells
           entries:
             - title: Create product cross-sell
