@@ -14,6 +14,16 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
+## 2022-12-01
+
+### Changes with software release 7.78.0
+
+#### <i class="fas fa-plus"></i> New
+
+* Added the events `shippingMethod:select`, and `paymentMethod:select` to the [Events](https://developer.epages.com/apps/events.html) section.
+
+<hr>
+
 ## 2022-08-11
 
 ### Changes with software release 7.74.0
