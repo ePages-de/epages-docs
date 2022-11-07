@@ -807,13 +807,13 @@
         - title: Product category-related searches
           entries:
             - title: Search product categories
-              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-categories-search
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#categories-search-result
               id: search_product_categories
             - title: Find used category tags
-              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-find-category-tags
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#find-category-tags
               id: find_used_category_tags
             - title: Find category manufacturers
-              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-find-category-manufacturers
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#find-category-manufacturers
               id: find_category_manufacturers
         - title: Product cross-sells
           entries:
