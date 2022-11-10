@@ -1236,6 +1236,15 @@
             - title: Delete webhook subscription
               link: https://api-docs.beyondshop.cloud/ng-webhook-webhook-public-api.html#resources-subscription-delete
               id: delete_webhook_subscription
+            - title: List webhook subscription failures
+              link: https://api-docs.beyondshop.cloud/ng-webhook-webhook-public-api.html#resources-subscription-failures-list
+              id: list_webhook_subscription_failures
+            - title: Retry failed webhook delivery
+              link: https://api-docs.beyondshop.cloud/ng-webhook-webhook-public-api.html#resources-subscription-failure-retry
+              id: retry_failed_webhook_delivery
+            - title: Delete webhook subscription failure
+              link: https://api-docs.beyondshop.cloud/ng-webhook-webhook-public-api.html#resources-subscription-failure-delete
+              id: delete_webhook_subscription_failure
         - title: Example callbacks
           entries:
             - title: Order events callback
