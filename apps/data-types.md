@@ -577,6 +577,8 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | sfUrl | string | The link to the storefront URL of the product. |
 | productNumber | string | The product number. |
 | isProductNumberVisible | boolean | Indicates if the product number is displayed in the storefront. |
+| isManufacturerPriceRRP | boolean | Indicates if the manufacturer price is to be treated as an RRP. |
+| isShippingLinkVisible | boolean | Indicates if the shipping link is displayed on the VAT text. |
 | productImage | string | The name of the product image. |
 | images | array of [image](page:apps-data-types#image) | The images belonging to the product. |
 | manufacturer | string | The manufacturer of the product. |
