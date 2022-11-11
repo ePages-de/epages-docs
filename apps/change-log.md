@@ -14,9 +14,9 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
-## 2022-12-01
+## 2022-11-03
 
-### Changes with software release 7.78.0
+### Changes with software release 7.77.0
 
 #### <i class="fas fa-plus"></i> New
 
