@@ -136,7 +136,7 @@
         } ],
         "body" : {
           "mode" : "raw",
-          "raw" : "{\n  \"_payloadType\" : \"app\",\n  \"_id\" : \"c22d2f4e-dc4f-4501-b7d1-b015a28f6c18\",\n  \"clientId\" : \"clientId\",\n  \"feature\" : \"app.test-app\",\n  \"name\" : { }\n}",
+          "raw" : "{\n  \"_payloadType\" : \"app\",\n  \"_id\" : \"1a3f81e5-62f5-41f5-9ec1-0ea8408c5273\",\n  \"clientId\" : \"clientId\",\n  \"feature\" : \"app.test-app\",\n  \"name\" : { }\n}",
           "urlencoded" : [ ]
         }
       },
@@ -16232,7 +16232,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"_embedded\" : {\n    \"subscriptions\" : [ {\n      \"callbackUri\" : \"http://example.com/test\",\n      \"eventTypes\" : [ \"product.created\", \"order.created\" ],\n      \"active\" : true,\n      \"_id\" : \"d623cad3-864d-4407-978e-e0cff097b152\",\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/webhook-subscriptions/d623cad3-864d-4407-978e-e0cff097b152\"\n        },\n        \"deactivate\" : {\n          \"href\" : \"https://yourshop.api.urn/webhook-subscriptions/d623cad3-864d-4407-978e-e0cff097b152/deactivate\"\n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/webhook-subscriptions\"\n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\" : 1,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}",
+      "body" : "{\n  \"_embedded\" : {\n    \"subscriptions\" : [ {\n      \"callbackUri\" : \"http://example.com/test\",\n      \"eventTypes\" : [ \"product.created\", \"order.created\" ],\n      \"active\" : true,\n      \"_id\" : \"977407ec-70d3-4c18-8843-a195f53e7dd6\",\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/webhook-subscriptions/977407ec-70d3-4c18-8843-a195f53e7dd6\"\n        },\n        \"deactivate\" : {\n          \"href\" : \"https://yourshop.api.urn/webhook-subscriptions/977407ec-70d3-4c18-8843-a195f53e7dd6/deactivate\"\n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/webhook-subscriptions\"\n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\" : 1,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}",
       "code" : 200
     } ]
   }, {
@@ -16286,7 +16286,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"callbackUri\" : \"http://example.com/test\",\n  \"eventTypes\" : [ \"product.created\", \"order.created\" ],\n  \"active\" : true,\n  \"_id\" : \"c2a07e47-e436-41aa-9790-9a047c3591ca\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/webhook-subscriptions/c2a07e47-e436-41aa-9790-9a047c3591ca\"\n    },\n    \"deactivate\" : {\n      \"href\" : \"https://yourshop.api.urn/webhook-subscriptions/c2a07e47-e436-41aa-9790-9a047c3591ca/deactivate\"\n    }\n  }\n}",
+      "body" : "{\n  \"callbackUri\" : \"http://example.com/test\",\n  \"eventTypes\" : [ \"product.created\", \"order.created\" ],\n  \"active\" : true,\n  \"_id\" : \"1caa12f2-647d-4577-96bc-15373ca28b14\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/webhook-subscriptions/1caa12f2-647d-4577-96bc-15373ca28b14\"\n    },\n    \"deactivate\" : {\n      \"href\" : \"https://yourshop.api.urn/webhook-subscriptions/1caa12f2-647d-4577-96bc-15373ca28b14/deactivate\"\n    }\n  }\n}",
       "code" : 201
     } ]
   }, {
@@ -16320,7 +16320,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"callbackUri\" : \"http://example.com/test\",\n  \"eventTypes\" : [ \"product.created\", \"order.created\" ],\n  \"active\" : true,\n  \"_id\" : \"0e1e64c1-9ecf-4114-8381-d09ba319acf0\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/webhook-subscriptions/0e1e64c1-9ecf-4114-8381-d09ba319acf0\"\n    },\n    \"deactivate\" : {\n      \"href\" : \"https://yourshop.api.urn/webhook-subscriptions/0e1e64c1-9ecf-4114-8381-d09ba319acf0/deactivate\"\n    }\n  }\n}",
+      "body" : "{\n  \"callbackUri\" : \"http://example.com/test\",\n  \"eventTypes\" : [ \"product.created\", \"order.created\" ],\n  \"active\" : true,\n  \"_id\" : \"9e97132d-81f0-4a7d-bb44-6e0e0b156de6\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/webhook-subscriptions/9e97132d-81f0-4a7d-bb44-6e0e0b156de6\"\n    },\n    \"deactivate\" : {\n      \"href\" : \"https://yourshop.api.urn/webhook-subscriptions/9e97132d-81f0-4a7d-bb44-6e0e0b156de6/deactivate\"\n    }\n  }\n}",
       "code" : 200
     } ]
   }, {
@@ -16374,7 +16374,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"callbackUri\" : \"http://example.com/test/updated\",\n  \"eventTypes\" : [ \"product.updated\" ],\n  \"active\" : true,\n  \"_id\" : \"13a27a7c-0a10-47c3-9de6-7dfa36eaf7ee\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/webhook-subscriptions/13a27a7c-0a10-47c3-9de6-7dfa36eaf7ee\"\n    },\n    \"deactivate\" : {\n      \"href\" : \"https://yourshop.api.urn/webhook-subscriptions/13a27a7c-0a10-47c3-9de6-7dfa36eaf7ee/deactivate\"\n    }\n  }\n}",
+      "body" : "{\n  \"callbackUri\" : \"http://example.com/test/updated\",\n  \"eventTypes\" : [ \"product.updated\" ],\n  \"active\" : true,\n  \"_id\" : \"c4c07ac7-ddfb-49a6-9fec-6b1194a586ae\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/webhook-subscriptions/c4c07ac7-ddfb-49a6-9fec-6b1194a586ae\"\n    },\n    \"deactivate\" : {\n      \"href\" : \"https://yourshop.api.urn/webhook-subscriptions/c4c07ac7-ddfb-49a6-9fec-6b1194a586ae/deactivate\"\n    }\n  }\n}",
       "code" : 200
     } ]
   }, {
@@ -16436,7 +16436,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"callbackUri\" : \"http://example.com/test\",\n  \"eventTypes\" : [ \"product.created\", \"order.created\" ],\n  \"active\" : true,\n  \"_id\" : \"af00a0f2-b00f-42f7-a970-dc799e2fe865\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/webhook-subscriptions/af00a0f2-b00f-42f7-a970-dc799e2fe865\"\n    },\n    \"deactivate\" : {\n      \"href\" : \"https://yourshop.api.urn/webhook-subscriptions/af00a0f2-b00f-42f7-a970-dc799e2fe865/deactivate\"\n    }\n  }\n}",
+      "body" : "{\n  \"callbackUri\" : \"http://example.com/test\",\n  \"eventTypes\" : [ \"product.created\", \"order.created\" ],\n  \"active\" : true,\n  \"_id\" : \"4c513748-a9b0-4bae-aa20-82706b134998\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/webhook-subscriptions/4c513748-a9b0-4bae-aa20-82706b134998\"\n    },\n    \"deactivate\" : {\n      \"href\" : \"https://yourshop.api.urn/webhook-subscriptions/4c513748-a9b0-4bae-aa20-82706b134998/deactivate\"\n    }\n  }\n}",
       "code" : 200
     } ]
   }, {
@@ -16470,7 +16470,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"callbackUri\" : \"http://example.com/test\",\n  \"eventTypes\" : [ \"product.created\", \"order.created\" ],\n  \"active\" : false,\n  \"_id\" : \"6798277b-133c-466c-b1c6-38dd3e56f3aa\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/webhook-subscriptions/6798277b-133c-466c-b1c6-38dd3e56f3aa\"\n    },\n    \"activate\" : {\n      \"href\" : \"https://yourshop.api.urn/webhook-subscriptions/6798277b-133c-466c-b1c6-38dd3e56f3aa/activate\"\n    }\n  }\n}",
+      "body" : "{\n  \"callbackUri\" : \"http://example.com/test\",\n  \"eventTypes\" : [ \"product.created\", \"order.created\" ],\n  \"active\" : false,\n  \"_id\" : \"d6ff8319-af2f-4501-b216-aff30f88c270\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/webhook-subscriptions/d6ff8319-af2f-4501-b216-aff30f88c270\"\n    },\n    \"activate\" : {\n      \"href\" : \"https://yourshop.api.urn/webhook-subscriptions/d6ff8319-af2f-4501-b216-aff30f88c270/activate\"\n    }\n  }\n}",
       "code" : 200
     } ]
   }, {
@@ -16504,7 +16504,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"_embedded\" : {\n    \"failures\" : [ {\n      \"createdAt\" : \"2022-11-11T10:42:08.304135\",\n      \"request\" : {\n        \"eventType\" : \"app.uninstalled\",\n        \"payload\" : \"{\\n  \\\"payloadType\\\" : \\\"app\\\",\\n  \\\"_id\\\" : \\\"5b3b0606-bc78-4824-93cf-a2855345ad40\\\",\\n  \\\"clientId\\\" : \\\"clientId\\\",\\n  \\\"feature\\\" : \\\"app.test-app\\\",\\n  \\\"name\\\" : { }\\n}\"\n      },\n      \"response\" : {\n        \"status\" : 500,\n        \"payload\" : \"{\\n\\\"errorId\\\":\\\"unknown\\\"}\\n\"\n      },\n      \"_id\" : \"58738e41-b851-4102-ae92-33a2023ccb02\",\n      \"_links\" : {\n        \"webhook-subscription\" : {\n          \"href\" : \"https://yourshop.api.urn/webhook-subscriptions/a0a03809-01a5-4ec0-a92b-920ca3b353c5\"\n        },\n        \"retry\" : {\n          \"href\" : \"https://yourshop.api.urn/webhook-subscriptions/a0a03809-01a5-4ec0-a92b-920ca3b353c5/failures/58738e41-b851-4102-ae92-33a2023ccb02/retry\"\n        },\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/webhook-subscriptions/a0a03809-01a5-4ec0-a92b-920ca3b353c5/failures/58738e41-b851-4102-ae92-33a2023ccb02\"\n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/webhook-subscriptions/a0a03809-01a5-4ec0-a92b-920ca3b353c5/failures?page=0&size=20&sort=createdAt,desc\"\n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\" : 1,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}",
+      "body" : "{\n  \"_embedded\" : {\n    \"failures\" : [ {\n      \"createdAt\" : \"2022-11-15T13:21:28.480746\",\n      \"request\" : {\n        \"eventType\" : \"app.uninstalled\",\n        \"payload\" : \"{\\n  \\\"payloadType\\\" : \\\"app\\\",\\n  \\\"_id\\\" : \\\"5b3b0606-bc78-4824-93cf-a2855345ad40\\\",\\n  \\\"clientId\\\" : \\\"clientId\\\",\\n  \\\"feature\\\" : \\\"app.test-app\\\",\\n  \\\"name\\\" : { }\\n}\"\n      },\n      \"response\" : {\n        \"status\" : 500,\n        \"payload\" : \"{\\n\\\"errorId\\\":\\\"unknown\\\"}\\n\"\n      },\n      \"_id\" : \"e38651a2-8073-415c-8a72-bf6544e66134\",\n      \"_links\" : {\n        \"webhook-subscription\" : {\n          \"href\" : \"https://yourshop.api.urn/webhook-subscriptions/2248aa44-44a3-40f8-ab47-a06dffa400c3\"\n        },\n        \"retry\" : {\n          \"href\" : \"https://yourshop.api.urn/webhook-subscriptions/2248aa44-44a3-40f8-ab47-a06dffa400c3/failures/e38651a2-8073-415c-8a72-bf6544e66134/retry\"\n        },\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/webhook-subscriptions/2248aa44-44a3-40f8-ab47-a06dffa400c3/failures/e38651a2-8073-415c-8a72-bf6544e66134\"\n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/webhook-subscriptions/2248aa44-44a3-40f8-ab47-a06dffa400c3/failures?page=0&size=20&sort=createdAt,desc\"\n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\" : 1,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}",
       "code" : 200
     } ]
   }, {
