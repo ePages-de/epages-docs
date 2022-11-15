@@ -20,7 +20,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 #### <i class="fas fa-plus"></i> New
 
-* Added the events `shippingMethod:select`, and `paymentMethod:select` to the [Events](https://developer.epages.com/apps/events.html) section.
+* Added the events `shippingMethod:select` and `paymentMethod:select` to the [Events](https://developer.epages.com/apps/events.html) section.
 
 <hr>
 
