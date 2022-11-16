@@ -65,7 +65,7 @@ if (window.eComEventTarget) {
 }
 ```
 
-Here's an example of what you can get:
+Here is an example response:
 
 ```
 url: /about-us
@@ -86,7 +86,7 @@ if (window.eComEventTarget) {
 }
 ```
 
-Here's an example of what you can get:
+Here is an example response:
 
 ```
 product: {
@@ -188,7 +188,7 @@ if (window.eComEventTarget) {
 }
 ```
 
-Here's an example of what you can get:
+Here is an example response:
 
 ```
 detail: "Cherry Jam"
@@ -261,7 +261,7 @@ if (window.eComEventTarget) {
 }
 ```
 
-Here's an example of what you can get:
+Here is an example response:
 
 ```
 locale: "en_GB"
@@ -283,7 +283,7 @@ if (window.eComEventTarget) {
   })
 }
 ```
-Here's an example of what you can get:
+Here is an example response:
 
 ```
 category: {
@@ -425,7 +425,7 @@ if (window.eComEventTarget) {
 }
 ```
 
-Here's an example of what you can get:
+Here is an example response:
 
 ```
 products: Array(2) {
@@ -549,7 +549,7 @@ if (window.eComEventTarget) {
 }
 ```
 
-Here's an example of what you can get:
+Here is an example response:
 
 ```
 cart: {
@@ -601,7 +601,7 @@ if (window.eComEventTarget) {
 }
 ```
 
-Here's an example of what you can get:
+Here is an example response:
 
 ```
 cart: {
@@ -703,7 +703,7 @@ if (window.eComEventTarget) {
 }
 ```
 
-Here's an example of what you can get:
+Here is an example response:
 
 ```
 lineItem: {
@@ -742,7 +742,7 @@ if (window.eComEventTarget) {
 }
 ```
 
-Here's an example of what you can get:
+Here is an example response:
 
 ```
 cart: {
@@ -796,7 +796,7 @@ if (window.eComEventTarget) {
 }
 ```
 
-Here's an example of what you can get:
+Here is an example response:
 
 ```
 order: {
@@ -828,7 +828,7 @@ if (window.eComEventTarget) {
 }
 ```
 
-Here's an example of what you can get:
+Here is an example response:
 
 ```
 shippingMethod: {
@@ -851,7 +851,7 @@ if (window.eComEventTarget) {
 }
 ```
 
-Here's an example of what you can get:
+Here is an example response:
 
 ```
 paymentMethod: {
