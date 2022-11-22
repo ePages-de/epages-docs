@@ -546,9 +546,9 @@
             - title: List order processes
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-processes-get
               id: list_order_processes
-            - title: Create cancelation processes
+            - title: Create cancelation process
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-cancel-processes-create
-              id: create_cancelation_process
+              id: create_cancelation_processes
             - title: List cancelation processes
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-cancel-processes-list
               id: list_cancelation_processes
@@ -578,7 +578,7 @@
               id: capture_payment
             - title: Create pickup process
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-pickup-processes-create
-              id: create_pickup_process
+              id: create_pickup_processes
             - title: Create multiple pickup processes
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-batch-actions-create-packingslips-pickup
               id: create_multiple_pickup_processes
@@ -608,7 +608,7 @@
               id: mark_refund_process_as_paid
             - title: Create return process
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-return-processes-create
-              id: create_return_process
+              id: create_return_processes
             - title: List return processes
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-return-processes-list
               id: list_return_processes
@@ -617,7 +617,7 @@
               id: show_return_process_details
             - title: Create shipping process
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-shipping-processes-create
-              id: create_shipping_process
+              id: create_shipping_processes
             - title: Create multiple shipping processes
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-batch-actions-create-packingslips-shipping
               id: create_multiple_shipping_processes
