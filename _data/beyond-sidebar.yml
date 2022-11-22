@@ -522,9 +522,9 @@
             - title: Create multiple invoices
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-batch-actions-create-invoices
               id: create_multiple_invoices
-            - title: Merge multiple invoices
+            - title: Combine multiple invoices
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-batch-actions-merge-invoices
-              id: merge_multiple_invoices
+              id: combine_multiple_invoices
             - title: Send order document
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-send-order-document
               id: send_order_document
@@ -548,7 +548,7 @@
               id: list_order_processes
             - title: Create cancelation processes
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-cancel-processes-create
-              id: create_cancelation_processes
+              id: create_cancelation_process
             - title: List cancelation processes
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-cancel-processes-list
               id: list_cancelation_processes
@@ -578,7 +578,7 @@
               id: capture_payment
             - title: Create pickup process
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-pickup-processes-create
-              id: create_pickup_processes
+              id: create_pickup_process
             - title: Create multiple pickup processes
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-batch-actions-create-packingslips-pickup
               id: create_multiple_pickup_processes
@@ -591,9 +591,9 @@
             - title: Mark pickup process as picked up
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-pickup-process-mark-picked-up
               id: mark_pickup_process_as_picked_up
-            - title: Merge multiple packing slips
+            - title: Combine multiple pickup packing slips
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-batch-actions-merge-packingslips-pickup
-              id: merge_multiple_packing_slips_pickup
+              id: combine_multiple_pickup_packing_slips
             - title: List refund processes
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-refund-processes-list
               id: list_refund_processes
@@ -606,9 +606,9 @@
             - title: Mark refund process as paid
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-refund-process-mark-paid
               id: mark_refund_process_as_paid
-            - title: Create return processes
+            - title: Create return process
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-return-processes-create
-              id: create_return_processes
+              id: create_return_process
             - title: List return processes
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-return-processes-list
               id: list_return_processes
@@ -617,7 +617,7 @@
               id: show_return_process_details
             - title: Create shipping process
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-shipping-processes-create
-              id: create_shipping_processes
+              id: create_shipping_process
             - title: Create multiple shipping processes
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-batch-actions-create-packingslips-shipping
               id: create_multiple_shipping_processes
@@ -633,9 +633,9 @@
             - title: Mark shipment as delivered
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-shipping-process-mark-delivered
               id: mark_shipment_as_delivered
-            - title: Merge multiple packing slips
+            - title: Combine multiple shipping packing slips
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-batch-actions-merge-packingslips-shipping
-              id: merge_multiple_packing_slips_shipping
+              id: combine_multiple_shipping_packing_slips
         - title: Order settings
           entries:
             - title: List order settings
