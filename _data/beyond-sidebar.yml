@@ -505,6 +505,9 @@
               id: update_shipping_address
         - title: Order batch actions
           entries:
+            - title: Introduction
+              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-batch-actions
+              id: order_batch_actions_introduction
             - title: Show order batch action status
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-show-order-batch-action-status
               id: show_order_batch_action_status
