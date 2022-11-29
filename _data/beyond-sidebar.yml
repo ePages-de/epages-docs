@@ -1247,6 +1247,9 @@
       entries:
         - title: Webhook subscriptions
           entries:
+            - title: Introduction
+              link: https://api-docs.beyondshop.cloud/ng-webhook-webhook-public-api.html#resources-subscriptions
+              id: webhook_subscriptions_introduction
             - title: Create webhook subscription
               link: https://api-docs.beyondshop.cloud/ng-webhook-webhook-public-api.html#resources-subscription-create
               id: create_webhook_subscription
