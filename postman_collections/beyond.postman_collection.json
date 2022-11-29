@@ -3990,7 +3990,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"hash\" : \"82432abcc2997929f80c567f1664788965df8f8f\",\n  \"mediaType\" : \"application/pdf\",\n  \"groupName\" : \"1438\",\n  \"length\" : 0,\n  \"fileName\" : \"invoice_10013.pdf\",\n  \"relativeUrl\" : \"invoice_10013.pdf?hash=82432abcc2997929f80c567f1664788965df8f8f\",\n  \"relativeDownloadUrl\" : \"invoice_10013.pdf?hash=82432abcc2997929f80c567f1664788965df8f8f\",\n  \"_id\" : \"ae5b6c49-1200-47d6-bf5b-98f2afdd11ea\"\n}",
+      "body" : "{\n  \"hash\" : \"82432abcc2997929f80c567f1664788965df8f8f\",\n  \"mediaType\" : \"application/pdf\",\n  \"groupName\" : \"1438\",\n  \"length\" : 0,\n  \"fileName\" : \"invoice_10013.pdf\",\n  \"relativeUrl\" : \"invoice_10013.pdf?hash=82432abcc2997929f80c567f1664788965df8f8f\",\n  \"relativeDownloadUrl\" : \"invoice_10013.pdf?hash=82432abcc2997929f80c567f1664788965df8f8f\",\n  \"_id\" : \"c1fad3c3-8a89-43b6-82a4-b85a92c2503f\"\n}",
       "code" : 201
     } ]
   }, {
@@ -8473,7 +8473,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"hash\" : \"82432abcc2997929f80c567f1664788965df8f8f\",\n  \"mediaType\" : \"application/pdf\",\n  \"groupName\" : \"1438\",\n  \"length\" : 0,\n  \"fileName\" : \"invoice_10013.pdf\",\n  \"relativeUrl\" : \"invoice_10013.pdf?hash=82432abcc2997929f80c567f1664788965df8f8f\",\n  \"relativeDownloadUrl\" : \"invoice_10013.pdf?hash=82432abcc2997929f80c567f1664788965df8f8f\",\n  \"_id\" : \"12cf7a21-7f86-40e6-bf71-eb33fd19ce78\"\n}",
+      "body" : "{\n  \"hash\" : \"82432abcc2997929f80c567f1664788965df8f8f\",\n  \"mediaType\" : \"application/pdf\",\n  \"groupName\" : \"1438\",\n  \"length\" : 0,\n  \"fileName\" : \"invoice_10013.pdf\",\n  \"relativeUrl\" : \"invoice_10013.pdf?hash=82432abcc2997929f80c567f1664788965df8f8f\",\n  \"relativeDownloadUrl\" : \"invoice_10013.pdf?hash=82432abcc2997929f80c567f1664788965df8f8f\",\n  \"_id\" : \"ad36cc65-399f-4b43-8f0d-66078ad82f44\"\n}",
       "code" : 201
     } ]
   }, {
@@ -16984,7 +16984,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"hash\" : \"f4e6fbee7f8c2257458818d391187d385623709b\",\n  \"fileName\" : \"team-nordic-logo.png\",\n  \"mediaType\" : \"image/png\",\n  \"length\" : 33615,\n  \"groupName\" : \"1438\",\n  \"relativeUrl\" : \"team-nordic-logo.png?hash=f4e6fbee7f8c2257458818d391187d385623709b\",\n  \"relativeDownloadUrl\" : \"team-nordic-logo.png?hash=f4e6fbee7f8c2257458818d391187d385623709b\",\n  \"width\" : 544,\n  \"height\" : 456,\n  \"_id\" : \"483f34c9-2d80-47f8-9260-f968aade45f6\"\n}",
+      "body" : "{\n  \"hash\" : \"f4e6fbee7f8c2257458818d391187d385623709b\",\n  \"fileName\" : \"team-nordic-logo.png\",\n  \"mediaType\" : \"image/png\",\n  \"length\" : 33615,\n  \"groupName\" : \"1438\",\n  \"relativeUrl\" : \"team-nordic-logo.png?hash=f4e6fbee7f8c2257458818d391187d385623709b\",\n  \"relativeDownloadUrl\" : \"team-nordic-logo.png?hash=f4e6fbee7f8c2257458818d391187d385623709b\",\n  \"width\" : 544,\n  \"height\" : 456,\n  \"_id\" : \"bf13de95-9c3f-4fc6-8d69-1c27c946ecbb\"\n}",
       "code" : 201
     } ]
   } ],
