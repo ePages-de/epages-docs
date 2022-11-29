@@ -2184,40 +2184,6 @@
       "code" : 200
     } ]
   }, {
-    "id" : "upload-image-multipart",
-    "name" : "/core/123/images-for-internal-use/my-file.png",
-    "description" : "A `POST` request with the content type `multipart form-data` is used to upload an image to the storage.",
-    "variable" : [ ],
-    "event" : [ ],
-    "request" : {
-      "url" : {
-        "protocol" : "https",
-        "host" : "{{host}}",
-        "path" : "/api/core/123/images-for-internal-use/my-file.png"
-      },
-      "method" : "POST"
-    },
-    "response" : [ {
-      "id" : "upload-image-multipart",
-      "name" : "upload-image-multipart",
-      "originalRequest" : {
-        "url" : {
-          "protocol" : "https",
-          "host" : "{{host}}",
-          "path" : "/api/core/123/images-for-internal-use/my-file.png"
-        },
-        "method" : "POST"
-      },
-      "header" : [ {
-        "key" : "Content-Type",
-        "value" : "application/hal+json",
-        "disabled" : false
-      } ],
-      "cookie" : [ ],
-      "body" : "{\n  \"hash\" : \"f4e6fbee7f8c2257458818d391187d385623709b\",\n  \"fileName\" : \"my-file.png\",\n  \"mediaType\" : \"image/png\",\n  \"length\" : 33615,\n  \"groupName\" : \"123\",\n  \"relativeUrl\" : \"my-file.png?hash=f4e6fbee7f8c2257458818d391187d385623709b\",\n  \"relativeDownloadUrl\" : \"my-file.png?hash=f4e6fbee7f8c2257458818d391187d385623709b\",\n  \"width\" : 544,\n  \"height\" : 456,\n  \"_id\" : \"dac03a3c-25c2-4a83-bc49-add91475beab\"\n}",
-      "code" : 201
-    } ]
-  }, {
     "id" : "coupon-campaign-create",
     "name" : "/coupon-campaigns",
     "description" : "Creates a coupon campaign with a percentage discount.",
@@ -4024,7 +3990,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"hash\" : \"82432abcc2997929f80c567f1664788965df8f8f\",\n  \"mediaType\" : \"application/pdf\",\n  \"groupName\" : \"1438\",\n  \"length\" : 0,\n  \"fileName\" : \"invoice_10013.pdf\",\n  \"relativeUrl\" : \"invoice_10013.pdf?hash=82432abcc2997929f80c567f1664788965df8f8f\",\n  \"relativeDownloadUrl\" : \"invoice_10013.pdf?hash=82432abcc2997929f80c567f1664788965df8f8f\",\n  \"_id\" : \"d743a841-5733-49b0-816a-00360cc19a9d\"\n}",
+      "body" : "{\n  \"hash\" : \"82432abcc2997929f80c567f1664788965df8f8f\",\n  \"mediaType\" : \"application/pdf\",\n  \"groupName\" : \"1438\",\n  \"length\" : 0,\n  \"fileName\" : \"invoice_10013.pdf\",\n  \"relativeUrl\" : \"invoice_10013.pdf?hash=82432abcc2997929f80c567f1664788965df8f8f\",\n  \"relativeDownloadUrl\" : \"invoice_10013.pdf?hash=82432abcc2997929f80c567f1664788965df8f8f\",\n  \"_id\" : \"ae5b6c49-1200-47d6-bf5b-98f2afdd11ea\"\n}",
       "code" : 201
     } ]
   }, {
@@ -8507,7 +8473,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"hash\" : \"82432abcc2997929f80c567f1664788965df8f8f\",\n  \"mediaType\" : \"application/pdf\",\n  \"groupName\" : \"1438\",\n  \"length\" : 0,\n  \"fileName\" : \"invoice_10013.pdf\",\n  \"relativeUrl\" : \"invoice_10013.pdf?hash=82432abcc2997929f80c567f1664788965df8f8f\",\n  \"relativeDownloadUrl\" : \"invoice_10013.pdf?hash=82432abcc2997929f80c567f1664788965df8f8f\",\n  \"_id\" : \"5dfd6b3b-e29c-41b6-9402-abdf041a28ae\"\n}",
+      "body" : "{\n  \"hash\" : \"82432abcc2997929f80c567f1664788965df8f8f\",\n  \"mediaType\" : \"application/pdf\",\n  \"groupName\" : \"1438\",\n  \"length\" : 0,\n  \"fileName\" : \"invoice_10013.pdf\",\n  \"relativeUrl\" : \"invoice_10013.pdf?hash=82432abcc2997929f80c567f1664788965df8f8f\",\n  \"relativeDownloadUrl\" : \"invoice_10013.pdf?hash=82432abcc2997929f80c567f1664788965df8f8f\",\n  \"_id\" : \"12cf7a21-7f86-40e6-bf71-eb33fd19ce78\"\n}",
       "code" : 201
     } ]
   }, {
@@ -17018,7 +16984,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"hash\" : \"f4e6fbee7f8c2257458818d391187d385623709b\",\n  \"fileName\" : \"team-nordic-logo.png\",\n  \"mediaType\" : \"image/png\",\n  \"length\" : 33615,\n  \"groupName\" : \"1438\",\n  \"relativeUrl\" : \"team-nordic-logo.png?hash=f4e6fbee7f8c2257458818d391187d385623709b\",\n  \"relativeDownloadUrl\" : \"team-nordic-logo.png?hash=f4e6fbee7f8c2257458818d391187d385623709b\",\n  \"width\" : 544,\n  \"height\" : 456,\n  \"_id\" : \"fc6ac18b-8d66-44a4-80da-99cbc4b26950\"\n}",
+      "body" : "{\n  \"hash\" : \"f4e6fbee7f8c2257458818d391187d385623709b\",\n  \"fileName\" : \"team-nordic-logo.png\",\n  \"mediaType\" : \"image/png\",\n  \"length\" : 33615,\n  \"groupName\" : \"1438\",\n  \"relativeUrl\" : \"team-nordic-logo.png?hash=f4e6fbee7f8c2257458818d391187d385623709b\",\n  \"relativeDownloadUrl\" : \"team-nordic-logo.png?hash=f4e6fbee7f8c2257458818d391187d385623709b\",\n  \"width\" : 544,\n  \"height\" : 456,\n  \"_id\" : \"483f34c9-2d80-47f8-9260-f968aade45f6\"\n}",
       "code" : 201
     } ]
   } ],
