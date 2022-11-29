@@ -601,6 +601,9 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | productVariationMasterName | string | The name of the variation product. Null if the `productVariationType` is *master* or *regular*. |
 | productVariationSelection | array of [variationIdentifier](page:apps-data-types#variationidentifier) | The selection of the variation product. Only available if `productVariationType` is *variation*. |
 | videos | array of [video](page:apps-data-types#video) | The videos belonging to the product. |
+| isCustomizable | boolean | Indicates if the product is customizable in the storefront. |
+| customizableTextLength | number | Maximal length of text that can be used to customize a product in the storefront. |
+| customizableHeadlineText | string | Headline text that can used to anounce the customization for a product in the storefront. |
 
 ## product (create request)
 
