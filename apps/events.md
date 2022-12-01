@@ -779,7 +779,7 @@ cart: {
 ### order:completed
 
 {% callout info Note: %}
-Please note that this event can only be triggered if the customer accepted all cookies in the cookie notice.
+Please note that your app will only receive this event if the customer accepted all cookies in the cookie notice.
 {% endcallout %}
 
 To get more information about this event, you can use the following snippet:
@@ -801,7 +801,6 @@ order: {
   billingAddress: null
   couponCampaign: null
   currencyId: "EUR"
-  customerComment: ""
   grandTotal: "19.21"
   lineItemContainer: {ecoParticipations: Array(0), basketDiscount: {…}, totalTax: {…}, totalBeforeTax: {…}, couponLineItem: null, …}
   orderId: "5D397C93-6BE3-F322-56A6-D5809AB32102"

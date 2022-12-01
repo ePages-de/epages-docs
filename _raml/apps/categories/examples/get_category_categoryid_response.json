@@ -7,6 +7,8 @@
   "navigationCaption": "Audio Products",
   "description": null,
   "specialOffer": false,
+  "facetedSearchShowFacetsOnCategory": true ,
+  "facetedSearchCategoryStartDepth": 3,
   "images": [
     {
       "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54E7/301B/A6B4/567A/8AE0/0A0C/05E6/922D/epages-e_copysmall_m.png",

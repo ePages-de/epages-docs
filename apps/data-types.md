@@ -153,6 +153,8 @@ ePages Now only!
 | subCategories | array of [link](page:apps-data-types#link) | A list of links to the subcategories. |
 | navigationCaption | string | The name of the category page that appears in the navigation bar. |
 | sfUrl | string | The link to the categories in the shop’s storefront. |
+| facetedSearchShowFacetsOnCategory | boolean | Indicates if the search field is displayed on category pages. |
+| facetedSearchCategoryStartDepth | number | The category level for displaying the search field on category pages. The search field is displayed on the indicated level and all sub levels. |
 
 ## category (create request)
 
@@ -574,6 +576,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | productDataSheet | string | An image or PDF file containing a data sheet with technical information on the product. Has to be available if the product has an energy label. |
 | sfUrl | string | The link to the storefront URL of the product. |
 | productNumber | string | The product number. |
+| isProductNumberVisible | boolean | Indicates if the product number is displayed in the storefront. |
 | productImage | string | The name of the product image. |
 | images | array of [image](page:apps-data-types#image) | The images belonging to the product. |
 | manufacturer | string | The manufacturer of the product. |
@@ -691,6 +694,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | productDataSheet | string | An image or PDF file containing a data sheet with technical information on the product. Has to be available if the product has an energy label. |
 | sfUrl | string | The link to storefront URL of the product. |
 | productNumber | string | The product number. |
+| isProductNumberVisible | boolean | Indicates if the product number is displayed in the storefront. |
 | productImage | string | The name of the product image. |
 | images | array of [image](page:apps-data-types#image) | The images belonging to the product. |
 | manufacturer | string | The manufacturer of the product. |

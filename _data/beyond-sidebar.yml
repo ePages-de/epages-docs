@@ -312,9 +312,6 @@
               id: update_coupon_codes
         - title: Customers
           entries:
-            - title: Create customer
-              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-signup-customer
-              id: checkout_create_customer
             - title: Assign customer to cart
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-cart-assign-customer
               id: checkout_assign_customer_to_cart
@@ -407,6 +404,9 @@
               id: delete_shipping_method_in_shipping_zone
     - title: Customer API
       entries:
+        - title: Register customer
+          link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-register
+          id: register_customer
         - title: Create customer
           link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-create
           id: create_customer
@@ -425,6 +425,32 @@
         - title: List customer events
           link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-events-get
           id: list_customer_events
+    - title: Customer Account API
+      entries:
+        - title: Show customer details in customer account
+          link: https://api-docs.beyondshop.cloud/ng-customer-customer-account-public-api.html#resources-customer-get-details
+          id: show_customer_details_in_customer_account
+        - title: Show shipping address in customer account
+          link: https://api-docs.beyondshop.cloud/ng-customer-customer-account-public-api.html#resources-customer-get-shipping-address
+          id: show_shipping_address_in_customer_account
+        - title: Show billing address in customer account
+          link: https://api-docs.beyondshop.cloud/ng-customer-customer-account-public-api.html#resources-customer-get-billing-address
+          id: show_billing_address_in_customer_account
+        - title: List orders in customer account
+          link: https://api-docs.beyondshop.cloud/ng-customer-customer-account-public-api.html#resources-customer-get-orders
+          id: list_orders_in_customer_account
+        - title: Show order details in customer account
+          link: https://api-docs.beyondshop.cloud/ng-customer-customer-account-public-api.html#resources-customer-get-order
+          id: show_order_details_in_customer_account
+        - title: Update shipping address in customer account
+          link: https://api-docs.beyondshop.cloud/ng-customer-customer-account-public-api.html#resources-customer-update-shipping-address
+          id: update_shipping_address_in_customer_account
+        - title: Update billing address in customer account
+          link: https://api-docs.beyondshop.cloud/ng-customer-customer-account-public-api.html#resources-customer-update-billing-address
+          id: update_billing_address_in_customer_account
+        - title: Delete customer account
+          link: https://api-docs.beyondshop.cloud/ng-customer-customer-account-public-api.html#resources-customer-account-delete
+          id: delete_customer_account
     - title: Order API
       entries:
         - title: Orders
@@ -439,8 +465,11 @@
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-get
               id: show_order_details
             - title: Show order by cart ID
-              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-get-by-cartid
+              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-find-by-cart-id
               id: show_order_by_cart_id
+            - title: Show order confirmation details by cart ID
+              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-find-order-confirmation
+              id: show_order_confirmation_details_by_cart_id
             - title: Show order number and order ID by cart ID
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-find-order-number-by-cart-id
               id: show_order_number_and_order_id_by_cart_id
@@ -459,6 +488,12 @@
             - title: Mark order as viewed
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-mark-order-as-viewed
               id: mark_order_as_viewed
+            - title: Mark multiple orders as viewed
+              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-batch-actions-mark-as-viewed
+              id: mark_multiple_orders_as_viewed
+            - title: Mark multiple orders as unviewed
+              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-batch-actions-mark-as-unviewed
+              id: mark_multiple_orders_as_unviewed
             - title: Update order note
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-note-update
               id: update_order_note
@@ -468,6 +503,14 @@
             - title: Update shipping address
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-update-shipping-address
               id: update_shipping_address
+        - title: Order batch actions
+          entries:
+            - title: Introduction
+              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-batch-actions
+              id: order_batch_actions_introduction
+            - title: Show order batch action status
+              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-show-order-batch-action-status
+              id: show_order_batch_action_status
         - title: Order documents
           entries:
             - title: List order documents
@@ -479,6 +522,12 @@
             - title: Create invoice
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-create-invoice
               id: create_invoice
+            - title: Create multiple invoices
+              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-batch-actions-create-invoices
+              id: create_multiple_invoices
+            - title: Combine multiple invoices
+              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-batch-actions-merge-invoices
+              id: combine_multiple_invoices
             - title: Send order document
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-send-order-document
               id: send_order_document
@@ -500,7 +549,7 @@
             - title: List order processes
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-processes-get
               id: list_order_processes
-            - title: Create cancelation processes
+            - title: Create cancelation process
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-cancel-processes-create
               id: create_cancelation_processes
             - title: List cancelation processes
@@ -530,9 +579,12 @@
             - title: Capture payment
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-payment-process-capture
               id: capture_payment
-            - title: Create pickup processes
+            - title: Create pickup process
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-pickup-processes-create
               id: create_pickup_processes
+            - title: Create multiple pickup processes
+              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-batch-actions-create-packingslips-pickup
+              id: create_multiple_pickup_processes
             - title: List pickup processes
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-pickup-processes-list
               id: list_pickup_processes
@@ -542,6 +594,9 @@
             - title: Mark pickup process as picked up
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-pickup-process-mark-picked-up
               id: mark_pickup_process_as_picked_up
+            - title: Combine multiple pickup packing slips
+              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-batch-actions-merge-packingslips-pickup
+              id: combine_multiple_pickup_packing_slips
             - title: List refund processes
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-refund-processes-list
               id: list_refund_processes
@@ -554,7 +609,7 @@
             - title: Mark refund process as paid
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-refund-process-mark-paid
               id: mark_refund_process_as_paid
-            - title: Create return processes
+            - title: Create return process
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-return-processes-create
               id: create_return_processes
             - title: List return processes
@@ -563,9 +618,12 @@
             - title: Show return process details
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-return-process-get
               id: show_return_process_details
-            - title: Create shipping processes
+            - title: Create shipping process
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-shipping-processes-create
               id: create_shipping_processes
+            - title: Create multiple shipping processes
+              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-batch-actions-create-packingslips-shipping
+              id: create_multiple_shipping_processes
             - title: List shipping processes
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-shipping-processes-list
               id: list_shipping_processes
@@ -578,6 +636,9 @@
             - title: Mark shipment as delivered
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-shipping-process-mark-delivered
               id: mark_shipment_as_delivered
+            - title: Combine multiple shipping packing slips
+              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-batch-actions-merge-packingslips-shipping
+              id: combine_multiple_shipping_packing_slips
         - title: Order settings
           entries:
             - title: List order settings
@@ -775,9 +836,17 @@
             - title: Remove multiple products from product categories
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-categories-batch-remove-products
               id: remove_multiple_products_from_product_categories
+        - title: Product category-related searches
+          entries:
             - title: Search product categories
-              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-categories-search
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#categories-search-result
               id: search_product_categories
+            - title: Find used category tags
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#find-category-tags
+              id: find_used_category_tags
+            - title: Find category manufacturers
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#find-category-manufacturers
+              id: find_category_manufacturers
         - title: Product cross-sells
           entries:
             - title: Create product cross-sell
@@ -842,14 +911,8 @@
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#find-manual-categories
               id: find_manual_product_categories
             - title: Find manufacturers
-              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#find-manufacturers-contains
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#find-manufacturers
               id: find_manufacturers
-            - title: List product filter categories
-              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-filter-data-all
-              id: list_product_filter_categories
-            - title: Show product filter category details
-              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-filter-data-detail
-              id: show_product_filter_category_details
             - title: List product search meta information
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-search-meta
               id: list_product_search_meta_information
@@ -1018,9 +1081,6 @@
             - title: Search matching product categories for product
               link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#categories-find-by-product
               id: search_matching_product_categories_for_product
-            - title: Find product category by label
-              link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#categories-find-by-label
-              id: find_product_category_by_label
             - title: Preview products included in category
               link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#categories-products-preview
               id: preview_products_included_in_category
@@ -1105,12 +1165,6 @@
             - title: Update shop partially (json)
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-shop-update
               id: update_shop_partially_json
-            - title: Open shop
-              link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-shop-open
-              id: open_shop
-            - title: Close shop
-              link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-shop-close
-              id: close_shop
         - title: Shop address
           entries:
             - title: Show address details
@@ -1193,6 +1247,9 @@
       entries:
         - title: Webhook subscriptions
           entries:
+            - title: Introduction
+              link: https://api-docs.beyondshop.cloud/ng-webhook-webhook-public-api.html#resources-subscriptions
+              id: webhook_subscriptions_introduction
             - title: Create webhook subscription
               link: https://api-docs.beyondshop.cloud/ng-webhook-webhook-public-api.html#resources-subscription-create
               id: create_webhook_subscription
@@ -1214,6 +1271,15 @@
             - title: Delete webhook subscription
               link: https://api-docs.beyondshop.cloud/ng-webhook-webhook-public-api.html#resources-subscription-delete
               id: delete_webhook_subscription
+            - title: List webhook subscription failures
+              link: https://api-docs.beyondshop.cloud/ng-webhook-webhook-public-api.html#resources-subscription-failures-list
+              id: list_webhook_subscription_failures
+            - title: Retry failed webhook delivery
+              link: https://api-docs.beyondshop.cloud/ng-webhook-webhook-public-api.html#resources-subscription-failure-retry
+              id: retry_failed_webhook_delivery
+            - title: Delete webhook subscription failure
+              link: https://api-docs.beyondshop.cloud/ng-webhook-webhook-public-api.html#resources-subscription-failure-delete
+              id: delete_webhook_subscription_failure
         - title: Example callbacks
           entries:
             - title: Order events callback
