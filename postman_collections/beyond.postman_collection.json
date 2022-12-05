@@ -14202,7 +14202,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"_id\" : \"d84e0588-f709-4ad7-ac9e-ab3f467ed4a6\",\n  \"categories\" : [ ],\n  \"scriptUrl\" : \"https://example.com/scripts/exampleScript.js\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/script-tags/d84e0588-f709-4ad7-ac9e-ab3f467ed4a6\"\n    }\n  }\n}",
+      "body" : "{\n  \"_id\" : \"aad658fb-8e0a-49cb-afef-567ceeb06d86\",\n  \"categories\" : [ ],\n  \"scriptUrl\" : \"https://example.com/scripts/exampleScript.js\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/script-tags/aad658fb-8e0a-49cb-afef-567ceeb06d86\"\n    }\n  }\n}",
       "code" : 201
     } ]
   }, {
@@ -14215,7 +14215,12 @@
       "url" : {
         "protocol" : "https",
         "host" : "{{host}}",
-        "path" : "/api/script-tags"
+        "path" : "/api/script-tags",
+        "query" : [ {
+          "key" : "clientId",
+          "disabled" : false,
+          "description" : "Filters script-tags by the owning clientId."
+        } ]
       },
       "method" : "GET"
     },
@@ -14226,7 +14231,12 @@
         "url" : {
           "protocol" : "https",
           "host" : "{{host}}",
-          "path" : "/api/script-tags"
+          "path" : "/api/script-tags",
+          "query" : [ {
+            "key" : "clientId",
+            "disabled" : false,
+            "description" : "Filters script-tags by the owning clientId."
+          } ]
         },
         "method" : "GET"
       },
@@ -14236,7 +14246,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"_embedded\" : {\n    \"script-tags\" : [ {\n      \"_id\" : \"46d0ab6a-acb8-47ba-ae4f-73cd87160952\",\n      \"categories\" : [ ],\n      \"scriptUrl\" : \"https://example.com/scripts/exampleScript.js\"\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/script-tags?page=0&size=20\"\n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\" : 1,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}",
+      "body" : "{\n  \"_embedded\" : {\n    \"script-tags\" : [ {\n      \"_id\" : \"86c06227-3023-46d7-aa22-3c779c73f510\",\n      \"categories\" : [ ],\n      \"scriptUrl\" : \"https://example.com/scripts/exampleScript.js\"\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/script-tags?page=0&size=20\"\n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\" : 1,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}",
       "code" : 200
     } ]
   }, {
@@ -14318,7 +14328,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"_id\" : \"de1018f4-f5b7-48ab-83db-53282289e206\",\n  \"categories\" : [ ],\n  \"scriptUrl\" : \"https://example.com/scripts/updatedExampleScript.js\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/script-tags/de1018f4-f5b7-48ab-83db-53282289e206\"\n    }\n  }\n}",
+      "body" : "{\n  \"_id\" : \"99d41d2a-fdf6-4cf3-9954-c87df1849d5a\",\n  \"categories\" : [ ],\n  \"scriptUrl\" : \"https://example.com/scripts/updatedExampleScript.js\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/script-tags/99d41d2a-fdf6-4cf3-9954-c87df1849d5a\"\n    }\n  }\n}",
       "code" : 200
     } ]
   }, {
@@ -14352,7 +14362,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"_id\" : \"e5da2eb2-9d06-4fd3-b189-025f68026459\",\n  \"categories\" : [ \"PAYMENT\", \"ORDER\" ],\n  \"scriptUrl\" : \"https://example.com/scripts/exampleScript.js\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/script-tags/e5da2eb2-9d06-4fd3-b189-025f68026459\"\n    }\n  }\n}",
+      "body" : "{\n  \"_id\" : \"3a8715c8-2fb2-47f8-8593-398de5cfd4d6\",\n  \"categories\" : [ \"ORDER\", \"PAYMENT\" ],\n  \"scriptUrl\" : \"https://example.com/scripts/exampleScript.js\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/script-tags/3a8715c8-2fb2-47f8-8593-398de5cfd4d6\"\n    }\n  }\n}",
       "code" : 200
     } ]
   }, {
