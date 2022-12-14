@@ -1064,6 +1064,14 @@
             - title: List cross-selling products
               link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#product-view-list-cross-sell-products
               id: list_cross_selling_products
+        - title: Product attachments
+          entries:
+            - title: List product attachments
+              link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#product-view-attachments-list
+              id: list_attachments
+            - title: Show product attachment details
+              link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#product-view-attachment-get
+              id: show_attachment_details
         - title: Product categories
           entries:
             - title: List product categories
