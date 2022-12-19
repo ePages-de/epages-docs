@@ -35,18 +35,6 @@ For more detailed information on a specific event, see the section [Examples](#e
 | `shippingMethod:select` | Is triggered when a customer selects a shipping method or pickup option during checkout. Informs about the selected shipping method or pickup option. |
 | `paymentMethod:select` | Is triggered when a customer selects a payment method during checkout. Informs about the selected payment method. |
 
-## Deprecated events
-
-The following events are deprecated. Please use the respective alternatives that are further explained in the section [Available events](#available-events).
-
-| Event | Description | Alternative |
-| - |  - | - |
-| `pageview` | Is triggered when the customer opens or reloads a page. Informs about the path of the page. | `page:view` |
-| `product` | Is triggered when the customer accesses a product detail page. Informs about the respective product as well as the current state of the cart. | `product:view` |
-| `category` | Is triggered when the customer selects a category. Informs about the respective category and included products. | `category:view` |
-| `search` | Is triggered when the customer accesses the search results page. The event is also triggered when the customer updates the search results page, for example, by selecting the _Show more_ button. Informs about the number of search results, the search query, and the products included in the search results. | `searchResults:view` |
-| `cart` | Is triggered when the customer accesses the cart. Informs about the current state of the cart, for example, about included items. | `cart:view` |
-
 ## Examples
 
 This section explains how to make use of the single events and what to expect from them.
