@@ -1064,6 +1064,14 @@
             - title: List cross-selling products
               link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#product-view-list-cross-sell-products
               id: list_cross_selling_products
+        - title: Product attachments
+          entries:
+            - title: List product attachments
+              link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#product-view-attachments-list
+              id: list_attachments
+            - title: Show product attachment details
+              link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#product-view-attachment-get
+              id: show_attachment_details
         - title: Product categories
           entries:
             - title: List product categories
@@ -1271,15 +1279,15 @@
             - title: Delete webhook subscription
               link: https://api-docs.beyondshop.cloud/ng-webhook-webhook-public-api.html#resources-subscription-delete
               id: delete_webhook_subscription
-            - title: List webhook subscription failures
+            - title: List failed webhook deliveries
               link: https://api-docs.beyondshop.cloud/ng-webhook-webhook-public-api.html#resources-subscription-failures-list
-              id: list_webhook_subscription_failures
+              id: list_failed_webhook_deliveries
             - title: Retry failed webhook delivery
               link: https://api-docs.beyondshop.cloud/ng-webhook-webhook-public-api.html#resources-subscription-failure-retry
               id: retry_failed_webhook_delivery
-            - title: Delete webhook subscription failure
+            - title: Delete webhook delivery failure
               link: https://api-docs.beyondshop.cloud/ng-webhook-webhook-public-api.html#resources-subscription-failure-delete
-              id: delete_webhook_subscription_failure
+              id: delete_webhook_delivery_failure
         - title: Example callbacks
           entries:
             - title: Order events callback

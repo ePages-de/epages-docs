@@ -32,6 +32,8 @@ For more detailed information on a specific event, see the section [Examples](#e
 | `cart:setQuantity` | Is triggered when the quantity of a product in the cart is changed. This also includes the removal of a product. Informs about the quantity change and the affected line item. |
 | `cart:update` | Is triggered when the cart is changed on the cart overview. Informs about the current state of the cart, for example, about included items. |
 | `order:completed` | Is triggered when a customer who accepted all cookies reaches the order confirmation page after completing a purchase. Provides additional information about the order, such as the billing address, the order number, and the selected shipping method. |
+| `shippingMethod:select` | Is triggered when a customer selects a shipping method or pickup option during checkout. Informs about the selected shipping method or pickup option. |
+| `paymentMethod:select` | Is triggered when a customer selects a payment method during checkout. Informs about the selected payment method. |
 
 ## Deprecated events
 
@@ -63,7 +65,7 @@ if (window.eComEventTarget) {
 }
 ```
 
-Here's an example of what you can get:
+Here is an example response:
 
 ```
 url: /about-us
@@ -84,7 +86,7 @@ if (window.eComEventTarget) {
 }
 ```
 
-Here's an example of what you can get:
+Here is an example response:
 
 ```
 product: {
@@ -186,7 +188,7 @@ if (window.eComEventTarget) {
 }
 ```
 
-Here's an example of what you can get:
+Here is an example response:
 
 ```
 detail: "Cherry Jam"
@@ -259,7 +261,7 @@ if (window.eComEventTarget) {
 }
 ```
 
-Here's an example of what you can get:
+Here is an example response:
 
 ```
 locale: "en_GB"
@@ -281,7 +283,7 @@ if (window.eComEventTarget) {
   })
 }
 ```
-Here's an example of what you can get:
+Here is an example response:
 
 ```
 category: {
@@ -423,7 +425,7 @@ if (window.eComEventTarget) {
 }
 ```
 
-Here's an example of what you can get:
+Here is an example response:
 
 ```
 products: Array(2) {
@@ -547,7 +549,7 @@ if (window.eComEventTarget) {
 }
 ```
 
-Here's an example of what you can get:
+Here is an example response:
 
 ```
 cart: {
@@ -599,7 +601,7 @@ if (window.eComEventTarget) {
 }
 ```
 
-Here's an example of what you can get:
+Here is an example response:
 
 ```
 cart: {
@@ -701,7 +703,7 @@ if (window.eComEventTarget) {
 }
 ```
 
-Here's an example of what you can get:
+Here is an example response:
 
 ```
 lineItem: {
@@ -740,7 +742,7 @@ if (window.eComEventTarget) {
 }
 ```
 
-Here's an example of what you can get:
+Here is an example response:
 
 ```
 cart: {
@@ -794,7 +796,7 @@ if (window.eComEventTarget) {
 }
 ```
 
-Here's an example of what you can get:
+Here is an example response:
 
 ```
 order: {
@@ -810,4 +812,50 @@ order: {
   shippingData: {shippingMethod: {…}, price: {…}, taxes: Array(1)}
   totalTax: "3.2"
 }
+```
+
+### shippingMethod:select
+
+To get more information about this event, you can use the following snippet:
+
+```js
+if (window.eComEventTarget) {
+  window.eComEventTarget.addEventListener('shippingMethod:select', function (event) {
+    console.log('shippingMethod:select', {
+      shippingMethod: event.detail.shippingMethod,
+    })
+  })
+}
+```
+
+Here is an example response:
+
+```
+shippingMethod: {
+  _id: "631E19A1-AD54-518D-B836-AC120004711F",
+  name: "Standardzustellung",
+  lineItemPrice: {"currency": "EUR", "taxType": "GROSS", "amount": 7, "formatted": "7,00 €"}}
+```
+
+### paymentMethod:select
+
+To get more information about this event, you can use the following snippet:
+
+```js
+if (window.eComEventTarget) {
+  window.eComEventTarget.addEventListener('paymentMethod:select', function (event) {
+    console.log('paymentMethod:select', {
+      paymentMethod: event.detail.paymentMethod,
+    })
+  })
+}
+```
+
+Here is an example response:
+
+```
+paymentMethod: {
+  _id: "631E19A2-4D4E-CD42-641A-AC120004718A",
+  name: "Vorkasse",
+  lineItemPrice: {"currency": "EUR", "taxType": "GROSS", "amount": 3.2, "formatted": "3,20 €"}}
 ```
