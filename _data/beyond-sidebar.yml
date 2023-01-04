@@ -546,7 +546,7 @@
               id: show_order_export_status
         - title: Order processes
           entries:
-            - title: Overview
+            - title: General
               entries:
                 - title: List order processes
                   link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-processes-get
