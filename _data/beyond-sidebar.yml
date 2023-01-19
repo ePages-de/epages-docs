@@ -546,99 +546,113 @@
               id: show_order_export_status
         - title: Order processes
           entries:
-            - title: List order processes
-              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-processes-get
-              id: list_order_processes
-            - title: Create cancelation process
-              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-cancel-processes-create
-              id: create_cancelation_processes
-            - title: List cancelation processes
-              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-cancel-processes-list
-              id: list_cancelation_processes
-            - title: Show cancelation process details
-              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-cancel-process-get
-              id: show_cancelation_process_details
-            - title: List payment processes
-              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-payment-processes-list
-              id: list_payment_processes
-            - title: Show payment process details
-              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-payment-process-get
-              id: show_payment_process_details
-            - title: Show online payment process details
-              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-online-payment-process-get
-              id: show_online_payment_process_details
-            - title: Show active payment process details
-              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-active-payment-process-get
-              id: show_active_payment_process_details
-            - title: Mark payment process as voided
-              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-payment-process-mark-voided
-              id: mark_payment_process_as_voided
-            - title: Mark payment process as paid
-              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-payment-process-mark-paid
-              id: mark_payment_process_as_paid
-            - title: Capture payment
-              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-payment-process-capture
-              id: capture_payment
-            - title: Create pickup process
-              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-pickup-processes-create
-              id: create_pickup_processes
-            - title: Create multiple pickup processes
-              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-batch-actions-create-packingslips-pickup
-              id: create_multiple_pickup_processes
-            - title: List pickup processes
-              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-pickup-processes-list
-              id: list_pickup_processes
-            - title: Show pickup process details
-              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-pickup-process-get
-              id: show_pickup_process_details
-            - title: Mark pickup process as picked up
-              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-pickup-process-mark-picked-up
-              id: mark_pickup_process_as_picked_up
-            - title: Combine multiple pickup packing slips
-              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-batch-actions-merge-packingslips-pickup
-              id: combine_multiple_pickup_packing_slips
-            - title: List refund processes
-              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-refund-processes-list
-              id: list_refund_processes
-            - title: Show refund process details
-              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-refund-process-get
-              id: show_refund_process_details
-            - title: Show active refund process details
-              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-active-refund-process-get
-              id: show_active_refund_process_details
-            - title: Mark refund process as paid
-              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-refund-process-mark-paid
-              id: mark_refund_process_as_paid
-            - title: Create return process
-              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-return-processes-create
-              id: create_return_processes
-            - title: List return processes
-              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-return-processes-list
-              id: list_return_processes
-            - title: Show return process details
-              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-return-process-get
-              id: show_return_process_details
-            - title: Create shipping process
-              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-shipping-processes-create
-              id: create_shipping_processes
-            - title: Create multiple shipping processes
-              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-batch-actions-create-packingslips-shipping
-              id: create_multiple_shipping_processes
-            - title: List shipping processes
-              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-shipping-processes-list
-              id: list_shipping_processes
-            - title: Show shipping process details
-              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-shipping-process-get
-              id: show_shipping_process_details
-            - title: Mark shipment as shipped
-              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-shipping-process-mark-shipped
-              id: mark_shipment_as_shipped
-            - title: Mark shipment as delivered
-              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-shipping-process-mark-delivered
-              id: mark_shipment_as_delivered
-            - title: Combine multiple shipping packing slips
-              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-batch-actions-merge-packingslips-shipping
-              id: combine_multiple_shipping_packing_slips
+            - title: General
+              entries:
+                - title: List order processes
+                  link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-processes-get
+                  id: list_order_processes
+            - title: Cancelation processes
+              entries:
+                - title: Create cancelation process
+                  link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-cancel-processes-create
+                  id: create_cancelation_processes
+                - title: List cancelation processes
+                  link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-cancel-processes-list
+                  id: list_cancelation_processes
+                - title: Show cancelation process details
+                  link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-cancel-process-get
+                  id: show_cancelation_process_details
+            - title: Payment processes
+              entries:
+                - title: List payment processes
+                  link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-payment-processes-list
+                  id: list_payment_processes
+                - title: Show payment process details
+                  link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-payment-process-get
+                  id: show_payment_process_details
+                - title: Show online payment process details
+                  link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-online-payment-process-get
+                  id: show_online_payment_process_details
+                - title: Show active payment process details
+                  link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-active-payment-process-get
+                  id: show_active_payment_process_details
+                - title: Mark payment process as voided
+                  link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-payment-process-mark-voided
+                  id: mark_payment_process_as_voided
+                - title: Mark payment process as paid
+                  link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-payment-process-mark-paid
+                  id: mark_payment_process_as_paid
+                - title: Capture payment
+                  link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-payment-process-capture
+                  id: capture_payment
+            - title: Pickup processes
+              entries:
+                - title: Create pickup process
+                  link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-pickup-processes-create
+                  id: create_pickup_processes
+                - title: Create multiple pickup processes
+                  link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-batch-actions-create-packingslips-pickup
+                  id: create_multiple_pickup_processes
+                - title: List pickup processes
+                  link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-pickup-processes-list
+                  id: list_pickup_processes
+                - title: Show pickup process details
+                  link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-pickup-process-get
+                  id: show_pickup_process_details
+                - title: Mark pickup process as picked up
+                  link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-pickup-process-mark-picked-up
+                  id: mark_pickup_process_as_picked_up
+                - title: Combine multiple pickup packing slips
+                  link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-batch-actions-merge-packingslips-pickup
+                  id: combine_multiple_pickup_packing_slips
+            - title: Refund processes
+              entries:
+                - title: List refund processes
+                  link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-refund-processes-list
+                  id: list_refund_processes
+                - title: Show refund process details
+                  link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-refund-process-get
+                  id: show_refund_process_details
+                - title: Show active refund process details
+                  link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-active-refund-process-get
+                  id: show_active_refund_process_details
+                - title: Mark refund process as paid
+                  link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-refund-process-mark-paid
+                  id: mark_refund_process_as_paid
+            - title: Return processes
+              entries:
+                - title: Create return process
+                  link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-return-processes-create
+                  id: create_return_processes
+                - title: List return processes
+                  link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-return-processes-list
+                  id: list_return_processes
+                - title: Show return process details
+                  link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-return-process-get
+                  id: show_return_process_details
+            - title: Shipping processes
+              entries:
+                - title: Create shipping process
+                  link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-shipping-processes-create
+                  id: create_shipping_processes
+                - title: Create multiple shipping processes
+                  link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-batch-actions-create-packingslips-shipping
+                  id: create_multiple_shipping_processes
+                - title: List shipping processes
+                  link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-shipping-processes-list
+                  id: list_shipping_processes
+                - title: Show shipping process details
+                  link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-shipping-process-get
+                  id: show_shipping_process_details
+                - title: Mark shipment as shipped
+                  link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-shipping-process-mark-shipped
+                  id: mark_shipment_as_shipped
+                - title: Mark shipment as delivered
+                  link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-shipping-process-mark-delivered
+                  id: mark_shipment_as_delivered
+                - title: Combine multiple shipping packing slips
+                  link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-batch-actions-merge-packingslips-shipping
+                  id: combine_multiple_shipping_packing_slips
         - title: Order settings
           entries:
             - title: List order settings
@@ -1064,6 +1078,14 @@
             - title: List cross-selling products
               link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#product-view-list-cross-sell-products
               id: list_cross_selling_products
+        - title: Product attachments
+          entries:
+            - title: List product attachments
+              link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#product-view-attachments-list
+              id: list_attachments
+            - title: Show product attachment details
+              link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#product-view-attachment-get
+              id: show_attachment_details
         - title: Product categories
           entries:
             - title: List product categories
