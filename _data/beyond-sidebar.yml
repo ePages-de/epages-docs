@@ -47,32 +47,46 @@
           link: https://api-docs.beyondshop.cloud/index-errors.html#errors-validation-errors
           id: validation_errors
 
-- title: App development
+- title: Beyond apps
   entries:
-    - title: Scopes
-      link: https://api-docs.beyondshop.cloud/index-apps.html#_scopes
-      id: scopes
-    - title: Preparation
-      link: https://api-docs.beyondshop.cloud/index-apps.html#_preparation
-      id: preparation
-    - title: Authentication
-      link: https://api-docs.beyondshop.cloud/index-apps.html#_authentication
-      id: authentication
-    - title: Test authorization
-      link: https://api-docs.beyondshop.cloud/index-apps.html#_test_authorization
-      id: test_authorization
-    - title: Submit app
-      link: https://api-docs.beyondshop.cloud/index-apps.html#_submit_app
-      id: submit_app
-    - title: Submission guidelines
-      link: https://api-docs.beyondshop.cloud/index-apps.html#_submission_guidelines
-      id: submission_guidelines
-    - title: Events
-      link: https://api-docs.beyondshop.cloud/index-apps.html#_events
-      id: events
-    - title: Signers
-      link: https://api-docs.beyondshop.cloud/ng-auth-auth-public-api.html#_signers
-      id: signers
+    - title: Introduction
+      link: https://api-docs.beyondshop.cloud/index-apps.html#apps-introduction
+      id: apps_introduction
+    - title: App integration levels
+      link: https://api-docs.beyondshop.cloud/index-apps.html#app-integration-levels
+      id: app_integration_levels
+    - title: App conception
+      entries:
+        - title: Scopes
+          link: https://api-docs.beyondshop.cloud/index-apps.html#authentication-scopes
+          id: scopes
+        - title: Events
+          link: https://api-docs.beyondshop.cloud/index-apps.html#events
+          id: events
+    - title: App creation
+      entries:
+        - title: How to create an app
+          link: https://api-docs.beyondshop.cloud/index-apps.html#authentication-private-apps
+          id: preparation
+        - title: How to verify requests from ePages
+          link: https://api-docs.beyondshop.cloud/ng-auth-auth-public-api.html#resources-signers
+          id: signers
+    - title: App authorization
+      entries:
+        - title: How to implement an authorization flow
+          link: https://api-docs.beyondshop.cloud/index-apps.html#authentication-auth
+          id: authentication
+        - title: How to run a test authorization
+          link: https://api-docs.beyondshop.cloud/index-apps.html#test-authorization
+          id: test_authorization
+    - title: App submission
+      entries:
+        - title: Submission guidelines
+          link: https://api-docs.beyondshop.cloud/index-apps.html#submission-guidelines
+          id: submission_guidelines
+        - title: How to submit your app
+          link: https://api-docs.beyondshop.cloud/index-apps.html#submit-an-app
+          id: submit-an-app
 
 - title: Tutorials
   entries:
