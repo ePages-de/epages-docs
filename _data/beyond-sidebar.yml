@@ -67,7 +67,7 @@
       entries:
         - title: How to create an app
           link: https://api-docs.beyondshop.cloud/index-apps.html#authentication-private-apps
-          id: preparation
+          id: create_app
         - title: How to verify requests from ePages
           link: https://api-docs.beyondshop.cloud/ng-auth-auth-public-api.html#resources-signers
           id: signers
@@ -75,7 +75,7 @@
       entries:
         - title: How to implement an authorization flow
           link: https://api-docs.beyondshop.cloud/index-apps.html#authentication-auth
-          id: authentication
+          id: implement_authorization
         - title: How to run a test authorization
           link: https://api-docs.beyondshop.cloud/index-apps.html#test-authorization
           id: test_authorization
