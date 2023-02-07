@@ -64,13 +64,8 @@
           link: https://api-docs.beyondshop.cloud/index-apps.html#events
           id: events
     - title: App creation
-      entries:
-        - title: How to create an app
-          link: https://api-docs.beyondshop.cloud/index-apps.html#app-creation
-          id: create_app
-        - title: How to verify requests from ePages
-          link: https://api-docs.beyondshop.cloud/ng-auth-auth-public-api.html#resources-signers
-          id: signers
+      link: https://api-docs.beyondshop.cloud/index-apps.html#app-creation
+      id: create_app
     - title: App authorization
       entries:
         - title: How to implement an authorization flow
@@ -79,6 +74,9 @@
         - title: How to run a test authorization
           link: https://api-docs.beyondshop.cloud/index-apps.html#test-authorization
           id: test_authorization
+        - title: How to verify requests from ePages
+          link: https://api-docs.beyondshop.cloud/ng-auth-auth-public-api.html#resources-signers
+          id: signers
     - title: App submission
       entries:
         - title: Submission guidelines
