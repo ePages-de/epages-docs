@@ -95,15 +95,16 @@ product: {
     hasVariations: false
     href: "/p/homemade-cherry-jam"
     image: null
+    isStrikePriceRRP: false
     isVariationMaster: false
     isVariationProduct: false
     isVisible: true
     links: (5) [{…}, {…}, {…}, {…}, {…}]
-    listPrice: null
+    listPrice: null // deprecated, use strikePrice and isStrikePriceRRP instead
     lowestPrice: null
     mainCategoryId: "5954B711-E377-2A90-C400-D5809AB3F62B"
     manufacturer: null
-    manufacturerPrice: null
+    manufacturerPrice: null // deprecated, use strikePrice and isStrikePriceRRP instead
     metaDescription: ""
     name: "Homemade Cherry Jam"
     onStock: true
@@ -119,6 +120,7 @@ product: {
     slug: "homemade-cherry-jam"
     stockLevelClass: "in"
     stockLevelMicrodata: "InStock"
+    strikePrice: null
     title: "Homemade Cherry Jam"
     variationMaster: null
     variations: null
@@ -198,15 +200,16 @@ product: {
     hasVariations: false
     href: "/p/homemade-cherry-jam"
     image: null
+    isStrikePriceRRP: false
     isVariationMaster: false
     isVariationProduct: false
     isVisible: true
     links: (5) [{…}, {…}, {…}, {…}, {…}]
-    listPrice: null
+    listPrice: null // deprecated, use strikePrice and isStrikePriceRRP instead
     lowestPrice: null
     mainCategoryId: "5954B711-E377-2A90-C400-D5809AB3F62B"
     manufacturer: null
-    manufacturerPrice: null
+    manufacturerPrice: null // deprecated, use strikePrice and isStrikePriceRRP instead
     metaDescription: ""
     name: "Homemade Cherry Jam"
     onStock: true
@@ -222,6 +225,7 @@ product: {
     slug: "homemade-cherry-jam"
     stockLevelClass: "in"
     stockLevelMicrodata: "InStock"
+    strikePrice: null
     title: "Homemade Cherry Jam"
     variationMaster: null
     variations: null
@@ -314,15 +318,16 @@ products: Array (2) {
     hasVariations: false
     href: "/p/homemade-cherry-jam"
     image: null
+    isStrikePriceRRP: false
     isVariationMaster: false
     isVariationProduct: false
     isVisible: true
     links: (5) [{…}, {…}, {…}, {…}, {…}]
-    listPrice: null
+    listPrice: null // deprecated, use strikePrice and isStrikePriceRRP instead
     lowestPrice: null
     mainCategoryId: "5954B711-E377-2A90-C400-D5809AB3F62B"
     manufacturer: null
-    manufacturerPrice: null
+    manufacturerPrice: null // deprecated, use strikePrice and isStrikePriceRRP instead
     metaDescription: ""
     name: "Homemade Cherry Jam"
     onStock: true
@@ -338,6 +343,7 @@ products: Array (2) {
     slug: "homemade-cherry-jam"
     stockLevelClass: "in"
     stockLevelMicrodata: "InStock"
+    strikePrice: null
     title: "Homemade Cherry Jam"
     variationMaster: null
     variations: null
@@ -363,15 +369,16 @@ products: Array (2) {
     hasVariations: false
     href: "/p/homemade-strawberry-jam"
     image: null
+    isStrikePriceRRP: false
     isVariationMaster: false
     isVariationProduct: false
     isVisible: true
     links: (5) [{…}, {…}, {…}, {…}, {…}]
-    listPrice: null
+    listPrice: null // deprecated, use strikePrice and isStrikePriceRRP instead
     lowestPrice: null
     mainCategoryId: "5954B711-E377-2A90-C400-D5809AB3F62B"
     manufacturer: null
-    manufacturerPrice: null
+    manufacturerPrice: null // deprecated, use strikePrice and isStrikePriceRRP instead
     metaDescription: ""
     name: "Homemade Strawberry Jam"
     onStock: true
@@ -387,6 +394,7 @@ products: Array (2) {
     slug: "homemade-strawberry-jam"
     stockLevelClass: "in"
     stockLevelMicrodata: "InStock"
+    strikePrice: null
     title: "Homemade Strawberry Jam"
     variationMaster: null
     variations: null
@@ -435,15 +443,16 @@ products: Array(2) {
     hasVariations: false
     href: "/p/homemade-cherry-jam"
     image: null
+    isStrikePriceRRP: false
     isVariationMaster: false
     isVariationProduct: false
     isVisible: true
     links: (5) [{…}, {…}, {…}, {…}, {…}]
-    listPrice: null
+    listPrice: null // deprecated, use strikePrice and isStrikePriceRRP instead
     lowestPrice: null
     mainCategoryId: "5954B711-E377-2A90-C400-D5809AB3F62B"
     manufacturer: null
-    manufacturerPrice: null
+    manufacturerPrice: null // deprecated, use strikePrice and isStrikePriceRRP instead
     metaDescription: ""
     name: "Homemade Cherry Jam"
     onStock: true
@@ -459,6 +468,7 @@ products: Array(2) {
     slug: "homemade-cherry-jam"
     stockLevelClass: "in"
     stockLevelMicrodata: "InStock"
+    strikePrice: null
     title: "Homemade Cherry Jam"
     variationMaster: null
     variations: null
@@ -484,15 +494,16 @@ products: Array(2) {
     hasVariations: false
     href: "/p/homemade-strawberry-jam"
     image: null
+    isStrikePriceRRP: false
     isVariationMaster: false
     isVariationProduct: false
     isVisible: true
     links: (5) [{…}, {…}, {…}, {…}, {…}]
-    listPrice: null
+    listPrice: null // deprecated, use strikePrice and isStrikePriceRRP instead
     lowestPrice: null
     mainCategoryId: "5954B711-E377-2A90-C400-D5809AB3F62B"
     manufacturer: null
-    manufacturerPrice: null
+    manufacturerPrice: null // deprecated, use strikePrice and isStrikePriceRRP instead
     metaDescription: ""
     name: "Homemade Strawberry Jam"
     onStock: true
@@ -508,6 +519,7 @@ products: Array(2) {
     slug: "homemade-strawberry-jam"
     stockLevelClass: "in"
     stockLevelMicrodata: "InStock"
+    strikePrice: null
     title: "Homemade Strawberry Jam"
     variationMaster: null
     variations: null
@@ -641,15 +653,16 @@ product: {
     hasVariations: false
     href: "/p/homemade-cherry-jam"
     image: null
+    isStrikePriceRRP: false
     isVariationMaster: false
     isVariationProduct: false
     isVisible: true
     links: (5) [{…}, {…}, {…}, {…}, {…}]
-    listPrice: null
+    listPrice: null // deprecated, use strikePrice and isStrikePriceRRP instead
     lowestPrice: null
     mainCategoryId: "5954B711-E377-2A90-C400-D5809AB3F62B"
     manufacturer: null
-    manufacturerPrice: null
+    manufacturerPrice: null // deprecated, use strikePrice and isStrikePriceRRP instead
     metaDescription: ""
     name: "Homemade Cherry Jam"
     onStock: true
@@ -665,6 +678,7 @@ product: {
     slug: "homemade-cherry-jam"
     stockLevelClass: "in"
     stockLevelMicrodata: "InStock"
+    strikePrice: null
     title: "Homemade Cherry Jam"
     variationMaster: null
     variations: null

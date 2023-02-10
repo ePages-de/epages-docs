@@ -14,6 +14,16 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
+## 2023-0?-??
+
+### Changes with software release 7.?.?
+
+#### <i class="fa fa-minus"></i> Deprecate
+
+* The properties `listPrice` and `manufacturerPrice` in the `product` and `products` properties of the [events](https://developer.epages.com/apps/events.html) `product:view`, `product:click`, `category:view`, `searchResults:view`, and `cart:add` are deprecated and will be removed on ? ?th, 2023. As a replacement, the new properties `strikePrice` and `isStrikePriceRRP` have been added.
+
+<hr>
+
 ## 2023-01-19
 
 ### Changes with software release 7.79.0
