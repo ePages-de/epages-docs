@@ -139,7 +139,7 @@ post:
         description: Includes invisible products. Only available with `products_write` authorisation.
         type: boolean
         required: false
-    description: Returns information on the crossselling of products. *epagesNow
+    description: Returns information on the cross-selling assignments of a single product. *epagesNow
     securedBy: [products_read]
     responses:
       200:
@@ -149,7 +149,7 @@ post:
             schema: !include schema/get_product_productid_crossselling.schema.json
 
   put:
-    description: Replace all cross selling assignments
+    description: Modifies information on the cross-selling assignments of a single product by replacing all of the assignments. *epagesNow
     securedBy: [products_write]
     body:
       application/json:
@@ -163,7 +163,7 @@ post:
             schema: !include schema/get_product_productid_crossselling.schema.json
 
   patch:
-    description: Add/Remove cross selling assignments
+    description: Updates information on the cross-selling assignments for a single product with partial data according to [RFC 6902](https://tools.ietf.org/html/rfc6902). You can either add or remove assignments. *epagesNow
     securedBy: [products_write]
     body:
       application/json:
