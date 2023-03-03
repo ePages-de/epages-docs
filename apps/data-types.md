@@ -603,7 +603,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | videos | array of [video](page:apps-data-types#video) | The videos belonging to the product. |
 | isCustomizable | boolean | Indicates if the product is customizable in the storefront. |
 | customizableTextLength | number | The maximum length of the custom text the customer can enter for a product in the storefront. |
-| customizableHeadlineText | string | Headline text that can used to anounce the customization for a product in the storefront. |
+| customizableHeadlineText | string | The headline for the customization text field in the storefront. |
 
 ## product (create request)
 
