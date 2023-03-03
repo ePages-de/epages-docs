@@ -10,7 +10,7 @@ gem "raml_parser", "~> 0.2"
 gem "rubyzip", "~> 1.3"
 gem "nokogiri", "~> 1.12"
 gem "kramdown-parser-gfm", "~> 1.1"
-gem "activesupport", "~> 5.2.4.3"
+gem "activesupport", "~> 6.0.6.1"
 
 group :jekyll_plugins do
   gem "jekyll-include-cache", "~> 0.1"
