@@ -285,6 +285,7 @@
         "isProductNumberVisible": true,
         "isManufacturerPriceRRP": true,
         "isShippingLinkVisible": true,
+        "isNew": false,
         "manufacturer": "Bass by Dr.Boom",
         "upc": null,
         "ean": null,
