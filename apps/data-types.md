@@ -582,7 +582,6 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | isNew | boolean | Indicates if the product is displayed as new in the storefront. |
 | isManufacturerPriceRRP | boolean | Indicates if the manufacturer price is marked as RRP. |
 | isShippingLinkVisible | boolean | Indicates if a shipping cost reference that links to the shop's payment & shipping page is displayed together with the product price in the storefront. |
-| isNew | boolean | Indicates if the product should be displayed as in the storefront. |
 | productImage | string | The name of the product image. |
 | images | array of [image](page:apps-data-types#image) | The images belonging to the product. |
 | manufacturer | string | The manufacturer of the product. |
