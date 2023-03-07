@@ -178,6 +178,7 @@ ePages Now only!
 | description | string | The description of the category. |
 | navigationCaption | string | The name of the category page that appears in the navigation bar. |
 | visible | boolean | Indicates if the category is displayed in the shop. |
+| visibleInNavigation | boolean | Indicates if the category is displayed in the shop navigation. |
 
 ## contactInfo
 
