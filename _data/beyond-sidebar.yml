@@ -2,7 +2,7 @@
   entries:
     - title: Introduction
       link: https://api-docs.beyondshop.cloud/index-introduction.html
-      id: introduction
+      id: index-introduction
     - title: About the API
       entries:
         - title: HTTP verbs
