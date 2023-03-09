@@ -146,7 +146,7 @@
         {
           "quantity": {
             "amount": 9,
-            "unit": "Stück"
+            "unit": "piece(s)"
           },
           "price": {
             "taxType": "GROSS",
