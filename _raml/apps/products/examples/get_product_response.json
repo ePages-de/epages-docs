@@ -335,7 +335,7 @@
           "percentage": 19
         },
         "price": {
-          "taxType": "NET",
+          "taxType": "GROSS",
           "formatted": "126.04 €",
           "amount": 126.04,
           "currency": "EUR"
@@ -343,19 +343,19 @@
         "depositPrice": null,
         "ecoParticipationPrice": null,
         "priceWithDeposits": {
-          "taxType": "NET",
+          "taxType": "GROSS",
           "formatted": "42.02 €",
           "amount": 42.02,
           "currency": "EUR"
         },
         "lowestPrice": {
-            "taxType": "NET",
+            "taxType": "GROSS",
             "formatted": "39.50 €",
             "amount": 39.5,
             "currency": "EUR"
         },
         "highestPrice": {
-          "taxType": "NET",
+          "taxType": "GROSS",
           "formatted": "131.70 €",
           "amount": 131.7,
           "currency": "EUR"
@@ -422,52 +422,52 @@
           "priceInfo": [
             {
               "quantity": {
-                "amount": 1,
-                "unit":"piece(s)"
+                "amount": 5,
+                "unit": "piece(s)"
               },
               "price": {
                 "taxType": "GROSS",
-                "formatted": "135.00 €",
-                "amount": 135,
+                "formatted": "100.00 €",
+                "amount": 100.00,
                 "currency": "EUR"
               },
               "basePrice": null,
               "priceSavings": {
                 "percent": {
-                  "formatted": "10 %",
-                  "percentage": 10.0
+                  "formatted": "5 %",
+                  "percentage": 5.0
                 },
                 "regularBulkPrice": {
                   "taxType": "GROSS",
-                  "formatted": "150.00 €",
-                  "amount": 150,
+                  "formatted": "105.00 €",
+                  "amount": 105,
                   "currency": "EUR"
                 }
               }
             },
             {
               "quantity": {
-                  "amount": 9,
-                  "unit": "piece(s)"
+                "amount": 10,
+                "unit": "piece(s)"
               },
               "price": {
-                  "taxType": "GROSS",
-                  "formatted": "90,00 €",
-                  "amount": 90,
-                  "currency": "EUR"
+                "taxType": "GROSS",
+                "formatted": "90.00 €",
+                "amount": 90,
+                "currency": "EUR"
               },
               "basePrice": null,
               "priceSavings": {
-                  "percent": {
-                      "formatted": "10 %",
-                      "percentage": 10.0
-                  },
-                  "regularBulkPrice": {
-                      "taxType": "GROSS",
-                      "formatted": "100,00 €",
-                      "amount": 100,
-                      "currency": "EUR"
-                  }
+                "percent": {
+                  "formatted": "0 %",
+                  "percentage": 0.0
+                },
+                "regularBulkPrice": {
+                  "taxType": "GROSS",
+                  "formatted": "90.00 €",
+                  "amount": 90,
+                  "currency": "EUR"
+                }
               }
             }
           ]

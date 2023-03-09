@@ -95,25 +95,25 @@
         },
         {
           "quantity": {
-              "amount": 9,
+              "amount": 5,
               "unit": "piece(s)"
           },
           "price": {
               "taxType": "GROSS",
-              "formatted": "90,00 €",
-              "amount": 90,
+              "formatted": "120.00 €",
+              "amount": 120,
               "currency": "EUR"
           },
           "basePrice": null,
           "priceSavings": {
               "percent": {
-                  "formatted": "10 %",
-                  "percentage": 10.0
+                  "formatted": "0 %",
+                  "percentage": 0.0
               },
               "regularBulkPrice": {
                   "taxType": "GROSS",
-                  "formatted": "100,00 €",
-                  "amount": 100,
+                  "formatted": "120.00 €",
+                  "amount": 120,
                   "currency": "EUR"
               }
           }

@@ -19,19 +19,14 @@
   "value": [{"customerGroup":"KG1",
                 "priceInfo": [
                   {
-                    "quantity" : 4,
-                    "price" : 222.00,
-                    "discountPercentage" : 20 
-                  },
-                  {
-                    "quantity" : 9,
-                    "price" : 100.00,
+                    "quantity" : 5,
+                    "price" : 55.00,
                     "discountPercentage" : 10 
                   },
                   {
-                    "quantity" : 55,
-                    "price" : 100.00,
-                    "discountPercentage" : 30 
+                    "quantity" : 10,
+                    "price" : 45.00,
+                    "discountPercentage" : 0 
                   }
                 ]
             }]
