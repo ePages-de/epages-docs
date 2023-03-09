@@ -110,7 +110,7 @@ ePages Now only!
 | - | - |  - |
 | customerGroup | string | The name of the customer group. |
 | customerGroupId | string | The unique identifier of the customer group. |
-| priceInfo | array of [bulkPriceInfo](page:apps-data-types#bulkPriceInfo) | The price information scaled to a standardised base unit, according to the German 
+| priceInfo | array of [bulkPriceInfo](page:apps-data-types#bulkPriceInfo) | The price information scaled to a standardised base unit, according to the German |
 
 ## cart
 
