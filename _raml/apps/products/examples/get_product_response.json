@@ -370,19 +370,19 @@
             "unit":"piece(s)"
           },
           "price": {
-            "taxType": "NET",
-            "formatted": "90.00 €",
-            "amount": 90,
+            "taxType": "GROSS",
+            "formatted": "100.00 €",
+            "amount": 100,
             "currency": "EUR"
           },
           "basePrice": null,
           "priceSavings": {
             "percent": {
-              "formatted": "10 %",
-              "percentage": 10.0
+              "formatted": "0 %",
+              "percentage": 0.0
             },
             "regularBulkPrice": {
-              "taxType": "NET",
+              "taxType": "GROSS",
               "formatted": "100.00 €",
               "amount": 100,
               "currency": "EUR"
@@ -395,19 +395,19 @@
             "unit":"piece(s)"
           },
           "price": {
-            "taxType": "NET",
-            "formatted": "108.00 €",
-            "amount": 108,
+            "taxType": "GROSS",
+            "formatted": "120.00 €",
+            "amount": 120,
             "currency": "EUR"
           },
           "basePrice": null,
           "priceSavings": {
             "percent": {
-              "formatted": "10 %",
-              "percentage": 10.0
+              "formatted": "0 %",
+              "percentage": 0.0
             },
             "regularBulkPrice": {
-              "taxType": "NET",
+              "taxType": "GROSS",
               "formatted": "120.00 €",
               "amount": 120,
               "currency": "EUR"
