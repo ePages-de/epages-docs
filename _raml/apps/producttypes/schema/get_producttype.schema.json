@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "Get Customers Schema",
+  "type": "object",
+  "properties": {
+    "results": {
+      "type": "integer",
+      "description": "The number of producttypes in total."
+    },
+    "page": {
+      "type": "integer",
+      "description": "The page number on which the producttypes appear."
+    },
+    "resultsPerPage": {
+      "type": "integer",
+      "description": "The number of producttypes returned per page."
+    },
+    "items": {
+      "type": "array of [producttype](page:apps-data-types#producttype)",
+      "description": "The list of all producttypes."
+    }
+  }
+}

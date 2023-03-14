@@ -1,0 +1,98 @@
+{
+  "page": 1,
+  "items": [
+    {
+      "name": "Kleidung",
+      "productTypeId": "63FF625D-B175-6090-2AC1-AC150003B898",
+      "attributes": [
+        {
+          "visible": 0,
+          "name": "Farbe",
+          "values": [
+            {
+              "value": "blau",
+              "name": "blau"
+            },
+            {
+              "value": "rot",
+              "name": "rot"
+            }
+          ],
+          "preDefAttribute": 1
+        },
+        {
+          "visible": 0,
+          "name": "Größe",
+          "values": [
+            {
+              "value": "S",
+              "name": "S"
+            },
+            {
+              "value": "M",
+              "name": "M"
+            },
+            {
+              "value": "L",
+              "name": "L"
+            }
+          ],
+          "preDefAttribute": 1
+        }
+      ],
+      "alias": "Kleidung"
+    },
+    {
+      "name": "Schuhe",
+      "productTypeId": "63FF625D-8E5B-3FF7-0263-AC150003B8C5",
+      "attributes": [
+        {
+          "visible": 0,
+          "name": "Größe",
+          "values": [
+            {
+              "value": "32",
+              "name": "32"
+            },
+            {
+              "value": "33",
+              "name": "33"
+            },
+            {
+              "value": "34",
+              "name": "34"
+            },
+            {
+              "value": "35",
+              "name": "35"
+            },
+            {
+              "value": "36",
+              "name": "36"
+            },
+            {
+              "value": "37",
+              "name": "37"
+            },
+            {
+              "value": "38",
+              "name": "38"
+            },
+            {
+              "value": "39",
+              "name": "39"
+            },
+            {
+              "value": "40",
+              "name": "40"
+            }
+          ],
+          "preDefAttribute": 1
+        }
+      ],
+      "alias": "Schuhe"
+    }
+  ],
+  "resultsPerPage": 10,
+  "results": 2
+}
