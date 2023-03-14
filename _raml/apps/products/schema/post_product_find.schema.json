@@ -9,7 +9,7 @@
     },
     "page": {
       "type": "integer",
-      "description": "The page number on which the found products appears."
+      "description": "The page number on which the found products appear."
     },
     "resultsPerPage": {
       "type": "integer",
