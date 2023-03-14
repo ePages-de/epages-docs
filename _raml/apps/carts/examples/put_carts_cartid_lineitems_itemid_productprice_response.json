@@ -141,7 +141,8 @@
               "deliveryWeight": null,
               "energyLabelsString": null,
               "energyLabelsMaxEfficiencyString": null,
-              "energyLabelSourceFile": null
+              "energyLabelSourceFile": null,
+              "productDataSheetSourceFile": null
           }
       ],
       "couponLineItem": null,
