@@ -3990,7 +3990,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"hash\" : \"82432abcc2997929f80c567f1664788965df8f8f\",\n  \"mediaType\" : \"application/pdf\",\n  \"groupName\" : \"1438\",\n  \"length\" : 11967,\n  \"fileName\" : \"invoice_10013.pdf\",\n  \"relativeUrl\" : \"invoice_10013.pdf?hash=82432abcc2997929f80c567f1664788965df8f8f\",\n  \"relativeDownloadUrl\" : \"invoice_10013.pdf?hash=82432abcc2997929f80c567f1664788965df8f8f\",\n  \"_id\" : \"554e8d45-0873-4076-8601-b0d82e245969\"\n}",
+      "body" : "{\n  \"hash\" : \"82432abcc2997929f80c567f1664788965df8f8f\",\n  \"mediaType\" : \"application/pdf\",\n  \"groupName\" : \"1438\",\n  \"length\" : 11967,\n  \"fileName\" : \"invoice_10013.pdf\",\n  \"relativeUrl\" : \"invoice_10013.pdf?hash=82432abcc2997929f80c567f1664788965df8f8f\",\n  \"relativeDownloadUrl\" : \"invoice_10013.pdf?hash=82432abcc2997929f80c567f1664788965df8f8f\",\n  \"_id\" : \"801df475-3b39-40af-900d-39d34c39ce5c\"\n}",
       "code" : 201
     } ]
   }, {
@@ -8439,7 +8439,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"hash\" : \"82432abcc2997929f80c567f1664788965df8f8f\",\n  \"mediaType\" : \"application/pdf\",\n  \"groupName\" : \"1438\",\n  \"length\" : 11967,\n  \"fileName\" : \"invoice_10013.pdf\",\n  \"relativeUrl\" : \"invoice_10013.pdf?hash=82432abcc2997929f80c567f1664788965df8f8f\",\n  \"relativeDownloadUrl\" : \"invoice_10013.pdf?hash=82432abcc2997929f80c567f1664788965df8f8f\",\n  \"_id\" : \"1cf39d30-03a0-48ce-ae34-a7ef52ee7485\"\n}",
+      "body" : "{\n  \"hash\" : \"82432abcc2997929f80c567f1664788965df8f8f\",\n  \"mediaType\" : \"application/pdf\",\n  \"groupName\" : \"1438\",\n  \"length\" : 11967,\n  \"fileName\" : \"invoice_10013.pdf\",\n  \"relativeUrl\" : \"invoice_10013.pdf?hash=82432abcc2997929f80c567f1664788965df8f8f\",\n  \"relativeDownloadUrl\" : \"invoice_10013.pdf?hash=82432abcc2997929f80c567f1664788965df8f8f\",\n  \"_id\" : \"1d9e5f59-987a-44c3-877b-bea1d4f8053a\"\n}",
       "code" : 201
     } ]
   }, {
@@ -16384,7 +16384,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"hash\" : \"82432abcc2997929f80c567f1664788965df8f8f\",\n  \"mediaType\" : \"application/pdf\",\n  \"groupName\" : \"1438\",\n  \"length\" : 11967,\n  \"fileName\" : \"invoice_10013.pdf\",\n  \"relativeUrl\" : \"invoice_10013.pdf?hash=82432abcc2997929f80c567f1664788965df8f8f\",\n  \"relativeDownloadUrl\" : \"invoice_10013.pdf?hash=82432abcc2997929f80c567f1664788965df8f8f\",\n  \"_id\" : \"c97ea854-a3e3-4d9c-8ec5-e55a8fb113ff\"\n}",
+      "body" : "{\n  \"hash\" : \"82432abcc2997929f80c567f1664788965df8f8f\",\n  \"mediaType\" : \"application/pdf\",\n  \"groupName\" : \"1438\",\n  \"length\" : 11967,\n  \"fileName\" : \"invoice_10013.pdf\",\n  \"relativeUrl\" : \"invoice_10013.pdf?hash=82432abcc2997929f80c567f1664788965df8f8f\",\n  \"relativeDownloadUrl\" : \"invoice_10013.pdf?hash=82432abcc2997929f80c567f1664788965df8f8f\",\n  \"_id\" : \"5ced3a06-4a85-4e34-924d-8391de7769c1\"\n}",
       "code" : 201
     } ]
   }, {
@@ -17158,7 +17158,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"hash\" : \"f4e6fbee7f8c2257458818d391187d385623709b\",\n  \"fileName\" : \"team-nordic-logo.png\",\n  \"mediaType\" : \"image/png\",\n  \"length\" : 33615,\n  \"groupName\" : \"1438\",\n  \"relativeUrl\" : \"team-nordic-logo.png?hash=f4e6fbee7f8c2257458818d391187d385623709b\",\n  \"relativeDownloadUrl\" : \"team-nordic-logo.png?hash=f4e6fbee7f8c2257458818d391187d385623709b\",\n  \"width\" : 544,\n  \"height\" : 456,\n  \"_id\" : \"136b5b0f-395f-4cda-b253-43d79858e600\"\n}",
+      "body" : "{\n  \"hash\" : \"f4e6fbee7f8c2257458818d391187d385623709b\",\n  \"fileName\" : \"team-nordic-logo.png\",\n  \"mediaType\" : \"image/png\",\n  \"length\" : 33615,\n  \"groupName\" : \"1438\",\n  \"relativeUrl\" : \"team-nordic-logo.png?hash=f4e6fbee7f8c2257458818d391187d385623709b\",\n  \"relativeDownloadUrl\" : \"team-nordic-logo.png?hash=f4e6fbee7f8c2257458818d391187d385623709b\",\n  \"width\" : 544,\n  \"height\" : 456,\n  \"_id\" : \"c31f4d69-a627-4c2c-bc1d-22105d177d66\"\n}",
       "code" : 201
     } ]
   } ],
