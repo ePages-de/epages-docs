@@ -32,18 +32,8 @@ For more detailed information on a specific event, see the section [Examples](#e
 | `cart:setQuantity` | Is triggered when the quantity of a product in the cart is changed. This also includes the removal of a product. Informs about the quantity change and the affected line item. |
 | `cart:update` | Is triggered when the cart is changed on the cart overview. Informs about the current state of the cart, for example, about included items. |
 | `order:completed` | Is triggered when a customer who accepted all cookies reaches the order confirmation page after completing a purchase. Provides additional information about the order, such as the billing address, the order number, and the selected shipping method. |
-
-## Deprecated events
-
-The following events are deprecated. Please use the respective alternatives that are further explained in the section [Available events](#available-events).
-
-| Event | Description | Alternative |
-| - |  - | - |
-| `pageview` | Is triggered when the customer opens or reloads a page. Informs about the path of the page. | `page:view` |
-| `product` | Is triggered when the customer accesses a product detail page. Informs about the respective product as well as the current state of the cart. | `product:view` |
-| `category` | Is triggered when the customer selects a category. Informs about the respective category and included products. | `category:view` |
-| `search` | Is triggered when the customer accesses the search results page. The event is also triggered when the customer updates the search results page, for example, by selecting the _Show more_ button. Informs about the number of search results, the search query, and the products included in the search results. | `searchResults:view` |
-| `cart` | Is triggered when the customer accesses the cart. Informs about the current state of the cart, for example, about included items. | `cart:view` |
+| `shippingMethod:select` | Is triggered when a customer selects a shipping method or pickup option during checkout. Informs about the selected shipping method or pickup option. |
+| `paymentMethod:select` | Is triggered when a customer selects a payment method during checkout. Informs about the selected payment method. |
 
 ## Examples
 
@@ -63,7 +53,7 @@ if (window.eComEventTarget) {
 }
 ```
 
-Here's an example of what you can get:
+Here is an example response:
 
 ```
 url: /about-us
@@ -84,7 +74,7 @@ if (window.eComEventTarget) {
 }
 ```
 
-Here's an example of what you can get:
+Here is an example response:
 
 ```
 product: {
@@ -105,15 +95,16 @@ product: {
     hasVariations: false
     href: "/p/homemade-cherry-jam"
     image: null
+    isStrikePriceRRP: false
     isVariationMaster: false
     isVariationProduct: false
     isVisible: true
     links: (5) [{…}, {…}, {…}, {…}, {…}]
-    listPrice: null
+    listPrice: null // deprecated, use strikePrice and isStrikePriceRRP instead
     lowestPrice: null
     mainCategoryId: "5954B711-E377-2A90-C400-D5809AB3F62B"
     manufacturer: null
-    manufacturerPrice: null
+    manufacturerPrice: null // deprecated, use strikePrice and isStrikePriceRRP instead
     metaDescription: ""
     name: "Homemade Cherry Jam"
     onStock: true
@@ -129,6 +120,7 @@ product: {
     slug: "homemade-cherry-jam"
     stockLevelClass: "in"
     stockLevelMicrodata: "InStock"
+    strikePrice: null
     title: "Homemade Cherry Jam"
     variationMaster: null
     variations: null
@@ -186,7 +178,7 @@ if (window.eComEventTarget) {
 }
 ```
 
-Here's an example of what you can get:
+Here is an example response:
 
 ```
 detail: "Cherry Jam"
@@ -208,15 +200,16 @@ product: {
     hasVariations: false
     href: "/p/homemade-cherry-jam"
     image: null
+    isStrikePriceRRP: false
     isVariationMaster: false
     isVariationProduct: false
     isVisible: true
     links: (5) [{…}, {…}, {…}, {…}, {…}]
-    listPrice: null
+    listPrice: null // deprecated, use strikePrice and isStrikePriceRRP instead
     lowestPrice: null
     mainCategoryId: "5954B711-E377-2A90-C400-D5809AB3F62B"
     manufacturer: null
-    manufacturerPrice: null
+    manufacturerPrice: null // deprecated, use strikePrice and isStrikePriceRRP instead
     metaDescription: ""
     name: "Homemade Cherry Jam"
     onStock: true
@@ -232,6 +225,7 @@ product: {
     slug: "homemade-cherry-jam"
     stockLevelClass: "in"
     stockLevelMicrodata: "InStock"
+    strikePrice: null
     title: "Homemade Cherry Jam"
     variationMaster: null
     variations: null
@@ -259,7 +253,7 @@ if (window.eComEventTarget) {
 }
 ```
 
-Here's an example of what you can get:
+Here is an example response:
 
 ```
 locale: "en_GB"
@@ -281,7 +275,7 @@ if (window.eComEventTarget) {
   })
 }
 ```
-Here's an example of what you can get:
+Here is an example response:
 
 ```
 category: {
@@ -324,15 +318,16 @@ products: Array (2) {
     hasVariations: false
     href: "/p/homemade-cherry-jam"
     image: null
+    isStrikePriceRRP: false
     isVariationMaster: false
     isVariationProduct: false
     isVisible: true
     links: (5) [{…}, {…}, {…}, {…}, {…}]
-    listPrice: null
+    listPrice: null // deprecated, use strikePrice and isStrikePriceRRP instead
     lowestPrice: null
     mainCategoryId: "5954B711-E377-2A90-C400-D5809AB3F62B"
     manufacturer: null
-    manufacturerPrice: null
+    manufacturerPrice: null // deprecated, use strikePrice and isStrikePriceRRP instead
     metaDescription: ""
     name: "Homemade Cherry Jam"
     onStock: true
@@ -348,6 +343,7 @@ products: Array (2) {
     slug: "homemade-cherry-jam"
     stockLevelClass: "in"
     stockLevelMicrodata: "InStock"
+    strikePrice: null
     title: "Homemade Cherry Jam"
     variationMaster: null
     variations: null
@@ -373,15 +369,16 @@ products: Array (2) {
     hasVariations: false
     href: "/p/homemade-strawberry-jam"
     image: null
+    isStrikePriceRRP: false
     isVariationMaster: false
     isVariationProduct: false
     isVisible: true
     links: (5) [{…}, {…}, {…}, {…}, {…}]
-    listPrice: null
+    listPrice: null // deprecated, use strikePrice and isStrikePriceRRP instead
     lowestPrice: null
     mainCategoryId: "5954B711-E377-2A90-C400-D5809AB3F62B"
     manufacturer: null
-    manufacturerPrice: null
+    manufacturerPrice: null // deprecated, use strikePrice and isStrikePriceRRP instead
     metaDescription: ""
     name: "Homemade Strawberry Jam"
     onStock: true
@@ -397,6 +394,7 @@ products: Array (2) {
     slug: "homemade-strawberry-jam"
     stockLevelClass: "in"
     stockLevelMicrodata: "InStock"
+    strikePrice: null
     title: "Homemade Strawberry Jam"
     variationMaster: null
     variations: null
@@ -423,7 +421,7 @@ if (window.eComEventTarget) {
 }
 ```
 
-Here's an example of what you can get:
+Here is an example response:
 
 ```
 products: Array(2) {
@@ -445,15 +443,16 @@ products: Array(2) {
     hasVariations: false
     href: "/p/homemade-cherry-jam"
     image: null
+    isStrikePriceRRP: false
     isVariationMaster: false
     isVariationProduct: false
     isVisible: true
     links: (5) [{…}, {…}, {…}, {…}, {…}]
-    listPrice: null
+    listPrice: null // deprecated, use strikePrice and isStrikePriceRRP instead
     lowestPrice: null
     mainCategoryId: "5954B711-E377-2A90-C400-D5809AB3F62B"
     manufacturer: null
-    manufacturerPrice: null
+    manufacturerPrice: null // deprecated, use strikePrice and isStrikePriceRRP instead
     metaDescription: ""
     name: "Homemade Cherry Jam"
     onStock: true
@@ -469,6 +468,7 @@ products: Array(2) {
     slug: "homemade-cherry-jam"
     stockLevelClass: "in"
     stockLevelMicrodata: "InStock"
+    strikePrice: null
     title: "Homemade Cherry Jam"
     variationMaster: null
     variations: null
@@ -494,15 +494,16 @@ products: Array(2) {
     hasVariations: false
     href: "/p/homemade-strawberry-jam"
     image: null
+    isStrikePriceRRP: false
     isVariationMaster: false
     isVariationProduct: false
     isVisible: true
     links: (5) [{…}, {…}, {…}, {…}, {…}]
-    listPrice: null
+    listPrice: null // deprecated, use strikePrice and isStrikePriceRRP instead
     lowestPrice: null
     mainCategoryId: "5954B711-E377-2A90-C400-D5809AB3F62B"
     manufacturer: null
-    manufacturerPrice: null
+    manufacturerPrice: null // deprecated, use strikePrice and isStrikePriceRRP instead
     metaDescription: ""
     name: "Homemade Strawberry Jam"
     onStock: true
@@ -518,6 +519,7 @@ products: Array(2) {
     slug: "homemade-strawberry-jam"
     stockLevelClass: "in"
     stockLevelMicrodata: "InStock"
+    strikePrice: null
     title: "Homemade Strawberry Jam"
     variationMaster: null
     variations: null
@@ -547,7 +549,7 @@ if (window.eComEventTarget) {
 }
 ```
 
-Here's an example of what you can get:
+Here is an example response:
 
 ```
 cart: {
@@ -599,7 +601,7 @@ if (window.eComEventTarget) {
 }
 ```
 
-Here's an example of what you can get:
+Here is an example response:
 
 ```
 cart: {
@@ -651,15 +653,16 @@ product: {
     hasVariations: false
     href: "/p/homemade-cherry-jam"
     image: null
+    isStrikePriceRRP: false
     isVariationMaster: false
     isVariationProduct: false
     isVisible: true
     links: (5) [{…}, {…}, {…}, {…}, {…}]
-    listPrice: null
+    listPrice: null // deprecated, use strikePrice and isStrikePriceRRP instead
     lowestPrice: null
     mainCategoryId: "5954B711-E377-2A90-C400-D5809AB3F62B"
     manufacturer: null
-    manufacturerPrice: null
+    manufacturerPrice: null // deprecated, use strikePrice and isStrikePriceRRP instead
     metaDescription: ""
     name: "Homemade Cherry Jam"
     onStock: true
@@ -675,6 +678,7 @@ product: {
     slug: "homemade-cherry-jam"
     stockLevelClass: "in"
     stockLevelMicrodata: "InStock"
+    strikePrice: null
     title: "Homemade Cherry Jam"
     variationMaster: null
     variations: null
@@ -701,7 +705,7 @@ if (window.eComEventTarget) {
 }
 ```
 
-Here's an example of what you can get:
+Here is an example response:
 
 ```
 lineItem: {
@@ -740,7 +744,7 @@ if (window.eComEventTarget) {
 }
 ```
 
-Here's an example of what you can get:
+Here is an example response:
 
 ```
 cart: {
@@ -794,7 +798,7 @@ if (window.eComEventTarget) {
 }
 ```
 
-Here's an example of what you can get:
+Here is an example response:
 
 ```
 order: {
@@ -810,4 +814,50 @@ order: {
   shippingData: {shippingMethod: {…}, price: {…}, taxes: Array(1)}
   totalTax: "3.2"
 }
+```
+
+### shippingMethod:select
+
+To get more information about this event, you can use the following snippet:
+
+```js
+if (window.eComEventTarget) {
+  window.eComEventTarget.addEventListener('shippingMethod:select', function (event) {
+    console.log('shippingMethod:select', {
+      shippingMethod: event.detail.shippingMethod,
+    })
+  })
+}
+```
+
+Here is an example response:
+
+```
+shippingMethod: {
+  _id: "631E19A1-AD54-518D-B836-AC120004711F",
+  name: "Standardzustellung",
+  lineItemPrice: {"currency": "EUR", "taxType": "GROSS", "amount": 7, "formatted": "7,00 €"}}
+```
+
+### paymentMethod:select
+
+To get more information about this event, you can use the following snippet:
+
+```js
+if (window.eComEventTarget) {
+  window.eComEventTarget.addEventListener('paymentMethod:select', function (event) {
+    console.log('paymentMethod:select', {
+      paymentMethod: event.detail.paymentMethod,
+    })
+  })
+}
+```
+
+Here is an example response:
+
+```
+paymentMethod: {
+  _id: "631E19A2-4D4E-CD42-641A-AC120004718A",
+  name: "Vorkasse",
+  lineItemPrice: {"currency": "EUR", "taxType": "GROSS", "amount": 3.2, "formatted": "3,20 €"}}
 ```

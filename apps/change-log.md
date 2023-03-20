@@ -14,6 +14,36 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
+## 2023-02-16
+
+### Changes with software release 7.80.0
+
+#### <i class="fa fa-minus"></i> Deprecate
+
+* The product properties `listPrice` and `manufacturerPrice` for the [events](https://developer.epages.com/apps/events.html) `product:view`, `product:click`, `category:view`, `searchResults:view`, and `cart:add` are deprecated and will be removed on May 11th, 2023. Please use the properties `strikePrice` and `isStrikePriceRRP` instead.
+
+<hr>
+
+## 2023-01-19
+
+### Changes with software release 7.79.0
+
+#### <i class="fa fa-minus"></i> Remove
+
+* The deprecated [events](https://developer.epages.com/apps/events.html) `pageview`, `product`, `category`, `search`, and `cart` were removed. Please use the respective alternatives `page:view`, `product:view`, `category:view`, `searchResults:view`, and `cart:view` instead.
+
+<hr>
+
+## 2022-12-06
+
+### Changes with software release 7.77.0
+
+#### <i class="fas fa-plus"></i> New
+
+* Added the events `shippingMethod:select` and `paymentMethod:select` to the [Events](https://developer.epages.com/apps/events.html) section.
+
+<hr>
+
 ## 2022-08-11
 
 ### Changes with software release 7.74.0
