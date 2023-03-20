@@ -1,17 +1,48 @@
 {
-  "customerId": "56D80631-A052-FCA2-A9EF-D5809AB35510",
-  "customerNumber": "1005",
-  "creationDate": "2016-03-03T09:38:57Z",
-  "billingAddress": null,
-  "internalNote": null,
-  "links": [
+  "name": "Kleidung",
+  "productTypeId": "64181251-E4D6-1E35-F005-AC15000343D3",
+  "attributes": [
     {
-      "rel": "self",
-      "href": "https://pm.epages.com/rs/shops/apidocu/customers/56D80631-A052-FCA2-A9EF-D5809AB35510"
+      "visible": false,
+      "name": "Farbe",
+      "attributeGUID": "64181251-8EC4-F7C4-068A-AC1500034378",
+      "values": [
+        {
+          "attributeValueGUID": "64181251-C1BF-816D-56F9-AC15000343B4",
+          "value": "blau",
+          "name": "blau"
+        },
+        {
+          "attributeValueGUID": "64181251-D4C1-56A1-1D93-AC150003433A",
+          "value": "rot",
+          "name": "rot"
+        }
+      ],
+      "preDefAttribute": true
     },
     {
-      "rel": "orders",
-      "href": "https://pm.epages.com/rs/shops/apidocu/orders?customerId=56D80631-A052-FCA2-A9EF-D5809AB35510"
+      "visible": false,
+      "name": "Größe",
+      "attributeGUID": "64181251-7612-1138-56FB-AC150003436F",
+      "values": [
+        {
+          "attributeValueGUID": "64181251-4002-62C4-4F8C-AC15000343EF",
+          "value": "L",
+          "name": "L"
+        },
+        {
+          "attributeValueGUID": "64181251-6C72-62A0-7DB2-AC1500034335",
+          "value": "M",
+          "name": "M"
+        },
+        {
+          "attributeValueGUID": "64181251-17A1-F7BC-4783-AC15000343C1",
+          "value": "S",
+          "name": "S"
+        }
+      ],
+      "preDefAttribute": true
     }
-  ]
+  ],
+  "alias": "Kleidung"
 }

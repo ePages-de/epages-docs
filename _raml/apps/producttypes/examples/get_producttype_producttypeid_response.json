@@ -1,52 +1,48 @@
 {
-  "customerId": "563874DA-7AE7-9876-9E59-D5809AB38A25",
-  "customerNumber": "1027",
-  "creationDate": "2015-11-03T08:48:26Z",
-  "billingAddress": {
-    "company": "Schneiderei",
-    "salutation": "Mrs",
-    "firstName": "Tanja",
-    "lastName": "Schneider",
-    "street": "Schneiderstraße 10",
-    "streetDetails": null,
-    "zipCode": "12345",
-    "city": "Berlin",
-    "state": null,
-    "country": "DE",
-    "title": null,
-    "vatId": null,
-    "birthday": null,
-    "emailAddress": "schneider@schneiderei.de",
-    "addressExtension": "1.Etage",
-    "bankAccountHolder": "Tanja Schneider",
-    "bankAccountNumber": "DE1567379838510",
-    "bankName": "Nadel Bank",
-    "bankSortCode": "XXSCSBB",
-    "businessEmailAddress": "schneider@schneiderei.de",
-    "businessPhoneNumber": "0049099906543",
-    "department": null,
-    "displayName": null,
-    "doorCode": null,
-    "faxNumber": "0049099906542",
-    "fiscalCode": null,
-    "gender": "female",
-    "jobTitle": "Schneiderin",
-    "middleName": null,
-    "mobilePhoneNumber": "0049099906543",
-    "phoneNumber": "0049099906543",
-    "privateEmailAddress": null,
-    "privatePhoneNumber": null,
-    "websiteUrl": "http://schneiderei.de"
-  },
-  "internalNote": "Long-standing customer",
-  "links": [
+  "name": "Kleidung",
+  "productTypeId": "64180BCB-5AEF-4E69-4A92-AC150003B611",
+  "attributes": [
     {
-      "rel": "self",
-      "href": "https://pm.epages.com/rs/shops/apidocu/customers/563874DA-7AE7-9876-9E59-D5809AB38A25"
+      "visible": false,
+      "name": "Farbe",
+      "attributeGUID": "64180BCB-0E67-3104-ED6D-AC150003B606",
+      "values": [
+        {
+          "attributeValueGUID": "64180BCB-1B30-23C9-6E64-AC150003B666",
+          "value": "blau",
+          "name": "blau"
+        },
+        {
+          "attributeValueGUID": "64180BCB-8D40-D47D-8E67-AC150003B6E2",
+          "value": "rot",
+          "name": "rot"
+        }
+      ],
+      "preDefAttribute": true
     },
     {
-      "rel": "orders",
-      "href": "https://pm.epages.com/rs/shops/apidocu/orders?customerId=563874DA-7AE7-9876-9E59-D5809AB38A25"
+      "visible": false,
+      "name": "Größe",
+      "attributeGUID": "64180BCB-B4E2-F839-4760-AC150003B67F",
+      "values": [
+        {
+          "attributeValueGUID": "64180BCB-A68C-DC66-901E-AC150003B63B",
+          "value": "S",
+          "name": "S"
+        },
+        {
+          "attributeValueGUID": "64180BCB-CD82-A70A-E94E-AC150003B698",
+          "value": "M",
+          "name": "M"
+        },
+        {
+          "attributeValueGUID": "64180BCB-2B5E-3AC7-910B-AC150003B6F0",
+          "value": "L",
+          "name": "L"
+        }
+      ],
+      "preDefAttribute": true
     }
-  ]
+  ],
+  "alias": "Kleidung"
 }

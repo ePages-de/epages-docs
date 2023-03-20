@@ -1,18 +1,39 @@
 {
-  "customerNumber": "1005",
-  "billingAddress": {
-    "company": "Schneiderei",
-    "salutation": "Mrs",
-    "firstName": "Tanja",
-    "lastName": "Schneider",
-    "street": "Schneiderstraße 10",
-    "streetDetails": null,
-    "zipCode": "12345",
-    "city": "Berlin",
-    "state": null,
-    "country": "DE",
-    "title": null,
-    "vatId": null,
-    "birthday": null,
-    "emailAddress": "schneider@schneiderei.de"
+  "name": "Kleidung",
+  "attributes": [
+    {
+      "visible": false,
+      "name": "Farbe",
+      "values": [
+        {
+          "value": "blau",
+          "name": "blau"
+        },
+        {
+          "value": "rot",
+          "name": "rot"
+        }
+      ],
+      "preDefAttribute": true
+    },
+    {
+      "visible": false,
+      "name": "Größe",
+      "values": [
+        {
+          "value": "S",
+          "name": "S"
+        },
+        {
+          "value": "M",
+          "name": "M"
+        },
+        {
+          "value": "L",
+          "name": "L"
+        }
+      ]
+    }
+  ],
+  "alias": "Kleidung"
 }
