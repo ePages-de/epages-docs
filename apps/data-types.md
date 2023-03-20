@@ -74,7 +74,7 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | - | - |  - |
 | name | string | The name for the attribute. |
 | preDefAttribute | boolean | Indicates if the attribute has predefined values. |
-| values | [attributeSelection](page:apps-data-types#attributesSelection) | The values of the selected attribute for the producttype. |
+| values | [attributeSelection](page:apps-data-types#attributeselection) | The values of the selected attribute for the producttype. |
 | visible | boolean | Indicates if the attribute is displayed in the shop. |
 
 ## attributeRange
@@ -772,7 +772,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | productTypeId | string | The unique identifier of the producttype. |
 | name | string | The localized name for the producttype. |
 | alias | string | The alias for the producttype.  |
-| attributes | [attributeProducttype](page:apps-data-types#attributeProducttype) | The attributes of the selected producttype. |
+| attributes | [attributeProducttype](page:apps-data-types#attributeproducttype) | The attributes of the selected producttype. |
 
 ## productType (create request)
 
@@ -780,7 +780,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | - | :-: |  - |
 | name | string | The localized name for the producttype. |
 | alias | string | The alias for the producttype.  |
-| attributes | [attributeProducttype](page:apps-data-types#attributeProducttype) | The attributes of the selected producttype. |
+| attributes | [attributeProducttype](page:apps-data-types#attributeproducttype) | The attributes of the selected producttype. |
 
 ## quantity
 
