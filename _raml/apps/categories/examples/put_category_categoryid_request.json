@@ -5,5 +5,6 @@
   "navigationCaption": "Feature",
   "pageTitle": "Featured products",
   "description": "Our audio products recommendations.",
-  "visible": false
+  "visible": false,
+  "visibleInNavigation": true
 }
