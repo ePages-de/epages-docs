@@ -8,15 +8,12 @@
         {
           "visible": false,
           "name": "Farbe",
-          "attributeGUID": "64180BCB-0E67-3104-ED6D-AC150003B606",
           "values": [
             {
-              "attributeValueGUID": "64180BCB-1B30-23C9-6E64-AC150003B666",
               "value": "blau",
               "name": "blau"
             },
             {
-              "attributeValueGUID": "64180BCB-8D40-D47D-8E67-AC150003B6E2",
               "value": "rot",
               "name": "rot"
             }
@@ -26,20 +23,16 @@
         {
           "visible": false,
           "name": "Größe",
-          "attributeGUID": "64180BCB-B4E2-F839-4760-AC150003B67F",
           "values": [
             {
-              "attributeValueGUID": "64180BCB-A68C-DC66-901E-AC150003B63B",
               "value": "S",
               "name": "S"
             },
             {
-              "attributeValueGUID": "64180BCB-CD82-A70A-E94E-AC150003B698",
               "value": "M",
               "name": "M"
             },
             {
-              "attributeValueGUID": "64180BCB-2B5E-3AC7-910B-AC150003B6F0",
               "value": "L",
               "name": "L"
             }
@@ -56,50 +49,40 @@
         {
           "visible": false,
           "name": "Größe",
-          "attributeGUID": "64180BCB-7A72-6302-5A9C-AC150003B6C3",
           "values": [
             {
-              "attributeValueGUID": "64180BCB-64AD-72D3-5A5D-AC150003B6B4",
               "value": "32",
               "name": "32"
             },
             {
-              "attributeValueGUID": "64180BCB-953B-D1CC-5E8B-AC150003B6E9",
               "value": "33",
               "name": "33"
             },
             {
-              "attributeValueGUID": "64180BCB-9941-FFAF-5ADF-AC150003B66E",
               "value": "34",
               "name": "34"
             },
             {
-              "attributeValueGUID": "64180BCB-3E1D-04C4-340E-AC150003B689",
               "value": "35",
               "name": "35"
             },
             {
-              "attributeValueGUID": "64180BCB-904D-F5E4-B5D3-AC150003B645",
               "value": "36",
               "name": "36"
             },
             {
-              "attributeValueGUID": "64180BCB-3234-0371-F8AE-AC150003B6CF",
               "value": "37",
               "name": "37"
             },
             {
-              "attributeValueGUID": "64180BCB-36E0-38BB-8EE7-AC150003B619",
               "value": "38",
               "name": "38"
             },
             {
-              "attributeValueGUID": "64180BCB-DE5D-44B0-F700-AC150003B6FE",
               "value": "39",
               "name": "39"
             },
             {
-              "attributeValueGUID": "64180BCB-8DD4-D4AA-2319-AC150003B653",
               "value": "40",
               "name": "40"
             }

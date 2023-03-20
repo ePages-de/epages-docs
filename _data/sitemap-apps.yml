@@ -97,6 +97,9 @@
     - title: Products
       link: page:api-resources-products
 
+    - title: Product types
+      link: page:api-resources-producttypes
+
     - title: Sales
       link: page:api-resources-sales
 

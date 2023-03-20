@@ -5,15 +5,12 @@
     {
       "visible": false,
       "name": "Farbe",
-      "attributeGUID": "64181251-8EC4-F7C4-068A-AC1500034378",
       "values": [
         {
-          "attributeValueGUID": "64181251-C1BF-816D-56F9-AC15000343B4",
           "value": "blau",
           "name": "blau"
         },
         {
-          "attributeValueGUID": "64181251-D4C1-56A1-1D93-AC150003433A",
           "value": "rot",
           "name": "rot"
         }
@@ -23,20 +20,16 @@
     {
       "visible": false,
       "name": "Größe",
-      "attributeGUID": "64181251-7612-1138-56FB-AC150003436F",
       "values": [
         {
-          "attributeValueGUID": "64181251-4002-62C4-4F8C-AC15000343EF",
           "value": "L",
           "name": "L"
         },
         {
-          "attributeValueGUID": "64181251-6C72-62A0-7DB2-AC1500034335",
           "value": "M",
           "name": "M"
         },
         {
-          "attributeValueGUID": "64181251-17A1-F7BC-4783-AC15000343C1",
           "value": "S",
           "name": "S"
         }

@@ -3,17 +3,14 @@
   "productTypeId": "64180BCB-5AEF-4E69-4A92-AC150003B611",
   "attributes": [
     {
-      "visible": false,
+      "visible": true,
       "name": "Farbe",
-      "attributeGUID": "64180BCB-0E67-3104-ED6D-AC150003B606",
       "values": [
         {
-          "attributeValueGUID": "64180BCB-1B30-23C9-6E64-AC150003B666",
           "value": "blau",
           "name": "blau"
         },
         {
-          "attributeValueGUID": "64180BCB-8D40-D47D-8E67-AC150003B6E2",
           "value": "rot",
           "name": "rot"
         }
@@ -23,20 +20,16 @@
     {
       "visible": false,
       "name": "Größe",
-      "attributeGUID": "64180BCB-B4E2-F839-4760-AC150003B67F",
       "values": [
         {
-          "attributeValueGUID": "64180BCB-A68C-DC66-901E-AC150003B63B",
           "value": "S",
           "name": "S"
         },
         {
-          "attributeValueGUID": "64180BCB-CD82-A70A-E94E-AC150003B698",
           "value": "M",
           "name": "M"
         },
         {
-          "attributeValueGUID": "64180BCB-2B5E-3AC7-910B-AC150003B6F0",
           "value": "L",
           "name": "L"
         }

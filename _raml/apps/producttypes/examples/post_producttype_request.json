@@ -1,39 +1,41 @@
-{
-  "name": "Kleidung",
-  "attributes": [
-    {
-      "visible": false,
-      "name": "Farbe",
-      "values": [
-        {
-          "value": "blau",
-          "name": "blau"
-        },
-        {
-          "value": "rot",
-          "name": "rot"
-        }
-      ],
-      "preDefAttribute": true
-    },
-    {
-      "visible": false,
-      "name": "Größe",
-      "values": [
-        {
-          "value": "S",
-          "name": "S"
-        },
-        {
-          "value": "M",
-          "name": "M"
-        },
-        {
-          "value": "L",
-          "name": "L"
-        }
-      ]
-    }
-  ],
-  "alias": "Kleidung"
-}
+[
+  {
+    "name": "Kleidung",
+    "attributes": [
+      {
+        "visible": false,
+        "name": "Farbe",
+        "values": [
+          {
+            "value": "blau",
+            "name": "blau"
+          },
+          {
+            "value": "rot",
+            "name": "rot"
+          }
+        ],
+        "preDefAttribute": true
+      },
+      {
+        "visible": false,
+        "name": "Größe",
+        "values": [
+          {
+            "value": "S",
+            "name": "S"
+          },
+          {
+            "value": "M",
+            "name": "M"
+          },
+          {
+            "value": "L",
+            "name": "L"
+          }
+        ]
+      }
+    ],
+    "alias": "Kleidung"
+  }
+]
