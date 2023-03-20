@@ -99,6 +99,8 @@
   "sfUrl": "http://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/Products/HP-003",
   "productNumber": "HP-003",
   "isProductNumberVisible": true,
+  "isManufacturerPriceRRP": true,
+  "isShippingLinkVisible": true,
   "manufacturer": "Bass by Dr.Boom",
   "upc": null,
   "ean": null,

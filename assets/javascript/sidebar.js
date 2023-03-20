@@ -96,11 +96,12 @@ function findElement(id) {
 }
 
 function loadEntryPointUrl(id) {
-  let li = $(`li[link][id='${id}'], li[link$=${id}]`);
+  let li = id == 'introduction' ? $(`li[link][id='${id}']`) : $(`li[link][id='${id}'], li[link$=${id}]`);
 
   if (li.length == 0) {
     li = $('li[link][id="introduction"]');
   }
+
   $('#docs').attr('src', $(li).attr('link'));
   setTimeout(function() {
     searchParents(li);
