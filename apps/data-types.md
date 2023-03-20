@@ -144,6 +144,7 @@ ePages Now only!
 | categoryId | string | The unique identifier of the category a product is assigned to. |
 | name | string | The name of the category. |
 | visible | boolean | Indicates if the category is displayed in the shop. |
+| visibleInNavigation | boolean | Indicates if the category is displayed in the shop navigation. |
 | alias | string | The unique identifier of the category.|
 | pageTitle | string | The page title of this category. |
 | description | string | The description of the category. |
@@ -177,6 +178,7 @@ ePages Now only!
 | description | string | The description of the category. |
 | navigationCaption | string | The name of the category page that appears in the navigation bar. |
 | visible | boolean | Indicates if the category is displayed in the shop. |
+| visibleInNavigation | boolean | Indicates if the category is displayed in the shop navigation. |
 
 ## contactInfo
 

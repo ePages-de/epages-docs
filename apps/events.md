@@ -287,6 +287,7 @@ category: {
   guid: "5AD608E0-22C3-0009-F213-D58093346AC8"
   id: "208eb3ba-3f83-4e7e-a890-87d5de223af7"
   isVisible: true
+  visibleInNavigation: true
   lft: null
   metaDescription: ""
   navigation: null
