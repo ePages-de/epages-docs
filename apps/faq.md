@@ -11,8 +11,6 @@ Need support to set up your test shop?
 Have a look at our [Online Help](https://www.online-help-center.com/).
 You will find helpful and detailed articles about handling ePages shops.
 Need support with the app development?
-Contact us via our [support form](https://developer.epages.com/support/).
-We will do our best to help you getting forward.
 
 ## How do I get my API key?
 

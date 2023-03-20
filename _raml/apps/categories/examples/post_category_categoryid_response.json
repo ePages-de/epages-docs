@@ -3,6 +3,7 @@
   "alias": "Accessories",
   "name": "Accessories",
   "visible": false,
+  "visibleInNavigation": true,
   "pageTitle": "Technic365 - Accessories",
   "navigationCaption": "Technic365 - Accessories",
   "description": "Accessories for headphones",
