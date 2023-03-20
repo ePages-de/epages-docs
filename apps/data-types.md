@@ -154,6 +154,7 @@ ePages Now only!
 | categoryId | string | The unique identifier of the category a product is assigned to. |
 | name | string | The name of the category. |
 | visible | boolean | Indicates if the category is displayed in the shop. |
+| visibleInNavigation | boolean | Indicates if the category is displayed in the shop navigation. |
 | alias | string | The unique identifier of the category.|
 | pageTitle | string | The page title of this category. |
 | description | string | The description of the category. |
@@ -187,6 +188,7 @@ ePages Now only!
 | description | string | The description of the category. |
 | navigationCaption | string | The name of the category page that appears in the navigation bar. |
 | visible | boolean | Indicates if the category is displayed in the shop. |
+| visibleInNavigation | boolean | Indicates if the category is displayed in the shop navigation. |
 
 ## contactInfo
 
@@ -588,6 +590,8 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | sfUrl | string | The link to the storefront URL of the product. |
 | productNumber | string | The product number. |
 | isProductNumberVisible | boolean | Indicates if the product number is displayed in the storefront. |
+| isManufacturerPriceRRP | boolean | Indicates if the manufacturer price is marked as RRP. |
+| isShippingLinkVisible | boolean | Indicates if a shipping cost reference that links to the shop's payment & shipping page is displayed together with the product price in the storefront. |
 | productImage | string | The name of the product image. |
 | images | array of [image](page:apps-data-types#image) | The images belonging to the product. |
 | manufacturer | string | The manufacturer of the product. |
@@ -706,6 +710,8 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | sfUrl | string | The link to storefront URL of the product. |
 | productNumber | string | The product number. |
 | isProductNumberVisible | boolean | Indicates if the product number is displayed in the storefront. |
+| isManufacturerPriceRRP | boolean | Indicates if the manufacturer price is marked as RRP. |
+| isShippingLinkVisible | boolean | Indicates if a shipping cost reference that links to the shop's payment & shipping page is displayed together with the product price in the storefront. | 
 | productImage | string | The name of the product image. |
 | images | array of [image](page:apps-data-types#image) | The images belonging to the product. |
 | manufacturer | string | The manufacturer of the product. |
