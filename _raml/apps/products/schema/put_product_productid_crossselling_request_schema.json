@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "Put Product ProductId crossselling Request Schema",
+  "type": "object",
+  "properties": {
+    "": {
+      "type": "array of productIds",
+      "description": ""
+    }
+  }
+}

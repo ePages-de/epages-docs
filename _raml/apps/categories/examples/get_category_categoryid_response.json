@@ -3,6 +3,7 @@
   "alias": "Audio_products",
   "name": "Audio Products",
   "visible": true,
+  "visibleInNavigation": true,
   "pageTitle": "Audio Products",
   "navigationCaption": "Audio Products",
   "description": null,

@@ -104,12 +104,12 @@ post:
                 - /productHeight<br>
                 - /priceInfo/taxClass/taxClassId³<br>
                 - /productImage⁴<br>
-                - /stocklevel²<br>
+                - /stocklevel³<br>
                 - /visible¹<br><br>
 
                 **¹** supports *add* only<br>
                 **²** value will not be replaced, but changed, i.e. if the stocklevel is 3 and you add 1, you will get 4; if you add -5, you will get -2.<br>
-                **³** used for taxClassId only<br>
+                **³** used for taxClassId, stocklevel<br>
                 **⁴** can only be used to determine the slideshow image that should serve as the main image for the product. To upload images to the slideshow, refer to [the respective POST endpoint](https://developer.epages.com/apps/api-reference/post-shopid-products-productid-slideshow.html).<br><br>
 
     securedBy: [products_write]
@@ -130,23 +130,51 @@ post:
     responses:
       204:
 
-  /crossselling:
-    displayName: Product crossselling
-    get:
-      is: [ locale, currency ]
-      queryParameters:
-        includeInvisible:
-          description: Includes invisible products. Only available with `products_write` authorisation.
-          type: boolean
-          required: false
-      description: Returns information on the crossselling of products. *epagesNow
-      securedBy: [products_read]
-      responses:
-        200:
-          body:
-            application/json:
-              example: !include examples/get_product_productid_crossselling_response.json
-              schema: !include schema/get_product_productid_crossselling.schema.json
+/crossselling:
+  displayName: Product crossselling
+  get:
+    is: [ locale, currency ]
+    queryParameters:
+      includeInvisible:
+        description: Includes invisible products. Only available with `products_write` authorisation.
+        type: boolean
+        required: false
+    description: Returns information on the cross-selling assignments of a single product. *epagesNow
+    securedBy: [products_read]
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include examples/get_product_productid_crossselling_response.json
+            schema: !include schema/get_product_productid_crossselling.schema.json
+
+  put:
+    description: Modifies information on the cross-selling assignments of a single product by replacing all of the assignments. *epagesNow
+    securedBy: [products_write]
+    body:
+      application/json:
+        example: !include examples/put_product_productid_crossselling_request.json
+        schema: !include schema/put_product_productid_crossselling_request_schema.json
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include examples/put_product_productid_crossselling_response.json
+            schema: !include schema/put_product_productid_crossselling.schema.json
+
+  patch:
+    description: Updates information on the cross-selling assignments for a single product with partial data according to [RFC 6902](https://tools.ietf.org/html/rfc6902). You can either add or remove assignments. *epagesNow
+    securedBy: [products_write]
+    body:
+      application/json:
+        example: !include examples/patch_product_productid_crossselling_request.json
+        schema: !include schema/patch_product_productid_crossselling_request_schema.json
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include examples/patch_product_productid_crossselling_response.json
+            schema: !include schema/patch_product_productid_crossselling.schema.json
 
   /variations:
     displayName: Product variations
