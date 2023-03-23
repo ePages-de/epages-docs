@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "Post Product Find Schema",
+  "type": "object",
+  "properties": {
+    "results": {
+      "type": "integer",
+      "description": "The number of products found in total."
+    },
+    "page": {
+      "type": "integer",
+      "description": "The page number on which the found products appear."
+    },
+    "resultsPerPage": {
+      "type": "integer",
+      "description": "The number of found products returned per page."
+    },
+    "items": {
+      "type": "array of [product](page:apps-data-types#product)",
+      "description": "The list of all products found."
+    }
+  }
+}

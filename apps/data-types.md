@@ -590,6 +590,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | sfUrl | string | The link to the storefront URL of the product. |
 | productNumber | string | The product number. |
 | isProductNumberVisible | boolean | Indicates if the product number is displayed in the storefront. |
+| isNew | boolean | Indicates if the product is displayed as new in the storefront. |
 | isManufacturerPriceRRP | boolean | Indicates if the manufacturer price is marked as RRP. |
 | isShippingLinkVisible | boolean | Indicates if a shipping cost reference that links to the shop's payment & shipping page is displayed together with the product price in the storefront. |
 | productImage | string | The name of the product image. |
@@ -611,6 +612,9 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | productVariationMasterName | string | The name of the variation product. Null if the `productVariationType` is *master* or *regular*. |
 | productVariationSelection | array of [variationIdentifier](page:apps-data-types#variationidentifier) | The selection of the variation product. Only available if `productVariationType` is *variation*. |
 | videos | array of [video](page:apps-data-types#video) | The videos belonging to the product. |
+| isCustomizable | boolean | Indicates if the product is customizable in the storefront. |
+| customizableTextLength | number | The maximum length of the custom text the customer can enter for a product in the storefront. |
+| customizableHeadlineText | string | The headline for the customization text field in the storefront. |
 
 ## product (create request)
 
@@ -712,6 +716,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | isProductNumberVisible | boolean | Indicates if the product number is displayed in the storefront. |
 | isManufacturerPriceRRP | boolean | Indicates if the manufacturer price is marked as RRP. |
 | isShippingLinkVisible | boolean | Indicates if a shipping cost reference that links to the shop's payment & shipping page is displayed together with the product price in the storefront. | 
+| isNew | boolean | Indicates if the product is displayed as new in the storefront. |
 | productImage | string | The name of the product image. |
 | images | array of [image](page:apps-data-types#image) | The images belonging to the product. |
 | manufacturer | string | The manufacturer of the product. |
@@ -731,6 +736,9 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | productVariationMasterName | string | The name of the variation product. Null if the `productVariationType` is *master* or *regular*. |
 | productVariationSelection | array of [variationIdentifier](page:apps-data-types#variationidentifier) | The selection of the variation product. Only available if `productVariationType` is *variation*. |
 | videos | array of [video](page:apps-data-types#video) | The videos belonging to the product. |
+| isCustomizable | boolean | Indicates if the product is customizable in the storefront. |
+| customizableTextLength | number | The maximum length of the custom text the customer can enter for a product in the storefront. |
+| customizableHeadlineText | string | The headline for the customization text field in the storefront. |
 | query | string | The search query. |
 | fallbackQuery | string | The fallback used if the original query did not produce any results. |
 | facets | array of [facet](page:apps-data-types#facet) | The refined search filter options. |

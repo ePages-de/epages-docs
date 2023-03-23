@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "Post Product Find Request Schema",
+  "type": "object",
+  "properties": {
+    "productNumber": {
+      "type": "string",
+      "description": "The product SKU to search for"
+    }
+  }
+}
