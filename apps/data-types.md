@@ -110,7 +110,7 @@ ePages Now only!
 | - | - |  - |
 | customerGroup | string | The name of the customer group. |
 | customerGroupId | string | The unique identifier of the customer group. |
-| priceInfo | array of [bulkPriceInfo](page:apps-data-types#bulkPriceInfo) | Information on customer specific bulk pricing for the product. |
+| priceInfo | array of [bulkPriceInfo](page:apps-data-types#bulkpriceinfo) | Information on customer specific bulk pricing for the product. |
 
 ## cart
 
@@ -576,7 +576,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | title | string | The page title of the product page. |
 | priceInfo | object of [priceInfo](page:apps-data-types#priceinfo) | Price information on the product. |
 | bulkPriceInfo | array of [bulkPriceInfo](page:apps-data-types#bulkpriceinfo) | Information on bulk pricing for the product. |
-| customerSpecificPriceInfo | array of [customerSpecificPriceInfo](page:apps-data-types#customerSpecificPriceInfo) | Information on customer specific pricing for the product. |
+| customerSpecificPriceInfo | array of [customerSpecificPriceInfo](page:apps-data-types#customerspecificpriceinfo) | Information on customer specific pricing for the product. |
 | forSale | boolean | Information on the sale status of the product. Indicates if the product can be added to the cart. |
 | specialOffer | boolean | Indicates if the product is a special offer. |
 | deliveryWeight | object of [deliveryWeightQuantity](page:apps-data-types#deliveryweightquantity) | The delivery weight of the product. |
