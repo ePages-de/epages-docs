@@ -102,6 +102,16 @@ ePages Now only!
 | basePrice | object of [basePrice](page:apps-data-types#baseprice) | The price information scaled to a standardised base unit, according to the German base price regulation "Preisangabenverordnung" (PAngV), e.g. 1 l = 1.20 EUR. Is `null` if no reference amount is specified for the product.|
 | priceSavings | object of [priceSavings](page:apps-data-types#pricesavings) | Information on the discount the customer benefits from due to the merchant's settings for customer-specific prices. |
 
+## customerSpecificPriceInfo
+
+ePages Now only!
+
+| Attribute | Type | Description |
+| - | - |  - |
+| customerGroup | string | The name of the customer group. |
+| customerGroupId | string | The unique identifier of the customer group. |
+| priceInfo | array of [bulkPriceInfo](page:apps-data-types#bulkpriceinfo) | Information on customer specific bulk pricing for the product. |
+
 ## cart
 
 | Attribute | Type | Description |
@@ -566,6 +576,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | title | string | The page title of the product page. |
 | priceInfo | object of [priceInfo](page:apps-data-types#priceinfo) | Price information on the product. |
 | bulkPriceInfo | array of [bulkPriceInfo](page:apps-data-types#bulkpriceinfo) | Information on bulk pricing for the product. |
+| customerSpecificPriceInfo | array of [customerSpecificPriceInfo](page:apps-data-types#customerspecificpriceinfo) | Information on customer specific pricing for the product. |
 | forSale | boolean | Information on the sale status of the product. Indicates if the product can be added to the cart. |
 | specialOffer | boolean | Indicates if the product is a special offer. |
 | deliveryWeight | object of [deliveryWeightQuantity](page:apps-data-types#deliveryweightquantity) | The delivery weight of the product. |
