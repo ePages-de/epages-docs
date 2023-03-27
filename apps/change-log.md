@@ -37,7 +37,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 #### <i class="fa fa-pencil“-alt></i> Update
 
-* Added attributes `isCustomizable`, `customizableTextLength` and `customizableHeadlineText`  to data types [`product`](https://developer.epages.com/apps/data-types.html#product) and [`productSearch`](https://developer.epages.com/apps/data-types.html#productsearch).
+* Added attributes `isCustomizable`, `customizableTextLength` and `customizableHeadlineText` to data types [`product`](https://developer.epages.com/apps/data-types.html#product) and [`productSearch`](https://developer.epages.com/apps/data-types.html#productsearch).
 
 #### <i class="fa fa-minus"></i> Deprecate
 
