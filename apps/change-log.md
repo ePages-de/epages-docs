@@ -14,9 +14,30 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
+## 2023-03-16
+
+### Changes with software release 7.81.0
+
+#### <i class="fa fa-plus"></i> New
+
+* [`PUT`/products/crossselling](https://developer.epages.com/apps/api-reference/put-shopid-products-crossselling.html)
+* [`PATCH`/products/crossselling](https://developer.epages.com/apps/api-reference/patch-shopid-products-crossselling.html)
+
+#### <i class="fa fa-pencil“-alt></i> Update
+
+* Added attributes `isManufacturerPriceRRP` and `isShippingLinkVisible` to data types [`product`](https://developer.epages.com/apps/data-types.html#product) and [`productSearch`](https://developer.epages.com/apps/data-types.html#productsearch).
+* Added attribute `visibleInNavigation` to data types [`category`](https://developer.epages.com/apps/data-types.html#category) and [`category (update request)`](https://developer.epages.com/apps/data-types.html#category-update-request).
+* Added replace functionality for stocklevel of [`PATCH`/products/{productId}](https://developer.epages.com/apps/api-reference/patch-shopid-products-productid.html)
+
+<hr>
+
 ## 2023-02-16
 
 ### Changes with software release 7.80.0
+
+#### <i class="fa fa-pencil“-alt></i> Update
+
+* Added attributes `isCustomizable`, `customizableTextLength` and `customizableHeadlineText` to data types [`product`](https://developer.epages.com/apps/data-types.html#product) and [`productSearch`](https://developer.epages.com/apps/data-types.html#productsearch).
 
 #### <i class="fa fa-minus"></i> Deprecate
 
