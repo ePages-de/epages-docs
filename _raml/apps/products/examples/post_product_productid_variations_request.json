@@ -1,0 +1,42 @@
+{
+  "productType":"Shoe",
+  "visibleAfterCreation": true,
+  "variationAttributes": [
+    {
+      "name": "Size",
+      "defaultForExistingProducts": "40",
+      "values": [
+        {
+            "value": "38"
+        },
+        {
+            "value": "39"
+        },
+        {
+            "value": "40"
+        },
+        {
+            "value": "41"
+        }
+      ]
+    },
+    {
+      "name": "Color",
+      "defaultForExistingProducts": "blue",
+      "values": [
+          {
+              "value": "blue"
+          },
+          {
+              "value": "red"
+          },
+          {
+              "value": "green"
+          },
+          {
+              "value": "black"
+          }
+      ]
+    }
+  ]
+}
