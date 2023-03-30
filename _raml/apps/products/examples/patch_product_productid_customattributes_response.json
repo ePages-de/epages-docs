@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "displayKey": "Handbook",
+      "singleValue": true,
+      "values": [
+        {
+          "displayValue": "",
+          "value": null
+        }
+      ],
+      "type": "string",
+      "key": "Handbook"
+    },
+    {
+      "displayKey": "Colour",
+      "singleValue": true,
+      "values": [
+        {
+          "displayValue": "red",
+          "value": "red"
+        }
+      ],
+      "type": "string",
+      "key": "Colour"
+    }
+  ]
+}

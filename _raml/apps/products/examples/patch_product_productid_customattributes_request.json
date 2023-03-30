@@ -1,0 +1,19 @@
+[
+  {
+    "op": "add",
+    "path": "/",
+    "value":
+    {
+      "key": "Colour",
+      "displayValue": "red"
+    }
+  },
+  {
+    "op": "remove",
+    "path": "/",
+    "value":
+    {
+      "key": "Handbook"
+    }
+  }
+]
