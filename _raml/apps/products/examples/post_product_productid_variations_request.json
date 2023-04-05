@@ -1,40 +1,28 @@
 {
-  "productType":"Shoe",
+  "productType":"Headphones",
   "visibleAfterCreation": true,
   "variationAttributes": [
     {
-      "name": "Size",
-      "defaultForExistingProducts": "40",
+      "name": "Connectivity",
+      "defaultForExistingProducts": "Bluetooth",
       "values": [
         {
-            "value": "38"
+            "value": "Bluetooth"
         },
         {
-            "value": "39"
-        },
-        {
-            "value": "40"
-        },
-        {
-            "value": "41"
+            "value": "cable"
         }
       ]
     },
     {
-      "name": "Color",
-      "defaultForExistingProducts": "blue",
+      "name": "wearing option",
+      "defaultForExistingProducts": "on-ear",
       "values": [
           {
-              "value": "blue"
+              "value": "in-ear"
           },
           {
-              "value": "red"
-          },
-          {
-              "value": "green"
-          },
-          {
-              "value": "black"
+              "value": "on-ear"
           }
       ]
     }

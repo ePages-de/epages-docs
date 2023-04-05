@@ -937,23 +937,9 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 
 | Attribute | Type | Description |
 | - | - |  - |
-| productType | string | Unique name (alias) of the product type. |
-| visibleAfterCreation | boolean | Indicates if the new variation products are displayed in the shop after creation. |
-| variationAttributes | array of [variationattribute (create request)](page:apps-data-types#variationattribute-create-request) | Attributes used for creating variation products |
-
-## variationattribute (create request)
-
-| Attribute | Type | Description |
-| - | - |  - |
-| name | string | The name of the variation attribute. |
-| defaultForExistingProducts | string | Default value for extending existing variation products |
-| values | array of [variationValue (create request)](page:apps-data-types#variationvalue-create-request) | The values of the variation attribute.  |
-
-## variationValue (create request)
-
-| Attribute | Type | Description |
-| - | - |  - |
-| value | string | The key of an attribute value, e.g. NeonPurple. |
+| productType | string | The unique name of the product type. |
+| visibleAfterCreation | boolean | Indicates if the new product variations are displayed in the shop after creation. |
+| variationAttributes | array of [variationAttribute (create request)](page:apps-data-types#variationattribute-create-request) | The attributes used for creating product variations. |
 
 ## variationAttribute
 
@@ -962,6 +948,14 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | name | string | The name of the variation attribute. |
 | displayName | string | The displayed name of the variation attribute. |
 | values | array of [variationValue](page:apps-data-types#variationvalue) | The values of the variation attribute.  |
+
+## variationAttribute (create request)
+
+| Attribute | Type | Description |
+| - | - |  - |
+| name | string | The name of the variation attribute. |
+| defaultForExistingProducts | string | The default value that gets assigned to existing product variations. |
+| values | array of [variationValue (create request)](page:apps-data-types#variationvalue-create-request) | The values of the variation attribute.  |
 
 ## variationIdentifier
 
@@ -979,6 +973,11 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | value | string | The key of an attribute, e.g. NeonPurple. |
 | displayValue | string | The localized displayed name of the attribute, e.g. Neon Purple. |
 
+## variationValue (create request)
+
+| Attribute | Type | Description |
+| - | - |  - |
+| value | string | The assigned value of the variation attribute, e.g. neon purple. |
 ## video
 
 | Attribute | Type | Description |
