@@ -15,7 +15,7 @@
       ]
     },
     {
-      "name": "wearing option",
+      "name": "Type",
       "defaultForExistingProducts": "on-ear",
       "values": [
           {
