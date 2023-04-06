@@ -1,41 +1,37 @@
 {
-  "name": "Kleidung",
+  "name": "Headphones",
   "productTypeId": "64180BCB-5AEF-4E69-4A92-AC150003B611",
   "attributes": [
     {
       "visible": true,
-      "name": "Farbe",
+      "name": "Connectivity",
       "values": [
         {
-          "value": "blau",
-          "name": "blau"
+          "value": "Bluetooth",
+          "name": "Bluetooth"
         },
         {
-          "value": "rot",
-          "name": "rot"
+          "value": "cable",
+          "name": "cable"
         }
       ],
       "preDefAttribute": true
     },
     {
       "visible": false,
-      "name": "Größe",
+      "name": "wearing option",
       "values": [
         {
-          "value": "S",
-          "name": "S"
+          "value": "in-ear",
+          "name": "in-ear"
         },
         {
-          "value": "M",
-          "name": "M"
-        },
-        {
-          "value": "L",
-          "name": "L"
+          "value": "in-ear",
+          "name": "in-ear"
         }
       ],
       "preDefAttribute": true
     }
   ],
-  "alias": "Kleidung"
+  "alias": "Headphones"
 }

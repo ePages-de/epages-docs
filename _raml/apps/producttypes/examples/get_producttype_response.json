@@ -2,103 +2,43 @@
   "page": 1,
   "items": [
     {
-      "name": "Kleidung",
+      "name": "Headphones",
       "productTypeId": "64180BCB-5AEF-4E69-4A92-AC150003B611",
       "attributes": [
         {
-          "visible": false,
-          "name": "Farbe",
+          "visible": true,
+          "name": "Connectivity",
           "values": [
             {
-              "value": "blau",
-              "name": "blau"
+              "value": "Bluetooth",
+              "name": "Bluetooth"
             },
             {
-              "value": "rot",
-              "name": "rot"
+              "value": "cable",
+              "name": "cable"
             }
           ],
           "preDefAttribute": true
         },
         {
-          "visible": false,
-          "name": "Größe",
+          "visible": true,
+          "name": "wearing option",
           "values": [
             {
-              "value": "S",
-              "name": "S"
+              "value": "in-ear",
+              "name": "in-ear"
             },
             {
-              "value": "M",
-              "name": "M"
-            },
-            {
-              "value": "L",
-              "name": "L"
+              "value": "in-ear",
+              "name": "in-ear"
             }
           ],
           "preDefAttribute": true
         }
       ],
-      "alias": "Kleidung"
-    },
-    {
-      "name": "Schuhe",
-      "productTypeId": "64180BCB-3F30-CAE4-9FE2-AC150003B647",
-      "attributes": [
-        {
-          "visible": false,
-          "name": "Größe",
-          "values": [
-            {
-              "value": "32",
-              "name": "32"
-            },
-            {
-              "value": "33",
-              "name": "33"
-            },
-            {
-              "value": "34",
-              "name": "34"
-            },
-            {
-              "value": "35",
-              "name": "35"
-            },
-            {
-              "value": "36",
-              "name": "36"
-            },
-            {
-              "value": "37",
-              "name": "37"
-            },
-            {
-              "value": "38",
-              "name": "38"
-            },
-            {
-              "value": "39",
-              "name": "39"
-            },
-            {
-              "value": "40",
-              "name": "40"
-            }
-          ],
-          "preDefAttribute": true
-        }
-      ],
-      "alias": "Schuhe"
-    },
-    {
-      "name": "Standard",
-      "productTypeId": "64180BC8-AC59-A815-1054-AC150003B609",
-      "attributes": [],
-      "alias": "ProductClass"
+      "alias": "Headphones"
     }
   ],
   "resultsPerPage": 10,
-  "results": 3
+  "results": 1
 }

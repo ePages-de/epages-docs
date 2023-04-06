@@ -1,10 +1,9 @@
 #%RAML 0.8
-displayName: Producttypes
+displayName: Product types
 get:
-  description: Returns a list of all producttypes. *epages6 *epagesNow
+  description: Returns a list of all product types. *epagesNow
   securedBy: [products_read]
-  is: [ paged ]
-  is: [ locale ]
+  is: [ locale, paged ]
   queryParameters:
   responses:
     200:
@@ -13,7 +12,7 @@ get:
           example: !include examples/get_producttype_response.json
           schema: !include schema/get_producttype.schema.json
 post:
-  description: Creates a producttype. *epages6 *epagesNow
+  description: Creates a product type. *epagesNow
   securedBy: [products_write]
   is: [ locale ]
   body:
@@ -27,9 +26,9 @@ post:
           example: !include examples/post_producttype_response.json
           schema: !include schema/post_producttype.schema.json
 /{productTypeId}:
-  displayName: Producttype
+  displayName: Product type
   get:
-    description: Returns a specified producttype of a shop. *epages6 *epagesNow
+    description: Returns a specified product type of a shop. *epagesNow
     securedBy: [products_read]
     is: [ locale ]
     responses:

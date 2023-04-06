@@ -1,41 +1,41 @@
 [
   {
-    "name": "Kleidung",
+    "name": "Headphones",
     "attributes": [
       {
-        "visible": false,
-        "name": "Farbe",
+        "visible": true,
+        "name": "Connectivity",
         "values": [
           {
-            "value": "blau",
-            "name": "blau"
+            "value": "Bluetooth",
+            "name": "Bluetooth"
           },
           {
-            "value": "rot",
-            "name": "rot"
+            "value": "cable",
+            "name": "cable"
           }
         ],
         "preDefAttribute": true
       },
       {
         "visible": false,
-        "name": "Größe",
+        "name": "wearing option",
         "values": [
           {
-            "value": "S",
-            "name": "S"
+            "value": "in-ear",
+            "name": "in-ear"
           },
           {
-            "value": "M",
-            "name": "M"
+            "value": "in-ear",
+            "name": "in-ear"
           },
           {
-            "value": "L",
-            "name": "L"
+            "value": "on-ear",
+            "name": "on-ear"
           }
         ]
       }
     ],
-    "alias": "Kleidung"
+    "alias": "Headphones"
   }
 ]
