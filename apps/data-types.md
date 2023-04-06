@@ -727,28 +727,6 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | fallbackQuery | string | The fallback used if the original query did not produce any results. |
 | facets | array of [facet](page:apps-data-types#facet) | The refined search filter options. |
 
-## product (create request)
-
-| Attribute | Type | Description |
-| - | - |  - |
-| productNumber | string | The product number (mandatory). |
-| name | string | The name of the product. |
-| shortDescription | string | The short description of the product. |
-| description | string | The description of the product. |
-| manufacturer | string | The manufacturer of the product. |
-| price | number | The price of the product. |
-| essentialFeatures | string | The essential features of the product. |
-| upc | string | The Universal Product Code of the product. |
-| ean | string | The European Article Number of the product, either EAN-8 or EAN-13. |
-| deliveryPeriod | string | The average time of the product being delivered to the customer. By default, the delivery period is displayed in days, but this can be changed by the merchant. |
-| searchKeywords | array of string | The search terms for the product determined by the merchant in the administration. |
-| visible | boolean | Indicates if the product is displayed in the shop. |
-| taxClassId | string | The unique identifier of the tax class. |
-| stocklevel | number | Indicates the stock level of the product. |
-| depositPrice | number | The deposit price for the product, e.g. bottle deposit.|
-| manufacturerPrice | number | The sales price recommended by the manufacturer.|
-
-
 ## productSearch (create request)
 
 | Attribute | Type | Description |
