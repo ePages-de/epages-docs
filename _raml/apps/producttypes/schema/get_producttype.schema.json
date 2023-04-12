@@ -13,7 +13,7 @@
     },
     "resultsPerPage": {
       "type": "integer",
-      "description": "The number of producttypes returned per page."
+      "description": "The number of product types returned per page."
     },
     "items": {
       "type": "array of [producttype](page:apps-data-types#producttype)",
