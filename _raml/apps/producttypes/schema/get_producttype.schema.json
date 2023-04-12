@@ -17,7 +17,7 @@
     },
     "items": {
       "type": "array of [producttype](page:apps-data-types#producttype)",
-      "description": "The list of all producttypes."
+      "description": "A list of all available product types."
     }
   }
 }
