@@ -131,12 +131,12 @@ post:
       204:
 
   /custom-attributes:
-    displayName: Product custom-attributes
+    displayName: Custom attributes
     patch:
       description: Updates information on the custom attributes for a single product with partial data according to [RFC 6902](https://tools.ietf.org/html/rfc6902). You can either add or remove assignments. *epagesNow <br><br>
 
           *Supported JSON-PATCH operations*<br>
-          - add (sets or replaces an attribute)<br>
+          - add (sets or replaces an attribute value)<br>
           - remove (unsets an attribute)<br><br>
 
       securedBy: [products_write]

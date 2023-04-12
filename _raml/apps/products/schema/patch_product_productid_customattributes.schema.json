@@ -1,6 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema",
-  "title": "PATCH Product ProductId Custom-Attributes Schema",
+  "title": "Patch Product ProductId Custom Attributes Schema",
+
   "type": "object",
   "properties": {
     "items": {

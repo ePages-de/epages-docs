@@ -1,7 +1,8 @@
 {
   "items": [
     {
-      "displayKey": "Handbook",
+      "displayKey": "Additional information",
+
       "singleValue": true,
       "values": [
         {
@@ -10,7 +11,8 @@
         }
       ],
       "type": "string",
-      "key": "Handbook"
+      "key": "Additional information"
+
     },
     {
       "displayKey": "Colour",
