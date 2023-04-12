@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema",
-  "title": "Get ProductTypes Schema",
+  "title": "Get Product Types Schema",
   "type": "object",
   "properties": {
     "results": {
