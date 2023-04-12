@@ -4,6 +4,7 @@
     "alias": "Categories",
     "name": "Home page",
     "visible": true,
+    "visibleInNavigation": true,
     "pageTitle": "Technic365 ePages Demoshop",
     "navigationCaption": "Categories",
     "description": "Welcome to the Technic365 shop. Always the first for technique trends.",

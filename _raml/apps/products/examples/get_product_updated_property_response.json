@@ -73,7 +73,7 @@
             "percentage": 19
           },
           "price": {
-            "taxType": "NET",
+            "taxType": "GROSS",
             "formatted": "54.62 €",
             "amount": 54.62,
             "currency": "EUR"
@@ -81,7 +81,7 @@
           "depositPrice": null,
           "ecoParticipationPrice": null,
           "priceWithDeposits": {
-            "taxType": "NET",
+            "taxType": "GROSS",
             "formatted": "54.62 €",
             "amount": 54.62,
             "currency": "EUR"
@@ -98,19 +98,19 @@
               "unit":"piece(s)"
             },
             "price": {
-              "taxType": "NET",
-              "formatted": "27.00 €",
-              "amount": 27,
+              "taxType": "GROSS",
+              "formatted": "30.00 €",
+              "amount": 30,
               "currency": "EUR"
             },
             "basePrice": null,
             "priceSavings": {
               "percent": {
-                "formatted": "10 %",
-                "percentage": 10.0
+                "formatted": "0 %",
+                "percentage": 0.0
               },
               "regularBulkPrice": {
-                "taxType": "NET",
+                "taxType": "GROSS",
                 "formatted": "30.00 €",
                 "amount": 30,
                 "currency": "EUR"
@@ -123,24 +123,82 @@
               "unit":"piece(s)"
             },
             "price": {
-              "taxType": "NET",
-              "formatted": "36.00 €",
-              "amount": 36,
+              "taxType": "GROSS",
+              "formatted": "40.00 €",
+              "amount": 40,
               "currency": "EUR"
             },
             "basePrice": null,
             "priceSavings": {
               "percent": {
-                "formatted": "10 %",
-                "percentage": 10.0
+                "formatted": "0 %",
+                "percentage": 0.0
               },
               "regularBulkPrice": {
-                "taxType": "NET",
+                "taxType": "GROSS",
                 "formatted": "40.00 €",
                 "amount": 40,
                 "currency": "EUR"
               }
             }
+          }
+        ],
+        "customerSpecificPriceInfo": [
+          {
+            "customerGroup" : "KG1",
+            "customerGroupId": "63E4F781-CDA5-327F-B72B-C0A802027724",
+            "priceInfo": [
+              {
+                "quantity": {
+                  "amount": 5,
+                  "unit":"piece(s)"
+                },
+                "price": {
+                  "taxType": "GROSS",
+                  "formatted": "50.00 €",
+                  "amount": 50,
+                  "currency": "EUR"
+                },
+                "basePrice": null,
+                "priceSavings": {
+                  "percent": {
+                    "formatted": "10 %",
+                    "percentage": 10.0
+                  },
+                  "regularBulkPrice": {
+                    "taxType": "GROSS",
+                    "formatted": "55.00 €",
+                    "amount": 55,
+                    "currency": "EUR"
+                  }
+                }
+              },
+              {
+                "quantity": {
+                    "amount": 10,
+                    "unit": "piece(s)"
+                },
+                "price": {
+                    "taxType": "GROSS",
+                    "formatted": "45.00 €",
+                    "amount": 45,
+                    "currency": "EUR"
+                },
+                "basePrice": null,
+                "priceSavings": {
+                    "percent": {
+                        "formatted": "0 %",
+                        "percentage": 0.0
+                    },
+                    "regularBulkPrice": {
+                        "taxType": "GROSS",
+                        "formatted": "45.00 €",
+                        "amount": 45,
+                        "currency": "EUR"
+                    }
+                }
+              }
+            ]
           }
         ],
         "forSale": true,
@@ -158,6 +216,12 @@
         "sfUrl": "http://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/Products/HP-003",
         "productNumber": "HP-003",
         "isProductNumberVisible": true,
+        "isNew": false,
+        "isManufacturerPriceRRP": true,
+        "isShippingLinkVisible": true,
+        "isCustomizable": true,
+        "customizableTextLength": 50,
+        "customizableHeadlineText": "Customize your product",
         "manufacturer": "Bass by Dr.Boom",
         "upc": null,
         "ean": null,

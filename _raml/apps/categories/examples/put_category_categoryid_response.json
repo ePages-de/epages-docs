@@ -3,6 +3,7 @@
   "alias": "Feature",
   "name": "Featured products",
   "visible": false,
+  "visibleInNavigation": true,
   "pageTitle": "Featured products",
   "navigationCaption": "Feature",
   "description": "Our audio product recommendations.",

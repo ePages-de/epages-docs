@@ -12,4 +12,22 @@
   "op": "add",
   "path": "/deliveryWeight",
   "value": {"unit":"g", "amount": 260}
+},
+{
+  "op": "add",
+  "path": "/customerSpecificPriceInfo",
+  "value": [{"customerGroup":"KG1",
+                "priceInfo": [
+                  {
+                    "quantity" : 5,
+                    "price" : 55.00,
+                    "discountPercentage" : 10 
+                  },
+                  {
+                    "quantity" : 10,
+                    "price" : 45.00,
+                    "discountPercentage" : 0 
+                  }
+                ]
+            }]
 }]
