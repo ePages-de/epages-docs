@@ -22,7 +22,7 @@
         },
         {
           "visible": true,
-          "name": "wearing option",
+          "name": "Type",
           "values": [
             {
               "value": "in-ear",
