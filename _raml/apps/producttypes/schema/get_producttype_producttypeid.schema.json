@@ -1,10 +1,10 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema",
-  "title": "Get ProductType ProductTypeId Schema",
+  "title": "Get Product Type TypeId Schema",
   "type": "object",
   "properties": {
     "": {
-      "type": "object of [producttype](page:apps-data-types#producttype)",
+      "type": "object of [productType](page:apps-data-types#producttype)",
       "description": ""
     }
   }

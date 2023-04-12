@@ -5,7 +5,7 @@
   "properties": {
     "results": {
       "type": "integer",
-      "description": "The number of producttypes in total."
+      "description": "The existing product types, e.g. connectivity."
     },
     "page": {
       "type": "integer",
