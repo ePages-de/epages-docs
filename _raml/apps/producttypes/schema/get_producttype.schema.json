@@ -16,7 +16,7 @@
       "description": "The number of product types returned per page."
     },
     "items": {
-      "type": "array of [producttype](page:apps-data-types#producttype)",
+      "type": "array of [productType](page:apps-data-types#producttype)",
       "description": "A list of all available product types."
     }
   }
