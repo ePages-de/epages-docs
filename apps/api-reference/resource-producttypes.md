@@ -1,7 +1,7 @@
 ---
 layout: docs
 key: api-resources-producttypes
-title: ProductTypes
+title: Product Types
 ---
 {% assign global_key = page.key %}
 
