@@ -5,7 +5,7 @@
   "items": [
     {
       "productId": "54EF2E41-FCA8-E0E5-9323-0A0C05E66C2E",
-      "name": "Customised headphone",
+      "name": "Boom - Customised headphone",
       "visible": true,
       "productVariationType": "regular",
       "productVariationMasterName": null,
@@ -18,7 +18,7 @@
       "shortDescription": null,
       "deliveryPeriod": "2-4",
       "description": "Customise your headphone in no time!",
-      "title": "Customized headphone - Technic365",
+      "title": "Boom - Customised headphone - Technic365",
       "productImage": "headphone3.jpg",
       "images": [
         {
@@ -106,12 +106,6 @@
       "sfUrl": "http://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/Products/Cust001",
       "productNumber": "Cust001",
       "isProductNumberVisible": true,
-      "isNew": false,
-      "isManufacturerPriceRRP": true,
-      "isShippingLinkVisible": true,
-      "isCustomizable": true,
-      "customizableTextLength": 50,
-      "customizableHeadlineText": "Customize your product",
       "manufacturer": "Dr. Boom",
       "upc": null,
       "ean": null,
@@ -240,12 +234,6 @@
       "sfUrl": "http://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/Products/HP-003",
       "productNumber": "HP-003",
       "isProductNumberVisible": true,
-      "isNew": false,
-      "isManufacturerPriceRRP": true,
-      "isShippingLinkVisible": true,
-      "isCustomizable": true,
-      "customizableTextLength": 50,
-      "customizableHeadlineText": "Customize your product",
       "manufacturer": "Bass by Dr.Boom",
       "upc": null,
       "ean": null,
@@ -347,7 +335,7 @@
           "percentage": 19
         },
         "price": {
-          "taxType": "GROSS",
+          "taxType": "NET",
           "formatted": "126.04 €",
           "amount": 126.04,
           "currency": "EUR"
@@ -355,19 +343,19 @@
         "depositPrice": null,
         "ecoParticipationPrice": null,
         "priceWithDeposits": {
-          "taxType": "GROSS",
+          "taxType": "NET",
           "formatted": "42.02 €",
           "amount": 42.02,
           "currency": "EUR"
         },
         "lowestPrice": {
-            "taxType": "GROSS",
+            "taxType": "NET",
             "formatted": "39.50 €",
             "amount": 39.5,
             "currency": "EUR"
         },
         "highestPrice": {
-          "taxType": "GROSS",
+          "taxType": "NET",
           "formatted": "131.70 €",
           "amount": 131.7,
           "currency": "EUR"
@@ -382,19 +370,19 @@
             "unit":"piece(s)"
           },
           "price": {
-            "taxType": "GROSS",
-            "formatted": "100.00 €",
-            "amount": 100,
+            "taxType": "NET",
+            "formatted": "90.00 €",
+            "amount": 90,
             "currency": "EUR"
           },
           "basePrice": null,
           "priceSavings": {
             "percent": {
-              "formatted": "0 %",
-              "percentage": 0.0
+              "formatted": "10 %",
+              "percentage": 10.0
             },
             "regularBulkPrice": {
-              "taxType": "GROSS",
+              "taxType": "NET",
               "formatted": "100.00 €",
               "amount": 100,
               "currency": "EUR"
@@ -407,82 +395,24 @@
             "unit":"piece(s)"
           },
           "price": {
-            "taxType": "GROSS",
-            "formatted": "120.00 €",
-            "amount": 120,
+            "taxType": "NET",
+            "formatted": "108.00 €",
+            "amount": 108,
             "currency": "EUR"
           },
           "basePrice": null,
           "priceSavings": {
             "percent": {
-              "formatted": "0 %",
-              "percentage": 0.0
+              "formatted": "10 %",
+              "percentage": 10.0
             },
             "regularBulkPrice": {
-              "taxType": "GROSS",
+              "taxType": "NET",
               "formatted": "120.00 €",
               "amount": 120,
               "currency": "EUR"
             }
           }
-        }
-      ],
-      "customerSpecificPriceInfo": [
-        {
-          "customerGroup" : "KG1",
-          "customerGroupId": "63E4F781-CDA5-327F-B72B-C0A802027724",
-          "priceInfo": [
-            {
-              "quantity": {
-                "amount": 5,
-                "unit": "piece(s)"
-              },
-              "price": {
-                "taxType": "GROSS",
-                "formatted": "100.00 €",
-                "amount": 100.00,
-                "currency": "EUR"
-              },
-              "basePrice": null,
-              "priceSavings": {
-                "percent": {
-                  "formatted": "5 %",
-                  "percentage": 5.0
-                },
-                "regularBulkPrice": {
-                  "taxType": "GROSS",
-                  "formatted": "105.00 €",
-                  "amount": 105,
-                  "currency": "EUR"
-                }
-              }
-            },
-            {
-              "quantity": {
-                "amount": 10,
-                "unit": "piece(s)"
-              },
-              "price": {
-                "taxType": "GROSS",
-                "formatted": "90.00 €",
-                "amount": 90,
-                "currency": "EUR"
-              },
-              "basePrice": null,
-              "priceSavings": {
-                "percent": {
-                  "formatted": "0 %",
-                  "percentage": 0.0
-                },
-                "regularBulkPrice": {
-                  "taxType": "GROSS",
-                  "formatted": "90.00 €",
-                  "amount": 90,
-                  "currency": "EUR"
-                }
-              }
-            }
-          ]
         }
       ],
       "forSale": false,
@@ -499,12 +429,6 @@
       "sfUrl": "http://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/Products/HS-001",
       "productNumber": "HS-001",
       "isProductNumberVisible": true,
-      "isNew": false,
-      "isManufacturerPriceRRP": true,
-      "isShippingLinkVisible": true,
-      "isCustomizable": true,
-      "customizableTextLength": 50,
-      "customizableHeadlineText": "Customize your product",
       "manufacturer": "Bass by Dr.Boom",
       "upc": null,
       "ean": null,
