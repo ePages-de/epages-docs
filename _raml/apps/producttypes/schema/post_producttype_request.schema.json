@@ -4,7 +4,7 @@
   "type": "object",
   "properties": {
     "": {
-      "type": "object of [producttype (create request)](page:apps-data-types#producttype-create-request)",
+      "type": "object of [productType (create request)](page:apps-data-types#producttype-create-request)",
       "description": ""
     }
   }
