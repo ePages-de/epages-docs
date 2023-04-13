@@ -669,6 +669,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | energyLabelsString | string | A list of energy labels applied to this product. Can be one value or a range with two values. |
 | energyLabelsMaxEfficiencyString | string | The highest possible efficiency class of an uploaded energy label. |
 | energyLabelSourceFile | string | A URL with an image or PDF file containing the energy label image supplied by the manufacturer. |
+| productDataSheetSourceFile | string | A URL with an image or PDF file containing a data sheet with technical information on the product. |
 
 ## productLineItem (create request)
 
