@@ -68,6 +68,15 @@ This object is used for the attributes of shippingAddress and billingAddress.
 | privatePhoneNumber | string | The customer's private phone number |
 | websiteUrl | string | The customer's website URL.  |
 
+## attributeProductType
+
+| Attribute | Type | Description |
+| - | - |  - |
+| name | string | The name for the attribute. |
+| preDefAttribute | boolean | Indicates if the attribute has predefined values. |
+| values | [attributeSelection](page:apps-data-types#attributeselection) | The values of the selected attribute for the product type. |
+| visible | boolean | Indicates if the attribute is displayed in the shop. |
+
 ## attributeRange
 
 | Attribute | Type | Description |
@@ -125,8 +134,8 @@ ePages Now only!
 | minimumCart | object of [minimumCart](page:apps-data-types#minimumcart) | The minimum order value of a shop. |
 | pickupToken | string | For internal use only. Can be ignored. |
 | creationDate | string | The date/time the cart was created. Expressed according to ISO 8601. Example: `2018-12-17T21:07:29Z` |
-| checkoutUrl | string | The URL that redirects the browser to the merchant’s shop in order to complete the checkout. |
-| registerSessionUrl | string | The URL that redirects the browser to the merchant’s shop in order to register a session. |
+| checkoutUrl | string | The URL that redirects the browser to the merchant's shop in order to complete the checkout. |
+| registerSessionUrl | string | The URL that redirects the browser to the merchant's shop in order to register a session. |
 | cartValidation | object of [cartValidation](page:apps-data-types#cartvalidation) | The list of all validations with regard to the cart. |
 | potentialBasketDiscounts | object of [potentialBasketDiscounts](page:apps-data-types#potentialbasketdiscounts) | The list of all potential overall discounts for orders in the shop. The included discounts can be of type *absolute* or *percent*.|
 | status | string | The status of the cart. If all line items were added successfully, it is *Complete*. Otherwise, it is *PartiallyComplete*. Only included in [`POST`/carts](page:apps-api-post-shopid-carts-information) if the attribute *forceCreate* is `true` and in [`POST`/carts/{cartId}/multi-line-items](page:apps-api-post-shopid-carts-cartid-multi-line-items-information). |
@@ -163,7 +172,7 @@ ePages Now only!
 | parent | [link](page:apps-data-types#link) | The link to the parent category. |
 | subCategories | array of [link](page:apps-data-types#link) | A list of links to the subcategories. |
 | navigationCaption | string | The name of the category page that appears in the navigation bar. |
-| sfUrl | string | The link to the categories in the shop’s storefront. |
+| sfUrl | string | The link to the categories in the shop's storefront. |
 | facetedSearchShowFacetsOnCategory | boolean | Indicates if the search field is displayed on category pages. |
 | facetedSearchCategoryStartDepth | number | The category level for displaying the search field on category pages. The search field is displayed on the indicated level and all sub levels. |
 
@@ -213,18 +222,18 @@ ePages Now only!
 | name | string | The name that appears on the page.|
 | title | string | The name of the page, that appears on the browser tab.|
 | navigationCaption | string | The name of the page, that appears in the navigation bar.|
-| shortDescription | string | Additional short information that can be given to better explain what’s on the page.|
+| shortDescription | string | Additional short information that can be given to better explain what's on the page.|
 | description | string | Information on the topic of the page.|
 
 ## contentPageSummary
 
 | Attribute | Type | Description |
 | - | - |  - |
-| contactInformation | [contentPageSummaryItem](page:apps-data-types#contentpagesummaryitem) | The shop’s contact information. |
-| privacyPolicy | [contentPageSummaryItem](page:apps-data-types#contentpagesummaryitem) | The shop’s privacy policy. |
-| rightsOfWithdrawal | [contentPageSummaryItem](page:apps-data-types#contentpagesummaryitem) | The shop’s rights of withdrawal. |
-| termsAndConditions | [contentPageSummaryItem](page:apps-data-types#contentpagesummaryitem) | The shop’s terms and conditions. |
-| shippingInformation | [contentPageSummaryItem](page:apps-data-types#contentpagesummaryitem) | The shop’s shipping conditions. |
+| contactInformation | [contentPageSummaryItem](page:apps-data-types#contentpagesummaryitem) | The shop's contact information. |
+| privacyPolicy | [contentPageSummaryItem](page:apps-data-types#contentpagesummaryitem) | The shop's privacy policy. |
+| rightsOfWithdrawal | [contentPageSummaryItem](page:apps-data-types#contentpagesummaryitem) | The shop's rights of withdrawal. |
+| termsAndConditions | [contentPageSummaryItem](page:apps-data-types#contentpagesummaryitem) | The shop's terms and conditions. |
+| shippingInformation | [contentPageSummaryItem](page:apps-data-types#contentpagesummaryitem) | The shop's shipping conditions. |
 | links | array of [link](page:apps-data-types#link) | The links to the shop's [contact information](page:apps-api-get-shopid-legal-contact-information-information), [privacy policy](page:apps-api-get-shopid-legal-privacy-policy-information), [rights of withdrawal](page:apps-api-get-shopid-legal-rights-of-withdrawal-information), [terms and conditions](page:apps-api-get-shopid-legal-terms-and-conditions-information) and [shipping conditions](page:apps-api-get-shopid-legal-shipping-information-information). |
 
 ## contentPageSummaryItem
@@ -414,7 +423,7 @@ ePages Now only!
 
 | Attribute | Type | Description |
 | - | - |  - |
-| status | boolean | Indicates if the minimum order value is exceeded. Creating an order is not possible when a cart is posted with the minimumCart status `false´. |
+| status | boolean | Indicates if the minimum order value is exceeded. Creating an order is not possible when a cart is posted with the minimumCart status `false`. |
 | code | string | Represents the selected value of the minimum order value that can be set by the merchant in the administration area of the shop. Can be one of *SumProduct*, *SumCoupon*, *SumDiscount*, *SumDelivery* or *SumPayment*. |
 | amount | object of [price](page:apps-data-types#price) | The amount of the minimum value in the cart with currency and tax type. |
 
@@ -744,28 +753,6 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | fallbackQuery | string | The fallback used if the original query did not produce any results. |
 | facets | array of [facet](page:apps-data-types#facet) | The refined search filter options. |
 
-## product (create request)
-
-| Attribute | Type | Description |
-| - | - |  - |
-| productNumber | string | The product number (mandatory). |
-| name | string | The name of the product. |
-| shortDescription | string | The short description of the product. |
-| description | string | The description of the product. |
-| manufacturer | string | The manufacturer of the product. |
-| price | number | The price of the product. |
-| essentialFeatures | string | The essential features of the product. |
-| upc | string | The Universal Product Code of the product. |
-| ean | string | The European Article Number of the product, either EAN-8 or EAN-13. |
-| deliveryPeriod | string | The average time of the product being delivered to the customer. By default, the delivery period is displayed in days, but this can be changed by the merchant. |
-| searchKeywords | array of string | The search terms for the product determined by the merchant in the administration. |
-| visible | boolean | Indicates if the product is displayed in the shop. |
-| taxClassId | string | The unique identifier of the tax class. |
-| stocklevel | number | Indicates the stock level of the product. |
-| depositPrice | number | The deposit price for the product, e.g. bottle deposit.|
-| manufacturerPrice | number | The sales price recommended by the manufacturer.|
-
-
 ## productSearch (create request)
 
 | Attribute | Type | Description |
@@ -781,6 +768,23 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | name | string | The name of the product resulting from the query. |
 | images | array of [image](page:apps-data-types#image) | The image of the product resulting from the query. |
 | link | [link](page:apps-data-types#link) | The link to the product resulting from the query. |
+
+## productType
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| productTypeId | string | The unique identifier of the product type. |
+| name | string | The name of the product type. |
+| alias | string | The alias for the product type.  |
+| attributes | [attributeProducttype](page:apps-data-types#attributeproducttype) | The attributes of the selected product type. |
+
+## productType (create request)
+
+| Attribute | Type | Description |
+| - | :-: |  - |
+| name | string | The name of the product type. |
+| alias | string | The alias for the product type.  |
+| attributes | [attributeProducttype](page:apps-data-types#attributeproducttype) | The attributes of the selected product type. |
 
 ## quantity
 
@@ -877,7 +881,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | pageTitle | string | The page title of this category. |
 | description | string | The description of the category. |
 | parent | object of [link](page:apps-data-types#link) | The link to the parent category. |
-| sfUrl | string | The link to the categories in the shop’s storefront. |
+| sfUrl | string | The link to the categories in the shop's storefront. |
 | links | array of [link](page:apps-data-types#link) | A list of links to the products. |
 
 ## taxClassInfo
