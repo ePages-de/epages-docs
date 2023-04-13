@@ -70,6 +70,8 @@ This object is used for the attributes of shippingAddress and billingAddress.
 
 ## attributeProductType
 
+ePages Now only!
+
 | Attribute | Type | Description |
 | - | - |  - |
 | name | string | The name for the attribute. |
@@ -771,6 +773,8 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 
 ## productType
 
+ePages Now only!
+
 | Attribute | Type | Description |
 | - | :-: |  - |
 | productTypeId | string | The unique identifier of the product type. |
@@ -779,6 +783,8 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | attributes | [attributeProducttype](page:apps-data-types#attributeproducttype) | The attributes of the selected product type. |
 
 ## productType (create request)
+
+ePages Now only!
 
 | Attribute | Type | Description |
 | - | :-: |  - |
