@@ -18,12 +18,12 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 ### Changes with software release 7.82.0
 
-#### <i class="fa fa-plus"></i> New
+#### <i class="fas fa-plus"></i> New
 
 * [`POST`/products/find](https://developer.epages.com/apps/api-reference/post-shopid-products-find.html)
-* [`GET`/producttypes](https://developer.epages.com/apps/api-reference/get-shopid-productytypes.html)
-* [`POST`/producttypes](https://developer.epages.com/apps/api-reference/post-shopid-productytypes.html)
-* [`GET`/producttypes/{productTypeId}](https://developer.epages.com/apps/api-reference/get-shopid-productytypes-producttypeid.html)
+* [`GET`/producttypes](https://developer.epages.com/apps/api-reference/get-shopid-producttypes.html)
+* [`POST`/producttypes](https://developer.epages.com/apps/api-reference/post-shopid-producttypes.html)
+* [`GET`/producttypes/{productTypeId}](https://developer.epages.com/apps/api-reference/get-shopid-producttypes-producttypeid.html)
 
 * Added data type `customerSpecificPriceInfo`. For ePages Now only!
 * Added data types `attributeProductType`, `productType` and `productType (create request)`. For ePages Now only!
@@ -40,7 +40,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 ### Changes with software release 7.81.0
 
-#### <i class="fa fa-plus"></i> New
+#### <i class="fas fa-plus"></i> New
 
 * [`PUT`/products/crossselling](https://developer.epages.com/apps/api-reference/put-shopid-products-crossselling.html)
 * [`PATCH`/products/crossselling](https://developer.epages.com/apps/api-reference/patch-shopid-products-crossselling.html)
