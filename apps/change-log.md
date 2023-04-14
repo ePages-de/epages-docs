@@ -14,16 +14,38 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
+## 2023-04-13
+
+### Changes with software release 7.82.0
+
+#### <i class="fas fa-plus"></i> New
+
+* [`POST`/products/find](https://developer.epages.com/apps/api-reference/post-shopid-products-find.html)
+* [`GET`/producttypes](https://developer.epages.com/apps/api-reference/get-shopid-producttypes.html)
+* [`POST`/producttypes](https://developer.epages.com/apps/api-reference/post-shopid-producttypes.html)
+* [`GET`/producttypes/{productTypeId}](https://developer.epages.com/apps/api-reference/get-shopid-producttypes-producttypeid.html)
+
+* Added data type `customerSpecificPriceInfo`. For ePages Now only!
+* Added data types `attributeProductType`, `productType` and `productType (create request)`. For ePages Now only!
+
+#### <i class="fas fa-pencil-alt"></i> Update
+
+* Added attribute `isNew` to data types [`product`](https://developer.epages.com/apps/data-types.html#product) and [`productSearch`](https://developer.epages.com/apps/data-types.html#productsearch).
+* Added attribute `customerSpecificPriceInfo` to data type [`product`](https://developer.epages.com/apps/data-types.html#product).
+* Added attribute `productDataSheetSourceFile` to data type [`productLineItem`](https://developer.epages.com/apps/data-types.html#productlineitem).
+
+<hr>
+
 ## 2023-03-16
 
 ### Changes with software release 7.81.0
 
-#### <i class="fa fa-plus"></i> New
+#### <i class="fas fa-plus"></i> New
 
 * [`PUT`/products/crossselling](https://developer.epages.com/apps/api-reference/put-shopid-products-crossselling.html)
 * [`PATCH`/products/crossselling](https://developer.epages.com/apps/api-reference/patch-shopid-products-crossselling.html)
 
-#### <i class="fa fa-pencil“-alt></i> Update
+#### <i class="fas fa-pencil-alt"></i> Update
 
 * Added attributes `isManufacturerPriceRRP` and `isShippingLinkVisible` to data types [`product`](https://developer.epages.com/apps/data-types.html#product) and [`productSearch`](https://developer.epages.com/apps/data-types.html#productsearch).
 * Added attribute `visibleInNavigation` to data types [`category`](https://developer.epages.com/apps/data-types.html#category) and [`category (update request)`](https://developer.epages.com/apps/data-types.html#category-update-request).
@@ -35,7 +57,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 ### Changes with software release 7.80.0
 
-#### <i class="fa fa-pencil“-alt></i> Update
+#### <i class="fas fa-pencil-alt"></i> Update
 
 * Added attributes `isCustomizable`, `customizableTextLength` and `customizableHeadlineText` to data types [`product`](https://developer.epages.com/apps/data-types.html#product) and [`productSearch`](https://developer.epages.com/apps/data-types.html#productsearch).
 
