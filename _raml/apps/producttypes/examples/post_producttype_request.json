@@ -1,0 +1,41 @@
+[
+  {
+    "name": "Headphones",
+    "attributes": [
+      {
+        "visible": true,
+        "name": "Connectivity",
+        "values": [
+          {
+            "value": "Bluetooth",
+            "name": "Bluetooth"
+          },
+          {
+            "value": "Wired",
+            "name": "Wired"
+          }
+        ],
+        "preDefAttribute": true
+      },
+      {
+        "visible": false,
+        "name": "Type",
+        "values": [
+          {
+            "value": "In-ear",
+            "name": "In-ear"
+          },
+          {
+            "value": "On-ear",
+            "name": "On-ear"
+          },
+          {
+            "value": "Over-ear",
+            "name": "Over-ear"
+          }
+        ]
+      }
+    ],
+    "alias": "Headphones"
+  }
+]
