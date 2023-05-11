@@ -1,0 +1,30 @@
+{
+  "productType":"Headphones",
+  "visibleAfterCreation": true,
+  "variationAttributes": [
+    {
+      "name": "Connectivity",
+      "defaultForExistingProducts": "Bluetooth",
+      "values": [
+        {
+            "value": "Bluetooth"
+        },
+        {
+            "value": "Wired"
+        }
+      ]
+    },
+    {
+      "name": "Type",
+      "defaultForExistingProducts": "on-ear",
+      "values": [
+          {
+              "value": "In-ear"
+          },
+          {
+              "value": "On-ear"
+          }
+      ]
+    }
+  ]
+}

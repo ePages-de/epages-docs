@@ -944,6 +944,14 @@ ePages Now only!
 | link | [link](page:apps-data-types#link)| The link to the product variation. |
 | attributeSelection | array of [attributeSelection](page:apps-data-types#attributeselection) | The attribute of the selected product variation. |
 
+## variation (create request)
+
+| Attribute | Type | Description |
+| - | - |  - |
+| productType | string | The unique name of the product type. |
+| visibleAfterCreation | boolean | Indicates if the new product variations are displayed in the shop after creation. |
+| variationAttributes | array of [variationAttribute (create request)](page:apps-data-types#variationattribute-create-request) | The attributes used for creating product variations. |
+
 ## variationAttribute
 
 | Attribute | Type | Description |
@@ -951,6 +959,14 @@ ePages Now only!
 | name | string | The name of the variation attribute. |
 | displayName | string | The displayed name of the variation attribute. |
 | values | array of [variationValue](page:apps-data-types#variationvalue) | The values of the variation attribute.  |
+
+## variationAttribute (create request)
+
+| Attribute | Type | Description |
+| - | - |  - |
+| name | string | The name of the variation attribute. |
+| defaultForExistingProducts | string | The default value that gets assigned to existing product variations. |
+| values | array of [variationValue (create request)](page:apps-data-types#variationvalue-create-request) | The values of the variation attribute.  |
 
 ## variationIdentifier
 
@@ -968,6 +984,11 @@ ePages Now only!
 | value | string | The key of an attribute, e.g. NeonPurple. |
 | displayValue | string | The localized displayed name of the attribute, e.g. Neon Purple. |
 
+## variationValue (create request)
+
+| Attribute | Type | Description |
+| - | - |  - |
+| value | string | The assigned value of the variation attribute, e.g. neon purple. |
 ## video
 
 | Attribute | Type | Description |
