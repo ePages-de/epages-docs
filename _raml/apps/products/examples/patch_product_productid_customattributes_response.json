@@ -1,0 +1,30 @@
+{
+  "items": [
+    {
+      "displayKey": "Additional information",
+
+      "singleValue": true,
+      "values": [
+        {
+          "displayValue": "",
+          "value": null
+        }
+      ],
+      "type": "string",
+      "key": "Additional information"
+
+    },
+    {
+      "displayKey": "Colour",
+      "singleValue": true,
+      "values": [
+        {
+          "displayValue": "red",
+          "value": "red"
+        }
+      ],
+      "type": "string",
+      "key": "Colour"
+    }
+  ]
+}
