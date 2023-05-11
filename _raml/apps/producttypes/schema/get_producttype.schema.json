@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "Get Product Types Schema",
+  "type": "object",
+  "properties": {
+    "results": {
+      "type": "integer",
+      "description": "The existing product types, e.g. connectivity."
+    },
+    "page": {
+      "type": "integer",
+      "description": "The page number on which the product type appears."
+    },
+    "resultsPerPage": {
+      "type": "integer",
+      "description": "The number of product types returned per page."
+    },
+    "items": {
+      "type": "array of [productType](page:apps-data-types#producttype)",
+      "description": "A list of all available product types."
+    }
+  }
+}

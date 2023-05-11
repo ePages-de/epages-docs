@@ -8,3 +8,6 @@ tmp/
 
 #Vagrant
 /.vagrant
+
+#Idea IDE
+.idea/

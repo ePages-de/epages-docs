@@ -1,0 +1,44 @@
+{
+  "page": 1,
+  "items": [
+    {
+      "name": "Headphones",
+      "productTypeId": "64180BCB-5AEF-4E69-4A92-AC150003B611",
+      "attributes": [
+        {
+          "visible": true,
+          "name": "Connectivity",
+          "values": [
+            {
+              "value": "Bluetooth",
+              "name": "Bluetooth"
+            },
+            {
+              "value": "Wired",
+              "name": "Wired"
+            }
+          ],
+          "preDefAttribute": true
+        },
+        {
+          "visible": true,
+          "name": "Type",
+          "values": [
+            {
+              "value": "In-ear",
+              "name": "In-ear"
+            },
+            {
+              "value": "On-ear",
+              "name": "On-ear"
+            }
+          ],
+          "preDefAttribute": true
+        }
+      ],
+      "alias": "Headphones"
+    }
+  ],
+  "resultsPerPage": 10,
+  "results": 1
+}
