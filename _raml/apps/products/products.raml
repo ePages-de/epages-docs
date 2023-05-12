@@ -130,6 +130,52 @@ post:
     responses:
       204:
 
+  /crossselling:
+    displayName: Product crossselling
+    get:
+      is: [ locale, currency ]
+      queryParameters:
+        includeInvisible:
+          description: Includes invisible products. Only available with `products_write` authorisation.
+          type: boolean
+          required: false
+      description: Returns information on the cross-selling assignments of a single product. *epagesNow
+      securedBy: [products_read]
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/get_product_productid_crossselling_response.json
+              schema: !include schema/get_product_productid_crossselling.schema.json
+
+    put:
+      description: Modifies information on the cross-selling assignments of a single product by replacing all of the assignments. *epagesNow
+      securedBy: [products_write]
+      body:
+        application/json:
+          example: !include examples/put_product_productid_crossselling_request.json
+          schema: !include schema/put_product_productid_crossselling_request_schema.json
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/put_product_productid_crossselling_response.json
+              schema: !include schema/put_product_productid_crossselling.schema.json
+
+    patch:
+      description: Updates information on the cross-selling assignments for a single product with partial data according to [RFC 6902](https://tools.ietf.org/html/rfc6902). You can either add or remove assignments. *epagesNow
+      securedBy: [products_write]
+      body:
+        application/json:
+          example: !include examples/patch_product_productid_crossselling_request.json
+          schema: !include schema/patch_product_productid_crossselling_request_schema.json
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/patch_product_productid_crossselling_response.json
+              schema: !include schema/patch_product_productid_crossselling.schema.json
+
   /custom-attributes:
     displayName: Custom attributes
     get:
@@ -142,107 +188,24 @@ post:
             application/json:
               example: !include examples/get_product_productid_custom_response.json
               schema: !include schema/get_product_productid_custom.schema.json
-    patch:
-      description: Updates information on the custom attributes for a single product with partial data according to [RFC 6902](https://tools.ietf.org/html/rfc6902). You can either add or remove assignments. *epagesNow <br><br>
 
-          *Supported JSON-PATCH operations*<br>
-          - add (sets or replaces an attribute value)<br>
-          - remove (unsets an attribute)<br><br>
-
-      securedBy: [products_write]
-      is: [ locale ]
-      body:
-        application/json:
-          example: !include examples/patch_product_productid_customattributes_request.json
-          schema: !include schema/patch_product_productid_customattributes_request_schema.json
-      responses:
-        200:
-          body:
-            application/json:
-              example: !include examples/patch_product_productid_customattributes_response.json
-              schema: !include schema/patch_product_productid_customattributes.schema.json
-
-  /variations:
-    displayName: Product variations
+  /lowest-price:
+    displayName: Product's lowest price
     get:
-      is: [ locale ]
-      queryParameters:
-        page:
-          description: Represents the current page.
-          type: integer
-          minimum: 1
-          default: 1
-        resultsPerPage:
-          description: Specifies the maximum number of results per page.
-          type: integer
-          default: 100
-          maximum: 1000
-      description: Returns a list of links to product variations.<br/>
-        The properties `name` and `value` are used to find a matching variation for the user's selection.
-        Note that the default amount of results per page is 100. The maximum amount of result displayed per page is 1000 for this resource. *epages6
+      is: [ locale, currency ]
+      description: Returns the lowest price of all variations of a product that
+        can currently be purchased.<br>
+        Returns 404 Not Found if the product does not have any variation
+        with an independent price, e.g. if all variations share the
+        same price.
+        Also depends on the shop setting to display "from" prices. *epages6
       securedBy: [products_read]
       responses:
         200:
           body:
             application/json:
-              example: !include examples/get_product_productid_variations_response.json
-              schema: !include schema/get_product_productid_variations.schema.json
-    post:
-      description: Creates new product variations. *epagesNow
-      securedBy: [products_write]
-      body:
-        application/json:
-          example: !include examples/post_product_productid_variations_request.json
-          schema: !include schema/post_product_productid_variations_request_schema.json
-      responses:
-        204:
-
-/crossselling:
-  displayName: Product crossselling
-  get:
-    is: [ locale, currency ]
-    queryParameters:
-      includeInvisible:
-        description: Includes invisible products. Only available with `products_write` authorisation.
-        type: boolean
-        required: false
-    description: Returns information on the cross-selling assignments of a single product. *epagesNow
-    securedBy: [products_read]
-    responses:
-      200:
-        body:
-          application/json:
-            example: !include examples/get_product_productid_crossselling_response.json
-            schema: !include schema/get_product_productid_crossselling.schema.json
-
-  put:
-    description: Modifies information on the cross-selling assignments of a single product by replacing all of the assignments. *epagesNow
-    securedBy: [products_write]
-    body:
-      application/json:
-        example: !include examples/put_product_productid_crossselling_request.json
-        schema: !include schema/put_product_productid_crossselling_request_schema.json
-    responses:
-      200:
-        body:
-          application/json:
-            example: !include examples/put_product_productid_crossselling_response.json
-            schema: !include schema/put_product_productid_crossselling.schema.json
-
-  patch:
-    description: Updates information on the cross-selling assignments for a single product with partial data according to [RFC 6902](https://tools.ietf.org/html/rfc6902). You can either add or remove assignments. *epagesNow
-    securedBy: [products_write]
-    body:
-      application/json:
-        example: !include examples/patch_product_productid_crossselling_request.json
-        schema: !include schema/patch_product_productid_crossselling_request_schema.json
-    responses:
-      200:
-        body:
-          application/json:
-            example: !include examples/patch_product_productid_crossselling_response.json
-            schema: !include schema/patch_product_productid_crossselling.schema.json
-
+              example: !include examples/get_product_productid_low_price_response.json
+              schema: !include schema/get_product_productid_low_price.schema.json
 
   /slideshow:
     displayName: Product slideshow
@@ -327,23 +290,40 @@ post:
                 example: !include examples/put_product_productid_slideshow_sequence_response.json
                 schema: !include schema/put_product_productid_slideshow_sequence_schema.json
 
-  /lowest-price:
-    displayName: Product's lowest price
+  /variations:
+    displayName: Product variations
     get:
-      is: [ locale, currency ]
-      description: Returns the lowest price of all variations of a product that
-        can currently be purchased.<br>
-        Returns 404 Not Found if the product does not have any variation
-        with an independent price, e.g. if all variations share the
-        same price.
-        Also depends on the shop setting to display "from" prices. *epages6
+      is: [ locale ]
+      queryParameters:
+        page:
+          description: Represents the current page.
+          type: integer
+          minimum: 1
+          default: 1
+        resultsPerPage:
+          description: Specifies the maximum number of results per page.
+          type: integer
+          default: 100
+          maximum: 1000
+      description: Returns a list of product variations.<br/>
+        The response contains links to the listed product variations and the properties `name` and `value` that were used are used for creating those variations.
+        Note that the default amount of results per page is 100. The maximum amount of result displayed per page is 1000 for this resource. *epages6
       securedBy: [products_read]
       responses:
         200:
           body:
             application/json:
-              example: !include examples/get_product_productid_low_price_response.json
-              schema: !include schema/get_product_productid_low_price.schema.json
+              example: !include examples/get_product_productid_variations_response.json
+              schema: !include schema/get_product_productid_variations.schema.json
+    post:
+      description: Creates new product variations. *epagesNow
+      securedBy: [products_write]
+      body:
+        application/json:
+          example: !include examples/post_product_productid_variations_request.json
+          schema: !include schema/post_product_productid_variations_request_schema.json
+      responses:
+        204:
 
 /updated/{productProperty}:
   displayName: Updated products
