@@ -176,40 +176,36 @@ post:
             example: !include examples/patch_product_productid_crossselling_response.json
             schema: !include schema/patch_product_productid_crossselling.schema.json
 
-  /variations:
-    displayName: Product variations
+  /custom-attributes:
+    displayName: Custom attributes
     get:
       is: [ locale ]
-      queryParameters:
-        page:
-          description: Represents the current page.
-          type: integer
-          minimum: 1
-          default: 1
-        resultsPerPage:
-          description: Specifies the maximum number of results per page.
-          type: integer
-          default: 100
-          maximum: 1000
-      description: Returns links to product variations in a paged item list.<br/>
-        "name" and "value" are used to find a matching variation for the user's selection.
-        Note that the default resultsPerPage is 100 and max resultsPerPage is 1000 for this resource. *epages6
+      description: Returns values of user-defined product attributes. *epages6 *epagesNow
       securedBy: [products_read]
       responses:
         200:
           body:
             application/json:
-              example: !include examples/get_product_productid_variations_response.json
-              schema: !include schema/get_product_productid_variations.schema.json
-    post:
-    description: Creates new product variations. *epagesNow
-    securedBy: [products_write]
-    body:
-      application/json:
-        example: !include examples/post_product_productid_variations_request.json
-        schema: !include schema/post_product_productid_variations_request_schema.json
+              example: !include examples/get_product_productid_custom_response.json
+              schema: !include schema/get_product_productid_custom.schema.json
+
+  /lowest-price:
+    displayName: Product's lowest price
+    get:
+      is: [ locale, currency ]
+      description: Returns the lowest price of all variations of a product that
+        can currently be purchased.<br>
+        Returns 404 Not Found if the product does not have any variation
+        with an independent price, e.g. if all variations share the
+        same price.
+        Also depends on the shop setting to display "from" prices. *epages6
+      securedBy: [products_read]
       responses:
-        204:
+        200:
+          body:
+            application/json:
+              example: !include examples/get_product_productid_low_price_response.json
+              schema: !include schema/get_product_productid_low_price.schema.json
 
   /slideshow:
     displayName: Product slideshow
@@ -293,34 +289,41 @@ post:
               application/json:
                 example: !include examples/put_product_productid_slideshow_sequence_response.json
                 schema: !include schema/put_product_productid_slideshow_sequence_schema.json
-  /custom-attributes:
+
+  /variations:
+    displayName: Product variations
     get:
       is: [ locale ]
-      description: Returns values of user-defined product attributes. *epages6 *epagesNow
+      queryParameters:
+        page:
+          description: Represents the current page.
+          type: integer
+          minimum: 1
+          default: 1
+        resultsPerPage:
+          description: Specifies the maximum number of results per page.
+          type: integer
+          default: 100
+          maximum: 1000
+      description: Returns a list of product variations.<br/>
+        The response contains links to the listed product variations and the attributes `name` and `value` that were used for creating those variations.
+        Note that the default amount of results per page is 100. The maximum amount of results displayed per page is 1000 for this resource. *epages6
       securedBy: [products_read]
       responses:
         200:
           body:
             application/json:
-              example: !include examples/get_product_productid_custom_response.json
-              schema: !include schema/get_product_productid_custom.schema.json
-  /lowest-price:
-    displayName: Product's lowest price
-    get:
-      is: [ locale, currency ]
-      description: Returns the lowest price of all variations of a product that
-        can currently be purchased.<br>
-        Returns 404 Not Found if the product does not have any variation
-        with an independent price, e.g. if all variations share the
-        same price.
-        Also depends on the shop setting to display "from" prices. *epages6
-      securedBy: [products_read]
+              example: !include examples/get_product_productid_variations_response.json
+              schema: !include schema/get_product_productid_variations.schema.json
+    post:
+      description: Creates new product variations. *epagesNow
+      securedBy: [products_write]
+      body:
+        application/json:
+          example: !include examples/post_product_productid_variations_request.json
+          schema: !include schema/post_product_productid_variations_request_schema.json
       responses:
-        200:
-          body:
-            application/json:
-              example: !include examples/get_product_productid_low_price_response.json
-              schema: !include schema/get_product_productid_low_price.schema.json
+        204:
 
 /updated/{productProperty}:
   displayName: Updated products
