@@ -14,16 +14,28 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
+## 2023-05-11
+
+### Changes with software release 7.83.0
+
+#### <i class="fas fa-plus"></i> New
+
+* [`POST`/{shopId}/products/{productId}/variations](https://developer.epages.com/apps/api-reference/post-shopid-products-productid-variations.html)
+
+* Added data types `variation (create request)`, `variationAttribute (create request)` and `variationValue (create request)`.
+
+<hr>
+
 ## 2023-04-13
 
 ### Changes with software release 7.82.0
 
 #### <i class="fas fa-plus"></i> New
 
-* [`POST`/products/find](https://developer.epages.com/apps/api-reference/post-shopid-products-find.html)
-* [`GET`/producttypes](https://developer.epages.com/apps/api-reference/get-shopid-producttypes.html)
-* [`POST`/producttypes](https://developer.epages.com/apps/api-reference/post-shopid-producttypes.html)
-* [`GET`/producttypes/{productTypeId}](https://developer.epages.com/apps/api-reference/get-shopid-producttypes-producttypeid.html)
+* [`POST`/{shopId}/products/find](https://developer.epages.com/apps/api-reference/post-shopid-products-find.html)
+* [`GET`/{shopId}/producttypes](https://developer.epages.com/apps/api-reference/get-shopid-producttypes.html)
+* [`POST`/{shopId}/producttypes](https://developer.epages.com/apps/api-reference/post-shopid-producttypes.html)
+* [`GET`/{shopId}/producttypes/{productTypeId}](https://developer.epages.com/apps/api-reference/get-shopid-producttypes-producttypeid.html)
 
 * Added data type `customerSpecificPriceInfo`. For ePages Now only!
 * Added data types `attributeProductType`, `productType` and `productType (create request)`. For ePages Now only!
@@ -42,8 +54,8 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 #### <i class="fas fa-plus"></i> New
 
-* [`PUT`/products/crossselling](https://developer.epages.com/apps/api-reference/put-shopid-products-crossselling.html)
-* [`PATCH`/products/crossselling](https://developer.epages.com/apps/api-reference/patch-shopid-products-crossselling.html)
+* [`PUT`/{shopId}/products/{productId}/crossselling](https://developer.epages.com/apps/api-reference/put-shopid-products-productid-crossselling.html)
+* [`PATCH`/{shopId}/products/{productId}/crossselling](https://developer.epages.com/apps/api-reference/patch-shopid-products-productid-crossselling.html)
 
 #### <i class="fas fa-pencil-alt"></i> Update
 
