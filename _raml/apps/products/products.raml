@@ -147,7 +147,6 @@ post:
             application/json:
               example: !include examples/get_product_productid_crossselling_response.json
               schema: !include schema/get_product_productid_crossselling.schema.json
-
     put:
       description: Modifies information on the cross-selling assignments of a single product by replacing all of the assignments. *epagesNow
       securedBy: [products_write]
@@ -161,20 +160,19 @@ post:
             application/json:
               example: !include examples/put_product_productid_crossselling_response.json
               schema: !include schema/put_product_productid_crossselling.schema.json
-
-  patch:
-    description: Updates information on the cross-selling assignments for a single product with partial data according to [RFC 6902](https://tools.ietf.org/html/rfc6902). You can either add or remove assignments. *epagesNow
-    securedBy: [products_write]
-    body:
-      application/json:
-        example: !include examples/patch_product_productid_crossselling_request.json
-        schema: !include schema/patch_product_productid_crossselling_request_schema.json
-    responses:
-      200:
-        body:
-          application/json:
-            example: !include examples/patch_product_productid_crossselling_response.json
-            schema: !include schema/patch_product_productid_crossselling.schema.json
+    patch:
+      description: Updates information on the cross-selling assignments for a single product with partial data according to [RFC 6902](https://tools.ietf.org/html/rfc6902). You can either add or remove assignments. *epagesNow
+      securedBy: [products_write]
+      body:
+        application/json:
+          example: !include examples/patch_product_productid_crossselling_request.json
+          schema: !include schema/patch_product_productid_crossselling_request_schema.json
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/patch_product_productid_crossselling_response.json
+              schema: !include schema/patch_product_productid_crossselling.schema.json
 
   /custom-attributes:
     displayName: Custom attributes
