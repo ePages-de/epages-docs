@@ -989,6 +989,7 @@ ePages Now only!
 | Attribute | Type | Description |
 | - | - |  - |
 | value | string | The assigned value of the variation attribute, e.g. neon purple. |
+
 ## video
 
 | Attribute | Type | Description |

@@ -22,7 +22,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 * [`POST`/{shopId}/products/{productId}/variations](https://developer.epages.com/apps/api-reference/post-shopid-products-productid-variations.html)
 
-* Added data types `variation (create request)`, `variationAttribute (create request)` and `variationValue (create request)`.
+* Added data types `variation (create request)`, `variationAttribute (create request)` and `variationValue (create request)`. For ePages Now only!
 
 <hr>
 
