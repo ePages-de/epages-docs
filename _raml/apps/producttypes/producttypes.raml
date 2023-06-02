@@ -37,3 +37,30 @@ post:
           application/json:
             example: !include examples/get_producttype_producttypeid_response.json
             schema: !include schema/get_producttype_producttypeid.schema.json
+  patch:
+    description: Updates information for a single product type with partial data according to [RFC 6902](https://tools.ietf.org/html/rfc6902). You can either add or remove certain attributes. *epagesNow <br><br>
+
+          *Supported JSON-PATCH operations*<br>
+          - add (sets an attribute)<br>
+          - remove (unsets an attribute)<br>
+
+          *Attribute paths that allow updates via PATCH* <br>
+                - /attribute¹<br>
+                - /attributevalues²<br>
+                
+
+                **¹** supports *remove* only<br>
+                **²** attribute will be created if not exists.<br>
+
+    securedBy: [products_write]
+    is: [ locale ]
+    body:
+      application/json-patch+json:
+        example: !include examples/patch_producttype_producttypeid_request.json
+        schema: !include schema/patch_producttype_producttypeid_request.schema.json
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include examples/patch_producttype_producttypeid_response.json
+            schema: !include schema/patch_producttype_producttypeid.schema.json

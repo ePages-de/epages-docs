@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "Patch Product Type Schema",
+  "type": "object",
+  "properties": {
+    "": {
+      "type": "object of [productType](page:apps-data-types#producttype)",
+      "description": ""
+    }
+  }
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "op": "add",
+    "path": "/attributevalues",
+    "value": {
+        "name": "Connectivity",
+        "visible": true,
+        "preDefAttribute": true,
+        "values": [
+           {
+             "value": "Bluetooth",
+             "name": "Bluetooth"
+            },
+           {
+             "value": "Wired",
+             "name": "Wired"
+           }
+         ]
+    }
+  },
+  {
+    "op": "remove",
+    "path": "/attributevalues",
+    "value": {
+        "name": "Connectivity",
+        "values": [
+           {
+             "name": "Wired"
+            },
+           {
+             "name": "Bluetooth"
+           }
+         ]
+     }
+  },
+  {
+    "op": "remove",
+    "path": "/attribute",
+    "value": {
+        "name": "Connectivity" 
+     }
+  }
+]
+
