@@ -1,8 +1,8 @@
 {
   "items": [
     {
-      "key": "Colour",
-      "displayKey": "Colour",
+      "key": "Color",
+      "displayKey": "Color",
       "singleValue": true,
       "type": "string",
       "values": [

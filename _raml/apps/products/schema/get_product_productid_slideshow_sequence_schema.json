@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema",
-  "title": "Get Product ProductId Slideshow Sequence Schema",
+  "title": "GET Slideshow Sequence Schema",
   "type": "object",
   "properties": {
     "": {

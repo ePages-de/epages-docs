@@ -15,7 +15,7 @@
   
       },
       {
-        "displayKey": "Colour",
+        "displayKey": "Color",
         "singleValue": true,
         "values": [
           {
@@ -24,7 +24,7 @@
           }
         ],
         "type": "string",
-        "key": "Colour"
+        "key": "Color"
       }
     ]
   }

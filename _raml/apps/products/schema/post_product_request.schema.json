@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema",
-  "title": "Post Product Request Schema",
+  "title": "POST Product Request Schema",
   "type": "object",
   "properties": {
     "": {
