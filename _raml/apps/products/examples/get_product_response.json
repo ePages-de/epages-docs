@@ -5,7 +5,7 @@
   "items": [
     {
       "productId": "54EF2E41-FCA8-E0E5-9323-0A0C05E66C2E",
-      "name": "Customised headphone",
+      "name": "Customized headphone",
       "visible": true,
       "productVariationType": "regular",
       "productVariationMasterName": null,
@@ -17,7 +17,7 @@
       "productVariationSelection": null,
       "shortDescription": null,
       "deliveryPeriod": "2-4",
-      "description": "Customise your headphone in no time!",
+      "description": "Customize your headphone in no time!",
       "title": "Customized headphone - Technic365",
       "productImage": "headphone3.jpg",
       "images": [
@@ -154,7 +154,7 @@
       "productVariationSelection": null,
       "shortDescription": "<p>Red Resonator S&nbsp;headphones are the best-performing around-ear headphones from&nbsp;Dr.Boom. They give you fresh and&nbsp;powerful sound.&nbsp;These headphones definitely&nbsp;let you hear your music better!</p>",
       "deliveryPeriod": "3-5",
-      "description": "<p><strong><em>Dr.Boom - HP001</em></strong>&nbsp;Red Resonator S&nbsp;headphones are the best-performing around-ear headphones from&nbsp;Dr.Boom. They give you fresh and&nbsp;powerful sound.&nbsp;These headphones definitely&nbsp;let you hear your music better!</p>\r\n\r\n<p>The noise cancelling technology monitors the noise around you and cancels it out, helping you focus on what you want to hear -&nbsp;whether it’s music, calls or simply peace and quiet. These headphones look as good as they sound. They’re comfy, durably made and easily to store, with earcups that&nbsp;fit in a small carrying box.</p>",
+      "description": "<p><strong><em>Dr.Boom - HP001</em></strong>&nbsp;Red Resonator S&nbsp;headphones are the best-performing around-ear headphones from&nbsp;Dr.Boom. They give you fresh and&nbsp;powerful sound.&nbsp;These headphones definitely&nbsp;let you hear your music better!</p>\r\n\r\n<p>The noise canceling technology monitors the noise around you and cancels it out, helping you focus on what you want to hear -&nbsp;whether it's music, calls or simply peace and quiet. These headphones look as good as they sound. They're comfy, durably made and easily to store, with earcups that&nbsp;fit in a small carrying box.</p>",
       "images": [
         {
           "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/51E7/F905/2E4C/78C2/30C2/AC14/145F/A4E5/013-headphone-red_h.jpg",
@@ -249,10 +249,10 @@
       "manufacturer": "Bass by Dr.Boom",
       "upc": null,
       "ean": null,
-      "essentialFeatures": "Surround Sound\r\nAcoustic Noise Cancelling\r\nCorrect fit",
+      "essentialFeatures": "Surround Sound\r\nAcoustic Noise Canceling\r\nCorrect fit",
       "searchKeywords": [
         "Surround Sound",
-        "Acoustic Noise Cancelling",
+        "Acoustic Noise Canceling",
         "Correct fit"
       ],
       "stocklevel": 100,
@@ -292,7 +292,7 @@
       "productVariationSelection": null,
       "shortDescription": null,
       "deliveryPeriod": "3-5",
-      "description": "Professional headphones. Bass pipe emphasises low tones for a clear, realistic sound. Ergonomically shaped.",
+      "description": "Professional headphones. Bass pipe emphasizes low tones for a clear, realistic sound. Ergonomically shaped.",
        "productImage": "headset1.jpg",
       "images": [
         {

@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema",
-  "title": "Post Product ProductId Variations Schema",
+  "title": "POST Variations Schema",
   "type": "object",
   "properties": {
     "": {

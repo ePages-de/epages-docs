@@ -1,10 +1,10 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema",
-  "title": "GET Slideshow Sequence Schema",
+  "title": "PATCH Custom Attributes Request Schema",
   "type": "object",
   "properties": {
     "": {
-      "type": "array of strings",
+      "type": "array of [jsonPatch](page:apps-data-types#jsonpatch)",
       "description": ""
     }
   }

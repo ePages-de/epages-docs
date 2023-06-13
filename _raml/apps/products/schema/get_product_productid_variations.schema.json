@@ -1,11 +1,11 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema",
-  "title": "Get Product ProductId Variations Schema",
+  "title": "GET Variations Schema",
   "type": "object",
   "properties": {
     "variationAttributes": {
       "type": "array of [variationAttribute](page:apps-data-types#variationattribute)",
-      "description": "The existing variations of the product, e.g. colour."
+      "description": "The existing variations of the product, e.g. color."
     },
     "items": {
       "type": "array of [variation](page:apps-data-types#variation)",

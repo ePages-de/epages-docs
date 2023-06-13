@@ -1,11 +1,11 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema",
-  "title": "Get Product ProductId Custom Attributes Schema",
+  "title": "GET Custom Attributes Schema",
   "type": "object",
   "properties": {
     "items": {
       "type": "array of [customAttribute](page:apps-data-types#customattribute)",
-      "description": "Product-specific information that can be assigned to a product. This information can have a specific type, e.g. decimal number, can be set visible in the administration area of the shop so that it is displayed with the product and can be specified as an additional filter criterion in the shop."
+      "description": "Information related to a product that can be assigned to describe it in more detail. This information can have a specific type, e.g. a decimal number, and can be set to be visible in the administration area of the shop so that it is displayed with the product. It can also be specified as an additional filter criterion in the shop."
     }
   }
 }
