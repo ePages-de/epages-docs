@@ -30,4 +30,9 @@
                   }
                 ]
             }]
+},
+{
+  "op": "replace",
+  "path": "/producttype",
+  "value": "6489A241-7B85-54B0-0B69-C0A8020205ED"
 }]
