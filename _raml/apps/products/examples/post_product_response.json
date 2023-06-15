@@ -82,6 +82,10 @@
     {
       "rel": "categories",
       "href": "https://pm.epages.com/rs/shops/apidocu/categories/?productId=57D647C1-77D5-DD52-3024-D5809AB3A134"
+    },
+    {
+      "rel": "producttype",
+      "href": "https://pm.epages.com/rs/shops/apidocu/producttypes/6489A241-7B85-54B0-0B69-C0A8020205ED"
     }
   ]
 }
