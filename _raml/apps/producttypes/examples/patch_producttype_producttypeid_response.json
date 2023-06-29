@@ -13,21 +13,33 @@
         {
           "value": "Wired",
           "name": "Wired"
+        },
+        {
+          "value": "True Wireless",
+          "name": "True Wireless"
         }
       ],
       "preDefAttribute": true
     },
     {
       "visible": false,
-      "name": "Type",
+      "name": "Usage",
       "values": [
         {
-          "value": "In-ear",
-          "name": "In-ear"
+          "value": "Studio recording",
+          "name": "Studio recording"
         },
         {
-          "value": "On-ear",
-          "name": "On-ear"
+          "value": "TV",
+          "name": "TV"
+        }
+        {
+          "value": "Drumming",
+          "name": "Drumming"
+        },
+        {
+          "value": "Gaming",
+          "name": "Gaming"
         }
       ],
       "preDefAttribute": true
