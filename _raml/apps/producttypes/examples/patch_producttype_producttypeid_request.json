@@ -8,28 +8,30 @@
         "preDefAttribute": true,
         "values": [
            {
-             "value": "Bluetooth",
-             "name": "Bluetooth"
-            },
-           {
-             "value": "Wired",
-             "name": "Wired"
+             "value": "True Wireless",
+             "name": "True Wireless"
            }
          ]
     }
   },
   {
-    "op": "remove",
+    "op": "add",
     "path": "/attributevalues",
     "value": {
-        "name": "Connectivity",
+        "name": "Usage",
         "values": [
            {
-             "name": "Wired"
+             "name": "Studio recording"
             },
            {
-             "name": "Bluetooth"
-           }
+             "name": "TV"
+            },
+           {
+             "name": "Drumming"
+            },
+           {
+             "name": "Gaming"
+            }
          ]
      }
   },
@@ -37,7 +39,7 @@
     "op": "remove",
     "path": "/attribute",
     "value": {
-        "name": "Connectivity" 
+        "name": "Type" 
      }
   }
 ]
