@@ -869,6 +869,8 @@ ePages Now only!
 | logoUrl | string | The URL to the logo of the shop.|
 | sfUrl | string | The URL to the storefront of the shop. |
 | mboUrl | string | The URL to the administration area of the shop. |
+| mboUrl | string | The URL to the administration area of the shop. |
+| shopIsInEU | boolean | Indicates if the shop is located in the EU. |
 
 ## simplePriceInfo
 

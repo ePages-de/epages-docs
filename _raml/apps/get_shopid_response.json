@@ -4,5 +4,6 @@
 "slogan": "<p>Make some noise</p>",
 "logoUrl": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/MediaGallery/logo_technic365_3.png",
 "sfUrl": "http://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/Technic365",
-"mboUrl": "https://pm.epages.com/epages/apidocu.admin/?ObjectPath=/Shops/Technic365"
+"mboUrl": "https://pm.epages.com/epages/apidocu.admin/?ObjectPath=/Shops/Technic365",
+"shopIsInEU": true
 }
