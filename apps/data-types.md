@@ -873,7 +873,6 @@ ePages Now only!
 | isInEU | boolean | Indicates if the shop is located in the EU. |
 | countryCode2 | string | The country code according to ISO 3166-1 Alpha code 2. |
 
-
 ## simplePriceInfo
 
 | Attribute | Type | Description |
