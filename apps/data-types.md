@@ -870,7 +870,9 @@ ePages Now only!
 | sfUrl | string | The URL to the storefront of the shop. |
 | mboUrl | string | The URL to the administration area of the shop. |
 | mboUrl | string | The URL to the administration area of the shop. |
-| shopIsInEU | boolean | Indicates if the shop is located in the EU. |
+| isInEU | boolean | Indicates if the shop is located in the EU. |
+| countryCode2 | string | The country code according to ISO 3166-1 Alpha code 2. |
+
 
 ## simplePriceInfo
 
