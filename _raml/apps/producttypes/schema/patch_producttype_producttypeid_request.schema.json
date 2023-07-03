@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema",
-  "title": "Patch Product Type Request Schema",
+  "title": "PATCH Product Type Request Schema",
   "type": "object",
   "properties": {
     "": {
