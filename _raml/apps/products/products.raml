@@ -95,6 +95,7 @@ post:
                 - /priceInfo/price/amount<br>
                 - /priceInfo/manufacturerPrice/amount<br>
                 - /priceInfo/depositPrice/amount<br>
+                - /customerSpecificPriceInfo¹<br>
                 - /deliveryPeriod<br>
                 - /deliveryWeight<br>
                 - /minStocklevel<br>
@@ -186,6 +187,25 @@ post:
             application/json:
               example: !include examples/get_product_productid_custom_response.json
               schema: !include schema/get_product_productid_custom.schema.json
+    patch:
+      description: Updates information on the custom attributes for a single product with partial data according to [RFC 6902](https://tools.ietf.org/html/rfc6902). You can either add or remove assignments. *epagesNow <br><br>
+
+          *Supported JSON-PATCH operations*<br>
+          - add (sets or replaces an attribute value)<br>
+          - remove (unsets an attribute)<br><br>
+
+      securedBy: [products_write]
+      is: [ locale ]
+      body:
+        application/json:
+          example: !include examples/patch_product_productid_customattributes_request.json
+          schema: !include schema/patch_product_productid_customattributes_request_schema.json
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/patch_product_productid_customattributes_response.json
+              schema: !include schema/patch_product_productid_customattributes.schema.json
 
   /lowest-price:
     displayName: Product's lowest price

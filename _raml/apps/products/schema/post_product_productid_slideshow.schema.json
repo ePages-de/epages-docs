@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema",
-  "title": "Post Product ProductId Slideshow Schema",
+  "title": "POST Slideshow Schema",
   "type": "object",
   "properties": {
     "name": {

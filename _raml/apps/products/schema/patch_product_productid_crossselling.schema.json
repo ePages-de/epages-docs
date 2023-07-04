@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema",
-  "title": "PATCH Product ProductId Crossselling Schema",
+  "title": "PATCH Cross-selling Schema",
   "type": "object",
   "properties": {
     "": {

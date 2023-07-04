@@ -7,11 +7,11 @@
     "items" : [
       {
         "productId": "54EF2E41-FCA8-E0E5-9323-0A0C05E66C2E",
-        "name": "Customised headphone",
+        "name": "Customized headphone",
         "visible": true,
         "shortDescription": null,
         "deliveryPeriod": "5",
-        "description": "Customise your headphone in no time!",
+        "description": "Customize your headphone in no time!",
         "images": [
           {
             "url": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/54EF/2E41/FCA8/E0E5/9323/0A0C/05E6/6C2E/001-headphone_h.jpg",
@@ -163,7 +163,7 @@
         "manufacturer": "Dr. Boom",
         "upc": null,
         "ean": null,
-        "essentialFeatures" : "Customised headphones",
+        "essentialFeatures" : "Customized headphones",
         "searchKeywords" : [
             "headphones"
         ],
@@ -187,7 +187,7 @@
         "name": "Dr.Boom - Red Power",
         "visible": true,
         "shortDescription": null,
-        "description": "<ul>\n\t<li>Surround Sound</li>\n\t<li>Acoustic Noise Cancelling</li>\n\t<li>Correct fit",
+        "description": "<ul>\n\t<li>Surround Sound</li>\n\t<li>Acoustic Noise Canceling</li>\n\t<li>Correct fit",
         "deliveryPeriod": null,
         "images": [
           {

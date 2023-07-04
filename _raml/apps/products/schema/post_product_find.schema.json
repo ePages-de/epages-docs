@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema",
-  "title": "Post Product Find Schema",
+  "title": "POST Product Find Schema",
   "type": "object",
   "properties": {
     "results": {

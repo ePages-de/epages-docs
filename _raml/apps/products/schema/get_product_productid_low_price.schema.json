@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema",
-  "title": "Get Product ProductId Lowest Price Schema",
+  "title": "GET Lowest Price Schema",
   "type": "object",
   "properties": {
     "priceInfo": {

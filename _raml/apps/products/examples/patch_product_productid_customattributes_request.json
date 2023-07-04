@@ -1,0 +1,20 @@
+[
+    {
+      "op": "add",
+      "path": "/",
+      "value":
+      {
+        "key": "Color",
+        "displayValue": "red"
+      }
+    },
+    {
+      "op": "remove",
+      "path": "/",
+      "value":
+      {
+        "key": "Additional information"
+  
+      }
+    }
+  ]  
