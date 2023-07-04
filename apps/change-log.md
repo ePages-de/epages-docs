@@ -14,6 +14,20 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
+## 2023-07-06
+
+### Changes with software release 7.85.0
+
+#### <i class="fas fa-plus"></i> New
+
+* [`PATCH`/{shopId}/producttypes/{productTypeId}](https://developer.epages.com/apps/api-reference/patch-shopid-producttypes-producttypeid.html)
+
+#### <i class="fas fa-pencil-alt"></i> Update
+
+* Added replace operation for product types of [`PATCH`/products/{productId}](https://developer.epages.com/apps/api-reference/patch-shopid-products-productid.html)
+
+<hr>
+
 ## 2023-06-08
 
 ### Changes with software release 7.84.0
