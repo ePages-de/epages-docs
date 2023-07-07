@@ -1,0 +1,49 @@
+{
+  "name": "Headphones",
+  "productTypeId": "64180BCB-5AEF-4E69-4A92-AC150003B611",
+  "attributes": [
+    {
+      "visible": true,
+      "name": "Connectivity",
+      "values": [
+        {
+          "value": "Bluetooth",
+          "name": "Bluetooth"
+        },
+        {
+          "value": "Wired",
+          "name": "Wired"
+        },
+        {
+          "value": "True Wireless",
+          "name": "True Wireless"
+        }
+      ],
+      "preDefAttribute": true
+    },
+    {
+      "visible": false,
+      "name": "Usage",
+      "values": [
+        {
+          "value": "Studio recording",
+          "name": "Studio recording"
+        },
+        {
+          "value": "TV",
+          "name": "TV"
+        }
+        {
+          "value": "Drumming",
+          "name": "Drumming"
+        },
+        {
+          "value": "Gaming",
+          "name": "Gaming"
+        }
+      ],
+      "preDefAttribute": true
+    }
+  ],
+  "alias": "Headphones"
+}

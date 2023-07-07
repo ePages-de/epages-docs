@@ -1,0 +1,46 @@
+[
+  {
+    "op": "add",
+    "path": "/attributevalues",
+    "value": {
+        "name": "Connectivity",
+        "visible": true,
+        "preDefAttribute": true,
+        "values": [
+           {
+             "value": "True Wireless",
+             "name": "True Wireless"
+           }
+         ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/attributevalues",
+    "value": {
+        "name": "Usage",
+        "values": [
+           {
+             "name": "Studio recording"
+            },
+           {
+             "name": "TV"
+            },
+           {
+             "name": "Drumming"
+            },
+           {
+             "name": "Gaming"
+            }
+         ]
+     }
+  },
+  {
+    "op": "remove",
+    "path": "/attribute",
+    "value": {
+        "name": "Type" 
+     }
+  }
+]
+
