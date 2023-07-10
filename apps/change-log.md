@@ -20,6 +20,8 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 #### <i class="fas fa-plus"></i> New
 
+**For ePages Now only!**
+
 * [`PATCH`/{shopId}/producttypes/{productTypeId}](https://developer.epages.com/apps/api-reference/patch-shopid-producttypes-producttypeid.html)
 
 #### <i class="fas fa-pencil-alt"></i> Update
@@ -34,6 +36,8 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 #### <i class="fas fa-plus"></i> New
 
+**For ePages Now only!**
+
 * [`PATCH`/{shopId}/products/{productId}/custom-attributes](https://developer.epages.com/apps/api-reference/patch-shopid-products-productid-custom-attributes.html)
 
 <hr>
@@ -44,9 +48,11 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 #### <i class="fas fa-plus"></i> New
 
+**For ePages Now only!**
+
 * [`POST`/{shopId}/products/{productId}/variations](https://developer.epages.com/apps/api-reference/post-shopid-products-productid-variations.html)
 
-* Added data types `variation (create request)`, `variationAttribute (create request)` and `variationValue (create request)`. For ePages Now only!
+* Added data types `variation (create request)`, `variationAttribute (create request)` and `variationValue (create request)`.
 
 <hr>
 
@@ -56,13 +62,15 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 #### <i class="fas fa-plus"></i> New
 
+**For ePages Now only!**
+
 * [`POST`/{shopId}/products/find](https://developer.epages.com/apps/api-reference/post-shopid-products-find.html)
 * [`GET`/{shopId}/producttypes](https://developer.epages.com/apps/api-reference/get-shopid-producttypes.html)
 * [`POST`/{shopId}/producttypes](https://developer.epages.com/apps/api-reference/post-shopid-producttypes.html)
 * [`GET`/{shopId}/producttypes/{productTypeId}](https://developer.epages.com/apps/api-reference/get-shopid-producttypes-producttypeid.html)
 
-* Added data type `customerSpecificPriceInfo`. For ePages Now only!
-* Added data types `attributeProductType`, `productType` and `productType (create request)`. For ePages Now only!
+* Added data type `customerSpecificPriceInfo`.
+* Added data types `attributeProductType`, `productType` and `productType (create request)`.
 
 #### <i class="fas fa-pencil-alt"></i> Update
 
@@ -78,6 +86,8 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 #### <i class="fas fa-plus"></i> New
 
+**For ePages Now only!**
+
 * [`PUT`/{shopId}/products/{productId}/crossselling](https://developer.epages.com/apps/api-reference/put-shopid-products-productid-crossselling.html)
 * [`PATCH`/{shopId}/products/{productId}/crossselling](https://developer.epages.com/apps/api-reference/patch-shopid-products-productid-crossselling.html)
 
@@ -85,7 +95,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 * Added attributes `isManufacturerPriceRRP` and `isShippingLinkVisible` to data types [`product`](https://developer.epages.com/apps/data-types.html#product) and [`productSearch`](https://developer.epages.com/apps/data-types.html#productsearch).
 * Added attribute `visibleInNavigation` to data types [`category`](https://developer.epages.com/apps/data-types.html#category) and [`category (update request)`](https://developer.epages.com/apps/data-types.html#category-update-request).
-* Added replace functionality for stocklevel of [`PATCH`/products/{productId}](https://developer.epages.com/apps/api-reference/patch-shopid-products-productid.html)
+* Added replace functionality for stocklevel of [`PATCH`/products/{productId}](https://developer.epages.com/apps/api-reference/patch-shopid-products-productid.html).
 
 <hr>
 
