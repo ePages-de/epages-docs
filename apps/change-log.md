@@ -26,7 +26,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 #### <i class="fas fa-pencil-alt"></i> Update
 
-* Added replace operation for product types of [`PATCH`/products/{productId}](https://developer.epages.com/apps/api-reference/patch-shopid-products-productid.html)
+* Added replace operation for product types of [`PATCH`/products/{productId}](https://developer.epages.com/apps/api-reference/patch-shopid-products-productid.html).
 
 <hr>
 
