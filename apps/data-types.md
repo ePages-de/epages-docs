@@ -776,7 +776,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 ePages Now only!
 
 | Attribute | Type | Description |
-| - | :-: |  - |
+| - | - |  - |
 | productTypeId | string | The unique identifier of the product type. |
 | name | string | The name of the product type. |
 | alias | string | The alias for the product type.  |
@@ -787,7 +787,7 @@ ePages Now only!
 ePages Now only!
 
 | Attribute | Type | Description |
-| - | :-: |  - |
+| - | - |  - |
 | name | string | The name of the product type. |
 | alias | string | The alias for the product type.  |
 | attributes | [attributeProducttype](page:apps-data-types#attributeproducttype) | The attributes of the selected product type. |
