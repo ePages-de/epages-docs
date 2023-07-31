@@ -730,6 +730,23 @@
               id: delete_payment_method_definition
     - title: Product Management API
       entries:
+        - title: Additional product descriptions
+          entries:
+            - title: List additional product descriptions
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-additional-product-descriptions-list
+              id: list_additional_product_descriptions
+            - title: Add additional product description
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-additional-product-description-create
+              id: add_additional_product_description
+            - title: Update additional product description
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-additional-product-description-update
+              id: update_additional_product_description
+            - title: Sort additional product descriptions
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-additional-product-description-sort
+              id: sort_additional_product_descriptions
+            - title: Delete additional product description
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-additional-product-description-delete
+              id: delete_additional_product_description
         - title: Products
           entries:
             - title: Create product

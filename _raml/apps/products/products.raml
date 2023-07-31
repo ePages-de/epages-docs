@@ -103,6 +103,7 @@ post:
                 - /productLength<br>
                 - /productWidth<br>
                 - /productHeight<br>
+                - /producttype³<br>
                 - /priceInfo/taxClass/taxClassId³<br>
                 - /productImage⁴<br>
                 - /stocklevel²³<br>
@@ -110,7 +111,7 @@ post:
 
                 **¹** supports *add* only<br>
                 **²** value will not be replaced, but changed, i.e. if the stocklevel is 3 and you add 1, you will get 4; if you add -5, you will get -2.<br>
-                **³** used for taxClassId, stocklevel<br>
+                **³** used for producttype, taxClassId, stocklevel<br>
                 **⁴** can only be used to determine the slideshow image that should serve as the main image for the product. To upload images to the slideshow, refer to [the respective POST endpoint](https://developer.epages.com/apps/api-reference/post-shopid-products-productid-slideshow.html).<br><br>
 
     securedBy: [products_write]

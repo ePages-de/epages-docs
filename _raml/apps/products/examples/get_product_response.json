@@ -137,6 +137,10 @@
         {
           "rel": "categories",
           "href": "https://pm.epages.com/rs/shops/apidocu/categories/?productId=54EF2E41-FCA8-E0E5-9323-0A0C05E66C2E"
+        },
+        {
+          "rel": "producttype",
+          "href": "https://pm.epages.com/rs/shops/apidocu/producttypes/6489A241-7B85-54B0-0B69-C0A8020205ED"
         }
       ]
     },
@@ -275,6 +279,10 @@
         {
           "rel": "categories",
           "href": "https://pm.epages.com/rs/shops/apidocu/categories/?productId=51E7F905-2E4C-78C2-30C2-AC14145FA4E5"
+        },
+        {
+          "rel": "producttype",
+          "href": "https://pm.epages.com/rs/shops/apidocu/producttypes/6489A241-7B85-54B0-0B69-C0A8020205ED"
         }
       ]
     },
@@ -537,6 +545,10 @@
         {
           "rel": "categories",
           "href": "https://pm.epages.com/rs/shops/apidocu/categories/?productId=51E7F913-5447-240E-77AE-AC14145FA477"
+        },
+        {
+          "rel": "producttype",
+          "href": "https://pm.epages.com/rs/shops/apidocu/producttypes/6489A241-7B85-54B0-0B69-C0A8020205ED"
         }
       ]
     }
