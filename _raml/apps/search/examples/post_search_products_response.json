@@ -89,6 +89,7 @@
           "manufacturerPrice": null,
           "basePrice": null,
           "lowestPrice":null,
+          "lowestRefPriceFormatted": null,
           "highestPrice": null
         },
         "forSale": true,

@@ -87,6 +87,7 @@
           "currency": "EUR"
         },
         "lowestPrice": null,
+        "lowestRefPriceFormatted": null,
         "highestPrice": null,
         "manufacturerPrice": null,
         "basePrice": null
@@ -220,6 +221,7 @@
           "currency": "EUR"
         },
         "lowestPrice": null,
+        "lowestRefPriceFormatted": null,
         "highestPrice": null,
         "manufacturerPrice": null,
         "basePrice": null
@@ -362,6 +364,7 @@
             "amount": 39.5,
             "currency": "EUR"
         },
+        "lowestRefPriceFormatted": "1 piece(s) = 39.50 €",
         "highestPrice": {
           "taxType": "NET",
           "formatted": "131.70 €",
