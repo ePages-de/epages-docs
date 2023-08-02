@@ -14,6 +14,16 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
+## 2023-08-03
+
+### Changes with software release 7.86.0
+
+#### <i class="fas fa-pencil-alt"></i> Update
+
+* Added attributes `isInEU` and `countryCode2` to data type `shopInfo`.
+
+<hr>
+
 ## 2023-07-06
 
 ### Changes with software release 7.85.0
