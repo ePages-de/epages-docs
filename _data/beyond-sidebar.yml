@@ -476,9 +476,6 @@
             - title: Show order details
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-get
               id: show_order_details
-            - title: Show order by cart ID
-              link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-order-find-by-cart-id
-              id: show_order_by_cart_id
             - title: Show order confirmation details by cart ID
               link: https://api-docs.beyondshop.cloud/ng-order-order-public-api.html#resources-find-order-confirmation
               id: show_order_confirmation_details_by_cart_id
