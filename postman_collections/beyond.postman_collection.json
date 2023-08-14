@@ -3839,7 +3839,7 @@
       "method" : "POST",
       "header" : [ {
         "key" : "Authorization",
-        "value" : "Basic NmY3YWMzZDUtYTQ0OS00MmExLWI1NTItMjIyYTFhYzEwNWE5OmZiaWRhbmFqdTA4MWhtZXY2ZGg2bDkxb3Rr",
+        "value" : "Basic NjkwYzkzZGYtZWE1Mi00OGMwLWFhODYtNWRjMWQ0ZDUzNmU2OmZuanQzbDlpbnJhMzM1Y2I4c2NrNmhyNGNo",
         "disabled" : false,
         "description" : "The HTTP Basic Authorization header containing the OAuth 2.0 client credentials (client_id:client_secret)."
       } ]
@@ -3865,7 +3865,7 @@
         "method" : "POST",
         "header" : [ {
           "key" : "Authorization",
-          "value" : "Basic NmY3YWMzZDUtYTQ0OS00MmExLWI1NTItMjIyYTFhYzEwNWE5OmZiaWRhbmFqdTA4MWhtZXY2ZGg2bDkxb3Rr",
+          "value" : "Basic NjkwYzkzZGYtZWE1Mi00OGMwLWFhODYtNWRjMWQ0ZDUzNmU2OmZuanQzbDlpbnJhMzM1Y2I4c2NrNmhyNGNo",
           "disabled" : false,
           "description" : "The HTTP Basic Authorization header containing the OAuth 2.0 client credentials (client_id:client_secret)."
         } ]
@@ -3876,7 +3876,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"access_token\" : \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjEifQ.eyJzY29wZSI6WyJ1c2VyOnIiXSwidGVuYW50SWQiOjEzNSwiZXhwIjoxNjkyMDM5MDU4LCJpYXQiOjE2OTE5OTU4NTgsImp0aSI6InBVbVVTcWFpUnBPSzM5QUJZTzN3K2lSVzJzRT0iLCJjbGllbnRfaWQiOiI2ZjdhYzNkNS1hNDQ5LTQyYTEtYjU1Mi0yMjJhMWFjMTA1YTkifQ.AGW2PmHPkW57sPAVCRGDRjY1vpAtuxfDmpB7CxdxpMPTnIdyg4nSnGRyxstA1ZgGG2C2JbH9WqhNeRV6YMeETChXWL0cET9rRb_soRQpLiJaCk727zznYeOOvW_KhukV-0WdvEFBeKOeEf2WadDifpXDu_XxpmmmwPpqaGOrgLyyloQ8ffhNjAPRSDKBRyP8YIu5FxNMS_k2wIzwXl3Gx2iJ6TNz3k-uZa9tggdFSkhz-E2Am3eZbZQjVo139Ix2WpDTkne04ttdtEcsuxy3j1oKlj5jvJ39iwiemL7368h_QohXDDWt5ZemZV6u_WNVm4T0FwAJWtTLjStOVfslSA\",\n  \"token_type\" : \"bearer\",\n  \"refresh_token\" : \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjEifQ.eyJzY29wZSI6WyJ1c2VyOnIiXSwiYXRpIjoicFVtVVNxYWlScE9LMzlBQllPM3craVJXMnNFPSIsInRlbmFudElkIjoxMzUsImlhdCI6MTY5MTk5NTg1OCwianRpIjoiRWZXdUpQd1ZUak9pd3BEWjdnaDJwWHVpVDZRPSIsImNsaWVudF9pZCI6IjZmN2FjM2Q1LWE0NDktNDJhMS1iNTUyLTIyMmExYWMxMDVhOSJ9.C9DZM1MLTvABCcIh6r0B3sHvG-m-E4g85Gv1uFcMx0PC7ITwfUGvWod55IuqYLxe-SgMObE_OFguyIptkIw3_6f0va39gjAf_ImbvCpYez3Zp4p6oMiDqNF22WM8yiy99XC9lRLMwKj1nk0XPhvqx1_mHliapxoU3cWSR85G9fjNpHUyU1gr7Q2FNMhDFLqNd6oHTHuTj8reRTlDocxBiNxQLlwxjjuL4I6Uygr8FNBDvYbOEg-uhg-MuIVY6qQqYEIH0EggONqqZ950OB3q_i-F0tPTKLgGyG4R2KLpMOfCv5H6Vth1XQAVD7IuS2d5YUidcjx2PuHxCn_c4ky-Ig\",\n  \"expires_in\" : 43199,\n  \"scope\" : \"user:r\",\n  \"tenantId\" : 135,\n  \"iat\" : 1691995858,\n  \"jti\" : \"pUmUSqaiRpOK39ABYO3w+iRW2sE=\"\n}",
+      "body" : "{\n  \"access_token\" : \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjEifQ.eyJzY29wZSI6WyJ1c2VyOnIiXSwidGVuYW50SWQiOjEzNSwiZXhwIjoxNjkyMDU0MDY5LCJpYXQiOjE2OTIwMTA4NjksImp0aSI6IkI1WUlhWUZoR1JGREFIWkhvWlZqMWJMd2VqTT0iLCJjbGllbnRfaWQiOiI2OTBjOTNkZi1lYTUyLTQ4YzAtYWE4Ni01ZGMxZDRkNTM2ZTYifQ.gzJuYNn8AeNnTIMSmWkkrrvDtzdh3-ZFb1g2PQR0ok5rBiOg1FVs80aHCz1RLbZggd4J39xwmbg_gX7Znjemhd3YbCSJckdJWjTzNYQXhIYGsdEKEFBEOyhm9nsEiQUEIeThBIl1MLWipB2JOIzFBsdE6eny4HHZ0gPYzvz3Kffe2GfYSNGvguOeM1PZQgOD0lJ0B5dp-RZlHZ0a79YZSpAp-2vH2Qzk9dWBOktNqPanUZ4BqkMOoU3Oo7ggGd1K7AeBRuKwbBF554JSRKFiKbmQQ54AiivD-8XjS9cRfdVsuU-ytnzveAZcCPh_9CpkKd_C0IpGcOkjSqIK2lIKbQ\",\n  \"token_type\" : \"bearer\",\n  \"refresh_token\" : \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjEifQ.eyJzY29wZSI6WyJ1c2VyOnIiXSwiYXRpIjoiQjVZSWFZRmhHUkZEQUhaSG9aVmoxYkx3ZWpNPSIsInRlbmFudElkIjoxMzUsImlhdCI6MTY5MjAxMDg2OSwianRpIjoiSmpKbEtJNkpkcm8vU0tjZFlDQXphdTFNY29zPSIsImNsaWVudF9pZCI6IjY5MGM5M2RmLWVhNTItNDhjMC1hYTg2LTVkYzFkNGQ1MzZlNiJ9.LLIqKVAg6Y-5z16TGBJQI4r8CPze7zkmgMtTU6ChLyYrguLt83gH6s2vvGYMF1So2-pNNdcZSQLuOSSZvqkcTXNaMB1-TN52AMD2QJn4GX8QeXpsdUA3HVHF1kMeSwFiKjRfMwsjTGInTEidko7DldiT5cOPMR_TTwP0pKF9Uxl8kskyLk7R3HyZn7aWOLjeLxcNJ2ykcV7T7dRDUBpiwtwsMBfK1L8-_hGjYZf1dY7ozqeiOO8X4XvxSJnTu2KwqzXXsICPDAMCZzkSsCR1EMHUE-Bt9-AXWDYbOQKLJZ3llp4X3jHpcC_cBxjtqjW6gDOi-4o9oKycY-sk87_VMw\",\n  \"expires_in\" : 43199,\n  \"scope\" : \"user:r\",\n  \"tenantId\" : 135,\n  \"iat\" : 1692010869,\n  \"jti\" : \"B5YIaYFhGRFDAHZHoZVj1bLwejM=\"\n}",
       "code" : 200
     }, {
       "id" : "oauth2-token-client-credentials",
@@ -3906,7 +3906,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"access_token\" : \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjEifQ.eyJzY29wZSI6WyJwcm9kOmNyIl0sInRlbmFudElkIjoxNDM4LCJleHAiOjE2OTIwMzkwMjksImlhdCI6MTY5MTk5NTgyOSwianRpIjoieTZuRzBrbUhOcU5wdm5acHUxaUNrT3V4YXhJPSIsImNsaWVudF9pZCI6ImNsaWVudElkLTEifQ.cUh3RDWWbM5xONbcVPNNZZFtjlnEVAYNCZQZKvhHg8T0PslX_TnJmVzEtXTukb0BuedHhhM6PRbUDMQLPzo9wGQldulEhwrSEwdA93V6rqqhhTRUVfe9cmwl4cJv1VufEXkwa5cKHUUe3cOhxDxWyw4OLB0WR6MeMLWqP2DGflIlNb5FyaaB5p45gP5Mm3MRQZrESGUtXL_Rs4mg5Bxxnwfm9MAIvZqXAzWGvVF3uKMt0VF-XzwX288PF7O1xZSHyV1i5ov6A05gE2aVO_EB_GNm0w1c0qKBUpLpkd1ERDFsGUjhw0O4H3-B-azBjWg3Dx0QxN5zz1YalTr5xnm8gA\",\n  \"token_type\" : \"bearer\",\n  \"expires_in\" : 43199,\n  \"scope\" : \"prod:cr\",\n  \"tenantId\" : 1438,\n  \"iat\" : 1691995829,\n  \"jti\" : \"y6nG0kmHNqNpvnZpu1iCkOuxaxI=\"\n}",
+      "body" : "{\n  \"access_token\" : \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjEifQ.eyJzY29wZSI6WyJwcm9kOmNyIl0sInRlbmFudElkIjoxNDM4LCJleHAiOjE2OTIwNTQwMzcsImlhdCI6MTY5MjAxMDgzNywianRpIjoieDlJOUZnTHhHdEF3Rmo4Y1VLRitXSWtveklVPSIsImNsaWVudF9pZCI6ImNsaWVudElkLTEifQ.CoIZsPjL5R3hb6O4g87GFqsIp-HT_nvE5os7I9VI-_imdcWrnZEMG4WlMoB_Ll__pPzj7DsR6e4SAe0FipBuxCszGfTrI79gd4UQvPJ5Nv7Y-Xntwla6zjkzC6X3OBC05sbjZtJU7W4avCXOe410nNl93vMlfYKx8ECXfugg8mW1CRTOangFBaZbWtKbx52VkIAX-ADWE3xlx_5lbNCMBKPUD0z-KDhdDzblZpDatPIRTZnw36od7Re3cFdaYcQ_DhUgk-TpGpHEcKq8VKPCJYly2k3Q_LCi_Ql9K7KKKyhCi8RAe-AcZqvyh2NiPJPAed19M3qxvhSKm8Q38QHl6A\",\n  \"token_type\" : \"bearer\",\n  \"expires_in\" : 43199,\n  \"scope\" : \"prod:cr\",\n  \"tenantId\" : 1438,\n  \"iat\" : 1692010837,\n  \"jti\" : \"x9I9FgLxGtAwFj8cUKF+WIkozIU=\"\n}",
       "code" : 200
     }, {
       "id" : "oauth-token-revoked-client",
@@ -3948,7 +3948,7 @@
         "method" : "POST",
         "header" : [ {
           "key" : "Authorization",
-          "value" : "Basic c2FtcGxlLWNsaWVudDpiZDNjMzZmYy0xNzQwLTQ2OTAtYmM1MS1iOTY3ZDU2MDNkN2Q=",
+          "value" : "Basic c2FtcGxlLWNsaWVudDplZTM5YTI1My04YjJhLTQzZWQtOTFiNy00MzIzNzcyNTQxNjc=",
           "disabled" : false,
           "description" : "The HTTP Basic Authorization header containing the OAuth 2.0 client credentials (client_id:client_secret)."
         } ]
@@ -3959,7 +3959,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"access_token\" : \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjEifQ.eyJ1c2VyX25hbWUiOiJ1c2VyIiwic2NvcGUiOlsicHJvZDpyYyJdLCJ0ZW5hbnRJZCI6MTQzOCwiZXhwIjoxNjkyMjU1MDI2LCJpYXQiOjE2OTE5OTU4MjYsInVzZXJJZCI6IjViMzY4MmY2LTMyMzktNGMwMy05MDUyLWI0M2RjMTlmNzExNiIsImp0aSI6IktnNTBYd2lwbURqQWtpaExTUjRWUm5CNjlDUT0iLCJjbGllbnRfaWQiOiJzYW1wbGUtY2xpZW50IiwidXNlcm5hbWUiOiJ1c2VyIn0.Z_R6-mOmJXrF10Dws78UhF3_RrqcKm3sgwDu4Eb_mL3Y_BKzRHLOyVFwbi1D-yUzGmw94Xj_FOo753Rqtwtx6S7nMZLz44uN6HcGuTg3YzoJD20lrPPmioRtjo4Cu-2_nSbGN7JemLQYOMfYi4PuS4e9PeJXY1A9dRtBj-i-g74wxmSLxWdZLYIvsdRmhjFG9LRxCWRagEZh7vh2h9SlLrxiBAn-IsyhdRg116RgrNzkVnaofwb5puSdDsFRG_AbjPZMisvHV7X30xxnA3cM6zT-7vJ08eXG11HR7QmKsMPTM1AXcIOx-d8KQXmlqtRabEFiDwU5cvj9w3m1m747nQ\",\n  \"token_type\" : \"bearer\",\n  \"refresh_token\" : \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjEifQ.eyJ1c2VyX25hbWUiOiJ1c2VyIiwic2NvcGUiOlsicHJvZDpyYyJdLCJhdGkiOiJLZzUwWHdpcG1EakFraWhMU1I0VlJuQjY5Q1E9IiwidGVuYW50SWQiOjE0MzgsImV4cCI6MTY5NDU4NzgyNiwiaWF0IjoxNjkxOTk1ODI2LCJ1c2VySWQiOiI1YjM2ODJmNi0zMjM5LTRjMDMtOTA1Mi1iNDNkYzE5ZjcxMTYiLCJqdGkiOiJIZlpCWTRVSEtWbWdNdVQzbkJxWGNXcmgxOU09IiwiY2xpZW50X2lkIjoic2FtcGxlLWNsaWVudCIsInVzZXJuYW1lIjoidXNlciJ9.X0tY50Kkj3pDEP0x99rq56A45sPgcGDcS8Jh3JCSqkI_s3I4ZMemhlaYf_inYiEafkLDS5z5CEJV2goc_vTu6HmPmt9RTCjYN_4GL58ErusOVZi64M5Ar0rMLu-DTSNmjpfY2jmNqEFgRgKNGBg8E1EaT2nkXB31HIggwlEX2nVr17LAiBqwZIfV7oontW677L8a_yP1SnlyHAGPVjIBUAKS5BawmN-_2wKrwEga_yM5c1tFYKccSux4pT3q3yW2IYmfJdkdc5NEToSl9w08EczftwN0aTeOUvENPFasW13AjrCkBYbGvugSjhrNZKtYRRwsHQgM5T8mpYLuHYTOXg\",\n  \"expires_in\" : 259199,\n  \"scope\" : \"prod:rc\",\n  \"tenantId\" : 1438,\n  \"iat\" : 1691995826,\n  \"userId\" : \"5b3682f6-3239-4c03-9052-b43dc19f7116\",\n  \"username\" : \"user\",\n  \"jti\" : \"Kg50XwipmDjAkihLSR4VRnB69CQ=\"\n}",
+      "body" : "{\n  \"access_token\" : \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjEifQ.eyJ1c2VyX25hbWUiOiJ1c2VyIiwic2NvcGUiOlsicHJvZDpyYyJdLCJ0ZW5hbnRJZCI6MTQzOCwiZXhwIjoxNjkyMjcwMDMzLCJpYXQiOjE2OTIwMTA4MzMsInVzZXJJZCI6IjU3YjRkODdmLTM0YTgtNDc3Zi1iMjM2LTg4ZmIzNGE1ZDgwNSIsImp0aSI6Ik4rMnNZb3VsQXUzMk9OMVo2T3p4R3pLcjIzTT0iLCJjbGllbnRfaWQiOiJzYW1wbGUtY2xpZW50IiwidXNlcm5hbWUiOiJ1c2VyIn0.P1t6jMyvHB-omZYOIkJggrwci4Nn_As3V52Xw5BlAvKa7KTVjmLI09tiNSi8L15cwJZ8J9YiRDS-9LWjg7IBcKUHs-tpZJviB6OFgwhSqjUhTtxHlUjMSvdtILRPg4eZ4iniymVxhdicK8F68uJkj3ni32myY9Y2iUsXp4mckJDrwJHwhukhUpzQy-CInRyt72F42MR-fZBNbo-lvJ2gUEwcxfFrBJy7Bqu59Cphyjw_mlESL42IrTHr0SfitIqELI5lyPahK-PztOkliGiRg7PDhQgFkjlcZHtDIMWbDBVS45USxAw7KyO03qe8pHndZ4r-JDzJWys8_I-5rOTJMg\",\n  \"token_type\" : \"bearer\",\n  \"refresh_token\" : \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjEifQ.eyJ1c2VyX25hbWUiOiJ1c2VyIiwic2NvcGUiOlsicHJvZDpyYyJdLCJhdGkiOiJOKzJzWW91bEF1MzJPTjFaNk96eEd6S3IyM009IiwidGVuYW50SWQiOjE0MzgsImV4cCI6MTY5NDYwMjgzMiwiaWF0IjoxNjkyMDEwODMzLCJ1c2VySWQiOiI1N2I0ZDg3Zi0zNGE4LTQ3N2YtYjIzNi04OGZiMzRhNWQ4MDUiLCJqdGkiOiJsbVFqcVY3RUZvckUxSEs5NXgxS0tBSkw2QTA9IiwiY2xpZW50X2lkIjoic2FtcGxlLWNsaWVudCIsInVzZXJuYW1lIjoidXNlciJ9.WToiucviFvfN9AQSNOIH8JkkJ8G6Rkh2kaFRU5jPma84O4-fpYOJTQIJVZBCVwBxUsLkqLy61q4uQunMCEVjnfjgpMoAslVhQAGjE0Kbm4b1lToE_eI9BMhjTir3xuT2KPRyeTEYvuInX-K8O7n0FDyiC0pWyOwSz6ViWo2A1UlYfLD6e62x2-YWFw53e82gXutq2QIP4FgLpSowarhQsQQGI9QL5x7PTbzcznbQlZo4usgwnETRhYwpRPOcJj9zPKikqlVyTlese-PzW8dq_NUy4-TKJO99DxtSentKehnhKGalNdcaRaCzJ20X6FT4ac0ojBLHoVu3BdFFWaAAGA\",\n  \"expires_in\" : 259199,\n  \"scope\" : \"prod:rc\",\n  \"tenantId\" : 1438,\n  \"iat\" : 1692010833,\n  \"userId\" : \"57b4d87f-34a8-477f-b236-88fb34a5d805\",\n  \"username\" : \"user\",\n  \"jti\" : \"N+2sYoulAu32ON1Z6OzxGzKr23M=\"\n}",
       "code" : 200
     } ]
   }, {
@@ -16490,7 +16490,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"_id\" : \"1cd8223b-29b9-4cbc-a7b8-6cebed47e44a\",\n  \"sharedSecret\" : \"keqmth58ijj6c5714ntdbdjg9c\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/signers/1cd8223b-29b9-4cbc-a7b8-6cebed47e44a\"\n    }\n  }\n}",
+      "body" : "{\n  \"_id\" : \"571fa709-2b08-481d-b97a-5deb34077f77\",\n  \"sharedSecret\" : \"no31q6fb1tbc9qe0h9jarafl3b\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/signers/571fa709-2b08-481d-b97a-5deb34077f77\"\n    }\n  }\n}",
       "code" : 200
     } ]
   }, {
@@ -16524,7 +16524,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"_embedded\" : {\n    \"signers\" : [ {\n      \"_id\" : \"d219305f-d028-4edb-9be0-3cc4bafcc8d5\",\n      \"createdAt\" : \"2023-08-14T08:53:19.139\",\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/signers/d219305f-d028-4edb-9be0-3cc4bafcc8d5\"\n        }\n      }\n    }, {\n      \"_id\" : \"f0aed671-ae39-49c9-8f3c-0999ec6d019a\",\n      \"createdAt\" : \"2023-08-14T08:53:19.187\",\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/signers/f0aed671-ae39-49c9-8f3c-0999ec6d019a\"\n        }\n      }\n    } ]\n  }\n}",
+      "body" : "{\n  \"_embedded\" : {\n    \"signers\" : [ {\n      \"_id\" : \"d50a03b3-b5c9-4116-88d3-4da03b627020\",\n      \"createdAt\" : \"2023-08-14T13:03:25.74\",\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/signers/d50a03b3-b5c9-4116-88d3-4da03b627020\"\n        }\n      }\n    }, {\n      \"_id\" : \"e26608af-aea3-47d3-a361-a4f0379d695c\",\n      \"createdAt\" : \"2023-08-14T13:03:25.796\",\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/signers/e26608af-aea3-47d3-a361-a4f0379d695c\"\n        }\n      }\n    } ]\n  }\n}",
       "code" : 200
     } ]
   }, {
@@ -16891,7 +16891,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"username\" : \"user\",\n  \"email\" : \"baxter@example.org\",\n  \"enabled\" : true,\n  \"_id\" : \"140c0ada-8036-4ea2-858c-8b9893d17798\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/users/140c0ada-8036-4ea2-858c-8b9893d17798\"\n    },\n    \"user\" : {\n      \"href\" : \"https://yourshop.api.urn/users/140c0ada-8036-4ea2-858c-8b9893d17798\"\n    },\n    \"change-password\" : {\n      \"href\" : \"https://yourshop.api.urn/users/140c0ada-8036-4ea2-858c-8b9893d17798/change-password\"\n    },\n    \"change-email-request\" : {\n      \"href\" : \"https://yourshop.api.urn/users/140c0ada-8036-4ea2-858c-8b9893d17798/change-email-request\"\n    },\n    \"roles\" : {\n      \"href\" : \"https://yourshop.api.urn/users/140c0ada-8036-4ea2-858c-8b9893d17798/roles\"\n    },\n    \"resend-confirm-email-request\" : {\n      \"href\" : \"https://yourshop.api.urn/users/140c0ada-8036-4ea2-858c-8b9893d17798/resend-confirm-email-request\"\n    }\n  }\n}",
+      "body" : "{\n  \"username\" : \"user\",\n  \"email\" : \"baxter@example.org\",\n  \"enabled\" : true,\n  \"_id\" : \"0e9055ee-1f71-4af4-895a-051600597ff3\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/users/0e9055ee-1f71-4af4-895a-051600597ff3\"\n    },\n    \"user\" : {\n      \"href\" : \"https://yourshop.api.urn/users/0e9055ee-1f71-4af4-895a-051600597ff3\"\n    },\n    \"change-password\" : {\n      \"href\" : \"https://yourshop.api.urn/users/0e9055ee-1f71-4af4-895a-051600597ff3/change-password\"\n    },\n    \"change-email-request\" : {\n      \"href\" : \"https://yourshop.api.urn/users/0e9055ee-1f71-4af4-895a-051600597ff3/change-email-request\"\n    },\n    \"roles\" : {\n      \"href\" : \"https://yourshop.api.urn/users/0e9055ee-1f71-4af4-895a-051600597ff3/roles\"\n    },\n    \"resend-confirm-email-request\" : {\n      \"href\" : \"https://yourshop.api.urn/users/0e9055ee-1f71-4af4-895a-051600597ff3/resend-confirm-email-request\"\n    }\n  }\n}",
       "code" : 200
     } ]
   }, {
@@ -16945,7 +16945,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"username\" : \"new username\",\n  \"email\" : \"baxter@example.org\",\n  \"enabled\" : true,\n  \"_id\" : \"3ce70cc0-f988-4736-af99-a8c3ed2c5faa\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/users/3ce70cc0-f988-4736-af99-a8c3ed2c5faa\"\n    },\n    \"user\" : {\n      \"href\" : \"https://yourshop.api.urn/users/3ce70cc0-f988-4736-af99-a8c3ed2c5faa\"\n    },\n    \"change-password\" : {\n      \"href\" : \"https://yourshop.api.urn/users/3ce70cc0-f988-4736-af99-a8c3ed2c5faa/change-password\"\n    },\n    \"change-email-request\" : {\n      \"href\" : \"https://yourshop.api.urn/users/3ce70cc0-f988-4736-af99-a8c3ed2c5faa/change-email-request\"\n    },\n    \"roles\" : {\n      \"href\" : \"https://yourshop.api.urn/users/3ce70cc0-f988-4736-af99-a8c3ed2c5faa/roles\"\n    },\n    \"resend-confirm-email-request\" : {\n      \"href\" : \"https://yourshop.api.urn/users/3ce70cc0-f988-4736-af99-a8c3ed2c5faa/resend-confirm-email-request\"\n    }\n  }\n}",
+      "body" : "{\n  \"username\" : \"new username\",\n  \"email\" : \"baxter@example.org\",\n  \"enabled\" : true,\n  \"_id\" : \"08d83c93-6397-42fc-b354-9ec7f7f132c3\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/users/08d83c93-6397-42fc-b354-9ec7f7f132c3\"\n    },\n    \"user\" : {\n      \"href\" : \"https://yourshop.api.urn/users/08d83c93-6397-42fc-b354-9ec7f7f132c3\"\n    },\n    \"change-password\" : {\n      \"href\" : \"https://yourshop.api.urn/users/08d83c93-6397-42fc-b354-9ec7f7f132c3/change-password\"\n    },\n    \"change-email-request\" : {\n      \"href\" : \"https://yourshop.api.urn/users/08d83c93-6397-42fc-b354-9ec7f7f132c3/change-email-request\"\n    },\n    \"roles\" : {\n      \"href\" : \"https://yourshop.api.urn/users/08d83c93-6397-42fc-b354-9ec7f7f132c3/roles\"\n    },\n    \"resend-confirm-email-request\" : {\n      \"href\" : \"https://yourshop.api.urn/users/08d83c93-6397-42fc-b354-9ec7f7f132c3/resend-confirm-email-request\"\n    }\n  }\n}",
       "code" : 200
     } ]
   }, {
