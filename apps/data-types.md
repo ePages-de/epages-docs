@@ -113,6 +113,15 @@ ePages Now only!
 | basePrice | object of [basePrice](page:apps-data-types#baseprice) | The price information scaled to a standardised base unit, according to the German base price regulation "Preisangabenverordnung" (PAngV), e.g. 1 l = 1.20 EUR. Is `null` if no reference amount is specified for the product.|
 | priceSavings | object of [priceSavings](page:apps-data-types#pricesavings) | Information on the discount the customer benefits from due to the merchant's settings for customer-specific prices. |
 
+## bulkPriceInfo (patch request)
+
+ePages Now only!
+
+| Attribute | Type | Description |
+| - | - |  - |
+| quantity | object of [quantity](page:apps-data-types#quantity) | The quantity of the product the price refers to.|
+| price | object of [price](page:apps-data-types#price) | The price of the product.|
+
 ## customerSpecificPriceInfo
 
 ePages Now only!
