@@ -41,6 +41,7 @@
       "currency": "EUR"
     },
     "lowestPrice": null,
+    "lowestRefPriceFormatted": null,
     "highestPrice": null,
     "manufacturerPrice": null,
     "basePrice": null

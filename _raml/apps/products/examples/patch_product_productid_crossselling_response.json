@@ -84,6 +84,7 @@
             "amount": 270.5,
             "currency": "EUR"
           },
+          "lowestRefPriceFormatted": "1 piece(s) = 270.50 €",
           "highestPrice": {
           "taxType": "GROSS",
           "formatted": "310.50 €",
@@ -260,6 +261,7 @@
               "amount": 59.50,
               "currency": "EUR"
           },
+          "lowestRefPriceFormatted": "1 piece(s) = 59.50 €",
           "highestPrice": {
             "taxType": "GROSS",
             "formatted": "70.50 €",
