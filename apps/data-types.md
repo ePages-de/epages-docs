@@ -629,9 +629,9 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | customizableHeadlineText | string | The headline for the customization text field in the storefront. |
 | newnessDate | string | The date when the 'New' marker is set to expire. Expressed according to ISO 8601. |
 | refAmount | string | The product reference amount with respect to the product price (e.g. every 1 'piece' costs 10,00 €) |
-| refUnit | string | The product reference unit. Can be *byte*, *kilobyte*, *megabyte*, *gigabyte*, *terrabyte*, *gram*, *kilogram*, *milligram*, *ounce*, *pound*, *tone*, *litre*, *cubicfoot*, *cubicinch*, *cubicmetre*, *cubicyard*, *fluidounce*, *gallon*, *millilitre*, *quart*, *metre*, *centimetre*, *foot*, *inch*, *kilometre*, *millimetre*, *yard*, *piece*, *bottle*, *box*, *can*, *capsule*, *carton*, *glass*, *kit*, *pack*, *packet*, *pair*, *roll*, *set*, *sheet*, *ticket*, *unit*, *second*, *day*, *hour*, *minute*, *month*, *night*, *week*, *year*, *squaremetre*, *squarecentimetre*, *squarefoot*, *squareinch*, *squaremillimetre*, *squareyard* | 
-| refContentAmount | string | The number of reference units that is packaged within the product itself (e.g. the product contains 2 'piece(s)') |
-| productCode | string | The product code (e.g. EAN, UPC, ASIN und ISBN) |
+| refUnit | string | The product reference unit. Can be *byte*, *kilobyte*, *megabyte*, *gigabyte*, *terrabyte*, *gram*, *kilogram*, *milligram*, *ounce*, *pound*, *tone*, *litre*, *cubicfoot*, *cubicinch*, *cubicmetre*, *cubicyard*, *fluidounce*, *gallon*, *millilitre*, *quart*, *metre*, *centimetre*, *foot*, *inch*, *kilometre*, *millimetre*, *yard*, *piece*, *bottle*, *box*, *can*, *capsule*, *carton*, *glass*, *kit*, *pack*, *packet*, *pair*, *roll*, *set*, *sheet*, *ticket*, *unit*, *second*, *day*, *hour*, *minute*, *month*, *night*, *week*, *year*, *squaremetre*, *squarecentimetre*, *squarefoot*, *squareinch*, *squaremillimetre*, *squareyard*. | 
+| refContentAmount | string | The number of reference units that is packaged within the product itself (e.g. the product contains 2 'piece(s)'). |
+| productCode | string | The product code (e.g. EAN, UPC, ASIN and ISBN). |
 
 ## product (create request)
 
@@ -758,10 +758,10 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | customizableTextLength | number | The maximum length of the custom text the customer can enter for a product in the storefront. |
 | customizableHeadlineText | string | The headline for the customization text field in the storefront. |
 | newnessDate | string | The date when the 'New' marker is set to expire. Expressed according to ISO 8601. |
-| refAmount | string | The product reference amount with respect to the product price (e.g. every 1 'piece' costs 10,00 €) |
-| refUnit | string | The product reference unit. Can be *byte*, *kilobyte*, *megabyte*, *gigabyte*, *terrabyte*, *gram*, *kilogram*, *milligram*, *ounce*, *pound*, *tone*, *litre*, *cubicfoot*, *cubicinch*, *cubicmetre*, *cubicyard*, *fluidounce*, *gallon*, *millilitre*, *quart*, *metre*, *centimetre*, *foot*, *inch*, *kilometre*, *millimetre*, *yard*, *piece*, *bottle*, *box*, *can*, *capsule*, *carton*, *glass*, *kit*, *pack*, *packet*, *pair*, *roll*, *set*, *sheet*, *ticket*, *unit*, *second*, *day*, *hour*, *minute*, *month*, *night*, *week*, *year*, *squaremetre*, *squarecentimetre*, *squarefoot*, *squareinch*, *squaremillimetre*, *squareyard* | 
-| refContentAmount | string | The number of reference units that is packaged within the product itself (e.g. the product contains 2 'piece(s)') |
-| productCode | string | The product code (e.g. EAN, UPC, ASIN und ISBN) |
+| refAmount | string | The product reference amount with respect to the product price (e.g. every 1 'piece' costs 10,00 €). |
+| refUnit | string | The product reference unit. Can be *byte*, *kilobyte*, *megabyte*, *gigabyte*, *terrabyte*, *gram*, *kilogram*, *milligram*, *ounce*, *pound*, *tone*, *litre*, *cubicfoot*, *cubicinch*, *cubicmetre*, *cubicyard*, *fluidounce*, *gallon*, *millilitre*, *quart*, *metre*, *centimetre*, *foot*, *inch*, *kilometre*, *millimetre*, *yard*, *piece*, *bottle*, *box*, *can*, *capsule*, *carton*, *glass*, *kit*, *pack*, *packet*, *pair*, *roll*, *set*, *sheet*, *ticket*, *unit*, *second*, *day*, *hour*, *minute*, *month*, *night*, *week*, *year*, *squaremetre*, *squarecentimetre*, *squarefoot*, *squareinch*, *squaremillimetre*, *squareyard*. | 
+| refContentAmount | string | The number of reference units that is packaged within the product itself (e.g. the product contains 2 'piece(s)'). |
+| productCode | string | The product code (e.g. EAN, UPC, ASIN and ISBN). |
 | query | string | The search query. |
 | fallbackQuery | string | The fallback used if the original query did not produce any results. |
 | facets | array of [facet](page:apps-data-types#facet) | The refined search filter options. |

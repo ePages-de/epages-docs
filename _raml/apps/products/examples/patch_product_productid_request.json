@@ -69,12 +69,12 @@
 {
     "op": "add",
     "path": "/customisationInfo",
-    "value": {"isCustomizable":1, "customizableTextLength":50, "customizableHeadlineText":"headline text"}
+    "value": {"isCustomizable":true, "customizableTextLength":50, "customizableHeadlineText":"Customize your product"}
 },
 {
     "op": "add",
     "path": "/title",
-    "value": "My title"
+    "value": "BRAND NEW: Dr.Boom - Star Wars Edition - Technic365"
 },
 {
     "op": "add",
@@ -94,5 +94,5 @@
 {
     "op": "add",
     "path": "/productCode",
-    "value": "examplecode"
+    "value": "Z-1080-BT-02"
 }]
