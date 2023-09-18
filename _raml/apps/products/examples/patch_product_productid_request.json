@@ -49,7 +49,7 @@
 {
     "op": "add",
     "path": "/video",
-    "value": { "type":"YouTube", "id":"XXXXXXXXXXX" }
+    "value": { "type":"YouTube", "id":"CM4CkVFmTds" }
 },
 {
     "op": "add",
@@ -59,7 +59,7 @@
 {
     "op": "add",
     "path": "/referencePriceInfo",
-    "value": {"refAmount":1, "refUnit":"piece", "refContentAmount":2}
+    "value": {"refAmount":1, "refUnit":"piece", "refContentAmount":1}
 },
 {
     "op": "add",
@@ -79,7 +79,7 @@
 {
     "op": "add",
     "path": "/productDataSheet",
-    "value": {"fileName":"myfilename.jpg", "url":"https://www.example.com/file.jpg"}
+    "value": {"fileName":"datasheet_Z-1080-BT-02.pdf", "url":"https://www.technic365.com/datacontent.php?code=Z1080BT02"}
 },
 {
     "op": "add",
