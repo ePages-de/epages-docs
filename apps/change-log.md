@@ -14,13 +14,38 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
+## 2023-08-31
+
+### Changes with software release 7.87.0
+
+#### <i class="fas fa-pencil-alt"></i> Update
+
+* Added the following attribute paths being updatable via [`PATCH`/products/{productId}](https://developer.epages.com/apps/api-reference/patch-shopid-products-productid.html):
+- /isNew<br>
+- /newnessDate<br>
+- /video<br>
+- /isVATInfoVisible<br>
+- /isManufacturerPriceRRP<br>
+- /referencePriceInfo<br>
+- /isShippingLinkVisible<br>
+- /customisationInfo<br>
+- /title<br>
+- /productDataSheet<br>
+- /shippingMethodsRestrictedTo<br>
+- /productCode<br>
+
+* Added attribute `lowestRefPriceFormatted` to data type [`priceInfo`](https://developer.epages.com/apps/data-types.html#priceInfo).
+* Added attributes `newnessDate`, `refAmount`, `refUnit`, `refContentAmount` and `productCode` to data types [`product`](https://developer.epages.com/apps/data-types.html#product) and [`product`](https://developer.epages.com/apps/data-types.html#product-create-request).
+
+<hr>
+
 ## 2023-08-03
 
 ### Changes with software release 7.86.0
 
 #### <i class="fas fa-pencil-alt"></i> Update
 
-* Added attributes `isInEU` and `countryCode2` to data type `shopInfo`.
+* Added attributes `isInEU` and `countryCode2` to data type [`shopInfo`](https://developer.epages.com/apps/data-types.html#shopinfo).
 
 <hr>
 
@@ -62,7 +87,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 * [`POST`/{shopId}/products/{productId}/variations](https://developer.epages.com/apps/api-reference/post-shopid-products-productid-variations.html)
 
-* Added data types `variation (create request)`, `variationAttribute (create request)` and `variationValue (create request)`.
+* Added data types [`variation (create request)`](https://developer.epages.com/apps/data-types.html#variation-create-request)`,[`variationAttribute (create request)`](https://developer.epages.com/apps/data-types.html#variationattribute-create-request) and [`variationValue (create request)`](https://developer.epages.com/apps/data-types.html#variationvalue-create-request).
 
 <hr>
 
@@ -79,8 +104,8 @@ Of course, we will continue to inform you if there are any breaking changes to t
 * [`POST`/{shopId}/producttypes](https://developer.epages.com/apps/api-reference/post-shopid-producttypes.html)
 * [`GET`/{shopId}/producttypes/{productTypeId}](https://developer.epages.com/apps/api-reference/get-shopid-producttypes-producttypeid.html)
 
-* Added data type `customerSpecificPriceInfo`.
-* Added data types `attributeProductType`, `productType` and `productType (create request)`.
+* Added data type [`customerSpecificPriceInfo`](https://developer.epages.com/apps/data-types.html#customerspecificpriceinfo).`customerSpecificPriceInfo`.
+* Added data types [`attributeProductType`](https://developer.epages.com/apps/data-types.html#attributeproducttype), [`productType`](https://developer.epages.com/apps/data-types.html#producttype) and [`productType (create request)`](https://developer.epages.com/apps/data-types.html#producttype-create-request).
 
 #### <i class="fas fa-pencil-alt"></i> Update
 
