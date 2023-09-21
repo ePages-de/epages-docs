@@ -35,7 +35,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 - /productCode<br>
 
 * Added attribute `lowestRefPriceFormatted` to data type [`priceInfo`](https://developer.epages.com/apps/data-types.html#priceInfo).
-* Added attributes `newnessDate`, `refAmount`, `refUnit`, `refContentAmount` and `productCode` to data types [`product`](https://developer.epages.com/apps/data-types.html#product) and [`product`](https://developer.epages.com/apps/data-types.html#product-create-request).
+* Added attributes `newnessDate`, `refAmount`, `refUnit`, `refContentAmount` and `productCode` to data types [`product`](https://developer.epages.com/apps/data-types.html#product) and [`productSearch`](https://developer.epages.com/apps/data-types.html#productSearch).
 
 <hr>
 
