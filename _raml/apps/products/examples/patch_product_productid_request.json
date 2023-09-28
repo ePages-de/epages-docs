@@ -69,4 +69,64 @@
   "op": "replace",
   "path": "/producttype",
   "value": "6489A241-7B85-54B0-0B69-C0A8020205ED"
+},
+{
+    "op": "add",
+    "path": "/isNew",
+    "value": true
+},
+{
+    "op": "add",
+    "path": "/newnessDate",
+    "value": "2023-08-08T22:00:00Z"
+},
+{
+    "op": "add",
+    "path": "/video",
+    "value": { "type":"YouTube", "id":"CM4CkVFmTds" }
+},
+{
+    "op": "add",
+    "path": "/isManufacturerPriceRRP",
+    "value": false
+},
+{
+    "op": "add",
+    "path": "/referencePriceInfo",
+    "value": {"refAmount":1, "refUnit":"piece", "refContentAmount":1}
+},
+{
+    "op": "add",
+    "path": "/isShippingLinkVisible",
+    "value": true
+},
+{
+    "op": "add",
+    "path": "/customisationInfo",
+    "value": {"isCustomizable":true, "customizableTextLength":50, "customizableHeadlineText":"Customize your product"}
+},
+{
+    "op": "add",
+    "path": "/title",
+    "value": "BRAND NEW: Dr.Boom - Star Wars Edition - Technic365"
+},
+{
+    "op": "add",
+    "path": "/productDataSheet",
+    "value": {"fileName":"datasheet_Z-1080-BT-02.pdf", "url":"https://www.technic365.com/datacontent.php?code=Z1080BT02"}
+},
+{
+    "op": "add",
+    "path": "/shippingMethodsRestrictedTo",
+    "value": ["64BDD860-786B-D5AB-F659-AC1200030B22"]
+},
+{
+    "op": "add",
+    "path": "/isVATInfoVisible",
+    "value": true
+},
+{
+    "op": "add",
+    "path": "/productCode",
+    "value": "Z-1080-BT-02"
 }]
