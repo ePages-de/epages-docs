@@ -631,6 +631,10 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | refAmount | string | The product reference amount with respect to the product price (e.g. every 1 'piece' costs 10,00 €) |
 | refUnit | string | The product reference unit. Can be *byte*, *kilobyte*, *megabyte*, *gigabyte*, *terrabyte*, *gram*, *kilogram*, *milligram*, *ounce*, *pound*, *tone*, *litre*, *cubicfoot*, *cubicinch*, *cubicmetre*, *cubicyard*, *fluidounce*, *gallon*, *millilitre*, *quart*, *metre*, *centimetre*, *foot*, *inch*, *kilometre*, *millimetre*, *yard*, *piece*, *bottle*, *box*, *can*, *capsule*, *carton*, *glass*, *kit*, *pack*, *packet*, *pair*, *roll*, *set*, *sheet*, *ticket*, *unit*, *second*, *day*, *hour*, *minute*, *month*, *night*, *week*, *year*, *squaremetre*, *squarecentimetre*, *squarefoot*, *squareinch*, *squaremillimetre*, *squareyard*. | 
 | refContentAmount | string | The number of reference units that is packaged within the product itself (e.g. the product contains 2 'piece(s)'). |
+| priceQuantity | number | The quantity of the product you will get for the price. |
+| orderUnit | string | The product order unit. Can be *byte*, *kilobyte*, *megabyte*, *gigabyte*, *terrabyte*, *gram*, *kilogram*, *milligram*, *ounce*, *pound*, *tone*, *litre*, *cubicfoot*, *cubicinch*, *cubicmetre*, *cubicyard*, *fluidounce*, *gallon*, *millilitre*, *quart*, *metre*, *centimetre*, *foot*, *inch*, *kilometre*, *millimetre*, *yard*, *piece*, *bottle*, *box*, *can*, *capsule*, *carton*, *glass*, *kit*, *pack*, *packet*, *pair*, *roll*, *set*, *sheet*, *ticket*, *unit*, *second*, *day*, *hour*, *minute*, *month*, *night*, *week*, *year*, *squaremetre*, *squarecentimetre*, *squarefoot*, *squareinch*, *squaremillimetre*, *squareyard*. | 
+| minOrder | number | The minimum order amount of the product |
+| intervalOrder | number | The interval order amount of the product |
 | productCode | string | The product code (e.g. EAN, UPC, ASIN and ISBN). |
 
 ## product (create request)
@@ -761,6 +765,10 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | refAmount | string | The product reference amount with respect to the product price (e.g. every 1 'piece' costs 10,00 €). |
 | refUnit | string | The product reference unit. Can be *byte*, *kilobyte*, *megabyte*, *gigabyte*, *terrabyte*, *gram*, *kilogram*, *milligram*, *ounce*, *pound*, *tone*, *litre*, *cubicfoot*, *cubicinch*, *cubicmetre*, *cubicyard*, *fluidounce*, *gallon*, *millilitre*, *quart*, *metre*, *centimetre*, *foot*, *inch*, *kilometre*, *millimetre*, *yard*, *piece*, *bottle*, *box*, *can*, *capsule*, *carton*, *glass*, *kit*, *pack*, *packet*, *pair*, *roll*, *set*, *sheet*, *ticket*, *unit*, *second*, *day*, *hour*, *minute*, *month*, *night*, *week*, *year*, *squaremetre*, *squarecentimetre*, *squarefoot*, *squareinch*, *squaremillimetre*, *squareyard*. | 
 | refContentAmount | string | The number of reference units that is packaged within the product itself (e.g. the product contains 2 'piece(s)'). |
+| priceQuantity | number | The quantity of the product you will get for the price. |
+| orderUnit | string | The product order unit. Can be *byte*, *kilobyte*, *megabyte*, *gigabyte*, *terrabyte*, *gram*, *kilogram*, *milligram*, *ounce*, *pound*, *tone*, *litre*, *cubicfoot*, *cubicinch*, *cubicmetre*, *cubicyard*, *fluidounce*, *gallon*, *millilitre*, *quart*, *metre*, *centimetre*, *foot*, *inch*, *kilometre*, *millimetre*, *yard*, *piece*, *bottle*, *box*, *can*, *capsule*, *carton*, *glass*, *kit*, *pack*, *packet*, *pair*, *roll*, *set*, *sheet*, *ticket*, *unit*, *second*, *day*, *hour*, *minute*, *month*, *night*, *week*, *year*, *squaremetre*, *squarecentimetre*, *squarefoot*, *squareinch*, *squaremillimetre*, *squareyard*. | 
+| minOrder | number | The minimum order amount of the product |
+| intervalOrder | number | The interval order amount of the product |
 | productCode | string | The product code (e.g. EAN, UPC, ASIN and ISBN). |
 | query | string | The search query. |
 | fallbackQuery | string | The fallback used if the original query did not produce any results. |
