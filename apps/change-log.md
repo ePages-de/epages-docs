@@ -14,28 +14,42 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
+## 2023-09-28
+
+### Changes with software release 7.88.0
+
+#### <i class="fas fa-pencil-alt"></i> Update
+
+* The attribute path /bulkPriceInfo can now be updated via [`PATCH`/products/{productId}](https://developer.epages.com/apps/api-reference/patch-shopid-products-productid.html).
+
+**For ePages Now only!**
+
+* Added data type [`bulkPriceInfo`](https://developer.epages.com/apps/data-types.html#bulkpriceinfo).
+
+<hr>
+
 ## 2023-08-31
 
 ### Changes with software release 7.87.0
 
 #### <i class="fas fa-pencil-alt"></i> Update
 
-* Added the following attribute paths being updatable via [`PATCH`/products/{productId}](https://developer.epages.com/apps/api-reference/patch-shopid-products-productid.html):
-- /isNew<br>
-- /newnessDate<br>
-- /video<br>
-- /isVATInfoVisible<br>
-- /isManufacturerPriceRRP<br>
-- /referencePriceInfo<br>
-- /isShippingLinkVisible<br>
-- /customisationInfo<br>
-- /title<br>
-- /productDataSheet<br>
-- /shippingMethodsRestrictedTo<br>
-- /productCode<br>
+* The following attribute paths can now be updated via [`PATCH`/products/{productId}](https://developer.epages.com/apps/api-reference/patch-shopid-products-productid.html):
+        - /isNew<br>
+        - /newnessDate<br>
+        - /video<br>
+        - /isVATInfoVisible<br>
+        - /isManufacturerPriceRRP<br>
+        - /referencePriceInfo<br>
+        - /isShippingLinkVisible<br>
+        - /customisationInfo<br>
+        - /title<br>
+        - /productDataSheet<br>
+        - /shippingMethodsRestrictedTo<br>
+        - /productCode<br>
 
-* Added attribute `lowestRefPriceFormatted` to data type [`priceInfo`](https://developer.epages.com/apps/data-types.html#priceInfo).
-* Added attributes `newnessDate`, `refAmount`, `refUnit`, `refContentAmount` and `productCode` to data types [`product`](https://developer.epages.com/apps/data-types.html#product) and [`productSearch`](https://developer.epages.com/apps/data-types.html#productSearch).
+* Added attribute `lowestRefPriceFormatted` to data type [`priceInfo`](https://developer.epages.com/apps/data-types.html#priceinfo).
+* Added attributes `newnessDate`, `refAmount`, `refUnit`, `refContentAmount` and `productCode` to data types [`product`](https://developer.epages.com/apps/data-types.html#product) and [`productSearch`](https://developer.epages.com/apps/data-types.html#productsearch).
 
 <hr>
 
@@ -87,7 +101,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 * [`POST`/{shopId}/products/{productId}/variations](https://developer.epages.com/apps/api-reference/post-shopid-products-productid-variations.html)
 
-* Added data types [`variation (create request)`](https://developer.epages.com/apps/data-types.html#variation-create-request)`,[`variationAttribute (create request)`](https://developer.epages.com/apps/data-types.html#variationattribute-create-request) and [`variationValue (create request)`](https://developer.epages.com/apps/data-types.html#variationvalue-create-request).
+* Added data types [`variation (create request)`](https://developer.epages.com/apps/data-types.html#variation-create-request),[`variationAttribute (create request)`](https://developer.epages.com/apps/data-types.html#variationattribute-create-request) and [`variationValue (create request)`](https://developer.epages.com/apps/data-types.html#variationvalue-create-request).
 
 <hr>
 
