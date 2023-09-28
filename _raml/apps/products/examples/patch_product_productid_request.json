@@ -32,6 +32,40 @@
             }]
 },
 {
+  "op": "add",
+  "path": "/bulkPriceInfo",
+  "value": {"priceInfo": [
+              {
+                "quantity" : 5,
+                "price" : 56.00
+              },
+              {
+                "quantity" : 10,
+                "price" : 46.00
+              }
+            ]
+        }
+},
+{
+  "op": "replace",
+  "path": "/bulkPriceInfo",
+  "value": {"priceInfo": [
+              {
+                "quantity" : 5,
+                "price" : 58.00
+              },
+              {
+                "quantity" : 10,
+                "price" : false
+              }
+            ]
+        }
+},
+{
+  "op": "remove",
+  "path": "/bulkPriceInfo"
+},
+{
   "op": "replace",
   "path": "/producttype",
   "value": "6489A241-7B85-54B0-0B69-C0A8020205ED"
