@@ -20,7 +20,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 #### <i class="fas fa-pencil-alt"></i> Update
 
-* The attribute path /bulkPriceInfo can now be updated via [`PATCH`/products/{productId}](https://developer.epages.com/apps/api-reference/patch-shopid-products-productid.html).
+* The attribute path /bulkPriceInfo can now be updated via [`PATCH`/{shopId}/products/{productId}](https://developer.epages.com/apps/api-reference/patch-shopid-products-productid.html).
 
 **For ePages Now only!**
 
@@ -34,7 +34,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 #### <i class="fas fa-pencil-alt"></i> Update
 
-* The following attribute paths can now be updated via [`PATCH`/products/{productId}](https://developer.epages.com/apps/api-reference/patch-shopid-products-productid.html):
+* The following attribute paths can now be updated via [`PATCH`/{shopId}/products/{productId}](https://developer.epages.com/apps/api-reference/patch-shopid-products-productid.html):
         - /isNew<br>
         - /newnessDate<br>
         - /video<br>
@@ -75,7 +75,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 #### <i class="fas fa-pencil-alt"></i> Update
 
-* Added replace operation for product types of [`PATCH`/products/{productId}](https://developer.epages.com/apps/api-reference/patch-shopid-products-productid.html).
+* Added replace operation for product types of [`PATCH`/{shopId}/products/{productId}](https://developer.epages.com/apps/api-reference/patch-shopid-products-productid.html).
 
 <hr>
 
