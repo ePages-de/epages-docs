@@ -34,7 +34,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 #### <i class="fas fa-pencil-alt"></i> Update
 
-* The following attribute paths can now be updated via [`PATCH`/{shopId}/products/{productId}](https://developer.epages.com/apps/api-reference/patch-shopid-products-productid.html):
+* The following attribute paths can now be updated via [`PATCH`/{shopId}/products/{productId}](https://developer.epages.com/apps/api-reference/patch-shopid-products-productid.html):<br>
         - /isNew<br>
         - /newnessDate<br>
         - /video<br>
