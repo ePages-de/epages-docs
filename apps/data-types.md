@@ -767,7 +767,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | refContentAmount | string | The number of reference units that is packaged within the product itself (e.g. the product contains 2 'piece(s)'). |
 | priceQuantity | number | The quantity of the product you will get for the price. |
 | orderUnit | string | The product order unit. Can be *byte*, *kilobyte*, *megabyte*, *gigabyte*, *terrabyte*, *gram*, *kilogram*, *milligram*, *ounce*, *pound*, *tone*, *litre*, *cubicfoot*, *cubicinch*, *cubicmetre*, *cubicyard*, *fluidounce*, *gallon*, *millilitre*, *quart*, *metre*, *centimetre*, *foot*, *inch*, *kilometre*, *millimetre*, *yard*, *piece*, *bottle*, *box*, *can*, *capsule*, *carton*, *glass*, *kit*, *pack*, *packet*, *pair*, *roll*, *set*, *sheet*, *ticket*, *unit*, *second*, *day*, *hour*, *minute*, *month*, *night*, *week*, *year*, *squaremetre*, *squarecentimetre*, *squarefoot*, *squareinch*, *squaremillimetre*, *squareyard*. | 
-| minOrder | number | The minimum order amount of the product |
+| minOrder | number | The minimum order amount for the product. |
 | intervalOrder | number | The interval order amount of the product |
 | productCode | string | The product code (e.g. EAN, UPC, ASIN and ISBN). |
 | query | string | The search query. |
