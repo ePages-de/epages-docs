@@ -99,5 +99,5 @@
 {
     "op": "add",
     "path": "/orderUnitInfo",
-    "value": { "priceQuantity":1, "orderUnit":"piece", "minOrder":1, "intervalOrder":1 }
+    "value": { "priceQuantity":1, "orderUnit":"piece(s)", "minOrder":1, "intervalOrder":1 }
 }]
