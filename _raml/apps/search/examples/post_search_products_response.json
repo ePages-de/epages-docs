@@ -118,7 +118,7 @@
         "refUnit": "piece",
         "refContentAmount": 1,
         "priceQuantity": 1,
-        "orderUnit": "piece",
+        "orderUnit": "piece(s)",
         "minOrder": 1,
         "intervalOrder": 1,
         "productCode": null,
