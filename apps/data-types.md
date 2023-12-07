@@ -687,6 +687,11 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | energyLabelsMaxEfficiencyString | string | The highest possible efficiency class of an uploaded energy label. |
 | energyLabelSourceFile | string | A URL with an image or PDF file containing the energy label image supplied by the manufacturer. |
 | productDataSheetSourceFile | string | A URL with an image or PDF file containing a data sheet with technical information on the product. |
+| orderUnit | string | A unit of Measurement. |
+| orderUnitShort | string | A abbrevation of the order unit. |
+| minOrder | string | Minimum amount od the product that can be ordered. |
+| priceQuantity | string | All prices are based on this amount of order units. |
+| intervalOrder | string | Increment steps for order quantity. |
 
 ## productLineItem (create request)
 

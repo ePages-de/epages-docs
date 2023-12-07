@@ -136,6 +136,11 @@
             "href": "https://pm.epages.com/rs/shops/apidocu/tax-classes/5446685F-A8AF-0E18-9B4F-D5809AB30FBF"
           }
         ],
+        "intervalOrder": "1",
+        "minOrder": "1",
+        "orderUnitShort": "kg",
+        "orderUnit": "Kilogramm",
+        "priceQuantity": "2",
         "variationString": null,
         "essentialFeatures": null,
         "taxClass": {
