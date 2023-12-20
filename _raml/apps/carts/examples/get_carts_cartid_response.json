@@ -140,11 +140,11 @@
         "minOrder": "1",
         "orderUnitShort": "piece(s)",
         "orderUnit": "piece(s)",
-        "priceQuantity": "2",
+        "priceQuantity": "1",
         "quantityPrice": {
           "taxType": "GROSS",
-          "formatted": "25,98 €",
-          "amount": 25.98,
+          "formatted": "12,99 €",
+          "amount": 12.99,
           "currency": "EUR"
         },
         "variationString": null,
