@@ -687,11 +687,12 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | energyLabelsMaxEfficiencyString | string | The highest possible efficiency class of an uploaded energy label. |
 | energyLabelSourceFile | string | A URL with an image or PDF file containing the energy label image supplied by the manufacturer. |
 | productDataSheetSourceFile | string | A URL with an image or PDF file containing a data sheet with technical information on the product. |
-| orderUnit | string | A unit of Measurement. |
-| orderUnitShort | string | A abbrevation of the order unit. |
-| minOrder | string | Minimum amount od the product that can be ordered. |
-| priceQuantity | string | All prices are based on this amount of order units. |
-| intervalOrder | string | Increment steps for order quantity. |
+| orderUnit | string | The product order unit. Can be one of *byte(s)*, *kilobyte(s)*, *megabyte(s)*, *gigabyte(s)*, *terabyte(s)*, *gram(s)*, *kilogram(s)*, *milligram(s)*, *ounce(s)*, *pound(s)*, *ton(s)*, *liter(s)*, *milliliter(s)*, *cubic foot*, *cubic feet*, *cubic inch(es)*, *cubic meter(s)*, *cubic yard(s)*, *fluid ounce(s)*, *gallon(s)*, *quart(s)*, *meter(s)*, *centimeter(s)*, *foot*, *feet*, *inch(es)*, *kilometer(s)*, *millimeter(s), *yard(s)*, *piece(s)*, *bottle(s)*, *box(es)*, *can(s)*, *capsule(s)*, *crate(s),* *glass(es)*, *kit(s)*, *pack(s)*, *package(s)*, *pair(s)*, *roll(s)*, *set(s)*, *sheet(s)*, *ticket(s)*, *unit(s)*, *second(s)*, *minute(s)*, *hour(s)*, *day(s)*, *night(s)*, *week(s)*, *month(s)*, *year(s)*, *square meter(s)*, *square centimeter(s)*, *square foot*, *square feet*, *square inch(es)*, *square millimeter(s)* or *square yard(s)*. The localised name of the unit is displayed. |
+| orderUnitShort | string | The product order unit displayed as an abbreviated unit, if available. Can be one of *Byte*, *KByte*, *MByte*, *GByte*, *TByte*, *g*, *kg*, *mg*, *oz*, *lb*, *t*, *l*, *ml*, *ft³*, *in³*, *m³*, *yd³*, *fl oz*, *gal*, *qt*, *m*, *cm*, *ft*, *in*, *km*, *mm*, *yd*, *s*, *min*, *m²*, *cm²*, *ft²*, *in²*, *mm²* or *yd²*. Otherwise a localised name of the unit is displayed. Can be one of *piece(s)*, *bottle(s)*, *box(es)*, *can(s)*, *capsule(s)*, *crate(s)*, *glass(es)*, *kit(s)*, *pack(s)*, *package(s)*, *pair(s)*, *roll(s)*, *set(s)*, *sheet(s)*, *ticket(s)*, *unit(s)*, *hour(s)*, *day(s)*, *night(s)*, *week(s)*, *month(s)* or *year(s)*. |
+| minOrder | number | The minimum order amount for the product. |
+| priceQuantity | number | The product quantity that the list price refers to (e.g. 1 'box' containing 6 'piece(s) costs 60,00 €). |
+| quantityPrice | object of [price](page:apps-data-types#price) | The product price that the priceQuantity refers to. (`singleItemPrice` multiplied by `priceQuantity`) |
+| intervalOrder | number | The increment by which the order amount for the product can be adjusted (e.g. 1.5 m). |
 
 ## productLineItem (create request)
 

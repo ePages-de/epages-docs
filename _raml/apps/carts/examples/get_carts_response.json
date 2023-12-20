@@ -143,9 +143,15 @@
             ],
             "intervalOrder": "1",
             "minOrder": "1",
-            "orderUnitShort": "kg",
-            "orderUnit": "Kilogramm",
+            "orderUnitShort": "piece(s)",
+            "orderUnit": "piece(s)",
             "priceQuantity": "2",
+            "quantityPrice": {
+              "taxType": "GROSS",
+              "formatted": "25,98 €",
+              "amount": 25.98,
+              "currency": "EUR"
+            },
             "variationString": null,
             "essentialFeatures": null,
             "taxClass": {
