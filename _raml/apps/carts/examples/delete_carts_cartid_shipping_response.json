@@ -223,6 +223,7 @@
     "code": "SumDiscount",
     "amount": null
   },
+  "itemsWithChangedQuantityAmount": null,
   "pickupToken": "ODcxMzA2Mzk5MDQyMGQ4NTk3ZGZlMTA5NDMzM2MzYzE1OWE3NDhjMmE5NGFkYmRhYzZhZmFmNDU2N2EyZmNlOF8xNDgyMjI3NzU1",
   "creationDate": "2018-12-17T21:07:29Z",
   "checkoutUrl": "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/2/Baskets/46072&ChangeAction=PickupBasket&PickupToken=ODcxMzA2Mzk5MDQyMGQ4NTk3ZGZlMTA5NDMzM2MzYzE1OWE3NDhjMmE5NGFkYmRhYzZhZmFmNDU2N2EyZmNlOF8xNDgyMjI3NzU1",

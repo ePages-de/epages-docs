@@ -223,6 +223,14 @@
     "code": "SumDiscount",
     "amount": null
   },
+  "itemsWithChangedQuantityAmount": [
+    {
+      "sku": "Acc-001",
+      "name": "Connector 6.3 mm",
+      "lineItemId": "5858FD17-79EB-9148-E5B3-D5809AB3C842"
+      
+    }
+  ],
   "pickupToken": "NTRjZWJmNjdhNzNlYTUzNDAxZTgyZTc4ODYwYTliMDUxMDIzNDQ2OWY2NWQ5NWRmN2Q2YmVjZjVjNzljOTQ2N18xNDgyMjI3OTE3",
   "creationDate": "2018-12-17T21:07:29Z",
   "checkoutUrl": "https://pm.epages.com/epages/apidocu.sf/?ObjectPath=/Shops/apidocu/AnonymousUsers/2/Baskets/46072&ChangeAction=PickupBasket&PickupToken=NTRjZWJmNjdhNzNlYTUzNDAxZTgyZTc4ODYwYTliMDUxMDIzNDQ2OWY2NWQ5NWRmN2Q2YmVjZjVjNzljOTQ2N18xNDgyMjI3OTE3",
