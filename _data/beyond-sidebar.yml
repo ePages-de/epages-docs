@@ -1185,6 +1185,9 @@
             - title: Show legal content details
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-legal-content-get
               id: show_legal_content_details
+            - title: Show legal content details for a given locale
+              link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-legal-content-get-with-locale
+              id: show_legal_content_details_for_given_locale
             - title: Update legal content
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-legal-content-edit
               id: update_legal_content
