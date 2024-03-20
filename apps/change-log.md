@@ -14,17 +14,32 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
+## 2024-03-21
+
+### Changes with software release 7.93.0
+
+#### <i class="fas fa-pencil-alt"></i> Update
+
+* The attribute path `/orderUnitsInfo` can now be updated via [`PATCH`/{shopId}/products/{productId}](https://developer.epages.com/apps/api-reference/patch-shopid-products-productid.html).
+
+* Added attributes `priceQuantity`, `orderUnit`, `minOrder` and `intervalOrder` to data types [`product`](https://developer.epages.com/apps/data-types.html#product) and [`productSearch`](https://developer.epages.com/apps/data-types.html#productsearch).
+* Added attributes `orderUnit`, `orderUnitShort`, `minOrder`, `priceQuantity`, `quantityPrice` and `intervalOrder` to data type [`productLineItem`](https://developer.epages.com/apps/data-types.html#productlineitem). 
+
+<hr>
+
 ## 2023-09-28
 
 ### Changes with software release 7.88.0
 
-#### <i class="fas fa-pencil-alt"></i> Update
-
-* The attribute path /bulkPriceInfo can now be updated via [`PATCH`/{shopId}/products/{productId}](https://developer.epages.com/apps/api-reference/patch-shopid-products-productid.html).
+#### <i class="fas fa-plus"></i> New
 
 **For ePages Now only!**
 
 * Added data type [`bulkPriceInfo`](https://developer.epages.com/apps/data-types.html#bulkpriceinfo).
+
+#### <i class="fas fa-pencil-alt"></i> Update
+
+* The attribute path `/bulkPriceInfo` can now be updated via [`PATCH`/{shopId}/products/{productId}](https://developer.epages.com/apps/api-reference/patch-shopid-products-productid.html).
 
 <hr>
 
@@ -118,7 +133,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 * [`POST`/{shopId}/producttypes](https://developer.epages.com/apps/api-reference/post-shopid-producttypes.html)
 * [`GET`/{shopId}/producttypes/{productTypeId}](https://developer.epages.com/apps/api-reference/get-shopid-producttypes-producttypeid.html)
 
-* Added data type [`customerSpecificPriceInfo`](https://developer.epages.com/apps/data-types.html#customerspecificpriceinfo).`customerSpecificPriceInfo`.
+* Added data type [`customerSpecificPriceInfo`](https://developer.epages.com/apps/data-types.html#customerspecificpriceinfo).
 * Added data types [`attributeProductType`](https://developer.epages.com/apps/data-types.html#attributeproducttype), [`productType`](https://developer.epages.com/apps/data-types.html#producttype) and [`productType (create request)`](https://developer.epages.com/apps/data-types.html#producttype-create-request).
 
 #### <i class="fas fa-pencil-alt"></i> Update
@@ -158,7 +173,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 #### <i class="fa fa-minus"></i> Deprecate
 
-* The product properties `listPrice` and `manufacturerPrice` for the [events](https://developer.epages.com/apps/events.html) `product:view`, `product:click`, `category:view`, `searchResults:view`, and `cart:add` are deprecated and will be removed on May 11th, 2023. Please use the properties `strikePrice` and `isStrikePriceRRP` instead.
+* The product attributes `listPrice` and `manufacturerPrice` for the [events](https://developer.epages.com/apps/events.html) `product:view`, `product:click`, `category:view`, `searchResults:view`, and `cart:add` are deprecated and will be removed on May 11th, 2023. Please use the attributes `strikePrice` and `isStrikePriceRRP` instead.
 
 <hr>
 

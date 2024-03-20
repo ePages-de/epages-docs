@@ -1,9 +1,9 @@
 #%RAML 0.8
 displayName: Coupon campaigns
 post:
-  description: Creates a coupon campaign for a shop. Coupon campaign types can be FIX (absolute value), `PERCENT` (percentage value), and `SHIPPING` (waive delivery costs). *epages6 *epagesNow
+  description: Creates a coupon campaign for a shop. Coupon campaign types can be `FIX` (absolute value), `PERCENT` (percentage value), and `SHIPPING` (waive delivery costs). *epages6 *epagesNow
   securedBy: [coupons_write]
-  is: [ locale ]
+  is: [ localeMandatory ]
   body:
     application/json:
       example: !include examples/post_coupon_campaign_request.json

@@ -606,8 +606,8 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | availability | string | The availability of the product. Can be one of *OnStock*, *WarnStock*, *OutStock*. |
 | energyLabelsMaxEfficiencyString | string | The highest possible efficiency class of an uploaded energy label. |
 | energyLabelsString | string | A list of energy labels applied to this product. Can be one value or a range with two values. |
-| energyLabelSourceFile | string | A URL with an image or PDF file containing the energy label image supplied by the manufacturer. |
-| productDataSheet | string | An image or PDF file containing a data sheet with technical information on the product. Has to be available if the product has an energy label. |
+| energyLabelSourceFile | string | A URL with an image or PDF file containing the energy label image supplied by the manufacturer. Has to be available if the product has an energy label. |
+| productDataSheet | string | An image or PDF file containing a data sheet with technical information on the product. |
 | sfUrl | string | The link to the storefront URL of the product. |
 | productNumber | string | The product number. |
 | isProductNumberVisible | boolean | Indicates if the product number is displayed in the storefront. |
@@ -685,7 +685,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | deliveryWeight | object of [deliveryWeightQuantity](page:apps-data-types#deliveryweightquantity)| The delivery weight of the product line item. |
 | energyLabelsString | string | A list of energy labels applied to this product. Can be one value or a range with two values. |
 | energyLabelsMaxEfficiencyString | string | The highest possible efficiency class of an uploaded energy label. |
-| energyLabelSourceFile | string | A URL with an image or PDF file containing the energy label image supplied by the manufacturer. |
+| energyLabelSourceFile | string | A URL with an image or PDF file containing the energy label image supplied by the manufacturer. Has to be available if the product has an energy label. |
 | productDataSheetSourceFile | string | A URL with an image or PDF file containing a data sheet with technical information on the product. |
 
 ## productLineItem (create request)
@@ -736,8 +736,8 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | availability | string | The availability of the product. Can be one of *OnStock*, *WarnStock*, *OutStock*. |
 | energyLabelsMaxEfficiencyString | string | The highest possible efficiency class of an uploaded energy label. |
 | energyLabelsString | string | A list of energy labels applied to this product. Can be one value or a range with two values. |
-| energyLabelSourceFile | string | A URL with an image or PDF file containing the energy label image supplied by the manufacturer. |
-| productDataSheet | string | An image or PDF file containing a data sheet with technical information on the product. Has to be available if the product has an energy label. |
+| energyLabelSourceFile | string | A URL with an image or PDF file containing the energy label image supplied by the manufacturer. Has to be available if the product has an energy label. |
+| productDataSheet | string | An image or PDF file containing a data sheet with technical information on the product. |
 | sfUrl | string | The link to storefront URL of the product. |
 | productNumber | string | The product number. |
 | isProductNumberVisible | boolean | Indicates if the product number is displayed in the storefront. |
