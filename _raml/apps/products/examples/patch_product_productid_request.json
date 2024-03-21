@@ -129,4 +129,9 @@
     "op": "add",
     "path": "/productCode",
     "value": "Z-1080-BT-02"
+},
+{
+    "op": "add",
+    "path": "/orderUnitInfo",
+    "value": { "priceQuantity":1, "orderUnit":"piece(s)", "minOrder":1, "intervalOrder":1 }
 }]
