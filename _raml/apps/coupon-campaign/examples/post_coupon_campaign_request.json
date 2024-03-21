@@ -5,6 +5,7 @@
   "minimumOrderValue": 100,
   "type": {
     "name": "FIX",
-    "waiveShippingCosts": false
+    "waiveShippingCosts": true,
+    "amount": 12
   }
 }

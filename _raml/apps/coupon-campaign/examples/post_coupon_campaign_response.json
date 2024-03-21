@@ -5,7 +5,8 @@
   "currency": "EUR",
   "type": {
     "name": "FIX",
-    "waiveShippingCosts": false
+    "waiveShippingCosts": true,
+    "amount": 12
   },
   "minimumOrderValue": {
     "taxType": "NONE",
