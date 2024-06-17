@@ -698,7 +698,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | priceQuantity | number | The quantity of the product that the product price refers to (e.g. 1 'box' containing 6 'piece(s) costs 60,00 €). |
 | quantityPrice | object of [price](page:apps-data-types#price) | The price of the product in regard to its product quantity (`singleItemPrice` multiplied by `priceQuantity`).  |
 | intervalOrder | number | The increment by which the order amount for the product can be adjusted (e.g. 1.5 m). |
-| isInWishlist | boolean | Indicates if the product of this line item is stored in the wishlist. |
+| isInWishlist | boolean | Indicates if the product is stored as a wish list item. |
 
 ## productLineItem (create request)
 
