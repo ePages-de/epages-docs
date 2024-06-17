@@ -645,7 +645,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | minOrder | number | The minimum order amount for the product. |
 | intervalOrder | number | The increment by which the order amount for the product can be adjusted (e.g. 1.5 m). |
 | productCode | string | The product code (e.g. EAN, UPC, ASIN and ISBN). |
-| isInWishlist | boolean | Indicates if the product is stored in the wishlist. |
+| isInWishlist | boolean | Indicates if the product is stored as a wish list item. |
 
 ## product (create request)
 
