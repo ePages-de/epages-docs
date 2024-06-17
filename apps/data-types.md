@@ -790,7 +790,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | query | string | The search query. |
 | fallbackQuery | string | The fallback used if the original query did not produce any results. |
 | facets | array of [facet](page:apps-data-types#facet) | The refined search filter options. |
-| isInWishlist | boolean | Indicates if the product is stored in the wishlist. |
+| isInWishlist | boolean | Indicates if the product is stored as a wish list item. |
 
 ## productSearch (create request)
 
