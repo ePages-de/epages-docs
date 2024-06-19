@@ -129,6 +129,7 @@
       "searchKeywords": [],
       "stocklevel": null,
       "minStocklevel": null,
+      "isInWishlist": false,
       "videos": [
         {
           "type": "YouTube",
@@ -281,6 +282,7 @@
       ],
       "stocklevel": 100,
       "minStocklevel": 10,
+      "isInWishlist": false,
       "videos": [
         {
           "type": "YouTube",
@@ -553,6 +555,7 @@
       ],
       "stocklevel": 100,
       "minStocklevel": 10,
+      "isInWishlist": false,
       "videos": [
         {
           "type": "YouTube",

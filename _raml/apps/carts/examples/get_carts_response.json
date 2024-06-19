@@ -166,7 +166,8 @@
             "energyLabelsString": "C",
             "energyLabelsMaxEfficiencyString": "A+++",
             "energyLabelSourceFile": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/Products/be_40401/label-1-9dee85f24e1.png",
-            "productDataSheetSourceFile": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/Products/be_40401/data.pdf"
+            "productDataSheetSourceFile": "https://pm.epages.com/WebRoot/Store/Shops/apidocu/Products/be_40401/data.pdf",
+            "isInWishlist": false
           }
         ],
         "couponLineItem": null,
