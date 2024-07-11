@@ -177,6 +177,7 @@
         "searchKeywords" : [
             "headphones"
         ],
+        "isInWishlist": false,
         "links": [
           {
             "rel": "self",
@@ -309,6 +310,7 @@
         "ean": null,
         "essentialFeatures" : null,
         "searchKeywords" : null,
+        "isInWishlist": false,
         "links": [
           {
             "rel": "self",

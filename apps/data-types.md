@@ -645,6 +645,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | minOrder | number | The minimum order amount for the product. |
 | intervalOrder | number | The increment by which the order amount for the product can be adjusted (e.g. 1.5 m). |
 | productCode | string | The product code (e.g. EAN, UPC, ASIN and ISBN). |
+| isInWishlist | boolean | Indicates if the product is stored as a wish list item. |
 
 ## product (create request)
 
@@ -697,6 +698,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | priceQuantity | number | The quantity of the product that the product price refers to (e.g. 1 'box' containing 6 'piece(s) costs 60,00 €). |
 | quantityPrice | object of [price](page:apps-data-types#price) | The price of the product in regard to its product quantity (`singleItemPrice` multiplied by `priceQuantity`).  |
 | intervalOrder | number | The increment by which the order amount for the product can be adjusted (e.g. 1.5 m). |
+| isInWishlist | boolean | Indicates if the product is stored as a wish list item. |
 
 ## productLineItem (create request)
 
@@ -788,6 +790,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 | query | string | The search query. |
 | fallbackQuery | string | The fallback used if the original query did not produce any results. |
 | facets | array of [facet](page:apps-data-types#facet) | The refined search filter options. |
+| isInWishlist | boolean | Indicates if the product is stored as a wish list item. |
 
 ## productSearch (create request)
 
