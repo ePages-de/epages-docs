@@ -130,6 +130,7 @@
 
         ],
         "stocklevel":10.0,
+        "isInWishlist": false,
         "videos": [
           {
             "type": "YouTube",
