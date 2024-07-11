@@ -1171,7 +1171,7 @@
             - title: Show feature assignment details
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-shop-features-get
               id: show_feature_assignment_details
-        - title: Language
+        - title: Languages
           entries:
             - title: Create language
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-language-create
