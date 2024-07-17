@@ -14,6 +14,16 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
+## 2024-07-11
+
+### Changes with software release 7.96.0
+
+#### <i class="fas fa-pencil-alt"></i> Update
+
+* Added attribute `isInWishlist` to data types [`product`](https://developer.epages.com/apps/data-types.html#product), [`productLineItem`](https://developer.epages.com/apps/data-types.html#productlineitem) and [`productSearch`](https://developer.epages.com/apps/data-types.html#productsearch).
+
+<hr>
+
 ## 2024-03-21
 
 ### Changes with software release 7.93.0
@@ -23,7 +33,7 @@ Of course, we will continue to inform you if there are any breaking changes to t
 * The attribute path `/orderUnitsInfo` can now be updated via [`PATCH`/{shopId}/products/{productId}](https://developer.epages.com/apps/api-reference/patch-shopid-products-productid.html).
 
 * Added attributes `priceQuantity`, `orderUnit`, `minOrder` and `intervalOrder` to data types [`product`](https://developer.epages.com/apps/data-types.html#product) and [`productSearch`](https://developer.epages.com/apps/data-types.html#productsearch).
-* Added attributes `orderUnit`, `orderUnitShort`, `minOrder`, `priceQuantity`, `quantityPrice` and `intervalOrder` to data type [`productLineItem`](https://developer.epages.com/apps/data-types.html#productlineitem). 
+* Added attributes `orderUnit`, `orderUnitShort`, `minOrder`, `priceQuantity`, `quantityPrice` and `intervalOrder` to data type [`productLineItem`](https://developer.epages.com/apps/data-types.html#productlineitem).
 
 <hr>
 
