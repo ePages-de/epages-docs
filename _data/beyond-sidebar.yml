@@ -1153,6 +1153,40 @@
             - title: Show product video details
               link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#product-view-video-get
               id: product_view_show_product_video_details
+        - title: Translated products
+          entries:
+            - title: List products for a given locale
+              link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#product-view-list-with-locale
+              id: list_products_for_a_given_locale
+            - title: List products by IDs for a given locale
+              link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#product-view-find-by-ids-with-locale
+              id: list_products_by_ids_for_a_given_locale
+            - title: List products by tags for a given locale
+              link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#product-view-find-by-tags-with-locale
+              id: list_products_by_tags_for_a_given_locale
+            - title: List available tags for a given locale
+              link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#product-view-find-available-tags-with-locale
+              id: list_available_tags_for_a_given_locale
+            - title: List products by search term for a given locale
+              link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#product-view-find-by-search-term-with-locale
+              id: list_products_by_search_term_for_a_given_locale
+            - title: Show product details for a given locale
+              link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#product-view-find-by-id-with-locale
+              id: show_product_details_for_a_given_locale
+            - title: List product cross-sells for a given locale
+              link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#product-view-cross-sells-list-with-locale
+              id: list_product_crosssells_for_a_given_locale
+            - title: List cross-selling products for a given locale
+              link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#product-view-list-cross-sell-products-with-locale
+              id: list_crossselling_products_for_a_given_locale
+        - title: Translated variation products
+          entries:
+            - title: Show variation product details for a given locale
+              link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#find-variation-product-by-id-with-locale
+              id: show_variation_product_details_for_a_given_locale
+            - title: Show variation details for a given locale
+              link: https://api-docs.beyondshop.cloud/ng-product-view-product-view-public-api.html#find-variation-by-id-with-locale
+              id: show_variation_details_for_a_given_locale
         - title: Variation products
           entries:
             - title: Show variation product details
