@@ -437,6 +437,12 @@
         - title: List customer events
           link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-events-get
           id: list_customer_events
+        - title: List customer groups
+          link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-customer-group-get
+          id: list_customer_groups
+        - title: Replace customer groups
+          link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-customer-group-put
+          id: replace_customer_groups
     - title: Customer Account API
       entries:
         - title: Show customer details in customer account
