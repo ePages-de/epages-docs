@@ -24,7 +24,7 @@ Simply install ePages via this YUM repository patch:
 {% endcallout %}
 
 {% highlight text %}
-rpm -hiv http://www.epages.com/repo/epages/yum/epages-release.noarch.rpm
+rpm -hiv http://ftp.epages.com/repo/epages/yum/epages-release.noarch.rpm
 yum install @epages
 {% endhighlight %}
 
