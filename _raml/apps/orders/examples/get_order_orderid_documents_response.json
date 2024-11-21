@@ -7,8 +7,8 @@
       "orderId": "59EE0CE3-88F1-B9F4-B42B-AC1732093966",
       "documentType": "CreditNote",
       "documentNumber": "1002",
-      "issueDate": "2017-12-11T06:15:00.000Z",
-      "creationDate": "2017-12-07T16:08:53.000Z",
+      "issueDate": "2024-07-11T06:15:00.000Z",
+      "creationDate": "2024-07-07T16:08:53.000Z",
       "address": {
         "company": "Ryan and Sons",
         "salutation": "Mr",
@@ -189,8 +189,8 @@
       "orderId": "59EE0CE3-88F1-B9F4-B42B-AC1732093966",
       "documentType": "Invoice",
       "documentNumber": "1001",
-      "issueDate": "2017-12-13T06:15:00.000Z",
-      "creationDate": "2017-10-07T16:08:46.000Z",
+      "issueDate": "2024-07-13T06:15:00.000Z",
+      "creationDate": "2024-07-07T16:08:46.000Z",
       "address": {
         "company": null,
         "salutation": null,

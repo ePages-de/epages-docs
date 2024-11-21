@@ -479,7 +479,7 @@ ePages Now only!
 | archivedOn | string | The date/time the order was archived. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
 | dispatchedOn | string | The date/time the order was dispatched. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
 | viewedOn | string | The date/time the order was viewed. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
-| lastUpdatedOnDate | string | The date/time the order was updated with regard to at least one of the following components: edited product line items (quantity or price), added or removed product line items, changed shipping or payment method, changed billing address, finalized order documents as well as changed, added or removed shipping address.<br><br>Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
+| lastUpdatedOnDate | string | The date/time the order was updated with regard to at least one of the following: edited product line items (quantity or price), added or removed product line items, changed shipping or payment method, changed billing address, finalized order documents as well as changed, added or removed shipping address.<br><br>Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
 | customerId | string | The unique identifier of the customer.  |
 | customerNumber | string | The number by which the merchant tracks the customer. |
 | locale | string | The locale that identifies the origin of the customer.  |
