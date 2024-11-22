@@ -16,7 +16,7 @@ This object represents the attribute structure for PayPal PLUS. The structure fo
 | InvoiceIBAN  | string | The International Bank Account Number of the bank account to which the invoice is due. |
 | InvoiceReferenceNumber  | string | The unique reference code that is assigned to the invoice. |
 | InvoiceCurrency  | string | The currency code of the invoice amount. Expressed according to ISO 4217. |
-| InvoicePaymentDueDate  | string | The due date of the invoice. Expressed according to ISO 8601. Example: `2020-11-04T08:42:49.000Z`|
+| InvoicePaymentDueDate  | string | The due date of the invoice. Expressed according to ISO 8601. Example: `2024-11-04T08:42:49.000Z`|
 | InvoiceBIC  | string | The Bank Identifier Code of the bank that holds the account to which the invoice is due. |
 
 ## additionalInformation
@@ -144,7 +144,7 @@ ePages Now only!
 | paymentData | object of [paymentData](page:apps-data-types#paymentdata) | The payment data of  a cart or an order, i.e. short info on payment method and price.|
 | minimumCart | object of [minimumCart](page:apps-data-types#minimumcart) | The minimum order value of a shop. |
 | pickupToken | string | For internal use only. Can be ignored. |
-| creationDate | string | The date/time the cart was created. Expressed according to ISO 8601. Example: `2018-12-17T21:07:29Z` |
+| creationDate | string | The date/time the cart was created. Expressed according to ISO 8601. Example: `2024-11-04T08:42:49.000Z` |
 | checkoutUrl | string | The URL that redirects the browser to the merchant's shop in order to complete the checkout. |
 | registerSessionUrl | string | The URL that redirects the browser to the merchant's shop in order to register a session. |
 | cartValidation | object of [cartValidation](page:apps-data-types#cartvalidation) | The list of all validations with regard to the cart. |
@@ -320,7 +320,7 @@ ePages Now only!
 | - | - |  - |
 | customerId | string | The unique identifier of the customer. |
 | customerNumber | string | The number by which the merchant tracks the customer. |
-| creationDate | string | The date/time the customer was created. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z` |
+| creationDate | string | The date/time the customer was created. Expressed according to ISO 8601. Example: `2024-11-04T08:42:49.000Z` |
 | billingAddress | [address](page:apps-data-types#address) | The billing address of the customer. |
 | internalNote | string | Internal note for the customer done by the merchant. |
 | links | array of [link](page:apps-data-types#link) | The link to the customer and their orders. |
@@ -466,20 +466,20 @@ ePages Now only!
 | documentType | string | The type of the order document. Can be `Invoice` or `CreditNote`. |
 | documentNumber | string | The number of the order document. |
 | orderNumber | string | The order number. |
-| creationDate | string | The date/time of order placement. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z` |
+| creationDate | string | The date/time of order placement. Expressed according to ISO 8601. Example: `2024-11-04T08:42:49.000Z` |
 | billingAddress | [address](page:apps-data-types#address) | The billing address for the order.  |
 | shippingAddress | [address](page:apps-data-types#address) | The shipping address for the order.  |
-| invoicedOn | string | The date/time the order was invoiced. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
-| partiallyPaidOn | string | The date/time a part of the order was paid. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
-| deliveredOn | string | The date/time the order was delivered. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
-| partiallyInvoicedOn | string | The date/time a part of the order was invoiced. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
-| pendingOn | string | The date/time the order was set to pending. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
-| readyForDispatchOn | string | The date/time the order was prepared for dispatching. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
-| partiallyDispatchedOn | string | The date/time a part of the order was dispatched. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
-| archivedOn | string | The date/time the order was archived. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
-| dispatchedOn | string | The date/time the order was dispatched. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
-| viewedOn | string | The date/time the order was viewed. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
-| lastUpdatedOnDate | string | The date/time the order was updated with regard to at least one of the following: edited product line items (quantity or price), added or removed product line items, changed shipping or payment method, changed billing address, finalized order documents as well as changed, added or removed shipping address.<br><br>Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`   |
+| invoicedOn | string | The date/time the order was invoiced. Expressed according to ISO 8601. Example: `2024-11-04T08:42:49.000Z`   |
+| partiallyPaidOn | string | The date/time a part of the order was paid. Expressed according to ISO 8601. Example: `2024-11-04T08:42:49.000Z`   |
+| deliveredOn | string | The date/time the order was delivered. Expressed according to ISO 8601. Example: `2024-11-04T08:42:49.000Z`   |
+| partiallyInvoicedOn | string | The date/time a part of the order was invoiced. Expressed according to ISO 8601. Example: `2024-11-04T08:42:49.000Z`   |
+| pendingOn | string | The date/time the order was set to pending. Expressed according to ISO 8601. Example: `2024-11-04T08:42:49.000Z`   |
+| readyForDispatchOn | string | The date/time the order was prepared for dispatching. Expressed according to ISO 8601. Example: `2024-11-04T08:42:49.000Z`   |
+| partiallyDispatchedOn | string | The date/time a part of the order was dispatched. Expressed according to ISO 8601. Example: `2024-11-04T08:42:49.000Z`   |
+| archivedOn | string | The date/time the order was archived. Expressed according to ISO 8601. Example: `2024-11-04T08:42:49.000Z`   |
+| dispatchedOn | string | The date/time the order was dispatched. Expressed according to ISO 8601. Example: `2024-11-04T08:42:49.000Z`   |
+| viewedOn | string | The date/time the order was viewed. Expressed according to ISO 8601. Example: `2024-11-04T08:42:49.000Z`   |
+| lastUpdatedOnDate | string | The date/time the order was updated with regard to at least one of the following: edited product line items (quantity or price), added or removed product line items, changed shipping or payment method, changed billing address, finalized order documents as well as changed, added or removed shipping address.<br><br>Expressed according to ISO 8601. Example: `2024-11-04T08:42:49.000Z`   |
 | customerId | string | The unique identifier of the customer.  |
 | customerNumber | string | The number by which the merchant tracks the customer. |
 | locale | string | The locale that identifies the origin of the customer.  |
@@ -490,11 +490,11 @@ ePages Now only!
 | totalTax | number | The total amount of the tax. |
 | customerComment | string | Notes on the order from the customer. Can also be amended by the merchant in the administration. Mainly used for order and delivery notes.|
 | internalNote | string | Internal notes for the order done by the merchant.  |
-| rejectedOn | string | The date/time the order was rejected. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
-| inProcessOn | string | The date/time the order was put into process. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
-| closedOn | string | The date/time the order was closed. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
-| paidOn | string | The date/time the order was paid. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
-| returnedOn | string | The date/time the order was returned. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`  |
+| rejectedOn | string | The date/time the order was rejected. Expressed according to ISO 8601. Example: `2024-11-04T08:42:49.000Z`  |
+| inProcessOn | string | The date/time the order was put into process. Expressed according to ISO 8601. Example: `2024-11-04T08:42:49.000Z`  |
+| closedOn | string | The date/time the order was closed. Expressed according to ISO 8601. Example: `2024-11-04T08:42:49.000Z`  |
+| paidOn | string | The date/time the order was paid. Expressed according to ISO 8601. Example: `2024-11-04T08:42:49.000Z`  |
+| returnedOn | string | The date/time the order was returned. Expressed according to ISO 8601. Example: `2024-11-04T08:42:49.000Z`  |
 | shippingData | object of [shippingData](page:apps-data-types#shippingdata) | The shipping data of a cart or an order, i.e. short info on shipping method and price.|
 | paymentData | object of [paymentData](page:apps-data-types#paymentdata) | The payment data of a cart or an order, i.e. short info on payment method and price.|
 | lineItemContainer | [lineItemContainer](page:apps-data-types#lineitemcontainer) | Contains the line items of an order. Only included in [`GET`/orders/{orderId}](page:apps-api-get-shopid-orders-orderid-information). |
@@ -508,8 +508,8 @@ ePages Now only!
 | orderId | string | The unique identifier of the order. |
 | documentType | string | The type of the order document. Can be `Invoice` or `CreditNote`. |
 | documentNumber | string | The number of the order document. |
-| issueDate | string | The date/time specified on the document. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z`. Note that this date/time is in UTC and has to be converted to the timezone of the issuer (merchant) to match the date on the document. |
-| creationDate | string | The date/time of document creation. Expressed according to ISO 8601. Example: `2015-11-04T08:42:49.000Z` |
+| issueDate | string | The date/time specified on the document. Expressed according to ISO 8601. Example: `2024-11-04T08:42:49.000Z`. Note that this date/time is in UTC and has to be converted to the timezone of the issuer (merchant) to match the date on the document. |
+| creationDate | string | The date/time of document creation. Expressed according to ISO 8601. Example: `2024-11-04T08:42:49.000Z` |
 | address | [address](page:apps-data-types#address) | The billing address for the order.  |
 | lineItemContainer | [lineItemContainer](page:apps-data-types#lineitemcontainer) | Contains the line items of an order. |
 | documentPdf | string | A base64 encoded string (without new line characters) that is provided in the order checkout language. |
@@ -851,8 +851,8 @@ ePages Now only!
 
 | Attribute | Type | Description |
 | - | - |  - |
-| createdAfter | string | The date/time of orders created after this timestamp. Expressed according to ISO 8601. Example: `2017-02-04T08:42:49.000Z` |
-| createdBefore | string | The date/time of orders created before this timestamp. Expressed according to ISO 8601. Example: `2017-02-04T08:42:49.000Z` |
+| createdAfter | string | The date/time of orders created after this timestamp. Expressed according to ISO 8601. Example: `2024-11-04T08:42:49.000Z` |
+| createdBefore | string | The date/time of orders created before this timestamp. Expressed according to ISO 8601. Example: `2024-11-04T08:42:49.000Z` |
 | salesPerCurrency | array of [sales](page:apps-data-types#sales)| The sales summary grouped by currency. |
 
 ## scriptTag
@@ -862,8 +862,8 @@ ePages Now only!
 | scriptTagId | string | The unique identifier of the script tag. |
 | scriptUrl | string | The URL of the script. Has to start with `https`. If the URL ends with `worker.js`, the script tag will be registered as a `ServiceWorker`. |
 | scriptType | string | The type of the script. |
-| createdOn | string | The date/time the script tag was created. Expressed according to ISO 8601. Example: `2017-02-04T08:42:49.000Z` |
-| updatedOn | string | The date/time the script tag was last updated. Expressed according to ISO 8601. Example: `2017-03-05T10:51:31.000Z` |
+| createdOn | string | The date/time the script tag was created. Expressed according to ISO 8601. Example: `2024-11-04T08:42:49.000Z` |
+| updatedOn | string | The date/time the script tag was last updated. Expressed according to ISO 8601. Example: `2024-11-04T08:42:49.000Z` |
 | links | array of [link](page:apps-data-types#link)| The link to the script tag. |
 
 ## scriptTag (create request)
@@ -968,7 +968,7 @@ ePages Now only!
 | Attribute | Type | Description |
 | - | - |  - |
 | item | object of [product](page:apps-data-types#product) | The data of the product. |
-| lastUpdated | string | The date/time the product was last updated. Expressed according to ISO 8601. Example: `2016-02-25T08:49:31Z`|
+| lastUpdated | string | The date/time the product was last updated. Expressed according to ISO 8601. Example: `2024-11-04T08:42:49.000Z`|
 
 ## valueType
 
