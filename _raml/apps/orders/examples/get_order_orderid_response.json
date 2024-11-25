@@ -1,7 +1,7 @@
 {
   "orderId": "5639C509-092F-7704-77D3-D5809AB321D8",
   "orderNumber": "ORD151104/1033",
-  "creationDate": "2015-11-04T08:42:49.000Z",
+  "creationDate": "2024-11-04T08:42:49.000Z",
   "customerId": "56389403-55BC-176C-5343-D5809AB3A579",
   "customerNumber": "1028",
   "locale": "de_DE",
@@ -93,7 +93,8 @@
     "status": null,
     "taxes": null
   },
-  "viewedOn": "2015-11-03T14:48:50.000Z",
+  "viewedOn": "2024-07-03T14:48:50.000Z",
+  "lastUpdatedOnDate": "2024-07-06T16:45:28.000Z",
   "rejectedOn": null,
   "inProcessOn": null,
   "pendingOn": null,

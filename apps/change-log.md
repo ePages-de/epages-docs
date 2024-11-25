@@ -14,6 +14,16 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
+## 2024-11-21
+
+### Changes with software release 7.100.0
+
+#### <i class="fas fa-pencil-alt"></i> Update
+
+* Added attribute `lastUpdatedOnDate` to data type [`order`](https://developer.epages.com/apps/data-types.html#order).
+
+<hr>
+
 ## 2024-07-11
 
 ### Changes with software release 7.96.0
