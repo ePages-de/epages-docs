@@ -12,14 +12,14 @@ jobs:
   build_test_docs:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: 2.7.3
           bundler-cache: true
       - run: bundle exec jekyll build
       - run: bundle exec rake test_ci
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: _docs
           retention-days: 7
@@ -30,7 +30,7 @@ jobs:
   build_test_devportal:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           repository: ePages-de/epages-devportal
           ref: master
@@ -40,7 +40,7 @@ jobs:
           bundler-cache: true
       - run: bundle exec jekyll build
       - run: bundle exec rake test_ci
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: _devportal
           retention-days: 7
@@ -54,15 +54,15 @@ jobs:
       - build_test_devportal
       - build_test_docs
     steps:
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4
         with:
           name: _docs
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4
         with:
           name: _devportal
           path: ./_devportal
       - run: rsync -abviuzP _devportal/ _site/
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: _site
           retention-days: 7
@@ -76,7 +76,7 @@ jobs:
     needs:
       - combine_projets
     steps:
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4
         with:
           name: _site
       - run: curl -sL firebase.tools | bash
@@ -91,7 +91,7 @@ jobs:
     needs:
       - combine_projets
     steps:
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4
         with:
           name: _site
       - run: curl -sL firebase.tools | bash
