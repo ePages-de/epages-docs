@@ -652,7 +652,7 @@ This object is used for the attributes of basePrice, depositPrice, ecoParticipat
 
 | Attribute | Type | Description |
 | - | - |  - |
-| productNumber | string | The product number (mandatory). |
+| productNumber | string | The product number. If no product number is provided, an automatically system generated one will be used. |
 | name | string | The name of the product. |
 | shortDescription | string | The short description of the product. |
 | description | string | The description of the product. |
