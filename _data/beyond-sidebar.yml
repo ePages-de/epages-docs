@@ -1207,9 +1207,6 @@
               id: show_feature_assignment_details
         - title: Languages
           entries:
-            - title: Create language
-              link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-language-create
-              id: create_language
             - title: Show language details
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-language-get
               id: show_language_details
@@ -1219,9 +1216,6 @@
             - title: List supported languages
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-language-get-supported-list
               id: list_supported_languages
-            - title: Delete language
-              link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-language-delete
-              id: delete_language
         - title: Legal
           entries:
             - title: Show legal details
