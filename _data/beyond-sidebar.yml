@@ -876,6 +876,26 @@
             - title: Remove multiple products from product categories
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-categories-batch-remove-products
               id: remove_multiple_products_from_product_categories
+        - title: Product category customer group dicounts
+          entries:
+            - title: Create category customer group discount
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-category-customer-group-discounts-create
+              id: create_category_customer_group_discount
+            - title: List category customer group discounts by category
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-category-customer-group-discounts-list-all-by-category
+              id: list_category_customer_group_discounts_by_category
+            - title: List category customer group discounts by customer group
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-category-customer-group-discounts-list-all-by-customer-group
+              id: list_category_customer_group_discounts_by_customer_group
+            - title: Show category customer group discount details
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-category-customer-group-discount-get
+              id: show_category_customer_group_discount_details
+            - title: Update category customer group discount
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-category-customer-group-discount-update
+              id: update_category_customer_group_discount
+            - title: Delete category customer group discount
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-category-customer-group-discount-delete
+              id: delete_category_customer_group_discount
         - title: Product category-related searches
           entries:
             - title: Search product categories
@@ -904,6 +924,26 @@
             - title: Delete product cross-sell
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-cross-sell-delete
               id: delete_product_cross-sell
+        - title: Product customer group dicounts
+          entries:
+            - title: Create product customer group discount
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-customer-group-discount-create
+              id: create_product_customer_group_discount
+            - title: List product customer group discounts by product
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-customer-group-discounts-list-all-by-product
+              id: list_product_customer_group_discounts_by_product
+            - title: List product customer group discounts by customer group
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-customer-group-discounts-list-all-by-customer-group
+              id: list_product_customer_group_discounts_by_customer_group
+            - title: Show product customer group discount details
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-customer-group-discount-get
+              id: show_product_customer_group_discount_details
+            - title: Update product customer group discount
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-customer-group-discount-update
+              id: update_product_customer_group_discount
+            - title: Delete product customer group discount
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-customer-group-discount-delete
+              id: delete_product_customer_group_discount
         - title: Product images
           entries:
             - title: Add product image
