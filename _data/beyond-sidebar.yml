@@ -927,11 +927,11 @@
         - title: Product customer group dicounts
           entries:
             - title: Create product customer group discount
-              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-customer-group-discounts-create
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-customer-group-discount-create
               id: create_product_customer_group_discount
             - title: List product customer group discounts by product
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-customer-group-discounts-list-all-by-product
-              id: list_category_product_group_discounts_by_product
+              id: list_product_customer_group_discounts_by_product
             - title: List product customer group discounts by customer group
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-customer-group-discounts-list-all-by-customer-group
               id: list_product_customer_group_discounts_by_customer_group
