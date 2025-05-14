@@ -876,7 +876,7 @@
             - title: Remove multiple products from product categories
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-categories-batch-remove-products
               id: remove_multiple_products_from_product_categories
-        - title: Product category customer group dicounts
+        - title: Product category customer group discounts
           entries:
             - title: Create category customer group discount
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-category-customer-group-discounts-create
@@ -924,7 +924,7 @@
             - title: Delete product cross-sell
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-cross-sell-delete
               id: delete_product_cross-sell
-        - title: Product customer group dicounts
+        - title: Product customer group discounts
           entries:
             - title: Create product customer group discount
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-customer-group-discount-create
