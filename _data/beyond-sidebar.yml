@@ -455,7 +455,7 @@
               id: show_customer_group_details
             - title: List customers of a given customer group
               link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-group-get-customers
-              id: list_customes_of_given_customer_group
+              id: list_customers_of_given_customer_group
             - title: Update customer group
               link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-group-update
               id: update_customer_group
