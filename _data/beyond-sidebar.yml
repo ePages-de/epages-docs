@@ -416,27 +416,61 @@
               id: delete_shipping_method_in_shipping_zone
     - title: Customer API
       entries:
-        - title: Register customer
-          link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-register
-          id: register_customer
-        - title: Create customer
-          link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-create
-          id: create_customer
-        - title: List customers
-          link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customers-list
-          id: list_customers
-        - title: Show customer details
-          link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-get
-          id: show_customer_details
-        - title: Update customer
-          link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-update
-          id: update_customer
-        - title: Delete customer
-          link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-delete
-          id: delete_customer
-        - title: List customer events
-          link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-events-get
-          id: list_customer_events
+        - title: Customers
+          entries:
+            - title: Register customer
+              link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-register
+              id: register_customer
+            - title: Create customer
+              link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-create
+              id: create_customer
+            - title: List customers
+              link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customers-list
+              id: list_customers
+            - title: Show customer details
+              link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-get
+              id: show_customer_details
+            - title: Update customer
+              link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-update
+              id: update_customer
+            - title: Delete customer
+              link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-delete
+              id: delete_customer
+            - title: List customer events
+              link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-events-get
+              id: list_customer_events
+            - title: List customer groups of a given customer
+              link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-customer-group-get
+              id: list_customer_groups_of_given_customer
+        - title: Customer groups
+          entries:
+            - title: Create customer group
+              link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-group-create
+              id: create_customer_group
+            - title: List customer groups
+              link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-groups-list
+              id: list_customer_groups
+            - title: Show customer group details
+              link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-group-get
+              id: show_customer_group_details
+            - title: List customers of a given customer group
+              link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-group-get-customers
+              id: list_customers_of_given_customer_group
+            - title: Update customer group
+              link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-group-update
+              id: update_customer_group
+            - title: Add customer to customer groups
+              link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-customer-group-post
+              id: add_customer_to_customer_groups
+            - title: Remove customer from customer groups
+              link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-customer-group-delete
+              id: remove_customer_from_customer_groups
+            - title: Replace customers of customer groups
+              link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-batch-customer-group-replace
+              id: replace_customers_of_customer_groups
+            - title: Delete customer group
+              link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-group-delete
+              id: delete_customer_group
     - title: Customer Account API
       entries:
         - title: Show customer details in customer account
