@@ -421,6 +421,9 @@
             - title: Register customer
               link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-register
               id: register_customer
+            - title: Claim pre-registered customer
+              link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-claim
+              id: claim_pre-registered_customer
             - title: Create customer
               link: https://api-docs.beyondshop.cloud/ng-customer-customer-public-api.html#resources-customer-create
               id: create_customer
