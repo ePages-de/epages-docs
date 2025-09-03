@@ -1137,6 +1137,9 @@
             - title: Upload multiple variation images for multiple variations
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-images-upload-multiple_for_variations
               id: upload_multiple_variation_images_for_multiple_variations
+            - title: Upload external variation image
+              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-images-upload-external
+              id: upload_external_variation_image
             - title: Sort variation images
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-variation-images-sort
               id: sort_variation_images
