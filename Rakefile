@@ -163,6 +163,15 @@ task :test_html do
   HTMLProofer.check_directory('./_site', options).run
 end
 
+task :build do
+  sh "bundle exec jekyll build -t -q --config '_config.yml'"
+end
+
+task :build_with_pdf do
+  sh "bundle exec jekyll build -t -q --config '_config.yml'"
+  sh 'rake generate_postman_pdf'
+end
+
 task :test do
   sh 'bundle exec jekyll build'
 
@@ -461,6 +470,7 @@ task :help do
   puts "Available tasks:".green
   puts ""
   puts "  rake build                 - Build the Jekyll site"
+  puts "  rake build_with_pdf        - Build the Jekyll site and generate Postman PDFs"
   puts "  rake serve                 - Serve the Jekyll site locally"
   puts "  rake dev                   - Serve with incremental builds"
   puts "  rake fast_dev              - Serve with incremental builds (skip initial build)"
@@ -475,6 +485,7 @@ task :help do
   puts "Postman PDF Generation:".blue
   puts "  The 'generate_postman_pdf' task will process all JSON files in the postman_collections/"
   puts "  directory and generate professional PDF documentation in the _site/ directory."
+  puts "  Use 'build_with_pdf' to build the site and generate PDFs in one step."
   puts "  Requires wkhtmltopdf to be installed on the system."
   puts ""
 end
