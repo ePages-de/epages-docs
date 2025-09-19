@@ -425,7 +425,60 @@ task :fast_dev do
   sh "bundle exec jekyll serve --host 0.0.0.0 --watch --incremental --skip-initial-build --config '_config.yml'"
 end
 
+task :generate_postman_pdf do
+  puts "Generating PDF from Postman collections...".blue
+  
+  postman_dir = 'postman_collections'
+  output_dir = '_site'
+  
+  unless Dir.exist?(postman_dir)
+    puts "No postman_collections directory found.".red
+    exit 1
+  end
+  
+  collection_files = Dir.glob(File.join(postman_dir, '*.json'))
+  
+  if collection_files.empty?
+    puts "No JSON files found in #{postman_dir}".red
+    exit 1
+  end
+  
+  success_count = 0
+  
+  collection_files.each do |collection_file|
+    puts "Processing #{collection_file}...".yellow
+    if system("ruby scripts/generate_postman_pdf.rb #{collection_file} #{output_dir}")
+      success_count += 1
+    end
+  end
+  
+  puts "\nPDF generation complete.".green
+  puts "Successfully generated #{success_count}/#{collection_files.length} PDFs.".green
+  puts "Check #{output_dir}/ directory for output.".green
+end
+
+task :help do
+  puts "Available tasks:".green
+  puts ""
+  puts "  rake build                 - Build the Jekyll site"
+  puts "  rake serve                 - Serve the Jekyll site locally"
+  puts "  rake dev                   - Serve with incremental builds"
+  puts "  rake fast_dev              - Serve with incremental builds (skip initial build)"
+  puts "  rake test                  - Build and run all tests"
+  puts "  rake test_ci               - Run CI tests (HTML and file linting)"
+  puts "  rake generate_postman_pdf  - Generate PDF documentation from Postman collections"
+  puts "  rake resource              - Generate new API resource documentation"
+  puts "  rake archive               - Archive API version"
+  puts "  rake ramlup                - Update RAML files"
+  puts "  rake help                  - Show this help message"
+  puts ""
+  puts "Postman PDF Generation:".blue
+  puts "  The 'generate_postman_pdf' task will process all JSON files in the postman_collections/"
+  puts "  directory and generate professional PDF documentation in the _site/ directory."
+  puts "  Requires wkhtmltopdf to be installed on the system."
+  puts ""
+end
+
 task :default do
-  Rake::Task["build"].invoke
-  Rake::Task["serve"].invoke
+  Rake::Task["help"].invoke
 end
