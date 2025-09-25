@@ -146,10 +146,10 @@ post:
     responses:
       204:
 
-  /availabilityNotifications:
+  /availability-notifications:
     displayName: Product Availability Notification
     post:
-      description: Modifies information on the email notification assignments of a single product by adding the email address of the customer and the storefront locale. *epagesNow
+      description: Enables the availability notification for the given product and customer email address. The language of the notification is based on the locale of the customer's storefront. *epagesNow
       securedBy: [products_write]
       body:
         application/json:
