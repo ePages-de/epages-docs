@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "POST Availability Schema",
+  "type": "object",
+  "properties": {
+    "email": {
+      "type": "string",
+      "description": "email address"
+    },
+    "locale": {
+      "type": "string",
+      "description": "ISO 8859-1 Locale ID"
+    }
+  }
+}
