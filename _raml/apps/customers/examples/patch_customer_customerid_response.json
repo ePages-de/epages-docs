@@ -48,5 +48,6 @@
       "rel": "orders",
       "href": "https://pm.epages.com/rs/shops/apidocu/orders?customerId=563874DA-7AE7-9876-9E59-D5809AB38A25"
     }
-  ]
+  ],
+  "isRegistered": false,
 }
