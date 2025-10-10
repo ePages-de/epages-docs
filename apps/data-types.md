@@ -323,6 +323,7 @@ ePages Now only!
 | creationDate | string | The date/time the customer was created. Expressed according to ISO 8601. Example: `2024-11-04T08:42:49.000Z` |
 | billingAddress | [address](page:apps-data-types#address) | The billing address of the customer. |
 | internalNote | string | Internal note for the customer done by the merchant. |
+| isRegistered | boolean | Indicates if this customer has a registered user account. |
 | links | array of [link](page:apps-data-types#link) | The link to the customer and their orders. |
 
 ## customer (create request)
