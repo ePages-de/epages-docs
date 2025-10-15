@@ -962,9 +962,6 @@
               id: remove_multiple_products_from_product_categories
         - title: Product category-related searches
           entries:
-            - title: Search product categories
-              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#categories-search-result
-              id: search_product_categories
             - title: Find used category tags
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#find-category-tags
               id: find_used_category_tags
