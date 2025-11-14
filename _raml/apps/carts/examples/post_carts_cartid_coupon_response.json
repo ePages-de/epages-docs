@@ -156,6 +156,7 @@
     "couponLineItem": {
       "couponLineItemId": "5858F55B-0C82-4C2C-A435-D5809AB3C878",
       "couponCampaignId": "5936D13B-4C3A-6CC4-233F-AC17320912BE",
+      "couponCode": "KDM38Q",
       "lineItemPrice": {
         "taxType": "NONE",
         "formatted": "-12.99 €",
