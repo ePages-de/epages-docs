@@ -310,9 +310,12 @@
             - title: Show coupon campaign details
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-coupon-campaign-get
               id: show_coupon_campaign_details
-            - title: Update coupon campaign
+            - title: Update cart-wide coupon campaign
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-coupon-campaign-update
               id: update_coupon_campaign
+            - title: Update product-specific coupon campaign
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-coupon-campaign-product-specific-update
+              id: update_product_specific_coupon_campaign
             - title: Update coupon campaign status
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-coupon-campaign-status-update
               id: update_coupon_campaign_status
