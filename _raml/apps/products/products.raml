@@ -146,6 +146,18 @@ post:
     responses:
       204:
 
+  /availability-notifications:
+    displayName: Product Availability Notification
+    post:
+      description: Enables the availability notification for the given product and customer email address. The language of the notification is based on the locale of the customer's storefront. *epagesNow
+      securedBy: [products_write]
+      body:
+        application/json:
+          example: !include examples/post_product_productid_availability_notifications_request.json
+          schema: !include schema/post_product_productid_availability_notifications.schema.json
+      responses:
+        200:
+
   /crossselling:
     displayName: Product crossselling
     get:
