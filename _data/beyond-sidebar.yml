@@ -837,6 +837,9 @@
                 - title: Delete product customer group discount
                   link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-customer-group-discount-delete
                   id: delete_product_customer_group_discount
+                - title: Modify multiple product customer group discounts
+                  link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-customer-group-discount-batch-patch
+                  id: modify_multiple_product_customer_group_discounts
         - title: Products
           entries:
             - title: Create product
