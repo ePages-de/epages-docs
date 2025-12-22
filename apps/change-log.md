@@ -14,6 +14,18 @@ Of course, we will continue to inform you if there are any breaking changes to t
 
 <hr>
 
+## 2025-07-30
+
+### Changes with software release 7.108.0
+
+#### <i class="fas fa-plus"></i> New
+
+**For ePages Now only!**
+
+* [`POST`/{shopId}/products/{productId}/availability-notifications](https://developer.epages.com/apps/api-reference/post-shopid-products-productid-availability-notifications.html)
+
+<hr>
+
 ## 2024-11-21
 
 ### Changes with software release 7.100.0
