@@ -430,6 +430,34 @@ ePages Now only!
 | href | string | The URL of the related link that can be used for subsequent calls. |
 | title | string | The title of the item that is linked. (optional)  |
 
+## manufacturersPaged
+
+| Attribute | Type | Description |
+| - | - |  - |
+| results | string | The number of manufacturers in total. |
+| page | string | The page number on which the manufacturers appear. |
+| resultsPerPage | string | The number of manufacturers returned per page. |
+| items | object of [manufacturer](page:apps-data-types#manufacturer) | The list of all manufacturers. |
+
+
+## manufacturer
+
+This object is used for the attributes of manufacturers.
+
+| Attribute | Type | Description |
+| - | - |  - |
+| company | string | The manufacturer's company.|
+| street | string | The street name of the manufacturer's address. |
+| streetDetails | string | An additional field for the street address.|
+| zipCode | string | The zip or postal code of the address. |
+| city | string | The name of the city. |
+| state | string | The name of the state.|
+| country | string | The name of the country. |
+| phoneNumber | string | The manufacturer's landline number. |
+| emailOrContactFormUrl | string | The manufacturer's email or website url |
+| responsiblePersonAddress | object of [responsiblePersonAddress](page:apps-data-types#responsiblePersonAddress) | The address of the responsible person of a manufaturer. |
+| manufacturerId | string | The identifier of manufacturer. |
+
 ## minimumCart
 
 | Attribute | Type | Description |
@@ -836,6 +864,22 @@ ePages Now only!
 | - | - |  - |
 | amount | number | The amount displayed as a decimal number. |
 | unit | string | The unit displayed as abbreviated unit, if available. Can be one of *Byte*, *kByte*, *MByte*, *GByte*, *TByte*, *l*, *ml*, *ft³*, *in³*, *m³*, *yd³*, *fl oz*, *gal*, *qt*, *m*, *cm*, *ft*, *in*, *km*, *mm*, *yd*, *s*, *min*, *m²*, *cm²*, *ft²*, *in²*, *mm²* or *yd²*. Otherwise a localised name of the unit is displayed. Can be *piece(s)*, *bottle(s)*, *crate(s)*, *can(s)*, *capsule(s)*, *box(es)*, *glass(es)*, *kit(s)*, *pack(s)*, *package(s)*, *pair(s)*, *roll(s)*, *set(s)*, *sheet(s)*, *ticket(s)*, *unit(s)*, *day(s)*, *hour(s)*, *week(s)*, *month(s)*, *night(s)* or *year(s)*. |
+
+## responsiblePersonAddress
+
+This object is used for the attributes of responsible person of a manufacturer.
+
+| Attribute | Type | Description |
+| - | - |  - |
+| company | string | The reponsible persons's company.|
+| street | string | The street name of the reponsible persons's address. |
+| streetDetails | string | An additional field for the street address.|
+| zipCode | string | The zip or postal code of the address. |
+| city | string | The name of the city. |
+| state | string | The name of the state.|
+| country | string | The name of the country. |
+| phoneNumber | string | The reponsible persons's landline number. |
+| emailAddress | string | The reponsible persons's email address |
 
 ## sales
 

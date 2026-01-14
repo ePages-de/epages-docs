@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "POST Manufacturer Schema",
+  "type": "object",
+  "properties": {
+    "": {
+      "type": "array of [manufacturer](page:apps-data-types#manufacturer)",
+      "description": ""
+    }
+  }
+}

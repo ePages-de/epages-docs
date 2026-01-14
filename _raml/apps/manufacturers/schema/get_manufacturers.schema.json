@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "GET Manufacturers Schema",
+  "type": "object",
+  "properties": {
+    "results": {
+      "type": "integer",
+      "description": "The number of manufacturers in total."
+    },
+    "page": {
+      "type": "integer",
+      "description": "The page number on which the manufacturers appears."
+    },
+    "resultsPerPage": {
+      "type": "integer",
+      "description": "The number of manufacturers returned per page."
+    },
+    "items": {
+      "type": "array of [manufacturer](page:apps-data-types#manufacturer)",
+      "description": "The list of all manufacturers."
+    }
+  }
+}
