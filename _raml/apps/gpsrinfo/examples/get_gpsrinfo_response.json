@@ -1,0 +1,668 @@
+{
+  "gpsrInfo": {
+      "pictograms": [
+          {
+              "age_restriction_0_3": {
+                  "url": "https://docker-alpha.epages.systems/WebRoot/SafetyPictograms/product-safety-age-0-3.svg",
+                  "description": "Nicht für Kinder unter 3 Jahren geeignet"
+              }
+          },
+          {
+              "keep_out_of_reach_of_children": {
+                  "url": "https://docker-alpha.epages.systems/WebRoot/SafetyPictograms/product-safety-keep-out-of-reach-of-children.svg",
+                  "description": "Außerhalb der Reichweite von Kindern aufbewahren."
+              }
+          },
+          {
+              "acid": {
+                  "url": "https://docker-alpha.epages.systems/WebRoot/SafetyPictograms/product-safety-acid.svg",
+                  "description": "Ätzend"
+              }
+          },
+          {
+              "skull": {
+                  "url": "https://docker-alpha.epages.systems/WebRoot/SafetyPictograms/product-safety-skull.svg",
+                  "description": "Giftig / Sehr giftig"
+              }
+          },
+          {
+              "bottle": {
+                  "url": "https://docker-alpha.epages.systems/WebRoot/SafetyPictograms/product-safety-bottle.svg",
+                  "description": "Komprimierte Gase"
+              }
+          },
+          {
+              "ce_symbol": {
+                  "url": "https://docker-alpha.epages.systems/WebRoot/SafetyPictograms/product-safety-CE.svg",
+                  "description": "CE-Kennzeichnung"
+              }
+          },
+          {
+              "exclamation": {
+                  "url": "https://docker-alpha.epages.systems/WebRoot/SafetyPictograms/product-safety-exclamation.svg",
+                  "description": "Reizend / Gesundheitsschädlich"
+              }
+          },
+          {
+              "flammable": {
+                  "url": "https://docker-alpha.epages.systems/WebRoot/SafetyPictograms/product-safety-flammable.svg",
+                  "description": "Entzündlich"
+              }
+          },
+          {
+              "explosive": {
+                  "url": "https://docker-alpha.epages.systems/WebRoot/SafetyPictograms/product-safety-explosive.svg",
+                  "description": "Explosionsgefährlich"
+              }
+          },
+          {
+              "flameovercircle": {
+                  "url": "https://docker-alpha.epages.systems/WebRoot/SafetyPictograms/product-safety-flameovercircle.svg",
+                  "description": "Oxidierend"
+              }
+          },
+          {
+              "coin_battery_warning": {
+                  "url": "https://docker-alpha.epages.systems/WebRoot/SafetyPictograms/product-safety-coin-battery-warning.svg",
+                  "description": "Produkt enthält eine Knopfzelle oder Münzbatterie."
+              }
+          },
+          {
+              "ukca_symbol": {
+                  "url": "https://docker-alpha.epages.systems/WebRoot/SafetyPictograms/product-safety-ukca-symbol.svg",
+                  "description": "UKCA-Kennzeichnung"
+              }
+          },
+          {
+              "healthhazard": {
+                  "url": "https://docker-alpha.epages.systems/WebRoot/SafetyPictograms/product-safety-healthhazard.svg",
+                  "description": "Krebserregend / Gesundheitsschädlich"
+              }
+          },
+          {
+              "pollution": {
+                  "url": "https://docker-alpha.epages.systems/WebRoot/SafetyPictograms/product-safety-pollution.svg",
+                  "description": "Umweltgefährlich"
+              }
+          },
+          {
+              "food_contact_material": {
+                  "url": "https://docker-alpha.epages.systems/WebRoot/SafetyPictograms/product-safety-food-contact-material.svg",
+                  "description": "Lebensmittelkontaktmaterialien"
+              }
+          }
+      ],
+      "safetyStatements": [
+          {
+              "H_225": {
+                  "description": "Flüssigkeit und Dampf leicht entzündbar."
+              }
+          },
+          {
+              "H_413": {
+                  "description": "Kann für Wasserorganismen schädlich sein, mit langfristiger Wirkung."
+              }
+          },
+          {
+              "H_372": {
+                  "description": "Schädigt die Organe bei längerer oder wiederholter Exposition."
+              }
+          },
+          {
+              "H_362": {
+                  "description": "Kann Säuglinge über die Muttermilch schädigen."
+              }
+          },
+          {
+              "H_410": {
+                  "description": "Sehr giftig für Wasserorganismen mit langfristiger Wirkung."
+              }
+          },
+          {
+              "EUH_440": {
+                  "description": "Anreicherung in der Umwelt und in lebenden Organismen einschließlich Menschen."
+              }
+          },
+          {
+              "05": {
+                  "description": "Enthält Spielzeug. Beaufsichtigung durch Erwachsene empfohlen."
+              }
+          },
+          {
+              "H_221": {
+                  "description": "Entzündbares Gas."
+              }
+          },
+          {
+              "EUH_066": {
+                  "description": "Wiederholter Kontakt kann zu spröder oder rissiger Haut führen."
+              }
+          },
+          {
+              "H_224": {
+                  "description": "Flüssigkeit und Dampf extrem entzündbar."
+              }
+          },
+          {
+              "EUH_205": {
+                  "description": "Enthält epoxidhaltige Verbindungen. Kann allergische Reaktionen hervorrufen."
+              }
+          },
+          {
+              "H_220": {
+                  "description": "Extrem entzündbares Gas."
+              }
+          },
+          {
+              "EUH_430": {
+                  "description": "Kann endokrine Störungen in der Umwelt verursachen."
+              }
+          },
+          {
+              "H_260": {
+                  "description": "In Berührung mit Wasser entstehen entzündbare Gase, die sich spontan entzünden können."
+              }
+          },
+          {
+              "06": {
+                  "description": "Um mögliche Verletzungen durch Verheddern zu verhindern, ist dieses Spielzeug zu entfernen, sobald das Kind zu krabbeln beginnt."
+              }
+          },
+          {
+              "H_312": {
+                  "description": "Gesundheitsschädlich bei Hautkontakt."
+              }
+          },
+          {
+              "H_360": {
+                  "description": "Kann die Fruchtbarkeit beeinträchtigen oder das Kind im Mutterleib schädigen."
+              }
+          },
+          {
+              "EUH_014": {
+                  "description": "Reagiert heftig mit Wasser."
+              }
+          },
+          {
+              "H_361": {
+                  "description": "Kann vermutlich die Fruchtbarkeit beeinträchtigen oder das Kind im Mutterleib schädigen."
+              }
+          },
+          {
+              "H_412": {
+                  "description": "Schädlich für Wasserorganismen, mit langfristiger Wirkung."
+              }
+          },
+          {
+              "EUH_018": {
+                  "description": "Kann bei Verwendung explosionsfähige/entzündbare Dampf/Luft-Gemische bilden."
+              }
+          },
+          {
+              "EUH_204": {
+                  "description": "Enthält Isocyanate. Kann allergische Reaktionen hervorrufen."
+              }
+          },
+          {
+              "EUH_209A": {
+                  "description": "Kann bei Verwendung entzündbar werden."
+              }
+          },
+          {
+              "H_334": {
+                  "description": "Kann bei Einatmen Allergie, asthmaartige Symptome oder Atembeschwerden verursachen."
+              }
+          },
+          {
+              "EUH_401": {
+                  "description": "Zur Vermeidung von Risiken für Mensch und Umwelt die Gebrauchsanleitung einhalten."
+              }
+          },
+          {
+              "03": {
+                  "description": "Benutzung unter unmittelbarer Aufsicht von Erwachsenen."
+              }
+          },
+          {
+              "H_290": {
+                  "description": "Kann gegenüber Metallen korrosiv sein."
+              }
+          },
+          {
+              "H_261": {
+                  "description": "In Berührung mit Wasser entstehen entzündbare Gase."
+              }
+          },
+          {
+              "EUH_211": {
+                  "description": "Achtung! Beim Sprühen können gefährliche lungengängige Tröpfchen entstehen. Aerosol oder Nebel nicht einatmen."
+              }
+          },
+          {
+              "EUH_070": {
+                  "description": "Giftig bei Berührung mit den Augen."
+              }
+          },
+          {
+              "H_206": {
+                  "description": "Gefahr durch Feuer, Druckstoß oder Sprengstücke; erhöhte Explosionsgefahr wenn das Desensibilisierungsmittel reduziert wird."
+              }
+          },
+          {
+              "H_272": {
+                  "description": "Kann Brand verstärken; Oxidationsmittel."
+              }
+          },
+          {
+              "H_350": {
+                  "description": "Kann Krebs erzeugen."
+              }
+          },
+          {
+              "01": {
+                  "description": "Achtung: Bitte außerhalb der Reichweite von Kindern aufbewahren."
+              }
+          },
+          {
+              "EUH_029": {
+                  "description": "Entwickelt bei Berührung mit Wasser giftige Gase."
+              }
+          },
+          {
+              "H_201": {
+                  "description": "Explosiv, Gefahr der Massenexplosion."
+              }
+          },
+          {
+              "02": {
+                  "description": "Achtung: Produkt enthält eine Knopfzelle oder Münzbatterie."
+              }
+          },
+          {
+              "H_202": {
+                  "description": "Explosiv; große Gefahr durch Splitter, Spreng- und Wurfstücke."
+              }
+          },
+          {
+              "H_420": {
+                  "description": "Schädigt die öffentliche Gesundheit und die Umwelt durch Ozonabbau in der äußeren Atmosphäre."
+              }
+          },
+          {
+              "EUH_044": {
+                  "description": "Explosionsgefahr bei Erhitzen unter Einschluss."
+              }
+          },
+          {
+              "H_229": {
+                  "description": "Behälter steht unter Druck: Kann bei Erwärmung bersten."
+              }
+          },
+          {
+              "EUH_431": {
+                  "description": "Steht in dem Verdacht, endokrine Störungen in der Umwelt zu verursachen."
+              }
+          },
+          {
+              "09": {
+                  "description": "Dieses Spielzeug bietet keinen Schutz."
+              }
+          },
+          {
+              "EUH_441": {
+                  "description": "Starke Anreicherung in der Umwelt und in lebenden Organismen einschließlich Menschen."
+              }
+          },
+          {
+              "EUH_201": {
+                  "description": "Enthält Blei. Nicht für den Anstrich von Gegenständen verwenden, die von Kindern gekaut oder gelutscht werden könnten."
+              }
+          },
+          {
+              "H_231": {
+                  "description": "Kann auch in Abwesenheit von Luft bei erhöhtem Druck und/oder erhöhter Temperatur explosionsartig reagieren."
+              }
+          },
+          {
+              "H_241": {
+                  "description": "Erwärmung kann Brand oder Explosion verursachen."
+              }
+          },
+          {
+              "H_242": {
+                  "description": "Erwärmung kann Brand verursachen."
+              }
+          },
+          {
+              "EUH_071": {
+                  "description": "Wirkt ätzend auf die Atemwege."
+              }
+          },
+          {
+              "H_300": {
+                  "description": "Lebensgefahr bei Verschlucken."
+              }
+          },
+          {
+              "H_330": {
+                  "description": "Lebensgefahr bei Einatmen."
+              }
+          },
+          {
+              "EUH_210": {
+                  "description": "Sicherheitsdatenblatt auf Anfrage erhältlich."
+              }
+          },
+          {
+              "11": {
+                  "description": "Nur für den Hausgebrauch."
+              }
+          },
+          {
+              "H_230": {
+                  "description": "Kann auch in Abwesenheit von Luft explosionsartig reagieren."
+              }
+          },
+          {
+              "H_302": {
+                  "description": "Gesundheitsschädlich bei Verschlucken."
+              }
+          },
+          {
+              "H_232": {
+                  "description": "Kann sich bei Kontakt mit Luft spontan entzünden."
+              }
+          },
+          {
+              "H_250": {
+                  "description": "Entzündet sich in Berührung mit Luft von selbst."
+              }
+          },
+          {
+              "00": {
+                  "description": "Nicht für Kinder unter 3 Jahren geeignet."
+              }
+          },
+          {
+              "H_240": {
+                  "description": "Erwärmung kann Explosion verursachen."
+              }
+          },
+          {
+              "H_373": {
+                  "description": "Kann die Organe schädigen bei längerer oder wiederholter Exposition."
+              }
+          },
+          {
+              "H_271": {
+                  "description": "Kann Brand oder Explosion verursachen; starkes Oxidationsmittel."
+              }
+          },
+          {
+              "07": {
+                  "description": "Nur im flachen Wasser unter Aufsicht von Erwachsenen verwenden."
+              }
+          },
+          {
+              "H_336": {
+                  "description": "Kann Schläfrigkeit und Benommenheit verursachen."
+              }
+          },
+          {
+              "H_310": {
+                  "description": "Lebensgefahr bei Hautkontakt."
+              }
+          },
+          {
+              "H_331": {
+                  "description": "Giftig bei Einatmen."
+              }
+          },
+          {
+              "H_205": {
+                  "description": "Gefahr der Massenexplosion bei Feuer."
+              }
+          },
+          {
+              "EUH_209": {
+                  "description": "Kann bei Verwendung leicht entzündbar werden."
+              }
+          },
+          {
+              "H_301": {
+                  "description": "Giftig bei Verschlucken."
+              }
+          },
+          {
+              "EUH_202": {
+                  "description": "Cyanacrylat. Gefahr. Klebt innerhalb von Sekunden Haut und Augenlider zusammen. Darf nicht in die Hände von Kindern gelangen."
+              }
+          },
+          {
+              "H_318": {
+                  "description": "Verursacht schwere Augenschäden."
+              }
+          },
+          {
+              "H_226": {
+                  "description": "Flüssigkeit und Dampf entzündbar."
+              }
+          },
+          {
+              "EUH_032": {
+                  "description": "Entwickelt bei Berührung mit Säure sehr giftige Gase."
+              }
+          },
+          {
+              "H_304": {
+                  "description": "Kann bei Verschlucken und Eindringen in die Atemwege tödlich sein."
+              }
+          },
+          {
+              "H_317": {
+                  "description": "Kann allergische Hautreaktionen verursachen."
+              }
+          },
+          {
+              "H_281": {
+                  "description": "Enthält tiefgekühltes Gas; kann Kälteverbrennungen oder -verletzungen verursachen."
+              }
+          },
+          {
+              "H_204": {
+                  "description": "Gefahr durch Feuer oder Splitter, Spreng- und Wurfstücke."
+              }
+          },
+          {
+              "H_351": {
+                  "description": "Kann vermutlich Krebs erzeugen."
+              }
+          },
+          {
+              "H_251": {
+                  "description": "Selbsterhitzungsfähig; kann in Brand geraten."
+              }
+          },
+          {
+              "H_228": {
+                  "description": "Entzündbarer Feststoff."
+              }
+          },
+          {
+              "H_340": {
+                  "description": "Kann genetische Defekte verursachen."
+              }
+          },
+          {
+              "H_335": {
+                  "description": "Kann die Atemwege reizen."
+              }
+          },
+          {
+              "EUH_206": {
+                  "description": "Achtung! Nicht zusammen mit anderen Produkten verwenden, da gefährliche Gase (Chlor) freigesetzt werden können."
+              }
+          },
+          {
+              "04": {
+                  "description": "Achtung: Nur mit Geräteschutz verwenden. Nicht auf öffentlichen Straßen verwenden."
+              }
+          },
+          {
+              "H_319": {
+                  "description": "Verursacht schwere Augenreizung."
+              }
+          },
+          {
+              "H_203": {
+                  "description": "Explosiv; Gefahr durch Feuer, Luftdruck oder Splitter, Spreng- und Wurfstücke."
+              }
+          },
+          {
+              "EUH_212": {
+                  "description": "Achtung! Bei der Verwendung kann gefährlicher lungengängiger Staub entstehen. Staub nicht einatmen."
+              }
+          },
+          {
+              "EUH_031": {
+                  "description": "Entwickelt bei Berührung mit Säure giftige Gase."
+              }
+          },
+          {
+              "H_341": {
+                  "description": "Kann vermutlich genetische Defekte verursachen."
+              }
+          },
+          {
+              "EUH_201A": {
+                  "description": "Achtung! Enthält Blei."
+              }
+          },
+          {
+              "H_371": {
+                  "description": "Kann die Organe schädigen."
+              }
+          },
+          {
+              "EUH_380": {
+                  "description": "Kann beim Menschen endokrine Störungen verursachen."
+              }
+          },
+          {
+              "H_207": {
+                  "description": "Gefahr durch Feuer oder Sprengstücke; erhöhte Explosionsgefahr wenn das Desensibilisierungsmittel reduziert wird."
+              }
+          },
+          {
+              "EUH_207": {
+                  "description": "Achtung! Enthält Cadmium. Bei der Verwendung entstehen gefährliche Dämpfe. Hinweise des Herstellers beachten. Sicherheitsanweisungen einhalten."
+              }
+          },
+          {
+              "H_311": {
+                  "description": "Giftig bei Hautkontakt."
+              }
+          },
+          {
+              "10": {
+                  "description": "Enthält Duftstoffe, die Allergien auslösen können."
+              }
+          },
+          {
+              "EUH_203": {
+                  "description": "Enthält Chrom (VI). Kann allergische Reaktionen hervorrufen."
+              }
+          },
+          {
+              "EUH_451": {
+                  "description": "Kann sehr lang anhaltende und diffuse Verschmutzung von Wasserressourcen verursachen."
+              }
+          },
+          {
+              "H_223": {
+                  "description": "Entzündbares Aerosol."
+              }
+          },
+          {
+              "EUH_019": {
+                  "description": "Kann explosionsfähige Peroxide bilden."
+              }
+          },
+          {
+              "H_208": {
+                  "description": "Gefahr durch Feuer; erhöhte Explosionsgefahr wenn das Desensibilisierungsmittel reduziert wird."
+              }
+          },
+          {
+              "08": {
+                  "description": "Nur unter Aufsicht von Erwachsenen verwenden."
+              }
+          },
+          {
+              "H_280": {
+                  "description": "Enthält Gas unter Druck; kann bei Erwärmung explodieren."
+              }
+          },
+          {
+              "H_270": {
+                  "description": "Kann Brand verursachen oder verstärken; Oxidationsmittel."
+              }
+          },
+          {
+              "H_370": {
+                  "description": "Schädigt die Organe."
+              }
+          },
+          {
+              "H_222": {
+                  "description": "Extrem entzündbares Aerosol."
+              }
+          },
+          {
+              "H_252": {
+                  "description": "In großen Mengen selbsterhitzungsfähig; kann in Brand geraten."
+              }
+          },
+          {
+              "H_314": {
+                  "description": "Verursacht schwere Verätzungen der Haut und schwere Augenschäden."
+              }
+          },
+          {
+              "H_332": {
+                  "description": "Gesundheitsschädlich bei Einatmen."
+              }
+          },
+          {
+              "H_411": {
+                  "description": "Giftig für Wasserorganismen, mit langfristiger Wirkung."
+              }
+          },
+          {
+              "EUH_450": {
+                  "description": "Kann lang anhaltende und diffuse Verschmutzung von Wasserressourcen verursachen."
+              }
+          },
+          {
+              "H_200": {
+                  "description": "Instabil, explosiv."
+              }
+          },
+          {
+              "EUH_381": {
+                  "description": "Steht in dem Verdacht, beim Menschen endokrine Störungen zu verursachen."
+              }
+          },
+          {
+              "H_400": {
+                  "description": "Sehr giftig für Wasserorganismen."
+              }
+          },
+          {
+              "H_315": {
+                  "description": "Verursacht Hautreizungen."
+              }
+          }
+      ]
+  }
+}

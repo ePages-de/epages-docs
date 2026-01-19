@@ -373,6 +373,13 @@ ePages Now only!
 | filter | object of [filter](page:apps-data-types#filter) | The available filter with name and value or name and range that is used for filtering. |
 | selectedValue | string | The search term(s) used for filtering.  |
 
+## gpsrinfo
+
+| Attribute | Type | Description |
+| - | - |  - |
+| pictograms | array of pictograms objects | The GPSR pictograms of the system |
+| safetyStatements | array of safetyStatement objects | The GPSR safety statements of the system |
+
 ## image
 
 | Attribute | Type | Description |

@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "GET GpsrInfo Schema",
+  "type": "object",
+  "properties": {
+    "": {
+      "type": "object of [gpsrinfo](page:apps-data-types#gpsrinfo)",
+      "description": ""
+    }
+  }
+}
