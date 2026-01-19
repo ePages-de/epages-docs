@@ -5,5 +5,10 @@
   "description": "This is a brand new product",
   "manufacturer": "Awesome Products Company",
   "price": 5.99,
-  "searchKeywords": ["awesome", "product"]
+  "searchKeywords": ["awesome", "product"],
+  "gpsrInfo": {
+    "pictograms":  ["skull", "age_restriction_0_3"],
+    "safetyStatements": ["H_413","H_225", "H_372"],
+    "supplemetaryInformation": "Dangerous"
+  }
 }

@@ -4,7 +4,7 @@
   "type": "object",
   "properties": {
     "": {
-      "type": "object of [gpsrinfo](page:apps-data-types#gpsrinfo)",
+      "type": "object of [gpsrinfo](page:apps-data-types#gpsrInfo)",
       "description": ""
     }
   }
