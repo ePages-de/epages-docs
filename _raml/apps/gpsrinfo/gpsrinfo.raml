@@ -2,6 +2,8 @@
 displayName: GpsrInfo
 get:
   description: Returns all GPSR picogramms and safety statements from the shop. *epages6 *epagesNow
+  securedBy: [products_read]
+  is: [ locale ]
   responses:
     200:
       body:
