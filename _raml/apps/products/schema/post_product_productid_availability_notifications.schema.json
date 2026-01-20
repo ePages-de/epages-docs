@@ -5,11 +5,11 @@
   "properties": {
     "email": {
       "type": "string",
-      "description": "email address"
+      "description": "The email address of the customer receiving the availability notification."
     },
     "locale": {
       "type": "string",
-      "description": "ISO 8859-1 Locale ID"
+      "description": "The language in which the availability notification email is to be sent, according to ISO 639-1 and ISO 3166-1, e.g. en_US."
     }
   }
 }
