@@ -393,7 +393,7 @@ ePages Now only!
 
 | Attribute | Type | Description |
 | - | - |  - |
-| responsiblePersonAddress | object of [responsiblePerson](page:apps-data-types#responsiblePerson) | The address of the responsible person of a manufaturer. |
+| responsiblePersonAddress | object of [responsiblePerson](page:apps-data-types#responsibleperson) | The address of the responsible person of a manufaturer. |
 | manufacturerAddress| object of [manufacturer](page:apps-data-types#manufacturer) | The address of the product manufacturer. |
 | pictograms | array of pictograms | The GPSR pictogram names. |
 | safetyStatements | array of safetyStatement | The GPSR safety statement names. |
@@ -481,7 +481,7 @@ This object is used for the attributes of manufacturers.
 | country | string | The name of the country. |
 | phoneNumber | string | The manufacturer's landline number. |
 | emailOrContactFormUrl | string | The manufacturer's email or website url |
-| responsiblePersonAddress | object of [responsiblePerson](page:apps-data-types#responsiblePerson) | The address of the responsible person of a manufaturer. |
+| responsiblePersonAddress | object of [responsiblePerson](page:apps-data-types#responsibleperson) | The address of the responsible person of a manufaturer. |
 | manufacturerId | string | The identifier of manufacturer. |
 
 ## minimumCart
@@ -899,12 +899,12 @@ ePages Now only!
 
 | Attribute | Type | Description |
 | - | - |  - |
-| company | string | The reponsible persons's company.|
+| company | string | The reponsible persons's company. |
 | street | string | The street name of the reponsible persons's address. |
 | streetDetails | string | An additional field for the street address.|
 | zipCode | string | The zip or postal code of the address. |
 | city | string | The name of the city. |
-| state | string | The name of the state.|
+| state | string | The name of the state. |
 | country | string | The name of the country. |
 | phoneNumber | string | The reponsible persons's landline number. |
 | emailAddress | string | The reponsible persons's email address |
