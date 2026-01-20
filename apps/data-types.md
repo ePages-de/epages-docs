@@ -373,21 +373,6 @@ ePages Now only!
 | filter | object of [filter](page:apps-data-types#filter) | The available filter with name and value or name and range that is used for filtering. |
 | selectedValue | string | The search term(s) used for filtering.  |
 
-## responsiblePerson
-
-This object is used for the attributes of responsible person of a manufacturer.
-
-| Attribute | Type | Description |
-| - | - |  - |
-| company | string | The reponsible persons's company.|
-| street | string | The street name of the reponsible persons's address. |
-| streetDetails | string | An additional field for the street address.|
-| zipCode | string | The zip or postal code of the address. |
-| city | string | The name of the city. |
-| state | string | The name of the state.|
-| country | string | The name of the country. |
-| phoneNumber | string | The reponsible persons's landline number. |
-| emailAddress | string | The reponsible persons's email address |
 
 ## gpsrInfo
 
@@ -909,6 +894,21 @@ ePages Now only!
 | - | - |  - |
 | amount | number | The amount displayed as a decimal number. |
 | unit | string | The unit displayed as abbreviated unit, if available. Can be one of *Byte*, *kByte*, *MByte*, *GByte*, *TByte*, *l*, *ml*, *ft³*, *in³*, *m³*, *yd³*, *fl oz*, *gal*, *qt*, *m*, *cm*, *ft*, *in*, *km*, *mm*, *yd*, *s*, *min*, *m²*, *cm²*, *ft²*, *in²*, *mm²* or *yd²*. Otherwise a localised name of the unit is displayed. Can be *piece(s)*, *bottle(s)*, *crate(s)*, *can(s)*, *capsule(s)*, *box(es)*, *glass(es)*, *kit(s)*, *pack(s)*, *package(s)*, *pair(s)*, *roll(s)*, *set(s)*, *sheet(s)*, *ticket(s)*, *unit(s)*, *day(s)*, *hour(s)*, *week(s)*, *month(s)*, *night(s)* or *year(s)*. |
+
+## responsiblePerson
+
+| Attribute | Type | Description |
+| - | - |  - |
+| company | string | The reponsible persons's company.|
+| street | string | The street name of the reponsible persons's address. |
+| streetDetails | string | An additional field for the street address.|
+| zipCode | string | The zip or postal code of the address. |
+| city | string | The name of the city. |
+| state | string | The name of the state.|
+| country | string | The name of the country. |
+| phoneNumber | string | The reponsible persons's landline number. |
+| emailAddress | string | The reponsible persons's email address |
+
 
 ## sales
 
