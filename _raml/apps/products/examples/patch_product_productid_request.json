@@ -134,4 +134,19 @@
     "op": "add",
     "path": "/orderUnitInfo",
     "value": { "priceQuantity":1, "orderUnit":"piece(s)", "minOrder":1, "intervalOrder":1 }
-}]
+},
+{
+  "op": "add",
+  "path": "/gpsrInfo",
+  "value": {
+      "pictograms":  ["skull", "age_restriction_0_3"],
+      "safetyStatements": ["H_413","H_225", "H_372"],
+      "supplemetaryInformation": "Dangerous"
+    }
+},
+{
+  "op": "remove",
+  "path": "/gpsrInfo"
+}
+
+]

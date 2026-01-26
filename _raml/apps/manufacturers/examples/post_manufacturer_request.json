@@ -1,0 +1,36 @@
+[
+  {
+  "zipCode": "07749",
+  "country": "DE",
+  "street": "Heinrich-Heine-Str. 1",
+  "state": "Thüringen",
+  "responsiblePersonAddress": {
+      "zipCode": "07749",
+      "country": "DE",
+      "emailAddress": "test@epages.de",
+      "street": "Heinrich-Heine-Str. 99",
+      "state": "Thüringen",
+      "city": "Jena",
+      "streetDetails": null,
+      "company": "Responsible Company",
+      "phoneNumber": "12345"
+  },
+  "emailOrContactFormUrl": "test@epages.de",
+  "city": "Jena",
+  "streetDetails": null,
+  "company": "Fancy Manufacturer",
+  "phoneNumber": "08154711"
+},
+{
+"zipCode": 7863,
+"country": "Italy",
+"street": "Via Regia 42",
+"state": null,
+"responsiblePersonAddress": null,
+"emailOrContactFormUrl": null,
+"city": null,
+"streetDetails": null,
+"company": "Ducati",
+"phoneNumber": "1234567890"
+}
+]

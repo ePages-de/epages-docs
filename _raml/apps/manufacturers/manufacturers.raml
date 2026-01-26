@@ -1,0 +1,70 @@
+#%RAML 0.8
+displayName: Manufacturers
+get:
+  description: Returns all manufacturers with their addresses from the shop. *epages6 *epagesNow
+  responses:
+    200:
+      body:
+        application/json:
+          example: !include examples/get_manufacturers_response.json
+          schema: !include schema/get_manufacturers.schema.json
+post:
+  description: Creates a new manufacturer. *epages6 *epagesNow
+  securedBy: [products_write]
+  is: [ locale, currency ]
+  body:
+    application/json:
+      example: !include examples/post_manufacturer_request.json
+      schema: !include schema/post_manufacturer_request.schema.json
+  responses:
+    201:
+      body:
+        application/json:
+          example: !include examples/post_manufacturer_response.json
+          schema: !include schema/post_manufacturer.schema.json
+
+/{manufacturerId}:
+  displayName: Manufacturer
+  uriParameters:
+    manufacturerId:
+      description: The unique identifier of the manufacturer.
+      example: 693FDFB0-C202-DD74-584A-C0A80502D85C
+  get:
+    description: Returns information on a single manufacturer. *epages6 *epagesNow
+    securedBy: [products_read]
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include examples/get_manufacturers_manufacturerid_response.json
+            schema: !include schema/get_manufacturers_manufacturerid.schema.json
+  patch:
+    description: Updates information for a single manufacturer with partial data according to [RFC 6902](https://tools.ietf.org/html/rfc6902). You can either add or remove certain attributes. *epages6 *epagesNow <br><br>
+
+          *Supported JSON-PATCH operations*<br>
+          - add (sets or replaces an attribute)<br>
+          - remove (unsets an attribute)<br>
+          
+          *Attribute paths that allow updates via PATCH* <br>
+                - /manufacturerAddress¹<br>
+                - /responsiblePersonAddress²<br><br>
+
+                **¹** supports *add* only<br>
+                **²** supports *remove* only<br>
+ 
+    securedBy: [products_write]
+    body:
+      application/json-patch+json:
+        example: !include examples/patch_manufacturers_manufacturerid_request.json
+        schema: !include schema/patch_manufacturers_manufacturerid_request.schema.json
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include examples/patch_manufacturers_manufacturerid_response.json
+            schema: !include schema/patch_manufacturers_manufacturerid.schema.json
+  delete:
+    description: Deletes a single manufacturer. *epages6 *epagesNow
+    securedBy: [products_write]
+    responses:
+      204:

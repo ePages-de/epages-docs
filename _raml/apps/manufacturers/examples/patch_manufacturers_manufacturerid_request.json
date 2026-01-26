@@ -1,0 +1,32 @@
+[{
+  "op": "add",
+  "path": "/manufacturerAddress",
+  "value": {
+      "zipCode": "12345",
+      "country": "FR",
+      "street": "Heinrich-Heine-Str. 555",
+      "state": null,
+      "emailOrContactFormUrl": "test@epages.de",
+      "city": "Jena",
+      "streetDetails": null,
+      "phoneNumber": null,
+      "company": "DJ Anton",
+      "responsiblePersonAddress": {
+          "zipCode": "07745",
+          "country": "Germany",
+          "emailAddress": "test@epages.de",
+          "street": "Heinrich-Heine-Str. 6000",
+          "state": null,
+          "city": "Berlin",   
+          "streetDetails": null,
+          "company": "Tony Tester",
+          "phoneNumber": "1234567890"
+      }
+      
+  }
+},
+{
+  "op": "remove",
+  "path": "/responsiblePersonAddress"
+}
+]
