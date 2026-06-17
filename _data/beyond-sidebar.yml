@@ -1351,7 +1351,7 @@
               id: delete_location
         - title: Shop
           entries:
-            - title: Show shop details
+            - title: Show shop information
               link: https://api-docs.beyondshop.cloud/ng-shop-shop-public-api.html#resources-merchant-shop-get
               id: show_shop_details
             - title: Update shop partially (json)
