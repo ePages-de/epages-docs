@@ -4141,7 +4141,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"_embedded\" : {\n    \"orders\" : [ {\n      \"shippingStatus\" : \"PENDING\",\n      \"paymentStatus\" : \"PENDING\",\n      \"orderDate\" : \"2026-06-02T06:37:28.102\",\n      \"grandTotal\" : {\n        \"currency\" : \"EUR\",\n        \"amount\" : 105\n      },\n      \"initialGrandTotal\" : {\n        \"currency\" : \"EUR\",\n        \"amount\" : 105\n      },\n      \"openAmount\" : {\n        \"currency\" : \"EUR\",\n        \"amount\" : 105\n      },\n      \"totalRefunded\" : {\n        \"currency\" : \"EUR\",\n        \"amount\" : 0\n      },\n      \"orderNumber\" : \"10002\",\n      \"_links\" : {\n        \"invoice-pdf\" : {\n          \"href\" : \"https://yourshop.api.urn/api/pdf-storage/attachments/invoice_10029.pdf?hash=cbabc1f810609930d3131dee1640f09e06f373e9\"\n        },\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/customer-account/orders/082d4212-1254-4967-a529-f347d004e4f0\"\n        }\n      },\n      \"_id\" : \"082d4212-1254-4967-a529-f347d004e4f0\"\n    }, {\n      \"shippingStatus\" : \"DELIVERED\",\n      \"paymentStatus\" : \"PAID\",\n      \"orderDate\" : \"2026-06-02T06:37:18.102\",\n      \"grandTotal\" : {\n        \"currency\" : \"EUR\",\n        \"amount\" : 10\n      },\n      \"initialGrandTotal\" : {\n        \"currency\" : \"EUR\",\n        \"amount\" : 20\n      },\n      \"openAmount\" : {\n        \"currency\" : \"EUR\",\n        \"amount\" : -10\n      },\n      \"totalRefunded\" : {\n        \"currency\" : \"EUR\",\n        \"amount\" : 0\n      },\n      \"orderNumber\" : \"10001\",\n      \"_links\" : {\n        \"invoice-pdf\" : {\n          \"href\" : \"https://yourshop.api.urn/api/pdf-storage/attachments/invoice_10029.pdf?hash=cbabc1f810609930d3131dee1640f09e06f373e9\"\n        },\n        \"invoice-correction-pdf\" : [ {\n          \"href\" : \"https://yourshop.api.urn/api/pdf-storage/attachments/invoice-correction_10033.pdf?hash=208799dd5a4d1b33f489cc5b4b0bd190acbc6092\"\n        }, {\n          \"href\" : \"https://yourshop.api.urn/api/pdf-storage/attachments/invoice-correction_10032.pdf?hash=12345ddd5a4d1b33f489cc5b4b0bd190acbc6092\"\n        } ],\n        \"invoice-cancelation-pdf\" : [ {\n          \"href\" : \"https://yourshop.api.urn/api/pdf-storage/attachments/invoice-correction_10031.pdf?hash=9252f345cdcd04a437639614d663a551be5dfa30\"\n        }, {\n          \"href\" : \"https://yourshop.api.urn/api/pdf-storage/attachments/invoice-correction_10030.pdf?hash=4192f345cdcd04a437639614d583a551be5dfa30\"\n        } ],\n        \"tracking-link\" : [ {\n          \"href\" : \"http://tracking-link-1\"\n        }, {\n          \"href\" : \"http://tracking-link-2\"\n        } ],\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/customer-account/orders/daef9977-0508-4b7d-9f76-f8add6aa3f67\"\n        }\n      },\n      \"_id\" : \"daef9977-0508-4b7d-9f76-f8add6aa3f67\"\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/customer-account/orders?page=0&size=20&sort=orderDate,desc\"\n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\" : 2,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}",
+      "body" : "{\n  \"_embedded\" : {\n    \"orders\" : [ {\n      \"shippingStatus\" : \"PENDING\",\n      \"paymentStatus\" : \"PENDING\",\n      \"orderDate\" : \"2026-08-04T07:34:58.695\",\n      \"grandTotal\" : {\n        \"currency\" : \"EUR\",\n        \"amount\" : 105\n      },\n      \"initialGrandTotal\" : {\n        \"currency\" : \"EUR\",\n        \"amount\" : 105\n      },\n      \"openAmount\" : {\n        \"currency\" : \"EUR\",\n        \"amount\" : 105\n      },\n      \"totalRefunded\" : {\n        \"currency\" : \"EUR\",\n        \"amount\" : 0\n      },\n      \"orderNumber\" : \"10002\",\n      \"_links\" : {\n        \"invoice-pdf\" : {\n          \"href\" : \"https://yourshop.api.urn/api/pdf-storage/attachments/invoice_10029.pdf?hash=cbabc1f810609930d3131dee1640f09e06f373e9\"\n        },\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/customer-account/orders/1d5d4666-e751-467b-a828-465a77cc0fb2\"\n        }\n      },\n      \"_id\" : \"1d5d4666-e751-467b-a828-465a77cc0fb2\"\n    }, {\n      \"shippingStatus\" : \"DELIVERED\",\n      \"paymentStatus\" : \"PAID\",\n      \"orderDate\" : \"2026-08-04T07:34:48.695\",\n      \"grandTotal\" : {\n        \"currency\" : \"EUR\",\n        \"amount\" : 10\n      },\n      \"initialGrandTotal\" : {\n        \"currency\" : \"EUR\",\n        \"amount\" : 20\n      },\n      \"openAmount\" : {\n        \"currency\" : \"EUR\",\n        \"amount\" : -10\n      },\n      \"totalRefunded\" : {\n        \"currency\" : \"EUR\",\n        \"amount\" : 0\n      },\n      \"orderNumber\" : \"10001\",\n      \"_links\" : {\n        \"invoice-pdf\" : {\n          \"href\" : \"https://yourshop.api.urn/api/pdf-storage/attachments/invoice_10029.pdf?hash=cbabc1f810609930d3131dee1640f09e06f373e9\"\n        },\n        \"invoice-correction-pdf\" : [ {\n          \"href\" : \"https://yourshop.api.urn/api/pdf-storage/attachments/invoice-correction_10033.pdf?hash=208799dd5a4d1b33f489cc5b4b0bd190acbc6092\"\n        }, {\n          \"href\" : \"https://yourshop.api.urn/api/pdf-storage/attachments/invoice-correction_10032.pdf?hash=12345ddd5a4d1b33f489cc5b4b0bd190acbc6092\"\n        } ],\n        \"invoice-cancelation-pdf\" : [ {\n          \"href\" : \"https://yourshop.api.urn/api/pdf-storage/attachments/invoice-correction_10031.pdf?hash=9252f345cdcd04a437639614d663a551be5dfa30\"\n        }, {\n          \"href\" : \"https://yourshop.api.urn/api/pdf-storage/attachments/invoice-correction_10030.pdf?hash=4192f345cdcd04a437639614d583a551be5dfa30\"\n        } ],\n        \"tracking-link\" : [ {\n          \"href\" : \"http://tracking-link-1\"\n        }, {\n          \"href\" : \"http://tracking-link-2\"\n        } ],\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/customer-account/orders/86ddd77b-e29c-4b6f-a6be-45e55b9ddf6e\"\n        }\n      },\n      \"_id\" : \"86ddd77b-e29c-4b6f-a6be-45e55b9ddf6e\"\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/customer-account/orders?page=0&size=20&sort=orderDate,desc\"\n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\" : 2,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}",
       "code" : 200
     } ]
   }, {
@@ -4263,7 +4263,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"shippingStatus\" : \"DELIVERED\",\n  \"paymentStatus\" : \"PAID\",\n  \"orderDate\" : \"2026-06-02T06:37:16.666\",\n  \"grandTotal\" : {\n    \"currency\" : \"EUR\",\n    \"amount\" : 10\n  },\n  \"initialGrandTotal\" : {\n    \"currency\" : \"EUR\",\n    \"amount\" : 20\n  },\n  \"openAmount\" : {\n    \"currency\" : \"EUR\",\n    \"amount\" : -10\n  },\n  \"totalRefunded\" : {\n    \"currency\" : \"EUR\",\n    \"amount\" : 0\n  },\n  \"orderNumber\" : \"10001\",\n  \"_links\" : {\n    \"invoice-pdf\" : {\n      \"href\" : \"https://yourshop.api.urn/api/pdf-storage/attachments/invoice_10029.pdf?hash=cbabc1f810609930d3131dee1640f09e06f373e9\"\n    },\n    \"invoice-correction-pdf\" : [ {\n      \"href\" : \"https://yourshop.api.urn/api/pdf-storage/attachments/invoice-correction_10033.pdf?hash=208799dd5a4d1b33f489cc5b4b0bd190acbc6092\"\n    }, {\n      \"href\" : \"https://yourshop.api.urn/api/pdf-storage/attachments/invoice-correction_10032.pdf?hash=12345ddd5a4d1b33f489cc5b4b0bd190acbc6092\"\n    } ],\n    \"invoice-cancelation-pdf\" : [ {\n      \"href\" : \"https://yourshop.api.urn/api/pdf-storage/attachments/invoice-correction_10031.pdf?hash=9252f345cdcd04a437639614d663a551be5dfa30\"\n    }, {\n      \"href\" : \"https://yourshop.api.urn/api/pdf-storage/attachments/invoice-correction_10030.pdf?hash=4192f345cdcd04a437639614d583a551be5dfa30\"\n    } ],\n    \"tracking-link\" : [ {\n      \"href\" : \"http://tracking-link-1\"\n    }, {\n      \"href\" : \"http://tracking-link-2\"\n    } ],\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/customer-account/orders/6e3a617a-39c6-43f2-91ad-04a0ea6b270f\"\n    }\n  },\n  \"_id\" : \"6e3a617a-39c6-43f2-91ad-04a0ea6b270f\"\n}",
+      "body" : "{\n  \"shippingStatus\" : \"DELIVERED\",\n  \"paymentStatus\" : \"PAID\",\n  \"orderDate\" : \"2026-08-04T07:34:35.533\",\n  \"grandTotal\" : {\n    \"currency\" : \"EUR\",\n    \"amount\" : 10\n  },\n  \"initialGrandTotal\" : {\n    \"currency\" : \"EUR\",\n    \"amount\" : 20\n  },\n  \"openAmount\" : {\n    \"currency\" : \"EUR\",\n    \"amount\" : -10\n  },\n  \"totalRefunded\" : {\n    \"currency\" : \"EUR\",\n    \"amount\" : 0\n  },\n  \"orderNumber\" : \"10001\",\n  \"_links\" : {\n    \"invoice-pdf\" : {\n      \"href\" : \"https://yourshop.api.urn/api/pdf-storage/attachments/invoice_10029.pdf?hash=cbabc1f810609930d3131dee1640f09e06f373e9\"\n    },\n    \"invoice-correction-pdf\" : [ {\n      \"href\" : \"https://yourshop.api.urn/api/pdf-storage/attachments/invoice-correction_10033.pdf?hash=208799dd5a4d1b33f489cc5b4b0bd190acbc6092\"\n    }, {\n      \"href\" : \"https://yourshop.api.urn/api/pdf-storage/attachments/invoice-correction_10032.pdf?hash=12345ddd5a4d1b33f489cc5b4b0bd190acbc6092\"\n    } ],\n    \"invoice-cancelation-pdf\" : [ {\n      \"href\" : \"https://yourshop.api.urn/api/pdf-storage/attachments/invoice-correction_10031.pdf?hash=9252f345cdcd04a437639614d663a551be5dfa30\"\n    }, {\n      \"href\" : \"https://yourshop.api.urn/api/pdf-storage/attachments/invoice-correction_10030.pdf?hash=4192f345cdcd04a437639614d583a551be5dfa30\"\n    } ],\n    \"tracking-link\" : [ {\n      \"href\" : \"http://tracking-link-1\"\n    }, {\n      \"href\" : \"http://tracking-link-2\"\n    } ],\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/customer-account/orders/9b96f33f-97da-4c82-8619-bbc35242ef54\"\n    }\n  },\n  \"_id\" : \"9b96f33f-97da-4c82-8619-bbc35242ef54\"\n}",
       "code" : 200
     } ]
   }, {
@@ -4286,7 +4286,7 @@
       } ],
       "body" : {
         "mode" : "raw",
-        "raw" : "{\n  \"name\" : \"VIP1\",\n  \"discountPercentage\" : \"-0.1\"\n}",
+        "raw" : "{\n  \"discountPercentage\" : \"-0.1\",\n  \"name\" : \"VIP1\"\n}",
         "urlencoded" : [ ]
       }
     },
@@ -4307,7 +4307,7 @@
         } ],
         "body" : {
           "mode" : "raw",
-          "raw" : "{\n  \"name\" : \"VIP1\",\n  \"discountPercentage\" : \"-0.1\"\n}",
+          "raw" : "{\n  \"discountPercentage\" : \"-0.1\",\n  \"name\" : \"VIP1\"\n}",
           "urlencoded" : [ ]
         }
       },
@@ -4336,7 +4336,7 @@
         } ],
         "body" : {
           "mode" : "raw",
-          "raw" : "{\n  \"name\" : \"VIP\",\n  \"discountPercentage\" : \"-0.1\"\n}",
+          "raw" : "{\n  \"discountPercentage\" : \"-0.1\",\n  \"name\" : \"VIP\"\n}",
           "urlencoded" : [ ]
         }
       },
@@ -4346,7 +4346,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"discountPercentage\" : -0.1,\n  \"name\" : \"VIP\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/customer-groups/970ad4d5-e547-4ebe-b3d4-83d956b14c7f\"\n    },\n    \"customer-group\" : {\n      \"href\" : \"https://yourshop.api.urn/customer-groups/970ad4d5-e547-4ebe-b3d4-83d956b14c7f\"\n    },\n    \"customers\" : {\n      \"href\" : \"https://yourshop.api.urn/customer-groups/970ad4d5-e547-4ebe-b3d4-83d956b14c7f/customers\"\n    }\n  },\n  \"_id\" : \"970ad4d5-e547-4ebe-b3d4-83d956b14c7f\"\n}",
+      "body" : "{\n  \"discountPercentage\" : -0.1,\n  \"name\" : \"VIP\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/customer-groups/4335113c-d921-454c-bcec-2e0ae63ac255\"\n    },\n    \"customer-group\" : {\n      \"href\" : \"https://yourshop.api.urn/customer-groups/4335113c-d921-454c-bcec-2e0ae63ac255\"\n    },\n    \"customers\" : {\n      \"href\" : \"https://yourshop.api.urn/customer-groups/4335113c-d921-454c-bcec-2e0ae63ac255/customers\"\n    }\n  },\n  \"_id\" : \"4335113c-d921-454c-bcec-2e0ae63ac255\"\n}",
       "code" : 201
     }, {
       "id" : "customer-group-create-out-of-range-discount",
@@ -4365,7 +4365,7 @@
         } ],
         "body" : {
           "mode" : "raw",
-          "raw" : "{\n  \"name\" : \"VIP1\",\n  \"discountPercentage\" : \"-1.1\"\n}",
+          "raw" : "{\n  \"discountPercentage\" : \"-1.1\",\n  \"name\" : \"VIP1\"\n}",
           "urlencoded" : [ ]
         }
       },
@@ -4409,7 +4409,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"_embedded\" : {\n    \"customerGroups\" : [ {\n      \"discountPercentage\" : -0.3,\n      \"name\" : \"PREF3\",\n      \"customerCount\" : 0,\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/customer-groups/0a38ea61-0710-42fb-94e8-4027cf6bed40\"\n        },\n        \"customer-group\" : {\n          \"href\" : \"https://yourshop.api.urn/customer-groups/0a38ea61-0710-42fb-94e8-4027cf6bed40\"\n        },\n        \"customers\" : {\n          \"href\" : \"https://yourshop.api.urn/customer-groups/0a38ea61-0710-42fb-94e8-4027cf6bed40/customers\"\n        }\n      },\n      \"_id\" : \"0a38ea61-0710-42fb-94e8-4027cf6bed40\"\n    }, {\n      \"discountPercentage\" : -0.1,\n      \"name\" : \"PREF1\",\n      \"customerCount\" : 0,\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/customer-groups/888043b0-059f-499c-8015-9426130179da\"\n        },\n        \"customer-group\" : {\n          \"href\" : \"https://yourshop.api.urn/customer-groups/888043b0-059f-499c-8015-9426130179da\"\n        },\n        \"customers\" : {\n          \"href\" : \"https://yourshop.api.urn/customer-groups/888043b0-059f-499c-8015-9426130179da/customers\"\n        }\n      },\n      \"_id\" : \"888043b0-059f-499c-8015-9426130179da\"\n    }, {\n      \"discountPercentage\" : -0.1,\n      \"name\" : \"VIP1\",\n      \"customerCount\" : 2,\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/customer-groups/93408d77-d2d4-486e-b563-67639161d424\"\n        },\n        \"customer-group\" : {\n          \"href\" : \"https://yourshop.api.urn/customer-groups/93408d77-d2d4-486e-b563-67639161d424\"\n        },\n        \"customers\" : {\n          \"href\" : \"https://yourshop.api.urn/customer-groups/93408d77-d2d4-486e-b563-67639161d424/customers\"\n        }\n      },\n      \"_id\" : \"93408d77-d2d4-486e-b563-67639161d424\"\n    }, {\n      \"discountPercentage\" : -0.2,\n      \"name\" : \"PREF2\",\n      \"customerCount\" : 0,\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/customer-groups/f6a9c123-2307-474a-8365-55515ebaed67\"\n        },\n        \"customer-group\" : {\n          \"href\" : \"https://yourshop.api.urn/customer-groups/f6a9c123-2307-474a-8365-55515ebaed67\"\n        },\n        \"customers\" : {\n          \"href\" : \"https://yourshop.api.urn/customer-groups/f6a9c123-2307-474a-8365-55515ebaed67/customers\"\n        }\n      },\n      \"_id\" : \"f6a9c123-2307-474a-8365-55515ebaed67\"\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/customer-groups?page=0&size=20\"\n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\" : 4,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}",
+      "body" : "{\n  \"_embedded\" : {\n    \"customerGroups\" : [ {\n      \"discountPercentage\" : -0.1,\n      \"name\" : \"PREF1\",\n      \"customerCount\" : 0,\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/customer-groups/02101e15-6ab1-4887-82de-8be8e8a688e1\"\n        },\n        \"customer-group\" : {\n          \"href\" : \"https://yourshop.api.urn/customer-groups/02101e15-6ab1-4887-82de-8be8e8a688e1\"\n        },\n        \"customers\" : {\n          \"href\" : \"https://yourshop.api.urn/customer-groups/02101e15-6ab1-4887-82de-8be8e8a688e1/customers\"\n        }\n      },\n      \"_id\" : \"02101e15-6ab1-4887-82de-8be8e8a688e1\"\n    }, {\n      \"discountPercentage\" : -0.1,\n      \"name\" : \"VIP1\",\n      \"customerCount\" : 2,\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/customer-groups/076f2f47-fe5e-45d3-82a4-5556dd465b6b\"\n        },\n        \"customer-group\" : {\n          \"href\" : \"https://yourshop.api.urn/customer-groups/076f2f47-fe5e-45d3-82a4-5556dd465b6b\"\n        },\n        \"customers\" : {\n          \"href\" : \"https://yourshop.api.urn/customer-groups/076f2f47-fe5e-45d3-82a4-5556dd465b6b/customers\"\n        }\n      },\n      \"_id\" : \"076f2f47-fe5e-45d3-82a4-5556dd465b6b\"\n    }, {\n      \"discountPercentage\" : -0.2,\n      \"name\" : \"PREF2\",\n      \"customerCount\" : 0,\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/customer-groups/3a6d0327-97cd-4fa9-a065-5d0afe2a6b08\"\n        },\n        \"customer-group\" : {\n          \"href\" : \"https://yourshop.api.urn/customer-groups/3a6d0327-97cd-4fa9-a065-5d0afe2a6b08\"\n        },\n        \"customers\" : {\n          \"href\" : \"https://yourshop.api.urn/customer-groups/3a6d0327-97cd-4fa9-a065-5d0afe2a6b08/customers\"\n        }\n      },\n      \"_id\" : \"3a6d0327-97cd-4fa9-a065-5d0afe2a6b08\"\n    }, {\n      \"discountPercentage\" : -0.3,\n      \"name\" : \"PREF3\",\n      \"customerCount\" : 0,\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/customer-groups/d515e163-ca4f-493e-98a3-278cc08c11fd\"\n        },\n        \"customer-group\" : {\n          \"href\" : \"https://yourshop.api.urn/customer-groups/d515e163-ca4f-493e-98a3-278cc08c11fd\"\n        },\n        \"customers\" : {\n          \"href\" : \"https://yourshop.api.urn/customer-groups/d515e163-ca4f-493e-98a3-278cc08c11fd/customers\"\n        }\n      },\n      \"_id\" : \"d515e163-ca4f-493e-98a3-278cc08c11fd\"\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/customer-groups?page=0&size=20\"\n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\" : 4,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}",
       "code" : 200
     } ]
   }, {
@@ -4432,7 +4432,7 @@
       } ],
       "body" : {
         "mode" : "raw",
-        "raw" : "{\n  \"name\" : \"VIP1\",\n  \"discountPercentage\" : \"-1.1\"\n}",
+        "raw" : "{\n  \"discountPercentage\" : \"-1.1\",\n  \"name\" : \"VIP1\"\n}",
         "urlencoded" : [ ]
       }
     },
@@ -4453,7 +4453,7 @@
         } ],
         "body" : {
           "mode" : "raw",
-          "raw" : "{\n  \"name\" : \"VIP1\",\n  \"discountPercentage\" : \"-1.1\"\n}",
+          "raw" : "{\n  \"discountPercentage\" : \"-1.1\",\n  \"name\" : \"VIP1\"\n}",
           "urlencoded" : [ ]
         }
       },
@@ -4482,7 +4482,7 @@
         } ],
         "body" : {
           "mode" : "raw",
-          "raw" : "{\n  \"name\" : \"VIP1\",\n  \"discountPercentage\" : \"-0.2\"\n}",
+          "raw" : "{\n  \"discountPercentage\" : \"-0.2\",\n  \"name\" : \"VIP1\"\n}",
           "urlencoded" : [ ]
         }
       },
@@ -4511,7 +4511,7 @@
         } ],
         "body" : {
           "mode" : "raw",
-          "raw" : "{\n  \"name\" : \"VIP Special\",\n  \"discountPercentage\" : \"-0.2\"\n}",
+          "raw" : "{\n  \"discountPercentage\" : \"-0.2\",\n  \"name\" : \"VIP Special\"\n}",
           "urlencoded" : [ ]
         }
       },
@@ -4521,7 +4521,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"discountPercentage\" : -0.2,\n  \"name\" : \"VIP Special\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/customer-groups/9717292f-2999-48ff-bf62-47e304fbea4f\"\n    },\n    \"customer-group\" : {\n      \"href\" : \"https://yourshop.api.urn/customer-groups/9717292f-2999-48ff-bf62-47e304fbea4f\"\n    },\n    \"customers\" : {\n      \"href\" : \"https://yourshop.api.urn/customer-groups/9717292f-2999-48ff-bf62-47e304fbea4f/customers\"\n    }\n  },\n  \"_id\" : \"9717292f-2999-48ff-bf62-47e304fbea4f\"\n}",
+      "body" : "{\n  \"discountPercentage\" : -0.2,\n  \"name\" : \"VIP Special\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/customer-groups/152c3aa9-ff60-41b9-9ab6-472d2a196801\"\n    },\n    \"customer-group\" : {\n      \"href\" : \"https://yourshop.api.urn/customer-groups/152c3aa9-ff60-41b9-9ab6-472d2a196801\"\n    },\n    \"customers\" : {\n      \"href\" : \"https://yourshop.api.urn/customer-groups/152c3aa9-ff60-41b9-9ab6-472d2a196801/customers\"\n    }\n  },\n  \"_id\" : \"152c3aa9-ff60-41b9-9ab6-472d2a196801\"\n}",
       "code" : 200
     } ]
   }, {
@@ -4583,7 +4583,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"discountPercentage\" : -0.1,\n  \"name\" : \"VIP1\",\n  \"customerCount\" : 2,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/customer-groups/98a99d44-0673-42ca-8050-6ed3d8d1ded4\"\n    },\n    \"customer-group\" : {\n      \"href\" : \"https://yourshop.api.urn/customer-groups/98a99d44-0673-42ca-8050-6ed3d8d1ded4\"\n    },\n    \"customers\" : {\n      \"href\" : \"https://yourshop.api.urn/customer-groups/98a99d44-0673-42ca-8050-6ed3d8d1ded4/customers\"\n    }\n  },\n  \"_id\" : \"98a99d44-0673-42ca-8050-6ed3d8d1ded4\"\n}",
+      "body" : "{\n  \"discountPercentage\" : -0.1,\n  \"name\" : \"VIP1\",\n  \"customerCount\" : 2,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/customer-groups/be1d67fe-b1dd-4a1a-b13f-361926ae28fc\"\n    },\n    \"customer-group\" : {\n      \"href\" : \"https://yourshop.api.urn/customer-groups/be1d67fe-b1dd-4a1a-b13f-361926ae28fc\"\n    },\n    \"customers\" : {\n      \"href\" : \"https://yourshop.api.urn/customer-groups/be1d67fe-b1dd-4a1a-b13f-361926ae28fc/customers\"\n    }\n  },\n  \"_id\" : \"be1d67fe-b1dd-4a1a-b13f-361926ae28fc\"\n}",
       "code" : 200
     } ]
   }, {
@@ -4617,7 +4617,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"_embedded\" : {\n    \"customers\" : [ {\n      \"email\" : \"astrid@epages.com\",\n      \"customerNumber\" : \"1000\",\n      \"customerOrigin\" : \"STOREFRONT\",\n      \"defaultShippingAddress\" : {\n        \"salutation\" : \"Mrs\",\n        \"gender\" : \"FEMALE\",\n        \"company\" : \"Astrid Alster GmbH\",\n        \"title\" : \"Dr\",\n        \"firstName\" : \"Astrid\",\n        \"middleName\" : \"Agnes\",\n        \"lastName\" : \"Alster\",\n        \"street\" : \"Alsterwasserweg\",\n        \"houseNumber\" : \"2\",\n        \"street2\" : \"Erdgeschoss\",\n        \"addressExtension\" : \"Hinterhof\",\n        \"postalCode\" : \"20999\",\n        \"dependentLocality\" : \"Seevetal\",\n        \"city\" : \"Alsterwasser\",\n        \"country\" : \"DE\",\n        \"state\" : \"Hamburg\",\n        \"email\" : \"a.alsterh@example.com\",\n        \"phone\" : \"(800) 555-0102\",\n        \"mobile\" : \"(800) 555-0103\",\n        \"displayAddressLines\" : [ \"Astrid Alster GmbH\", \"Astrid Agnes Alster\", \"Seevetal\", \"Alsterwasserweg 2\", \"Erdgeschoss\", \"Hinterhof\", \"20999 Alsterwasser\", \"GERMANY\" ],\n        \"doorCode\" : \"456\"\n      },\n      \"defaultBillingAddress\" : {\n        \"salutation\" : \"Mrs\",\n        \"gender\" : \"FEMALE\",\n        \"company\" : \"Astrid Alster GmbH\",\n        \"title\" : \"Dr\",\n        \"firstName\" : \"Astrid\",\n        \"middleName\" : \"Agnes\",\n        \"lastName\" : \"Alster\",\n        \"street\" : \"Alsterwasserweg\",\n        \"houseNumber\" : \"2\",\n        \"street2\" : \"Erdgeschoss\",\n        \"addressExtension\" : \"Hinterhof\",\n        \"postalCode\" : \"20999\",\n        \"dependentLocality\" : \"Seevetal\",\n        \"city\" : \"Alsterwasser\",\n        \"country\" : \"DE\",\n        \"state\" : \"Hamburg\",\n        \"email\" : \"a.alsterh@example.com\",\n        \"phone\" : \"(800) 555-0102\",\n        \"mobile\" : \"(800) 555-0103\",\n        \"displayAddressLines\" : [ \"Astrid Alster GmbH\", \"Astrid Agnes Alster\", \"Seevetal\", \"Alsterwasserweg 2\", \"Erdgeschoss\", \"Hinterhof\", \"20999 Alsterwasser\", \"GERMANY\" ],\n        \"vatId\" : \"DE123456789\",\n        \"taxNumber\" : \"HRE 987654/32123/864516\",\n        \"birthDate\" : \"1985-05-11\"\n      },\n      \"defaultShippingMethodId\" : \"5deb50ab-418e-4240-a965-c812eea7310f\",\n      \"defaultPaymentMethodId\" : \"4485d6ff-0e9f-44b0-90a8-e8031a6e7e35\",\n      \"defaultPickupOptionId\" : null,\n      \"creationDate\" : \"2026-06-02T06:37:33.8\",\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/customers/0fa02ec9-6dc8-4570-82cb-76aefddcf590\"\n        },\n        \"customer\" : {\n          \"href\" : \"https://yourshop.api.urn/customers/0fa02ec9-6dc8-4570-82cb-76aefddcf590\"\n        },\n        \"events\" : {\n          \"href\" : \"https://yourshop.api.urn/customers/0fa02ec9-6dc8-4570-82cb-76aefddcf590/events\"\n        },\n        \"customer-groups\" : {\n          \"href\" : \"https://yourshop.api.urn/customers/0fa02ec9-6dc8-4570-82cb-76aefddcf590/customer-groups\"\n        }\n      },\n      \"_id\" : \"0fa02ec9-6dc8-4570-82cb-76aefddcf590\"\n    }, {\n      \"email\" : \"berryl@epages.com\",\n      \"customerNumber\" : \"1001\",\n      \"customerOrigin\" : \"STOREFRONT\",\n      \"defaultShippingAddress\" : {\n        \"salutation\" : \"Mr\",\n        \"gender\" : \"MALE\",\n        \"company\" : \"Berryl Ltd.\",\n        \"title\" : \"Dr\",\n        \"firstName\" : \"Berryl\",\n        \"middleName\" : \"John\",\n        \"lastName\" : \"Keane\",\n        \"street\" : \"Taranulla Drive\",\n        \"houseNumber\" : \"2\",\n        \"street2\" : \"First floor\",\n        \"addressExtension\" : \"Backyard\",\n        \"postalCode\" : \"2XJ90\",\n        \"dependentLocality\" : \"St.Eves\",\n        \"city\" : \"Carnivaly\",\n        \"country\" : \"GB\",\n        \"state\" : \"Frogmooragie\",\n        \"email\" : \"keane@example.com\",\n        \"phone\" : \"(800) 555-0111\",\n        \"mobile\" : \"(800) 555-0189\",\n        \"displayAddressLines\" : [ \"Berryl Ltd.\", \"Berryl John Keane\", \"2 Taranulla Drive\", \"First floor\", \"Backyard\", \"St.Eves\", \"CARNIVALY\", \"2XJ90\", \"UNITED KINGDOM\" ],\n        \"doorCode\" : \"456\"\n      },\n      \"defaultBillingAddress\" : {\n        \"salutation\" : \"Mr\",\n        \"gender\" : \"MALE\",\n        \"company\" : \"Berryl Ltd.\",\n        \"title\" : \"Dr\",\n        \"firstName\" : \"Berryl\",\n        \"middleName\" : \"John\",\n        \"lastName\" : \"Keane\",\n        \"street\" : \"Taranulla Drive\",\n        \"houseNumber\" : \"2\",\n        \"street2\" : \"First floor\",\n        \"addressExtension\" : \"Backyard\",\n        \"postalCode\" : \"2XJ90\",\n        \"dependentLocality\" : \"St.Eves\",\n        \"city\" : \"Carnivaly\",\n        \"country\" : \"GB\",\n        \"state\" : \"Frogmooragie\",\n        \"email\" : \"keane@example.com\",\n        \"phone\" : \"(800) 555-0111\",\n        \"mobile\" : \"(800) 555-0189\",\n        \"displayAddressLines\" : [ \"Berryl Ltd.\", \"Berryl John Keane\", \"2 Taranulla Drive\", \"First floor\", \"Backyard\", \"St.Eves\", \"CARNIVALY\", \"2XJ90\", \"UNITED KINGDOM\" ],\n        \"vatId\" : \"DE123456789\",\n        \"taxNumber\" : \"HRE 987654/32123/864516\",\n        \"birthDate\" : \"1985-05-11\"\n      },\n      \"defaultShippingMethodId\" : \"e3dbf353-c0b9-476a-8bba-9798b94dc002\",\n      \"defaultPaymentMethodId\" : \"268bee44-b6a9-4f0d-beef-f593a08c0d6b\",\n      \"defaultPickupOptionId\" : null,\n      \"creationDate\" : \"2026-06-02T06:37:33.827\",\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/customers/ebdb132f-0ead-425b-b2ee-4cffedacf460\"\n        },\n        \"customer\" : {\n          \"href\" : \"https://yourshop.api.urn/customers/ebdb132f-0ead-425b-b2ee-4cffedacf460\"\n        },\n        \"events\" : {\n          \"href\" : \"https://yourshop.api.urn/customers/ebdb132f-0ead-425b-b2ee-4cffedacf460/events\"\n        },\n        \"customer-groups\" : {\n          \"href\" : \"https://yourshop.api.urn/customers/ebdb132f-0ead-425b-b2ee-4cffedacf460/customer-groups\"\n        }\n      },\n      \"_id\" : \"ebdb132f-0ead-425b-b2ee-4cffedacf460\"\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/customer-groups/03d6d0a7-e7ad-41ee-8c47-a34cbdcf8433/customers?page=0&size=20\"\n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\" : 2,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}",
+      "body" : "{\n  \"_embedded\" : {\n    \"customers\" : [ {\n      \"email\" : \"berryl@epages.com\",\n      \"customerNumber\" : \"1001\",\n      \"customerOrigin\" : \"STOREFRONT\",\n      \"defaultShippingAddress\" : {\n        \"salutation\" : \"Mr\",\n        \"gender\" : \"MALE\",\n        \"company\" : \"Berryl Ltd.\",\n        \"title\" : \"Dr\",\n        \"firstName\" : \"Berryl\",\n        \"middleName\" : \"John\",\n        \"lastName\" : \"Keane\",\n        \"street\" : \"Taranulla Drive\",\n        \"houseNumber\" : \"2\",\n        \"street2\" : \"First floor\",\n        \"addressExtension\" : \"Backyard\",\n        \"postalCode\" : \"2XJ90\",\n        \"dependentLocality\" : \"St.Eves\",\n        \"city\" : \"Carnivaly\",\n        \"country\" : \"GB\",\n        \"state\" : \"Frogmooragie\",\n        \"email\" : \"keane@example.com\",\n        \"phone\" : \"(800) 555-0111\",\n        \"mobile\" : \"(800) 555-0189\",\n        \"displayAddressLines\" : [ \"Berryl Ltd.\", \"Berryl John Keane\", \"2 Taranulla Drive\", \"First floor\", \"Backyard\", \"St.Eves\", \"CARNIVALY\", \"2XJ90\", \"UNITED KINGDOM\" ],\n        \"doorCode\" : \"456\"\n      },\n      \"defaultBillingAddress\" : {\n        \"salutation\" : \"Mr\",\n        \"gender\" : \"MALE\",\n        \"company\" : \"Berryl Ltd.\",\n        \"title\" : \"Dr\",\n        \"firstName\" : \"Berryl\",\n        \"middleName\" : \"John\",\n        \"lastName\" : \"Keane\",\n        \"street\" : \"Taranulla Drive\",\n        \"houseNumber\" : \"2\",\n        \"street2\" : \"First floor\",\n        \"addressExtension\" : \"Backyard\",\n        \"postalCode\" : \"2XJ90\",\n        \"dependentLocality\" : \"St.Eves\",\n        \"city\" : \"Carnivaly\",\n        \"country\" : \"GB\",\n        \"state\" : \"Frogmooragie\",\n        \"email\" : \"keane@example.com\",\n        \"phone\" : \"(800) 555-0111\",\n        \"mobile\" : \"(800) 555-0189\",\n        \"displayAddressLines\" : [ \"Berryl Ltd.\", \"Berryl John Keane\", \"2 Taranulla Drive\", \"First floor\", \"Backyard\", \"St.Eves\", \"CARNIVALY\", \"2XJ90\", \"UNITED KINGDOM\" ],\n        \"vatId\" : \"DE123456789\",\n        \"taxNumber\" : \"HRE 987654/32123/864516\",\n        \"birthDate\" : \"1985-05-11\"\n      },\n      \"defaultShippingMethodId\" : \"9b39319a-d0bb-4173-a25f-b8b7eeb93975\",\n      \"defaultPaymentMethodId\" : \"5b5fe13d-c0b6-4a86-8170-daa1de429b22\",\n      \"defaultPickupOptionId\" : null,\n      \"creationDate\" : \"2026-08-04T07:35:26.419\",\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/customers/63a74ae9-a103-48d6-a518-305f68ffc47c\"\n        },\n        \"customer\" : {\n          \"href\" : \"https://yourshop.api.urn/customers/63a74ae9-a103-48d6-a518-305f68ffc47c\"\n        },\n        \"events\" : {\n          \"href\" : \"https://yourshop.api.urn/customers/63a74ae9-a103-48d6-a518-305f68ffc47c/events\"\n        },\n        \"customer-groups\" : {\n          \"href\" : \"https://yourshop.api.urn/customers/63a74ae9-a103-48d6-a518-305f68ffc47c/customer-groups\"\n        }\n      },\n      \"_id\" : \"63a74ae9-a103-48d6-a518-305f68ffc47c\"\n    }, {\n      \"email\" : \"astrid@epages.com\",\n      \"customerNumber\" : \"1000\",\n      \"customerOrigin\" : \"STOREFRONT\",\n      \"defaultShippingAddress\" : {\n        \"salutation\" : \"Mrs\",\n        \"gender\" : \"FEMALE\",\n        \"company\" : \"Astrid Alster GmbH\",\n        \"title\" : \"Dr\",\n        \"firstName\" : \"Astrid\",\n        \"middleName\" : \"Agnes\",\n        \"lastName\" : \"Alster\",\n        \"street\" : \"Alsterwasserweg\",\n        \"houseNumber\" : \"2\",\n        \"street2\" : \"Erdgeschoss\",\n        \"addressExtension\" : \"Hinterhof\",\n        \"postalCode\" : \"20999\",\n        \"dependentLocality\" : \"Seevetal\",\n        \"city\" : \"Alsterwasser\",\n        \"country\" : \"DE\",\n        \"state\" : \"Hamburg\",\n        \"email\" : \"a.alsterh@example.com\",\n        \"phone\" : \"(800) 555-0102\",\n        \"mobile\" : \"(800) 555-0103\",\n        \"displayAddressLines\" : [ \"Astrid Alster GmbH\", \"Astrid Agnes Alster\", \"Seevetal\", \"Alsterwasserweg 2\", \"Erdgeschoss\", \"Hinterhof\", \"20999 Alsterwasser\", \"GERMANY\" ],\n        \"doorCode\" : \"456\"\n      },\n      \"defaultBillingAddress\" : {\n        \"salutation\" : \"Mrs\",\n        \"gender\" : \"FEMALE\",\n        \"company\" : \"Astrid Alster GmbH\",\n        \"title\" : \"Dr\",\n        \"firstName\" : \"Astrid\",\n        \"middleName\" : \"Agnes\",\n        \"lastName\" : \"Alster\",\n        \"street\" : \"Alsterwasserweg\",\n        \"houseNumber\" : \"2\",\n        \"street2\" : \"Erdgeschoss\",\n        \"addressExtension\" : \"Hinterhof\",\n        \"postalCode\" : \"20999\",\n        \"dependentLocality\" : \"Seevetal\",\n        \"city\" : \"Alsterwasser\",\n        \"country\" : \"DE\",\n        \"state\" : \"Hamburg\",\n        \"email\" : \"a.alsterh@example.com\",\n        \"phone\" : \"(800) 555-0102\",\n        \"mobile\" : \"(800) 555-0103\",\n        \"displayAddressLines\" : [ \"Astrid Alster GmbH\", \"Astrid Agnes Alster\", \"Seevetal\", \"Alsterwasserweg 2\", \"Erdgeschoss\", \"Hinterhof\", \"20999 Alsterwasser\", \"GERMANY\" ],\n        \"vatId\" : \"DE123456789\",\n        \"taxNumber\" : \"HRE 987654/32123/864516\",\n        \"birthDate\" : \"1985-05-11\"\n      },\n      \"defaultShippingMethodId\" : \"2fddc9cf-795a-47e5-be36-754f40d60c87\",\n      \"defaultPaymentMethodId\" : \"56f758cb-ee69-413c-b155-2175030acae2\",\n      \"defaultPickupOptionId\" : null,\n      \"creationDate\" : \"2026-08-04T07:35:26.397\",\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/customers/922e5350-fe5b-4462-b02d-62c86b84c447\"\n        },\n        \"customer\" : {\n          \"href\" : \"https://yourshop.api.urn/customers/922e5350-fe5b-4462-b02d-62c86b84c447\"\n        },\n        \"events\" : {\n          \"href\" : \"https://yourshop.api.urn/customers/922e5350-fe5b-4462-b02d-62c86b84c447/events\"\n        },\n        \"customer-groups\" : {\n          \"href\" : \"https://yourshop.api.urn/customers/922e5350-fe5b-4462-b02d-62c86b84c447/customer-groups\"\n        }\n      },\n      \"_id\" : \"922e5350-fe5b-4462-b02d-62c86b84c447\"\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/customer-groups/a314cc89-e88e-4f29-aa49-3ca527e79a7d/customers?page=0&size=20\"\n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\" : 2,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}",
       "code" : 200
     } ]
   }, {
@@ -4685,7 +4685,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"_embedded\" : {\n    \"customers\" : [ {\n      \"email\" : \"64e3a148-c3f7-4657-8f47-0204de147051@epages.com\",\n      \"customerNumber\" : \"1000\",\n      \"customerOrigin\" : \"STOREFRONT\",\n      \"defaultShippingAddress\" : {\n        \"salutation\" : \"Mrs\",\n        \"gender\" : \"FEMALE\",\n        \"company\" : \"Astrid Alster GmbH\",\n        \"title\" : \"Dr\",\n        \"firstName\" : \"Astrid\",\n        \"middleName\" : \"Agnes\",\n        \"lastName\" : \"Alster\",\n        \"street\" : \"Alsterwasserweg\",\n        \"houseNumber\" : \"2\",\n        \"street2\" : \"Erdgeschoss\",\n        \"addressExtension\" : \"Hinterhof\",\n        \"postalCode\" : \"20999\",\n        \"dependentLocality\" : \"Seevetal\",\n        \"city\" : \"Alsterwasser\",\n        \"country\" : \"DE\",\n        \"state\" : \"Hamburg\",\n        \"email\" : \"a.alsterh@example.com\",\n        \"phone\" : \"(800) 555-0102\",\n        \"mobile\" : \"(800) 555-0103\",\n        \"displayAddressLines\" : [ \"Astrid Alster GmbH\", \"Astrid Agnes Alster\", \"Seevetal\", \"Alsterwasserweg 2\", \"Erdgeschoss\", \"Hinterhof\", \"20999 Alsterwasser\", \"GERMANY\" ],\n        \"doorCode\" : \"456\"\n      },\n      \"defaultBillingAddress\" : {\n        \"salutation\" : \"Mrs\",\n        \"gender\" : \"FEMALE\",\n        \"company\" : \"Astrid Alster GmbH\",\n        \"title\" : \"Dr\",\n        \"firstName\" : \"Astrid\",\n        \"middleName\" : \"Agnes\",\n        \"lastName\" : \"Alster\",\n        \"street\" : \"Alsterwasserweg\",\n        \"houseNumber\" : \"2\",\n        \"street2\" : \"Erdgeschoss\",\n        \"addressExtension\" : \"Hinterhof\",\n        \"postalCode\" : \"20999\",\n        \"dependentLocality\" : \"Seevetal\",\n        \"city\" : \"Alsterwasser\",\n        \"country\" : \"DE\",\n        \"state\" : \"Hamburg\",\n        \"email\" : \"a.alsterh@example.com\",\n        \"phone\" : \"(800) 555-0102\",\n        \"mobile\" : \"(800) 555-0103\",\n        \"displayAddressLines\" : [ \"Astrid Alster GmbH\", \"Astrid Agnes Alster\", \"Seevetal\", \"Alsterwasserweg 2\", \"Erdgeschoss\", \"Hinterhof\", \"20999 Alsterwasser\", \"GERMANY\" ],\n        \"vatId\" : \"DE123456789\",\n        \"taxNumber\" : \"HRE 987654/32123/864516\",\n        \"birthDate\" : \"1985-05-11\"\n      },\n      \"defaultShippingMethodId\" : \"ecebbb56-fb59-4fee-80f9-56d4edf11342\",\n      \"defaultPaymentMethodId\" : \"b05b0828-2d48-4c87-ac64-3aeb8d7210d8\",\n      \"defaultPickupOptionId\" : null,\n      \"creationDate\" : \"2026-06-02T06:37:13.797\",\n      \"testCustomer\" : true,\n      \"customerComment\" : \"Great customer!\",\n      \"_embedded\" : {\n        \"orderSummary\" : {\n          \"total\" : 2,\n          \"openOrders\" : 1,\n          \"grandTotal\" : {\n            \"currency\" : \"EUR\",\n            \"amount\" : 115\n          },\n          \"average\" : {\n            \"currency\" : \"EUR\",\n            \"amount\" : 57.5\n          },\n          \"lastOrderDate\" : \"2026-06-02T06:37:13.817\",\n          \"lastOrder\" : \"9c25b5c6-37ea-4972-a254-33028694c056\"\n        },\n        \"customerGroups\" : [ {\n          \"discountPercentage\" : -0.1,\n          \"name\" : \"Subscribers\",\n          \"_id\" : \"1b4aebc9-e7c3-476a-909d-c3e62286e112\"\n        } ]\n      },\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/customers/41f55fa6-4b26-4e7e-acb8-3433646f9716\"\n        },\n        \"customer\" : {\n          \"href\" : \"https://yourshop.api.urn/customers/41f55fa6-4b26-4e7e-acb8-3433646f9716\"\n        },\n        \"events\" : {\n          \"href\" : \"https://yourshop.api.urn/customers/41f55fa6-4b26-4e7e-acb8-3433646f9716/events\"\n        },\n        \"customer-groups\" : {\n          \"href\" : \"https://yourshop.api.urn/customers/41f55fa6-4b26-4e7e-acb8-3433646f9716/customer-groups\"\n        }\n      },\n      \"_id\" : \"41f55fa6-4b26-4e7e-acb8-3433646f9716\"\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/customers?page=0&size=20&sort=customerName,asc\"\n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\" : 1,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}",
+      "body" : "{\n  \"_embedded\" : {\n    \"customers\" : [ {\n      \"email\" : \"cebb48c3-71b4-4e4b-95bb-9005fac36265@epages.com\",\n      \"customerNumber\" : \"1000\",\n      \"customerOrigin\" : \"STOREFRONT\",\n      \"defaultShippingAddress\" : {\n        \"salutation\" : \"Mrs\",\n        \"gender\" : \"FEMALE\",\n        \"company\" : \"Astrid Alster GmbH\",\n        \"title\" : \"Dr\",\n        \"firstName\" : \"Astrid\",\n        \"middleName\" : \"Agnes\",\n        \"lastName\" : \"Alster\",\n        \"street\" : \"Alsterwasserweg\",\n        \"houseNumber\" : \"2\",\n        \"street2\" : \"Erdgeschoss\",\n        \"addressExtension\" : \"Hinterhof\",\n        \"postalCode\" : \"20999\",\n        \"dependentLocality\" : \"Seevetal\",\n        \"city\" : \"Alsterwasser\",\n        \"country\" : \"DE\",\n        \"state\" : \"Hamburg\",\n        \"email\" : \"a.alsterh@example.com\",\n        \"phone\" : \"(800) 555-0102\",\n        \"mobile\" : \"(800) 555-0103\",\n        \"displayAddressLines\" : [ \"Astrid Alster GmbH\", \"Astrid Agnes Alster\", \"Seevetal\", \"Alsterwasserweg 2\", \"Erdgeschoss\", \"Hinterhof\", \"20999 Alsterwasser\", \"GERMANY\" ],\n        \"doorCode\" : \"456\"\n      },\n      \"defaultBillingAddress\" : {\n        \"salutation\" : \"Mrs\",\n        \"gender\" : \"FEMALE\",\n        \"company\" : \"Astrid Alster GmbH\",\n        \"title\" : \"Dr\",\n        \"firstName\" : \"Astrid\",\n        \"middleName\" : \"Agnes\",\n        \"lastName\" : \"Alster\",\n        \"street\" : \"Alsterwasserweg\",\n        \"houseNumber\" : \"2\",\n        \"street2\" : \"Erdgeschoss\",\n        \"addressExtension\" : \"Hinterhof\",\n        \"postalCode\" : \"20999\",\n        \"dependentLocality\" : \"Seevetal\",\n        \"city\" : \"Alsterwasser\",\n        \"country\" : \"DE\",\n        \"state\" : \"Hamburg\",\n        \"email\" : \"a.alsterh@example.com\",\n        \"phone\" : \"(800) 555-0102\",\n        \"mobile\" : \"(800) 555-0103\",\n        \"displayAddressLines\" : [ \"Astrid Alster GmbH\", \"Astrid Agnes Alster\", \"Seevetal\", \"Alsterwasserweg 2\", \"Erdgeschoss\", \"Hinterhof\", \"20999 Alsterwasser\", \"GERMANY\" ],\n        \"vatId\" : \"DE123456789\",\n        \"taxNumber\" : \"HRE 987654/32123/864516\",\n        \"birthDate\" : \"1985-05-11\"\n      },\n      \"defaultShippingMethodId\" : \"13865ce6-f565-496f-800a-b0abd20bc873\",\n      \"defaultPaymentMethodId\" : \"cf11471a-6ea0-4e1b-9eb3-7140cba9d28f\",\n      \"defaultPickupOptionId\" : null,\n      \"creationDate\" : \"2026-08-04T07:34:13.828\",\n      \"testCustomer\" : true,\n      \"customerComment\" : \"Great customer!\",\n      \"_embedded\" : {\n        \"orderSummary\" : {\n          \"total\" : 2,\n          \"openOrders\" : 1,\n          \"grandTotal\" : {\n            \"currency\" : \"EUR\",\n            \"amount\" : 115\n          },\n          \"average\" : {\n            \"currency\" : \"EUR\",\n            \"amount\" : 57.5\n          },\n          \"lastOrderDate\" : \"2026-08-04T07:34:13.989\",\n          \"lastOrder\" : \"99195d41-ba9e-4d8c-8af1-2c3d01850f21\"\n        },\n        \"customerGroups\" : [ {\n          \"discountPercentage\" : -0.1,\n          \"name\" : \"Subscribers\",\n          \"_id\" : \"aff7e39f-fa1b-40b7-9001-7549b8b0751f\"\n        } ]\n      },\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/customers/3f95c03d-a2ce-4e1d-bbe9-e763a45112c2\"\n        },\n        \"customer\" : {\n          \"href\" : \"https://yourshop.api.urn/customers/3f95c03d-a2ce-4e1d-bbe9-e763a45112c2\"\n        },\n        \"events\" : {\n          \"href\" : \"https://yourshop.api.urn/customers/3f95c03d-a2ce-4e1d-bbe9-e763a45112c2/events\"\n        },\n        \"customer-groups\" : {\n          \"href\" : \"https://yourshop.api.urn/customers/3f95c03d-a2ce-4e1d-bbe9-e763a45112c2/customer-groups\"\n        }\n      },\n      \"_id\" : \"3f95c03d-a2ce-4e1d-bbe9-e763a45112c2\"\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/customers?page=0&size=20&sort=customerName,asc\"\n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\" : 1,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}",
       "code" : 200
     } ]
   }, {
@@ -4708,7 +4708,7 @@
       } ],
       "body" : {
         "mode" : "raw",
-        "raw" : "{\n  \"defaultPaymentMethodId\" : \"380e140b-086a-44b0-b4e5-702cb328545d\",\n  \"defaultShippingMethodId\" : \"7c2683d9-9d8b-4afd-81ad-d19a1a5777be\",\n  \"billingAddress\" : {\n    \"salutation\" : \"Mrs\",\n    \"gender\" : \"FEMALE\",\n    \"company\" : \"Astrid Alster GmbH\",\n    \"title\" : \"Dr\",\n    \"firstName\" : \"Astrid\",\n    \"middleName\" : \"Agnes\",\n    \"lastName\" : \"Alster\",\n    \"street\" : \"Alsterwasserweg\",\n    \"houseNumber\" : \"2\",\n    \"street2\" : \"Erdgeschoss\",\n    \"addressExtension\" : \"Hinterhof\",\n    \"postalCode\" : \"20999\",\n    \"dependentLocality\" : \"Seevetal\",\n    \"city\" : \"Alsterwasser\",\n    \"country\" : \"DE\",\n    \"state\" : \"Hamburg\",\n    \"email\" : \"a.alsterh@example.com\",\n    \"phone\" : \"(800) 555-0102\",\n    \"mobile\" : \"(800) 555-0103\",\n    \"vatId\" : \"DE123456789\",\n    \"taxNumber\" : \"HRE 987654/32123/864516\",\n    \"birthDate\" : \"1985-05-11\",\n    \"_id\" : null\n  },\n  \"email\" : \"a.alsterh@example.com\",\n  \"customerComment\" : \"A reliable customer\",\n  \"customerOrigin\" : \"IMPORT\",\n  \"shippingAddress\" : {\n    \"salutation\" : \"Mrs\",\n    \"gender\" : \"FEMALE\",\n    \"company\" : \"Astrid Alster GmbH\",\n    \"title\" : \"Dr\",\n    \"firstName\" : \"Astrid\",\n    \"middleName\" : \"Agnes\",\n    \"lastName\" : \"Alster\",\n    \"street\" : \"Alsterwasserweg\",\n    \"houseNumber\" : \"2\",\n    \"street2\" : \"Erdgeschoss\",\n    \"addressExtension\" : \"Hinterhof\",\n    \"postalCode\" : \"20999\",\n    \"dependentLocality\" : \"Seevetal\",\n    \"city\" : \"Alsterwasser\",\n    \"country\" : \"DE\",\n    \"state\" : \"Hamburg\",\n    \"email\" : \"a.alsterh@example.com\",\n    \"phone\" : \"(800) 555-0102\",\n    \"mobile\" : \"(800) 555-0103\",\n    \"doorCode\" : \"456\",\n    \"_id\" : null\n  }\n}",
+        "raw" : "{\n  \"defaultPaymentMethodId\" : \"a6d59566-4bc6-4ab5-9d0f-1d96392ae00a\",\n  \"defaultShippingMethodId\" : \"6eb83c0e-f935-4e71-8c2c-e56485298e6f\",\n  \"billingAddress\" : {\n    \"salutation\" : \"Mrs\",\n    \"gender\" : \"FEMALE\",\n    \"company\" : \"Astrid Alster GmbH\",\n    \"title\" : \"Dr\",\n    \"firstName\" : \"Astrid\",\n    \"middleName\" : \"Agnes\",\n    \"lastName\" : \"Alster\",\n    \"street\" : \"Alsterwasserweg\",\n    \"houseNumber\" : \"2\",\n    \"street2\" : \"Erdgeschoss\",\n    \"addressExtension\" : \"Hinterhof\",\n    \"postalCode\" : \"20999\",\n    \"dependentLocality\" : \"Seevetal\",\n    \"city\" : \"Alsterwasser\",\n    \"country\" : \"DE\",\n    \"state\" : \"Hamburg\",\n    \"email\" : \"a.alsterh@example.com\",\n    \"phone\" : \"(800) 555-0102\",\n    \"mobile\" : \"(800) 555-0103\",\n    \"vatId\" : \"DE123456789\",\n    \"taxNumber\" : \"HRE 987654/32123/864516\",\n    \"birthDate\" : \"1985-05-11\",\n    \"_id\" : null\n  },\n  \"email\" : \"a.alsterh@example.com\",\n  \"customerComment\" : \"A reliable customer\",\n  \"customerOrigin\" : \"IMPORT\",\n  \"shippingAddress\" : {\n    \"salutation\" : \"Mrs\",\n    \"gender\" : \"FEMALE\",\n    \"company\" : \"Astrid Alster GmbH\",\n    \"title\" : \"Dr\",\n    \"firstName\" : \"Astrid\",\n    \"middleName\" : \"Agnes\",\n    \"lastName\" : \"Alster\",\n    \"street\" : \"Alsterwasserweg\",\n    \"houseNumber\" : \"2\",\n    \"street2\" : \"Erdgeschoss\",\n    \"addressExtension\" : \"Hinterhof\",\n    \"postalCode\" : \"20999\",\n    \"dependentLocality\" : \"Seevetal\",\n    \"city\" : \"Alsterwasser\",\n    \"country\" : \"DE\",\n    \"state\" : \"Hamburg\",\n    \"email\" : \"a.alsterh@example.com\",\n    \"phone\" : \"(800) 555-0102\",\n    \"mobile\" : \"(800) 555-0103\",\n    \"doorCode\" : \"456\",\n    \"_id\" : null\n  }\n}",
         "urlencoded" : [ ]
       }
     },
@@ -4729,7 +4729,7 @@
         } ],
         "body" : {
           "mode" : "raw",
-          "raw" : "{\n  \"defaultPaymentMethodId\" : \"380e140b-086a-44b0-b4e5-702cb328545d\",\n  \"defaultShippingMethodId\" : \"7c2683d9-9d8b-4afd-81ad-d19a1a5777be\",\n  \"billingAddress\" : {\n    \"salutation\" : \"Mrs\",\n    \"gender\" : \"FEMALE\",\n    \"company\" : \"Astrid Alster GmbH\",\n    \"title\" : \"Dr\",\n    \"firstName\" : \"Astrid\",\n    \"middleName\" : \"Agnes\",\n    \"lastName\" : \"Alster\",\n    \"street\" : \"Alsterwasserweg\",\n    \"houseNumber\" : \"2\",\n    \"street2\" : \"Erdgeschoss\",\n    \"addressExtension\" : \"Hinterhof\",\n    \"postalCode\" : \"20999\",\n    \"dependentLocality\" : \"Seevetal\",\n    \"city\" : \"Alsterwasser\",\n    \"country\" : \"DE\",\n    \"state\" : \"Hamburg\",\n    \"email\" : \"a.alsterh@example.com\",\n    \"phone\" : \"(800) 555-0102\",\n    \"mobile\" : \"(800) 555-0103\",\n    \"vatId\" : \"DE123456789\",\n    \"taxNumber\" : \"HRE 987654/32123/864516\",\n    \"birthDate\" : \"1985-05-11\",\n    \"_id\" : null\n  },\n  \"email\" : \"a.alsterh@example.com\",\n  \"customerComment\" : \"A reliable customer\",\n  \"customerOrigin\" : \"IMPORT\",\n  \"shippingAddress\" : {\n    \"salutation\" : \"Mrs\",\n    \"gender\" : \"FEMALE\",\n    \"company\" : \"Astrid Alster GmbH\",\n    \"title\" : \"Dr\",\n    \"firstName\" : \"Astrid\",\n    \"middleName\" : \"Agnes\",\n    \"lastName\" : \"Alster\",\n    \"street\" : \"Alsterwasserweg\",\n    \"houseNumber\" : \"2\",\n    \"street2\" : \"Erdgeschoss\",\n    \"addressExtension\" : \"Hinterhof\",\n    \"postalCode\" : \"20999\",\n    \"dependentLocality\" : \"Seevetal\",\n    \"city\" : \"Alsterwasser\",\n    \"country\" : \"DE\",\n    \"state\" : \"Hamburg\",\n    \"email\" : \"a.alsterh@example.com\",\n    \"phone\" : \"(800) 555-0102\",\n    \"mobile\" : \"(800) 555-0103\",\n    \"doorCode\" : \"456\",\n    \"_id\" : null\n  }\n}",
+          "raw" : "{\n  \"defaultPaymentMethodId\" : \"a6d59566-4bc6-4ab5-9d0f-1d96392ae00a\",\n  \"defaultShippingMethodId\" : \"6eb83c0e-f935-4e71-8c2c-e56485298e6f\",\n  \"billingAddress\" : {\n    \"salutation\" : \"Mrs\",\n    \"gender\" : \"FEMALE\",\n    \"company\" : \"Astrid Alster GmbH\",\n    \"title\" : \"Dr\",\n    \"firstName\" : \"Astrid\",\n    \"middleName\" : \"Agnes\",\n    \"lastName\" : \"Alster\",\n    \"street\" : \"Alsterwasserweg\",\n    \"houseNumber\" : \"2\",\n    \"street2\" : \"Erdgeschoss\",\n    \"addressExtension\" : \"Hinterhof\",\n    \"postalCode\" : \"20999\",\n    \"dependentLocality\" : \"Seevetal\",\n    \"city\" : \"Alsterwasser\",\n    \"country\" : \"DE\",\n    \"state\" : \"Hamburg\",\n    \"email\" : \"a.alsterh@example.com\",\n    \"phone\" : \"(800) 555-0102\",\n    \"mobile\" : \"(800) 555-0103\",\n    \"vatId\" : \"DE123456789\",\n    \"taxNumber\" : \"HRE 987654/32123/864516\",\n    \"birthDate\" : \"1985-05-11\",\n    \"_id\" : null\n  },\n  \"email\" : \"a.alsterh@example.com\",\n  \"customerComment\" : \"A reliable customer\",\n  \"customerOrigin\" : \"IMPORT\",\n  \"shippingAddress\" : {\n    \"salutation\" : \"Mrs\",\n    \"gender\" : \"FEMALE\",\n    \"company\" : \"Astrid Alster GmbH\",\n    \"title\" : \"Dr\",\n    \"firstName\" : \"Astrid\",\n    \"middleName\" : \"Agnes\",\n    \"lastName\" : \"Alster\",\n    \"street\" : \"Alsterwasserweg\",\n    \"houseNumber\" : \"2\",\n    \"street2\" : \"Erdgeschoss\",\n    \"addressExtension\" : \"Hinterhof\",\n    \"postalCode\" : \"20999\",\n    \"dependentLocality\" : \"Seevetal\",\n    \"city\" : \"Alsterwasser\",\n    \"country\" : \"DE\",\n    \"state\" : \"Hamburg\",\n    \"email\" : \"a.alsterh@example.com\",\n    \"phone\" : \"(800) 555-0102\",\n    \"mobile\" : \"(800) 555-0103\",\n    \"doorCode\" : \"456\",\n    \"_id\" : null\n  }\n}",
           "urlencoded" : [ ]
         }
       },
@@ -4739,7 +4739,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"email\" : \"a.alsterh@example.com\",\n  \"customerNumber\" : \"1000\",\n  \"customerOrigin\" : \"IMPORT\",\n  \"defaultShippingAddress\" : {\n    \"salutation\" : \"Mrs\",\n    \"gender\" : \"FEMALE\",\n    \"company\" : \"Astrid Alster GmbH\",\n    \"title\" : \"Dr\",\n    \"firstName\" : \"Astrid\",\n    \"middleName\" : \"Agnes\",\n    \"lastName\" : \"Alster\",\n    \"street\" : \"Alsterwasserweg\",\n    \"houseNumber\" : \"2\",\n    \"street2\" : \"Erdgeschoss\",\n    \"addressExtension\" : \"Hinterhof\",\n    \"postalCode\" : \"20999\",\n    \"dependentLocality\" : \"Seevetal\",\n    \"city\" : \"Alsterwasser\",\n    \"country\" : \"DE\",\n    \"state\" : \"Hamburg\",\n    \"email\" : \"a.alsterh@example.com\",\n    \"phone\" : \"(800) 555-0102\",\n    \"mobile\" : \"(800) 555-0103\",\n    \"displayAddressLines\" : [ \"Astrid Alster GmbH\", \"Astrid Agnes Alster\", \"Seevetal\", \"Alsterwasserweg 2\", \"Erdgeschoss\", \"Hinterhof\", \"20999 Alsterwasser\", \"GERMANY\" ],\n    \"doorCode\" : \"456\"\n  },\n  \"defaultBillingAddress\" : {\n    \"salutation\" : \"Mrs\",\n    \"gender\" : \"FEMALE\",\n    \"company\" : \"Astrid Alster GmbH\",\n    \"title\" : \"Dr\",\n    \"firstName\" : \"Astrid\",\n    \"middleName\" : \"Agnes\",\n    \"lastName\" : \"Alster\",\n    \"street\" : \"Alsterwasserweg\",\n    \"houseNumber\" : \"2\",\n    \"street2\" : \"Erdgeschoss\",\n    \"addressExtension\" : \"Hinterhof\",\n    \"postalCode\" : \"20999\",\n    \"dependentLocality\" : \"Seevetal\",\n    \"city\" : \"Alsterwasser\",\n    \"country\" : \"DE\",\n    \"state\" : \"Hamburg\",\n    \"email\" : \"a.alsterh@example.com\",\n    \"phone\" : \"(800) 555-0102\",\n    \"mobile\" : \"(800) 555-0103\",\n    \"displayAddressLines\" : [ \"Astrid Alster GmbH\", \"Astrid Agnes Alster\", \"Seevetal\", \"Alsterwasserweg 2\", \"Erdgeschoss\", \"Hinterhof\", \"20999 Alsterwasser\", \"GERMANY\" ],\n    \"vatId\" : \"DE123456789\",\n    \"taxNumber\" : \"HRE 987654/32123/864516\",\n    \"birthDate\" : \"1985-05-11\"\n  },\n  \"defaultShippingMethodId\" : \"7c2683d9-9d8b-4afd-81ad-d19a1a5777be\",\n  \"defaultPaymentMethodId\" : \"380e140b-086a-44b0-b4e5-702cb328545d\",\n  \"defaultPickupOptionId\" : null,\n  \"creationDate\" : \"2026-06-02T06:37:13.519099254\",\n  \"testCustomer\" : false,\n  \"customerComment\" : \"A reliable customer\",\n  \"_embedded\" : {\n    \"orderSummary\" : {\n      \"total\" : 0,\n      \"openOrders\" : 0,\n      \"grandTotal\" : null,\n      \"average\" : null,\n      \"lastOrderDate\" : null,\n      \"lastOrder\" : null\n    },\n    \"recentOrders\" : [ ],\n    \"customerGroups\" : [ ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/customers/d599ab79-3886-4ec4-82fc-b257901188ae\"\n    },\n    \"customer\" : {\n      \"href\" : \"https://yourshop.api.urn/customers/d599ab79-3886-4ec4-82fc-b257901188ae\"\n    },\n    \"events\" : {\n      \"href\" : \"https://yourshop.api.urn/customers/d599ab79-3886-4ec4-82fc-b257901188ae/events\"\n    },\n    \"customer-groups\" : {\n      \"href\" : \"https://yourshop.api.urn/customers/d599ab79-3886-4ec4-82fc-b257901188ae/customer-groups\"\n    }\n  },\n  \"_id\" : \"d599ab79-3886-4ec4-82fc-b257901188ae\"\n}",
+      "body" : "{\n  \"email\" : \"a.alsterh@example.com\",\n  \"customerNumber\" : \"1000\",\n  \"customerOrigin\" : \"IMPORT\",\n  \"defaultShippingAddress\" : {\n    \"salutation\" : \"Mrs\",\n    \"gender\" : \"FEMALE\",\n    \"company\" : \"Astrid Alster GmbH\",\n    \"title\" : \"Dr\",\n    \"firstName\" : \"Astrid\",\n    \"middleName\" : \"Agnes\",\n    \"lastName\" : \"Alster\",\n    \"street\" : \"Alsterwasserweg\",\n    \"houseNumber\" : \"2\",\n    \"street2\" : \"Erdgeschoss\",\n    \"addressExtension\" : \"Hinterhof\",\n    \"postalCode\" : \"20999\",\n    \"dependentLocality\" : \"Seevetal\",\n    \"city\" : \"Alsterwasser\",\n    \"country\" : \"DE\",\n    \"state\" : \"Hamburg\",\n    \"email\" : \"a.alsterh@example.com\",\n    \"phone\" : \"(800) 555-0102\",\n    \"mobile\" : \"(800) 555-0103\",\n    \"displayAddressLines\" : [ \"Astrid Alster GmbH\", \"Astrid Agnes Alster\", \"Seevetal\", \"Alsterwasserweg 2\", \"Erdgeschoss\", \"Hinterhof\", \"20999 Alsterwasser\", \"GERMANY\" ],\n    \"doorCode\" : \"456\"\n  },\n  \"defaultBillingAddress\" : {\n    \"salutation\" : \"Mrs\",\n    \"gender\" : \"FEMALE\",\n    \"company\" : \"Astrid Alster GmbH\",\n    \"title\" : \"Dr\",\n    \"firstName\" : \"Astrid\",\n    \"middleName\" : \"Agnes\",\n    \"lastName\" : \"Alster\",\n    \"street\" : \"Alsterwasserweg\",\n    \"houseNumber\" : \"2\",\n    \"street2\" : \"Erdgeschoss\",\n    \"addressExtension\" : \"Hinterhof\",\n    \"postalCode\" : \"20999\",\n    \"dependentLocality\" : \"Seevetal\",\n    \"city\" : \"Alsterwasser\",\n    \"country\" : \"DE\",\n    \"state\" : \"Hamburg\",\n    \"email\" : \"a.alsterh@example.com\",\n    \"phone\" : \"(800) 555-0102\",\n    \"mobile\" : \"(800) 555-0103\",\n    \"displayAddressLines\" : [ \"Astrid Alster GmbH\", \"Astrid Agnes Alster\", \"Seevetal\", \"Alsterwasserweg 2\", \"Erdgeschoss\", \"Hinterhof\", \"20999 Alsterwasser\", \"GERMANY\" ],\n    \"vatId\" : \"DE123456789\",\n    \"taxNumber\" : \"HRE 987654/32123/864516\",\n    \"birthDate\" : \"1985-05-11\"\n  },\n  \"defaultShippingMethodId\" : \"6eb83c0e-f935-4e71-8c2c-e56485298e6f\",\n  \"defaultPaymentMethodId\" : \"a6d59566-4bc6-4ab5-9d0f-1d96392ae00a\",\n  \"defaultPickupOptionId\" : null,\n  \"creationDate\" : \"2026-08-04T07:34:13.221677231\",\n  \"testCustomer\" : false,\n  \"customerComment\" : \"A reliable customer\",\n  \"_embedded\" : {\n    \"orderSummary\" : {\n      \"total\" : 0,\n      \"openOrders\" : 0,\n      \"grandTotal\" : null,\n      \"average\" : null,\n      \"lastOrderDate\" : null,\n      \"lastOrder\" : null\n    },\n    \"recentOrders\" : [ ],\n    \"customerGroups\" : [ ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/customers/dd6449c3-ee65-4933-a289-a51672913a7d\"\n    },\n    \"customer\" : {\n      \"href\" : \"https://yourshop.api.urn/customers/dd6449c3-ee65-4933-a289-a51672913a7d\"\n    },\n    \"events\" : {\n      \"href\" : \"https://yourshop.api.urn/customers/dd6449c3-ee65-4933-a289-a51672913a7d/events\"\n    },\n    \"customer-groups\" : {\n      \"href\" : \"https://yourshop.api.urn/customers/dd6449c3-ee65-4933-a289-a51672913a7d/customer-groups\"\n    }\n  },\n  \"_id\" : \"dd6449c3-ee65-4933-a289-a51672913a7d\"\n}",
       "code" : 201
     } ]
   }, {
@@ -4793,7 +4793,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"email\" : \"a.alsterh@example.com\",\n  \"customerNumber\" : \"1000\",\n  \"customerOrigin\" : \"STOREFRONT\",\n  \"defaultShippingAddress\" : {\n    \"salutation\" : null,\n    \"gender\" : null,\n    \"company\" : null,\n    \"title\" : null,\n    \"firstName\" : \"Astrid\",\n    \"middleName\" : \"Agnes\",\n    \"lastName\" : \"Alster\",\n    \"street\" : null,\n    \"houseNumber\" : null,\n    \"street2\" : null,\n    \"addressExtension\" : null,\n    \"postalCode\" : null,\n    \"dependentLocality\" : null,\n    \"city\" : null,\n    \"country\" : null,\n    \"state\" : null,\n    \"email\" : \"a.alsterh@example.com\",\n    \"phone\" : null,\n    \"mobile\" : null,\n    \"displayAddressLines\" : [ ],\n    \"doorCode\" : null\n  },\n  \"defaultBillingAddress\" : {\n    \"salutation\" : null,\n    \"gender\" : null,\n    \"company\" : null,\n    \"title\" : null,\n    \"firstName\" : \"Astrid\",\n    \"middleName\" : \"Agnes\",\n    \"lastName\" : \"Alster\",\n    \"street\" : null,\n    \"houseNumber\" : null,\n    \"street2\" : null,\n    \"addressExtension\" : null,\n    \"postalCode\" : null,\n    \"dependentLocality\" : null,\n    \"city\" : null,\n    \"country\" : null,\n    \"state\" : null,\n    \"email\" : \"a.alsterh@example.com\",\n    \"phone\" : null,\n    \"mobile\" : null,\n    \"displayAddressLines\" : [ ],\n    \"vatId\" : null,\n    \"taxNumber\" : null,\n    \"birthDate\" : null\n  },\n  \"defaultShippingMethodId\" : null,\n  \"defaultPaymentMethodId\" : null,\n  \"defaultPickupOptionId\" : null,\n  \"creationDate\" : \"2026-06-02T06:37:11.009119834\",\n  \"_embedded\" : {\n    \"orderSummary\" : {\n      \"total\" : 0,\n      \"openOrders\" : 0,\n      \"grandTotal\" : null,\n      \"average\" : null,\n      \"lastOrderDate\" : null,\n      \"lastOrder\" : null\n    },\n    \"recentOrders\" : [ ],\n    \"customerGroups\" : [ ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/customers/7618144c-100b-4762-8e0b-1a6be339fa72\"\n    },\n    \"customer\" : {\n      \"href\" : \"https://yourshop.api.urn/customers/7618144c-100b-4762-8e0b-1a6be339fa72\"\n    },\n    \"events\" : {\n      \"href\" : \"https://yourshop.api.urn/customers/7618144c-100b-4762-8e0b-1a6be339fa72/events\"\n    },\n    \"customer-groups\" : {\n      \"href\" : \"https://yourshop.api.urn/customers/7618144c-100b-4762-8e0b-1a6be339fa72/customer-groups\"\n    }\n  },\n  \"_id\" : \"7618144c-100b-4762-8e0b-1a6be339fa72\"\n}",
+      "body" : "{\n  \"email\" : \"a.alsterh@example.com\",\n  \"customerNumber\" : \"1000\",\n  \"customerOrigin\" : \"STOREFRONT\",\n  \"defaultShippingAddress\" : {\n    \"salutation\" : null,\n    \"gender\" : null,\n    \"company\" : null,\n    \"title\" : null,\n    \"firstName\" : \"Astrid\",\n    \"middleName\" : \"Agnes\",\n    \"lastName\" : \"Alster\",\n    \"street\" : null,\n    \"houseNumber\" : null,\n    \"street2\" : null,\n    \"addressExtension\" : null,\n    \"postalCode\" : null,\n    \"dependentLocality\" : null,\n    \"city\" : null,\n    \"country\" : null,\n    \"state\" : null,\n    \"email\" : \"a.alsterh@example.com\",\n    \"phone\" : null,\n    \"mobile\" : null,\n    \"displayAddressLines\" : [ ],\n    \"doorCode\" : null\n  },\n  \"defaultBillingAddress\" : {\n    \"salutation\" : null,\n    \"gender\" : null,\n    \"company\" : null,\n    \"title\" : null,\n    \"firstName\" : \"Astrid\",\n    \"middleName\" : \"Agnes\",\n    \"lastName\" : \"Alster\",\n    \"street\" : null,\n    \"houseNumber\" : null,\n    \"street2\" : null,\n    \"addressExtension\" : null,\n    \"postalCode\" : null,\n    \"dependentLocality\" : null,\n    \"city\" : null,\n    \"country\" : null,\n    \"state\" : null,\n    \"email\" : \"a.alsterh@example.com\",\n    \"phone\" : null,\n    \"mobile\" : null,\n    \"displayAddressLines\" : [ ],\n    \"vatId\" : null,\n    \"taxNumber\" : null,\n    \"birthDate\" : null\n  },\n  \"defaultShippingMethodId\" : null,\n  \"defaultPaymentMethodId\" : null,\n  \"defaultPickupOptionId\" : null,\n  \"creationDate\" : \"2026-08-04T07:34:08.368763792\",\n  \"_embedded\" : {\n    \"orderSummary\" : {\n      \"total\" : 0,\n      \"openOrders\" : 0,\n      \"grandTotal\" : null,\n      \"average\" : null,\n      \"lastOrderDate\" : null,\n      \"lastOrder\" : null\n    },\n    \"recentOrders\" : [ ],\n    \"customerGroups\" : [ ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/customers/690217f1-456d-4d9a-b781-eb957aa8740e\"\n    },\n    \"customer\" : {\n      \"href\" : \"https://yourshop.api.urn/customers/690217f1-456d-4d9a-b781-eb957aa8740e\"\n    },\n    \"events\" : {\n      \"href\" : \"https://yourshop.api.urn/customers/690217f1-456d-4d9a-b781-eb957aa8740e/events\"\n    },\n    \"customer-groups\" : {\n      \"href\" : \"https://yourshop.api.urn/customers/690217f1-456d-4d9a-b781-eb957aa8740e/customer-groups\"\n    }\n  },\n  \"_id\" : \"690217f1-456d-4d9a-b781-eb957aa8740e\"\n}",
       "code" : 201
     }, {
       "id" : "customer-claim",
@@ -4822,7 +4822,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"email\" : \"a.alsterh@example.com\",\n  \"customerNumber\" : \"1000\",\n  \"customerOrigin\" : \"STOREFRONT\",\n  \"defaultShippingAddress\" : {\n    \"salutation\" : null,\n    \"gender\" : null,\n    \"company\" : null,\n    \"title\" : null,\n    \"firstName\" : \"Astrid\",\n    \"middleName\" : \"Agnes\",\n    \"lastName\" : \"Alster\",\n    \"street\" : null,\n    \"houseNumber\" : null,\n    \"street2\" : null,\n    \"addressExtension\" : null,\n    \"postalCode\" : null,\n    \"dependentLocality\" : null,\n    \"city\" : null,\n    \"country\" : null,\n    \"state\" : null,\n    \"email\" : \"a.alsterh@example.com\",\n    \"phone\" : null,\n    \"mobile\" : null,\n    \"displayAddressLines\" : [ ],\n    \"doorCode\" : null\n  },\n  \"defaultBillingAddress\" : {\n    \"salutation\" : null,\n    \"gender\" : null,\n    \"company\" : null,\n    \"title\" : null,\n    \"firstName\" : \"Astrid\",\n    \"middleName\" : \"Agnes\",\n    \"lastName\" : \"Alster\",\n    \"street\" : null,\n    \"houseNumber\" : null,\n    \"street2\" : null,\n    \"addressExtension\" : null,\n    \"postalCode\" : null,\n    \"dependentLocality\" : null,\n    \"city\" : null,\n    \"country\" : null,\n    \"state\" : null,\n    \"email\" : \"a.alsterh@example.com\",\n    \"phone\" : null,\n    \"mobile\" : null,\n    \"displayAddressLines\" : [ ],\n    \"vatId\" : null,\n    \"taxNumber\" : null,\n    \"birthDate\" : null\n  },\n  \"defaultShippingMethodId\" : null,\n  \"defaultPaymentMethodId\" : null,\n  \"defaultPickupOptionId\" : null,\n  \"creationDate\" : \"2026-06-02T06:36:56.134\",\n  \"_embedded\" : {\n    \"orderSummary\" : {\n      \"total\" : 0,\n      \"openOrders\" : 0,\n      \"grandTotal\" : null,\n      \"average\" : null,\n      \"lastOrderDate\" : null,\n      \"lastOrder\" : null\n    },\n    \"recentOrders\" : [ ],\n    \"customerGroups\" : [ ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/customers/60e2f2cb-7d7f-40a2-a8c9-8f3cd5af21e9\"\n    },\n    \"customer\" : {\n      \"href\" : \"https://yourshop.api.urn/customers/60e2f2cb-7d7f-40a2-a8c9-8f3cd5af21e9\"\n    },\n    \"events\" : {\n      \"href\" : \"https://yourshop.api.urn/customers/60e2f2cb-7d7f-40a2-a8c9-8f3cd5af21e9/events\"\n    },\n    \"customer-groups\" : {\n      \"href\" : \"https://yourshop.api.urn/customers/60e2f2cb-7d7f-40a2-a8c9-8f3cd5af21e9/customer-groups\"\n    }\n  },\n  \"_id\" : \"60e2f2cb-7d7f-40a2-a8c9-8f3cd5af21e9\"\n}",
+      "body" : "{\n  \"email\" : \"a.alsterh@example.com\",\n  \"customerNumber\" : \"1000\",\n  \"customerOrigin\" : \"STOREFRONT\",\n  \"defaultShippingAddress\" : {\n    \"salutation\" : null,\n    \"gender\" : null,\n    \"company\" : null,\n    \"title\" : null,\n    \"firstName\" : \"Astrid\",\n    \"middleName\" : \"Agnes\",\n    \"lastName\" : \"Alster\",\n    \"street\" : null,\n    \"houseNumber\" : null,\n    \"street2\" : null,\n    \"addressExtension\" : null,\n    \"postalCode\" : null,\n    \"dependentLocality\" : null,\n    \"city\" : null,\n    \"country\" : null,\n    \"state\" : null,\n    \"email\" : \"a.alsterh@example.com\",\n    \"phone\" : null,\n    \"mobile\" : null,\n    \"displayAddressLines\" : [ ],\n    \"doorCode\" : null\n  },\n  \"defaultBillingAddress\" : {\n    \"salutation\" : null,\n    \"gender\" : null,\n    \"company\" : null,\n    \"title\" : null,\n    \"firstName\" : \"Astrid\",\n    \"middleName\" : \"Agnes\",\n    \"lastName\" : \"Alster\",\n    \"street\" : null,\n    \"houseNumber\" : null,\n    \"street2\" : null,\n    \"addressExtension\" : null,\n    \"postalCode\" : null,\n    \"dependentLocality\" : null,\n    \"city\" : null,\n    \"country\" : null,\n    \"state\" : null,\n    \"email\" : \"a.alsterh@example.com\",\n    \"phone\" : null,\n    \"mobile\" : null,\n    \"displayAddressLines\" : [ ],\n    \"vatId\" : null,\n    \"taxNumber\" : null,\n    \"birthDate\" : null\n  },\n  \"defaultShippingMethodId\" : null,\n  \"defaultPaymentMethodId\" : null,\n  \"defaultPickupOptionId\" : null,\n  \"creationDate\" : \"2026-08-04T07:33:48.954\",\n  \"_embedded\" : {\n    \"orderSummary\" : {\n      \"total\" : 0,\n      \"openOrders\" : 0,\n      \"grandTotal\" : null,\n      \"average\" : null,\n      \"lastOrderDate\" : null,\n      \"lastOrder\" : null\n    },\n    \"recentOrders\" : [ ],\n    \"customerGroups\" : [ ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/customers/af97955b-775f-4354-8960-cb41dc9d9e66\"\n    },\n    \"customer\" : {\n      \"href\" : \"https://yourshop.api.urn/customers/af97955b-775f-4354-8960-cb41dc9d9e66\"\n    },\n    \"events\" : {\n      \"href\" : \"https://yourshop.api.urn/customers/af97955b-775f-4354-8960-cb41dc9d9e66/events\"\n    },\n    \"customer-groups\" : {\n      \"href\" : \"https://yourshop.api.urn/customers/af97955b-775f-4354-8960-cb41dc9d9e66/customer-groups\"\n    }\n  },\n  \"_id\" : \"af97955b-775f-4354-8960-cb41dc9d9e66\"\n}",
       "code" : 201
     } ]
   }, {
@@ -4845,7 +4845,7 @@
       } ],
       "body" : {
         "mode" : "raw",
-        "raw" : "{\n  \"email\" : \"c467069a-9dbe-4f4d-82e9-65a7268fda09@epages.com\",\n  \"defaultPickupOptionId\" : \"f8ee92a0-95dc-4f8d-b03b-f4bebecb91d6\",\n  \"customerComment\" : \"Reliable Customer\",\n  \"shippingAddress\" : {\n    \"salutation\" : \"Mr\",\n    \"gender\" : \"MALE\",\n    \"company\" : \"Berryl Ltd.\",\n    \"title\" : \"Dr\",\n    \"firstName\" : \"Berryl\",\n    \"middleName\" : \"John\",\n    \"lastName\" : \"Keane\",\n    \"street\" : \"Taranulla Drive\",\n    \"houseNumber\" : \"2\",\n    \"street2\" : \"First floor\",\n    \"addressExtension\" : \"Backyard\",\n    \"postalCode\" : \"2XJ90\",\n    \"dependentLocality\" : \"St.Eves\",\n    \"city\" : \"Carnivaly\",\n    \"country\" : \"GB\",\n    \"state\" : \"Frogmooragie\",\n    \"email\" : \"keane@example.com\",\n    \"phone\" : \"(800) 555-0111\",\n    \"mobile\" : \"(800) 555-0189\",\n    \"doorCode\" : \"456\",\n    \"_id\" : null\n  },\n  \"billingAddress\" : {\n    \"salutation\" : \"Mrs\",\n    \"gender\" : \"FEMALE\",\n    \"company\" : \"Astrid Alster GmbH\",\n    \"title\" : \"Dr\",\n    \"firstName\" : \"Astrid\",\n    \"middleName\" : \"Agnes\",\n    \"lastName\" : \"different lastname\",\n    \"street\" : \"different streetname\",\n    \"houseNumber\" : \"2\",\n    \"street2\" : \"Erdgeschoss\",\n    \"addressExtension\" : \"Hinterhof\",\n    \"postalCode\" : \"20999\",\n    \"dependentLocality\" : \"Seevetal\",\n    \"city\" : \"Alsterwasser\",\n    \"country\" : \"DE\",\n    \"state\" : \"Hamburg\",\n    \"email\" : \"a.alsterh@example.com\",\n    \"phone\" : \"(800) 555-0102\",\n    \"mobile\" : \"(800) 555-0103\",\n    \"vatId\" : \"DE123456789\",\n    \"taxNumber\" : \"HRE 987654/32123/864516\",\n    \"birthDate\" : \"1985-05-11\",\n    \"_id\" : null\n  }\n}",
+        "raw" : "{\n  \"email\" : \"b137318b-c0cd-45d4-a5a7-67c581358dff@epages.com\",\n  \"defaultPickupOptionId\" : \"3d85aee5-2bce-4fd3-8733-fd9501cf5d05\",\n  \"customerComment\" : \"Reliable Customer\",\n  \"shippingAddress\" : {\n    \"salutation\" : \"Mr\",\n    \"gender\" : \"MALE\",\n    \"company\" : \"Berryl Ltd.\",\n    \"title\" : \"Dr\",\n    \"firstName\" : \"Berryl\",\n    \"middleName\" : \"John\",\n    \"lastName\" : \"Keane\",\n    \"street\" : \"Taranulla Drive\",\n    \"houseNumber\" : \"2\",\n    \"street2\" : \"First floor\",\n    \"addressExtension\" : \"Backyard\",\n    \"postalCode\" : \"2XJ90\",\n    \"dependentLocality\" : \"St.Eves\",\n    \"city\" : \"Carnivaly\",\n    \"country\" : \"GB\",\n    \"state\" : \"Frogmooragie\",\n    \"email\" : \"keane@example.com\",\n    \"phone\" : \"(800) 555-0111\",\n    \"mobile\" : \"(800) 555-0189\",\n    \"doorCode\" : \"456\",\n    \"_id\" : null\n  },\n  \"billingAddress\" : {\n    \"salutation\" : \"Mrs\",\n    \"gender\" : \"FEMALE\",\n    \"company\" : \"Astrid Alster GmbH\",\n    \"title\" : \"Dr\",\n    \"firstName\" : \"Astrid\",\n    \"middleName\" : \"Agnes\",\n    \"lastName\" : \"different lastname\",\n    \"street\" : \"different streetname\",\n    \"houseNumber\" : \"2\",\n    \"street2\" : \"Erdgeschoss\",\n    \"addressExtension\" : \"Hinterhof\",\n    \"postalCode\" : \"20999\",\n    \"dependentLocality\" : \"Seevetal\",\n    \"city\" : \"Alsterwasser\",\n    \"country\" : \"DE\",\n    \"state\" : \"Hamburg\",\n    \"email\" : \"a.alsterh@example.com\",\n    \"phone\" : \"(800) 555-0102\",\n    \"mobile\" : \"(800) 555-0103\",\n    \"vatId\" : \"DE123456789\",\n    \"taxNumber\" : \"HRE 987654/32123/864516\",\n    \"birthDate\" : \"1985-05-11\",\n    \"_id\" : null\n  }\n}",
         "urlencoded" : [ ]
       }
     },
@@ -4866,7 +4866,7 @@
         } ],
         "body" : {
           "mode" : "raw",
-          "raw" : "{\n  \"email\" : \"c467069a-9dbe-4f4d-82e9-65a7268fda09@epages.com\",\n  \"defaultPickupOptionId\" : \"f8ee92a0-95dc-4f8d-b03b-f4bebecb91d6\",\n  \"customerComment\" : \"Reliable Customer\",\n  \"shippingAddress\" : {\n    \"salutation\" : \"Mr\",\n    \"gender\" : \"MALE\",\n    \"company\" : \"Berryl Ltd.\",\n    \"title\" : \"Dr\",\n    \"firstName\" : \"Berryl\",\n    \"middleName\" : \"John\",\n    \"lastName\" : \"Keane\",\n    \"street\" : \"Taranulla Drive\",\n    \"houseNumber\" : \"2\",\n    \"street2\" : \"First floor\",\n    \"addressExtension\" : \"Backyard\",\n    \"postalCode\" : \"2XJ90\",\n    \"dependentLocality\" : \"St.Eves\",\n    \"city\" : \"Carnivaly\",\n    \"country\" : \"GB\",\n    \"state\" : \"Frogmooragie\",\n    \"email\" : \"keane@example.com\",\n    \"phone\" : \"(800) 555-0111\",\n    \"mobile\" : \"(800) 555-0189\",\n    \"doorCode\" : \"456\",\n    \"_id\" : null\n  },\n  \"billingAddress\" : {\n    \"salutation\" : \"Mrs\",\n    \"gender\" : \"FEMALE\",\n    \"company\" : \"Astrid Alster GmbH\",\n    \"title\" : \"Dr\",\n    \"firstName\" : \"Astrid\",\n    \"middleName\" : \"Agnes\",\n    \"lastName\" : \"different lastname\",\n    \"street\" : \"different streetname\",\n    \"houseNumber\" : \"2\",\n    \"street2\" : \"Erdgeschoss\",\n    \"addressExtension\" : \"Hinterhof\",\n    \"postalCode\" : \"20999\",\n    \"dependentLocality\" : \"Seevetal\",\n    \"city\" : \"Alsterwasser\",\n    \"country\" : \"DE\",\n    \"state\" : \"Hamburg\",\n    \"email\" : \"a.alsterh@example.com\",\n    \"phone\" : \"(800) 555-0102\",\n    \"mobile\" : \"(800) 555-0103\",\n    \"vatId\" : \"DE123456789\",\n    \"taxNumber\" : \"HRE 987654/32123/864516\",\n    \"birthDate\" : \"1985-05-11\",\n    \"_id\" : null\n  }\n}",
+          "raw" : "{\n  \"email\" : \"b137318b-c0cd-45d4-a5a7-67c581358dff@epages.com\",\n  \"defaultPickupOptionId\" : \"3d85aee5-2bce-4fd3-8733-fd9501cf5d05\",\n  \"customerComment\" : \"Reliable Customer\",\n  \"shippingAddress\" : {\n    \"salutation\" : \"Mr\",\n    \"gender\" : \"MALE\",\n    \"company\" : \"Berryl Ltd.\",\n    \"title\" : \"Dr\",\n    \"firstName\" : \"Berryl\",\n    \"middleName\" : \"John\",\n    \"lastName\" : \"Keane\",\n    \"street\" : \"Taranulla Drive\",\n    \"houseNumber\" : \"2\",\n    \"street2\" : \"First floor\",\n    \"addressExtension\" : \"Backyard\",\n    \"postalCode\" : \"2XJ90\",\n    \"dependentLocality\" : \"St.Eves\",\n    \"city\" : \"Carnivaly\",\n    \"country\" : \"GB\",\n    \"state\" : \"Frogmooragie\",\n    \"email\" : \"keane@example.com\",\n    \"phone\" : \"(800) 555-0111\",\n    \"mobile\" : \"(800) 555-0189\",\n    \"doorCode\" : \"456\",\n    \"_id\" : null\n  },\n  \"billingAddress\" : {\n    \"salutation\" : \"Mrs\",\n    \"gender\" : \"FEMALE\",\n    \"company\" : \"Astrid Alster GmbH\",\n    \"title\" : \"Dr\",\n    \"firstName\" : \"Astrid\",\n    \"middleName\" : \"Agnes\",\n    \"lastName\" : \"different lastname\",\n    \"street\" : \"different streetname\",\n    \"houseNumber\" : \"2\",\n    \"street2\" : \"Erdgeschoss\",\n    \"addressExtension\" : \"Hinterhof\",\n    \"postalCode\" : \"20999\",\n    \"dependentLocality\" : \"Seevetal\",\n    \"city\" : \"Alsterwasser\",\n    \"country\" : \"DE\",\n    \"state\" : \"Hamburg\",\n    \"email\" : \"a.alsterh@example.com\",\n    \"phone\" : \"(800) 555-0102\",\n    \"mobile\" : \"(800) 555-0103\",\n    \"vatId\" : \"DE123456789\",\n    \"taxNumber\" : \"HRE 987654/32123/864516\",\n    \"birthDate\" : \"1985-05-11\",\n    \"_id\" : null\n  }\n}",
           "urlencoded" : [ ]
         }
       },
@@ -4876,7 +4876,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"email\" : \"c467069a-9dbe-4f4d-82e9-65a7268fda09@epages.com\",\n  \"customerNumber\" : \"1000\",\n  \"customerOrigin\" : \"STOREFRONT\",\n  \"defaultShippingAddress\" : {\n    \"salutation\" : \"Mr\",\n    \"gender\" : \"MALE\",\n    \"company\" : \"Berryl Ltd.\",\n    \"title\" : \"Dr\",\n    \"firstName\" : \"Berryl\",\n    \"middleName\" : \"John\",\n    \"lastName\" : \"Keane\",\n    \"street\" : \"Taranulla Drive\",\n    \"houseNumber\" : \"2\",\n    \"street2\" : \"First floor\",\n    \"addressExtension\" : \"Backyard\",\n    \"postalCode\" : \"2XJ90\",\n    \"dependentLocality\" : \"St.Eves\",\n    \"city\" : \"Carnivaly\",\n    \"country\" : \"GB\",\n    \"state\" : \"Frogmooragie\",\n    \"email\" : \"keane@example.com\",\n    \"phone\" : \"(800) 555-0111\",\n    \"mobile\" : \"(800) 555-0189\",\n    \"displayAddressLines\" : [ \"Berryl Ltd.\", \"Berryl John Keane\", \"2 Taranulla Drive\", \"First floor\", \"Backyard\", \"St.Eves\", \"CARNIVALY\", \"2XJ90\", \"UNITED KINGDOM\" ],\n    \"doorCode\" : \"456\"\n  },\n  \"defaultBillingAddress\" : {\n    \"salutation\" : \"Mrs\",\n    \"gender\" : \"FEMALE\",\n    \"company\" : \"Astrid Alster GmbH\",\n    \"title\" : \"Dr\",\n    \"firstName\" : \"Astrid\",\n    \"middleName\" : \"Agnes\",\n    \"lastName\" : \"different lastname\",\n    \"street\" : \"different streetname\",\n    \"houseNumber\" : \"2\",\n    \"street2\" : \"Erdgeschoss\",\n    \"addressExtension\" : \"Hinterhof\",\n    \"postalCode\" : \"20999\",\n    \"dependentLocality\" : \"Seevetal\",\n    \"city\" : \"Alsterwasser\",\n    \"country\" : \"DE\",\n    \"state\" : \"Hamburg\",\n    \"email\" : \"a.alsterh@example.com\",\n    \"phone\" : \"(800) 555-0102\",\n    \"mobile\" : \"(800) 555-0103\",\n    \"displayAddressLines\" : [ \"Astrid Alster GmbH\", \"Astrid Agnes different lastname\", \"different streetname 2\", \"Erdgeschoss\", \"Hinterhof\", \"Seevetal\", \"20999 Alsterwasser\", \"GERMANY\" ],\n    \"vatId\" : \"DE123456789\",\n    \"taxNumber\" : \"HRE 987654/32123/864516\",\n    \"birthDate\" : \"1985-05-11\"\n  },\n  \"defaultShippingMethodId\" : null,\n  \"defaultPaymentMethodId\" : null,\n  \"defaultPickupOptionId\" : \"f8ee92a0-95dc-4f8d-b03b-f4bebecb91d6\",\n  \"creationDate\" : \"2026-06-02T06:37:11.964\",\n  \"testCustomer\" : true,\n  \"customerComment\" : \"Reliable Customer\",\n  \"_embedded\" : {\n    \"orderSummary\" : {\n      \"total\" : 2,\n      \"openOrders\" : 1,\n      \"grandTotal\" : {\n        \"currency\" : \"EUR\",\n        \"amount\" : 115\n      },\n      \"average\" : {\n        \"currency\" : \"EUR\",\n        \"amount\" : 57.5\n      },\n      \"lastOrderDate\" : \"2026-06-02T06:37:11.981\",\n      \"lastOrder\" : \"756a1077-6acb-4859-8c6b-3ee5c52d99e1\"\n    },\n    \"recentOrders\" : [ {\n      \"orderDate\" : \"2026-06-02T06:37:11.981\",\n      \"orderNumber\" : \"6914a2fa-6941-4b65-9055-e9cfecedb794\",\n      \"paymentStatus\" : \"PAID\",\n      \"shippingStatus\" : \"PENDING\",\n      \"grandTotal\" : {\n        \"currency\" : \"EUR\",\n        \"amount\" : 105\n      },\n      \"viewed\" : false,\n      \"canceled\" : false,\n      \"testOrder\" : true,\n      \"withCoupon\" : false,\n      \"_id\" : \"756a1077-6acb-4859-8c6b-3ee5c52d99e1\"\n    }, {\n      \"orderDate\" : \"2026-06-02T06:37:11.981\",\n      \"orderNumber\" : \"24611bb5-5a29-4a86-99d6-132471ee0c0b\",\n      \"paymentStatus\" : \"PAID\",\n      \"shippingStatus\" : \"DELIVERED\",\n      \"grandTotal\" : {\n        \"currency\" : \"EUR\",\n        \"amount\" : 10\n      },\n      \"viewed\" : false,\n      \"canceled\" : false,\n      \"testOrder\" : true,\n      \"withCoupon\" : false,\n      \"_id\" : \"81fbbb75-d46f-4269-8c65-3f0cbf897cae\"\n    } ],\n    \"customerGroups\" : [ {\n      \"discountPercentage\" : -0.1,\n      \"name\" : \"Subscribers\",\n      \"_id\" : \"03a74b52-9f24-4792-bdee-534329fc1563\"\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/customers/363ce003-8084-4dbf-b6be-352acf6404a3\"\n    },\n    \"customer\" : {\n      \"href\" : \"https://yourshop.api.urn/customers/363ce003-8084-4dbf-b6be-352acf6404a3\"\n    },\n    \"events\" : {\n      \"href\" : \"https://yourshop.api.urn/customers/363ce003-8084-4dbf-b6be-352acf6404a3/events\"\n    },\n    \"customer-groups\" : {\n      \"href\" : \"https://yourshop.api.urn/customers/363ce003-8084-4dbf-b6be-352acf6404a3/customer-groups\"\n    }\n  },\n  \"_id\" : \"363ce003-8084-4dbf-b6be-352acf6404a3\"\n}",
+      "body" : "{\n  \"email\" : \"b137318b-c0cd-45d4-a5a7-67c581358dff@epages.com\",\n  \"customerNumber\" : \"1000\",\n  \"customerOrigin\" : \"STOREFRONT\",\n  \"defaultShippingAddress\" : {\n    \"salutation\" : \"Mr\",\n    \"gender\" : \"MALE\",\n    \"company\" : \"Berryl Ltd.\",\n    \"title\" : \"Dr\",\n    \"firstName\" : \"Berryl\",\n    \"middleName\" : \"John\",\n    \"lastName\" : \"Keane\",\n    \"street\" : \"Taranulla Drive\",\n    \"houseNumber\" : \"2\",\n    \"street2\" : \"First floor\",\n    \"addressExtension\" : \"Backyard\",\n    \"postalCode\" : \"2XJ90\",\n    \"dependentLocality\" : \"St.Eves\",\n    \"city\" : \"Carnivaly\",\n    \"country\" : \"GB\",\n    \"state\" : \"Frogmooragie\",\n    \"email\" : \"keane@example.com\",\n    \"phone\" : \"(800) 555-0111\",\n    \"mobile\" : \"(800) 555-0189\",\n    \"displayAddressLines\" : [ \"Berryl Ltd.\", \"Berryl John Keane\", \"2 Taranulla Drive\", \"First floor\", \"Backyard\", \"St.Eves\", \"CARNIVALY\", \"2XJ90\", \"UNITED KINGDOM\" ],\n    \"doorCode\" : \"456\"\n  },\n  \"defaultBillingAddress\" : {\n    \"salutation\" : \"Mrs\",\n    \"gender\" : \"FEMALE\",\n    \"company\" : \"Astrid Alster GmbH\",\n    \"title\" : \"Dr\",\n    \"firstName\" : \"Astrid\",\n    \"middleName\" : \"Agnes\",\n    \"lastName\" : \"different lastname\",\n    \"street\" : \"different streetname\",\n    \"houseNumber\" : \"2\",\n    \"street2\" : \"Erdgeschoss\",\n    \"addressExtension\" : \"Hinterhof\",\n    \"postalCode\" : \"20999\",\n    \"dependentLocality\" : \"Seevetal\",\n    \"city\" : \"Alsterwasser\",\n    \"country\" : \"DE\",\n    \"state\" : \"Hamburg\",\n    \"email\" : \"a.alsterh@example.com\",\n    \"phone\" : \"(800) 555-0102\",\n    \"mobile\" : \"(800) 555-0103\",\n    \"displayAddressLines\" : [ \"Astrid Alster GmbH\", \"Astrid Agnes different lastname\", \"different streetname 2\", \"Erdgeschoss\", \"Hinterhof\", \"Seevetal\", \"20999 Alsterwasser\", \"GERMANY\" ],\n    \"vatId\" : \"DE123456789\",\n    \"taxNumber\" : \"HRE 987654/32123/864516\",\n    \"birthDate\" : \"1985-05-11\"\n  },\n  \"defaultShippingMethodId\" : null,\n  \"defaultPaymentMethodId\" : null,\n  \"defaultPickupOptionId\" : \"3d85aee5-2bce-4fd3-8733-fd9501cf5d05\",\n  \"creationDate\" : \"2026-08-04T07:34:10.427\",\n  \"testCustomer\" : true,\n  \"customerComment\" : \"Reliable Customer\",\n  \"_embedded\" : {\n    \"orderSummary\" : {\n      \"total\" : 2,\n      \"openOrders\" : 1,\n      \"grandTotal\" : {\n        \"currency\" : \"EUR\",\n        \"amount\" : 115\n      },\n      \"average\" : {\n        \"currency\" : \"EUR\",\n        \"amount\" : 57.5\n      },\n      \"lastOrderDate\" : \"2026-08-04T07:34:10.446\",\n      \"lastOrder\" : \"2503acae-350b-45ca-bd11-89d9c13aec2a\"\n    },\n    \"recentOrders\" : [ {\n      \"orderDate\" : \"2026-08-04T07:34:10.446\",\n      \"orderNumber\" : \"5a3e7f3b-24d6-4b64-ac2b-86f52a7039c2\",\n      \"paymentStatus\" : \"PAID\",\n      \"shippingStatus\" : \"PENDING\",\n      \"grandTotal\" : {\n        \"currency\" : \"EUR\",\n        \"amount\" : 105\n      },\n      \"viewed\" : false,\n      \"canceled\" : false,\n      \"testOrder\" : true,\n      \"withCoupon\" : false,\n      \"_id\" : \"2503acae-350b-45ca-bd11-89d9c13aec2a\"\n    }, {\n      \"orderDate\" : \"2026-08-04T07:34:10.446\",\n      \"orderNumber\" : \"7158f078-c1da-42f3-b5f7-2408e01b74a0\",\n      \"paymentStatus\" : \"PAID\",\n      \"shippingStatus\" : \"DELIVERED\",\n      \"grandTotal\" : {\n        \"currency\" : \"EUR\",\n        \"amount\" : 10\n      },\n      \"viewed\" : false,\n      \"canceled\" : false,\n      \"testOrder\" : true,\n      \"withCoupon\" : false,\n      \"_id\" : \"6818a0e4-2dd5-45f9-a250-e11b5182c819\"\n    } ],\n    \"customerGroups\" : [ {\n      \"discountPercentage\" : -0.1,\n      \"name\" : \"Subscribers\",\n      \"_id\" : \"84b61edb-fb3b-4005-b133-4982a76c7907\"\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/customers/2445c872-fc81-4cc0-8cd6-eca8f7e5679f\"\n    },\n    \"customer\" : {\n      \"href\" : \"https://yourshop.api.urn/customers/2445c872-fc81-4cc0-8cd6-eca8f7e5679f\"\n    },\n    \"events\" : {\n      \"href\" : \"https://yourshop.api.urn/customers/2445c872-fc81-4cc0-8cd6-eca8f7e5679f/events\"\n    },\n    \"customer-groups\" : {\n      \"href\" : \"https://yourshop.api.urn/customers/2445c872-fc81-4cc0-8cd6-eca8f7e5679f/customer-groups\"\n    }\n  },\n  \"_id\" : \"2445c872-fc81-4cc0-8cd6-eca8f7e5679f\"\n}",
       "code" : 200
     }, {
       "id" : "email-change-not-allowed",
@@ -4895,7 +4895,7 @@
         } ],
         "body" : {
           "mode" : "raw",
-          "raw" : "{\n  \"email\" : \"differentEmail@epages.com\",\n  \"customerComment\" : \"Customer asked me to update his email.\",\n  \"shippingAddress\" : {\n    \"salutation\" : \"Mrs\",\n    \"gender\" : \"FEMALE\",\n    \"company\" : \"Astrid Alster GmbH\",\n    \"title\" : \"Dr\",\n    \"firstName\" : \"Astrid\",\n    \"middleName\" : \"Agnes\",\n    \"lastName\" : \"Alster\",\n    \"street\" : \"Alsterwasserweg\",\n    \"houseNumber\" : \"2\",\n    \"street2\" : \"Erdgeschoss\",\n    \"addressExtension\" : \"Hinterhof\",\n    \"postalCode\" : \"20999\",\n    \"dependentLocality\" : \"Seevetal\",\n    \"city\" : \"Alsterwasser\",\n    \"country\" : \"DE\",\n    \"state\" : \"Hamburg\",\n    \"email\" : \"a.alsterh@example.com\",\n    \"phone\" : \"(800) 555-0102\",\n    \"mobile\" : \"(800) 555-0103\",\n    \"doorCode\" : \"456\",\n    \"_id\" : \"6f1f12c3-5885-40ca-b28a-d929f03060c7\"\n  },\n  \"billingAddress\" : {\n    \"salutation\" : \"Mrs\",\n    \"gender\" : \"FEMALE\",\n    \"company\" : \"Astrid Alster GmbH\",\n    \"title\" : \"Dr\",\n    \"firstName\" : \"Astrid\",\n    \"middleName\" : \"Agnes\",\n    \"lastName\" : \"Alster\",\n    \"street\" : \"Alsterwasserweg\",\n    \"houseNumber\" : \"2\",\n    \"street2\" : \"Erdgeschoss\",\n    \"addressExtension\" : \"Hinterhof\",\n    \"postalCode\" : \"20999\",\n    \"dependentLocality\" : \"Seevetal\",\n    \"city\" : \"Alsterwasser\",\n    \"country\" : \"DE\",\n    \"state\" : \"Hamburg\",\n    \"email\" : \"a.alsterh@example.com\",\n    \"phone\" : \"(800) 555-0102\",\n    \"mobile\" : \"(800) 555-0103\",\n    \"vatId\" : \"DE123456789\",\n    \"taxNumber\" : \"HRE 987654/32123/864516\",\n    \"birthDate\" : \"1985-05-11\",\n    \"_id\" : \"7895726e-8540-4c9a-aa06-5942ae8fe333\"\n  }\n}",
+          "raw" : "{\n  \"email\" : \"differentEmail@epages.com\",\n  \"customerComment\" : \"Customer asked me to update his email.\",\n  \"shippingAddress\" : {\n    \"salutation\" : \"Mrs\",\n    \"gender\" : \"FEMALE\",\n    \"company\" : \"Astrid Alster GmbH\",\n    \"title\" : \"Dr\",\n    \"firstName\" : \"Astrid\",\n    \"middleName\" : \"Agnes\",\n    \"lastName\" : \"Alster\",\n    \"street\" : \"Alsterwasserweg\",\n    \"houseNumber\" : \"2\",\n    \"street2\" : \"Erdgeschoss\",\n    \"addressExtension\" : \"Hinterhof\",\n    \"postalCode\" : \"20999\",\n    \"dependentLocality\" : \"Seevetal\",\n    \"city\" : \"Alsterwasser\",\n    \"country\" : \"DE\",\n    \"state\" : \"Hamburg\",\n    \"email\" : \"a.alsterh@example.com\",\n    \"phone\" : \"(800) 555-0102\",\n    \"mobile\" : \"(800) 555-0103\",\n    \"doorCode\" : \"456\",\n    \"_id\" : \"0e00420b-fb8f-4a56-a98a-a7dfad60ce7a\"\n  },\n  \"billingAddress\" : {\n    \"salutation\" : \"Mrs\",\n    \"gender\" : \"FEMALE\",\n    \"company\" : \"Astrid Alster GmbH\",\n    \"title\" : \"Dr\",\n    \"firstName\" : \"Astrid\",\n    \"middleName\" : \"Agnes\",\n    \"lastName\" : \"Alster\",\n    \"street\" : \"Alsterwasserweg\",\n    \"houseNumber\" : \"2\",\n    \"street2\" : \"Erdgeschoss\",\n    \"addressExtension\" : \"Hinterhof\",\n    \"postalCode\" : \"20999\",\n    \"dependentLocality\" : \"Seevetal\",\n    \"city\" : \"Alsterwasser\",\n    \"country\" : \"DE\",\n    \"state\" : \"Hamburg\",\n    \"email\" : \"a.alsterh@example.com\",\n    \"phone\" : \"(800) 555-0102\",\n    \"mobile\" : \"(800) 555-0103\",\n    \"vatId\" : \"DE123456789\",\n    \"taxNumber\" : \"HRE 987654/32123/864516\",\n    \"birthDate\" : \"1985-05-11\",\n    \"_id\" : \"701ca37b-ed96-4d48-9032-70a58efff8a8\"\n  }\n}",
           "urlencoded" : [ ]
         }
       },
@@ -4939,7 +4939,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"email\" : \"10d508a7-70b9-47c9-a4af-390918044166@epages.com\",\n  \"customerNumber\" : \"1000\",\n  \"customerOrigin\" : \"STOREFRONT\",\n  \"defaultShippingAddress\" : {\n    \"salutation\" : \"Mrs\",\n    \"gender\" : \"FEMALE\",\n    \"company\" : \"Astrid Alster GmbH\",\n    \"title\" : \"Dr\",\n    \"firstName\" : \"Astrid\",\n    \"middleName\" : \"Agnes\",\n    \"lastName\" : \"Alster\",\n    \"street\" : \"Alsterwasserweg\",\n    \"houseNumber\" : \"2\",\n    \"street2\" : \"Erdgeschoss\",\n    \"addressExtension\" : \"Hinterhof\",\n    \"postalCode\" : \"20999\",\n    \"dependentLocality\" : \"Seevetal\",\n    \"city\" : \"Alsterwasser\",\n    \"country\" : \"DE\",\n    \"state\" : \"Hamburg\",\n    \"email\" : \"a.alsterh@example.com\",\n    \"phone\" : \"(800) 555-0102\",\n    \"mobile\" : \"(800) 555-0103\",\n    \"displayAddressLines\" : [ \"Astrid Alster GmbH\", \"Astrid Agnes Alster\", \"Seevetal\", \"Alsterwasserweg 2\", \"Erdgeschoss\", \"Hinterhof\", \"20999 Alsterwasser\", \"GERMANY\" ],\n    \"doorCode\" : \"456\"\n  },\n  \"defaultBillingAddress\" : {\n    \"salutation\" : \"Mrs\",\n    \"gender\" : \"FEMALE\",\n    \"company\" : \"Astrid Alster GmbH\",\n    \"title\" : \"Dr\",\n    \"firstName\" : \"Astrid\",\n    \"middleName\" : \"Agnes\",\n    \"lastName\" : \"Alster\",\n    \"street\" : \"Alsterwasserweg\",\n    \"houseNumber\" : \"2\",\n    \"street2\" : \"Erdgeschoss\",\n    \"addressExtension\" : \"Hinterhof\",\n    \"postalCode\" : \"20999\",\n    \"dependentLocality\" : \"Seevetal\",\n    \"city\" : \"Alsterwasser\",\n    \"country\" : \"DE\",\n    \"state\" : \"Hamburg\",\n    \"email\" : \"a.alsterh@example.com\",\n    \"phone\" : \"(800) 555-0102\",\n    \"mobile\" : \"(800) 555-0103\",\n    \"displayAddressLines\" : [ \"Astrid Alster GmbH\", \"Astrid Agnes Alster\", \"Seevetal\", \"Alsterwasserweg 2\", \"Erdgeschoss\", \"Hinterhof\", \"20999 Alsterwasser\", \"GERMANY\" ],\n    \"vatId\" : \"DE123456789\",\n    \"taxNumber\" : \"HRE 987654/32123/864516\",\n    \"birthDate\" : \"1985-05-11\"\n  },\n  \"defaultShippingMethodId\" : \"454a6edc-bdec-4f17-9969-6ba4c8c63e7f\",\n  \"defaultPaymentMethodId\" : \"917959c3-711c-468d-abd0-41cbdbe918ab\",\n  \"defaultPickupOptionId\" : null,\n  \"creationDate\" : \"2026-06-02T06:36:58.906\",\n  \"testCustomer\" : false,\n  \"customerComment\" : \"Great customer!\",\n  \"_embedded\" : {\n    \"orderSummary\" : {\n      \"total\" : 2,\n      \"openOrders\" : 1,\n      \"grandTotal\" : {\n        \"currency\" : \"EUR\",\n        \"amount\" : 115\n      },\n      \"average\" : {\n        \"currency\" : \"EUR\",\n        \"amount\" : 57.5\n      },\n      \"lastOrderDate\" : \"2026-06-02T06:36:58.935\",\n      \"lastOrder\" : \"317ac105-7e1a-4404-9de9-8a2012f8c0a4\"\n    },\n    \"recentOrders\" : [ {\n      \"orderDate\" : \"2026-06-02T06:36:58.935\",\n      \"orderNumber\" : \"514bb794-1ddf-4f0f-9617-cc439d134555\",\n      \"paymentStatus\" : \"PAID\",\n      \"shippingStatus\" : \"PENDING\",\n      \"grandTotal\" : {\n        \"currency\" : \"EUR\",\n        \"amount\" : 105\n      },\n      \"viewed\" : false,\n      \"canceled\" : false,\n      \"testOrder\" : false,\n      \"withCoupon\" : false,\n      \"_id\" : \"317ac105-7e1a-4404-9de9-8a2012f8c0a4\"\n    }, {\n      \"orderDate\" : \"2026-06-02T06:36:58.934\",\n      \"orderNumber\" : \"223f69d9-9a79-4c65-80d7-6cb3efbc9711\",\n      \"paymentStatus\" : \"PAID\",\n      \"shippingStatus\" : \"DELIVERED\",\n      \"grandTotal\" : {\n        \"currency\" : \"EUR\",\n        \"amount\" : 10\n      },\n      \"viewed\" : false,\n      \"canceled\" : false,\n      \"testOrder\" : false,\n      \"withCoupon\" : false,\n      \"_id\" : \"57623315-ed77-4349-a738-68c025c40c56\"\n    } ],\n    \"customerGroups\" : [ {\n      \"discountPercentage\" : -0.1,\n      \"name\" : \"Subscribers\",\n      \"_id\" : \"c1ce2c10-6be3-44b3-811f-74ed7ada4467\"\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/customers/dfe71ae7-a6b5-4353-8007-790d9ba6a1af\"\n    },\n    \"customer\" : {\n      \"href\" : \"https://yourshop.api.urn/customers/dfe71ae7-a6b5-4353-8007-790d9ba6a1af\"\n    },\n    \"events\" : {\n      \"href\" : \"https://yourshop.api.urn/customers/dfe71ae7-a6b5-4353-8007-790d9ba6a1af/events\"\n    },\n    \"customer-groups\" : {\n      \"href\" : \"https://yourshop.api.urn/customers/dfe71ae7-a6b5-4353-8007-790d9ba6a1af/customer-groups\"\n    }\n  },\n  \"_id\" : \"dfe71ae7-a6b5-4353-8007-790d9ba6a1af\"\n}",
+      "body" : "{\n  \"email\" : \"f0a5de60-44f8-447a-a6dc-85a9ba6c184d@epages.com\",\n  \"customerNumber\" : \"1000\",\n  \"customerOrigin\" : \"STOREFRONT\",\n  \"defaultShippingAddress\" : {\n    \"salutation\" : \"Mrs\",\n    \"gender\" : \"FEMALE\",\n    \"company\" : \"Astrid Alster GmbH\",\n    \"title\" : \"Dr\",\n    \"firstName\" : \"Astrid\",\n    \"middleName\" : \"Agnes\",\n    \"lastName\" : \"Alster\",\n    \"street\" : \"Alsterwasserweg\",\n    \"houseNumber\" : \"2\",\n    \"street2\" : \"Erdgeschoss\",\n    \"addressExtension\" : \"Hinterhof\",\n    \"postalCode\" : \"20999\",\n    \"dependentLocality\" : \"Seevetal\",\n    \"city\" : \"Alsterwasser\",\n    \"country\" : \"DE\",\n    \"state\" : \"Hamburg\",\n    \"email\" : \"a.alsterh@example.com\",\n    \"phone\" : \"(800) 555-0102\",\n    \"mobile\" : \"(800) 555-0103\",\n    \"displayAddressLines\" : [ \"Astrid Alster GmbH\", \"Astrid Agnes Alster\", \"Seevetal\", \"Alsterwasserweg 2\", \"Erdgeschoss\", \"Hinterhof\", \"20999 Alsterwasser\", \"GERMANY\" ],\n    \"doorCode\" : \"456\"\n  },\n  \"defaultBillingAddress\" : {\n    \"salutation\" : \"Mrs\",\n    \"gender\" : \"FEMALE\",\n    \"company\" : \"Astrid Alster GmbH\",\n    \"title\" : \"Dr\",\n    \"firstName\" : \"Astrid\",\n    \"middleName\" : \"Agnes\",\n    \"lastName\" : \"Alster\",\n    \"street\" : \"Alsterwasserweg\",\n    \"houseNumber\" : \"2\",\n    \"street2\" : \"Erdgeschoss\",\n    \"addressExtension\" : \"Hinterhof\",\n    \"postalCode\" : \"20999\",\n    \"dependentLocality\" : \"Seevetal\",\n    \"city\" : \"Alsterwasser\",\n    \"country\" : \"DE\",\n    \"state\" : \"Hamburg\",\n    \"email\" : \"a.alsterh@example.com\",\n    \"phone\" : \"(800) 555-0102\",\n    \"mobile\" : \"(800) 555-0103\",\n    \"displayAddressLines\" : [ \"Astrid Alster GmbH\", \"Astrid Agnes Alster\", \"Seevetal\", \"Alsterwasserweg 2\", \"Erdgeschoss\", \"Hinterhof\", \"20999 Alsterwasser\", \"GERMANY\" ],\n    \"vatId\" : \"DE123456789\",\n    \"taxNumber\" : \"HRE 987654/32123/864516\",\n    \"birthDate\" : \"1985-05-11\"\n  },\n  \"defaultShippingMethodId\" : \"78655c05-c612-4880-833d-42280347e8cc\",\n  \"defaultPaymentMethodId\" : \"d5598eb0-6eb2-429c-9d07-d1d8a2d851a3\",\n  \"defaultPickupOptionId\" : null,\n  \"creationDate\" : \"2026-08-04T07:33:52.275\",\n  \"testCustomer\" : false,\n  \"customerComment\" : \"Great customer!\",\n  \"_embedded\" : {\n    \"orderSummary\" : {\n      \"total\" : 2,\n      \"openOrders\" : 1,\n      \"grandTotal\" : {\n        \"currency\" : \"EUR\",\n        \"amount\" : 115\n      },\n      \"average\" : {\n        \"currency\" : \"EUR\",\n        \"amount\" : 57.5\n      },\n      \"lastOrderDate\" : \"2026-08-04T07:33:52.294\",\n      \"lastOrder\" : \"2c8c862b-4cfc-4186-b520-1f2840e194f0\"\n    },\n    \"recentOrders\" : [ {\n      \"orderDate\" : \"2026-08-04T07:33:52.294\",\n      \"orderNumber\" : \"7ca399fa-22bc-43b9-8218-cb0122413101\",\n      \"paymentStatus\" : \"PAID\",\n      \"shippingStatus\" : \"PENDING\",\n      \"grandTotal\" : {\n        \"currency\" : \"EUR\",\n        \"amount\" : 105\n      },\n      \"viewed\" : false,\n      \"canceled\" : false,\n      \"testOrder\" : false,\n      \"withCoupon\" : false,\n      \"_id\" : \"2c8c862b-4cfc-4186-b520-1f2840e194f0\"\n    }, {\n      \"orderDate\" : \"2026-08-04T07:33:52.294\",\n      \"orderNumber\" : \"88d69995-dbe2-41c1-9718-c9e77c45886e\",\n      \"paymentStatus\" : \"PAID\",\n      \"shippingStatus\" : \"DELIVERED\",\n      \"grandTotal\" : {\n        \"currency\" : \"EUR\",\n        \"amount\" : 10\n      },\n      \"viewed\" : false,\n      \"canceled\" : false,\n      \"testOrder\" : false,\n      \"withCoupon\" : false,\n      \"_id\" : \"5cff43a3-437f-4c7b-bb25-4a3ee488ad15\"\n    } ],\n    \"customerGroups\" : [ {\n      \"discountPercentage\" : -0.1,\n      \"name\" : \"Subscribers\",\n      \"_id\" : \"7113e577-b3a6-4720-9259-11c3939a0f61\"\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/customers/26c8556b-a902-4a3b-bdc3-083167b3f033\"\n    },\n    \"customer\" : {\n      \"href\" : \"https://yourshop.api.urn/customers/26c8556b-a902-4a3b-bdc3-083167b3f033\"\n    },\n    \"events\" : {\n      \"href\" : \"https://yourshop.api.urn/customers/26c8556b-a902-4a3b-bdc3-083167b3f033/events\"\n    },\n    \"customer-groups\" : {\n      \"href\" : \"https://yourshop.api.urn/customers/26c8556b-a902-4a3b-bdc3-083167b3f033/customer-groups\"\n    }\n  },\n  \"_id\" : \"26c8556b-a902-4a3b-bdc3-083167b3f033\"\n}",
       "code" : 200
     } ]
   }, {
@@ -4971,16 +4971,104 @@
       "code" : 204
     } ]
   }, {
-    "id" : "customer-customer-group-post-not-available-customer",
-    "name" : "/customers/2fd430fd-a2d6-445d-9f50-614978194369/customer-groups",
-    "description" : "Only registered and pre-registered customers can be added to customer groups. If a customer specified in the request has a different origin than `COCKPIT`, `IMPORT` or `STOREFRONT`, a `400 Bad Request` error will be returned.",
+    "id" : "customer-customer-group-get",
+    "name" : "/customers/0b0c1905-8212-4bb0-9ce4-e19a7a533858/customer-groups",
+    "description" : "Returns a list of all customer groups that the customer identified by {customerId} is assigned to.",
     "variable" : [ ],
     "event" : [ ],
     "request" : {
       "url" : {
         "protocol" : "https",
         "host" : "{{host}}",
-        "path" : "/api/customers/2fd430fd-a2d6-445d-9f50-614978194369/customer-groups"
+        "path" : "/api/customers/0b0c1905-8212-4bb0-9ce4-e19a7a533858/customer-groups"
+      },
+      "method" : "GET"
+    },
+    "response" : [ {
+      "id" : "customer-customer-group-get",
+      "name" : "customer-customer-group-get",
+      "originalRequest" : {
+        "url" : {
+          "protocol" : "https",
+          "host" : "{{host}}",
+          "path" : "/api/customers/0b0c1905-8212-4bb0-9ce4-e19a7a533858/customer-groups"
+        },
+        "method" : "GET"
+      },
+      "header" : [ {
+        "key" : "Content-Type",
+        "value" : "application/hal+json",
+        "disabled" : false
+      } ],
+      "cookie" : [ ],
+      "body" : "{\n  \"_embedded\" : {\n    \"customerGroups\" : [ {\n      \"discountPercentage\" : -0.1,\n      \"name\" : \"Subscribers\",\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/customer-groups/aca73652-4f51-43a9-a854-12caf8a5c993\"\n        },\n        \"customer-group\" : {\n          \"href\" : \"https://yourshop.api.urn/customer-groups/aca73652-4f51-43a9-a854-12caf8a5c993\"\n        },\n        \"customers\" : {\n          \"href\" : \"https://yourshop.api.urn/customer-groups/aca73652-4f51-43a9-a854-12caf8a5c993/customers\"\n        }\n      },\n      \"_id\" : \"aca73652-4f51-43a9-a854-12caf8a5c993\"\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/customers/0b0c1905-8212-4bb0-9ce4-e19a7a533858/customer-groups?page=0&size=20\"\n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\" : 1,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}",
+      "code" : 200
+    } ]
+  }, {
+    "id" : "customer-customer-group-delete",
+    "name" : "/customers/2bc88ad0-2f89-4191-b9b7-a4aaa2406557/customer-groups",
+    "description" : "Removes the customer identified by {customerId} from the provided list of customer groups identified by {customerGroupIds}. **Note**: For the time being, a customer can only be a member of one customer group at the time. To replace customers of customer groups in bulk, refer to the endpoint *Replace customers of customer groups*.",
+    "variable" : [ ],
+    "event" : [ ],
+    "request" : {
+      "url" : {
+        "protocol" : "https",
+        "host" : "{{host}}",
+        "path" : "/api/customers/2bc88ad0-2f89-4191-b9b7-a4aaa2406557/customer-groups"
+      },
+      "method" : "DELETE",
+      "header" : [ {
+        "key" : "Content-Type",
+        "value" : "application/json",
+        "disabled" : false
+      } ],
+      "body" : {
+        "mode" : "raw",
+        "raw" : "[\"389c8083-b104-4172-b826-b4e44a1b6338\"]",
+        "urlencoded" : [ ]
+      }
+    },
+    "response" : [ {
+      "id" : "customer-customer-group-delete",
+      "name" : "customer-customer-group-delete",
+      "originalRequest" : {
+        "url" : {
+          "protocol" : "https",
+          "host" : "{{host}}",
+          "path" : "/api/customers/2bc88ad0-2f89-4191-b9b7-a4aaa2406557/customer-groups"
+        },
+        "method" : "DELETE",
+        "header" : [ {
+          "key" : "Content-Type",
+          "value" : "application/json",
+          "disabled" : false
+        } ],
+        "body" : {
+          "mode" : "raw",
+          "raw" : "[\"389c8083-b104-4172-b826-b4e44a1b6338\"]",
+          "urlencoded" : [ ]
+        }
+      },
+      "header" : [ {
+        "key" : "Content-Type",
+        "value" : "application/hal+json",
+        "disabled" : false
+      } ],
+      "cookie" : [ ],
+      "body" : "{\n  \"_embedded\" : {\n    \"customerGroups\" : [ {\n      \"discountPercentage\" : -0.1,\n      \"name\" : \"Subscribers\",\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/customer-groups/4f02d558-cd5f-4f5c-bcd2-14a16c618a15\"\n        },\n        \"customer-group\" : {\n          \"href\" : \"https://yourshop.api.urn/customer-groups/4f02d558-cd5f-4f5c-bcd2-14a16c618a15\"\n        },\n        \"customers\" : {\n          \"href\" : \"https://yourshop.api.urn/customer-groups/4f02d558-cd5f-4f5c-bcd2-14a16c618a15/customers\"\n        }\n      },\n      \"_id\" : \"4f02d558-cd5f-4f5c-bcd2-14a16c618a15\"\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/customers/2bc88ad0-2f89-4191-b9b7-a4aaa2406557/customer-groups?page=0&size=20\"\n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\" : 1,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}",
+      "code" : 200
+    } ]
+  }, {
+    "id" : "customer-customer-group-post",
+    "name" : "/customers/2e93481e-d511-4081-80e9-5a7372813912/customer-groups",
+    "description" : "Adds the customer identified by {customerId} to the provided list of customer groups identified by {customerGroupIds}. **Note**: For the time being, a customer can only be a member of one customer group at the time. This means that a customer cannot be added to more than one group. In order to add the customer to another customer group, they first need to be removed from the customer group they are currently assigned to. To replace customers of customer groups in bulk, refer to the endpoint *Replace customers of customer groups*.",
+    "variable" : [ ],
+    "event" : [ ],
+    "request" : {
+      "url" : {
+        "protocol" : "https",
+        "host" : "{{host}}",
+        "path" : "/api/customers/2e93481e-d511-4081-80e9-5a7372813912/customer-groups"
       },
       "method" : "POST",
       "header" : [ {
@@ -4990,7 +5078,61 @@
       } ],
       "body" : {
         "mode" : "raw",
-        "raw" : "[\"d8ac7f70-7105-422d-9b3a-19eeffcf9399\"]",
+        "raw" : "[\"55445194-9d4c-4cf5-ba27-24c2ddec00a1\"]",
+        "urlencoded" : [ ]
+      }
+    },
+    "response" : [ {
+      "id" : "customer-customer-group-post",
+      "name" : "customer-customer-group-post",
+      "originalRequest" : {
+        "url" : {
+          "protocol" : "https",
+          "host" : "{{host}}",
+          "path" : "/api/customers/2e93481e-d511-4081-80e9-5a7372813912/customer-groups"
+        },
+        "method" : "POST",
+        "header" : [ {
+          "key" : "Content-Type",
+          "value" : "application/json",
+          "disabled" : false
+        } ],
+        "body" : {
+          "mode" : "raw",
+          "raw" : "[\"55445194-9d4c-4cf5-ba27-24c2ddec00a1\"]",
+          "urlencoded" : [ ]
+        }
+      },
+      "header" : [ {
+        "key" : "Content-Type",
+        "value" : "application/hal+json",
+        "disabled" : false
+      } ],
+      "cookie" : [ ],
+      "body" : "{\n  \"_embedded\" : {\n    \"customerGroups\" : [ {\n      \"discountPercentage\" : -0.1,\n      \"name\" : \"Subscribers\",\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/customer-groups/55445194-9d4c-4cf5-ba27-24c2ddec00a1\"\n        },\n        \"customer-group\" : {\n          \"href\" : \"https://yourshop.api.urn/customer-groups/55445194-9d4c-4cf5-ba27-24c2ddec00a1\"\n        },\n        \"customers\" : {\n          \"href\" : \"https://yourshop.api.urn/customer-groups/55445194-9d4c-4cf5-ba27-24c2ddec00a1/customers\"\n        }\n      },\n      \"_id\" : \"55445194-9d4c-4cf5-ba27-24c2ddec00a1\"\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/customers/2e93481e-d511-4081-80e9-5a7372813912/customer-groups?page=0&size=20\"\n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\" : 1,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}",
+      "code" : 200
+    } ]
+  }, {
+    "id" : "customer-customer-group-post-not-available-customer",
+    "name" : "/customers/9a7e0cfb-f296-4454-af22-6a826f226a42/customer-groups",
+    "description" : "Only registered and pre-registered customers can be added to customer groups. If a customer specified in the request has a different origin than `COCKPIT`, `IMPORT` or `STOREFRONT`, a `400 Bad Request` error will be returned.",
+    "variable" : [ ],
+    "event" : [ ],
+    "request" : {
+      "url" : {
+        "protocol" : "https",
+        "host" : "{{host}}",
+        "path" : "/api/customers/9a7e0cfb-f296-4454-af22-6a826f226a42/customer-groups"
+      },
+      "method" : "POST",
+      "header" : [ {
+        "key" : "Content-Type",
+        "value" : "application/json",
+        "disabled" : false
+      } ],
+      "body" : {
+        "mode" : "raw",
+        "raw" : "[\"7e190e6f-6d23-40aa-a110-400f5b4783bc\"]",
         "urlencoded" : [ ]
       }
     },
@@ -5001,7 +5143,7 @@
         "url" : {
           "protocol" : "https",
           "host" : "{{host}}",
-          "path" : "/api/customers/2fd430fd-a2d6-445d-9f50-614978194369/customer-groups"
+          "path" : "/api/customers/9a7e0cfb-f296-4454-af22-6a826f226a42/customer-groups"
         },
         "method" : "POST",
         "header" : [ {
@@ -5011,7 +5153,7 @@
         } ],
         "body" : {
           "mode" : "raw",
-          "raw" : "[\"d8ac7f70-7105-422d-9b3a-19eeffcf9399\"]",
+          "raw" : "[\"7e190e6f-6d23-40aa-a110-400f5b4783bc\"]",
           "urlencoded" : [ ]
         }
       },
@@ -5023,148 +5165,6 @@
       "cookie" : [ ],
       "body" : "{\n  \"errorId\" : \"customer-not-available-for-customer-group\",\n  \"details\" : {\n    \"customerOrigin\" : \"GUEST\"\n  },\n  \"message\" : \"Customer is not available for customer group.\",\n  \"traceId\" : null\n}",
       "code" : 400
-    } ]
-  }, {
-    "id" : "customer-customer-group-delete",
-    "name" : "/customers/4f7e3bf3-f683-4121-badf-ad3070f5167f/customer-groups",
-    "description" : "Removes the customer identified by {customerId} from the provided list of customer groups identified by {customerGroupIds}. **Note**: For the time being, a customer can only be a member of one customer group at the time. To replace customers of customer groups in bulk, refer to the endpoint *Replace customers of customer groups*.",
-    "variable" : [ ],
-    "event" : [ ],
-    "request" : {
-      "url" : {
-        "protocol" : "https",
-        "host" : "{{host}}",
-        "path" : "/api/customers/4f7e3bf3-f683-4121-badf-ad3070f5167f/customer-groups"
-      },
-      "method" : "DELETE",
-      "header" : [ {
-        "key" : "Content-Type",
-        "value" : "application/json",
-        "disabled" : false
-      } ],
-      "body" : {
-        "mode" : "raw",
-        "raw" : "[\"506d5f23-87bf-4bb0-94a2-3bf939977649\"]",
-        "urlencoded" : [ ]
-      }
-    },
-    "response" : [ {
-      "id" : "customer-customer-group-delete",
-      "name" : "customer-customer-group-delete",
-      "originalRequest" : {
-        "url" : {
-          "protocol" : "https",
-          "host" : "{{host}}",
-          "path" : "/api/customers/4f7e3bf3-f683-4121-badf-ad3070f5167f/customer-groups"
-        },
-        "method" : "DELETE",
-        "header" : [ {
-          "key" : "Content-Type",
-          "value" : "application/json",
-          "disabled" : false
-        } ],
-        "body" : {
-          "mode" : "raw",
-          "raw" : "[\"506d5f23-87bf-4bb0-94a2-3bf939977649\"]",
-          "urlencoded" : [ ]
-        }
-      },
-      "header" : [ {
-        "key" : "Content-Type",
-        "value" : "application/hal+json",
-        "disabled" : false
-      } ],
-      "cookie" : [ ],
-      "body" : "{\n  \"_embedded\" : {\n    \"customerGroups\" : [ {\n      \"discountPercentage\" : -0.1,\n      \"name\" : \"Subscribers\",\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/customer-groups/b17b1be8-8d2a-458f-8be8-f9dff8e30a79\"\n        },\n        \"customer-group\" : {\n          \"href\" : \"https://yourshop.api.urn/customer-groups/b17b1be8-8d2a-458f-8be8-f9dff8e30a79\"\n        },\n        \"customers\" : {\n          \"href\" : \"https://yourshop.api.urn/customer-groups/b17b1be8-8d2a-458f-8be8-f9dff8e30a79/customers\"\n        }\n      },\n      \"_id\" : \"b17b1be8-8d2a-458f-8be8-f9dff8e30a79\"\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/customers/4f7e3bf3-f683-4121-badf-ad3070f5167f/customer-groups?page=0&size=20\"\n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\" : 1,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}",
-      "code" : 200
-    } ]
-  }, {
-    "id" : "customer-customer-group-get",
-    "name" : "/customers/58ecc947-8cb8-45e1-9bc5-95578e81cc6d/customer-groups",
-    "description" : "Returns a list of all customer groups that the customer identified by {customerId} is assigned to.",
-    "variable" : [ ],
-    "event" : [ ],
-    "request" : {
-      "url" : {
-        "protocol" : "https",
-        "host" : "{{host}}",
-        "path" : "/api/customers/58ecc947-8cb8-45e1-9bc5-95578e81cc6d/customer-groups"
-      },
-      "method" : "GET"
-    },
-    "response" : [ {
-      "id" : "customer-customer-group-get",
-      "name" : "customer-customer-group-get",
-      "originalRequest" : {
-        "url" : {
-          "protocol" : "https",
-          "host" : "{{host}}",
-          "path" : "/api/customers/58ecc947-8cb8-45e1-9bc5-95578e81cc6d/customer-groups"
-        },
-        "method" : "GET"
-      },
-      "header" : [ {
-        "key" : "Content-Type",
-        "value" : "application/hal+json",
-        "disabled" : false
-      } ],
-      "cookie" : [ ],
-      "body" : "{\n  \"_embedded\" : {\n    \"customerGroups\" : [ {\n      \"discountPercentage\" : -0.1,\n      \"name\" : \"Subscribers\",\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/customer-groups/79535a40-fb20-4f84-9683-82e53eb24596\"\n        },\n        \"customer-group\" : {\n          \"href\" : \"https://yourshop.api.urn/customer-groups/79535a40-fb20-4f84-9683-82e53eb24596\"\n        },\n        \"customers\" : {\n          \"href\" : \"https://yourshop.api.urn/customer-groups/79535a40-fb20-4f84-9683-82e53eb24596/customers\"\n        }\n      },\n      \"_id\" : \"79535a40-fb20-4f84-9683-82e53eb24596\"\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/customers/58ecc947-8cb8-45e1-9bc5-95578e81cc6d/customer-groups?page=0&size=20\"\n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\" : 1,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}",
-      "code" : 200
-    } ]
-  }, {
-    "id" : "customer-customer-group-post",
-    "name" : "/customers/8233cb91-8746-45ac-b431-78c5d85bb546/customer-groups",
-    "description" : "Adds the customer identified by {customerId} to the provided list of customer groups identified by {customerGroupIds}. **Note**: For the time being, a customer can only be a member of one customer group at the time. This means that a customer cannot be added to more than one group. In order to add the customer to another customer group, they first need to be removed from the customer group they are currently assigned to. To replace customers of customer groups in bulk, refer to the endpoint *Replace customers of customer groups*.",
-    "variable" : [ ],
-    "event" : [ ],
-    "request" : {
-      "url" : {
-        "protocol" : "https",
-        "host" : "{{host}}",
-        "path" : "/api/customers/8233cb91-8746-45ac-b431-78c5d85bb546/customer-groups"
-      },
-      "method" : "POST",
-      "header" : [ {
-        "key" : "Content-Type",
-        "value" : "application/json",
-        "disabled" : false
-      } ],
-      "body" : {
-        "mode" : "raw",
-        "raw" : "[\"8d272d61-4067-46c9-ac65-e5a4e8b5a76d\"]",
-        "urlencoded" : [ ]
-      }
-    },
-    "response" : [ {
-      "id" : "customer-customer-group-post",
-      "name" : "customer-customer-group-post",
-      "originalRequest" : {
-        "url" : {
-          "protocol" : "https",
-          "host" : "{{host}}",
-          "path" : "/api/customers/8233cb91-8746-45ac-b431-78c5d85bb546/customer-groups"
-        },
-        "method" : "POST",
-        "header" : [ {
-          "key" : "Content-Type",
-          "value" : "application/json",
-          "disabled" : false
-        } ],
-        "body" : {
-          "mode" : "raw",
-          "raw" : "[\"8d272d61-4067-46c9-ac65-e5a4e8b5a76d\"]",
-          "urlencoded" : [ ]
-        }
-      },
-      "header" : [ {
-        "key" : "Content-Type",
-        "value" : "application/hal+json",
-        "disabled" : false
-      } ],
-      "cookie" : [ ],
-      "body" : "{\n  \"_embedded\" : {\n    \"customerGroups\" : [ {\n      \"discountPercentage\" : -0.1,\n      \"name\" : \"Subscribers\",\n      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/customer-groups/8d272d61-4067-46c9-ac65-e5a4e8b5a76d\"\n        },\n        \"customer-group\" : {\n          \"href\" : \"https://yourshop.api.urn/customer-groups/8d272d61-4067-46c9-ac65-e5a4e8b5a76d\"\n        },\n        \"customers\" : {\n          \"href\" : \"https://yourshop.api.urn/customer-groups/8d272d61-4067-46c9-ac65-e5a4e8b5a76d/customers\"\n        }\n      },\n      \"_id\" : \"8d272d61-4067-46c9-ac65-e5a4e8b5a76d\"\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/customers/8233cb91-8746-45ac-b431-78c5d85bb546/customer-groups?page=0&size=20\"\n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\" : 1,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}",
-      "code" : 200
     } ]
   }, {
     "id" : "customer-batch-customer-group-replace-customer-group-not-provided",
@@ -5186,7 +5186,7 @@
       } ],
       "body" : {
         "mode" : "raw",
-        "raw" : "{\n  \"customers\" : [ \"2bccbf25-9926-46a6-bd0e-851cbe9d0df6\", \"06a2b3a6-d135-4eec-bde9-e1bc9f7978d7\" ],\n  \"customerGroups\" : [ ]\n}",
+        "raw" : "{\n  \"customers\" : [ \"88e64ec6-1a74-413f-98e3-bb22f6cb7031\", \"403fefc8-ae49-41e6-bdeb-5f4904e8a06d\" ],\n  \"customerGroups\" : [ ]\n}",
         "urlencoded" : [ ]
       }
     },
@@ -5207,7 +5207,7 @@
         } ],
         "body" : {
           "mode" : "raw",
-          "raw" : "{\n  \"customers\" : [ \"2bccbf25-9926-46a6-bd0e-851cbe9d0df6\", \"06a2b3a6-d135-4eec-bde9-e1bc9f7978d7\" ],\n  \"customerGroups\" : [ ]\n}",
+          "raw" : "{\n  \"customers\" : [ \"88e64ec6-1a74-413f-98e3-bb22f6cb7031\", \"403fefc8-ae49-41e6-bdeb-5f4904e8a06d\" ],\n  \"customerGroups\" : [ ]\n}",
           "urlencoded" : [ ]
         }
       },
@@ -5236,7 +5236,7 @@
         } ],
         "body" : {
           "mode" : "raw",
-          "raw" : "{\n  \"customers\" : [ \"0469d22a-5bc8-421a-b205-6fe8ef5d5dfe\", \"ea774f21-442d-4318-bb2f-ef5f2938e9c4\" ],\n  \"customerGroups\" : [ \"7a3dadee-a4d2-4252-9e4c-b04c5869d6fc\" ]\n}",
+          "raw" : "{\n  \"customers\" : [ \"71f9cd0b-e67c-4409-9f18-a125ed5f38a4\", \"5ed53d54-3079-4655-a333-f1f72012b605\" ],\n  \"customerGroups\" : [ \"92f7e3e6-62a0-4cb9-8fe7-c9a15a42a8a9\" ]\n}",
           "urlencoded" : [ ]
         }
       },
@@ -5246,7 +5246,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"errorId\" : \"input-validation-failed\",\n  \"details\" : {\n    \"validationErrors\" : [ {\n      \"entity\" : \"customersToCustomerGroupsBatchRequest\",\n      \"property\" : \"customerGroups\",\n      \"invalidValue\" : [ \"7a3dadee-a4d2-4252-9e4c-b04c5869d6fc\" ],\n      \"message\" : \"Unable to find customer groups with ids: [7a3dadee-a4d2-4252-9e4c-b04c5869d6fc]\",\n      \"constraintName\" : \"AllCustomerGroupsExistConstraint\"\n    } ]\n  },\n  \"message\" : \"Input validation failed\",\n  \"traceId\" : null\n}",
+      "body" : "{\n  \"errorId\" : \"input-validation-failed\",\n  \"details\" : {\n    \"validationErrors\" : [ {\n      \"entity\" : \"customersToCustomerGroupsBatchRequest\",\n      \"property\" : \"customerGroups\",\n      \"invalidValue\" : [ \"92f7e3e6-62a0-4cb9-8fe7-c9a15a42a8a9\" ],\n      \"message\" : \"Unable to find customer groups with ids: [92f7e3e6-62a0-4cb9-8fe7-c9a15a42a8a9]\",\n      \"constraintName\" : \"AllCustomerGroupsExistConstraint\"\n    } ]\n  },\n  \"message\" : \"Input validation failed\",\n  \"traceId\" : null\n}",
       "code" : 400
     }, {
       "id" : "customer-batch-customer-group-replace-customer-not-available",
@@ -5265,7 +5265,7 @@
         } ],
         "body" : {
           "mode" : "raw",
-          "raw" : "{\n  \"customers\" : [ \"01d6d5bc-a750-4dde-ba4d-5a77bd8ff014\", \"6e712a45-d5a1-4acb-afbb-3b6e3e7cd191\", \"e3a44ec6-09e5-412f-a0ca-8ec876945ce7\", \"5ccaf3d9-e182-4798-903f-86a8c0b8a73f\", \"bf31b227-1536-4562-83b9-1cd66f546423\" ],\n  \"customerGroups\" : [ \"e73981be-4e32-4c9b-a015-45b2c2b5096c\" ]\n}",
+          "raw" : "{\n  \"customers\" : [ \"8d300202-e361-4990-b653-f19188425223\", \"eca2cdc9-f3d7-4ce9-973c-e6d0bb1ea903\", \"409db4e5-ae51-4b20-a7e3-581343ed9c22\", \"05a3d8ed-aac3-4d42-ac45-9142445b0515\", \"b9e77370-ba2f-426f-8709-8af3cdf70397\" ],\n  \"customerGroups\" : [ \"617c9d20-e459-4db7-9e4a-c808a51b7d3f\" ]\n}",
           "urlencoded" : [ ]
         }
       },
@@ -5275,7 +5275,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"errorId\" : \"input-validation-failed\",\n  \"details\" : {\n    \"validationErrors\" : [ {\n      \"entity\" : \"customersToCustomerGroupsBatchRequest\",\n      \"property\" : \"customers\",\n      \"invalidValue\" : [ \"01d6d5bc-a750-4dde-ba4d-5a77bd8ff014\", \"6e712a45-d5a1-4acb-afbb-3b6e3e7cd191\", \"e3a44ec6-09e5-412f-a0ca-8ec876945ce7\", \"5ccaf3d9-e182-4798-903f-86a8c0b8a73f\", \"bf31b227-1536-4562-83b9-1cd66f546423\" ],\n      \"message\" : \"Invalid customers with ids: [6e712a45-d5a1-4acb-afbb-3b6e3e7cd191]\",\n      \"constraintName\" : \"AllCustomersExistConstraint\"\n    } ]\n  },\n  \"message\" : \"Input validation failed\",\n  \"traceId\" : null\n}",
+      "body" : "{\n  \"errorId\" : \"input-validation-failed\",\n  \"details\" : {\n    \"validationErrors\" : [ {\n      \"entity\" : \"customersToCustomerGroupsBatchRequest\",\n      \"property\" : \"customers\",\n      \"invalidValue\" : [ \"8d300202-e361-4990-b653-f19188425223\", \"eca2cdc9-f3d7-4ce9-973c-e6d0bb1ea903\", \"409db4e5-ae51-4b20-a7e3-581343ed9c22\", \"05a3d8ed-aac3-4d42-ac45-9142445b0515\", \"b9e77370-ba2f-426f-8709-8af3cdf70397\" ],\n      \"message\" : \"Invalid customers with ids: [05a3d8ed-aac3-4d42-ac45-9142445b0515]\",\n      \"constraintName\" : \"AllCustomersExistConstraint\"\n    } ]\n  },\n  \"message\" : \"Input validation failed\",\n  \"traceId\" : null\n}",
       "code" : 400
     }, {
       "id" : "customer-batch-customer-group-replace",
@@ -5294,7 +5294,7 @@
         } ],
         "body" : {
           "mode" : "raw",
-          "raw" : "{\n  \"customers\" : [ \"29ea8f19-c44e-488d-b02e-cb65f97ffa85\", \"d1ac9c4c-c5ce-423a-a9a2-1b32c0a2ad6d\" ],\n  \"customerGroups\" : [ \"259c3e03-6b11-4891-a2f3-dca0a71359ff\" ]\n}",
+          "raw" : "{\n  \"customers\" : [ \"83ac3107-4c9f-45e1-b262-0ad18ae8a21c\", \"ae326ea3-404d-4fd3-8f22-02349df03b12\" ],\n  \"customerGroups\" : [ \"d351ee69-7fb8-44af-88d8-30b5b30d0f71\" ]\n}",
           "urlencoded" : [ ]
         }
       },
@@ -5317,7 +5317,7 @@
         } ],
         "body" : {
           "mode" : "raw",
-          "raw" : "{\n  \"customers\" : [ \"7d2bc088-47fb-44f5-95ec-e28796418c67\", \"a5a0dee5-9e2e-41dc-98bb-3a2da861d488\", \"ef14aa07-0b2b-4917-873a-99fe75903cc0\" ],\n  \"customerGroups\" : [ \"af2502eb-eddb-46ac-a193-edffd8b3a8d9\" ]\n}",
+          "raw" : "{\n  \"customers\" : [ \"f980134b-5bb3-43bf-9b32-75c85f2c99d0\", \"72048bf4-3f19-42e6-a28f-dfa0d2fbc821\", \"be540fbf-eecf-47a7-8e24-c1d8f67316a6\" ],\n  \"customerGroups\" : [ \"955e2448-3724-4fad-9515-1d2b2e590c76\" ]\n}",
           "urlencoded" : [ ]
         }
       },
@@ -5327,12 +5327,12 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"errorId\" : \"input-validation-failed\",\n  \"details\" : {\n    \"validationErrors\" : [ {\n      \"entity\" : \"customersToCustomerGroupsBatchRequest\",\n      \"property\" : \"customers\",\n      \"invalidValue\" : [ \"7d2bc088-47fb-44f5-95ec-e28796418c67\", \"a5a0dee5-9e2e-41dc-98bb-3a2da861d488\", \"ef14aa07-0b2b-4917-873a-99fe75903cc0\" ],\n      \"message\" : \"Unable to find customers with ids: [7d2bc088-47fb-44f5-95ec-e28796418c67]\",\n      \"constraintName\" : \"AllCustomersExistConstraint\"\n    } ]\n  },\n  \"message\" : \"Input validation failed\",\n  \"traceId\" : null\n}",
+      "body" : "{\n  \"errorId\" : \"input-validation-failed\",\n  \"details\" : {\n    \"validationErrors\" : [ {\n      \"entity\" : \"customersToCustomerGroupsBatchRequest\",\n      \"property\" : \"customers\",\n      \"invalidValue\" : [ \"f980134b-5bb3-43bf-9b32-75c85f2c99d0\", \"72048bf4-3f19-42e6-a28f-dfa0d2fbc821\", \"be540fbf-eecf-47a7-8e24-c1d8f67316a6\" ],\n      \"message\" : \"Unable to find customers with ids: [f980134b-5bb3-43bf-9b32-75c85f2c99d0]\",\n      \"constraintName\" : \"AllCustomersExistConstraint\"\n    } ]\n  },\n  \"message\" : \"Input validation failed\",\n  \"traceId\" : null\n}",
       "code" : 400
     } ]
   }, {
     "id" : "customer-customer-group-delete-not-available-customer",
-    "name" : "/customers/df3aa7dc-7550-43ac-a4f9-adeaab170800/customer-groups",
+    "name" : "/customers/d29bba41-d296-47c0-91db-de51b754f314/customer-groups",
     "description" : "Only registered and pre-registered customers can be removed from customer groups. If a customer specified in the request has a different origin than `COCKPIT`, `IMPORT` or `STOREFRONT`, a `400 Bad Request` error will be returned.",
     "variable" : [ ],
     "event" : [ ],
@@ -5340,7 +5340,7 @@
       "url" : {
         "protocol" : "https",
         "host" : "{{host}}",
-        "path" : "/api/customers/df3aa7dc-7550-43ac-a4f9-adeaab170800/customer-groups"
+        "path" : "/api/customers/d29bba41-d296-47c0-91db-de51b754f314/customer-groups"
       },
       "method" : "DELETE",
       "header" : [ {
@@ -5350,7 +5350,7 @@
       } ],
       "body" : {
         "mode" : "raw",
-        "raw" : "[\"245634df-c5c6-4c02-81fe-eb51f3249ba1\"]",
+        "raw" : "[\"ab554e75-49bc-4239-9826-39df5aa61503\"]",
         "urlencoded" : [ ]
       }
     },
@@ -5361,7 +5361,7 @@
         "url" : {
           "protocol" : "https",
           "host" : "{{host}}",
-          "path" : "/api/customers/df3aa7dc-7550-43ac-a4f9-adeaab170800/customer-groups"
+          "path" : "/api/customers/d29bba41-d296-47c0-91db-de51b754f314/customer-groups"
         },
         "method" : "DELETE",
         "header" : [ {
@@ -5371,7 +5371,7 @@
         } ],
         "body" : {
           "mode" : "raw",
-          "raw" : "[\"245634df-c5c6-4c02-81fe-eb51f3249ba1\"]",
+          "raw" : "[\"ab554e75-49bc-4239-9826-39df5aa61503\"]",
           "urlencoded" : [ ]
         }
       },
@@ -5415,7 +5415,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"_embedded\" : {\n    \"customer-events\" : [ {\n      \"type\" : \"customer-created\",\n      \"comment\" : null,\n      \"eventTimestamp\" : \"2026-06-02T06:37:11.632\",\n      \"details\" : {\n        \"origin\" : \"GUEST\",\n        \"orderNumber\" : \"10002\"\n      },\n      \"triggeredBy\" : \"customer\"\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/customers/3907d8c4-487a-4ae4-bbc7-3cc85f887203/events?page=0&size=20&sort=eventTimestamp,desc\"\n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\" : 1,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}",
+      "body" : "{\n  \"_embedded\" : {\n    \"customer-events\" : [ {\n      \"type\" : \"customer-created\",\n      \"comment\" : null,\n      \"eventTimestamp\" : \"2026-08-04T07:34:10.492\",\n      \"details\" : {\n        \"origin\" : \"GUEST\",\n        \"orderNumber\" : \"10002\"\n      },\n      \"triggeredBy\" : \"customer\"\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/customers/b945213a-e2e5-4b4b-a336-e77aef24d37c/events?page=0&size=20&sort=eventTimestamp,desc\"\n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\" : 1,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}",
       "code" : 200
     } ]
   }, {
