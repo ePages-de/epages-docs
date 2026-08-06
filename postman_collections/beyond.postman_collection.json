@@ -2837,6 +2837,341 @@
       "code" : 200
     } ]
   }, {
+    "id" : "tax-class-list",
+    "name" : "/classes",
+    "description" : "Returns a paginated list of tax class summaries.",
+    "variable" : [ ],
+    "event" : [ ],
+    "request" : {
+      "url" : {
+        "protocol" : "https",
+        "host" : "{{host}}",
+        "path" : "/api/classes"
+      },
+      "method" : "GET"
+    },
+    "response" : [ {
+      "id" : "tax-class-list",
+      "name" : "tax-class-list",
+      "originalRequest" : {
+        "url" : {
+          "protocol" : "https",
+          "host" : "{{host}}",
+          "path" : "/api/classes"
+        },
+        "method" : "GET"
+      },
+      "header" : [ {
+        "key" : "Content-Type",
+        "value" : "application/hal+json",
+        "disabled" : false
+      } ],
+      "cookie" : [ ],
+      "body" : "{\n  \"_embedded\" : {\n    \"classes\" : [ {\n      \"_id\" : \"257f458e-26ab-4b53-b5af-62bbaf501791\",\n      \"code\" : \"257f458e-26ab-4b53-b5af-62bbaf501791\",\n      \"name\" : \"MyCustomTaxClass\"\n    }, {\n      \"_id\" : \"72c27a1b-9173-11f1-a5a4-061bd2b3a60e\",\n      \"code\" : \"REGULAR\",\n      \"name\" : \"Standard\",\n      \"system\" : true,\n      \"default\" : true\n    }, {\n      \"_id\" : \"72c27cef-9173-11f1-a5a4-061bd2b3a60e\",\n      \"code\" : \"REDUCED\",\n      \"name\" : \"Reduced\",\n      \"system\" : true\n    }, {\n      \"_id\" : \"72c28dc0-9173-11f1-a5a4-061bd2b3a60e\",\n      \"code\" : \"EXEMPT\",\n      \"name\" : \"Tax-exempt\",\n      \"system\" : true\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/classes?page=0&size=20\"\n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\" : 4,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}",
+      "code" : 200
+    } ]
+  }, {
+    "id" : "origin-country-not-present-in-tax-regions",
+    "name" : "/classes",
+    "description" : "The country of origin must be present as a full-country entry (no ZIP/postal code range) in exactly one tax region. Returns `400 Bad Request`.",
+    "variable" : [ ],
+    "event" : [ ],
+    "request" : {
+      "url" : {
+        "protocol" : "https",
+        "host" : "{{host}}",
+        "path" : "/api/classes"
+      },
+      "method" : "POST",
+      "header" : [ {
+        "key" : "Content-Type",
+        "value" : "application/json",
+        "disabled" : false
+      } ],
+      "body" : {
+        "mode" : "raw",
+        "raw" : "{\n  \"name\" : \"Super Reduced\",\n  \"taxConfiguration\" : {\n    \"origin\" : \"AT\",\n    \"taxRegions\" : [ {\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"DE\",\n        \"zipCodeFrom\" : null,\n        \"zipCodeTo\" : null,\n        \"areaName\" : null\n      }, {\n        \"countryCode\" : \"ES\",\n        \"zipCodeFrom\" : null,\n        \"zipCodeTo\" : null,\n        \"areaName\" : null\n      } ],\n      \"taxRateValue\" : 0.3\n    }, {\n      \"taxable\" : false,\n      \"countries\" : [ {\n        \"countryCode\" : \"HK\",\n        \"zipCodeFrom\" : null,\n        \"zipCodeTo\" : null,\n        \"areaName\" : null\n      }, {\n        \"countryCode\" : \"ES\",\n        \"zipCodeFrom\" : \"35000\",\n        \"zipCodeTo\" : \"35999\",\n        \"areaName\" : \"Canary Island\"\n      } ],\n      \"taxRateValue\" : 0\n    } ],\n    \"proRataTaxForAncillaryServices\" : true,\n    \"validFrom\" : null,\n    \"validUntil\" : null\n  }\n}",
+        "urlencoded" : [ ]
+      }
+    },
+    "response" : [ {
+      "id" : "origin-country-not-present-in-tax-regions",
+      "name" : "origin-country-not-present-in-tax-regions",
+      "originalRequest" : {
+        "url" : {
+          "protocol" : "https",
+          "host" : "{{host}}",
+          "path" : "/api/classes"
+        },
+        "method" : "POST",
+        "header" : [ {
+          "key" : "Content-Type",
+          "value" : "application/json",
+          "disabled" : false
+        } ],
+        "body" : {
+          "mode" : "raw",
+          "raw" : "{\n  \"name\" : \"Super Reduced\",\n  \"taxConfiguration\" : {\n    \"origin\" : \"AT\",\n    \"taxRegions\" : [ {\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"DE\",\n        \"zipCodeFrom\" : null,\n        \"zipCodeTo\" : null,\n        \"areaName\" : null\n      }, {\n        \"countryCode\" : \"ES\",\n        \"zipCodeFrom\" : null,\n        \"zipCodeTo\" : null,\n        \"areaName\" : null\n      } ],\n      \"taxRateValue\" : 0.3\n    }, {\n      \"taxable\" : false,\n      \"countries\" : [ {\n        \"countryCode\" : \"HK\",\n        \"zipCodeFrom\" : null,\n        \"zipCodeTo\" : null,\n        \"areaName\" : null\n      }, {\n        \"countryCode\" : \"ES\",\n        \"zipCodeFrom\" : \"35000\",\n        \"zipCodeTo\" : \"35999\",\n        \"areaName\" : \"Canary Island\"\n      } ],\n      \"taxRateValue\" : 0\n    } ],\n    \"proRataTaxForAncillaryServices\" : true,\n    \"validFrom\" : null,\n    \"validUntil\" : null\n  }\n}",
+          "urlencoded" : [ ]
+        }
+      },
+      "header" : [ {
+        "key" : "Content-Type",
+        "value" : "application/hal+json",
+        "disabled" : false
+      } ],
+      "cookie" : [ ],
+      "body" : "{\n  \"errorId\" : \"input-validation-failed\",\n  \"details\" : {\n    \"validationErrors\" : [ {\n      \"entity\" : \"createTaxClassRequest\",\n      \"property\" : \"taxConfiguration.taxRegions\",\n      \"invalidValue\" : [ {\n        \"taxable\" : true,\n        \"countries\" : [ {\n          \"countryCode\" : \"DE\",\n          \"zipCodeFrom\" : null,\n          \"zipCodeTo\" : null,\n          \"areaName\" : null\n        }, {\n          \"countryCode\" : \"ES\",\n          \"zipCodeFrom\" : null,\n          \"zipCodeTo\" : null,\n          \"areaName\" : null\n        } ],\n        \"taxRateValue\" : 0.3\n      }, {\n        \"taxable\" : false,\n        \"countries\" : [ {\n          \"countryCode\" : \"HK\",\n          \"zipCodeFrom\" : null,\n          \"zipCodeTo\" : null,\n          \"areaName\" : null\n        }, {\n          \"countryCode\" : \"ES\",\n          \"zipCodeFrom\" : \"35000\",\n          \"zipCodeTo\" : \"35999\",\n          \"areaName\" : \"Canary Island\"\n        } ],\n        \"taxRateValue\" : 0\n      } ],\n      \"message\" : \"The country of origin Country[countryCode2Alpha=AT, zipCodeFrom=null, zipCodeTo=null, areaName=null] must be present as a full-country entry (no ZIP/postal code range) in exactly one tax region.\",\n      \"constraintName\" : \"OriginCountryPresentInTaxRegion\"\n    } ]\n  },\n  \"message\" : \"Input validation failed\",\n  \"traceId\" : null\n}",
+      "code" : 400
+    }, {
+      "id" : "tax-class-create",
+      "name" : "tax-class-create",
+      "originalRequest" : {
+        "url" : {
+          "protocol" : "https",
+          "host" : "{{host}}",
+          "path" : "/api/classes"
+        },
+        "method" : "POST",
+        "header" : [ {
+          "key" : "Content-Type",
+          "value" : "application/json",
+          "disabled" : false
+        } ],
+        "body" : {
+          "mode" : "raw",
+          "raw" : "{\n  \"name\" : \"Super Reduced\",\n  \"taxConfiguration\" : {\n    \"origin\" : null,\n    \"taxRegions\" : [ {\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"ES\",\n        \"zipCodeFrom\" : null,\n        \"zipCodeTo\" : null,\n        \"areaName\" : null\n      }, {\n        \"countryCode\" : \"DE\",\n        \"zipCodeFrom\" : null,\n        \"zipCodeTo\" : null,\n        \"areaName\" : null\n      }, {\n        \"countryCode\" : \"JP\",\n        \"zipCodeFrom\" : null,\n        \"zipCodeTo\" : null,\n        \"areaName\" : null\n      } ],\n      \"taxRateValue\" : 0.2\n    }, {\n      \"taxable\" : false,\n      \"countries\" : [ {\n        \"countryCode\" : \"HK\",\n        \"zipCodeFrom\" : null,\n        \"zipCodeTo\" : null,\n        \"areaName\" : null\n      }, {\n        \"countryCode\" : \"ES\",\n        \"zipCodeFrom\" : \"3500\",\n        \"zipCodeTo\" : \"35999\",\n        \"areaName\" : \"Canary Island\"\n      } ],\n      \"taxRateValue\" : 0.3\n    } ],\n    \"proRataTaxForAncillaryServices\" : true,\n    \"validFrom\" : null,\n    \"validUntil\" : null\n  }\n}",
+          "urlencoded" : [ ]
+        }
+      },
+      "header" : [ {
+        "key" : "Content-Type",
+        "value" : "application/hal+json",
+        "disabled" : false
+      } ],
+      "cookie" : [ ],
+      "body" : "{\n  \"_id\" : \"d7d7ebc2-9cf3-4ac7-ba92-c697ee390bb2\",\n  \"code\" : \"d7d7ebc2-9cf3-4ac7-ba92-c697ee390bb2\",\n  \"name\" : \"Super Reduced\",\n  \"taxConfiguration\" : {\n    \"origin\" : \"DE\",\n    \"taxRegions\" : [ {\n      \"name\" : \"PT\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"PT\"\n      } ]\n    }, {\n      \"name\" : \"CZ\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"CZ\"\n      } ]\n    }, {\n      \"name\" : \"LU\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"LU\"\n      } ]\n    }, {\n      \"name\" : \"LT\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"LT\"\n      } ]\n    }, {\n      \"name\" : \"BG\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"BG\"\n      } ]\n    }, {\n      \"name\" : \"DK\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"DK\"\n      } ]\n    }, {\n      \"name\" : \"SK\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"SK\"\n      } ]\n    }, {\n      \"name\" : \"HK\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"HK\"\n      } ],\n      \"taxRates\" : [ {\n        \"taxClass\" : \"d7d7ebc2-9cf3-4ac7-ba92-c697ee390bb2\",\n        \"name\" : \"Super Reduced\",\n        \"system\" : false,\n        \"value\" : 0.3\n      } ]\n    }, {\n      \"name\" : \"IT\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"IT\"\n      } ]\n    }, {\n      \"name\" : \"PL\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"PL\"\n      } ]\n    }, {\n      \"name\" : \"BE\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"BE\"\n      } ]\n    }, {\n      \"name\" : \"NL\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"NL\"\n      } ]\n    }, {\n      \"name\" : \"LV\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"LV\"\n      } ]\n    }, {\n      \"name\" : \"WORLD\",\n      \"taxable\" : false,\n      \"countries\" : [ {\n        \"countryCode\" : \"FI\",\n        \"zipCodeFrom\" : \"22000\",\n        \"zipCodeTo\" : \"22999\",\n        \"areaName\" : \"Aland Islands (Åland)\"\n      }, {\n        \"countryCode\" : \"FR\",\n        \"zipCodeFrom\" : \"97600\",\n        \"zipCodeTo\" : \"97699\",\n        \"areaName\" : \"Mayotte\"\n      }, {\n        \"countryCode\" : \"FR\",\n        \"zipCodeFrom\" : \"97500\",\n        \"zipCodeTo\" : \"97500\",\n        \"areaName\" : \"Saint Pierre and Miquelon (Saint-Pierre-et-Miquelon)\"\n      }, {\n        \"countryCode\" : \"GR\",\n        \"zipCodeFrom\" : \"63086\",\n        \"zipCodeTo\" : \"63087\",\n        \"areaName\" : \"Mount Athos (Agion Oros)\"\n      }, {\n        \"countryCode\" : \"FR\",\n        \"zipCodeFrom\" : \"97100\",\n        \"zipCodeTo\" : \"97199\",\n        \"areaName\" : \"Guadeloupe\"\n      }, {\n        \"countryCode\" : \"FR\",\n        \"zipCodeFrom\" : \"97200\",\n        \"zipCodeTo\" : \"97299\",\n        \"areaName\" : \"Martinique\"\n      }, {\n        \"countryCode\" : \"FR\",\n        \"zipCodeFrom\" : \"97300\",\n        \"zipCodeTo\" : \"97399\",\n        \"areaName\" : \"French Guiana (Guyane française)\"\n      }, {\n        \"countryCode\" : \"FR\",\n        \"zipCodeFrom\" : \"97400\",\n        \"zipCodeTo\" : \"97499\",\n        \"areaName\" : \"Reunion (Réunion)\"\n      }, {\n        \"countryCode\" : \"DE\",\n        \"zipCodeFrom\" : \"27498\",\n        \"zipCodeTo\" : \"27498\",\n        \"areaName\" : \"Heligoland (Helgoland)\"\n      }, {\n        \"countryCode\" : \"ES\",\n        \"zipCodeFrom\" : \"35000\",\n        \"zipCodeTo\" : \"35999\",\n        \"areaName\" : \"Canary Islands (Islas Canarias)\"\n      }, {\n        \"countryCode\" : \"IT\",\n        \"zipCodeFrom\" : \"22060\",\n        \"zipCodeTo\" : \"22060\",\n        \"areaName\" : \"Campione d'Italia\"\n      }, {\n        \"countryCode\" : \"DE\",\n        \"zipCodeFrom\" : \"78266\",\n        \"zipCodeTo\" : \"78266\",\n        \"areaName\" : \"Busingen (Büsingen)\"\n      }, {\n        \"countryCode\" : \"ES\",\n        \"zipCodeFrom\" : \"51001\",\n        \"zipCodeTo\" : \"51005\",\n        \"areaName\" : \"Ceuta\"\n      }, {\n        \"countryCode\" : \"IT\",\n        \"zipCodeFrom\" : \"23041\",\n        \"zipCodeTo\" : \"23041\",\n        \"areaName\" : \"Livigno\"\n      }, {\n        \"countryCode\" : \"ES\",\n        \"zipCodeFrom\" : \"52001\",\n        \"zipCodeTo\" : \"52006\",\n        \"areaName\" : \"Melilla\"\n      }, {\n        \"countryCode\" : \"ES\",\n        \"zipCodeFrom\" : \"38000\",\n        \"zipCodeTo\" : \"38999\",\n        \"areaName\" : \"Canary Islands (Islas Canarias)\"\n      } ],\n      \"taxRates\" : [ {\n        \"taxClass\" : \"d7d7ebc2-9cf3-4ac7-ba92-c697ee390bb2\",\n        \"name\" : \"Super Reduced\",\n        \"system\" : false,\n        \"value\" : 0\n      } ]\n    }, {\n      \"name\" : \"FI\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"FI\"\n      } ]\n    }, {\n      \"name\" : \"HU\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"HU\"\n      } ]\n    }, {\n      \"name\" : \"RO\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"RO\"\n      } ]\n    }, {\n      \"name\" : \"ES\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"ES\"\n      } ],\n      \"taxRates\" : [ {\n        \"taxClass\" : \"d7d7ebc2-9cf3-4ac7-ba92-c697ee390bb2\",\n        \"name\" : \"Super Reduced\",\n        \"system\" : false,\n        \"value\" : 0.2\n      } ]\n    }, {\n      \"name\" : \"IE\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"IE\"\n      } ]\n    }, {\n      \"name\" : \"AT\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"AT\"\n      } ]\n    }, {\n      \"name\" : \"ORIGIN\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"DE\"\n      } ],\n      \"taxRates\" : [ {\n        \"taxClass\" : \"d7d7ebc2-9cf3-4ac7-ba92-c697ee390bb2\",\n        \"name\" : \"Super Reduced\",\n        \"system\" : false,\n        \"value\" : 0.2\n      } ]\n    }, {\n      \"name\" : \"SE\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"SE\"\n      } ]\n    }, {\n      \"name\" : \"FR\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"FR\"\n      } ]\n    }, {\n      \"name\" : \"SI\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"SI\"\n      } ]\n    }, {\n      \"name\" : \"CY\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"CY\"\n      } ]\n    }, {\n      \"name\" : \"GR\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"GR\"\n      } ]\n    }, {\n      \"name\" : \"HR\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"HR\"\n      } ]\n    }, {\n      \"name\" : \"ES_Canary Island\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"ES\",\n        \"zipCodeFrom\" : \"3500\",\n        \"zipCodeTo\" : \"35999\",\n        \"areaName\" : \"Canary Island\"\n      } ],\n      \"taxRates\" : [ {\n        \"taxClass\" : \"d7d7ebc2-9cf3-4ac7-ba92-c697ee390bb2\",\n        \"name\" : \"Super Reduced\",\n        \"system\" : false,\n        \"value\" : 0.3\n      } ]\n    }, {\n      \"name\" : \"EE\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"EE\"\n      } ]\n    }, {\n      \"name\" : \"JP\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"JP\"\n      } ],\n      \"taxRates\" : [ {\n        \"taxClass\" : \"d7d7ebc2-9cf3-4ac7-ba92-c697ee390bb2\",\n        \"name\" : \"Super Reduced\",\n        \"system\" : false,\n        \"value\" : 0.2\n      } ]\n    }, {\n      \"name\" : \"MT\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"MT\"\n      } ]\n    } ],\n    \"proRataTaxForAncillaryServices\" : true,\n    \"validFrom\" : null,\n    \"validUntil\" : null\n  }\n}",
+      "code" : 201
+    }, {
+      "id" : "tax-configuration-not-found",
+      "name" : "tax-configuration-not-found",
+      "originalRequest" : {
+        "url" : {
+          "protocol" : "https",
+          "host" : "{{host}}",
+          "path" : "/api/classes"
+        },
+        "method" : "POST",
+        "header" : [ {
+          "key" : "Content-Type",
+          "value" : "application/json",
+          "disabled" : false
+        } ],
+        "body" : {
+          "mode" : "raw",
+          "raw" : "{\n  \"name\" : \"Super Reduced\",\n  \"taxConfiguration\" : {\n    \"origin\" : null,\n    \"taxRegions\" : [ {\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"ES\",\n        \"zipCodeFrom\" : null,\n        \"zipCodeTo\" : null,\n        \"areaName\" : null\n      }, {\n        \"countryCode\" : \"DE\",\n        \"zipCodeFrom\" : null,\n        \"zipCodeTo\" : null,\n        \"areaName\" : null\n      }, {\n        \"countryCode\" : \"JP\",\n        \"zipCodeFrom\" : null,\n        \"zipCodeTo\" : null,\n        \"areaName\" : null\n      } ],\n      \"taxRateValue\" : 0.2\n    }, {\n      \"taxable\" : false,\n      \"countries\" : [ {\n        \"countryCode\" : \"HK\",\n        \"zipCodeFrom\" : null,\n        \"zipCodeTo\" : null,\n        \"areaName\" : null\n      }, {\n        \"countryCode\" : \"ES\",\n        \"zipCodeFrom\" : \"3500\",\n        \"zipCodeTo\" : \"35999\",\n        \"areaName\" : \"Canary Island\"\n      } ],\n      \"taxRateValue\" : 0.3\n    } ],\n    \"proRataTaxForAncillaryServices\" : true,\n    \"validFrom\" : null,\n    \"validUntil\" : null\n  }\n}",
+          "urlencoded" : [ ]
+        }
+      },
+      "header" : [ {
+        "key" : "Content-Type",
+        "value" : "application/hal+json",
+        "disabled" : false
+      } ],
+      "cookie" : [ ],
+      "body" : "{\n  \"errorId\" : \"tax-configuration-not-found\",\n  \"details\" : { },\n  \"message\" : \"Tax Configuration for origin 'JP' not found.\",\n  \"traceId\" : null\n}",
+      "code" : 404
+    } ]
+  }, {
+    "id" : "tax-class-update",
+    "name" : "/classes/c8402c27-8b80-4594-b000-12a2688ce4d0",
+    "description" : "Updates a tax class along with rates.",
+    "variable" : [ ],
+    "event" : [ ],
+    "request" : {
+      "url" : {
+        "protocol" : "https",
+        "host" : "{{host}}",
+        "path" : "/api/classes/c8402c27-8b80-4594-b000-12a2688ce4d0"
+      },
+      "method" : "PUT",
+      "header" : [ {
+        "key" : "Content-Type",
+        "value" : "application/json",
+        "disabled" : false
+      } ],
+      "body" : {
+        "mode" : "raw",
+        "raw" : "{\n  \"name\" : \"Extra Super Reduced\",\n  \"taxConfiguration\" : {\n    \"origin\" : null,\n    \"taxRegions\" : [ {\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"ES\",\n        \"zipCodeFrom\" : null,\n        \"zipCodeTo\" : null,\n        \"areaName\" : null\n      }, {\n        \"countryCode\" : \"PL\",\n        \"zipCodeFrom\" : null,\n        \"zipCodeTo\" : null,\n        \"areaName\" : null\n      }, {\n        \"countryCode\" : \"DE\",\n        \"zipCodeFrom\" : null,\n        \"zipCodeTo\" : null,\n        \"areaName\" : null\n      } ],\n      \"taxRateValue\" : 0.2\n    }, {\n      \"taxable\" : false,\n      \"countries\" : [ {\n        \"countryCode\" : \"JP\",\n        \"zipCodeFrom\" : null,\n        \"zipCodeTo\" : null,\n        \"areaName\" : null\n      }, {\n        \"countryCode\" : \"ES\",\n        \"zipCodeFrom\" : \"3500\",\n        \"zipCodeTo\" : \"35999\",\n        \"areaName\" : \"Canary Island\"\n      } ],\n      \"taxRateValue\" : 0.1\n    } ],\n    \"proRataTaxForAncillaryServices\" : true,\n    \"validFrom\" : null,\n    \"validUntil\" : null\n  }\n}",
+        "urlencoded" : [ ]
+      }
+    },
+    "response" : [ {
+      "id" : "tax-class-update",
+      "name" : "tax-class-update",
+      "originalRequest" : {
+        "url" : {
+          "protocol" : "https",
+          "host" : "{{host}}",
+          "path" : "/api/classes/c8402c27-8b80-4594-b000-12a2688ce4d0"
+        },
+        "method" : "PUT",
+        "header" : [ {
+          "key" : "Content-Type",
+          "value" : "application/json",
+          "disabled" : false
+        } ],
+        "body" : {
+          "mode" : "raw",
+          "raw" : "{\n  \"name\" : \"Extra Super Reduced\",\n  \"taxConfiguration\" : {\n    \"origin\" : null,\n    \"taxRegions\" : [ {\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"ES\",\n        \"zipCodeFrom\" : null,\n        \"zipCodeTo\" : null,\n        \"areaName\" : null\n      }, {\n        \"countryCode\" : \"PL\",\n        \"zipCodeFrom\" : null,\n        \"zipCodeTo\" : null,\n        \"areaName\" : null\n      }, {\n        \"countryCode\" : \"DE\",\n        \"zipCodeFrom\" : null,\n        \"zipCodeTo\" : null,\n        \"areaName\" : null\n      } ],\n      \"taxRateValue\" : 0.2\n    }, {\n      \"taxable\" : false,\n      \"countries\" : [ {\n        \"countryCode\" : \"JP\",\n        \"zipCodeFrom\" : null,\n        \"zipCodeTo\" : null,\n        \"areaName\" : null\n      }, {\n        \"countryCode\" : \"ES\",\n        \"zipCodeFrom\" : \"3500\",\n        \"zipCodeTo\" : \"35999\",\n        \"areaName\" : \"Canary Island\"\n      } ],\n      \"taxRateValue\" : 0.1\n    } ],\n    \"proRataTaxForAncillaryServices\" : true,\n    \"validFrom\" : null,\n    \"validUntil\" : null\n  }\n}",
+          "urlencoded" : [ ]
+        }
+      },
+      "header" : [ {
+        "key" : "Content-Type",
+        "value" : "application/hal+json",
+        "disabled" : false
+      } ],
+      "cookie" : [ ],
+      "body" : "{\n  \"_id\" : \"c8402c27-8b80-4594-b000-12a2688ce4d0\",\n  \"code\" : \"c8402c27-8b80-4594-b000-12a2688ce4d0\",\n  \"name\" : \"Extra Super Reduced\",\n  \"taxConfiguration\" : {\n    \"origin\" : \"DE\",\n    \"taxRegions\" : [ {\n      \"name\" : \"LT\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"LT\"\n      } ]\n    }, {\n      \"name\" : \"IT\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"IT\"\n      } ]\n    }, {\n      \"name\" : \"BG\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"BG\"\n      } ]\n    }, {\n      \"name\" : \"JP\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"JP\"\n      } ],\n      \"taxRates\" : [ {\n        \"taxClass\" : \"c8402c27-8b80-4594-b000-12a2688ce4d0\",\n        \"name\" : \"Extra Super Reduced\",\n        \"system\" : false,\n        \"value\" : 0.1\n      } ]\n    }, {\n      \"name\" : \"DK\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"DK\"\n      } ]\n    }, {\n      \"name\" : \"SI\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"SI\"\n      } ]\n    }, {\n      \"name\" : \"PL\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"PL\"\n      } ]\n    }, {\n      \"name\" : \"RO\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"RO\"\n      } ]\n    }, {\n      \"name\" : \"PT\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"PT\"\n      } ]\n    }, {\n      \"name\" : \"CZ\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"CZ\"\n      } ]\n    }, {\n      \"name\" : \"EE\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"EE\"\n      } ]\n    }, {\n      \"name\" : \"SK\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"SK\"\n      } ]\n    }, {\n      \"name\" : \"HR\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"HR\"\n      } ]\n    }, {\n      \"name\" : \"IE\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"IE\"\n      } ]\n    }, {\n      \"name\" : \"GR\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"GR\"\n      } ]\n    }, {\n      \"name\" : \"SE\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"SE\"\n      } ]\n    }, {\n      \"name\" : \"ORIGIN\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"DE\"\n      } ],\n      \"taxRates\" : [ {\n        \"taxClass\" : \"c8402c27-8b80-4594-b000-12a2688ce4d0\",\n        \"name\" : \"Extra Super Reduced\",\n        \"system\" : false,\n        \"value\" : 0.2\n      } ]\n    }, {\n      \"name\" : \"BE\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"BE\"\n      } ]\n    }, {\n      \"name\" : \"ES_Canary Island\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"ES\",\n        \"zipCodeFrom\" : \"3500\",\n        \"zipCodeTo\" : \"35999\",\n        \"areaName\" : \"Canary Island\"\n      } ],\n      \"taxRates\" : [ {\n        \"taxClass\" : \"c8402c27-8b80-4594-b000-12a2688ce4d0\",\n        \"name\" : \"Extra Super Reduced\",\n        \"system\" : false,\n        \"value\" : 0.1\n      } ]\n    }, {\n      \"name\" : \"WORLD\",\n      \"taxable\" : false,\n      \"countries\" : [ {\n        \"countryCode\" : \"FR\",\n        \"zipCodeFrom\" : \"97200\",\n        \"zipCodeTo\" : \"97299\",\n        \"areaName\" : \"Martinique\"\n      }, {\n        \"countryCode\" : \"FR\",\n        \"zipCodeFrom\" : \"97600\",\n        \"zipCodeTo\" : \"97699\",\n        \"areaName\" : \"Mayotte\"\n      }, {\n        \"countryCode\" : \"FI\",\n        \"zipCodeFrom\" : \"22000\",\n        \"zipCodeTo\" : \"22999\",\n        \"areaName\" : \"Aland Islands (Åland)\"\n      }, {\n        \"countryCode\" : \"GR\",\n        \"zipCodeFrom\" : \"63086\",\n        \"zipCodeTo\" : \"63087\",\n        \"areaName\" : \"Mount Athos (Agion Oros)\"\n      }, {\n        \"countryCode\" : \"IT\",\n        \"zipCodeFrom\" : \"22060\",\n        \"zipCodeTo\" : \"22060\",\n        \"areaName\" : \"Campione d'Italia\"\n      }, {\n        \"countryCode\" : \"IT\",\n        \"zipCodeFrom\" : \"23041\",\n        \"zipCodeTo\" : \"23041\",\n        \"areaName\" : \"Livigno\"\n      }, {\n        \"countryCode\" : \"FR\",\n        \"zipCodeFrom\" : \"97500\",\n        \"zipCodeTo\" : \"97500\",\n        \"areaName\" : \"Saint Pierre and Miquelon (Saint-Pierre-et-Miquelon)\"\n      }, {\n        \"countryCode\" : \"ES\",\n        \"zipCodeFrom\" : \"35000\",\n        \"zipCodeTo\" : \"35999\",\n        \"areaName\" : \"Canary Islands (Islas Canarias)\"\n      }, {\n        \"countryCode\" : \"FR\",\n        \"zipCodeFrom\" : \"97100\",\n        \"zipCodeTo\" : \"97199\",\n        \"areaName\" : \"Guadeloupe\"\n      }, {\n        \"countryCode\" : \"FR\",\n        \"zipCodeFrom\" : \"97300\",\n        \"zipCodeTo\" : \"97399\",\n        \"areaName\" : \"French Guiana (Guyane française)\"\n      }, {\n        \"countryCode\" : \"FR\",\n        \"zipCodeFrom\" : \"97400\",\n        \"zipCodeTo\" : \"97499\",\n        \"areaName\" : \"Reunion (Réunion)\"\n      }, {\n        \"countryCode\" : \"DE\",\n        \"zipCodeFrom\" : \"27498\",\n        \"zipCodeTo\" : \"27498\",\n        \"areaName\" : \"Heligoland (Helgoland)\"\n      }, {\n        \"countryCode\" : \"DE\",\n        \"zipCodeFrom\" : \"78266\",\n        \"zipCodeTo\" : \"78266\",\n        \"areaName\" : \"Busingen (Büsingen)\"\n      }, {\n        \"countryCode\" : \"ES\",\n        \"zipCodeFrom\" : \"51001\",\n        \"zipCodeTo\" : \"51005\",\n        \"areaName\" : \"Ceuta\"\n      }, {\n        \"countryCode\" : \"ES\",\n        \"zipCodeFrom\" : \"38000\",\n        \"zipCodeTo\" : \"38999\",\n        \"areaName\" : \"Canary Islands (Islas Canarias)\"\n      }, {\n        \"countryCode\" : \"ES\",\n        \"zipCodeFrom\" : \"52001\",\n        \"zipCodeTo\" : \"52006\",\n        \"areaName\" : \"Melilla\"\n      } ],\n      \"taxRates\" : [ {\n        \"taxClass\" : \"c8402c27-8b80-4594-b000-12a2688ce4d0\",\n        \"name\" : \"Extra Super Reduced\",\n        \"system\" : false,\n        \"value\" : 0\n      } ]\n    }, {\n      \"name\" : \"ES\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"ES\"\n      } ],\n      \"taxRates\" : [ {\n        \"taxClass\" : \"c8402c27-8b80-4594-b000-12a2688ce4d0\",\n        \"name\" : \"Extra Super Reduced\",\n        \"system\" : false,\n        \"value\" : 0.2\n      } ]\n    }, {\n      \"name\" : \"LV\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"LV\"\n      } ]\n    }, {\n      \"name\" : \"FR\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"FR\"\n      } ]\n    }, {\n      \"name\" : \"NL\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"NL\"\n      } ]\n    }, {\n      \"name\" : \"AT\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"AT\"\n      } ]\n    }, {\n      \"name\" : \"FI\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"FI\"\n      } ]\n    }, {\n      \"name\" : \"MT\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"MT\"\n      } ]\n    }, {\n      \"name\" : \"LU\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"LU\"\n      } ]\n    }, {\n      \"name\" : \"HK\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"HK\"\n      } ],\n      \"taxRates\" : [ {\n        \"taxClass\" : \"c8402c27-8b80-4594-b000-12a2688ce4d0\",\n        \"name\" : \"Extra Super Reduced\",\n        \"system\" : false,\n        \"value\" : 0.3\n      } ]\n    }, {\n      \"name\" : \"CY\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"CY\"\n      } ]\n    }, {\n      \"name\" : \"HU\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"HU\"\n      } ]\n    } ],\n    \"proRataTaxForAncillaryServices\" : true,\n    \"validFrom\" : null,\n    \"validUntil\" : null\n  }\n}",
+      "code" : 200
+    } ]
+  }, {
+    "id" : "tax-class-delete",
+    "name" : "/classes/{id}",
+    "description" : "Deletes a tax class along with rates.",
+    "variable" : [ ],
+    "event" : [ ],
+    "request" : {
+      "url" : {
+        "protocol" : "https",
+        "host" : "{{host}}",
+        "path" : "/api/classes/:id"
+      },
+      "method" : "DELETE"
+    },
+    "response" : [ {
+      "id" : "tax-class-delete",
+      "name" : "tax-class-delete",
+      "originalRequest" : {
+        "url" : {
+          "protocol" : "https",
+          "host" : "{{host}}",
+          "path" : "/api/classes/:id"
+        },
+        "method" : "DELETE"
+      },
+      "cookie" : [ ],
+      "code" : 204
+    }, {
+      "id" : "read-only-system-tax-class",
+      "name" : "read-only-system-tax-class",
+      "originalRequest" : {
+        "url" : {
+          "protocol" : "https",
+          "host" : "{{host}}",
+          "path" : "/api/classes/:id"
+        },
+        "method" : "DELETE"
+      },
+      "header" : [ {
+        "key" : "Content-Type",
+        "value" : "application/json",
+        "disabled" : false
+      } ],
+      "cookie" : [ ],
+      "body" : "{\n  \"errorId\" : \"read-only-system-tax-class\",\n  \"details\" : { },\n  \"message\" : \"Tax class with code 'REGULAR' is a read-only system tax class and cannot be deleted or modified.\",\n  \"traceId\" : null\n}",
+      "code" : 403
+    } ]
+  }, {
+    "id" : "tax-class-with-configuration",
+    "name" : "/classes/4f01c5be-7aa0-4262-bdd5-e8e15eadf1e1/configuration",
+    "description" : "Returns a view containing tax class along with tax configuration.",
+    "variable" : [ ],
+    "event" : [ ],
+    "request" : {
+      "url" : {
+        "protocol" : "https",
+        "host" : "{{host}}",
+        "path" : "/api/classes/4f01c5be-7aa0-4262-bdd5-e8e15eadf1e1/configuration",
+        "query" : [ {
+          "key" : "effectiveDate",
+          "disabled" : false,
+          "description" : "Calculates the taxes based on the tax rates effective on the specified date. If omitted, the current tax rates are applied. Expressed according to ISO-8601 date time format with offset, e.g. 2011-12-24T10:15:30+01:00."
+        } ]
+      },
+      "method" : "GET"
+    },
+    "response" : [ {
+      "id" : "tax-class-with-configuration",
+      "name" : "tax-class-with-configuration",
+      "originalRequest" : {
+        "url" : {
+          "protocol" : "https",
+          "host" : "{{host}}",
+          "path" : "/api/classes/4f01c5be-7aa0-4262-bdd5-e8e15eadf1e1/configuration",
+          "query" : [ {
+            "key" : "effectiveDate",
+            "disabled" : false,
+            "description" : "Calculates the taxes based on the tax rates effective on the specified date. If omitted, the current tax rates are applied. Expressed according to ISO-8601 date time format with offset, e.g. 2011-12-24T10:15:30+01:00."
+          } ]
+        },
+        "method" : "GET"
+      },
+      "header" : [ {
+        "key" : "Content-Type",
+        "value" : "application/hal+json",
+        "disabled" : false
+      } ],
+      "cookie" : [ ],
+      "body" : "{\n  \"_id\" : \"4f01c5be-7aa0-4262-bdd5-e8e15eadf1e1\",\n  \"code\" : \"REGULAR\",\n  \"name\" : \"Standard\",\n  \"taxConfiguration\" : {\n    \"origin\" : \"DE\",\n    \"taxRegions\" : [ {\n      \"name\" : \"EU\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"NL\"\n      }, {\n        \"countryCode\" : \"FR\"\n      } ],\n      \"taxRates\" : [ {\n        \"taxClass\" : \"REGULAR\",\n        \"name\" : \"Standard\",\n        \"system\" : true,\n        \"value\" : 0.23\n      } ]\n    }, {\n      \"name\" : \"WORLD\",\n      \"taxable\" : true,\n      \"countries\" : [ {\n        \"countryCode\" : \"US\"\n      } ],\n      \"taxRates\" : [ {\n        \"taxClass\" : \"REGULAR\",\n        \"name\" : \"Standard\",\n        \"system\" : true,\n        \"value\" : 0\n      } ]\n    } ],\n    \"proRataTaxForAncillaryServices\" : true,\n    \"validFrom\" : null,\n    \"validUntil\" : null\n  }\n}",
+      "code" : 200
+    } ]
+  }, {
+    "id" : "shop-tax-configuration-get-with-rates",
+    "name" : "/configuration",
+    "description" : "",
+    "variable" : [ ],
+    "event" : [ ],
+    "request" : {
+      "url" : {
+        "protocol" : "https",
+        "host" : "{{host}}",
+        "path" : "/api/configuration",
+        "query" : [ {
+          "key" : "effectiveDate",
+          "disabled" : false,
+          "description" : "Calculates the taxes based on the tax rates effective on the specified date. If omitted, the current tax rates are applied. Expressed according to ISO-8601 date time format with offset, e.g. 2011-12-24T10:15:30+01:00."
+        } ]
+      },
+      "method" : "GET"
+    },
+    "response" : [ {
+      "id" : "shop-tax-configuration-get-with-rates",
+      "name" : "shop-tax-configuration-get-with-rates",
+      "originalRequest" : {
+        "url" : {
+          "protocol" : "https",
+          "host" : "{{host}}",
+          "path" : "/api/configuration",
+          "query" : [ {
+            "key" : "effectiveDate",
+            "disabled" : false,
+            "description" : "Calculates the taxes based on the tax rates effective on the specified date. If omitted, the current tax rates are applied. Expressed according to ISO-8601 date time format with offset, e.g. 2011-12-24T10:15:30+01:00."
+          } ]
+        },
+        "method" : "GET"
+      },
+      "header" : [ {
+        "key" : "Content-Type",
+        "value" : "application/hal+json",
+        "disabled" : false
+      } ],
+      "cookie" : [ ],
+      "body" : "{\n  \"_embedded\" : {\n    \"taxConfigurations\" : [ {\n      \"origin\" : \"ES\",\n      \"taxRegions\" : [ {\n        \"name\" : \"AT\",\n        \"taxable\" : true,\n        \"countries\" : [ {\n          \"countryCode\" : \"AT\"\n        } ],\n        \"taxRates\" : [ {\n          \"taxClass\" : \"911942b5-bdec-4fe9-bb3c-4783d211f6ea\",\n          \"name\" : \"ShopCustomTaxClass\",\n          \"system\" : false,\n          \"value\" : 0.12\n        }, {\n          \"taxClass\" : \"REGULAR\",\n          \"name\" : \"Standard\",\n          \"system\" : true,\n          \"value\" : 0.2\n        }, {\n          \"taxClass\" : \"REDUCED\",\n          \"name\" : \"Reduced\",\n          \"system\" : true,\n          \"value\" : 0.13\n        }, {\n          \"taxClass\" : \"REDUCED_2\",\n          \"name\" : \"Reduced 2\",\n          \"system\" : true,\n          \"value\" : 0.1\n        }, {\n          \"taxClass\" : \"EXEMPT\",\n          \"name\" : \"Tax-exempt\",\n          \"system\" : true,\n          \"value\" : 0\n        } ]\n      }, {\n        \"name\" : \"ORIGIN\",\n        \"taxable\" : true,\n        \"countries\" : [ {\n          \"countryCode\" : \"ES\"\n        } ],\n        \"taxRates\" : [ {\n          \"taxClass\" : \"911942b5-bdec-4fe9-bb3c-4783d211f6ea\",\n          \"name\" : \"ShopCustomTaxClass\",\n          \"system\" : false,\n          \"value\" : 0.12\n        }, {\n          \"taxClass\" : \"REGULAR\",\n          \"name\" : \"Standard\",\n          \"system\" : true,\n          \"value\" : 0.21\n        }, {\n          \"taxClass\" : \"REDUCED\",\n          \"name\" : \"Reduced\",\n          \"system\" : true,\n          \"value\" : 0.1\n        }, {\n          \"taxClass\" : \"REDUCED_2\",\n          \"name\" : \"Reduced 2\",\n          \"system\" : true,\n          \"value\" : 0.04\n        }, {\n          \"taxClass\" : \"EXEMPT\",\n          \"name\" : \"Tax-exempt\",\n          \"system\" : true,\n          \"value\" : 0\n        } ]\n      }, {\n        \"name\" : \"FR\",\n        \"taxable\" : true,\n        \"countries\" : [ {\n          \"countryCode\" : \"FR\"\n        } ],\n        \"taxRates\" : [ {\n          \"taxClass\" : \"911942b5-bdec-4fe9-bb3c-4783d211f6ea\",\n          \"name\" : \"ShopCustomTaxClass\",\n          \"system\" : false,\n          \"value\" : 0.12\n        }, {\n          \"taxClass\" : \"REGULAR\",\n          \"name\" : \"Standard\",\n          \"system\" : true,\n          \"value\" : 0.2\n        }, {\n          \"taxClass\" : \"REDUCED\",\n          \"name\" : \"Reduced\",\n          \"system\" : true,\n          \"value\" : 0.1\n        }, {\n          \"taxClass\" : \"REDUCED_2\",\n          \"name\" : \"Reduced 2\",\n          \"system\" : true,\n          \"value\" : 0.055\n        }, {\n          \"taxClass\" : \"EXEMPT\",\n          \"name\" : \"Tax-exempt\",\n          \"system\" : true,\n          \"value\" : 0\n        } ]\n      }, {\n        \"name\" : \"PL\",\n        \"taxable\" : true,\n        \"countries\" : [ {\n          \"countryCode\" : \"PL\"\n        } ],\n        \"taxRates\" : [ {\n          \"taxClass\" : \"REGULAR\",\n          \"name\" : \"Standard\",\n          \"system\" : true,\n          \"value\" : 0.23\n        }, {\n          \"taxClass\" : \"REDUCED\",\n          \"name\" : \"Reduced\",\n          \"system\" : true,\n          \"value\" : 0.08\n        }, {\n          \"taxClass\" : \"REDUCED_2\",\n          \"name\" : \"Reduced 2\",\n          \"system\" : true,\n          \"value\" : 0.05\n        }, {\n          \"taxClass\" : \"EXEMPT\",\n          \"name\" : \"Tax-exempt\",\n          \"system\" : true,\n          \"value\" : 0\n        }, {\n          \"taxClass\" : \"911942b5-bdec-4fe9-bb3c-4783d211f6ea\",\n          \"name\" : \"ShopCustomTaxClass\",\n          \"system\" : false,\n          \"value\" : 0.12\n        } ]\n      }, {\n        \"name\" : \"WORLD\",\n        \"taxable\" : false,\n        \"countries\" : [ {\n          \"countryCode\" : \"IT\",\n          \"zipCodeFrom\" : \"22060\",\n          \"zipCodeTo\" : \"22060\",\n          \"areaName\" : \"Campione d'Italia\"\n        }, {\n          \"countryCode\" : \"ES\",\n          \"zipCodeFrom\" : \"35000\",\n          \"zipCodeTo\" : \"35999\",\n          \"areaName\" : \"Canary Islands (Islas Canarias)\"\n        }, {\n          \"countryCode\" : \"FR\",\n          \"zipCodeFrom\" : \"97200\",\n          \"zipCodeTo\" : \"97299\",\n          \"areaName\" : \"Martinique\"\n        }, {\n          \"countryCode\" : \"IT\",\n          \"zipCodeFrom\" : \"23041\",\n          \"zipCodeTo\" : \"23041\",\n          \"areaName\" : \"Livigno\"\n        }, {\n          \"countryCode\" : \"FR\",\n          \"zipCodeFrom\" : \"97100\",\n          \"zipCodeTo\" : \"97199\",\n          \"areaName\" : \"Guadeloupe\"\n        }, {\n          \"countryCode\" : \"GR\",\n          \"zipCodeFrom\" : \"63086\",\n          \"zipCodeTo\" : \"63087\",\n          \"areaName\" : \"Mount Athos (Agion Oros)\"\n        }, {\n          \"countryCode\" : \"FI\",\n          \"zipCodeFrom\" : \"22000\",\n          \"zipCodeTo\" : \"22999\",\n          \"areaName\" : \"Aland Islands (Åland)\"\n        }, {\n          \"countryCode\" : \"ES\",\n          \"zipCodeFrom\" : \"38000\",\n          \"zipCodeTo\" : \"38999\",\n          \"areaName\" : \"Canary Islands (Islas Canarias)\"\n        }, {\n          \"countryCode\" : \"FR\",\n          \"zipCodeFrom\" : \"97500\",\n          \"zipCodeTo\" : \"97500\",\n          \"areaName\" : \"Saint Pierre and Miquelon (Saint-Pierre-et-Miquelon)\"\n        }, {\n          \"countryCode\" : \"FR\",\n          \"zipCodeFrom\" : \"97300\",\n          \"zipCodeTo\" : \"97399\",\n          \"areaName\" : \"French Guiana (Guyane française)\"\n        }, {\n          \"countryCode\" : \"FR\",\n          \"zipCodeFrom\" : \"97600\",\n          \"zipCodeTo\" : \"97699\",\n          \"areaName\" : \"Mayotte\"\n        }, {\n          \"countryCode\" : \"ES\",\n          \"zipCodeFrom\" : \"51001\",\n          \"zipCodeTo\" : \"51005\",\n          \"areaName\" : \"Ceuta\"\n        }, {\n          \"countryCode\" : \"DE\",\n          \"zipCodeFrom\" : \"78266\",\n          \"zipCodeTo\" : \"78266\",\n          \"areaName\" : \"Busingen (Büsingen)\"\n        }, {\n          \"countryCode\" : \"DE\",\n          \"zipCodeFrom\" : \"27498\",\n          \"zipCodeTo\" : \"27498\",\n          \"areaName\" : \"Heligoland (Helgoland)\"\n        }, {\n          \"countryCode\" : \"ES\",\n          \"zipCodeFrom\" : \"52001\",\n          \"zipCodeTo\" : \"52006\",\n          \"areaName\" : \"Melilla\"\n        }, {\n          \"countryCode\" : \"FR\",\n          \"zipCodeFrom\" : \"97400\",\n          \"zipCodeTo\" : \"97499\",\n          \"areaName\" : \"Reunion (Réunion)\"\n        } ],\n        \"taxRates\" : [ {\n          \"taxClass\" : \"REGULAR\",\n          \"name\" : \"Standard\",\n          \"system\" : true,\n          \"value\" : 0\n        }, {\n          \"taxClass\" : \"REDUCED\",\n          \"name\" : \"Reduced\",\n          \"system\" : true,\n          \"value\" : 0\n        }, {\n          \"taxClass\" : \"REDUCED_2\",\n          \"name\" : \"Reduced 2\",\n          \"system\" : true,\n          \"value\" : 0\n        }, {\n          \"taxClass\" : \"EXEMPT\",\n          \"name\" : \"Tax-exempt\",\n          \"system\" : true,\n          \"value\" : 0\n        }, {\n          \"taxClass\" : \"911942b5-bdec-4fe9-bb3c-4783d211f6ea\",\n          \"name\" : \"ShopCustomTaxClass\",\n          \"system\" : false,\n          \"value\" : 0.12\n        } ]\n      }, {\n        \"name\" : \"CZ\",\n        \"taxable\" : true,\n        \"countries\" : [ {\n          \"countryCode\" : \"CZ\"\n        } ],\n        \"taxRates\" : [ {\n          \"taxClass\" : \"REGULAR\",\n          \"name\" : \"Standard\",\n          \"system\" : true,\n          \"value\" : 0.21\n        }, {\n          \"taxClass\" : \"REDUCED\",\n          \"name\" : \"Reduced\",\n          \"system\" : true,\n          \"value\" : 0.12\n        }, {\n          \"taxClass\" : \"EXEMPT\",\n          \"name\" : \"Tax-exempt\",\n          \"system\" : true,\n          \"value\" : 0\n        }, {\n          \"taxClass\" : \"911942b5-bdec-4fe9-bb3c-4783d211f6ea\",\n          \"name\" : \"ShopCustomTaxClass\",\n          \"system\" : false,\n          \"value\" : 0.12\n        } ]\n      }, {\n        \"name\" : \"DK\",\n        \"taxable\" : true,\n        \"countries\" : [ {\n          \"countryCode\" : \"DK\"\n        } ],\n        \"taxRates\" : [ {\n          \"taxClass\" : \"911942b5-bdec-4fe9-bb3c-4783d211f6ea\",\n          \"name\" : \"ShopCustomTaxClass\",\n          \"system\" : false,\n          \"value\" : 0.12\n        }, {\n          \"taxClass\" : \"REGULAR\",\n          \"name\" : \"Standard\",\n          \"system\" : true,\n          \"value\" : 0.25\n        }, {\n          \"taxClass\" : \"EXEMPT\",\n          \"name\" : \"Tax-exempt\",\n          \"system\" : true,\n          \"value\" : 0\n        } ]\n      }, {\n        \"name\" : \"LV\",\n        \"taxable\" : true,\n        \"countries\" : [ {\n          \"countryCode\" : \"LV\"\n        } ],\n        \"taxRates\" : [ {\n          \"taxClass\" : \"911942b5-bdec-4fe9-bb3c-4783d211f6ea\",\n          \"name\" : \"ShopCustomTaxClass\",\n          \"system\" : false,\n          \"value\" : 0.12\n        }, {\n          \"taxClass\" : \"REGULAR\",\n          \"name\" : \"Standard\",\n          \"system\" : true,\n          \"value\" : 0.21\n        }, {\n          \"taxClass\" : \"REDUCED\",\n          \"name\" : \"Reduced\",\n          \"system\" : true,\n          \"value\" : 0.12\n        }, {\n          \"taxClass\" : \"REDUCED_2\",\n          \"name\" : \"Reduced 2\",\n          \"system\" : true,\n          \"value\" : 0.05\n        }, {\n          \"taxClass\" : \"EXEMPT\",\n          \"name\" : \"Tax-exempt\",\n          \"system\" : true,\n          \"value\" : 0\n        } ]\n      }, {\n        \"name\" : \"SE\",\n        \"taxable\" : true,\n        \"countries\" : [ {\n          \"countryCode\" : \"SE\"\n        } ],\n        \"taxRates\" : [ {\n          \"taxClass\" : \"REGULAR\",\n          \"name\" : \"Standard\",\n          \"system\" : true,\n          \"value\" : 0.25\n        }, {\n          \"taxClass\" : \"REDUCED\",\n          \"name\" : \"Reduced\",\n          \"system\" : true,\n          \"value\" : 0.12\n        }, {\n          \"taxClass\" : \"REDUCED_2\",\n          \"name\" : \"Reduced 2\",\n          \"system\" : true,\n          \"value\" : 0.06\n        }, {\n          \"taxClass\" : \"EXEMPT\",\n          \"name\" : \"Tax-exempt\",\n          \"system\" : true,\n          \"value\" : 0\n        }, {\n          \"taxClass\" : \"911942b5-bdec-4fe9-bb3c-4783d211f6ea\",\n          \"name\" : \"ShopCustomTaxClass\",\n          \"system\" : false,\n          \"value\" : 0.12\n        } ]\n      }, {\n        \"name\" : \"LU\",\n        \"taxable\" : true,\n        \"countries\" : [ {\n          \"countryCode\" : \"LU\"\n        } ],\n        \"taxRates\" : [ {\n          \"taxClass\" : \"REGULAR\",\n          \"name\" : \"Standard\",\n          \"system\" : true,\n          \"value\" : 0.17\n        }, {\n          \"taxClass\" : \"REDUCED\",\n          \"name\" : \"Reduced\",\n          \"system\" : true,\n          \"value\" : 0.14\n        }, {\n          \"taxClass\" : \"REDUCED_2\",\n          \"name\" : \"Reduced 2\",\n          \"system\" : true,\n          \"value\" : 0.08\n        }, {\n          \"taxClass\" : \"EXEMPT\",\n          \"name\" : \"Tax-exempt\",\n          \"system\" : true,\n          \"value\" : 0\n        }, {\n          \"taxClass\" : \"911942b5-bdec-4fe9-bb3c-4783d211f6ea\",\n          \"name\" : \"ShopCustomTaxClass\",\n          \"system\" : false,\n          \"value\" : 0.12\n        } ]\n      }, {\n        \"name\" : \"IE\",\n        \"taxable\" : true,\n        \"countries\" : [ {\n          \"countryCode\" : \"IE\"\n        } ],\n        \"taxRates\" : [ {\n          \"taxClass\" : \"REGULAR\",\n          \"name\" : \"Standard\",\n          \"system\" : true,\n          \"value\" : 0.23\n        }, {\n          \"taxClass\" : \"REDUCED\",\n          \"name\" : \"Reduced\",\n          \"system\" : true,\n          \"value\" : 0.135\n        }, {\n          \"taxClass\" : \"REDUCED_2\",\n          \"name\" : \"Reduced 2\",\n          \"system\" : true,\n          \"value\" : 0.09\n        }, {\n          \"taxClass\" : \"EXEMPT\",\n          \"name\" : \"Tax-exempt\",\n          \"system\" : true,\n          \"value\" : 0\n        }, {\n          \"taxClass\" : \"911942b5-bdec-4fe9-bb3c-4783d211f6ea\",\n          \"name\" : \"ShopCustomTaxClass\",\n          \"system\" : false,\n          \"value\" : 0.12\n        } ]\n      }, {\n        \"name\" : \"MT\",\n        \"taxable\" : true,\n        \"countries\" : [ {\n          \"countryCode\" : \"MT\"\n        } ],\n        \"taxRates\" : [ {\n          \"taxClass\" : \"REGULAR\",\n          \"name\" : \"Standard\",\n          \"system\" : true,\n          \"value\" : 0.18\n        }, {\n          \"taxClass\" : \"REDUCED\",\n          \"name\" : \"Reduced\",\n          \"system\" : true,\n          \"value\" : 0.07\n        }, {\n          \"taxClass\" : \"REDUCED_2\",\n          \"name\" : \"Reduced 2\",\n          \"system\" : true,\n          \"value\" : 0.05\n        }, {\n          \"taxClass\" : \"EXEMPT\",\n          \"name\" : \"Tax-exempt\",\n          \"system\" : true,\n          \"value\" : 0\n        }, {\n          \"taxClass\" : \"911942b5-bdec-4fe9-bb3c-4783d211f6ea\",\n          \"name\" : \"ShopCustomTaxClass\",\n          \"system\" : false,\n          \"value\" : 0.12\n        } ]\n      }, {\n        \"name\" : \"SK\",\n        \"taxable\" : true,\n        \"countries\" : [ {\n          \"countryCode\" : \"SK\"\n        } ],\n        \"taxRates\" : [ {\n          \"taxClass\" : \"REGULAR\",\n          \"name\" : \"Standard\",\n          \"system\" : true,\n          \"value\" : 0.23\n        }, {\n          \"taxClass\" : \"REDUCED\",\n          \"name\" : \"Reduced\",\n          \"system\" : true,\n          \"value\" : 0.19\n        }, {\n          \"taxClass\" : \"REDUCED_2\",\n          \"name\" : \"Reduced 2\",\n          \"system\" : true,\n          \"value\" : 0.05\n        }, {\n          \"taxClass\" : \"EXEMPT\",\n          \"name\" : \"Tax-exempt\",\n          \"system\" : true,\n          \"value\" : 0\n        }, {\n          \"taxClass\" : \"911942b5-bdec-4fe9-bb3c-4783d211f6ea\",\n          \"name\" : \"ShopCustomTaxClass\",\n          \"system\" : false,\n          \"value\" : 0.12\n        } ]\n      }, {\n        \"name\" : \"NL\",\n        \"taxable\" : true,\n        \"countries\" : [ {\n          \"countryCode\" : \"NL\"\n        } ],\n        \"taxRates\" : [ {\n          \"taxClass\" : \"911942b5-bdec-4fe9-bb3c-4783d211f6ea\",\n          \"name\" : \"ShopCustomTaxClass\",\n          \"system\" : false,\n          \"value\" : 0.12\n        }, {\n          \"taxClass\" : \"REGULAR\",\n          \"name\" : \"Standard\",\n          \"system\" : true,\n          \"value\" : 0.21\n        }, {\n          \"taxClass\" : \"REDUCED\",\n          \"name\" : \"Reduced\",\n          \"system\" : true,\n          \"value\" : 0.09\n        }, {\n          \"taxClass\" : \"EXEMPT\",\n          \"name\" : \"Tax-exempt\",\n          \"system\" : true,\n          \"value\" : 0\n        } ]\n      }, {\n        \"name\" : \"BE\",\n        \"taxable\" : true,\n        \"countries\" : [ {\n          \"countryCode\" : \"BE\"\n        } ],\n        \"taxRates\" : [ {\n          \"taxClass\" : \"REGULAR\",\n          \"name\" : \"Standard\",\n          \"system\" : true,\n          \"value\" : 0.21\n        }, {\n          \"taxClass\" : \"REDUCED\",\n          \"name\" : \"Reduced\",\n          \"system\" : true,\n          \"value\" : 0.12\n        }, {\n          \"taxClass\" : \"REDUCED_2\",\n          \"name\" : \"Reduced 2\",\n          \"system\" : true,\n          \"value\" : 0.06\n        }, {\n          \"taxClass\" : \"EXEMPT\",\n          \"name\" : \"Tax-exempt\",\n          \"system\" : true,\n          \"value\" : 0\n        }, {\n          \"taxClass\" : \"911942b5-bdec-4fe9-bb3c-4783d211f6ea\",\n          \"name\" : \"ShopCustomTaxClass\",\n          \"system\" : false,\n          \"value\" : 0.12\n        } ]\n      }, {\n        \"name\" : \"CY\",\n        \"taxable\" : true,\n        \"countries\" : [ {\n          \"countryCode\" : \"CY\"\n        } ],\n        \"taxRates\" : [ {\n          \"taxClass\" : \"911942b5-bdec-4fe9-bb3c-4783d211f6ea\",\n          \"name\" : \"ShopCustomTaxClass\",\n          \"system\" : false,\n          \"value\" : 0.12\n        }, {\n          \"taxClass\" : \"REGULAR\",\n          \"name\" : \"Standard\",\n          \"system\" : true,\n          \"value\" : 0.19\n        }, {\n          \"taxClass\" : \"REDUCED\",\n          \"name\" : \"Reduced\",\n          \"system\" : true,\n          \"value\" : 0.09\n        }, {\n          \"taxClass\" : \"REDUCED_2\",\n          \"name\" : \"Reduced 2\",\n          \"system\" : true,\n          \"value\" : 0.05\n        }, {\n          \"taxClass\" : \"EXEMPT\",\n          \"name\" : \"Tax-exempt\",\n          \"system\" : true,\n          \"value\" : 0\n        } ]\n      }, {\n        \"name\" : \"EE\",\n        \"taxable\" : true,\n        \"countries\" : [ {\n          \"countryCode\" : \"EE\"\n        } ],\n        \"taxRates\" : [ {\n          \"taxClass\" : \"911942b5-bdec-4fe9-bb3c-4783d211f6ea\",\n          \"name\" : \"ShopCustomTaxClass\",\n          \"system\" : false,\n          \"value\" : 0.12\n        }, {\n          \"taxClass\" : \"REGULAR\",\n          \"name\" : \"Standard\",\n          \"system\" : true,\n          \"value\" : 0.24\n        }, {\n          \"taxClass\" : \"REDUCED\",\n          \"name\" : \"Reduced\",\n          \"system\" : true,\n          \"value\" : 0.13\n        }, {\n          \"taxClass\" : \"REDUCED_2\",\n          \"name\" : \"Reduced 2\",\n          \"system\" : true,\n          \"value\" : 0.09\n        }, {\n          \"taxClass\" : \"EXEMPT\",\n          \"name\" : \"Tax-exempt\",\n          \"system\" : true,\n          \"value\" : 0\n        } ]\n      }, {\n        \"name\" : \"HR\",\n        \"taxable\" : true,\n        \"countries\" : [ {\n          \"countryCode\" : \"HR\"\n        } ],\n        \"taxRates\" : [ {\n          \"taxClass\" : \"REGULAR\",\n          \"name\" : \"Standard\",\n          \"system\" : true,\n          \"value\" : 0.25\n        }, {\n          \"taxClass\" : \"REDUCED\",\n          \"name\" : \"Reduced\",\n          \"system\" : true,\n          \"value\" : 0.13\n        }, {\n          \"taxClass\" : \"REDUCED_2\",\n          \"name\" : \"Reduced 2\",\n          \"system\" : true,\n          \"value\" : 0.05\n        }, {\n          \"taxClass\" : \"EXEMPT\",\n          \"name\" : \"Tax-exempt\",\n          \"system\" : true,\n          \"value\" : 0\n        }, {\n          \"taxClass\" : \"911942b5-bdec-4fe9-bb3c-4783d211f6ea\",\n          \"name\" : \"ShopCustomTaxClass\",\n          \"system\" : false,\n          \"value\" : 0.12\n        } ]\n      }, {\n        \"name\" : \"DE\",\n        \"taxable\" : true,\n        \"countries\" : [ {\n          \"countryCode\" : \"DE\"\n        } ],\n        \"taxRates\" : [ {\n          \"taxClass\" : \"911942b5-bdec-4fe9-bb3c-4783d211f6ea\",\n          \"name\" : \"ShopCustomTaxClass\",\n          \"system\" : false,\n          \"value\" : 0.12\n        }, {\n          \"taxClass\" : \"REGULAR\",\n          \"name\" : \"Standard\",\n          \"system\" : true,\n          \"value\" : 0.19\n        }, {\n          \"taxClass\" : \"REDUCED\",\n          \"name\" : \"Reduced\",\n          \"system\" : true,\n          \"value\" : 0.07\n        }, {\n          \"taxClass\" : \"EXEMPT\",\n          \"name\" : \"Tax-exempt\",\n          \"system\" : true,\n          \"value\" : 0\n        } ]\n      }, {\n        \"name\" : \"FI\",\n        \"taxable\" : true,\n        \"countries\" : [ {\n          \"countryCode\" : \"FI\"\n        } ],\n        \"taxRates\" : [ {\n          \"taxClass\" : \"911942b5-bdec-4fe9-bb3c-4783d211f6ea\",\n          \"name\" : \"ShopCustomTaxClass\",\n          \"system\" : false,\n          \"value\" : 0.12\n        }, {\n          \"taxClass\" : \"REGULAR\",\n          \"name\" : \"Standard\",\n          \"system\" : true,\n          \"value\" : 0.255\n        }, {\n          \"taxClass\" : \"REDUCED\",\n          \"name\" : \"Reduced\",\n          \"system\" : true,\n          \"value\" : 0.135\n        }, {\n          \"taxClass\" : \"REDUCED_2\",\n          \"name\" : \"Reduced 2\",\n          \"system\" : true,\n          \"value\" : 0.1\n        }, {\n          \"taxClass\" : \"EXEMPT\",\n          \"name\" : \"Tax-exempt\",\n          \"system\" : true,\n          \"value\" : 0\n        } ]\n      }, {\n        \"name\" : \"GR\",\n        \"taxable\" : true,\n        \"countries\" : [ {\n          \"countryCode\" : \"GR\"\n        } ],\n        \"taxRates\" : [ {\n          \"taxClass\" : \"911942b5-bdec-4fe9-bb3c-4783d211f6ea\",\n          \"name\" : \"ShopCustomTaxClass\",\n          \"system\" : false,\n          \"value\" : 0.12\n        }, {\n          \"taxClass\" : \"REGULAR\",\n          \"name\" : \"Standard\",\n          \"system\" : true,\n          \"value\" : 0.24\n        }, {\n          \"taxClass\" : \"REDUCED\",\n          \"name\" : \"Reduced\",\n          \"system\" : true,\n          \"value\" : 0.13\n        }, {\n          \"taxClass\" : \"REDUCED_2\",\n          \"name\" : \"Reduced 2\",\n          \"system\" : true,\n          \"value\" : 0.06\n        }, {\n          \"taxClass\" : \"EXEMPT\",\n          \"name\" : \"Tax-exempt\",\n          \"system\" : true,\n          \"value\" : 0\n        } ]\n      }, {\n        \"name\" : \"PT\",\n        \"taxable\" : true,\n        \"countries\" : [ {\n          \"countryCode\" : \"PT\"\n        } ],\n        \"taxRates\" : [ {\n          \"taxClass\" : \"911942b5-bdec-4fe9-bb3c-4783d211f6ea\",\n          \"name\" : \"ShopCustomTaxClass\",\n          \"system\" : false,\n          \"value\" : 0.12\n        }, {\n          \"taxClass\" : \"REGULAR\",\n          \"name\" : \"Standard\",\n          \"system\" : true,\n          \"value\" : 0.23\n        }, {\n          \"taxClass\" : \"REDUCED\",\n          \"name\" : \"Reduced\",\n          \"system\" : true,\n          \"value\" : 0.13\n        }, {\n          \"taxClass\" : \"REDUCED_2\",\n          \"name\" : \"Reduced 2\",\n          \"system\" : true,\n          \"value\" : 0.06\n        }, {\n          \"taxClass\" : \"EXEMPT\",\n          \"name\" : \"Tax-exempt\",\n          \"system\" : true,\n          \"value\" : 0\n        } ]\n      }, {\n        \"name\" : \"SI\",\n        \"taxable\" : true,\n        \"countries\" : [ {\n          \"countryCode\" : \"SI\"\n        } ],\n        \"taxRates\" : [ {\n          \"taxClass\" : \"911942b5-bdec-4fe9-bb3c-4783d211f6ea\",\n          \"name\" : \"ShopCustomTaxClass\",\n          \"system\" : false,\n          \"value\" : 0.12\n        }, {\n          \"taxClass\" : \"REGULAR\",\n          \"name\" : \"Standard\",\n          \"system\" : true,\n          \"value\" : 0.22\n        }, {\n          \"taxClass\" : \"REDUCED\",\n          \"name\" : \"Reduced\",\n          \"system\" : true,\n          \"value\" : 0.095\n        }, {\n          \"taxClass\" : \"REDUCED_2\",\n          \"name\" : \"Reduced 2\",\n          \"system\" : true,\n          \"value\" : 0.05\n        }, {\n          \"taxClass\" : \"EXEMPT\",\n          \"name\" : \"Tax-exempt\",\n          \"system\" : true,\n          \"value\" : 0\n        } ]\n      }, {\n        \"name\" : \"HU\",\n        \"taxable\" : true,\n        \"countries\" : [ {\n          \"countryCode\" : \"HU\"\n        } ],\n        \"taxRates\" : [ {\n          \"taxClass\" : \"911942b5-bdec-4fe9-bb3c-4783d211f6ea\",\n          \"name\" : \"ShopCustomTaxClass\",\n          \"system\" : false,\n          \"value\" : 0.12\n        }, {\n          \"taxClass\" : \"REGULAR\",\n          \"name\" : \"Standard\",\n          \"system\" : true,\n          \"value\" : 0.27\n        }, {\n          \"taxClass\" : \"REDUCED\",\n          \"name\" : \"Reduced\",\n          \"system\" : true,\n          \"value\" : 0.18\n        }, {\n          \"taxClass\" : \"REDUCED_2\",\n          \"name\" : \"Reduced 2\",\n          \"system\" : true,\n          \"value\" : 0.05\n        }, {\n          \"taxClass\" : \"EXEMPT\",\n          \"name\" : \"Tax-exempt\",\n          \"system\" : true,\n          \"value\" : 0\n        } ]\n      }, {\n        \"name\" : \"LT\",\n        \"taxable\" : true,\n        \"countries\" : [ {\n          \"countryCode\" : \"LT\"\n        } ],\n        \"taxRates\" : [ {\n          \"taxClass\" : \"REGULAR\",\n          \"name\" : \"Standard\",\n          \"system\" : true,\n          \"value\" : 0.21\n        }, {\n          \"taxClass\" : \"REDUCED\",\n          \"name\" : \"Reduced\",\n          \"system\" : true,\n          \"value\" : 0.12\n        }, {\n          \"taxClass\" : \"REDUCED_2\",\n          \"name\" : \"Reduced 2\",\n          \"system\" : true,\n          \"value\" : 0.05\n        }, {\n          \"taxClass\" : \"EXEMPT\",\n          \"name\" : \"Tax-exempt\",\n          \"system\" : true,\n          \"value\" : 0\n        }, {\n          \"taxClass\" : \"911942b5-bdec-4fe9-bb3c-4783d211f6ea\",\n          \"name\" : \"ShopCustomTaxClass\",\n          \"system\" : false,\n          \"value\" : 0.12\n        } ]\n      }, {\n        \"name\" : \"BG\",\n        \"taxable\" : true,\n        \"countries\" : [ {\n          \"countryCode\" : \"BG\"\n        } ],\n        \"taxRates\" : [ {\n          \"taxClass\" : \"REGULAR\",\n          \"name\" : \"Standard\",\n          \"system\" : true,\n          \"value\" : 0.2\n        }, {\n          \"taxClass\" : \"REDUCED\",\n          \"name\" : \"Reduced\",\n          \"system\" : true,\n          \"value\" : 0.09\n        }, {\n          \"taxClass\" : \"EXEMPT\",\n          \"name\" : \"Tax-exempt\",\n          \"system\" : true,\n          \"value\" : 0\n        }, {\n          \"taxClass\" : \"911942b5-bdec-4fe9-bb3c-4783d211f6ea\",\n          \"name\" : \"ShopCustomTaxClass\",\n          \"system\" : false,\n          \"value\" : 0.12\n        } ]\n      }, {\n        \"name\" : \"IT\",\n        \"taxable\" : true,\n        \"countries\" : [ {\n          \"countryCode\" : \"IT\"\n        } ],\n        \"taxRates\" : [ {\n          \"taxClass\" : \"911942b5-bdec-4fe9-bb3c-4783d211f6ea\",\n          \"name\" : \"ShopCustomTaxClass\",\n          \"system\" : false,\n          \"value\" : 0.12\n        }, {\n          \"taxClass\" : \"REGULAR\",\n          \"name\" : \"Standard\",\n          \"system\" : true,\n          \"value\" : 0.22\n        }, {\n          \"taxClass\" : \"REDUCED\",\n          \"name\" : \"Reduced\",\n          \"system\" : true,\n          \"value\" : 0.1\n        }, {\n          \"taxClass\" : \"REDUCED_2\",\n          \"name\" : \"Reduced 2\",\n          \"system\" : true,\n          \"value\" : 0.05\n        }, {\n          \"taxClass\" : \"EXEMPT\",\n          \"name\" : \"Tax-exempt\",\n          \"system\" : true,\n          \"value\" : 0\n        } ]\n      }, {\n        \"name\" : \"RO\",\n        \"taxable\" : true,\n        \"countries\" : [ {\n          \"countryCode\" : \"RO\"\n        } ],\n        \"taxRates\" : [ {\n          \"taxClass\" : \"911942b5-bdec-4fe9-bb3c-4783d211f6ea\",\n          \"name\" : \"ShopCustomTaxClass\",\n          \"system\" : false,\n          \"value\" : 0.12\n        }, {\n          \"taxClass\" : \"REGULAR\",\n          \"name\" : \"Standard\",\n          \"system\" : true,\n          \"value\" : 0.21\n        }, {\n          \"taxClass\" : \"REDUCED\",\n          \"name\" : \"Reduced\",\n          \"system\" : true,\n          \"value\" : 0.11\n        }, {\n          \"taxClass\" : \"EXEMPT\",\n          \"name\" : \"Tax-exempt\",\n          \"system\" : true,\n          \"value\" : 0\n        } ]\n      } ],\n      \"proRataTaxForAncillaryServices\" : true,\n      \"validFrom\" : null,\n      \"validUntil\" : null\n    } ]\n  }\n}",
+      "code" : 200
+    } ]
+  }, {
     "id" : "coupon-campaign-unique-product-specific-absolute-discount",
     "name" : "/coupon-campaigns",
     "description" : "Only one absolute discount can be set per product-specific coupon campaign. If it is attempted to set further discounts, a `400 Bad Request` error will be returned.",
@@ -17970,6 +18305,181 @@
       } ],
       "cookie" : [ ],
       "body" : "{\n  \"_id\" : \"858b6793-82e3-4da1-bf83-deb01d3b1a6f\",\n  \"categories\" : [ ],\n  \"scriptUrl\" : \"https://example.com/scripts/updatedExampleScript.js\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/script-tags/858b6793-82e3-4da1-bf83-deb01d3b1a6f\"\n    }\n  }\n}",
+      "code" : 200
+    } ]
+  }, {
+    "id" : "taxation-method-not-allowed-outside-oss",
+    "name" : "/setting",
+    "description" : "If the shop is not located in an OSS country, updating the taxation method is not allowed and a `409 Conflict` error will be returned.",
+    "variable" : [ ],
+    "event" : [ ],
+    "request" : {
+      "url" : {
+        "protocol" : "https",
+        "host" : "{{host}}",
+        "path" : "/api/setting"
+      },
+      "method" : "PATCH",
+      "header" : [ {
+        "key" : "Content-Type",
+        "value" : "application/hal+json",
+        "disabled" : false
+      } ],
+      "body" : {
+        "mode" : "raw",
+        "raw" : "{\n  \"taxationMethod\" : \"DESTINATION\",\n  \"defaultTaxClass\" : null,\n  \"vatExempted\" : null\n}",
+        "urlencoded" : [ ]
+      }
+    },
+    "response" : [ {
+      "id" : "taxation-method-not-allowed-outside-oss",
+      "name" : "taxation-method-not-allowed-outside-oss",
+      "originalRequest" : {
+        "url" : {
+          "protocol" : "https",
+          "host" : "{{host}}",
+          "path" : "/api/setting"
+        },
+        "method" : "PATCH",
+        "header" : [ {
+          "key" : "Content-Type",
+          "value" : "application/hal+json",
+          "disabled" : false
+        } ],
+        "body" : {
+          "mode" : "raw",
+          "raw" : "{\n  \"taxationMethod\" : \"DESTINATION\",\n  \"defaultTaxClass\" : null,\n  \"vatExempted\" : null\n}",
+          "urlencoded" : [ ]
+        }
+      },
+      "header" : [ {
+        "key" : "Content-Type",
+        "value" : "application/hal+json",
+        "disabled" : false
+      } ],
+      "cookie" : [ ],
+      "body" : "{\n  \"errorId\" : \"taxation-method-not-allowed-outside-oss\",\n  \"details\" : { },\n  \"message\" : \"Taxation method cannot be changed because GB is not within the EU OSS (One-Stop-Shop) scope.\",\n  \"traceId\" : null\n}",
+      "code" : 409
+    }, {
+      "id" : "tax-class-not-found",
+      "name" : "tax-class-not-found",
+      "originalRequest" : {
+        "url" : {
+          "protocol" : "https",
+          "host" : "{{host}}",
+          "path" : "/api/setting"
+        },
+        "method" : "PATCH",
+        "header" : [ {
+          "key" : "Content-Type",
+          "value" : "application/hal+json",
+          "disabled" : false
+        } ],
+        "body" : {
+          "mode" : "raw",
+          "raw" : "{\n  \"taxationMethod\" : null,\n  \"defaultTaxClass\" : \"NON_EXISTENT_TAX_CLASS\",\n  \"vatExempted\" : null\n}",
+          "urlencoded" : [ ]
+        }
+      },
+      "header" : [ {
+        "key" : "Content-Type",
+        "value" : "application/hal+json",
+        "disabled" : false
+      } ],
+      "cookie" : [ ],
+      "body" : "{\n  \"errorId\" : \"tax-class-not-found\",\n  \"details\" : { },\n  \"message\" : \"Tax class with code 'NON_EXISTENT_TAX_CLASS' not found.\",\n  \"traceId\" : null\n}",
+      "code" : 400
+    }, {
+      "id" : "taxation-method-locked-by-custom-tax-classes",
+      "name" : "taxation-method-locked-by-custom-tax-classes",
+      "originalRequest" : {
+        "url" : {
+          "protocol" : "https",
+          "host" : "{{host}}",
+          "path" : "/api/setting"
+        },
+        "method" : "PATCH",
+        "header" : [ {
+          "key" : "Content-Type",
+          "value" : "application/hal+json",
+          "disabled" : false
+        } ],
+        "body" : {
+          "mode" : "raw",
+          "raw" : "{\n  \"taxationMethod\" : \"DESTINATION\",\n  \"defaultTaxClass\" : null,\n  \"vatExempted\" : null\n}",
+          "urlencoded" : [ ]
+        }
+      },
+      "header" : [ {
+        "key" : "Content-Type",
+        "value" : "application/hal+json",
+        "disabled" : false
+      } ],
+      "cookie" : [ ],
+      "body" : "{\n  \"errorId\" : \"taxation-method-locked-by-custom-tax-classes\",\n  \"details\" : { },\n  \"message\" : \"Taxation method cannot be changed because custom tax classes already exist. Please remove custom tax classes first.\",\n  \"traceId\" : null\n}",
+      "code" : 409
+    }, {
+      "id" : "shop-tax-setting-update",
+      "name" : "shop-tax-setting-update",
+      "originalRequest" : {
+        "url" : {
+          "protocol" : "https",
+          "host" : "{{host}}",
+          "path" : "/api/setting"
+        },
+        "method" : "PATCH",
+        "header" : [ {
+          "key" : "Content-Type",
+          "value" : "application/hal+json",
+          "disabled" : false
+        } ],
+        "body" : {
+          "mode" : "raw",
+          "raw" : "{\n  \"taxationMethod\" : \"DESTINATION\",\n  \"defaultTaxClass\" : \"REDUCED\",\n  \"vatExempted\" : true\n}",
+          "urlencoded" : [ ]
+        }
+      },
+      "header" : [ {
+        "key" : "Content-Type",
+        "value" : "application/hal+json",
+        "disabled" : false
+      } ],
+      "cookie" : [ ],
+      "body" : "{\n  \"taxationMethod\" : \"DESTINATION\",\n  \"vatExempted\" : true,\n  \"defaultTaxClass\" : {\n    \"_id\" : \"012072b8-8dab-4791-b4ee-3215a318495b\",\n    \"code\" : \"REDUCED\",\n    \"name\" : \"Reduced\"\n  }\n}",
+      "code" : 200
+    } ]
+  }, {
+    "id" : "shop-tax-setting-get",
+    "name" : "/setting",
+    "description" : "Retrieve the tax settings for the shop, including taxation method and default tax class along with vat exemption status.",
+    "variable" : [ ],
+    "event" : [ ],
+    "request" : {
+      "url" : {
+        "protocol" : "https",
+        "host" : "{{host}}",
+        "path" : "/api/setting"
+      },
+      "method" : "GET"
+    },
+    "response" : [ {
+      "id" : "shop-tax-setting-get",
+      "name" : "shop-tax-setting-get",
+      "originalRequest" : {
+        "url" : {
+          "protocol" : "https",
+          "host" : "{{host}}",
+          "path" : "/api/setting"
+        },
+        "method" : "GET"
+      },
+      "header" : [ {
+        "key" : "Content-Type",
+        "value" : "application/hal+json",
+        "disabled" : false
+      } ],
+      "cookie" : [ ],
+      "body" : "{\n  \"taxationMethod\" : \"ORIGIN\",\n  \"vatExempted\" : false,\n  \"defaultTaxClass\" : {\n    \"_id\" : \"a3ae337a-ab14-4e4b-bf0e-5ce7ca90639a\",\n    \"code\" : \"REGULAR\",\n    \"name\" : \"Standard\"\n  }\n}",
       "code" : 200
     } ]
   }, {
