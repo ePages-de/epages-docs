@@ -393,7 +393,7 @@ ePages Now only!
 
 | Attribute | Type | Description |
 | - | - |  - |
-| responsiblePersonAddress | object of [responsiblePerson](page:apps-data-types#responsibleperson) | The address of the responsible person of a manufaturer. |
+| responsiblePersonAddress | object of [responsiblePerson](page:apps-data-types#responsibleperson) | The address information of a responsible economic operator in the EU. To be added if goods are offered that are manufactured outside the EU. |
 | manufacturerAddress| object of [manufacturer](page:apps-data-types#manufacturer) | The address of the product manufacturer. |
 | pictograms | array of pictograms | The GPSR pictogram names. |
 | safetyStatements | array of safetyStatement | The GPSR safety statement names. |
