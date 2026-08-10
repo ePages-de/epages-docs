@@ -481,7 +481,7 @@ This object is used for the attributes of manufacturers.
 | country | string | The name of the country. |
 | phoneNumber | string | The manufacturer's landline number. |
 | emailOrContactFormUrl | string | The manufacturer's email or website url |
-| responsiblePersonAddress | object of [responsiblePerson](page:apps-data-types#responsibleperson) | The address of the responsible person of a manufaturer. |
+| responsiblePersonAddress | object of [responsiblePerson](page:apps-data-types#responsibleperson) | The address information of a responsible economic operator in the EU. To be added if goods are offered that are manufactured outside the EU. |
 | manufacturerId | string | The identifier of manufacturer. |
 
 ## minimumCart
