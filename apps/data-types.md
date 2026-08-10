@@ -899,15 +899,15 @@ ePages Now only!
 
 | Attribute | Type | Description |
 | - | - |  - |
-| company | string | The reponsible persons's company. |
-| street | string | The street name of the reponsible persons's address. |
+| company | string | The reponsible operator's company. |
+| street | string | The street name of the reponsible operator's address. |
 | streetDetails | string | An additional field for the street address.|
 | zipCode | string | The zip or postal code of the address. |
 | city | string | The name of the city. |
 | state | string | The name of the state. |
 | country | string | The name of the country. |
-| phoneNumber | string | The reponsible persons's landline number. |
-| emailAddress | string | The reponsible persons's email address |
+| phoneNumber | string | The reponsible operator's landline number. |
+| emailAddress | string | The reponsible operator's email address |
 
 
 ## sales
