@@ -121,7 +121,8 @@ post:
                 - /productDataSheet<br>
                 - /shippingMethodsRestrictedTo<br>
                 - /productCode<br>
-                - /orderUnitInfo¹<br><br>
+                - /orderUnitInfo¹<br>
+                - /gpsrInfo<br><br>
 
                 **¹** supports *add* only<br>
                 **²** value will not be replaced, but changed, i.e. if the stocklevel is 3 and you add 1, you will get 4; if you add -5, you will get -2.<br>
@@ -145,6 +146,18 @@ post:
     securedBy: [products_write]
     responses:
       204:
+
+  /availability-notifications:
+    displayName: Product Availability Notification
+    post:
+      description: Enables the availability notification for the given product and customer email address. The language of the notification is based on the locale of the customer's storefront. *epagesNow
+      securedBy: [products_write]
+      body:
+        application/json:
+          example: !include examples/post_product_productid_availability_notifications_request.json
+          schema: !include schema/post_product_productid_availability_notifications.schema.json
+      responses:
+        200:
 
   /crossselling:
     displayName: Product crossselling

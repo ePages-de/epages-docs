@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "PATCH Manufacturers ManufacturerID Schema",
+  "type": "object",
+  "properties": {
+    "": {
+      "type": "object of [manufacturer](page:apps-data-types#manufacturer)",
+      "description": ""
+    }
+  }
+}

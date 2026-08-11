@@ -217,6 +217,27 @@
   "minStocklevel": 10,
   "isInWishlist": false,
   "videos": [],
+  "gpsrInfo": {
+        "responsiblePersonAddress": null,
+        "manufacturerAddress": null,
+        "pictograms": [
+            {
+                "url": "https://pm.epages.com/rs/shops/apidocu/WebRoot/SafetyPictograms/product-safety-skull.svg",
+                "description": "Acute toxicity"
+            },
+            {
+                "url": "https://pm.epages.com/rs/shops/apidocu/WebRoot/SafetyPictograms/product-safety-age-0-3.svg",
+                "description": "Not suitable for children under 3 years of age."
+            }
+        ],
+        "safetyStatements": [
+            "May cause long lasting harmful effects to aquatic life.",
+            "Flammable liquid and vapour.",
+            "May cause damage to organs through prolonged or repeated exposure."
+        ],
+        "relevantDocuments": [],
+        "supplemetaryInformation": "Dangerous"
+    },
   "links": [
     {
       "rel": "self",

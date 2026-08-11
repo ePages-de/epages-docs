@@ -298,18 +298,24 @@
               id: update_checkout_settings
         - title: Coupon campaigns
           entries:
-            - title: Create coupon campaign
+            - title: Create cart-wide coupon campaign
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-coupon-campaign-create
               id: create_coupon_campaign
+            - title: Create product-specific coupon campaign
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-coupon-campaign-product-specific-create
+              id: create_product_specific_coupon_campaign
             - title: List coupon campaigns
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-coupon-campaign-list
               id: list_coupon_campaigns
             - title: Show coupon campaign details
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-coupon-campaign-get
               id: show_coupon_campaign_details
-            - title: Update coupon campaign
+            - title: Update cart-wide coupon campaign
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-coupon-campaign-update
               id: update_coupon_campaign
+            - title: Update product-specific coupon campaign
+              link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-coupon-campaign-product-specific-update
+              id: update_product_specific_coupon_campaign
             - title: Update coupon campaign status
               link: https://api-docs.beyondshop.cloud/ng-checkout-checkout-public-api.html#resources-coupon-campaign-status-update
               id: update_coupon_campaign_status
@@ -808,6 +814,9 @@
                 - title: Delete category customer group discount
                   link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-category-customer-group-discount-delete
                   id: delete_category_customer_group_discount
+                - title: Modify multiple category customer group discounts
+                  link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-category-customer-group-discount-batch-patch
+                  id: modify_multiple_category_customer_group_discounts
             - title: Product customer group discounts
               entries:
                 - title: Create product customer group discount
@@ -828,6 +837,9 @@
                 - title: Delete product customer group discount
                   link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-customer-group-discount-delete
                   id: delete_product_customer_group_discount
+                - title: Modify multiple product customer group discounts
+                  link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#resources-product-customer-group-discount-batch-patch
+                  id: modify_multiple_product_customer_group_discounts
         - title: Products
           entries:
             - title: Create product
@@ -962,9 +974,6 @@
               id: remove_multiple_products_from_product_categories
         - title: Product category-related searches
           entries:
-            - title: Search product categories
-              link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#categories-search-result
-              id: search_product_categories
             - title: Find used category tags
               link: https://api-docs.beyondshop.cloud/ng-product-management-product-management-public-api.html#find-category-tags
               id: find_used_category_tags

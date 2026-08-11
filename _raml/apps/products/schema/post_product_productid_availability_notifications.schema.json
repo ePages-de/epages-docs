@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "POST Availability Schema",
+  "type": "object",
+  "properties": {
+    "email": {
+      "type": "string",
+      "description": "The email address of the customer receiving the availability notification."
+    },
+    "locale": {
+      "type": "string",
+      "description": "The language in which the availability notification email is to be sent, according to ISO 639-1 and ISO 3166-1, e.g. en_US."
+    }
+  }
+}
