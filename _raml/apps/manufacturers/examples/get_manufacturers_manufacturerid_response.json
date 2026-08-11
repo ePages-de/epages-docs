@@ -1,0 +1,23 @@
+{
+  "zipCode": "07749",
+  "country": "Germany",
+  "street": "Heinrich-Heine-Str. 1",
+  "state": null,
+  "emailOrContactFormUrl": "test@epages.de",
+  "responsiblePersonAddress": {
+      "zipCode": "07749",
+      "country": "Germany",
+      "emailAddress": "test@epages.de",
+      "street": "Heinrich-Heine-Str. 99",
+      "state": null,
+      "city": "Jena",
+      "streetDetails": null,
+      "company": "DJ Oetzi",
+      "phoneNumber": null
+  },
+  "city": "Jena",
+  "streetDetails": null,
+  "company": "DJ Bass",
+  "manufacturerId": "691C23A6-6908-FB99-5807-C0A80502185B",
+  "phoneNumber": null
+}

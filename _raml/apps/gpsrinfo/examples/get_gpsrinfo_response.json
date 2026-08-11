@@ -1,0 +1,36 @@
+{
+  "gpsrInfo": {
+      "pictograms": [
+          {
+              "age_restriction_0_3": {
+                  "url": "https://pm.epages.com/rs/shops/apidocu/WebRoot/SafetyPictograms/product-safety-age-0-3.svg",
+                  "description": "Not suitable for children under 3 years of age."
+              }
+          },
+          {
+              "skull": {
+                  "url": "https://pm.epages.com/rs/shops/apidocu/WebRoot/SafetyPictograms/product-safety-skull.svg",
+                  "description": "Acute toxicity"
+              }
+          }
+      ],
+      "safetyStatements": [
+          {
+              "H_225": {
+                  "description": "Highly flammable liquid and vapour."
+              }
+          },
+          {
+              "H_413": {
+                  "description": "May cause long lasting harmful effects to aquatic life."
+              }
+          },
+          {
+              "H_224": {
+                  "description": "Extremely flammable liquid and vapour."
+              }
+          }
+
+      ]
+  }
+}
