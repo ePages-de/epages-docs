@@ -53,7 +53,8 @@
           "rel": "orders",
           "href": "https://pm.epages.com/rs/shops/apidocu/orders?customerId=563874DA-7AE7-9876-9E59-D5809AB38A25"
         }
-      ]
+      ],
+      "isRegistered": false,
     },
     {
       "customerId": "56389403-55BC-176C-5343-D5809AB3A579",
@@ -105,7 +106,8 @@
           "rel": "orders",
           "href": "https://pm.epages.com/rs/shops/apidocu/orders?customerId=56389403-55BC-176C-5343-D5809AB3A579"
         }
-      ]
+      ],
+      "isRegistered": false,
     },
     {
       "customerId": "5638A1B2-0580-CA34-5DB3-D5809AB3A51C",
@@ -157,7 +159,8 @@
           "rel": "orders",
           "href": "https://pm.epages.com/rs/shops/apidocu/orders?customerId=5638A1B2-0580-CA34-5DB3-D5809AB3A51C"
         }
-      ]
+      ],
+      "isRegistered": false,
     }
   ]
 }
