@@ -5939,7 +5939,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"_id\" : \"e946f810-73a5-4b91-a1d9-1c3a4b729b5c\",\n  \"hash\" : \"82432abcc2997929f80c567f1664788965df8f8f\",\n  \"mediaType\" : \"application/pdf\",\n  \"groupName\" : \"1438\",\n  \"length\" : 11967,\n  \"fileName\" : \"invoice_10013.pdf\",\n  \"relativeUrl\" : \"invoice_10013.pdf?hash=82432abcc2997929f80c567f1664788965df8f8f\",\n  \"relativeDownloadUrl\" : \"invoice_10013.pdf?hash=82432abcc2997929f80c567f1664788965df8f8f\"\n}",
+      "body" : "{\n  \"_id\" : \"abd41169-6f50-4155-ab1f-1dec623086ea\",\n  \"hash\" : \"82432abcc2997929f80c567f1664788965df8f8f\",\n  \"mediaType\" : \"application/pdf\",\n  \"groupName\" : \"1438\",\n  \"length\" : 11967,\n  \"fileName\" : \"invoice_10013.pdf\",\n  \"relativeUrl\" : \"invoice_10013.pdf?hash=82432abcc2997929f80c567f1664788965df8f8f\",\n  \"relativeDownloadUrl\" : \"invoice_10013.pdf?hash=82432abcc2997929f80c567f1664788965df8f8f\"\n}",
       "code" : 201
     } ]
   }, {
@@ -6022,8 +6022,36 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"_id\" : \"901f4218-6ba7-4bd1-a09a-f297e659d14c\",\n  \"hash\" : \"82432abcc2997929f80c567f1664788965df8f8f\",\n  \"mediaType\" : \"application/pdf\",\n  \"groupName\" : \"1438\",\n  \"length\" : 11967,\n  \"fileName\" : \"invoice_10013.pdf\",\n  \"relativeUrl\" : \"invoice_10013.pdf?hash=82432abcc2997929f80c567f1664788965df8f8f\",\n  \"relativeDownloadUrl\" : \"invoice_10013.pdf?hash=82432abcc2997929f80c567f1664788965df8f8f\"\n}",
+      "body" : "{\n  \"_id\" : \"267ee777-9df9-40fb-bebd-a61ca411ea58\",\n  \"hash\" : \"82432abcc2997929f80c567f1664788965df8f8f\",\n  \"mediaType\" : \"application/pdf\",\n  \"groupName\" : \"1438\",\n  \"length\" : 11967,\n  \"fileName\" : \"invoice_10013.pdf\",\n  \"relativeUrl\" : \"invoice_10013.pdf?hash=82432abcc2997929f80c567f1664788965df8f8f\",\n  \"relativeDownloadUrl\" : \"invoice_10013.pdf?hash=82432abcc2997929f80c567f1664788965df8f8f\"\n}",
       "code" : 201
+    } ]
+  }, {
+    "id" : "delete-order-document-internal",
+    "name" : "/order-documents-for-internal-use/{groupName}/attachments/{fileName}",
+    "description" : "A `DELETE` request is used to permanently delete an order document from the storage using the internal access.",
+    "variable" : [ ],
+    "event" : [ ],
+    "request" : {
+      "url" : {
+        "protocol" : "https",
+        "host" : "api-shop.beyondshop.cloud",
+        "path" : "/api/order-documents-for-internal-use/:groupName/attachments/:fileName"
+      },
+      "method" : "DELETE"
+    },
+    "response" : [ {
+      "id" : "delete-order-document-internal",
+      "name" : "delete-order-document-internal",
+      "originalRequest" : {
+        "url" : {
+          "protocol" : "https",
+          "host" : "api-shop.beyondshop.cloud",
+          "path" : "/api/order-documents-for-internal-use/:groupName/attachments/:fileName"
+        },
+        "method" : "DELETE"
+      },
+      "cookie" : [ ],
+      "code" : 204
     } ]
   }, {
     "id" : "order-cleanup-failed",
@@ -10676,7 +10704,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"_id\" : \"fdc477b0-47b2-4e7d-89d9-62f8825edde4\",\n  \"hash\" : \"c0e650f3b762d4658e655215c2adfc269dd4c3a5\",\n  \"mediaType\" : \"application/pdf\",\n  \"groupName\" : \"1438\",\n  \"length\" : 46568,\n  \"fileName\" : \"serving-temperature.pdf\",\n  \"relativeUrl\" : \"serving-temperature.pdf?hash=c0e650f3b762d4658e655215c2adfc269dd4c3a5\",\n  \"relativeDownloadUrl\" : \"serving-temperature.pdf?hash=c0e650f3b762d4658e655215c2adfc269dd4c3a5\"\n}",
+      "body" : "{\n  \"_id\" : \"fd9a864c-0589-4962-8c31-f236d5d552b4\",\n  \"hash\" : \"c0e650f3b762d4658e655215c2adfc269dd4c3a5\",\n  \"mediaType\" : \"application/pdf\",\n  \"groupName\" : \"1438\",\n  \"length\" : 46568,\n  \"fileName\" : \"serving-temperature.pdf\",\n  \"relativeUrl\" : \"serving-temperature.pdf?hash=c0e650f3b762d4658e655215c2adfc269dd4c3a5\",\n  \"relativeDownloadUrl\" : \"serving-temperature.pdf?hash=c0e650f3b762d4658e655215c2adfc269dd4c3a5\"\n}",
       "code" : 201
     }, {
       "id" : "upload-product-attachment-too-big",
@@ -20441,7 +20469,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"_id\" : \"304fbea0-ffc4-4c51-b0f4-6d4377e14485\",\n  \"hash\" : \"443486e17f0262f6cef2b0fde1ea965dd3df5c8f\",\n  \"mediaType\" : \"application/pdf\",\n  \"groupName\" : \"1438\",\n  \"length\" : 30668,\n  \"fileName\" : \"invoices.pdf\",\n  \"relativeUrl\" : \"invoices.pdf?hash=443486e17f0262f6cef2b0fde1ea965dd3df5c8f\",\n  \"relativeDownloadUrl\" : \"invoices.pdf?hash=443486e17f0262f6cef2b0fde1ea965dd3df5c8f\"\n}",
+      "body" : "{\n  \"_id\" : \"a909f513-400e-4750-90d4-f45d716bb0c0\",\n  \"hash\" : \"443486e17f0262f6cef2b0fde1ea965dd3df5c8f\",\n  \"mediaType\" : \"application/pdf\",\n  \"groupName\" : \"1438\",\n  \"length\" : 30668,\n  \"fileName\" : \"invoices.pdf\",\n  \"relativeUrl\" : \"invoices.pdf?hash=443486e17f0262f6cef2b0fde1ea965dd3df5c8f\",\n  \"relativeDownloadUrl\" : \"invoices.pdf?hash=443486e17f0262f6cef2b0fde1ea965dd3df5c8f\"\n}",
       "code" : 201
     } ]
   }, {
@@ -21331,7 +21359,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"_id\" : \"629e7e59-6d82-4038-bb12-94c345e4735c\",\n  \"hash\" : \"48c6b37545a57f1eb3353ba607546c3de25f3f29\",\n  \"fileName\" : \"rioja-castillo-detail.png\",\n  \"mediaType\" : \"image/png\",\n  \"length\" : 45327,\n  \"groupName\" : \"1438\",\n  \"relativeUrl\" : \"rioja-castillo-detail.png?hash=48c6b37545a57f1eb3353ba607546c3de25f3f29\",\n  \"relativeDownloadUrl\" : \"rioja-castillo-detail.png?hash=48c6b37545a57f1eb3353ba607546c3de25f3f29\",\n  \"width\" : 90,\n  \"height\" : 351\n}",
+      "body" : "{\n  \"_id\" : \"e605be3f-5ce1-42ae-b4df-cda4384f0cb4\",\n  \"hash\" : \"48c6b37545a57f1eb3353ba607546c3de25f3f29\",\n  \"fileName\" : \"rioja-castillo-detail.png\",\n  \"mediaType\" : \"image/png\",\n  \"length\" : 45327,\n  \"groupName\" : \"1438\",\n  \"relativeUrl\" : \"rioja-castillo-detail.png?hash=48c6b37545a57f1eb3353ba607546c3de25f3f29\",\n  \"relativeDownloadUrl\" : \"rioja-castillo-detail.png?hash=48c6b37545a57f1eb3353ba607546c3de25f3f29\",\n  \"width\" : 90,\n  \"height\" : 351\n}",
       "code" : 201
     }, {
       "id" : "upload-epagesui-image-internal",
@@ -21360,7 +21388,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"_id\" : \"ae02afb8-d20f-4451-82d3-efe35572df72\",\n  \"hash\" : \"f4e6fbee7f8c2257458818d391187d385623709b\",\n  \"fileName\" : \"yourshop-logo.png\",\n  \"mediaType\" : \"image/png\",\n  \"length\" : 33615,\n  \"groupName\" : \"shop-slug\",\n  \"relativeUrl\" : \"yourshop-logo.png?hash=f4e6fbee7f8c2257458818d391187d385623709b\",\n  \"relativeDownloadUrl\" : \"yourshop-logo.png?hash=f4e6fbee7f8c2257458818d391187d385623709b\",\n  \"width\" : 544,\n  \"height\" : 456\n}",
+      "body" : "{\n  \"_id\" : \"3613ab50-0fab-4e89-9c16-399096fbecb2\",\n  \"hash\" : \"f4e6fbee7f8c2257458818d391187d385623709b\",\n  \"fileName\" : \"yourshop-logo.png\",\n  \"mediaType\" : \"image/png\",\n  \"length\" : 33615,\n  \"groupName\" : \"shop-slug\",\n  \"relativeUrl\" : \"yourshop-logo.png?hash=f4e6fbee7f8c2257458818d391187d385623709b\",\n  \"relativeDownloadUrl\" : \"yourshop-logo.png?hash=f4e6fbee7f8c2257458818d391187d385623709b\",\n  \"width\" : 544,\n  \"height\" : 456\n}",
       "code" : 201
     }, {
       "id" : "upload-core-image-unsupported-media-type",
@@ -21472,7 +21500,7 @@
         "disabled" : false
       } ],
       "cookie" : [ ],
-      "body" : "{\n  \"_id\" : \"50e7863e-c2ca-4d5e-8e57-d95ba61a9eb2\",\n  \"hash\" : \"48c6b37545a57f1eb3353ba607546c3de25f3f29\",\n  \"fileName\" : \"rioja-castillo-detail.png\",\n  \"mediaType\" : \"image/png\",\n  \"length\" : 45327,\n  \"groupName\" : \"1438\",\n  \"relativeUrl\" : \"rioja-castillo-detail.png?hash=48c6b37545a57f1eb3353ba607546c3de25f3f29\",\n  \"relativeDownloadUrl\" : \"rioja-castillo-detail.png?hash=48c6b37545a57f1eb3353ba607546c3de25f3f29\",\n  \"width\" : 90,\n  \"height\" : 351\n}",
+      "body" : "{\n  \"_id\" : \"2354d278-c1f7-4046-8c21-5861ec96a622\",\n  \"hash\" : \"48c6b37545a57f1eb3353ba607546c3de25f3f29\",\n  \"fileName\" : \"rioja-castillo-detail.png\",\n  \"mediaType\" : \"image/png\",\n  \"length\" : 45327,\n  \"groupName\" : \"1438\",\n  \"relativeUrl\" : \"rioja-castillo-detail.png?hash=48c6b37545a57f1eb3353ba607546c3de25f3f29\",\n  \"relativeDownloadUrl\" : \"rioja-castillo-detail.png?hash=48c6b37545a57f1eb3353ba607546c3de25f3f29\",\n  \"width\" : 90,\n  \"height\" : 351\n}",
       "code" : 201
     } ]
   } ],
